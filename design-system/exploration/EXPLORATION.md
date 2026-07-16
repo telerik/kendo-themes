@@ -342,4 +342,79 @@ The `ds-audit` agent ran its full persona (caught contrast fails, off-grid spaci
 
 ---
 
-*Next: exercise `modernize`/`generate` on a sample app, or finalize the multi-theme DESIGN.md build.*
+---
+
+## Session 5 — 2026-07-16: Multi-Theme DESIGN.md Layout
+
+### Context
+
+The bundled spec was a single `references/DESIGN.md` (which turned out to *be* the Meridian theme — its oklch values match `packages/meridian/scss/core/color-system/_swatch.scss`). Kendo ships six themes, so a single spec can't represent them all. We needed a per-theme layout and to weight in **Meridian** as the recommended default (v14.0.0+), distinct from the **Default** theme (the *old* default, now maintenance mode).
+
+### Layout Decision
+
+Per-theme specs now live **next to SKILL.md**, one folder per theme, out of `references/`:
+
+```
+skills/kendo-design/
+├── SKILL.md
+├── references/
+│   └── init.md
+└── themes/
+    ├── meridian/DESIGN.md   ← recommended default (was references/DESIGN.md)
+    ├── default/DESIGN.md    ← original theme, maintenance mode (authored this session)
+    ├── bootstrap/DESIGN.md  ← placeholder (TODO, no token frontmatter)
+    ├── material/DESIGN.md   ← placeholder
+    ├── fluent/DESIGN.md     ← placeholder
+    └── classic/DESIGN.md    ← placeholder
+```
+
+Reconciles the user's two instincts: per-theme `themes/<theme>/DESIGN.md` structure, rooted **inside the skill package** (bundled), not in a repo-root `/themes/` or the external docs repo.
+
+### Scope This Pass
+
+Meridian already exists → kept as-is (relabelled). Only **Default** was fully authored; the other four are **TODO placeholders** that point at their in-repo token sources so a future agent (or sub-agent) can fill them in without guessing.
+
+### Token Provenance (source of truth = this repo)
+
+| Token group | Source (per theme) |
+|---|---|
+| Colors | `packages/<theme>/scss/core/color-system/_swatch.scss` (anchor = non-`oklch(from …)` entries). Default uses `packages/core/.../_swatch.scss` (`$default-colors`). |
+| Border radius | `packages/<theme>/scss/core/border-radii/index.scss` (base × multipliers) |
+| Typography | `packages/<theme>/scss/core/typography/index.scss` (font stack + scale) |
+| Spacing | `packages/<theme>/scss/core/spacing/index.scss` (shared 0.25rem base) |
+| Elevation | `packages/<theme>/scss/core/elevation/index.scss` (shadow levels 1–5) |
+| Narrative / usage | external `kendo-design-system` docs: `apps/docs/content/pages/{foundation,themes/kendo-themes/<theme>}/**/index.mdx` |
+
+### Default vs Meridian (the real deltas)
+
+| Aspect | Meridian (default) | Default (maintenance) |
+|---|---|---|
+| Primary | navy-slate `oklch(37.17% …)` | signature red-orange `oklch(69.85% 0.1923 27.19deg)` |
+| Font | Inter first | system-ui stack (no Inter) |
+| Radius base | 0.375rem (6px) | 0.25rem (4px) |
+| Elevation | warm-cool gray `rgb(56,66,80)`, layered `-y` offsets | neutral black `rgba(0,0,0,…)`, simpler scale |
+| Spacing / type scale | — | **identical** to Meridian |
+
+### Theme Selection (spec resolution)
+
+SKILL.md spec-resolution is now theme-aware: **project-local `./DESIGN.md` > `themes/<theme>/DESIGN.md`**. Detect theme from installed `@progress/kendo-theme-<name>` / imported swatch / user choice → map to folder; if placeholder or unknown → fall back to `themes/meridian/DESIGN.md`. sessionStart hook + run-eval.sh now seed `themes/meridian/DESIGN.md`.
+
+### Verification
+
+`/kendo-design init` (headless, `--yolo`) on a mock `@progress/kendo-theme-default` React project: detected Default → read `themes/default/DESIGN.md` (not meridian) → generated a tailored `DESIGN.md` preserving Default's red-orange primary and system-ui font. Theme routing confirmed. Committed `6cd21f9b68`. Plugin bumped 0.2.5 → 0.2.6.
+
+### Decisions Made
+
+| # | Decision | Rationale |
+|---|----------|-----------|
+| 1 | Per-theme `themes/<theme>/DESIGN.md`, next to SKILL.md, out of `references/` | Scales to all 6 themes; keeps specs bundled with the skill |
+| 2 | Meridian = default; existing spec relabelled `themes/meridian/DESIGN.md` | It already *was* Meridian; matches v14.0.0 recommendation |
+| 3 | Author Default now; placeholders for bootstrap/material/fluent/classic | User asked to keep it simple; placeholders carry authoring instructions |
+| 4 | Placeholders ship **no token frontmatter** | Prevents agents consuming half-defined values; forces meridian fallback |
+| 5 | Token values extracted from repo SCSS, never hand-written | Accuracy; placeholders document exact source paths |
+
+### Open Questions (from this session)
+
+- Author the four placeholder themes — do it directly, or spawn a sub-agent per theme (the original idea) now that the pattern + source map are proven?
+- Should the theme body (principles, do's/don'ts, motion, iconography) be factored into a shared include instead of duplicated per theme, or is per-file duplication fine for a spec that agents read whole?
+- Does the external `kendo-design-system` narrative add enough per-theme nuance to justify pulling from it, or are the repo SCSS values sufficient?
