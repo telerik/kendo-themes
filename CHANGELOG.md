@@ -1,3 +1,13 @@
+## 14.4.0-dev.2 (2026-07-20)
+
+### 🚀 Features
+
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
 ## 14.4.0-dev.1 (2026-07-08)
 
 ### 🩹 Fixes

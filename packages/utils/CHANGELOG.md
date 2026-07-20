@@ -1,3 +1,13 @@
+## 14.4.0-dev.2 (2026-07-20)
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.4.0-dev.1 (2026-07-08)
 
 This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
