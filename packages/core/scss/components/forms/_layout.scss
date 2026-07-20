@@ -4,6 +4,7 @@
 @use "../../spacing/index.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "../label/_variables.scss" as *;
 @use "../input/_variables.scss" as *;
 
 @mixin kendo-form--layout-base() {
@@ -31,25 +32,6 @@
     }
 
 
-    // Label
-    kendo-label > .k-label {
-        margin: 0;
-    }
-
-    .k-label-optional {
-        margin-left: $kendo-label-optional-margin-x;
-        font-size: $kendo-label-optional-font-size;
-        font-style: $kendo-label-optional-font-style;
-        font-weight: $kendo-label-optional-font-weight;
-        align-self: center;
-    }
-
-    .k-label-empty {
-        &::before {
-            content: "";
-            display: inline-block;
-        }
-    }
 
 
 

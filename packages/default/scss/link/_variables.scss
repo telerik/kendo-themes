@@ -1,0 +1,55 @@
+@use "../core/_index.scss" as *;
+
+/// The text color of the Link.
+/// @group link
+$kendo-link-text: k-color(primary) !default;
+/// The hover text color of the Link.
+/// @group link
+$kendo-link-hover-text: k-color(primary-hover) !default;
+/// The focus text color of the Link.
+/// @group link
+$kendo-link-focus-text: k-color(primary) !default;
+/// The visited text color of the Link.
+/// @group link
+$kendo-link-visited-text: k-color(primary-active) !default;
+/// The disabled text color of the Link.
+/// @group link
+$kendo-link-disabled-text: k-color(on-app-surface) !default;
+
+/// The font size of the Link.
+/// @group link
+$kendo-link-font-size: var(--kendo-font-size) !default;
+/// The font family of the Link.
+/// @group link
+$kendo-link-font-family: var(--kendo-font-family) !default;
+/// The line height of the Link.
+/// @group link
+$kendo-link-line-height: var(--kendo-line-height) !default;
+/// The font weight of the Link.
+/// @group link
+$kendo-link-font-weight: var(--kendo-font-weight-normal) !default;
+/// The letter spacing of the Link.
+/// @group link
+$kendo-link-letter-spacing: null !default;
+
+/// The text decoration of the Link.
+/// @group link
+$kendo-link-text-decoration: underline !default;
+/// The hover text decoration of the Link.
+/// @group link
+$kendo-link-hover-text-decoration: none !default;
+
+@forward "@progress/kendo-theme-core/scss/components/link/_variables.scss" with (
+    $kendo-link-text: $kendo-link-text,
+    $kendo-link-hover-text: $kendo-link-hover-text,
+    $kendo-link-focus-text: $kendo-link-focus-text,
+    $kendo-link-visited-text: $kendo-link-visited-text,
+    $kendo-link-disabled-text: $kendo-link-disabled-text,
+    $kendo-link-font-size: $kendo-link-font-size,
+    $kendo-link-font-family: $kendo-link-font-family,
+    $kendo-link-line-height: $kendo-link-line-height,
+    $kendo-link-font-weight: $kendo-link-font-weight,
+    $kendo-link-letter-spacing: $kendo-link-letter-spacing,
+    $kendo-link-text-decoration: $kendo-link-text-decoration,
+    $kendo-link-hover-text-decoration: $kendo-link-hover-text-decoration
+);

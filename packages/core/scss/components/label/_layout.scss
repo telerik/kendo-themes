@@ -1,0 +1,39 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-label--layout-base() {
+
+    .k-label {
+        font-size: $kendo-label-font-size;
+        font-family: $kendo-label-font-family;
+        line-height: $kendo-label-line-height;
+        font-weight: $kendo-label-font-weight;
+        letter-spacing: $kendo-label-letter-spacing;
+        display: inline-flex;
+        align-items: center;
+        cursor: default;
+
+        &.k-disabled {
+            pointer-events: none;
+        }
+    }
+
+    kendo-label > .k-label {
+        margin: 0;
+    }
+
+    .k-label-optional {
+        margin-left: $kendo-label-optional-margin-x;
+        font-size: $kendo-label-optional-font-size;
+        font-style: $kendo-label-optional-font-style;
+        font-weight: $kendo-label-optional-font-weight;
+        align-self: center;
+    }
+
+    .k-label-empty {
+        &::before {
+            content: "";
+            display: inline-block;
+        }
+    }
+
+}

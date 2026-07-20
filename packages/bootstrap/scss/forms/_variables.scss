@@ -60,16 +60,6 @@ $kendo-form-legend-text-transform: none !default;
 /// @group form
 $kendo-form-label-margin-bottom: k-spacing(2) !default;
 
-/// The font size of the Form label.
-/// @group form
-$kendo-label-font-size: null !default;
-/// The font weight of the Form label.
-/// @group form
-$kendo-label-font-weight: null !default;
-/// The line height of the Form label.
-/// @group form
-$kendo-label-line-height: null !default;
-
 /// The font size of the Form hint.
 /// @group form
 $kendo-form-hint-font-size: var(--kendo-font-size-xs) !default;
@@ -125,19 +115,6 @@ $kendo-inline-form-field-padding-x: 0 k-spacing(6) !default;
 /// @group form
 $kendo-inline-form-field-padding-y: calc( #{k-spacing(2)} + #{$kendo-input-border-width} ) !default;
 
-/// The horizontal margin of the optional label in the Form.
-/// @group form
-$kendo-label-optional-margin-x: k-spacing(1.5) !default;
-/// The font size of the optional label in the Form.
-/// @group form
-$kendo-label-optional-font-size: var(--kendo-font-size-xs) !default;
-/// The font style of the optional label in the Form.
-/// @group form
-$kendo-label-optional-font-style: italic !default;
-/// The font weight of the optional label in the Form.
-/// @group form
-$kendo-label-optional-font-weight: null !default;
-
 
 /// The margin of the Form fieldset.
 /// @group form
@@ -179,9 +156,6 @@ $kendo-fieldset-legend-text: unset !default;
     $kendo-form-legend-font-weight: $kendo-form-legend-font-weight,
     $kendo-form-legend-text-transform: $kendo-form-legend-text-transform,
     $kendo-form-label-margin-bottom: $kendo-form-label-margin-bottom,
-    $kendo-label-font-size: $kendo-label-font-size,
-    $kendo-label-font-weight: $kendo-label-font-weight,
-    $kendo-label-line-height: $kendo-label-line-height,
     $kendo-form-hint-font-size: $kendo-form-hint-font-size,
     $kendo-form-hint-font-style: $kendo-form-hint-font-style,
     $kendo-form-hint-margin-top: $kendo-form-hint-margin-top,
@@ -198,10 +172,6 @@ $kendo-fieldset-legend-text: unset !default;
     $kendo-inline-form-element-width: $kendo-inline-form-element-width,
     $kendo-inline-form-field-padding-x: $kendo-inline-form-field-padding-x,
     $kendo-inline-form-field-padding-y: $kendo-inline-form-field-padding-y,
-    $kendo-label-optional-margin-x: $kendo-label-optional-margin-x,
-    $kendo-label-optional-font-size: $kendo-label-optional-font-size,
-    $kendo-label-optional-font-style: $kendo-label-optional-font-style,
-    $kendo-label-optional-font-weight: $kendo-label-optional-font-weight,
     $kendo-fieldset-margin: $kendo-fieldset-margin,
     $kendo-fieldset-legend-padding: $kendo-fieldset-legend-padding,
     $kendo-fieldset-legend-margin: $kendo-fieldset-legend-margin,

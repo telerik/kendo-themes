@@ -1,0 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/link/_theme.scss" as *;
+
+@mixin kendo-link--theme() {
+    @include kendo-link--theme-base();
+}

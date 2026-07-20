@@ -3,6 +3,7 @@
 @use "../utils/_index.scss" as *;
 @use "../toolbar/_index.scss" as *;
 @use "../action-buttons/_index.scss" as *;
+@use "../label/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -15,6 +16,7 @@
         @include core-styles();
         @include kendo-toolbar--styles();
         @include kendo-action-buttons--styles();
+        @include kendo-label--styles();
         @include kendo-form--layout();
         @include kendo-form--theme();
         @include kendo-utils--layout--display();

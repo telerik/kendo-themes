@@ -1,0 +1,15 @@
+@use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-label--theme-base() {
+
+    .k-label {
+        @include fill( $color: $kendo-label-text );
+
+        &.k-disabled {
+            @include fill( $color: $kendo-label-disabled-text );
+        }
+    }
+
+}

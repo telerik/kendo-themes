@@ -1,0 +1,35 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-link--layout-base() {
+
+    .k-link {
+        font-size: $kendo-link-font-size;
+        font-family: $kendo-link-font-family;
+        line-height: $kendo-link-line-height;
+        font-weight: $kendo-link-font-weight;
+        letter-spacing: $kendo-link-letter-spacing;
+        text-decoration: $kendo-link-text-decoration;
+        cursor: pointer;
+        outline: 0;
+
+        &:hover,
+        &.k-hover {
+            text-decoration: $kendo-link-hover-text-decoration;
+            outline: 0;
+        }
+
+        &:focus-visible,
+        &.k-focus {
+            outline: 1px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        &.k-disabled,
+        &:disabled {
+            cursor: default;
+            text-decoration: none;
+            pointer-events: none;
+        }
+    }
+
+}

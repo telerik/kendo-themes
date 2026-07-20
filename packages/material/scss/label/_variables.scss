@@ -1,0 +1,51 @@
+@use "../core/_index.scss" as *;
+
+/// The font size of the Label.
+/// @group label
+$kendo-label-font-size: var(--kendo-font-size) !default;
+/// The font family of the Label.
+/// @group label
+$kendo-label-font-family: var(--kendo-font-family) !default;
+/// The line height of the Label.
+/// @group label
+$kendo-label-line-height: var(--kendo-line-height) !default;
+/// The font weight of the Label.
+/// @group label
+$kendo-label-font-weight: var(--kendo-font-weight-normal) !default;
+/// The letter spacing of the Label.
+/// @group label
+$kendo-label-letter-spacing: null !default;
+
+/// The text color of the Label.
+/// @group label
+$kendo-label-text: k-color(subtle) !default;
+/// The disabled text color of the Label.
+/// @group label
+$kendo-label-disabled-text: k-color(on-app-surface) !default;
+
+/// The horizontal margin of the optional label indicator.
+/// @group label
+$kendo-label-optional-margin-x: k-spacing(1.5) !default;
+/// The font size of the optional label indicator.
+/// @group label
+$kendo-label-optional-font-size: var(--kendo-font-size-sm) !default;
+/// The font style of the optional label indicator.
+/// @group label
+$kendo-label-optional-font-style: normal !default;
+/// The font weight of the optional label indicator.
+/// @group label
+$kendo-label-optional-font-weight: null !default;
+
+@forward "@progress/kendo-theme-core/scss/components/label/_variables.scss" with (
+    $kendo-label-font-size: $kendo-label-font-size,
+    $kendo-label-font-family: $kendo-label-font-family,
+    $kendo-label-line-height: $kendo-label-line-height,
+    $kendo-label-font-weight: $kendo-label-font-weight,
+    $kendo-label-letter-spacing: $kendo-label-letter-spacing,
+    $kendo-label-text: $kendo-label-text,
+    $kendo-label-disabled-text: $kendo-label-disabled-text,
+    $kendo-label-optional-margin-x: $kendo-label-optional-margin-x,
+    $kendo-label-optional-font-size: $kendo-label-optional-font-size,
+    $kendo-label-optional-font-style: $kendo-label-optional-font-style,
+    $kendo-label-optional-font-weight: $kendo-label-optional-font-weight
+);
