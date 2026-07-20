@@ -25,9 +25,11 @@ The SegmentedControl is compliant with the [Web Content Accessibility Guidelines
 
 | Trigger | Behavior |
 | --- | --- |
-| `Tab` | Focuses the next button in the control. If the focus is on the last button, focuses the next focusable element on the page. |
-| `Shift + Tab` | Focuses the previous button in the control. If the focus is on the first button, focuses the previous focusable element before the Segmented Control. |
-| `Enter or Space` | Activates the focused button and selects it. |
+| `Tab` | Moves focus into the Segmented Control to the selected button. Pressing Tab again moves focus out of the control to the next focusable element on the page. |
+| `Shift + Tab` | Moves focus out of the Segmented Control to the previous focusable element on the page. |
+| `ArrowLeft` | Moves focus to the previous button. |
+| `ArrowRight` | Moves focus to the next button. |
+| `Enter or Space` | Selects the focused button. |
 
 #### UX Behavior
 
@@ -57,6 +59,7 @@ These CSS classes are applied to the `k-segmented-control-button` element.
 | `role="button"` | Each button must have the appropriate button role. |
 | `aria-pressed="true"` | Only the selected button within the group will have this attribute set to true. |
 | `aria-disabled="true"` | Indicates that the button is disabled and cannot be interacted with. |
+| `tabindex` | Roving tabindex: the selected button has tabindex="0"; all others have tabindex="-1". |
 
 #### UX Behavior
 
