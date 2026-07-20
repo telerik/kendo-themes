@@ -71,9 +71,11 @@ SegmentedControl.moduleName = SEGMENTED_CONTROL_MODULE_NAME;
 SegmentedControl.folderName = SEGMENTED_CONTROL_FOLDER_NAME;
 
 /**
- * @keyboard {Tab} Focuses the next button in the control. If the focus is on the last button, focuses the next focusable element on the page.
- * @keyboard {Shift + Tab} Focuses the previous button in the control. If the focus is on the first button, focuses the previous focusable element before the Segmented Control.
- * @keyboard {Enter or Space} Activates the focused button and selects it.
+ * @keyboard {Tab} Moves focus into the Segmented Control to the selected button. Pressing Tab again moves focus out of the control to the next focusable element on the page.
+ * @keyboard {Shift + Tab} Moves focus out of the Segmented Control to the previous focusable element on the page.
+ * @keyboard {ArrowLeft} Moves focus to the previous button.
+ * @keyboard {ArrowRight} Moves focus to the next button.
+ * @keyboard {Enter or Space} Selects the focused button.
  *
  * @see https://www.w3.org/TR/wai-aria-1.2/#button WAI-ARIA `button` Role Specification
  * @see https://www.w3.org/TR/wai-aria-1.2/#group WAI-ARIA `group` Role Specification
