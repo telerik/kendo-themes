@@ -122,6 +122,9 @@ export * from './context-menu/index';
 
 // Misc
 // export * from './adaptive/index''
+export * from './agent-response/index';
+export * from './citation/index';
+export * from './checkpoint/index';
 export * from './chat/index';
 export * from './mediaplayer/index';
 export * from './timeline/index';
