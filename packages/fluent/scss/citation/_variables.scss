@@ -1,0 +1,15 @@
+@use "../core/_index.scss" as *;
+
+// Citation
+
+/// The padding of the CitationPopover view.
+/// @group citation
+$kendo-citation-popover-view-padding: var( --kendo-citation-popover-view-padding, k-spacing(4) ) !default;
+/// The text color of the CitationPopover page indicator.
+/// @group citation
+$kendo-citation-pages-color: var( --kendo-citation-pages-color, k-color(subtle) ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/citation/_variables.scss" with (
+    $kendo-citation-popover-view-padding: $kendo-citation-popover-view-padding,
+    $kendo-citation-pages-color: $kendo-citation-pages-color
+);

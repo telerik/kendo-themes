@@ -1,0 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/checkpoint/_layout.scss" as *;
+
+@mixin kendo-checkpoint--layout() {
+    @include kendo-checkpoint--layout-base();
+}

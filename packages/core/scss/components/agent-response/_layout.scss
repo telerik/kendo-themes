@@ -1,0 +1,114 @@
+@use "../../spacing/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-agent-response--layout-base() {
+    // Agent Step
+    .k-agent-step {
+        .k-card {
+            box-shadow: none;
+        }
+    }
+
+    .k-agent-step-icon {
+        align-self: start;
+        margin-top: $kendo-agent-step-icon-margin-top;
+        aspect-ratio: 1;
+    }
+
+    // Typography — label, secondary/meta text, and diffstat all share the small font size.
+    .k-agent-step-label,
+    .k-agent-step-sep,
+    .k-agent-step-secondary,
+    .k-agent-step-time,
+    .k-agent-step-added,
+    .k-agent-step-removed {
+        font-size: $kendo-agent-step-font-size;
+    }
+
+    .k-agent-step-diffstat {
+        display: inline-flex;
+        gap: k-spacing(1);
+    }
+
+    // Head — a reset <button> housing the icon column and the content row.
+    .k-agent-step-head {
+        padding-inline: 0;
+        padding-block: $kendo-agent-step-padding-y;
+        display: flex;
+        align-items: center;
+        gap: $kendo-agent-step-gap;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        background: none;
+        font: inherit;
+        color: inherit;
+        text-align: inherit;
+        appearance: none;
+    }
+
+    .k-agent-step-content {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: $kendo-agent-step-gap;
+        min-width: 0;
+    }
+
+    .k-agent-completed > .k-agent-step-head .k-agent-step-label {
+        font-weight: var(--kendo-font-weight-medium);
+    }
+
+    // Body — expanded content indented under the head, with vertical spacing
+    // between stacked steps and a connector line linking them.
+    .k-agent-step-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: $kendo-agent-step-body-font-size;
+    }
+
+    .k-reasoning {
+    }
+
+    .k-tool-call .k-agent-step-body {
+        padding-inline-start: $kendo-tool-call-indent;
+        padding-block-end: $kendo-tool-call-padding-y;
+        gap: k-spacing(2);
+    }
+
+    .k-chain-of-thought {
+        .k-agent-step-body {
+            padding-block: k-spacing(2);
+            gap: k-spacing(1);
+        }
+    }
+
+    .k-thought {
+        display: flex;
+        gap: $kendo-thought-gap;
+
+        .k-agent-step-icon-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $kendo-thought-icon-col-gap;
+        }
+
+        .k-agent-step-body {
+            padding-block: 0;
+        }
+
+        &:not(:last-child) .k-agent-step-content {
+            margin-bottom: $kendo-thought-spacing;
+        }
+
+        &:has(+ .k-thought) .k-agent-step-icon-col::after {
+            content: "";
+            height: 100%;
+            width: 1px;
+            margin-inline: -1px;
+        }
+    }
+}
