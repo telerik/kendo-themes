@@ -63,7 +63,7 @@ $kendo-popover-header-border: $kendo-card-header-border !default;
 $kendo-popover-body-padding-x: $kendo-card-body-padding-x !default;
 /// The vertical padding of the Popover body.
 /// @group popover
-$kendo-popover-body-padding-y: k-spacing(2) !default;
+$kendo-popover-body-padding-y: k-spacing(2) k-spacing(4) !default;
 
 /// The border width of the Popover actions.
 /// @group popover
