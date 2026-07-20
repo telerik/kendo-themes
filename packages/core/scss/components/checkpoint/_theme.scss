@@ -1,0 +1,25 @@
+@use "../../color-system/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-checkpoint--theme-base() {
+    .k-checkpoint-stamp {
+        color: $kendo-checkpoint-stamp-color;
+    }
+
+    .k-checkpoint {
+        .k-checkpoint-line {
+            background-color: $kendo-checkpoint-line-color;
+            opacity: .35;
+
+            &:first-child {
+                background: linear-gradient(to right, transparent, $kendo-checkpoint-line-color);
+                opacity: 1;
+            }
+
+            &:last-child {
+                background: linear-gradient(to left, transparent, $kendo-checkpoint-line-color);
+                opacity: 1;
+            }
+        }
+    }
+}

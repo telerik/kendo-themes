@@ -109,6 +109,9 @@
 @forward "./file-box/_index.scss";
 @forward "./prompt-box/_index.scss";
 @forward "./chat/_index.scss";
+@forward "./agent-response/_index.scss";
+@forward "./citation/_index.scss";
+@forward "./checkpoint/_index.scss";
 @forward "./mediaplayer/_index.scss";
 @forward "./timeline/_index.scss";
 @forward "./pdf-viewer/_index.scss";
@@ -284,6 +287,9 @@
 // Misc
 @use "./file-box/_index.scss" as *;
 @use "./chat/_index.scss" as *;
+@use "./agent-response/_index.scss" as *;
+@use "./citation/_index.scss" as *;
+@use "./checkpoint/_index.scss" as *;
 @use "./mediaplayer/_index.scss" as *;
 @use "./timeline/_index.scss" as *;
 @use "./pdf-viewer/_index.scss" as *;
@@ -464,6 +470,9 @@
     // Misc
     @include kendo-file-box--styles();
     @include kendo-chat--styles();
+    @include kendo-agent-response--styles();
+    @include kendo-citation--styles();
+    @include kendo-checkpoint--styles();
     @include kendo-media-player--styles();
     @include kendo-timeline--styles();
     @include kendo-pdf-viewer--styles();

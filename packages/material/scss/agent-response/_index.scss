@@ -1,0 +1,16 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-agent-response--styles() {
+    @include import-once( "agent-response" ) {
+        @include core-styles();
+        @include kendo-agent-response--layout();
+        @include kendo-agent-response--theme();
+    }
+}

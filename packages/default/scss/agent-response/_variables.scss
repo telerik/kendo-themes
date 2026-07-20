@@ -1,0 +1,61 @@
+@use "../core/_index.scss" as *;
+
+// Agent Response
+
+/// The gap between the icon and the content of the AgentStep head and content row.
+/// @group agent-response
+$kendo-agent-step-gap: k-spacing(1.5) !default;
+/// The vertical padding of the AgentStep head.
+/// @group agent-response
+$kendo-agent-step-padding-y: k-spacing(2) !default;
+/// The top margin of the AgentStep icon.
+/// @group agent-response
+$kendo-agent-step-icon-margin-top: k-spacing(0.5) !default;
+/// The text color of the added lines count in the AgentStep diffstat.
+/// @group agent-response
+$kendo-agent-step-added-color: k-color(success-on-surface) !default;
+/// The text color of the removed lines count in the AgentStep diffstat.
+/// @group agent-response
+$kendo-agent-step-removed-color: k-color(error-on-surface) !default;
+/// The font size of the AgentStep label, secondary text, and diffstat.
+/// @group agent-response
+$kendo-agent-step-font-size: var(--kendo-font-size-sm) !default;
+/// The font size of the AgentStep body content.
+/// @group agent-response
+$kendo-agent-step-body-font-size: var(--kendo-font-size-sm) !default;
+
+/// The gap between the icon column and the content of the Thought.
+/// @group agent-response
+$kendo-thought-gap: k-spacing(1.5) !default;
+/// The gap in the icon column of the Thought.
+/// @group agent-response
+$kendo-thought-icon-col-gap: k-spacing(2) !default;
+/// The spacing between stacked Thought items.
+/// @group agent-response
+$kendo-thought-spacing: k-spacing(4) !default;
+/// The color of the connector line between stacked Thought items.
+/// @group agent-response
+$kendo-thought-connector-color: k-color(border) !default;
+
+/// The start indent of the ToolCall body.
+/// @group agent-response
+$kendo-tool-call-indent: k-spacing(5) !default;
+/// The bottom padding of the ToolCall body.
+/// @group agent-response
+$kendo-tool-call-padding-y: k-spacing(2) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/agent-response/_variables.scss" with (
+    $kendo-agent-step-gap: $kendo-agent-step-gap,
+    $kendo-agent-step-padding-y: $kendo-agent-step-padding-y,
+    $kendo-agent-step-icon-margin-top: $kendo-agent-step-icon-margin-top,
+    $kendo-agent-step-added-color: $kendo-agent-step-added-color,
+    $kendo-agent-step-removed-color: $kendo-agent-step-removed-color,
+    $kendo-agent-step-font-size: $kendo-agent-step-font-size,
+    $kendo-agent-step-body-font-size: $kendo-agent-step-body-font-size,
+    $kendo-thought-gap: $kendo-thought-gap,
+    $kendo-thought-icon-col-gap: $kendo-thought-icon-col-gap,
+    $kendo-thought-spacing: $kendo-thought-spacing,
+    $kendo-thought-connector-color: $kendo-thought-connector-color,
+    $kendo-tool-call-indent: $kendo-tool-call-indent,
+    $kendo-tool-call-padding-y: $kendo-tool-call-padding-y
+);

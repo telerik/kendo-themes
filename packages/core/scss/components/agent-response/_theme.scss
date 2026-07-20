@@ -1,0 +1,67 @@
+@use "../../color-system/index.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-agent-response--theme-base() {
+    .k-agent-step > .k-agent-step-head,
+    .k-thought {
+        .k-agent-step-icon,
+        .k-agent-step-label,
+        .k-agent-step-expand {
+            color: k-color("on-app-surface");
+        }
+
+        .k-agent-step-sep,
+        .k-agent-step-secondary,
+        .k-agent-step-time {
+            color: k-color("subtle");
+        }
+
+        .k-agent-step-added {
+            color: $kendo-agent-step-added-color;
+        }
+
+        .k-agent-step-removed {
+            color: $kendo-agent-step-removed-color;
+        }
+    }
+
+    .k-agent-completed > .k-agent-step-head,
+    .k-thought.k-thought-completed {
+        .k-agent-step-icon,
+        .k-agent-step-label,
+        .k-agent-step-expand {
+            color: k-color("subtle");
+        }
+    }
+
+    .k-agent-step > .k-agent-step-head:hover {
+        .k-agent-step-icon,
+        .k-agent-step-label,
+        .k-agent-step-expand,
+        .k-agent-step-sep,
+        .k-agent-step-secondary,
+        .k-agent-step-time {
+            color: k-color("on-app-surface");
+        }
+    }
+
+    .k-agent-step:not(.k-agent-completed) > .k-agent-step-head .k-agent-step-label,
+    .k-thought:not(.k-thought-completed) .k-agent-step-label {
+        @include text-shimmer();
+    }
+
+    .k-thought .k-agent-step-icon-col::after {
+        background: $kendo-thought-connector-color;
+    }
+
+    .k-reasoning {
+    }
+
+    .k-tool-call .k-agent-step-body {
+        color: k-color("subtle");
+    }
+
+    .k-chain-of-thought {
+    }
+}
