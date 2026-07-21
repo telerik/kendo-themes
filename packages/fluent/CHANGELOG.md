@@ -1,3 +1,13 @@
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.4.0-dev.2 (2026-07-20)
 
 ### 🚀 Features

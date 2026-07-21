@@ -1,3 +1,15 @@
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+- **html:** add llm primitives ([c3ccfc01dd](https://github.com/telerik/kendo-themes/commit/c3ccfc01dd))
+
+### 🩹 Fixes
+
+- **appbar:** add missing translucency blur in Meridian ([747ebad86c](https://github.com/telerik/kendo-themes/commit/747ebad86c))
+- **meridian:** correct popover dimensions ([3a2080db3f](https://github.com/telerik/kendo-themes/commit/3a2080db3f))
+
 ## 14.4.0-dev.2 (2026-07-20)
 
 ### 🚀 Features

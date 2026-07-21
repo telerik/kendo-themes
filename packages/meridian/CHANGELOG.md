@@ -1,3 +1,20 @@
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+
+### 🩹 Fixes
+
+- **meridian:** correct popover dimensions ([3a2080db3f](https://github.com/telerik/kendo-themes/commit/3a2080db3f))
+- **appbar:** add missing translucency blur in Meridian ([747ebad86c](https://github.com/telerik/kendo-themes/commit/747ebad86c))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+- zhpenkov
+
 ## 14.4.0-dev.2 (2026-07-20)
 
 ### 🚀 Features

@@ -1,3 +1,13 @@
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- **html:** add llm primitives ([c3ccfc01dd](https://github.com/telerik/kendo-themes/commit/c3ccfc01dd))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.4.0-dev.2 (2026-07-20)
 
 ### 🩹 Fixes
