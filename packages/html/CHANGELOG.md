@@ -1,3 +1,19 @@
+## 14.4.0 (2026-07-21)
+
+### 🚀 Features
+
+- **html:** add llm primitives ([c3ccfc01dd](https://github.com/telerik/kendo-themes/commit/c3ccfc01dd))
+- **list:** add accessibility spec ([b5f510e572](https://github.com/telerik/kendo-themes/commit/b5f510e572))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+- zhpenkov
+
 ## 14.4.0-dev.4 (2026-07-21)
 
 This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.

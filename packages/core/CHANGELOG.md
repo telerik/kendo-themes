@@ -1,3 +1,22 @@
+## 14.4.0 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+- **loader:** use transform-only keyframes for spinner-3 and spinner-4 ([cc40b8c18b](https://github.com/telerik/kendo-themes/commit/cc40b8c18b))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- zhpenkov
+
 ## 14.4.0-dev.4 (2026-07-21)
 
 ### 🚀 Features
