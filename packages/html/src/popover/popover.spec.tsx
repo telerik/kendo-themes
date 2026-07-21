@@ -13,7 +13,7 @@ const defaultOptions = {};
 
 export type KendoPopoverProps = {
     callout?: null | 'top' | 'bottom' | 'left' | 'right';
-    title?: string;
+    title?: React.ReactNode;
     body?: React.JSX.Element | React.JSX.Element[];
     id?: string;
 };
@@ -28,9 +28,9 @@ export type KendoPopoverProps = {
  * @ux {Dismiss} Closes when clicking outside the popover or pressing Escape.
  * @ux {Arrow} An optional pointer arrow visually connects the popover to its trigger.
  */
-export const Popover: KendoComponent<KendoPopoverProps & React.HTMLAttributes<HTMLDivElement>> = (
+export const Popover: KendoComponent<KendoPopoverProps & Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>> = (
     props: KendoPopoverProps &
-        React.HTMLAttributes<HTMLDivElement>
+        Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>
 ) => {
     const {
         callout,

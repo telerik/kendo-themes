@@ -1,0 +1,33 @@
+@use "../../spacing/index.scss" as *;
+@use "../../motion/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-citation--layout-base() {
+    .k-citation-popover {
+        .k-popover-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: var(--kendo-font-size-sm);
+        }
+
+        .k-popover-body:has(> .k-citation-popover-view) {
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+
+    .k-citation-popover-view {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        padding: $kendo-citation-popover-view-padding;
+        transition: transform k-transition(slide-in);
+        transform: translateX(calc(-100% * (var(--kendo-citation-popover-view-current, 1) - 1)));
+    }
+
+    :is([dir="rtl"], .k-rtl) .k-citation-popover-view {
+        transform: translateX(calc(100% * (var(--kendo-citation-popover-view-current, 1) - 1)));
+    }
+}

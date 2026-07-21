@@ -1,0 +1,10 @@
+@use "../../color-system/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-citation--theme-base() {
+    .k-citation-popover {
+        .k-citation-pages {
+            color: $kendo-citation-pages-color;
+        }
+    }
+}

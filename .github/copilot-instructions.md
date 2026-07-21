@@ -148,6 +148,10 @@ npm run clean                   # Full cleanup (includes node_modules)
 - Use the `manage-html-a11y` skill or `/accessibility` prompt for applying ARIA to components
 - Refer to `.github/prompts/accessibility.prompt.md` for patterns and rules
 
+### PR Descriptions for New/Updated Components
+
+- Refer to ${component-pr-description.prompt.md} to generate a GitHub-ready PR description (idea, rendering, HTML snippets, a11y summary, visual test reference table) for one or more components
+
 ### SCSS Standards
 
 - Use **dart-sass syntax** - avoid deprecated node-sass features

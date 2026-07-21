@@ -1,0 +1,21 @@
+// Shimmer
+
+@keyframes k-shimmer {
+    0% { background-position: 200% center; }
+    100% { background-position: -200% center; }
+}
+
+@mixin text-shimmer() {
+    background: linear-gradient(
+        90deg,
+        currentColor 20%,
+        color-mix(in srgb, currentColor 50%, transparent) 50%,
+        currentColor 80%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: k-shimmer 2s linear infinite;
+    display: inline-block;
+}

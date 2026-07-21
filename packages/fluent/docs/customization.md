@@ -844,6 +844,156 @@ The following table lists the available variables for customizing the Fluent the
 </tbody>
 </table>
 
+### AgentResponse
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-agent-step-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-gap, k-spacing(1.5) )</code></td>
+    <td><code>var(--kendo-agent-step-gap, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon and the content of the AgentStep head and content row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-padding-y, k-spacing(2) )</code></td>
+    <td><code>var(--kendo-agent-step-padding-y, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-icon-margin-top</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-icon-margin-top, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-agent-step-icon-margin-top, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the AgentStep icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-added-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-added-color, k-color(success-on-surface) )</code></td>
+    <td><code>var(--kendo-agent-step-added-color, var(--kendo-color-success-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the added lines count in the AgentStep diffstat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-removed-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-removed-color, k-color(error-on-surface) )</code></td>
+    <td><code>var(--kendo-agent-step-removed-color, var(--kendo-color-error-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the removed lines count in the AgentStep diffstat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-agent-step-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AgentStep label, secondary text, and diffstat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-body-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-body-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-agent-step-body-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AgentStep body content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-thought-gap, k-spacing(1.5) )</code></td>
+    <td><code>var(--kendo-thought-gap, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon column and the content of the Thought.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-icon-col-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-thought-icon-col-gap, k-spacing(2) )</code></td>
+    <td><code>var(--kendo-thought-icon-col-gap, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap in the icon column of the Thought.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-thought-spacing, k-spacing(4) )</code></td>
+    <td><code>var(--kendo-thought-spacing, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between stacked Thought items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-connector-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-thought-connector-color, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-thought-connector-color, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the connector line between stacked Thought items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tool-call-indent</td>
+    <td>String</td>
+    <td><code>var( --kendo-tool-call-indent, k-spacing(5) )</code></td>
+    <td><code>var(--kendo-tool-call-indent, var(--kendo-spacing-5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start indent of the ToolCall body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tool-call-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-tool-call-padding-y, k-spacing(2) )</code></td>
+    <td><code>var(--kendo-tool-call-padding-y, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the ToolCall body.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Appbar
 
 <table class="theme-variables">
@@ -7987,6 +8137,96 @@ The following table lists the available variables for customizing the Fluent the
 </tbody>
 </table>
 
+### Checkpoint
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-checkpoint-line-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-checkpoint-line-color, color-mix(in srgb, k-color(border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-checkpoint-line-color, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Checkpoint separator line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-checkpoint-gap, k-spacing(1.5) )</code></td>
+    <td><code>var(--kendo-checkpoint-gap, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the Checkpoint line and stamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-line-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-checkpoint-line-width, 1px )</code></td>
+    <td><code>var(--kendo-checkpoint-line-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Checkpoint separator line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-checkpoint-stamp-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-checkpoint-stamp-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Checkpoint stamp text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-checkpoint-stamp-color, k-color(subtle) )</code></td>
+    <td><code>var(--kendo-checkpoint-stamp-color, var(--kendo-color-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Checkpoint stamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-font-weight</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Checkpoint stamp text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-checkpoint-stamp-padding-x, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-checkpoint-stamp-padding-x, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Checkpoint stamp.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Chip
 
 <table class="theme-variables">
@@ -8485,6 +8725,46 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Chip.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Citation
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-citation-popover-view-padding</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-padding, k-spacing(4) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-padding, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the CitationPopover view.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-pages-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-pages-color, k-color(subtle) )</code></td>
+    <td><code>var(--kendo-citation-pages-color, var(--kendo-color-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the CitationPopover page indicator.</div></div>
     </td>
 </tr>
 </tbody>

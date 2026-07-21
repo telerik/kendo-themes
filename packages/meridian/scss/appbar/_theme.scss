@@ -7,6 +7,8 @@
     @include kendo-appbar--theme-base();
 
     .k-appbar {
+        backdrop-filter: k-translucency-blur(1);
+
         @each $name in $kendo-appbar-theme-colors {
             #{k-when-default($kendo-appbar-default-theme-color, $name)}
             &.k-appbar-#{$name} {
