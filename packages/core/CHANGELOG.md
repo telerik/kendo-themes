@@ -1,3 +1,13 @@
+## 14.4.0-dev.4 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.4.0-dev.3 (2026-07-21)
 
 ### 🚀 Features

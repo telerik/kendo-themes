@@ -1,3 +1,13 @@
+## 14.4.0-dev.4 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+
+### 🩹 Fixes
+
+- **meridian:** add missing accent icon color ([2de3fa0aba](https://github.com/telerik/kendo-themes/commit/2de3fa0aba))
+
 ## 14.4.0-dev.3 (2026-07-21)
 
 ### 🚀 Features

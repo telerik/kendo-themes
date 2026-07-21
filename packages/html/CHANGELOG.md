@@ -1,3 +1,7 @@
+## 14.4.0-dev.4 (2026-07-21)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
 ## 14.4.0-dev.3 (2026-07-21)
 
 ### 🚀 Features
