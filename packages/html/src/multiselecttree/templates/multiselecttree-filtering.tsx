@@ -2,6 +2,7 @@
 import { Checkbox } from "../../checkbox";
 import { Icon } from "../../icon";
 import { nextId } from "../../misc";
+import { NoData } from "../../nodata";
 import { Textbox } from "../../textbox";
 import { TreeviewGroup, TreeviewItem, Treeview } from "../../treeview";
 import MultiSelectTree from "../multiselecttree.spec";
@@ -49,6 +50,7 @@ export const MultiSelectTreeFiltering = (props) => {
                         </TreeviewGroup>
                     </TreeviewItem>
                 </Treeview>
+                <NoData className="k-sr-only" live>5 items found.</NoData>
             </>
         )}
         {...props}

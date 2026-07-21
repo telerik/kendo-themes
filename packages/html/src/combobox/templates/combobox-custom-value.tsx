@@ -7,7 +7,7 @@ export const ComboboxCustomValue = ({ value="Custom value", ...other }: any) => 
         id="combobox-cv"
         opened
         popup={
-            <List customValue={<ListCustomValue text={`Use "${value}"`}/>} >
+            <List screenReaders customValue={<ListCustomValue text={`Use "${value}"`}/>} >
                 <ListContent listboxId="combobox-cv-listbox" aria-label="Options">
                     <ListItem id={nextId('combobox-cv-item')}>List item</ListItem>
                     <ListItem id={nextId('combobox-cv-item')}>List item</ListItem>

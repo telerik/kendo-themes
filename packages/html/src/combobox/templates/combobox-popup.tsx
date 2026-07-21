@@ -13,7 +13,7 @@ export const ComboboxPopup = (props) => {
             opened
             activeDescendant={item1Id}
             popup={
-                <List>
+                <List screenReaders>
                     <ListContent listboxId="combobox-1-listbox" aria-label="Options">
                         <ListItem id={item0Id} selected>Selected item</ListItem>
                         <ListItem id={item1Id} focus>Focused item</ListItem>

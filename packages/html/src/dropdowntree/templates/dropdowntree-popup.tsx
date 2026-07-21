@@ -1,5 +1,6 @@
 import DropdownTree from "../dropdowntree.spec";
 import { nextId } from "../../misc";
+import { NoData } from "../../nodata";
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 
 export const DropdownTreePopup = (props) => {
@@ -28,6 +29,7 @@ export const DropdownTreePopup = (props) => {
                         </TreeviewGroup>
                     </TreeviewItem>
                 </Treeview>
+                <NoData className="k-sr-only" live>5 items found.</NoData>
             </>
         }
         {...props}

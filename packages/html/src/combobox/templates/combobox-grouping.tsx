@@ -12,7 +12,7 @@ export const ComboboxGrouping = (props) => {
             id={cbId}
             opened
             popup={
-                <List header="Group 1">
+                <List screenReaders header="Group 1">
                     <ListContent grouping listboxId={`${cbId}-listbox`} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>

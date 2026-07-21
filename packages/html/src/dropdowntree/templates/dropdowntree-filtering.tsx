@@ -2,6 +2,7 @@ import DropdownTree from "../dropdowntree.spec";
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 import { Icon } from "../../icon";
 import { nextId } from "../../misc";
+import { NoData } from "../../nodata";
 import { Textbox } from "../../textbox";
 
 export const DropdownTreeFiltering = (props) => {
@@ -40,6 +41,7 @@ export const DropdownTreeFiltering = (props) => {
                         </TreeviewGroup>
                     </TreeviewItem>
                 </Treeview>
+                <NoData className="k-sr-only" live>5 items found.</NoData>
             </>
         )}
         {...props}

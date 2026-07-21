@@ -13,7 +13,7 @@ export const AutocompleteGrouping = (props) => {
             aria-label="Search options"
             opened
             popup={
-                <List header="Group 1">
+                <List screenReaders header="Group 1">
                     <ListContent grouping listboxId={`${acId}-listbox`} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
