@@ -245,7 +245,7 @@ The base group is the theme's core neutral palette for interactive UI elements �
 
 ### Data visualization (series)
 
-Chart colors derive from a single `series` base that generates six evenly distributed hues, `series-a` through `series-f`. `series-a` equals the base; `series-b`–`series-f` are hue-rotated from it around the wheel. Override `--kendo-color-series` to re-hue the entire palette at once.
+Chart colors derive from a single `series` base that generates six evenly distributed hues, `series-a` through `series-f`. `series-a` equals the base; `series-b`–`series-f` are hue-rotated from it around the wheel. Override the `series` base color token to re-hue the entire palette at once.
 
 Each of the six hues produces five variants — encoded as `series.variant-tokens` in the YAML contract:
 
@@ -300,7 +300,7 @@ The type scale is intentionally compact — six steps from `font-size.xxs` to `f
 
 ## Layout
 
-Spacing follows a proportional scale with a **0.25rem base unit**. Every spacing token is a multiplier of this base, so changing `--kendo-spacing-base` rescales the entire system proportionally.
+Spacing follows a proportional scale with a **0.25rem base unit**. Every spacing token is a multiplier of this base, so changing the spacing base token rescales the entire system proportionally.
 
 ### Spacing
 
@@ -339,7 +339,7 @@ Each theme tunes its shadow color and opacity to its own elevation character. Le
 
 ## Roundness
 
-The border-radius system derives from a single **base value**. All radius tokens are computed as multipliers of this base, so adjusting `--kendo-border-radius-base` rescales every corner consistently.
+The border-radius system derives from a single **base value**. All radius tokens are computed as multipliers of this base, so adjusting the radius base token rescales every corner consistently.
 
 ### Scale
 
@@ -370,7 +370,7 @@ Motion is defined in two tiers, like typography. **Axes** (`durations`, `easings
 
 ### Durations
 
-All durations respect `--kendo-duration-global`. When set (or when `prefers-reduced-motion` is active), all tokens resolve to that value. Set it to `0.01ms` to disable all motion.
+All durations respect a global duration-override token. When set (or when `prefers-reduced-motion` is active), all tokens resolve to that value. Set it to `0.01ms` to disable all motion.
 
 | **Token** | **Use**                          |
 | --------- | -------------------------------- |
@@ -407,7 +407,7 @@ All durations respect `--kendo-duration-global`. When set (or when `prefers-redu
 
 ### Transition presets
 
-Presets are the **variant** layer of motion: each composes a `duration` axis token with an `easing` axis token, exactly as the theme resolves them (`var(--kendo-duration-*)` + `var(--kendo-easing-*)`). Reference a preset rather than a raw duration/easing pair so motion stays consistent. The animated CSS property (opacity, transform) is chosen by the consuming component — presets carry only timing.
+Presets are the **variant** layer of motion: each composes a `duration` axis token with an `easing` axis token, however the implementation resolves those tokens (CSS custom property, JSON design token, platform constant, etc.). Reference a preset rather than a raw duration/easing pair so motion stays consistent. The animated CSS property (opacity, transform) is chosen by the consuming component — presets carry only timing.
 
 | **Preset** | **Duration** | **Easing** | **Use**                            |
 | ---------- | ------------ | ---------- | ---------------------------------- |
@@ -450,7 +450,7 @@ The icon system separates **styling** (defined by the design system) from **cont
 
 ### Sizing
 
-All icon sizes derive from a single base (`base-px` = 16px, exposed as `--kendo-icon-size`), so changing the base rescales every icon proportionally. Each level in the `icons.sizing` map is a `scale` multiplier applied to that base.
+All icon sizes derive from a single base (`base-px` = 16px, exposed as an icon-size base token), so changing the base rescales every icon proportionally. Each level in the `icons.sizing` map is a `scale` multiplier applied to that base.
 
 | Level  | Scale | Default px | Notes                               |
 | ------ | ----- | ---------- | ----------------------------------- |
@@ -470,7 +470,7 @@ All icon sizes derive from a single base (`base-px` = 16px, exposed as `--kendo-
 ## Do's and don'ts
 
 - Do use the semantic color system — reference `primary`, `error`, and `surface` rather than hard-coding oklch values.
-- Do change one base token (for example `--kendo-color-primary`) to rebrand all components that reference it at once.
+- Do change one base token (for example `primary`) to rebrand all components that reference it at once.
 - Do maintain WCAG AA contrast ratios (4.5:1 for normal text, 3:1 for large text and UI elements).
 - Do use the spacing scale consistently — avoid arbitrary pixel values that break rhythm.
 - Do keep one border-radius family per view context.

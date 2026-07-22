@@ -240,7 +240,7 @@ Each semantic color generates a full variant set: `-subtle`, `-subtle-hover`, `-
 
 ### Data Visualization (Series)
 
-Chart colors derive from a single `series` base (`oklch(69.85% 0.1923 27.19deg)`) which generates six evenly-distributed hues (`series-a` through `series-f`). Each series produces five variants: base, bold, bolder, subtle, subtler. Override `--kendo-color-series` to re-hue the entire palette at once.
+Chart colors derive from a single `series` base (`oklch(69.85% 0.1923 27.19deg)`) which generates six evenly-distributed hues (`series-a` through `series-f`). Each series produces five variants: base, bold, bolder, subtle, subtler. Override the `series` base color token to re-hue the entire palette at once.
 
 ## Typography
 
@@ -281,7 +281,7 @@ For fine typographic control: `tightest` (-0.15px), `tighter` (-0.1px), `tight` 
 
 ## Layout
 
-Spacing follows a proportional scale with a **0.25rem (4px) base unit**. Every spacing token is a multiplier of this base, so changing `--kendo-spacing-base` rescales the entire system proportionally.
+Spacing follows a proportional scale with a **0.25rem (4px) base unit**. Every spacing token is a multiplier of this base, so changing the spacing base token rescales the entire system proportionally.
 
 ### Scale Design
 
@@ -320,7 +320,7 @@ Shadows use pure black (`rgb(0,0,0)`) at low opacity — neutral on any surface 
 
 ## Shapes
 
-The border-radius system derives from a single **base value of `0.25rem` (4px)**. All radius tokens are computed as multipliers of this base, so adjusting `--kendo-border-radius-base` rescales every corner consistently. The Default theme's 4px base gives it slightly crisper corners than Meridian's 6px base.
+The border-radius system derives from a single **base value of `0.25rem` (4px)**. All radius tokens are computed as multipliers of this base, so adjusting the radius base token rescales every corner consistently. The Default theme's 4px base gives it slightly crisper corners than Meridian's 6px base.
 
 ### Scale
 
@@ -348,7 +348,7 @@ Motion is functional — it clarifies transitions and maintains spatial awarenes
 
 ### Durations
 
-All durations respect `--kendo-duration-global`. When set (or when `prefers-reduced-motion` is active), all tokens resolve to that value — set it to `0.01ms` to disable all motion.
+All durations respect a global duration-override token. When set (or when `prefers-reduced-motion` is active), all tokens resolve to that value — set it to `0.01ms` to disable all motion.
 
 | Token | Duration | Use |
 |---|---|---|
@@ -430,7 +430,7 @@ The icon system separates **styling** (defined by the design system) from **cont
 | `xxl` | 200% | 32px |
 | `xxxl` | 300% | 48px |
 
-All sizes derive from a 16px base (`--kendo-icon-size`). Change the base to rescale every icon proportionally.
+All sizes derive from a 16px base icon-size token. Change the base to rescale every icon proportionally.
 
 ### Guidelines
 
@@ -441,7 +441,7 @@ All sizes derive from a 16px base (`--kendo-icon-size`). Change the base to resc
 ## Do's and Don'ts
 
 - Do use the semantic color system — reference `primary`, `error`, `surface` rather than hard-coding oklch values.
-- Do change one base token (e.g., `--kendo-color-primary`) to rebrand all components that reference it at once.
+- Do change one base token (e.g., `primary`) to rebrand all components that reference it at once.
 - Do maintain WCAG AA contrast ratios (4.5:1 for normal text, 3:1 for large text and UI elements).
 - Do use the spacing scale consistently — avoid arbitrary pixel values that break the rhythm.
 - Do keep one border-radius family per view context.
