@@ -261,6 +261,13 @@ Each of the six hues produces five variants — encoded as `series.variant-token
 
 That yields the full **6 × 5 = 30-color** chart palette, all reflowing from the one `series` base.
 
+### Guidelines
+
+- Keep the interface visually calm — prioritize neutral palettes and restrained saturation so content stays the focus.
+- Build a clear color hierarchy — use color to indicate priority: reserve primary for top actions, while surfaces and core content remain mostly neutral.
+- Use color to communicate meaning — apply semantic colors consistently (success, warning, error, info) so users learn and trust their meaning.
+- Respect color relationships — use the same ramp or semantic family for related states; mix unrelated hues only when intentionally signaling different meanings.
+
 ## Typography
 
 Typography is defined in two tiers. **Axes** (`font-family`, `font-size`, `font-weight`, `line-height`, `letter-spacing`) are the primitive scales every text style draws from. **Variants** (`typography.variants.*`) are the named, ready-to-use roles that compose those axes — this is the layer product UI should reference. Because each variant references axes by alias, adjusting one axis (for example `font-size.md`) reflows every variant that uses it.
@@ -300,6 +307,14 @@ The type scale is intentionally compact — six steps from `font-size.xxs` to `f
 | label-sm    | Compact labels, badges, chips       |
 | code        | Code, data, monospace content       |
 
+### Guidelines
+
+- Establish a clear hierarchy — differentiate headings, body text, labels, and captions through size, weight, and spacing.
+- Limit text styles — reuse a small set of styles to improve readability and maintain cohesion.
+- Use weight before size — adjust font weight for emphasis before adding more font sizes.
+- Apply styles by semantic role — use Heading, Body, Label, Caption, and Code as intended, not by appearance alone.
+- Don't rely on typography alone — pair type with icons, color, or layout to communicate status or meaning.
+
 ## Layout
 
 Spacing follows a proportional scale with a **0.25rem base unit**. Every spacing token is a multiplier of this base, so changing the spacing base token rescales the entire system proportionally.
@@ -325,6 +340,13 @@ The half-step tokens (0.5, 1.5, 2.5, etc.) exist for micro-adjustments where who
 
 Never use arbitrary pixel values. If `spacing-4` is too small and `spacing-8` is too large, use `spacing-6` — do not invent a value outside the scale.
 
+### Guidelines
+
+- Use a consistent spacing scale — define and reuse a limited set of spacing tokens to create rhythm and improve visual cohesion.
+- Use spacing to create hierarchy — increase spacing between unrelated groups and reduce spacing within related groups.
+- Maintain consistent padding — apply consistent internal padding within components to create predictable and balanced layouts.
+- Preserve alignment — align component, text, and icon edges consistently to improve visual order and readability.
+
 ## Elevation
 
 Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are reserved for elements that genuinely float above the page.
@@ -338,6 +360,12 @@ Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are 
 | 5         | Modals, dialogs                |
 
 Each theme tunes its shadow color and opacity to its own elevation character. Levels increase progressively in spread and softness to convey physical depth and reinforce hierarchy.
+
+### Guidelines
+
+- Tie elevation to interaction state — keep resting content flat, and raise overlays/modals to higher levels.
+- Reserve the highest elevation for blocking overlays — use top depth only for interruptive modals/dialogs.
+- Keep sibling floating elements at the same elevation — change levels only for clear parent-child relationships.
 
 ## Translucency
 

@@ -244,6 +244,13 @@ Each semantic color generates a full variant set: `-subtle`, `-subtle-hover`, `-
 
 Chart colors derive from a single `series` base (`oklch(69.85% 0.1923 27.19deg)`) which generates six evenly-distributed hues (`series-a` through `series-f`). Each series produces five variants: base, bold, bolder, subtle, subtler. Override the `series` base color token to re-hue the entire palette at once.
 
+### Guidelines
+
+- Keep the interface visually calm — prioritize neutral palettes and restrained saturation so content stays the focus.
+- Build a clear color hierarchy — use color to indicate priority: reserve primary for top actions, while surfaces and core content remain mostly neutral.
+- Use color to communicate meaning — apply semantic colors consistently (success, warning, error, info) so users learn and trust their meaning.
+- Respect color relationships — use the same ramp or semantic family for related states; mix unrelated hues only when intentionally signaling different meanings.
+
 ## Typography
 
 The Default theme uses the **system UI font stack** (`system-ui, -apple-system, "Segoe UI", Roboto, …`) rather than a bundled webfont — text renders in the platform's native typeface for fast, familiar reading. A monospace stack (SFMono-Regular, Menlo, Monaco, Consolas) is used for code, data, and technical content.
@@ -272,6 +279,14 @@ The type scale is intentionally compact, ranging from `0.75rem` (12px) to `1.25r
 | `label-md` | 0.75rem | 500 | 1.25 | Form labels, table headers, buttons |
 | `label-sm` | 0.625rem | 500 | 1.25 | Compact labels, badges, chips |
 | `code` | 0.875rem | 400 | 1.25 | Code, data, monospace content |
+
+### Guidelines
+
+- Establish a clear hierarchy — differentiate headings, body text, labels, and captions through size, weight, and spacing.
+- Limit text styles — reuse a small set of styles to improve readability and maintain cohesion.
+- Use weight before size — adjust font weight for emphasis before adding more font sizes.
+- Apply styles by semantic role — use Heading, Body, Label, Caption, and Code as intended, not by appearance alone.
+- Don't rely on typography alone — pair type with icons, color, or layout to communicate status or meaning.
 
 ### Weight Scale
 
@@ -306,6 +321,13 @@ The half-step tokens (0.5, 1.5, 2.5, etc.) exist for micro-adjustments where who
 
 Never use arbitrary pixel values. If `spacing-4` is too small and `spacing-8` is too large, use `spacing-6` — don't invent a value outside the scale.
 
+### Guidelines
+
+- Use a consistent spacing scale — define and reuse a limited set of spacing tokens to create rhythm and improve visual cohesion.
+- Use spacing to create hierarchy — increase spacing between unrelated groups and reduce spacing within related groups.
+- Maintain consistent padding — apply consistent internal padding within components to create predictable and balanced layouts.
+- Preserve alignment — align component, text, and icon edges consistently to improve visual order and readability.
+
 ## Elevation & Depth
 
 Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are used only where elements genuinely float above the page. The Default theme uses **neutral black shadows** across **5 elevation levels**:
@@ -319,6 +341,12 @@ Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are 
 | 5 | `0 14px 16px rgba(0,0,0,.24), 0 4px 16px rgba(0,0,0,.12)` | Modals, dialogs |
 
 Shadows use pure black (`rgb(0,0,0)`) at low opacity — neutral on any surface color. Each level increases blur, spread, and opacity for progressive depth. (Meridian, by contrast, uses a warm-cool gray shadow base with layered `-y` offsets; this is one of the clearest visual differences between the two themes.)
+
+### Guidelines
+
+- Tie elevation to interaction state — keep resting content flat, and raise overlays/modals to higher levels.
+- Reserve the highest elevation for blocking overlays — use top depth only for interruptive modals/dialogs.
+- Keep sibling floating elements at the same elevation — change levels only for clear parent-child relationships.
 
 ## Shapes
 
