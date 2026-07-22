@@ -165,9 +165,6 @@ motion:
     scale-out: { duration: quick, easing: accelerate }
     slide-in: { duration: speedy, easing: decelerate }
     slide-out: { duration: swift, easing: accelerate }
-  global:
-    duration-variable: --kendo-duration-global
-    reduced-motion-disable-value: 0.01ms
 icons:
   base-px: 16px
   sizing:
@@ -186,11 +183,9 @@ icons:
 
 Kendo Design System is a balanced, precise, and quietly confident design system for modern enterprise applications. It is optimized for data-rich interfaces, complex components, and multi-panel layouts, while still scaling to marketing pages.
 
-Its visual language combines cool-toned surfaces, clean geometry, generous whitespace, soft shadows, rounded corners, and a vibrant secondary accent. The result is an interface that feels modern, readable, and approachable.
+Its visual language combines tonal surfaces, clean geometry, generous whitespace, deliberate elevation, rounded corners, and a semantic accent system. The result is an interface that feels modern, readable, and approachable.
 
 Prioritize clarity, hierarchy, consistency, and accessibility. Use color to communicate state and function, not ornamentation.
-
-**Parsing note:** The YAML section above is the canonical token contract. The sections below provide usage guidance, rationale, and implementation notes.
 
 ## Colors
 
@@ -203,8 +198,8 @@ Colors are defined in OKLCH for perceptual uniformity. Semantic variants (hover,
 - `app-surface` — The root application background.
 - `surface` — A color used for surfaces, headers, canvases, and containers. A delicate tint distinguishes it from the page.
 - `surface-alt` — The alternative surface color, used inside components that already sit on a `surface` fill to create a secondary level of contrast.
-- `border` — Default border color. It is translucent to blend naturally with any interface surface.
-- `border-alt` — Stronger border variant, less translucent, for emphasis. Used for border color in hover state.
+- `border` — Default border color, tuned to blend naturally with any interface surface.
+- `border-alt` — Stronger border variant for emphasis. Used for border color in hover state.
 - `base` — Neutral fill for interactive UI elements that use theme color variants (secondary button, chip).
 - `subtle` — Muted text for placeholders, captions, and disabled labels.
 - `inverse` — Deep near-black for high-contrast inverted contexts. It is used for overlay-style UI surfaces (overlay background, tooltip).
@@ -228,7 +223,7 @@ The base group is the theme's core neutral palette for interactive UI elements �
 
 ### Data visualization (series)
 
-Chart colors derive from a single `series` base (identical to `secondary`) that generates six evenly distributed hues, `series-a` through `series-f`. `series-a` equals the base; `series-b`–`series-f` are hue-rotated from it around the wheel. Override `--kendo-color-series` to re-hue the entire palette at once.
+Chart colors derive from a single `series` base that generates six evenly distributed hues, `series-a` through `series-f`. `series-a` equals the base; `series-b`–`series-f` are hue-rotated from it around the wheel. Override `--kendo-color-series` to re-hue the entire palette at once.
 
 Each of the six hues produces five variants — encoded as `series.variant-tokens` in the YAML contract:
 
@@ -246,17 +241,17 @@ That yields the full **6 × 5 = 30-color** chart palette, all reflowing from the
 
 Typography is defined in two tiers. **Axes** (`font-family`, `font-size`, `font-weight`, `line-height`, `letter-spacing`) are the primitive scales every text style draws from. **Variants** (`typography.variants.*`) are the named, ready-to-use roles that compose those axes — this is the layer product UI should reference. Because each variant references axes by alias, adjusting one axis (for example `font-size.md`) reflows every variant that uses it.
 
-`body-md` is the primary body text style — a geometric sans-serif optimized for UI clarity at small sizes with a tall x-height and open apertures. `code` is used for code, data, and technical content.
+`body-md` is the primary body text style — a highly legible UI sans-serif optimized for clarity at small sizes. `code` is used for code, data, and technical content.
 
-The type scale is intentionally compact (`font-size.xs` 0.75rem to `font-size.xl` 1.25rem), suited for data-dense professional interfaces. Larger display sizes are left to the consumer's brand typography.
+The type scale is intentionally compact — five steps from `font-size.xs` to `font-size.xl` — suited for data-dense professional interfaces. Larger display sizes are left to the consumer's brand typography.
 
 ### Axes
 
 - **font-family** — `sans` for all UI text; `mono` for code and technical content.
-- **font-size** — `xs` `sm` `md` `lg` `xl` (0.75rem → 1.25rem).
+- **font-size** — `xs` `sm` `md` `lg` `xl`, a compact five-step scale.
 - **font-weight** — `regular` (400), `medium` (500), `semibold` (600).
-- **line-height** — `tight` (1.4286) for compact single-line text; `normal` (1.5) for reading text.
-- **letter-spacing** — fine tracking from `tightest` to `widest`; `normal` (0) by default.
+- **line-height** — `tight` for compact single-line text; `normal` for reading text.
+- **letter-spacing** — fine tracking from `tightest` to `widest`; `normal` tracking by default.
 
 ### Variant families
 
@@ -308,7 +303,7 @@ Never use arbitrary pixel values. If `spacing-4` is too small and `spacing-8` is
 
 ## Elevation
 
-Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are subtle and used only where elements genuinely float above the page.
+Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are reserved for elements that genuinely float above the page.
 
 | **Level** | **Use**                        |
 | --------- | ------------------------------ |
@@ -318,7 +313,7 @@ Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are 
 | 4         | Drawers, side panels           |
 | 5         | Modals, dialogs                |
 
-Shadows use a warm-cool gray base at very low opacity, keeping them neutral on any surface color. Each level adds progressive layers for physical depth without visual heaviness.
+Each theme tunes its shadow color and opacity to its own elevation character. Levels increase progressively in spread and softness to convey physical depth and reinforce hierarchy.
 
 ## Translucency
 
