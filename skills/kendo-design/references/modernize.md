@@ -11,7 +11,7 @@ You are refactoring existing UI code so it aligns with the Kendo Design System �
 1. **Detect the stack** — plain CSS, SCSS, CSS-in-JS, Tailwind, utility classes, framework component styles.
 2. **Migrate to Meridian (Phase 0)** — swap a non-Meridian Kendo theme to Meridian (conditional, mandatory when kendo-themes is present).
 3. **Build the Inventory (Phase 1)** — exhaustively enumerate every violation, project-wide, before editing anything. This is the completion contract for the whole pass.
-4. **Reconcile → DESIGN.md (Phase 2)** — scan the app's global customizations and write a reconciled `DESIGN.md` (identity persists verbatim, incidentals snap). Self-contained; does not call `init`.
+4. **Reconcile → DESIGN.md (Phase 2)** — scan the app's global customizations and write a reconciled `DESIGN.md` (identity persists verbatim, incidentals snap). Self-contained; build it inline here.
 5. **Propagate → theme (Phase 3)** — push the reconciled tokens into the theme (`$kendo-*` / `--kendo-*`) so components stop diverging from the app shell.
 6. **Capture "before" (Phase 12)** — screenshot every affected surface *before touching anything*, including elements that aren't visible on load (open the popups, dialogs, dropdowns, etc.).
 7. **Plan the migration** — group the remaining changes (Phases 4+) by category and risk level, first **classifying each design module** as systematic, one-off, or foreign (see Migration Strategy). Present the plan for confirmation before editing.
@@ -69,7 +69,7 @@ Every prior failure mode of this workflow traces back to the same root cause: an
 
 ## Phase 2: Reconcile → DESIGN.md (self-contained)
 
-Existing apps rarely ship a `DESIGN.md`, and their global customizations (a font set on `body`, a brand color in `:root`) are often applied to the app shell but **never to the Kendo theme** — so components visually diverge from the rest of the app. This phase builds `DESIGN.md` as the single source of truth by reconciling Meridian with what the project already does. It is inline and self-contained — do **not** call the `init` flow.
+Existing apps rarely ship a `DESIGN.md`, and their global customizations (a font set on `body`, a brand color in `:root`) are often applied to the app shell but **never to the Kendo theme** — so components visually diverge from the rest of the app. This phase builds `DESIGN.md` as the single source of truth by reconciling Meridian with what the project already does. Build it inline here — this is self-contained.
 
 1. **Scan app-level / design-system customizations:**
    - Global type: `body`/`html`/`:root` `font-family`, base `font-size`, `line-height`.
@@ -318,6 +318,6 @@ If any Inventory row is still `pending`, do not emit this summary — report pro
 
 ## Chaining
 
-- Suggest "Run `/kendo-design audit`" (or the `ds-audit` agent) to verify the migrated code.
+- Suggest a self-review of the migrated code against the design system — re-read the resolved spec and spot-check the changed surfaces for spacing, color, elevation, and typography compliance.
 - Suggest a dedicated accessibility pass (`/accessibility` or `npm run test:a11y`) — modernization preserves a11y but doesn't remediate it; that's a separate discipline.
-- If the audit reveals components that are beyond repair (< 30% compliance), suggest `/kendo-design generate` (or the `ds-generate` agent) to rebuild from scratch.
+- If any component proves beyond repair, rebuild it from scratch against the design system rather than patching it further.

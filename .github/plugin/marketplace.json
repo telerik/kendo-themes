@@ -1,7 +1,7 @@
 {
   "name": "kendo-themes",
   "metadata": {
-    "description": "Kendo UI Design System plugins — design tokens, agents, and skills for building data-rich professional interfaces",
+    "description": "Kendo UI Design System plugins — design tokens and skills for building data-rich professional interfaces",
     "version": "1.0.0"
   },
   "owner": {
@@ -12,7 +12,7 @@
     {
       "name": "kendo-design",
       "source": "plugins/kendo-design",
-      "description": "The Kendo Design System — provides design tokens, typography, spacing, color system, elevation, accessibility guardrails, two specialized agents (ds-audit, ds-generate), and an in-conversation modernization skill (`/kendo-design modernize`) that guide AI to generate consistent, accessible UI.",
+      "description": "The Kendo Design System — provides design tokens, typography, spacing, color system, elevation, and accessibility guardrails, plus an in-conversation modernization skill (`/kendo-design modernize`) that guides AI to generate consistent, accessible UI.",
       "version": "0.2.7",
       "author": {
         "name": "Progress Software",
