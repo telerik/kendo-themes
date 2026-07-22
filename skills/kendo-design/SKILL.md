@@ -36,8 +36,8 @@ The authoritative spec for a project is a **project-local `./DESIGN.md`** — no
 When the Setup check decides a copy is warranted, pick the source boilerplate:
 
 1. **Detect the project's theme** — check for an installed `@progress/kendo-theme-<name>` package, an imported swatch/CSS (e.g. `meridian-main.css`), or an explicit user choice.
-2. **Map to `themes/<theme>/DESIGN.md`.** Currently authored: **`meridian`** (the recommended default) and **`default`** (the original theme, now in maintenance mode).
-3. **Placeholders.** `bootstrap`, `material`, `fluent`, and `classic` are stubs with no token frontmatter yet. If the detected theme is a placeholder or can't be determined, use **`themes/meridian/DESIGN.md`** as the boilerplate — Meridian is the recommended default.
+2. **Map to `themes/<theme>/DESIGN.md`.** All themes are authored with real token frontmatter: **`meridian`** (the recommended theme for getting started), **`default`** , **`bootstrap`**, **`classic`**, **`material`**, and **`fluent`**.
+3.
 
 ## What it provides
 
