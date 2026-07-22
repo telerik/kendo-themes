@@ -105,5 +105,5 @@ Produce a markdown report with this structure:
 ## Chaining
 
 After producing the audit report, suggest:
-- "Run `/ds-modernize` to auto-fix these findings" (if fixable violations exist)
+- "Run `/kendo-design modernize` to auto-fix these findings" (if fixable violations exist)
 - "Run `/ds-generate` to rebuild this component from scratch" (if compliance is very low)

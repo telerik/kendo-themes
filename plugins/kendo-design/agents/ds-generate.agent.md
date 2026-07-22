@@ -120,4 +120,4 @@ Keep these values in mind to avoid lookups:
 ## Chaining
 
 - Suggest "Run `/ds-audit` to verify compliance" after generating complex output.
-- If the user has an existing component they want to rebuild, suggest `/ds-modernize` as a less destructive alternative.
+- If the user has an existing component they want to rebuild, suggest `/kendo-design modernize` as a less destructive alternative.

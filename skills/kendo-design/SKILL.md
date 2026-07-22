@@ -19,11 +19,11 @@ When invoked with an explicit subcommand, do only that flow:
 | --- | --- |
 | `init` | Set up the project — read `references/init.md` and follow it end to end. Generates a tailored `DESIGN.md` at the project root. |
 | `audit` | Review code for Kendo DS compliance — hand off to the **`ds-audit`** agent. |
-| `modernize` | Refactor code to align with the Kendo DS — hand off to the **`ds-modernize`** agent. |
+| `modernize` | Refactor code to align with the Kendo DS — read `references/modernize.md` and follow it end to end, **in this conversation** (do not delegate to a sub-agent). Migrates to the Meridian theme and snaps arbitrary values to tokens. |
 | `generate` | Build new UI from the Kendo DS — hand off to the **`ds-generate`** agent. |
 | _(none / unrecognized)_ | Treat the arguments as a target and apply the spec to it using [How to use](#how-to-use). |
 
-For `audit`/`modernize`/`generate`, delegate to the named agent (it carries the full persona and multi-turn workflow) rather than inlining the flow here. If agent delegation is unavailable, fall back to applying the spec directly per [How to use](#how-to-use).
+For `audit`/`generate`, delegate to the named agent (it carries the full persona and multi-turn workflow) rather than inlining the flow here. **`modernize` is the exception** — it must run inline, in the main conversation, not as a delegated sub-agent. Modernization is a long, exhaustive, whole-project sweep; a sub-agent running in an isolated context has no one to push back when it declares victory early, which is exactly the failure mode `references/modernize.md` is designed to prevent (its Inventory + Completeness Gate phases only work when the same context that starts the pass is the one that finishes it). If agent delegation is unavailable for `audit`/`generate`, fall back to applying the spec directly per [How to use](#how-to-use).
 
 ## Spec resolution (precedence)
 
