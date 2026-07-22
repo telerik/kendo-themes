@@ -52,11 +52,13 @@ color-derivatives:
       - "{series}-subtler"
 typography:
   font-family:
-    sans: Roboto, "Helvetica Neue", sans-serif
-    mono: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
-  font-size: { xs: 0.625rem, sm: 0.75rem, md: 0.875rem, lg: 1rem, xl: 1.25rem }
-  font-weight: { regular: 400, medium: 500, semibold: 600 }
-  line-height: { tight: 1.33, normal: 1.4286 }
+    sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans
+    serif: '"Times New Roman", Georgia, Garamond, Palatino, Baskerville'
+    sans-serif: Roboto, "Helvetica Neue", sans-serif
+    monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
+  font-size: { xxs: 0.5rem, xs: 0.625rem, sm: 0.75rem, md: 0.875rem, lg: 1rem, xl: 1.25rem }
+  font-weight: { thin: 100, extra-light: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700, extra-bold: 800, black: 900 }
+  line-height: { xs: 1, sm: 1.33, md: 1.4286, lg: 1.5 }
   letter-spacing:
     base: null
     tightest: -0.5px
@@ -67,17 +69,17 @@ typography:
     wider: 0.25px
     widest: 0.5px
   variants:
-    heading-xl: { family: sans, size: xl, weight: semibold, line-height: normal }
-    heading-lg: { family: sans, size: lg, weight: semibold, line-height: normal }
-    heading-md: { family: sans, size: md, weight: semibold, line-height: normal }
-    heading-sm: { family: sans, size: sm, weight: semibold, line-height: tight }
-    body-md: { family: sans, size: md, weight: regular, line-height: normal }
-    body-sm: { family: sans, size: sm, weight: regular, line-height: tight }
-    body-xs: { family: sans, size: xs, weight: regular, line-height: tight }
-    label-lg: { family: sans, size: md, weight: medium, line-height: normal }
-    label-md: { family: sans, size: sm, weight: medium, line-height: tight }
-    label-sm: { family: sans, size: xs, weight: medium, line-height: tight }
-    code: { family: mono, size: md, weight: regular, line-height: tight }
+    heading-xl: { family: sans-serif, size: xl, weight: semibold, line-height: md }
+    heading-lg: { family: sans-serif, size: lg, weight: semibold, line-height: md }
+    heading-md: { family: sans-serif, size: md, weight: semibold, line-height: md }
+    heading-sm: { family: sans-serif, size: sm, weight: semibold, line-height: sm }
+    body-md: { family: sans-serif, size: md, weight: normal, line-height: md }
+    body-sm: { family: sans-serif, size: sm, weight: normal, line-height: sm }
+    body-xs: { family: sans-serif, size: xs, weight: normal, line-height: sm }
+    label-lg: { family: sans-serif, size: md, weight: medium, line-height: md }
+    label-md: { family: sans-serif, size: sm, weight: medium, line-height: sm }
+    label-sm: { family: sans-serif, size: xs, weight: medium, line-height: sm }
+    code: { family: monospace, size: md, weight: normal, line-height: sm }
 rounded:
   none: 0px
   xs: 0.0625rem
@@ -87,7 +89,7 @@ rounded:
   xl: 0.75rem
   xxl: 1rem
   xxxl: 1.25rem
-  full: 9999px
+  full: calc(0.25rem * 9999)
 spacing:
   base: 0.25rem
   0: 0px
@@ -141,8 +143,14 @@ motion:
     speedy: 300ms
     brisk: 350ms
     prompt: 400ms
+    timely: 450ms
     moderate: 500ms
+    measured: 550ms
+    steady: 600ms
+    leisurely: 700ms
     slow: 800ms
+    languid: 900ms
+    sluggish: 1000ms
   easings:
     linear: cubic-bezier(0, 0, 1, 1)
     accelerate: cubic-bezier(0.42, 0, 1, 1)
@@ -153,18 +161,32 @@ motion:
     elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5)
     stretchy: cubic-bezier(0.07, 1.81, 0.3, 0.81)
   transitions:
-    enter: { duration: speedy, easing: decelerate }
-    exit: { duration: rapid, easing: accelerate }
+    instant: { duration: instant, easing: linear }
     rapid: { duration: quick, easing: decelerate }
     snappy: { duration: swift, easing: decelerate }
+    energetic: { duration: swift, easing: elastic }
     bouncy: { duration: speedy, easing: bounce }
     subtle: { duration: brisk, easing: standard }
-    fade-in: { duration: swift, easing: standard }
-    fade-out: { duration: rapid, easing: standard }
-    scale-in: { duration: rapid, easing: decelerate }
+    gentle: { duration: prompt, easing: accelerate }
+    enter: { duration: speedy, easing: decelerate }
+    exit: { duration: rapid, easing: accelerate }
+    settle: { duration: brisk, easing: decelerate }
     scale-out: { duration: quick, easing: accelerate }
-    slide-in: { duration: speedy, easing: decelerate }
+    scale-in: { duration: rapid, easing: decelerate }
+    fade-out: { duration: rapid, easing: standard }
+    fade-in: { duration: swift, easing: standard }
     slide-out: { duration: swift, easing: accelerate }
+    slide-in: { duration: speedy, easing: decelerate }
+    emphasis: { duration: quick, easing: sharp }
+    collapse: { duration: speedy, easing: accelerate }
+    expand: { duration: prompt, easing: standard }
+    shrink: { duration: brisk, easing: accelerate }
+    grow: { duration: prompt, easing: standard }
+    pulse: { duration: brisk, easing: standard }
+    smooth: { duration: moderate, easing: standard }
+    flip: { duration: measured, easing: standard }
+    fluid: { duration: steady, easing: standard }
+    deliberate: { duration: slow, easing: standard }
 icons:
   base-px: 16px
   sizing:
@@ -243,14 +265,14 @@ Typography is defined in two tiers. **Axes** (`font-family`, `font-size`, `font-
 
 `body-md` is the primary body text style — a highly legible UI sans-serif optimized for clarity at small sizes. `code` is used for code, data, and technical content.
 
-The type scale is intentionally compact — five steps from `font-size.xs` to `font-size.xl` — suited for data-dense professional interfaces. Larger display sizes are left to the consumer's brand typography.
+The type scale is intentionally compact — six steps from `font-size.xxs` to `font-size.xl` — suited for data-dense professional interfaces. Larger display sizes are left to the consumer's brand typography.
 
 ### Axes
 
-- **font-family** — `sans` for all UI text; `mono` for code and technical content.
-- **font-size** — `xs` `sm` `md` `lg` `xl`, a compact five-step scale.
-- **font-weight** — `regular` (400), `medium` (500), `semibold` (600).
-- **line-height** — `tight` for compact single-line text; `normal` for reading text.
+- **font-family** — `sans-serif` (Roboto) is the base family for all UI text; `monospace` for code and technical content. `sans` and `serif` alternatives are also available.
+- **font-size** — `xxs` `xs` `sm` `md` `lg` `xl`, a compact six-step scale.
+- **font-weight** — full nine-step scale from `thin` (100) through `normal` (400), `medium` (500), `semibold` (600), to `black` (900).
+- **line-height** — `xs` (1) for single-line text, `sm` (1.33) and `md` (1.4286) for reading text, `lg` (1.5) for roomy text.
 - **letter-spacing** — fine tracking from `tightest` to `widest`; `normal` tracking by default.
 
 ### Variant families
@@ -361,8 +383,14 @@ All durations respect `--kendo-duration-global`. When set (or when `prefers-redu
 | speedy    | Drawer open, card expand         |
 | brisk     | Complex reveals                  |
 | prompt    | Overlay transitions              |
+| timely    | Deliberate overlay reveals       |
 | moderate  | Full-screen transitions          |
+| measured  | Large layout shifts              |
+| steady    | Sustained layout motion          |
+| leisurely | Long, relaxed transitions        |
 | slow      | Background animations            |
+| languid   | Very slow ambient motion         |
+| sluggish  | Longest, most deliberate motion  |
 
 ### Easings
 
@@ -383,18 +411,32 @@ Presets are the **variant** layer of motion: each composes a `duration` axis tok
 
 | **Preset** | **Duration** | **Easing** | **Use**                            |
 | ---------- | ------------ | ---------- | ---------------------------------- |
-| enter      | speedy       | decelerate | Elements appearing                 |
-| exit       | rapid        | accelerate | Elements leaving                   |
+| instant    | instant      | linear     | Immediate, no perceptible motion   |
 | rapid      | quick        | decelerate | Hover, focus changes               |
 | snappy     | swift        | decelerate | Toggles, selections                |
+| energetic  | swift        | elastic    | Spring-like emphasis               |
 | bouncy     | speedy       | bounce     | Attention, success (use sparingly) |
 | subtle     | brisk        | standard   | Slow reveals                       |
-| fade-in    | swift        | standard   | Opacity in                         |
-| fade-out   | rapid        | standard   | Opacity out                        |
-| scale-in   | rapid        | decelerate | Size in (transform)                |
+| gentle     | prompt       | accelerate | Soft, unhurried exits              |
+| enter      | speedy       | decelerate | Elements appearing                 |
+| exit       | rapid        | accelerate | Elements leaving                   |
+| settle     | brisk        | decelerate | Elements coming to rest            |
 | scale-out  | quick        | accelerate | Size out (transform)               |
-| slide-in   | speedy       | decelerate | Positional in (transform)          |
+| scale-in   | rapid        | decelerate | Size in (transform)                |
+| fade-out   | rapid        | standard   | Opacity out                        |
+| fade-in    | swift        | standard   | Opacity in                         |
 | slide-out  | swift        | accelerate | Positional out (transform)         |
+| slide-in   | speedy       | decelerate | Positional in (transform)          |
+| emphasis   | quick        | sharp      | Snappy attention cues              |
+| collapse   | speedy       | accelerate | Collapsing regions                 |
+| expand     | prompt       | standard   | Expanding regions                  |
+| shrink     | brisk        | accelerate | Shrinking elements                 |
+| grow       | prompt       | standard   | Growing elements                   |
+| pulse      | brisk        | standard   | Repeating attention pulse          |
+| smooth     | moderate     | standard   | Smooth, sustained transitions      |
+| flip       | measured     | standard   | Flip/rotate transforms             |
+| fluid      | steady       | standard   | Long, fluid motion                 |
+| deliberate | slow         | standard   | Slowest, most deliberate motion    |
 
 ### Guidelines
 

@@ -21,62 +21,65 @@ colors:
   error: "oklch(61.07% 0.2435 30.2deg)"
   inverse: "oklch(36% 0 0deg)"
   series: "oklch(69.85% 0.1923 27.19deg)"
+color-derivatives:
+  semantic-families:
+    - base
+    - primary
+    - secondary
+    - tertiary
+    - info
+    - success
+    - warning
+    - error
+  derived-tokens:
+    - "{family}-subtle"
+    - "{family}-subtle-hover"
+    - "{family}-subtle-active"
+    - "{family}-hover"
+    - "{family}-active"
+    - "{family}-emphasis"
+    - "{family}-on-subtle"
+    - "on-{family}"
+    - "{family}-on-surface"
+  series:
+    base: series
+    hues: [series-a, series-b, series-c, series-d, series-e, series-f]
+    variant-tokens:
+      - "{series}"
+      - "{series}-bold"
+      - "{series}-bolder"
+      - "{series}-subtle"
+      - "{series}-subtler"
 typography:
-  body-md:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 1rem
-    fontWeight: 400
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 0.875rem
-    fontWeight: 400
-    lineHeight: 1.4286
-  body-xs:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 0.75rem
-    fontWeight: 400
-    lineHeight: 1.4286
-  heading-xl:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 1.25rem
-    fontWeight: 600
-    lineHeight: 1.5
-  heading-lg:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 1.125rem
-    fontWeight: 600
-    lineHeight: 1.5
-  heading-md:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 1rem
-    fontWeight: 600
-    lineHeight: 1.5
-  heading-sm:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 0.875rem
-    fontWeight: 600
-    lineHeight: 1.4286
-  label-lg:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 1rem
-    fontWeight: 500
-    lineHeight: 1.5
-  label-md:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 0.875rem
-    fontWeight: 500
-    lineHeight: 1.4286
-  label-sm:
-    fontFamily: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif
-    fontSize: 0.75rem
-    fontWeight: 500
-    lineHeight: 1.4286
-  code:
-    fontFamily: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace
-    fontSize: 0.875rem
-    fontWeight: 400
-    lineHeight: 1.4286
+  font-family:
+    sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans
+    serif: '"Times New Roman", Georgia, Garamond, Palatino, Baskerville'
+    sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace
+  font-size: { xxs: 0.5rem, xs: 0.625rem, sm: 0.75rem, md: 0.875rem, lg: 1rem, xl: 1.25rem }
+  font-weight: { thin: 100, extra-light: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700, extra-bold: 800, black: 900 }
+  line-height: { xs: 1, sm: 1.25, md: 1.4286, lg: 1.5 }
+  letter-spacing:
+    base: null
+    tightest: -0.15px
+    tighter: -0.10px
+    tight: -0.5px
+    normal: 0px
+    wide: 0.5px
+    wider: 0.10px
+    widest: 0.15px
+  variants:
+    heading-xl: { family: sans-serif, size: xl, weight: semibold, line-height: md }
+    heading-lg: { family: sans-serif, size: lg, weight: semibold, line-height: md }
+    heading-md: { family: sans-serif, size: md, weight: semibold, line-height: md }
+    heading-sm: { family: sans-serif, size: sm, weight: semibold, line-height: sm }
+    body-md: { family: sans-serif, size: md, weight: normal, line-height: md }
+    body-sm: { family: sans-serif, size: sm, weight: normal, line-height: sm }
+    body-xs: { family: sans-serif, size: xs, weight: normal, line-height: sm }
+    label-lg: { family: sans-serif, size: md, weight: medium, line-height: md }
+    label-md: { family: sans-serif, size: sm, weight: medium, line-height: sm }
+    label-sm: { family: sans-serif, size: xs, weight: medium, line-height: sm }
+    code: { family: monospace, size: md, weight: normal, line-height: sm }
 rounded:
   none: 0px
   xs: 0.0625rem
@@ -86,7 +89,7 @@ rounded:
   xl: 0.5rem
   xxl: 0.75rem
   xxxl: 1rem
-  full: 9999px
+  full: calc(0.25rem * 9999)
 spacing:
   base: 0.25rem
   0: 0px
@@ -123,6 +126,77 @@ spacing:
   22: 5.5rem
   23: 5.75rem
   24: 6rem
+elevation:
+  1: "0 2px 3px rgba(0,0,0,.04)"
+  2: "0 4px 6px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.12)"
+  3: "0 6px 8px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.12)"
+  4: "0 8px 10px rgba(0,0,0,.12), 0 4px 16px rgba(0,0,0,.12)"
+  5: "0 14px 16px rgba(0,0,0,.24), 0 4px 16px rgba(0,0,0,.12)"
+motion:
+  durations:
+    instant: 0ms
+    immediate: 50ms
+    brief: 100ms
+    quick: 150ms
+    rapid: 200ms
+    swift: 250ms
+    speedy: 300ms
+    brisk: 350ms
+    prompt: 400ms
+    timely: 450ms
+    moderate: 500ms
+    measured: 550ms
+    steady: 600ms
+    leisurely: 700ms
+    slow: 800ms
+    languid: 900ms
+    sluggish: 1000ms
+  easings:
+    linear: cubic-bezier(0, 0, 1, 1)
+    accelerate: cubic-bezier(0.42, 0, 1, 1)
+    decelerate: cubic-bezier(0, 0, 0.58, 1)
+    standard: cubic-bezier(0.42, 0, 0.58, 1)
+    sharp: cubic-bezier(0.75, 0, 0.25, 1)
+    bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5)
+    stretchy: cubic-bezier(0.07, 1.81, 0.3, 0.81)
+  transitions:
+    instant: { duration: instant, easing: linear }
+    rapid: { duration: quick, easing: decelerate }
+    snappy: { duration: swift, easing: decelerate }
+    energetic: { duration: swift, easing: elastic }
+    bouncy: { duration: speedy, easing: bounce }
+    subtle: { duration: brisk, easing: standard }
+    gentle: { duration: prompt, easing: accelerate }
+    enter: { duration: speedy, easing: decelerate }
+    exit: { duration: rapid, easing: accelerate }
+    settle: { duration: brisk, easing: decelerate }
+    scale-out: { duration: quick, easing: accelerate }
+    scale-in: { duration: rapid, easing: decelerate }
+    fade-out: { duration: rapid, easing: standard }
+    fade-in: { duration: swift, easing: standard }
+    slide-out: { duration: swift, easing: accelerate }
+    slide-in: { duration: speedy, easing: decelerate }
+    emphasis: { duration: quick, easing: sharp }
+    collapse: { duration: speedy, easing: accelerate }
+    expand: { duration: prompt, easing: standard }
+    shrink: { duration: brisk, easing: accelerate }
+    grow: { duration: prompt, easing: standard }
+    pulse: { duration: brisk, easing: standard }
+    smooth: { duration: moderate, easing: standard }
+    flip: { duration: measured, easing: standard }
+    fluid: { duration: steady, easing: standard }
+    deliberate: { duration: slow, easing: standard }
+icons:
+  base-px: 16px
+  sizing:
+    xs: { scale: 75%, default-px: 12px }
+    sm: { scale: 87.5%, default-px: 14px }
+    md: { scale: 100%, default-px: 16px, default: true }
+    lg: { scale: 125%, default-px: 20px }
+    xl: { scale: 150%, default-px: 24px }
+    xxl: { scale: 200%, default-px: 32px }
+    xxxl: { scale: 300%, default-px: 48px }
 ---
 
 # Kendo Design System — Default Theme
@@ -177,7 +251,7 @@ The type scale is intentionally compact, ranging from `0.75rem` (12px) to `1.25r
 ### Scale Logic
 
 - **Headings** (`heading-sm` through `heading-xl`) — Semi-bold (600) for structural hierarchy. Used for section titles, card headers, and navigation landmarks.
-- **Body** (`body-xs` through `body-md`) — Regular weight (400) with generous line-height (1.4286–1.5). The default reading text.
+- **Body** (`body-xs` through `body-md`) — Regular weight (400) with comfortable line-height (1.25–1.4286). The default reading text. Body text sits at the `0.875rem` (14px) base — the classic Kendo Default reading size.
 - **Labels** (`label-sm` through `label-lg`) — Medium weight (500) for single-line scannable text: form labels, table headers, button text, and metadata.
 - **Code** — Monospace at `0.875rem` for inline code, data cells, and technical identifiers.
 
@@ -185,21 +259,21 @@ The type scale is intentionally compact, ranging from `0.75rem` (12px) to `1.25r
 
 | Token | Size | Weight | Line-Height | Use |
 |---|---|---|---|---|
-| `heading-xl` | 1.25rem | 600 | 1.5 | Page titles |
-| `heading-lg` | 1.125rem | 600 | 1.5 | Section headings |
-| `heading-md` | 1rem | 600 | 1.5 | Card/panel titles |
-| `heading-sm` | 0.875rem | 600 | 1.4286 | Sub-headings, group labels |
-| `body-md` | 1rem | 400 | 1.5 | Primary body text |
-| `body-sm` | 0.875rem | 400 | 1.4286 | Secondary body text, descriptions |
-| `body-xs` | 0.75rem | 400 | 1.4286 | Captions, footnotes |
-| `label-lg` | 1rem | 500 | 1.5 | Prominent labels, navigation |
-| `label-md` | 0.875rem | 500 | 1.4286 | Form labels, table headers, buttons |
-| `label-sm` | 0.75rem | 500 | 1.4286 | Compact labels, badges, chips |
-| `code` | 0.875rem | 400 | 1.4286 | Code, data, monospace content |
+| `heading-xl` | 1.25rem | 600 | 1.4286 | Page titles |
+| `heading-lg` | 1rem | 600 | 1.4286 | Section headings |
+| `heading-md` | 0.875rem | 600 | 1.4286 | Card/panel titles |
+| `heading-sm` | 0.75rem | 600 | 1.25 | Sub-headings, group labels |
+| `body-md` | 0.875rem | 400 | 1.4286 | Primary body text |
+| `body-sm` | 0.75rem | 400 | 1.25 | Secondary body text, descriptions |
+| `body-xs` | 0.625rem | 400 | 1.25 | Captions, footnotes |
+| `label-lg` | 0.875rem | 500 | 1.4286 | Prominent labels, navigation |
+| `label-md` | 0.75rem | 500 | 1.25 | Form labels, table headers, buttons |
+| `label-sm` | 0.625rem | 500 | 1.25 | Compact labels, badges, chips |
+| `code` | 0.875rem | 400 | 1.25 | Code, data, monospace content |
 
 ### Weight Scale
 
-The full weight spectrum is available via CSS variables: thin (100), extra-light (200), light (300), normal (400), medium (500), semi-bold (600), bold (700), extra-bold (800), black (900).
+The full weight spectrum is available via CSS variables: thin (100), extra-light (200), light (300), normal (400), medium (500), semibold (600), bold (700), extra-bold (800), black (900).
 
 ### Letter Spacing
 
@@ -260,7 +334,7 @@ The border-radius system derives from a single **base value of `0.25rem` (4px)**
 | `xl` | 0.5rem (8px) | Modal containers, large cards |
 | `xxl` | 0.75rem (12px) | Feature panels, hero sections |
 | `xxxl` | 1rem (16px) | Full-bleed sections |
-| `full` | 9999px | Pills, avatars, circular elements |
+| `full` | calc(0.25rem * 9999) | Pills, avatars, circular elements |
 
 ### Guidelines
 
@@ -287,8 +361,14 @@ All durations respect `--kendo-duration-global`. When set (or when `prefers-redu
 | `speedy` | 300ms | Drawer open, card expand |
 | `brisk` | 350ms | Complex reveals |
 | `prompt` | 400ms | Overlay transitions |
+| `timely` | 450ms | Coordinated multi-element reveals |
 | `moderate` | 500ms | Full-screen transitions |
+| `measured` | 550ms | Deliberate, staged transitions |
+| `steady` | 600ms | Longer panel/page movements |
+| `leisurely` | 700ms | Relaxed, unhurried motion |
 | `slow` | 800ms | Background animations |
+| `languid` | 900ms | Ambient, decorative motion |
+| `sluggish` | 1000ms | Longest ambient loops (use rarely) |
 
 ### Easings
 
@@ -305,17 +385,34 @@ All durations respect `--kendo-duration-global`. When set (or when `prefers-redu
 
 ### Transition Presets
 
-Composite tokens combining duration + easing for common patterns:
+Composite tokens combining a duration + easing for common patterns. Presets are grouped by intent — **fast** (speed & responsiveness), **expressive** (personality), **calm** (subtle & natural), **visibility** (appear/disappear), and **size** (scale changes):
 
-- **`enter`** — 300ms decelerate (elements appearing)
-- **`exit`** — 200ms accelerate (elements leaving)
-- **`rapid`** — 150ms decelerate (hover, focus changes)
-- **`snappy`** — 250ms decelerate (toggles, selections)
-- **`bouncy`** — 300ms bounce (attention, success)
-- **`subtle`** — 350ms standard (slow reveals)
-- **`fade-in`** / **`fade-out`** — opacity transitions
-- **`scale-in`** / **`scale-out`** — size transforms
-- **`slide-in`** / **`slide-out`** — positional transforms
+- **`instant`** — instant (0ms) linear (immediate, no perceptible motion)
+- **`rapid`** — quick (150ms) decelerate (hover, focus changes)
+- **`snappy`** — swift (250ms) decelerate (toggles, selections)
+- **`energetic`** — swift (250ms) elastic (springy micro-interactions)
+- **`bouncy`** — speedy (300ms) bounce (attention, success)
+- **`subtle`** — brisk (350ms) standard (slow reveals)
+- **`gentle`** — prompt (400ms) accelerate (soft dismissals)
+- **`enter`** — speedy (300ms) decelerate (elements appearing)
+- **`exit`** — rapid (200ms) accelerate (elements leaving)
+- **`settle`** — brisk (350ms) decelerate (elements coming to rest)
+- **`scale-out`** — quick (150ms) accelerate (shrink away)
+- **`scale-in`** — rapid (200ms) decelerate (grow into view)
+- **`fade-out`** — rapid (200ms) standard (opacity out)
+- **`fade-in`** — swift (250ms) standard (opacity in)
+- **`slide-out`** — swift (250ms) accelerate (positional exit)
+- **`slide-in`** — speedy (300ms) decelerate (positional entry)
+- **`emphasis`** — quick (150ms) sharp (snappy state emphasis)
+- **`collapse`** — speedy (300ms) accelerate (expanders closing)
+- **`expand`** — prompt (400ms) standard (expanders opening)
+- **`shrink`** — brisk (350ms) accelerate (size reduction)
+- **`grow`** — prompt (400ms) standard (size increase)
+- **`pulse`** — brisk (350ms) standard (rhythmic attention)
+- **`smooth`** — moderate (500ms) standard (long, even transitions)
+- **`flip`** — measured (550ms) standard (card/tile flips)
+- **`fluid`** — steady (600ms) standard (continuous, flowing motion)
+- **`deliberate`** — slow (800ms) standard (slowest, most pronounced)
 
 ## Iconography
 
