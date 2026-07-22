@@ -1,15 +1,15 @@
 ---
 name: kendo-design
-description: Apply the Kendo Design System to any project — provides design tokens, visual guidelines, spacing rhythm, and accessibility guardrails for data-rich professional interfaces. Invoke as `/kendo-design [modernize]`.
+description: Apply the Kendo Design System to any project — provides design tokens, visual guidelines, spacing rhythm, and accessibility guardrails for data-rich professional interfaces. Invoke as `/kendo-design [target]`.
 user-invocable: true
 ---
 
 # Kendo Design System
 
-This skill provides the complete Kendo Design System specification. It works two ways:
+This skill provides the complete Kendo Design System specification. It has no subcommands — it applies the spec to your UI work, whether triggered:
 
-- **Passively** — auto-loaded whenever you generate or review UI. Skip the routing and go straight to [Spec resolution](#spec-resolution) and [How to use](#how-to-use).
-- **Explicitly** — invoked as `/kendo-design <subcommand> [target]`. Route on the first word of the arguments (see below).
+- **Passively** — auto-loaded whenever you generate or review UI. Go straight to [Spec resolution](#spec-resolution) and [How to use](#how-to-use).
+- **Explicitly** — invoked as `/kendo-design [target]`, where any argument is treated as the target to apply the spec to.
 
 Every time this skill activates, first run the [Setup check](#setup-check) below, then do the requested work.
 
@@ -25,17 +25,6 @@ The authoritative spec for a project is a **project-local `./DESIGN.md`** — no
 3. **Offer, don't impose.** Creating the file is a suggestion the agent raises naturally ("this project has a design system but no `DESIGN.md` — want me to generate one from the Kendo boilerplate?"), acted on when the user agrees. Never silently write it.
 
 > The bundled `themes/<theme>/DESIGN.md` files are **copy boilerplate, not a live source.** Read them for knowledge to inform your work, but never treat one as "the project's spec." A project only *has* a spec once a local `./DESIGN.md` has been copied in.
-
-## Invocation routing
-
-When invoked with an explicit subcommand, do only that flow (after the [Setup check](#setup-check)):
-
-| Subcommand | Action |
-| --- | --- |
-| `modernize` | Refactor code to align with the Kendo DS — read `references/modernize.md` and follow it end to end, **in this conversation** (do not delegate to a sub-agent). Migrates to the Meridian theme and snaps arbitrary values to tokens. |
-| _(none / unrecognized)_ | Treat the arguments as a target and apply the spec to it using [How to use](#how-to-use). |
-
-`modernize` must run inline, in the main conversation — never as a delegated sub-agent. Modernization is a long, exhaustive, whole-project sweep; a sub-agent running in an isolated context has no one to push back when it declares victory early, which is exactly the failure mode `references/modernize.md` is designed to prevent (its Inventory + Completeness Gate phases only work when the same context that starts the pass is the one that finishes it).
 
 ## Spec resolution
 

@@ -12,7 +12,7 @@
     {
       "name": "kendo-design",
       "source": "plugins/kendo-design",
-      "description": "The Kendo Design System — provides design tokens, typography, spacing, color system, elevation, and accessibility guardrails, plus an in-conversation modernization skill (`/kendo-design modernize`) that guides AI to generate consistent, accessible UI.",
+      "description": "The Kendo Design System — provides design tokens, typography, spacing, color system, elevation, and accessibility guardrails that guide AI to generate consistent, accessible UI.",
       "version": "0.2.7",
       "author": {
         "name": "Progress Software",
