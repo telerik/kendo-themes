@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
 import { Chip, ChipList, ChipAction } from '../../chip';
-import { GridNormal, GridWithGrouping, Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
+import { GridNormal, GridWithGrouping, GridGroupingCheckbox, Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
 import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
 
 
@@ -102,6 +102,10 @@ export default () =>(
                     </ButtonGroup>
                 </GridToolbar>
             )}/>
+
+            <span>Grouping with checkbox</span>
+
+            <GridGroupingCheckbox className="k-grid-no-scrollbar" />
 
             <span>Multicolumn Headers + Grouping</span>
 
