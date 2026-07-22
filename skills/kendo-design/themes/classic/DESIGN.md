@@ -81,6 +81,7 @@ typography:
     label-sm: { family: sans-serif, size: xs, weight: medium, line-height: sm }
     code: { family: monospace, size: md, weight: normal, line-height: sm }
 rounded:
+  base: 0.25rem
   none: 0px
   xs: 0.0625rem
   sm: 0.125rem
@@ -133,6 +134,7 @@ elevation:
   4: "0 8px 10px rgba(0,0,0,.12), 0 4px 16px rgba(0,0,0,.12)"
   5: "0 14px 16px rgba(0,0,0,.24), 0 4px 16px rgba(0,0,0,.12)"
 motion:
+  global: null
   durations:
     instant: 0ms
     immediate: 50ms
@@ -339,7 +341,7 @@ Each theme tunes its shadow color and opacity to its own elevation character. Le
 
 ## Roundness
 
-The border-radius system derives from a single **base value**. All radius tokens are computed as multipliers of this base, so adjusting the radius base token rescales every corner consistently.
+The border-radius system derives from a single **base value of `0.25rem` (4px)**. All radius tokens are computed as multipliers of this base, so adjusting the radius base token rescales every corner consistently.
 
 ### Scale
 
@@ -370,7 +372,7 @@ Motion is defined in two tiers, like typography. **Axes** (`durations`, `easings
 
 ### Durations
 
-All durations respect a global duration-override token. When set (or when `prefers-reduced-motion` is active), all tokens resolve to that value. Set it to `0.01ms` to disable all motion.
+All durations respect the `motion.global` override token (`null`/unset by default). When set — or automatically, when `prefers-reduced-motion` is active — every duration resolves to that single value instead of its own. Set it to `0.01ms` to effectively disable all motion.
 
 | **Token** | **Use**                          |
 | --------- | -------------------------------- |
