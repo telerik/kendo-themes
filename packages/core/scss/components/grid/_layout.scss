@@ -156,6 +156,10 @@
             &.k-grid-draggable-header {
                 user-select: none;
                 touch-action: none;
+
+                .k-cell-inner > .k-link {
+                    cursor: pointer;
+                }
             }
 
             .k-table-th {
