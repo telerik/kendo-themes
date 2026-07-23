@@ -1,0 +1,17 @@
+{
+  "name": "kendo-design",
+  "version": "0.3.1",
+  "description": "The Kendo Design System — design tokens, typography, spacing, color system, elevation, and accessibility guardrails that guide AI agents to generate consistent, accessible UI for data-rich professional interfaces.",
+  "author": {
+    "name": "Progress"
+  },
+  "license": "MIT",
+  "keywords": [
+    "kendo",
+    "telerik",
+    "design-system",
+    "design-tokens",
+    "accessibility",
+    "progress-design-system"
+  ]
+}

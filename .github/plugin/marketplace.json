@@ -15,8 +15,7 @@
       "description": "The Kendo Design System — provides design tokens, typography, spacing, color system, elevation, and accessibility guardrails that guide AI to generate consistent, accessible UI.",
       "version": "0.3.1",
       "author": {
-        "name": "Progress Software",
-        "url": "https://www.telerik.com/design-system/docs"
+        "name": "Progress"
       }
     }
   ]
