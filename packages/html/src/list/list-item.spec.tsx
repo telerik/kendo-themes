@@ -37,6 +37,8 @@ export type KendoListItemState = { [K in (typeof states)[number]]?: boolean };
  * @aria {aria-selected} Indicates the selected state of the option.
  * @aria {aria-hidden="true"} Decorative icons are hidden from assistive technology.
  * @aria {id} Used by aria-activedescendant on the combobox/listbox
+ * @aria {aria-label} The checkbox input must have an accessible name matching the item text.
+ * @aria {tabindex="-1"} The checkbox input must not be in the tab order. Selection state is conveyed via aria-selected on the option; keyboard interaction is handled by the listbox/combobox.
  */
 export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoListItemProps &
@@ -65,6 +67,9 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
         ? text
         : props.children;
 
+    // Checkbox needs a string accessible name — fall back to string children when `text` isn't provided
+    const checkboxLabel = text || (typeof textOrChildren === 'string' ? textOrChildren : undefined);
+
     // Group items have role="presentation", regular items have role="option"
     const itemRole = group ? 'presentation' : 'option';
     // Non-focused items should have tabIndex=-1 for proper keyboard navigation
@@ -89,7 +94,7 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
                 })
             )}
         >
-            {showCheckbox && <Checkbox checked={checked} />}
+            {showCheckbox && <Checkbox checked={checked} disabled={disabled} aria-label={checkboxLabel} tabIndex={-1} />}
             {iconName && <span className="k-list-item-icon-wrapper"><Icon icon={iconName} className={classNames("k-list-item-icon", iconClassName)} /></span>}
             <span className="k-list-item-text">{textOrChildren}</span>
             {actions && <div className="k-list-item-actions">{actions}</div>}
