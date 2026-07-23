@@ -458,3 +458,7 @@ All icon sizes derive from a single base (`base-px` = 16px, exposed as an icon-s
 - Don't use `surface` and `app-surface` interchangeably — they serve different elevation roles.
 - Don't override derived color variants (hover, active, etc.) unless you need precise control — let the relative oklch system compute them.
 - Don't rely on an icon alone for meaning — pair it with a text label or provide a tooltip description.
+
+## Figma Kit
+
+Classic does not yet have a dedicated published kit; it shares its visual lineage with the [Default UI kit for Figma](https://www.figma.com/community/file/1661041195763763612/telerik-kendo-ui-kit-for-default-4-0).

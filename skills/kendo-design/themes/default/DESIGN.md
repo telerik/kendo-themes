@@ -424,3 +424,7 @@ All sizes derive from a 16px base icon-size token (`xs` through `xxxl`, spanning
 - Don't skip spacing steps for alignment — if `spacing-4` is too small and `spacing-8` is too large, use `spacing-6`, not an arbitrary value.
 - Don't rely on an icon alone for meaning — always pair with a text label.
 - Don't treat this as the recommended starting point for new projects — new work should adopt **Meridian**. Use this spec to keep existing Default-theme applications consistent.
+
+## Figma Kit
+
+The official Default UI kit for Figma: [Telerik & Kendo UI Kit 4.0 for Default](https://www.figma.com/community/file/1661041195763763612/telerik-kendo-ui-kit-for-default-4-0).

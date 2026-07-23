@@ -458,3 +458,7 @@ All icon sizes derive from a single base (`base-px` = 16px, exposed as an icon-s
 - Don't use `surface` and `app-surface` interchangeably — they serve different elevation roles.
 - Don't override derived color variants (hover, active, etc.) unless you need precise control — let the relative oklch system compute them.
 - Don't rely on an icon alone for meaning — pair it with a text label or provide a tooltip description.
+
+## Figma Kit
+
+The official Bootstrap UI kit for Figma: [Telerik & Kendo UI Kit 4.0 for Bootstrap](https://www.figma.com/community/file/1661047871369724376/telerik-kendo-ui-kit-for-bootstrap-4-0).
