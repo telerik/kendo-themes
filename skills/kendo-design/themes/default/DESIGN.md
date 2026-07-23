@@ -259,26 +259,10 @@ The type scale is intentionally compact, ranging from `0.75rem` (12px) to `1.25r
 
 ### Scale Logic
 
-- **Headings** (`heading-sm` through `heading-xl`) — Semi-bold (600) for structural hierarchy. Used for section titles, card headers, and navigation landmarks.
-- **Body** (`body-xs` through `body-md`) — Regular weight (400) with comfortable line-height (1.25–1.4286). The default reading text. Body text sits at the `0.875rem` (14px) base — the classic Kendo Default reading size.
-- **Labels** (`label-sm` through `label-lg`) — Medium weight (500) for single-line scannable text: form labels, table headers, button text, and metadata.
+- **Headings** (`heading-sm` through `heading-xl`) — Semi-bold (600) for structural hierarchy: `heading-xl` for page titles, `heading-lg` for section headings, `heading-md` for card/panel titles, `heading-sm` for sub-headings and group labels.
+- **Body** (`body-xs` through `body-md`) — Regular weight (400) with comfortable line-height (1.25–1.4286). Body text sits at the `0.875rem` (14px) base — the classic Kendo Default reading size: `body-md` for primary body text, `body-sm` for secondary body text and descriptions, `body-xs` for captions and footnotes.
+- **Labels** (`label-sm` through `label-lg`) — Medium weight (500) for single-line scannable text: `label-lg` for prominent labels and navigation, `label-md` for form labels, table headers, and buttons, `label-sm` for compact labels, badges, and chips.
 - **Code** — Monospace at `0.875rem` for inline code, data cells, and technical identifiers.
-
-### Available Sizes
-
-| Token | Size | Weight | Line-Height | Use |
-|---|---|---|---|---|
-| `heading-xl` | 1.25rem | 600 | 1.4286 | Page titles |
-| `heading-lg` | 1rem | 600 | 1.4286 | Section headings |
-| `heading-md` | 0.875rem | 600 | 1.4286 | Card/panel titles |
-| `heading-sm` | 0.75rem | 600 | 1.25 | Sub-headings, group labels |
-| `body-md` | 0.875rem | 400 | 1.4286 | Primary body text |
-| `body-sm` | 0.75rem | 400 | 1.25 | Secondary body text, descriptions |
-| `body-xs` | 0.625rem | 400 | 1.25 | Captions, footnotes |
-| `label-lg` | 0.875rem | 500 | 1.4286 | Prominent labels, navigation |
-| `label-md` | 0.75rem | 500 | 1.25 | Form labels, table headers, buttons |
-| `label-sm` | 0.625rem | 500 | 1.25 | Compact labels, badges, chips |
-| `code` | 0.875rem | 400 | 1.25 | Code, data, monospace content |
 
 ### Guidelines
 
@@ -330,15 +314,7 @@ Never use arbitrary pixel values. If `spacing-4` is too small and `spacing-8` is
 
 ## Elevation & Depth
 
-Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are used only where elements genuinely float above the page. The Default theme uses **neutral black shadows** across **5 elevation levels**:
-
-| Level | Value | Use |
-|---|---|---|
-| 1 | `0 2px 3px rgba(0,0,0,.04)` | Cards, inputs, inline surfaces |
-| 2 | `0 4px 6px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.12)` | Popovers, dropdown menus |
-| 3 | `0 6px 8px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.12)` | Floating panels, tooltips |
-| 4 | `0 8px 10px rgba(0,0,0,.12), 0 4px 16px rgba(0,0,0,.12)` | Drawers, side panels |
-| 5 | `0 14px 16px rgba(0,0,0,.24), 0 4px 16px rgba(0,0,0,.12)` | Modals, dialogs |
+Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are used only where elements genuinely float above the page. The Default theme uses **neutral black shadows** across **5 elevation levels**, progressing from `1` (cards, inputs, inline surfaces) through `2` (popovers, dropdown menus), `3` (floating panels, tooltips), and `4` (drawers, side panels), up to `5` (modals, dialogs).
 
 Shadows use pure black (`rgb(0,0,0)`) at low opacity — neutral on any surface color. Each level increases blur, spread, and opacity for progressive depth. (Meridian, by contrast, uses a warm-cool gray shadow base with layered `-y` offsets; this is one of the clearest visual differences between the two themes.)
 
@@ -354,17 +330,7 @@ The border-radius system derives from a single **base value of `0.25rem` (4px)**
 
 ### Scale
 
-| Token | Computed | Use |
-|---|---|---|
-| `none` | 0px | Sharp corners (tables, toolbars, dividers) |
-| `xs` | 0.0625rem (1px) | Micro-elements |
-| `sm` | 0.125rem (2px) | Checkboxes, compact controls |
-| `md` | 0.25rem (4px) | Buttons, inputs, cards — the everyday default |
-| `lg` | 0.375rem (6px) | Menus, dialog corners |
-| `xl` | 0.5rem (8px) | Modal containers, large cards |
-| `xxl` | 0.75rem (12px) | Feature panels, hero sections |
-| `xxxl` | 1rem (16px) | Full-bleed sections |
-| `full` | calc(0.25rem * 9999) | Pills, avatars, circular elements |
+Corners scale from `none` (sharp corners — tables, toolbars, dividers) through `xs` (micro-elements) and `sm` (checkboxes, compact controls), up to `md` — the everyday default for buttons, inputs, and cards. Larger steps increase in prominence: `lg` for menus and dialog corners, `xl` for modal containers and large cards, `xxl` for feature panels and hero sections, `xxxl` for full-bleed sections, and `full` for pills, avatars, and circular elements.
 
 ### Guidelines
 
@@ -380,69 +346,52 @@ Motion is functional — it clarifies transitions and maintains spatial awarenes
 
 All durations respect the `motion.global` override token (`null`/unset by default). When set — or automatically, when `prefers-reduced-motion` is active — every duration resolves to that single value instead of its own. Set it to `0.01ms` to effectively disable all motion.
 
-| Token | Duration | Use |
-|---|---|---|
-| `instant` | 0ms | Immediate state changes |
-| `immediate` | 50ms | Micro-feedback (checkbox, radio) |
-| `brief` | 100ms | Button press, focus ring |
-| `quick` | 150ms | Hover states, small reveals |
-| `rapid` | 200ms | Menu open, tooltip appear |
-| `swift` | 250ms | Panel slide, popover entry |
-| `speedy` | 300ms | Drawer open, card expand |
-| `brisk` | 350ms | Complex reveals |
-| `prompt` | 400ms | Overlay transitions |
-| `timely` | 450ms | Coordinated multi-element reveals |
-| `moderate` | 500ms | Full-screen transitions |
-| `measured` | 550ms | Deliberate, staged transitions |
-| `steady` | 600ms | Longer panel/page movements |
-| `leisurely` | 700ms | Relaxed, unhurried motion |
-| `slow` | 800ms | Background animations |
-| `languid` | 900ms | Ambient, decorative motion |
-| `sluggish` | 1000ms | Longest ambient loops (use rarely) |
+- **Micro-feedback** (`instant`, `immediate`, `brief`) — Immediate state changes, checkbox/radio feedback, button press, focus ring.
+- **Interaction** (`quick`, `rapid`, `swift`, `speedy`, `brisk`) — Hover states, menu/tooltip reveals, panel slides, popover entry, drawer/card expansion, complex reveals.
+- **Transition** (`prompt`, `timely`, `moderate`, `measured`) — Overlay transitions, coordinated multi-element reveals, full-screen transitions, deliberate staged transitions.
+- **Ambient** (`steady`, `leisurely`, `slow`, `languid`, `sluggish`) — Longer panel/page movements, relaxed unhurried motion, background animations, ambient decorative motion, longest ambient loops (use rarely).
 
 ### Easings
 
-| Token | Curve | Use |
-|---|---|---|
-| `linear` | `cubic-bezier(0, 0, 1, 1)` | Progress bars, continuous motion |
-| `accelerate` | `cubic-bezier(0.42, 0, 1, 1)` | Exit animations |
-| `decelerate` | `cubic-bezier(0, 0, 0.58, 1)` | Enter animations |
-| `standard` | `cubic-bezier(0.42, 0, 0.58, 1)` | General purpose transitions |
-| `sharp` | `cubic-bezier(0.75, 0, 0.25, 1)` | Snappy state changes |
-| `bounce` | `cubic-bezier(0.68, -0.55, 0.265, 1.55)` | Playful emphasis (use sparingly) |
-| `elastic` | `cubic-bezier(0.5, -0.5, 0.5, 1.5)` | Spring-like motion |
-| `stretchy` | `cubic-bezier(0.07, 1.81, 0.3, 0.81)` | Exaggerated physics (use rarely) |
+- `linear` — Progress bars, continuous motion.
+- `accelerate` — Exit animations.
+- `decelerate` — Enter animations.
+- `standard` — General purpose transitions.
+- `sharp` — Snappy state changes.
+- `bounce` — Playful emphasis (use sparingly).
+- `elastic` — Spring-like motion.
+- `stretchy` — Exaggerated physics (use rarely).
 
 ### Transition Presets
 
-Composite tokens combining a duration + easing for common patterns. Presets are grouped by intent — **fast** (speed & responsiveness), **expressive** (personality), **calm** (subtle & natural), **visibility** (appear/disappear), and **size** (scale changes):
+Composite tokens combining a duration + easing for common patterns — the specific pairings live in `motion.transitions` in the frontmatter. Presets are grouped by intent — **fast** (speed & responsiveness), **expressive** (personality), **calm** (subtle & natural), **visibility** (appear/disappear), and **size** (scale changes):
 
-- **`instant`** — instant (0ms) linear (immediate, no perceptible motion)
-- **`rapid`** — quick (150ms) decelerate (hover, focus changes)
-- **`snappy`** — swift (250ms) decelerate (toggles, selections)
-- **`energetic`** — swift (250ms) elastic (springy micro-interactions)
-- **`bouncy`** — speedy (300ms) bounce (attention, success)
-- **`subtle`** — brisk (350ms) standard (slow reveals)
-- **`gentle`** — prompt (400ms) accelerate (soft dismissals)
-- **`enter`** — speedy (300ms) decelerate (elements appearing)
-- **`exit`** — rapid (200ms) accelerate (elements leaving)
-- **`settle`** — brisk (350ms) decelerate (elements coming to rest)
-- **`scale-out`** — quick (150ms) accelerate (shrink away)
-- **`scale-in`** — rapid (200ms) decelerate (grow into view)
-- **`fade-out`** — rapid (200ms) standard (opacity out)
-- **`fade-in`** — swift (250ms) standard (opacity in)
-- **`slide-out`** — swift (250ms) accelerate (positional exit)
-- **`slide-in`** — speedy (300ms) decelerate (positional entry)
-- **`emphasis`** — quick (150ms) sharp (snappy state emphasis)
-- **`collapse`** — speedy (300ms) accelerate (expanders closing)
-- **`expand`** — prompt (400ms) standard (expanders opening)
-- **`shrink`** — brisk (350ms) accelerate (size reduction)
-- **`grow`** — prompt (400ms) standard (size increase)
-- **`pulse`** — brisk (350ms) standard (rhythmic attention)
-- **`smooth`** — moderate (500ms) standard (long, even transitions)
-- **`flip`** — measured (550ms) standard (card/tile flips)
-- **`fluid`** — steady (600ms) standard (continuous, flowing motion)
-- **`deliberate`** — slow (800ms) standard (slowest, most pronounced)
+- **`instant`** — Immediate, no perceptible motion.
+- **`rapid`** — Hover, focus changes.
+- **`snappy`** — Toggles, selections.
+- **`energetic`** — Springy micro-interactions.
+- **`bouncy`** — Attention, success.
+- **`subtle`** — Slow reveals.
+- **`gentle`** — Soft dismissals.
+- **`enter`** — Elements appearing.
+- **`exit`** — Elements leaving.
+- **`settle`** — Elements coming to rest.
+- **`scale-out`** — Shrink away.
+- **`scale-in`** — Grow into view.
+- **`fade-out`** — Opacity out.
+- **`fade-in`** — Opacity in.
+- **`slide-out`** — Positional exit.
+- **`slide-in`** — Positional entry.
+- **`emphasis`** — Snappy state emphasis.
+- **`collapse`** — Expanders closing.
+- **`expand`** — Expanders opening.
+- **`shrink`** — Size reduction.
+- **`grow`** — Size increase.
+- **`pulse`** — Rhythmic attention.
+- **`smooth`** — Long, even transitions.
+- **`flip`** — Card/tile flips.
+- **`fluid`** — Continuous, flowing motion.
+- **`deliberate`** — Slowest, most pronounced.
 
 ## Iconography
 
@@ -450,17 +399,7 @@ The icon system separates **styling** (defined by the design system) from **cont
 
 ### Sizing
 
-| Level | Scale | Default px |
-|---|---|---|
-| `xs` | 75% | 12px |
-| `sm` | 87.5% | 14px |
-| `md` | 100% | 16px (default) |
-| `lg` | 125% | 20px |
-| `xl` | 150% | 24px |
-| `xxl` | 200% | 32px |
-| `xxxl` | 300% | 48px |
-
-All sizes derive from a 16px base icon-size token. Change the base to rescale every icon proportionally.
+All sizes derive from a 16px base icon-size token (`xs` through `xxxl`, spanning 75%–300% scale). Change the base to rescale every icon proportionally; the per-level scale and pixel values live in `icons.sizing` in the frontmatter.
 
 ### Guidelines
 

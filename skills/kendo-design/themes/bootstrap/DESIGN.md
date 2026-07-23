@@ -286,26 +286,10 @@ The type scale is intentionally compact — six steps from `font-size.xxs` to `f
 
 ### Variant families
 
-- **Headings** (`heading-sm` through `heading-xl`) — Semibold for structural hierarchy. Used for section titles, card headers, and navigation landmarks.
-- **Body** (`body-xs` through `body-md`) — Regular weight with generous line height. Default reading text.
-- **Labels** (`label-sm` through `label-lg`) — Medium weight for single-line scannable text: form labels, table headers, button text, and metadata.
+- **Headings** (`heading-sm` through `heading-xl`) — Semibold for structural hierarchy: `heading-xl` for page titles, `heading-lg` for section headings, `heading-md` for card/panel titles, `heading-sm` for sub-headings and group labels.
+- **Body** (`body-xs` through `body-md`) — Regular weight with generous line height: `body-md` for primary body text, `body-sm` for secondary body text and descriptions, `body-xs` for captions and footnotes.
+- **Labels** (`label-sm` through `label-lg`) — Medium weight for single-line scannable text: `label-lg` for prominent labels and navigation, `label-md` for form labels, table headers, and buttons, `label-sm` for compact labels, badges, and chips.
 - **Code** — Monospace for inline code, data cells, and technical identifiers.
-
-### Available variants
-
-| **Variant** | **Use**                             |
-| ----------- | ----------------------------------- |
-| heading-xl  | Page titles                         |
-| heading-lg  | Section headings                    |
-| heading-md  | Card/panel titles                   |
-| heading-sm  | Sub-headings, group labels          |
-| body-md     | Primary body text                   |
-| body-sm     | Secondary body text, descriptions   |
-| body-xs     | Captions, footnotes                 |
-| label-lg    | Prominent labels, navigation        |
-| label-md    | Form labels, table headers, buttons |
-| label-sm    | Compact labels, badges, chips       |
-| code        | Code, data, monospace content       |
 
 ### Guidelines
 
@@ -351,15 +335,7 @@ Never use arbitrary pixel values. If `spacing-4` is too small and `spacing-8` is
 
 Hierarchy is conveyed primarily through tonal surfaces and borders. Shadows are reserved for elements that genuinely float above the page.
 
-| **Level** | **Use**                        |
-| --------- | ------------------------------ |
-| 1         | Cards, inputs, inline surfaces |
-| 2         | Popovers, dropdown menus       |
-| 3         | Floating panels, tooltips      |
-| 4         | Drawers, side panels           |
-| 5         | Modals, dialogs                |
-
-Each theme tunes its shadow color and opacity to its own elevation character. Levels increase progressively in spread and softness to convey physical depth and reinforce hierarchy.
+Levels progress from `1` (cards, inputs, inline surfaces) through `2` (popovers, dropdown menus), `3` (floating panels, tooltips), and `4` (drawers, side panels), up to `5` (modals, dialogs). Each theme tunes its shadow color and opacity to its own elevation character, and levels increase progressively in spread and softness to convey physical depth and reinforce hierarchy.
 
 ### Guidelines
 
@@ -373,17 +349,7 @@ The border-radius system derives from a single **base value of `0.375rem` (6px)*
 
 ### Scale
 
-| **Token** | **Use**                                       |
-| --------- | --------------------------------------------- |
-| none      | Sharp corners (tables, toolbars, dividers)    |
-| xs        | Checkboxes, micro-elements                    |
-| sm        | Chips, tags, compact controls                 |
-| md        | Buttons, inputs, cards — the everyday default |
-| lg        | Menus, dialog corners                         |
-| xl        | Modal containers, large cards                 |
-| xxl       | Feature panels, hero sections                 |
-| xxxl      | Full-bleed sections                           |
-| full      | Pills, avatars, circular elements             |
+Corners scale from `none` (sharp corners — tables, toolbars, dividers) through `xs` (checkboxes, micro-elements) and `sm` (chips, tags, compact controls), up to `md` — the everyday default for buttons, inputs, and cards. Larger steps increase in prominence: `lg` for menus and dialog corners, `xl` for modal containers and large cards, `xxl` for feature panels and hero sections, `xxxl` for full-bleed sections, and `full` for pills, avatars, and circular elements.
 
 ### Guidelines
 
@@ -402,71 +368,56 @@ Motion is defined in two tiers, like typography. **Axes** (`durations`, `easings
 
 All durations respect the `motion.global` override token (`null`/unset by default). When set — or automatically, when `prefers-reduced-motion` is active — every duration resolves to that single value instead of its own. Set it to `0.01ms` to effectively disable all motion.
 
-| **Token** | **Use**                          |
-| --------- | -------------------------------- |
-| instant   | Immediate state changes          |
-| immediate | Micro-feedback (checkbox, radio) |
-| brief     | Button press, focus ring         |
-| quick     | Hover states, small reveals      |
-| rapid     | Menu open, tooltip appear        |
-| swift     | Panel slide, popover entry       |
-| speedy    | Drawer open, card expand         |
-| brisk     | Complex reveals                  |
-| prompt    | Overlay transitions              |
-| timely    | Deliberate overlay reveals       |
-| moderate  | Full-screen transitions          |
-| measured  | Extended layout changes          |
-| steady    | Sustained transitions            |
-| leisurely | Relaxed, unhurried motion        |
-| slow      | Background animations            |
-| languid   | Ambient, drawn-out motion        |
-| sluggish  | Longest ambient animations       |
+- **Micro-feedback** (`instant`, `immediate`, `brief`) — Immediate state changes, checkbox/radio feedback, button press, focus ring.
+- **Interaction** (`quick`, `rapid`, `swift`, `speedy`, `brisk`) — Hover states, menu/tooltip reveals, panel slides, popover entry, drawer/card expansion, complex reveals.
+- **Transition** (`prompt`, `timely`, `moderate`, `measured`) — Overlay transitions, deliberate overlay reveals, full-screen transitions, extended layout changes.
+- **Ambient** (`steady`, `leisurely`, `slow`, `languid`, `sluggish`) — Sustained transitions, relaxed unhurried motion, background animations, ambient drawn-out motion, longest ambient animations.
 
 ### Easings
 
-| **Token**  | **Use**                          |
-| ---------- | -------------------------------- |
-| linear     | Progress bars, continuous motion |
-| accelerate | Exit animations                  |
-| decelerate | Enter animations                 |
-| standard   | General purpose transitions      |
-| sharp      | Snappy state changes             |
-| bounce     | Playful emphasis (use sparingly) |
-| elastic    | Spring-like motion               |
-| stretchy   | Exaggerated physics (use rarely) |
+- `linear` — Progress bars, continuous motion.
+- `accelerate` — Exit animations.
+- `decelerate` — Enter animations.
+- `standard` — General purpose transitions.
+- `sharp` — Snappy state changes.
+- `bounce` — Playful emphasis (use sparingly).
+- `elastic` — Spring-like motion.
+- `stretchy` — Exaggerated physics (use rarely).
 
 ### Transition presets
 
 Presets are the **variant** layer of motion: each composes a `duration` axis token with an `easing` axis token, however the implementation resolves those tokens (CSS custom property, JSON design token, platform constant, etc.). Reference a preset rather than a raw duration/easing pair so motion stays consistent. The animated CSS property (opacity, transform) is chosen by the consuming component — presets carry only timing.
 
-| **Preset**  | **Duration** | **Easing** | **Use**                            |
-| ----------- | ------------ | ---------- | ---------------------------------- |
-| instant     | instant      | linear     | Immediate, non-animated changes    |
-| rapid       | quick        | decelerate | Hover, focus changes               |
-| snappy      | swift        | decelerate | Toggles, selections                |
-| energetic   | swift        | elastic    | Spring-like emphasis (use rarely)  |
-| bouncy      | speedy       | bounce     | Attention, success (use sparingly) |
-| subtle      | brisk        | standard   | Slow reveals                       |
-| gentle      | prompt       | accelerate | Soft, unobtrusive transitions      |
-| enter       | speedy       | decelerate | Elements appearing                 |
-| exit        | rapid        | accelerate | Elements leaving                   |
-| settle      | brisk        | decelerate | Elements coming to rest            |
-| scale-out   | quick        | accelerate | Size out (transform)               |
-| scale-in    | rapid        | decelerate | Size in (transform)                |
-| fade-out    | rapid        | standard   | Opacity out                        |
-| fade-in     | swift        | standard   | Opacity in                         |
-| slide-out   | swift        | accelerate | Positional out (transform)         |
-| slide-in    | speedy       | decelerate | Positional in (transform)          |
-| emphasis    | quick        | sharp      | Snappy attention cues              |
-| collapse    | speedy       | accelerate | Collapsing regions                 |
-| expand      | prompt       | standard   | Expanding regions                  |
-| shrink      | brisk        | accelerate | Shrinking elements                 |
-| grow        | prompt       | standard   | Growing elements                   |
-| pulse       | brisk        | standard   | Pulsing emphasis                   |
-| smooth      | moderate     | standard   | Smooth, continuous transitions     |
-| flip        | measured     | standard   | Flip transforms                    |
-| fluid       | steady       | standard   | Fluid, sustained motion            |
-| deliberate  | slow         | standard   | Slow, intentional transitions      |
+Each preset's duration/easing composition is defined in `motion.transitions` in the frontmatter; the use cases below are the guidance layer on top of it.
+
+| **Preset**  | **Use**                            |
+| ----------- | ----------------------------------- |
+| instant     | Immediate, non-animated changes    |
+| rapid       | Hover, focus changes               |
+| snappy      | Toggles, selections                |
+| energetic   | Spring-like emphasis (use rarely)  |
+| bouncy      | Attention, success (use sparingly) |
+| subtle      | Slow reveals                       |
+| gentle      | Soft, unobtrusive transitions      |
+| enter       | Elements appearing                 |
+| exit        | Elements leaving                   |
+| settle      | Elements coming to rest            |
+| scale-out   | Size out (transform)               |
+| scale-in    | Size in (transform)                |
+| fade-out    | Opacity out                        |
+| fade-in     | Opacity in                         |
+| slide-out   | Positional out (transform)         |
+| slide-in    | Positional in (transform)          |
+| emphasis    | Snappy attention cues              |
+| collapse    | Collapsing regions                 |
+| expand      | Expanding regions                  |
+| shrink      | Shrinking elements                 |
+| grow        | Growing elements                   |
+| pulse       | Pulsing emphasis                   |
+| smooth      | Smooth, continuous transitions     |
+| flip        | Flip transforms                    |
+| fluid       | Fluid, sustained motion            |
+| deliberate  | Slow, intentional transitions      |
 
 ### Guidelines
 
@@ -480,17 +431,15 @@ The icon system separates **styling** (defined by the design system) from **cont
 
 ### Sizing
 
-All icon sizes derive from a single base (`base-px` = 16px, exposed as an icon-size base token), so changing the base rescales every icon proportionally. Each level in the `icons.sizing` map is a `scale` multiplier applied to that base.
+All icon sizes derive from a single base (`base-px` = 16px, exposed as an icon-size base token), so changing the base rescales every icon proportionally. Each level in the `icons.sizing` map is a `scale` multiplier applied to that base — the scale and pixel values live in the frontmatter; usage guidance follows:
 
-| Level  | Scale | Default px | Notes                               |
-| ------ | ----- | ---------- | ----------------------------------- |
-| `xs`   | 75%   | 12px       | Dense toolbars, inline affordances  |
-| `sm`   | 87.5% | 14px       | Compact inline icons                |
-| `md`   | 100%  | 16px       | **Default** — inline with body text |
-| `lg`   | 125%  | 20px       | Standalone actions                  |
-| `xl`   | 150%  | 24px       | Prominent / decorative              |
-| `xxl`  | 200%  | 32px       | Feature icons                       |
-| `xxxl` | 300%  | 48px       | Empty-state / hero glyphs           |
+- `xs` — Dense toolbars, inline affordances.
+- `sm` — Compact inline icons.
+- `md` — **Default**, used inline with body text.
+- `lg` — Standalone actions.
+- `xl` — Prominent / decorative.
+- `xxl` — Feature icons.
+- `xxxl` — Empty-state / hero glyphs.
 
 ### Guidelines
 
