@@ -41,6 +41,8 @@ These CSS classes are applied to the `k-list-item` element.
 | `aria-selected` | Indicates the selected state of the option. |
 | `aria-hidden="true"` | Decorative icons are hidden from assistive technology. |
 | `id` | Used by aria-activedescendant on the combobox/listbox |
+| `aria-label` | The checkbox input must have an accessible name matching the item text. |
+| `tabindex="-1"` | The checkbox input must not be in the tab order. Selection state is conveyed via aria-selected on the option; keyboard interaction is handled by the listbox/combobox. |
 
 ### Testing
 
