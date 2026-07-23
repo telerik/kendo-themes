@@ -15,3 +15,4 @@ export * from "./templates/list-grouping";
 export * from "./templates/list-virtualization-grouping";
 export * from "./templates/list-no-data";
 export * from "./templates/list-with-icons";
+export * from "./templates/list-with-checkboxes";
