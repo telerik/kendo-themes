@@ -47,6 +47,76 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the CitationPopover page indicator.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-citation-popover-view-title-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-title-font-weight, var(--kendo-font-weight-bold) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-title-font-weight, var(--kendo-font-weight-bold))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the CitationPopoverView title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-body-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-body-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-body-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the CitationPopoverView body text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-body-margin-top</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-body-margin-top, k-spacing(2) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-body-margin-top, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the CitationPopoverView body text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-body-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-body-color, k-color(subtle) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-body-color, var(--kendo-color-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the CitationPopoverView body text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-source-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-source-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-source-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the CitationPopoverView source link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-source-margin-top</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-source-margin-top, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-source-margin-top, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the CitationPopoverView source link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-source-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-citation-popover-view-source-gap, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-source-gap, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon and text of the CitationPopoverView source link.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
