@@ -11,45 +11,21 @@ colors:
   surface-alt: "oklch(100.01% 0 0deg)"
   border: "oklch(83.9% 0 0deg)"
   border-alt: "oklch(77.63% 0 0deg)"
-  base: "oklch(94.01% 0 0deg)"
-  primary: "oklch(66% 0.2039 40.8deg)"
-  secondary: "oklch(77.63% 0 0deg)"
-  tertiary: "oklch(69.91% 0.157 239deg)"
-  info: "oklch(56.38% 0.1427 245.3deg)"
-  success: "oklch(63.9% 0.1556 146.3deg)"
-  warning: "oklch(79.16% 0.1662 68.62deg)"
-  error: "oklch(57.1% 0.2143 32.35deg)"
-  inverse: "oklch(37.15% 0 0deg)"
-  series: "oklch(69.85% 0.1923 27.19deg)"
-color-derivatives:
-  semantic-families:
-    - base
-    - primary
-    - secondary
-    - tertiary
-    - info
-    - success
-    - warning
-    - error
-  derived-tokens:
-    - "{family}-subtle"
-    - "{family}-subtle-hover"
-    - "{family}-subtle-active"
-    - "{family}-hover"
-    - "{family}-active"
-    - "{family}-emphasis"
-    - "{family}-on-subtle"
-    - "on-{family}"
-    - "{family}-on-surface"
-  series:
-    base: series
-    hues: [series-a, series-b, series-c, series-d, series-e, series-f]
-    variant-tokens:
-      - "{series}"
-      - "{series}-bold"
-      - "{series}-bolder"
-      - "{series}-subtle"
-      - "{series}-subtler"
+  base: { base: oklch(94.01% 0.0 0.0deg), on-base: oklch(27.0% 0 0.0deg), base-hover: oklch(89.76% 0.0 0.0deg), base-active: oklch(87.61% 0.0 0.0deg), base-subtle: oklch(95.51% 0.0 0.0deg), base-subtle-hover: oklch(94.01% 0.0 0.0deg), base-subtle-active: oklch(89.76% 0.0 0.0deg), base-emphasis: oklch(83.9% 0.0 0.0deg), base-on-subtle: oklch(27.0% 0 0.0deg), base-on-surface: oklch(27.0% 0 0.0deg) }
+  primary: { primary: oklch(66.0% 0.2039 40.8deg), on-primary: oklch(100% 0 40.8deg), primary-hover: oklch(62.13% 0.1913 40.8deg), primary-active: oklch(58.04% 0.1776 40.8deg), primary-subtle: oklch(96.94% 0.0169 40.8deg), primary-subtle-hover: oklch(93.91% 0.0351 40.8deg), primary-subtle-active: oklch(90.95% 0.0528 40.8deg), primary-emphasis: oklch(75.24% 0.1624 40.8deg), primary-on-subtle: oklch(25.67% 0.0699 40.8deg), primary-on-surface: oklch(66.0% 0.2039 40.8deg) }
+  secondary: { secondary: oklch(77.63% 0.0 0.0deg), on-secondary: oklch(0% 0 0.0deg), secondary-hover: oklch(71.55% 0.0 0.0deg), secondary-active: oklch(65.01% 0.0 0.0deg), secondary-subtle: oklch(83.9% 0.0 0.0deg), secondary-subtle-hover: oklch(77.63% 0.0 0.0deg), secondary-subtle-active: oklch(71.55% 0.0 0.0deg), secondary-emphasis: oklch(57.95% 0.0 0.0deg), secondary-on-subtle: oklch(27.0% 0 0.0deg), secondary-on-surface: oklch(65.01% 0.0 0.0deg) }
+  tertiary: { tertiary: oklch(69.91% 0.157 239.0deg), on-tertiary: oklch(100% 0 239.0deg), tertiary-hover: oklch(65.59% 0.147 239.0deg), tertiary-active: oklch(61.48% 0.1371 239.0deg), tertiary-subtle: oklch(86.96% 0.0798 239.0deg), tertiary-subtle-hover: oklch(81.93% 0.1102 239.0deg), tertiary-subtle-active: oklch(77.58% 0.1341 239.0deg), tertiary-emphasis: oklch(74.91% 0.1479 239.0deg), tertiary-on-subtle: oklch(31.46% 0.0661 239.0deg), tertiary-on-surface: oklch(52.78% 0.1165 239.0deg) }
+  info: { info: oklch(56.38% 0.1427 245.3deg), on-info: oklch(100% 0 245.3deg), info-hover: oklch(53.02% 0.1334 245.3deg), info-active: oklch(49.66% 0.1252 245.3deg), info-subtle: oklch(90.78% 0.0327 245.3deg), info-subtle-hover: oklch(83.84% 0.0572 245.3deg), info-subtle-active: oklch(73.25% 0.0946 245.3deg), info-emphasis: oklch(66.12% 0.1177 245.3deg), info-on-subtle: oklch(27.63% 0.0639 245.3deg), info-on-surface: oklch(42.96% 0.106 245.3deg) }
+  success: { success: oklch(63.9% 0.1556 146.3deg), on-success: oklch(100% 0 146.3deg), success-hover: oklch(60.17% 0.1455 146.3deg), success-active: oklch(56.38% 0.1353 146.3deg), success-subtle: oklch(86.95% 0.0559 146.3deg), success-subtle-hover: oklch(81.34% 0.0803 146.3deg), success-subtle-active: oklch(76.11% 0.1044 146.3deg), success-emphasis: oklch(72.52% 0.1211 146.3deg), success-on-subtle: oklch(30.99% 0.0664 146.3deg), success-on-surface: oklch(48.56% 0.1151 146.3deg) }
+  warning: { warning: oklch(79.16% 0.1662 68.62deg), on-warning: oklch(0% 0 68.62deg), warning-hover: oklch(77.02% 0.1741 68.62deg), warning-active: oklch(72.47% 0.1636 68.62deg), warning-subtle: oklch(91.64% 0.073 68.62deg), warning-subtle-hover: oklch(89.73% 0.0901 68.62deg), warning-subtle-active: oklch(86.05% 0.1223 68.62deg), warning-emphasis: oklch(81.84% 0.1523 68.62deg), warning-on-subtle: oklch(36.49% 0.0796 68.62deg), warning-on-surface: oklch(79.16% 0.1662 68.62deg) }
+  error: { error: oklch(57.1% 0.2143 32.35deg), on-error: oklch(100% 0 32.35deg), error-hover: oklch(53.78% 0.201 32.35deg), error-active: oklch(50.22% 0.1866 32.35deg), error-subtle: oklch(85.75% 0.0585 32.35deg), error-subtle-hover: oklch(82.35% 0.0754 32.35deg), error-subtle-active: oklch(74.05% 0.1192 32.35deg), error-emphasis: oklch(64.65% 0.1723 32.35deg), error-on-subtle: oklch(27.52% 0.0954 32.35deg), error-on-surface: oklch(43.22% 0.1594 32.35deg) }
+  inverse: { inverse: oklch(37.15% 0.0 0.0deg), on-inverse: oklch(100% 0 0.0deg), inverse-hover: oklch(32.11% 0.0 0.0deg), inverse-active: oklch(27.27% 0.0 0.0deg), inverse-subtle: oklch(83.9% 0.0 0.0deg), inverse-subtle-hover: oklch(77.63% 0.0 0.0deg), inverse-subtle-active: oklch(71.55% 0.0 0.0deg), inverse-emphasis: oklch(57.95% 0.0 0.0deg), inverse-on-subtle: oklch(0% 0 0.0deg), inverse-on-surface: oklch(32.11% 0.0 0.0deg) }
+  series-a: { series-a: oklch(69.85% 0.1923 27.19deg), series-a-bold: oklch(56.51% 0.1523 27.19deg), series-a-bolder: oklch(42.61% 0.1096 27.19deg), series-a-subtle: oklch(83.33% 0.0921 27.19deg), series-a-subtler: oklch(76.0% 0.1433 27.19deg) }
+  series-b: { series-b: oklch(87.94% 0.1578 90.4deg), series-b-bold: oklch(70.88% 0.1253 90.4deg), series-b-bolder: oklch(52.94% 0.0918 90.4deg), series-b-subtle: oklch(93.57% 0.0923 90.4deg), series-b-subtler: oklch(90.58% 0.1299 90.4deg) }
+  series-c: { series-c: oklch(77.83% 0.204 135.2deg), series-c-bold: oklch(62.81% 0.1622 135.2deg), series-c-bolder: oklch(47.16% 0.1177 135.2deg), series-c-subtle: oklch(88.34% 0.1134 135.2deg), series-c-subtler: oklch(82.73% 0.1636 135.2deg) }
+  series-d: { series-d: oklch(70.84% 0.1145 209.7deg), series-d-bold: oklch(57.38% 0.0917 209.7deg), series-d-bolder: oklch(43.07% 0.0673 209.7deg), series-d-subtle: oklch(84.23% 0.0712 209.7deg), series-d-subtler: oklch(77.36% 0.0988 209.7deg) }
+  series-e: { series-e: oklch(58.76% 0.2075 261.4deg), series-e-bold: oklch(47.77% 0.165 261.4deg), series-e-bolder: oklch(36.37% 0.1181 261.4deg), series-e-subtle: oklch(78.44% 0.1008 261.4deg), series-e-subtler: oklch(68.16% 0.1542 261.4deg) }
+  series-f: { series-f: oklch(54.24% 0.1859 320.5deg), series-f-bold: oklch(46.92% 0.1552 320.5deg), series-f-bolder: oklch(35.47% 0.1128 320.5deg), series-f-subtle: oklch(77.94% 0.1013 320.5deg), series-f-subtler: oklch(67.26% 0.151 320.5deg) }
 typography:
   font-family:
     sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans
@@ -223,7 +199,7 @@ Colors are defined in OKLCH for perceptual uniformity. Semantic variants (hover,
 - `surface` — A color used for surfaces, headers, canvases, and containers. A delicate tint distinguishes it from the page.
 - `surface-alt` — The alternative surface color, used inside components that already sit on a `surface` fill to create a secondary level of contrast.
 - `border` — Default border color, tuned to blend naturally with any interface surface.
-- `border-alt` — Stronger border variant for emphasis. Used for border color in hover state.
+- `border-alt` — Border color used for hover-state emphasis.
 - `base` — Neutral fill for interactive UI elements that use theme color variants (secondary button, chip).
 - `subtle` — Muted text for placeholders, captions, and disabled labels.
 - `inverse` — Deep near-black for high-contrast inverted contexts. It is used for overlay-style UI surfaces (overlay background, tooltip).
@@ -238,18 +214,19 @@ Colors are defined in OKLCH for perceptual uniformity. Semantic variants (hover,
 - `warning` — Used for caution messages and states requiring attention.
 - `error` — Used for destructive actions, validation errors, and critical alerts.
 
-### Base variable group
+### Derived tokens
 
-The base group is the theme's core neutral palette for interactive UI elements — covering fills, state variations (hover/active), accessible text pairings (on-base), and border accents.
+Every semantic family (`base`, `primary`, `secondary`, `tertiary`, `info`, `success`, `warning`, `error`) expands into the same set of tokens. Same hue and chroma as the family's base token throughout — only lightness (and occasionally chroma) shifts. Compute each value in OKLCH from its family's base color; use the exact token name below, never an invented alternative:
 
-- `base-subtle` — Muted background for lower-emphasis fills.
-- `base-emphasis` — Stronger contrast variant used for borders and accents.
+- **Fills** — `-hover` (one step darker), `-active` (two steps darker), `-emphasis` (higher chroma, slightly darker; for accents/borders).
+- **Subtle backgrounds** — `-subtle` (much lighter, reduced chroma), `-subtle-hover`, `-subtle-active` (each one step darker than the last).
+- **Text/icon pairings** — `on-{family}` (on the fill itself), `{family}-on-subtle` (on `-subtle`), `{family}-on-surface` (on `surface`/`app-surface`) — each lightened or darkened until it clears WCAG AA against its background.
 
 ### Data visualization (series)
 
 Chart colors derive from a single `series` base that generates six evenly distributed hues, `series-a` through `series-f`. `series-a` equals the base; `series-b`–`series-f` are hue-rotated from it around the wheel. Override the `series` base color token to re-hue the entire palette at once.
 
-Each of the six hues produces five variants — encoded as `series.variant-tokens` in the YAML contract:
+Each of the six hues produces five variants:
 
 | Variant | Token                | Role                             |
 | ------- | -------------------- | -------------------------------- |
