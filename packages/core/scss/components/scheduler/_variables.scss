@@ -22,7 +22,16 @@ $kendo-scheduler-footer-gradient: null !default;
 
 $kendo-scheduler-event-min-height: null !default;
 $kendo-scheduler-event-border-radius: null !default;
-$kendo-scheduler-event-line-height: null !default;
+
+$kendo-scheduler-event-title-font-size: null !default;
+$kendo-scheduler-event-title-line-height: null !default;
+$kendo-scheduler-event-title-padding-top: null !default;
+$kendo-scheduler-event-title-padding-bottom: null !default;
+
+$kendo-scheduler-event-time-font-size: null !default;
+$kendo-scheduler-event-time-line-height: null !default;
+$kendo-scheduler-event-time-padding-top: null !default;
+$kendo-scheduler-event-time-padding-bottom: null !default;
 
 $kendo-scheduler-event-bg: null !default;
 $kendo-scheduler-event-text: null !default;
@@ -43,6 +52,16 @@ $kendo-scheduler-event-selected-gradient: null !default;
 $kendo-scheduler-event-selected-shadow: null !default;
 
 $kendo-scheduler-event-ongoing-shadow: null !default;
+
+$kendo-scheduler-resizer-size: null !default;
+$kendo-scheduler-resize-handle-size: null !default;
+$kendo-scheduler-resize-handle-border-radius: null !default;
+$kendo-scheduler-resize-handle-border-width: null !default;
+$kendo-scheduler-resize-handle-bg: null !default;
+
+$kendo-scheduler-event-readonly-bg: null !default;
+$kendo-scheduler-event-readonly-text: null !default;
+$kendo-scheduler-event-readonly-border: null !default;
 
 $kendo-scheduler-cell-padding-x: null !default;
 $kendo-scheduler-cell-padding-y: null !default;
@@ -68,36 +87,20 @@ $kendo-scheduler-yearview-indicator-border-radius: null !default;
 $kendo-scheduler-yearview-indicator-bg: null !default;
 $kendo-scheduler-yearview-indicator-selected-bg: null !default;
 
-$kendo-scheduler-tooltip-padding-x: null !default;
-$kendo-scheduler-tooltip-padding-y: null !default;
-$kendo-scheduler-tooltip-border-width: null !default;
-$kendo-scheduler-tooltip-bg: null !default;
-$kendo-scheduler-tooltip-text: null !default;
-$kendo-scheduler-tooltip-border: null !default;
-$kendo-scheduler-tooltip-shadow: null !default;
+$kendo-scheduler-popover-month-font-size: null !default;
+$kendo-scheduler-popover-day-font-size: null !default;
 
-$kendo-scheduler-tooltip-title-margin-y: null !default;
-$kendo-scheduler-tooltip-month-font-size: null !default;
-$kendo-scheduler-tooltip-day-font-size: null !default;
+$kendo-scheduler-popover-events-max-height: null !default;
+$kendo-scheduler-popover-events-gap: null !default;
 
-$kendo-scheduler-tooltip-events-max-height: null !default;
-$kendo-scheduler-tooltip-events-gap: null !default;
-
-$kendo-scheduler-tooltip-event-padding-x: null !default;
-$kendo-scheduler-tooltip-event-padding-y: null !default;
-$kendo-scheduler-tooltip-event-border-radius: null !default;
-$kendo-scheduler-tooltip-event-gap: null !default;
-
-$kendo-scheduler-tooltip-callout-text: null !default;
-
-$kendo-scheduler-appointments-padding: null !default;
+$kendo-scheduler-popover-event-min-height: null !default;
+$kendo-scheduler-popover-event-padding-x: null !default;
+$kendo-scheduler-popover-event-padding-y: null !default;
+$kendo-scheduler-popover-event-border-radius: null !default;
+$kendo-scheduler-popover-event-gap: null !default;
 
 $kendo-scheduler-event-template-padding-x: null !default;
 $kendo-scheduler-event-template-padding-y: null !default;
-
-$kendo-scheduler-event-actions-inset-x: null !default;
-
-$kendo-scheduler-indicators-margin: null !default;
 
 $kendo-scheduler-marquee-label-inset-x: null !default;
 $kendo-scheduler-marquee-label-inset-y: null !default;
@@ -106,6 +109,9 @@ $kendo-scheduler-nav-item-icon-spacing: null !default;
 
 $kendo-scheduler-header-bg: null !default;
 
+$kendo-scheduler-datetime-section-margin-top: null !default;
+$kendo-scheduler-recurrence-fields-row-gap: null !default;
+
 
 // Adaptive
 $kendo-scheduler-adaptive-bg: null !default;
@@ -113,8 +119,6 @@ $kendo-scheduler-adaptive-text: null !default;
 $kendo-scheduler-adaptive-border: null !default;
 
 $kendo-scheduler-adaptive-content-bg: null !default;
-
-$kendo-scheduler-adaptive-menu-clear-text: null !default;
 
 $kendo-scheduler-adaptive-border-width: null !default;
 $kendo-scheduler-adaptive-font-family: null !default;
