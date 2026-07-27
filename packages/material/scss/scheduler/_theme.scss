@@ -20,26 +20,5 @@
         }
     }
 
-    // Events
-    .k-event {
-
-        .k-event-actions {
-            .k-link {
-                color: $kendo-scheduler-event-bg;
-                background-color: $kendo-scheduler-event-text;
-            }
-        }
-
-        .k-resize-handle::before {
-            // TODO: $kendo-scheduler-content-area-bg
-            background-color: k-color(on-primary);
-        }
-    }
-
-    .k-scheduler-edit-form {
-        .k-edit-label {
-            color: $kendo-floating-label-text;
-        }
-    }
 
 }

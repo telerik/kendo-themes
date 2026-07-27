@@ -42,6 +42,31 @@
     }
 
 
+    // Time column text
+    .k-scheduler-times,
+    .k-scheduler-cell.k-side-cell {
+        color: k-color(subtle);
+    }
+
+
+    // Day/Week/WorkWeek view – heading cell colors
+    .k-scheduler-dayview,
+    .k-scheduler-weekview {
+        .k-scheduler-date-day {
+            color: k-color(subtle);
+        }
+
+        .k-nav-day {
+            color: k-color(on-app-surface);
+        }
+
+        .k-today .k-scheduler-date-day,
+        .k-today .k-nav-day {
+            color: k-color(primary);
+        }
+    }
+
+
     // Scheduler navigation
     .k-scheduler-navigation {}
 
@@ -124,6 +149,17 @@
         }
     }
 
+    // Read-only events
+    .k-readonly-scheduler .k-event,
+    .k-event.k-readonly {
+        @include fill(
+            $kendo-scheduler-event-readonly-text,
+            $kendo-scheduler-event-readonly-bg,
+            $kendo-scheduler-event-readonly-border
+        );
+        @include box-shadow( none );
+    }
+
 
     // Drag hint
     .k-event-drag-hint {}
@@ -136,21 +172,8 @@
         border-color: k-color(primary);
     }
 
-    // Edit dialog
-    .k-scheduler-edit-dialog {
-        .k-dialog-actions {
-            border-color: $kendo-scheduler-border;
-        }
-    }
-
-
-
     // Day view
     .k-scheduler-dayview {}
-
-
-    // Workweek view
-    .k-scheduler-workWeekview {} // stylelint-disable-line
 
 
     // Week view
@@ -158,7 +181,12 @@
 
 
     // Month view
-    .k-scheduler-monthview {}
+    .k-scheduler-monthview {
+        .k-scheduler-header th,
+        .k-scheduler-cell.k-heading-cell {
+            color: k-color(subtle);
+        }
+    }
 
 
     // Agenda view
@@ -216,26 +244,6 @@
     }
 
 
-
-    // Scheduler tooltip
-    .k-tooltip.k-scheduler-tooltip {
-        @include fill(
-            $kendo-scheduler-tooltip-text,
-            $kendo-scheduler-tooltip-bg,
-            $kendo-scheduler-tooltip-border
-        );
-        @include box-shadow( $kendo-scheduler-tooltip-shadow );
-
-        .k-callout {
-            @include fill( $color: $kendo-scheduler-tooltip-callout-text );
-        }
-    }
-
-
-    // Scheduler edit form
-    .k-scheduler-edit-form {}
-
-
     // Adaptive
     .k-pane-wrapper,
     .k-view {
@@ -244,6 +252,10 @@
             $kendo-scheduler-adaptive-bg,
             $kendo-scheduler-adaptive-border
         );
+
+        .k-scheduler-delete {
+            color: k-color(primary-on-surface);
+        }
     }
 
     .k-pane-wrapper .k-pane {
@@ -288,20 +300,6 @@
                 display: inline-block;
                 background-color: inherit;
             }
-        }
-
-        .k-scheduler-edit-form {
-
-            .k-item,
-            .k-link {
-                color: k-color(on-app-surface);
-            }
-
-            .k-scheduler-delete,
-            .k-scheduler-resetSeries { // stylelint-disable-line
-                color: $kendo-scheduler-adaptive-menu-clear-text;
-            }
-
         }
 
     }
