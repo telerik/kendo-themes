@@ -5,9 +5,9 @@ import Thought from "../thought.spec";
 export default () => (
   <div id="test-area" className="k-d-flex k-flex-col" style={{ maxWidth: "680px" }}>
     <section>
-      <ChainOfThought label="Thought" time="for 4m 18s" completed expandable />
+      <ChainOfThought label="Thought" secondaryLabel="for 4m 18s" completed expandable />
 
-      <ChainOfThought label="Thought" time="for 4m 18s" completed expandable expanded>
+      <ChainOfThought label="Thought" secondaryLabel="for 4m 18s" completed expandable expanded>
         <Thought icon="search" label="Searched for components" completed />
         <Thought icon="book" label='Found 12 components matching "button". Reviewing variants — identified 3 candidates with primary intent.' completed />
         <Thought icon="book" label="Retrieved design system documentation for Button components." completed>
@@ -25,7 +25,7 @@ export default () => (
         <Thought icon="pencil" label="Edited" secondaryLabel="_theme.scss" linesAdded={3} linesRemoved={1} completed />
       </ChainOfThought>
       <ChainOfThought icon="search" label="Searched for components" completed expandable />
-      <ChainOfThought icon="book" label="Reviewed component variants" time="for 12s" expandable completed />
+      <ChainOfThought icon="book" label="Reviewed component variants" secondaryLabel="for 12s" expandable completed />
 
       <ChainOfThought label="Thinking through request" secondaryLabel="I'm considering the best approach to the problem..." expandable expanded>
         <Thought icon="search" label="Searched for components" completed />

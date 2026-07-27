@@ -23,8 +23,6 @@ export type KendoThoughtProps = {
   linesAdded?: number;
   /** Number of lines removed (rendered red with - prefix) */
   linesRemoved?: number;
-  /** Duration string — e.g. "120ms", "4m 18s" */
-  time?: string;
   /** Status badge text — e.g. "Completed", "Awaiting Approval", "No results found" */
   status?: string;
   /** Theme color for the status Badge */
@@ -44,7 +42,7 @@ const defaultOptions = {
  * @ux {Diff stats} Added/removed line counts always render in success/error colors, regardless of completed state.
  */
 export const Thought: KendoComponent<KendoThoughtProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoThoughtProps & React.HTMLAttributes<HTMLDivElement>) => {
-  const { icon, label, labelClassName, secondaryLabel, linesAdded, linesRemoved, time, status, statusThemeColor = "success", statusIcon, completed = defaultOptions.completed, className, children, ...other } = props;
+  const { icon, label, labelClassName, secondaryLabel, linesAdded, linesRemoved, status, statusThemeColor = "success", statusIcon, completed = defaultOptions.completed, className, children, ...other } = props;
 
   return (
     <div
@@ -68,12 +66,6 @@ export const Thought: KendoComponent<KendoThoughtProps & React.HTMLAttributes<HT
         )}
         {linesAdded && <span className="k-agent-step-added">+{linesAdded}</span>}
         {linesRemoved && <span className="k-agent-step-removed">-{linesRemoved}</span>}
-        {time && (
-          <>
-            <span className="k-agent-step-sep">·</span>
-            <span className="k-agent-step-time">{time}</span>
-          </>
-        )}
         {status && (
           <Badge size="small" themeColor={statusThemeColor} rounded="full">
             {statusIcon && <Icon icon={statusIcon} size="small" />}
