@@ -1,3 +1,10 @@
+## 14.4.1-dev.0 (2026-07-27)
+
+### 🩹 Fixes
+
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+- **html:** list with checkbox a11y ([724d173299](https://github.com/telerik/kendo-themes/commit/724d173299))
+
 ## 14.4.0 (2026-07-21)
 
 ### 🚀 Features
