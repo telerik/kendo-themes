@@ -4,12 +4,40 @@
 
 /// The padding of the CitationPopover view.
 /// @group citation
-$kendo-citation-popover-view-padding: k-spacing(4) !default;
+$kendo-citation-popover-view-padding: k-spacing(2) k-spacing(4) k-spacing(4) k-spacing(4) !default;
 /// The text color of the CitationPopover page indicator.
 /// @group citation
 $kendo-citation-pages-color: k-color(subtle) !default;
+/// The font weight of the CitationPopoverView title.
+/// @group citation
+$kendo-citation-popover-view-title-font-weight: var(--kendo-font-weight-medium) !default;
+/// The font size of the CitationPopoverView body text.
+/// @group citation
+$kendo-citation-popover-view-body-font-size: var(--kendo-font-size-sm) !default;
+/// The top margin of the CitationPopoverView body text.
+/// @group citation
+$kendo-citation-popover-view-body-margin-top: k-spacing(2) !default;
+/// The text color of the CitationPopoverView body text.
+/// @group citation
+$kendo-citation-popover-view-body-color: k-color(subtle) !default;
+/// The font size of the CitationPopoverView source link.
+/// @group citation
+$kendo-citation-popover-view-source-font-size: var(--kendo-font-size-sm) !default;
+/// The top margin of the CitationPopoverView source link.
+/// @group citation
+$kendo-citation-popover-view-source-margin-top: 0 !default;
+/// The gap between the icon and text of the CitationPopoverView source link.
+/// @group citation
+$kendo-citation-popover-view-source-gap: k-spacing(1) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/citation/_variables.scss" with (
     $kendo-citation-popover-view-padding: $kendo-citation-popover-view-padding,
-    $kendo-citation-pages-color: $kendo-citation-pages-color
+    $kendo-citation-pages-color: $kendo-citation-pages-color,
+    $kendo-citation-popover-view-title-font-weight: $kendo-citation-popover-view-title-font-weight,
+    $kendo-citation-popover-view-body-font-size: $kendo-citation-popover-view-body-font-size,
+    $kendo-citation-popover-view-body-margin-top: $kendo-citation-popover-view-body-margin-top,
+    $kendo-citation-popover-view-body-color: $kendo-citation-popover-view-body-color,
+    $kendo-citation-popover-view-source-font-size: $kendo-citation-popover-view-source-font-size,
+    $kendo-citation-popover-view-source-margin-top: $kendo-citation-popover-view-source-margin-top,
+    $kendo-citation-popover-view-source-gap: $kendo-citation-popover-view-source-gap
 );

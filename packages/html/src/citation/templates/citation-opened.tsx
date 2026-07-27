@@ -1,5 +1,6 @@
 import Citation from "../citation.spec";
 import CitationPopover from "../citation-popover.spec";
+import CitationPopoverView from "../citation-popover-view.spec";
 
 export const CitationOpened = (props: any) => (
   <>
@@ -7,12 +8,8 @@ export const CitationOpened = (props: any) => (
     <CitationPopover
       body={
         <>
-          <div className="k-citation-popover-view">
-            <div>View 1</div>
-          </div>
-          <div className="k-citation-popover-view">
-            <div>View 2</div>
-          </div>
+          <CitationPopoverView title="View 1" />
+          <CitationPopoverView title="View 2" />
         </>
       }
     />

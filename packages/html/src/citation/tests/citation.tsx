@@ -1,10 +1,11 @@
 import { Citation } from "../citation.spec";
 import CitationPopover from "../citation-popover.spec";
-import Icon from "../../icon/icon.spec";
+import CitationPopoverView from "../citation-popover-view.spec";
 
 const styles = `
     .k-animation-container {
         position: relative;
+        width: 318px;
     }
 `;
 
@@ -16,34 +17,32 @@ export default () => (
         <p>Inline Citation</p>
         <div className="k-d-flex k-flex-wrap k-gap-2 k-align-items-center">
           <Citation domain="some-link.com" count={5} />
-          <Citation domain="some-link.com" count={5} selected />
+          <Citation domain="some-link.com" count={5} hover />
         </div>
       </section>
 
       <section>
         <p>Inline Citation + Popover</p>
         <p>
-          An inline citation component is an interactive UI element that embeds clickable reference badges, like [1] or source names, directly into text. <Citation domain="some-link.com" count={5} selected /> When users hover over or click these badges, the component displays full source details, such as titles, domains, URLs.
+          An inline citation component is an interactive UI element that embeds clickable reference badges, like [1] or source names, directly into text. <Citation domain="some-link.com" count={5} hover /> When users hover over or click these badges, the component displays full source details, such as titles, domains, URLs.
         </p>
         <CitationPopover
           body={
             <>
-              <div className="k-citation-popover-view">
-                <div className="k-font-weight-bold">Advances in Natural Language Processing</div>
-                <span className="k-color-subtle k-font-size-sm k-mt-2">A comprehensive study on the recent developments in natural language processing technologies and their...</span>
-                <a href="#" className="k-d-flex k-align-items-center k-font-size-sm k-mt-1 k-gap-1">
-                  <Icon icon="globe" />
-                  https://example.com/nlp-advances
-                </a>
-              </div>
-              <div className="k-citation-popover-view">
-                <div className="k-font-weight-bold">Advances in Natural Language Processing</div>
-                <span className="k-color-subtle k-font-size-sm k-mt-2">A comprehensive study on the recent developments in natural language processing technologies and their...</span>
-                <a href="#" className="k-d-flex k-align-items-center k-font-size-sm k-mt-1 k-gap-1">
-                  <Icon icon="globe" />
-                  https://example.com/nlp-advances
-                </a>
-              </div>
+              <CitationPopoverView title="Advances in Natural Language" body="A comprehensive study on the recent developments in natural language processing technologies" source="https://example.com/nlp-advances" />
+              <CitationPopoverView title="Advances in Natural Language" body="A comprehensive study on the recent developments in natural language processing technologies" source="https://example.com/nlp-advances" />
+            </>
+          }
+        />
+      </section>
+
+      <section>
+        <p>Inline Citation + Popover with long texts</p>
+        <CitationPopover
+          body={
+            <>
+              <CitationPopoverView title="Advances in Natural Language Processing Long Long Long" body="A comprehensive study on the recent developments in natural language processing technologies and their long long long long long long long long long long long long long long long long long long long long long text" source="https://example.com/nlp-advances/long/long/long" />
+              <CitationPopoverView title="Advances in Natural Language Processing Long Long Long" body="A comprehensive study on the recent developments in natural language processing technologies and their" source="https://example.com/nlp-advances/long/long/long" />
             </>
           }
         />

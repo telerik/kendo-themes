@@ -7,4 +7,12 @@
             color: $kendo-citation-pages-color;
         }
     }
+
+    .k-citation-popover-view-body {
+        color: $kendo-citation-popover-view-body-color;
+    }
+
+    .k-citation-popover-view-source {
+        color: k-color(info-on-surface);
+    }
 }
