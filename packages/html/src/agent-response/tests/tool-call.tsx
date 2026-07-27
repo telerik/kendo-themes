@@ -8,11 +8,11 @@ import { MessageBox } from "../../message-box";
 export default () => (
   <div id="test-area" className="k-d-flex k-flex-col">
     <section>
-      <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts" time="120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable />
+      <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts · 120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable />
 
-      <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts" time="120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable />
+      <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts · 120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable />
 
-      <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts" time="120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable expanded>
+      <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts · 120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable expanded>
         <div>Parameters</div>
         <Card>
           <CardBody>

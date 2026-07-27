@@ -2,7 +2,7 @@ import ToolCall from '../tool-call.spec';
 import { Card, CardBody } from '../../card';
 
 export const ToolCallExpanded = (props: any) => (
-    <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts" time="120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable expanded {...props}>
+    <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts · 120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable expanded {...props}>
         <div>Parameters</div>
         <Card>
             <CardBody>
