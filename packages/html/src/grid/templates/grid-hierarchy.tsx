@@ -57,7 +57,7 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
                                     <TableTd className="k-detail-cell" role="gridcell" colspan={3}>
                                         <Grid _renderAriaRoot className="k-grid-no-scrollbar">
                                             <GridHeader>
-                                                <div className="k-grid-header-wrap">
+                                                <div className="k-grid-header-wrap" role="none">
                                                     <GridHeaderTable role="none">
                                                         <colgroup>
                                                             <col />

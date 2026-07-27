@@ -1,11 +1,18 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
+import MenuButton from '../../menu-button/menu-button.spec';
 import { Toolbar } from '../../toolbar';
 
+const style = `
+    #test-area {
+        max-width: 1080px;
+    }
+`;
 
 export default () =>(
     <>
+        <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <div className="k-pane-wrapper">
@@ -13,25 +20,23 @@ export default () =>(
                     <div className="k-view">
                         <div className="k-stretched-view k-content">
                             <div id="scheduler" className="k-scheduler k-scheduler-mobile">
-                                <Toolbar className="k-scheduler-toolbar">
+                                <Toolbar className="k-scheduler-toolbar" aria-label="Scheduler toolbar">
                                     <ButtonGroup className="k-scheduler-tools">
-                                        <Button className="k-pdf k-group-start" icon="file-pdf"></Button>
-                                        <Button className="k-nav-calendar" icon="calendar"></Button>
-                                        <Button className="k-create-event k-group-end" icon="plus"></Button>
+                                        <Button className="k-pdf k-group-start" icon="file-pdf" aria-label="Export to PDF"></Button>
+                                        <Button className="k-nav-calendar" icon="calendar" aria-label="Open calendar"></Button>
+                                        <Button className="k-create-event k-group-end" icon="plus" aria-label="Create event"></Button>
                                     </ButtonGroup>
                                     <span className="k-spacer"></span>
-                                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown">
-                                        <option>Agenda</option>
-                                    </select>
+                                    <MenuButton fillMode="flat">Agenda</MenuButton>
                                 </Toolbar>
-                                <Toolbar className="k-scheduler-toolbar">
-                                    <Button className="k-nav-prev" icon="chevron-left"></Button>
+                                <Toolbar className="k-scheduler-toolbar" aria-label="Scheduler navigation">
+                                    <Button className="k-nav-prev" icon="chevron-left" aria-label="Navigate to previous period"></Button>
                                     <span className="k-spacer"></span>
-                                    <Button className="k-nav-current" fillMode="flat" >
-                                        Jun 13 - 20, 2013
+                                    <Button className="k-nav-current" fillMode="flat" aria-live="polite">
+                                        13 – 20 Jun 2013
                                     </Button>
                                     <span className="k-spacer"></span>
-                                    <Button className="k-nav-next" icon="chevron-right"></Button>
+                                    <Button className="k-nav-next" icon="chevron-right" aria-label="Navigate to next period"></Button>
                                 </Toolbar>
                                 <table className="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda k-scrollbar-v">
                                     <tbody>

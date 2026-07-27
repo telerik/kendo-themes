@@ -11,22 +11,24 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
         view="week"
         toolbar={
             <SchedulerToolbar>
-                <ButtonGroup className="k-scheduler-navigation">
-                    <Button className="k-group-start">Today</Button>
-                    <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
-                    <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
+                <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                <ButtonGroup fillMode="flat">
+                    <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                    <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                    6/12/2022 - 6/18/2022
+                    31 May – 6 June
                 </Button>
+                <Button fillMode="flat">Today</Button>
                 <span className="k-spacer"></span>
-                <SegmentedControl thumbStyles={{ width: "18%", left: "16%" }} className="k-scheduler-views">
+                <SegmentedControl thumbStyles={{ width: "19%", left: "15%" }} className="k-scheduler-views">
                     <SegmentedControlButton>Day</SegmentedControlButton>
                     <SegmentedControlButton selected>Week</SegmentedControlButton>
                     <SegmentedControlButton>Month</SegmentedControlButton>
                     <SegmentedControlButton>Timeline</SegmentedControlButton>
                     <SegmentedControlButton>Agenda</SegmentedControlButton>
                 </SegmentedControl>
+
             </SchedulerToolbar>
         }
         footer={
@@ -42,7 +44,7 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
                             <SchedulerTimes>
                                 <SchedulerTable role="none">
                                     <tbody>
-                                        <tr style={{ height: "37px" }}>
+                                        <tr style={{ height: "55px" }}>
                                             <SchedulerCell as="th" />
                                         </tr>
                                         <tr style={{ height: "36px" }}>
@@ -57,13 +59,13 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
                                 <SchedulerTable>
                                     <tbody>
                                         <tr className="k-scheduler-date-group">
-                                            <SchedulerCell as="th" text="Sun 6/12" />
-                                            <SchedulerCell as="th" text="Mon 6/13" />
-                                            <SchedulerCell as="th" text="Tue 6/14" />
-                                            <SchedulerCell as="th" text="Wed 6/15" />
-                                            <SchedulerCell as="th" text="Thu 6/16" />
-                                            <SchedulerCell as="th" text="Fri 6/17" />
-                                            <SchedulerCell as="th" text="Sat 6/18" />
+                                            <SchedulerCell as="th" dayText="Sun" text="12" />
+                                            <SchedulerCell as="th" dayText="Mon" text="13" />
+                                            <SchedulerCell as="th" dayText="Tue" text="14" />
+                                            <SchedulerCell as="th" className="k-today" dayText="Wed" text="15" />
+                                            <SchedulerCell as="th" dayText="Thu" text="16" />
+                                            <SchedulerCell as="th" dayText="Fri" text="17" />
+                                            <SchedulerCell as="th" dayText="Sat" text="18" />
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
@@ -242,18 +244,9 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
-                                <SchedulerEvent style={{ top: "74px", left: "129px", height: "72px", width: "124px" }}>
-                                    <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
-                                    <div className="k-event-template">Event Title</div>
-                                </SchedulerEvent>
-                                <SchedulerEvent resizable="vertical" style={{ top: "147px", left: "255px", height: "72px", width: "378px" }}>
-                                    <div className="k-event-template k-event-time">9:00 AM - 10:00 AM</div>
-                                    <div className="k-event-template">Event Title</div>
-                                </SchedulerEvent>
-                                <SchedulerEvent style={{ top: "74px", left: "636px", height: "72px", width: "124px" }}>
-                                    <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
-                                    <div className="k-event-template">Event Title</div>
-                                </SchedulerEvent>
+                                <SchedulerEvent style={{ top: "74px", left: "129px", height: "72px", width: "124px" }} title="Event Title" time="8:00 AM - 9:00 AM" />
+                                <SchedulerEvent resizable="vertical" style={{ top: "147px", left: "255px", height: "72px", width: "378px" }} title="Event Title" time="9:00 AM - 10:00 AM" />
+                                <SchedulerEvent style={{ top: "74px", left: "636px", height: "72px", width: "124px" }} title="Event Title" time="8:00 AM - 9:00 AM" />
                             </SchedulerContent>
                         </td>
                     </SchedulerBody>

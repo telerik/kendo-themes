@@ -34,22 +34,22 @@ export const SchedulerFlexHorizontalGrouping = (...props) => (
                             <SchedulerCell as="div" cellType={[ "side" ]} style={{ minWidth: "61px" }} />
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Mon, 6/13" />
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Mon" text="13" />
                                 </SchedulerRow>
                             </SchedulerCell>
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Tue, 6/14" />
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-today" dayText="Tue" text="14" />
                                 </SchedulerRow>
                             </SchedulerCell>
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Mon, 6/13" />
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Mon" text="13" />
                                 </SchedulerRow>
                             </SchedulerCell>
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Tue, 6/14" />
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-today" dayText="Tue" text="14" />
                                 </SchedulerRow>
                             </SchedulerCell>
                         </SchedulerRow>
@@ -316,14 +316,8 @@ export const SchedulerFlexHorizontalGrouping = (...props) => (
                             </SchedulerCell>
                         </SchedulerRow>
                     </SchedulerGroup>
-                    <SchedulerEvent eventPrefix={null} style={{ top: "100px", left: "88px", height: "194px", width: "200px" }}>
-                        <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
-                        <div className="k-event-template">Event 1 Title</div>
-                    </SchedulerEvent>
-                    <SchedulerEvent style={{ top: "100px", left: "293px", height: "194px", width: "200px" }}>
-                        <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
-                        <div className="k-event-template">Event 2 Title</div>
-                    </SchedulerEvent>
+                    <SchedulerEvent style={{ top: "100px", left: "88px", height: "194px", width: "200px" }} title="Event 1 Title" time="8:00 AM - 9:00 AM" />
+                    <SchedulerEvent style={{ top: "100px", left: "293px", height: "194px", width: "200px" }} title="Event 2 Title" time="8:00 AM - 9:00 AM" />
                 </SchedulerBody>
             </>
         }

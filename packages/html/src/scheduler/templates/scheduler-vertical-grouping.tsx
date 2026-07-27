@@ -21,7 +21,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                             <SchedulerTimes>
                                 <SchedulerTable role="none">
                                     <tbody>
-                                        <tr style={{ height: "37px" }}>
+                                        <tr style={{ height: "55px" }}>
                                             <SchedulerCell as="th" />
                                         </tr>
                                     </tbody>
@@ -33,7 +33,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                 <SchedulerTable>
                                     <tbody>
                                         <tr className="k-scheduler-date-group">
-                                            <SchedulerCell as="th" text="Mon 6/13" />
+                                            <SchedulerCell as="th" dayText="Mon" text="13" />
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>

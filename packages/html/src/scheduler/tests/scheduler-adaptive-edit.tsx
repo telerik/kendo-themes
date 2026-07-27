@@ -1,21 +1,27 @@
 import { Button } from '../../button';
 import { Icon } from '../../icon';
 
+const style = `
+    #test-area {
+        max-width: 1080px;
+    }
+`;
 
 export default () =>(
     <>
+        <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
                 <div className="k-pane-wrapper" style={{ height: "600px" }}>
                     <div className="k-pane">
-                        <div className="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view">
+                        <div className="k-popup-edit-form k-mobile-list k-view">
                             <div className="k-appbar k-appbar-primary">
-                                <Button className="k-header-cancel" fillMode="flat" icon="chevron-left"></Button>
+                                <Button className="k-header-cancel" fillMode="flat" icon="chevron-left" aria-label="Cancel"></Button>
                                 <span className="k-spacer"></span>
                                 <span>Event</span>
                                 <span className="k-spacer"></span>
-                                <Button className="k-header-done" fillMode="flat" icon="check"></Button>
+                                <Button className="k-header-done" fillMode="flat" icon="check" aria-label="Done"></Button>
                             </div>
                             <div className="k-stretched-view k-content">
                                 <ul className="k-listgroup k-listgroup-flush">
