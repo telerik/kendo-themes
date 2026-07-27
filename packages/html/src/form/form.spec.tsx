@@ -48,7 +48,8 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
         cols,
         gutters,
         tag = defaultOptions.tag,
-        children
+        children,
+        style
     } = props;
 
     const Tag = tag;
@@ -76,7 +77,8 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
                 )} style={{
                     ...(typeof gutters === 'string' && { gap: gutters }),
                     ...(typeof gutters === 'object' && gutters.rows && { rowGap: gutters.rows }),
-                    ...(typeof gutters === 'object' && gutters.cols && { columnGap: gutters.cols })
+                    ...(typeof gutters === 'object' && gutters.cols && { columnGap: gutters.cols }),
+                    ...style
                 }}>
                     {children}
                 </div>

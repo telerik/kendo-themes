@@ -24,7 +24,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                         <tr style={{ height: "37px" }}>
                                             <SchedulerCell as="th" />
                                         </tr>
-                                        <tr style={{ height: "37px" }}>
+                                        <tr style={{ height: "55px" }}>
                                             <SchedulerCell as="th" />
                                         </tr>
                                         <tr style={{ height: "36px" }}>
@@ -43,8 +43,8 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             <SchedulerCell as="th" cellType={["slot", "group"]}>Meeting Room 201</SchedulerCell>
                                         </tr>
                                         <tr className="k-scheduler-date-group">
-                                            <SchedulerCell as="th" text="Mon 6/13" />
-                                            <SchedulerCell as="th" text="Mon 6/13" />
+                                            <SchedulerCell as="th" dayText="Mon" text="13" />
+                                            <SchedulerCell as="th" dayText="Mon" text="13" />
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
@@ -244,14 +244,8 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
-                                <SchedulerEvent eventPrefix={null} style={{ top: "148px", left: "445px", height: "590px", width: "120px" }}>
-                                    <div className="k-event-template k-event-time">9:00 AM - 4:00 PM</div>
-                                    <div className="k-event-template">Event 1 Title</div>
-                                </SchedulerEvent>
-                                <SchedulerEvent style={{ top: "298px", left: "567px", height: "72px", width: "120px" }}>
-                                    <div className="k-event-template k-event-time">10:00 AM - 11:00 AM</div>
-                                    <div className="k-event-template">Event 2 Title</div>
-                                </SchedulerEvent>
+                                <SchedulerEvent style={{ top: "148px", left: "445px", height: "590px", width: "120px" }} title="Event 1 Title" time="9:00 AM - 4:00 PM" />
+                                <SchedulerEvent style={{ top: "298px", left: "567px", height: "72px", width: "120px" }} title="Event 2 Title" time="10:00 AM - 11:00 AM" />
                             </SchedulerContent>
                         </td>
                     </SchedulerBody>

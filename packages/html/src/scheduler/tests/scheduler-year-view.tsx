@@ -1,6 +1,9 @@
 import { SchedulerFlexYear } from '../../scheduler';
 
 const styles = `
+    #test-area {
+        max-width: 1080px;
+    }
     .k-scheduler-body {
         height: 500px;
         overflow: auto;

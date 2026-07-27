@@ -1,5 +1,4 @@
 import { Button } from '../button';
-import { ButtonGroup } from '../button-group';
 import { classNames } from '../misc';
 import { SegmentedControl, SegmentedControlButton } from '../segmented-control';
 import { Toolbar, KendoToolbarProps } from '../toolbar';
@@ -25,6 +24,7 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
     return (
         <Toolbar
             {...others}
+            fillMode="flat"
             className={classNames(
                 props.className,
                 {
@@ -35,16 +35,15 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
         >
             {props.children ||
                 [
-                    <ButtonGroup key="nav" className="k-scheduler-navigation">
-                        <Button className="k-group-start">Today</Button>
-                        <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
-                        <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
-                    </ButtonGroup>,
+                    <Button key="new-event" themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>,
+                    <Button key="prev" icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>,
+                    <Button key="next" icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>,
                     <Button key="current" icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                        Monday, June 13, 2022
+                        13 June
                     </Button>,
+                    <Button key="today" fillMode="flat">Today</Button>,
                     <span key="spacer" className="k-spacer"></span>,
-                    <SegmentedControl key="views" thumbStyles={{ width: "15%", left: "2px" }} className="k-scheduler-views">
+                    <SegmentedControl thumbStyles={{width: "15%"}} key="views" className="k-scheduler-views">
                         <SegmentedControlButton selected>Day</SegmentedControlButton>
                         <SegmentedControlButton>Week</SegmentedControlButton>
                         <SegmentedControlButton>Month</SegmentedControlButton>

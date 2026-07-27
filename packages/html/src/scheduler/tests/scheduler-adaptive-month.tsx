@@ -1,11 +1,18 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
-import { Icon } from '../../icon';
+import MenuButton from '../../menu-button/menu-button.spec';
 import { Toolbar } from '../../toolbar';
+import { SchedulerEvent } from '..';
 
+const style = `
+    #test-area {
+        max-width: 1080px;
+    }
+`;
 
 export default () =>(
     <>
+        <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <div className="k-pane-wrapper">
@@ -13,25 +20,23 @@ export default () =>(
                     <div className="k-view">
                         <div className="k-stretched-view k-content">
                             <div id="scheduler" className="k-scheduler k-scheduler-mobile">
-                                <Toolbar className="k-scheduler-toolbar">
+                                <Toolbar className="k-scheduler-toolbar" aria-label="Scheduler toolbar">
                                     <ButtonGroup className="k-scheduler-tools">
-                                        <Button className="k-pdf k-group-start" icon="file-pdf"></Button>
-                                        <Button className="k-nav-calendar" icon="calendar"></Button>
-                                        <Button className="k-create-event k-group-end" icon="plus"></Button>
+                                        <Button className="k-pdf k-group-start" icon="file-pdf" aria-label="Export to PDF"></Button>
+                                        <Button className="k-nav-calendar" icon="calendar" aria-label="Open calendar"></Button>
+                                        <Button className="k-create-event k-group-end" icon="plus" aria-label="Create event"></Button>
                                     </ButtonGroup>
                                     <span className="k-spacer"></span>
-                                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown">
-                                        <option>Month</option>
-                                    </select>
+                                    <MenuButton fillMode="flat">Month</MenuButton>
                                 </Toolbar>
-                                <Toolbar className="k-scheduler-toolbar">
-                                    <Button className="k-nav-prev" icon="chevron-left"></Button>
+                                <Toolbar className="k-scheduler-toolbar" aria-label="Scheduler navigation">
+                                    <Button className="k-nav-prev" icon="chevron-left" aria-label="Navigate to previous period"></Button>
                                     <span className="k-spacer"></span>
-                                    <Button className="k-nav-current" fillMode="flat" >
-                                        June, 2013
+                                    <Button className="k-nav-current" fillMode="flat" aria-live="polite">
+                                        Jun 2013
                                     </Button>
                                     <span className="k-spacer"></span>
-                                    <Button className="k-nav-next" icon="chevron-right"></Button>
+                                    <Button className="k-nav-next" icon="chevron-right" aria-label="Navigate to next period"></Button>
                                 </Toolbar>
                                 <table className="k-scheduler-layout k-scheduler-monthview">
                                     <tbody>
@@ -118,23 +123,11 @@ export default () =>(
                                                         </tbody>
                                                     </table>
                                                     <div className="k-events-container" style={{ top: "97px", left: "140px", width: "140px" }}>
-                                                        <div style={{ backgroundColor: "#51a0ed", borderColor: "#51a0ed" }} className="k-event">
-                                                            <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
-                                                            <div><div className="k-event-template">Dance Practice</div></div>
-                                                            <span className="k-event-actions"></span>
-                                                        </div>
+                                                        <SchedulerEvent recurring="recurring" resizable="none" style={{ backgroundColor: "#51a0ed", borderColor: "#51a0ed" }} title="Dance Practice" />
                                                     </div>
                                                     <div className="k-events-container" style={{ top: "97px", left: "280px", width: "140px" }}>
-                                                        <div style={{ backgroundColor: "#f8a398", borderColor: "#f8a398" }} className="k-event">
-                                                            <span className="k-event-actions"></span>
-                                                            <div><div className="k-event-template">Breakfast at Starbucks</div></div>
-                                                            <span className="k-event-actions"></span>
-                                                        </div>
-                                                        <div style={{ backgroundColor: "#56ca85", borderColor: "#56ca85" }} className="k-event">
-                                                            <span className="k-event-actions"></span>
-                                                            <div><div className="k-event-template">Software updates</div></div>
-                                                            <span className="k-event-actions"></span>
-                                                        </div>
+                                                        <SchedulerEvent resizable="none" style={{ backgroundColor: "#f8a398", borderColor: "#f8a398" }} title="Breakfast at Starbucks" />
+                                                        <SchedulerEvent resizable="none" style={{ backgroundColor: "#56ca85", borderColor: "#56ca85" }} title="Software updates" />
                                                     </div>
                                                 </div>
                                             </td>
