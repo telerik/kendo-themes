@@ -1081,6 +1081,16 @@ The following table lists the available variables for customizing the Material t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the ToolCall body.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-tool-call-pre-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the pre element in the ToolCall body.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -8673,9 +8683,9 @@ The following table lists the available variables for customizing the Material t
 </thead>
 <tbody><tr>
     <td>$kendo-citation-popover-view-padding</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>List</td>
+    <td><code>0 k-spacing(4) k-spacing(4) k-spacing(4)</code></td>
+    <td><code>(0 var(--kendo-spacing-4) var(--kendo-spacing-4) var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the CitationPopover view.</div></div>
@@ -8694,8 +8704,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-citation-popover-view-title-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-bold)</code></td>
-    <td><code>var(--kendo-font-weight-bold)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the CitationPopoverView title.</div></div>
@@ -8743,9 +8753,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-citation-popover-view-source-margin-top</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the CitationPopoverView source link.</div></div>

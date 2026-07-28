@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-citation-popover-view-padding</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>List</td>
+    <td><code>k-spacing(2) k-spacing(4) k-spacing(4) k-spacing(4)</code></td>
+    <td><code>(var(--kendo-spacing-2) var(--kendo-spacing-4) var(--kendo-spacing-4) var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the CitationPopover view.</div></div>
@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-citation-popover-view-title-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-bold)</code></td>
-    <td><code>var(--kendo-font-weight-bold)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the CitationPopoverView title.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-citation-popover-view-source-margin-top</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the CitationPopoverView source link.</div></div>

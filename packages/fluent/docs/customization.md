@@ -991,6 +991,16 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the ToolCall body.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-tool-call-pre-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-tool-call-pre-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-tool-call-pre-border-radius, var(--kendo-border-radius-md))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the pre element in the ToolCall body.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -8750,8 +8760,8 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-citation-popover-view-padding</td>
     <td>String</td>
-    <td><code>var( --kendo-citation-popover-view-padding, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-citation-popover-view-padding, var(--kendo-spacing-4))</code></td>
+    <td><code>var( --kendo-citation-popover-view-padding, k-spacing(2) k-spacing(4) k-spacing(4) k-spacing(4) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-padding, var(--kendo-spacing-2) var(--kendo-spacing-4) var(--kendo-spacing-4) var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the CitationPopover view.</div></div>
@@ -8770,8 +8780,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-citation-popover-view-title-font-weight</td>
     <td>String</td>
-    <td><code>var( --kendo-citation-popover-view-title-font-weight, var(--kendo-font-weight-bold) )</code></td>
-    <td><code>var(--kendo-citation-popover-view-title-font-weight, var(--kendo-font-weight-bold))</code></td>
+    <td><code>var( --kendo-citation-popover-view-title-font-weight, var(--kendo-font-weight-medium) )</code></td>
+    <td><code>var(--kendo-citation-popover-view-title-font-weight, var(--kendo-font-weight-medium))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the CitationPopoverView title.</div></div>
@@ -8820,8 +8830,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-citation-popover-view-source-margin-top</td>
     <td>String</td>
-    <td><code>var( --kendo-citation-popover-view-source-margin-top, k-spacing(1) )</code></td>
-    <td><code>var(--kendo-citation-popover-view-source-margin-top, var(--kendo-spacing-1))</code></td>
+    <td><code>var( --kendo-citation-popover-view-source-margin-top, 0 )</code></td>
+    <td><code>var(--kendo-citation-popover-view-source-margin-top, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the CitationPopoverView source link.</div></div>
