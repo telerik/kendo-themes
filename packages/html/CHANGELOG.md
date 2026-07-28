@@ -1,3 +1,21 @@
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🚀 Features
+
+- **html:** update scheduler rendering ([82fcc1f3de](https://github.com/telerik/kendo-themes/commit/82fcc1f3de))
+
+### 🩹 Fixes
+
+- **html:** citation templates rendering ([c7f0297347](https://github.com/telerik/kendo-themes/commit/c7f0297347))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
 ## 14.4.1-dev.0 (2026-07-27)
 
 ### 🩹 Fixes

@@ -1,3 +1,15 @@
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🩹 Fixes
+
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
 ## 14.4.1-dev.0 (2026-07-27)
 
 This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.

@@ -1,3 +1,18 @@
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🚀 Features
+
+- **html:** update scheduler rendering ([82fcc1f3de](https://github.com/telerik/kendo-themes/commit/82fcc1f3de))
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- add cursor pointer on agent step head ([dc4079036d](https://github.com/telerik/kendo-themes/commit/dc4079036d))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** citation templates rendering ([c7f0297347](https://github.com/telerik/kendo-themes/commit/c7f0297347))
+
 ## 14.4.1-dev.0 (2026-07-27)
 
 ### 🩹 Fixes
