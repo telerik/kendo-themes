@@ -28414,8 +28414,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-event-min-height</td>
     <td>Number</td>
-    <td><code>25px</code></td>
-    <td><code>25px</code></td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the Scheduler event.</div></div>
@@ -28432,13 +28432,83 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-event-line-height</td>
-    <td>Calculation</td>
-    <td><code>calc( $kendo-scheduler-event-min-height - k-spacing(1) )</code></td>
-    <td><code>calc(25px - var(--kendo-spacing-1))</code></td>
+    <td>$kendo-scheduler-event-title-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Scheduler event.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-title-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-title-padding-top</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top padding of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-title-padding-bottom</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-xs)</code></td>
+    <td><code>var(--kendo-font-size-xs)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Scheduler event time.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Scheduler event time.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-padding-top</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top padding of the Scheduler event time.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-padding-bottom</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Scheduler event time.</div></div>
     </td>
 </tr>
 <tr>
@@ -28489,6 +28559,36 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-readonly-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the read-only Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-readonly-text</td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the read-only Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-readonly-border</td>
+    <td>String</td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the read-only Scheduler event.</div></div>
     </td>
 </tr>
 <tr>
@@ -28599,6 +28699,56 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ongoing Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resizer-size</td>
+    <td>Number</td>
+    <td><code>0.5em</code></td>
+    <td><code>0.5em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Scheduler resize handle hit area.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-size</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The length of the Scheduler resize handle visual indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(full)</code></td>
+    <td><code>var(--kendo-border-radius-full)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Scheduler resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-border-width</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Scheduler resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-bg</td>
+    <td>String</td>
+    <td><code>$kendo-scheduler-event-bg</code></td>
+    <td><code>var(--kendo-color-primary)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler resize handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -28782,87 +28932,7 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-border-width</td>
-    <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-bg</td>
-    <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-text</td>
-    <td>String</td>
-    <td><code>k-color(on-base)</code></td>
-    <td><code>var(--kendo-color-on-base)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-title-margin-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Scheduler Tooltip title.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-month-font-size</td>
+    <td>$kendo-scheduler-popover-month-font-size</td>
     <td>String</td>
     <td><code>var(--kendo-font-size-sm)</code></td>
     <td><code>var(--kendo-font-size-sm)</code></td>
@@ -28872,7 +28942,7 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-day-font-size</td>
+    <td>$kendo-scheduler-popover-day-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var(--kendo-font-size-sm) * 2 )</code></td>
     <td><code>calc(var(--kendo-font-size-sm) * 2)</code></td>
@@ -28882,7 +28952,7 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-events-max-height</td>
+    <td>$kendo-scheduler-popover-events-max-height</td>
     <td>Number</td>
     <td><code>250px</code></td>
     <td><code>250px</code></td>
@@ -28892,17 +28962,27 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-events-gap</td>
+    <td>$kendo-scheduler-popover-events-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events inside the Scheduler Tooltip.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-padding-x</td>
+    <td>$kendo-scheduler-popover-event-min-height</td>
+    <td>Number</td>
+    <td><code>25px</code></td>
+    <td><code>25px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the events inside the Scheduler Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-popover-event-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
@@ -28912,17 +28992,17 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td>$kendo-scheduler-popover-event-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the events inside the Scheduler Tooltip.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-border-radius</td>
+    <td>$kendo-scheduler-popover-event-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(md)</code></td>
     <td><code>var(--kendo-border-radius-md)</code></td>
@@ -28932,40 +29012,20 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-gap</td>
+    <td>$kendo-scheduler-popover-event-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events items inside the Scheduler Tooltip.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-callout-text</td>
-    <td>String</td>
-    <td><code>$kendo-scheduler-tooltip-bg</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler Tooltip callout.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-appointments-padding</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Scheduler appointments.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-event-template-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Scheduler event template.</div></div>
@@ -28979,26 +29039,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Scheduler event template.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-event-actions-inset-x</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline inset of the Scheduler event actions.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-indicators-margin</td>
-    <td>List</td>
-    <td><code>k-spacing(0.5) k-spacing(1)</code></td>
-    <td><code>(var(--kendo-spacing-0\.5) var(--kendo-spacing-1))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators.</div></div>
     </td>
 </tr>
 <tr>
