@@ -3,9 +3,14 @@
 
 @mixin kendo-agent-response--layout-base() {
     // Agent Step
-    .k-agent-step {
+    .k-agent-step-body {
         .k-card {
             box-shadow: none;
+        }
+
+        .k-pre {
+            margin: 0;
+            border-radius: $kendo-tool-call-pre-border-radius;
         }
     }
 
