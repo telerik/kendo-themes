@@ -49,7 +49,7 @@ export default () => (
           style={{ width: "650px" }}
         >
           <Form className="k-scheduler-edit-form" orientation="horizontal">
-            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="right-double-quotes" />} editor={<Textbox value="Event Name" aria-label="Event title" />} />
+            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="right-double-quotes" />} editor={<Textbox showClearButton={false} value="Event Name" aria-label="Event title" />} />
 
             <FormField
               label={<Icon size="xlarge" icon="clock" />}
@@ -61,17 +61,17 @@ export default () => (
                   </div>
                   <div className="k-scheduler-datetime-grid">
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="Start date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="Start date" />
                       <span className="k-scheduler-datetime-label">from</span>
-                      <TimePicker value="3:07 AM" aria-label="Start time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="Start time" />
                     </div>
                     <Button className="k-col-span-2" title="Set Timezone" fillMode="flat" themeColor="primary" icon="globe">
                       Time zone
                     </Button>
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="End date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="End date" />
                       <span className="k-scheduler-datetime-label">to</span>
-                      <TimePicker value="3:07 AM" aria-label="End time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="End time" />
                     </div>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default () => (
           style={{ width: "650px" }}
         >
           <Form className="k-scheduler-edit-form" orientation="horizontal">
-            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="right-double-quotes" />} editor={<Textbox value="Event Name" aria-label="Event title" />} />
+            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="right-double-quotes" />} editor={<Textbox showClearButton={false} value="Event Name" aria-label="Event title" />} />
 
             <FormField
               label={<Icon size="xlarge" icon="clock" />}
@@ -114,17 +114,17 @@ export default () => (
                   </div>
                   <div className="k-scheduler-datetime-grid">
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="Start date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="Start date" />
                       <span className="k-scheduler-datetime-label">from</span>
-                      <TimePicker value="3:07 AM" aria-label="Start time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="Start time" />
                     </div>
                     <Button className="k-col-span-2" title="Set Timezone" fillMode="flat" themeColor="primary" icon="globe">
                       Time zone
                     </Button>
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="End date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="End date" />
                       <span className="k-scheduler-datetime-label">to</span>
-                      <TimePicker value="3:07 AM" aria-label="End time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="End time" />
                     </div>
                   </div>
                   <div className="k-scheduler-edit-form-row">

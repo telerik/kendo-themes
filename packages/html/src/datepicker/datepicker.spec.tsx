@@ -35,6 +35,7 @@ const options = {
 };
 
 const defaultOptions = {
+    showClearButton: true
 };
 
 export type KendoDatePickerOptions = {
@@ -48,6 +49,7 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
     suffix?: React.JSX.Element;
     value?: string;
     placeholder?: string;
+    showClearButton?: boolean;
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
@@ -88,6 +90,7 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
         suffix,
         value,
         placeholder,
+        showClearButton = defaultOptions.showClearButton,
         hover,
         focus,
         valid,
@@ -143,11 +146,11 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                 <InputLoadingIcon
                     loading={loading}
                     disabled={disabled} />
-                <InputClearValue
+                { showClearButton && <InputClearValue
                     loading={loading}
                     disabled={disabled}
                     readonly={readonly}
-                    value={value} />
+                    value={value} />}
                 <InputSuffix>{suffix}</InputSuffix>
                 <Button
                     className="k-input-button"

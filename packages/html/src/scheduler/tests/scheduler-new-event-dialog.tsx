@@ -59,17 +59,17 @@ export default () => (
                   </div>
                   <div className="k-scheduler-datetime-grid">
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="Start date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="Start date" />
                       <span className="k-scheduler-datetime-label">from</span>
-                      <TimePicker value="3:07 AM" aria-label="Start time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="Start time" />
                     </div>
                     <Button className="k-col-span-2" title="Set Timezone" fillMode="flat" themeColor="primary" icon="globe">
                       Time zone
                     </Button>
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="End date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="End date" />
                       <span className="k-scheduler-datetime-label">to</span>
-                      <TimePicker value="3:07 AM" aria-label="End time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="End time" />
                     </div>
                   </div>
                   <div className="k-scheduler-edit-form-row">
@@ -114,16 +114,16 @@ export default () => (
                   </div>
                   <div className="k-scheduler-datetime-grid">
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="Start date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="Start date" />
                       <span className="k-scheduler-datetime-label">from</span>
-                      <TimePicker value="3:07 AM" aria-label="Start time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="Start time" />
                     </div>
                     <DropdownList value="(UTC+02:00)" aria-label="Start timezone" />
                     <Button fillMode="flat" title="Reset Timezone" themeColor="primary" icon="globe" aria-label="Reset timezone"></Button>
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="End date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="End date" />
                       <span className="k-scheduler-datetime-label">to</span>
-                      <TimePicker value="3:07 AM" aria-label="End time" />
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="End time" />
                     </div>
                     <DropdownList value="(UTC+02:00)" aria-label="End timezone" />
                   </div>
@@ -168,9 +168,9 @@ export default () => (
                   </div>
                   <div className="k-scheduler-datetime-grid">
                     <div className="k-scheduler-edit-form-row">
-                      <DatePicker value="1/21/2021" aria-label="Start date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="Start date" />
                       <span className="k-scheduler-datetime-label">to</span>
-                      <DatePicker value="1/21/2021" aria-label="End date" />
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="End date" />
                     </div>
                   </div>
                   <div className="k-scheduler-edit-form-row">
