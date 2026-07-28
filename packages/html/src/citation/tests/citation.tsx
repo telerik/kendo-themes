@@ -39,10 +39,11 @@ export default () => (
       <section>
         <p>Inline Citation + Popover with long texts</p>
         <CitationPopover
+          pageIndex={2}
           body={
             <>
               <CitationPopoverView title="Advances in Natural Language Processing Long Long Long" body="A comprehensive study on the recent developments in natural language processing technologies and their long long long long long long long long long long long long long long long long long long long long long text" source="https://example.com/nlp-advances/long/long/long" />
-              <CitationPopoverView title="Advances in Natural Language Processing Long Long Long" body="A comprehensive study on the recent developments in natural language processing technologies and their" source="https://example.com/nlp-advances/long/long/long" />
+              <CitationPopoverView title="Advances in Natural Language Processing Long Long Long" body="A comprehensive study on the recent developments in natural language processing technologies and their long long long long long long long long long long long long long long long long long long long long long text" source="https://example.com/nlp-advances/long/long/long" />
             </>
           }
         />
