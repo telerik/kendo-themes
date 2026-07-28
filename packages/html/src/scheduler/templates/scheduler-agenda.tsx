@@ -1,5 +1,5 @@
-import { ButtonGroup } from '../../button-group';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerToolbar } from '../index';
 import SchedulerTask from '../scheduler-task.spec';
@@ -11,22 +11,24 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
         view="agenda"
         toolbar={
             <SchedulerToolbar>
-                <ButtonGroup className="k-scheduler-navigation">
-                    <Button className="k-group-start">Today</Button>
-                    <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
-                    <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
+                <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                <ButtonGroup fillMode="flat">
+                    <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                    <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                    06/13/2022 - 06/20/2022
+                    24 June – 25 June
                 </Button>
+                <Button fillMode="flat">Today</Button>
                 <span className="k-spacer"></span>
-                <SegmentedControl thumbStyles={{ width: "22%", right: "2px" }} className="k-scheduler-views">
+                <SegmentedControl thumbStyles={{width: "22%", right: "0%"}} className="k-scheduler-views">
                     <SegmentedControlButton>Day</SegmentedControlButton>
                     <SegmentedControlButton>Week</SegmentedControlButton>
                     <SegmentedControlButton>Month</SegmentedControlButton>
                     <SegmentedControlButton>Timeline</SegmentedControlButton>
                     <SegmentedControlButton selected>Agenda</SegmentedControlButton>
                 </SegmentedControl>
+
             </SchedulerToolbar>
         }
         children={

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            gap: 32px;
+        }
+        .k-dialog-wrapper {
+            position: relative;
+            align-items: start;
+        }
+        .k-window {
+            position: relative;
+        }
+        .k-animation-container {
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <section>
+            <span>Dialog - Edit Event</span>
+            <div class="k-dialog-wrapper">
+                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-1" aria-describedby="k-dialog-content-1" style="width: 650px;">
+                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-1">
+                        <span class="k-window-title k-dialog-title">Edit event</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content-1">
+                        <form class="k-scheduler-edit-form k-form k-form-horizontal">
+                            <div class="k-form-field">
+                                <label class="k-form-label k-label">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-right-double-quotes" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M136 100.2c-57.4 0-104 46.6-104 104s46.6 104 104 104c20.1 0 38.9-5.7 54.8-15.6-14.2 30.5-37.4 55.2-69.2 73.7-44 25.6-89.1 29.6-89.6 29.6l1.3 15.9 1.3 15.9c2.1-.2 51.8-4.4 102-33.2 47.1-27 103.3-81.3 103.3-186.1.1-1.4.1-2.8.1-4.3 0-57.3-46.6-103.9-104-103.9m344 104c0-57.4-46.6-104-104-104s-104 46.6-104 104 46.6 104 104 104c20.1 0 38.9-5.7 54.8-15.6-14.2 30.5-37.4 55.2-69.2 73.7-44 25.6-89.1 29.6-89.6 29.6l2.6 31.9c2.1-.2 51.8-4.4 102-33.2 47.1-27 103.3-81.3 103.3-186.1.1-1.4.1-2.8.1-4.3"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input">
+                                        <input aria-label="Event title" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Event Name">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field">
+                                <label class="k-form-label k-label">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-clock" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <div class="k-form-field-wrap">
+                                    <div class="k-scheduler-datetime-section">
+                                        <div class="k-scheduler-edit-form-row">
+                                            <span aria-label="All day" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                                                <span class="k-switch-track"></span>
+                                                <span class="k-switch-thumb-wrap">
+                                                    <span class="k-switch-thumb"></span>
+                                                </span>
+                                            </span>
+                                            <span>All day</span>
+                                        </div>
+                                        <div class="k-scheduler-datetime-grid">
+                                            <div class="k-scheduler-edit-form-row">
+                                                <span aria-label="Start date" class="k-datepicker k-input">
+                                                    <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1/21/2021">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-scheduler-datetime-label">from</span>
+                                                <span aria-label="Start time" class="k-timepicker k-input">
+                                                    <input role="combobox" aria-haspopup="dialog" aria-expanded="false" aria-label="Select time" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="3:07 AM">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select time">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <button class="k-col-span-2 k-button k-button-flat k-button-primary" title="Set Timezone">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Time zone</span>
+                                            </button>
+                                            <div class="k-scheduler-edit-form-row">
+                                                <span aria-label="End date" class="k-datepicker k-input">
+                                                    <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1/21/2021">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-scheduler-datetime-label">to</span>
+                                                <span aria-label="End time" class="k-timepicker k-input">
+                                                    <input role="combobox" aria-haspopup="dialog" aria-expanded="false" aria-label="Select time" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="3:07 AM">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select time">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-form-field">
+                                <label class="k-form-label k-label">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-comment" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M448 32H64c-17.6 0-32 14.4-32 32v416l96-96h320c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32m0 319.942a1 1 0 0 1-.058.058H114.745L64 402.745V64.057a1 1 0 0 1 .057-.057h383.885q.031.027.058.057z"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textarea !k-flex-col k-input">
+                                        <textarea class="!k-overflow-auto !k-flex-none k-resize-y k-input-inner" aria-label="Description" placeholder="Add Description"></textarea>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-flat k-button-primary">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-button-text">Delete</span>
+                        </button>
+                        <button class="k-button">
+                            <span class="k-button-text">Cancel</span>
+                        </button>
+                        <button class="k-button k-button-primary">
+                            <span class="k-button-text">Save</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span>Dialog - Edit Series</span>
+            <div class="k-dialog-wrapper">
+                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-2" aria-describedby="k-dialog-content-2" style="width: 650px;">
+                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-2">
+                        <span class="k-window-title k-dialog-title">Edit event</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content" id="k-dialog-content-2">
+                        <form class="k-scheduler-edit-form k-form k-form-horizontal">
+                            <div class="k-form-field">
+                                <label class="k-form-label k-label">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-right-double-quotes" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M136 100.2c-57.4 0-104 46.6-104 104s46.6 104 104 104c20.1 0 38.9-5.7 54.8-15.6-14.2 30.5-37.4 55.2-69.2 73.7-44 25.6-89.1 29.6-89.6 29.6l1.3 15.9 1.3 15.9c2.1-.2 51.8-4.4 102-33.2 47.1-27 103.3-81.3 103.3-186.1.1-1.4.1-2.8.1-4.3 0-57.3-46.6-103.9-104-103.9m344 104c0-57.4-46.6-104-104-104s-104 46.6-104 104 46.6 104 104 104c20.1 0 38.9-5.7 54.8-15.6-14.2 30.5-37.4 55.2-69.2 73.7-44 25.6-89.1 29.6-89.6 29.6l2.6 31.9c2.1-.2 51.8-4.4 102-33.2 47.1-27 103.3-81.3 103.3-186.1.1-1.4.1-2.8.1-4.3"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textbox k-input">
+                                        <input aria-label="Event title" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Event Name">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-form-field">
+                                <label class="k-form-label k-label">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-clock" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <div class="k-form-field-wrap">
+                                    <div class="k-scheduler-datetime-section">
+                                        <div class="k-scheduler-edit-form-row">
+                                            <span aria-label="All day" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                                                <span class="k-switch-track"></span>
+                                                <span class="k-switch-thumb-wrap">
+                                                    <span class="k-switch-thumb"></span>
+                                                </span>
+                                            </span>
+                                            <span>All day</span>
+                                        </div>
+                                        <div class="k-scheduler-datetime-grid">
+                                            <div class="k-scheduler-edit-form-row">
+                                                <span aria-label="Start date" class="k-datepicker k-input">
+                                                    <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1/21/2021">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-scheduler-datetime-label">from</span>
+                                                <span aria-label="Start time" class="k-timepicker k-input">
+                                                    <input role="combobox" aria-haspopup="dialog" aria-expanded="false" aria-label="Select time" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="3:07 AM">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select time">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <button class="k-col-span-2 k-button k-button-flat k-button-primary" title="Set Timezone">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-globe" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m106.2 314.7c-34.7 10-66.7 64.2-76.4 101.3-17.9-9.4 9.8-90.2 5.4-112.4-4.3-22.1-13-14.4-22.6-27.6-17.8-31.5.9-48.3-5.6-55.9-6.5-7.7-4.9-18.3-45-29.9s-75.9-81.9-87.8-104.1c-11.9-22.1 26.6-47 81.3-52.6 10.3-1 19.7-1.5 28.4-1.5 37.8.1 61.9 9 80 17.5 22.2 10.5 20.1 39.3 8.1 39.3s-35.8-16.6-47.2 23.2-40.1 19.9-59.1 39.3 24.4 37.1 33.6 49.3 33.1-.6 52.6 3.9c32.6 28.8 66.7 41 74.3 54.8 3.3 16.6 4.4 34.9-20 55.4"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Time zone</span>
+                                            </button>
+                                            <div class="k-scheduler-edit-form-row">
+                                                <span aria-label="End date" class="k-datepicker k-input">
+                                                    <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1/21/2021">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-scheduler-datetime-label">to</span>
+                                                <span aria-label="End time" class="k-timepicker k-input">
+                                                    <input role="combobox" aria-haspopup="dialog" aria-expanded="false" aria-label="Select time" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="3:07 AM">
+                                                    <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select time">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-edit-form-row">
+                                            <button class="k-button k-button-flat k-button-primary">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-cw" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Repeats every 2 days for 3 occurrences.</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-form-field">
+                                <label class="k-form-label k-label">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-comment" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M448 32H64c-17.6 0-32 14.4-32 32v416l96-96h320c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32m0 319.942a1 1 0 0 1-.058.058H114.745L64 402.745V64.057a1 1 0 0 1 .057-.057h383.885q.031.027.058.057z"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <div class="k-form-field-wrap">
+                                    <span class="k-textarea !k-flex-col k-input">
+                                        <textarea class="!k-overflow-auto !k-flex-none k-resize-y k-input-inner" aria-label="Description" placeholder="Add Description"></textarea>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-flat k-button-primary">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-button-text">Delete</span>
+                        </button>
+                        <button class="k-button">
+                            <span class="k-button-text">Cancel</span>
+                        </button>
+                        <button class="k-button k-button-primary">
+                            <span class="k-button-text">Save</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

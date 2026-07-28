@@ -10,7 +10,7 @@ const states = [
 ];
 
 export type KendoFormFieldProps = {
-    label?: null | string;
+    label?: null | string | React.ReactNode;
     orientation?: string;
     optional?: boolean;
     editorId?: string;

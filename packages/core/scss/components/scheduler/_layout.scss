@@ -1,11 +1,13 @@
 @use "sass:list";
-@use "../../color-system/_constants.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../border-radii/index.scss" as *;
 @use "../../mixins/index.scss" as *;
+@use "../../color-system/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../radio/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../listgroup/_variables.scss" as *;
 
@@ -36,9 +38,13 @@
         th,
         td,
         div,
-        .k-scheduler-edit-dialog,
         > * {
             border-color: inherit;
+        }
+
+        .k-more-events {
+            height: 24px;
+            position: absolute;
         }
     }
 
@@ -46,6 +52,18 @@
         overflow: hidden;
 
         &.k-readonly-scheduler .k-event-delete {
+            display: none;
+        }
+    }
+
+
+    // Read-only events
+    .k-readonly-scheduler .k-event,
+    .k-event.k-readonly {
+        border-width: 1px;
+        border-style: solid;
+
+        .k-resize-handle {
             display: none;
         }
     }
@@ -143,15 +161,14 @@
             }
         }
 
-        &.k-scheduler-timeline-view .k-scheduler-body .k-scheduler-cell {
+        &.k-scheduler-timelineview .k-scheduler-body .k-scheduler-cell {
             flex-basis: auto;
         }
 
-
         .k-more-events {
-            inset-block-end: 2px;
-            inset-inline-start: 0;
-            width: 100%;
+            inset-block-end: k-spacing(0.5);
+            inset-inline-start: k-spacing(0.5);
+            width: calc(100% - k-spacing(1));
         }
 
         .k-scheduler-cell {
@@ -171,9 +188,8 @@
                 position: relative;
             }
 
-            &.k-heading-cell {
+            &.k-heading-cell:not(.k-side-cell) {
                 justify-content: center;
-                font-weight: bold;
             }
 
             &.k-side-cell {
@@ -181,6 +197,7 @@
                 flex-grow: 0;
                 flex-basis: auto;
                 overflow: visible;
+                text-align: end;
             }
 
             &.k-major-cell {
@@ -223,6 +240,7 @@
         border-block-end-width: $kendo-toolbar-border-width;
         white-space: nowrap;
         flex-shrink: 0;
+        flex-wrap: nowrap;
         position: relative;
         z-index: k-z-index("base", 2);
 
@@ -249,11 +267,6 @@
 
     // Scheduler navigation
     .k-scheduler-navigation {}
-
-    .k-scheduler-toolbar .k-views-dropdown {
-        width: auto;
-        font: inherit;
-    }
 
     // Scheduler footer
     .k-scheduler-footer {
@@ -286,8 +299,7 @@
         }
 
         // Remove bottom border from first cell of hours cells spaning on two rows
-        tr + tr,
-        .k-scheduler-pane + .k-scheduler-pane {
+        tr + tr {
             .k-scheduler-times tr {
                 th {
                     border-block-end-color: transparent;
@@ -307,7 +319,7 @@
 
         &.k-scheduler-weekview,
         &.k-scheduler-dayview {
-            .k-scheduler-pane:first-child .k-scheduler-table {
+            .k-scheduler-table {
                 table-layout: fixed;
             }
         }
@@ -315,12 +327,17 @@
 
 
     // Scheduler view header
-    .k-scheduler-header,
-    .k-scheduler-view-header {
+    .k-scheduler-header {
         padding-inline-end: var(--kendo-scrollbar-width, #{$kendo-scrollbar-width});
     }
     .k-scheduler-header th {
         text-align: center;
+        font-size: var(--kendo-font-size-sm);
+        font-weight: normal;
+    }
+    .k-scheduler-cell.k-heading-cell {
+        font-size: var(--kendo-font-size-sm);
+        font-weight: normal;
     }
 
     .k-scheduler-header,
@@ -395,107 +412,103 @@
         outline: 0;
         cursor: default;
         position: absolute;
-        overflow: hidden;
-        padding-inline-end: $kendo-scheduler-appointments-padding;
+        overflow: visible;
+        display: flex;
+        align-items: flex-start;
+        container-type: size;
 
         > div {
-            position: relative;
-            z-index: k-z-index("base", 2);
+            flex: 1 1 0;
+            min-width: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .k-event-continuation:last-child {
+                margin-top: auto;
+            }
         }
 
         // Template
         .k-event-template {
-            line-height: $kendo-scheduler-event-line-height;
-            padding-block: $kendo-scheduler-event-template-padding-y;
             padding-inline: $kendo-scheduler-event-template-padding-x;
-            // TODO: incompatible units
-            // padding-inline-end: k-spacing(1) + k-spacing(4);
+            padding-block: $kendo-scheduler-event-template-padding-y;
+        }
+        .k-event-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: $kendo-scheduler-event-title-font-size;
+            line-height: $kendo-scheduler-event-title-line-height;
+            padding-block-start: $kendo-scheduler-event-title-padding-top;
+            padding-block-end: $kendo-scheduler-event-title-padding-bottom;
         }
         .k-event-time {
-            padding-block-end: 0;
-            font-size: .875em;
+            padding-block-start: $kendo-scheduler-event-time-padding-top;
+            padding-block-end: $kendo-scheduler-event-time-padding-bottom;
+            font-size: $kendo-scheduler-event-time-font-size;
+            line-height: $kendo-scheduler-event-time-line-height;
             white-space: nowrap;
+            text-overflow: ellipsis;
+            min-height: min-content;
+            overflow: hidden;
+
+            .k-event-recurrence-icon {
+                vertical-align: text-top;
+                margin-inline-end: $kendo-scheduler-event-template-padding-y;
+                line-height: var(--kendo-line-height-xs);
+            }
+        }
+
+        >  .k-event-recurrence-icon {
             display: none;
-        }
-
-
-        // Actions
-        .k-event-actions {
-            white-space: nowrap;
-            position: absolute;
-            inset-block-start: 0;
-            inset-block-end: 0;
-            inset-inline-end: $kendo-scheduler-event-actions-inset-x;
-            z-index: k-z-index("base", 2);
-
-            .k-event-delete {
-                opacity: .5;
-                visibility: hidden;
-            }
-
-            &:hover,
-            &.k-hover {
-                .k-event-delete {
-                    opacity: 1;
-                }
-            }
-
-            a { color: inherit; }
-        }
-
-
-        // Indicators
-        .k-event-actions:first-child {
-            margin: $kendo-scheduler-indicators-margin;
-            inset-block-start: 0;
-            inset-inline-end: 0;
-            float: inline-start;
-            position: relative;
-            opacity: 1;
-            visibility: visible;
-            line-height: normal;
+            flex: 0 0 auto;
+            align-self: flex-end;
+            margin: $kendo-scheduler-event-template-padding-y;
+            margin-inline-start: calc($kendo-scheduler-event-template-padding-y / 2);
+            line-height: var(--kendo-line-height-xs);
         }
 
 
         // Resize handles
         .k-resize-handle {
             z-index: k-z-index("handle");
-            opacity: .5;
             visibility: hidden;
         }
-        .k-resize-handle::before { border-color: currentColor; }
         .k-resize-n {
-            height: .5em;
-            top: 0;
+            height: $kendo-scheduler-resizer-size;
         }
         .k-resize-s {
-            height: .5em;
-            bottom: 0;
+            height: $kendo-scheduler-resizer-size;
         }
-        .k-resize-n::before,
-        .k-resize-s::before {
-            width: k-spacing(8);
-            border-bottom-width: 1px;
-        }
+
         .k-resize-w {
-            width: .5em;
-            left: 0;
+            width: $kendo-scheduler-resizer-size;
         }
         .k-resize-e {
-            width: .5em;
-            right: 0;
+            width: $kendo-scheduler-resizer-size;
         }
+
+        .k-resize-handle::before {
+            border-style: solid;
+            border-color: $kendo-scheduler-bg;
+            border-width: $kendo-scheduler-resize-handle-border-width;
+            border-radius: $kendo-scheduler-resize-handle-border-radius;
+            background-color: $kendo-scheduler-resize-handle-bg;
+        }
+
         .k-resize-w::before,
-        .k-resize-e::before {
-            height: k-spacing(8);
-            border-left-width: 1px;
+        .k-resize-e::before,
+        .k-resize-n::before,
+        .k-resize-s::before {
+            width: $kendo-scheduler-resize-handle-size;
+            height: $kendo-scheduler-resize-handle-size;
         }
 
 
         // Hover
         &:hover,
         &.k-hover {
-            .k-event-actions .k-event-delete,
             .k-resize-handle {
                 visibility: visible;
             }
@@ -518,6 +531,54 @@
             inset-block-start: auto;
             inset-block-end: 0;
         }
+
+        .k-event-continuation {
+            flex: 0 0 auto;
+            align-self: center;
+            line-height: 0;
+        }
+
+        @container (max-height: 40px) {
+            .k-event-title {
+                white-space: nowrap;
+                margin-block: auto;
+            }
+
+            .k-event-time {
+                display: none;
+            }
+
+            div .k-event-continuation {
+                display: none;
+            }
+
+            > .k-event-recurrence-icon {
+                margin-block: auto;
+                display: block;
+            }
+
+            .k-event-continuation {
+                margin-block: auto;
+            }
+        }
+
+        @container (max-height: 24px) {
+
+            .k-event-title {
+                font-size:  var(--kendo-font-size-xs);
+                padding-block: 0;
+                margin-block: auto;
+                line-height: var(--kendo-line-height-xs);
+            }
+
+            > .k-event-recurrence-icon {
+                display: none;
+            }
+
+            .k-event-continuation {
+                display: none;
+            }
+        }
     }
 
 
@@ -530,30 +591,11 @@
     }
 
 
-    // More events indicator
-    .k-more-events {
-        padding: 0;
-        height: 13px;
-        border-style: solid;
-        border-width: 1px;
-        overflow: hidden;
-        position: absolute;
-        justify-content: center;
-
-        > .k-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
     // Draging hint
     .k-event-drag-hint {
         opacity: .5;
         z-index: k-z-index("base", 3);
 
-        .k-event-actions,
         .k-event-top-actions,
         .k-event-bottom-actions,
         .k-resize-handle {
@@ -653,16 +695,58 @@
     .k-scheduler-dayview {}
 
 
-    // Workweek view
-    .k-scheduler-workWeekview {} // stylelint-disable-line
-
-
     // Week view
     .k-scheduler-weekview {}
 
 
+    // Time column cells (table: th in .k-scheduler-times; flex: .k-side-cell)
+    .k-scheduler-times th,
+    .k-scheduler-cell.k-side-cell {
+        font-size: var(--kendo-font-size-sm);
+        line-height: var(--kendo-line-height-xs);
+        font-weight: var(--kendo-font-weight-normal);
+    }
+
+
+    // Day/Week/WorkWeek view – two-line heading cell (day abbreviation + date number)
+    .k-scheduler-dayview,
+    .k-scheduler-weekview {
+
+        // Table layout header cells
+        .k-scheduler-header th {
+            padding-block: k-spacing(0.5);
+        }
+
+        // Flex layout heading cells (day headers only, not time/all-day side cells)
+        .k-scheduler-cell.k-heading-cell:not(.k-side-cell) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-block: k-spacing(0.5);
+        }
+
+        .k-scheduler-date-day {
+            display: block;
+            text-align: center;
+            font-size: var(--kendo-font-size-sm);
+        }
+
+        .k-nav-day {
+            display: inline-flex;
+            padding-block: k-spacing(1);
+            padding-inline: k-spacing(2);
+        }
+    }
+
+
     // Month view
     .k-scheduler-monthview {
+
+        // Compact header cells
+        .k-scheduler-cell.k-heading-cell,
+        .k-scheduler-header th {
+            padding-block: k-spacing(2);
+        }
 
         .k-scheduler-table {
             height: 100%;
@@ -701,6 +785,10 @@
     // Agenda view
     .k-scheduler-agendaview {
 
+        .k-scheduler-header th {
+            font-size: inherit;
+        }
+
         .k-scheduler-mark {
             margin-inline-end: .5em;
             width: 1em;
@@ -718,6 +806,12 @@
             td.k-first {
                 border-inline-start-width: 0;
             }
+        }
+
+        .k-task {
+            display: flex;
+            align-items: center;
+            gap: k-spacing(0.5);
         }
 
         .k-task > .k-event-delete {
@@ -764,22 +858,6 @@
         }
     }
 
-    .k-scheduler-pane {
-        display: flex;
-        flex-direction: row;
-    }
-    .k-scheduler-pane .k-scheduler-times {
-        flex: 0 0 auto;
-    }
-    .k-scheduler-pane .k-scheduler-times .k-scheduler-table {
-        height: 100%;
-    }
-    .k-scheduler-pane .k-scheduler-header,
-    .k-scheduler-pane .k-scheduler-content {
-        flex: 1 1 auto;
-    }
-
-
     // Year view
     .k-scheduler-yearview {
         .k-scheduler-body {
@@ -823,112 +901,140 @@
 
 
 
-    // Scheduler tooltip
-    .k-scheduler-tooltip {
-        padding-block: $kendo-scheduler-tooltip-padding-y;
-        padding-inline: $kendo-scheduler-tooltip-padding-x;
-        border-width: $kendo-scheduler-tooltip-border-width;
-        color: inherit;
-
-        .k-tooltip-title {
-            margin-block-end: $kendo-scheduler-tooltip-title-margin-y;
+    // Scheduler popover
+    .k-scheduler-popover {
+        .k-popover-header {
+            text-align: center;
 
             .k-month {
-                font-size: $kendo-scheduler-tooltip-month-font-size;
+                font-size: $kendo-scheduler-popover-month-font-size;
                 text-transform: uppercase;
             }
 
             .k-day {
-                font-size: $kendo-scheduler-tooltip-day-font-size;
+                font-size: $kendo-scheduler-popover-day-font-size;
+                color: k-color(primary);
             }
         }
 
-        .k-tooltip-events-container {
+        .k-popover-events {
             overflow: auto;
-        }
-
-        .k-tooltip-events {
-            max-height: $kendo-scheduler-tooltip-events-max-height;
+            max-height: $kendo-scheduler-popover-events-max-height;
             display: flex;
             flex-direction: column;
-            gap: $kendo-scheduler-tooltip-events-gap;
+            gap: $kendo-scheduler-popover-events-gap;
         }
 
-        .k-tooltip-event {
-            padding-block: $kendo-scheduler-tooltip-event-padding-y;
-            padding-inline: $kendo-scheduler-tooltip-event-padding-x;
-            border-radius: $kendo-scheduler-tooltip-event-border-radius;
+        .k-popover-event {
+            min-height: $kendo-scheduler-popover-event-min-height;
+            padding-block: $kendo-scheduler-popover-event-padding-y;
+            padding-inline: $kendo-scheduler-popover-event-padding-x;
+            border-radius: $kendo-scheduler-popover-event-border-radius;
             box-sizing: border-box;
             display: flex;
             flex-direction: row;
             align-items: center;
             flex-shrink: 0;
             position: relative;
-            gap: $kendo-scheduler-tooltip-event-gap;
-        }
-        .k-tooltip-event .k-event-time {
-            display: flex;
-            flex-shrink: 0;
-            font-size: inherit;
+            gap: $kendo-scheduler-popover-event-gap;
+
+            .k-event-time {
+                display: flex;
+                flex-shrink: 0;
+                line-height: 1;
+                font-size: inherit;
+            }
+
+            .k-event-title {
+                font-size: inherit;
+                line-height: var(--kendo-line-height-sm);
+            }
         }
 
         .k-no-data {
-            height: auto;
             min-height: auto;
-            color: inherit;
         }
     }
 
 
 
     // Scheduler edit dialog
-    .k-scheduler-edit-dialog {
-        .k-dialog {
-            max-height: 100vh;
-        }
-    }
 
     .k-scheduler-edit-form {
 
-        .k-edit-form-container { width: 100%; }
-        .k-edit-label { width: 17%; }
-        .k-edit-field { width: 77%; }
-
-        .k-edit-field > ul > li {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
+        .k-form-field > .k-form-label {
+            width: fit-content;
         }
-        .k-recurrence-editor {
-            .k-radio-list .k-radio-wrap,
-            .k-checkbox-list .k-checkbox-wrap {
-                align-self: center;
-            }
+        .k-form-field-wrap {
+            max-width: none;
         }
 
-        .k-recur-interval,
-        .k-recur-count,
-        .k-recur-monthday {
-            width: 5em;
+        .k-form-label > .k-icon {
+            color: color-mix(in srgb, k-color(on-app-surface) 50%, transparent);
         }
-        .k-recur-until,
-        .k-recur-month,
-        .k-recur-weekday,
-        .k-recur-weekday-offset {
-            width: 10em;
-        }
+    }
 
-        .k-scheduler-datetime-picker {
-            display: flex;
-            flex-flow: row nowrap;
-            gap: k-spacing(2);
-        }
+    .k-scheduler-datetime-section {
+        display: flex;
+        flex-direction: column;
+        gap: k-spacing(4);
+        margin-top: $kendo-scheduler-datetime-section-margin-top;
+    }
 
+    .k-scheduler-datetime-label {
+        width: k-spacing(9);
+    }
+
+    .k-scheduler-datetime-grid {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        gap: k-spacing(3);
+        grid-template-columns: 2.5fr 1fr min-content;
+
+        > * {
+            min-width: 0;
+        }
+    }
+
+
+    .k-scheduler-edit-form-row {
+        display: flex;
+        align-items: center;
+        gap: k-spacing(3);
+        min-width: 0;
+
+        > .k-datepicker,
+        > .k-timepicker,
+        > .k-daterangepicker {
+            flex: 1 1 0%;
+            min-width: 0;
+        }
+    }
+
+
+    .k-scheduler-recurrence-fields {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $kendo-scheduler-recurrence-fields-row-gap k-spacing(3);
+    }
+
+    // Recurrence dialog – weekday toggle button strip
+    .k-scheduler-weekday-picker {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: k-spacing(1);
+
+        .k-button {
+            width: $kendo-button-md-calc-size;
+        }
     }
 
     .k-safari {
-        .k-scheduler-tooltip .k-tooltip-event:not(:last-child) {
-            margin-block-end: $kendo-scheduler-tooltip-event-gap;
+        .k-scheduler-popover .k-popover-event:not(:last-child) {
+            margin-block-end: $kendo-scheduler-popover-event-gap;
         }
 
         .k-scheduler-yearview .k-calendar-view .k-month {
@@ -1045,28 +1151,6 @@
     // Scheduler adaptive styles
     .k-pane-wrapper { // stylelint-disable-line
 
-        .k-scheduler-edit-form {
-
-            .k-recur-view {
-                padding: 0;
-                flex-direction: column;
-                align-items: stretch;
-
-                > .k-listgroup-form-row {
-                    margin: 0;
-                }
-            }
-
-            .k-recur-items-wrap {
-                width: 100%;
-                margin-block: -1px;
-                margin-inline: 0;
-            }
-
-            .k-scheduler-recur-end-wrap {
-                white-space: nowrap;
-            }
-        }
     }
 
     .k-scheduler {
@@ -1081,6 +1165,10 @@
 
         th {
             font-weight: normal;
+        }
+
+        .k-scheduler-header th {
+            padding-block: $kendo-scheduler-cell-padding-y;
         }
 
         .k-event:hover .k-resize-handle {
@@ -1117,11 +1205,6 @@
                 }
             }
 
-            .k-scheduler-views-wrapper {
-                .k-views-dropdown {
-                    display: inline-block;
-                }
-            }
         }
 
         .k-scheduler-footer {

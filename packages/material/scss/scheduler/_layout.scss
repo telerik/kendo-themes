@@ -7,64 +7,6 @@
 
     @include kendo-scheduler--layout-base();
 
-    // Appointments
-    kendo-scheduler .k-event,
-    .k-event {
-
-        // Angular fix for stronger selector and smaller padding
-        .k-event-template {
-            & { // stylelint-disable-line
-                padding-inline: k-spacing(2);
-            }
-        }
-
-        .k-event-actions {
-            inset-inline-end: k-spacing(2);
-        }
-    }
-
-    $handle-size: 2px;
-    $handle-half-size: math.div( $handle-size, 2 );
-
-    .k-event {
-        .k-event-delete {
-            margin-block-start: k-spacing(1);
-            border-radius: 50%;
-            display: flex;
-        }
-
-        .k-resize-handle {
-            opacity: 1;
-
-            &::before {
-                border-width: 0;
-            }
-        }
-
-        .k-resize-n::before {
-            height: $handle-size;
-            align-self: flex-start;
-            border-radius: 0 0 $handle-half-size $handle-half-size;
-        }
-        .k-resize-s::before {
-            height: $handle-size;
-            align-self: flex-end;
-            border-radius: $handle-half-size $handle-half-size 0 0;
-        }
-        .k-resize-e::before {
-            width: $handle-size;
-            border-radius: 0 $handle-half-size $handle-half-size 0;
-        }
-        .k-resize-w::before {
-            width: $handle-size;
-            border-radius: $handle-half-size 0 0 $handle-half-size;
-        }
-    }
-
-    .k-more-events {
-        border-width: 0;
-    }
-
     .k-scheduler-layout-flex .k-scheduler-cell {
         min-height: $kendo-line-height-em;
     }

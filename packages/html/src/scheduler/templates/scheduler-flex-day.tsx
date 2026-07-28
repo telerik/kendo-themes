@@ -10,22 +10,24 @@ export const SchedulerFlexDay = ({ style, ...props }: any) => (
         view="day"
         toolbar={
             <SchedulerToolbar>
-                <ButtonGroup className="k-scheduler-navigation">
-                    <Button className="k-group-start">Today</Button>
-                    <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
-                    <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
+                <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                <ButtonGroup fillMode="flat">
+                    <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                    <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                    Monday, June 24, 2024
+                    24 June
                 </Button>
+                <Button fillMode="flat">Today</Button>
                 <span className="k-spacer"></span>
-                <SegmentedControl thumbStyles={{ width: "15%", left: "2px" }} className="k-scheduler-views">
+                <SegmentedControl thumbStyles={{width: "15%"}} className="k-scheduler-views">
                     <SegmentedControlButton selected>Day</SegmentedControlButton>
                     <SegmentedControlButton>Week</SegmentedControlButton>
                     <SegmentedControlButton>Month</SegmentedControlButton>
                     <SegmentedControlButton>Timeline</SegmentedControlButton>
                     <SegmentedControlButton>Agenda</SegmentedControlButton>
                 </SegmentedControl>
+
             </SchedulerToolbar>
         }
         footer={
@@ -41,7 +43,7 @@ export const SchedulerFlexDay = ({ style, ...props }: any) => (
                             <SchedulerCell as="div" cellType={[ "side" ]} style={{ minWidth: "65px" }} />
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Mon, 6/24"/>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-today" dayText="Mon" text="24"/>
                                 </SchedulerRow>
                             </SchedulerCell>
                         </SchedulerRow>
@@ -138,10 +140,7 @@ export const SchedulerFlexDay = ({ style, ...props }: any) => (
                             </SchedulerCell>
                         </SchedulerRow>
                     </SchedulerGroup>
-                    <SchedulerEvent style={{ top: "0px", left: "80px", height: "72px", width: "200px" }}>
-                        <div className="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
-                        <div className="k-event-template">Event Title</div>
-                    </SchedulerEvent>
+                    <SchedulerEvent style={{ top: "0px", left: "80px", height: "72px", width: "200px" }} title="Event Title" time="8:00 AM - 9:00 AM" />
                 </SchedulerBody>
             </>
         }

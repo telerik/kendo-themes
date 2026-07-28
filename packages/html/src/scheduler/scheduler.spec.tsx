@@ -22,11 +22,28 @@ export type KendoSchedulerProps = {
  * @aria {role="application"} Specifies the role of the component.
  * @aria {aria-label} Required as the previous navigation button contains only an icon (no text).
  * @aria {aria-label} Required as the next navigation button contains only an icon (no text).
+ * @aria {aria-label} Required for the "New Event" button. When collapsed to icon-only at narrow widths, this is the only accessible name.
+ * @aria {aria-label} Required as the Open calendar button contains only an icon (no text).
+ * @aria {aria-label} Required as the Create event button contains only an icon (no text).
+ * @aria {aria-live="polite"} The new date of the Scheduler view will be announced upon navigation to a new time span or view type.
  * @aria {role="group"} Follows SegmentedControl spec: sets the proper role for the group of view buttons.
  * @aria {aria-pressed} Follows SegmentedControl spec: specifies the current state of the view SegmentedControl. Only the selected button within the group will have this attribute set to true.
  * @aria {role="grid"} The main table of the Agenda view must indicate it is a Data Grid.
- * @aria {role="none"|\"presentation"} The <tbody> element must have its semantics removed.
- * @aria {role="none"|\"presentation"} All <table> elements within the Scheduler must have their semantic role removed.
+ * @aria {role="none"|"presentation"} The <tbody> element must have its semantics removed.
+ * @aria {role="none"|"presentation"} All <table> elements within the Scheduler must have their semantic role removed.
+ * @aria {role="button"} Indicating that the event element is interactive.
+ * @aria {aria-label} Label containing the title, start, and end date of the appointment.
+ * @aria {aria-disabled="true"} Read-only events cannot be edited or dragged; aria-disabled signals this to assistive technologies.
+ * @aria {aria-label} When the date cell shows a short day abbreviation and a date number separately, aria-label should combine both so the link has a descriptive accessible name.
+ * @aria {aria-label} The "N more" button text is ambiguous; aria-label should read "N more events" to clarify what the button reveals.
+ * @aria {role="list"} The tooltip events container acts as a list of event summaries.
+ * @aria {role="listitem"} Each tooltip event is a non-interactive list item.
+ * @aria {role="group"} Groups the day-of-week toggle buttons into a logical set.
+ * @aria {aria-label} Labels the weekday picker group (e.g. "Repeat on days").
+ * @aria {aria-label} Full day name for each abbreviated day button in the weekday picker (e.g. "Monday").
+ * @aria {aria-pressed} Indicates whether the day is currently selected in the weekday picker.
+ * @aria {tabindex} Roving tabindex: only one weekday picker button has tabindex="0", the rest have tabindex="-1".
+ * @aria {tabindex="0"} Scrollable non-agenda content must be focusable to ensure keyboard scrolling is available.
  * @ux {Multiple views} Switches between day, week, month, agenda, and timeline views.
  * @ux {View switcher} Views are accessible via a ButtonGroup or a DropDown in the toolbar.
  * @ux {Navigation} Previous and next buttons move to the adjacent time period.

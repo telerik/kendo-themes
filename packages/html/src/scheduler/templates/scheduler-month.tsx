@@ -1,5 +1,5 @@
-import { ButtonGroup } from '../../button-group';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerToolbar, SchedulerEvent } from '../index';
 
@@ -11,22 +11,24 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
         view="month"
         toolbar={
             <SchedulerToolbar>
-                <ButtonGroup className="k-scheduler-navigation">
-                    <Button className="k-group-start">Today</Button>
-                    <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
-                    <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
+                <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                <ButtonGroup fillMode="flat">
+                    <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                    <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                        Jun, 2024
+                    June 2024
                 </Button>
+                <Button fillMode="flat">Today</Button>
                 <span className="k-spacer"></span>
-                <SegmentedControl thumbStyles={{ width: "19%", left: "34%" }} className="k-scheduler-views">
+                <SegmentedControl thumbStyles={{width: "19%", left: "34%"}} className="k-scheduler-views">
                     <SegmentedControlButton>Day</SegmentedControlButton>
                     <SegmentedControlButton>Week</SegmentedControlButton>
                     <SegmentedControlButton selected>Month</SegmentedControlButton>
                     <SegmentedControlButton>Timeline</SegmentedControlButton>
                     <SegmentedControlButton>Agenda</SegmentedControlButton>
                 </SegmentedControl>
+
             </SchedulerToolbar>
         }
         children={
@@ -121,34 +123,11 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
-                                <SchedulerEvent eventPrefix={null} eventSuffix={null} resizable="none" style={{ top: "137px", width: "137px" }}>
-                                    <div>
-                                        <div className="k-event-template">
-                                            Event 1 Title
-                                        </div>
-                                    </div>
-                                </SchedulerEvent>
-                                <SchedulerEvent eventPrefix={null} eventSuffix={null} resizable="none" style={{ top: "137px", left: "138px", width: "137px" }}>
-                                    <div>
-                                        <div className="k-event-template">
-                                            Event 2 Title
-                                        </div>
-                                    </div>
-                                </SchedulerEvent>
-                                <SchedulerEvent eventPrefix={null} eventSuffix={null} resizable="none" style={{ top: "165px", left: "138px", width: "137px" }}>
-                                    <div>
-                                        <div className="k-event-template">
-                                            Event 3 Title
-                                        </div>
-                                    </div>
-                                </SchedulerEvent>
-                                <SchedulerEvent eventSuffix={null} resizable="none" style={{ top: "137px", left: "276px", width: "410px" }}>
-                                    <div>
-                                        <div className="k-event-template">
-                                            Event 4 Title
-                                        </div>
-                                    </div>
-                                </SchedulerEvent>
+                                <SchedulerEvent resizable="none" style={{ top: "137px", height: "25px", width: "137px" }} title="Event 1 Title" />
+                                <SchedulerEvent resizable="none" style={{ top: "137px", left: "138px", height: "25px", width: "137px" }} title="Event 2 Title" />
+                                <SchedulerEvent resizable="none" style={{ top: "165px", left: "138px", height: "25px", width: "137px" }} title="Event 3 Title" />
+                                <Button className="k-more-events" size="xsmall" fillMode="flat" themeColor="primary" aria-label="3 more events" style={{ top: "165px", width: "137px" }}>3 more</Button>
+                                <SchedulerEvent resizable="none" style={{ top: "137px", left: "276px", height: "25px", width: "410px" }} title="Event 4 Title" />
                             </SchedulerContent>
                         </td>
                     </SchedulerBody>

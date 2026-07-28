@@ -7,10 +7,6 @@
 @mixin kendo-scheduler--theme() {
     @include kendo-scheduler--theme-base();
 
-    .k-scheduler-times {
-        color: $kendo-scheduler-timecolumn-text;
-    }
-
     .k-scheduler {
         background-color: unset;
     }
