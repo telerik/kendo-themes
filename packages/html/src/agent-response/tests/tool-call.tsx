@@ -14,34 +14,22 @@ export default () => (
 
       <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts · 120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable expanded>
         <div>Parameters</div>
-        <Card>
-          <CardBody>
-            <pre style={{ fontSize: "14px", marginTop: "0px" }}>
-              <code>{`cd packages/html && npx tsc --noEmit -p . 2>&1 | head -50`}</code>
-            </pre>
-          </CardBody>
-        </Card>
+        <pre className="k-pre">
+          <code className="k-code">{`cd packages/html && npx tsc --noEmit -p . 2>&1 | head -50`}</code>
+        </pre>
         <div>Result</div>
-        <Card>
-          <CardBody>
-            <pre style={{ fontSize: "14px", marginTop: "0px" }}>
-              <code>{`> @progress/kendo-themes-html@14.4.0-dev.1 typecheck
+        <pre className="k-pre">
+          <code className="k-code">{`> @progress/kendo-themes-html@14.4.0-dev.1 typecheck
 > npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json
 `}</code>
-            </pre>
-          </CardBody>
-        </Card>
+        </pre>
       </ToolCall>
 
       <ToolCall label="tool_name" status="Awaiting Approval" statusThemeColor="warning" statusIcon="exclamation-circle" expandable expanded>
         <div>Parameters</div>
-        <Card>
-          <CardBody>
-            <pre style={{ fontSize: "14px", marginTop: "0px" }}>
-              <code>{`cd packages/html && npx tsc --noEmit -p . 2>&1 | head -50`}</code>
-            </pre>
-          </CardBody>
-        </Card>
+        <pre className="k-pre">
+          <code className="k-code">{`cd packages/html && npx tsc --noEmit -p . 2>&1 | head -50`}</code>
+        </pre>
         <Card>
           <CardBody>
             <p>This command will execute a TS Typecheck in your codebase.</p>
@@ -55,13 +43,9 @@ export default () => (
 
       <ToolCall label="tool_name" status="Error" statusThemeColor="error" statusIcon="exclamation-circle" expandable expanded>
         <div>Parameters</div>
-        <Card>
-          <CardBody>
-            <pre style={{ fontSize: "14px", marginTop: "0px" }}>
-              <code>{`cd packages/hmtl && npx tsc --noEmit -p . 2>&1 | head -50`}</code>
-            </pre>
-          </CardBody>
-        </Card>
+        <pre className="k-pre">
+          <code className="k-code">{`cd packages/hmtl && npx tsc --noEmit -p . 2>&1 | head -50`}</code>
+        </pre>
         <MessageBox themeColor="error">cd: no such file or directory: packges/hmtl</MessageBox>
       </ToolCall>
     </section>

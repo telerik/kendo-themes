@@ -41,3 +41,6 @@ $kendo-tool-call-indent: null !default;
 /// The bottom padding of the ToolCall body.
 /// @group agent-response
 $kendo-tool-call-padding-y: null !default;
+/// The border radius of the pre element in the ToolCall body.
+/// @group agent-response
+$kendo-tool-call-pre-border-radius: null !default;

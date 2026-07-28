@@ -43,6 +43,9 @@ $kendo-tool-call-indent: k-spacing(5) !default;
 /// The bottom padding of the ToolCall body.
 /// @group agent-response
 $kendo-tool-call-padding-y: k-spacing(2) !default;
+/// The border radius of the pre element in the ToolCall body.
+/// @group agent-response
+$kendo-tool-call-pre-border-radius: k-border-radius(md) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/agent-response/_variables.scss" with (
     $kendo-agent-step-gap: $kendo-agent-step-gap,
@@ -57,5 +60,6 @@ $kendo-tool-call-padding-y: k-spacing(2) !default;
     $kendo-thought-spacing: $kendo-thought-spacing,
     $kendo-thought-connector-color: $kendo-thought-connector-color,
     $kendo-tool-call-indent: $kendo-tool-call-indent,
-    $kendo-tool-call-padding-y: $kendo-tool-call-padding-y
+    $kendo-tool-call-padding-y: $kendo-tool-call-padding-y,
+    $kendo-tool-call-pre-border-radius: $kendo-tool-call-pre-border-radius
 );
