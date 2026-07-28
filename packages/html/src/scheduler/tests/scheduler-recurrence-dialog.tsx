@@ -46,7 +46,7 @@ export default () => (
               label="Repeat every"
               editor={
                 <div className="k-scheduler-recurrence-fields">
-                  <NumericTextbox value="1" aria-label="Interval" />
+                  <NumericTextbox showClearButton={false} value="1" aria-label="Interval" />
                   <DropdownListNormal value="Day" aria-label="Frequency" />
                 </div>
               }
@@ -90,7 +90,7 @@ export default () => (
               label="Repeat every"
               editor={
                 <div className="k-scheduler-recurrence-fields">
-                  <NumericTextbox value="2" aria-label="Interval" />
+                  <NumericTextbox showClearButton={false} value="2" aria-label="Interval" />
                   <DropdownListNormal value="Day" aria-label="Frequency" />
                 </div>
               }
@@ -101,7 +101,7 @@ export default () => (
               editor={
                 <div className="k-scheduler-recurrence-fields">
                   <DropdownListNormal value="After" aria-label="End condition" />
-                  <NumericTextbox value="10" aria-label="Occurrences" />
+                  <NumericTextbox showClearButton={false} value="10" aria-label="Occurrences" />
                 </div>
               }
             />
@@ -134,7 +134,7 @@ export default () => (
               label="Repeat every"
               editor={
                 <div className="k-scheduler-recurrence-fields">
-                  <NumericTextbox value="1" aria-label="Interval" />
+                  <NumericTextbox showClearButton={false} value="1" aria-label="Interval" />
                   <DropdownListNormal value="Day" aria-label="Frequency" />
                 </div>
               }
@@ -178,7 +178,7 @@ export default () => (
               label="Repeat every"
               editor={
                 <div className="k-scheduler-recurrence-fields">
-                  <NumericTextbox value="1" aria-label="Interval" />
+                  <NumericTextbox showClearButton={false} value="1" aria-label="Interval" />
                   <DropdownListNormal value="Week" aria-label="Frequency" />
                 </div>
               }
@@ -250,7 +250,7 @@ export default () => (
               label="Repeat every"
               editor={
                 <div className="k-scheduler-recurrence-fields">
-                  <NumericTextbox value="1" aria-label="Interval" />
+                  <NumericTextbox showClearButton={false} value="1" aria-label="Interval" />
                   <DropdownListNormal value="Month" aria-label="Frequency" />
                 </div>
               }
@@ -270,7 +270,7 @@ export default () => (
                   <RadioItem>
                     <RadioButton id="recur-weekday" aria-label="Day of the month" />
                     <div className="k-scheduler-recurrence-fields">
-                      <NumericTextbox value="31 day" aria-label="Day of month" />
+                      <NumericTextbox showClearButton={false} value="31 day" aria-label="Day of month" />
                     </div>
                   </RadioItem>
                 </RadioGroup>
@@ -314,7 +314,7 @@ export default () => (
               label="Repeat every"
               editor={
                 <div className="k-scheduler-recurrence-fields">
-                  <NumericTextbox value="1" aria-label="Interval" />
+                  <NumericTextbox showClearButton={false} value="1" aria-label="Interval" />
                   <DropdownListNormal value="Year" aria-label="Frequency" />
                 </div>
               }
@@ -328,7 +328,7 @@ export default () => (
                     <RadioButton id="recur-yearly-monthday" checked aria-label="Day of the month" />
                     <div className="k-scheduler-recurrence-fields">
                       <DropdownListNormal value="October" aria-label="Month" />
-                      <NumericTextbox value="1" aria-label="Day" />
+                      <NumericTextbox showClearButton={false} value="1" aria-label="Day" />
                     </div>
                   </RadioItem>
                   <RadioItem>
@@ -385,7 +385,7 @@ export default () => (
               label="Repeat every"
               editor={
                 <div className="k-scheduler-recurrence-fields">
-                  <NumericTextbox value="1" aria-label="Interval" />
+                  <NumericTextbox showClearButton={false} value="1" aria-label="Interval" />
                   <DropdownListNormal value="Week" aria-label="Frequency" />
                 </div>
               }
