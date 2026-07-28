@@ -15,13 +15,11 @@ export type KendoCitationPopoverProps = {
   pageIndex?: number;
   totalPages?: number;
   body?: React.JSX.Element;
-  currentView?: number;
 };
 
 const defaultOptions = {
-  currentView: 1,
   pageIndex: 1,
-  totalPages: 6,
+  totalPages: 2,
 };
 
 /**
@@ -30,20 +28,20 @@ const defaultOptions = {
  * @ux {Sliding views} Slides between page views using the --kendo-citation-popover-view-current CSS variable instead of unmounting content.
  */
 export const CitationPopover: KendoComponent<KendoCitationPopoverProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoCitationPopoverProps & React.HTMLAttributes<HTMLDivElement>) => {
-  const { body, currentView = defaultOptions.currentView, pageIndex = defaultOptions.pageIndex, totalPages = defaultOptions.totalPages, className, children, ...other } = props;
+  const { body, pageIndex = defaultOptions.pageIndex, totalPages = defaultOptions.totalPages, className, children, ...other } = props;
   return (
     <Popover
       {...other}
       className={classNames(className, CITATION_POPOVER_CLASSNAME)}
-      style={{ "--kendo-citation-popover-view-current": currentView } as React.CSSProperties}
+      style={{ "--kendo-citation-popover-view-current": pageIndex } as React.CSSProperties}
       title={
         <>
           <span className="k-citation-pages">
             {pageIndex}/{totalPages}
           </span>
           <ButtonGroup fillMode="flat">
-            <IconButton icon="arrow-left" fillMode="flat" size="small" aria-label="Previous" />
-            <IconButton icon="arrow-right" fillMode="flat" size="small" aria-label="Next" />
+            <IconButton className="k-group-start" icon="arrow-left" fillMode="flat" size="small" aria-label="Previous" disabled={pageIndex <= 1} />
+            <IconButton className="k-group-end" icon="arrow-right" fillMode="flat" size="small" aria-label="Next" disabled={pageIndex >= totalPages} />
           </ButtonGroup>
         </>
       }
