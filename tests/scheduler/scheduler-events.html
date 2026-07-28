@@ -10,21 +10,32 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1080px;
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-scheduler" role="application">
-            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-                <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
-                    <button class="k-group-start k-button">
-                        <span class="k-button-text">Today</span>
-                    </button>
-                    <button class="k-button k-icon-button">
+            <div class="k-scheduler-toolbar k-toolbar k-toolbar-flat" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                             </svg>
                         </span>
                     </button>
-                    <button class="k-group-end k-button k-icon-button">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
@@ -32,13 +43,16 @@
                         </span>
                     </button>
                 </div>
-                <button class="k-toolbar-button k-nav-current k-button k-button-flat">
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
                     </span>
-                    <span class="k-button-text">Monday, June 10, 2013 - Friday, June 14, 2013</span>
+                    <span class="k-button-text">10 June – 14 June</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
                 </button>
                 <span class="k-spacer"></span>
                 <div class="k-scheduler-views k-segmented-control" role="group">
@@ -67,7 +81,7 @@
                             <div class="k-scheduler-times">
                                 <table class="k-scheduler-table">
                                     <tbody>
-                                        <tr style="height: 37px;">
+                                        <tr style="height: 55px;">
                                             <th role="presentation" class="k-scheduler-cell"></th>
                                         </tr>
                                         <tr style="height: 72px;">
@@ -84,19 +98,24 @@
                                         <tbody>
                                             <tr>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Mon 6/10</span>
+                                                    <span class="k-scheduler-date-day">Mon</span>
+                                                    <span class="k-link k-nav-day" aria-label="Mon 10">10</span>
                                                 </th>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Tue 6/11</span>
+                                                    <span class="k-scheduler-date-day">Tue</span>
+                                                    <span class="k-link k-nav-day" aria-label="Tue 11">11</span>
+                                                </th>
+                                                <th class="k-scheduler-cell k-today" colspan="1">
+                                                    <span class="k-scheduler-date-day">Wed</span>
+                                                    <span class="k-link k-nav-day" aria-label="Wed 12">12</span>
                                                 </th>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Wed 6/12</span>
+                                                    <span class="k-scheduler-date-day">Thu</span>
+                                                    <span class="k-link k-nav-day" aria-label="Thu 13">13</span>
                                                 </th>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Thu 6/13</span>
-                                                </th>
-                                                <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Fri 6/14</span>
+                                                    <span class="k-scheduler-date-day">Fri</span>
+                                                    <span class="k-link k-nav-day" aria-label="Fri 14">14</span>
                                                 </th>
                                             </tr>
                                         </tbody>
@@ -114,32 +133,9 @@
                                             </tbody>
                                         </table>
                                         <div class="k-event" role="button" aria-label="Event">
-                                            <span class="k-event-actions">
-                                                <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
                                             <div>
-                                                <div>
-                                                    <div class="k-event-template">Two Weeks in NZ</div>
-                                                </div>
+                                                <div class="k-event-template k-event-title">Two Weeks in NZ</div>
                                             </div>
-                                            <span class="k-event-actions">
-                                                <a class="k-link k-event-delete">
-                                                    <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                                <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
                                             <span class="k-resize-handle k-resize-w"></span>
                                             <span class="k-resize-handle k-resize-e"></span>
                                         </div>
@@ -504,182 +500,119 @@
                                     </tbody>
                                 </table>
                                 <div class="k-event" role="button" aria-label="Event" style="top: 0px; height: 71px; width: 166px; left: 2px;">
-                                    <span class="k-event-actions"></span>
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
-                                            <div class="k-event-template">Event title</div>
-                                        </div>
+                                        <div class="k-event-template k-event-title">Event title</div>
+                                        <div class="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
                                     </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div class="k-event k-event-ongoing" role="button" aria-label="Event" style="top: 111px; height: 34px; width: 166px; left: 2px;">
-                                    <span class="k-event-actions"></span>
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">8:30 AM - 9:00 AM</div>
-                                            <div class="k-event-template">Event title that is long and overflows, testing multiline and overflow styles</div>
-                                        </div>
+                                        <div class="k-event-template k-event-title">Event title that is long and overflows, testing multiline and overflow styles</div>
+                                        <div class="k-event-template k-event-time">8:30 AM - 9:00 AM</div>
                                     </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div class="k-event k-hover k-event-ongoing" role="button" aria-label="Event" style="top: 36px; height: 108px; width: 166px; left: 348px;">
-                                    <span class="k-event-actions">
+                                <div class="k-event k-hover k-event-ongoing" role="button" aria-label="Event" style="top: 0px; height: 71px; width: 166px; left: 348px;">
+                                    <div>
+                                        <div class="k-event-template k-event-title">Hovered Recurring event</div>
+                                        <div class="k-event-template k-event-time">
+                                            <span class="k-event-recurrence-icon">
+                                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-arrow-rotate-cw" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>7:30 AM - 9:00 AM
+                                        </div>
+                                    </div>
+                                    <span class="k-event-recurrence-icon">
                                         <span class="k-icon k-svg-icon k-svg-i-arrow-rotate-cw" aria-hidden="true">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112"></path>
                                             </svg>
                                         </span>
                                     </span>
+                                    <span class="k-resize-handle k-resize-n"></span>
+                                    <span class="k-resize-handle k-resize-s"></span>
+                                </div>
+                                <div class="k-event" role="button" aria-label="Event" style="top: 80px; height: 71px; width: 166px; left: 348px;">
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">7:30 AM - 9:00 AM</div>
-                                            <div class="k-event-template">Hovered Recurring event</div>
+                                        <div class="k-event-template k-event-title">Non-Recurring event</div>
+                                        <div class="k-event-template k-event-time">
+                                            <span class="k-event-recurrence-icon">
+                                                <span class="k-icon k-svg-icon k-icon-sm k-svg-i-arrows-no-repeat" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M402.475 56.875a12.8 12.8 0 0 1 18.091 0l51.861 51.84a12.8 12.8 0 0 1 0 18.112l-51.861 51.819a12.8 12.8 0 0 1-18.091-18.091l42.773-42.816-42.773-42.773a12.8 12.8 0 0 1 0-18.091M35.84 256a151 151 0 0 1 96.427-140.821l4.629 11.925 4.651 11.925A125.65 125.65 0 0 0 61.44 256a12.8 12.8 0 0 1-25.6 0m427.52-151a12.8 12.8 0 1 1 0 25.6H194.901a12.8 12.8 0 0 1 0-25.6zM91.435 333.355a12.779 12.779 0 1 1 18.091 18.091l-42.795 42.773 42.795 42.795a12.821 12.821 0 0 1-18.091 18.112l-51.84-51.819a12.8 12.8 0 0 1 0-18.112zM450.56 256a12.8 12.8 0 0 1 25.6 0 151 151 0 0 1-44.245 106.795 34.1 34.1 0 0 1-7 5.696l-.448.256-1.877 1.344a12.8 12.8 0 1 1-15.445-20.395 64 64 0 0 1 4.757-3.243l.32-.213h.085c-.555.341-.683.661 1.472-1.493A125.44 125.44 0 0 0 450.56 256m-72.875 141.589a149.3 149.3 0 0 1-52.565 9.451H48.64a12.8 12.8 0 1 1 0-25.6h276.48a125.9 125.9 0 0 0 43.669-7.829zM74.603 61.504a12.8 12.8 0 0 1 18.069.875l345.6 380.139a12.8 12.8 0 0 1-18.944 17.216L73.728 79.573a12.8 12.8 0 0 1 .875-18.069"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>7:30 AM - 9:00 AM
                                         </div>
                                     </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
+                                    <span class="k-event-recurrence-icon">
+                                        <span class="k-icon k-svg-icon k-svg-i-arrows-no-repeat" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M402.475 56.875a12.8 12.8 0 0 1 18.091 0l51.861 51.84a12.8 12.8 0 0 1 0 18.112l-51.861 51.819a12.8 12.8 0 0 1-18.091-18.091l42.773-42.816-42.773-42.773a12.8 12.8 0 0 1 0-18.091M35.84 256a151 151 0 0 1 96.427-140.821l4.629 11.925 4.651 11.925A125.65 125.65 0 0 0 61.44 256a12.8 12.8 0 0 1-25.6 0m427.52-151a12.8 12.8 0 1 1 0 25.6H194.901a12.8 12.8 0 0 1 0-25.6zM91.435 333.355a12.779 12.779 0 1 1 18.091 18.091l-42.795 42.773 42.795 42.795a12.821 12.821 0 0 1-18.091 18.112l-51.84-51.819a12.8 12.8 0 0 1 0-18.112zM450.56 256a12.8 12.8 0 0 1 25.6 0 151 151 0 0 1-44.245 106.795 34.1 34.1 0 0 1-7 5.696l-.448.256-1.877 1.344a12.8 12.8 0 1 1-15.445-20.395 64 64 0 0 1 4.757-3.243l.32-.213h.085c-.555.341-.683.661 1.472-1.493A125.44 125.44 0 0 0 450.56 256m-72.875 141.589a149.3 149.3 0 0 1-52.565 9.451H48.64a12.8 12.8 0 1 1 0-25.6h276.48a125.9 125.9 0 0 0 43.669-7.829zM74.603 61.504a12.8 12.8 0 0 1 18.069.875l345.6 380.139a12.8 12.8 0 0 1-18.944 17.216L73.728 79.573a12.8 12.8 0 0 1 .875-18.069"></path>
+                                            </svg>
+                                        </span>
                                     </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div class="k-event k-selected k-event-ongoing" role="button" aria-label="Event" style="top: 110px; height: 71px; width: 166px; left: 520px;">
-                                    <span class="k-event-actions"></span>
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">8:30 AM - 9:30 AM</div>
-                                            <div class="k-event-template">Selected event</div>
-                                        </div>
+                                        <div class="k-event-template k-event-title">Selected event</div>
+                                        <div class="k-event-template k-event-time">8:30 AM - 9:30 AM</div>
                                     </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div class="k-event" role="button" aria-label="Event" style="top: 0px; height: 71px; width: 166px; left: 520px; color: rgb(51, 51, 51); background-color: rgb(221, 221, 255); border-color: rgb(255, 255, 255);">
-                                    <span class="k-event-actions"></span>
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
-                                            <div class="k-event-template">Custom color event</div>
-                                        </div>
+                                        <div class="k-event-template k-event-title">Custom color event</div>
+                                        <div class="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
                                     </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div class="k-event k-event-drag-hint" role="button" aria-label="Event" style="left: 175px; top: 0px; height: 71px; width: 166px;">
-                                    <span class="k-event-actions"></span>
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
-                                            <div class="k-event-template">Drag hint</div>
-                                        </div>
+                                        <div class="k-event-template k-event-title">Drag hint</div>
+                                        <div class="k-event-template k-event-time">8:00 AM - 9:00 AM</div>
                                     </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div class="k-event k-event-inverse k-event-ongoing" role="button" aria-label="Event" style="background-color: rgb(248, 163, 152); border-color: rgb(248, 163, 152); left: 175px; top: 100px; height: 71px; width: 166px;">
-                                    <span class="k-event-actions"></span>
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">10:00 AM - 11:00 AM</div>
-                                            <div class="k-event-template">Inverse Background</div>
-                                        </div>
+                                        <div class="k-event-template k-event-title">Inverse Background</div>
+                                        <div class="k-event-template k-event-time">10:00 AM - 11:00 AM</div>
                                     </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
+                                    <span class="k-resize-handle k-resize-n"></span>
+                                    <span class="k-resize-handle k-resize-s"></span>
+                                </div>
+                                <div class="k-event k-readonly" role="button" aria-disabled="true" aria-label="Event" style="top: 0px; height: 70px; width: 166px; left: 760px;">
+                                    <div>
+                                        <div class="k-event-template k-event-title">Read-only event</div>
+                                        <div class="k-event-template k-event-time">7:30 AM - 9:00 AM</div>
+                                    </div>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div class="k-event k-event-ongoing" role="button" aria-label="Event" style="top: 110px; height: 71px; width: 166px; left: 708px;">
-                                    <span class="k-event-actions"></span>
                                     <div>
-                                        <div>
-                                            <div class="k-event-template k-event-time">8:30 AM - 9:30 AM</div>
-                                            <div class="k-event-template">Multi-Day event</div>
-                                        </div>
-                                    </div>
-                                    <span class="k-event-actions">
-                                        <a class="k-link k-event-delete" aria-label="Delete event">
-                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <div class="k-event-template k-event-title">Multi-Day event</div>
+                                        <div class="k-event-template k-event-time">8:30 AM - 9:30 AM</div>
+                                        <span class="k-event-continuation">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
                                                 </svg>
                                             </span>
-                                        </a>
-                                    </span>
-                                    <span class="k-event-top-actions">
-                                        <span class="k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                            </svg>
                                         </span>
-                                    </span>
-                                    <span class="k-event-bottom-actions">
-                                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                            </svg>
-                                        </span>
-                                    </span>
+                                    </div>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -688,7 +621,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="k-scheduler-footer k-toolbar" aria-label="Toolbar" role="toolbar">
+            <div class="k-scheduler-footer k-toolbar k-toolbar-flat" aria-label="Toolbar" role="toolbar">
                 <button class="k-toolbar-button k-scheduler-fullday k-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
