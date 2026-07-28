@@ -49,17 +49,20 @@
         @include text-shimmer();
     }
 
-    .k-thought .k-agent-step-icon-col::after {
-        background: $kendo-thought-connector-color;
-    }
-
+    // Reasoning Specific Styles
     .k-reasoning {
     }
 
-    .k-tool-call .k-agent-step-body {
+    // Tool Call Specific Styles
+    .k-tool-call-label {
         color: k-color("subtle");
     }
 
+    // Chain of Thought Specific Styles
     .k-chain-of-thought {
+    }
+
+    .k-thought .k-agent-step-icon-col::after {
+        background: $kendo-thought-connector-color;
     }
 }
