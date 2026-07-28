@@ -10,21 +10,32 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1080px;
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-scheduler" role="application">
-            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-                <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
-                    <button class="k-group-start k-button">
-                        <span class="k-button-text">Today</span>
-                    </button>
-                    <button class="k-button k-icon-button">
+            <div class="k-scheduler-toolbar k-toolbar k-toolbar-flat" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                             </svg>
                         </span>
                     </button>
-                    <button class="k-group-end k-button k-icon-button">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
@@ -32,13 +43,16 @@
                         </span>
                     </button>
                 </div>
-                <button class="k-toolbar-button k-nav-current k-button k-button-flat">
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
                     </span>
-                    <span class="k-button-text">Monday, June 10, 2013 - Friday, June 14, 2013</span>
+                    <span class="k-button-text">10 June – 14 June</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
                 </button>
                 <span class="k-spacer"></span>
                 <div class="k-scheduler-views k-segmented-control" role="group">
@@ -67,7 +81,7 @@
                             <div class="k-scheduler-times">
                                 <table class="k-scheduler-table">
                                     <tbody>
-                                        <tr style="height: 37px;">
+                                        <tr style="height: 55px;">
                                             <th role="presentation" class="k-scheduler-cell"></th>
                                         </tr>
                                         <tr style="height: 72px;">
@@ -84,19 +98,24 @@
                                         <tbody>
                                             <tr>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Mon 6/10</span>
+                                                    <span class="k-scheduler-date-day">Mon</span>
+                                                    <span class="k-link k-nav-day" aria-label="Mon 10">10</span>
                                                 </th>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Tue 6/11</span>
+                                                    <span class="k-scheduler-date-day">Tue</span>
+                                                    <span class="k-link k-nav-day" aria-label="Tue 11">11</span>
+                                                </th>
+                                                <th class="k-scheduler-cell k-today" colspan="1">
+                                                    <span class="k-scheduler-date-day">Wed</span>
+                                                    <span class="k-link k-nav-day" aria-label="Wed 12">12</span>
                                                 </th>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Wed 6/12</span>
+                                                    <span class="k-scheduler-date-day">Thu</span>
+                                                    <span class="k-link k-nav-day" aria-label="Thu 13">13</span>
                                                 </th>
                                                 <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Thu 6/13</span>
-                                                </th>
-                                                <th colspan="1" class="k-scheduler-cell">
-                                                    <span class="k-link k-nav-day">Fri 6/14</span>
+                                                    <span class="k-scheduler-date-day">Fri</span>
+                                                    <span class="k-link k-nav-day" aria-label="Fri 14">14</span>
                                                 </th>
                                             </tr>
                                         </tbody>
@@ -114,32 +133,9 @@
                                             </tbody>
                                         </table>
                                         <div class="k-event" role="button" aria-label="Event">
-                                            <span class="k-event-actions">
-                                                <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
                                             <div>
-                                                <div>
-                                                    <div class="k-event-template">Two Weeks in NZ</div>
-                                                </div>
+                                                <div class="k-event-template k-event-title">Two Weeks in NZ</div>
                                             </div>
-                                            <span class="k-event-actions">
-                                                <a class="k-link k-event-delete">
-                                                    <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                                <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
                                             <span class="k-resize-handle k-resize-w"></span>
                                             <span class="k-resize-handle k-resize-e"></span>
                                         </div>
@@ -510,7 +506,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="k-scheduler-footer k-toolbar" aria-label="Toolbar" role="toolbar">
+            <div class="k-scheduler-footer k-toolbar k-toolbar-flat" aria-label="Toolbar" role="toolbar">
                 <button class="k-toolbar-button k-scheduler-fullday k-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -522,19 +518,24 @@
             </div>
         </div>
         <div class="k-scheduler" role="application">
-            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-                <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
-                    <button class="k-group-start k-button">
-                        <span class="k-button-text">Today</span>
-                    </button>
-                    <button class="k-button k-icon-button">
+            <div class="k-scheduler-toolbar k-toolbar k-toolbar-flat" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                             </svg>
                         </span>
                     </button>
-                    <button class="k-group-end k-button k-icon-button">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
@@ -542,13 +543,16 @@
                         </span>
                     </button>
                 </div>
-                <button class="k-toolbar-button k-nav-current k-button k-button-flat">
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
                     </span>
-                    <span class="k-button-text">Monday, February 18, 2019</span>
+                    <span class="k-button-text">18 February</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
                 </button>
                 <span class="k-spacer"></span>
                 <div class="k-scheduler-views k-segmented-control" role="group">
