@@ -15,11 +15,28 @@ The Scheduler is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | `role="application"` | Specifies the role of the component. |
 | `aria-label` | Required as the previous navigation button contains only an icon (no text). |
 | `aria-label` | Required as the next navigation button contains only an icon (no text). |
+| `aria-label` | Required for the "New Event" button. When collapsed to icon-only at narrow widths, this is the only accessible name. |
+| `aria-label` | Required as the Open calendar button contains only an icon (no text). |
+| `aria-label` | Required as the Create event button contains only an icon (no text). |
+| `aria-live="polite"` | The new date of the Scheduler view will be announced upon navigation to a new time span or view type. |
 | `role="group"` | Follows SegmentedControl spec: sets the proper role for the group of view buttons. |
 | `aria-pressed` | Follows SegmentedControl spec: specifies the current state of the view SegmentedControl. Only the selected button within the group will have this attribute set to true. |
 | `role="grid"` | The main table of the Agenda view must indicate it is a Data Grid. |
-| `role="none"|\"presentation"` | The `<tbody>` element must have its semantics removed. |
-| `role="none"|\"presentation"` | All `<table>` elements within the Scheduler must have their semantic role removed. |
+| `role="none"|"presentation"` | The `<tbody>` element must have its semantics removed. |
+| `role="none"|"presentation"` | All `<table>` elements within the Scheduler must have their semantic role removed. |
+| `role="button"` | Indicating that the event element is interactive. |
+| `aria-label` | Label containing the title, start, and end date of the appointment. |
+| `aria-disabled="true"` | Read-only events cannot be edited or dragged; aria-disabled signals this to assistive technologies. |
+| `aria-label` | When the date cell shows a short day abbreviation and a date number separately, aria-label should combine both so the link has a descriptive accessible name. |
+| `aria-label` | The "N more" button text is ambiguous; aria-label should read "N more events" to clarify what the button reveals. |
+| `role="list"` | The tooltip events container acts as a list of event summaries. |
+| `role="listitem"` | Each tooltip event is a non-interactive list item. |
+| `role="group"` | Groups the day-of-week toggle buttons into a logical set. |
+| `aria-label` | Labels the weekday picker group (e.g. "Repeat on days"). |
+| `aria-label` | Full day name for each abbreviated day button in the weekday picker (e.g. "Monday"). |
+| `aria-pressed` | Indicates whether the day is currently selected in the weekday picker. |
+| `tabindex` | Roving tabindex: only one weekday picker button has tabindex="0", the rest have tabindex="-1". |
+| `tabindex="0"` | Scrollable non-agenda content must be focusable to ensure keyboard scrolling is available. |
 
 #### Keyboard Navigation
 
