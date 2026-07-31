@@ -50,13 +50,13 @@
 
         // Sticky columns
         .k-master-row {
-            .k-grid-content-sticky {
+            .k-grid-content-sticky:not(.k-group-cell) {
                 border-color: $kendo-grid-header-border;
                 border-inline-color: $kendo-grid-sticky-header-border;
             }
         }
 
-        .k-table-row.k-selected > .k-table-td.k-grid-content-sticky {
+        .k-table-row.k-selected > .k-table-td.k-grid-content-sticky:not(.k-group-cell) {
             border-inline-color: $kendo-grid-sticky-border;
         }
 

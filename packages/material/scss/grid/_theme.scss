@@ -15,7 +15,7 @@
             border-inline-start-color: transparent;
         }
 
-        .k-master-row .k-grid-content-sticky {
+        .k-master-row .k-grid-content-sticky:not(.k-group-cell) {
             border-block-end-color: $kendo-grid-header-border;
         }
 
