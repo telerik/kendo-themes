@@ -161,9 +161,12 @@
 
     .k-grid-footer .k-table-td,
     .k-grid-header .k-table-th,
-    .k-group-footer .k-table-td,
-    .k-grouping-row .k-table-td {
+    .k-group-footer .k-table-td {
         font-weight: $kendo-grid-header-font-weight;
+    }
+
+    .k-grouping-row .k-table-td {
+        font-weight: $kendo-grid-grouping-row-font-weight;
     }
 
     // Filter row

@@ -35,8 +35,8 @@ export const GridGroupingCheckboxMultipleColumns = ({ contentClassName, ...other
                         </colgroup>
                         <TableThead role="rowgroup">
                             <TableRow role="row">
-                                <GridHeaderCell columnTitle="ID" role="columnheader"></GridHeaderCell>
-                                <GridHeaderCell columnTitle="Name" role="columnheader"></GridHeaderCell>
+                                <GridHeaderCell columnTitle="ID" groupColumn role="columnheader"></GridHeaderCell>
+                                <GridHeaderCell columnTitle="Name" groupColumn role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell role="columnheader" accessibleLabel="Select all">
                                     <Checkbox />
                                 </GridHeaderCell>
