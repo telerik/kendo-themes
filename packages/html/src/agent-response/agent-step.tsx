@@ -1,5 +1,5 @@
 import * as React from "react";
-import { classNames } from "../misc";
+import { classNames, stateClassNames, States } from "../misc";
 import { Icon } from "../icon";
 import { Badge } from "../badge";
 import { KendoComponent, KendoBaseProps } from "../_types/component";
@@ -7,8 +7,13 @@ import { AGENT_RESPONSE_FOLDER_NAME, AGENT_RESPONSE_MODULE_NAME } from "./consta
 
 export const AGENT_STEP_CLASSNAME = "k-agent-step";
 
-const states = [] as const;
+const states = [
+  States.focus
+] as const;
+
 const options = {};
+
+export type KendoAgentStepState = { [K in (typeof states)[number]]?: boolean };
 
 export type KendoAgentStepProps = {
   /** Icon name for the step type (e.g. "sparkles", "search", "wrench", "code", "file-txt") */
@@ -50,10 +55,11 @@ const defaultOptions = {
  * @ux {Expand / Collapse} Clicking or activating the step's head via keyboard toggles the body content open and closed.
  * @ux {Hover feedback} Hovering the head highlights it with the app-surface background and normalizes all text/icon colors to on-app-surface.
  * @ux {Completed state} When completed, the label stops shimmering and the icon/label/expand icon dim to a subtle color.
+ * @ux {Focus feedback} Keyboard focus on the head renders a focus indicator — an inset ring in most themes and an inset outline in Meridian.
  * @ux {Diff stats} Added/removed line counts always render in success/error colors, regardless of hover or completed state.
  */
-export const AgentStep: KendoComponent<KendoAgentStepProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoAgentStepProps & KendoBaseProps & React.HTMLAttributes<HTMLDivElement>) => {
-  const { icon, label, labelClassName, secondaryLabel, linesAdded, linesRemoved, status, statusThemeColor = "success", statusIcon, expandable = defaultOptions.expandable, expanded = defaultOptions.expanded, completed = defaultOptions.completed, className, children, ...other } = props;
+export const AgentStep: KendoComponent<KendoAgentStepProps & KendoAgentStepState & React.HTMLAttributes<HTMLDivElement>> = (props: KendoAgentStepProps & KendoAgentStepState & KendoBaseProps & React.HTMLAttributes<HTMLDivElement>) => {
+  const { icon, label, labelClassName, secondaryLabel, linesAdded, linesRemoved, status, statusThemeColor = "success", statusIcon, expandable = defaultOptions.expandable, expanded = defaultOptions.expanded, completed = defaultOptions.completed, focus, className, children, ...other } = props;
 
   return (
     <div
@@ -62,7 +68,7 @@ export const AgentStep: KendoComponent<KendoAgentStepProps & React.HTMLAttribute
         "k-agent-completed": completed,
       })}
     >
-      <button className="k-agent-step-head" aria-expanded={expandable ? expanded : undefined}>
+      <button className={classNames("k-agent-step-head", stateClassNames(AGENT_STEP_CLASSNAME, { focus }))} aria-expanded={expandable ? expanded : undefined}>
         {icon && <Icon icon={icon} size="small" className="k-agent-step-icon" />}
         <span className="k-agent-step-content">
           {label && <span className={classNames("k-agent-step-label", labelClassName)}>{label}</span>}
