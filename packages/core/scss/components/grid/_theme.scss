@@ -121,7 +121,7 @@
         }
 
         .k-master-row {
-            .k-grid-content-sticky {
+            .k-grid-content-sticky:not(.k-group-cell) {
                 background-color: $kendo-grid-sticky-bg;
                 border-inline-color: $kendo-grid-sticky-border;
                 border-block-end-color: $kendo-grid-sticky-border;
@@ -130,8 +130,8 @@
             &.k-table-row {
 
                 // Sticky
-                .k-grid-content-sticky,
-                .k-table-td.k-grid-content-sticky,
+                .k-grid-content-sticky:not(.k-group-cell),
+                .k-table-td.k-grid-content-sticky:not(.k-group-cell),
                 .k-grid-row-sticky,
                 &.k-grid-row-sticky > .k-table-td {
                     background-color: $kendo-grid-sticky-bg;
@@ -146,7 +146,7 @@
                 // Sticky Hover
                 &:is(:hover, .k-hover) {
                     .k-grid-row-sticky,
-                    .k-table-td.k-grid-content-sticky,
+                    .k-table-td.k-grid-content-sticky:not(.k-group-cell),
                     &.k-grid-row-sticky > .k-table-td {
                         background-color: $kendo-grid-sticky-hover-bg;
                     }
@@ -187,8 +187,8 @@
             }
 
             &.k-table-alt-row {
-                .k-grid-content-sticky,
-                .k-table-td.k-grid-content-sticky,
+                .k-grid-content-sticky:not(.k-group-cell),
+                .k-table-td.k-grid-content-sticky:not(.k-group-cell),
                 &.k-grid-row-sticky > .k-table-td,
                 .k-grid-row-sticky {
                     background-color: $kendo-grid-sticky-alt-bg;
