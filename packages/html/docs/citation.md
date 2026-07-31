@@ -37,6 +37,14 @@ The Citation is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | Paged navigation | Displays a "current/total" page indicator with Previous/Next buttons to move between citation pages. |
 | Sliding views | Slides between page views using the --kendo-citation-popover-view-current CSS variable instead of unmounting content. |
 
+### CitationPopoverView
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Structured view | Renders the title, body summary, and source link of a cited source in a consistent layout. |
+
 ### Testing
 
 The Citation has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.

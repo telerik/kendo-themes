@@ -2683,6 +2683,36 @@ The following table lists the available variables for customizing the Theme Core
     </td>
 </tr>
 <tr>
+    <td>$kendo-agent-step-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-padding-end</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-border-radius</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-agent-step-icon-margin-top</td>
     <td></td>
     <td><code>null</code></td>
@@ -2733,6 +2763,16 @@ The following table lists the available variables for customizing the Theme Core
     </td>
 </tr>
 <tr>
+    <td>$kendo-agent-step-focus-shadow</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-thought-gap</td>
     <td></td>
     <td><code>null</code></td>
@@ -2760,6 +2800,16 @@ The following table lists the available variables for customizing the Theme Core
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between stacked Thought items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start padding of the Thought, aligning it with the AgentStep head.</div></div>
     </td>
 </tr>
 <tr>
