@@ -48,6 +48,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-agent-step-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-padding-x, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-agent-step-padding-x, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-padding-end</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-padding-end, k-spacing(2) )</code></td>
+    <td><code>var(--kendo-agent-step-padding-end, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-border-radius, k-border-radius(md) )</code></td>
+    <td><code>var(--kendo-agent-step-border-radius, var(--kendo-border-radius-md))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-agent-step-icon-margin-top</td>
     <td>String</td>
     <td><code>var( --kendo-agent-step-icon-margin-top, k-spacing(0.5) )</code></td>
@@ -98,6 +128,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-agent-step-focus-shadow</td>
+    <td>String</td>
+    <td><code>var( --kendo-agent-step-focus-shadow, inset 0 0 0 2px #{k-color(on-app-surface)} )</code></td>
+    <td><code>var(--kendo-agent-step-focus-shadow, inset 0 0 0 2px var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-thought-gap</td>
     <td>String</td>
     <td><code>var( --kendo-thought-gap, k-spacing(1.5) )</code></td>
@@ -125,6 +165,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between stacked Thought items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-thought-padding-x, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-thought-padding-x, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start padding of the Thought, aligning it with the AgentStep head.</div></div>
     </td>
 </tr>
 <tr>

@@ -1,15 +1,19 @@
 import * as React from "react";
-import { classNames } from "../misc";
-import { AgentStep, KendoAgentStepProps } from "./agent-step";
+import { classNames, States } from "../misc";
+import { AgentStep, KendoAgentStepProps, KendoAgentStepState } from "./agent-step";
 import { KendoComponent, KendoBaseProps } from "../_types/component";
 import { AGENT_RESPONSE_FOLDER_NAME, AGENT_RESPONSE_MODULE_NAME } from "./constants";
 
 export const CHAIN_OF_THOUGHT_CLASSNAME = "k-chain-of-thought";
 
-const states = [] as const;
+const states = [
+  States.focus
+] as const;
+
 const options = {};
 
 export type KendoChainOfThoughtProps = KendoAgentStepProps;
+export type KendoChainOfThoughtState = KendoAgentStepState;
 
 const defaultOptions = {
   icon: "sparkles",
@@ -21,8 +25,9 @@ const defaultOptions = {
  * @aria {aria-label|aria-labelledby} Required on the head when it has no visible label/secondaryLabel text.
  * @ux {Expand / Collapse} Clicking or activating the head toggles the nested Thought steps open and closed.
  * @ux {Completed state} When completed, the label stops shimmering and the icon/label/expand icon dim to a subtle color.
+ * @ux {Focus feedback} Keyboard focus on the head renders a focus indicator — an inset ring in most themes and an inset outline in Meridian.
  */
-export const ChainOfThought: KendoComponent<KendoChainOfThoughtProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoChainOfThoughtProps & KendoBaseProps & React.HTMLAttributes<HTMLDivElement>) => {
+export const ChainOfThought: KendoComponent<KendoChainOfThoughtProps & KendoChainOfThoughtState & React.HTMLAttributes<HTMLDivElement>> = (props: KendoChainOfThoughtProps & KendoChainOfThoughtState & KendoBaseProps & React.HTMLAttributes<HTMLDivElement>) => {
   const { icon = defaultOptions.icon, className, ...other } = props;
 
   return <AgentStep {...other} icon={icon} className={classNames(className, CHAIN_OF_THOUGHT_CLASSNAME)} />;

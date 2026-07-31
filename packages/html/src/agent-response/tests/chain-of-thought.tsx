@@ -41,6 +41,9 @@ export default () => (
           </div>
         </Thought>
       </ChainOfThought>
+
+      {/* focused */}
+      <ChainOfThought label="Thought" secondaryLabel="for 4m 18s" completed expandable focus />
     </section>
   </div>
 );

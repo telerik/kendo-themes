@@ -48,6 +48,9 @@ export default () => (
         </pre>
         <MessageBox themeColor="error">cd: no such file or directory: packges/hmtl</MessageBox>
       </ToolCall>
+
+      {/* focused */}
+      <ToolCall label="tool_name" secondaryLabel="src/utils/formatDate.ts · 120ms" status="Completed" statusThemeColor="success" statusIcon="check-circle" completed expandable focus />
     </section>
   </div>
 );
