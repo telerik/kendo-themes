@@ -8,6 +8,14 @@ The AgentResponse is compliant with the [Web Content Accessibility Guidelines (W
 
 ### ChainOfThought
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-chain-of-thought` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |
@@ -29,8 +37,17 @@ The AgentResponse is compliant with the [Web Content Accessibility Guidelines (W
 | --- | --- |
 | Expand / Collapse | Clicking or activating the head toggles the nested Thought steps open and closed. |
 | Completed state | When completed, the label stops shimmering and the icon/label/expand icon dim to a subtle color. |
+| Focus feedback | Keyboard focus on the head renders a focus indicator — an inset ring in most themes and an inset outline in Meridian. |
 
 ### Reasoning
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-reasoning` element.
 
 #### ARIA Attributes
 
@@ -53,8 +70,17 @@ The AgentResponse is compliant with the [Web Content Accessibility Guidelines (W
 | --- | --- |
 | Expand / Collapse | Clicking or activating the head toggles the reasoning body open and closed. |
 | Completed state | When completed, the label stops shimmering and the icon/label/expand icon dim to a subtle color. |
+| Focus feedback | Keyboard focus on the head renders a focus indicator — an inset ring in most themes and an inset outline in Meridian. |
 
 ### ToolCall
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-tool-call` element.
 
 #### ARIA Attributes
 
@@ -78,6 +104,7 @@ The AgentResponse is compliant with the [Web Content Accessibility Guidelines (W
 | Expand / Collapse | Clicking or activating the head toggles the tool call body (parameters, results, approval actions) open and closed. |
 | Status | The optional status Badge reflects the call's outcome (e.g. "Completed", "Awaiting Approval", "Error"). |
 | Completed state | When completed, the label stops shimmering and the icon/label/expand icon dim to a subtle color. |
+| Focus feedback | Keyboard focus on the head renders a focus indicator — an inset ring in most themes and an inset outline in Meridian. |
 
 ### Testing
 

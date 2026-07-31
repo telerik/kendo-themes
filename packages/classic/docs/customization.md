@@ -932,6 +932,36 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-agent-step-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-padding-end</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-agent-step-icon-margin-top</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -982,6 +1012,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-agent-step-focus-shadow</td>
+    <td>List</td>
+    <td><code>inset 0 0 2px 0 k-color(border)</code></td>
+    <td><code>(inset 0 0 2px 0 var(--kendo-color-border))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-thought-gap</td>
     <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
@@ -1009,6 +1049,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between stacked Thought items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start padding of the Thought, aligning it with the AgentStep head.</div></div>
     </td>
 </tr>
 <tr>
