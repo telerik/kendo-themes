@@ -19,6 +19,7 @@ export default () => (
                 toolbar={
                     <SchedulerToolbar>
                         <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                        <Button fillMode="flat">Today</Button>
                         <ButtonGroup fillMode="flat">
                             <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
                             <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -26,7 +27,6 @@ export default () => (
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                             10 June – 14 June
                         </Button>
-                        <Button fillMode="flat">Today</Button>
                         <span className="k-spacer"></span>
                         <SegmentedControl thumbStyles={{ width: "18%", left: "16%" }} className="k-scheduler-views">
                             <SegmentedControlButton>Day</SegmentedControlButton>
@@ -462,6 +462,7 @@ export default () => (
                     <>
                         <SchedulerToolbar>
                             <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                            <Button fillMode="flat">Today</Button>
                             <ButtonGroup fillMode="flat">
                                 <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
                                 <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -469,7 +470,6 @@ export default () => (
                             <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                                 18 February
                             </Button>
-                            <Button fillMode="flat">Today</Button>
                             <span className="k-spacer"></span>
                             <SegmentedControl thumbStyles={{ width: "23%", left: "54%" }} className="k-scheduler-views">
                                 <SegmentedControlButton>Day</SegmentedControlButton>

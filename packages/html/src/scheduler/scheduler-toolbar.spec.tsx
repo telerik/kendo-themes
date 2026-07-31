@@ -36,12 +36,12 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
             {props.children ||
                 [
                     <Button key="new-event" themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>,
+                    <Button key="today" fillMode="flat">Today</Button>,
                     <Button key="prev" icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>,
                     <Button key="next" icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>,
                     <Button key="current" icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                         13 June
                     </Button>,
-                    <Button key="today" fillMode="flat">Today</Button>,
                     <span key="spacer" className="k-spacer"></span>,
                     <SegmentedControl thumbStyles={{width: "15%"}} key="views" className="k-scheduler-views">
                         <SegmentedControlButton selected>Day</SegmentedControlButton>

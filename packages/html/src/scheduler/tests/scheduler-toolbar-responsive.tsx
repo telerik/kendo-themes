@@ -28,6 +28,7 @@ export default () => (
         <Button themeColor="primary" icon="plus" aria-label="Add new event">
           New Event
         </Button>
+        <Button fillMode="flat">Today</Button>
         <ButtonGroup fillMode="flat">
           <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
           <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -35,7 +36,6 @@ export default () => (
         <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
           3 February
         </Button>
-        <Button fillMode="flat">Today</Button>
         <span className="k-spacer"></span>
         <SegmentedControl thumbStyles={{ width: "15%" }} className="k-scheduler-views">
           <SegmentedControlButton selected>Day</SegmentedControlButton>
@@ -51,6 +51,7 @@ export default () => (
         <Button themeColor="primary" icon="plus" aria-label="Add new event">
           New Event
         </Button>
+        <Button fillMode="flat">Today</Button>
         <ButtonGroup fillMode="flat">
           <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
           <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -58,7 +59,6 @@ export default () => (
         <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
           3 February
         </Button>
-        <Button fillMode="flat">Today</Button>
         <span className="k-spacer"></span>
         <span className="k-separator"></span>
         <MenuButton fillMode="flat">Day</MenuButton>
@@ -95,6 +95,7 @@ export default () => (
         <Button themeColor="primary" icon="plus" aria-label="Add new event">
           New Event
         </Button>
+        <Button fillMode="flat">Today</Button>
         <ButtonGroup fillMode="flat">
           <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
           <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -102,7 +103,6 @@ export default () => (
         <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
           31 May – 6 June
         </Button>
-        <Button fillMode="flat">Today</Button>
         <span className="k-spacer"></span>
         <SegmentedControl thumbStyles={{ width: "19%", left: "15%" }} className="k-scheduler-views">
           <SegmentedControlButton>Day</SegmentedControlButton>
@@ -118,6 +118,7 @@ export default () => (
         <Button themeColor="primary" icon="plus" aria-label="Add new event">
           New Event
         </Button>
+        <Button fillMode="flat">Today</Button>
         <ButtonGroup fillMode="flat">
           <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
           <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -125,7 +126,6 @@ export default () => (
         <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
           31 May – 6 June
         </Button>
-        <Button fillMode="flat">Today</Button>
         <span className="k-spacer"></span>
         <span className="k-separator"></span>
         <MenuButton fillMode="flat">Week</MenuButton>
@@ -162,6 +162,7 @@ export default () => (
         <Button themeColor="primary" icon="plus" aria-label="Add new event">
           New Event
         </Button>
+        <Button fillMode="flat">Today</Button>
         <ButtonGroup fillMode="flat">
           <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
           <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -169,7 +170,6 @@ export default () => (
         <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
           February 2026
         </Button>
-        <Button fillMode="flat">Today</Button>
         <span className="k-spacer"></span>
         <SegmentedControl thumbStyles={{ width: "19%", left: "34%" }} className="k-scheduler-views">
           <SegmentedControlButton>Day</SegmentedControlButton>
@@ -185,6 +185,7 @@ export default () => (
         <Button themeColor="primary" icon="plus" aria-label="Add new event">
           New Event
         </Button>
+        <Button fillMode="flat">Today</Button>
         <ButtonGroup fillMode="flat">
           <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
           <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -192,7 +193,6 @@ export default () => (
         <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
           February 2026
         </Button>
-        <Button fillMode="flat">Today</Button>
         <span className="k-spacer"></span>
         <span className="k-separator"></span>
         <MenuButton fillMode="flat">Month</MenuButton>

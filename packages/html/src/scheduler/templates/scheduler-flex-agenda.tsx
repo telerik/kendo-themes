@@ -11,6 +11,7 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
         toolbar={
             <SchedulerToolbar>
                 <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                <Button fillMode="flat">Today</Button>
                 <ButtonGroup fillMode="flat">
                     <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
                     <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
@@ -18,7 +19,6 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                     24 June – 25 June
                 </Button>
-                <Button fillMode="flat">Today</Button>
                 <span className="k-spacer"></span>
                 <SegmentedControl thumbStyles={{width: "22%", right: "0%"}} className="k-scheduler-views">
                     <SegmentedControlButton>Day</SegmentedControlButton>
