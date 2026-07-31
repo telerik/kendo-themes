@@ -1,15 +1,19 @@
 import * as React from "react";
-import { classNames } from "../misc";
-import { AgentStep, KendoAgentStepProps } from "./agent-step";
+import { classNames, States } from "../misc";
+import { AgentStep, KendoAgentStepProps, KendoAgentStepState } from "./agent-step";
 import { KendoComponent, KendoBaseProps } from "../_types/component";
 import { AGENT_RESPONSE_FOLDER_NAME, AGENT_RESPONSE_MODULE_NAME } from "./constants";
 
 export const TOOL_CALL_CLASSNAME = "k-tool-call";
 
-const states = [] as const;
+const states = [
+  States.focus
+] as const;
+
 const options = {};
 
 export type KendoToolCallProps = KendoAgentStepProps;
+export type KendoToolCallState = KendoAgentStepState;
 
 const defaultOptions = {
   icon: "wrench",
@@ -22,8 +26,9 @@ const defaultOptions = {
  * @ux {Expand / Collapse} Clicking or activating the head toggles the tool call body (parameters, results, approval actions) open and closed.
  * @ux {Status} The optional status Badge reflects the call's outcome (e.g. "Completed", "Awaiting Approval", "Error").
  * @ux {Completed state} When completed, the label stops shimmering and the icon/label/expand icon dim to a subtle color.
+ * @ux {Focus feedback} Keyboard focus on the head renders a focus indicator — an inset ring in most themes and an inset outline in Meridian.
  */
-export const ToolCall: KendoComponent<KendoToolCallProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoToolCallProps & KendoBaseProps & React.HTMLAttributes<HTMLDivElement>) => {
+export const ToolCall: KendoComponent<KendoToolCallProps & KendoToolCallState & React.HTMLAttributes<HTMLDivElement>> = (props: KendoToolCallProps & KendoToolCallState & KendoBaseProps & React.HTMLAttributes<HTMLDivElement>) => {
   const { icon = defaultOptions.icon, className, ...other } = props;
 
   return <AgentStep {...other} icon={icon} className={classNames(className, TOOL_CALL_CLASSNAME)} />;

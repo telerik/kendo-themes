@@ -16,6 +16,9 @@ export default () => (
         <span>I'll design a resource component system for an AI chat — covering different resource types, states, and variants. Let me read the relevant skills first.</span>
         <span>I'll gather local design system context, then create a comprehensive resource component system.</span>
       </Reasoning>
+
+      {/* focused */}
+      <Reasoning secondaryLabel="for 48s" completed label="Completed" expandable focus />
     </section>
   </div>
 );
