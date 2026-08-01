@@ -43,7 +43,7 @@
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
     "postcss-selector-parser": "^7.1.0",
-    "sass": "1.100.0",
+    "sass": "1.101.0",
     "sass-embedded": "^1.93.3",
     "semver": "^7.3.7",
     "stylelint": "17.12.0",
