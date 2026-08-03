@@ -1,3 +1,10 @@
+## 14.4.1-dev.2 (2026-08-03)
+
+### 🩹 Fixes
+
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **grid:** prevent sticky column overriding group cell background ([66316f53ef](https://github.com/telerik/kendo-themes/commit/66316f53ef))
+
 ## 14.4.1-dev.1 (2026-07-28)
 
 ### 🚀 Features
