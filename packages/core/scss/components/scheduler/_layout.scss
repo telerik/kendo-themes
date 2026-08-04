@@ -967,6 +967,7 @@
         }
         .k-form-field-wrap {
             max-width: none;
+            min-width: 0;
         }
 
         .k-form-label > .k-icon {
@@ -1010,8 +1011,25 @@
             flex: 1 1 0%;
             min-width: 0;
         }
-    }
 
+        > .k-scheduler-recurrence-button {
+            flex: 0 1 auto;
+            justify-content: start;
+            max-width: 100%;
+            min-width: 0;
+            text-align: start;
+
+            .k-button-icon {
+                aspect-ratio: 1;
+            }
+
+            .k-button-text {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                min-width: 0;
+            }
+        }
+    }
 
     .k-scheduler-recurrence-fields {
         width: 100%;
