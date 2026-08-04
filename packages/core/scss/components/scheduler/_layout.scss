@@ -713,7 +713,7 @@
     .k-scheduler-weekview {
 
         // Table layout header cells
-        .k-scheduler-header th {
+        .k-scheduler-header th:not(.k-slot-cell) {
             padding-block: k-spacing(0.5);
         }
 
