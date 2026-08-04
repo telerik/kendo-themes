@@ -54,7 +54,7 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
                             <SchedulerTable role="none">
                                 <tbody role="rowgroup">
                                     <tr role="row">
-                                        <SchedulerCell as="td" className="k-scheduler-datecolumn k-first k-selected" role="rowheader" aria-selected="true">
+                                        <SchedulerCell as="td" className="k-scheduler-datecolumn k-first" role="rowheader">
                                             <strong className="k-scheduler-agendaday">13</strong>
                                             <em className="k-scheduler-agendaweek">Monday</em>
                                             <span className="k-scheduler-agendadate">June, 2022</span>
