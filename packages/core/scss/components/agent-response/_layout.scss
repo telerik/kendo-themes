@@ -51,6 +51,10 @@
         align-items: center;
         gap: $kendo-agent-step-gap;
         min-width: 0;
+
+        .k-badge {
+            gap: k-spacing(0.5);
+        }
     }
 
     .k-agent-completed > .k-agent-step-head .k-agent-step-label {
