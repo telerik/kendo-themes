@@ -151,10 +151,10 @@ $kendo-scheduler-event-hover-shadow: null !default;
 
 /// The background color of the selected Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-bg: k-color(primary) !default;
+$kendo-scheduler-event-selected-bg: k-color(secondary-subtle) !default;
 /// The text color of the selected Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-text: k-color(on-primary) !default;
+$kendo-scheduler-event-selected-text: k-color(secondary-on-subtle) !default;
 /// The border color of the selected Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-selected-border: null !default;
