@@ -29828,8 +29828,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Scheduler event.</div></div>
@@ -29838,8 +29838,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-selected-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(secondary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Scheduler event.</div></div>
