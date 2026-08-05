@@ -69,7 +69,7 @@ export default () => (
                                                 <tr>
                                                     <SchedulerCell as="th" dayText="Mon" text="10" colspan={1} />
                                                     <SchedulerCell as="th" dayText="Tue" text="11" colspan={1} />
-                                                    <SchedulerCell as="th" className="k-today" dayText="Wed" text="12" colspan={1} />
+                                                    <SchedulerCell as="th" today dayText="Wed" text="12" colspan={1} />
                                                     <SchedulerCell as="th" dayText="Thu" text="13" colspan={1} />
                                                     <SchedulerCell as="th" dayText="Fri" text="14" colspan={1} />
                                                 </tr>
@@ -543,14 +543,14 @@ export default () => (
                                         <SchedulerTable style={{ width: '100%' }}>
                                             <tbody>
                                                 <tr style={{ height: '50px' }}>
-                                                    <SchedulerCell as="td" className="k-today k-nonwork-hour"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today k-nonwork-hour"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
+                                                    <SchedulerCell as="td" today className="k-nonwork-hour"></SchedulerCell>
+                                                    <SchedulerCell as="td" today className="k-nonwork-hour"></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
                                                 </tr>
                                             </tbody>
                                         </SchedulerTable>

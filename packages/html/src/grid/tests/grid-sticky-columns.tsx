@@ -94,8 +94,10 @@ export default () =>(
                                             <TableTd colspan={6}>
                                                 <div className="k-grouping-row-content">
                                                     <Icon icon="chevron-down" />
-                                                    <span>Currently active projects: 5 &nbsp;</span>
-                                                    <span>These people work on too many projects</span>
+                                                    <span className="k-grouping-row-text">
+                                                        <span>Currently active projects: 5 </span>
+                                                        <span>These people work on too many projects</span>
+                                                    </span>
                                                 </div>
                                             </TableTd>
                                         </TableRow>

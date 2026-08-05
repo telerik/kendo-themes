@@ -35,7 +35,7 @@ export const GridGroupingGroupsColumn = ({ contentClassName, ...other }: any) =>
                         </colgroup>
                         <TableThead role="rowgroup">
                             <TableRow role="row">
-                                <GridHeaderCell columnTitle="Groups" role="columnheader"></GridHeaderCell>
+                                <GridHeaderCell columnTitle="Groups" groupColumn role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell columnTitle="ID" role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell columnTitle="Name" role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell columnTitle="Price" role="columnheader"></GridHeaderCell>
