@@ -182,8 +182,8 @@ export default () =>(
                                         <TableTd colspan={2} >
                                             <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                 {/* grouping header template */}
-                                                Country: Germany
+                                                {/* grouping header template */}
+                                                <span className="k-grouping-row-text">Country: Germany</span>
                                             </div>
                                             <div className="k-grid-column-template">
                                                 <div className="k-column-template-item">
