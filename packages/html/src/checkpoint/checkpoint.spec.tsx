@@ -20,6 +20,7 @@ const defaultOptions = {};
  *
  * @ux {Hover reveal} Hidden by default and faded in on hover of the checkpoint or when a descendant (e.g. a Button) receives focus.
  * @ux {Always visible} Set the `visible` prop to keep the checkpoint permanently shown, bypassing the hover/focus reveal.
+ * @ux {Conversation UI} When the checkpoint's retry option is used within a conversation UI, the sender's text should be populated into the conversation UI input.
  */
 export const Checkpoint: KendoComponent<KendoCheckpointProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoCheckpointProps & React.HTMLAttributes<HTMLDivElement>) => {
   const { className, children, visible, ...other } = props;
