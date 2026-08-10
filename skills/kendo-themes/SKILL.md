@@ -1,7 +1,9 @@
 ---
 name: kendo-themes
-description: Styling reference for Kendo and Telerik UI components with Kendo theme packages. Relevant for Kendo/Telerik appearance, theme installation, CSS/SCSS token properties and theme customization, design tokens, swatches, Tailwind token mapping, component selectors, and visual consistency between Kendo components and application UI.
+description: "DEPRECATED — moved to the kendo-design plugin in telerik/ai-plugins (https://github.com/telerik/ai-plugins). Install that plugin from your agent's marketplace/registry for the maintained version. Kept here temporarily for backwards compatibility; content may go stale. Styling reference for Kendo and Telerik UI components with Kendo theme packages. Relevant for Kendo/Telerik appearance, theme installation, CSS/SCSS token properties and theme customization, design tokens, swatches, Tailwind token mapping, component selectors, and visual consistency between Kendo components and application UI."
 ---
+
+> **⚠️ Moved:** This skill now lives in the **`kendo-design`** plugin in [telerik/ai-plugins](https://github.com/telerik/ai-plugins). Install it from your agent's plugin/marketplace registry. This copy is kept temporarily for backwards compatibility while consumers migrate — prefer the new plugin, which will receive future updates.
 
 # Styling Kendo and Telerik Components
 
