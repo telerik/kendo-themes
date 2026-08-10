@@ -34,8 +34,8 @@ export const GridGroupingMultipleColumns = ({ contentClassName, ...other }: any)
                         </colgroup>
                         <TableThead role="rowgroup">
                             <TableRow role="row">
-                                <GridHeaderCell columnTitle="ID" role="columnheader"></GridHeaderCell>
-                                <GridHeaderCell columnTitle="Name" role="columnheader"></GridHeaderCell>
+                                <GridHeaderCell columnTitle="ID" groupColumn role="columnheader"></GridHeaderCell>
+                                <GridHeaderCell columnTitle="Name" groupColumn role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell columnTitle="Product ID" role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell columnTitle="Product Name" role="columnheader"></GridHeaderCell>
                                 <GridHeaderCell columnTitle="Price" role="columnheader"></GridHeaderCell>

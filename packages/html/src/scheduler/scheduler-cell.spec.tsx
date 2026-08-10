@@ -13,6 +13,7 @@ const defaultOptions = {};
 export type KendoSchedulerCellProps = {
     cellType?: string[];
     allDay?: boolean;
+    today?: boolean;
     text?: string;
     dayText?: string;
     colspan?: number;
@@ -28,6 +29,7 @@ export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React
     const {
         cellType,
         allDay,
+        today,
         text,
         dayText,
         colspan,
@@ -51,6 +53,7 @@ export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React
                 props.className,
                 {
                     'k-scheduler-times-all-day': allDay,
+                    'k-today': today,
                 },
                 cellType?.map((t) => ({
                     [`k-${t}-cell`]: true,

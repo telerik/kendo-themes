@@ -73,7 +73,7 @@ export default () => (
                         <tr>
                           <SchedulerCell as="th" dayText="Mon" text="10" colspan={1} />
                           <SchedulerCell as="th" dayText="Tue" text="11" colspan={1} />
-                          <SchedulerCell as="th" className="k-today" dayText="Wed" text="12" colspan={1} />
+                          <SchedulerCell as="th" today dayText="Wed" text="12" colspan={1} />
                           <SchedulerCell as="th" dayText="Thu" text="13" colspan={1} />
                           <SchedulerCell as="th" dayText="Fri" text="14" colspan={1} />
                         </tr>
@@ -486,15 +486,15 @@ export default () => (
                       </tbody>
                     </SchedulerTable>
                     <SchedulerEvent style={{ top: "0px", height: "71px", width: "166px", left: "2px" }} title="Event title" time="7:00 AM - 8:00 AM" />
-                    <SchedulerEvent style={{ top: "111px", height: "34px", width: "166px", left: "2px" }} ongoing title="Event title that is long and overflows, testing multiline and overflow styles" time="8:30 AM - 9:00 AM" />
-                    <SchedulerEvent style={{ top: "0px", height: "71px", width: "166px", left: "348px" }} hover ongoing recurring="recurring" title="Hovered Recurring event" time="7:30 AM - 9:00 AM" />
+                    <SchedulerEvent style={{ top: "111px", height: "71px", width: "166px", left: "2px" }} ongoing title="Event title that is ongoing" time="8:30 AM - 9:00 AM" />
+                    <SchedulerEvent style={{ top: "0px", height: "71px", width: "166px", left: "348px" }} hover recurring="recurring" title="Hovered Recurring event" time="7:30 AM - 9:00 AM" />
                     <SchedulerEvent style={{ top: "80px", height: "71px", width: "166px", left: "348px" }} recurring="non-recurring" title="Non-Recurring event" time="7:30 AM - 9:00 AM" />
-                    <SchedulerEvent style={{ top: "110px", height: "71px", width: "166px", left: "520px" }} selected ongoing title="Selected event" time="8:30 AM - 9:30 AM" />
+                    <SchedulerEvent style={{ top: "110px", height: "71px", width: "166px", left: "520px" }} selected title="Selected event" time="8:30 AM - 9:30 AM" />
                     <SchedulerEvent style={{ top: "0px", height: "71px", width: "166px", left: "520px", color: "#333", backgroundColor: "#ddf", borderColor: "#fff" }} title="Custom color event" time="7:00 AM - 8:00 AM" />
                     <SchedulerEvent className="k-event-drag-hint" style={{ left: "175px", top: "0px", height: "71px", width: "166px" }} title="Drag hint" time="8:00 AM - 9:00 AM" />
                     <SchedulerEvent style={{ backgroundColor: "rgb(248, 163, 152)", borderColor: "rgb(248, 163, 152)", left: "175px", top: "100px", height: "71px", width: "166px" }} inverse ongoing title="Inverse Background" time="10:00 AM - 11:00 AM" />
                     <SchedulerEvent style={{ top: "0px", height: "70px", width: "166px", left: "760px" }} readonly title="Read-only event" time="7:30 AM - 9:00 AM" />
-                    <SchedulerEvent style={{ top: "110px", height: "71px", width: "166px", left: "708px" }} ongoing continuationBottom title="Multi-Day event" time="8:30 AM - 9:30 AM" />
+                    <SchedulerEvent style={{ top: "110px", height: "71px", width: "166px", left: "708px" }} continuationBottom title="Multi-Day event" time="8:30 AM - 9:30 AM" />
                   </SchedulerContent>
                 </td>
               </SchedulerBody>

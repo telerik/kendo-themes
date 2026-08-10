@@ -123,11 +123,11 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
-                                <SchedulerEvent resizable="none" style={{ top: "137px", height: "25px", width: "137px" }} title="Event 1 Title" />
-                                <SchedulerEvent resizable="none" style={{ top: "137px", left: "138px", height: "25px", width: "137px" }} title="Event 2 Title" />
-                                <SchedulerEvent resizable="none" style={{ top: "165px", left: "138px", height: "25px", width: "137px" }} title="Event 3 Title" />
+                                <SchedulerEvent resizable="none" style={{ top: "137px", height: "25px", width: "137px" }} title="Event 1 Title" time="9:00 AM - 10:00 AM" />
+                                <SchedulerEvent resizable="none" style={{ top: "137px", left: "138px", height: "25px", width: "137px" }} title="Event 2 Title" time="10:00 AM - 11:00 AM" />
+                                <SchedulerEvent resizable="none" style={{ top: "165px", left: "138px", height: "25px", width: "137px" }} title="Event 3 Title" time="11:00 AM - 12:00 PM" />
                                 <Button className="k-more-events" size="xsmall" fillMode="flat" themeColor="primary" aria-label="3 more events" style={{ top: "165px", width: "137px" }}>3 more</Button>
-                                <SchedulerEvent resizable="none" style={{ top: "137px", left: "276px", height: "25px", width: "410px" }} title="Event 4 Title" />
+                                <SchedulerEvent resizable="none" style={{ top: "137px", left: "276px", height: "25px", width: "410px" }} title="Event 4 Title" time="1:00 PM - 2:00 PM" />
                             </SchedulerContent>
                         </td>
                     </SchedulerBody>

@@ -18,7 +18,7 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-scheduler" role="application">
-            <div class="k-scheduler-toolbar k-toolbar k-toolbar-flat" aria-label="Toolbar" role="toolbar">
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
                 <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -105,7 +105,7 @@
                                                     <span class="k-scheduler-date-day">Tue</span>
                                                     <span class="k-link k-nav-day" aria-label="Tue 11">11</span>
                                                 </th>
-                                                <th class="k-scheduler-cell k-today" colspan="1">
+                                                <th colspan="1" class="k-scheduler-cell k-today">
                                                     <span class="k-scheduler-date-day">Wed</span>
                                                     <span class="k-link k-nav-day" aria-label="Wed 12">12</span>
                                                 </th>
@@ -507,15 +507,15 @@
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div class="k-event k-event-ongoing" role="button" aria-label="Event" style="top: 111px; height: 34px; width: 166px; left: 2px;">
+                                <div class="k-event k-event-ongoing" role="button" aria-label="Event" style="top: 111px; height: 71px; width: 166px; left: 2px;">
                                     <div>
-                                        <div class="k-event-template k-event-title">Event title that is long and overflows, testing multiline and overflow styles</div>
+                                        <div class="k-event-template k-event-title">Event title that is ongoing</div>
                                         <div class="k-event-template k-event-time">8:30 AM - 9:00 AM</div>
                                     </div>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div class="k-event k-hover k-event-ongoing" role="button" aria-label="Event" style="top: 0px; height: 71px; width: 166px; left: 348px;">
+                                <div class="k-event k-hover" role="button" aria-label="Event" style="top: 0px; height: 71px; width: 166px; left: 348px;">
                                     <div>
                                         <div class="k-event-template k-event-title">Hovered Recurring event</div>
                                         <div class="k-event-template k-event-time">
@@ -561,7 +561,7 @@
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div class="k-event k-selected k-event-ongoing" role="button" aria-label="Event" style="top: 110px; height: 71px; width: 166px; left: 520px;">
+                                <div class="k-event k-selected" role="button" aria-label="Event" style="top: 110px; height: 71px; width: 166px; left: 520px;">
                                     <div>
                                         <div class="k-event-template k-event-title">Selected event</div>
                                         <div class="k-event-template k-event-time">8:30 AM - 9:30 AM</div>
@@ -601,7 +601,7 @@
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div class="k-event k-event-ongoing" role="button" aria-label="Event" style="top: 110px; height: 71px; width: 166px; left: 708px;">
+                                <div class="k-event" role="button" aria-label="Event" style="top: 110px; height: 71px; width: 166px; left: 708px;">
                                     <div>
                                         <div class="k-event-template k-event-title">Multi-Day event</div>
                                         <div class="k-event-template k-event-time">8:30 AM - 9:30 AM</div>
@@ -621,7 +621,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="k-scheduler-footer k-toolbar k-toolbar-flat" aria-label="Toolbar" role="toolbar">
+            <div class="k-scheduler-footer k-toolbar" aria-label="Toolbar" role="toolbar">
                 <button class="k-toolbar-button k-scheduler-fullday k-button">
                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

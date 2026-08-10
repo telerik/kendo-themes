@@ -26,6 +26,7 @@ The Checkpoint is compliant with the [Web Content Accessibility Guidelines (WCAG
 | --- | --- |
 | Hover reveal | Hidden by default and faded in on hover of the checkpoint or when a descendant (e.g. a Button) receives focus. |
 | Always visible | Set the `visible` prop to keep the checkpoint permanently shown, bypassing the hover/focus reveal. |
+| Conversation UI | When the checkpoint's retry option is used within a conversation UI, the sender's text should be populated into the conversation UI input. |
 
 ### Testing
 

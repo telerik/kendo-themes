@@ -21,6 +21,7 @@ export * from './templates/grid-with-filter-menu';
 export * from './templates/grid-with-filter-menu-open';
 export * from './templates/grid-with-filter-row';
 export * from './templates/grid-with-grouping';
+export * from './templates/grid-grouping-checkbox';
 export * from './templates/grid-grouping-no-indent';
 export * from './templates/grid-grouping-checkbox-no-indent';
 export * from './templates/grid-grouping-groups-column';
