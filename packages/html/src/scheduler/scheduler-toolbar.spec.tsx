@@ -22,7 +22,6 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
     return (
         <Toolbar
             {...others}
-            fillMode="flat"
             className={classNames(
                 props.className,
                 {
