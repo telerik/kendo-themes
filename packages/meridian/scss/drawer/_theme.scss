@@ -7,7 +7,17 @@
     @include kendo-drawer--theme-base();
 
     .k-drawer {
-        backdrop-filter: k-translucency-blur(1);
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: k-translucency-blur(1);
+            border-radius: inherit;
+            pointer-events: none;
+        }
     }
 
     .k-drawer-item {
