@@ -1,3 +1,13 @@
+## 14.4.1-dev.3 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.4.1-dev.2 (2026-08-03)
 
 ### 🩹 Fixes
