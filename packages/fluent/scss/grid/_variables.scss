@@ -326,6 +326,9 @@ $kendo-grid-grouping-row-bg: var( --kendo-grid-grouping-row-bg, #{$kendo-table-g
 /// The text color of the Grid grouping row.
 /// @group grid
 $kendo-grid-grouping-row-text: var( --kendo-grid-grouping-row-text, #{$kendo-table-group-row-text} ) !default;
+/// The font weight of the Grid grouping row text.
+/// @group grid
+$kendo-grid-grouping-row-font-weight: var( --kendo-grid-grouping-row-font-weight, var(--kendo-font-weight-semibold) ) !default;
 /// The border color of the Grid grouping row.
 /// @group grid
 $kendo-grid-grouping-row-border: var( --kendo-grid-grouping-row-border, #{$kendo-table-group-row-border} ) !default;
@@ -685,6 +688,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-selection-aggregates-font-weight: $kendo-grid-selection-aggregates-font-weight,
     $kendo-grid-grouping-row-bg: $kendo-grid-grouping-row-bg,
     $kendo-grid-grouping-row-text: $kendo-grid-grouping-row-text,
+    $kendo-grid-grouping-row-font-weight: $kendo-grid-grouping-row-font-weight,
     $kendo-grid-sorted-icon-spacing: $kendo-grid-sort-icon-spacing,
     $kendo-grid-sorted-bg: $kendo-grid-sorted-bg,
     $kendo-grid-sorting-indicator-text: $kendo-grid-sort-indicator-text,

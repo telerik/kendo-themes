@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerHead, SchedulerToolbar, SchedulerEvent, SchedulerGroup, SchedulerRow } from '../index';
 
 
-export const SchedulerFlexHorizontalGrouping = (...props) => (
+export const SchedulerFlexHorizontalGrouping = ({ today = false, ...props }: any) => (
     <Scheduler
         layout="flex"
         view="day"
@@ -39,7 +39,7 @@ export const SchedulerFlexHorizontalGrouping = (...props) => (
                             </SchedulerCell>
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-today" dayText="Tue" text="14" />
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} today={today} dayText="Tue" text="14" />
                                 </SchedulerRow>
                             </SchedulerCell>
                             <SchedulerCell as="div" cellType={[ "group" ]}>
@@ -49,7 +49,7 @@ export const SchedulerFlexHorizontalGrouping = (...props) => (
                             </SchedulerCell>
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-today" dayText="Tue" text="14" />
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} today={today} dayText="Tue" text="14" />
                                 </SchedulerRow>
                             </SchedulerCell>
                         </SchedulerRow>

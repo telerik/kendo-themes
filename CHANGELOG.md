@@ -1,3 +1,43 @@
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **html:** update scheduler rendering ([82fcc1f3de](https://github.com/telerik/kendo-themes/commit/82fcc1f3de))
+- **html:** add checkpoint ux annotation ([447e4396f8](https://github.com/telerik/kendo-themes/commit/447e4396f8))
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- add cursor pointer on agent step head ([dc4079036d](https://github.com/telerik/kendo-themes/commit/dc4079036d))
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- add gap for tool-call's badge ([7fecc9d4a1](https://github.com/telerik/kendo-themes/commit/7fecc9d4a1))
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+- **grid:** prevent sticky column overriding group cell background ([66316f53ef](https://github.com/telerik/kendo-themes/commit/66316f53ef))
+- **html:** list with checkbox a11y ([724d173299](https://github.com/telerik/kendo-themes/commit/724d173299))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** citation templates rendering ([c7f0297347](https://github.com/telerik/kendo-themes/commit/c7f0297347))
+- **meridian:** keep background customizable on .k-card while fixing dialog scoping ([#5990](https://github.com/telerik/kendo-themes/issues/5990), [#5968](https://github.com/telerik/kendo-themes/issues/5968))
+
+## 14.4.1-dev.4 (2026-08-10)
+
+### 🚀 Features
+
+- **html:** add checkpoint ux annotation ([447e4396f8](https://github.com/telerik/kendo-themes/commit/447e4396f8))
+
+## 14.4.1-dev.3 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+
+### 🩹 Fixes
+
+- add gap for tool-call's badge ([7fecc9d4a1](https://github.com/telerik/kendo-themes/commit/7fecc9d4a1))
+- **meridian:** keep background customizable on .k-card while fixing dialog scoping ([#5990](https://github.com/telerik/kendo-themes/issues/5990), [#5968](https://github.com/telerik/kendo-themes/issues/5968))
+
 ## 14.4.1-dev.2 (2026-08-03)
 
 ### 🩹 Fixes

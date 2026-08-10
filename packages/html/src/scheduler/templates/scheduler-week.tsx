@@ -4,7 +4,7 @@ import { SegmentedControl, SegmentedControlButton } from '../../segmented-contro
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimes, SchedulerToolbar, SchedulerEvent } from '../index';
 
 
-export const SchedulerWeek = ({ style, ...props }: any) => (
+export const SchedulerWeek = ({ style, today = false, ...props }: any) => (
     <Scheduler
         style={style}
         layout="table"
@@ -62,7 +62,7 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
                                             <SchedulerCell as="th" dayText="Sun" text="12" />
                                             <SchedulerCell as="th" dayText="Mon" text="13" />
                                             <SchedulerCell as="th" dayText="Tue" text="14" />
-                                            <SchedulerCell as="th" className="k-today" dayText="Wed" text="15" />
+                                            <SchedulerCell as="th" today={today} dayText="Wed" text="15" />
                                             <SchedulerCell as="th" dayText="Thu" text="16" />
                                             <SchedulerCell as="th" dayText="Fri" text="17" />
                                             <SchedulerCell as="th" dayText="Sat" text="18" />

@@ -209,8 +209,10 @@ export default () => (
                                             <TableTd colspan={6}>
                                                 <div className="k-grouping-row-content">
                                                     <Icon icon="chevron-down" />
-                                                    <span>Placeholder: X &nbsp;</span>
-                                                    <span>placeholder</span>
+                                                    <span className="k-grouping-row-text">
+                                                        <span>Placeholder: X </span>
+                                                        <span>placeholder</span>
+                                                    </span>
                                                 </div>
                                             </TableTd>
                                         </TableRow>

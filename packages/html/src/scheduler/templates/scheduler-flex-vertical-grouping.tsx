@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerHead, SchedulerToolbar, SchedulerEvent, SchedulerGroup, SchedulerRow } from '../index';
 
 
-export const SchedulerFlexVerticalGrouping = ({ style, ...props }: any) => (
+export const SchedulerFlexVerticalGrouping = ({ style, today = false, ...props }: any) => (
     <Scheduler
         style={style}
         layout="flex"
@@ -26,7 +26,7 @@ export const SchedulerFlexVerticalGrouping = ({ style, ...props }: any) => (
                             <SchedulerCell as="div" className="k-group-content">
                                 <SchedulerRow>
                                     <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Mon" text="13" />
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-today" dayText="Tue" text="14" />
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} today={today} dayText="Tue" text="14" />
                                 </SchedulerRow>
                             </SchedulerCell>
                         </SchedulerRow>

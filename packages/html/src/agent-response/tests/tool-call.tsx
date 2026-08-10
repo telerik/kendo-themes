@@ -25,7 +25,7 @@ export default () => (
         </pre>
       </ToolCall>
 
-      <ToolCall label="tool_name" status="Awaiting Approval" statusThemeColor="warning" statusIcon="exclamation-circle" expandable expanded>
+      <ToolCall label="tool_name" status="Awaiting Approval" statusThemeColor="warning" statusIcon="clock" expandable expanded>
         <div className="k-tool-call-label">Parameters</div>
         <pre className="k-pre">
           <code className="k-code">{`cd packages/html && npx tsc --noEmit -p . 2>&1 | head -50`}</code>
@@ -41,7 +41,7 @@ export default () => (
         </Card>
       </ToolCall>
 
-      <ToolCall label="tool_name" status="Error" statusThemeColor="error" statusIcon="exclamation-circle" expandable expanded>
+      <ToolCall label="tool_name" status="Error" statusThemeColor="error" statusIcon="x-circle" expandable expanded>
         <div className="k-tool-call-label">Parameters</div>
         <pre className="k-pre">
           <code className="k-code">{`cd packages/hmtl && npx tsc --noEmit -p . 2>&1 | head -50`}</code>

@@ -17804,6 +17804,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-grouping-row-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-grid-grouping-row-font-weight, var(--kendo-font-weight-semibold) )</code></td>
+    <td><code>var(--kendo-grid-grouping-row-font-weight, var(--kendo-font-weight-semibold))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid grouping row text.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-grouping-row-border</td>
     <td>String</td>
     <td><code>var( --kendo-grid-grouping-row-border, #{$kendo-table-group-row-border} )</code></td>

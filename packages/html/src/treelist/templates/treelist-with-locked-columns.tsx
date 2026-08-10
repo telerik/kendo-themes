@@ -34,7 +34,7 @@ export const TreeListWithLockedColumns = ({ className, headerWrapClassName, cont
                         </colgroup>
                         <TableThead role="rowgroup">
                             <TableRow role="row" aria-rowindex={1} aria-owns={`${nlHdr_c0} ${nlHdr_c1}`}>
-                                <GridHeaderCell columnTitle="Name" role="columnheader" aria-sort="ascending" aria-colindex={1}></GridHeaderCell>
+                                <GridHeaderCell columnTitle="Name" role="columnheader" aria-colindex={1}></GridHeaderCell>
                                 <GridHeaderCell columnTitle="Position" role="columnheader" aria-colindex={2}></GridHeaderCell>
                             </TableRow>
                         </TableThead>

@@ -20,7 +20,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                             </colgroup>
                             <TableThead role="rowgroup">
                                 <TableRow role="row" aria-rowindex={1}>
-                                    <GridHeaderCell menu={menu} columnTitle="Name" role="columnheader" aria-sort="ascending" aria-colindex={1} {...(menu ? { 'aria-haspopup': 'dialog' } : {})}></GridHeaderCell>
+                                    <GridHeaderCell menu={menu} columnTitle="Name" role="columnheader" aria-colindex={1} {...(menu ? { 'aria-haspopup': 'dialog' } : {})}></GridHeaderCell>
                                     <GridHeaderCell menu={menu} columnTitle="Position" role="columnheader" aria-colindex={2} {...(menu ? { 'aria-haspopup': 'dialog' } : {})}></GridHeaderCell>
                                     <GridHeaderCell menu={menu} columnTitle="Hire Date" role="columnheader" aria-colindex={3} {...(menu ? { 'aria-haspopup': 'dialog' } : {})}></GridHeaderCell>
                                 </TableRow>
