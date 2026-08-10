@@ -7,7 +7,19 @@
     @include kendo-appbar--theme-base();
 
     .k-appbar {
-        backdrop-filter: k-translucency-blur(1);
+        &:not(.k-appbar-fixed):not(.k-appbar-sticky) {
+            position: relative;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: k-translucency-blur(1);
+            border-radius: inherit;
+            pointer-events: none;
+        }
 
         @each $name in $kendo-appbar-theme-colors {
             #{k-when-default($kendo-appbar-default-theme-color, $name)}
