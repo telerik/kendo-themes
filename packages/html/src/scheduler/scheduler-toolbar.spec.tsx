@@ -1,30 +1,27 @@
-import { Button } from '../button';
-import { classNames } from '../misc';
-import { SegmentedControl, SegmentedControlButton } from '../segmented-control';
-import { Toolbar, KendoToolbarProps } from '../toolbar';
+import { Button } from "../button";
+import { classNames } from "../misc";
+import { SegmentedControl, SegmentedControlButton } from "../segmented-control";
+import { Toolbar, KendoToolbarProps } from "../toolbar";
 
-import { KendoComponent } from '../_types/component';
-import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from './constants';
-const className = 'k-scheduler-toolbar';
+import { KendoComponent } from "../_types/component";
+import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from "./constants";
+import { ButtonGroup } from "../button-group";
+const className = "k-scheduler-toolbar";
 
 export type KendoSchedulerToolbarProps = KendoToolbarProps & {
-    footer?: boolean
+  footer?: boolean;
 };
 
 /**
  * @aria {role="toolbar"} Follows Toolbar spec: sets the component role.
  * @aria {aria-label|title} Follows Toolbar spec: each toolbar must have a label specifying its purpose.
  */
-export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (
-    props: KendoSchedulerToolbarProps &
-        React.HTMLAttributes<HTMLDivElement>
-) => {
-    const { footer, ...others } = props;
+export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoSchedulerToolbarProps & React.HTMLAttributes<HTMLDivElement>) => {
+  const { footer, ...others } = props;
 
     return (
         <Toolbar
             {...others}
-            fillMode="flat"
             className={classNames(
                 props.className,
                 {
@@ -37,8 +34,10 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
                 [
                     <Button key="new-event" themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>,
                     <Button key="today" fillMode="flat">Today</Button>,
-                    <Button key="prev" icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>,
-                    <Button key="next" icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>,
+                    <ButtonGroup fillMode="flat">
+                      <Button key="prev" icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                      <Button key="next" icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
+                    </ButtonGroup>,
                     <Button key="current" icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
                         13 June
                     </Button>,
@@ -59,4 +58,3 @@ export const SchedulerToolbar: KendoComponent<KendoSchedulerToolbarProps & React
 SchedulerToolbar.className = className;
 SchedulerToolbar.moduleName = SCHEDULER_MODULE_NAME;
 SchedulerToolbar.folderName = SCHEDULER_FOLDER_NAME;
-

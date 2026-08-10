@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimes, SchedulerToolbar, SchedulerEvent } from '../index';
 
-export const SchedulerDay = ({ style, ...props }: any) => (
+export const SchedulerDay = ({ style, today = false, ...props }: any) => (
     <Scheduler
         style={style}
         layout="table"
@@ -37,7 +37,7 @@ export const SchedulerDay = ({ style, ...props }: any) => (
                                 <SchedulerTable>
                                     <tbody>
                                         <tr className="k-scheduler-date-group">
-                                            <SchedulerCell as="th" className="k-today" dayText="Mon" text="13" />
+                                            <SchedulerCell as="th" today={today} dayText="Mon" text="13" />
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>
