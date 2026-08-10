@@ -1,3 +1,9 @@
+## 14.4.1-dev.4 (2026-08-10)
+
+### 🚀 Features
+
+- **html:** add checkpoint ux annotation ([447e4396f8](https://github.com/telerik/kendo-themes/commit/447e4396f8))
+
 ## 14.4.1-dev.3 (2026-08-10)
 
 ### 🚀 Features

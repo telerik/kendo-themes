@@ -1,3 +1,7 @@
+## 14.4.1-dev.4 (2026-08-10)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
 ## 14.4.1-dev.3 (2026-08-10)
 
 ### 🚀 Features
