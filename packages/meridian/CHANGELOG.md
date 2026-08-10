@@ -1,3 +1,24 @@
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- **meridian:** keep background customizable on .k-card while fixing dialog scoping ([#5990](https://github.com/telerik/kendo-themes/issues/5990), [#5968](https://github.com/telerik/kendo-themes/issues/5968))
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+- zhpenkov
+
 ## 14.4.1-dev.4 (2026-08-10)
 
 This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.

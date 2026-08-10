@@ -1,3 +1,26 @@
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **html:** add checkpoint ux annotation ([447e4396f8](https://github.com/telerik/kendo-themes/commit/447e4396f8))
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **html:** update scheduler rendering ([82fcc1f3de](https://github.com/telerik/kendo-themes/commit/82fcc1f3de))
+
+### 🩹 Fixes
+
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **html:** citation templates rendering ([c7f0297347](https://github.com/telerik/kendo-themes/commit/c7f0297347))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+- **html:** list with checkbox a11y ([724d173299](https://github.com/telerik/kendo-themes/commit/724d173299))
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
 ## 14.4.1-dev.4 (2026-08-10)
 
 ### 🚀 Features
