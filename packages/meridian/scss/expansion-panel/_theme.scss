@@ -7,8 +7,18 @@
     @include kendo-expander--theme-base();
 
     .k-expander:not(.k-expanded) {
+        position: relative;
         background-color: k-translucency-bg(k-color(surface-alt));
-        backdrop-filter: k-translucency-blur(2);
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: k-translucency-blur(2);
+            border-radius: inherit;
+            pointer-events: none;
+        }
     }
 
     .k-expander {
