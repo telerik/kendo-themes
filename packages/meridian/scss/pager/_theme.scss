@@ -7,7 +7,15 @@
     @include kendo-pager--theme-base();
 
     .k-pager {
-        backdrop-filter: k-translucency-blur(1);
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: k-translucency-blur(1);
+            border-radius: inherit;
+            pointer-events: none;
+        }
 
         &:focus,
         &.k-focus {
