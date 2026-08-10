@@ -73,7 +73,7 @@ export default () => (
                     </div>
                   </div>
                   <div className="k-scheduler-edit-form-row">
-                    <Button fillMode="flat" icon="arrow-rotate-cw" themeColor="primary">
+                    <Button className="k-scheduler-recurrence-button" fillMode="flat" icon="arrow-rotate-cw" themeColor="primary">
                       Make recurring
                     </Button>
                   </div>
@@ -128,7 +128,7 @@ export default () => (
                     <DropdownList value="(UTC+02:00)" aria-label="End timezone" />
                   </div>
                   <div className="k-scheduler-edit-form-row">
-                    <Button fillMode="flat" icon="arrow-rotate-cw" themeColor="primary">
+                    <Button className="k-scheduler-recurrence-button" fillMode="flat" icon="arrow-rotate-cw" themeColor="primary">
                       Make recurring
                     </Button>
                   </div>
@@ -174,7 +174,7 @@ export default () => (
                     </div>
                   </div>
                   <div className="k-scheduler-edit-form-row">
-                    <Button fillMode="flat" icon="arrow-rotate-cw" themeColor="primary">
+                    <Button className="k-scheduler-recurrence-button" fillMode="flat" icon="arrow-rotate-cw" themeColor="primary">
                       Make recurring
                     </Button>
                   </div>

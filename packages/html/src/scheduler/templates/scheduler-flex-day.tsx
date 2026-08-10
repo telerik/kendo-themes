@@ -3,7 +3,7 @@ import { ButtonGroup } from '../../button-group';
 import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
 import { Scheduler, SchedulerHead, SchedulerBody, SchedulerRow, SchedulerToolbar, SchedulerCell, SchedulerGroup, SchedulerEvent } from '../index';
 
-export const SchedulerFlexDay = ({ style, ...props }: any) => (
+export const SchedulerFlexDay = ({ style, today = false, ...props }: any) => (
     <Scheduler
         style={style}
         layout="flex"
@@ -43,7 +43,7 @@ export const SchedulerFlexDay = ({ style, ...props }: any) => (
                             <SchedulerCell as="div" cellType={[ "side" ]} style={{ minWidth: "65px" }} />
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-today" dayText="Mon" text="24"/>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} today={today} dayText="Mon" text="24"/>
                                 </SchedulerRow>
                             </SchedulerCell>
                         </SchedulerRow>

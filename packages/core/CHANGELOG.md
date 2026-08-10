@@ -1,3 +1,55 @@
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- add gap for tool-call's badge ([7fecc9d4a1](https://github.com/telerik/kendo-themes/commit/7fecc9d4a1))
+- **grid:** prevent sticky column overriding group cell background ([66316f53ef](https://github.com/telerik/kendo-themes/commit/66316f53ef))
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- add cursor pointer on agent step head ([dc4079036d](https://github.com/telerik/kendo-themes/commit/dc4079036d))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.4 (2026-08-10)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.4.1-dev.3 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+
+### 🩹 Fixes
+
+- add gap for tool-call's badge ([7fecc9d4a1](https://github.com/telerik/kendo-themes/commit/7fecc9d4a1))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.2 (2026-08-03)
+
+### 🩹 Fixes
+
+- **grid:** prevent sticky column overriding group cell background ([66316f53ef](https://github.com/telerik/kendo-themes/commit/66316f53ef))
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.4.1-dev.1 (2026-07-28)
 
 ### 🚀 Features
