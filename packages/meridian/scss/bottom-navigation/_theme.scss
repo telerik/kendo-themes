@@ -8,7 +8,17 @@
     @include kendo-bottom-navigation--theme-base();
 
     .k-bottom-nav {
-        backdrop-filter: k-translucency-blur(2);
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: k-translucency-blur(2);
+            border-radius: inherit;
+            pointer-events: none;
+        }
 
         .k-bottom-nav-item {
             background-color: transparent;
