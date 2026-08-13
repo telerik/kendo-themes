@@ -690,4 +690,117 @@
         }
     }
 
+    // Attribute-driven slide animation (Radix/shadcn-style contract): no `.k-animation-container`
+    // / `.k-child-animation-container` wrapper elements needed - any component may set
+    // `data-transition` (`"open" | "closed"`) and `data-direction` directly on its own animated
+    // root element to opt into this vocabulary. Component-agnostic by design, unlike the legacy
+    // `.k-slide-*-enter`/`-exit` classes above which still require `react-transition-group`'s
+    // two-phase (base + `-active`) class dance to drive a CSS *transition*; these rules use
+    // `@keyframes` instead, so a single attribute flip drives the whole animation.
+    @keyframes k-slide-down-in {
+        from {
+            transform: translateY(-8px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes k-slide-down-out {
+        from {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateY(-8px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes k-slide-up-in {
+        from {
+            transform: translateY(8px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes k-slide-up-out {
+        from {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateY(8px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes k-slide-left-in {
+        from {
+            transform: translateX(8px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes k-slide-left-out {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateX(8px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes k-slide-right-in {
+        from {
+            transform: translateX(-8px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes k-slide-right-out {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateX(-8px);
+            opacity: 0;
+        }
+    }
+
+    @each $direction in down, up, left, right {
+        [data-direction='#{$direction}'][data-transition='open'] {
+            animation: k-slide-#{$direction}-in k-transition(slide-in) both;
+        }
+
+        [data-direction='#{$direction}'][data-transition='closed'] {
+            animation: k-slide-#{$direction}-out k-transition(slide-out) both;
+        }
+    }
+
 }
