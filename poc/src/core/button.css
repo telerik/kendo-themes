@@ -1,0 +1,431 @@
+/*
+ * Kendo Themes — native CSS POC
+ * core/button.css
+ *
+ * Structure + composition only. Every value is read from a custom property.
+ * Nothing here is theme specific; a theme is a file that assigns the tokens.
+ *
+ * The colour bridge is the key idea: instead of emitting a full declaration
+ * set per (fill-mode x theme-colour) pair — 9 colours x 5 fill modes x 4 states
+ * in the Sass build — each colour modifier assigns 7 primitives, and each fill
+ * mode consumes them once.
+ */
+
+@layer kendo.components {
+
+  /* ---------------------------------------------------------------- *
+   * Structure
+   * ---------------------------------------------------------------- */
+
+  .k-button {
+    box-sizing: border-box;
+    border-width: var(--kendo-button-border-width, 1px);
+    border-style: solid;
+    border-color: transparent;
+    color: inherit;
+    background: none;
+    font-family: var(--kendo-font-family, inherit);
+    font-weight: var(--kendo-font-weight-normal, normal);
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--kendo-button-gap);
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    position: relative;
+    transition:
+      color var(--kendo-transition-rapid),
+      background-color var(--kendo-transition-rapid),
+      border-color var(--kendo-transition-rapid),
+      box-shadow var(--kendo-transition-rapid),
+      opacity var(--kendo-transition-rapid);
+
+    &::before,
+    &::after {
+      border-radius: inherit;
+      content: "";
+      opacity: 0;
+      display: none;
+      pointer-events: none;
+      position: absolute;
+      inset: -1px;
+      z-index: 0;
+      transition: opacity var(--kendo-transition-rapid);
+    }
+
+    &::before { background: currentColor; }
+  }
+
+  /* Sizing. The bare `.k-button` is the default (md) variant — in Sass this
+     was `k-when-default()` emitting an extra selector; here the base rule
+     simply reads the same vars the md modifier assigns. */
+  .k-button {
+    --kendo-button-padding-x: var(--kendo-button-md-padding-x);
+    --kendo-button-padding-y: var(--kendo-button-md-padding-y);
+    --kendo-button-font-size: var(--kendo-button-md-font-size);
+    --kendo-button-line-height: var(--kendo-button-md-line-height);
+    --kendo-button-roundness: var(--kendo-button-md-roundness);
+
+    padding-block: var(--kendo-button-padding-y);
+    padding-inline: var(--kendo-button-padding-x);
+    font-size: var(--kendo-button-font-size);
+    line-height: var(--kendo-button-line-height);
+    border-radius: var(--kendo-button-border-radius, var(--kendo-button-roundness));
+  }
+
+  .k-button-xs {
+    --kendo-button-padding-x: var(--kendo-button-xs-padding-x);
+    --kendo-button-padding-y: var(--kendo-button-xs-padding-y);
+    --kendo-button-font-size: var(--kendo-button-xs-font-size);
+    --kendo-button-line-height: var(--kendo-button-xs-line-height);
+  }
+
+  .k-button-sm {
+    --kendo-button-padding-x: var(--kendo-button-sm-padding-x);
+    --kendo-button-padding-y: var(--kendo-button-sm-padding-y);
+    --kendo-button-font-size: var(--kendo-button-sm-font-size);
+    --kendo-button-line-height: var(--kendo-button-sm-line-height);
+  }
+
+  .k-button-lg {
+    --kendo-button-padding-x: var(--kendo-button-lg-padding-x);
+    --kendo-button-padding-y: var(--kendo-button-lg-padding-y);
+    --kendo-button-font-size: var(--kendo-button-lg-font-size);
+    --kendo-button-line-height: var(--kendo-button-lg-line-height);
+  }
+
+  .k-button.k-rounded-none { --kendo-button-roundness: 0; }
+  .k-button.k-rounded-sm { --kendo-button-roundness: var(--kendo-border-radius-sm); }
+  .k-button.k-rounded-md { --kendo-button-roundness: var(--kendo-border-radius-md); }
+  .k-button.k-rounded-lg { --kendo-button-roundness: var(--kendo-border-radius-lg); }
+  .k-button.k-rounded-full { --kendo-button-roundness: var(--kendo-border-radius-full); }
+
+  /* ---------------------------------------------------------------- *
+   * Disabled
+   * ---------------------------------------------------------------- */
+
+  .k-button:disabled,
+  .k-button.k-disabled {
+    box-shadow: none;
+  }
+
+  /* ---------------------------------------------------------------- *
+   * Colour bridge
+   *
+   * Generic mapping: a colour modifier only names its palette entries.
+   * `.k-button` carries the generic derivations so a colour block never
+   * has to repeat them; `.k-button-base` re-specialises the handful of
+   * derivations that the neutral colour treats differently.
+   * ---------------------------------------------------------------- */
+
+  .k-button {
+    /* palette primitives — default to the neutral (base) colour */
+    --kc: var(--kendo-color-base);
+    --kc-hover: var(--kendo-color-base-hover);
+    --kc-active: var(--kendo-color-base-active);
+    --kc-on: var(--kendo-color-on-base);
+    --kc-on-surface: var(--kendo-color-base-on-surface);
+    --kc-subtle-hover: var(--kendo-color-base-hover);
+    --kc-subtle-active: var(--kendo-color-base-active);
+
+    /* generic derivations */
+    --kc-mix: 70%;
+    --kc-mix-flat-active: 70%;
+    --kc-solid-border: var(--kc);
+    --kc-solid-hover-border: var(--kc-hover);
+    --kc-solid-active-border: var(--kc-active);
+    --kc-outline-border: var(--kc-on-surface);
+    --kc-outline-text: var(--kc-on-surface);
+    --kc-outline-shadow: var(--kendo-button-outline-shadow, none);
+    --kc-flat-text: var(--kc-on-surface);
+    --kc-link-text: var(--kc-on-surface);
+    --kc-clear-text: var(--kc-on-surface);
+    --kc-focus-outline: var(--kc-on-surface);
+    --kc-focus-ring: color-mix(in srgb, var(--kc) 30%, transparent);
+    --kc-focus-shadow: var(--kendo-button-focus-shadow, none);
+  }
+
+  /* Neutral specialisations. Applies to the bare `.k-button` too, so it must
+     stay ahead of the colour blocks in source order. */
+  .k-button,
+  .k-button.k-button-base {
+    --kc-solid-border: var(--kendo-button-base-solid-border, transparent);
+    --kc-solid-hover-border: var(--kendo-button-base-solid-border, transparent);
+    --kc-solid-active-border: var(--kendo-button-base-solid-border, transparent);
+    --kc-outline-border: var(--kendo-button-base-outline-border);
+    --kc-flat-text: var(--kendo-button-base-flat-text, inherit);
+    --kc-link-text: var(--kendo-color-on-app-surface);
+    --kc-focus-outline: var(--kendo-button-base-focus-outline);
+    --kc-focus-ring: color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent);
+  }
+
+  /* Colour modifiers re-assert the generic derivations, because the neutral
+     rule above also matches the bare `.k-button` of a coloured button. */
+  .k-button.k-button-primary,
+  .k-button.k-button-secondary,
+  .k-button.k-button-tertiary,
+  .k-button.k-button-info,
+  .k-button.k-button-success,
+  .k-button.k-button-warning,
+  .k-button.k-button-error,
+  .k-button.k-button-dark,
+  .k-button.k-button-light,
+  .k-button.k-button-inverse {
+    --kc-solid-border: var(--kc);
+    --kc-solid-hover-border: var(--kc-hover);
+    --kc-solid-active-border: var(--kc-active);
+    --kc-outline-border: var(--kc-on-surface);
+    --kc-outline-shadow: var(--kendo-button-outline-shadow, none);
+    --kc-flat-text: var(--kc-on-surface);
+    --kc-link-text: var(--kc-on-surface);
+    --kc-focus-outline: var(--kc-on-surface);
+    --kc-focus-ring: color-mix(in srgb, var(--kc) 30%, transparent);
+    --kc-mix: var(--kendo-button-colored-mix, 50%);
+  }
+
+  .k-button.k-button-primary {
+    --kc: var(--kendo-color-primary);
+    --kc-hover: var(--kendo-color-primary-hover);
+    --kc-active: var(--kendo-color-primary-active);
+    --kc-on: var(--kendo-color-on-primary);
+    --kc-on-surface: var(--kendo-color-primary-on-surface);
+    --kc-subtle-hover: var(--kendo-color-primary-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-primary-subtle-active);
+  }
+
+  .k-button.k-button-secondary {
+    --kc: var(--kendo-color-secondary);
+    --kc-hover: var(--kendo-color-secondary-hover);
+    --kc-active: var(--kendo-color-secondary-active);
+    --kc-on: var(--kendo-color-on-secondary);
+    --kc-on-surface: var(--kendo-color-secondary-on-surface);
+    --kc-subtle-hover: var(--kendo-color-secondary-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-secondary-subtle-active);
+  }
+
+  .k-button.k-button-tertiary {
+    --kc: var(--kendo-color-tertiary);
+    --kc-hover: var(--kendo-color-tertiary-hover);
+    --kc-active: var(--kendo-color-tertiary-active);
+    --kc-on: var(--kendo-color-on-tertiary);
+    --kc-on-surface: var(--kendo-color-tertiary-on-surface);
+    --kc-subtle-hover: var(--kendo-color-tertiary-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-tertiary-subtle-active);
+  }
+
+  .k-button.k-button-info {
+    --kc: var(--kendo-color-info);
+    --kc-hover: var(--kendo-color-info-hover);
+    --kc-active: var(--kendo-color-info-active);
+    --kc-on: var(--kendo-color-on-info);
+    --kc-on-surface: var(--kendo-color-info-on-surface);
+    --kc-subtle-hover: var(--kendo-color-info-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-info-subtle-active);
+  }
+
+  .k-button.k-button-success {
+    --kc: var(--kendo-color-success);
+    --kc-hover: var(--kendo-color-success-hover);
+    --kc-active: var(--kendo-color-success-active);
+    --kc-on: var(--kendo-color-on-success);
+    --kc-on-surface: var(--kendo-color-success-on-surface);
+    --kc-subtle-hover: var(--kendo-color-success-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-success-subtle-active);
+  }
+
+  .k-button.k-button-warning {
+    --kc: var(--kendo-color-warning);
+    --kc-hover: var(--kendo-color-warning-hover);
+    --kc-active: var(--kendo-color-warning-active);
+    --kc-on: var(--kendo-color-on-warning);
+    --kc-on-surface: var(--kendo-color-warning-on-surface);
+    --kc-subtle-hover: var(--kendo-color-warning-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-warning-subtle-active);
+  }
+
+  .k-button.k-button-error {
+    --kc: var(--kendo-color-error);
+    --kc-hover: var(--kendo-color-error-hover);
+    --kc-active: var(--kendo-color-error-active);
+    --kc-on: var(--kendo-color-on-error);
+    --kc-on-surface: var(--kendo-color-error-on-surface);
+    --kc-subtle-hover: var(--kendo-color-error-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-error-subtle-active);
+  }
+
+  .k-button.k-button-dark {
+    --kc: var(--kendo-color-dark);
+    --kc-hover: var(--kendo-color-dark-hover);
+    --kc-active: var(--kendo-color-dark-active);
+    --kc-on: var(--kendo-color-on-dark);
+    --kc-on-surface: var(--kendo-color-dark-on-surface);
+    --kc-subtle-hover: var(--kendo-color-dark-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-dark-subtle-active);
+  }
+
+  .k-button.k-button-light {
+    --kc: var(--kendo-color-light);
+    --kc-hover: var(--kendo-color-light-hover);
+    --kc-active: var(--kendo-color-light-active);
+    --kc-on: var(--kendo-color-on-light);
+    --kc-on-surface: var(--kendo-color-light-on-surface);
+    --kc-subtle-hover: var(--kendo-color-light-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-light-subtle-active);
+  }
+
+  .k-button.k-button-inverse {
+    --kc: var(--kendo-color-inverse);
+    --kc-hover: var(--kendo-color-inverse-hover);
+    --kc-active: var(--kendo-color-inverse-active);
+    --kc-on: var(--kendo-color-on-inverse);
+    --kc-on-surface: var(--kendo-color-inverse-on-surface);
+    --kc-subtle-hover: var(--kendo-color-inverse-subtle-hover);
+    --kc-subtle-active: var(--kendo-color-inverse-subtle-active);
+  }
+
+  /* ---------------------------------------------------------------- *
+   * Fill modes
+   *
+   * One rule per fill mode instead of one rule per (fill mode x colour).
+   * ---------------------------------------------------------------- */
+
+  /* solid — also the default when no fill mode class is present.
+     Deliberately NOT written with `&` nesting: native `&` compiles to `:is()`,
+     which takes the specificity of the *strongest* branch, so `&:hover` here
+     would be 0,3,0 and would beat the later `.k-button-link` / `.k-button-flat`
+     rules. Explicit selector lists keep every branch at its own weight, which
+     is what the Sass output does. */
+  .k-button,
+  .k-button.k-button-base,
+  .k-button.k-button-solid {
+    border-color: var(--kc-solid-border);
+    color: var(--kc-on);
+    background-color: var(--kc);
+    box-shadow: var(--kendo-button-solid-shadow, none);
+  }
+
+  .k-button:hover,
+  .k-button.k-hover,
+  .k-button.k-button-solid:hover,
+  .k-button.k-button-solid.k-hover {
+    border-color: var(--kc-solid-hover-border);
+    background-color: var(--kc-hover);
+  }
+
+  .k-button:active,
+  .k-button.k-active,
+  .k-button.k-selected,
+  .k-button.k-button-solid:active,
+  .k-button.k-button-solid.k-active,
+  .k-button.k-button-solid.k-selected {
+    border-color: var(--kc-solid-active-border);
+    color: var(--kc-on);
+    background-color: var(--kc-active);
+  }
+
+  /* outline */
+  .k-button.k-button-outline {
+    border-color: var(--kc-outline-border);
+    color: var(--kc-outline-text);
+    background-color: transparent;
+    box-shadow: var(--kc-outline-shadow);
+
+    &:hover,
+    &.k-hover {
+      border-color: var(--kc-outline-border);
+      color: var(--kc-outline-text);
+      background-color: color-mix(in srgb, var(--kc-subtle-hover) var(--kc-mix), transparent);
+    }
+
+    &:active,
+    &.k-active,
+    &.k-selected {
+      border-color: var(--kc-outline-border);
+      color: var(--kc-outline-text);
+      background-color: color-mix(in srgb, var(--kc-subtle-active) var(--kc-mix), transparent);
+    }
+  }
+
+  /* flat */
+  .k-button.k-button-flat {
+    border-color: transparent !important;
+    color: var(--kc-flat-text);
+    background: none !important;
+    box-shadow: none !important;
+
+    &::before,
+    &::after { display: none !important; }
+
+    &:hover,
+    &.k-hover {
+      background-color: color-mix(in srgb, var(--kc-subtle-hover) var(--kc-mix-flat-hover, var(--kc-mix)), transparent) !important;
+    }
+
+    &:active,
+    &.k-active,
+    &.k-selected {
+      background-color: color-mix(in srgb, var(--kc-subtle-active) var(--kc-mix-flat-active), transparent) !important;
+    }
+  }
+
+  /* link */
+  .k-button.k-button-link {
+    --kc-focus-shadow: 0 0 0 2px var(--kc-focus-ring);
+
+    border-color: transparent;
+    color: var(--kc-link-text);
+    background: none;
+    box-shadow: none;
+    text-decoration: none;
+
+    &:hover,
+    &.k-hover {
+      color: var(--kc-link-text);
+      text-decoration: underline;
+    }
+
+    &:active,
+    &.k-active,
+    &.k-selected {
+      color: var(--kc-link-text);
+    }
+  }
+
+  /* clear */
+  .k-button.k-button-clear {
+    border-color: transparent !important;
+    color: var(--kc-clear-text);
+    background: none !important;
+    box-shadow: none !important;
+
+    &:hover,
+    &.k-hover { color: var(--kc-clear-text); }
+
+    &:focus::after,
+    &:active::after,
+    &.k-active::after,
+    &.k-selected::after {
+      display: block;
+      background-color: currentColor;
+      opacity: var(--kendo-button-clear-overlay-opacity, 0.1);
+    }
+  }
+
+  /* ---------------------------------------------------------------- *
+   * Focus
+   * ---------------------------------------------------------------- */
+
+  .k-button:focus,
+  .k-button.k-focus {
+    box-shadow: var(--kc-focus-shadow);
+    outline: var(--kendo-focus-outline-width, 1px) var(--kendo-focus-outline-style, solid) var(--kc-focus-outline);
+    outline-offset: var(--kendo-focus-outline-offset, 1px);
+  }
+
+}

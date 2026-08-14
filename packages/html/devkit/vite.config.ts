@@ -192,6 +192,12 @@ function swatchMapPlugin(): Plugin {
             }
             for (const swatches of Object.values(map)) swatches.sort();
 
+            // The native-CSS POC ships its swatches as plain CSS (no JSON
+            // definitions), so it is registered explicitly. See pocPlugin().
+            if (existsSync(resolve(repoRoot, 'poc/src/meridian/index.css'))) {
+                map.poc = ['poc-main-dark'];
+            }
+
             return `export const swatchMap = ${JSON.stringify(map)};`;
         },
     };
@@ -323,6 +329,61 @@ function lazyCssPlugin(): Plugin {
     };
 }
 
+/**
+ * Serves the native-CSS POC (`poc/`) as if it were a theme package, so it can be
+ * previewed side by side with the Sass themes in the same devkit.
+ *
+ * It appears in the theme dropdown as `poc` and is served from `poc/dist`,
+ * built on demand and rebuilt on source change — the CSS equivalent of what
+ * `scssWatchPlugin` does for the Sass themes. The POC does not depend on
+ * `packages/*` in any way; this only teaches the dev server where to find it.
+ */
+function pocPlugin(): Plugin {
+    const pocDir = resolve(repoRoot, 'poc');
+    let building: Promise<unknown> | null = null;
+
+    function buildPoc(server: ViteDevServer, reason: string): Promise<unknown> {
+        if (building) return building;
+        server.config.logger.info(`  → [kendo] building poc (${reason})…`, { timestamp: true });
+        building = execAsync('node build/build.mjs', { cwd: pocDir })
+            .then(() => server.config.logger.info('  ✓ [kendo] poc ready', { timestamp: true }))
+            .catch((err) => {
+                server.config.logger.error(`  ✗ [kendo] poc build failed:\n${execError(err)}`);
+            })
+            .finally(() => { building = null; });
+        return building;
+    }
+
+    return {
+        name: 'devkit-poc',
+        apply: 'serve',
+        configureServer(server) {
+            server.middlewares.use(async (req, res, next) => {
+                const url = (req.url ?? '').split('?')[0];
+                const m = url.match(/^\/packages\/poc\/dist\/([^/]+)\.css$/);
+                if (!m) return next();
+
+                const file = resolve(pocDir, `dist/${m[1]}.css`);
+                if (!existsSync(file)) await buildPoc(server, 'first request');
+                if (!existsSync(file)) {
+                    res.writeHead(200, { 'Content-Type': 'text/css' });
+                    res.end(`/* devkit: poc/dist/${m[1]}.css was not produced — see terminal */`);
+                    return;
+                }
+                res.writeHead(200, { 'Content-Type': 'text/css' });
+                res.end(readFileSync(file));
+            });
+
+            server.watcher.add(`${pocDir}/src/**/*.css`);
+            server.watcher.on('change', async (filePath: string) => {
+                if (!filePath.replace(/\\/g, '/').includes('/poc/src/')) return;
+                await buildPoc(server, 'source changed');
+                server.ws.send({ type: 'custom', event: 'kendo:css-update', data: { theme: 'poc' } });
+            });
+        },
+    };
+}
+
 export default defineConfig({
     root: repoRoot,
     appType: 'custom',
@@ -345,5 +406,6 @@ export default defineConfig({
         testRoutesPlugin(),
         swatchMapPlugin(),
         scssWatchPlugin(),
+        pocPlugin(),
     ],
 });

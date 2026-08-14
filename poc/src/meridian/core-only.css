@@ -1,0 +1,7 @@
+/* Split artifact: the theme-agnostic component layer, byte-identical across
+   all themes. A consumer that ships two themes downloads this once. */
+@layer kendo.tokens, kendo.components, kendo.theme, kendo.overrides;
+
+@import url("../core/common.css");
+@import url("../core/button.css");
+@import url("../core/input.css");

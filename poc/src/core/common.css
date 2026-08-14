@@ -1,0 +1,33 @@
+/*
+ * Kendo Themes — native CSS POC
+ * core/common.css
+ *
+ * Shared primitives the components rely on. Kept deliberately tiny — the POC
+ * only needs the pieces the button/input parity matrix touches.
+ */
+
+@layer kendo.components {
+
+  .k-disabled {
+    outline: none;
+    cursor: default;
+    color: var(--kendo-disabled-text, unset);
+    background-color: var(--kendo-disabled-bg, unset);
+    border-color: var(--kendo-disabled-border, unset);
+    opacity: var(--kendo-disabled-opacity, unset);
+    filter: var(--kendo-disabled-filter, unset);
+    pointer-events: none;
+    box-shadow: none;
+
+    & .k-link {
+      cursor: default;
+      outline: 0;
+    }
+
+    & [disabled],
+    & .k-disabled {
+      --kendo-disabled-opacity: 1;
+      --kendo-disabled-filter: grayscale(0);
+    }
+  }
+}

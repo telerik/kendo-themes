@@ -1,0 +1,802 @@
+.k-button {box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  color: inherit;
+  background: none;
+  font-family: var(--kendo-font-family, inherit);
+  font-weight: var(--kendo-font-weight-normal, normal);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--kendo-spacing-1\.5);
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  position: relative;
+  transition: color var(--kendo-transition-rapid), background-color var(--kendo-transition-rapid), border-color var(--kendo-transition-rapid), box-shadow var(--kendo-transition-rapid), opacity var(--kendo-transition-rapid);}
+.k-button *, .k-button *::before, .k-button *::after {box-sizing: border-box;}
+.k-button:disabled, .k-button.k-disabled {box-shadow: none;}
+.k-button::-moz-focus-inner {padding: 0;
+  border: 0;
+  outline: 0;}
+.k-button:hover, .k-button:focus {text-decoration: none;
+  outline: 0;}
+.k-button.k-rounded-none {border-radius: var(--kendo-border-radius-none);}
+.k-button.k-rounded-sm {border-radius: var(--kendo-border-radius-sm);}
+.k-button, .k-button.k-rounded-md {border-radius: var(--kendo-border-radius-md);}
+.k-button.k-rounded-lg {border-radius: var(--kendo-border-radius-lg);}
+.k-button.k-rounded-full {border-radius: var(--kendo-border-radius-full);}
+.k-button.k-button-xs {padding-block: var(--kendo-spacing-0\.5);
+  padding-inline: var(--kendo-spacing-1);
+  font-size: var(--kendo-font-size-sm, inherit);
+  line-height: var(--kendo-line-height-sm, normal);}
+.k-button.k-button-xs.k-icon-button {padding: var(--kendo-spacing-0\.5);}
+.k-button.k-button-xs.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size-sm, inherit) * var(--kendo-line-height-sm, normal));
+  min-height: calc(var(--kendo-font-size-sm, inherit) * var(--kendo-line-height-sm, normal));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;}
+.k-button.k-button-xs.k-icon-button .k-button-icon.k-svg-icon > svg, .k-button.k-button-xs.k-icon-button .k-button-icon.k-icon-md > svg {width: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));
+  height: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));}
+.k-button.k-button-xs.k-icon-button .k-button-icon.k-icon-xs > svg {width: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));
+  height: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));}
+.k-button.k-button-xs.k-icon-button .k-button-icon.k-icon-sm > svg {width: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));
+  height: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));}
+.k-button.k-button-xs.k-icon-button .k-button-icon.k-icon-lg > svg {width: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));
+  height: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));}
+.k-button.k-button-xs.k-icon-button .k-button-icon.k-icon-xl > svg {width: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));
+  height: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));}
+.k-button.k-button-xs.k-icon-button .k-button-icon.k-icon-xxl > svg {width: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));
+  height: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));}
+.k-button.k-button-xs.k-icon-button .k-button-icon.k-icon-xxxl > svg {width: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));
+  height: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));}
+.k-button.k-button-sm {padding-block: var(--kendo-spacing-1);
+  padding-inline: var(--kendo-spacing-2);
+  font-size: var(--kendo-font-size-sm, inherit);
+  line-height: var(--kendo-line-height-sm, normal);}
+.k-button.k-button-sm.k-icon-button {padding: var(--kendo-spacing-1);}
+.k-button.k-button-sm.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size-sm, inherit) * var(--kendo-line-height-sm, normal));
+  min-height: calc(var(--kendo-font-size-sm, inherit) * var(--kendo-line-height-sm, normal));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;}
+.k-button.k-button-sm.k-icon-button .k-button-icon.k-svg-icon > svg, .k-button.k-button-sm.k-icon-button .k-button-icon.k-icon-md > svg {width: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));
+  height: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));}
+.k-button.k-button-sm.k-icon-button .k-button-icon.k-icon-xs > svg {width: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));
+  height: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));}
+.k-button.k-button-sm.k-icon-button .k-button-icon.k-icon-sm > svg {width: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));
+  height: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));}
+.k-button.k-button-sm.k-icon-button .k-button-icon.k-icon-lg > svg {width: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));
+  height: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));}
+.k-button.k-button-sm.k-icon-button .k-button-icon.k-icon-xl > svg {width: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));
+  height: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));}
+.k-button.k-button-sm.k-icon-button .k-button-icon.k-icon-xxl > svg {width: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));
+  height: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));}
+.k-button.k-button-sm.k-icon-button .k-button-icon.k-icon-xxxl > svg {width: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));
+  height: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));}
+.k-button, .k-button.k-button-md {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-2\.5);
+  font-size: var(--kendo-font-size, inherit);
+  line-height: var(--kendo-line-height, normal);}
+.k-button.k-icon-button, .k-button.k-button-md.k-icon-button {padding: var(--kendo-spacing-1\.5);}
+.k-button.k-icon-button .k-button-icon, .k-button.k-button-md.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size, inherit) * var(--kendo-line-height, normal));
+  min-height: calc(var(--kendo-font-size, inherit) * var(--kendo-line-height, normal));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;}
+.k-button.k-icon-button .k-button-icon.k-svg-icon > svg, .k-button.k-icon-button .k-button-icon.k-icon-md > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-svg-icon > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-icon-md > svg {width: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));
+  height: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));}
+.k-button.k-icon-button .k-button-icon.k-icon-xs > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-icon-xs > svg {width: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));
+  height: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));}
+.k-button.k-icon-button .k-button-icon.k-icon-sm > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-icon-sm > svg {width: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));
+  height: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));}
+.k-button.k-icon-button .k-button-icon.k-icon-lg > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-icon-lg > svg {width: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));
+  height: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));}
+.k-button.k-icon-button .k-button-icon.k-icon-xl > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-icon-xl > svg {width: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));
+  height: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));}
+.k-button.k-icon-button .k-button-icon.k-icon-xxl > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-icon-xxl > svg {width: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));
+  height: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));}
+.k-button.k-icon-button .k-button-icon.k-icon-xxxl > svg, .k-button.k-button-md.k-icon-button .k-button-icon.k-icon-xxxl > svg {width: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));
+  height: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));}
+.k-button.k-button-lg {padding-block: var(--kendo-spacing-2);
+  padding-inline: var(--kendo-spacing-3);
+  font-size: var(--kendo-font-size-lg, inherit);
+  line-height: var(--kendo-line-height-lg, normal);}
+.k-button.k-button-lg.k-icon-button {padding: var(--kendo-spacing-2);}
+.k-button.k-button-lg.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size-lg, inherit) * var(--kendo-line-height-lg, normal));
+  min-height: calc(var(--kendo-font-size-lg, inherit) * var(--kendo-line-height-lg, normal));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;}
+.k-button.k-button-lg.k-icon-button .k-button-icon.k-svg-icon > svg, .k-button.k-button-lg.k-icon-button .k-button-icon.k-icon-md > svg {width: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));
+  height: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));}
+.k-button.k-button-lg.k-icon-button .k-button-icon.k-icon-xs > svg {width: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));
+  height: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));}
+.k-button.k-button-lg.k-icon-button .k-button-icon.k-icon-sm > svg {width: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));
+  height: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));}
+.k-button.k-button-lg.k-icon-button .k-button-icon.k-icon-lg > svg {width: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));
+  height: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));}
+.k-button.k-button-lg.k-icon-button .k-button-icon.k-icon-xl > svg {width: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));
+  height: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));}
+.k-button.k-button-lg.k-icon-button .k-button-icon.k-icon-xxl > svg {width: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));
+  height: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));}
+.k-button.k-button-lg.k-icon-button .k-button-icon.k-icon-xxxl > svg {width: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));
+  height: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));}
+.k-button.k-button-flat::before {display: block !important;}
+.k-button.k-button-flat::after {box-shadow: inset 0 0 0 2px currentColor;
+  display: block !important;}
+.k-button.k-button-flat:focus::after, .k-button.k-button-flat.k-focus::after {opacity: 0.12;}
+.k-button.k-button-link {text-decoration: none;}
+.k-button.k-button-link:hover, .k-button.k-button-link.k-hover {text-decoration: underline;}
+.k-button-icon {color: inherit;
+  align-self: center;
+  position: relative;}
+.k-button-square {aspect-ratio: 1;}
+.k-button-group {margin: 0;
+  padding: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: 0;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  vertical-align: middle;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.k-button-group > .k-button + .k-button {margin-inline-start: -1px;}
+.k-button-group > .k-button:hover, .k-button-group > .k-button.k-hover, .k-button-group > .k-button:focus, .k-button-group > .k-button.k-focus, .k-button-group > .k-button:active, .k-button-group > .k-button.k-active, .k-button-group > .k-button.k-selected {z-index: 2;}
+.k-button-group .k-button:not(:first-child):not(:last-child) {border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;}
+.k-button-group > .k-button:first-child:not(:only-child) {border-start-end-radius: 0;
+  border-end-end-radius: 0;}
+.k-button-group > .k-button:last-child:not(:only-child) {border-start-start-radius: 0;
+  border-end-start-radius: 0;}
+.k-button-group-stretched {width: 100%;}
+.k-button-group-stretched > * {flex: 1 0 0%;
+  overflow: hidden;}
+.k-button-overlay, .k-button::before {border-radius: inherit;
+  content: "";
+  background: currentColor;
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  inset-inline-start: -1px;
+  inset-inline-end: -1px;
+  inset-block-start: -1px;
+  inset-block-end: -1px;
+  z-index: 0;
+  transition: opacity var(--kendo-transition-rapid);}
+.k-button:hover::before, .k-button.k-hover::before {opacity: 0.08;}
+.k-button.k-no-focus:not(:hover)::before, .k-button.k-no-focus:not(.k-hover)::before {opacity: 0;}
+.k-button:active::before, .k-button.k-active::before {opacity: 0.16;}
+.k-button.k-selected::before {opacity: 0.2;}
+.k-button::after {border-radius: inherit;
+  content: "";
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  inset-inline-start: -1px;
+  inset-inline-end: -1px;
+  inset-block-start: -1px;
+  inset-block-end: -1px;
+  z-index: 0;
+  transition: opacity var(--kendo-transition-rapid);}
+.k-button.k-generating {animation: k-button-pulsing 1.5s ease-in-out 0.5s infinite;}
+.k-button-group > .k-button:focus, .k-button-group > .k-button.k-focus {z-index: 3;}
+.k-button, .k-button.k-button-base, .k-button.k-button-solid, .k-button.k-button-solid.k-button-base {border-color: transparent;
+  color: var(--kendo-color-on-base);
+  background-color: var(--kendo-color-base);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);}
+.k-button:hover, .k-button.k-hover, .k-button.k-button-base:hover, .k-button.k-button-base.k-hover, .k-button.k-button-solid:hover, .k-button.k-button-solid.k-hover, .k-button.k-button-solid.k-button-base:hover, .k-button.k-button-solid.k-button-base.k-hover {border-color: transparent;
+  color: var(--kendo-color-on-base);
+  background-color: var(--kendo-color-base-hover);}
+.k-button:focus, .k-button.k-focus, .k-button.k-button-base:focus, .k-button.k-button-base.k-focus, .k-button.k-button-solid:focus, .k-button.k-button-solid.k-focus, .k-button.k-button-solid.k-button-base:focus, .k-button.k-button-solid.k-button-base.k-focus {box-shadow: none;}
+.k-button:active, .k-button.k-active, .k-button.k-button-base:active, .k-button.k-button-base.k-active, .k-button.k-button-solid:active, .k-button.k-button-solid.k-active, .k-button.k-button-solid.k-button-base:active, .k-button.k-button-solid.k-button-base.k-active {border-color: transparent;
+  color: var(--kendo-color-on-base);
+  background-color: var(--kendo-color-base-active);}
+.k-button.k-selected, .k-button.k-button-base.k-selected, .k-button.k-button-solid.k-selected, .k-button.k-button-solid.k-button-base.k-selected {border-color: transparent;
+  color: var(--kendo-color-on-base);
+  background-color: var(--kendo-color-base-active);}
+.k-button.k-button-primary, .k-button.k-button-solid.k-button-primary {border-color: var(--kendo-color-primary);
+  color: var(--kendo-color-on-primary);
+  background-color: var(--kendo-color-primary);}
+.k-button.k-button-primary:hover, .k-button.k-button-primary.k-hover, .k-button.k-button-solid.k-button-primary:hover, .k-button.k-button-solid.k-button-primary.k-hover {border-color: var(--kendo-color-primary-hover);
+  background-color: var(--kendo-color-primary-hover);}
+.k-button.k-button-primary:focus, .k-button.k-button-primary.k-focus, .k-button.k-button-solid.k-button-primary:focus, .k-button.k-button-solid.k-button-primary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-primary) 30%, transparent);}
+.k-button.k-button-primary:active, .k-button.k-button-primary.k-active, .k-button.k-button-solid.k-button-primary:active, .k-button.k-button-solid.k-button-primary.k-active {border-color: var(--kendo-color-primary-active);
+  color: var(--kendo-color-on-primary);
+  background-color: var(--kendo-color-primary-active);}
+.k-button.k-button-primary.k-selected, .k-button.k-button-solid.k-button-primary.k-selected {border-color: var(--kendo-color-primary-active);
+  color: var(--kendo-color-on-primary);
+  background-color: var(--kendo-color-primary-active);}
+.k-button.k-button-secondary, .k-button.k-button-solid.k-button-secondary {border-color: var(--kendo-color-secondary);
+  color: var(--kendo-color-on-secondary);
+  background-color: var(--kendo-color-secondary);}
+.k-button.k-button-secondary:hover, .k-button.k-button-secondary.k-hover, .k-button.k-button-solid.k-button-secondary:hover, .k-button.k-button-solid.k-button-secondary.k-hover {border-color: var(--kendo-color-secondary-hover);
+  background-color: var(--kendo-color-secondary-hover);}
+.k-button.k-button-secondary:focus, .k-button.k-button-secondary.k-focus, .k-button.k-button-solid.k-button-secondary:focus, .k-button.k-button-solid.k-button-secondary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-secondary) 30%, transparent);}
+.k-button.k-button-secondary:active, .k-button.k-button-secondary.k-active, .k-button.k-button-solid.k-button-secondary:active, .k-button.k-button-solid.k-button-secondary.k-active {border-color: var(--kendo-color-secondary-active);
+  color: var(--kendo-color-on-secondary);
+  background-color: var(--kendo-color-secondary-active);}
+.k-button.k-button-secondary.k-selected, .k-button.k-button-solid.k-button-secondary.k-selected {border-color: var(--kendo-color-secondary-active);
+  color: var(--kendo-color-on-secondary);
+  background-color: var(--kendo-color-secondary-active);}
+.k-button.k-button-tertiary, .k-button.k-button-solid.k-button-tertiary {border-color: var(--kendo-color-tertiary);
+  color: var(--kendo-color-on-tertiary);
+  background-color: var(--kendo-color-tertiary);}
+.k-button.k-button-tertiary:hover, .k-button.k-button-tertiary.k-hover, .k-button.k-button-solid.k-button-tertiary:hover, .k-button.k-button-solid.k-button-tertiary.k-hover {border-color: var(--kendo-color-tertiary-hover);
+  background-color: var(--kendo-color-tertiary-hover);}
+.k-button.k-button-tertiary:focus, .k-button.k-button-tertiary.k-focus, .k-button.k-button-solid.k-button-tertiary:focus, .k-button.k-button-solid.k-button-tertiary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-tertiary) 30%, transparent);}
+.k-button.k-button-tertiary:active, .k-button.k-button-tertiary.k-active, .k-button.k-button-solid.k-button-tertiary:active, .k-button.k-button-solid.k-button-tertiary.k-active {border-color: var(--kendo-color-tertiary-active);
+  color: var(--kendo-color-on-tertiary);
+  background-color: var(--kendo-color-tertiary-active);}
+.k-button.k-button-tertiary.k-selected, .k-button.k-button-solid.k-button-tertiary.k-selected {border-color: var(--kendo-color-tertiary-active);
+  color: var(--kendo-color-on-tertiary);
+  background-color: var(--kendo-color-tertiary-active);}
+.k-button.k-button-info, .k-button.k-button-solid.k-button-info {border-color: var(--kendo-color-info);
+  color: var(--kendo-color-on-info);
+  background-color: var(--kendo-color-info);}
+.k-button.k-button-info:hover, .k-button.k-button-info.k-hover, .k-button.k-button-solid.k-button-info:hover, .k-button.k-button-solid.k-button-info.k-hover {border-color: var(--kendo-color-info-hover);
+  background-color: var(--kendo-color-info-hover);}
+.k-button.k-button-info:focus, .k-button.k-button-info.k-focus, .k-button.k-button-solid.k-button-info:focus, .k-button.k-button-solid.k-button-info.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-info) 30%, transparent);}
+.k-button.k-button-info:active, .k-button.k-button-info.k-active, .k-button.k-button-solid.k-button-info:active, .k-button.k-button-solid.k-button-info.k-active {border-color: var(--kendo-color-info-active);
+  color: var(--kendo-color-on-info);
+  background-color: var(--kendo-color-info-active);}
+.k-button.k-button-info.k-selected, .k-button.k-button-solid.k-button-info.k-selected {border-color: var(--kendo-color-info-active);
+  color: var(--kendo-color-on-info);
+  background-color: var(--kendo-color-info-active);}
+.k-button.k-button-success, .k-button.k-button-solid.k-button-success {border-color: var(--kendo-color-success);
+  color: var(--kendo-color-on-success);
+  background-color: var(--kendo-color-success);}
+.k-button.k-button-success:hover, .k-button.k-button-success.k-hover, .k-button.k-button-solid.k-button-success:hover, .k-button.k-button-solid.k-button-success.k-hover {border-color: var(--kendo-color-success-hover);
+  background-color: var(--kendo-color-success-hover);}
+.k-button.k-button-success:focus, .k-button.k-button-success.k-focus, .k-button.k-button-solid.k-button-success:focus, .k-button.k-button-solid.k-button-success.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-success) 30%, transparent);}
+.k-button.k-button-success:active, .k-button.k-button-success.k-active, .k-button.k-button-solid.k-button-success:active, .k-button.k-button-solid.k-button-success.k-active {border-color: var(--kendo-color-success-active);
+  color: var(--kendo-color-on-success);
+  background-color: var(--kendo-color-success-active);}
+.k-button.k-button-success.k-selected, .k-button.k-button-solid.k-button-success.k-selected {border-color: var(--kendo-color-success-active);
+  color: var(--kendo-color-on-success);
+  background-color: var(--kendo-color-success-active);}
+.k-button.k-button-warning, .k-button.k-button-solid.k-button-warning {border-color: var(--kendo-color-warning);
+  color: var(--kendo-color-on-warning);
+  background-color: var(--kendo-color-warning);}
+.k-button.k-button-warning:hover, .k-button.k-button-warning.k-hover, .k-button.k-button-solid.k-button-warning:hover, .k-button.k-button-solid.k-button-warning.k-hover {border-color: var(--kendo-color-warning-hover);
+  background-color: var(--kendo-color-warning-hover);}
+.k-button.k-button-warning:focus, .k-button.k-button-warning.k-focus, .k-button.k-button-solid.k-button-warning:focus, .k-button.k-button-solid.k-button-warning.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-warning) 30%, transparent);}
+.k-button.k-button-warning:active, .k-button.k-button-warning.k-active, .k-button.k-button-solid.k-button-warning:active, .k-button.k-button-solid.k-button-warning.k-active {border-color: var(--kendo-color-warning-active);
+  color: var(--kendo-color-on-warning);
+  background-color: var(--kendo-color-warning-active);}
+.k-button.k-button-warning.k-selected, .k-button.k-button-solid.k-button-warning.k-selected {border-color: var(--kendo-color-warning-active);
+  color: var(--kendo-color-on-warning);
+  background-color: var(--kendo-color-warning-active);}
+.k-button.k-button-error, .k-button.k-button-solid.k-button-error {border-color: var(--kendo-color-error);
+  color: var(--kendo-color-on-error);
+  background-color: var(--kendo-color-error);}
+.k-button.k-button-error:hover, .k-button.k-button-error.k-hover, .k-button.k-button-solid.k-button-error:hover, .k-button.k-button-solid.k-button-error.k-hover {border-color: var(--kendo-color-error-hover);
+  background-color: var(--kendo-color-error-hover);}
+.k-button.k-button-error:focus, .k-button.k-button-error.k-focus, .k-button.k-button-solid.k-button-error:focus, .k-button.k-button-solid.k-button-error.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-error) 30%, transparent);}
+.k-button.k-button-error:active, .k-button.k-button-error.k-active, .k-button.k-button-solid.k-button-error:active, .k-button.k-button-solid.k-button-error.k-active {border-color: var(--kendo-color-error-active);
+  color: var(--kendo-color-on-error);
+  background-color: var(--kendo-color-error-active);}
+.k-button.k-button-error.k-selected, .k-button.k-button-solid.k-button-error.k-selected {border-color: var(--kendo-color-error-active);
+  color: var(--kendo-color-on-error);
+  background-color: var(--kendo-color-error-active);}
+.k-button.k-button-inverse, .k-button.k-button-solid.k-button-inverse {border-color: var(--kendo-color-inverse);
+  color: var(--kendo-color-on-inverse);
+  background-color: var(--kendo-color-inverse);}
+.k-button.k-button-inverse:hover, .k-button.k-button-inverse.k-hover, .k-button.k-button-solid.k-button-inverse:hover, .k-button.k-button-solid.k-button-inverse.k-hover {border-color: var(--kendo-color-inverse-hover);
+  background-color: var(--kendo-color-inverse-hover);}
+.k-button.k-button-inverse:focus, .k-button.k-button-inverse.k-focus, .k-button.k-button-solid.k-button-inverse:focus, .k-button.k-button-solid.k-button-inverse.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-inverse) 30%, transparent);}
+.k-button.k-button-inverse:active, .k-button.k-button-inverse.k-active, .k-button.k-button-solid.k-button-inverse:active, .k-button.k-button-solid.k-button-inverse.k-active {border-color: var(--kendo-color-inverse-active);
+  color: var(--kendo-color-on-inverse);
+  background-color: var(--kendo-color-inverse-active);}
+.k-button.k-button-inverse.k-selected, .k-button.k-button-solid.k-button-inverse.k-selected {border-color: var(--kendo-color-inverse-active);
+  color: var(--kendo-color-on-inverse);
+  background-color: var(--kendo-color-inverse-active);}
+.k-button.k-button-outline {color: inherit;
+  border-color: currentColor;
+  background-color: transparent;
+  box-shadow: none;}
+.k-button.k-button-outline.k-focus, .k-button.k-button-outline:focus {box-shadow: none;}
+.k-button.k-button-outline, .k-button.k-button-outline.k-button-base {color: var(--kendo-color-base-on-surface);}
+.k-button.k-button-outline:hover, .k-button.k-button-outline.k-hover, .k-button.k-button-outline.k-button-base:hover, .k-button.k-button-outline.k-button-base.k-hover {border-color: var(--kendo-color-on-base);
+  color: var(--kendo-color-base);
+  background-color: var(--kendo-color-on-base);}
+.k-button.k-button-outline:focus, .k-button.k-button-outline.k-focus, .k-button.k-button-outline.k-button-base:focus, .k-button.k-button-outline.k-button-base.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent);}
+.k-button.k-button-outline:active, .k-button.k-button-outline.k-active, .k-button.k-button-outline.k-button-base:active, .k-button.k-button-outline.k-button-base.k-active {border-color: var(--kendo-color-on-base);
+  color: var(--kendo-color-base);
+  background-color: var(--kendo-color-on-base);}
+.k-button.k-button-outline.k-selected, .k-button.k-button-outline.k-button-base.k-selected {border-color: var(--kendo-color-on-base);
+  color: var(--kendo-color-base);
+  background-color: var(--kendo-color-on-base);}
+.k-button.k-button-outline.k-button-primary {color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-outline.k-button-primary:hover, .k-button.k-button-outline.k-button-primary.k-hover {border-color: var(--kendo-color-primary);
+  color: var(--kendo-color-on-primary);
+  background-color: var(--kendo-color-primary);}
+.k-button.k-button-outline.k-button-primary:focus, .k-button.k-button-outline.k-button-primary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-primary) 30%, transparent);}
+.k-button.k-button-outline.k-button-primary:active, .k-button.k-button-outline.k-button-primary.k-active {border-color: var(--kendo-color-primary);
+  color: var(--kendo-color-on-primary);
+  background-color: var(--kendo-color-primary);}
+.k-button.k-button-outline.k-button-primary.k-selected {border-color: var(--kendo-color-primary);
+  color: var(--kendo-color-on-primary);
+  background-color: var(--kendo-color-primary);}
+.k-button.k-button-outline.k-button-secondary {color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-outline.k-button-secondary:hover, .k-button.k-button-outline.k-button-secondary.k-hover {border-color: var(--kendo-color-secondary);
+  color: var(--kendo-color-on-secondary);
+  background-color: var(--kendo-color-secondary);}
+.k-button.k-button-outline.k-button-secondary:focus, .k-button.k-button-outline.k-button-secondary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-secondary) 30%, transparent);}
+.k-button.k-button-outline.k-button-secondary:active, .k-button.k-button-outline.k-button-secondary.k-active {border-color: var(--kendo-color-secondary);
+  color: var(--kendo-color-on-secondary);
+  background-color: var(--kendo-color-secondary);}
+.k-button.k-button-outline.k-button-secondary.k-selected {border-color: var(--kendo-color-secondary);
+  color: var(--kendo-color-on-secondary);
+  background-color: var(--kendo-color-secondary);}
+.k-button.k-button-outline.k-button-tertiary {color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-outline.k-button-tertiary:hover, .k-button.k-button-outline.k-button-tertiary.k-hover {border-color: var(--kendo-color-tertiary);
+  color: var(--kendo-color-on-tertiary);
+  background-color: var(--kendo-color-tertiary);}
+.k-button.k-button-outline.k-button-tertiary:focus, .k-button.k-button-outline.k-button-tertiary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-tertiary) 30%, transparent);}
+.k-button.k-button-outline.k-button-tertiary:active, .k-button.k-button-outline.k-button-tertiary.k-active {border-color: var(--kendo-color-tertiary);
+  color: var(--kendo-color-on-tertiary);
+  background-color: var(--kendo-color-tertiary);}
+.k-button.k-button-outline.k-button-tertiary.k-selected {border-color: var(--kendo-color-tertiary);
+  color: var(--kendo-color-on-tertiary);
+  background-color: var(--kendo-color-tertiary);}
+.k-button.k-button-outline.k-button-info {color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-outline.k-button-info:hover, .k-button.k-button-outline.k-button-info.k-hover {border-color: var(--kendo-color-info);
+  color: var(--kendo-color-on-info);
+  background-color: var(--kendo-color-info);}
+.k-button.k-button-outline.k-button-info:focus, .k-button.k-button-outline.k-button-info.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-info) 30%, transparent);}
+.k-button.k-button-outline.k-button-info:active, .k-button.k-button-outline.k-button-info.k-active {border-color: var(--kendo-color-info);
+  color: var(--kendo-color-on-info);
+  background-color: var(--kendo-color-info);}
+.k-button.k-button-outline.k-button-info.k-selected {border-color: var(--kendo-color-info);
+  color: var(--kendo-color-on-info);
+  background-color: var(--kendo-color-info);}
+.k-button.k-button-outline.k-button-success {color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-outline.k-button-success:hover, .k-button.k-button-outline.k-button-success.k-hover {border-color: var(--kendo-color-success);
+  color: var(--kendo-color-on-success);
+  background-color: var(--kendo-color-success);}
+.k-button.k-button-outline.k-button-success:focus, .k-button.k-button-outline.k-button-success.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-success) 30%, transparent);}
+.k-button.k-button-outline.k-button-success:active, .k-button.k-button-outline.k-button-success.k-active {border-color: var(--kendo-color-success);
+  color: var(--kendo-color-on-success);
+  background-color: var(--kendo-color-success);}
+.k-button.k-button-outline.k-button-success.k-selected {border-color: var(--kendo-color-success);
+  color: var(--kendo-color-on-success);
+  background-color: var(--kendo-color-success);}
+.k-button.k-button-outline.k-button-warning {color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-outline.k-button-warning:hover, .k-button.k-button-outline.k-button-warning.k-hover {border-color: var(--kendo-color-warning);
+  color: var(--kendo-color-on-warning);
+  background-color: var(--kendo-color-warning);}
+.k-button.k-button-outline.k-button-warning:focus, .k-button.k-button-outline.k-button-warning.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-warning) 30%, transparent);}
+.k-button.k-button-outline.k-button-warning:active, .k-button.k-button-outline.k-button-warning.k-active {border-color: var(--kendo-color-warning);
+  color: var(--kendo-color-on-warning);
+  background-color: var(--kendo-color-warning);}
+.k-button.k-button-outline.k-button-warning.k-selected {border-color: var(--kendo-color-warning);
+  color: var(--kendo-color-on-warning);
+  background-color: var(--kendo-color-warning);}
+.k-button.k-button-outline.k-button-error {color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-outline.k-button-error:hover, .k-button.k-button-outline.k-button-error.k-hover {border-color: var(--kendo-color-error);
+  color: var(--kendo-color-on-error);
+  background-color: var(--kendo-color-error);}
+.k-button.k-button-outline.k-button-error:focus, .k-button.k-button-outline.k-button-error.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-error) 30%, transparent);}
+.k-button.k-button-outline.k-button-error:active, .k-button.k-button-outline.k-button-error.k-active {border-color: var(--kendo-color-error);
+  color: var(--kendo-color-on-error);
+  background-color: var(--kendo-color-error);}
+.k-button.k-button-outline.k-button-error.k-selected {border-color: var(--kendo-color-error);
+  color: var(--kendo-color-on-error);
+  background-color: var(--kendo-color-error);}
+.k-button.k-button-outline.k-button-inverse {color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-outline.k-button-inverse:hover, .k-button.k-button-outline.k-button-inverse.k-hover {border-color: var(--kendo-color-inverse);
+  color: var(--kendo-color-on-inverse);
+  background-color: var(--kendo-color-inverse);}
+.k-button.k-button-outline.k-button-inverse:focus, .k-button.k-button-outline.k-button-inverse.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-inverse) 30%, transparent);}
+.k-button.k-button-outline.k-button-inverse:active, .k-button.k-button-outline.k-button-inverse.k-active {border-color: var(--kendo-color-inverse);
+  color: var(--kendo-color-on-inverse);
+  background-color: var(--kendo-color-inverse);}
+.k-button.k-button-outline.k-button-inverse.k-selected {border-color: var(--kendo-color-inverse);
+  color: var(--kendo-color-on-inverse);
+  background-color: var(--kendo-color-inverse);}
+.k-button.k-button-flat {border-color: transparent !important;
+  color: inherit;
+  background: none !important;
+  box-shadow: none !important;}
+.k-button.k-button-flat.k-selected {color: inherit;}
+.k-button.k-button-flat, .k-button.k-button-flat.k-button-base {color: inherit;}
+.k-button.k-button-flat.k-button-primary {color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-flat.k-button-secondary {color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-flat.k-button-tertiary {color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-flat.k-button-info {color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-flat.k-button-success {color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-flat.k-button-warning {color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-flat.k-button-error {color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-flat.k-button-inverse {color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-link {border-color: transparent;
+  color: inherit;
+  background: none;}
+.k-button.k-button-link, .k-button.k-button-link.k-button-base {color: var(--kendo-color-on-app-surface);}
+.k-button.k-button-link:hover, .k-button.k-button-link.k-hover, .k-button.k-button-link.k-button-base:hover, .k-button.k-button-link.k-button-base.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-on-app-surface);}
+.k-button.k-button-link:focus, .k-button.k-button-link.k-focus, .k-button.k-button-link.k-button-base:focus, .k-button.k-button-link.k-button-base.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent);}
+.k-button.k-button-link:active, .k-button.k-button-link.k-active, .k-button.k-button-link.k-button-base:active, .k-button.k-button-link.k-button-base.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-on-app-surface);}
+.k-button.k-button-link.k-selected, .k-button.k-button-link.k-button-base.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-on-app-surface);}
+.k-button.k-button-link.k-button-primary {color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-link.k-button-primary:hover, .k-button.k-button-link.k-button-primary.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-link.k-button-primary:focus, .k-button.k-button-link.k-button-primary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-primary) 30%, transparent);}
+.k-button.k-button-link.k-button-primary:active, .k-button.k-button-link.k-button-primary.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-link.k-button-primary.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-link.k-button-secondary {color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-link.k-button-secondary:hover, .k-button.k-button-link.k-button-secondary.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-link.k-button-secondary:focus, .k-button.k-button-link.k-button-secondary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-secondary) 30%, transparent);}
+.k-button.k-button-link.k-button-secondary:active, .k-button.k-button-link.k-button-secondary.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-link.k-button-secondary.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-link.k-button-tertiary {color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-link.k-button-tertiary:hover, .k-button.k-button-link.k-button-tertiary.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-link.k-button-tertiary:focus, .k-button.k-button-link.k-button-tertiary.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-tertiary) 30%, transparent);}
+.k-button.k-button-link.k-button-tertiary:active, .k-button.k-button-link.k-button-tertiary.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-link.k-button-tertiary.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-link.k-button-info {color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-link.k-button-info:hover, .k-button.k-button-link.k-button-info.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-link.k-button-info:focus, .k-button.k-button-link.k-button-info.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-info) 30%, transparent);}
+.k-button.k-button-link.k-button-info:active, .k-button.k-button-link.k-button-info.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-link.k-button-info.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-link.k-button-success {color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-link.k-button-success:hover, .k-button.k-button-link.k-button-success.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-link.k-button-success:focus, .k-button.k-button-link.k-button-success.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-success) 30%, transparent);}
+.k-button.k-button-link.k-button-success:active, .k-button.k-button-link.k-button-success.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-link.k-button-success.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-link.k-button-warning {color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-link.k-button-warning:hover, .k-button.k-button-link.k-button-warning.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-link.k-button-warning:focus, .k-button.k-button-link.k-button-warning.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-warning) 30%, transparent);}
+.k-button.k-button-link.k-button-warning:active, .k-button.k-button-link.k-button-warning.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-link.k-button-warning.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-link.k-button-error {color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-link.k-button-error:hover, .k-button.k-button-link.k-button-error.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-link.k-button-error:focus, .k-button.k-button-link.k-button-error.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-error) 30%, transparent);}
+.k-button.k-button-link.k-button-error:active, .k-button.k-button-link.k-button-error.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-link.k-button-error.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-link.k-button-inverse {color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-link.k-button-inverse:hover, .k-button.k-button-link.k-button-inverse.k-hover {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-link.k-button-inverse:focus, .k-button.k-button-link.k-button-inverse.k-focus {box-shadow: 0 0 0px 2px color-mix(in srgb, var(--kendo-color-inverse) 30%, transparent);}
+.k-button.k-button-link.k-button-inverse:active, .k-button.k-button-link.k-button-inverse.k-active {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-link.k-button-inverse.k-selected {background-color: transparent;
+  border-color: transparent;
+  color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-clear {border-color: transparent !important;
+  color: inherit;
+  background: none !important;
+  box-shadow: none !important;}
+.k-button.k-button-clear, .k-button.k-button-clear.k-button-base {color: var(--kendo-color-base-on-surface);}
+.k-button.k-button-clear:focus::after, .k-button.k-button-clear.k-focus::after, .k-button.k-button-clear:active::after, .k-button.k-button-clear.k-button-base:focus::after, .k-button.k-button-clear.k-button-base.k-focus::after, .k-button.k-button-clear.k-button-base:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-primary {color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-clear.k-button-primary:focus::after, .k-button.k-button-clear.k-button-primary.k-focus::after, .k-button.k-button-clear.k-button-primary:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-secondary {color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-clear.k-button-secondary:focus::after, .k-button.k-button-clear.k-button-secondary.k-focus::after, .k-button.k-button-clear.k-button-secondary:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-tertiary {color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-clear.k-button-tertiary:focus::after, .k-button.k-button-clear.k-button-tertiary.k-focus::after, .k-button.k-button-clear.k-button-tertiary:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-info {color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-clear.k-button-info:focus::after, .k-button.k-button-clear.k-button-info.k-focus::after, .k-button.k-button-clear.k-button-info:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-success {color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-clear.k-button-success:focus::after, .k-button.k-button-clear.k-button-success.k-focus::after, .k-button.k-button-clear.k-button-success:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-warning {color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-clear.k-button-warning:focus::after, .k-button.k-button-clear.k-button-warning.k-focus::after, .k-button.k-button-clear.k-button-warning:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-error {color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-clear.k-button-error:focus::after, .k-button.k-button-clear.k-button-error.k-focus::after, .k-button.k-button-clear.k-button-error:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button.k-button-clear.k-button-inverse {color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-clear.k-button-inverse:focus::after, .k-button.k-button-clear.k-button-inverse.k-focus::after, .k-button.k-button-clear.k-button-inverse:active::after {background-color: currentColor;
+  opacity: 0.1;
+  display: block;}
+.k-button:focus, .k-button.k-focus, .k-button.k-button-base:focus, .k-button.k-button-base.k-focus, .k-button.k-button-solid:focus, .k-button.k-button-solid.k-focus, .k-button.k-button-solid.k-button-base:focus, .k-button.k-button-solid.k-button-base.k-focus, .k-button.k-button-outline:focus, .k-button.k-button-outline.k-focus, .k-button.k-button-outline.k-button-base:focus, .k-button.k-button-outline.k-button-base.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-subtle);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-primary:focus, .k-button.k-button-primary.k-focus, .k-button.k-button-solid.k-button-primary:focus, .k-button.k-button-solid.k-button-primary.k-focus, .k-button.k-button-outline.k-button-primary:focus, .k-button.k-button-outline.k-button-primary.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-primary-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-secondary:focus, .k-button.k-button-secondary.k-focus, .k-button.k-button-solid.k-button-secondary:focus, .k-button.k-button-solid.k-button-secondary.k-focus, .k-button.k-button-outline.k-button-secondary:focus, .k-button.k-button-outline.k-button-secondary.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-secondary-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-tertiary:focus, .k-button.k-button-tertiary.k-focus, .k-button.k-button-solid.k-button-tertiary:focus, .k-button.k-button-solid.k-button-tertiary.k-focus, .k-button.k-button-outline.k-button-tertiary:focus, .k-button.k-button-outline.k-button-tertiary.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-tertiary-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-info:focus, .k-button.k-button-info.k-focus, .k-button.k-button-solid.k-button-info:focus, .k-button.k-button-solid.k-button-info.k-focus, .k-button.k-button-outline.k-button-info:focus, .k-button.k-button-outline.k-button-info.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-info-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-success:focus, .k-button.k-button-success.k-focus, .k-button.k-button-solid.k-button-success:focus, .k-button.k-button-solid.k-button-success.k-focus, .k-button.k-button-outline.k-button-success:focus, .k-button.k-button-outline.k-button-success.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-success-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-warning:focus, .k-button.k-button-warning.k-focus, .k-button.k-button-solid.k-button-warning:focus, .k-button.k-button-solid.k-button-warning.k-focus, .k-button.k-button-outline.k-button-warning:focus, .k-button.k-button-outline.k-button-warning.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-warning-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-error:focus, .k-button.k-button-error.k-focus, .k-button.k-button-solid.k-button-error:focus, .k-button.k-button-solid.k-button-error.k-focus, .k-button.k-button-outline.k-button-error:focus, .k-button.k-button-outline.k-button-error.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-error-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-inverse:focus, .k-button.k-button-inverse.k-focus, .k-button.k-button-solid.k-button-inverse:focus, .k-button.k-button-solid.k-button-inverse.k-focus, .k-button.k-button-outline.k-button-inverse:focus, .k-button.k-button-outline.k-button-inverse.k-focus {box-shadow: none;
+  outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-inverse-on-surface);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-button.k-button-outline, .k-button.k-button-outline.k-button-base {border-color: color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);}
+.k-button.k-button-outline:hover, .k-button.k-button-outline.k-hover, .k-button.k-button-outline.k-button-base:hover, .k-button.k-button-outline.k-button-base.k-hover {border-color: color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent);
+  color: var(--kendo-color-base-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-base-hover) 70%, transparent);}
+.k-button.k-button-outline:active, .k-button.k-button-outline.k-active, .k-button.k-button-outline.k-button-base:active, .k-button.k-button-outline.k-button-base.k-active {border-color: color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent);
+  color: var(--kendo-color-base-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-base-active) 70%, transparent);}
+.k-button.k-button-outline.k-selected, .k-button.k-button-outline.k-button-base.k-selected {border-color: color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent);
+  color: var(--kendo-color-base-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-base-active) 70%, transparent);}
+.k-button.k-button-outline.k-button-primary {border-color: var(--kendo-color-primary-on-surface);}
+.k-button.k-button-outline.k-button-primary:hover, .k-button.k-button-outline.k-button-primary.k-hover {border-color: var(--kendo-color-primary-on-surface);
+  color: var(--kendo-color-primary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-primary:active, .k-button.k-button-outline.k-button-primary.k-active {border-color: var(--kendo-color-primary-on-surface);
+  color: var(--kendo-color-primary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-primary-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-primary.k-selected {border-color: var(--kendo-color-primary-on-surface);
+  color: var(--kendo-color-primary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-primary-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-secondary {border-color: var(--kendo-color-secondary-on-surface);}
+.k-button.k-button-outline.k-button-secondary:hover, .k-button.k-button-outline.k-button-secondary.k-hover {border-color: var(--kendo-color-secondary-on-surface);
+  color: var(--kendo-color-secondary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-secondary-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-secondary:active, .k-button.k-button-outline.k-button-secondary.k-active {border-color: var(--kendo-color-secondary-on-surface);
+  color: var(--kendo-color-secondary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-secondary-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-secondary.k-selected {border-color: var(--kendo-color-secondary-on-surface);
+  color: var(--kendo-color-secondary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-secondary-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-tertiary {border-color: var(--kendo-color-tertiary-on-surface);}
+.k-button.k-button-outline.k-button-tertiary:hover, .k-button.k-button-outline.k-button-tertiary.k-hover {border-color: var(--kendo-color-tertiary-on-surface);
+  color: var(--kendo-color-tertiary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-tertiary-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-tertiary:active, .k-button.k-button-outline.k-button-tertiary.k-active {border-color: var(--kendo-color-tertiary-on-surface);
+  color: var(--kendo-color-tertiary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-tertiary-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-tertiary.k-selected {border-color: var(--kendo-color-tertiary-on-surface);
+  color: var(--kendo-color-tertiary-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-tertiary-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-info {border-color: var(--kendo-color-info-on-surface);}
+.k-button.k-button-outline.k-button-info:hover, .k-button.k-button-outline.k-button-info.k-hover {border-color: var(--kendo-color-info-on-surface);
+  color: var(--kendo-color-info-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-info-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-info:active, .k-button.k-button-outline.k-button-info.k-active {border-color: var(--kendo-color-info-on-surface);
+  color: var(--kendo-color-info-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-info-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-info.k-selected {border-color: var(--kendo-color-info-on-surface);
+  color: var(--kendo-color-info-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-info-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-success {border-color: var(--kendo-color-success-on-surface);}
+.k-button.k-button-outline.k-button-success:hover, .k-button.k-button-outline.k-button-success.k-hover {border-color: var(--kendo-color-success-on-surface);
+  color: var(--kendo-color-success-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-success-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-success:active, .k-button.k-button-outline.k-button-success.k-active {border-color: var(--kendo-color-success-on-surface);
+  color: var(--kendo-color-success-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-success-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-success.k-selected {border-color: var(--kendo-color-success-on-surface);
+  color: var(--kendo-color-success-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-success-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-warning {border-color: var(--kendo-color-warning-on-surface);}
+.k-button.k-button-outline.k-button-warning:hover, .k-button.k-button-outline.k-button-warning.k-hover {border-color: var(--kendo-color-warning-on-surface);
+  color: var(--kendo-color-warning-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-warning-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-warning:active, .k-button.k-button-outline.k-button-warning.k-active {border-color: var(--kendo-color-warning-on-surface);
+  color: var(--kendo-color-warning-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-warning-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-warning.k-selected {border-color: var(--kendo-color-warning-on-surface);
+  color: var(--kendo-color-warning-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-warning-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-error {border-color: var(--kendo-color-error-on-surface);}
+.k-button.k-button-outline.k-button-error:hover, .k-button.k-button-outline.k-button-error.k-hover {border-color: var(--kendo-color-error-on-surface);
+  color: var(--kendo-color-error-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-error-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-error:active, .k-button.k-button-outline.k-button-error.k-active {border-color: var(--kendo-color-error-on-surface);
+  color: var(--kendo-color-error-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-error-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-error.k-selected {border-color: var(--kendo-color-error-on-surface);
+  color: var(--kendo-color-error-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-error-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-inverse {border-color: var(--kendo-color-inverse-on-surface);}
+.k-button.k-button-outline.k-button-inverse:hover, .k-button.k-button-outline.k-button-inverse.k-hover {border-color: var(--kendo-color-inverse-on-surface);
+  color: var(--kendo-color-inverse-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-inverse-subtle-hover) 50%, transparent);}
+.k-button.k-button-outline.k-button-inverse:active, .k-button.k-button-outline.k-button-inverse.k-active {border-color: var(--kendo-color-inverse-on-surface);
+  color: var(--kendo-color-inverse-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-inverse-subtle-active) 50%, transparent);}
+.k-button.k-button-outline.k-button-inverse.k-selected {border-color: var(--kendo-color-inverse-on-surface);
+  color: var(--kendo-color-inverse-on-surface);
+  background-color: color-mix(in srgb, var(--kendo-color-inverse-subtle-active) 50%, transparent);}
+.k-button.k-button-flat::before, .k-button.k-button-flat::after {display: none !important;}
+.k-button.k-button-flat:hover, .k-button.k-button-flat.k-hover, .k-button.k-button-flat.k-button-base:hover, .k-button.k-button-flat.k-button-base.k-hover {background-color: color-mix(in srgb, var(--kendo-color-base-hover) 70%, transparent) !important;}
+.k-button.k-button-flat:active, .k-button.k-button-flat.k-active, .k-button.k-button-flat.k-button-base:active, .k-button.k-button-flat.k-button-base.k-active {background-color: color-mix(in srgb, var(--kendo-color-base-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-selected, .k-button.k-button-flat.k-button-base.k-selected {background-color: color-mix(in srgb, var(--kendo-color-base-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-primary:hover, .k-button.k-button-flat.k-button-primary.k-hover {background-color: color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent) !important;}
+.k-button.k-button-flat.k-button-primary:active, .k-button.k-button-flat.k-button-primary.k-active {background-color: color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-primary.k-selected {background-color: color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-secondary:hover, .k-button.k-button-flat.k-button-secondary.k-hover {background-color: color-mix(in srgb, var(--kendo-color-secondary-subtle-hover) 50%, transparent) !important;}
+.k-button.k-button-flat.k-button-secondary:active, .k-button.k-button-flat.k-button-secondary.k-active {background-color: color-mix(in srgb, var(--kendo-color-secondary-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-secondary.k-selected {background-color: color-mix(in srgb, var(--kendo-color-secondary-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-tertiary:hover, .k-button.k-button-flat.k-button-tertiary.k-hover {background-color: color-mix(in srgb, var(--kendo-color-tertiary-subtle-hover) 50%, transparent) !important;}
+.k-button.k-button-flat.k-button-tertiary:active, .k-button.k-button-flat.k-button-tertiary.k-active {background-color: color-mix(in srgb, var(--kendo-color-tertiary-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-tertiary.k-selected {background-color: color-mix(in srgb, var(--kendo-color-tertiary-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-info:hover, .k-button.k-button-flat.k-button-info.k-hover {background-color: color-mix(in srgb, var(--kendo-color-info-subtle-hover) 50%, transparent) !important;}
+.k-button.k-button-flat.k-button-info:active, .k-button.k-button-flat.k-button-info.k-active {background-color: color-mix(in srgb, var(--kendo-color-info-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-info.k-selected {background-color: color-mix(in srgb, var(--kendo-color-info-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-success:hover, .k-button.k-button-flat.k-button-success.k-hover {background-color: color-mix(in srgb, var(--kendo-color-success-subtle-hover) 50%, transparent) !important;}
+.k-button.k-button-flat.k-button-success:active, .k-button.k-button-flat.k-button-success.k-active {background-color: color-mix(in srgb, var(--kendo-color-success-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-success.k-selected {background-color: color-mix(in srgb, var(--kendo-color-success-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-warning:hover, .k-button.k-button-flat.k-button-warning.k-hover {background-color: color-mix(in srgb, var(--kendo-color-warning-subtle-hover) 25%, transparent) !important;}
+.k-button.k-button-flat.k-button-warning:active, .k-button.k-button-flat.k-button-warning.k-active {background-color: color-mix(in srgb, var(--kendo-color-warning-subtle-active) 35%, transparent) !important;}
+.k-button.k-button-flat.k-button-warning.k-selected {background-color: color-mix(in srgb, var(--kendo-color-warning-subtle-active) 35%, transparent) !important;}
+.k-button.k-button-flat.k-button-error:hover, .k-button.k-button-flat.k-button-error.k-hover {background-color: color-mix(in srgb, var(--kendo-color-error-subtle-hover) 50%, transparent) !important;}
+.k-button.k-button-flat.k-button-error:active, .k-button.k-button-flat.k-button-error.k-active {background-color: color-mix(in srgb, var(--kendo-color-error-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-error.k-selected {background-color: color-mix(in srgb, var(--kendo-color-error-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-inverse:hover, .k-button.k-button-flat.k-button-inverse.k-hover {background-color: color-mix(in srgb, var(--kendo-color-inverse-subtle-hover) 50%, transparent) !important;}
+.k-button.k-button-flat.k-button-inverse:active, .k-button.k-button-flat.k-button-inverse.k-active {background-color: color-mix(in srgb, var(--kendo-color-inverse-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-flat.k-button-inverse.k-selected {background-color: color-mix(in srgb, var(--kendo-color-inverse-subtle-active) 70%, transparent) !important;}
+.k-button.k-button-link {box-shadow: none;}
+.k-overflow-container .k-button-group {box-shadow: none;
+  display: flex;
+  flex-flow: column nowrap;}
+.k-overflow-container .k-button-group .k-button {margin: 0;}
+.k-overflow-container .k-button:hover, .k-overflow-container .k-button.k-hover {color: var(--kendo-color-primary-on-subtle);
+  background: color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent);}
+.k-overflow-container .k-button:active, .k-overflow-container .k-button.k-active {color: var(--kendo-color-primary-on-subtle);
+  background: color-mix(in srgb, var(--kendo-color-primary-subtle-hover) 50%, transparent);}
+.k-overflow-container .k-button.k-selected {color: var(--kendo-color-primary-on-subtle);
+  background: color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent);}
+.k-overflow-container .k-button:disabled, .k-overflow-container .k-button.k-disabled {color: inherit;}
+.k-text-start, .k-buttons-start {justify-content: flex-start;}
+.k-text-end, .k-buttons-end {justify-content: flex-end;}
+.k-split-button .k-split-button-arrow.k-button-sm {padding-block: var(--kendo-spacing-1);
+  padding-inline: var(--kendo-spacing-1\.5);}
+.k-split-button .k-split-button-arrow, .k-split-button .k-split-button-arrow.k-button-md {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-2);}
+.k-split-button .k-split-button-arrow.k-button-lg {padding-block: var(--kendo-spacing-2);
+  padding-inline: var(--kendo-spacing-3);}
+.k-split-button .k-split-button-arrow.k-icon-button .k-button-icon {min-width: 0;}
+.k-split-button.k-button-xs {font-size: var(--kendo-font-size-sm, inherit);
+  line-height: var(--kendo-line-height-sm, normal);}
+.k-split-button.k-button-xs.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size-sm, inherit) * var(--kendo-line-height-sm, normal));}
+.k-split-button.k-button-sm {font-size: var(--kendo-font-size-sm, inherit);
+  line-height: var(--kendo-line-height-sm, normal);}
+.k-split-button.k-button-sm.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size-sm, inherit) * var(--kendo-line-height-sm, normal));}
+.k-split-button, .k-split-button.k-button-md {font-size: var(--kendo-font-size, inherit);
+  line-height: var(--kendo-line-height, normal);}
+.k-split-button.k-icon-button .k-button-icon, .k-split-button.k-button-md.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size, inherit) * var(--kendo-line-height, normal));}
+.k-split-button.k-button-lg {font-size: var(--kendo-font-size-lg, inherit);
+  line-height: var(--kendo-line-height-lg, normal);}
+.k-split-button.k-button-lg.k-icon-button .k-button-icon {min-width: calc(var(--kendo-font-size-lg, inherit) * var(--kendo-line-height-lg, normal));}
+.k-menu-button > .k-button-arrow, .k-dropdown-button > .k-button-arrow {margin-inline-start: calc(var(--kendo-spacing-1\.5) * -1);
+  margin-inline-end: calc(var(--kendo-spacing-2\.5) * -1);
+  padding-inline-start: var(--kendo-spacing-1\.5);
+  padding-inline-end: var(--kendo-spacing-1\.5);
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;}
+.k-menu-button.k-icon-button > .k-button-arrow, .k-dropdown-button.k-icon-button > .k-button-arrow {margin-inline-start: 0;
+  margin-inline-end: calc(var(--kendo-spacing-1\.5) * -1);}
+.k-input-button > .k-button-icon {min-width: auto !important;}
+.k-input-spinner .k-spinner-increase .k-button-icon, .k-input-spinner .k-spinner-decrease .k-button-icon {margin-block: -1em;
+  margin-inline: 0;
+  min-width: auto !important;
+  min-height: auto !important;}
+.k-slider .k-button {flex: none;}
+.k-slider.k-readonly .k-button, .k-slider.k-readonly .k-slider-track, .k-slider.k-readonly .k-tick, .k-slider.k-readonly .k-draghandle {pointer-events: none;}
+.k-dropdown-operator .k-input-button .k-button-icon {width: auto;
+  aspect-ratio: 1;}
+.k-card-deck-scrollwrap > .k-button {border-radius: 0px;
+  flex: 0 0 auto;
+  position: absolute;
+  z-index: 1;}
+.k-card-deck-scrollwrap > .k-button:first-child {inset-inline-start: -1px;}
+.k-card-deck-scrollwrap > .k-button:last-child {inset-inline-end: -1px;}
+.k-pager.k-pager-sm .k-pager-numbers-wrap .k-button {min-width: calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2);}
+.k-pager .k-pager-numbers-wrap .k-button, .k-pager.k-pager-md .k-pager-numbers-wrap .k-button {min-width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5) * 2 + 1px * 2);}
+.k-pager.k-pager-lg .k-pager-numbers-wrap .k-button {min-width: calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2);}
+.k-pager-numbers .k-button {border-radius: 0;}
+.k-pager .k-pager-numbers-wrap .k-button {border-radius: var(--kendo-border-radius-md);}
+.k-wizard .k-wizard-buttons .k-button {margin-inline-end: var(--kendo-spacing-2\.5);}
+.k-wizard .k-wizard-buttons-right .k-button:last-of-type {margin-inline-end: 0;}
+.k-filtercell > span > .k-button, .k-filtercell .k-filtercell-wrapper > .k-button {flex: none;}
+.k-grid .k-command-cell > .k-button {margin-inline-end: var(--kendo-spacing-2);
+  vertical-align: middle;}
+.k-grid .k-command-cell > .k-button:last-child {margin-inline-end: unset;}
+.k-ct-popup .k-button {width: 100%;}
+.k-gantt-toolbar .k-gantt-pdf .k-button-text, .k-gantt-toolbar .k-gantt-create .k-button-text {display: none;}
+.k-scheduler-edit-form-row > .k-scheduler-recurrence-button .k-button-icon {aspect-ratio: 1;}
+.k-scheduler-edit-form-row > .k-scheduler-recurrence-button .k-button-text {overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;}
+.k-scheduler-weekday-picker .k-button {width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5) * 2 + 1px * 2);}
+.k-rtl .k-message-box .k-button, [dir=rtl] .k-message-box .k-button {transform: scaleX(-1);}
+.k-pdf-viewer-pages .k-page .k-annotation-layer .k-link-annotation > a, .k-pdf-viewer-pages .k-page .k-annotation-layer .k-button-widget-annotation.k-push-button-widget-annotation > a {position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;}
+.k-pdf-viewer-canvas > .k-search-panel .k-textbox .k-button {border-width: 0;}
+.k-navigator .k-button {padding: 0;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  box-shadow: none;
+  position: absolute;}
+.k-navigator .k-button .k-icon {min-width: 0;
+  min-height: 0;}

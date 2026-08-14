@@ -1,0 +1,209 @@
+/*
+ * Kendo Themes — native CSS POC
+ * core/input.css
+ *
+ * Structure + composition for .k-input / .k-textbox. Chosen as the second POC
+ * component because it exercises a different shape than button: a composed
+ * widget whose sizing has to reach a descendant (.k-input-inner). Custom
+ * property inheritance replaces the Sass descendant-selector duplication
+ * (`.k-input.k-input-sm .k-input-inner`, once per size).
+ */
+
+@layer kendo.components {
+
+  /* ---------------------------------------------------------------- *
+   * Structure
+   * ---------------------------------------------------------------- */
+
+  .k-input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    border-width: var(--kendo-input-border-width, 1px);
+    border-style: solid;
+    outline: 0;
+    font-family: var(--kendo-font-family, inherit);
+    font-weight: normal;
+    text-align: start;
+    box-shadow: none;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    transition:
+      color var(--kendo-transition-rapid),
+      background-color var(--kendo-transition-rapid),
+      border-color var(--kendo-transition-rapid),
+      box-shadow var(--kendo-transition-rapid),
+      opacity var(--kendo-transition-rapid);
+  }
+
+  .k-input-inner {
+    box-sizing: border-box;
+    padding-block: var(--kendo-input-padding-y, var(--kendo-input-md-padding-y));
+    padding-inline: var(--kendo-input-padding-x, var(--kendo-input-md-padding-x));
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: inherit;
+    background: none;
+    font: inherit;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+
+    &::placeholder {
+      color: var(--kendo-color-subtle);
+      opacity: 1;
+      user-select: none;
+    }
+
+    &:invalid { box-shadow: none; }
+  }
+
+  /* ---------------------------------------------------------------- *
+   * Sizing
+   *
+   * The size modifier assigns inherited custom properties; the descendant
+   * picks them up without needing its own selector per size.
+   * ---------------------------------------------------------------- */
+
+  .k-input {
+    --kendo-input-padding-x: var(--kendo-input-md-padding-x);
+    --kendo-input-padding-y: var(--kendo-input-md-padding-y);
+    --kendo-input-font-size: var(--kendo-input-md-font-size);
+    --kendo-input-line-height: var(--kendo-input-md-line-height);
+    --kendo-input-roundness: var(--kendo-border-radius-md);
+
+    font-size: var(--kendo-input-font-size);
+    line-height: var(--kendo-input-line-height);
+    border-radius: var(--kendo-input-border-radius, var(--kendo-input-roundness));
+  }
+
+  .k-input.k-input-sm {
+    --kendo-input-padding-x: var(--kendo-input-sm-padding-x);
+    --kendo-input-padding-y: var(--kendo-input-sm-padding-y);
+    --kendo-input-font-size: var(--kendo-input-sm-font-size);
+    --kendo-input-line-height: var(--kendo-input-sm-line-height);
+  }
+
+  .k-input.k-input-lg {
+    --kendo-input-padding-x: var(--kendo-input-lg-padding-x);
+    --kendo-input-padding-y: var(--kendo-input-lg-padding-y);
+    --kendo-input-font-size: var(--kendo-input-lg-font-size);
+    --kendo-input-line-height: var(--kendo-input-lg-line-height);
+  }
+
+  .k-input.k-rounded-none { --kendo-input-roundness: var(--kendo-border-radius-none); }
+  .k-input.k-rounded-sm { --kendo-input-roundness: var(--kendo-border-radius-sm); }
+  .k-input.k-rounded-md { --kendo-input-roundness: var(--kendo-border-radius-md); }
+  .k-input.k-rounded-lg { --kendo-input-roundness: var(--kendo-border-radius-lg); }
+  .k-input.k-rounded-full { --kendo-input-roundness: var(--kendo-border-radius-full); }
+
+  /* ---------------------------------------------------------------- *
+   * Fill modes
+   * ---------------------------------------------------------------- */
+
+  .k-input {
+    /* generic derivations — solid is the default fill mode */
+    --ki-border: var(--kendo-color-border);
+    --ki-text: var(--kendo-color-on-app-surface);
+    --ki-bg: var(--kendo-input-solid-bg, var(--kendo-color-surface-alt));
+    --ki-shadow: var(--kendo-input-solid-shadow, none);
+    --ki-hover-border: var(--kendo-color-border-alt);
+    --ki-focus-border: var(--kendo-color-border-alt);
+    --ki-invalid-border: var(--kendo-color-error-on-surface);
+  }
+
+  .k-input,
+  .k-input.k-input-solid {
+    border-color: var(--ki-border);
+    color: var(--ki-text);
+    background-color: var(--ki-bg);
+    box-shadow: var(--ki-shadow);
+
+    &:hover,
+    &.k-hover { border-color: var(--ki-hover-border); }
+
+    &:focus,
+    &:focus-within,
+    &.k-focus {
+      border-color: var(--ki-focus-border);
+      box-shadow: none;
+    }
+
+    &.k-invalid { border-color: var(--ki-invalid-border); }
+  }
+
+  .k-input.k-input-outline {
+    --ki-border: var(--kendo-input-outline-border);
+    --ki-bg: transparent;
+    --ki-shadow: none;
+    --ki-hover-border: var(--kendo-input-outline-hover-border);
+    --ki-focus-border: var(--kendo-input-outline-border);
+
+    background: none !important;
+  }
+
+  .k-input.k-input-flat {
+    --ki-bg: transparent;
+    --ki-shadow: none;
+    --ki-focus-border: var(--kendo-color-border);
+
+    border-width: 1px 0;
+    border-block-start-color: transparent !important;
+    border-end-end-radius: 0 !important;
+    border-end-start-radius: 0 !important;
+    background-image: none !important;
+  }
+
+  /* ---------------------------------------------------------------- *
+   * Adornments
+   * ---------------------------------------------------------------- */
+
+  .k-input .k-input-prefix,
+  .k-input .k-input-suffix {
+    color: var(--kendo-color-subtle);
+  }
+
+  .k-input.k-input-outline .k-input-prefix,
+  .k-input.k-input-outline .k-input-suffix {
+    background-color: transparent;
+  }
+
+  .k-input .k-input-separator {
+    margin: 0;
+    border-style: solid;
+    border-color: var(--kendo-color-border);
+    border-width: 0 0 0 1px;
+    height: 16px;
+    align-self: center;
+  }
+
+  .k-input .k-input-separator-horizontal {
+    height: auto;
+    margin-inline: var(--kendo-input-padding-y);
+    align-self: stretch;
+    border-width: 1px 0 0;
+  }
+
+  .k-input .k-input-separator-vertical {
+    height: auto;
+    margin-block: var(--kendo-input-padding-y);
+    align-self: stretch;
+    border-width: 0 0 0 1px;
+  }
+
+  .k-input.k-invalid .k-input-validation-icon {
+    color: var(--kendo-color-error);
+  }
+}
