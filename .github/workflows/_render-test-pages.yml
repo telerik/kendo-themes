@@ -33,7 +33,7 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Check for differences in packages/html
         run: |
@@ -86,17 +86,17 @@ jobs:
         run: firefox --version
 
       - name: Checkout branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ inputs.node-version }}
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: node_modules
           key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
