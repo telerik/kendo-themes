@@ -1,3 +1,7 @@
+## 14.5.1-dev.0 (2026-08-17)
+
+This was a version bump only for @progress/kendo-theme-classic to align it with other projects, there were no code changes.
+
 ## 14.5.0 (2026-08-10)
 
 ### 🚀 Features

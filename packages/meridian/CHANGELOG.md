@@ -1,3 +1,18 @@
+## 14.5.1-dev.0 (2026-08-17)
+
+### 🩹 Fixes
+
+- **meridian:** move backdrop-filter off .k-pager to avoid trapping fixed descendants ([1ec286585c](https://github.com/telerik/kendo-themes/commit/1ec286585c))
+- **meridian:** move backdrop-filter off .k-expander to avoid trapping fixed descendants ([22787cbb6d](https://github.com/telerik/kendo-themes/commit/22787cbb6d))
+- **meridian:** move backdrop-filter off .k-drawer to avoid trapping fixed descendants ([13c87061ca](https://github.com/telerik/kendo-themes/commit/13c87061ca))
+- **meridian:** move backdrop-filter off .k-bottom-nav to avoid trapping fixed descendants ([6fdcb98fd5](https://github.com/telerik/kendo-themes/commit/6fdcb98fd5))
+- **meridian:** move backdrop-filter off .k-appbar to avoid trapping fixed descendants ([#6096](https://github.com/telerik/kendo-themes/issues/6096))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+
 ## 14.5.0 (2026-08-10)
 
 ### 🚀 Features
