@@ -1,0 +1,4 @@
+/* Split artifact: a single swatch. */
+@layer kendo.tokens, kendo.components, kendo.theme, kendo.overrides;
+
+@import url("./swatches/meridian-main-dark.css");

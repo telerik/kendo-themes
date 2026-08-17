@@ -1,0 +1,449 @@
+.k-toolbar .k-input, .k-toolbar .k-picker {width: 10em;}
+.k-input, .k-picker {margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  outline: 0;
+  font-family: var(--kendo-font-family, inherit);
+  font-weight: normal;
+  text-align: start;
+  box-shadow: none;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;
+  transition: color var(--kendo-transition-rapid), background-color var(--kendo-transition-rapid), border-color var(--kendo-transition-rapid), box-shadow var(--kendo-transition-rapid), opacity var(--kendo-transition-rapid);}
+.k-input *, .k-input *::before, .k-input *::after, .k-picker *, .k-picker *::before, .k-picker *::after {box-sizing: border-box;}
+.k-input > .k-input, .k-input > .k-picker, .k-picker > .k-input, .k-picker > .k-picker {border-width: 0 !important;
+  color: inherit;
+  background: none;
+  font: inherit;
+  outline: 0;
+  box-shadow: none !important;}
+.k-input > *, .k-picker > * {margin: 0;}
+.k-input::placeholder, .k-picker::placeholder {color: var(--kendo-color-subtle);
+  opacity: 1;
+  user-select: none;}
+.k-input.k-rounded-none {border-radius: var(--kendo-border-radius-none);}
+.k-input.k-rounded-sm {border-radius: var(--kendo-border-radius-sm);}
+.k-input, .k-input.k-rounded-md {border-radius: var(--kendo-border-radius-md);}
+.k-input.k-rounded-lg {border-radius: var(--kendo-border-radius-lg);}
+.k-input.k-rounded-full {border-radius: var(--kendo-border-radius-full);}
+.k-input.k-input-sm {font-size: var(--kendo-font-size-sm, inherit);
+  line-height: var(--kendo-line-height-sm, normal);}
+.k-input.k-input-sm .k-input-values {padding: calc(var(--kendo-spacing-1) / 2);
+  gap: calc(var(--kendo-spacing-1) / 2);}
+.k-input.k-input-sm .k-input-values > .k-searchbar, .k-input.k-input-sm .k-input-values > .k-input-inner {margin: calc(var(--kendo-spacing-1) / 2 * -1);}
+.k-input.k-input-sm .k-input-inner {padding-block: var(--kendo-spacing-1);
+  padding-inline: var(--kendo-spacing-2);}
+.k-input.k-input-sm .k-input-button, .k-input.k-input-sm .k-spinner-increase, .k-input.k-input-sm .k-spinner-decrease {padding-block: var(--kendo-spacing-1);
+  padding-inline: var(--kendo-spacing-1);}
+.k-input.k-input-sm .k-input-icon, .k-input.k-input-sm .k-input-validation-icon, .k-input.k-input-sm .k-input-loading-icon, .k-input.k-input-sm .k-clear-value, .k-input.k-input-sm .k-input-prefix > .k-icon, .k-input.k-input-sm .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input.k-input-sm .k-input-prefix > .k-input-prefix-text, .k-input.k-input-sm .k-input-suffix > .k-icon, .k-input.k-input-sm .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input.k-input-sm .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-1);
+  padding-inline: var(--kendo-spacing-1);
+  box-sizing: content-box;}
+.k-input.k-input-sm .k-input-separator-horizontal {margin-inline: var(--kendo-spacing-1);}
+.k-input.k-input-sm .k-input-separator-vertical {margin-block: var(--kendo-spacing-1);}
+.k-input, .k-input.k-input-md {font-size: var(--kendo-font-size, inherit);
+  line-height: var(--kendo-line-height, normal);}
+.k-input .k-input-values, .k-input.k-input-md .k-input-values {padding: calc(var(--kendo-spacing-1\.5) / 2);
+  gap: calc(var(--kendo-spacing-1\.5) / 2);}
+.k-input .k-input-values > .k-searchbar, .k-input .k-input-values > .k-input-inner, .k-input.k-input-md .k-input-values > .k-searchbar, .k-input.k-input-md .k-input-values > .k-input-inner {margin: calc(var(--kendo-spacing-1\.5) / 2 * -1);}
+.k-input .k-input-inner, .k-input.k-input-md .k-input-inner {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-2\.5);}
+.k-input .k-input-button, .k-input .k-spinner-increase, .k-input .k-spinner-decrease, .k-input.k-input-md .k-input-button, .k-input.k-input-md .k-spinner-increase, .k-input.k-input-md .k-spinner-decrease {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-1\.5);}
+.k-input .k-input-icon, .k-input .k-input-validation-icon, .k-input .k-input-loading-icon, .k-input .k-clear-value, .k-input .k-input-prefix > .k-icon, .k-input .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input .k-input-prefix > .k-input-prefix-text, .k-input .k-input-suffix > .k-icon, .k-input .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input .k-input-suffix > .k-input-suffix-text, .k-input.k-input-md .k-input-icon, .k-input.k-input-md .k-input-validation-icon, .k-input.k-input-md .k-input-loading-icon, .k-input.k-input-md .k-clear-value, .k-input.k-input-md .k-input-prefix > .k-icon, .k-input.k-input-md .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input.k-input-md .k-input-prefix > .k-input-prefix-text, .k-input.k-input-md .k-input-suffix > .k-icon, .k-input.k-input-md .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input.k-input-md .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-1\.5);
+  box-sizing: content-box;}
+.k-input .k-input-separator-horizontal, .k-input.k-input-md .k-input-separator-horizontal {margin-inline: var(--kendo-spacing-1\.5);}
+.k-input .k-input-separator-vertical, .k-input.k-input-md .k-input-separator-vertical {margin-block: var(--kendo-spacing-1\.5);}
+.k-input.k-input-lg {font-size: var(--kendo-font-size-lg, inherit);
+  line-height: var(--kendo-line-height-lg, normal);}
+.k-input.k-input-lg .k-input-values {padding: calc(var(--kendo-spacing-2) / 2);
+  gap: calc(var(--kendo-spacing-2) / 2);}
+.k-input.k-input-lg .k-input-values > .k-searchbar, .k-input.k-input-lg .k-input-values > .k-input-inner {margin: calc(var(--kendo-spacing-2) / 2 * -1);}
+.k-input.k-input-lg .k-input-inner {padding-block: var(--kendo-spacing-2);
+  padding-inline: var(--kendo-spacing-3);}
+.k-input.k-input-lg .k-input-button, .k-input.k-input-lg .k-spinner-increase, .k-input.k-input-lg .k-spinner-decrease {padding-block: var(--kendo-spacing-2);
+  padding-inline: var(--kendo-spacing-2);}
+.k-input.k-input-lg .k-input-icon, .k-input.k-input-lg .k-input-validation-icon, .k-input.k-input-lg .k-input-loading-icon, .k-input.k-input-lg .k-clear-value, .k-input.k-input-lg .k-input-prefix > .k-icon, .k-input.k-input-lg .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input.k-input-lg .k-input-prefix > .k-input-prefix-text, .k-input.k-input-lg .k-input-suffix > .k-icon, .k-input.k-input-lg .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input.k-input-lg .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-2);
+  padding-inline: var(--kendo-spacing-2);
+  box-sizing: content-box;}
+.k-input.k-input-lg .k-input-separator-horizontal {margin-inline: var(--kendo-spacing-2);}
+.k-input.k-input-lg .k-input-separator-vertical {margin-block: var(--kendo-spacing-2);}
+.k-input.k-input-flat {border-end-end-radius: 0 !important;
+  border-end-start-radius: 0 !important;
+  border-width: 1px 0;
+  border-block-start-color: transparent !important;
+  background-image: none !important;}
+.k-picker.k-picker-sm .k-input-inner {padding-block: var(--kendo-spacing-1);
+  padding-inline: var(--kendo-spacing-2);}
+.k-picker.k-picker-sm .k-input-icon, .k-picker.k-picker-sm .k-input-validation-icon, .k-picker.k-picker-sm .k-input-loading-icon, .k-picker.k-picker-sm .k-clear-value, .k-picker.k-picker-sm .k-input-prefix > .k-icon, .k-picker.k-picker-sm .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-picker.k-picker-sm .k-input-prefix > .k-input-prefix-text, .k-picker.k-picker-sm .k-input-suffix > .k-icon, .k-picker.k-picker-sm .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-picker.k-picker-sm .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-1);
+  padding-inline: var(--kendo-spacing-1);
+  box-sizing: content-box;}
+.k-picker.k-picker-sm.k-icon-picker > .k-input-inner {width: calc(var(--kendo-line-height-sm, normal) * 1em);
+  height: calc(var(--kendo-line-height-sm, normal) * 1em);
+  padding: var(--kendo-spacing-1);
+  box-sizing: content-box;}
+.k-picker .k-input-inner, .k-picker.k-picker-md .k-input-inner {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-2\.5);}
+.k-picker .k-input-icon, .k-picker .k-input-validation-icon, .k-picker .k-input-loading-icon, .k-picker .k-clear-value, .k-picker .k-input-prefix > .k-icon, .k-picker .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-picker .k-input-prefix > .k-input-prefix-text, .k-picker .k-input-suffix > .k-icon, .k-picker .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-picker .k-input-suffix > .k-input-suffix-text, .k-picker.k-picker-md .k-input-icon, .k-picker.k-picker-md .k-input-validation-icon, .k-picker.k-picker-md .k-input-loading-icon, .k-picker.k-picker-md .k-clear-value, .k-picker.k-picker-md .k-input-prefix > .k-icon, .k-picker.k-picker-md .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-picker.k-picker-md .k-input-prefix > .k-input-prefix-text, .k-picker.k-picker-md .k-input-suffix > .k-icon, .k-picker.k-picker-md .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-picker.k-picker-md .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-1\.5);
+  box-sizing: content-box;}
+.k-picker.k-icon-picker > .k-input-inner, .k-picker.k-picker-md.k-icon-picker > .k-input-inner {width: calc(var(--kendo-line-height, normal) * 1em);
+  height: calc(var(--kendo-line-height, normal) * 1em);
+  padding: var(--kendo-spacing-1\.5);
+  box-sizing: content-box;}
+.k-picker.k-picker-lg .k-input-inner {padding-block: var(--kendo-spacing-2);
+  padding-inline: var(--kendo-spacing-3);}
+.k-picker.k-picker-lg .k-input-icon, .k-picker.k-picker-lg .k-input-validation-icon, .k-picker.k-picker-lg .k-input-loading-icon, .k-picker.k-picker-lg .k-clear-value, .k-picker.k-picker-lg .k-input-prefix > .k-icon, .k-picker.k-picker-lg .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-picker.k-picker-lg .k-input-prefix > .k-input-prefix-text, .k-picker.k-picker-lg .k-input-suffix > .k-icon, .k-picker.k-picker-lg .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-picker.k-picker-lg .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-2);
+  padding-inline: var(--kendo-spacing-2);
+  box-sizing: content-box;}
+.k-picker.k-picker-lg.k-icon-picker > .k-input-inner {width: calc(var(--kendo-line-height-lg, normal) * 1em);
+  height: calc(var(--kendo-line-height-lg, normal) * 1em);
+  padding: var(--kendo-spacing-2);
+  box-sizing: content-box;}
+input.k-input, textarea.k-textarea {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-2\.5);}
+.k-input-inner {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: var(--kendo-spacing-2\.5);
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  background: none;
+  font: inherit;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;}
+.k-input-inner::placeholder {color: var(--kendo-color-subtle);
+  opacity: 1;
+  user-select: none;}
+.k-input-inner:invalid {box-shadow: none;}
+span.k-input-inner {white-space: nowrap;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;}
+textarea.k-input-inner {margin: 0;}
+.k-input-value-icon {flex: none;}
+.k-input-value-text {flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+.k-input-value-text::before {content: "";
+  width: 0;
+  height: 1lh;
+  overflow: hidden;
+  flex: none;
+  display: inline-block;
+  vertical-align: top;}
+.k-input-values {min-width: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  cursor: text;}
+.k-input-values .k-chip-list {display: contents;}
+.k-icon-picker > .k-input-inner {padding: var(--kendo-spacing-1\.5);
+  justify-content: center;}
+.k-input-prefix, .k-input-suffix {border-color: inherit;
+  display: flex;
+  align-items: center;
+  flex: none;}
+.k-input-prefix > *, .k-input-suffix > * {flex-shrink: 0;
+  border: none;}
+.k-input-prefix-vertical, .k-input-suffix-vertical {flex-flow: column wrap;}
+.k-input-prefix-horizontal, .k-input-suffix-horizontal {flex-flow: row wrap;}
+.k-input-separator {margin: 0;
+  border-style: solid;
+  border-color: inherit;
+  border-width: 0 0 0 1px;
+  height: 16px;
+  align-self: center;}
+.k-input-separator-horizontal {height: auto;
+  margin-inline: var(--kendo-spacing-1\.5);
+  align-self: stretch;
+  border-width: 1px 0 0;}
+.k-input-separator-vertical {height: auto;
+  margin-block: var(--kendo-spacing-1\.5);
+  align-self: stretch;
+  border-width: 0 0 0 1px;}
+.k-input-group {margin: 0;
+  padding: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: 0;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  vertical-align: middle;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.k-input-group > .k-input + .k-input {margin-inline-start: -1px;}
+.k-input-group > .k-input:hover, .k-input-group > .k-input.k-hover, .k-input-group > .k-input:focus, .k-input-group > .k-input:focus-within, .k-input-group > .k-input.k-focus, .k-input-group > .k-input:active, .k-input-group > .k-input.k-active, .k-input-group > .k-input.k-selected {z-index: 2;}
+.k-input-group .k-input:not(:first-child):not(:last-child) {border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;}
+.k-input-group > .k-input:first-child:not(:only-child) {border-start-end-radius: 0;
+  border-end-end-radius: 0;}
+.k-input-group > .k-input:last-child:not(:only-child) {border-start-start-radius: 0;
+  border-end-start-radius: 0;}
+.k-input-group:disabled, .k-input-group[disabled], .k-input-group.k-disabled {opacity: 1;
+  filter: none;}
+.k-input-icon, .k-input-validation-icon, .k-input-loading-icon {flex: none;
+  align-self: center;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;}
+.k-input-loading-icon {width: 1em;
+  height: 1em;
+  font-size: 16px;}
+.k-input-icon.k-svg-icon > svg, .k-input-icon.k-icon-md > svg, .k-input-validation-icon.k-svg-icon > svg, .k-input-validation-icon.k-icon-md > svg, .k-input-loading-icon.k-svg-icon > svg, .k-input-loading-icon.k-icon-md > svg {width: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));
+  height: var(--kendo-icon-size-md, var(--kendo-icon-size-md, var(--kendo-icon-size, 16px)));}
+.k-input-icon.k-icon-xs > svg, .k-input-validation-icon.k-icon-xs > svg, .k-input-loading-icon.k-icon-xs > svg {width: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));
+  height: var(--kendo-icon-size-xs, var(--kendo-icon-size-xs, calc(var(--kendo-icon-size, 16px) * 0.75)));}
+.k-input-icon.k-icon-sm > svg, .k-input-validation-icon.k-icon-sm > svg, .k-input-loading-icon.k-icon-sm > svg {width: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));
+  height: var(--kendo-icon-size-sm, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 16px) * 0.875)));}
+.k-input-icon.k-icon-lg > svg, .k-input-validation-icon.k-icon-lg > svg, .k-input-loading-icon.k-icon-lg > svg {width: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));
+  height: var(--kendo-icon-size-lg, var(--kendo-icon-size-lg, calc(var(--kendo-icon-size, 16px) * 1.25)));}
+.k-input-icon.k-icon-xl > svg, .k-input-validation-icon.k-icon-xl > svg, .k-input-loading-icon.k-icon-xl > svg {width: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));
+  height: var(--kendo-icon-size-xl, var(--kendo-icon-size-xl, calc(var(--kendo-icon-size, 16px) * 1.5)));}
+.k-input-icon.k-icon-xxl > svg, .k-input-validation-icon.k-icon-xxl > svg, .k-input-loading-icon.k-icon-xxl > svg {width: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));
+  height: var(--kendo-icon-size-xxl, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 16px) * 2)));}
+.k-input-icon.k-icon-xxxl > svg, .k-input-validation-icon.k-icon-xxxl > svg, .k-input-loading-icon.k-icon-xxxl > svg {width: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));
+  height: var(--kendo-icon-size-xxxl, var(--kendo-icon-size-xxxl, calc(var(--kendo-icon-size, 16px) * 3)));}
+.k-input-button {width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5) * 2);
+  border-width: 0;
+  border-inline-start-width: 0;
+  border-radius: 0;
+  flex: none;
+  aspect-ratio: auto;
+  box-shadow: none;}
+.k-input-button > .k-button-icon {min-width: auto !important;}
+.k-input-button:focus {box-shadow: none;}
+.k-picker .k-input-button {color: inherit;
+  background: none;
+  border-color: transparent;}
+.k-input-spinner {width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5) * 2);
+  flex: none;
+  display: flex;
+  flex-flow: column nowrap;}
+.k-input-spinner .k-spinner-increase, .k-input-spinner .k-spinner-decrease {border-width: 0;
+  border-inline-start-width: 0;
+  border-radius: 0;
+  flex: 1 1 50%;
+  box-shadow: none;
+  position: relative;
+  aspect-ratio: auto;}
+.k-input-spinner .k-spinner-increase .k-button-icon, .k-input-spinner .k-spinner-decrease .k-button-icon {margin-block: -1em;
+  margin-inline: 0;
+  min-width: auto !important;
+  min-height: auto !important;}
+.k-input-spinner .k-spinner-increase .k-icon {inset-block-end: auto;}
+.k-input-spinner .k-spinner-decrease .k-icon {inset-block-start: auto;}
+.k-input > kendo-popup, .k-picker > kendo-popup {position: fixed;}
+.k-input:-webkit-autofill {animation-name: autoFillStart;}
+.k-input:not(:-webkit-autofill) {animation-name: autoFillEnd;}
+.k-input .k-input-button, .k-input .k-input-spinner {position: relative;}
+.k-input .k-input-button::before, .k-input .k-input-spinner::before {content: "";
+  display: block;
+  position: absolute;
+  inset-inline-start: 0;
+  width: 1px;
+  z-index: 1;}
+.k-input .k-input-spinner .k-spinner-increase {padding-block-end: 0;}
+.k-input .k-input-spinner .k-spinner-decrease {padding-block-start: 0;}
+.k-input.k-input-sm .k-input-icon, .k-input.k-input-sm .k-input-validation-icon, .k-input.k-input-sm .k-input-loading-icon, .k-input.k-input-sm .k-input-prefix > .k-icon, .k-input.k-input-sm .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input.k-input-sm .k-input-prefix > .k-input-prefix-text, .k-input.k-input-sm .k-input-suffix > .k-icon, .k-input.k-input-sm .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input.k-input-sm .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-1);
+  padding-inline: calc((var(--kendo-spacing-2) + var(--kendo-spacing-1)) / 2);}
+.k-input.k-input-sm .k-clear-value {padding-block: var(--kendo-spacing-1);
+  padding-inline: 0 var(--kendo-spacing-2);}
+.k-input.k-input-sm .k-input-inner + .k-input-validation-icon {padding-inline-start: 0;}
+.k-input.k-input-sm .k-input-button::before, .k-input.k-input-sm .k-input-spinner::before {top: calc(var(--kendo-spacing-2) / 2);
+  bottom: calc(var(--kendo-spacing-2) / 2);}
+.k-input .k-input-icon, .k-input .k-input-validation-icon, .k-input .k-input-loading-icon, .k-input .k-input-prefix > .k-icon, .k-input .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input .k-input-prefix > .k-input-prefix-text, .k-input .k-input-suffix > .k-icon, .k-input .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input .k-input-suffix > .k-input-suffix-text, .k-input.k-input-md .k-input-icon, .k-input.k-input-md .k-input-validation-icon, .k-input.k-input-md .k-input-loading-icon, .k-input.k-input-md .k-input-prefix > .k-icon, .k-input.k-input-md .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input.k-input-md .k-input-prefix > .k-input-prefix-text, .k-input.k-input-md .k-input-suffix > .k-icon, .k-input.k-input-md .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input.k-input-md .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: calc((var(--kendo-spacing-2\.5) + var(--kendo-spacing-1\.5)) / 2);}
+.k-input .k-clear-value, .k-input.k-input-md .k-clear-value {padding-block: var(--kendo-spacing-1\.5);
+  padding-inline: 0 var(--kendo-spacing-2\.5);}
+.k-input .k-input-inner + .k-input-validation-icon, .k-input.k-input-md .k-input-inner + .k-input-validation-icon {padding-inline-start: 0;}
+.k-input .k-input-button::before, .k-input .k-input-spinner::before, .k-input.k-input-md .k-input-button::before, .k-input.k-input-md .k-input-spinner::before {top: calc(var(--kendo-spacing-2\.5) / 2);
+  bottom: calc(var(--kendo-spacing-2\.5) / 2);}
+.k-input.k-input-lg .k-input-icon, .k-input.k-input-lg .k-input-validation-icon, .k-input.k-input-lg .k-input-loading-icon, .k-input.k-input-lg .k-input-prefix > .k-icon, .k-input.k-input-lg .k-input-prefix > .k-icon-wrapper-host .k-icon, .k-input.k-input-lg .k-input-prefix > .k-input-prefix-text, .k-input.k-input-lg .k-input-suffix > .k-icon, .k-input.k-input-lg .k-input-suffix > .k-icon-wrapper-host .k-icon, .k-input.k-input-lg .k-input-suffix > .k-input-suffix-text {padding-block: var(--kendo-spacing-2);
+  padding-inline: calc((var(--kendo-spacing-3) + var(--kendo-spacing-2)) / 2);}
+.k-input.k-input-lg .k-clear-value {padding-block: var(--kendo-spacing-2);
+  padding-inline: 0 var(--kendo-spacing-3);}
+.k-input.k-input-lg .k-input-inner + .k-input-validation-icon {padding-inline-start: 0;}
+.k-input.k-input-lg .k-input-button::before, .k-input.k-input-lg .k-input-spinner::before {top: calc(var(--kendo-spacing-3) / 2);
+  bottom: calc(var(--kendo-spacing-3) / 2);}
+.k-input > .k-input, .k-input > .k-picker, .k-picker > .k-input, .k-picker > .k-picker {outline: 0;}
+.k-input > .k-input:focus, .k-input > .k-input.k-focus, .k-input > .k-input:focus-within, .k-input > .k-picker:focus, .k-input > .k-picker.k-focus, .k-input > .k-picker:focus-within, .k-picker > .k-input:focus, .k-picker > .k-input.k-focus, .k-picker > .k-input:focus-within, .k-picker > .k-picker:focus, .k-picker > .k-picker.k-focus, .k-picker > .k-picker:focus-within {outline: 0;}
+.k-input .k-input-prefix, .k-input .k-input-suffix, .k-picker .k-input-prefix, .k-picker .k-input-suffix {--kendo-focus-outline-offset: -1px;}
+.k-input, .k-input.k-input-solid {border-color: var(--kendo-color-border);
+  color: var(--kendo-color-on-app-surface);
+  background-color: var(--kendo-color-surface-alt);
+  box-shadow: 0 1px 2px 0 rgba(56, 66, 80, 0.05);}
+.k-input:hover, .k-input.k-hover, .k-input.k-input-solid:hover, .k-input.k-input-solid.k-hover {border-color: var(--kendo-color-border-alt);}
+.k-input:focus, .k-input.k-focus, .k-input.k-input-solid:focus, .k-input.k-input-solid.k-focus {border-color: var(--kendo-color-border-alt);
+  box-shadow: none;}
+.k-input:focus-within, .k-input.k-input-solid:focus-within {border-color: var(--kendo-color-border-alt);
+  box-shadow: none;}
+.k-input.k-invalid, .k-input.ng-invalid.ng-touched, .k-input.ng-invalid.ng-dirty, .k-input.k-input-solid.k-invalid, .k-input.k-input-solid.ng-invalid.ng-touched, .k-input.k-input-solid.ng-invalid.ng-dirty {border-color: var(--kendo-color-error-on-surface);}
+.k-input.k-invalid .k-input-validation-icon, .k-input.ng-invalid.ng-touched .k-input-validation-icon, .k-input.ng-invalid.ng-dirty .k-input-validation-icon, .k-input.k-input-solid.k-invalid .k-input-validation-icon, .k-input.k-input-solid.ng-invalid.ng-touched .k-input-validation-icon, .k-input.k-input-solid.ng-invalid.ng-dirty .k-input-validation-icon {color: var(--kendo-color-error);}
+.k-input .k-input-prefix, .k-input.k-input-solid .k-input-prefix {color: var(--kendo-color-subtle);}
+.k-input .k-input-suffix, .k-input.k-input-solid .k-input-suffix {color: var(--kendo-color-subtle);}
+.k-input .k-input-separator, .k-input.k-input-solid .k-input-separator {border-color: var(--kendo-color-border);}
+.k-input.k-input-outline {background: none !important;
+  border-color: color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent);
+  color: var(--kendo-color-on-app-surface);}
+.k-input.k-input-outline > .k-input-button {border-color: inherit;}
+.k-input.k-input-outline > .k-input-spinner {border-color: inherit;}
+.k-input.k-input-outline > .k-input-spinner > .k-spinner-increase, .k-input.k-input-outline > .k-input-spinner > .k-spinner-decrease {border-color: inherit;}
+.k-input.k-input-outline:hover, .k-input.k-input-outline.k-hover {border-color: color-mix(in srgb, var(--kendo-color-base-emphasis) 90%, transparent);}
+.k-input.k-input-outline:focus, .k-input.k-input-outline.k-focus {box-shadow: none;}
+.k-input.k-input-outline:focus-within {box-shadow: none;}
+.k-input.k-input-outline.k-invalid, .k-input.k-input-outline.ng-invalid.ng-touched, .k-input.k-input-outline.ng-invalid.ng-dirty {border-color: var(--kendo-color-error-on-surface);}
+.k-input.k-input-outline.k-invalid .k-input-validation-icon, .k-input.k-input-outline.ng-invalid.ng-touched .k-input-validation-icon, .k-input.k-input-outline.ng-invalid.ng-dirty .k-input-validation-icon {color: var(--kendo-color-error);}
+.k-input.k-input-outline .k-input-prefix {color: var(--kendo-color-subtle);
+  background-color: transparent;}
+.k-input.k-input-outline .k-input-suffix {color: var(--kendo-color-subtle);
+  background-color: transparent;}
+.k-input.k-input-outline .k-input-separator {border-color: var(--kendo-color-border);}
+.k-input.k-input-flat {border-color: var(--kendo-color-border);
+  color: var(--kendo-color-on-app-surface);
+  background-color: transparent;}
+.k-input.k-input-flat:hover, .k-input.k-input-flat.k-hover {border-color: var(--kendo-color-border-alt);}
+.k-input.k-input-flat:focus, .k-input.k-input-flat.k-focus {box-shadow: none;}
+.k-input.k-input-flat:focus-within {box-shadow: none;}
+.k-input.k-input-flat.k-invalid, .k-input.k-input-flat.ng-invalid.ng-touched, .k-input.k-input-flat.ng-invalid.ng-dirty {border-color: var(--kendo-color-error-on-surface);}
+.k-input.k-input-flat.k-invalid .k-input-validation-icon, .k-input.k-input-flat.ng-invalid.ng-touched .k-input-validation-icon, .k-input.k-input-flat.ng-invalid.ng-dirty .k-input-validation-icon {color: var(--kendo-color-error);}
+.k-input.k-input-flat .k-input-prefix {color: var(--kendo-color-subtle);
+  background-color: transparent;}
+.k-input.k-input-flat .k-input-suffix {color: var(--kendo-color-subtle);
+  background-color: transparent;}
+.k-input.k-input-flat .k-input-separator {border-color: var(--kendo-color-border);}
+.k-picker.k-invalid .k-input-validation-icon, .k-picker.ng-invalid.ng-touched .k-input-validation-icon, .k-picker.ng-invalid.ng-dirty .k-input-validation-icon, .k-picker.k-picker-solid.k-invalid .k-input-validation-icon, .k-picker.k-picker-solid.ng-invalid.ng-touched .k-input-validation-icon, .k-picker.k-picker-solid.ng-invalid.ng-dirty .k-input-validation-icon {color: var(--kendo-color-error);}
+.k-picker.k-picker-outline.k-invalid .k-input-validation-icon, .k-picker.k-picker-outline.ng-invalid.ng-touched .k-input-validation-icon, .k-picker.k-picker-outline.ng-invalid.ng-dirty .k-input-validation-icon {color: var(--kendo-color-error);}
+.k-picker.k-picker-flat.k-invalid .k-input-validation-icon, .k-picker.k-picker-flat.ng-invalid.ng-touched .k-input-validation-icon, .k-picker.k-picker-flat.ng-invalid.ng-dirty .k-input-validation-icon {color: var(--kendo-color-error);}
+.k-input .k-input-button, .k-input .k-spinner-increase, .k-input .k-spinner-decrease {background-color: var(--kendo-color-surface-alt);}
+.k-input .k-input-button::before, .k-input .k-input-spinner::before {background-color: var(--kendo-color-border);
+  opacity: 1;}
+.k-input.k-focus, .k-input:focus, .k-input:focus-within {outline: var(--kendo-focus-outline-width, 1px) solid var(--kendo-color-subtle);
+  outline-offset: var(--kendo-focus-outline-offset, 1px);}
+.k-input.k-invalid.k-focus, .k-input.k-invalid:focus, .k-input.k-invalid:focus-within {outline-color: var(--kendo-color-error-on-surface);}
+.k-input .k-clear-value {color: var(--kendo-color-subtle);}
+.k-input .k-input-button:hover, .k-input .k-input-button.k-hover, .k-picker .k-input-button:hover, .k-picker .k-input-button.k-hover {background: none !important;}
+.k-input .k-input-button:focus, .k-input .k-input-button.k-focus, .k-picker .k-input-button:focus, .k-picker .k-input-button.k-focus {outline: none;}
+.k-textarea:has(.k-input-inner[style*=width]) {width: max-content;}
+.k-colorgradient-inputs .k-input .k-input-inner {padding-inline-start: 2px;
+  padding-inline-end: 2px;
+  text-align: center;
+  text-overflow: clip;}
+.k-combobox .k-input-button {border-inline-start-width: 0;
+  position: relative;}
+.k-combobox .k-input-button::before {content: "";
+  display: block;
+  position: absolute;
+  inset-inline-start: 0;
+  width: 1px;
+  background-color: currentColor;
+  opacity: 1;}
+.k-combobox .k-input-button:focus, .k-combobox .k-input-button.k-focus {outline: none;}
+.k-combobox.k-input-sm .k-input-button::before {top: calc(var(--kendo-spacing-2) / 2);
+  bottom: calc(var(--kendo-spacing-2) / 2);}
+.k-combobox .k-input-button::before, .k-combobox.k-input-md .k-input-button::before {top: calc(var(--kendo-spacing-2\.5) / 2);
+  bottom: calc(var(--kendo-spacing-2\.5) / 2);}
+.k-combobox.k-input-lg .k-input-button::before {top: calc(var(--kendo-spacing-3) / 2);
+  bottom: calc(var(--kendo-spacing-3) / 2);}
+.k-combobox .k-input-button::before {background-color: var(--kendo-color-border);
+  opacity: 1;}
+.k-dropdown-operator .k-input-button {border-width: 0;
+  width: min-content;}
+.k-dropdown-operator .k-input-button .k-button-icon {width: auto;
+  aspect-ratio: 1;}
+.k-dropdown-operator .k-input-inner {display: none;}
+.k-multiselect.k-rounded-none.k-input-sm {border-radius: var(--kendo-border-radius-none);}
+.k-multiselect.k-rounded-none.k-input-sm .k-chip {border-radius: max(0px, var(--kendo-border-radius-none) - var(--kendo-spacing-1) / 2);}
+.k-multiselect.k-rounded-none, .k-multiselect.k-rounded-none.k-input-md {border-radius: var(--kendo-border-radius-none);}
+.k-multiselect.k-rounded-none .k-chip, .k-multiselect.k-rounded-none.k-input-md .k-chip {border-radius: max(0px, var(--kendo-border-radius-none) - var(--kendo-spacing-1\.5) / 2);}
+.k-multiselect.k-rounded-none.k-input-lg {border-radius: var(--kendo-border-radius-none);}
+.k-multiselect.k-rounded-none.k-input-lg .k-chip {border-radius: max(0px, var(--kendo-border-radius-none) - var(--kendo-spacing-2) / 2);}
+.k-multiselect.k-rounded-sm.k-input-sm {border-radius: var(--kendo-border-radius-sm);}
+.k-multiselect.k-rounded-sm.k-input-sm .k-chip {border-radius: max(0px, var(--kendo-border-radius-sm) - var(--kendo-spacing-1) / 2);}
+.k-multiselect.k-rounded-sm, .k-multiselect.k-rounded-sm.k-input-md {border-radius: var(--kendo-border-radius-sm);}
+.k-multiselect.k-rounded-sm .k-chip, .k-multiselect.k-rounded-sm.k-input-md .k-chip {border-radius: max(0px, var(--kendo-border-radius-sm) - var(--kendo-spacing-1\.5) / 2);}
+.k-multiselect.k-rounded-sm.k-input-lg {border-radius: var(--kendo-border-radius-sm);}
+.k-multiselect.k-rounded-sm.k-input-lg .k-chip {border-radius: max(0px, var(--kendo-border-radius-sm) - var(--kendo-spacing-2) / 2);}
+.k-multiselect.k-input-sm, .k-multiselect.k-rounded-md.k-input-sm {border-radius: var(--kendo-border-radius-md);}
+.k-multiselect.k-input-sm .k-chip, .k-multiselect.k-rounded-md.k-input-sm .k-chip {border-radius: max(0px, var(--kendo-border-radius-md) - var(--kendo-spacing-1) / 2);}
+.k-multiselect, .k-multiselect.k-input-md, .k-multiselect.k-rounded-md, .k-multiselect.k-rounded-md.k-input-md {border-radius: var(--kendo-border-radius-md);}
+.k-multiselect .k-chip, .k-multiselect.k-input-md .k-chip, .k-multiselect.k-rounded-md .k-chip, .k-multiselect.k-rounded-md.k-input-md .k-chip {border-radius: max(0px, var(--kendo-border-radius-md) - var(--kendo-spacing-1\.5) / 2);}
+.k-multiselect.k-input-lg, .k-multiselect.k-rounded-md.k-input-lg {border-radius: var(--kendo-border-radius-md);}
+.k-multiselect.k-input-lg .k-chip, .k-multiselect.k-rounded-md.k-input-lg .k-chip {border-radius: max(0px, var(--kendo-border-radius-md) - var(--kendo-spacing-2) / 2);}
+.k-multiselect.k-rounded-lg.k-input-sm {border-radius: var(--kendo-border-radius-lg);}
+.k-multiselect.k-rounded-lg.k-input-sm .k-chip {border-radius: max(0px, var(--kendo-border-radius-lg) - var(--kendo-spacing-1) / 2);}
+.k-multiselect.k-rounded-lg, .k-multiselect.k-rounded-lg.k-input-md {border-radius: var(--kendo-border-radius-lg);}
+.k-multiselect.k-rounded-lg .k-chip, .k-multiselect.k-rounded-lg.k-input-md .k-chip {border-radius: max(0px, var(--kendo-border-radius-lg) - var(--kendo-spacing-1\.5) / 2);}
+.k-multiselect.k-rounded-lg.k-input-lg {border-radius: var(--kendo-border-radius-lg);}
+.k-multiselect.k-rounded-lg.k-input-lg .k-chip {border-radius: max(0px, var(--kendo-border-radius-lg) - var(--kendo-spacing-2) / 2);}
+.k-multiselect.k-rounded-full.k-input-sm {border-radius: var(--kendo-border-radius-full);}
+.k-multiselect.k-rounded-full.k-input-sm .k-chip {border-radius: max(0px, var(--kendo-border-radius-full) - var(--kendo-spacing-1) / 2);}
+.k-multiselect.k-rounded-full, .k-multiselect.k-rounded-full.k-input-md {border-radius: var(--kendo-border-radius-full);}
+.k-multiselect.k-rounded-full .k-chip, .k-multiselect.k-rounded-full.k-input-md .k-chip {border-radius: max(0px, var(--kendo-border-radius-full) - var(--kendo-spacing-1\.5) / 2);}
+.k-multiselect.k-rounded-full.k-input-lg {border-radius: var(--kendo-border-radius-full);}
+.k-multiselect.k-rounded-full.k-input-lg .k-chip {border-radius: max(0px, var(--kendo-border-radius-full) - var(--kendo-spacing-2) / 2);}
+.k-multiselecttree .k-input-values {width: auto;
+  max-width: 100%;}
+.k-multiselecttree .k-input-inner::before {content: "";
+  width: 0;
+  height: 1lh;
+  overflow: hidden;
+  flex: none;
+  display: inline-block;
+  vertical-align: top;}
+.k-otp .k-otp-input > .k-input-inner {text-align: center;
+  padding-inline: 0;}
+.k-appbar .k-input, .k-appbar .k-picker {width: 10em;}
+.k-pager-input .k-textbox, .k-pager-input .k-numerictextbox {margin-block: 0;
+  width: 5em;}
+.k-pager-sizes .k-input-inner, .k-pager-sizes .k-input-value-text {text-overflow: clip;}
+.k-smart-box .k-input-inner {padding-inline: 0;}
+.k-smart-box .k-input-prefix {cursor: pointer;}
+.k-smart-box.k-input-sm {padding-inline-end: 0;}
+.k-smart-box.k-input-sm .k-input-prefix {margin-inline-start: var(--kendo-spacing-1);}
+.k-smart-box.k-input-sm .k-input-inner {padding-inline: 0;}
+.k-smart-box, .k-smart-box.k-input-md {padding-inline-end: var(--kendo-spacing-1);}
+.k-smart-box .k-input-prefix, .k-smart-box.k-input-md .k-input-prefix {margin-inline-start: var(--kendo-spacing-1);}
+.k-smart-box .k-input-inner, .k-smart-box.k-input-md .k-input-inner {padding-inline: 0;}
+.k-smart-box.k-input-lg {padding-inline-end: var(--kendo-spacing-2);}
+.k-smart-box.k-input-lg .k-input-prefix {margin-inline-start: 0;}
+.k-smart-box.k-input-lg .k-input-inner {padding-inline: 0;}
+.k-smart-box .k-input-suffix {gap: var(--kendo-spacing-1);}
+.k-pivotgrid-configurator-content .k-form .k-textbox {flex-basis: 50%;}
+.k-calculated-field-header .k-textbox {min-width: 200px;}
+.k-calculated-field-content .k-textbox {width: 100%;}
+.k-filebrowser .k-search-wrap .k-input {flex: 1;
+  width: 100px;}
+.k-imageeditor-action-pane .k-input-inner, .k-imageeditor-action-pane .k-input-value-text {text-overflow: clip;}
+.k-prompt-box .k-input-inner {padding: var(--kendo-spacing-3);}
+.k-prompt-box:not(.k-prompt-box-multiline) .k-prompt-box-affix:has(+ .k-input-inner) {padding-inline-end: 0;}
+.k-prompt-box:not(.k-prompt-box-multiline) .k-input-inner + .k-prompt-box-affix {padding-inline-start: 0;}
+.k-prompt-box-multiline .k-prompt-box-affix:has(+ .k-input-inner) {padding-block-end: 0;}
+.k-prompt-box-multiline .k-input-inner + .k-prompt-box-affix {padding-block-start: 0;}
+.k-message-box .k-input-prefix-horizontal {display: inline-block;}
+.k-message-box .k-input-prefix, .k-message-box .k-input-suffix {width: 100%;
+  padding: var(--kendo-spacing-1);}
+.k-pdf-viewer-canvas > .k-search-panel .k-textbox {width: 10em;
+  flex: none;}
+.k-pdf-viewer-canvas > .k-search-panel .k-textbox .k-button {border-width: 0;}

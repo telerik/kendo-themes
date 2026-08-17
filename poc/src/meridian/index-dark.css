@@ -1,0 +1,15 @@
+/* Full distributable for the dark swatch.
+ *
+ * The devkit (and the Sass build) treat a swatch as a *complete* stylesheet —
+ * selecting one swaps the single theme <link>. So this entry ships the theme
+ * plus the swatch's colour overrides.
+ *
+ * `swatch-dark.css` is the same swatch as a delta-only artifact, which is what
+ * the byte report measures and what `verify/swatch.mjs` layers on top of
+ * `all.css`. Both are legitimate ways to ship it; the delta is only viable for
+ * consumers who load the base theme too.
+ */
+@layer kendo.tokens, kendo.components, kendo.theme, kendo.overrides;
+
+@import url("./index.css");
+@import url("./swatches/meridian-main-dark.css");

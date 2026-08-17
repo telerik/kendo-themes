@@ -1,0 +1,5 @@
+/* Split artifact: everything that is specific to Meridian. */
+@layer kendo.tokens, kendo.components, kendo.theme, kendo.overrides;
+
+@import url("./tokens.css");
+@import url("./theme.css");

@@ -1,0 +1,91 @@
+/*
+ * Kendo Themes — native CSS POC
+ * meridian/theme.css
+ *
+ * The entire Meridian "component theme" for button + input: token assignments
+ * only, no selectors beyond the component roots. In the Sass build the same
+ * information is spread across ~590 emitted rules.
+ */
+
+@layer kendo.theme {
+
+  /* ------------------------------------------------------------------ *
+   * Button
+   * ------------------------------------------------------------------ */
+
+  .k-button {
+    --kendo-button-border-width: 1px;
+    --kendo-button-gap: var(--kendo-spacing-1\.5);
+
+    --kendo-button-xs-padding-x: var(--kendo-spacing-1);
+    --kendo-button-xs-padding-y: var(--kendo-spacing-0\.5);
+    --kendo-button-xs-font-size: var(--kendo-font-size-sm, inherit);
+    --kendo-button-xs-line-height: var(--kendo-line-height-sm, normal);
+
+    --kendo-button-sm-padding-x: var(--kendo-spacing-2);
+    --kendo-button-sm-padding-y: var(--kendo-spacing-1);
+    --kendo-button-sm-font-size: var(--kendo-font-size-sm, inherit);
+    --kendo-button-sm-line-height: var(--kendo-line-height-sm, normal);
+
+    --kendo-button-md-padding-x: var(--kendo-spacing-2\.5);
+    --kendo-button-md-padding-y: var(--kendo-spacing-1\.5);
+    --kendo-button-md-font-size: var(--kendo-font-size, inherit);
+    --kendo-button-md-line-height: var(--kendo-line-height, normal);
+    --kendo-button-md-roundness: var(--kendo-border-radius-md);
+
+    --kendo-button-lg-padding-x: var(--kendo-spacing-3);
+    --kendo-button-lg-padding-y: var(--kendo-spacing-2);
+    --kendo-button-lg-font-size: var(--kendo-font-size-lg, inherit);
+    --kendo-button-lg-line-height: var(--kendo-line-height-lg, normal);
+
+    /* fill-mode look */
+    --kendo-button-solid-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+    --kendo-button-outline-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --kendo-button-colored-mix: 50%;
+    --kendo-button-clear-overlay-opacity: 0.1;
+
+    /* neutral (base) specialisations */
+    --kendo-button-base-solid-border: transparent;
+    --kendo-button-base-outline-border: color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent);
+    --kendo-button-base-flat-text: inherit;
+    --kendo-button-base-focus-outline: var(--kendo-color-subtle);
+
+    /* Meridian replaces the default focus ring with an outline */
+    --kendo-button-focus-shadow: none;
+  }
+
+  /* Per-colour exception: Meridian tones the flat `warning` washes down.
+     In the Sass build this is four extra emitted rules; here it is one. */
+  .k-button.k-button-warning {
+    --kc-mix-flat-hover: 25%;
+    --kc-mix-flat-active: 35%;
+  }
+
+  /* ------------------------------------------------------------------ *
+   * Input
+   * ------------------------------------------------------------------ */
+
+  .k-input {
+    --kendo-input-border-width: 1px;
+
+    --kendo-input-sm-padding-x: var(--kendo-spacing-2);
+    --kendo-input-sm-padding-y: var(--kendo-spacing-1);
+    --kendo-input-sm-font-size: var(--kendo-font-size-sm, inherit);
+    --kendo-input-sm-line-height: var(--kendo-line-height-sm, normal);
+
+    --kendo-input-md-padding-x: var(--kendo-spacing-2\.5);
+    --kendo-input-md-padding-y: var(--kendo-spacing-1\.5);
+    --kendo-input-md-font-size: var(--kendo-font-size, inherit);
+    --kendo-input-md-line-height: var(--kendo-line-height, normal);
+
+    --kendo-input-lg-padding-x: var(--kendo-spacing-3);
+    --kendo-input-lg-padding-y: var(--kendo-spacing-2);
+    --kendo-input-lg-font-size: var(--kendo-font-size-lg, inherit);
+    --kendo-input-lg-line-height: var(--kendo-line-height-lg, normal);
+
+    --kendo-input-solid-bg: var(--kendo-color-surface-alt);
+    --kendo-input-solid-shadow: 0 1px 2px 0 rgba(56, 66, 80, 0.05);
+    --kendo-input-outline-border: color-mix(in srgb, var(--kendo-color-base-emphasis) 80%, transparent);
+    --kendo-input-outline-hover-border: color-mix(in srgb, var(--kendo-color-base-emphasis) 90%, transparent);
+  }
+}

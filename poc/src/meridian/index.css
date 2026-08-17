@@ -1,0 +1,16 @@
+/*
+ * Kendo Themes — native CSS POC
+ * meridian/index.css — the distributable entry point.
+ *
+ * Layer order is declared once, up front. Everything downstream lands in a
+ * named layer, so ordering no longer depends on @use/@forward resolution or
+ * on the order the build happens to concatenate partials in.
+ */
+
+@layer kendo.tokens, kendo.components, kendo.theme, kendo.overrides;
+
+@import url("./tokens.css");
+@import url("../core/common.css");
+@import url("../core/button.css");
+@import url("../core/input.css");
+@import url("./theme.css");
