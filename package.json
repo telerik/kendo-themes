@@ -40,7 +40,7 @@
     "sassdoc": "^2.7.4",
     "nunjucks": "^3.2.3",
     "nx": "^22.7.8",
-    "postcss": "^8.4.47",
+    "postcss": "^8.5.26",
     "postcss-cli": "^11.0.0",
     "postcss-selector-parser": "^7.1.0",
     "sass": "1.100.0",
