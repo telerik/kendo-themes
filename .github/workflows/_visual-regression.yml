@@ -62,6 +62,21 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: npx reg-suit run || true     # visual change is NOT a hard failure; review is human
 
+      - name: Ensure .nojekyll on gh-pages
+        run: |
+          if git ls-remote --exit-code --heads origin gh-pages > /dev/null 2>&1; then
+            git fetch origin gh-pages
+            if ! git cat-file -e origin/gh-pages:.nojekyll 2>/dev/null; then
+              git worktree add --quiet .gh-pages-nojekyll origin/gh-pages
+              touch .gh-pages-nojekyll/.nojekyll
+              git -C .gh-pages-nojekyll add .nojekyll
+              git -C .gh-pages-nojekyll commit -q -m "chore: add .nojekyll"
+              git -C .gh-pages-nojekyll push origin HEAD:gh-pages
+              git worktree remove --force .gh-pages-nojekyll
+            fi
+          fi
+        continue-on-error: true   # best-effort; a missed .nojekyll only affects underscore-prefixed asset paths
+
       - name: Summarize result
         id: summary
         uses: actions/github-script@v9
