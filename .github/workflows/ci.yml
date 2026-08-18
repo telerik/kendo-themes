@@ -49,6 +49,9 @@ jobs:
   visual-regression:
     name: Visual regression
     needs: [ create-screenshots ]
+    permissions:
+      contents: write
+      pull-requests: write
     uses: ./.github/workflows/_visual-regression.yml
 
 
