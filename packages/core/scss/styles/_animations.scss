@@ -803,4 +803,158 @@
         }
     }
 
+    // Attribute-driven reveal animation (max-height/max-width "accordion" grow-shrink).
+    // Unlike slide's `@keyframes` (fixed per-direction transform, known at author time), reveal's
+    // target size is a *measured*, per-instance pixel value. Verified empirically that a keyframe's
+    // `to`/`from` CAN reference a custom property (`var(--k-reveal-size)`) and the browser resolves
+    // + interpolates it correctly - no bespoke `transition:`-based mechanism needed, same
+    // `@keyframes` + attribute vocabulary as slide above.
+    //
+    // The `--k-reveal-size` custom property is the contract: the component (`PanelBarItem`, or any
+    // future Reveal consumer) continuously measures its *content* node's natural size (e.g. via
+    // `ResizeObserver`, since content can resize independent of React re-renders) and keeps this var
+    // current at all times - `0` while closed, the measured px while open - regardless of whether an
+    // animation is in flight. CSS only ever reads it; it never has to know the number itself.
+    //
+    // `data-reveal-animate='true'` is a second, Reveal-specific gating attribute (not part of the
+    // 2-value `data-transition` vocabulary): unlike CSS *transitions* (which only ever fire on an
+    // actual computed-value change), a `@keyframes` animation plays as soon as its selector matches -
+    // including the very first style resolution when an element mounts already matching
+    // `[data-transition='open']`. Verified this empirically too. The component only adds
+    // `data-reveal-animate='true'` starting from the second render, so an item that mounts
+    // pre-expanded (`appear`-less by default) renders at its final size instantly, with no keyframe
+    // ever playing; only genuine, later open/close flips animate.
+    [data-reveal='vertical'] {
+        overflow: hidden;
+        max-height: var(--k-reveal-size, 0);
+    }
+
+    [data-reveal='horizontal'] {
+        overflow: hidden;
+        max-width: var(--k-reveal-size, 0);
+    }
+
+    @keyframes k-reveal-vertical-in {
+        from {
+            max-height: 0;
+        }
+
+        to {
+            max-height: var(--k-reveal-size, 0);
+        }
+    }
+
+    @keyframes k-reveal-vertical-out {
+        from {
+            max-height: var(--k-reveal-size, 0);
+        }
+
+        to {
+            max-height: 0;
+        }
+    }
+
+    @keyframes k-reveal-horizontal-in {
+        from {
+            max-width: 0;
+        }
+
+        to {
+            max-width: var(--k-reveal-size, 0);
+        }
+    }
+
+    @keyframes k-reveal-horizontal-out {
+        from {
+            max-width: var(--k-reveal-size, 0);
+        }
+
+        to {
+            max-width: 0;
+        }
+    }
+
+    [data-reveal='vertical'][data-reveal-animate='true'][data-transition='open'] {
+        animation: k-reveal-vertical-in k-transition(grow) both;
+    }
+
+    [data-reveal='vertical'][data-reveal-animate='true'][data-transition='closed'] {
+        animation: k-reveal-vertical-out k-transition(shrink) both;
+    }
+
+    [data-reveal='horizontal'][data-reveal-animate='true'][data-transition='open'] {
+        animation: k-reveal-horizontal-in k-transition(grow) both;
+    }
+
+    [data-reveal='horizontal'][data-reveal-animate='true'][data-transition='closed'] {
+        animation: k-reveal-horizontal-out k-transition(shrink) both;
+    }
+
+    // Attribute-driven scale + fade animation (centered overlay archetype: Dialog/Window today,
+    // any future centered modal-style component tomorrow). Two independent, co-occurring
+    // animations sharing the *same* `data-transition` flip on two different nodes - the panel
+    // itself (`[data-scale]`, scale+opacity) and its backdrop (`[data-fade]`, opacity only) -
+    // rather than slide/reveal's single-node case. Reuses the existing `scale-in`/`scale-out`/
+    // `fade-in`/`fade-out` `$default-transitions` tokens (already load-bearing for the legacy
+    // `.k-zoom-*`/`.k-fade` RTG classes above) - no new semantic tokens added, same constraint
+    // as the slide/reveal vocabulary.
+    @keyframes k-scale-in {
+        from {
+            transform: scale(.96);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes k-scale-out {
+        from {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        to {
+            transform: scale(.96);
+            opacity: 0;
+        }
+    }
+
+    [data-scale][data-transition='open'] {
+        animation: k-scale-in k-transition(scale-in) both;
+    }
+
+    [data-scale][data-transition='closed'] {
+        animation: k-scale-out k-transition(scale-out) both;
+    }
+
+    @keyframes k-fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes k-fade-out {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    [data-fade][data-transition='open'] {
+        animation: k-fade-in k-transition(fade-in) both;
+    }
+
+    [data-fade][data-transition='closed'] {
+        animation: k-fade-out k-transition(fade-out) both;
+    }
 }

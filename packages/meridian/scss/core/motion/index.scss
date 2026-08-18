@@ -74,27 +74,27 @@ $default-transitions: (
         easing: var(--kendo-easing-decelerate),
     ),
     scale-out: (
-        duration: var(--kendo-duration-quick),
+        duration: var(--kendo-duration-brief),
         easing: var(--kendo-easing-accelerate),
     ),
     scale-in: (
-        duration: var(--kendo-duration-rapid),
+        duration: var(--kendo-duration-quick),
         easing: var(--kendo-easing-decelerate),
     ),
     fade-out: (
-        duration: var(--kendo-duration-rapid),
+        duration: var(--kendo-duration-brief),
         easing: var(--kendo-easing-standard),
     ),
     fade-in: (
-        duration: var(--kendo-duration-swift),
+        duration: var(--kendo-duration-quick),
         easing: var(--kendo-easing-standard),
     ),
     slide-out: (
-        duration: var(--kendo-duration-swift),
+        duration: var(--kendo-duration-quick),
         easing: var(--kendo-easing-accelerate),
     ),
     slide-in: (
-        duration: var(--kendo-duration-speedy),
+        duration: var(--kendo-duration-rapid),
         easing: var(--kendo-easing-decelerate),
     ),
     emphasis: (
@@ -110,11 +110,11 @@ $default-transitions: (
         easing: var(--kendo-easing-standard),
     ),
     shrink: (
-        duration: var(--kendo-duration-brisk),
+        duration: var(--kendo-duration-quick),
         easing: var(--kendo-easing-accelerate),
     ),
     grow: (
-        duration: var(--kendo-duration-prompt),
+        duration: var(--kendo-duration-rapid),
         easing: var(--kendo-easing-standard),
     ),
     pulse: (
