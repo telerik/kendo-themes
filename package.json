@@ -114,6 +114,7 @@
   "overrides": {
     "ast-v8-to-istanbul": "1.0.3",
     "@types/react": "19.2.15",
+    "@types/glob": "9.0.0",
     "nwsapi": "2.2.23",
     "vite": "8.0.14"
   }
