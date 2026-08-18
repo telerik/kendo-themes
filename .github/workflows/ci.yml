@@ -80,14 +80,10 @@ jobs:
               ['${{ needs.ci-a11y-specs.result }}', 'Status check > A11y Specs'],
               ['${{ needs.ci-docs.result }}', 'Status check > Docs'],
               ['${{ needs.ci-test-html-spec.result }}', 'Status check > HTML spec'],
-              ['success', 'Status check > Visual']
+              ['${{ needs.visual-regression.result }}', 'Status check > Visual']
             ];
 
-            const mapState = (r) => {
-              if (r === 'success') return 'success';
-              if (r === 'cancelled' || r === 'skipped') return 'failure';
-              return 'failure';
-            };
+            const mapState = (r) => r === 'success' ? 'success' : 'failure';
 
             const sha = context.sha;
             const targetUrl = '${{ needs.visual-regression.outputs.report-url }}' || `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
@@ -100,7 +96,7 @@ jobs:
                 context: contextName,
                 state: mapState(result),
                 target_url: targetUrl,
-                description: 'Automated visual snapshot commit'
+                description: 'CI status check'
               })
             ));
 
