@@ -11,7 +11,7 @@
     "reg-keygen-git-hash-plugin": true,
     "reg-publish-gh-pages-plugin": {
       "branch": "gh-pages",
-      "outDir": "."
+      "outDir": "reports"
     }
   }
 }

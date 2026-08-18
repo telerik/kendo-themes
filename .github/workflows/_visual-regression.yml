@@ -73,7 +73,7 @@ jobs:
             const added   = out.newItems.length;
             const deleted = out.deletedItems.length;
             const passed  = out.passedItems.length;
-            const reportUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/`;
+            const reportUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/reports/`;
             core.setOutput('report-url', reportUrl);
             core.setOutput('changed', String(changed));
             core.setOutput('new', String(added));
