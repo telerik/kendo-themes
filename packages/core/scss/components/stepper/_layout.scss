@@ -57,6 +57,7 @@
             display: flex;
             align-items: center;
             overflow: visible;
+            cursor: pointer;
         }
 
         // Step indicator
@@ -129,14 +130,14 @@
             border-width: 0;
         }
         .k-step-label .k-step-text {
-            max-width: calc(10em - (#{$kendo-icon-size} + #{$kendo-icon-spacing}));
+            max-width: calc(10em - (#{$ki-icon-size} + #{$kendo-stepper-label-icon-spacing}));
             flex-grow: k-z-index("base", 1);
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         .k-step-label .k-icon  {
-            margin-inline-start: $kendo-icon-spacing;
+            margin-inline-start: $kendo-stepper-label-icon-spacing;
         }
 
         .k-step-current .k-step-label {

@@ -1,0 +1,75 @@
+@use "../../color-system/index.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-agent-response--theme-base() {
+    .k-agent-step > .k-agent-step-head,
+    .k-thought {
+        .k-agent-step-icon,
+        .k-agent-step-label,
+        .k-agent-step-expand {
+            color: k-color("on-app-surface");
+        }
+
+        .k-agent-step-sep,
+        .k-agent-step-secondary {
+            color: k-color("subtle");
+        }
+
+        .k-agent-step-added {
+            color: $kendo-agent-step-added-color;
+        }
+
+        .k-agent-step-removed {
+            color: $kendo-agent-step-removed-color;
+        }
+    }
+
+    .k-agent-completed > .k-agent-step-head,
+    .k-thought.k-thought-completed {
+        .k-agent-step-icon,
+        .k-agent-step-label,
+        .k-agent-step-expand {
+            color: k-color("subtle");
+        }
+    }
+
+    .k-agent-step > .k-agent-step-head:hover {
+        .k-agent-step-icon,
+        .k-agent-step-label,
+        .k-agent-step-expand,
+        .k-agent-step-sep,
+        .k-agent-step-secondary {
+            color: k-color("on-app-surface");
+        }
+    }
+
+    .k-agent-step > .k-agent-step-head {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-agent-step-focus-shadow, true );
+        }
+    }
+
+    .k-agent-step:not(.k-agent-completed) > .k-agent-step-head .k-agent-step-label,
+    .k-thought:not(.k-thought-completed) .k-agent-step-label {
+        @include text-shimmer();
+    }
+
+    // Reasoning Specific Styles
+    .k-reasoning {
+    }
+
+    // Tool Call Specific Styles
+    .k-tool-call-label {
+        color: k-color("subtle");
+    }
+
+    // Chain of Thought Specific Styles
+    .k-chain-of-thought {
+    }
+
+    .k-thought .k-agent-step-icon-col::after {
+        background: $kendo-thought-connector-color;
+    }
+}

@@ -14,6 +14,10 @@ const repoRoot = resolve(devkitDir, '../../..');
 // Packages under packages/* that are not selectable themes.
 const NON_THEME_PACKAGES = new Set(['utils', 'html']);
 
+// Packages whose SCSS changes should trigger a recompile of ALL themes (they are
+// design-system dependencies consumed by every theme via @use / @forward).
+const SOURCE_ONLY_PACKAGES = new Set(['core']);
+
 const execAsync = promisify(exec);
 const sassBin = resolve(repoRoot, 'node_modules/.bin/sass');
 
@@ -99,10 +103,31 @@ function legacyRedirectPlugin(): Plugin {
 /**
  * Generates the `virtual:test-routes` module — a static map of
  * `{ [component]: testName[] }` derived from `packages/html/src` at startup.
+ * Also watches for new/deleted test files and invalidates the virtual module
+ * so the dev server picks them up without a restart.
  */
 function testRoutesPlugin(): Plugin {
     const virtualId = 'virtual:test-routes';
     const resolvedId = `\0${virtualId}`;
+
+    function buildRoutes(): string {
+        const files = globSync('packages/html/src/**/tests/*.tsx', {
+            cwd: repoRoot,
+            posix: true,
+        });
+
+        const routes: Record<string, string[]> = {};
+        for (const file of files) {
+            const m = file.match(/packages\/html\/src\/([^/]+)\/tests\/([^/]+)\.tsx$/);
+            if (m) {
+                const [, component, test] = m;
+                if (!routes[component]) routes[component] = [];
+                routes[component].push(test);
+            }
+        }
+
+        return `export const testRoutes = ${JSON.stringify(routes)};`;
+    }
 
     return {
         name: 'devkit-test-routes',
@@ -111,23 +136,23 @@ function testRoutesPlugin(): Plugin {
         },
         load(id) {
             if (id !== resolvedId) return;
+            return buildRoutes();
+        },
+        configureServer(server) {
+            const testGlob = resolve(repoRoot, 'packages/html/src/**/tests/*.tsx');
+            server.watcher.add(testGlob);
 
-            const files = globSync('packages/html/src/**/tests/*.tsx', {
-                cwd: repoRoot,
-                posix: true,
-            });
+            const invalidate = () => {
+                const mod = server.moduleGraph.getModuleById(resolvedId);
+                if (mod) server.moduleGraph.invalidateModule(mod);
+                server.ws.send({ type: 'full-reload' });
+            };
 
-            const routes: Record<string, string[]> = {};
-            for (const file of files) {
-                const m = file.match(/packages\/html\/src\/([^/]+)\/tests\/([^/]+)\.tsx$/);
-                if (m) {
-                    const [, component, test] = m;
-                    if (!routes[component]) routes[component] = [];
-                    routes[component].push(test);
-                }
-            }
+            const isTestFile = (f: string) =>
+                f.replace(/\\/g, '/').match(/packages\/html\/src\/[^/]+\/tests\/[^/]+\.tsx$/) !== null;
 
-            return `export const testRoutes = ${JSON.stringify(routes)};`;
+            server.watcher.on('add', (f) => { if (isTestFile(f)) invalidate(); });
+            server.watcher.on('unlink', (f) => { if (isTestFile(f)) invalidate(); });
         },
     };
 }
@@ -182,6 +207,32 @@ function swatchMapPlugin(): Plugin {
 function scssWatchPlugin(): Plugin {
     const pending = new Map<string, ReturnType<typeof setTimeout>>();
 
+    /** Returns all compilable theme packages (have scss/all.scss, are not utils/html/core). */
+    function getThemePackages(): string[] {
+        return globSync('packages/*/scss/all.scss', { cwd: repoRoot, posix: true })
+            .map((f) => f.split('/')[1])
+            .filter((pkg) => !NON_THEME_PACKAGES.has(pkg) && !SOURCE_ONLY_PACKAGES.has(pkg));
+    }
+
+    function scheduleRecompile(server: ViteDevServer, theme: string): void {
+        const existing = pending.get(theme);
+        if (existing) clearTimeout(existing);
+
+        pending.set(theme, setTimeout(async () => {
+            pending.delete(theme);
+            server.config.logger.info(`  → [kendo] recompiling ${theme}/all.css…`, { timestamp: true });
+
+            try {
+                await compileAllCss(theme);
+                server.config.logger.info(`  ✓ [kendo] ${theme}/all.css ready`, { timestamp: true });
+                // Notify any connected browser to hot-swap the CSS link
+                server.ws.send({ type: 'custom', event: 'kendo:css-update', data: { theme } });
+            } catch (err) {
+                server.config.logger.error(`  ✗ [kendo] ${theme} sass error:\n${execError(err)}`);
+            }
+        }, 300));
+    }
+
     return {
         name: 'devkit-scss-watch',
         apply: 'serve',
@@ -194,26 +245,19 @@ function scssWatchPlugin(): Plugin {
                 const m = normalised.match(/packages\/([^/]+)\/scss\//);
                 if (!m) return;
 
-                const theme = m[1];
-                if (NON_THEME_PACKAGES.has(theme)) return;
+                const pkg = m[1];
+                if (NON_THEME_PACKAGES.has(pkg)) return;
 
-                // Debounce rapid saves — only compile once per 300 ms quiet window
-                const existing = pending.get(theme);
-                if (existing) clearTimeout(existing);
+                // A change in a source-only package (e.g. core) affects every theme —
+                // recompile them all; otherwise only recompile the changed theme.
+                const themes = SOURCE_ONLY_PACKAGES.has(pkg) ? getThemePackages() : [pkg];
+                if (SOURCE_ONLY_PACKAGES.has(pkg)) {
+                    server.config.logger.info(`  → [kendo] core changed — scheduling recompile for all themes`, { timestamp: true });
+                }
 
-                pending.set(theme, setTimeout(async () => {
-                    pending.delete(theme);
-                    server.config.logger.info(`  → [kendo] recompiling ${theme}/all.css…`, { timestamp: true });
-
-                    try {
-                        await compileAllCss(theme);
-                        server.config.logger.info(`  ✓ [kendo] ${theme}/all.css ready`, { timestamp: true });
-                        // Notify any connected browser to hot-swap the CSS link
-                        server.ws.send({ type: 'custom', event: 'kendo:css-update', data: { theme } });
-                    } catch (err) {
-                        server.config.logger.error(`  ✗ [kendo] ${theme} sass error:\n${execError(err)}`);
-                    }
-                }, 300));
+                for (const theme of themes) {
+                    scheduleRecompile(server, theme);
+                }
             });
         },
     };

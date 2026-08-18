@@ -4,6 +4,7 @@
 /// @param {List} $list - The list to check.
 /// @param {Any} $value - The value to check for.
 /// @return {Boolean} - Whether `$list` contains `$value`.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-list-includes( ( "foo", "bar" ), "foo" ); // => true
@@ -15,6 +16,7 @@
 /// Reverse the order of items in `$list`.
 /// @param {List} $list - The list to reverse.
 /// @return {List} - The reversed list.
+/// @group functions
 ///
 /// @example scss - Usage
 ///   @debug k-list-reverse( ( "foo", "bar" ) ); // => "bar, foo"

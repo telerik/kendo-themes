@@ -13,6 +13,7 @@
         &.k-badge-solid {
             #{k-when-default($kendo-badge-default-theme-color, "base")}
             &.k-badge-base {
+                /* Exactly the same as the color tokens in core, but leaving it for custom variables support */
                 color: $kendo-badge-text;
                 background-color: $kendo-badge-bg;
                 border-color: $kendo-badge-border;
@@ -21,10 +22,8 @@
 
         #{k-when-default($kendo-badge-default-fill-mode, "outline")}
         &.k-badge-outline {
-            #{k-when-default($kendo-badge-default-theme-color, "base")}
-            &.k-badge-base {
-                border-color: $kendo-badge-border;
-            }
+            /* Exactly the same as the color tokens in core, but leaving it for custom variables support */
+            border-color: currentColor;
 
             @each $name in $kendo-badge-theme-colors {
                 #{k-when-default($kendo-badge-default-theme-color, $name)}

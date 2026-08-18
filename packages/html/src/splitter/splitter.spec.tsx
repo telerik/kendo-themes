@@ -1,6 +1,6 @@
 import { classNames } from '../misc';
-import { SplitterPane, KendoSplitterPaneProps } from './splitter-pane';
-import { SplitterSplitbar } from './splitter-splitbar';
+import { SplitterPane, KendoSplitterPaneProps } from './splitter-pane.spec';
+import { SplitterSplitbar } from './splitter-splitbar.spec';
 
 import { KendoComponent } from '../_types/component';
 import { SPLITTER_FOLDER_NAME, SPLITTER_MODULE_NAME } from './constants';
@@ -18,6 +18,11 @@ const defaultOptions = {
     orientation: "horizontal",
 } as const;
 
+/**
+ * @ux {Resizable panes} The separator between panes can be dragged to resize them.
+ * @ux {Collapse / Expand} Individual panes can be collapsed and expanded using toggle arrows.
+ * @ux {Orientation} Can be laid out horizontally (side-by-side) or vertically (stacked).
+ */
 export const Splitter: KendoComponent<KendoSplitterProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSplitterProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -80,25 +85,19 @@ Splitter.moduleName = SPLITTER_MODULE_NAME;
 Splitter.folderName = SPLITTER_FOLDER_NAME;
 
 /**
- * Accessibility specification for Splitter.
+ * @keyboard {ArrowUp} Moves up the split-bar in a vertical Splitter.
+ * @keyboard {ArrowDown} Moves down a split-bar in a vertical Splitter.
+ * @keyboard {ArrowLeft} Moves left a split-bar in a horizontal Splitter.
+ * @keyboard {ArrowRight} Moves right a split-bar in a horizontal Splitter.
+ * @keyboard {Control/Cmd(Mac) + ArrowUp} Moves the splitbar up to collapse/expand the adjacent panes in the up direction.
+ * @keyboard {Control/Cmd(Mac) + ArrowDown} Moves the splitbar down to collapse/expand the adjacent panes in the down direction.
+ * @keyboard {Control/Cmd(Mac) + ArrowLeft} Moves the splitbar left to collapse/expand the adjacent panes in the left direction.
+ * @keyboard {Control/Cmd(Mac) + ArrowRight} Moves the splitbar right to collapse/expand the adjacent panes in the right direction.
+ * @keyboard {Enter} Toggles the collapsed state of the nearest collapsible pane.
+ * @keyboard {Tab} The key that allows focusing a splitter bar. Thus, all splitbars have `tabindex` and are included in the tab sequence.
  *
- * @accessibility
- * - Panes have role=group
- * - SplitBar has role=separator with aria-label
- * - Horizontal splitbars have aria-orientation=vertical
- * - Keyboard shortcuts announced via aria-keyshortcuts
- *
- * @wcag 4.1.2 Name, Role, Value - separator pattern for resizable panes
+ * @see https://www.w3.org/TR/wai-aria-1.2/#separator WAI-ARIA specification for separator
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/separator_role MDN reference for the separator role
  */
-Splitter.ariaSpec = {
-    selector: '.k-splitter',
-    rules: [
-        { selector: '.k-pane', attribute: 'role=group', usage: 'Sets the proper role for the Splitter pane.' },
-        { selector: '.k-splitbar', attribute: 'role=separator', usage: 'Sets the proper role for the Splitter split-bar element.' },
-        { selector: '.k-splitbar', attribute: 'aria-label', usage: 'An accessible name for the separator.' },
-        { selector: '.k-splitbar-horizontal', attribute: 'aria-orientation=vertical', usage: 'When a splitbar separates two panes horizontally, its aria-orientation must be explicitly set to vertical.' },
-        { selector: '.k-splitbar', attribute: 'aria-keyshortcuts', usage: 'Announces available keyboard shortcuts.' },
-    ]
-};
 
 export default Splitter;

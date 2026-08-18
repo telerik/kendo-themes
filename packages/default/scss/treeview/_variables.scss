@@ -9,6 +9,10 @@ $kendo-treeview-default-size: "md" !default;
 /// The gap of the TreeView.
 /// @group treeview
 $kendo-treeview-gap: k-spacing(0.5) !default;
+
+/// The spacing between icon and text in TreeView items.
+/// @group treeview
+$kendo-treeview-item-icon-spacing: k-spacing(1) !default;
 /// The border radius of the TreeView.
 /// @group treeview
 $kendo-treeview-border-radius: k-border-radius(sm) !default;
@@ -170,6 +174,7 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
 @forward "@progress/kendo-theme-core/scss/components/treeview/_variables.scss" with (
     $kendo-treeview-default-size: $kendo-treeview-default-size,
     $kendo-treeview-gap: $kendo-treeview-gap,
+    $kendo-treeview-item-icon-spacing: $kendo-treeview-item-icon-spacing,
     $kendo-treeview-border-radius: $kendo-treeview-border-radius,
     $kendo-treeview-font-family: $kendo-treeview-font-family,
     $kendo-treeview-font-size: $kendo-treeview-font-size,

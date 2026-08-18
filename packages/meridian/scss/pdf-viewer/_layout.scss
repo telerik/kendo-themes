@@ -6,7 +6,7 @@
     @include kendo-pdf-viewer--layout-base();
 
     .k-pdf-viewer {
-        .k-toolbar {
+         > .k-toolbar {
             @include border-top-radius($kendo-pdf-viewer-border-radius);
             @include border-bottom-radius(0);
         }

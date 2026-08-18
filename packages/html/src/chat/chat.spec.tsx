@@ -35,6 +35,13 @@ const defaultOptions = {
     tools: defaultTools,
 };
 
+/**
+ * @ux {Message list} Displays a scrollable list of messages from the user and the agent.
+ * @ux {Input} A text input at the bottom lets the user compose and send messages.
+ * @ux {Toolbar} An optional toolbar above the input provides additional actions.
+ * @ux {Typing indicator} Shows an animated indicator while the other party is responding.
+ * @ux {Suggestions} Displays quick-reply suggestion chips above the input.
+ */
 export const Chat: KendoComponent<KendoChatProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChatProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -107,30 +114,16 @@ Chat.defaultOptions = defaultOptions;
 Chat.moduleName = CHAT_MODULE_NAME;
 Chat.folderName = CHAT_FOLDER_NAME;
 
-Chat.ariaSpec = {
-    selector: '.k-chat',
-    rules: [
-        // Message list
-        { selector: '.k-message-list', attribute: 'role=log', usage: 'The role of the Chat message list must imply that there is a log (list) of messages.' },
-        { selector: '.k-message-list', attribute: 'aria-label', usage: 'Announces the purpose of the Chat message list.' },
-        { selector: '.k-message-list', attribute: 'aria-live=polite', usage: 'Announces new messages in the Chat message list.' },
-        // Bubble
-        { selector: '.k-bubble', attribute: 'tabindex=0', usage: 'The Chat bubble must be focusable.' },
-        // Typing indicator
-        { selector: '.k-bubble .k-typing-indicator', attribute: 'tabindex=-1', usage: 'The Chat bubble typing indicator should not be focusable.' },
-        // Expandable indicator
-        { selector: '.k-bubble-expandable-indicator', attribute: 'role=button', usage: 'The expandable indicator must have an appropriate role.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'aria-label or title', usage: 'The expandable indicator must be properly labelled.' },
-        { selector: '.k-bubble-expandable-indicator', attribute: 'tabindex=0', usage: 'The expandable indicator must be part of the page tabsequence.' },
-        // Reference close button
-        { selector: '.k-message-reference>.k-button', attribute: 'aria-label or title', usage: 'The reference close button must be properly labelled.' },
-        { selector: '.k-message-reference>.k-button', attribute: 'role=button or nodeName=button', usage: 'The reference close button must have an appropriate role.' },
-        // Prompt box suffix buttons
-        { selector: '.k-prompt-box-affix>.k-button', attribute: 'role=button or nodeName=button', usage: 'The buttons must have appropriate role.' },
-        { selector: '.k-prompt-box-affix>.k-button', attribute: 'aria-label or title', usage: 'The buttons must be properly labelled.' },
-        // Disabled send button
-        { selector: '.k-prompt-box-affix>.k-button.k-disabled', attribute: 'disabled', usage: 'Announces the send action as disabled when necessary.' },
-    ]
-};
+/**
+ * @keyboard {ArrowUp} Selects and focuses the previous Chat bubble
+ * @keyboard {ArrowDown} Selects and focuses the next Chat bubble
+ * @keyboard {Home} Selects and focuses the first Chat bubble
+ * @keyboard {End} Selects and focuses the last Chat bubble
+ * @keyboard {Enter or Space} Triggers a click action on the element.
+ * @keyboard {Enter} Sends the message.
+ * @keyboard {Shift + Enter} Start a new line in the textarea message box.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#log WAI-ARIA specification for log
+ */
 
 export default Chat;

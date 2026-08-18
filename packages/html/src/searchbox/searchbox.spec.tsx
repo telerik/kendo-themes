@@ -40,7 +40,6 @@ export type KendoSearchboxProps = KendoSearchboxOptions & {
     placeholder?: string;
     showIcon?: boolean;
     icon?: string;
-    /** @aria Accessible name for the inner input element */
     'aria-label'?: string;
 };
 
@@ -51,6 +50,11 @@ const defaultOptions = {
     icon: "search"
 };
 
+/**
+ * @ux {Search input} A styled input field dedicated to entering search queries.
+ * @ux {Search button} A magnifier button or Enter key submits the query.
+ * @ux {Clear button} An × button clears the current value.
+ */
 export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoSearchboxProps &
         KendoSearchboxState &
@@ -74,7 +78,6 @@ export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState
         'aria-label': ariaLabel,
         ...other
     } = props;
-
 
     return (
         <Input

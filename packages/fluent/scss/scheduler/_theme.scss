@@ -56,13 +56,6 @@
         border-color: $kendo-scheduler-marquee-color;
     }
 
-    // Edit dialog
-    .k-scheduler-edit-dialog {
-        .k-dialog-actions {
-            border-color: $kendo-scheduler-border;
-        }
-    }
-
     // Year view
     .k-scheduler-yearview {
         .k-day-indicator {
@@ -71,24 +64,6 @@
 
         .k-selected .k-day-indicator {
             @include fill( $bg: $kendo-scheduler-yearview-indicator-selected-bg );
-        }
-    }
-
-    // Tooltip
-    .k-tooltip.k-scheduler-tooltip {
-        @include fill(
-            $kendo-scheduler-tooltip-text,
-            $kendo-scheduler-tooltip-bg,
-            $kendo-scheduler-tooltip-border
-        );
-        @include box-shadow( $kendo-scheduler-tooltip-shadow );
-
-        .k-callout {
-            @include fill( $color: $kendo-scheduler-tooltip-callout-color );
-        }
-
-        .k-tooltip-title .k-day {
-            color: k-color(primary-emphasis);
         }
     }
 

@@ -12,7 +12,6 @@ import { ActionSheet, ActionSheetHeader, ActionSheetFooter, KendoActionSheetProp
 
 import { ColorEditor } from "../coloreditor";
 
-
 import { KendoComponent } from '../_types/component';
 import { COLORPICKER_FOLDER_NAME, COLORPICKER_MODULE_NAME } from './constants';
 export const COLORPICKER_CLASSNAME = `k-colorpicker`;
@@ -60,6 +59,20 @@ const defaultOptions = {
     arrowIconName: 'chevron-down'
 };
 
+/**
+ * @aria {role="combobox"} The focusable element should have role combobox (input with popup).
+ * @aria {aria-label|aria-labelledby} The component needs an accessible name including the currently selected value.
+ * @aria {aria-haspopup="dialog"} Indicates the component has a Dialog Popup.
+ * @aria {aria-expanded="true"|\"false"} Announces the visibility state of the popup.
+ * @aria {aria-controls} Points to the popup element.
+ * @aria {tabindex="0"} The element must be focusable.
+ * @aria {aria-disabled="true"} Rendered only when the picker is disabled.
+ * @aria {tabindex="-1"} The inner ColorGradient must be removed from the page tab sequence.
+ * @ux {Popup} Opens a color picker popup when the swatch button is clicked.
+ * @ux {Color preview} The trigger button reflects the currently selected color.
+ * @ux {Flat mode} Can be rendered inline without a popup wrapper.
+ * @ux {Gradient and palette tabs} Tabs let the user switch between gradient picker and palette.
+ */
 export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoColorPickerProps &
         KendoColorPickerState &
@@ -89,7 +102,6 @@ export const ColorPicker: KendoComponent<KendoColorPickerProps & KendoColorPicke
         adaptiveSubtitle,
         ...other
     } = props;
-
 
     const popupId = 'colorpicker-popup';
 
@@ -184,31 +196,14 @@ ColorPicker.moduleName = COLORPICKER_MODULE_NAME;
 ColorPicker.folderName = COLORPICKER_FOLDER_NAME;
 
 /**
- * Accessibility specification for ColorPicker.
- *
- * @accessibility
- * - Wrapper has role=combobox with aria-haspopup=dialog
- * - aria-expanded indicates popup visibility
- * - tabindex=0 makes element focusable
- * - Disabled state uses aria-disabled=true
- * - Inner ColorGradient in popup has tabindex=-1
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for color selection
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens pop up
+ * @keyboard {Enter} Opens pop up
+ * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} Closes popup
+ * @keyboard {Escape} Closes Popup and moves focus back to k-colorpicker element.
+ * @keyboard {Tab} Navigates to the next focusable element in the Popup. If current focus is on the last element, moves focus to the first focusable item in the Popup.
+ * @keyboard {Shift + Tab} Navigates to the previous focusable element in the Popup. If current focus is on the first element, moves focus to the last focusable item in the Popup.
+ * @keyboard {Enter} For button items, executes the currently focused button action.
+ * @keyboard {Escape} If any of the colorgradient elements are currently focused, bring focus back to the k-colorpicker element.
  */
-ColorPicker.ariaSpec = {
-    selector: '.k-colorpicker',
-    rules: [
-        { selector: '.k-colorpicker', attribute: 'role=combobox', usage: 'The focusable element should have role combobox (input with popup).' },
-        { selector: '.k-colorpicker', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
-        { selector: '.k-colorpicker', attribute: 'aria-haspopup=dialog', usage: 'Indicates the component has a Dialog Popup.' },
-        { selector: '.k-colorpicker', attribute: 'aria-expanded=true/false', usage: 'Announces the visibility state of the popup.' },
-        { selector: '.k-colorpicker', attribute: 'aria-controls (when open)', usage: 'Points to the popup element.' },
-        { selector: '.k-colorpicker', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-colorpicker.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-colorpicker.k-disabled .k-button', attribute: 'disabled or aria-disabled=true', usage: 'Rendered only when the picker is disabled.' },
-        { selector: '.k-colorgradient', attribute: 'tabindex=-1', usage: 'The inner ColorGradient must be removed from the page tab sequence.' },
-    ]
-};
 
 export default ColorPicker;

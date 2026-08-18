@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-matches-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-pdf-viewer-search-panel-matches-spacing, var( --kendo-icon-spacing, .5rem ) )</code></td>
-    <td><code>var(--kendo-pdf-viewer-search-panel-matches-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
+    <td><code>var( --kendo-pdf-viewer-search-panel-matches-spacing, #{$kendo-icon-spacing} )</code></td>
+    <td><code>var(--kendo-pdf-viewer-search-panel-matches-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the matches container in the PDFViewer search panel.</div></div>

@@ -3,22 +3,29 @@ import { ButtonGroup } from "../../button-group";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { Toolbar } from "../../toolbar";
 import { SchedulerBody, SchedulerCell, SchedulerContent, SchedulerEvent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimeline, SchedulerTimes, SchedulerToolbar, SchedulerWeek } from "..";
-import { Icon } from "../../icon";
+
+const style = `
+    #test-area {
+        max-width: 1080px;
+    }
+`;
 
 export default () => (
     <>
+        <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <SchedulerWeek
                 toolbar={
                     <SchedulerToolbar>
-                        <ButtonGroup className="k-scheduler-navigation">
-                            <Button className="k-group-start">Today</Button>
-                            <Button icon="chevron-left"></Button>
-                            <Button className="k-group-end" icon="chevron-right"></Button>
+                        <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                        <Button fillMode="flat">Today</Button>
+                        <ButtonGroup fillMode="flat">
+                            <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                            <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                         </ButtonGroup>
-                        <Button icon="calendar" className="k-nav-current" fillMode="flat" >
-                        Monday, June 10, 2013 - Friday, June 14, 2013
+                        <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
+                            10 June – 14 June
                         </Button>
                         <span className="k-spacer"></span>
                         <SegmentedControl thumbStyles={{ width: "18%", left: "16%" }} className="k-scheduler-views">
@@ -45,7 +52,7 @@ export default () => (
                                     <SchedulerTimes>
                                         <SchedulerTable>
                                             <tbody>
-                                                <tr style={{ height: "37px" }}>
+                                                <tr style={{ height: "55px" }}>
                                                     <SchedulerCell as="th" />
                                                 </tr>
                                                 <tr style={{ height: "72px" }}>
@@ -60,11 +67,11 @@ export default () => (
                                         <SchedulerTable>
                                             <tbody>
                                                 <tr>
-                                                    <SchedulerCell as="th" text="Mon 6/10" colspan={1} />
-                                                    <SchedulerCell as="th" text="Tue 6/11" colspan={1} />
-                                                    <SchedulerCell as="th" text="Wed 6/12" colspan={1} />
-                                                    <SchedulerCell as="th" text="Thu 6/13" colspan={1} />
-                                                    <SchedulerCell as="th" text="Fri 6/14" colspan={1} />
+                                                    <SchedulerCell as="th" dayText="Mon" text="10" colspan={1} />
+                                                    <SchedulerCell as="th" dayText="Tue" text="11" colspan={1} />
+                                                    <SchedulerCell as="th" today dayText="Wed" text="12" colspan={1} />
+                                                    <SchedulerCell as="th" dayText="Thu" text="13" colspan={1} />
+                                                    <SchedulerCell as="th" dayText="Fri" text="14" colspan={1} />
                                                 </tr>
                                             </tbody>
                                         </SchedulerTable>
@@ -80,21 +87,7 @@ export default () => (
                                                     </tr>
                                                 </tbody>
                                             </SchedulerTable>
-                                            <SchedulerEvent
-                                                resizable="horizontal"
-                                                eventPrefix={
-                                                    <Icon icon="chevron-left"></Icon>
-                                                }
-                                                eventSuffix={
-                                                    <>
-                                                        <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
-                                                        <Icon icon="chevron-right"></Icon>
-                                                    </>
-                                                }>
-                                                <div>
-                                                    <div className="k-event-template">Two Weeks in NZ</div>
-                                                </div>
-                                            </SchedulerEvent>
+                                            <SchedulerEvent resizable="horizontal" title="Two Weeks in NZ" />
                                         </div>
                                     </SchedulerHeader>
                                 </td>
@@ -468,13 +461,14 @@ export default () => (
                 toolbar={
                     <>
                         <SchedulerToolbar>
-                            <ButtonGroup className="k-scheduler-navigation">
-                                <Button className="k-group-start">Today</Button>
-                                <Button icon="chevron-left"></Button>
-                                <Button className="k-group-end" icon="chevron-right"></Button>
+                            <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                            <Button fillMode="flat">Today</Button>
+                            <ButtonGroup fillMode="flat">
+                                <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                                <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                             </ButtonGroup>
-                            <Button icon="calendar" className="k-nav-current" fillMode="flat" >
-                        Monday, February 18, 2019
+                            <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
+                                18 February
                             </Button>
                             <span className="k-spacer"></span>
                             <SegmentedControl thumbStyles={{ width: "23%", left: "54%" }} className="k-scheduler-views">
@@ -549,14 +543,14 @@ export default () => (
                                         <SchedulerTable style={{ width: '100%' }}>
                                             <tbody>
                                                 <tr style={{ height: '50px' }}>
-                                                    <SchedulerCell as="td" className="k-today k-nonwork-hour"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today k-nonwork-hour"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
-                                                    <SchedulerCell as="td" className="k-today"></SchedulerCell>
+                                                    <SchedulerCell as="td" today className="k-nonwork-hour"></SchedulerCell>
+                                                    <SchedulerCell as="td" today className="k-nonwork-hour"></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
+                                                    <SchedulerCell as="td" today></SchedulerCell>
                                                 </tr>
                                             </tbody>
                                         </SchedulerTable>

@@ -44,15 +44,23 @@
             }
         }
 
-        .k-table .k-table-row .k-table-group-td {
-            border-width: 0;
+        .k-master-row:has(+ .k-detail-row) {
+            > .k-table-td:not(.k-group-cell) {
+                border-block-end-width: 0;
+            }
         }
 
-        .k-grouping-row + .k-table-row .k-table-td {
-            border-block-start-width: 0;
+        .k-grouping-row .k-table-td {
+            border-block-end-width: 0;
         }
 
-        .k-grouping-row + .k-master-row .k-table-td {
+        .k-grouping-row .k-grouping-row-content {
+            padding: k-spacing(1);
+            margin: calc( #{k-spacing(1)} * -1 );
+        }
+
+        .k-grouping-row + .k-master-row .k-table-td,
+        .k-grouping-row + .k-master-row .k-group-cell {
             border-block-start-width: $kendo-grid-grouping-row-border-top;
         }
 
@@ -79,13 +87,8 @@
     }
 
     .k-grid-footer .k-table-td,
-    .k-group-footer .k-table-td,
-    .k-grouping-row .k-table-td {
+    .k-group-footer .k-table-td {
         font-weight: var(--kendo-font-weight-medium, 500);
-    }
-
-    .k-table-group-row .k-table-td {
-        border-block-end-width: 0;
     }
 
     // Row-span cells use an inset shadow for all borders,

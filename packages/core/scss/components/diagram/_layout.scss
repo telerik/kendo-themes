@@ -1,0 +1,13 @@
+@use "../../spacing/index.scss" as *;
+
+@mixin kendo-diagram--layout-base() {
+
+    // Diagram shapes container
+    .k-diagram-shapes-container {
+        padding: k-spacing(1);
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        gap: k-spacing(3);
+    }
+
+}

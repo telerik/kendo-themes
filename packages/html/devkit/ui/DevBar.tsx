@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { swatchMap } from 'virtual:swatch-map';
 import { useDevKit } from '../context';
@@ -8,12 +8,12 @@ import { useQuickCycle } from '../lib/useShortcuts';
 import { useThemeStatus } from '../lib/useThemeStatus';
 import { DevBarSearch } from './DevBarSearch';
 import { Select } from './Select';
-import { BackIcon, KendoLogo, MotionIcon, SearchIcon } from './icons';
+import { BackIcon, KendoLogo, PlayIcon, SearchIcon } from './icons';
 import '../devkit.css';
 
 export function DevBar() {
     const { params, setParams } = useDevKit();
-    const [expanded, setExpanded] = useState(false);
+    const [expanded, setExpanded] = useState(true);
     const [searchOpen, setSearchOpen] = useState(false);
     const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -45,10 +45,6 @@ export function DevBar() {
         return () => window.removeEventListener('keydown', onKey);
     }, [searchOpen]);
 
-    const handleBlur = useCallback((e: React.FocusEvent) => {
-        if (!wrapperRef.current?.contains(e.relatedTarget as Node)) setExpanded(false);
-    }, []);
-
     const portalTarget = document.getElementById('devkit-portal') ?? document.body;
 
     return (
@@ -56,10 +52,7 @@ export function DevBar() {
             <div
                 ref={wrapperRef}
                 className="devkit-wrapper"
-                onMouseEnter={() => setExpanded(true)}
-                onMouseLeave={() => setExpanded(false)}
                 onFocus={() => setExpanded(true)}
-                onBlur={handleBlur}
             >
                 <button
                     className="devkit-handle"
@@ -121,13 +114,16 @@ export function DevBar() {
                     <div className="devkit-sep" aria-hidden="true" />
 
                     <button
-                        className={`devkit-action ${params.animations ? 'devkit-toggle-on' : 'devkit-toggle-off'}`}
+                        className={`devkit-action devkit-motion-toggle${params.animations ? ' devkit-toggle-on' : ''}`}
                         onClick={() => setParams({ animations: !params.animations })}
                         aria-pressed={params.animations}
                         title={params.animations ? 'Disable animations' : 'Enable animations'}
                     >
-                        <MotionIcon className="devkit-icon" />
-                        <span>Motion</span>
+                        <PlayIcon className="devkit-icon" />
+                        <span>Animations</span>
+                        <span className="devkit-switch" aria-hidden="true">
+                            <span className="devkit-switch-thumb" />
+                        </span>
                     </button>
                 </div>
             </div>

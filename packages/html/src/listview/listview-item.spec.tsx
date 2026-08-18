@@ -14,18 +14,20 @@ const options = {};
 const defaultOptions = {};
 
 export type KendoListViewItemProps = {
-    /** @aria role - "listitem" for non-selectable, "option" for selectable ListView */
     itemRole?: 'listitem' | 'option';
-    /** @aria aria-setsize - Total number of items in the ListView */
     ariaSetSize?: number;
-    /** @aria aria-posinset - Position of this item (1-based) */
     ariaPosInSet?: number;
-    /** @aria tabindex=0 for first/focused item */
     tabIndex?: number;
 };
 
 export type KendoListViewItemState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role} "listitem" for non-selectable, "option" for selectable ListView
+ * @aria {aria-setsize} Total number of items in the ListView
+ * @aria {aria-posinset} Position of this item (1-based)
+ * @aria {tabindex} =0 for first/focused item
+ */
 export const ListViewItem: KendoComponent<KendoListViewItemProps & KendoListViewItemState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListViewItemProps &
         KendoListViewItemState &

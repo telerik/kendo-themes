@@ -17,6 +17,15 @@ export type KendoSpeechToTextButtonProps = KendoButtonProps & KendoSpeechToTextB
     listening?: boolean;
 }
 
+/**
+ * @aria {role="button"} If the used element is not <button>, explicitly set its role to button.
+ * @aria {aria-pressed} Announces the toggle behaviour of the button.
+ * @aria {aria-label} Accessible name for the speech-to-text button.
+ * @ux {Recording} Pressing the button starts audio recording.
+ * @ux {Stop} Pressing the button again or after a silence timeout stops recording.
+ * @ux {Transcription} Converts the recorded audio into text.
+ * @ux {Status} Visual feedback indicates whether the button is idle, recording, or processing.
+ */
 export const SpeechToTextButton: KendoComponent<KendoSpeechToTextButtonProps & KendoSpeechToTextButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoSpeechToTextButtonProps &
         KendoSpeechToTextButtonState &
@@ -54,15 +63,9 @@ SpeechToTextButton.moduleName = SPEECH_TO_TEXT_BUTTON_MODULE_NAME;
 SpeechToTextButton.folderName = SPEECH_TO_TEXT_BUTTON_FOLDER_NAME;
 
 /**
- * @see Button ariaSpec for base button accessibility
+ * @keyboard {Enter or Space} Triggers a click action on the Button. Toggles the active listening state of the Button.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/button/ WAI-ARIA Authoring Practices: Button Pattern
  */
-SpeechToTextButton.ariaSpec = {
-    selector: '.k-speech-to-text-button',
-    rules: [
-        { selector: '.k-button.k-speech-to-text-button', attribute: 'role=button or nodeName=button', usage: 'If the used element is not <button>, explicitly set its role to button.' },
-        { selector: '.k-button.k-speech-to-text-button', attribute: 'aria-pressed', usage: 'Announces the toggle behaviour of the button.' },
-        { selector: '.k-button.k-speech-to-text-button', attribute: 'aria-label', usage: 'Accessible name for the speech-to-text button.' },
-    ]
-};
 
 export default SpeechToTextButton;

@@ -44,6 +44,15 @@ const defaultOptions = {
     type: 'button',
 } as const;
 
+/**
+ * @aria {role="button"} Omitted if the <button> DOM element is used.
+ * @aria {aria-label|title} The attribute must be present when no text is initially visible in the button.
+ * @aria {aria-disabled="true"} Rendered only when the button is disabled.
+ * @ux {Fixed position} Floats over the page content at a configurable viewport corner.
+ * @ux {Action list} Can expand to reveal a list of secondary action buttons.
+ * @ux {Icon} Displays a single icon representing the primary action.
+ * @ux {Disabled state} When disabled, the button and its action list are non-interactive.
+ */
 export const FloatingActionButton: KendoComponent<KendoFloatingActionButtonProps & KendoFloatingActionButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoFloatingActionButtonProps &
         KendoFloatingActionButtonState &
@@ -106,20 +115,7 @@ FloatingActionButton.moduleName = FAB_MODULE_NAME;
 FloatingActionButton.folderName = FAB_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * FloatingActionButton follows button-only accessibility specification.
- *
- * - Uses semantic <button> element (role="button" is implicit)
- * - Icon-only: requires aria-label or title
- * - When disabled: aria-disabled="true"
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/menu-button/menu-button-links.html WAI-ARIA Authoring Practices: Navigation Menu Button Example
  */
-FloatingActionButton.ariaSpec = {
-    selector: '.k-fab',
-    rules: [
-        { selector: '.k-fab', attribute: 'role=button or nodeName=button', usage: 'Omitted if the <button> DOM element is used.' },
-        { selector: '.k-fab', attribute: 'aria-label or title (when icon-only)', usage: 'The attribute must be present when no text is initially visible in the button.' },
-        { selector: '.k-fab.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the button is disabled.' },
-    ]
-};
 
 export default FloatingActionButton;

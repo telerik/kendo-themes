@@ -24,7 +24,6 @@ export const GanttTaskContent: KendoComponent<KendoGanttTaskContentProps & React
         ...other
     } = props;
 
-
     return (
         <div
             {...other}

@@ -4,29 +4,31 @@ import { SegmentedControl, SegmentedControlButton } from '../../segmented-contro
 import { Scheduler, SchedulerHead, SchedulerBody, SchedulerRow, SchedulerToolbar, SchedulerCell, SchedulerGroup } from '../index';
 
 
-export const SchedulerFlexWeek = ({ style, ...props }: any) => (
+export const SchedulerFlexWeek = ({ style, today = false, ...props }: any) => (
     <Scheduler
         style={style}
         layout="flex"
         view="week"
         toolbar={
             <SchedulerToolbar>
-                <ButtonGroup className="k-scheduler-navigation">
-                    <Button className="k-group-start">Today</Button>
-                    <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
-                    <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
+                <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                <Button fillMode="flat">Today</Button>
+                <ButtonGroup fillMode="flat">
+                    <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                    <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                    6/12/2022 - 6/18/2022
+                    31 May – 6 June
                 </Button>
                 <span className="k-spacer"></span>
-                <SegmentedControl thumbStyles={{ width: "18%", left: "16%" }} className="k-scheduler-views">
+                <SegmentedControl thumbStyles={{ width: "19%", left: "15%" }} className="k-scheduler-views">
                     <SegmentedControlButton>Day</SegmentedControlButton>
                     <SegmentedControlButton selected>Week</SegmentedControlButton>
                     <SegmentedControlButton>Month</SegmentedControlButton>
                     <SegmentedControlButton>Timeline</SegmentedControlButton>
                     <SegmentedControlButton>Agenda</SegmentedControlButton>
                 </SegmentedControl>
+
             </SchedulerToolbar>
         }
         footer={
@@ -42,13 +44,13 @@ export const SchedulerFlexWeek = ({ style, ...props }: any) => (
                             <SchedulerCell as="div" cellType={[ "side" ]} style={{ minWidth: "65px" }} />
                             <SchedulerCell as="div" cellType={[ "group" ]}>
                                 <SchedulerRow>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Sun, 6/12"></SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Mon, 6/13"></SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Tue, 6/14"></SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Wed, 6/15"></SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Thu, 6/16"></SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Fri, 6/17"></SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading" ]} text="Sat, 6/18"></SchedulerCell>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Sun" text="12"></SchedulerCell>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Mon" text="13"></SchedulerCell>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Tue" text="14"></SchedulerCell>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} today={today} dayText="Wed" text="15"></SchedulerCell>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Thu" text="16"></SchedulerCell>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Fri" text="17"></SchedulerCell>
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} dayText="Sat" text="18"></SchedulerCell>
                                 </SchedulerRow>
                             </SchedulerCell>
                         </SchedulerRow>

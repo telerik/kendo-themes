@@ -208,6 +208,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-sm-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-md-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-lg-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-header-border-width</td>
     <td>List</td>
     <td><code>0 0 1px</code></td>
@@ -968,6 +998,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-sticky-header-shadow</td>
+    <td>List</td>
+    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(0 2px 4px 0 rgba(0, 0, 0, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-item-selected-bg</td>
     <td>String</td>
     <td><code>k-color(primary)</code></td>
@@ -1111,7 +1151,8 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
         filter-padding-x: $kendo-list-sm-filter-padding-x,
-        filter-padding-y: $kendo-list-sm-filter-padding-y
+        filter-padding-y: $kendo-list-sm-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-sm-sticky-header-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -1133,7 +1174,8 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
         filter-padding-x: $kendo-list-md-filter-padding-x,
-        filter-padding-y: $kendo-list-md-filter-padding-y
+        filter-padding-y: $kendo-list-md-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-md-sticky-header-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -1155,10 +1197,11 @@ The following table lists the available variables for customization.
         item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
         filter-padding-x: $kendo-list-lg-filter-padding-x,
-        filter-padding-y: $kendo-list-lg-filter-padding-y
+        filter-padding-y: $kendo-list-lg-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-lg-sticky-header-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4)","header-padding-y":"var(--kendo-spacing-1)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4)","item-padding-y":"var(--kendo-spacing-1)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4)","group-item-padding-y":"var(--kendo-spacing-0)","group-item-font-size":"var(--kendo-font-size-sm)","group-item-line-height":"var(--kendo-line-height-lg)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4)","filter-padding-y":"var(--kendo-spacing-4)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","header-padding-x":"var(--kendo-spacing-4)","header-padding-y":"var(--kendo-spacing-1)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4)","item-padding-y":"var(--kendo-spacing-1)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4)","group-item-padding-y":"var(--kendo-spacing-0\\.5)","group-item-font-size":"var(--kendo-font-size-sm)","group-item-line-height":"var(--kendo-line-height-lg)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4)","filter-padding-y":"var(--kendo-spacing-4)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","header-padding-x":"var(--kendo-spacing-4)","header-padding-y":"var(--kendo-spacing-2)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4)","item-padding-y":"var(--kendo-spacing-2)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4)","group-item-padding-y":"var(--kendo-spacing-1\\.5)","group-item-font-size":"var(--kendo-font-size-sm)","group-item-line-height":"var(--kendo-line-height-lg)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4)","filter-padding-y":"var(--kendo-spacing-4)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm)","line-height":1.4285714285714286,"header-padding-x":"var(--kendo-spacing-4)","header-padding-y":"var(--kendo-spacing-1)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4)","item-padding-y":"var(--kendo-spacing-1)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4)","group-item-padding-y":"var(--kendo-spacing-0)","group-item-font-size":"var(--kendo-font-size-sm)","group-item-line-height":"var(--kendo-line-height-lg)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4)","filter-padding-y":"var(--kendo-spacing-4)","sticky-header-padding-y":"var(--kendo-spacing-1\\.5)"</li><li>md: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","header-padding-x":"var(--kendo-spacing-4)","header-padding-y":"var(--kendo-spacing-1)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4)","item-padding-y":"var(--kendo-spacing-1)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4)","group-item-padding-y":"var(--kendo-spacing-0\\.5)","group-item-font-size":"var(--kendo-font-size-sm)","group-item-line-height":"var(--kendo-line-height-lg)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4)","filter-padding-y":"var(--kendo-spacing-4)","sticky-header-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","header-padding-x":"var(--kendo-spacing-4)","header-padding-y":"var(--kendo-spacing-2)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-4)","item-padding-y":"var(--kendo-spacing-2)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-4)","group-item-padding-y":"var(--kendo-spacing-1\\.5)","group-item-font-size":"var(--kendo-font-size-sm)","group-item-line-height":"var(--kendo-line-height-lg)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"var(--kendo-font-size-xs)","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-4)","filter-padding-y":"var(--kendo-spacing-4)","sticky-header-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the List.</div></div>

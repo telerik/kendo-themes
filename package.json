@@ -14,29 +14,32 @@
     "./packages/utils"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "@commitlint/core": "^20.1.0",
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
+    "@commitlint/core": "20.1.0",
     "@csstools/selector-specificity": "^6.0.0",
     "@eslint/js": "^10.0.1",
     "@jridgewell/source-map": "^0.3.10",
-    "@progress/kendo-e2e": "4.14.2",
+    "@mdn/browser-compat-data": "^8.0.1",
+    "@nx/js": "^22.7.8",
     "@stylistic/stylelint-plugin": "^5.0.1",
     "@types/node": "^25.0.3",
     "@vitejs/plugin-react": "^6.0.2",
     "autoprefixer": "^10.4.20",
-    "esbuild": "^0.27.0",
-    "eslint": "^10.0.2",
+    "css-tree": "^3.2.1",
+    "esbuild": "0.28.0",
+    "eslint": "10.4.1",
     "glob": "^13.0.0",
     "globals": "^17.3.0",
     "gulp": "^5.0.0",
     "http-server": "^14.1.1",
     "husky": "^9.0.10",
     "jsdom": "^28.1.0",
-    "lerna": "^9.0.0",
     "lint-staged": "^16.0.0",
+    "@progress/kendo-e2e": "4.14.2",
+    "sassdoc": "^2.7.4",
     "nunjucks": "^3.2.3",
-    "nx": "^22.0.1",
+    "nx": "^22.7.8",
     "playwright": "^1.60.0",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
@@ -45,18 +48,17 @@
     "reg-keygen-git-hash-plugin": "^0.14.5",
     "reg-publish-gh-pages-plugin": "^0.2.2",
     "reg-suit": "^0.14.5",
-    "sass": "^1.93.3",
+    "sass": "1.100.0",
     "sass-embedded": "^1.93.3",
-    "sassdoc": "^2.7.4",
     "semver": "^7.3.7",
-    "stylelint": "^17.4.0",
+    "stylelint": "17.12.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-scss": "^7.0.0",
     "typescript": "^5.0.3",
     "typescript-eslint": "^8.0.0",
-    "vite": "^8.0.0",
-    "vitest": "^4.1.7"
+    "vite": "8.0.14",
+    "vitest": "4.1.7"
   },
   "peerDependencies": {
     "sass": "^1.63.6",
@@ -70,6 +72,7 @@
     "lint:scripts": "eslint \"**/*.{js,jsx,ts,tsx,mjs}\"",
     "lint:styles": "stylelint \"**/*.scss\"",
     "lint:staged": "lint-staged --verbose",
+    "audit:css": "node ./scripts/audit-css.mjs",
     "build": "nx run @progress/kendo-themes-html:build",
     "build:tests": "nx run @progress/kendo-themes-html:build:tests",
     "sass": "nx run-many -t sass",
@@ -93,13 +96,26 @@
     "test:visual:save": "node ./scripts/visual-local.mjs --save",
     "test:visual:local": "node ./scripts/visual-local.mjs",
     "test:visual:dev": "node ./scripts/visual-dev.mjs",
-    "test:visual:docker": "docker run --rm -v \"${PWD}:/work\" -w /work ghcr.io/telerik/kendo-visual:1 node scripts/capture.mjs --themes meridian --components '*'"
+    "test:visual:docker": "docker run --rm -v \"${PWD}:/work\" -w /work ghcr.io/telerik/kendo-visual:1 node scripts/capture.mjs --themes meridian --components '*'",
+    "release": "npx nx release version && npx nx release changelog $(jq -r '.version' packages/core/package.json) && npx nx release publish",
+    "release:dry": "npx nx release version --dry-run",
+    "release:version": "npx nx release version",
+    "release:changelog": "npx nx release changelog",
+    "release:publish": "npx nx release publish",
+    "release:prerelease": "npx nx release version --preid dev"
   },
   "engines": {
-    "node": "^24 || ^25"
+    "node": "^24 || ^25",
+    "npm": "^12.0.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
     "*.{css,scss}": "stylelint"
+  },
+  "overrides": {
+    "ast-v8-to-istanbul": "1.0.3",
+    "@types/react": "19.2.15",
+    "nwsapi": "2.2.23",
+    "vite": "8.0.14"
   }
 }

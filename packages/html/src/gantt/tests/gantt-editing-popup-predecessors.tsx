@@ -55,8 +55,8 @@ export default () =>(
                                             </colgroup>
                                             <TableThead>
                                                 <TableRow>
-                                                    <GridHeaderCell columnTitle="Name" sortable></GridHeaderCell>
-                                                    <GridHeaderCell columnTitle="Type" sortable></GridHeaderCell>
+                                                    <GridHeaderCell columnTitle="Name" sortable sorted></GridHeaderCell>
+                                                    <GridHeaderCell columnTitle="Type" sortable sorted></GridHeaderCell>
                                                 </TableRow>
                                             </TableThead>
                                         </GridHeaderTable>

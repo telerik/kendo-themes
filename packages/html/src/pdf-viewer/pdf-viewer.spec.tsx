@@ -5,7 +5,6 @@ import { DropzoneNormal } from '../dropzone';
 import { MenuButton } from '../menu-button';
 import { classNames, stateClassNames, States, } from '../misc';
 import { PagerInput } from '../pager';
-import { Textbox } from '../textbox';
 import { Toolbar, ToolbarSeparator } from '../toolbar';
 import { UploadNormal } from '../upload';
 
@@ -23,7 +22,6 @@ export type KendoPDFViewerProps = {
     toolbar?: React.JSX.Element;
     annotations?: boolean;
     annotationsToolbar?: React.JSX.Element;
-    showSearchPanel?: boolean;
     blank?: boolean;
 };
 
@@ -82,19 +80,30 @@ const defaultAnnotationsToolbar =
 
 const defaultOptions = {
     toolbar: defaultToolbar,
-    showSearchPanel: false,
     blank: false,
     annotations: false,
     annotationsToolbar: defaultAnnotationsToolbar,
 };
 
+/**
+ * @aria {tabindex="0"} Defines the focusable page container element.
+ * @aria {aria-label} Describes the purpose of the focusable container.
+ * @aria {role="document"} Defines that content should be evaluated in reader mode by assistive technologies.
+ * @aria {aria-haspopup="dialog"} Describes that the Search tool button opens a dialog element.
+ * @aria {role="dialog"} Describes the role of the Search panel.
+ * @aria {aria-label} Label for the Search panel, same label as the Search tool.
+ * @ux {Page navigation} Previous and next buttons step through the document pages.
+ * @ux {Page jump} A numeric input allows jumping directly to a specific page.
+ * @ux {Zoom} Zoom in/out buttons and a zoom-level selector adjust the view scale.
+ * @ux {Text search} A search panel finds and highlights matching text in the document.
+ * @ux {Download} A toolbar button downloads the PDF file to the user's device.
+ */
 export const PDFViewer: KendoComponent<KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         disabled,
         toolbar = defaultOptions.toolbar,
-        showSearchPanel = defaultOptions.showSearchPanel,
         blank = defaultOptions.blank,
         annotations,
         annotationsToolbar = defaultOptions.annotationsToolbar,
@@ -117,25 +126,6 @@ export const PDFViewer: KendoComponent<KendoPDFViewerState & KendoPDFViewerProps
                 aria-label="PDF document"
                 role="document"
             >
-
-                {showSearchPanel &&
-                <div className="k-search-panel k-pos-sticky k-top-center" role="dialog" aria-label="Search">
-                    <Button fillMode="flat" icon="handle-drag" className="k-search-dialog-draghandle" aria-label="Drag handle" />
-                    <Textbox
-                        aria-label="Search text"
-                        suffix={
-                            <Button fillMode="flat" className="k-match-case-button" icon="convert-lowercase" aria-label="Match case" />
-                        }
-                    />
-                    <span className="k-search-matches">
-                        <span>0</span> of <span>0</span>
-                    </span>
-                    <Button fillMode="flat" icon="arrow-up" aria-label="Previous match" />
-                    <Button fillMode="flat" icon="arrow-down" aria-label="Next match" />
-                    <Button fillMode="flat" icon="x" aria-label="Close search" />
-                </div>
-                }
-
                 <div className="k-pdf-viewer-pages">
                     {blank
                         ?
@@ -160,18 +150,11 @@ PDFViewer.moduleName = PDF_VIEWER_MODULE_NAME;
 PDFViewer.folderName = PDF_VIEWER_FOLDER_NAME;
 
 /**
- * @see Toolbar ariaSpec for the PDF viewer toolbar
+ * @keyboard {ArrowUp} Scrolls up the container.
+ * @keyboard {ArrowDown} Scrolls down the container.
+ * @keyboard {PageUp} Scrolls up the container.
+ * @keyboard {PageDown} Scrolls down the container.
+ * @keyboard {Shift + Tab} Returns focus to the toolbar.
  */
-PDFViewer.ariaSpec = {
-    selector: '.k-pdf-viewer',
-    rules: [
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'tabindex=0', usage: 'Defines the focusable page container element.' },
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'aria-label', usage: 'Describes the purpose of the focusable container.' },
-        { selector: '.k-pdf-viewer .k-canvas', attribute: 'role=document', usage: 'Defines that content should be evaluated in reader mode by assistive technologies.' },
-        { selector: '.k-pdf-viewer .k-toolbar .k-button:has([class*="i-search"])', attribute: 'aria-haspopup=dialog', usage: 'Describes that the Search tool button opens a dialog element.' },
-        { selector: '.k-pdf-viewer .k-canvas .k-search-panel', attribute: 'role=dialog', usage: 'Describes the role of the Search panel.' },
-        { selector: '.k-pdf-viewer .k-canvas .k-search-panel', attribute: 'aria-label', usage: 'Label for the Search panel, same label as the Search tool.' },
-    ]
-};
 
 export default PDFViewer;

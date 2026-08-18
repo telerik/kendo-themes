@@ -25,6 +25,11 @@ const defaultOptions = {
     hint: "Drag and drop files here to upload",
 };
 
+/**
+ * @ux {Drop target} Accepts files dragged from the operating system file browser.
+ * @ux {Drag feedback} Highlights the drop area visually while files are dragged over it.
+ * @ux {Multiple files} Can accept multiple files dropped in a single operation.
+ */
 export const Dropzone: KendoComponent<KendoDropzoneProps & KendoDropzoneState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDropzoneProps &
         KendoDropzoneState &

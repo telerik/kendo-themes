@@ -18,7 +18,7 @@
     // Title bar
     .k-mediaplayer-titlebar {
         color: $kendo-media-player-titlebar-text;
-        background-image: linear-gradient( $kendo-media-player-titlebar-gradient );
+        background-image: if( $kendo-media-player-titlebar-gradient, linear-gradient( $kendo-media-player-titlebar-gradient ), null );
         text-shadow: 0 0 2px color-mix(in srgb, k-color(on-app-surface) 50%, transparent);
     }
 

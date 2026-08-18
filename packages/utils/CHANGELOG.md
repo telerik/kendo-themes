@@ -1,7 +1,167 @@
+## 14.5.1-dev.0 (2026-08-17)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.5.0 (2026-08-10)
+
+### 🩹 Fixes
+
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.4 (2026-08-10)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.4.1-dev.3 (2026-08-10)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.4.1-dev.2 (2026-08-03)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🩹 Fixes
+
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.0 (2026-07-27)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.4.0 (2026-07-21)
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.0-dev.4 (2026-07-21)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.4.0-dev.3 (2026-07-21)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.4.0-dev.2 (2026-07-20)
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.0-dev.1 (2026-07-08)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.4.0-dev.0 (2026-07-06)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.2.0 (2026-06-29)
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.2.0-dev.6 (2026-06-25)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.5 (2026-06-24)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.4 (2026-06-22)
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.2.0-dev.3 (2026-06-15)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.2 (2026-06-09)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.1 (2026-06-08)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.2.0-0 (2026-06-08)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
 
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 

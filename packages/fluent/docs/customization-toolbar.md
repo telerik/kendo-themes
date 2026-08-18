@@ -138,6 +138,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-toolbar-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-toolbar-item-icon-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-toolbar-item-icon-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Toolbar items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-sm-separator-height</td>
     <td>String</td>
     <td><code>var( --kendo-toolbar-sm-separator-height, #{$kendo-button-sm-calc-size} )</code></td>
@@ -375,6 +385,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Toolbar item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-toolbar-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-floating-toolbar-border-radius, #{k-border-radius(md)} )</code></td>
+    <td><code>var(--kendo-floating-toolbar-border-radius, var(--kendo-border-radius-md))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
     </td>
 </tr>
 <tr>

@@ -21,6 +21,15 @@ export type KendoOneTimePasswordState = { [K in (typeof states)[number]]?: boole
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="group"} Sets the proper role for the OTP.
+ * @aria {type="hidden"} The hidden input holding the OTP inputs value.
+ * @aria {aria-hidden="true"} Hides the hidden input from assistive technologies.
+ * @ux {Auto-advance} Focus moves to the next input automatically after each character is entered.
+ * @ux {Paste} Pasting a code string fills all inputs at once.
+ * @ux {Separator} Groups of inputs can be visually separated by divider characters.
+ * @ux {Masked} Characters can be hidden like a password field.
+ */
 export const OneTimePassword: KendoComponent<KendoOneTimePasswordOptions & KendoOneTimePasswordState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoOneTimePasswordOptions &
         KendoOneTimePasswordState &
@@ -63,24 +72,15 @@ OneTimePassword.moduleName = OTP_MODULE_NAME;
 OneTimePassword.folderName = OTP_FOLDER_NAME;
 
 /**
- * Accessibility specification for OneTimePassword (OTP).
- * @accessibility
- * - Container uses role="group" to associate inputs
- * - Hidden input holds the combined value
- * - Each digit input requires aria-label (e.g., "Digit 1 of 6")
+ * @keyboard {Typing in the input} Sets the value in the input and moves the focus to the next focusable input in the OTP. (if any)
+ * @keyboard {Tab} Focuses the next input in the OTP. If the focus is on the last input, focuses the next focusable element on the page.
+ * @keyboard {Shift + Tab} Focuses the previous input in the OTP. If the focus is on the first input, focuses the previous focusable element before the OTP.
+ * @keyboard {ArrowRight} Moves the focus to the next focusable input in the OTP. (if any)
+ * @keyboard {ArrowLeft} Moves the focus to the previous focusable input in the OTP. (if any)
+ * @keyboard {Backspace} Deletes the value of the focused input and moves the focus on the previous input. (if any).
+ * @keyboard {Delete} Deletes the value of the focused input.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#textbox WAI-ARIA Specification for the TextBox
  */
-OneTimePassword.ariaSpec = {
-    selector: '.k-otp',
-    rules: [
-        { selector: '.k-otp', attribute: 'role=group', usage: 'Sets the proper role for the OTP.' },
-        { selector: '.k-otp > input', attribute: 'type=hidden', usage: 'The hidden input holding the OTP inputs value.' },
-        { selector: '.k-otp > input', attribute: 'aria-hidden=true', usage: 'Hides the hidden input from assistive technologies.' },
-        { selector: '.k-otp .k-otp-input > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'The input needs an accessible name to be assigned to it.' },
-        { selector: '.k-otp .k-otp-input > .k-input-inner', attribute: 'autocomplete=off', usage: 'Sets the default autocomplete for the input.' },
-        { selector: '.k-otp .k-otp-input > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message for the OTP inputs.' },
-        { selector: '.k-otp.k-invalid .k-otp-input > .k-input-inner, .k-otp.ng-invalid .k-otp-input > .k-input-inner', attribute: 'aria-invalid=true', usage: 'Rendered only when the OTP is in a form and announces the invalid state.' },
-        { selector: '.k-otp.k-disabled .k-otp-input > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered only when the OTP is disabled.' },
-    ]
-};
 
 export default OneTimePassword;

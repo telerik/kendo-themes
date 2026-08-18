@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>List</td>
+    <td><code>0 1px 2px 0 rgba(56, 66, 80, 0.05)</code></td>
+    <td><code>(0 1px 2px 0 rgba(56, 66, 80, 0.05))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Picker components.</div></div>

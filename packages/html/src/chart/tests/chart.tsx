@@ -1,9 +1,10 @@
+import { Chart } from '../chart.spec';
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <div className="k-chart" style={{ position: "relative" }}>
+            <Chart style={{ position: "relative" }}>
                 <svg style={{ width: '100%', height: "100%", overflow: 'hidden', left: '0px', top: "-0.15625px" }} xmlns="http://www.w3.org/2000/svg" version="1.1">
                     <defs>
                         <clipPath id="kdef3"><path d="M38 68 L 1319 68 1319 338 38 338Z" stroke="#000" strokeLinejoin="miter" fill="none"></path></clipPath>
@@ -118,7 +119,7 @@ export default () =>(
                         </g>
                     </g>
                 </svg>
-            </div>
+            </Chart>
         </div>
     </>
 );

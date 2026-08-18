@@ -1,5 +1,5 @@
 import { Stepper, KendoStepperProps } from '../stepper.spec';
-import { Step } from '../step';
+import { Step } from '../step.spec';
 import { StepList } from '../step-list';
 import { ProgressBarNormal } from '../../progressbar';
 

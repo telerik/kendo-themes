@@ -43,6 +43,13 @@ export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
 
 export type KendoDateRangePickerState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {aria-label|aria-labelledby} Each date input needs an accessible name.
+ * @ux {Range selection} Start and end dates are chosen via two inputs linked to a shared popup calendar.
+ * @ux {Linked calendars} Both calendar months advance together as the user navigates.
+ * @ux {Inline mode} Can be rendered as an always-visible calendar without a popup.
+ * @ux {Disabled state} When disabled, both inputs are non-interactive.
+ */
 export const DateRangePicker: KendoComponent<KendoDateRangePickerProps & KendoDateRangePickerState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateRangePickerProps &
         KendoDateRangePickerState &
@@ -147,20 +154,12 @@ DateRangePicker.moduleName = DATERANGEPICKER_MODULE_NAME;
 DateRangePicker.folderName = DATERANGEPICKER_FOLDER_NAME;
 
 /**
- * Accessibility specification for DateRangePicker.
+ * @keyboard {Escape} Closes the popup
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the popup
+ * @keyboard {Alt/Opt(Mac) + ArrowUp} Closes the popup
  *
- * @accessibility
- * - Contains two DateInput elements (start and end)
- * - Calendar popup follows MultiViewCalendar ARIA spec
- * - Adaptive mode follows ActionSheet ARIA spec
- *
- * @wcag 4.1.2 Name, Role, Value - combobox pattern for date range selection
+ * @see https://www.w3.org/TR/wai-aria-1.2/#combobox WAI ARIA specification for combobox
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html ARIA practices Date Picker Dialog Example
  */
-DateRangePicker.ariaSpec = {
-    selector: '.k-daterangepicker',
-    rules: [
-        { selector: '.k-daterangepicker .k-input-inner', attribute: 'label for or aria-label or aria-labelledby', usage: 'Each date input needs an accessible name.' },
-    ]
-};
 
 export default DateRangePicker;

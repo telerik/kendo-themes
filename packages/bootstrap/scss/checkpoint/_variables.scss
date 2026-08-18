@@ -1,0 +1,33 @@
+@use "../core/_index.scss" as *;
+
+/// The color of the Checkpoint separator line.
+/// @group checkpoint
+$kendo-checkpoint-line-color: k-color(border) !default;
+/// The gap between the Checkpoint line and stamp.
+/// @group checkpoint
+$kendo-checkpoint-gap: k-spacing(1.5) !default;
+/// The width of the Checkpoint separator line.
+/// @group checkpoint
+$kendo-checkpoint-line-width: 1px !default;
+/// The font size of the Checkpoint stamp text.
+/// @group checkpoint
+$kendo-checkpoint-stamp-font-size: var(--kendo-font-size-sm) !default;
+/// The text color of the Checkpoint stamp.
+/// @group checkpoint
+$kendo-checkpoint-stamp-color: k-color(subtle) !default;
+/// The font weight of the Checkpoint stamp text.
+/// @group checkpoint
+$kendo-checkpoint-stamp-font-weight: null !default;
+/// The horizontal padding of the Checkpoint stamp.
+/// @group checkpoint
+$kendo-checkpoint-stamp-padding-x: k-spacing(1) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/checkpoint/_variables.scss" with (
+    $kendo-checkpoint-line-color: $kendo-checkpoint-line-color,
+    $kendo-checkpoint-gap: $kendo-checkpoint-gap,
+    $kendo-checkpoint-line-width: $kendo-checkpoint-line-width,
+    $kendo-checkpoint-stamp-font-size: $kendo-checkpoint-stamp-font-size,
+    $kendo-checkpoint-stamp-color: $kendo-checkpoint-stamp-color,
+    $kendo-checkpoint-stamp-font-weight: $kendo-checkpoint-stamp-font-weight,
+    $kendo-checkpoint-stamp-padding-x: $kendo-checkpoint-stamp-padding-x
+);

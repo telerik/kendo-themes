@@ -190,6 +190,10 @@ $kendo-grid-header-first-border: 1px !default;
 /// @group grid
 $kendo-grid-header-menu-icon-spacing: $kendo-icon-spacing !default;
 
+/// The spacing between icon and text in Grid column menu items.
+/// @group grid
+$kendo-grid-column-menu-icon-spacing: k-spacing(1) !default;
+
 /// The width of the border around the Grid toolbar.
 /// @group grid
 $kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;
@@ -220,6 +224,16 @@ $kendo-grid-header-text: $kendo-table-header-text !default;
 /// The border color of Grid header.
 /// @group grid
 $kendo-grid-header-border: $kendo-table-header-border !default;
+
+/// The background color of Grid add row.
+/// @group grid
+$kendo-grid-add-row-bg: k-color(surface) !default;
+/// The text color of Grid add row.
+/// @group grid
+$kendo-grid-add-row-text: k-color(on-app-surface) !default;
+/// The border color of Grid add row.
+/// @group grid
+$kendo-grid-add-row-border: k-color(border) !default;
 
 /// The background color of Grid footer.
 /// @group grid
@@ -317,6 +331,9 @@ $kendo-grid-grouping-header-border: $kendo-grid-header-border !default;
 /// The text color of the Grid row.
 /// @group grid
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
+/// The font weight of the Grid grouping row text.
+/// @group grid
+$kendo-grid-grouping-row-font-weight: var(--kendo-font-weight-bold) !default;
 
 /// The shadow of the Grid.
 /// @group grid
@@ -458,6 +475,12 @@ $kendo-grid-hierarchy-col-width: ($kendo-icon-size * 2) !default;
 /// The grouping border top of the Grid row.
 /// @group grid
 $kendo-grid-grouping-row-border-top: 1px !default;
+/// The indent size for nested grouping rows.
+/// @group grid
+$kendo-grid-grouping-indent-size: k-spacing(6) !default;
+/// The margin at the end of the checkbox in grouping rows.
+/// @group grid
+$kendo-grid-grouping-row-checkbox-margin-end: k-spacing(3) !default;
 /// The vertical border of the Grid footer.
 /// @group grid
 $kendo-grid-group-footer-border-y: 1px !default;
@@ -572,6 +595,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-bold) !default;
     $kendo-grid-header-font-size: $kendo-grid-header-font-size,
     $kendo-grid-header-first-border: $kendo-grid-header-first-border,
     $kendo-grid-header-menu-icon-spacing: $kendo-grid-header-menu-icon-spacing,
+    $kendo-grid-column-menu-icon-spacing: $kendo-grid-column-menu-icon-spacing,
     $kendo-grid-toolbar-border-width: $kendo-grid-toolbar-border-width,
     $kendo-grid-cell-horizontal-border-width: $kendo-grid-cell-horizontal-border-width,
     $kendo-grid-cell-vertical-border-width: $kendo-grid-cell-vertical-border-width,
@@ -581,6 +605,9 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-bold) !default;
     $kendo-grid-header-bg: $kendo-grid-header-bg,
     $kendo-grid-header-text: $kendo-grid-header-text,
     $kendo-grid-header-border: $kendo-grid-header-border,
+    $kendo-grid-add-row-bg: $kendo-grid-add-row-bg,
+    $kendo-grid-add-row-text: $kendo-grid-add-row-text,
+    $kendo-grid-add-row-border: $kendo-grid-add-row-border,
     $kendo-grid-footer-bg: $kendo-grid-footer-bg,
     $kendo-grid-footer-text: $kendo-grid-footer-text,
     $kendo-grid-footer-border: $kendo-grid-footer-border,
@@ -607,6 +634,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-bold) !default;
     $kendo-grid-sorting-index-spacing-x: $kendo-grid-sorting-index-spacing-x,
     $kendo-grid-grouping-row-bg: $kendo-grid-grouping-row-bg,
     $kendo-grid-grouping-row-text: $kendo-grid-grouping-row-text,
+    $kendo-grid-grouping-row-font-weight: $kendo-grid-grouping-row-font-weight,
     $kendo-grid-focus-shadow: $kendo-grid-focus-shadow,
     $kendo-grid-command-cell-button-spacing: $kendo-grid-command-cell-button-spacing,
     $kendo-grid-sticky-bg: $kendo-grid-sticky-bg,
@@ -642,6 +670,8 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-bold) !default;
     $kendo-grid-drag-cell-width: $kendo-grid-drag-cell-width,
     $kendo-grid-hierarchy-col-width: $kendo-grid-hierarchy-col-width,
     $kendo-grid-grouping-row-border-top: $kendo-grid-grouping-row-border-top,
+    $kendo-grid-grouping-indent-size: $kendo-grid-grouping-indent-size,
+    $kendo-grid-grouping-row-checkbox-margin-end: $kendo-grid-grouping-row-checkbox-margin-end,
     $kendo-grid-group-footer-border-y: $kendo-grid-group-footer-border-y,
     $kendo-grid-row-resizer-hover-bg: $kendo-grid-row-resizer-hover-bg,
     $kendo-grid-row-resizer-active-bg: $kendo-grid-row-resizer-active-bg,

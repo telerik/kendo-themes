@@ -17,6 +17,15 @@ export type KendoDockManagerProps = {
     unpinnedPane?: React.JSX.Element;
 };
 
+/**
+ * @aria {role="application"} Indicates that the DockManager has its own keyboard navigation implemented.
+ * @aria {aria-live="polite"} Defines dynamic content changes within the DockManager container.
+ * @ux {Panels} Contains independent panels that can be docked to fixed positions or floated.
+ * @ux {Drag and drop} Panels are repositioned by dragging their tab headers.
+ * @ux {Tab groups} Multiple panels docked to the same position form a tabbed group.
+ * @ux {Floating panels} Panels can be detached and float freely above the layout.
+ * @ux {Resize} Panel sizes are adjusted by dragging the splitter between dock zones.
+ */
 export const DockManager: KendoComponent<KendoDockManagerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDockManagerProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -63,21 +72,17 @@ DockManager.moduleName = DOCK_MANAGER_MODULE_NAME;
 DockManager.folderName = DOCK_MANAGER_FOLDER_NAME;
 
 /**
- * Accessibility specification for DockManager.
- *
- * @accessibility
- * - DockManager has role=application with aria-live=polite
- * - DockNavigator is aria-hidden=true (only appears on drag)
- * - Inner components (Toolbar, TabStrip, Splitter, Window) follow their own ARIA specs
- *
- * @wcag 4.1.2 Name, Role, Value - application pattern with custom keyboard navigation
+ * @keyboard {Alt/Opt(Mac) + ArrowUp} Maximizes the active pane.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Minimizes the active pane.
+ * @keyboard {Escape} Closes the active pane.
+ * @keyboard {Alt/Opt(Mac) + ArrowLeft} Unpins the active pane.
+ * @keyboard {Alt/Opt(Mac) + ArrowRight} Pins the active pane.
+ * @keyboard {Control/Cmd(Mac) + ArrowRight} Focuses the next content pane.
+ * @keyboard {Control/Cmd(Mac) + ArrowLeft} Focuses the previous content pane.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowUp} Docks the active pane to the global top.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowDown} Docks the active pane to the global bottom.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowLeft} Docks the active pane to the global left.
+ * @keyboard {Control/Cmd(Mac) + Shift + ArrowRight} Docks the active pane to the global right.
  */
-DockManager.ariaSpec = {
-    selector: '.k-dock-manager',
-    rules: [
-        { selector: '.k-dock-manager', attribute: 'role=application', usage: 'Indicates that the DockManager has its own keyboard navigation implemented.' },
-        { selector: '.k-dock-manager', attribute: 'aria-live=polite', usage: 'Defines dynamic content changes within the DockManager container.' },
-    ]
-};
 
 export default DockManager;

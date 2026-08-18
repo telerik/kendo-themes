@@ -16,6 +16,9 @@ const defaultOptions = {
     position: "start"
 };
 
+/**
+ * @aria {aria-hidden="true"} Task connection dots are decorative.
+ */
 export const GanttTaskDot: KendoComponent<KendoGanttTaskDotProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttTaskDotProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -24,7 +27,6 @@ export const GanttTaskDot: KendoComponent<KendoGanttTaskDotProps & React.HTMLAtt
         position = defaultOptions.position,
         ...other
     } = props;
-
 
     return (
         <div

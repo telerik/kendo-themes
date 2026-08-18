@@ -47,6 +47,20 @@ export type KendoDateInputState = { [K in (typeof states)[number]]?: boolean };
 const defaultOptions = {
 };
 
+/**
+ * @aria {role="textbox"} The element should be an input or have role="textbox".
+ * @aria {aria-label|aria-labelledby} The input requires an accessible name (provided by consuming app).
+ * @aria {tabindex="0"} The element should be focusable.
+ * @aria {aria-invalid="true"} Rendered when the DateInput is in an invalid state.
+ * @aria {aria-describedby} Points to the hint or error message.
+ * @aria {aria-readonly="true"} Rendered when the DateInput is readonly.
+ * @aria {aria-disabled="true"} Rendered when the DateInput is disabled.
+ * @ux {Segment editing} Each date part (day, month, year) is focused and edited independently.
+ * @ux {Spin} Arrow keys increment or decrement the focused date segment.
+ * @ux {Format placeholder} The expected date format is shown as placeholder text.
+ * @ux {Validation} Invalid values trigger an error visual state.
+ * @ux {Disabled state} When disabled, the input is non-interactive.
+ */
 export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoDateInputProps &
         KendoDateInputState &
@@ -73,7 +87,6 @@ export const DateInput: KendoComponent<KendoDateInputProps & KendoDateInputState
         'aria-describedby': ariaDescribedBy,
         ...other
     } = props;
-
 
     return (
         <Input
@@ -125,23 +138,13 @@ DateInput.moduleName = DATEINPUT_MODULE_NAME;
 DateInput.folderName = DATEINPUT_FOLDER_NAME;
 
 /**
- * Accessibility specification for DateInput.
- * @accessibility
- * - Uses semantic `<input>` element (role="textbox" implicit)
- * - Requires accessible name via label, aria-label, or aria-labelledby
- * - Disabled state uses native disabled attribute
+ * @keyboard {ArrowUp} Increases the value of the date segment that is highlighted.
+ * @keyboard {ArrowDown} Decreases the value of the date segment that is highlighted.
+ * @keyboard {ArrowLeft} Moves to previous date segment in the input.
+ * @keyboard {ArrowRight} Moves to next date segment in the input.
+ * @keyboard {Backspace or Delete} Deletes value of the date segment.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html ARIA practices Date Picker Dialog Example
  */
-DateInput.ariaSpec = {
-    selector: '.k-dateinput',
-    rules: [
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'role=textbox or nodeName=input', usage: 'The element should be an input or have role="textbox".' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name (provided by consuming app).' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'tabindex=0', usage: 'The element should be focusable.' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the DateInput is in an invalid state.' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message.' },
-        { selector: '.k-dateinput > .k-input-inner', attribute: 'readonly=readonly or aria-readonly=true (when readonly)', usage: 'Rendered when the DateInput is readonly.' },
-        { selector: '.k-dateinput.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the DateInput is disabled.' },
-    ]
-};
 
 export default DateInput;

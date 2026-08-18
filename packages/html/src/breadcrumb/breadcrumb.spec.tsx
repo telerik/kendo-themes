@@ -23,6 +23,17 @@ const defaultOptions = {
     collapsing: 'auto'
 };
 
+/**
+ * @aria {aria-label="Breadcrumb"} Indicates the type of navigation provided by the nav element.
+ * @aria {role="link"} The breadcrumb item should render an <a> element or have role="link".
+ * @aria {aria-current="page"} The last breadcrumb item points to the active page.
+ * @aria {aria-disabled="true"} The last breadcrumb item is disabled.
+ * @aria {aria-hidden="true"} Delimiter icon should not be accessed through assistive technology.
+ * @ux {Navigation trail} Shows the current page location within the application hierarchy.
+ * @ux {Collapsing} Collapses middle items into an ellipsis when space is limited.
+ * @ux {Last item} The last item represents the current page and is non-interactive.
+ * @ux {Root icon} Optionally displays a home icon as the first item.
+ */
 export const Breadcrumb: KendoComponent<KendoBreadcrumbProps & KendoBreadcrumbState & React.HTMLAttributes<HTMLElement>> = (
     props: KendoBreadcrumbProps &
     KendoBreadcrumbState &
@@ -66,23 +77,10 @@ Breadcrumb.moduleName = BREADCRUMB_MODULE_NAME;
 Breadcrumb.folderName = BREADCRUMB_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * Breadcrumb uses the semantic nav element with aria-label.
+ * @keyboard {Tab or Shift + Tab} Focuses next and previous breadcrumb items. The focusable element is the element with either `a` tag, or `role=\"link\"`
+ * @keyboard {Enter} Selects the Bredcrumb item, and navigates to it (if navigatable).
  *
- * - nav: aria-label="Breadcrumb"
- * - Items: links use <a> elements (implicit role="link")
- * - Last item: aria-current="page", aria-disabled="true"
- * - Delimiter icons: aria-hidden="true"
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/breadcrumb/index.html ARIA practices: BreadCrumb Example
  */
-Breadcrumb.ariaSpec = {
-    selector: '.k-breadcrumb',
-    rules: [
-        { selector: '.k-breadcrumb', attribute: 'aria-label=Breadcrumb', usage: 'Indicates the type of navigation provided by the nav element.' },
-        { selector: '.k-breadcrumb-item .k-breadcrumb-link,.k-breadcrumb-item .k-breadcrumb-root-link', attribute: 'role=link or nodeName=a', usage: 'The breadcrumb item should render an <a> element or have role="link".' },
-        { selector: '.k-breadcrumb-last-item .k-breadcrumb-link,.k-breadcrumb-last-item .k-breadcrumb-root-link', attribute: 'aria-current=page', usage: 'The last breadcrumb item points to the active page.' },
-        { selector: '.k-breadcrumb-last-item .k-breadcrumb-link', attribute: 'aria-disabled=true', usage: 'The last breadcrumb item is disabled.' },
-        { selector: '.k-breadcrumb-delimiter-icon', attribute: 'aria-hidden=true', usage: 'Delimiter icon should not be accessed through assistive technology.' },
-    ]
-};
 
 export default Breadcrumb;

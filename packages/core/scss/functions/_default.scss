@@ -7,6 +7,7 @@
 /// @param {String} $default - The default value to compare against.
 /// @param {String | List} $current - The current value to check. Can be a single value or a list of values.
 /// @return {String | Null} - Returns "&," when values match, null otherwise.
+/// @group functions
 
 @function k-when-default($default, $current) {
   @if meta.type-of($current) == "list" {

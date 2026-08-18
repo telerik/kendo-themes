@@ -146,6 +146,10 @@ $kendo-menu-icon-padding-x: null !default;
 /// @group menu
 $kendo-menu-icon-padding-y: null !default;
 
+/// The spacing used for the menu expand arrow negative offset.
+/// @group menu
+$kendo-menu-expand-arrow-spacing: k-spacing(1) !default;
+
 // Menu Separator
 
 /// The inline margin of the horizontal Menu separator.
@@ -349,6 +353,7 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-scroll-button-hover-gradient: $kendo-menu-scroll-button-hover-gradient,
     $kendo-menu-icon-padding-x: $kendo-menu-icon-padding-x,
     $kendo-menu-icon-padding-y: $kendo-menu-icon-padding-y,
+    $kendo-menu-expand-arrow-spacing: $kendo-menu-expand-arrow-spacing,
     $kendo-menu-separator-margin-inline: $kendo-menu-separator-margin-inline,
     $kendo-menu-separator-margin-block: $kendo-menu-separator-margin-block,
     $kendo-menu-separator-border: $kendo-menu-separator-border,

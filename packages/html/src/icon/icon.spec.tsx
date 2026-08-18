@@ -7,7 +7,6 @@ import { KendoComponent } from '../_types/component';
 import { ICON_FOLDER_NAME, ICON_MODULE_NAME } from './constants';
 import { useContext } from 'react';
 import { ConfigurationContext } from '../configuration/configuration-context';
-
 export const ICON_CLASSNAME = `k-icon`;
 
 const snakeToCamel = str =>
@@ -17,7 +16,6 @@ const snakeToCamel = str =>
             .replace('-', '')
             .replace('_', '')
     );
-
 
 const states = [];
 
@@ -59,6 +57,9 @@ const defaultOptions = {
     variant: IconVariant.outline
 };
 
+/**
+ * @aria {aria-hidden="true"} Hides the icon element and all its children from assistive technologies.
+ */
 export const Icon: KendoComponent<IconProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: IconProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
@@ -113,13 +114,7 @@ Icon.moduleName = ICON_MODULE_NAME;
 Icon.folderName = ICON_FOLDER_NAME;
 
 /**
- * Accessibility specification for Icon.
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden#example MDN aria-hidden on icon example
  */
-Icon.ariaSpec = {
-    selector: '.k-icon, .k-svg-icon',
-    rules: [
-        { selector: '.k-icon, .k-svg-icon', attribute: 'aria-hidden=true', usage: 'Hides the icon element and all its children from assistive technologies.' },
-    ]
-};
 
 export default Icon;

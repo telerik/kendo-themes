@@ -1,5 +1,9 @@
 $kendo-translucency-base: 0% !default;
 
+/// Returns an oklch color expression with translucency applied via a CSS variable.
+/// @param {Color} $color - The base color to apply translucency to.
+/// @return {String} An oklch relative color expression with the translucency CSS variable applied.
+/// @group functions
 @function k-translucency-bg($color) {
     $_result: "oklch(from #{$color} l c h / calc(100% - calc(var(--kendo-translucency-base, 0%))))";
     @return #{$_result};
@@ -8,6 +12,10 @@ $kendo-translucency-base: 0% !default;
 $kendo-translucency-blur-base: 6px !default;
 $kendo-translucency-blur-step: 2px !default;
 
+/// Returns a blur filter expression scaled by a translucency level.
+/// @param {Number} $level - The blur intensity multiplier (default: 1).
+/// @return {String} A CSS blur() filter expression.
+/// @group functions
 @function k-translucency-blur($level: 1) {
     $_result: "blur(calc(#{$kendo-translucency-blur-base} + calc(#{$level} * #{$kendo-translucency-blur-step})))";
     @return #{$_result};

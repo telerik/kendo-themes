@@ -1,0 +1,64 @@
+@use "../../spacing/index.scss" as *;
+@use "../../motion/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-citation--layout-base() {
+    .k-citation-popover {
+        .k-popover-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: var(--kendo-font-size-sm);
+        }
+
+        .k-popover-body:has(> .k-citation-popover-view) {
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+
+    .k-citation-popover-view {
+        width: 100%;
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        padding: $kendo-citation-popover-view-padding;
+        transition: transform k-transition(slide-in);
+        transform: translateX(calc(-100% * (var(--kendo-citation-popover-view-current, 1) - 1)));
+    }
+
+    :is([dir="rtl"], .k-rtl) .k-citation-popover-view {
+        transform: translateX(calc(100% * (var(--kendo-citation-popover-view-current, 1) - 1)));
+    }
+
+    .k-citation-popover-view-title {
+        font-weight: $kendo-citation-popover-view-title-font-weight;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .k-citation-popover-view-body {
+        max-height: 108px;
+        overflow: auto;
+        display: block;
+        font-size: $kendo-citation-popover-view-body-font-size;
+        margin-top: $kendo-citation-popover-view-body-margin-top;
+    }
+
+    .k-citation-popover-view-source {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: $kendo-citation-popover-view-source-gap;
+        font-size: $kendo-citation-popover-view-source-font-size;
+        margin-top: $kendo-citation-popover-view-source-margin-top;
+
+        .k-icon {
+            aspect-ratio: 1;
+        }
+    }
+}

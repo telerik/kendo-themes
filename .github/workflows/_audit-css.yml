@@ -1,0 +1,50 @@
+name: Audit CSS
+
+on:
+  workflow_call:
+
+concurrency:
+  group: audit-css-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+    needs: []
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v7
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v6
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Download compiled themes artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: themes
+
+      - name: Extract compiled themes
+        run: |
+          tar -xf themes.tar
+
+      - name: Run CSS compliance audit
+        run: |
+          node scripts/audit-css.mjs all

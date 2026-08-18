@@ -15,6 +15,7 @@ const states = [
 export type KendoGridHeaderCellProps = KendoTableThProps & {
     menu?: "filter" | "column";
     sortable?: boolean;
+    sorted?: boolean;
     filterable?: boolean;
     sticky?: boolean;
     resizable?: boolean;
@@ -23,6 +24,7 @@ export type KendoGridHeaderCellProps = KendoTableThProps & {
     sortIcon?: string;
     sortOrder?: number;
     accessibleLabel?: string;
+    groupColumn?: boolean;
 };
 
 const defaultOptions = {
@@ -39,6 +41,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
     const {
         menu,
         sortable,
+        sorted,
         filterable,
         sticky,
         resizable,
@@ -49,6 +52,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
         sortIcon = defaultOptions.sortIcon,
         sortOrder,
         accessibleLabel,
+        groupColumn,
         ...others
     } = props;
 
@@ -60,7 +64,8 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
                 GRIDHEADERCELL_CLASSNAME,
                 {
                     [`k-filterable`]: menu || filterable,
-                    [`k-sorted`]: sortable,
+                    [`k-sortable`]: sortable,
+                    [`k-sorted`]: sorted,
                     [`k-grid-header-sticky`]: sticky,
                     [`k-touch-action-none`]: resizable
                 },
@@ -75,7 +80,7 @@ export const GridHeaderCell: KendoComponent<KendoGridHeaderCellProps & KendoGrid
                 columnTitle && (
                     <span className="k-cell-inner">
                         <span className="k-link">
-                            <span className="k-column-title">{columnTitle}</span>
+                            <span className={classNames('k-column-title', {'k-grouping-row-text': groupColumn})}>{columnTitle}</span>
                             {sortable && (
                                 <span className="k-sort-icon">
                                     <Icon icon={sortIcon} />

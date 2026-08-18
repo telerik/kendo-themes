@@ -39,6 +39,10 @@ $kendo-panelbar-item-padding-x: k-spacing(2) !default;
 /// @group panelbar
 $kendo-panelbar-item-padding-y: k-spacing(1) !default;
 
+/// The spacing between icon and text in PanelBar items.
+/// @group panelbar
+$kendo-panelbar-item-icon-spacing: k-spacing(1) !default;
+
 /// The maximum nesting of the PanelBar items.
 /// @group panelbar
 $kendo-panelbar-item-level-count: 4 !default;
@@ -280,6 +284,7 @@ $kendo-panelbar-header-expanded-gradient: null !default;
     $kendo-panelbar-header-padding-y: $kendo-panelbar-header-padding-y,
     $kendo-panelbar-item-padding-x: $kendo-panelbar-item-padding-x,
     $kendo-panelbar-item-padding-y: $kendo-panelbar-item-padding-y,
+    $kendo-panelbar-item-icon-spacing: $kendo-panelbar-item-icon-spacing,
     $kendo-panelbar-item-level-count: $kendo-panelbar-item-level-count,
     $kendo-panelbar-bg: $kendo-panelbar-bg,
     $kendo-panelbar-text: $kendo-panelbar-text,

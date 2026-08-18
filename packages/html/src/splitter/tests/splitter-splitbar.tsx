@@ -1,4 +1,4 @@
-import SplitterPane from '../splitter-pane';
+import SplitterPane from '../splitter-pane.spec';
 import Splitter from '../splitter.spec';
 
 const style = `

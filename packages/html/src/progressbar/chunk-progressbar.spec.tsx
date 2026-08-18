@@ -19,7 +19,6 @@ export type KendoChunkProgressBarProps = {
     progress: number;
     orientation?: 'horizontal' | 'vertical';
     reverse?: boolean;
-    /** @aria aria-label - accessible name for the progressbar */
     ariaLabel?: string;
 };
 
@@ -31,6 +30,12 @@ const defaultOptions = {
     progress: 0
 };
 
+/**
+ * @aria {aria-label} accessible name for the progressbar
+ * @ux {Segmented fill} Progress is shown as a series of discrete filled chunks.
+ * @ux {Chunk count} The number of chunks is configurable.
+ * @ux {Orientation} Can be rendered horizontally or vertically.
+ */
 export const ChunkProgressBar: KendoComponent<KendoChunkProgressBarProps & KendoChunkProgressBarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChunkProgressBarProps &
         KendoChunkProgressBarState &
@@ -91,17 +96,5 @@ ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
 ChunkProgressBar.defaultOptions = defaultOptions;
 ChunkProgressBar.moduleName = PROGRESSBAR_MODULE_NAME;
 ChunkProgressBar.folderName = PROGRESSBAR_FOLDER_NAME;
-
-ChunkProgressBar.ariaSpec = {
-    selector: '.k-chunk-progressbar',
-    implicitRole: 'progressbar',
-    rules: [
-        { selector: '.k-chunk-progressbar', attribute: 'role=progressbar', usage: 'Sets the proper role for ChunkProgressBar.' },
-        { selector: '.k-chunk-progressbar', attribute: 'aria-label or aria-labelledby', usage: 'The ChunkProgressBar needs an accessible name to be assigned to it.' },
-        { selector: '.k-chunk-progressbar:not(.k-progressbar-indeterminate)', attribute: 'aria-valuenow', usage: 'Required if the value is not indeterminate. Value between aria-valuemin and aria-valuemax.' },
-        { selector: '.k-chunk-progressbar', attribute: 'aria-valuemin', usage: 'Minimum value. Defaults to 0.' },
-        { selector: '.k-chunk-progressbar', attribute: 'aria-valuemax', usage: 'Maximum value. Defaults to chunk count.' },
-    ]
-};
 
 export default ChunkProgressBar;

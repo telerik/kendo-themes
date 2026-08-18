@@ -32,7 +32,7 @@ export default () =>(
                                 <TableThead>
                                     <TableRow>
                                         <GridHeaderCell rowspan={1} columnTitle="Order ID"></GridHeaderCell>
-                                        <GridHeaderCell sortable sortIcon="sort-desc-small" sortOrder={1} rowspan={1} columnTitle="Ship Name"></GridHeaderCell>
+                                        <GridHeaderCell sortable sorted sortIcon="sort-desc-small" sortOrder={1} rowspan={1} columnTitle="Ship Name"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -45,7 +45,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell sortable sortOrder={2} rowspan={1} columnTitle="Ship Country"></GridHeaderCell>
+                                        <GridHeaderCell sortable sorted sortOrder={2} rowspan={1} columnTitle="Ship Country"></GridHeaderCell>
                                         <GridHeaderCell rowspan={1} columnTitle="Ship City"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
@@ -122,7 +122,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow style={{ height: "38px" }}>
-                                        <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
+                                        <GridHeaderCell rowspan={2} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                         <GridHeaderCell rowspan={2} colspan={1} columnTitle="Product ID"></GridHeaderCell>
                                         <GridHeaderCell rowspan={2} colspan={1} columnTitle="Product Name"></GridHeaderCell>
                                     </TableRow>
@@ -166,11 +166,10 @@ export default () =>(
                                     <TableTbody>
                                         <TableRow className="k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <TableTd colspan={3}>
-                                                <p className="k-reset">
+                                                <div className="k-grouping-row-content">
                                                     <Icon icon="chevron-down" />
-
-                                                    Discontinued: false
-                                                </p>
+                                                    <span className="k-grouping-row-text">Discontinued: false</span>
+                                                </div>
                                             </TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row" style={{ height: "38px" }}>
@@ -211,10 +210,10 @@ export default () =>(
                                         </TableRow>
                                         <TableRow className="k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <TableTd colspan={3}>
-                                                <p className="k-reset">
+                                                <div className="k-grouping-row-content">
                                                     <Icon icon="chevron-down" />
-                                                    Discontinued: true
-                                                </p>
+                                                    <span className="k-grouping-row-text">Discontinued: true</span>
+                                                </div>
                                             </TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row" alt style={{ height: "38px" }}>
@@ -247,7 +246,7 @@ export default () =>(
                                     <TableTbody>
                                         <TableRow className="k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <TableTd colspan={4}>
-                                                <p className="k-reset"></p>
+                                                <div className="k-grouping-row-content"></div>
                                             </TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row" style={{ height: "38px" }}>
@@ -288,7 +287,7 @@ export default () =>(
                                         </TableRow>
                                         <TableRow className="k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <TableTd className="k-table-td" colspan={4}>
-                                                <p className="k-reset"></p>
+                                                <div className="k-grouping-row-content"></div>
                                             </TableTd>
                                         </TableRow>
                                         <TableRow alt className="k-master-row" style={{ height: "38px" }}>

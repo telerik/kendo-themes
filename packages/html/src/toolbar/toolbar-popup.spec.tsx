@@ -24,6 +24,12 @@ export type KendoToolbarPopupProps = KendoToolbarPopupOptions & {
 const defaultOptions = {
 };
 
+/**
+ * @aria {role="menu"} The role of the tools wrapper in the overflow section.
+ * @aria {aria-labelledby=".k-toolbar-overflow-button id"} Associates the title of the menu toggle button.
+ * @aria {role="toolbar"} The role of the tools wrapper in the overflow section.
+ * @aria {aria-labelledby=".k-toolbar-overflow-button id"} Associates the title of the section toggle button.
+ */
 export const ToolbarPopup: KendoComponent<KendoToolbarPopupProps & React.HTMLAttributes<HTMLElement>> = (
     props: KendoToolbarPopupProps &
     React.HTMLAttributes<HTMLElement>

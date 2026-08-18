@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/diagram/_layout.scss" as *;
+
+
+@mixin kendo-diagram--layout() {
+    @include kendo-diagram--layout-base();
+}

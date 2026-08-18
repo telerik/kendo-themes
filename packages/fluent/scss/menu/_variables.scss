@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "../list/_variables.scss"as *;
 @use "../popup/_variables.scss"as *;
 
@@ -50,7 +51,11 @@ $kendo-menu-item-padding-y: var( --kendo-menu-item-padding-y, #{k-spacing(3)} ) 
 $kendo-menu-item-spacing: var( --kendo-menu-item-spacing, #{k-spacing(0)} ) !default;
 /// The spacing between the Menu item text and icons.
 /// @group menu
-$kendo-menu-item-icon-spacing: var( --kendo-menu-item-icon-spacing, var( --kendo-icon-spacing, .5rem ) ) !default;
+$kendo-menu-item-icon-spacing: var( --kendo-menu-item-icon-spacing, #{$kendo-icon-spacing} ) !default;
+
+/// The spacing used for the menu expand arrow negative offset.
+/// @group menu
+$kendo-menu-expand-arrow-spacing: var( --kendo-menu-expand-arrow-spacing, #{k-spacing(2)} ) !default;
 
 /// The font weight of the selected Menu item.
 /// @group menu
@@ -191,13 +196,13 @@ $kendo-menu-popup-md-item-padding-y: var( --kendo-menu-popup-md-item-padding-y, 
 $kendo-menu-popup-lg-item-padding-y: var( --kendo-menu-popup-lg-item-padding-y, #{$kendo-list-lg-item-padding-y} ) !default;
 /// The end padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-end: calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-sm-item-padding-end: calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + #{$kendo-icon-size} ) !default;
 /// The end padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-end: calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-md-item-padding-end: calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + #{$kendo-icon-size} ) !default;
 /// The end padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-end: calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-lg-item-padding-end: calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + #{$kendo-icon-size} ) !default;
 
 /// The start margin of the small Menu popup item expand icon.
 /// @group menu
@@ -210,13 +215,13 @@ $kendo-menu-popup-item-icon-md-margin-start: k-spacing(0) !default;
 $kendo-menu-popup-lg-item-icon-margin-start: k-spacing(0) !default;
 /// The end margin of the small Menu popup item expand icon.
 /// @group menu
-$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) ) !default;
+$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-sm-item-padding-x}) ) !default;
 /// The end margin of the medium Menu popup item expand icon.
 /// @group menu
-$kendo-menu-popup-item-icon-md-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-md-item-padding-x}) ) !default;
+$kendo-menu-popup-item-icon-md-margin-end: calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-md-item-padding-x}) ) !default;
 /// The end margin of the large Menu popup item expand icon.
 /// @group menu
-$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-lg-item-padding-x}) ) !default;
+$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-lg-item-padding-x}) ) !default;
 
 /// The spacing between the Menu items in popup.
 /// @group menu
@@ -285,6 +290,7 @@ $kendo-menu-icon-color: var( --kendo-menu-icon-color, #{k-color(primary)} ) !def
     $kendo-menu-item-padding-y: $kendo-menu-item-padding-y,
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
+    $kendo-menu-expand-arrow-spacing: $kendo-menu-expand-arrow-spacing,
     $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
     $kendo-menu-item-bg: $kendo-menu-item-bg,
     $kendo-menu-item-text: $kendo-menu-item-text,

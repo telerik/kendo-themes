@@ -26,10 +26,6 @@
             .k-draghandle {
                 @include fill( $bg: $kendo-slider-track-bg );
             }
-
-            .k-draghandle {
-                border: 2px solid inherit;
-            }
         }
     }
 

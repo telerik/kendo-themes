@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/treelist/_layout.scss" as *;
 
@@ -22,6 +23,6 @@
     }
 
     .k-treelist-toggle {
-        padding: var( --kendo-icon-padding, k-spacing(1) );
+        padding: k-spacing(1);
     }
 }

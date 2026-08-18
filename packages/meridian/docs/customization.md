@@ -954,6 +954,236 @@ The following table lists the available variables for customizing the Meridian t
 </tbody>
 </table>
 
+### AgentResponse
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-agent-step-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon and the content of the AgentStep head and content row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-padding-end</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-icon-margin-top</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the AgentStep icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-added-color</td>
+    <td>String</td>
+    <td><code>k-color(success-on-surface)</code></td>
+    <td><code>var(--kendo-color-success-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the added lines count in the AgentStep diffstat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-removed-color</td>
+    <td>String</td>
+    <td><code>k-color(error-on-surface)</code></td>
+    <td><code>var(--kendo-color-error-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the removed lines count in the AgentStep diffstat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AgentStep label, secondary text, and diffstat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-body-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AgentStep body content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-focus-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-focus-outline-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the focused AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-agent-step-focus-outline-offset</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon column and the content of the Thought.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-icon-col-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap in the icon column of the Thought.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between stacked Thought items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start padding of the Thought, aligning it with the AgentStep head.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-thought-connector-color</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the connector line between stacked Thought items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tool-call-indent</td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start indent of the ToolCall body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tool-call-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the ToolCall body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tool-call-pre-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the pre element in the ToolCall body.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Appbar
 
 <table class="theme-variables">
@@ -8198,6 +8428,96 @@ The following table lists the available variables for customizing the Meridian t
 </tbody>
 </table>
 
+### Checkpoint
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-checkpoint-line-color</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Checkpoint separator line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the Checkpoint line and stamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-line-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Checkpoint separator line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Checkpoint stamp text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Checkpoint stamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-font-weight</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Checkpoint stamp text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkpoint-stamp-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Checkpoint stamp.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Chip
 
 <table class="theme-variables">
@@ -8721,6 +9041,116 @@ The following table lists the available variables for customizing the Meridian t
 </tbody>
 </table>
 
+### Citation
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-citation-popover-view-padding</td>
+    <td>List</td>
+    <td><code>k-spacing(2) k-spacing(4) k-spacing(4) k-spacing(4)</code></td>
+    <td><code>(var(--kendo-spacing-2) var(--kendo-spacing-4) var(--kendo-spacing-4) var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the CitationPopover view.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-pages-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the CitationPopover page indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-title-font-weight</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the CitationPopoverView title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-body-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the CitationPopoverView body text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-body-margin-top</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the CitationPopoverView body text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-body-color</td>
+    <td>String</td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the CitationPopoverView body text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-source-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the CitationPopoverView source link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-source-margin-top</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the CitationPopoverView source link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-citation-popover-view-source-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the icon and text of the CitationPopoverView source link.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Color System
 
 <table class="theme-variables">
@@ -8742,7 +9172,7 @@ The following table lists the available variables for customizing the Meridian t
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 261.13))</li><li>subtle: oklch(55.44% 0.0407 257.42deg)</li><li>surface: oklch(98.46% 0.0017 247.84deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) 1 0 h)</li><li>border: oklch(79.5% 0.0197 255.55deg / 0.35)</li><li>border-alt: oklch(79.5% 0.0197 255.55deg / 0.5)</li><li>base-subtle: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.98) calc(c + 0.0058) calc(h + 10.48))</li><li>base-subtle-active: oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.97) calc(c + 0.0076) calc(h + 8.84))</li><li>base: oklch(96.92% 0.0034 247.86deg)</li><li>base-hover: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.99) calc(c + 0.0058) calc(h + 10.48))</li><li>base-active: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.98) calc(c + 0.0076) calc(h + 8.84))</li><li>base-emphasis: oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>base-on-surface: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>primary-subtle: oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) calc(l + 0.5571) calc(c - 0.0265) calc(h - 1.78))</li><li>primary: oklch(37.17% 0.0392 257.29deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.0922, (0.35 - l) * 99999, 0.0922))) calc(c - 0.0023) calc(h + 2.74))</li><li>primary-active: oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.1640, (0.35 - l) * 99999, 0.1640))) calc(c + 0.0007) calc(h + 8.47))</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l - 0.2429) calc(c + 0.0014) calc(h + 7.41))</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: oklch(from var(--kendo-color-primary) clamp(0.20, calc(l - 0.0922), 0.60) calc(c - 0.0023) calc(h + 2.74))</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) calc(l + 0.3749) calc(c - 0.1730) calc(h + 6.61))</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l + 0.3424) calc(c - 0.1561) calc(h + 7.13))</li><li>secondary: oklch(54.53% 0.2124 275.85deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) max(0.15, calc(l + clamp(-0.0569, (0.35 - l) * 99999, 0.0569))) calc(c - 0.0174) calc(h - 0.42))</li><li>secondary-active: oklch(from var(--kendo-color-secondary) max(0.20, calc(l + clamp(-0.1233, (0.35 - l) * 99999, 0.1233))) calc(c - 0.0417) calc(h - 0.77))</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) calc(l - 0.2705) calc(c - 0.1041) h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: oklch(from var(--kendo-color-secondary) clamp(0.20, calc(l - 0.1233), 0.60) calc(c - 0.0417) calc(h - 0.77))</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) calc(l + 0.1308) calc(c - 0.0793) calc(h + 3.78))</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) calc(l + 0.1097) calc(c - 0.0665) calc(h + 0.96))</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) calc(l + 0.0830) calc(c - 0.0486) calc(h + 0.87))</li><li>tertiary: oklch(83.18% 0.1046 310.19deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) max(0.15, calc(l + clamp(-0.0551, (0.35 - l) * 99999, 0.0551))) calc(c + 0.0342) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) max(0.20, calc(l + clamp(-0.1072, (0.35 - l) * 99999, 0.1072))) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l - 0.1072) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l - 0.4562) calc(c + 0.0303) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0.2783, (0.65 - l) * 99999, 0.95) 0.0970 h)</li><li>tertiary-on-surface: oklch(from var(--kendo-color-tertiary) clamp(0.20, calc(l - 0.4562), 0.60) calc(c + 0.0303) h)</li><li>info-subtle: oklch(from var(--kendo-color-info) calc(l + 0.3276) calc(c - 0.0923) calc(h - 12.89))</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) calc(l + 0.2710) calc(c - 0.0723) calc(h - 12.07))</li><li>info-subtle-active: oklch(from var(--kendo-color-info) calc(l + 0.2166) calc(c - 0.0535) calc(h - 9.52))</li><li>info: oklch(56.43% 0.131 241.46deg)</li><li>info-hover: oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.0362, (0.35 - l) * 99999, 0.0362))) calc(c - 0.0083) calc(h - 0.10))</li><li>info-active: oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.0735, (0.35 - l) * 99999, 0.0735))) calc(c - 0.0181) calc(h - 0.68))</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.1218) calc(c - 0.0235) calc(h - 8.04))</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l - 0.20) calc(c - 0.0360) calc(h - 0.92))</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>info-on-surface: oklch(from var(--kendo-color-info) clamp(0.20, calc(l - 0.18), 0.55) calc(c - 0.0181) calc(h - 0.68))</li><li>success-subtle: oklch(from var(--kendo-color-success) calc(l + 0.3820) calc(c - 0.0756) calc(h + 10.01))</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) calc(l + 0.3257) calc(c - 0.0510) calc(h + 9.38))</li><li>success-subtle-active: oklch(from var(--kendo-color-success) calc(l + 0.2724) calc(c - 0.0300) calc(h + 7.48))</li><li>success: oklch(51.46% 0.1066 163.53deg)</li><li>success-hover: oklch(from var(--kendo-color-success) max(0.15, calc(l + clamp(-0.0369, (0.35 - l) * 99999, 0.0369))) calc(c - 0.0071) h)</li><li>success-active: oklch(from var(--kendo-color-success) max(0.20, calc(l + clamp(-0.0744, (0.35 - l) * 99999, 0.0744))) calc(c - 0.0145) calc(h - 0.12))</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.1725) calc(c - 0.0033) calc(h + 5.16))</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l - 0.1550) calc(c - 0.0314) calc(h + 0.29))</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>success-on-surface: oklch(from var(--kendo-color-success) clamp(0.20, calc(l - 0.1126), 0.60) calc(c - 0.0222) calc(h - 0.26))</li><li>warning-subtle: oklch(from var(--kendo-color-warning) calc(l + 0.0793) calc(c - 0.1084) calc(h + 1.96))</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) calc(l + 0.0637) calc(c - 0.0833) calc(h + 1.54))</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) calc(l + 0.0517) calc(c - 0.0593) calc(h + 1.36))</li><li>warning: oklch(88.34% 0.1817 99deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) max(0.15, calc(l + clamp(-0.0334, (0.35 - l) * 99999, 0.0334))) calc(c - 0.0069) calc(h - 0.16))</li><li>warning-active: oklch(from var(--kendo-color-warning) max(0.20, calc(l + clamp(-0.0672, (0.35 - l) * 99999, 0.0672))) calc(c - 0.0138) calc(h - 0.33))</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0283) calc(c - 0.0228) calc(h + 1.42))</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l - 0.5998) calc(c - 0.1574) calc(h + 162.13))</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 162.13))</li><li>warning-on-surface: oklch(from var(--kendo-color-warning) clamp(0.20, calc(l - 0.5998), 0.60) calc(c - 0.1574) calc(h + 162.13))</li><li>error-subtle: oklch(from var(--kendo-color-error) calc(l + 0.3868) calc(c - 0.1565) calc(h - 14.72))</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) calc(l + 0.3203) calc(c - 0.1250) calc(h - 13.80))</li><li>error-subtle-active: oklch(from var(--kendo-color-error) calc(l + 0.2580) calc(c - 0.0932) calc(h - 12.78))</li><li>error: oklch(51.01% 0.1951 14.31deg)</li><li>error-hover: oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.0415, (0.35 - l) * 99999, 0.0415))) calc(c - 0.0154) calc(h + 0.39))</li><li>error-active: oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.0851, (0.35 - l) * 99999, 0.0851))) calc(c - 0.0324) calc(h - 0.19))</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l - 0.18) calc(c - 0.0490) calc(h - 0.16))</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>error-on-surface: oklch(from var(--kendo-color-error) clamp(0.20, calc(l - 0.16), 0.55) calc(c - 0.0154) calc(h + 0.39))</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse: oklch(28.36% 0.0243 261.13deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>series: oklch(54.53% 0.2124 275.85deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l - 0.1233) calc(c - 0.0417) calc(h - 0.77))</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l - 0.1945) calc(c - 0.0713) calc(h - 0.52))</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l + 0.1176) calc(c - 0.0308) calc(h + 2.64))</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.0868) calc(c + 0.0134) calc(h + 34.73))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l - 0.1664) calc(c - 0.0541) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l - 0.2565) calc(c - 0.0909) calc(h - 0.37))</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l + 0.0925) calc(c - 0.0531) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l + 0.1997) calc(c - 0.1212) calc(h - 0.39))</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.1534) calc(c - 0.0058) calc(h + 86.96))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l - 0.1333) calc(c - 0.0427) calc(h - 0.57))</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l - 0.2736) calc(c - 0.0877) calc(h - 0.57))</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l + 0.0604) calc(c - 0.0487) calc(h - 3.57))</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l + 0.1339) calc(c - 0.1035) calc(h - 5.82))</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.2229) calc(c - 0.0482) calc(h - 122.72))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l - 0.1462) calc(c - 0.0334) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l - 0.3015) calc(c - 0.0691) calc(h + 0.38))</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l + 0.0522) calc(c - 0.0354) calc(h + 2.32))</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l + 0.1078) calc(c - 0.0775) calc(h + 4.33))</li><li>series-e: oklch(from var(--kendo-color-series) calc(l + 0.3660) calc(c - 0.0645) calc(h - 179.84))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l - 0.1759) calc(c - 0.0305) calc(h + 0.31))</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l - 0.3623) calc(c - 0.0621) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l + 0.0206) calc(c - 0.0289) calc(h + 0.79))</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l + 0.0411) calc(c - 0.0664) calc(h + 0.31))</li><li>series-f: oklch(from var(--kendo-color-series) calc(l + 0.1532) calc(c - 0.0202) calc(h + 111.34))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l - 0.1947) calc(c - 0.0581) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l - 0.3643) calc(c - 0.1031) calc(h - 0.41))</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l + 0.0613) calc(c - 0.0491) calc(h - 2.12))</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l + 0.1348) calc(c - 0.1001) calc(h - 3.88))</li></ul></td>
+    <td><ul><li>app-surface: oklch(100% 0 0deg)</li><li>on-app-surface: oklch(from var(--kendo-color-app-surface) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 261.13))</li><li>subtle: oklch(55.44% 0.0407 257.42deg)</li><li>surface: oklch(98.46% 0.0017 247.84deg)</li><li>surface-alt: oklch(from var(--kendo-color-surface) 1 0 h)</li><li>border: oklch(79.5% 0.0197 255.55deg / 0.35)</li><li>border-alt: oklch(79.5% 0.0197 255.55deg / 0.5)</li><li>base-subtle: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0182, (0.35 - l) * 99999, 0.0182)), 0.99) calc(c + 0.0028) calc(h + 7.62))</li><li>base-subtle-hover: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.98) calc(c + 0.0058) calc(h + 10.48))</li><li>base-subtle-active: oklch(from var(--kendo-color-base) clamp(0.03, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.97) calc(c + 0.0076) calc(h + 8.84))</li><li>base: oklch(96.92% 0.0034 247.86deg)</li><li>base-hover: oklch(from var(--kendo-color-base) clamp(0.01, calc(l + clamp(-0.0395, (0.35 - l) * 99999, 0.0395)), 0.99) calc(c + 0.0058) calc(h + 10.48))</li><li>base-active: oklch(from var(--kendo-color-base) clamp(0.02, calc(l + clamp(-0.0673, (0.35 - l) * 99999, 0.0673)), 0.98) calc(c + 0.0076) calc(h + 8.84))</li><li>base-emphasis: oklch(from var(--kendo-color-base) clamp(0.05, calc(l + clamp(-0.0984, (0.35 - l) * 99999, 0.0984)), 0.95) calc(c + 0.0094) calc(h + 7.65))</li><li>base-on-subtle: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>on-base: oklch(from var(--kendo-color-base) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 13.28))</li><li>base-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-base) l c h) 25%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 75%)</li><li>primary-subtle: oklch(from var(--kendo-color-primary) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39))</li><li>primary-subtle-hover: oklch(from var(--kendo-color-primary) calc(l + 0.5784) calc(c - 0.0295) calc(h - 4.47))</li><li>primary-subtle-active: oklch(from var(--kendo-color-primary) calc(l + 0.5571) calc(c - 0.0265) calc(h - 1.78))</li><li>primary: oklch(37.17% 0.0392 257.29deg)</li><li>primary-hover: oklch(from var(--kendo-color-primary) max(0.15, calc(l + clamp(-0.0922, (0.35 - l) * 99999, 0.0922))) calc(c - 0.0023) calc(h + 2.74))</li><li>primary-active: oklch(from var(--kendo-color-primary) max(0.20, calc(l + clamp(-0.1640, (0.35 - l) * 99999, 0.1640))) calc(c + 0.0007) calc(h + 8.47))</li><li>primary-emphasis: oklch(from var(--kendo-color-primary) calc(l + 0.4973) calc(c - 0.0193) calc(h - 4.39))</li><li>primary-on-subtle: oklch(from var(--kendo-color-primary) calc(l - 0.2429) calc(c + 0.0014) calc(h + 7.41))</li><li>on-primary: oklch(from var(--kendo-color-primary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>primary-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-primary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)</li><li>secondary-subtle: oklch(from var(--kendo-color-secondary) calc(l + 0.4027) calc(c - 0.1869) calc(h + 7.65))</li><li>secondary-subtle-hover: oklch(from var(--kendo-color-secondary) calc(l + 0.3749) calc(c - 0.1730) calc(h + 6.61))</li><li>secondary-subtle-active: oklch(from var(--kendo-color-secondary) calc(l + 0.3424) calc(c - 0.1561) calc(h + 7.13))</li><li>secondary: oklch(54.53% 0.2124 275.85deg)</li><li>secondary-hover: oklch(from var(--kendo-color-secondary) max(0.15, calc(l + clamp(-0.0569, (0.35 - l) * 99999, 0.0569))) calc(c - 0.0174) calc(h - 0.42))</li><li>secondary-active: oklch(from var(--kendo-color-secondary) max(0.20, calc(l + clamp(-0.1233, (0.35 - l) * 99999, 0.1233))) calc(c - 0.0417) calc(h - 0.77))</li><li>secondary-emphasis: oklch(from var(--kendo-color-secondary) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>secondary-on-subtle: oklch(from var(--kendo-color-secondary) calc(l - 0.2705) calc(c - 0.1041) h)</li><li>on-secondary: oklch(from var(--kendo-color-secondary) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>secondary-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-secondary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)</li><li>tertiary-subtle: oklch(from var(--kendo-color-tertiary) calc(l + 0.1308) calc(c - 0.0793) calc(h + 3.78))</li><li>tertiary-subtle-hover: oklch(from var(--kendo-color-tertiary) calc(l + 0.1097) calc(c - 0.0665) calc(h + 0.96))</li><li>tertiary-subtle-active: oklch(from var(--kendo-color-tertiary) calc(l + 0.0830) calc(c - 0.0486) calc(h + 0.87))</li><li>tertiary: oklch(83.18% 0.1046 310.19deg)</li><li>tertiary-hover: oklch(from var(--kendo-color-tertiary) max(0.15, calc(l + clamp(-0.0551, (0.35 - l) * 99999, 0.0551))) calc(c + 0.0342) h)</li><li>tertiary-active: oklch(from var(--kendo-color-tertiary) max(0.20, calc(l + clamp(-0.1072, (0.35 - l) * 99999, 0.1072))) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-emphasis: oklch(from var(--kendo-color-tertiary) calc(l - 0.1072) calc(c + 0.0681) calc(h + 0.48))</li><li>tertiary-on-subtle: oklch(from var(--kendo-color-tertiary) calc(l - 0.4562) calc(c + 0.0303) h)</li><li>on-tertiary: oklch(from var(--kendo-color-tertiary) clamp(0.2783, (0.65 - l) * 99999, 0.95) 0.0970 h)</li><li>tertiary-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-tertiary) l c h) 35%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 65%)</li><li>info-subtle: oklch(from var(--kendo-color-info) calc(l + 0.3276) calc(c - 0.0923) calc(h - 12.89))</li><li>info-subtle-hover: oklch(from var(--kendo-color-info) calc(l + 0.2710) calc(c - 0.0723) calc(h - 12.07))</li><li>info-subtle-active: oklch(from var(--kendo-color-info) calc(l + 0.2166) calc(c - 0.0535) calc(h - 9.52))</li><li>info: oklch(56.43% 0.131 241.46deg)</li><li>info-hover: oklch(from var(--kendo-color-info) max(0.15, calc(l + clamp(-0.0362, (0.35 - l) * 99999, 0.0362))) calc(c - 0.0083) calc(h - 0.10))</li><li>info-active: oklch(from var(--kendo-color-info) max(0.20, calc(l + clamp(-0.0735, (0.35 - l) * 99999, 0.0735))) calc(c - 0.0181) calc(h - 0.68))</li><li>info-emphasis: oklch(from var(--kendo-color-info) calc(l + 0.1218) calc(c - 0.0235) calc(h - 8.04))</li><li>info-on-subtle: oklch(from var(--kendo-color-info) calc(l - 0.20) calc(c - 0.0360) calc(h - 0.92))</li><li>on-info: oklch(from var(--kendo-color-info) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>info-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-info) l c h) 70%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 30%)</li><li>success-subtle: oklch(from var(--kendo-color-success) calc(l + 0.3820) calc(c - 0.0756) calc(h + 10.01))</li><li>success-subtle-hover: oklch(from var(--kendo-color-success) calc(l + 0.3257) calc(c - 0.0510) calc(h + 9.38))</li><li>success-subtle-active: oklch(from var(--kendo-color-success) calc(l + 0.2724) calc(c - 0.0300) calc(h + 7.48))</li><li>success: oklch(51.46% 0.1066 163.53deg)</li><li>success-hover: oklch(from var(--kendo-color-success) max(0.15, calc(l + clamp(-0.0369, (0.35 - l) * 99999, 0.0369))) calc(c - 0.0071) h)</li><li>success-active: oklch(from var(--kendo-color-success) max(0.20, calc(l + clamp(-0.0744, (0.35 - l) * 99999, 0.0744))) calc(c - 0.0145) calc(h - 0.12))</li><li>success-emphasis: oklch(from var(--kendo-color-success) calc(l + 0.1725) calc(c - 0.0033) calc(h + 5.16))</li><li>success-on-subtle: oklch(from var(--kendo-color-success) calc(l - 0.1550) calc(c - 0.0314) calc(h + 0.29))</li><li>on-success: oklch(from var(--kendo-color-success) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>success-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-success) l c h) 70%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 30%)</li><li>warning-subtle: oklch(from var(--kendo-color-warning) calc(l + 0.0793) calc(c - 0.1084) calc(h + 1.96))</li><li>warning-subtle-hover: oklch(from var(--kendo-color-warning) calc(l + 0.0637) calc(c - 0.0833) calc(h + 1.54))</li><li>warning-subtle-active: oklch(from var(--kendo-color-warning) calc(l + 0.0517) calc(c - 0.0593) calc(h + 1.36))</li><li>warning: oklch(88.34% 0.1817 99deg)</li><li>warning-hover: oklch(from var(--kendo-color-warning) max(0.15, calc(l + clamp(-0.0334, (0.35 - l) * 99999, 0.0334))) calc(c - 0.0069) calc(h - 0.16))</li><li>warning-active: oklch(from var(--kendo-color-warning) max(0.20, calc(l + clamp(-0.0672, (0.35 - l) * 99999, 0.0672))) calc(c - 0.0138) calc(h - 0.33))</li><li>warning-emphasis: oklch(from var(--kendo-color-warning) calc(l + 0.0283) calc(c - 0.0228) calc(h + 1.42))</li><li>warning-on-subtle: oklch(from var(--kendo-color-warning) calc(l - 0.5998) calc(c - 0.1574) calc(h + 162.13))</li><li>on-warning: oklch(from var(--kendo-color-warning) clamp(0.2836, (0.65 - l) * 99999, 0.95) 0.0243 calc(h + 162.13))</li><li>warning-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-warning) l c h) 60%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 40%)</li><li>error-subtle: oklch(from var(--kendo-color-error) calc(l + 0.3868) calc(c - 0.1565) calc(h - 14.72))</li><li>error-subtle-hover: oklch(from var(--kendo-color-error) calc(l + 0.3203) calc(c - 0.1250) calc(h - 13.80))</li><li>error-subtle-active: oklch(from var(--kendo-color-error) calc(l + 0.2580) calc(c - 0.0932) calc(h - 12.78))</li><li>error: oklch(51.01% 0.1951 14.31deg)</li><li>error-hover: oklch(from var(--kendo-color-error) max(0.15, calc(l + clamp(-0.0415, (0.35 - l) * 99999, 0.0415))) calc(c - 0.0154) calc(h + 0.39))</li><li>error-active: oklch(from var(--kendo-color-error) max(0.20, calc(l + clamp(-0.0851, (0.35 - l) * 99999, 0.0851))) calc(c - 0.0324) calc(h - 0.19))</li><li>error-emphasis: oklch(from var(--kendo-color-error) calc(l + 0.1479) calc(c - 0.0349) calc(h - 9.11))</li><li>error-on-subtle: oklch(from var(--kendo-color-error) calc(l - 0.18) calc(c - 0.0490) calc(h - 0.16))</li><li>on-error: oklch(from var(--kendo-color-error) clamp(0.10, (0.65 - l) * 99999, 1) 0 h)</li><li>error-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-error) l c h) 60%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 40%)</li><li>inverse-subtle: oklch(from var(--kendo-color-inverse) calc(l + 0.5871) calc(c - 0.0115) calc(h - 5.62))</li><li>inverse-subtle-hover: oklch(from var(--kendo-color-inverse) calc(l + 0.5114) calc(c - 0.0046) calc(h - 5.58))</li><li>inverse-subtle-active: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse: oklch(28.36% 0.0243 261.13deg)</li><li>inverse-hover: oklch(from var(--kendo-color-inverse) calc(l - 0.0689) calc(c - 0.0017) calc(h + 7.83))</li><li>inverse-active: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>inverse-emphasis: oklch(from var(--kendo-color-inverse) calc(l + 0.4312) calc(c + 0.0009) calc(h - 5.00))</li><li>inverse-on-subtle: oklch(from var(--kendo-color-inverse) calc(l - 0.1452) calc(c + 0.0006) calc(h + 12.11))</li><li>on-inverse: oklch(from var(--kendo-color-inverse) clamp(0.10, (0.75 - l) * 99999, 1) 0 h)</li><li>inverse-on-surface: color-mix(in oklch, oklch(from var(--kendo-color-inverse) l c h) 0%, oklch(from var(--kendo-color-surface) clamp(0, calc((0.5 - l) * 1000), 1) none none) 100%)</li><li>series: oklch(54.53% 0.2124 275.85deg)</li><li>series-a: var(--kendo-color-series)</li><li>series-a-bold: oklch(from var(--kendo-color-series-a) calc(l - 0.1233) calc(c - 0.0417) calc(h - 0.77))</li><li>series-a-bolder: oklch(from var(--kendo-color-series-a) calc(l - 0.1945) calc(c - 0.0713) calc(h - 0.52))</li><li>series-a-subtle: oklch(from var(--kendo-color-series-a) calc(l + 0.1176) calc(c - 0.0308) calc(h + 2.64))</li><li>series-a-subtler: oklch(from var(--kendo-color-series-a) calc(l + 0.2519) calc(c - 0.1078) calc(h + 5.50))</li><li>series-b: oklch(from var(--kendo-color-series) calc(l + 0.0868) calc(c + 0.0134) calc(h + 34.73))</li><li>series-b-bold: oklch(from var(--kendo-color-series-b) calc(l - 0.1664) calc(c - 0.0541) h)</li><li>series-b-bolder: oklch(from var(--kendo-color-series-b) calc(l - 0.2565) calc(c - 0.0909) calc(h - 0.37))</li><li>series-b-subtle: oklch(from var(--kendo-color-series-b) calc(l + 0.0925) calc(c - 0.0531) h)</li><li>series-b-subtler: oklch(from var(--kendo-color-series-b) calc(l + 0.1997) calc(c - 0.1212) calc(h - 0.39))</li><li>series-c: oklch(from var(--kendo-color-series) calc(l + 0.1534) calc(c - 0.0058) calc(h + 86.96))</li><li>series-c-bold: oklch(from var(--kendo-color-series-c) calc(l - 0.1333) calc(c - 0.0427) calc(h - 0.57))</li><li>series-c-bolder: oklch(from var(--kendo-color-series-c) calc(l - 0.2736) calc(c - 0.0877) calc(h - 0.57))</li><li>series-c-subtle: oklch(from var(--kendo-color-series-c) calc(l + 0.0604) calc(c - 0.0487) calc(h - 3.57))</li><li>series-c-subtler: oklch(from var(--kendo-color-series-c) calc(l + 0.1339) calc(c - 0.1035) calc(h - 5.82))</li><li>series-d: oklch(from var(--kendo-color-series) calc(l + 0.2229) calc(c - 0.0482) calc(h - 122.72))</li><li>series-d-bold: oklch(from var(--kendo-color-series-d) calc(l - 0.1462) calc(c - 0.0334) h)</li><li>series-d-bolder: oklch(from var(--kendo-color-series-d) calc(l - 0.3015) calc(c - 0.0691) calc(h + 0.38))</li><li>series-d-subtle: oklch(from var(--kendo-color-series-d) calc(l + 0.0522) calc(c - 0.0354) calc(h + 2.32))</li><li>series-d-subtler: oklch(from var(--kendo-color-series-d) calc(l + 0.1078) calc(c - 0.0775) calc(h + 4.33))</li><li>series-e: oklch(from var(--kendo-color-series) calc(l + 0.3660) calc(c - 0.0645) calc(h - 179.84))</li><li>series-e-bold: oklch(from var(--kendo-color-series-e) calc(l - 0.1759) calc(c - 0.0305) calc(h + 0.31))</li><li>series-e-bolder: oklch(from var(--kendo-color-series-e) calc(l - 0.3623) calc(c - 0.0621) h)</li><li>series-e-subtle: oklch(from var(--kendo-color-series-e) calc(l + 0.0206) calc(c - 0.0289) calc(h + 0.79))</li><li>series-e-subtler: oklch(from var(--kendo-color-series-e) calc(l + 0.0411) calc(c - 0.0664) calc(h + 0.31))</li><li>series-f: oklch(from var(--kendo-color-series) calc(l + 0.1532) calc(c - 0.0202) calc(h + 111.34))</li><li>series-f-bold: oklch(from var(--kendo-color-series-f) calc(l - 0.1947) calc(c - 0.0581) h)</li><li>series-f-bolder: oklch(from var(--kendo-color-series-f) calc(l - 0.3643) calc(c - 0.1031) calc(h - 0.41))</li><li>series-f-subtle: oklch(from var(--kendo-color-series-f) calc(l + 0.0613) calc(c - 0.0491) calc(h - 2.12))</li><li>series-f-subtler: oklch(from var(--kendo-color-series-f) calc(l + 0.1348) calc(c - 0.1001) calc(h - 3.88))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -14289,6 +14719,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-file-manager-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon spacing in FileManager items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-file-manager-preview-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -16972,6 +17412,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-column-menu-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Grid column menu items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-toolbar-border-width</td>
     <td>Number</td>
     <td><code>$kendo-grid-border-width</code></td>
@@ -17059,6 +17509,36 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-add-row-bg</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid add row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-add-row-text</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle) 75%, var(--kendo-color-on-app-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid add row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-add-row-border</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid add row.</div></div>
     </td>
 </tr>
 <tr>
@@ -17289,6 +17769,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-row-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-medium, 500 )</code></td>
+    <td><code>var(--kendo-font-weight-medium, 500)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid grouping row text.</div></div>
     </td>
 </tr>
 <tr>
@@ -17772,6 +18262,26 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-grouping-indent-size</td>
+    <td>String</td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indent size for nested grouping rows.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-row-checkbox-margin-end</td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin at the end of the checkbox in grouping rows.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-group-footer-border-y</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -18017,76 +18527,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-icon-size-xs</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * .75 )</code></td>
-    <td><code>calc(16px * 0.75)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small icon size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-sm</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * .875 )</code></td>
-    <td><code>calc(16px * 0.875)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small icon size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-md</td>
-    <td>Number</td>
-    <td><code>$kendo-icon-size</code></td>
-    <td><code>16px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium icon size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-lg</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 1.25 )</code></td>
-    <td><code>calc(16px * 1.25)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large icon size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-xl</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 1.5 )</code></td>
-    <td><code>calc(16px * 1.5)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large icon size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-xxl</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 2 )</code></td>
-    <td><code>calc(16px * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The double extra large icon size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-xxxl</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size} * 3 )</code></td>
-    <td><code>calc(16px * 3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The triple extra large icon size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-icon-spacing</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -18114,6 +18554,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of accent icons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-action-icon-color</td>
+    <td>String</td>
+    <td><code>k-color( primary-on-surface )</code></td>
+    <td><code>var(--kendo-color-primary-on-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of action icons.</div></div>
     </td>
 </tr>
 </tbody>
@@ -18718,9 +19168,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-input-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>List</td>
+    <td><code>0 1px 2px 0 rgba(56, 66, 80, 0.05)</code></td>
+    <td><code>(0 1px 2px 0 rgba(56, 66, 80, 0.05))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Input components.</div></div>
@@ -18798,9 +19248,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-input-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
@@ -18978,9 +19428,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-input-outline-focus-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
@@ -19078,9 +19528,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
@@ -19474,8 +19924,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-list-sm-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td><code>var(--kendo-spacing-0\.5)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small List header.</div></div>
@@ -19484,8 +19934,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-list-md-header-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium List header.</div></div>
@@ -19494,11 +19944,41 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-list-lg-header-padding-y</td>
     <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large List header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-sm-sticky-header-padding-y</td>
+    <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large List header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-md-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-lg-sticky-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large List sticky header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20252,6 +20732,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-sticky-header-shadow</td>
+    <td>List</td>
+    <td><code>0 2px 4px 0 rgba(56, 66, 80, 0.08)</code></td>
+    <td><code>(0 2px 4px 0 rgba(56, 66, 80, 0.08))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the List sticky header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-item-focus-outline-color</td>
     <td>String</td>
     <td><code>k-color(subtle)</code></td>
@@ -20415,7 +20905,8 @@ The following table lists the available variables for customizing the Meridian t
         item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-sm-line-height,
         filter-padding-x: $kendo-list-sm-filter-padding-x,
-        filter-padding-y: $kendo-list-sm-filter-padding-y
+        filter-padding-y: $kendo-list-sm-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-sm-sticky-header-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -20437,7 +20928,8 @@ The following table lists the available variables for customizing the Meridian t
         item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-md-line-height,
         filter-padding-x: $kendo-list-md-filter-padding-x,
-        filter-padding-y: $kendo-list-md-filter-padding-y
+        filter-padding-y: $kendo-list-md-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-md-sticky-header-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -20459,10 +20951,11 @@ The following table lists the available variables for customizing the Meridian t
         item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
         item-group-label-line-height: $kendo-list-item-group-label-lg-line-height,
         filter-padding-x: $kendo-list-lg-filter-padding-x,
-        filter-padding-y: $kendo-list-lg-filter-padding-y
+        filter-padding-y: $kendo-list-lg-filter-padding-y,
+        sticky-header-padding-y: $kendo-list-lg-sticky-header-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-0\\.5)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2)","group-item-padding-y":"var(--kendo-spacing-1\\.5)","group-item-font-size":"var(--kendo-font-size-xs, inherit)","group-item-line-height":"var(--kendo-line-height-xs, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-2)","filter-padding-y":"var(--kendo-spacing-2)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-1)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1\\.5)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2)","group-item-padding-y":"var(--kendo-spacing-2)","group-item-font-size":"var(--kendo-font-size-sm, inherit)","group-item-line-height":"var(--kendo-line-height-sm, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-2)","filter-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-1\\.5)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-2)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2)","group-item-padding-y":"var(--kendo-spacing-2)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-2)","filter-padding-y":"var(--kendo-spacing-2)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-1\\.5)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2)","group-item-padding-y":"var(--kendo-spacing-1\\.5)","group-item-font-size":"var(--kendo-font-size-xs, inherit)","group-item-line-height":"var(--kendo-line-height-xs, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-2)","filter-padding-y":"var(--kendo-spacing-2)","sticky-header-padding-y":"var(--kendo-spacing-1\\.5)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-2)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-1\\.5)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2)","group-item-padding-y":"var(--kendo-spacing-2)","group-item-font-size":"var(--kendo-font-size-sm, inherit)","group-item-line-height":"var(--kendo-line-height-sm, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-2)","filter-padding-y":"var(--kendo-spacing-2)","sticky-header-padding-y":"var(--kendo-spacing-2)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-2\\.5)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2)","item-padding-y":"var(--kendo-spacing-2)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2)","group-item-padding-y":"var(--kendo-spacing-2)","group-item-font-size":"var(--kendo-font-size, inherit)","group-item-line-height":"var(--kendo-line-height, normal)","item-group-label-padding-x":"0.5em","item-group-label-padding-y":0,"item-group-label-font-size":"0.75em","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-spacing-2)","filter-padding-y":"var(--kendo-spacing-2)","sticky-header-padding-y":"var(--kendo-spacing-2\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the List.</div></div>
@@ -22296,6 +22789,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu expand arrow icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-expand-arrow-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing used for the menu expand arrow negative offset.</div></div>
     </td>
 </tr>
 <tr>
@@ -25047,6 +25550,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-panelbar-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-panelbar-item-level-count</td>
     <td>Number</td>
     <td><code>4</code></td>
@@ -25898,9 +26411,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-picker-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>List</td>
+    <td><code>0 1px 2px 0 rgba(56, 66, 80, 0.05)</code></td>
+    <td><code>(0 1px 2px 0 rgba(56, 66, 80, 0.05))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Picker components.</div></div>
@@ -27338,9 +27851,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-popover-body-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td>List</td>
+    <td><code>k-spacing(2) k-spacing(4)</code></td>
+    <td><code>(var(--kendo-spacing-2) var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover body.</div></div>
@@ -29045,8 +29558,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-min-height</td>
     <td>Number</td>
-    <td><code>25px</code></td>
-    <td><code>25px</code></td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the Scheduler event.</div></div>
@@ -29063,13 +29576,83 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-event-line-height</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-scheduler-event-min-height} - (2 * #{k-spacing(1)}) )</code></td>
-    <td><code>calc(25px - 2 * var(--kendo-spacing-1))</code></td>
+    <td>$kendo-scheduler-event-title-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Scheduler event.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-title-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-title-padding-top</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top padding of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-title-padding-bottom</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Scheduler event title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size-xs)</code></td>
+    <td><code>var(--kendo-font-size-xs)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Scheduler event time.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Scheduler event time.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-padding-top</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top padding of the Scheduler event time.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-time-padding-bottom</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Scheduler event time.</div></div>
     </td>
 </tr>
 <tr>
@@ -29120,6 +29703,86 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-readonly-bg</td>
+    <td>String</td>
+    <td><code>k-color(primary-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the read-only Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-readonly-text</td>
+    <td>String</td>
+    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-primary-on-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the read-only Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-readonly-border</td>
+    <td>String</td>
+    <td><code>k-color(primary-emphasis)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the read-only Scheduler event.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resizer-size</td>
+    <td>Number</td>
+    <td><code>0.5em</code></td>
+    <td><code>0.5em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Scheduler resize handle hit area.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-size</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The length of the Scheduler resize handle visual indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(full)</code></td>
+    <td><code>var(--kendo-border-radius-full)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Scheduler resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-border-width</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Scheduler resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-bg</td>
+    <td>String</td>
+    <td><code>$kendo-scheduler-event-bg</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler resize handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -29215,8 +29878,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-selected-shadow</td>
     <td>List</td>
-    <td><code>inset 3px 0 0 0 k-color(secondary), 0 0 0 1px white, 0 0 0 2px k-color(secondary-on-surface)</code></td>
-    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary), 0 0 0 1px white, 0 0 0 2px var(--kendo-color-secondary-on-surface))</code></td>
+    <td><code>inset 3px 0 0 0 k-color(secondary), 0 0 0 1px white, 0 0 0 2px k-color(primary-on-surface)</code></td>
+    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary), 0 0 0 1px white, 0 0 0 2px var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Scheduler event.</div></div>
@@ -29300,16 +29963,6 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the non-working hours in the Scheduler.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-timecolumn-text</td>
-    <td>String</td>
-    <td><code>k-color(subtle)</code></td>
-    <td><code>var(--kendo-color-subtle)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler time column.</div></div>
     </td>
 </tr>
 <tr>
@@ -29423,87 +30076,7 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-border-width</td>
-    <td>Number</td>
-    <td><code>0</code></td>
-    <td><code>0</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-bg</td>
-    <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-text</td>
-    <td>String</td>
-    <td><code>k-color(on-app-surface)</code></td>
-    <td><code>var(--kendo-color-on-app-surface)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(2)</code></td>
-    <td><code>var(--kendo-elevation-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-title-margin-y</td>
-    <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Scheduler Tooltip title.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-month-font-size</td>
+    <td>$kendo-scheduler-popover-month-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-font-size-sm, inherit )</code></td>
     <td><code>var(--kendo-font-size-sm, inherit)</code></td>
@@ -29513,7 +30086,7 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-day-font-size</td>
+    <td>$kendo-scheduler-popover-day-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var( --kendo-font-size-sm, .75rem ) * 2 )</code></td>
     <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 2)</code></td>
@@ -29523,7 +30096,7 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-events-max-height</td>
+    <td>$kendo-scheduler-popover-events-max-height</td>
     <td>Number</td>
     <td><code>250px</code></td>
     <td><code>250px</code></td>
@@ -29533,17 +30106,27 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-events-gap</td>
+    <td>$kendo-scheduler-popover-events-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events inside the Scheduler Tooltip.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-padding-x</td>
+    <td>$kendo-scheduler-popover-event-min-height</td>
+    <td>Number</td>
+    <td><code>25px</code></td>
+    <td><code>25px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the events inside the Scheduler Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-popover-event-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
@@ -29553,17 +30136,17 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td>$kendo-scheduler-popover-event-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the events inside the Scheduler Tooltip.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-border-radius</td>
+    <td>$kendo-scheduler-popover-event-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(md)</code></td>
     <td><code>var(--kendo-border-radius-md)</code></td>
@@ -29573,33 +30156,13 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-tooltip-event-gap</td>
+    <td>$kendo-scheduler-popover-event-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events items inside the Scheduler Tooltip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-tooltip-callout-text</td>
-    <td>String</td>
-    <td><code>$kendo-scheduler-tooltip-bg</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler Tooltip callout.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-appointments-padding</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Scheduler appointments.</div></div>
     </td>
 </tr>
 <tr>
@@ -29623,26 +30186,6 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-event-actions-inset-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline inset of the Scheduler event actions.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-indicators-margin</td>
-    <td>List</td>
-    <td><code>k-spacing(0.5) k-spacing(1)</code></td>
-    <td><code>(var(--kendo-spacing-0\.5) var(--kendo-spacing-1))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-marquee-label-inset-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -29660,6 +30203,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block inset of the Scheduler marquee labels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-nav-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Scheduler navigation items.</div></div>
     </td>
 </tr>
 <tr>
@@ -32575,6 +33128,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-stepper-label-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Stepper labels.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-stepper-border-width</td>
     <td>Number</td>
     <td><code>0px</code></td>
@@ -35125,6 +35688,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the TabStrip items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tabstrip-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in TabStrip tab items.</div></div>
     </td>
 </tr>
 <tr>
@@ -37736,6 +38309,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-toolbar-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in Toolbar items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-separator-height</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
@@ -38056,6 +38639,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-toolbar-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-toolbar-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -38122,6 +38715,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tooltip-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and tooltip text/button.</div></div>
     </td>
 </tr>
 <tr>
@@ -38342,6 +38945,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text in TreeView items.</div></div>
     </td>
 </tr>
 <tr>

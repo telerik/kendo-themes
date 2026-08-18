@@ -50,8 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-animation-timing</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The animation timing of the ProgressBar.</div></div>

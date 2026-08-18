@@ -17,6 +17,15 @@ export type KendoImageEditorProps = {
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="img"} Indicates the canvas role as an image. Applicable when an image is loaded.
+ * @aria {aria-label|aria-labelledby} Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded.
+ * @ux {Canvas} Renders the image on an editable canvas.
+ * @ux {Crop} A crop tool lets the user select and apply a cropping region.
+ * @ux {Pan and zoom} The canvas can be panned by dragging and zoomed with the mouse wheel.
+ * @ux {Undo / Redo} All edit operations can be undone and redone.
+ * @ux {Export} The edited image can be saved or downloaded.
+ */
 export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoImageEditorProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -63,16 +72,12 @@ ImageEditor.moduleName = IMAGEEDITOR_MODULE_NAME;
 ImageEditor.folderName = IMAGEEDITOR_FOLDER_NAME;
 
 /**
- * @see Toolbar ariaSpec for the image editor toolbar
- * @see Form ariaSpec for the crop/resize action pane
+ * @keyboard {Tab} Focuses next focusable element (the ToolBar or an input/button on the Edit pane).
+ * @keyboard {Shift + Tab} Focuses previous focusable element.
+ * @keyboard {Control + Z} Undo the last modification performed on the image.
+ * @keyboard {Control + Y} Redo a modification performed on the image.
+ *
+ * @see https://pauljadam.com/demos/canvas.html HTML Canvas Accessibility
  */
-ImageEditor.ariaSpec = {
-    selector: '.k-imageeditor',
-    rules: [
-        // Canvas rules apply only when an image is loaded (the canvas element is not rendered without an image)
-        { selector: '.k-imageeditor-canvas>canvas', attribute: 'role=img', usage: 'Indicates the canvas role as an image. Applicable when an image is loaded.' },
-        { selector: '.k-imageeditor-canvas>canvas', attribute: 'aria-label or aria-labelledby', usage: 'Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded.' },
-    ]
-};
 
 export default ImageEditor;

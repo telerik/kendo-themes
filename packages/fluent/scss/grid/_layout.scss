@@ -2,6 +2,7 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
 @use "../forms/_variables.scss" as *;
@@ -33,14 +34,9 @@
             border-block-end-width: 0;
         }
 
-        .k-grouping-row + .k-table-row .k-table-td {
-            border-block-start-width: $kendo-grid-grouping-row-border-width-y;
-        }
-
-        .k-grouping-row .k-group-cell,
-        .k-grouping-row + .k-table-row .k-group-cell {
+        .k-grouping-row .k-group-cell {
             border-block-width: 0;
-            border-inline-end-width: 1px;
+            border-inline-width: 0;
         }
 
         .k-group-footer .k-table-td {
@@ -67,6 +63,12 @@
                     padding-block-start: calc( #{$_cell-padding-y} - #{$kendo-grid-row-resizer-height} );
                     padding-block-end: $_cell-padding-y;
                 }
+            }
+        }
+
+        .k-master-row:has(+ .k-detail-row) {
+            > .k-table-td:not(.k-group-cell) {
+                border-block-end-width: 0;
             }
         }
     }
@@ -144,7 +146,7 @@
         }
 
         .k-sort-order {
-            height: var( --kendo-icon-size, 1rem );
+            height: $ki-icon-size;
             font-size: $kendo-grid-sort-index-font-size;
             margin-inline-start: $kendo-grid-sort-index-spacing-x;
         }
@@ -159,9 +161,12 @@
 
     .k-grid-footer .k-table-td,
     .k-grid-header .k-table-th,
-    .k-group-footer .k-table-td,
-    .k-grouping-row .k-table-td {
+    .k-group-footer .k-table-td {
         font-weight: $kendo-grid-header-font-weight;
+    }
+
+    .k-grouping-row .k-table-td {
+        font-weight: $kendo-grid-grouping-row-font-weight;
     }
 
     // Filter row
@@ -180,7 +185,11 @@
     // Master row
     .k-master-row .k-group-cell {
         border-block-width: 0;
-        border-inline-end-width: $kendo-grid-border-width;
+    }
+
+    .k-detail-row .k-group-cell + :not(.k-group-cell),
+    .k-master-row .k-group-cell + :not(.k-group-cell) {
+        border-inline-start: 1px solid;
     }
 
     .k-master-row.k-expanded .k-table-td {

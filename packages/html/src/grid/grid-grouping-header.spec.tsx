@@ -9,6 +9,13 @@ export type KendoGroupingHeaderProps = {
     dropClue?: boolean;
 };
 
+/**
+ * @aria {role="toolbar"} The Grouping pane is a ToolBar (collection of buttons).
+ * @aria {aria-label} Clarifies the purpose of the grouping pane.
+ * @aria {aria-controls=".k-grid-aria-root id"} Pointing to the id of the element with role=grid.
+ * @aria {role="none"} The ChipList default listbox role is removed to keep the toolbar --> button roles hierarchy.
+ * @aria {role="button"} If the element used is not <button>, then the role must be specified.
+ */
 export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGroupingHeaderProps &
     React.HTMLAttributes<HTMLDivElement>
@@ -37,3 +44,4 @@ export const GridGroupingHeader: KendoComponent<KendoGroupingHeaderProps & React
 GridGroupingHeader.className = className;
 GridGroupingHeader.moduleName = GRID_MODULE_NAME;
 GridGroupingHeader.folderName = GRID_FOLDER_NAME;
+

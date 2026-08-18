@@ -25,7 +25,6 @@ export const GanttTaskWrap: KendoComponent<KendoGanttTaskWrapProps & React.HTMLA
         ...other
     } = props;
 
-
     return (
         <div
             {...other}

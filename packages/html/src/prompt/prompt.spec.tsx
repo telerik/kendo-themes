@@ -10,6 +10,18 @@ const options = {};
 
 const defaultOptions = {};
 
+/**
+ * @aria {aria-controls} Points to the controlled element based on the given id.
+ * @aria {aria-expanded} Indicates the expanded state of the prompt expander content.
+ * @aria {role="group"} Indicates that the suggestion container element is a group.
+ * @aria {role="button"} Indicates that the suggestion element is a button.
+ * @aria {aria-label|title} The suggestion elements must be properly labelled.
+ * @aria {tabindex="0"} The suggestion element should be focusable.
+ * @ux {Input area} A text input or textarea for entering the prompt text.
+ * @ux {Submit} A send button or Enter key submits the prompt.
+ * @ux {Suggestions} Pre-defined prompt suggestions are displayed above the input.
+ * @ux {Toolbar} An optional toolbar provides prompt-related actions.
+ */
 export const Prompt: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     props:
         React.HTMLAttributes<HTMLDivElement>
@@ -17,7 +29,6 @@ export const Prompt: KendoComponent<React.HTMLAttributes<HTMLDivElement>> = (
     const {
         ...other
     } = props;
-
 
     return (
         <div {...other} className={classNames(props.className, PROMPT_CLASSNAME)}>
@@ -33,23 +44,12 @@ Prompt.defaultOptions = defaultOptions;
 Prompt.moduleName = PROMPT_MODULE_NAME;
 Prompt.folderName = PROMPT_FOLDER_NAME;
 
-Prompt.ariaSpec = {
-    selector: '.k-prompt',
-    rules: [
-        // TextArea adornment buttons
-        { selector: '.k-input-prefix > .k-button', attribute: 'role=button or nodeName=button', usage: 'The buttons must have appropriate role.' },
-        { selector: '.k-input-prefix > .k-button', attribute: 'aria-label or title', usage: 'The buttons must be properly labelled.' },
-        { selector: '.k-input-suffix > .k-button', attribute: 'role=button or nodeName=button', usage: 'The buttons must have appropriate role.' },
-        { selector: '.k-input-suffix > .k-button', attribute: 'aria-label or title', usage: 'The buttons must be properly labelled.' },
-        { selector: '.k-input-suffix > .k-prompt-send.k-disabled', attribute: 'disabled', usage: 'Announces send action as disabled if necessary.' },
-        // Suggestion component
-        { selector: '.k-prompt-expander .k-button', attribute: 'aria-controls (when present)', usage: 'Points to the controlled element based on the given id.' },
-        { selector: '.k-prompt-expander .k-button', attribute: 'aria-expanded', usage: 'Indicates the expanded state of the prompt expander content.' },
-        { selector: '.k-prompt-expander .k-suggestion-group', attribute: 'role=group', usage: 'Indicates that the suggestion container element is a group.' },
-        { selector: '.k-prompt-expander .k-suggestion', attribute: 'role=button', usage: 'Indicates that the suggestion element is a button.' },
-        { selector: '.k-prompt-expander .k-suggestion', attribute: 'aria-label or title', usage: 'The suggestion elements must be properly labelled.' },
-        { selector: '.k-prompt-expander .k-suggestion', attribute: 'tabindex=0', usage: 'The suggestion element should be focusable.' },
-    ]
-};
+/**
+ * @keyboard {Escape} If generating, stops the generation process.
+ * @keyboard {Enter or Space} Triggers a click action on the suggestion element.
+ * @keyboard {Escape} If generating, stops the generation process. If not, closes the Inline AI Prompt popup.
+ * @keyboard {Enter} Sends the message.
+ * @keyboard {Shift + Enter} Starts a new line in the textarea message box.
+ */
 
 export default Prompt;

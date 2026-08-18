@@ -5,28 +5,18 @@ const className = `k-list-content`;
 
 export type KendoListContentProps = {
     virtualization?: boolean;
-    /**
-     * When true, indicates grouped content where ListContent gets role="listbox"
-     * and child ULs get role="group".
-     */
     grouping?: boolean;
-    /**
-     * Accessible label for grouped listbox.
-     * @aria aria-label - Provides accessible name for grouped listbox
-     */
     'aria-label'?: string;
-    /**
-     * ID of element that labels this listbox.
-     * @aria aria-labelledby - References external label element
-     */
     'aria-labelledby'?: string;
-    /**
-     * ID for the listbox element. Used by aria-controls on the combobox input.
-     * @aria id - Referenced by aria-controls="${id}"
-     */
     listboxId?: string;
 };
 
+/**
+ * @aria {role="listbox"} Applied to the content element when grouping=true.
+ * @aria {aria-label} Accessible name for the grouped listbox.
+ * @aria {aria-labelledby} References an external label element.
+ * @aria {id} Referenced by aria-controls on the associated combobox input.
+ */
 export const ListContent = (
     props: KendoListContentProps &
     React.HTMLAttributes<HTMLDivElement>
@@ -57,14 +47,4 @@ export const ListContent = (
 
 /**
  * Accessibility specification for ListContent.
- * @accessibility
- * - For grouped lists: role="listbox" on ListContent, role="group" on child ULs
- * - For ungrouped lists: role="listbox" on the inner UL element
  */
-ListContent.ariaSpec = {
-    selector: '.k-list-content',
-    rules: [
-        { selector: '.k-list-content[role="listbox"]', attribute: 'role=listbox', usage: 'For grouped lists, the list content container has the listbox role.' },
-        { selector: '.k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby (when has accessible name)', usage: 'Accessible name for the listbox.' },
-    ]
-};

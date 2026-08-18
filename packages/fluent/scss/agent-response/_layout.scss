@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/agent-response/_layout.scss" as *;
+
+@mixin kendo-agent-response--layout() {
+    @include kendo-agent-response--layout-base();
+}

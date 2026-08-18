@@ -35,7 +35,7 @@
     }
 
     .k-tooltip-icon {
-        margin-inline-end: $kendo-icon-spacing;
+        margin-inline-end: $kendo-tooltip-icon-spacing;
         flex-shrink: 0;
     }
 
@@ -53,7 +53,7 @@
     }
 
     .k-tooltip-button {
-        margin-inline-start: $kendo-icon-spacing;
+        margin-inline-start: $kendo-tooltip-icon-spacing;
         flex-shrink: 0;
 
         .k-icon {

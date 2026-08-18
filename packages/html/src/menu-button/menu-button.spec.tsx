@@ -43,7 +43,6 @@ export type KendoMenuButtonProps = KendoMenuButtonOptions & {
   text?: string;
   showArrow?: boolean;
   arrowIconName?: string;
-  /** @aria aria-expanded state for the popup */
   expanded?: boolean;
 };
 
@@ -54,6 +53,19 @@ const defaultOptions = {
     arrowIconName: "chevron-down"
 };
 
+/**
+ * @aria {role="button"} Omitted if the button DOM element is used.
+ * @aria {aria-label} Required when no text is visible in the button.
+ * @aria {aria-controls=".k-menu-group id"} Points to the popup element. Builds a relationship between the button and the popup.
+ * @aria {aria-disabled="true"} Rendered only when the button is disabled.
+ * @aria {role="list"} Announces the list role of the popup.
+ * @aria {role="listitem"} Announces the listitem role of the popup items.
+ * @aria {aria-expanded} state for the popup
+ * @ux {Primary action} The main button area triggers the default action.
+ * @ux {Dropdown} The arrow button opens a menu popup with additional actions.
+ * @ux {Item selection} Clicking a menu item triggers its action and closes the popup.
+ * @ux {Disabled state} When disabled, both the button and dropdown are non-interactive.
+ */
 export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonState & React.HTMLAttributes<HTMLButtonElement>> = (
     props: KendoMenuButtonProps &
         KendoMenuButtonState &
@@ -112,24 +124,17 @@ MenuButton.moduleName = MENU_BUTTON_MODULE_NAME;
 MenuButton.folderName = MENU_BUTTON_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * MenuButton follows the DropDownButton accessibility specification.
+ * @keyboard {Alt + ArrowDown} Opens the DropDownButton popup and moves the focus to its first `menuitem` element.
+ * @keyboard {Enter or Space} Opens the DropDownButton popup and moves the focus to its first `menuitem` element.
+ * @keyboard {Alt + ArrowUp} Closes the popup and moves the focus back to the main `button` element.
+ * @keyboard {Escape} Closes the popup and moves the focus back to the main button element.
+ * @keyboard {ArrowDown} Moves the focus to the next `menuitem` element. If the focus is on the last menu item, moves the focus to the first menu item.
+ * @keyboard {ArrowUp} Moves the focus to the previous `menuitem` element. If the focus is on the first menu item, moves the focus to the last menu item.
+ * @keyboard {Home} Moves the focus to the first `menuitem` element.
+ * @keyboard {End} Moves the focus to the last `menuitem` element.
+ * @keyboard {Enter or Space} Clicks (activates) the currently active `menuitem` element and closes the popup.
  *
- * - Button: role="button" (implicit), aria-expanded, aria-label for icon-only
- * - When disabled: aria-disabled="true"
- * - Popup list: role="list", items: role="listitem"
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/ WAI-ARIA Authoring Practices: Menu Button Pattern.
  */
-MenuButton.ariaSpec = {
-    selector: '.k-menu-button',
-    rules: [
-        { selector: '.k-menu-button', attribute: 'role=button or nodeName=button', usage: 'Omitted if the button DOM element is used.' },
-        { selector: '.k-menu-button', attribute: 'aria-label (when icon-only)', usage: 'Required when no text is visible in the button.' },
-        { selector: '.k-menu-button', attribute: 'aria-expanded=true/false', usage: 'Announces the state of the popup visibility.' },
-        { selector: '.k-menu-button', attribute: 'aria-controls=.k-menu-group id (when open)', usage: 'Points to the popup element. Builds a relationship between the button and the popup.' },
-        { selector: '.k-menu-button.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the button is disabled.' },
-        { selector: '.k-menu-group', attribute: 'role=list', usage: 'Announces the list role of the popup.' },
-        { selector: '.k-menu-item', attribute: 'role=listitem', usage: 'Announces the listitem role of the popup items.' },
-    ]
-};
 
 export default MenuButton;

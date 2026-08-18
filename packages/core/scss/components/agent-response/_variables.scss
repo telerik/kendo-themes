@@ -1,0 +1,61 @@
+// Agent Response
+
+/// The gap between the icon and the content of the AgentStep head and content row.
+/// @group agent-response
+$kendo-agent-step-gap: null !default;
+/// The vertical padding of the AgentStep head.
+/// @group agent-response
+$kendo-agent-step-padding-y: null !default;
+/// The horizontal padding of the AgentStep head.
+/// @group agent-response
+$kendo-agent-step-padding-x: null !default;
+/// The end padding of the AgentStep head.
+/// @group agent-response
+$kendo-agent-step-padding-end: null !default;
+/// The border radius of the AgentStep head.
+/// @group agent-response
+$kendo-agent-step-border-radius: null !default;
+/// The top margin of the AgentStep icon.
+/// @group agent-response
+$kendo-agent-step-icon-margin-top: null !default;
+/// The text color of the added lines count in the AgentStep diffstat.
+/// @group agent-response
+$kendo-agent-step-added-color: null !default;
+/// The text color of the removed lines count in the AgentStep diffstat.
+/// @group agent-response
+$kendo-agent-step-removed-color: null !default;
+/// The font size of the AgentStep label, secondary text, and diffstat.
+/// @group agent-response
+$kendo-agent-step-font-size: null !default;
+/// The font size of the AgentStep body content.
+/// @group agent-response
+$kendo-agent-step-body-font-size: null !default;
+/// The box shadow of the focused AgentStep head.
+/// @group agent-response
+$kendo-agent-step-focus-shadow: null !default;
+
+/// The gap between the icon column and the content of the Thought.
+/// @group agent-response
+$kendo-thought-gap: null !default;
+/// The gap in the icon column of the Thought.
+/// @group agent-response
+$kendo-thought-icon-col-gap: null !default;
+/// The spacing between stacked Thought items.
+/// @group agent-response
+$kendo-thought-spacing: null !default;
+/// The start padding of the Thought, aligning it with the AgentStep head.
+/// @group agent-response
+$kendo-thought-padding-x: null !default;
+/// The color of the connector line between stacked Thought items.
+/// @group agent-response
+$kendo-thought-connector-color: null !default;
+
+/// The start indent of the ToolCall body.
+/// @group agent-response
+$kendo-tool-call-indent: null !default;
+/// The bottom padding of the ToolCall body.
+/// @group agent-response
+$kendo-tool-call-padding-y: null !default;
+/// The border radius of the pre element in the ToolCall body.
+/// @group agent-response
+$kendo-tool-call-pre-border-radius: null !default;

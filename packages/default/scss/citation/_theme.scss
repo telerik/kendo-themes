@@ -1,0 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/citation/_theme.scss" as *;
+
+@mixin kendo-citation--theme() {
+    @include kendo-citation--theme-base();
+}

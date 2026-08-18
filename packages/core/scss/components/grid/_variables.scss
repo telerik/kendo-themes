@@ -111,6 +111,8 @@ $kendo-grid-header-font-size: null !default;
 $kendo-grid-header-first-border: null !default;
 $kendo-grid-header-menu-icon-spacing: null !default;
 
+$kendo-grid-column-menu-icon-spacing: null !default;
+
 $kendo-grid-toolbar-border-width: null !default;
 
 $kendo-grid-cell-horizontal-border-width: null !default;
@@ -123,6 +125,10 @@ $kendo-grid-border: null !default;
 $kendo-grid-header-bg: null !default;
 $kendo-grid-header-text: null !default;
 $kendo-grid-header-border: null !default;
+
+$kendo-grid-add-row-bg: null !default;
+$kendo-grid-add-row-text: null !default;
+$kendo-grid-add-row-border: null !default;
 
 $kendo-grid-footer-bg: null !default;
 $kendo-grid-footer-text: null !default;
@@ -151,6 +157,9 @@ $kendo-grid-selection-aggregates-font-weight: null !default;
 
 $kendo-grid-grouping-row-bg: null !default;
 $kendo-grid-grouping-row-text: null !default;
+$kendo-grid-grouping-row-font-weight: null !default;
+$kendo-grid-grouping-indent-size: null !default;
+$kendo-grid-grouping-row-checkbox-margin-end: null !default;
 
 $kendo-grid-sorted-icon-spacing: null !default;
 $kendo-grid-sorted-bg: null !default;

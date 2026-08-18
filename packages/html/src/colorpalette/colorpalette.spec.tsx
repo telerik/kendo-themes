@@ -1,6 +1,6 @@
 import { classNames, stateClassNames, States, Size, optionClassNames } from '../misc';
 import { ColorPaletteRow } from './colorpalette-row';
-import { ColorPaletteTile } from './colorpalette-tile';
+import { ColorPaletteTile } from './colorpalette-tile.spec';
 
 import { KendoComponent } from '../_types/component';
 import { COLORPALETTE_FOLDER_NAME, COLORPALETTE_MODULE_NAME } from './constants';
@@ -30,6 +30,18 @@ const defaultOptions = {
     columns: 10
 };
 
+/**
+ * @aria {role="grid"} The focusable wrapper announces its role as a grid.
+ * @aria {aria-label|aria-labelledby} The component needs an accessible name including the currently selected value.
+ * @aria {aria-activedescendant} Points to the focused cell in the table.
+ * @aria {tabindex="0"} The element must be focusable.
+ * @aria {aria-disabled="true"} Rendered only when the ColorPalette is disabled.
+ * @aria {role="none"|\"presentation"} Negates the default role of the table element.
+ * @aria {role="row"} Required as the semantic role of the parent table has been removed.
+ * @ux {Swatch grid} Displays a grid of color tiles to choose from.
+ * @ux {Selection} Clicking a swatch selects the color and marks it as active.
+ * @ux {Custom palette} Supports a developer-configured set of colors.
+ */
 export const ColorPalette: KendoComponent<KendoColorPaletteProps & KendoColorPaletteState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorPaletteProps &
         KendoColorPaletteState &
@@ -103,32 +115,11 @@ ColorPalette.moduleName = COLORPALETTE_MODULE_NAME;
 ColorPalette.folderName = COLORPALETTE_FOLDER_NAME;
 
 /**
- * Accessibility specification for ColorPalette.
- *
- * @accessibility
- * - Wrapper has role=grid with aria-label and tabindex=0
- * - Table has role=none to negate default semantics
- * - Rows have role=row
- * - Tiles have role=gridcell with aria-label for color value
- * - Selected tile has aria-selected=true
- * - Disabled palette has aria-disabled=true
- *
- * @wcag 4.1.2 Name, Role, Value - grid pattern for color selection
+ * @keyboard {ArrowDown} Focuses the next cell below.
+ * @keyboard {ArrowUp} Focuses the next cell above.
+ * @keyboard {ArrowRight} Focuses the next cell on the right.
+ * @keyboard {ArrowLeft} Focuses the next cell on the left.
+ * @keyboard {Enter} Selects the color from the currently focused cell.
  */
-ColorPalette.ariaSpec = {
-    selector: '.k-colorpalette',
-    rules: [
-        { selector: '.k-colorpalette', attribute: 'role=grid', usage: 'The focusable wrapper announces its role as a grid.' },
-        { selector: '.k-colorpalette', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
-        { selector: '.k-colorpalette', attribute: 'aria-activedescendant', usage: 'Points to the focused cell in the table.' },
-        { selector: '.k-colorpalette', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-colorpalette.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the ColorPalette is disabled.' },
-        { selector: '.k-colorpalette-table', attribute: 'role=none or role=presentation', usage: 'Negates the default role of the table element.' },
-        { selector: '.k-colorpalette-table>tbody>tr', attribute: 'role=row', usage: 'Required as the semantic role of the parent table has been removed.' },
-        { selector: '.k-colorpalette-tile', attribute: 'role=gridcell', usage: 'Required as the semantic role of the parent table has been removed.' },
-        { selector: '.k-colorpalette-tile', attribute: 'aria-label or title', usage: 'The text representation of the color value for the current cell.' },
-        { selector: '.k-colorpalette-tile.k-selected', attribute: 'aria-selected=true', usage: 'Present on the currently selected cell.' },
-    ]
-};
 
 export default ColorPalette;

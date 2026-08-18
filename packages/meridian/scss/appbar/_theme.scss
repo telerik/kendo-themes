@@ -7,15 +7,25 @@
     @include kendo-appbar--theme-base();
 
     .k-appbar {
+        &:not(.k-appbar-fixed):not(.k-appbar-sticky) {
+            position: relative;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: k-translucency-blur(1);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
         @each $name in $kendo-appbar-theme-colors {
-            #{k-when-default($kendo-appbar-default-theme-color, $name)} &.k-appbar-#{$name} {
-                @if $name == "inherit" {
-                    color: inherit;
-                    background-color: inherit;
-                } @else {
-                    color: k-color(on-#{$name});
-                    background-color: k-translucency-bg(k-elevation-bg(1, k-color(#{$name})));
-                }
+            #{k-when-default($kendo-appbar-default-theme-color, $name)}
+            &.k-appbar-#{$name} {
+                color: k-color(on-#{$name});
+                background-color: k-translucency-bg(k-elevation-bg(1, k-color(#{$name})));
             }
         }
     }

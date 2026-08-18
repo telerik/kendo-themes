@@ -63,7 +63,7 @@ export function useQuickCycle(opts: QuickCycleOptions): Toast | null {
                 e.preventDefault();
                 const animations = !params.animations;
                 setParams({ animations });
-                fire('Motion', animations ? 'on' : 'off');
+                fire('Animations', animations ? 'on' : 'off');
             }
         }
 

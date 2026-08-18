@@ -35,6 +35,12 @@ const defaultOptions = {
     verticalScrollbarStyle: { transformOrigin: "left top 0px", height: "239px" }
 };
 
+/**
+ * @ux {Pan} Click-drag or touch-drag pans the map view.
+ * @ux {Zoom} Mouse-wheel or pinch-to-zoom changes the map zoom level.
+ * @ux {Markers} Location markers can be placed on the map.
+ * @ux {Layers} Supports tile layers, shape layers, and bubble layers.
+ */
 export const Map: KendoComponent<KendoMapProps & KendoMapState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoMapProps &
         KendoMapState &

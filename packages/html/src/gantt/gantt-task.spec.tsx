@@ -17,6 +17,13 @@ const defaultOptions = {
     type: "single"
 };
 
+/**
+ * @aria {aria-hidden="true"} The progress drag handle is decorative.
+ * @ux {Bar representation} Renders the task as a horizontal bar whose width represents duration.
+ * @ux {Drag} The bar can be dragged horizontally to change the task start date.
+ * @ux {Resize} Dragging the bar's right edge changes the task end date.
+ * @ux {Progress handle} A drag handle inside the bar adjusts the completion percentage.
+ */
 export const GanttTask: KendoComponent<KendoGanttTaskProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGanttTaskProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -26,7 +33,6 @@ export const GanttTask: KendoComponent<KendoGanttTaskProps & React.HTMLAttribute
         ariaLevel,
         ...other
     } = props;
-
 
     return (
         <div

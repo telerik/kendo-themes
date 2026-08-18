@@ -1,7 +1,342 @@
+## 14.5.1-dev.0 (2026-08-17)
+
+### 🩹 Fixes
+
+- **meridian:** move backdrop-filter off .k-pager to avoid trapping fixed descendants ([1ec286585c](https://github.com/telerik/kendo-themes/commit/1ec286585c))
+- **meridian:** move backdrop-filter off .k-expander to avoid trapping fixed descendants ([22787cbb6d](https://github.com/telerik/kendo-themes/commit/22787cbb6d))
+- **meridian:** move backdrop-filter off .k-drawer to avoid trapping fixed descendants ([13c87061ca](https://github.com/telerik/kendo-themes/commit/13c87061ca))
+- **meridian:** move backdrop-filter off .k-bottom-nav to avoid trapping fixed descendants ([6fdcb98fd5](https://github.com/telerik/kendo-themes/commit/6fdcb98fd5))
+- **meridian:** move backdrop-filter off .k-appbar to avoid trapping fixed descendants ([#6096](https://github.com/telerik/kendo-themes/issues/6096))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- **meridian:** keep background customizable on .k-card while fixing dialog scoping ([#5990](https://github.com/telerik/kendo-themes/issues/5990), [#5968](https://github.com/telerik/kendo-themes/issues/5968))
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+- zhpenkov
+
+## 14.4.1-dev.4 (2026-08-10)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.4.1-dev.3 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+
+### 🩹 Fixes
+
+- **meridian:** keep background customizable on .k-card while fixing dialog scoping ([#5990](https://github.com/telerik/kendo-themes/issues/5990), [#5968](https://github.com/telerik/kendo-themes/issues/5968))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+- zhpenkov
+
+## 14.4.1-dev.2 (2026-08-03)
+
+### 🩹 Fixes
+
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🚀 Features
+
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.0 (2026-07-27)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.4.0 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **meridian:** add missing accent icon color ([2de3fa0aba](https://github.com/telerik/kendo-themes/commit/2de3fa0aba))
+- **meridian:** correct popover dimensions ([3a2080db3f](https://github.com/telerik/kendo-themes/commit/3a2080db3f))
+- **appbar:** add missing translucency blur in Meridian ([747ebad86c](https://github.com/telerik/kendo-themes/commit/747ebad86c))
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- zhpenkov
+
+## 14.4.0-dev.4 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+
+### 🩹 Fixes
+
+- **meridian:** add missing accent icon color ([2de3fa0aba](https://github.com/telerik/kendo-themes/commit/2de3fa0aba))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+
+### 🩹 Fixes
+
+- **meridian:** correct popover dimensions ([3a2080db3f](https://github.com/telerik/kendo-themes/commit/3a2080db3f))
+- **appbar:** add missing translucency blur in Meridian ([747ebad86c](https://github.com/telerik/kendo-themes/commit/747ebad86c))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+- zhpenkov
+
+## 14.4.0-dev.2 (2026-07-20)
+
+### 🚀 Features
+
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
+## 14.4.0-dev.1 (2026-07-08)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.4.0-dev.0 (2026-07-06)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **meridian:** add ambient box-shadow to solid inputs and pickers ([6f8a16546e](https://github.com/telerik/kendo-themes/commit/6f8a16546e))
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **dock-manager:** adjust border-radius in meridian ([147ac9b7b8](https://github.com/telerik/kendo-themes/commit/147ac9b7b8))
+- **meridian:** add focus state to list-sticky-header-item ([8d0b4a665b](https://github.com/telerik/kendo-themes/commit/8d0b4a665b))
+- **meridian:** align dark swatch on-surface variables with color-mix formulas ([e79cd94491](https://github.com/telerik/kendo-themes/commit/e79cd94491))
+- **meridian:** reduce warning/error on-surface color-mix ratios for a11y contrast ([4853f7d419](https://github.com/telerik/kendo-themes/commit/4853f7d419))
+- **meridian:** adjust on-surface color-mix ratios for info, success, warning, error, inverse ([add53fb206](https://github.com/telerik/kendo-themes/commit/add53fb206))
+- **color-system:** use oklch clamp flip for on-surface variables in meridian ([5c13486e07](https://github.com/telerik/kendo-themes/commit/5c13486e07))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **meridian:** add ambient box-shadow to solid inputs and pickers ([6f8a16546e](https://github.com/telerik/kendo-themes/commit/6f8a16546e))
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **dock-manager:** adjust border-radius in meridian ([147ac9b7b8](https://github.com/telerik/kendo-themes/commit/147ac9b7b8))
+- **meridian:** add focus state to list-sticky-header-item ([8d0b4a665b](https://github.com/telerik/kendo-themes/commit/8d0b4a665b))
+- **meridian:** align dark swatch on-surface variables with color-mix formulas ([e79cd94491](https://github.com/telerik/kendo-themes/commit/e79cd94491))
+- **meridian:** reduce warning/error on-surface color-mix ratios for a11y contrast ([4853f7d419](https://github.com/telerik/kendo-themes/commit/4853f7d419))
+- **meridian:** adjust on-surface color-mix ratios for info, success, warning, error, inverse ([add53fb206](https://github.com/telerik/kendo-themes/commit/add53fb206))
+- **color-system:** use oklch clamp flip for on-surface variables in meridian ([5c13486e07](https://github.com/telerik/kendo-themes/commit/5c13486e07))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.2.0 (2026-06-29)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+- **meridian:** move card backdrop-filter to ::before to fix dialog scoping ([3b6e9bdb6a](https://github.com/telerik/kendo-themes/commit/3b6e9bdb6a))
+- **timeline:** match card callout background to card color ([fcbf62335e](https://github.com/telerik/kendo-themes/commit/fcbf62335e))
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- **loader:** update the loader sm size in meridian ([796bec54b7](https://github.com/telerik/kendo-themes/commit/796bec54b7))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- **meridian:** prevent group footer double borders ([1c2ccd2a97](https://github.com/telerik/kendo-themes/commit/1c2ccd2a97))
+- **meridian:** scheduler agenda view misalignment ([d0d9cce273](https://github.com/telerik/kendo-themes/commit/d0d9cce273))
+- **meridian:** prevent calendar from jumping when changing the months ([f55d32d034](https://github.com/telerik/kendo-themes/commit/f55d32d034))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
+## 14.2.0-dev.6 (2026-06-25)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.5 (2026-06-24)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.2.0-dev.4 (2026-06-22)
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- zhpenkov
+
+## 14.2.0-dev.3 (2026-06-15)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.2.0-dev.1 (2026-06-08)
+
+### 🩹 Fixes
+
+- **meridian:** move card backdrop-filter to ::before to fix dialog scoping ([3b6e9bdb6a](https://github.com/telerik/kendo-themes/commit/3b6e9bdb6a))
+- **timeline:** match card callout background to card color ([fcbf62335e](https://github.com/telerik/kendo-themes/commit/fcbf62335e))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+
+### 🩹 Fixes
+
+- **meridian:** move card backdrop-filter to ::before to fix dialog scoping ([3b6e9bdb6a](https://github.com/telerik/kendo-themes/commit/3b6e9bdb6a))
+- **timeline:** match card callout background to card color ([fcbf62335e](https://github.com/telerik/kendo-themes/commit/fcbf62335e))
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- **loader:** update the loader sm size in meridian ([796bec54b7](https://github.com/telerik/kendo-themes/commit/796bec54b7))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- **meridian:** prevent group footer double borders ([1c2ccd2a97](https://github.com/telerik/kendo-themes/commit/1c2ccd2a97))
+- **meridian:** scheduler agenda view misalignment ([d0d9cce273](https://github.com/telerik/kendo-themes/commit/d0d9cce273))
+- **meridian:** prevent calendar from jumping when changing the months ([f55d32d034](https://github.com/telerik/kendo-themes/commit/f55d32d034))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* **loader:** update the loader sm size in meridian ([796bec5](https://github.com/telerik/kendo-themes/commit/796bec54b7bf3097e8b4021019ca74e9ec9198ae))
+* **meridian:** prevent group footer double borders ([1c2ccd2](https://github.com/telerik/kendo-themes/commit/1c2ccd2a97f56d93f24f344ed5a48f894faf5dca))
+* remove per component scrollbar-related variables ([7108ec7](https://github.com/telerik/kendo-themes/commit/7108ec74ab619b8ee9af04d63984937466143eb0))
+* syntax issues in compiled css ([e4ee915](https://github.com/telerik/kendo-themes/commit/e4ee9153d4185c3b5d5187f822c0de26bd0aeed1))
+
+
+### Features
+
+* **diagram:** add diagram selection tool styles ([b321345](https://github.com/telerik/kendo-themes/commit/b3213452e870f65f771193ce0c6a962a94abbde7))
+
+
+
+
 
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 

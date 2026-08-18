@@ -221,21 +221,54 @@
     background: var(--dk-surface-3);
 }
 
-/* Motion toggle states. */
-.devkit-toggle-off {
-    color: var(--dk-text-faint);
+/* Motion toggle + switch. */
+.devkit-motion-toggle {
+    color: var(--dk-text-dim);
 }
 
 .devkit-toggle-on {
-    border-color: var(--dk-accent-edge);
-    background: var(--dk-accent-softer);
-    color: var(--dk-accent-text);
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.14);
+    color: #f1f5f9;
 }
 
 .devkit-toggle-on:hover {
-    border-color: var(--dk-accent-edge);
-    background: var(--dk-accent-soft);
-    color: var(--dk-accent-text);
+    border-color: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.devkit-switch {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 16px;
+    margin-left: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.12);
+    transition: background var(--dk-dur-base), border-color var(--dk-dur-base);
+}
+
+.devkit-switch-thumb {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    margin-left: 2px;
+    transition: transform var(--dk-dur-base) var(--dk-ease), background var(--dk-dur-base);
+}
+
+.devkit-toggle-on .devkit-switch {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.devkit-toggle-on .devkit-switch-thumb {
+    background: #ffffff;
+    transform: translateX(12px);
 }
 
 /* Icon / kbd. */
@@ -906,16 +939,6 @@
     font-size: 12.5px;
     text-decoration: none;
     transition: background var(--dk-dur-fast), color var(--dk-dur-fast);
-}
-
-.devkit-test-link::before {
-    content: "";
-    flex-shrink: 0;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: currentColor;
-    opacity: 0.45;
 }
 
 .devkit-test-link:hover {

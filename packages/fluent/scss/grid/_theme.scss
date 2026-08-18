@@ -35,8 +35,8 @@
         }
 
         // Selected state
-        .k-table-td.k-selected,
-        .k-table-row.k-selected > .k-table-td {
+        .k-table-td.k-selected:not(.k-group-cell),
+        .k-table-row.k-selected > .k-table-td:not(.k-group-cell) {
             border-block-color: $kendo-grid-selected-border;
         }
 
@@ -50,14 +50,21 @@
 
         // Sticky columns
         .k-master-row {
-            .k-grid-content-sticky {
+            .k-grid-content-sticky:not(.k-group-cell) {
                 border-color: $kendo-grid-header-border;
                 border-inline-color: $kendo-grid-sticky-header-border;
             }
         }
 
-        .k-table-row.k-selected > .k-table-td.k-grid-content-sticky {
+        .k-table-row.k-selected > .k-table-td.k-grid-content-sticky:not(.k-group-cell) {
             border-inline-color: $kendo-grid-sticky-border;
+        }
+
+        .k-detail-row,
+        .k-master-row {
+            .k-group-cell + :not(.k-group-cell) {
+                border-inline-start-color: $kendo-grid-border;
+            }
         }
     }
 

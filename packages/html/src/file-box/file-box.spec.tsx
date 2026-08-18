@@ -3,7 +3,6 @@ import { Icon } from '../icon';
 import { Button } from '../button';
 import { MenuButton } from '../menu-button';
 import { FILE_BOX_FOLDER_NAME, FILE_BOX_MODULE_NAME } from './constants';
-
 export const FILE_BOX_CLASSNAME = 'k-file-box';
 
 const states = [
@@ -29,6 +28,11 @@ export type KendoFileBoxProps = {
     showButton?: boolean;
 };
 
+/**
+ * @ux {File list} Displays each selected file with its name, size, and status.
+ * @ux {Remove} Each file item has a remove button to discard it from the list.
+ * @ux {Upload status} Visual indicators show whether each file is pending, uploading, or done.
+ */
 export const FileBox = (
     props: KendoFileBoxProps &
         React.HTMLAttributes<HTMLLIElement>
@@ -79,18 +83,16 @@ FileBox.className = FILE_BOX_CLASSNAME;
 FileBox.defaultOptions = defaultOptions;
 FileBox.moduleName = FILE_BOX_MODULE_NAME;
 FileBox.folderName = FILE_BOX_FOLDER_NAME;
-FileBox.ariaSpec = {
-    selector: '.k-file-box-wrapper',
-    rules: [
-        { selector: '.k-file-box-wrapper', attribute: 'role=list', usage: 'Explicitly sets the UL role to list.' },
-        { selector: '.k-file-box-wrapper', attribute: 'aria-label', usage: 'Provides an accessible name for the file list (e.g. "Attached files").' },
-        { selector: '.k-file-box-wrapper .k-files-scroll', attribute: 'role=presentation', usage: 'The scrollable container between the list and its items is presentational, ensuring the list→listitem relationship is preserved in the accessibility tree.' },
-        { selector: '.k-file-box-wrapper .k-file-box', attribute: 'role=listitem', usage: 'Explicitly sets the LI role to listitem.' },
-        { selector: '.k-file-box-wrapper .k-file-box', attribute: 'tabindex', usage: 'Makes the file box focusable. Uses roving tabindex: 0 for the focused item, -1 for the rest.' },
-        { selector: '.k-file-box-wrapper .k-file-box', attribute: 'aria-label', usage: 'Provides an accessible name describing the file. Can include the file name and size (e.g. "FileName.pdf 2MB").' },
-        { selector: '.k-file-box-wrapper .k-file-box .k-icon', attribute: 'aria-hidden=true', usage: 'The file type icon is decorative and hidden from screen readers.' },
-        { selector: '.k-file-box-wrapper .k-file-box span.k-button', attribute: 'aria-hidden=true', usage: 'The remove button is rendered as a decorative span and hidden from screen readers. File removal is handled by keyboard interaction on the listitem itself.' }
-    ]
-};
+
+/**
+ * @keyboard {ArrowRight} Focuses the next file in the list. If the focus is on the last file, the focus does not move.
+ * @keyboard {ArrowLeft} Focuses the previous file in the list. If the focus is on the first file, the focus does not move.
+ * @keyboard {Home} Focuses the first file in the list.
+ * @keyboard {End} Focuses the last file in the list.
+ * @keyboard {Delete or Backspace} Removes the currently focused file. After removal, the focus moves to the next file in the list if available, or to the previous file if the last file was removed.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#list WAI-ARIA Specification: List
+ * @see https://www.w3.org/TR/wai-aria-1.2/#listitem WAI-ARIA Specification: Listitem
+ */
 
 export default FileBox;

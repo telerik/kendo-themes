@@ -54,20 +54,8 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
-    /**
-     * Unique identifier for the autocomplete. Used to generate related IDs.
-     * @aria Controls aria-controls references
-     */
     id?: string;
-    /**
-     * Autocomplete behavior: 'list', 'both', or 'inline'.
-     * @aria aria-autocomplete - Indicates autocomplete type
-     */
     autocomplete?: 'list' | 'both' | 'inline' | 'none';
-    /**
-     * ID of the currently focused/active item in the listbox.
-     * @aria aria-activedescendant - Points to focused item when popup is open
-     */
     activeDescendant?: string;
 };
 
@@ -77,6 +65,24 @@ const defaultOptions = {
     separators: true
 };
 
+/**
+ * @aria {role="combobox"} Announces the autocomplete input.
+ * @aria {aria-haspopup="listbox"} Indicates the component has a listbox popup.
+ * @aria {aria-expanded} Announces the popup visibility.
+ * @aria {aria-label} Accessible name for the autocomplete.
+ * @aria {aria-disabled="true"} Rendered when the autocomplete is disabled.
+ * @aria {role="listbox"} Popup list has listbox role.
+ * @aria {aria-label|aria-labelledby} Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.
+ * @aria {role="option"} Each list item is an option.
+ * @aria {id} Referenced by aria-controls on the input.
+ * @aria {aria-autocomplete} Indicates autocomplete type
+ * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Popup} Opens a suggestion list when the user starts typing.
+ * @ux {Filtering} Narrows the suggestion list as the user types.
+ * @ux {Selection} Choosing a suggestion fills the input and closes the popup.
+ * @ux {Placeholder} Displays hint text inside the input when it is empty.
+ * @ux {Disabled state} When disabled, the input is non-interactive and visually dimmed.
+ */
 export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocompleteState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoAutocompleteProps &
         KendoAutocompleteState &
@@ -114,7 +120,6 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
     } = props;
 
     const listboxId = id ? `${id}-listbox` : undefined;
-
 
     return (
         <>
@@ -219,20 +224,14 @@ Autocomplete.moduleName = AUTOCOMPLETE_MODULE_NAME;
 Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
 
 /**
- * @see List ariaSpec for popup listbox content
- * @see ActionSheet ariaSpec for adaptive mode
+ * @keyboard {Typing in the input} Focuses the matched item.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the popup.
+ * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} Closes the popup.
+ * @keyboard {Escape} Resets the value in the input when the popup is closed.
+ * @keyboard {Enter} Triggers the `change` event.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html WAI-ARIA Authoring Practices: Editable Combobox With Both List and Inline Autocomplete Example
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html WAI-ARIA Authoring Practices: Editable Combobox With List Autocomplete Example
  */
-Autocomplete.ariaSpec = {
-    rules: [
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'role=combobox', usage: 'Announces the autocomplete input.' },
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the component has a listbox popup.' },
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
-        { selector: '.k-autocomplete .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the autocomplete.' },
-        { selector: '.k-autocomplete.k-disabled .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the autocomplete is disabled.' },
-        { selector: '.k-autocomplete-popup .k-list-content, .k-autocomplete-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-autocomplete-popup .k-list-ul[role="listbox"], .k-autocomplete-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-autocomplete-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
-    ]
-};
 
 export default Autocomplete;

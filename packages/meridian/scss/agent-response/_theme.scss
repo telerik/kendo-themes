@@ -1,0 +1,19 @@
+@use "@progress/kendo-theme-core/scss/components/agent-response/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-agent-response--theme() {
+    @include kendo-agent-response--theme-base();
+
+    .k-agent-step > .k-agent-step-head {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator(
+                $indicator: $kendo-agent-step-focus-outline-color,
+                $inset: true,
+                $type: "outline",
+                $outline-offset: $kendo-agent-step-focus-outline-offset
+            );
+        }
+    }
+}

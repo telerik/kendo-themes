@@ -98,7 +98,7 @@ export default () =>(
                                         <GridHeaderCell columnTitle="Hover" menu="filter" hover></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Focus" menu="filter" focus></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Active" menu="filter" active></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="Sorted" menu="filter" sortable></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Sorted" menu="filter" sortable sorted></GridHeaderCell>
                                     </TableRow>
                                     <TableRow className="k-filter-row">
                                         <TableTd>
@@ -322,22 +322,22 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={5}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-right" />
-                                            Price: 19
-                                            </p>
+                                            <span className="k-grouping-row-text">Price: 19</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={5}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                            Price: 30
-                                            </p>
+                                            <span className="k-grouping-row-text">Price: 30</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow>
-                                        <TableTd className="k-master-row k-table-group-td k-group-cell">&nbsp;</TableTd>
+                                    <TableRow className="k-master-row">
+                                        <TableTd className="k-table-group-td k-group-cell">&nbsp;</TableTd>
                                         <TableTd>Chai</TableTd>
                                         <TableTd>30</TableTd>
                                         <TableTd>false</TableTd>

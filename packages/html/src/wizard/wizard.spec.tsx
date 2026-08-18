@@ -22,6 +22,13 @@ const defaultOptions = {
     contentPosition: "right",
 };
 
+/**
+ * @ux {Multi-step} Guides the user through a complex task split into discrete steps.
+ * @ux {Progress indicator} A stepper at the top shows completed, current, and upcoming steps.
+ * @ux {Navigation buttons} Back and Next buttons move between steps.
+ * @ux {Per-step validation} Each step can validate its inputs before the Next button is enabled.
+ * @ux {Step click} Previously completed steps can be revisited by clicking the step indicator.
+ */
 export const Wizard: KendoComponent<KendoWizardProps & KendoWizardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoWizardProps & KendoWizardState & React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -57,30 +64,14 @@ Wizard.moduleName = WIZARD_MODULE_NAME;
 Wizard.folderName = WIZARD_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * Wizard implements the WAI-ARIA tabs pattern with step navigation.
+ * @keyboard {ArrowLeft or ArrowUp} Selects previous tab.
+ * @keyboard {ArrowRight or ArrowDown} Selects next tab.
+ * @keyboard {Home} Selects first tab.
+ * @keyboard {End} Selects last tab.
+ * @keyboard {Tab} Focuses next element in the page Tab sequence. That could be the currently visible `tabpanel`, an element on it, or an element outside the Wizard.
+ * @keyboard {Shift + Tab} Focuses previous element in the page Tab sequence.
  *
- * - StepList: role="tablist"
- * - Step: role="none" (removes implicit li semantics)
- * - Step link: role="tab", aria-controls, aria-selected, aria-current, tabindex
- * - WizardStep: role="tabpanel", aria-label, tabindex="0"
+ * @see https://www.w3.org/TR/wai-aria-1.2/#tablist WAI-ARIA specification for tablist
  */
-Wizard.ariaSpec = {
-    selector: '.k-wizard',
-    rules: [
-        { selector: '.k-step-list', attribute: 'role=tablist', usage: 'Indicates the role of the tablist container element.' },
-        { selector: '.k-step', attribute: 'role=none', usage: 'The implicit semantics of the li element must be removed.' },
-        { selector: '.k-step-link', attribute: 'role=tab', usage: 'Specifies the role for the step links.' },
-        { selector: '.k-step-link', attribute: 'aria-controls=.k-wizard-step id (when present)', usage: 'Refers to the tabpanel element associated with the tab.' },
-        { selector: '.k-step.k-disabled>.k-step-link', attribute: 'aria-disabled=true', usage: 'A disabled (inactive) tab.' },
-        { selector: '.k-step-current .k-step-link', attribute: 'aria-selected=true', usage: 'Indicates the tab control is activated.' },
-        { selector: '.k-step-current .k-step-link', attribute: 'aria-current=true', usage: 'Indicates the current active step.' },
-        { selector: '.k-step-current .k-step-link', attribute: 'tabindex=0', usage: 'Current step is in the page tab sequence.' },
-        { selector: '.k-step:not(.k-step-current) .k-step-link', attribute: 'tabindex=-1', usage: 'Non-current steps are removed from tab sequence.' },
-        { selector: '.k-wizard-step', attribute: 'role=tabpanel', usage: 'Specifies the role of the element.' },
-        { selector: '.k-wizard-step', attribute: 'aria-label', usage: 'Specifies a label for the panel (e.g., "Step 2 of 4").' },
-        { selector: '.k-wizard-step', attribute: 'tabindex=0', usage: 'Keeps the tabpanel in the page tab sequence.' },
-    ]
-};
 
 export default Wizard;

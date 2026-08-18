@@ -54,6 +54,18 @@ const defaultOptions = {
     separators: true
 };
 
+/**
+ * @aria {role="textbox"} Describes the role of the component.
+ * @aria {aria-label|aria-labelledby} The input requires an accessible name (provided by consuming app).
+ * @aria {aria-placeholder} Announces the mask or placeholder for the component.
+ * @aria {aria-invalid="true"} Rendered when the MaskedTextBox is in an invalid state.
+ * @aria {aria-describedby} Points to the hint or error message.
+ * @aria {aria-disabled="true"} Rendered when the MaskedTextBox is disabled.
+ * @ux {Mask pattern} Formats input according to a configurable pattern (e.g., phone numbers, dates).
+ * @ux {Prompt character} Unfilled mask positions are shown with a placeholder character (default: underscore).
+ * @ux {Auto-advance} Focus moves to the next mask segment as each one is filled.
+ * @ux {Disabled state} When disabled, the input is non-interactive.
+ */
 export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMaskedTextboxState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMaskedTextboxProps &
         KendoMaskedTextboxState &
@@ -82,7 +94,6 @@ export const MaskedTextbox: KendoComponent<KendoMaskedTextboxProps & KendoMasked
         'aria-describedby': ariaDescribedBy,
         ...other
     } = props;
-
 
     return (
         <Input
@@ -136,24 +147,5 @@ MaskedTextbox.className = MASKEDTEXTBOX_CLASSNAME;
 MaskedTextbox.defaultOptions = defaultOptions;
 MaskedTextbox.moduleName = MASKEDTEXTBOX_MODULE_NAME;
 MaskedTextbox.folderName = MASKEDTEXTBOX_FOLDER_NAME;
-
-/**
- * Accessibility specification for MaskedTextbox.
- * @accessibility
- * - Uses semantic `<input>` element (role="textbox" implicit)
- * - Requires accessible name via label, aria-label, or aria-labelledby
- * - Disabled state uses native disabled attribute
- */
-MaskedTextbox.ariaSpec = {
-    selector: '.k-maskedtextbox',
-    rules: [
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'role=textbox or nodeName=input', usage: 'Describes the role of the component.' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'label for or aria-label or aria-labelledby (when has accessible name)', usage: 'The input requires an accessible name (provided by consuming app).' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'aria-placeholder (when has mask)', usage: 'Announces the mask or placeholder for the component.' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'aria-invalid=true (when invalid)', usage: 'Rendered when the MaskedTextBox is in an invalid state.' },
-        { selector: '.k-maskedtextbox > .k-input-inner', attribute: 'aria-describedby (when has hint or error)', usage: 'Points to the hint or error message.' },
-        { selector: '.k-maskedtextbox.k-disabled > .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the MaskedTextBox is disabled.' },
-    ]
-};
 
 export default MaskedTextbox;

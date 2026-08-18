@@ -20,7 +20,6 @@ export type KendoExpansionPanelProps = {
     subtitle?: string;
     dir?: 'ltr' | 'rtl';
     contentStyle?: React.CSSProperties;
-    /** @aria ID for aria-controls reference between header and content */
     id?: string;
 };
 
@@ -28,6 +27,17 @@ export type KendoExpansionPanelState = { [K in (typeof states)[number]]?: boolea
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="button"} Sets the proper role for the ExpansionPanel header.
+ * @aria {aria-controls} Points to the controlled content wrapper element.
+ * @aria {aria-expanded="true"|\"false"} Indicates the expanded state of the ExpansionPanel.
+ * @aria {tabindex="0"} The element should be focusable.
+ * @aria {aria-disabled="true"} Rendered only when the ExpansionPanel is disabled.
+ * @aria {id} Referenced via aria-controls on the header button to link it to the content panel.
+ * @ux {Collapse / Expand} Clicking the header toggles the content panel open and closed.
+ * @ux {Animation} Panel opening and closing is smoothly animated.
+ * @ux {Disabled state} When disabled, the panel header cannot be toggled.
+ */
 export const ExpansionPanel: KendoComponent<KendoExpansionPanelProps & KendoExpansionPanelState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoExpansionPanelProps &
         KendoExpansionPanelState &
@@ -102,24 +112,10 @@ ExpansionPanel.moduleName = EXPANSION_PANEL_MODULE_NAME;
 ExpansionPanel.folderName = EXPANSION_PANEL_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * ExpansionPanel implements the WAI-ARIA disclosure pattern.
+ * @keyboard {Enter} Expands and collapses the focused ExpansionPanel.
+ * @keyboard {Space} Expands and collapses the focused ExpansionPanel.
  *
- * - Header: role="button" with aria-controls pointing to content wrapper
- * - aria-expanded indicates open/closed state
- * - tabindex=0 on header for keyboard focus
- * - aria-disabled when panel is disabled
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/accordion/ ARIA Practices: Accordion Pattern
  */
-ExpansionPanel.ariaSpec = {
-    selector: '.k-expander',
-    rules: [
-        { selector: '.k-expander-header', attribute: 'role=button', usage: 'Sets the proper role for the ExpansionPanel header.' },
-        { selector: '.k-expander-header', attribute: 'aria-controls', usage: 'Points to the controlled content wrapper element.' },
-        { selector: '.k-expander-header', attribute: 'aria-expanded=true/false', usage: 'Indicates the expanded state of the ExpansionPanel.' },
-        { selector: '.k-expander-header', attribute: 'tabindex=0', usage: 'The element should be focusable.' },
-        { selector: '.k-disabled .k-expander-header', attribute: 'aria-disabled=true', usage: 'Rendered only when the ExpansionPanel is disabled.' },
-        { selector: '.k-expander-content-wrapper', attribute: 'id', usage: 'Content wrapper has an id referenced by aria-controls.' },
-    ]
-};
 
 export default ExpansionPanel;

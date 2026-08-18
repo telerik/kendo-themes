@@ -153,7 +153,7 @@ export const TreelistDemo = (
                                 <TableThead>
                                     <TableRow>
                                         <GridHeaderCell columnTitle="First Name"></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="Last Name" sortable></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Last Name" sortable sorted></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Position"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>

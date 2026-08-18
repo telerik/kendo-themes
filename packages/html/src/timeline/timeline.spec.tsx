@@ -19,6 +19,21 @@ const defaultOptions = {
     orientation: "vertical",
 };
 
+/**
+ * @aria {role="tabpanel"} The card serves as the tab panel content.
+ * @aria {aria-label} Refers to the tab element that controls the panel.
+ * @aria {aria-hidden="true"} Arrow buttons are hidden from the accessibility tree.
+ * @aria {role="button"} Items in the vertical timeline are buttons.
+ * @aria {aria-describedby} Vertical timeline cards are described by their date elements.
+ * @aria {aria-live="polite"} Vertical timeline cards are live regions.
+ * @aria {tabindex="0"} Vertical timeline cards are focusable.
+ * @aria {aria-expanded="false"} Collapsed cards announce their collapsed state.
+ * @aria {aria-expanded="true"} Expanded cards announce their expanded state.
+ * @ux {Chronological events} Displays a list of events ordered by date.
+ * @ux {Expand / Collapse} Each event's detail content can be expanded or collapsed.
+ * @ux {Orientation} Can be rendered vertically (default) or horizontally.
+ * @ux {Alternating} In horizontal mode, event cards alternate between top and bottom placement.
+ */
 export const Timeline: KendoComponent<KendoTimelineProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTimelineProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -54,25 +69,18 @@ Timeline.defaultOptions = defaultOptions;
 Timeline.moduleName = TIMELINE_MODULE_NAME;
 Timeline.folderName = TIMELINE_FOLDER_NAME;
 
-Timeline.ariaSpec = {
-    rules: [
-        // Horizontal timeline rules
-        { selector: '.k-timeline.k-timeline-horizontal .k-timeline-track-wrap .k-timeline-scrollable-wrap', attribute: 'role=tablist', usage: 'Indicates the tablist role for the scrollable wrap element.' },
-        { selector: '.k-timeline.k-timeline-horizontal .k-timeline-track-item:not(.k-timeline-flag-wrap)', attribute: 'role=tab', usage: 'Individual tab element on the track.' },
-        { selector: '.k-timeline.k-timeline-horizontal .k-timeline-track-item:not(.k-timeline-flag-wrap).k-focus', attribute: 'aria-selected=true', usage: 'Announces the selected state of the focused tab.' },
-        { selector: '.k-timeline.k-timeline-horizontal .k-timeline-flag-wrap', attribute: 'role=none', usage: 'The flag-wrap items have semantics removed.' },
-        { selector: '.k-timeline.k-timeline-horizontal .k-timeline-flag-wrap', attribute: 'aria-hidden=true', usage: 'Flag-wrap items are hidden from the accessibility tree.' },
-        { selector: '.k-timeline.k-timeline-horizontal .k-card:not(:empty)', attribute: 'role=tabpanel', usage: 'The card serves as the tab panel content.' },
-        { selector: '.k-timeline.k-timeline-horizontal .k-card:not(:empty)', attribute: 'aria-label', usage: 'Refers to the tab element that controls the panel.' },
-        { selector: '.k-timeline-arrow', attribute: 'aria-hidden=true', usage: 'Arrow buttons are hidden from the accessibility tree.' },
-        // Vertical timeline rules
-        { selector: '.k-timeline.k-timeline-vertical .k-card', attribute: 'role=button', usage: 'Items in the vertical timeline are buttons.' },
-        { selector: '.k-timeline.k-timeline-vertical .k-card', attribute: 'aria-describedby', usage: 'Vertical timeline cards are described by their date elements.' },
-        { selector: '.k-timeline.k-timeline-vertical .k-card', attribute: 'aria-live=polite', usage: 'Vertical timeline cards are live regions.' },
-        { selector: '.k-timeline.k-timeline-vertical .k-card', attribute: 'tabindex=0', usage: 'Vertical timeline cards are focusable.' },
-        { selector: '.k-timeline.k-timeline-collapsible .k-collapsed .k-card', attribute: 'aria-expanded=false', usage: 'Collapsed cards announce their collapsed state.' },
-        { selector: '.k-timeline.k-timeline-collapsible .k-timeline-card:not(.k-collapsed) .k-card', attribute: 'aria-expanded=true', usage: 'Expanded cards announce their expanded state.' },
-    ]
-};
+/**
+ * @keyboard {ArrowLeft} Activates the previous tab (item).
+ * @keyboard {ArrowRight} Activates the next tab (item).
+ * @keyboard {Home} Focuses the first item and activates it.
+ * @keyboard {End} Focuses the last item and activates it.
+ * @keyboard {Shift + Tab} Focuses the previous item (button) in the Timeline.
+ * @keyboard {Tab} Focuses the next item (button) in the Timeline.
+ * @keyboard {Enter} If expandable, expands/collapses the currently focused item.
+ * @keyboard {Space} If expandable, expands/collapses the currently focused item.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#tablist WAI-ARIA specification for tablist
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-automatic.html WAI-ARIA practices: TabList example
+ */
 
 export default Timeline;

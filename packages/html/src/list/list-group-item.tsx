@@ -4,19 +4,16 @@ import { classNames } from '../misc';
 const className = `k-list-group-item`;
 
 export type ListGroupItemProps = {
-    /**
-     * Icon to display before the group label.
-     */
     groupIconName?: string;
 };
 
 /**
  * List group header item for grouped lists.
  *
- * @accessibility
- * - Has `role="presentation"` as it's a visual group header, not a selectable option
- * - Should have an id that can be referenced by the parent UL's `aria-labelledby`
- * - Icon (if present) has `aria-hidden="true"`
+ * @aria {role="presentation"} Group header is a visual element; removes it from the accessibility tree.
+ * @aria {id} Referenced by the parent list\'s aria-labelledby to name the group.
+ * @aria {aria-hidden="true"} The group icon (if present) is decorative.
+ *
  */
 export const ListGroupItem = (props: ListGroupItemProps & React.HTMLAttributes<HTMLLIElement>) => {
     const { groupIconName, ...other } = props;
@@ -36,10 +33,3 @@ export const ListGroupItem = (props: ListGroupItemProps & React.HTMLAttributes<H
 /**
  * ARIA specification for ListGroupItem.
  */
-ListGroupItem.ariaSpec = {
-    selector: '.k-list-group-item',
-    rules: [
-        { selector: '.k-list-group-item', attribute: 'role=presentation', usage: 'Group headers are presentational, not selectable options.' },
-        { selector: '.k-list-group-item', attribute: 'id (when referenced)', usage: 'ID for aria-labelledby on the parent group UL.' },
-    ]
-};

@@ -5,7 +5,7 @@ export * from './prompt-view';
 export * from './prompt-expander';
 export * from './prompt-footer';
 export * from './prompt-setting';
-export * from './prompt-send-button';
+export * from './prompt-send-button.spec';
 export * from './prompt-stop-fab';
 export * from './templates/prompt-normal';
 export * from './templates/prompt-suggestions';

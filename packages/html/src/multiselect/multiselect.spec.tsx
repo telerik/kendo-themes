@@ -58,15 +58,7 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveCustomValue?: boolean;
-    /**
-     * Unique identifier for the multiselect. Used to generate related IDs.
-     * @aria Controls aria-controls references
-     */
     id?: string;
-    /**
-     * ID of the currently focused/active item in the listbox.
-     * @aria aria-activedescendant - Points to focused item when popup is open
-     */
     activeDescendant?: string;
 };
 
@@ -76,6 +68,31 @@ const defaultOptions = {
     separators: true
 };
 
+/**
+ * @aria {role="combobox"} Announces the multiselect input.
+ * @aria {aria-haspopup="listbox"} Indicates the component has a listbox popup.
+ * @aria {aria-expanded} Announces the popup visibility.
+ * @aria {aria-label} Accessible name for the multiselect.
+ * @aria {aria-autocomplete="list"} Indicates list filtering capability.
+ * @aria {aria-describedby} Points to the taglist element that contains the selected items.
+ * @aria {aria-disabled="true"} Rendered when the multiselect is disabled.
+ * @aria {role="listbox"} The taglist has listbox role for selected items.
+ * @aria {aria-label|aria-labelledby} The taglist needs an accessible name.
+ * @aria {aria-orientation="horizontal"} Specifies horizontal orientation of the taglist.
+ * @aria {role="option"} Each tag chip is an option within the taglist listbox.
+ * @aria {aria-selected="true"} Tags represent selected items and must have aria-selected=true.
+ * @aria {role="listbox"} Popup list has listbox role.
+ * @aria {aria-label|aria-labelledby} Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.
+ * @aria {role="option"} Each list item is an option.
+ * @aria {id} Referenced by aria-controls on the input.
+ * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Tags} Selected values appear as removable tag chips inside the input.
+ * @ux {Popup} Clicking the input or trigger opens a filterable dropdown list.
+ * @ux {Filtering} The list narrows as the user types in the input.
+ * @ux {Tag removal} Clicking a tag's × removes that value from the selection.
+ * @ux {Placeholder} Displays hint text when no values are selected.
+ * @ux {Disabled state} When disabled, tags cannot be added or removed.
+ */
 export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelectState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMultiSelectProps &
         KendoMultiSelectState &
@@ -115,7 +132,6 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
 
     const listboxId = id ? `${id}-listbox` : undefined;
     const chipListId = id ? `${id}-taglist` : undefined;
-
 
     return (
         <>
@@ -238,30 +254,21 @@ MultiSelect.moduleName = MULTISELECT_MODULE_NAME;
 MultiSelect.folderName = MULTISELECT_FOLDER_NAME;
 
 /**
- * @see List ariaSpec for popup listbox content
- * @see ActionSheet ariaSpec for adaptive mode
+ * @keyboard {Typing in the input} Focuses the matched item.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the popup.
+ * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} Closes the popup.
+ * @keyboard {ArrowLeft} Focuses the previous tag item in the selected list.
+ * @keyboard {ArrowRight} Focuses the next tag item in the selected list.
+ * @keyboard {Delete or Backspace} When the focused item is a tag list, removes the item from the selection.
+ * @keyboard {Escape} Clears the value when the popup is not open.
+ * @keyboard {Shift + ArrowUp} Creates a range selection between the last selected or deselected item and the item that is immediately before the currently focused one. All items outside that range are deselected. The last selected or deselected item is stored when using the mouse to click an item, or when using `Enter` to select or deselect an item. The last selected or deselected item is reset when the value of the MultiSelect is cleared. If the there is no previously selected item, selects only the currently focused and the previous one. At the end of the operation, the focus moves to the the item that is immediately before the currently focused one.
+ * @keyboard {Shift + ArrowDown} Creates a range selection between the last selected or deselected item and the item that is immediately after the currently focused one. All items outside that range are deselected. The last selected or deselected item is stored when using the mouse to click an item, or when using `Enter` to select or deselect an item. The last selected or deselected item is reset when the value of the MultiSelect is cleared. If the there is no previously selected item, selects only the currently focused and the next one. At the end of the operation, the focus moves to the the item that is immediately after the currently focused one.
+ * @keyboard {Control/Cmd(Mac) + Shift + Home} Creates a range selection from the currently focused item up to the beginning of the list. All items outside that range are deselected.
+ * @keyboard {Control/Cmd(Mac) + Shift + End} Creates a range selection from the currently focused item down to the end of the list. All items outside that range are deselected.
+ * @keyboard {Control/Cmd(Mac) + A} Selects all items present in the list. If all items are already selected, deselects them.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html WAI-ARIA Authoring Practices: Select-Only Combobox Example
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/listbox/listbox-scrollable.html WAI-ARIA Authoring Practices: Scrollable Listbox Example
  */
-MultiSelect.ariaSpec = {
-    rules: [
-        // Combobox input
-        { selector: '.k-multiselect .k-input-inner', attribute: 'role=combobox', usage: 'Announces the multiselect input.' },
-        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-haspopup=listbox', usage: 'Indicates the component has a listbox popup.' },
-        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
-        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the multiselect.' },
-        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-autocomplete=list', usage: 'Indicates list filtering capability.' },
-        { selector: '.k-multiselect .k-input-inner', attribute: 'aria-describedby', usage: 'Points to the taglist element that contains the selected items.' },
-        { selector: '.k-multiselect.k-disabled .k-input-inner', attribute: 'disabled=disabled or aria-disabled=true', usage: 'Rendered when the multiselect is disabled.' },
-        // TagList (ChipList)
-        { selector: '.k-multiselect .k-chip-list', attribute: 'role=listbox', usage: 'The taglist has listbox role for selected items.' },
-        { selector: '.k-multiselect .k-chip-list', attribute: 'aria-label or aria-labelledby', usage: 'The taglist needs an accessible name.' },
-        { selector: '.k-multiselect .k-chip-list', attribute: 'aria-orientation=horizontal', usage: 'Specifies horizontal orientation of the taglist.' },
-        { selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'role=option', usage: 'Each tag chip is an option within the taglist listbox.' },
-        { selector: '.k-multiselect .k-chip-list .k-chip', attribute: 'aria-selected=true', usage: 'Tags represent selected items and must have aria-selected=true.' },
-        // Popup listbox
-        { selector: '.k-multiselect-popup .k-list-content, .k-multiselect-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-multiselect-popup .k-list-ul[role="listbox"], .k-multiselect-popup .k-list-content[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-multiselect-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
-    ]
-};
 
 export default MultiSelect;

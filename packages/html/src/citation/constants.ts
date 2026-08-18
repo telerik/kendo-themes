@@ -1,0 +1,2 @@
+export const CITATION_MODULE_NAME = 'citation';
+export const CITATION_FOLDER_NAME = CITATION_MODULE_NAME;

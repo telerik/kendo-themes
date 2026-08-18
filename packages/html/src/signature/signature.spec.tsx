@@ -33,6 +33,16 @@ export type KendoSignatureState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="img"} Sets canvas role to img.
+ * @aria {aria-label} Announces the purpose of the Signature.
+ * @aria {nodeName="button"} Renders action as a button element.
+ * @aria {aria-label} Announces the purpose of the action button.
+ * @ux {Canvas drawing} The user draws their signature on a canvas area.
+ * @ux {Clear} A clear button resets the canvas to a blank state.
+ * @ux {Maximize} A maximize button expands the canvas for easier drawing.
+ * @ux {Minimize} A minimize button collapses the canvas back to its original size.
+ */
 export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSignatureProps &
         KendoSignatureState &
@@ -136,14 +146,8 @@ Signature.defaultOptions = defaultOptions;
 Signature.moduleName = SIGNATURE_MODULE_NAME;
 Signature.folderName = SIGNATURE_FOLDER_NAME;
 
-Signature.ariaSpec = {
-    selector: '.k-signature',
-    rules: [
-        { selector: '.k-signature-canvas', attribute: 'role=img', usage: 'Sets canvas role to img.' },
-        { selector: '.k-signature-canvas', attribute: 'aria-label', usage: 'Announces the purpose of the Signature.' },
-        { selector: '.k-signature-action', attribute: 'nodeName=button', usage: 'Renders action as a button element.' },
-        { selector: '.k-signature-action', attribute: 'aria-label', usage: 'Announces the purpose of the action button.' },
-    ]
-};
+/**
+ * @keyboard {Escape} Closes the dialog if open.
+ */
 
 export default Signature;

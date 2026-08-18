@@ -1,7 +1,272 @@
+## 14.5.1-dev.0 (2026-08-17)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.4 (2026-08-10)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.4.1-dev.3 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.2 (2026-08-03)
+
+### 🩹 Fixes
+
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🚀 Features
+
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.0 (2026-07-27)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.4.0 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
+## 14.4.0-dev.4 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.0-dev.2 (2026-07-20)
+
+### 🚀 Features
+
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
+## 14.4.0-dev.1 (2026-07-08)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.4.0-dev.0 (2026-07-06)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.2.0 (2026-06-29)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+- **bootstrap:** selected segmented control button text in urban swatch ([2389110e72](https://github.com/telerik/kendo-themes/commit/2389110e72))
+- **expansion-panel:** expander title text transform ([6bfa411226](https://github.com/telerik/kendo-themes/commit/6bfa411226))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- add relative colors to theme swatches ([04e314e734](https://github.com/telerik/kendo-themes/commit/04e314e734))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
+## 14.2.0-dev.6 (2026-06-25)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.5 (2026-06-24)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.2.0-dev.4 (2026-06-22)
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- zhpenkov
+
+## 14.2.0-dev.3 (2026-06-15)
+
+### 🩹 Fixes
+
+- **bootstrap:** selected segmented control button text in urban swatch ([2389110e72](https://github.com/telerik/kendo-themes/commit/2389110e72))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.2.0-dev.1 (2026-06-08)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+
+### 🩹 Fixes
+
+- **expansion-panel:** expander title text transform ([6bfa411226](https://github.com/telerik/kendo-themes/commit/6bfa411226))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- add relative colors to theme swatches ([04e314e734](https://github.com/telerik/kendo-themes/commit/04e314e734))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* **expansion-panel:** expander title text transform ([6bfa411](https://github.com/telerik/kendo-themes/commit/6bfa41122658695ffd37d4a9f5ca5dcc7f30698b))
+* remove per component scrollbar-related variables ([7108ec7](https://github.com/telerik/kendo-themes/commit/7108ec74ab619b8ee9af04d63984937466143eb0))
+
+
+### Features
+
+* **diagram:** add diagram selection tool styles ([b321345](https://github.com/telerik/kendo-themes/commit/b3213452e870f65f771193ce0c6a962a94abbde7))
+
+
+
+
 
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 

@@ -1,6 +1,6 @@
 import { CalendarHeader } from './calendar-header';
 import { CalendarInfiniteTable } from './calendar-infinite-table';
-import { CalendarTableHead } from './calendar-table-head';
+import { CalendarTableHead } from './calendar-table-head.spec';
 import { classNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
@@ -15,7 +15,6 @@ export type KendoCalendarInfiniteViewProps = {
     showWeekNumbers?: boolean;
     showNavigationButtons?: boolean;
     weekdayCellsText?: string[];
-    /** @aria aria-labelledby for the content grid table */
     gridLabelledBy?: string;
 };
 
@@ -27,7 +26,9 @@ const defaultOptions = {
     showNavigationButtons: false
 };
 
-
+/**
+ * @aria {aria-labelledby} for the content grid table
+ */
 export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCalendarInfiniteViewProps &
         React.HTMLAttributes<HTMLDivElement>

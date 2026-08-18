@@ -52,6 +52,10 @@ $kendo-border-radii: $default-border-radii !default;
 $kendo-border-radii: map.merge($default-border-radii, $kendo-border-radii);
 
 
+/// Returns a CSS variable reference for a border-radius token.
+/// @param {String} $key - The border-radius key from $kendo-border-radii.
+/// @return {String} CSS variable reference for the given border-radius token.
+/// @group functions
 @function k-border-radius($key) {
     @return var(--kendo-border-radius-#{$key});
 }

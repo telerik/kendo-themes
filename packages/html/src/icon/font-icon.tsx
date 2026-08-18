@@ -35,11 +35,9 @@ const defaultOptions = {};
 /**
  * FontIcon component - renders decorative font-based icons.
  *
- * @accessibility
- * - Always renders `aria-hidden="true"` as icons are decorative
- * - Screen readers will skip this element entirely
+ * @aria {aria-hidden="true"} Icons are decorative; hidden from assistive technologies.
  *
- * @wcag 1.1.1 Non-text Content - decorative images hidden from AT
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html WCAG 1.1.1 Non — text Content - decorative images hidden from AT
  */
 export const FontIcon = (
     props: FontIconProps & React.HTMLAttributes<HTMLSpanElement>

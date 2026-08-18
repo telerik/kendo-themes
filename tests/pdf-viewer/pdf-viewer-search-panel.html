@@ -14,6 +14,14 @@
         #test-area .k-pdf-viewer {
             height: 250px;
         }
+        .k-animation-container {
+            position: relative;
+            bottom: 213px;
+            left: 300px;
+        }
+        .k-animation-container:has(.annotations-search-panel) {
+            bottom: 155px;
+        }
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
@@ -38,9 +46,9 @@
                             </span>
                         </button>
                         <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" aria-disabled="true">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                                    <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
@@ -52,9 +60,9 @@
                             <span>of 6</span>
                         </span>
                         <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                    <path d="M352 256 160 384V128z"></path>
                                 </svg>
                             </span>
                         </button>
@@ -141,55 +149,64 @@
                 </button>
             </div>
             <div class="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto k-enable-text-select" tabindex="0" aria-label="PDF document" role="document">
-                <div class="k-search-panel k-pos-sticky k-top-center" role="dialog" aria-label="Search">
-                    <button class="k-search-dialog-draghandle k-button k-button-flat k-icon-button" aria-label="Drag handle">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-handle-drag" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M160 64h64v384h-64zm96 0v384h64V64z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <span class="k-textbox k-input">
-                        <input aria-label="Search text" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                        <span class="k-input-separator k-input-separator-vertical"></span>
-                        <span class="k-input-suffix k-input-suffix-horizontal">
-                            <button class="k-match-case-button k-button k-button-flat k-icon-button" aria-label="Match case">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-convert-lowercase" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480.1 416H436v-36h-.7c-13.8 24-34.1 36-60.8 36-19.7 0-35.1-5.3-46.3-16-11.1-10.7-16.7-24.9-16.7-42.5 0-37.8 21.7-59.9 65.3-66.2l59.4-8.4c0-28.6-13.5-42.8-40.7-42.8-23.8 0-45.4 8.2-64.5 24.7V225c21.1-12.5 45.5-18.8 73.1-18.8 50.6 0 75.9 25 75.9 74.8v135zM436 313.1l-42 5.9c-13 1.7-22.8 4.9-29.4 9.5s-9.9 12.7-9.9 24.3c0 8.5 3 15.4 9.1 20.8s14.2 8.1 24.3 8.1c13.8 0 25.2-4.8 34.3-14.5 9-9.7 13.6-21.9 13.6-36.6zM240 416h48L184 96h-48L32 416h48l26-80h108zM121.6 288 160 169.8 198.4 288z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </span>
-                    </span>
-                    <span class="k-search-matches">
-                        <span>0</span> of <span>0</span>
-                    </span>
-                    <button class="k-button k-button-flat k-icon-button" aria-label="Previous match">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M384 288h-96v128h-64l-.001-128H128L255.999 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <button class="k-button k-button-flat k-icon-button" aria-label="Next match">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-down" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M128 224h96V96h64l.001 128H384L256.001 416z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <button class="k-button k-button-flat k-icon-button" aria-label="Close search">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
                 <div class="k-pdf-viewer-pages">
                     <div class="k-page" style="width: 720px; height: 360px;"></div>
                     <div class="k-page" style="width: 720px; height: 360px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="k-animation-container k-animation-container-shown">
+            <div class="k-child-animation-container">
+                <div class="k-floating-toolbar k-popup">
+                    <div class="k-toolbar k-toolbar-flat" role="toolbar" aria-label="Toolbar">
+                        <button class="k-toolbar-button k-search-dialog-draghandle k-button k-button-flat k-icon-button" aria-label="Drag handle">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-handle-drag-dots" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M384 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48M128 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <span class="k-textbox k-input k-input-flat">
+                            <input class="k-input-inner" placeholder="Search" autocomplete="off" type="text" value="">
+                            <span class="k-input-separator k-input-separator-vertical"></span>
+                            <span class="k-input-suffix k-input-suffix-horizontal">
+                                <button class="k-match-case-button k-button k-button-flat k-icon-button" aria-label="Match case">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-convert-lowercase" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M480.1 416H436v-36h-.7c-13.8 24-34.1 36-60.8 36-19.7 0-35.1-5.3-46.3-16-11.1-10.7-16.7-24.9-16.7-42.5 0-37.8 21.7-59.9 65.3-66.2l59.4-8.4c0-28.6-13.5-42.8-40.7-42.8-23.8 0-45.4 8.2-64.5 24.7V225c21.1-12.5 45.5-18.8 73.1-18.8 50.6 0 75.9 25 75.9 74.8v135zM436 313.1l-42 5.9c-13 1.7-22.8 4.9-29.4 9.5s-9.9 12.7-9.9 24.3c0 8.5 3 15.4 9.1 20.8s14.2 8.1 24.3 8.1c13.8 0 25.2-4.8 34.3-14.5 9-9.7 13.6-21.9 13.6-36.6zM240 416h48L184 96h-48L32 416h48l26-80h108zM121.6 288 160 169.8 198.4 288z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                        </span>
+                        <div class="k-search-matches">
+                            <span>0</span> of <span>0</span>
+                        </div>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Previous match">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M384 288h-96v128h-64l-.001-128H128L255.999 96z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Next match">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M128 224h96V96h64l.001 128H384L256.001 416z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Close search panel">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,9 +231,9 @@
                             </span>
                         </button>
                         <button class="k-pager-nav k-button k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" aria-disabled="true">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                                    <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
@@ -228,9 +245,9 @@
                             <span>of 6</span>
                         </span>
                         <button class="k-pager-nav k-button k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                    <path d="M352 256 160 384V128z"></path>
                                 </svg>
                             </span>
                         </button>
@@ -420,55 +437,64 @@
                 </button>
             </div>
             <div class="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto k-enable-text-select" tabindex="0" aria-label="PDF document" role="document">
-                <div class="k-search-panel k-pos-sticky k-top-center" role="dialog" aria-label="Search">
-                    <button class="k-search-dialog-draghandle k-button k-button-flat k-icon-button" aria-label="Drag handle">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-handle-drag" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M160 64h64v384h-64zm96 0v384h64V64z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <span class="k-textbox k-input">
-                        <input aria-label="Search text" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                        <span class="k-input-separator k-input-separator-vertical"></span>
-                        <span class="k-input-suffix k-input-suffix-horizontal">
-                            <button class="k-match-case-button k-button k-button-flat k-icon-button" aria-label="Match case">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-convert-lowercase" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480.1 416H436v-36h-.7c-13.8 24-34.1 36-60.8 36-19.7 0-35.1-5.3-46.3-16-11.1-10.7-16.7-24.9-16.7-42.5 0-37.8 21.7-59.9 65.3-66.2l59.4-8.4c0-28.6-13.5-42.8-40.7-42.8-23.8 0-45.4 8.2-64.5 24.7V225c21.1-12.5 45.5-18.8 73.1-18.8 50.6 0 75.9 25 75.9 74.8v135zM436 313.1l-42 5.9c-13 1.7-22.8 4.9-29.4 9.5s-9.9 12.7-9.9 24.3c0 8.5 3 15.4 9.1 20.8s14.2 8.1 24.3 8.1c13.8 0 25.2-4.8 34.3-14.5 9-9.7 13.6-21.9 13.6-36.6zM240 416h48L184 96h-48L32 416h48l26-80h108zM121.6 288 160 169.8 198.4 288z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </span>
-                    </span>
-                    <span class="k-search-matches">
-                        <span>0</span> of <span>0</span>
-                    </span>
-                    <button class="k-button k-button-flat k-icon-button" aria-label="Previous match">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M384 288h-96v128h-64l-.001-128H128L255.999 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <button class="k-button k-button-flat k-icon-button" aria-label="Next match">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-down" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M128 224h96V96h64l.001 128H384L256.001 416z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <button class="k-button k-button-flat k-icon-button" aria-label="Close search">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
                 <div class="k-pdf-viewer-pages">
                     <div class="k-page" style="width: 720px; height: 360px;"></div>
                     <div class="k-page" style="width: 720px; height: 360px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="k-animation-container k-animation-container-shown">
+            <div class="k-child-animation-container">
+                <div class="annotations-search-panel k-floating-toolbar k-popup">
+                    <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                        <button class="k-toolbar-button k-search-dialog-draghandle k-button k-button-flat k-icon-button">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-handle-drag-dots" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M384 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48M128 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <span class="k-textbox k-input k-input-flat">
+                            <input class="k-input-inner" placeholder="Search" autocomplete="off" type="text" value="">
+                            <span class="k-input-separator k-input-separator-vertical"></span>
+                            <span class="k-input-suffix k-input-suffix-horizontal">
+                                <button class="k-match-case-button k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-convert-lowercase" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M480.1 416H436v-36h-.7c-13.8 24-34.1 36-60.8 36-19.7 0-35.1-5.3-46.3-16-11.1-10.7-16.7-24.9-16.7-42.5 0-37.8 21.7-59.9 65.3-66.2l59.4-8.4c0-28.6-13.5-42.8-40.7-42.8-23.8 0-45.4 8.2-64.5 24.7V225c21.1-12.5 45.5-18.8 73.1-18.8 50.6 0 75.9 25 75.9 74.8v135zM436 313.1l-42 5.9c-13 1.7-22.8 4.9-29.4 9.5s-9.9 12.7-9.9 24.3c0 8.5 3 15.4 9.1 20.8s14.2 8.1 24.3 8.1c13.8 0 25.2-4.8 34.3-14.5 9-9.7 13.6-21.9 13.6-36.6zM240 416h48L184 96h-48L32 416h48l26-80h108zM121.6 288 160 169.8 198.4 288z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                        </span>
+                        <div class="k-search-matches">
+                            <span>0</span> of <span>0</span>
+                        </div>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M384 288h-96v128h-64l-.001-128H128L255.999 96z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M128 224h96V96h64l.001 128H384L256.001 416z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

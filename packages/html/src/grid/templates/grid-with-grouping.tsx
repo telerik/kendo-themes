@@ -52,37 +52,45 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                             </colgroup>
                             <TableTbody role="rowgroup">
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
-                                    <TableTd colspan={6} role="gridcell" aria-expanded="false">
-                                        <p className="k-reset">
-                                            <Icon icon="chevron-right" />
-                                            ID: 1
-                                        </p>
-                                    </TableTd>
-                                </TableRow>
-                                <TableRow className="k-table-group-row k-grouping-row" role="row">
                                     <TableTd colspan={6} role="gridcell" aria-expanded="true">
-                                        <p className="k-reset">
+                                        <div className="k-grouping-row-content">
                                             <Icon icon="chevron-down" />
-                                            ID: 2
-                                        </p>
+                                            <span className="k-grouping-row-text">ID: 1</span>
+                                        </div>
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-table-group-row k-grouping-row" role="row">
                                     <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd colspan={5} role="gridcell" aria-expanded="true">
-                                        <p className="k-reset">
+                                        <div className="k-grouping-row-content">
                                             <Icon icon="chevron-down" />
-                                            Name: Chang
-                                        </p>
+                                            <span className="k-grouping-row-text">Name: Chai</span>
+                                        </div>
                                     </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" role="row">
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
+                                    <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
+                                    <TableTd colspan={0} role="gridcell">1</TableTd>
+                                    <TableTd colspan={0} role="gridcell">Chai</TableTd>
+                                    <TableTd colspan={0} role="gridcell">$18.00</TableTd>
+                                    <TableTd colspan={0} role="gridcell">Beverages</TableTd>
                                 </TableRow>
                                 <TableRow className="k-master-row" role="row" alt>
                                     <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
                                     <TableTd className="k-table-group-td k-group-cell" role="presentation"></TableTd>
-                                    <TableTd colspan={0} role="gridcell">2</TableTd>
-                                    <TableTd colspan={0} role="gridcell">Chang</TableTd>
-                                    <TableTd colspan={0} role="gridcell">$19.00</TableTd>
-                                    <TableTd colspan={0} role="gridcell">Beverages</TableTd>
+                                    <TableTd colspan={0} role="gridcell">3</TableTd>
+                                    <TableTd colspan={0} role="gridcell">Aniseed Syrup</TableTd>
+                                    <TableTd colspan={0} role="gridcell">$10.00</TableTd>
+                                    <TableTd colspan={0} role="gridcell">Condiments</TableTd>
+                                </TableRow>
+                                <TableRow className="k-table-group-row k-grouping-row" role="row">
+                                    <TableTd colspan={6} role="gridcell" aria-expanded="false">
+                                        <div className="k-grouping-row-content">
+                                            <Icon icon="chevron-right" />
+                                            <span className="k-grouping-row-text">ID: 2</span>
+                                        </div>
+                                    </TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>

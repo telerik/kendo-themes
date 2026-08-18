@@ -13,7 +13,9 @@ const defaultOptions = {};
 export type KendoSchedulerCellProps = {
     cellType?: string[];
     allDay?: boolean;
+    today?: boolean;
     text?: string;
+    dayText?: string;
     colspan?: number;
     rowspan?: number;
 }
@@ -27,7 +29,9 @@ export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React
     const {
         cellType,
         allDay,
+        today,
         text,
+        dayText,
         colspan,
         rowspan,
         as: Component = 'div',
@@ -49,17 +53,23 @@ export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React
                 props.className,
                 {
                     'k-scheduler-times-all-day': allDay,
+                    'k-today': today,
                 },
                 cellType?.map((t) => ({
                     [`k-${t}-cell`]: true,
                 }))
             )}>
-            {!allDay && text ?
-                <span className="k-link k-nav-day">
-                    {textOrChildren}
-                </span>
-                :
-                textOrChildren
+            {dayText ?
+                <>
+                    <span className="k-scheduler-date-day">{dayText}</span>
+                    <span className="k-link k-nav-day" aria-label={`${dayText} ${text}`}>{text}</span>
+                </>
+                : !allDay && text ?
+                    <span className="k-link k-nav-day">
+                        {textOrChildren}
+                    </span>
+                    :
+                    textOrChildren
             }
         </Component>
     );

@@ -30,6 +30,15 @@ export type KendoDrawerProps = {
     width?: string;
 };
 
+/**
+ * @aria {role="menubar"} Indicates that the list of drawer items is a menubar.
+ * @aria {aria-orientation="vertical"} Indicates that the orientation of the drawer is vertical.
+ * @ux {Overlay mode} The drawer slides in over the page content.
+ * @ux {Push mode} The drawer pushes the main content aside when open.
+ * @ux {Mini mode} Collapses to a narrow icon strip when closed.
+ * @ux {Position} Can be anchored to the left or right edge of the container.
+ * @ux {Backdrop} An optional semi-transparent overlay prevents interaction with the page while the drawer is open.
+ */
 export const Drawer: KendoComponent<KendoDrawerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDrawerProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -83,24 +92,9 @@ Drawer.moduleName = DRAWER_MODULE_NAME;
 Drawer.folderName = DRAWER_FOLDER_NAME;
 
 /**
- * Accessibility specification for Drawer.
- *
- * @accessibility
- * - Drawer list has role=menubar with aria-orientation=vertical
- * - Drawer items have role=menuitem
- * - Drawer separators have role=separator
- * - Mini mode items need aria-label for accessible name
- *
- * @wcag 4.1.2 Name, Role, Value - menubar pattern for navigation
+ * @keyboard {Enter} Execute the item action
+ * @keyboard {ArrowUp} Goes to the previous item. Focus is moved to the prev item and its tabindex is set to 0.
+ * @keyboard {ArrowDown} Goes to the next item. Focus is moved to the next item and its tabindex is set to 0.
  */
-Drawer.ariaSpec = {
-    selector: '.k-drawer',
-    rules: [
-        { selector: '.k-drawer ul', attribute: 'role=menubar', usage: 'Indicates that the list of drawer items is a menubar.' },
-        { selector: '.k-drawer ul', attribute: 'aria-orientation=vertical', usage: 'Indicates that the orientation of the drawer is vertical.' },
-        { selector: '.k-drawer-item:not(.k-drawer-separator)', attribute: 'role=menuitem', usage: 'Indicates that the item of a drawer serves as a menuitem.' },
-        { selector: '.k-drawer-item.k-drawer-separator', attribute: 'role=separator', usage: 'Indicates that the item of a drawer serves as a separator.' },
-    ]
-};
 
 export default Drawer;

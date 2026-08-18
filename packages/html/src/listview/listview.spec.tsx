@@ -26,9 +26,7 @@ export type KendoListViewProps = {
     flexDirection?: 'row' | 'row-reverse' | 'col' | 'col-reverse';
     flexWrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
     gridColumns?: number;
-    /** @aria When true, renders with k-selectable class; content role=listbox, items role=option */
     selectable?: boolean;
-    /** @aria Accessible name for the listview content element (required when selectable/role=listbox) */
     contentAriaLabel?: string;
 };
 
@@ -38,6 +36,14 @@ const defaultOptions = {
     pagerPosition: 'bottom'
 };
 
+/**
+ * @aria {role="listbox"} Content element role when selectable; items receive role="option".
+ * @aria {aria-label} Accessible name for the content element; required when role="listbox".
+ * @ux {Item template} Each item is rendered with a custom template.
+ * @ux {Selection} Items can be selected by clicking.
+ * @ux {Paging} Content is paginated with a pager component.
+ * @ux {Inline editing} Items can be edited in-place via an edit template.
+ */
 export const ListView: KendoComponent<KendoListViewProps & KendoListViewState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoListViewProps &
         KendoListViewState &
@@ -116,25 +122,17 @@ ListView.moduleName = LISTVIEW_MODULE_NAME;
 ListView.folderName = LISTVIEW_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * ListView implements a list or listbox pattern.
+ * @keyboard {ArrowRight} Moves the focus to the next rendered item. If the focus is on the last item, the focus does not move.
+ * @keyboard {ArrowDown} Moves the focus to the next rendered item. If the focus is on the last item, the focus does not move.
+ * @keyboard {ArrowLeft} Moves the focus to the previous rendered item. If the focus is on the first item, the focus does not move.
+ * @keyboard {ArrowUp} Moves the focus to the previous rendered item. If the focus is on the first item, the focus does not move.
+ * @keyboard {Home} Moves the focus to the first rendered item.
+ * @keyboard {End} Moves the focus to the last rendered item.
+ * @keyboard {Enter} When there are focusable items within a ListView item - the focus moves to the first focusable item inside.
+ * @keyboard {Escape} If the focus is on an element inside a ListView item - returns the focus back to the ListView item.
  *
- * - Non-selectable: content role="list", items role="listitem"
- * - Selectable: content role="listbox", items role="option"
- * - Items have aria-setsize and aria-posinset
- * - First item has tabindex=0
+ * @see https://www.w3.org/TR/wai-aria-1.2/#list WAI-ARIA Specification: List
+ * @see https://www.w3.org/TR/wai-aria-1.2/#listitem WAI-ARIA Specification: Listitem
  */
-ListView.ariaSpec = {
-    selector: '.k-listview',
-    rules: [
-        { selector: '.k-listview:not(.k-selectable) .k-listview-content', attribute: 'role=list', usage: 'Specifies the role of non selectable ListView content element.' },
-        { selector: '.k-listview.k-selectable .k-listview-content', attribute: 'role=listbox', usage: 'Specifies the role of selectable ListView content element.' },
-        { selector: '.k-listview:not(.k-selectable) .k-listview-item', attribute: 'role=listitem', usage: 'Specifies the role of each item in a non selectable ListView.' },
-        { selector: '.k-listview.k-selectable .k-listview-item', attribute: 'role=option', usage: 'Specifies the role of each item in a selectable ListView.' },
-        { selector: '.k-listview-item', attribute: 'aria-setsize', usage: 'Specifies the total number of items present in the ListView.' },
-        { selector: '.k-listview-item', attribute: 'aria-posinset', usage: 'Specifies the position of the current item in the entire list.' },
-        { selector: '.k-listview-item:nth-child(1)', attribute: 'tabindex=0', usage: 'The first item in the ListView must be focusable by default.' },
-    ]
-};
 
 export default ListView;

@@ -10,22 +10,36 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1080px;
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>Scheduler Table Layout</span>
         <div class="k-scheduler" role="application">
             <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-                <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
-                    <button class="k-group-start k-button">
-                        <span class="k-button-text">Today</span>
-                    </button>
-                    <button class="k-button k-icon-button" aria-label="Navigate to previous period">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                             </svg>
                         </span>
                     </button>
-                    <button class="k-group-end k-button k-icon-button" aria-label="Navigate to next period">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
@@ -39,24 +53,24 @@
                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
                     </span>
-                    <span class="k-button-text">06/13/2022 - 06/20/2022</span>
+                    <span class="k-button-text">24 June – 25 June</span>
                 </button>
                 <span class="k-spacer"></span>
                 <div class="k-scheduler-views k-segmented-control" role="group">
-                    <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 22%; right: 2px;"></div>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 22%; right: 0%;"></div>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Day</span>
                     </button>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Week</span>
                     </button>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Month</span>
                     </button>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Timeline</span>
                     </button>
-                    <button class="k-segmented-control-button k-selected" aria-pressed="true">
+                    <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
                         <span class="k-segmented-control-button-text">Agenda</span>
                     </button>
                 </div>
@@ -86,7 +100,7 @@
                                 <table role="none" class="k-scheduler-table">
                                     <tbody role="rowgroup">
                                         <tr role="row">
-                                            <td class="k-scheduler-cell k-scheduler-datecolumn k-first k-selected" role="rowheader" aria-selected="true">
+                                            <td class="k-scheduler-cell k-scheduler-datecolumn k-first" role="rowheader">
                                                 <strong class="k-scheduler-agendaday">13</strong>
                                                 <em class="k-scheduler-agendaweek">Monday</em>
                                                 <span class="k-scheduler-agendadate">June, 2022</span>
@@ -186,18 +200,26 @@
         <span>Scheduler Flex Layout</span>
         <div class="k-scheduler" role="application">
             <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-                <div role="group" class="k-toolbar-button-group k-scheduler-navigation k-button-group">
-                    <button class="k-group-start k-button">
-                        <span class="k-button-text">Today</span>
-                    </button>
-                    <button class="k-button k-icon-button" aria-label="Navigate to previous period">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
                             </svg>
                         </span>
                     </button>
-                    <button class="k-group-end k-button k-icon-button" aria-label="Navigate to next period">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
@@ -211,24 +233,24 @@
                             <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
                     </span>
-                    <span class="k-button-text">6/24/2024 - 6/25/2024</span>
+                    <span class="k-button-text">24 June – 25 June</span>
                 </button>
                 <span class="k-spacer"></span>
                 <div class="k-scheduler-views k-segmented-control" role="group">
-                    <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 22%; right: 2px;"></div>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 22%; right: 0%;"></div>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Day</span>
                     </button>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Week</span>
                     </button>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Month</span>
                     </button>
-                    <button class="k-segmented-control-button" aria-pressed="false">
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                         <span class="k-segmented-control-button-text">Timeline</span>
                     </button>
-                    <button class="k-segmented-control-button k-selected" aria-pressed="true">
+                    <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
                         <span class="k-segmented-control-button-text">Agenda</span>
                     </button>
                 </div>

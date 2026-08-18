@@ -1,7 +1,295 @@
+## 14.5.1-dev.0 (2026-08-17)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **html:** add checkpoint ux annotation ([447e4396f8](https://github.com/telerik/kendo-themes/commit/447e4396f8))
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **html:** update scheduler rendering ([82fcc1f3de](https://github.com/telerik/kendo-themes/commit/82fcc1f3de))
+
+### 🩹 Fixes
+
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **html:** citation templates rendering ([c7f0297347](https://github.com/telerik/kendo-themes/commit/c7f0297347))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+- **html:** list with checkbox a11y ([724d173299](https://github.com/telerik/kendo-themes/commit/724d173299))
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.4 (2026-08-10)
+
+### 🚀 Features
+
+- **html:** add checkpoint ux annotation ([447e4396f8](https://github.com/telerik/kendo-themes/commit/447e4396f8))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.3 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.2 (2026-08-03)
+
+### 🩹 Fixes
+
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🚀 Features
+
+- **html:** update scheduler rendering ([82fcc1f3de](https://github.com/telerik/kendo-themes/commit/82fcc1f3de))
+
+### 🩹 Fixes
+
+- **html:** citation templates rendering ([c7f0297347](https://github.com/telerik/kendo-themes/commit/c7f0297347))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.0 (2026-07-27)
+
+### 🩹 Fixes
+
+- **html:** list with checkbox a11y ([724d173299](https://github.com/telerik/kendo-themes/commit/724d173299))
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.0 (2026-07-21)
+
+### 🚀 Features
+
+- **html:** add llm primitives ([c3ccfc01dd](https://github.com/telerik/kendo-themes/commit/c3ccfc01dd))
+- **list:** add accessibility spec ([b5f510e572](https://github.com/telerik/kendo-themes/commit/b5f510e572))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+- zhpenkov
+
+## 14.4.0-dev.4 (2026-07-21)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- **html:** add llm primitives ([c3ccfc01dd](https://github.com/telerik/kendo-themes/commit/c3ccfc01dd))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.0-dev.2 (2026-07-20)
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.0-dev.1 (2026-07-08)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.4.0-dev.0 (2026-07-06)
+
+### 🚀 Features
+
+- **list:** add accessibility spec ([b5f510e572](https://github.com/telerik/kendo-themes/commit/b5f510e572))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **meridian:** add focus state to list-sticky-header-item ([8d0b4a665b](https://github.com/telerik/kendo-themes/commit/8d0b4a665b))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **meridian:** add focus state to list-sticky-header-item ([8d0b4a665b](https://github.com/telerik/kendo-themes/commit/8d0b4a665b))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.2.0 (2026-06-29)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+- **html:** add diagram selection tool test ([a97ce8ffad](https://github.com/telerik/kendo-themes/commit/a97ce8ffad))
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **pager:** revert previous/next icons from chevron to caret-alt ([97c68e7831](https://github.com/telerik/kendo-themes/commit/97c68e7831))
+- **html:** correct scheduler templates ([d74704c64b](https://github.com/telerik/kendo-themes/commit/d74704c64b))
+- **html:** component accessibility fixes ([d3bd96f696](https://github.com/telerik/kendo-themes/commit/d3bd96f696))
+- **html:** remove wrong classes from calendar ([faea5acab9](https://github.com/telerik/kendo-themes/commit/faea5acab9))
+- **html:** grid group actions menu rendering ([4473f2b51b](https://github.com/telerik/kendo-themes/commit/4473f2b51b))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- dtopalov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
+## 14.2.0-dev.6 (2026-06-25)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.5 (2026-06-24)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.2.0-dev.4 (2026-06-22)
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.2.0-dev.3 (2026-06-15)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.2.0-dev.1 (2026-06-08)
+
+### 🩹 Fixes
+
+- **pager:** revert previous/next icons from chevron to caret-alt ([97c68e7831](https://github.com/telerik/kendo-themes/commit/97c68e7831))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **html:** add diagram selection tool test ([a97ce8ffad](https://github.com/telerik/kendo-themes/commit/a97ce8ffad))
+
+### 🩹 Fixes
+
+- **html:** correct scheduler templates ([d74704c64b](https://github.com/telerik/kendo-themes/commit/d74704c64b))
+- **html:** component accessibility fixes ([d3bd96f696](https://github.com/telerik/kendo-themes/commit/d3bd96f696))
+- **html:** remove wrong classes from calendar ([faea5acab9](https://github.com/telerik/kendo-themes/commit/faea5acab9))
+- **html:** grid group actions menu rendering ([4473f2b51b](https://github.com/telerik/kendo-themes/commit/4473f2b51b))
+
+### ❤️ Thank You
+
+- dtopalov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* **html:** correct scheduler templates ([d74704c](https://github.com/telerik/kendo-themes/commit/d74704c64b44f3ac8649228dae53be450a7a02d2))
+
+
+### Features
+
+* **html:** add diagram selection tool test ([a97ce8f](https://github.com/telerik/kendo-themes/commit/a97ce8ffadb51ce3706576e528cabeb6eba94166))
+
+
+
+
 
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 

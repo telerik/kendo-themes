@@ -46,9 +46,7 @@ export type KendoSplitButtonProps = KendoSplitButtonOptions & {
   showArrow?: boolean;
   arrowIconName?: string;
   popup?: React.JSX.Element;
-  /** @aria aria-expanded="true" when popup is visible */
   opened?: boolean;
-  /** @aria aria-controls references the popup menu group id */
   popupId?: string;
 };
 
@@ -58,6 +56,19 @@ const defaultOptions = {
     arrowIconName: "chevron-down"
 };
 
+/**
+ * @aria {role="button"} Omitted if the <button> DOM element is used.
+ * @aria {aria-label} The attribute must be present when no text is initially visible in the button.
+ * @aria {tabindex="-1"} The arrow button is removed from the tab sequence.
+ * @aria {aria-disabled="true"} Rendered only when the button is disabled.
+ * @aria {role="list"} Announces the list role of the popup.
+ * @aria {role="listitem"} Announces the listitem role of the popup items.
+ * @aria {aria-expanded="true"} when popup is visible
+ * @aria {aria-controls} references the popup menu group id
+ * @ux {Primary action} The main button area triggers the default action.
+ * @ux {Dropdown} The arrow button opens a popup with additional actions.
+ * @ux {Disabled state} When disabled, both the main button and dropdown are non-interactive.
+ */
 export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButtonState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSplitButtonProps &
         KendoSplitButtonState &
@@ -142,25 +153,8 @@ SplitButton.moduleName = SPLIT_BUTTON_MODULE_NAME;
 SplitButton.folderName = SPLIT_BUTTON_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * SplitButton follows the DropDownButton accessibility specification.
- *
- * - Arrow button: role="button" (implicit), aria-expanded, aria-controls, aria-label, tabIndex={-1}
- * - When disabled: aria-disabled="true"
- * - Popup list: role="list", items: role="listitem"
+ * @keyboard {Enter} Clicks (activates) the main button action.
+ * @keyboard {Space} Clicks (activates) the main button action.
  */
-SplitButton.ariaSpec = {
-    selector: '.k-split-button',
-    rules: [
-        { selector: '.k-split-button-arrow', attribute: 'role=button or nodeName=button', usage: 'Omitted if the <button> DOM element is used.' },
-        { selector: '.k-split-button-arrow', attribute: 'aria-label', usage: 'The attribute must be present when no text is initially visible in the button.' },
-        { selector: '.k-split-button-arrow', attribute: 'aria-expanded=true/false', usage: 'Announces the state of the popup visibility.' },
-        { selector: '.k-split-button-arrow', attribute: 'aria-controls=.k-menu-group id (when open)', usage: 'Points to the popup element. Builds a relationship between the button and the popup.' },
-        { selector: '.k-split-button-arrow', attribute: 'tabindex=-1', usage: 'The arrow button is removed from the tab sequence.' },
-        { selector: '.k-split-button-arrow.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the button is disabled.' },
-        { selector: '.k-menu-group', attribute: 'role=list', usage: 'Announces the list role of the popup.' },
-        { selector: '.k-menu-item', attribute: 'role=listitem', usage: 'Announces the listitem role of the popup items.' },
-    ]
-};
 
 export default SplitButton;

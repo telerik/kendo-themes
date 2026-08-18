@@ -1,7 +1,7 @@
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridPager } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
-export const GridWithFilterMenu = ({ contentClassName, sortable, resizable, ...other }: any) => (
+export const GridWithFilterMenu = ({ contentClassName, sortable, sorted, resizable, ...other }: any) => (
     <Grid _renderAriaRoot
         pager={( <GridPager refresh={false} /> )}
         children={(
@@ -16,9 +16,9 @@ export const GridWithFilterMenu = ({ contentClassName, sortable, resizable, ...o
                             </colgroup>
                             <TableThead role="rowgroup">
                                 <TableRow role="row">
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="Name" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="City" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="Title" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} sorted={sorted} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="Name" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} sorted={sorted} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="City" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} sorted={sorted} resizable={resizable} rowspan={1} colspan={1} menu="filter" columnTitle="Title" role="columnheader" aria-haspopup="dialog"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>

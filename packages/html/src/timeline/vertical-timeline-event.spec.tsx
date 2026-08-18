@@ -10,7 +10,6 @@ const states = [];
 
 const options = {};
 
-
 export type KendoVerticalTimelineEventProps = {
     date?: string;
     content?: string | React.JSX.Element;
@@ -19,7 +18,6 @@ export type KendoVerticalTimelineEventProps = {
     title?: string;
     subtitle?: string;
     showCollapseButton?: boolean;
-    /** @aria unique id for aria-describedby linking */
     id?: string;
 };
 
@@ -31,6 +29,9 @@ const defaultOptions = {
     content: "Event content",
 };
 
+/**
+ * @aria {id} Unique id; referenced via aria-describedby by the associated content.
+ */
 export const VerticalTimelineEvent: KendoComponent<KendoVerticalTimelineEventProps & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoVerticalTimelineEventProps &
         React.HTMLAttributes<HTMLLIElement>

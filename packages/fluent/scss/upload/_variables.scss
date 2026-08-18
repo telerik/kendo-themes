@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
 
 /// The width of the border around the Upload.
 /// @group upload
@@ -72,7 +73,7 @@ $kendo-upload-multiple-items-spacing: var( --kendo-upload-multiple-items-spacing
 $kendo-upload-validation-font-size: var( --kendo-upload-validation-font-size, var(--kendo-font-size-xs) ) !default;
 /// The horizontal spacing of the Upload status icon.
 /// @group upload
-$kendo-upload-icon-spacing: var( --kendo-upload-icon-spacing, var( --kendo-icon-spacing, .5rem ) ) !default;
+$kendo-upload-icon-spacing: var( --kendo-upload-icon-spacing, #{$kendo-icon-spacing} ) !default;
 /// The color of the uploaded items icon.
 /// @group upload
 $kendo-upload-icon-color: var( --kendo-upload-icon-color, k-color(subtle) ) !default;

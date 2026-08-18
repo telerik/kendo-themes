@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td>Calculation</td>
-    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + 2 * #{$kendo-drawer-items-padding-x} + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(2 * var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4)) + 2 * var(--kendo-drawer-items-padding-x, var(--kendo-spacing-2\.5)) + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + 2 * #{$kendo-drawer-items-padding-x} + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(2 * var(--kendo-drawer-item-padding-x, var(--kendo-spacing-4)) + 2 * var(--kendo-drawer-items-padding-x, var(--kendo-spacing-2\.5)) + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>

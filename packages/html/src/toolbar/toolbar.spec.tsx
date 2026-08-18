@@ -41,6 +41,20 @@ const defaultOptions = {
     scrollButtons: 'around'
 };
 
+/**
+ * @aria {role="toolbar"} The component role.
+ * @aria {aria-label|aria-labelledby} Must be supplied when multiple toolbars exist.
+ * @aria {aria-haspopup="menu"} The overflow button opens a menu popup.
+ * @aria {aria-expanded="true"|\"false"} Announces popup visibility state.
+ * @aria {aria-controls=".k-toolbar-popup .k-menu-group id"} Indicates the connection between the toggle button and the menu popup.
+ * @aria {aria-label|title} Icon-only button must have accessible text.
+ * @aria {aria-expanded="true"|\"false"} Announces section popup visibility state.
+ * @aria {aria-controls=".k-toolbar-popup .k-toolbar-items-list id"} Indicates the connection between the toggle button and the section popup.
+ * @ux {Actions} Contains buttons, inputs, and other interactive controls.
+ * @ux {Overflow menu} Controls that do not fit in the available space are moved to an overflow popup.
+ * @ux {Separator} Visual separators group related controls.
+ * @ux {Responsive} Automatically adapts visible controls based on available width.
+ */
 export const Toolbar: KendoComponent<KendoToolbarProps & KendoToolbarState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoToolbarProps &
         KendoToolbarState &
@@ -309,34 +323,17 @@ Toolbar.moduleName = TOOLBAR_MODULE_NAME;
 Toolbar.folderName = TOOLBAR_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * Toolbar implements the WAI-ARIA toolbar pattern.
+ * @keyboard {Tab} Moves the focus to and from the ToolBar.
+ * @keyboard {ArrowRight} Moves the focus to the next focusable element in the ToolBar. Focuses the first element if the end of the ToolBar is reached.
+ * @keyboard {ArrowLeft} Moves the focus to the previous focusable element in the ToolBar. Focuses the last element if the beginning of the ToolBar is reached.
+ * @keyboard {Home} Moves the focus to the first focusable element.
+ * @keyboard {End} Moves the focus to the last focusable element.
+ * @keyboard {Enter} Clicks the currently active button or changes the state of the currently active toggleable button. If the active tool is represented by an `` element, enters the inner navigation mode of the tool.
+ * @keyboard {Escape} If the active tool is represented by an `` element and its inner navigation is active, deactivates the tool navigation and returns the focus to the ToolBar.
+ * @keyboard {Alt + ArrowDown} Opens the currently active SplitButton, DropDownButton, or CommandOverflow.
+ * @keyboard {Alt + ArrowUp} Closes the currently active SplitButton, DropDownButton, or CommandOverflow.
  *
- * - Root: role="toolbar", aria-label
- * - Overflow button: aria-haspopup, aria-expanded, aria-label
- * - Overflow menu: role="menu"
+ * @see https://www.w3.org/TR/wai-aria-1.2/#toolbar WAI-ARIA Specification for the ToolBar
  */
-Toolbar.ariaSpec = {
-    selector: '.k-toolbar',
-    rules: [
-        { selector: '.k-toolbar', attribute: 'role=toolbar', usage: 'The component role.' },
-        { selector: '.k-toolbar', attribute: 'aria-label or aria-labelledby', usage: 'Must be supplied when multiple toolbars exist.' },
-        // Vertical overflow button (more-vertical → menu popup)
-        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])', attribute: 'aria-haspopup=menu', usage: 'The overflow button opens a menu popup.' },
-        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])', attribute: 'aria-expanded=true/false', usage: 'Announces popup visibility state.' },
-        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])', attribute: 'aria-controls=.k-toolbar-popup .k-menu-group id (when present)', usage: 'Indicates the connection between the toggle button and the menu popup.' },
-        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-vertical"])', attribute: 'aria-label or title', usage: 'Icon-only button must have accessible text.' },
-        // Vertical overflow popup
-        { selector: '.k-toolbar-popup .k-menu-group', attribute: 'role=menu', usage: 'The role of the tools wrapper in the overflow section.' },
-        { selector: '.k-toolbar-popup .k-menu-group', attribute: 'aria-labelledby=.k-toolbar-overflow-button id (when present)', usage: 'Associates the title of the menu toggle button.' },
-        // Horizontal overflow button (more-horizontal → section popup)
-        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-horizontal"])', attribute: 'aria-expanded=true/false', usage: 'Announces section popup visibility state.' },
-        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-horizontal"])', attribute: 'aria-label or title', usage: 'Icon-only button must have accessible text.' },
-        { selector: '.k-toolbar .k-toolbar-overflow-button:has([class*="i-more-horizontal"])', attribute: 'aria-controls=.k-toolbar-popup .k-toolbar-items-list id (when present)', usage: 'Indicates the connection between the toggle button and the section popup.' },
-        // Horizontal overflow popup
-        { selector: '.k-toolbar-popup .k-toolbar-items-list', attribute: 'role=toolbar', usage: 'The role of the tools wrapper in the overflow section.' },
-        { selector: '.k-toolbar-popup .k-toolbar-items-list', attribute: 'aria-labelledby=.k-toolbar-overflow-button id (when present)', usage: 'Associates the title of the section toggle button.' },
-    ]
-};
 
 export default Toolbar;

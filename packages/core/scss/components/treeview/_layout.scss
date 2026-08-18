@@ -127,14 +127,14 @@
         cursor: pointer;
     }
     .k-treeview-toggle .k-icon {
-        padding: $kendo-icon-padding;
+        padding: k-spacing(1);
         box-sizing: content-box;
     }
 
 
     // Loading icon
     .k-treeview-loading {
-        margin-inline-end: $kendo-icon-spacing;
+        margin-inline-end: $kendo-treeview-item-icon-spacing;
     }
 
 
@@ -161,7 +161,7 @@
         .k-icon,
         .k-image,
         .k-sprite {
-            margin-inline-end: $kendo-icon-spacing;
+            margin-inline-end: $kendo-treeview-item-icon-spacing;
         }
     }
 

@@ -1,6 +1,6 @@
 import { Card, CardBody, CardHeader } from '../../card';
-import TaskBoardCard from '../taskboard-card';
-import TaskBoardColumn from '../taskboard-column';
+import TaskBoardCard from '../taskboard-card.spec';
+import TaskBoardColumn from '../taskboard-column.spec';
 import TaskBoard from '../taskboard.spec';
 
 

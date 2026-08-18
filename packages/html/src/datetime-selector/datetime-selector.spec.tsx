@@ -30,6 +30,15 @@ const defaultOptions = {
     actionButtons: true
 } as const;
 
+/**
+ * @aria {role="group"} Groups the date/time selector components.
+ * @aria {aria-label} Describes the date/time selector purpose.
+ * @aria {role="group"} The segmented control acts as a group for Date/Time selection.
+ * @aria {aria-pressed} Indicates which option is currently active.
+ * @ux {Date / Time tabs} Segmented control switches between date and time selection views.
+ * @ux {Scroll columns} Each time unit is shown in a scrollable column for touch-friendly selection.
+ * @ux {OK / Cancel} Action buttons confirm or discard the selection.
+ */
 export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoDateTimeSelectorProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -41,7 +50,6 @@ export const DateTimeSelector: KendoComponent<KendoDateTimeSelectorProps & React
         dir,
         ...other
     } = props;
-
 
     return (
         <div
@@ -102,26 +110,5 @@ DateTimeSelector.className = DATETIMESELECTOR_CLASSNAME;
 DateTimeSelector.defaultOptions = defaultOptions;
 DateTimeSelector.moduleName = DATETIME_SELECTOR_MODULE_NAME;
 DateTimeSelector.folderName = DATETIME_SELECTOR_FOLDER_NAME;
-
-/**
- * Accessibility specification for DateTimeSelector.
- *
- * @accessibility
- * - The wrapper has role=group with aria-label
- * - Tab buttons use role=tab with aria-selected
- * - Embedded Calendar and TimeSelector follow their own ARIA specs
- * - Action buttons (Set/Cancel) are accessible via button semantics
- *
- * @wcag 4.1.2 Name, Role, Value - tabbed group for date/time switching
- */
-DateTimeSelector.ariaSpec = {
-    selector: '.k-datetime-wrap',
-    rules: [
-        { selector: '.k-datetime-wrap', attribute: 'role=group', usage: 'Groups the date/time selector components.' },
-        { selector: '.k-datetime-wrap', attribute: 'aria-label', usage: 'Describes the date/time selector purpose.' },
-        { selector: '.k-datetime-buttongroup', attribute: 'role=group', usage: 'The segmented control acts as a group for Date/Time selection.' },
-        { selector: '.k-datetime-buttongroup .k-segmented-control-button', attribute: 'aria-pressed', usage: 'Indicates which option is currently active.' },
-    ]
-};
 
 export default DateTimeSelector;

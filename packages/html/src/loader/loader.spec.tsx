@@ -39,21 +39,13 @@ const defaultOptions = {
 /**
  * Loader component - displays animated loading indicators.
  *
- * @accessibility
- * - Uses `role="status"` to announce loading state to assistive technology
- * - Uses `aria-label` to provide accessible name (default: "Loading")
- * - The status role creates a live region that announces changes
- *
- * @example
- * ```tsx
- * // Basic loader with default label
- * <Loader />
- *
- * // Custom accessible label
- * <Loader aria-label="Loading user data" />
- * ```
- *
- * @wcag 4.1.3 Status Messages - loading states announced via live region
+ * @aria {role="status"} Live region that announces the loading state to assistive technologies.
+ * @aria {aria-label} Accessible name for the loader (default: "Loading").
+ * @aria {aria-live="polite"} Polite announcements of loading state changes.
+
+ * @ux {Indeterminate progress} Displays a looping animation to signal ongoing background work.
+ * @ux {Sizes} Available in small, medium, and large sizes.
+ * @ux {Theme colors} Can be styled with any of the theme palette colors.
  */
 export const Loader: KendoComponent<KendoLoaderProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoLoaderProps &
@@ -123,14 +115,6 @@ Loader.moduleName = LOADER_MODULE_NAME;
 Loader.folderName = LOADER_FOLDER_NAME;
 
 /**
- * Accessibility specification for Loader.
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — loading states announced via live region
  */
-Loader.ariaSpec = {
-    selector: '.k-loader',
-    rules: [
-        { selector: '.k-loader', attribute: 'role=status', usage: 'Live region that announces loading state.' },
-        { selector: '.k-loader', attribute: 'aria-label', usage: 'Accessible name for the loader.' },
-    ]
-};
-
 export default Loader;

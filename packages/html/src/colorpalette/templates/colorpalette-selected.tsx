@@ -1,6 +1,6 @@
 import ColorPalette from "../colorpalette.spec";
 import { ColorPaletteRow } from "../colorpalette-row";
-import { ColorPaletteTile } from "../colorpalette-tile";
+import { ColorPaletteTile } from "../colorpalette-tile.spec";
 
 export const ColorPaletteSelected = (props) => (
     <ColorPalette {...props}>

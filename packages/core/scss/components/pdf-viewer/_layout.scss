@@ -23,7 +23,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         // Toolbar
-        .k-toolbar {
+        > .k-toolbar {
             border-block-start-width: 0;
             border-inline-end-width: 0;
             border-inline-start-width: 0;
@@ -31,8 +31,8 @@
             flex: 0 0 auto;
             z-index: k-z-index("base", 1);
         }
-        .k-toolbar .k-pager-wrap,
-        .k-toolbar .k-pager {
+        > .k-toolbar .k-pager-wrap,
+        > .k-toolbar .k-pager {
             padding: 0;
             border-width: 0;
             color: inherit;
@@ -308,6 +308,7 @@
     }
 
     // Search
+    // TODO: Remove once product teams adopt the floating toolbar search panel
     .k-pdf-viewer-canvas > .k-search-panel {
         width: max-content;
         margin-block-start: calc( (#{$kendo-button-md-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} )) * -1 );
@@ -337,6 +338,18 @@
             .k-button {
                 border-width: 0;
             }
+        }
+
+        .k-search-matches {
+            display: inline-flex;
+            gap: $kendo-pdf-viewer-search-panel-matches-spacing;
+        }
+    }
+
+    // Search (floating toolbar)
+    .k-floating-toolbar {
+        .k-search-dialog-draghandle {
+            cursor: move;
         }
 
         .k-search-matches {

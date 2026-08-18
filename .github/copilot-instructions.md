@@ -29,8 +29,7 @@ _For specific version numbers, refer to package.json files in the root and indiv
 
 - **SCSS/Sass** - Theme compilation with dart-sass
 - **Node.js** - Required runtime
-- **Lerna** - Release management
-- **Nx** - Monorepo management and task running
+- **Nx** - Monorepo management, task running, and release management
 - **PostCSS + Autoprefixer** - CSS post-processing for browser compatibility
 
 ### Development & Build Tools
@@ -149,6 +148,10 @@ npm run clean                   # Full cleanup (includes node_modules)
 - Use the `manage-html-a11y` skill or `/accessibility` prompt for applying ARIA to components
 - Refer to `.github/prompts/accessibility.prompt.md` for patterns and rules
 
+### PR Descriptions for New/Updated Components
+
+- Refer to ${component-pr-description.prompt.md} to generate a GitHub-ready PR description (idea, rendering, HTML snippets, a11y summary, visual test reference table) for one or more components
+
 ### SCSS Standards
 
 - Use **dart-sass syntax** - avoid deprecated node-sass features
@@ -181,8 +184,7 @@ ARIA specifications are defined as `ariaSpec.rules` on TSX spec components (sing
 Use the `/accessibility` prompt for the full workflow and rules. Key commands:
 
 ```bash
-npm run test:a11y [component]           # Validate ARIA + WCAG (recommended)
-npm run test:a11y:affected              # Test only git-changed components
+npm run test:a11y [component]           # Validate WCAG compliance (axe-core, no browser needed)
 npm run test:contrast                   # Validate color contrast ratios
 ```
 

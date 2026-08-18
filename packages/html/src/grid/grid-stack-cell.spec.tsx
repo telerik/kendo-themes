@@ -19,6 +19,9 @@ export type KendoGridStackCellProps = {
 
 export type KendoGridStackCellState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {tabindex="0"} Stacked cell elements receive tabindex 0 when focus is within their parent .k-grid-stack-row element.
+ */
 export const GridStackCell: KendoComponent<KendoGridStackCellProps & KendoGridStackCellState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridStackCellProps &
         KendoGridStackCellState &

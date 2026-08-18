@@ -22,6 +22,16 @@ export type KendoTileLayoutItemProps = {
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="listitem"} Sets listitem role to the TileLayout items.
+ * @aria {aria-labelledby} Associates the focusable item wrapper with the respective header text element.
+ * @aria {tabindex="0"} Makes the item wrapper element focusable.
+ * @aria {aria-keyshortcuts="Enter"} Announces Enter as an available key shortcut when the item is focused.
+ * @aria {id} Unique identifier to link the header text element to the focusable wrapper.
+ * @ux {Drag handle} The tile header acts as a drag handle for repositioning within the layout.
+ * @ux {Resize handle} A corner handle lets the user resize the tile.
+ * @ux {Header} An optional header displays a title for the tile.
+ */
 export const TileLayoutItem: KendoComponent<KendoTileLayoutItemProps & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoTileLayoutItemProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {

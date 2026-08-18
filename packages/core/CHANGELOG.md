@@ -1,7 +1,343 @@
+## 14.5.1-dev.0 (2026-08-17)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.5.0 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- add gap for tool-call's badge ([7fecc9d4a1](https://github.com/telerik/kendo-themes/commit/7fecc9d4a1))
+- **grid:** prevent sticky column overriding group cell background ([66316f53ef](https://github.com/telerik/kendo-themes/commit/66316f53ef))
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- add cursor pointer on agent step head ([dc4079036d](https://github.com/telerik/kendo-themes/commit/dc4079036d))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.4 (2026-08-10)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.4.1-dev.3 (2026-08-10)
+
+### 🚀 Features
+
+- **grid:** add themeable font-weight variable for grouping rows ([6c05e66cf2](https://github.com/telerik/kendo-themes/commit/6c05e66cf2))
+
+### 🩹 Fixes
+
+- add gap for tool-call's badge ([7fecc9d4a1](https://github.com/telerik/kendo-themes/commit/7fecc9d4a1))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.2 (2026-08-03)
+
+### 🩹 Fixes
+
+- **grid:** prevent sticky column overriding group cell background ([66316f53ef](https://github.com/telerik/kendo-themes/commit/66316f53ef))
+- add llm primitives focus state ([9bf8805cd5](https://github.com/telerik/kendo-themes/commit/9bf8805cd5))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.1-dev.1 (2026-07-28)
+
+### 🚀 Features
+
+- **scheduler:** update styles ([8cfc970105](https://github.com/telerik/kendo-themes/commit/8cfc970105))
+
+### 🩹 Fixes
+
+- **html:** update tool call content rendering ([edeb6c51d1](https://github.com/telerik/kendo-themes/commit/edeb6c51d1))
+- add cursor pointer on agent step head ([dc4079036d](https://github.com/telerik/kendo-themes/commit/dc4079036d))
+- **html:** remove agent step time prop ([e094044adb](https://github.com/telerik/kendo-themes/commit/e094044adb))
+- **html:** citation popover view props ([127a944b0e](https://github.com/telerik/kendo-themes/commit/127a944b0e))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.1-dev.0 (2026-07-27)
+
+### 🩹 Fixes
+
+- **grid:** non-sortable column headers should not show pointer cursor on hover ([1876d64027](https://github.com/telerik/kendo-themes/commit/1876d64027))
+
+## 14.4.0 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+- **loader:** use transform-only keyframes for spinner-3 and spinner-4 ([cc40b8c18b](https://github.com/telerik/kendo-themes/commit/cc40b8c18b))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- zhpenkov
+
+## 14.4.0-dev.4 (2026-07-21)
+
+### 🚀 Features
+
+- streamline icon styles ([cd32fd0086](https://github.com/telerik/kendo-themes/commit/cd32fd0086))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.4.0-dev.3 (2026-07-21)
+
+### 🚀 Features
+
+- add styles for llm primitives ([db117c6648](https://github.com/telerik/kendo-themes/commit/db117c6648))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.4.0-dev.2 (2026-07-20)
+
+### 🚀 Features
+
+- add styles to support floating toolbar ([9c293e068b](https://github.com/telerik/kendo-themes/commit/9c293e068b))
+
+### 🩹 Fixes
+
+- **html:** fix a11y violations in grid grouping templates ([0d6e23fd0c](https://github.com/telerik/kendo-themes/commit/0d6e23fd0c))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
+## 14.4.0-dev.1 (2026-07-08)
+
+### 🩹 Fixes
+
+- **loader:** use transform-only keyframes for spinner-3 and spinner-4 ([cc40b8c18b](https://github.com/telerik/kendo-themes/commit/cc40b8c18b))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- zhpenkov
+
+## 14.4.0-dev.0 (2026-07-06)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.3.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **dock-manager:** adjust border-radius in meridian ([147ac9b7b8](https://github.com/telerik/kendo-themes/commit/147ac9b7b8))
+- **stepper:** steps should have cursor pointer set by default ([214b336844](https://github.com/telerik/kendo-themes/commit/214b336844))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.3.0-dev.0 (2026-07-01)
+
+### 🚀 Features
+
+- **playground:** add interactive sliders for color-mix percentages ([3abb3b6b7a](https://github.com/telerik/kendo-themes/commit/3abb3b6b7a))
+
+### 🩹 Fixes
+
+- **dock-manager:** adjust border-radius in meridian ([147ac9b7b8](https://github.com/telerik/kendo-themes/commit/147ac9b7b8))
+- **stepper:** steps should have cursor pointer set by default ([214b336844](https://github.com/telerik/kendo-themes/commit/214b336844))
+- **list:** add selected state to k-list-sticky-header-item ([ca23530a33](https://github.com/telerik/kendo-themes/commit/ca23530a33))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+
+## 14.2.0 (2026-06-29)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+- introduce scrollbar styles to k-body ([f9f0358955](https://github.com/telerik/kendo-themes/commit/f9f0358955))
+
+### 🩹 Fixes
+
+- **badge:** update base badge colors ([97760f8b24](https://github.com/telerik/kendo-themes/commit/97760f8b24))
+- revert spreadsheet scroller z-index ([f7cc6afeba](https://github.com/telerik/kendo-themes/commit/f7cc6afeba))
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+- **popup:** inherit border-radius for coloreditor inside popup ([47bcc75865](https://github.com/telerik/kendo-themes/commit/47bcc75865))
+- **grid:** remove ellipsis from checkbox/radio cells ([440d6434f5](https://github.com/telerik/kendo-themes/commit/440d6434f5))
+- **grid:** grid selection styles spilling over grouping column cells ([097f4c730d](https://github.com/telerik/kendo-themes/commit/097f4c730d))
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- update the sizing of the loading icon to match the icon size ([7b8e44402c](https://github.com/telerik/kendo-themes/commit/7b8e44402c))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- **grid:** sticky borders have different color when states are applied ([9ee2a3e9bd](https://github.com/telerik/kendo-themes/commit/9ee2a3e9bd))
+- window border is being cut when larger border radius is set ([3bcf420115](https://github.com/telerik/kendo-themes/commit/3bcf420115))
+- **textarea:** rounded full should be less rounded ([f3093d53e0](https://github.com/telerik/kendo-themes/commit/f3093d53e0))
+- **grid:** column menu item alignment ([bae5dc95c2](https://github.com/telerik/kendo-themes/commit/bae5dc95c2))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
+## 14.2.0-dev.6 (2026-06-25)
+
+### 🩹 Fixes
+
+- **badge:** update base badge colors ([97760f8b24](https://github.com/telerik/kendo-themes/commit/97760f8b24))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.2.0-dev.5 (2026-06-24)
+
+### 🚀 Features
+
+- **grid:** enhance grid grouping modes ([1a333a0fbb](https://github.com/telerik/kendo-themes/commit/1a333a0fbb))
+
+### 🩹 Fixes
+
+- revert spreadsheet scroller z-index ([f7cc6afeba](https://github.com/telerik/kendo-themes/commit/f7cc6afeba))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+- zhpenkov
+
+## 14.2.0-dev.4 (2026-06-22)
+
+### 🩹 Fixes
+
+- **deps:** use secret reference for dependabot registry token ([4fb50c5fbe](https://github.com/telerik/kendo-themes/commit/4fb50c5fbe))
+- **deps:** add empty token for public registry in dependabot config ([7d81d8d738](https://github.com/telerik/kendo-themes/commit/7d81d8d738))
+- **deps:** pin versions blocked by Harness registry age-gate ([fa481b63ac](https://github.com/telerik/kendo-themes/commit/fa481b63ac))
+- **grid:** add row should not inherit styles from header ([75faea557d](https://github.com/telerik/kendo-themes/commit/75faea557d))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Kiril Peyanski
+- zhpenkov
+
+## 14.2.0-dev.3 (2026-06-15)
+
+### 🩹 Fixes
+
+- **popup:** inherit border-radius for coloreditor inside popup ([47bcc75865](https://github.com/telerik/kendo-themes/commit/47bcc75865))
+- **grid:** remove ellipsis from checkbox/radio cells ([440d6434f5](https://github.com/telerik/kendo-themes/commit/440d6434f5))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.2.0-dev.2 (2026-06-09)
+
+### 🚀 Features
+
+- **multiselect:** add select all functionality ([3e13245707](https://github.com/telerik/kendo-themes/commit/3e13245707))
+
+### 🩹 Fixes
+
+- **grid:** grid selection styles spilling over grouping column cells ([097f4c730d](https://github.com/telerik/kendo-themes/commit/097f4c730d))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+
+## 14.2.0-dev.1 (2026-06-08)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.2.0-0 (2026-06-08)
+
+### 🚀 Features
+
+- **diagram:** add diagram selection tool styles ([b3213452e8](https://github.com/telerik/kendo-themes/commit/b3213452e8))
+- introduce scrollbar styles to k-body ([f9f0358955](https://github.com/telerik/kendo-themes/commit/f9f0358955))
+
+### 🩹 Fixes
+
+- syntax issues in compiled css ([e4ee9153d4](https://github.com/telerik/kendo-themes/commit/e4ee9153d4))
+- update the sizing of the loading icon to match the icon size ([7b8e44402c](https://github.com/telerik/kendo-themes/commit/7b8e44402c))
+- remove per component scrollbar-related variables ([7108ec74ab](https://github.com/telerik/kendo-themes/commit/7108ec74ab))
+- **grid:** sticky borders have different color when states are applied ([9ee2a3e9bd](https://github.com/telerik/kendo-themes/commit/9ee2a3e9bd))
+- window border is being cut when larger border radius is set ([3bcf420115](https://github.com/telerik/kendo-themes/commit/3bcf420115))
+- **textarea:** rounded full should be less rounded ([f3093d53e0](https://github.com/telerik/kendo-themes/commit/f3093d53e0))
+- **grid:** column menu item alignment ([bae5dc95c2](https://github.com/telerik/kendo-themes/commit/bae5dc95c2))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [14.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.3...v14.2.0-dev.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* **grid:** sticky borders have different color when states are applied ([9ee2a3e](https://github.com/telerik/kendo-themes/commit/9ee2a3e9bd2a46586f97666a93a52da0a8e71b7d))
+* remove per component scrollbar-related variables ([7108ec7](https://github.com/telerik/kendo-themes/commit/7108ec74ab619b8ee9af04d63984937466143eb0))
+* syntax issues in compiled css ([e4ee915](https://github.com/telerik/kendo-themes/commit/e4ee9153d4185c3b5d5187f822c0de26bd0aeed1))
+* update the sizing of the loading icon to match the icon size ([7b8e444](https://github.com/telerik/kendo-themes/commit/7b8e44402c379b7f5e7e725076fb9bc2758e0fe5))
+
+
+### Features
+
+* **diagram:** add diagram selection tool styles ([b321345](https://github.com/telerik/kendo-themes/commit/b3213452e870f65f771193ce0c6a962a94abbde7))
+* introduce scrollbar styles to k-body ([f9f0358](https://github.com/telerik/kendo-themes/commit/f9f035895524cfa617d75c346c80f968b97531ae))
+
+
+
+
 
 ## [14.1.1-dev.3](https://github.com/telerik/kendo-themes/compare/v14.1.1-dev.2...v14.1.1-dev.3) (2026-06-01)
 

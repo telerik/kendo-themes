@@ -34,7 +34,7 @@ $kendo-scheduler-border: k-color(border) !default;
 
 /// The background color of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-bg: k-color(surface) !default;
+$kendo-scheduler-toolbar-bg: k-color(surface-alt) !default;
 /// The text color of the Scheduler ToolBar.
 /// @group scheduler
 $kendo-scheduler-toolbar-text: unset !default;
@@ -47,7 +47,7 @@ $kendo-scheduler-toolbar-gradient: none !default;
 
 /// The background color of the Scheduler footer.
 /// @group scheduler
-$kendo-scheduler-footer-bg: k-color(surface) !default;
+$kendo-scheduler-footer-bg: k-color(surface-alt) !default;
 /// The text color of the Scheduler footer.
 /// @group scheduler
 $kendo-scheduler-footer-text: unset !default;
@@ -60,13 +60,36 @@ $kendo-scheduler-footer-gradient: none !default;
 
 /// The minimum height of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-min-height: 25px !default;
+$kendo-scheduler-event-min-height: 12px !default;
 /// The border radius of the Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-border-radius: k-border-radius(md) !default;
-/// The line height of the Scheduler event.
+
+/// The font size of the Scheduler event title.
 /// @group scheduler
-$kendo-scheduler-event-line-height: calc( $kendo-scheduler-event-min-height - k-spacing(1) ) !default;
+$kendo-scheduler-event-title-font-size: var(--kendo-font-size-sm) !default;
+/// The line height of the Scheduler event title.
+/// @group scheduler
+$kendo-scheduler-event-title-line-height: var(--kendo-line-height-sm) !default;
+/// The top padding of the Scheduler event title.
+/// @group scheduler
+$kendo-scheduler-event-title-padding-top: k-spacing(1) !default;
+/// The bottom padding of the Scheduler event title.
+/// @group scheduler
+$kendo-scheduler-event-title-padding-bottom: k-spacing(0.5) !default;
+
+/// The font size of the Scheduler event time.
+/// @group scheduler
+$kendo-scheduler-event-time-font-size: var(--kendo-font-size-xs) !default;
+/// The line height of the Scheduler event time.
+/// @group scheduler
+$kendo-scheduler-event-time-line-height: var(--kendo-line-height-sm) !default;
+/// The top padding of the Scheduler event time.
+/// @group scheduler
+$kendo-scheduler-event-time-padding-top: k-spacing(0.5) !default;
+/// The bottom padding of the Scheduler event time.
+/// @group scheduler
+$kendo-scheduler-event-time-padding-bottom: k-spacing(0.5) !default;
 
 /// The background color of the Scheduler event.
 /// @group scheduler
@@ -83,6 +106,16 @@ $kendo-scheduler-event-gradient: null !default;
 /// The shadow of the Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-shadow: null !default;
+
+/// The background color of the read-only Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-readonly-bg: k-color(primary-subtle) !default;
+/// The text color of the read-only Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-readonly-text: k-color(primary-on-subtle) !default;
+/// The border color of the read-only Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-readonly-border: k-color(primary-emphasis) !default;
 
 /// The background color of the hovered Scheduler event.
 /// @group scheduler
@@ -119,6 +152,22 @@ $kendo-scheduler-event-selected-shadow: null !default;
 /// The shadow of the ongoing Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px #ff0000 !default;
+
+/// The size of the Scheduler resize handle hit area.
+/// @group scheduler
+$kendo-scheduler-resizer-size: 0.5em !default;
+/// The length of the Scheduler resize handle visual indicator.
+/// @group scheduler
+$kendo-scheduler-resize-handle-size: 8px !default;
+/// The border radius of the Scheduler resize handle.
+/// @group scheduler
+$kendo-scheduler-resize-handle-border-radius: k-border-radius(full) !default;
+/// The border width of the Scheduler resize handle.
+/// @group scheduler
+$kendo-scheduler-resize-handle-border-width: 2px !default;
+/// The background color of the Scheduler resize handle.
+/// @group scheduler
+$kendo-scheduler-resize-handle-bg: $kendo-scheduler-event-bg !default;
 
 /// The horizontal padding of the Scheduler cell.
 /// @group scheduler
@@ -181,80 +230,42 @@ $kendo-scheduler-yearview-indicator-bg: k-color(primary) !default;
 /// @group scheduler
 $kendo-scheduler-yearview-indicator-selected-bg: k-color(on-primary) !default;
 
-/// The horizontal padding of the Scheduler Tooltip.
-/// @group scheduler
-$kendo-scheduler-tooltip-padding-x: k-spacing(2) !default;
-/// The vertical padding of the Scheduler Tooltip.
-/// @group scheduler
-$kendo-scheduler-tooltip-padding-y: k-spacing(2) !default;
-/// The width of the border of the Scheduler Tooltip.
-/// @group scheduler
-$kendo-scheduler-tooltip-border-width: 0 !default;
-/// The background color of the Scheduler Tooltip.
-/// @group scheduler
-$kendo-scheduler-tooltip-bg: k-color(on-primary) !default;
-/// The text color of the Scheduler Tooltip.
-/// @group scheduler
-$kendo-scheduler-tooltip-text: k-color(on-base) !default;
-/// The border color of the Scheduler Tooltip.
-/// @group scheduler
-$kendo-scheduler-tooltip-border: null !default;
-/// The shadow of the Scheduler Tooltip.
-/// @group scheduler
-$kendo-scheduler-tooltip-shadow: k-elevation(2) !default;
-
-/// The vertical margin of the Scheduler Tooltip title.
-/// @group scheduler
-$kendo-scheduler-tooltip-title-margin-y: k-spacing(2) !default;
 /// The font size of the month inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-month-font-size: var(--kendo-font-size-sm) !default;
+$kendo-scheduler-popover-month-font-size: var(--kendo-font-size-sm) !default;
 /// The font size of the day inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-day-font-size: calc( var(--kendo-font-size-sm) * 2 ) !default;
+$kendo-scheduler-popover-day-font-size: calc( var(--kendo-font-size-sm) * 2 ) !default;
 
 /// The max height of the events inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-events-max-height: 250px !default;
+$kendo-scheduler-popover-events-max-height: 250px !default;
 /// The spacing between the events inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-events-gap: k-spacing(1) !default;
+$kendo-scheduler-popover-events-gap: k-spacing(1.5) !default;
 
+/// The minimum height of the events inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-popover-event-min-height: 25px !default;
 /// The horizontal padding of the events inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-event-padding-x: k-spacing(2) !default;
+$kendo-scheduler-popover-event-padding-x: k-spacing(2) !default;
 /// The vertical padding of the events inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-event-padding-y: k-spacing(2) !default;
+$kendo-scheduler-popover-event-padding-y: null !default;
 /// The border radius of the events inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-event-border-radius: k-border-radius(md) !default;
+$kendo-scheduler-popover-event-border-radius: k-border-radius(md) !default;
 /// The spacing between the events items inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-event-gap: k-spacing(2) !default;
-
-/// The color of the Scheduler Tooltip callout.
-/// @group scheduler
-$kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-bg !default;
-
-/// The padding of the Scheduler appointments.
-/// @group scheduler
-$kendo-scheduler-appointments-padding: k-spacing(4) !default;
+$kendo-scheduler-popover-event-gap: k-spacing(1.5) !default;
 
 /// The horizontal padding of the Scheduler event template.
 /// @group scheduler
-$kendo-scheduler-event-template-padding-x: k-spacing(4) !default;
+$kendo-scheduler-event-template-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Scheduler event template.
 /// @group scheduler
 $kendo-scheduler-event-template-padding-y: k-spacing(1) !default;
-
-/// The inline inset of the Scheduler event actions.
-/// @group scheduler
-$kendo-scheduler-event-actions-inset-x: k-spacing(4) !default;
-
-/// The margin of the Scheduler event indicators.
-/// @group scheduler
-$kendo-scheduler-indicators-margin: k-spacing(0.5) k-spacing(1) !default;
 
 /// The inline inset of the Scheduler marquee labels.
 /// @group scheduler
@@ -262,6 +273,10 @@ $kendo-scheduler-marquee-label-inset-x: k-spacing(2) !default;
 /// The block inset of the Scheduler marquee labels.
 /// @group scheduler
 $kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;
+
+/// The spacing between icon and text in Scheduler navigation items.
+/// @group scheduler
+$kendo-scheduler-nav-item-icon-spacing: k-spacing(2) !default;
 
 /// The background color of the Scheduler header.
 /// @group scheduler
@@ -275,8 +290,6 @@ $kendo-scheduler-adaptive-border: k-color(border) !default;
 
 $kendo-scheduler-adaptive-content-bg: k-color(app-surface) !default;
 
-$kendo-scheduler-adaptive-menu-clear-text: k-color(primary-on-surface) !default;
-
 $kendo-scheduler-adaptive-border-width: 1px !default;
 $kendo-scheduler-adaptive-font-family: var(--kendo-font-family) !default;
 $kendo-scheduler-adaptive-font-size: var(--kendo-font-size) !default;
@@ -285,6 +298,9 @@ $kendo-scheduler-adaptive-line-height: var(--kendo-line-height) !default;
 $kendo-scheduler-adaptive-current-text: k-color(primary-on-surface) !default;
 $kendo-scheduler-adaptive-base-text: inherit !default;
 $kendo-scheduler-adaptive-subtle-text: k-color(on-app-surface) !default;
+
+$kendo-scheduler-datetime-section-margin-top: k-spacing(2) !default;
+$kendo-scheduler-recurrence-fields-row-gap: k-spacing(6) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/scheduler/_variables.scss" with (
     $kendo-scheduler-border-width: $kendo-scheduler-border-width,
@@ -305,12 +321,22 @@ $kendo-scheduler-adaptive-subtle-text: k-color(on-app-surface) !default;
     $kendo-scheduler-footer-gradient: $kendo-scheduler-footer-gradient,
     $kendo-scheduler-event-min-height: $kendo-scheduler-event-min-height,
     $kendo-scheduler-event-border-radius: $kendo-scheduler-event-border-radius,
-    $kendo-scheduler-event-line-height: $kendo-scheduler-event-line-height,
+    $kendo-scheduler-event-title-font-size: $kendo-scheduler-event-title-font-size,
+    $kendo-scheduler-event-title-line-height: $kendo-scheduler-event-title-line-height,
+    $kendo-scheduler-event-title-padding-top: $kendo-scheduler-event-title-padding-top,
+    $kendo-scheduler-event-title-padding-bottom: $kendo-scheduler-event-title-padding-bottom,
+    $kendo-scheduler-event-time-font-size: $kendo-scheduler-event-time-font-size,
+    $kendo-scheduler-event-time-line-height: $kendo-scheduler-event-time-line-height,
+    $kendo-scheduler-event-time-padding-top: $kendo-scheduler-event-time-padding-top,
+    $kendo-scheduler-event-time-padding-bottom: $kendo-scheduler-event-time-padding-bottom,
     $kendo-scheduler-event-bg: $kendo-scheduler-event-bg,
     $kendo-scheduler-event-text: $kendo-scheduler-event-text,
     $kendo-scheduler-event-border: $kendo-scheduler-event-border,
     $kendo-scheduler-event-gradient: $kendo-scheduler-event-gradient,
     $kendo-scheduler-event-shadow: $kendo-scheduler-event-shadow,
+    $kendo-scheduler-event-readonly-bg: $kendo-scheduler-event-readonly-bg,
+    $kendo-scheduler-event-readonly-text: $kendo-scheduler-event-readonly-text,
+    $kendo-scheduler-event-readonly-border: $kendo-scheduler-event-readonly-border,
     $kendo-scheduler-event-hover-bg: $kendo-scheduler-event-hover-bg,
     $kendo-scheduler-event-hover-text: $kendo-scheduler-event-hover-text,
     $kendo-scheduler-event-hover-border: $kendo-scheduler-event-hover-border,
@@ -322,6 +348,11 @@ $kendo-scheduler-adaptive-subtle-text: k-color(on-app-surface) !default;
     $kendo-scheduler-event-selected-gradient: $kendo-scheduler-event-selected-gradient,
     $kendo-scheduler-event-selected-shadow: $kendo-scheduler-event-selected-shadow,
     $kendo-scheduler-event-ongoing-shadow: $kendo-scheduler-event-ongoing-shadow,
+    $kendo-scheduler-resizer-size: $kendo-scheduler-resizer-size,
+    $kendo-scheduler-resize-handle-size: $kendo-scheduler-resize-handle-size,
+    $kendo-scheduler-resize-handle-border-radius: $kendo-scheduler-resize-handle-border-radius,
+    $kendo-scheduler-resize-handle-border-width: $kendo-scheduler-resize-handle-border-width,
+    $kendo-scheduler-resize-handle-bg: $kendo-scheduler-resize-handle-bg,
     $kendo-scheduler-cell-padding-x: $kendo-scheduler-cell-padding-x,
     $kendo-scheduler-cell-padding-y: $kendo-scheduler-cell-padding-y,
     $kendo-scheduler-cell-height: $kendo-scheduler-cell-height,
@@ -340,41 +371,32 @@ $kendo-scheduler-adaptive-subtle-text: k-color(on-app-surface) !default;
     $kendo-scheduler-yearview-indicator-border-radius: $kendo-scheduler-yearview-indicator-border-radius,
     $kendo-scheduler-yearview-indicator-bg: $kendo-scheduler-yearview-indicator-bg,
     $kendo-scheduler-yearview-indicator-selected-bg: $kendo-scheduler-yearview-indicator-selected-bg,
-    $kendo-scheduler-tooltip-padding-x: $kendo-scheduler-tooltip-padding-x,
-    $kendo-scheduler-tooltip-padding-y: $kendo-scheduler-tooltip-padding-y,
-    $kendo-scheduler-tooltip-border-width: $kendo-scheduler-tooltip-border-width,
-    $kendo-scheduler-tooltip-bg: $kendo-scheduler-tooltip-bg,
-    $kendo-scheduler-tooltip-text: $kendo-scheduler-tooltip-text,
-    $kendo-scheduler-tooltip-border: $kendo-scheduler-tooltip-border,
-    $kendo-scheduler-tooltip-shadow: $kendo-scheduler-tooltip-shadow,
-    $kendo-scheduler-tooltip-title-margin-y: $kendo-scheduler-tooltip-title-margin-y,
-    $kendo-scheduler-tooltip-month-font-size: $kendo-scheduler-tooltip-month-font-size,
-    $kendo-scheduler-tooltip-day-font-size: $kendo-scheduler-tooltip-day-font-size,
-    $kendo-scheduler-tooltip-events-max-height: $kendo-scheduler-tooltip-events-max-height,
-    $kendo-scheduler-tooltip-events-gap: $kendo-scheduler-tooltip-events-gap,
-    $kendo-scheduler-tooltip-event-padding-x: $kendo-scheduler-tooltip-event-padding-x,
-    $kendo-scheduler-tooltip-event-padding-y: $kendo-scheduler-tooltip-event-padding-y,
-    $kendo-scheduler-tooltip-event-border-radius: $kendo-scheduler-tooltip-event-border-radius,
-    $kendo-scheduler-tooltip-event-gap: $kendo-scheduler-tooltip-event-gap,
-    $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-callout-text,
-    $kendo-scheduler-appointments-padding: $kendo-scheduler-appointments-padding,
+    $kendo-scheduler-popover-month-font-size: $kendo-scheduler-popover-month-font-size,
+    $kendo-scheduler-popover-day-font-size: $kendo-scheduler-popover-day-font-size,
+    $kendo-scheduler-popover-events-max-height: $kendo-scheduler-popover-events-max-height,
+    $kendo-scheduler-popover-events-gap: $kendo-scheduler-popover-events-gap,
+    $kendo-scheduler-popover-event-min-height: $kendo-scheduler-popover-event-min-height,
+    $kendo-scheduler-popover-event-padding-x: $kendo-scheduler-popover-event-padding-x,
+    $kendo-scheduler-popover-event-padding-y: $kendo-scheduler-popover-event-padding-y,
+    $kendo-scheduler-popover-event-border-radius: $kendo-scheduler-popover-event-border-radius,
+    $kendo-scheduler-popover-event-gap: $kendo-scheduler-popover-event-gap,
     $kendo-scheduler-event-template-padding-x: $kendo-scheduler-event-template-padding-x,
     $kendo-scheduler-event-template-padding-y: $kendo-scheduler-event-template-padding-y,
-    $kendo-scheduler-event-actions-inset-x: $kendo-scheduler-event-actions-inset-x,
-    $kendo-scheduler-indicators-margin: $kendo-scheduler-indicators-margin,
     $kendo-scheduler-marquee-label-inset-x: $kendo-scheduler-marquee-label-inset-x,
     $kendo-scheduler-marquee-label-inset-y: $kendo-scheduler-marquee-label-inset-y,
+    $kendo-scheduler-nav-item-icon-spacing: $kendo-scheduler-nav-item-icon-spacing,
     $kendo-scheduler-header-bg: $kendo-scheduler-header-bg,
     $kendo-scheduler-adaptive-bg: $kendo-scheduler-adaptive-bg,
     $kendo-scheduler-adaptive-text: $kendo-scheduler-adaptive-text,
     $kendo-scheduler-adaptive-border: $kendo-scheduler-adaptive-border,
     $kendo-scheduler-adaptive-content-bg: $kendo-scheduler-adaptive-content-bg,
-    $kendo-scheduler-adaptive-menu-clear-text: $kendo-scheduler-adaptive-menu-clear-text,
     $kendo-scheduler-adaptive-border-width: $kendo-scheduler-adaptive-border-width,
     $kendo-scheduler-adaptive-font-family: $kendo-scheduler-adaptive-font-family,
     $kendo-scheduler-adaptive-font-size: $kendo-scheduler-adaptive-font-size,
     $kendo-scheduler-adaptive-line-height: $kendo-scheduler-adaptive-line-height,
     $kendo-scheduler-adaptive-current-text: $kendo-scheduler-adaptive-current-text,
     $kendo-scheduler-adaptive-base-text: $kendo-scheduler-adaptive-base-text,
-    $kendo-scheduler-adaptive-subtle-text: $kendo-scheduler-adaptive-subtle-text
+    $kendo-scheduler-adaptive-subtle-text: $kendo-scheduler-adaptive-subtle-text,
+    $kendo-scheduler-datetime-section-margin-top: $kendo-scheduler-datetime-section-margin-top,
+    $kendo-scheduler-recurrence-fields-row-gap: $kendo-scheduler-recurrence-fields-row-gap
 );

@@ -55,15 +55,7 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveFilter?: boolean;
-    /**
-     * Unique identifier for the multiselecttree. Used to generate related IDs.
-     * @aria Controls aria-controls references
-     */
     id?: string;
-    /**
-     * ID of the treeview element in the popup.
-     * @aria aria-controls - Points to treeview when popup is open
-     */
     treeviewId?: string;
 };
 
@@ -72,6 +64,27 @@ export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boole
 const defaultOptions = {
 };
 
+/**
+ * @aria {role="combobox"} Announces the multiselect tree input.
+ * @aria {aria-haspopup="tree"} Indicates the presence of a tree popup.
+ * @aria {aria-expanded} Announces the popup visibility.
+ * @aria {aria-label} Accessible name for the multiselect tree.
+ * @aria {aria-autocomplete="list"} Indicates list filtering capability when filtering is enabled.
+ * @aria {aria-describedby} Points to the taglist element that contains the selected items.
+ * @aria {tabindex="0"} The element must be focusable.
+ * @aria {aria-disabled="true"} Rendered when the multiselect tree is disabled.
+ * @aria {role="listbox"} The taglist has listbox role for selected items.
+ * @aria {aria-label|aria-labelledby} The taglist needs an accessible name.
+ * @aria {aria-orientation="horizontal"} Specifies horizontal orientation of the taglist.
+ * @aria {role="option"} Each tag chip is an option within the taglist listbox.
+ * @aria {aria-selected="true"} Tags represent selected items and must have aria-selected=true.
+ * @aria {id} Referenced by aria-controls on the input.
+ * @aria {aria-controls} Points to treeview when popup is open
+ * @ux {Tree popup} A hierarchical tree opens in a popup.
+ * @ux {Checkboxes} Items are selected or deselected via checkboxes on each node.
+ * @ux {Tags} Selected items appear as removable chips in the input.
+ * @ux {Select all} A top-level checkbox selects or deselects all items at once.
+ */
 export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMultiSelectTreeState & React.HTMLAttributes<HTMLSpanElement>> = (
     props: KendoMultiSelectTreeProps &
         KendoMultiSelectTreeState &
@@ -109,7 +122,6 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
     } = props;
 
     const chipListId = id ? `${id}-taglist` : undefined;
-
 
     return (
         <>
@@ -232,27 +244,17 @@ MultiSelectTree.moduleName = MULTISELECTTREE_MODULE_NAME;
 MultiSelectTree.folderName = MULTISELECTTREE_FOLDER_NAME;
 
 /**
- * @see Treeview ariaSpec for the tree in the popup
- * @see ActionSheet ariaSpec for adaptive mode
+ * @keyboard {ArrowDown} Selects the next available item.
+ * @keyboard {ArrowUp} Selects the previous available item.
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens pop up
+ * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} `Closes popup
+ * @keyboard {Enter} Selects the focused item.
+ * @keyboard {Space} Selects the focused item.
+ * @keyboard {Printable Characters} Typing "M" or any other printable character should select the next or first item in the list
+ * @keyboard {Escape} Clears the value when the popup is not open.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/ ARIA practices: TreeView Example
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html ARIA practices: Select-Only Combobox Example
  */
-MultiSelectTree.ariaSpec = {
-    rules: [
-        // Combobox input
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'role=combobox', usage: 'Announces the multiselect tree input.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-haspopup=tree', usage: 'Indicates the presence of a tree popup.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-expanded', usage: 'Announces the popup visibility.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-label', usage: 'Accessible name for the multiselect tree.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-autocomplete=list', usage: 'Indicates list filtering capability when filtering is enabled.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'aria-describedby', usage: 'Points to the taglist element that contains the selected items.' },
-        { selector: '.k-multiselecttree .k-input-inner', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-multiselecttree.k-disabled .k-input-inner', attribute: 'aria-disabled=true', usage: 'Rendered when the multiselect tree is disabled.' },
-        // TagList (ChipList)
-        { selector: '.k-multiselecttree .k-chip-list', attribute: 'role=listbox', usage: 'The taglist has listbox role for selected items.' },
-        { selector: '.k-multiselecttree .k-chip-list', attribute: 'aria-label or aria-labelledby', usage: 'The taglist needs an accessible name.' },
-        { selector: '.k-multiselecttree .k-chip-list', attribute: 'aria-orientation=horizontal', usage: 'Specifies horizontal orientation of the taglist.' },
-        { selector: '.k-multiselecttree .k-chip-list .k-chip', attribute: 'role=option', usage: 'Each tag chip is an option within the taglist listbox.' },
-        { selector: '.k-multiselecttree .k-chip-list .k-chip', attribute: 'aria-selected=true', usage: 'Tags represent selected items and must have aria-selected=true.' },
-    ]
-};
 
 export default MultiSelectTree;

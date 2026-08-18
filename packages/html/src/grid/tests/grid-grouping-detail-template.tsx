@@ -129,10 +129,10 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={6}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                ID: 1
-                                            </p>
+                                                <span className="k-grouping-row-text">ID: 1</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">
@@ -151,10 +151,10 @@ export default () =>(
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd colspan={6}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                ID: 2
-                                            </p>
+                                                <span className="k-grouping-row-text">ID: 2</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow alt className="k-master-row" role="row">
@@ -231,19 +231,19 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={7}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                ID: 1
-                                            </p>
+                                                <span className="k-grouping-row-text">ID: 1</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                Name: Product1
-                                            </p>
+                                                <span className="k-grouping-row-text">Name: Product1</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row" role="row">
@@ -263,19 +263,19 @@ export default () =>(
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd colspan={7}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                ID: 2
-                                            </p>
+                                                <span className="k-grouping-row-text">ID: 2</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                Name: Product2
-                                            </p>
+                                                <span className="k-grouping-row-text">Name: Product2</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow alt className="k-master-row" role="row">
@@ -352,19 +352,19 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd colspan={7}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                ID: 1
-                                            </p>
+                                                <span className="k-grouping-row-text">ID: 1</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                Name: Product1
-                                            </p>
+                                                <span className="k-grouping-row-text">Name: Product1</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row k-expanded" role="row">
@@ -390,19 +390,19 @@ export default () =>(
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd colspan={7}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                ID: 2
-                                            </p>
+                                                <span className="k-grouping-row-text">ID: 2</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow role="row" className="k-table-group-row k-grouping-row" >
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={6}>
-                                            <p className="k-reset">
+                                            <div className="k-grouping-row-content">
                                                 <Icon icon="chevron-down" />
-                                                Name: Product2
-                                            </p>
+                                                <span className="k-grouping-row-text">Name: Product2</span>
+                                            </div>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow alt className="k-master-row k-expanded" role="row">

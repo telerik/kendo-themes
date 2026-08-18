@@ -29,7 +29,6 @@ export type KendoTooltipProps = KendoTooltipOptions & {
     title?: string | React.JSX.Element;
     content?: string | React.JSX.Element;
     icon?: string;
-    /** @aria id - required so the trigger element can reference it via aria-describedby */
     id?: string;
 };
 
@@ -37,6 +36,16 @@ const defaultOptions = {
     closable: false
 };
 
+/**
+ * @aria {role="tooltip"} Specifies the tooltip role of the tooltip container.
+ * @aria {role="button"} The close button needs an explicit button role.
+ * @aria {aria-label} The close button needs an accessible name.
+ * @aria {id} required so the trigger element can reference it via aria-describedby
+ * @ux {Hover trigger} Appears when the cursor hovers over the target element.
+ * @ux {Focus trigger} Also appears when the target receives keyboard focus.
+ * @ux {Auto-positioning} Automatically repositions to remain within the viewport.
+ * @ux {Delay} Configurable show and hide delays prevent flickering.
+ */
 export const Tooltip: KendoComponent<KendoTooltipProps & Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>> = (
     props: KendoTooltipProps &
         Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>
@@ -94,15 +103,11 @@ Tooltip.defaultOptions = defaultOptions;
 Tooltip.moduleName = TOOLTIP_MODULE_NAME;
 Tooltip.folderName = TOOLTIP_FOLDER_NAME;
 
-Tooltip.ariaSpec = {
-    selector: '.k-tooltip',
-    implicitRole: 'tooltip',
-    rules: [
-        { selector: '.k-tooltip', attribute: 'role=tooltip', usage: 'Specifies the tooltip role of the tooltip container.' },
-        { selector: '.k-tooltip', attribute: 'id', usage: 'The element needs an id to be associated with the aria-describedby attribute of the trigger element.' },
-        { selector: '.k-tooltip .k-tooltip-button', attribute: 'role=button', usage: 'The close button needs an explicit button role.' },
-        { selector: '.k-tooltip .k-tooltip-button', attribute: 'aria-label', usage: 'The close button needs an accessible name.' },
-    ]
-};
+/**
+ * @keyboard {Escape} Dismisses the Tooltip.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/ WAI-ARIA specification for tooltip
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role MDN description for tooltip role
+ */
 
 export default Tooltip;

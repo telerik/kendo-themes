@@ -29,6 +29,13 @@ const defaultOptions = {
     tag: 'form' as const
 };
 
+/**
+ * @ux {Validation} Validates field values on change or submit and shows inline error messages.
+ * @ux {Labels} Each field has an associated label that describes its purpose.
+ * @ux {Hint} Optional hint text below a field provides additional guidance.
+ * @ux {Required indicator} Required fields are visually marked with an asterisk.
+ * @ux {Layout} Supports horizontal (label beside field) and vertical (label above field) layouts.
+ */
 export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFormProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -41,7 +48,8 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
         cols,
         gutters,
         tag = defaultOptions.tag,
-        children
+        children,
+        style
     } = props;
 
     const Tag = tag;
@@ -69,7 +77,8 @@ export const Form: KendoComponent<KendoFormProps & React.HTMLAttributes<HTMLDivE
                 )} style={{
                     ...(typeof gutters === 'string' && { gap: gutters }),
                     ...(typeof gutters === 'object' && gutters.rows && { rowGap: gutters.rows }),
-                    ...(typeof gutters === 'object' && gutters.cols && { columnGap: gutters.cols })
+                    ...(typeof gutters === 'object' && gutters.cols && { columnGap: gutters.cols }),
+                    ...style
                 }}>
                     {children}
                 </div>
@@ -95,6 +104,13 @@ Form.className = FORM_CLASSNAME;
 Form.defaultOptions = defaultOptions;
 Form.moduleName = FORM_MODULE_NAME;
 Form.folderName = FORM_FOLDER_NAME;
+
+/**
+ * @keyboard {Shift + Tab} Moves focus to the previous focusable element.
+ * @keyboard {Tab} Moves focus to the next focusable element.
+ * @keyboard {Space} Triggers the default action of the focused element for the Space key.
+ * @keyboard {Enter} Triggers the default action of the focused element for the Enter key.
+ */
 
 export default Form;
 

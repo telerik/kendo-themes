@@ -27,6 +27,11 @@ export type KendoAppbarProps = KendoAppbarOptions & {
     position?: 'top' | 'bottom';
 };
 
+/**
+ * @ux {Application header} Renders as the primary header bar of the application.
+ * @ux {Sticky positioning} Stays fixed at the top of the viewport as the user scrolls.
+ * @ux {Sections} Divided into start, center, and end sections for flexible content placement.
+ */
 export const Appbar: KendoComponent<KendoAppbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoAppbarProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -37,7 +42,6 @@ export const Appbar: KendoComponent<KendoAppbarProps & React.HTMLAttributes<HTML
         position,
         ...other
     } = props;
-
 
     return (
         <div
@@ -64,15 +68,4 @@ Appbar.className = APPBAR_CLASSNAME;
 Appbar.defaultOptions = defaultOptions;
 Appbar.moduleName = APPBAR_MODULE_NAME;
 Appbar.folderName = APPBAR_FOLDER_NAME;
-
-/**
- * @ariaSpec
- * AppBar is a container for elements and does not implement specific WAI-ARIA attributes.
- * Child elements should implement their own accessibility patterns.
- */
-Appbar.ariaSpec = {
-    selector: '.k-appbar',
-    rules: []
-};
-
 export default Appbar;

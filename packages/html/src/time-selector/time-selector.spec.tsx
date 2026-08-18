@@ -28,6 +28,17 @@ export type KendoTimeSelectorProps = KendoTimeSelectorOptions & {
 const defaultOptions = {
 } as const;
 
+/**
+ * @aria {role="group"} Groups the time selection columns.
+ * @aria {aria-label} Describes the time selector purpose.
+ * @aria {role="listbox"} Each time column list acts as a listbox.
+ * @aria {aria-label} Describes which time unit the column selects.
+ * @aria {role="none"} Removes semantic meaning from the ul element.
+ * @aria {role="option"} Each item in the time list is an option.
+ * @ux {Scroll columns} Hours, minutes, and seconds are shown in separate scrollable columns.
+ * @ux {Snap selection} Scrolling snaps to the nearest valid step value.
+ * @ux {AM / PM} An optional column toggles the 12-hour period.
+ */
 export const TimeSelector: KendoComponent<KendoTimeSelectorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoTimeSelectorProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -89,27 +100,5 @@ TimeSelector.className = TIMESELECTOR_CLASSNAME;
 TimeSelector.defaultOptions = defaultOptions;
 TimeSelector.moduleName = TIME_SELECTOR_MODULE_NAME;
 TimeSelector.folderName = TIME_SELECTOR_FOLDER_NAME;
-
-/**
- * Accessibility specification for TimeSelector.
- *
- * @accessibility
- * - The wrapper has role=group with an aria-label
- * - Each time column list has role=listbox with aria-label describing the column
- * - Each item in the list has role=option
- *
- * @wcag 4.1.2 Name, Role, Value - listbox pattern for time selection
- */
-TimeSelector.ariaSpec = {
-    selector: '.k-timeselector',
-    rules: [
-        { selector: '.k-timeselector', attribute: 'role=group', usage: 'Groups the time selection columns.' },
-        { selector: '.k-timeselector', attribute: 'aria-label', usage: 'Describes the time selector purpose.' },
-        { selector: '.k-time-list', attribute: 'role=listbox', usage: 'Each time column list acts as a listbox.' },
-        { selector: '.k-time-list', attribute: 'aria-label', usage: 'Describes which time unit the column selects.' },
-        { selector: '.k-time-list-wrapper .k-reset', attribute: 'role=none', usage: 'Removes semantic meaning from the ul element.' },
-        { selector: '.k-time-list-wrapper .k-item', attribute: 'role=option', usage: 'Each item in the time list is an option.' },
-    ]
-};
 
 export default TimeSelector;

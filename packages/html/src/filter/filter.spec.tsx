@@ -17,6 +17,19 @@ export type KendoFilterProps = {
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="tree"} Describes the hierarchical structure of the Filter component.
+ * @aria {aria-label} Specifies a label for the Filter component.
+ * @aria {role="treeitem"} Each FilterGroup and FilterExpression represent a separate treeitem in the Filter component structure.
+ * @aria {role="group"} Represents a group of items in the Filter component.
+ * @aria {role="toolbar"} The role represents a collection of tools.
+ * @aria {aria-label} Specifies a label for the toolbar.
+ * @ux {Filter groups} Conditions are organized in groups with AND / OR logic operators.
+ * @ux {Add condition} A button adds a new filter condition to a group.
+ * @ux {Remove condition} Each condition has a remove button.
+ * @ux {Field selector} A dropdown selects the data field to filter on.
+ * @ux {Operator selector} A dropdown selects the comparison operator for the condition.
+ */
 export const Filter: KendoComponent<KendoFilterProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoFilterProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -47,16 +60,11 @@ Filter.className = FILTER_CLASSNAME;
 Filter.moduleName = FILTER_MODULE_NAME;
 Filter.folderName = FILTER_FOLDER_NAME;
 
-Filter.ariaSpec = {
-    selector: '.k-filter',
-    rules: [
-        { selector: '.k-filter-container', attribute: 'role=tree', usage: 'Describes the hierarchical structure of the Filter component.' },
-        { selector: '.k-filter-container', attribute: 'aria-label', usage: 'Specifies a label for the Filter component.' },
-        { selector: '.k-filter-group-main,.k-filter-item', attribute: 'role=treeitem', usage: 'Each FilterGroup and FilterExpression represent a separate treeitem in the Filter component structure.' },
-        { selector: '.k-filter-lines', attribute: 'role=group', usage: 'Represents a group of items in the Filter component.' },
-        { selector: '.k-toolbar', attribute: 'role=toolbar', usage: 'The role represents a collection of tools.' },
-        { selector: '.k-toolbar', attribute: 'aria-label', usage: 'Specifies a label for the toolbar.' },
-    ]
-};
+/**
+ * @keyboard {ArrowUp} Focuses the previous item (FilterGroup or FilterExpression) in the `tree`.
+ * @keyboard {ArrowDown} Focuses the next item (FilterGroup or FilterExpression) in the `tree`.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#toolbar WAI-ARIA specification for toolbar
+ */
 
 export default Filter;

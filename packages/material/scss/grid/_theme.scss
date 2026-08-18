@@ -15,8 +15,19 @@
             border-inline-start-color: transparent;
         }
 
-        .k-master-row .k-grid-content-sticky {
+        .k-master-row .k-grid-content-sticky:not(.k-group-cell) {
             border-block-end-color: $kendo-grid-header-border;
+        }
+
+        .k-master-row .k-group-cell {
+            border-block-color: transparent;
+        }
+
+        .k-detail-row,
+        .k-master-row {
+            .k-group-cell + :not(.k-group-cell) {
+                border-inline-start-color: k-color(border);
+            }
         }
     }
 

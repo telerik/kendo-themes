@@ -11,22 +11,24 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
         view="month"
         toolbar={
             <SchedulerToolbar>
-                <ButtonGroup className="k-scheduler-navigation">
-                    <Button className="k-group-start">Today</Button>
-                    <Button icon="chevron-left" aria-label="Navigate to previous period"></Button>
-                    <Button className="k-group-end" icon="chevron-right" aria-label="Navigate to next period"></Button>
+                <Button themeColor="primary" icon="plus" aria-label="Add new event">New Event</Button>
+                <Button fillMode="flat">Today</Button>
+                <ButtonGroup fillMode="flat">
+                    <Button icon="chevron-left" fillMode="flat" aria-label="Navigate to previous period"></Button>
+                    <Button icon="chevron-right" fillMode="flat" aria-label="Navigate to next period"></Button>
                 </ButtonGroup>
                 <Button icon="calendar" className="k-nav-current" fillMode="flat" aria-live="polite">
-                    June 23 2024
+                    February 2026
                 </Button>
                 <span className="k-spacer"></span>
-                <SegmentedControl thumbStyles={{ width: "19%", left: "34%" }} className="k-scheduler-views">
+                <SegmentedControl thumbStyles={{width: "19%", left: "34%"}} className="k-scheduler-views">
                     <SegmentedControlButton>Day</SegmentedControlButton>
                     <SegmentedControlButton>Week</SegmentedControlButton>
                     <SegmentedControlButton selected>Month</SegmentedControlButton>
                     <SegmentedControlButton>Timeline</SegmentedControlButton>
                     <SegmentedControlButton>Agenda</SegmentedControlButton>
                 </SegmentedControl>
+
             </SchedulerToolbar>
         }
         children={
@@ -64,7 +66,7 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
                                 <SchedulerRow>
                                     <SchedulerCell as="div" cellType={[ "slot" ]}>
                                         <span className="k-link k-nav-day">02</span>
-                                        <Button className="k-more-events" icon="more-horizontal" aria-label="Show more events"></Button>
+                                        <Button className="k-more-events" size="xsmall" fillMode="flat" themeColor="primary" aria-label="3 more events">3 more</Button>
                                     </SchedulerCell>
                                     <SchedulerCell as="div" cellType={[ "slot" ]} text="03" />
                                     <SchedulerCell as="div" cellType={[ "slot" ]} text="04" />
@@ -112,34 +114,10 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
                             </SchedulerCell>
                         </SchedulerRow>
                     </SchedulerGroup>
-                    <SchedulerEvent eventPrefix={null} eventSuffix={null} resizable="none" style={{ top: "137px", width: "138px" }}>
-                        <div>
-                            <div className="k-event-template">
-                                            Event 1 Title
-                            </div>
-                        </div>
-                    </SchedulerEvent>
-                    <SchedulerEvent eventPrefix={null} eventSuffix={null} resizable="none" style={{ top: "137px", left: "141px", width: "138px" }}>
-                        <div>
-                            <div className="k-event-template">
-                                            Event 2 Title
-                            </div>
-                        </div>
-                    </SchedulerEvent>
-                    <SchedulerEvent eventPrefix={null} eventSuffix={null} resizable="none" style={{ top: "165px", left: "141px", width: "138px" }}>
-                        <div>
-                            <div className="k-event-template">
-                                            Event 3 Title
-                            </div>
-                        </div>
-                    </SchedulerEvent>
-                    <SchedulerEvent eventSuffix={null} resizable="none" style={{ top: "137px", left: "282px", width: "410px" }}>
-                        <div>
-                            <div className="k-event-template">
-                                            Event 4 Title
-                            </div>
-                        </div>
-                    </SchedulerEvent>
+                    <SchedulerEvent resizable="none" style={{ top: "137px", height: "25px", width: "138px" }} title="Event 1 Title" time="9:00 AM - 10:00 AM" />
+                    <SchedulerEvent resizable="none" style={{ top: "137px", left: "141px", height: "25px", width: "138px" }} title="Event 2 Title" time="10:00 AM - 11:00 AM" />
+                    <SchedulerEvent resizable="none" style={{ top: "165px", left: "141px", height: "25px", width: "138px" }} title="Event 3 Title" time="11:00 AM - 12:00 PM" />
+                    <SchedulerEvent resizable="none" style={{ top: "137px", left: "282px", height: "25px", width: "410px" }} title="Event 4 Title" time="1:00 PM - 2:00 PM" />
                 </SchedulerBody>
             </>
         }

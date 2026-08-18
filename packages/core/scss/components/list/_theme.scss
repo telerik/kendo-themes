@@ -31,7 +31,24 @@
     }
 
 
+    // Sticky header
+    .k-list-sticky-header {
+        @include fill(
+            $kendo-list-item-text,
+            $kendo-list-item-bg,
+            $kendo-list-header-border,
+        );
+        @include box-shadow( $kendo-list-sticky-header-shadow );
+
+        &:has(+ .k-list-group-sticky-header) {
+            @include box-shadow( none );
+            border-color: $kendo-list-header-border;
+        }
+    }
+
+
     // List item
+    .k-list-sticky-header-item,
     .k-list-item,
     .k-list-custom-value {
         @include fill(

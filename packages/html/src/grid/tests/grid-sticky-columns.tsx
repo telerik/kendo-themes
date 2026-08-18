@@ -54,10 +54,10 @@ export default () =>(
                                     <TableTbody>
                                         <TableRow className="k-table-group-row k-grouping-row">
                                             <TableTd colspan={6}>
-                                                <p className="k-reset">
+                                                <div className="k-grouping-row-content">
                                                     <Icon icon="chevron-down" />
-                                                    <span>Currently active projects: 2 &nbsp;</span>
-                                                </p>
+                                                   <span className="k-grouping-row-text"> <span>Currently active projects: 2 &nbsp;</span></span>
+                                                </div>
                                             </TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row">
@@ -92,11 +92,13 @@ export default () =>(
                                         </TableRow>
                                         <TableRow className="k-table-group-row k-grouping-row">
                                             <TableTd colspan={6}>
-                                                <p className="k-reset">
+                                                <div className="k-grouping-row-content">
                                                     <Icon icon="chevron-down" />
-                                                    <span>Currently active projects: 5 &nbsp;</span>
-                                                    <span>These people work on too many projects</span>
-                                                </p>
+                                                    <span className="k-grouping-row-text">
+                                                        <span>Currently active projects: 5 </span>
+                                                        <span>These people work on too many projects</span>
+                                                    </span>
+                                                </div>
                                             </TableTd>
                                         </TableRow>
                                         <TableRow className="k-master-row">

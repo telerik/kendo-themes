@@ -150,11 +150,21 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-icon-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-item-icon-spacing, var( --kendo-icon-spacing, .5rem ) )</code></td>
-    <td><code>var(--kendo-menu-item-icon-spacing, var(--kendo-icon-spacing, 0.5rem))</code></td>
+    <td><code>var( --kendo-menu-item-icon-spacing, #{$kendo-icon-spacing} )</code></td>
+    <td><code>var(--kendo-menu-item-icon-spacing, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Menu item text and icons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-expand-arrow-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-menu-expand-arrow-spacing, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-menu-expand-arrow-spacing, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing used for the menu expand arrow negative offset.</div></div>
     </td>
 </tr>
 <tr>
@@ -550,8 +560,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the small Menu popup item.</div></div>
@@ -560,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-md-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the medium Menu popup item.</div></div>
@@ -570,8 +580,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-item-padding-end</td>
     <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the large Menu popup item.</div></div>
@@ -610,8 +620,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) )</code></td>
-    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))</code></td>
+    <td><code>calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-sm-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (1rem + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the small Menu popup item expand icon.</div></div>
@@ -620,8 +630,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-icon-md-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-md-item-padding-x}) )</code></td>
-    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))</code></td>
+    <td><code>calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-md-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (1rem + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the medium Menu popup item expand icon.</div></div>
@@ -630,8 +640,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-lg-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-lg-item-padding-x}) )</code></td>
-    <td><code>calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))</code></td>
+    <td><code>calc( -1 * (#{$kendo-icon-size} + #{$kendo-menu-popup-lg-item-padding-x}) )</code></td>
+    <td><code>calc(-1 * (1rem + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the large Menu popup item expand icon.</div></div>
@@ -819,7 +829,7 @@ The following table lists the available variables for customization.
         item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1)))","item-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))"</li><li>md: "font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5)))","item-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))"</li><li>lg: "font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg))","line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5)))","item-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + var(--kendo-icon-size, 1rem))","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (var(--kendo-icon-size, 1rem) + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1)))","item-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-spacing-2))))"</li><li>md: "font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5)))","item-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-spacing-2))))"</li><li>lg: "font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg))","line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5)))","item-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))","item-padding-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2)) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-spacing-2))))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Menu group.</div></div>

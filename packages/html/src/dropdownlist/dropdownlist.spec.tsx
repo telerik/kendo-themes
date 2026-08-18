@@ -54,15 +54,7 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
     adaptiveFilter?: boolean;
-    /**
-     * Unique identifier for the dropdownlist. Used to generate related IDs.
-     * @aria Controls aria-controls and aria-activedescendant references
-     */
     id?: string;
-    /**
-     * ID of the currently focused/active item in the listbox.
-     * @aria aria-activedescendant - Points to focused item when popup is open
-     */
     activeDescendant?: string;
 };
 
@@ -73,6 +65,26 @@ const defaultOptions = {
     arrowIconName: 'chevron-down',
 };
 
+/**
+ * @aria {role="combobox"} Announces the dropdown element.
+ * @aria {aria-haspopup="listbox"} Indicates the presence of a listbox popup.
+ * @aria {aria-expanded} Announces the visibility state of the popup.
+ * @aria {aria-label} Accessible name for the dropdown.
+ * @aria {tabindex="0"} The element must be focusable.
+ * @aria {aria-disabled="true"} Rendered when the dropdown is disabled.
+ * @aria {aria-label} Accessible name for the dropdown button.
+ * @aria {tabindex="-1"} The button must not be focusable.
+ * @aria {role="listbox"} Popup list has listbox role.
+ * @aria {aria-label|aria-labelledby} Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.
+ * @aria {role="option"} Each list item is an option.
+ * @aria {id} Referenced by aria-controls and aria-activedescendant on the input.
+ * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @ux {Popup} Clicking the control opens a scrollable list of options.
+ * @ux {Selection} Clicking an option selects it and closes the popup.
+ * @ux {Filtering} The list can be filtered when the user types.
+ * @ux {Placeholder} Displays hint text when no option is selected.
+ * @ux {Disabled state} When disabled, the control is non-interactive.
+ */
 export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdownListState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoDropdownListProps &
         KendoDropdownListState &
@@ -112,7 +124,6 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
 
     const listboxId = id ? `${id}-listbox` : undefined;
     const innerSpanId = id ? `${id}-value` : undefined;
-
 
     return (
         <>
@@ -218,23 +229,18 @@ DropdownList.moduleName = DROPDOWNLIST_MODULE_NAME;
 DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
 
 /**
- * @see List ariaSpec for popup listbox content
- * @see ActionSheet ariaSpec for adaptive mode
+ * @keyboard {ArrowDown} Selects the next available item.
+ * @keyboard {ArrowUp} Selects the previous available item.
+ * @keyboard {Home} Selects the first available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position.
+ * @keyboard {End} Selects the last available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position.
+ * @keyboard {Enter} Opens popup
+ * @keyboard {Space} Opens popup
+ * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens popup
+ * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} `Closes popup
+ * @keyboard {Printable Characters} Typing "M" or any other printable character should select the next or first item in the list. Swiftly typing should capture multiple printable characters after the first one.
+ * @keyboard {Tab} Closes the actionsheet and focuses the next focusable element.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html WAI-ARIA Authoring Practices: Select-Only Combobox Example
  */
-DropdownList.ariaSpec = {
-    rules: [
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'role=combobox', usage: 'Announces the dropdown element.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-haspopup=listbox', usage: 'Indicates the presence of a listbox popup.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-expanded', usage: 'Announces the visibility state of the popup.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'aria-label', usage: 'Accessible name for the dropdown.' },
-        { selector: '.k-dropdownlist:not(.k-views-dropdown)', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-dropdownlist.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered when the dropdown is disabled.' },
-        { selector: '.k-dropdownlist .k-input-button', attribute: 'aria-label', usage: 'Accessible name for the dropdown button.' },
-        { selector: '.k-dropdownlist .k-input-button', attribute: 'tabindex=-1', usage: 'The button must not be focusable.' },
-        { selector: '.k-dropdownlist-popup .k-list-content, .k-dropdownlist-popup .k-list-ul', attribute: 'role=listbox', usage: 'Popup list has listbox role.' },
-        { selector: '.k-dropdownlist-popup .k-list-ul[role="listbox"]', attribute: 'aria-label or aria-labelledby', usage: 'Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.' },
-        { selector: '.k-dropdownlist-popup .k-list-item', attribute: 'role=option', usage: 'Each list item is an option.' },
-    ]
-};
 
 export default DropdownList;

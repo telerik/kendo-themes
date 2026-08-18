@@ -30,6 +30,23 @@ export type KendoUploadState = { [K in (typeof states)[number]]?: boolean };
 
 const uploadFilesId = 'upload-files-list';
 
+/**
+ * @aria {aria-disabled} Announces the disabled state of the upload button.
+ * @aria {aria-controls} Creates the relationship between the button and the list of selected files when the list is present.
+ * @aria {tabindex="-1"} Assures that the input element inside the upload is not focusable.
+ * @aria {aria-hidden="true"} The input needs to be hidden from screen readers.
+ * @aria {role="list"} Explicitly sets the UL role to list.
+ * @aria {id} Unique and deterministic id linked to the button aria-controls attribute.
+ * @aria {role="listitem"} Explicitly sets the LI role to listitem.
+ * @aria {aria-live="polite"} Announces the change in the upload status of the file.
+ * @aria {aria-label} Provides accessible names for the file action buttons.
+ * @aria {tabindex="-1"} The list file action buttons are not focusable elements.
+ * @ux {Drop zone} Files can be dragged and dropped onto the component to start the upload.
+ * @ux {Browse} A button opens the system file dialog to select files.
+ * @ux {Progress} Per-file progress bars show upload completion.
+ * @ux {Cancel} Individual file uploads can be cancelled while in progress.
+ * @ux {Validation} File type and size restrictions are enforced and violation messages are shown.
+ */
 export const Upload: KendoComponent<KendoUploadProps & KendoUploadState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoUploadProps &
         KendoUploadState &
@@ -91,20 +108,17 @@ Upload.defaultOptions = defaultOptions;
 Upload.moduleName = UPLOAD_MODULE_NAME;
 Upload.folderName = UPLOAD_FOLDER_NAME;
 
-Upload.ariaSpec = {
-    selector: '.k-upload',
-    rules: [
-        { selector: '.k-upload .k-upload-button', attribute: 'aria-disabled', usage: 'Announces the disabled state of the upload button.' },
-        { selector: '.k-upload .k-upload-button', attribute: 'aria-controls (when present)', usage: 'Creates the relationship between the button and the list of selected files when the list is present.' },
-        { selector: '.k-upload input', attribute: 'tabindex=-1', usage: 'Assures that the input element inside the upload is not focusable.' },
-        { selector: '.k-upload input', attribute: 'aria-hidden=true', usage: 'The input needs to be hidden from screen readers.' },
-        { selector: '.k-upload-files', attribute: 'role=list', usage: 'Explicitly sets the UL role to list.' },
-        { selector: '.k-upload-files', attribute: 'id', usage: 'Unique and deterministic id linked to the button aria-controls attribute.' },
-        { selector: '.k-upload-files .k-file', attribute: 'role=listitem', usage: 'Explicitly sets the LI role to listitem.' },
-        { selector: '.k-upload .k-file .k-file-validation-message', attribute: 'aria-live=polite', usage: 'Announces the change in the upload status of the file.' },
-        { selector: '.k-upload .k-upload-actions .k-upload-action', attribute: 'aria-label', usage: 'Provides accessible names for the file action buttons.' },
-        { selector: '.k-upload .k-upload-actions .k-upload-action', attribute: 'tabindex=-1', usage: 'The list file action buttons are not focusable elements.' },
-    ]
-};
+/**
+ * @keyboard {Tab} Switches focus between the Select File Button, the list of selected files, and the action buttons (Cancel, Upload) after the file list.
+ * @keyboard {Space or Enter} Opens the Select file dialog if the Select files button is focused.
+ * @keyboard {ArrowDown} Highlights the next file in the file list (if such exists) when a file list item is focused.
+ * @keyboard {ArrowUp} Highlights the previous file in the file list (if such exists) when a file list item is focused.
+ * @keyboard {Enter} Retries the upload of the failed file when the focus is on a file list item or starts the file upload for a valid file.
+ * @keyboard {Escape} Cancels the upload of the highlighted file when the focus is on a file list item
+ * @keyboard {Space} When Chunk upload is enabled Start or Pause the highlighted file upload
+ * @keyboard {Delete} Removes the highlighted file when the focus is on a file list item. Focus is moved to the next file (if present), previous file (if there is no next and there is previous), or is returned to the Select Files button if the last file from the list is deleted.
+ *
+ * @see https://www.w3.org/WAI/ARIA/apg/ WAI-ARIA Practices
+ */
 
 export default Upload;

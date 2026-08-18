@@ -12,6 +12,26 @@ const options = {};
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="toolbar"} The toolbar is a collection of command buttons and inputs.
+ * @aria {aria-label} Clarifies the purpose of the toolbar.
+ * @aria {aria-controls=".k-grid-aria-root id"} Points to the id of the element with role=treegrid.
+ * @aria {role="treegrid"} Sets the proper role for the PropertyGrid component.
+ * @aria {aria-colcount} The total number of columns.
+ * @aria {aria-rowcount} The total number of rows in the table.
+ * @aria {role="none"} Negates the default semantic role of the <table> element.
+ * @aria {role="rowgroup"} Required as the owner <table> element has its semantic role removed.
+ * @aria {role="row"} Required as the owner <table> element has its semantic role removed.
+ * @aria {aria-rowindex} Row number.
+ * @aria {role="gridcell"} Required as the owner <table> element has its semantic role removed.
+ * @aria {aria-colindex} Col number.
+ * @aria {aria-expanded} Set on the currently expanded row(s).
+ * @aria {aria-hidden="true"} Removes the expand/collapse icon from the accessibility tree.
+ * @ux {Property list} Displays properties and their current values in a two-column layout.
+ * @ux {Grouping} Properties are organized into collapsible category sections.
+ * @ux {Inline editing} Values are edited using appropriate input controls inline.
+ * @ux {Search} A search input filters the property list by name.
+ */
 export const PropertyGrid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoGridProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -35,40 +55,23 @@ PropertyGrid.moduleName = PROPERTYGRID_MODULE_NAME;
 PropertyGrid.folderName = PROPERTYGRID_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * The PropertyGrid is a composite component that consists of 2 logically separated structural elements:
- * - Toolbar (role=toolbar)
- * - Tree Grid (role=treegrid)
+ * @keyboard {ArrowRight} Moves focus one cell to the right (if any).
+ * @keyboard {ArrowLeft} Moves focus one cell to the left (if any).
+ * @keyboard {ArrowDown} Moves focus one cell down (if any).
+ * @keyboard {ArrowUp} Moves focus one cell up (if any).
+ * @keyboard {Enter} When the grid is in InCell EditMode, then EditMode is activated. If the cell contains focusable elements, focus moves to the first focusable element inside.
+ * @keyboard {Home} Moves focus to the first cell in the row that contains focus.
+ * @keyboard {End} Moves focus to the last cell in the row that contains focus.
+ * @keyboard {Control/Cmd(Mac) + Home} Moves focus to the first (top-left) data cell in the PropertyGrid.
+ * @keyboard {Control/Cmd(Mac) + End} Moves focus to the last cell in the last row of the PropertyGrid.
+ * @keyboard {Alt/Opt(Mac) + ArrowLeft} Collapses the currently focused item.
+ * @keyboard {Alt/Opt(Mac) + ArrowRight} Expands the currently focused item.
+ * @keyboard {Tab} Moves to the next editor in the row (closing current editor). If focus is already on the last editable cell on the row, focus is moved to the first editable cell on the next row, and it's editor is opened.
+ * @keyboard {Shift + Tab} Moves to the previous editor in the row (closing current editor). If focus is already on the first editable cell on the row, focus is moved to the last editable cell on the previous row, and it's editor is opened.
+ * @keyboard {Enter} Commits changes for the edited item, and moves focus back to the edited cell.
+ * @keyboard {Escape} Cancels the edit. The focus goes to the current cell.
  *
- * It implements the TreeList ARIA specification.
- *
- * @see aria/propertygrid_aria.md
+ * @see https://www.w3.org/TR/wai-aria-1.2/#treegrid WAI-ARIA specification for tree grid
  */
-PropertyGrid.ariaSpec = {
-    selector: '.k-property-grid',
-    rules: [
-        // ── Toolbar ──
-        { selector: '.k-grid-toolbar', attribute: 'role=toolbar', usage: 'The toolbar is a collection of command buttons and inputs.' },
-        { selector: '.k-grid-toolbar', attribute: 'aria-label', usage: 'Clarifies the purpose of the toolbar.' },
-        { selector: '.k-grid-toolbar', attribute: 'aria-controls=.k-grid-aria-root id', usage: 'Points to the id of the element with role=treegrid.' },
-
-        // ── TreeGrid Element ──
-        { selector: '.k-property-grid .k-grid-aria-root', attribute: 'role=treegrid', usage: 'Sets the proper role for the PropertyGrid component.' },
-        { selector: '.k-grid-aria-root', attribute: 'aria-colcount', usage: 'The total number of columns.' },
-        { selector: '.k-grid-aria-root', attribute: 'aria-rowcount', usage: 'The total number of rows in the table.' },
-
-        // ── Content ──
-        { selector: '.k-grid-content>table', attribute: 'role=none', usage: 'Negates the default semantic role of the <table> element.' },
-        { selector: '.k-grid-content>table>tbody', attribute: 'role=rowgroup', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-grid-content>table>tbody>tr:not(.k-hidden)', attribute: 'role=row', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-grid-content>table>tbody>tr:not(.k-hidden)', attribute: 'aria-rowindex', usage: 'Row number.' },
-        { selector: '.k-grid-content>table>tbody>tr:not(.k-hidden)>td', attribute: 'role=gridcell', usage: 'Required as the owner <table> element has its semantic role removed.' },
-        { selector: '.k-grid-content>table>tbody>tr:not(.k-hidden)>td', attribute: 'aria-colindex', usage: 'Col number.' },
-
-        // ── TreeList-Specific ──
-        { selector: '.k-grid-content>table>tbody>tr:not(.k-hidden)', attribute: 'aria-expanded (when expandable)', usage: 'Set on the currently expanded row(s).' },
-        { selector: '.k-treelist-toggle[class*="i-chevron-down"],.k-treelist-toggle[class*="i-chevron-right"]', attribute: 'aria-hidden=true', usage: 'Removes the expand/collapse icon from the accessibility tree.' },
-    ]
-};
 
 export default PropertyGrid;

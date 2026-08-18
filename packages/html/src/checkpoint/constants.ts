@@ -1,0 +1,2 @@
+export const CHECKPOINT_MODULE_NAME = 'checkpoint';
+export const CHECKPOINT_FOLDER_NAME = CHECKPOINT_MODULE_NAME;

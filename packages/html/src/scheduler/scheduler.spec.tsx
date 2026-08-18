@@ -18,6 +18,44 @@ export type KendoSchedulerProps = {
     layout?: "table" | "flex";
 };
 
+/**
+ * @aria {role="application"} Specifies the role of the component.
+ * @aria {aria-label} Required as the previous navigation button contains only an icon (no text).
+ * @aria {aria-label} Required as the next navigation button contains only an icon (no text).
+ * @aria {aria-label} Required for the "New Event" button. When collapsed to icon-only at narrow widths, this is the only accessible name.
+ * @aria {aria-label} Required as the Open calendar button contains only an icon (no text).
+ * @aria {aria-label} Required as the Create event button contains only an icon (no text).
+ * @aria {aria-live="polite"} The new date of the Scheduler view will be announced upon navigation to a new time span or view type.
+ * @aria {role="group"} Follows SegmentedControl spec: sets the proper role for the group of view buttons.
+ * @aria {aria-pressed} Follows SegmentedControl spec: specifies the current state of the view SegmentedControl. Only the selected button within the group will have this attribute set to true.
+ * @aria {role="grid"} The main table of the Agenda view must indicate it is a Data Grid.
+ * @aria {role="none"|"presentation"} The <tbody> element must have its semantics removed.
+ * @aria {role="none"|"presentation"} All <table> elements within the Scheduler must have their semantic role removed.
+ * @aria {role="button"} Indicating that the event element is interactive.
+ * @aria {aria-label} Label containing the title, start, and end date of the appointment.
+ * @aria {aria-disabled="true"} Read-only events cannot be edited or dragged; aria-disabled signals this to assistive technologies.
+ * @aria {aria-label} When the date cell shows a short day abbreviation and a date number separately, aria-label should combine both so the link has a descriptive accessible name.
+ * @aria {aria-label} The "N more" button text is ambiguous; aria-label should read "N more events" to clarify what the button reveals.
+ * @aria {role="list"} The tooltip events container acts as a list of event summaries.
+ * @aria {role="listitem"} Each tooltip event is a non-interactive list item.
+ * @aria {role="group"} Groups the day-of-week toggle buttons into a logical set.
+ * @aria {aria-label} Labels the weekday picker group (e.g. "Repeat on days").
+ * @aria {aria-label} Full day name for each abbreviated day button in the weekday picker (e.g. "Monday").
+ * @aria {aria-pressed} Indicates whether the day is currently selected in the weekday picker.
+ * @aria {tabindex} Roving tabindex: only one weekday picker button has tabindex="0", the rest have tabindex="-1".
+ * @aria {tabindex="0"} Scrollable non-agenda content must be focusable to ensure keyboard scrolling is available.
+ * @ux {Multiple views} Switches between day, week, month, agenda, and timeline views.
+ * @ux {View switcher} Views are accessible via a ButtonGroup or a DropDown in the toolbar.
+ * @ux {Navigation} Previous and next buttons move to the adjacent time period.
+ * @ux {Today button} A button jumps the view back to the current date instantly.
+ * @ux {Calendar navigation} A calendar button opens a date picker for jumping to any date.
+ * @ux {Business hours} A toggle switches the view between business hours and full day.
+ * @ux {Resource grouping} Events can be grouped by resource (e.g., room or person) across applicable views.
+ * @ux {Event creation} Clicking an empty time slot opens a dialog to create a new event.
+ * @ux {Event editing} Clicking an existing event opens an edit form.
+ * @ux {Drag and drop} Events can be dragged to a different time slot.
+ * @ux {Resize} Dragging an event's edge adjusts its duration.
+ */
 export const Scheduler: KendoComponent<KendoSchedulerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoSchedulerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -63,68 +101,24 @@ Scheduler.moduleName = SCHEDULER_MODULE_NAME;
 Scheduler.folderName = SCHEDULER_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * Scheduler implements the WAI-ARIA application pattern.
+ * @keyboard {t} navigates to today's time period
+ * @keyboard {c} opens the popup for creation of new appointment
+ * @keyboard {b} toggles view between business hours and full day (where available)
+ * @keyboard {Shift + ArrowLeft} navigates to the previous time period
+ * @keyboard {Shift + ArrowRight} navigates to the next time period
+ * @keyboard {Alt/Opt(Mac) + 1,2,3,...} navigates to the view with the respective number
+ * @keyboard {F10} Focuses the ToolBar.
+ * @keyboard {Arrow Keys} move focus through appointments and the `more events` button, then continue to the next appointment in sequence
+ * @keyboard {Enter} opens the Edit Popup to modify the appointment
+ * @keyboard {Delete or Backspace} opens the Delete confirmation popup to modify the appointment
+ * @keyboard {Enter} If date is focused, opens its Tooltip.
+ * @keyboard {Enter} If Tooltip is focused, navigates to Day view displaying the Tooltip date.
+ * @keyboard {Delete or Backspace} If a Tooltip is focused, closes that and returns focus to its target date.
+ * @keyboard {ArrowLeft or ArrowRight} move focus through tools
+ * @keyboard {ArrowDown} moves focus to the selected (if present), or the first event (if any) in the view
  *
- * - Wrapping element: role="application"
- * - Toolbar: follows Toolbar accessibility specification
- * - View selector ButtonGroup: follows ButtonGroup accessibility specification
- * - Agenda view: uses grid role with proper rowgroup/row/columnheader/rowheader/gridcell roles
- * - Year view: follows MultiViewCalendar accessibility specification
- * - Other views: role="none/presentation" on inner tables, events are role="button"
- * - Non-agenda scrollable content: tabindex="0" for keyboard scrolling
+ * @see https://www.w3.org/TR/wai-aria-1.2/#grid WAI-ARIA specification for grid
+ * @see https://www.w3.org/TR/wai-aria-1.2/#application WAI-ARIA specification for application
  */
-Scheduler.ariaSpec = {
-    selector: '.k-scheduler',
-    rules: [
-        // Scheduler Wrapping Element
-        { selector: '.k-scheduler', attribute: 'role=application', usage: 'Specifies the role of the component.' },
-
-        // Scheduler Toolbar — follows Toolbar spec (toolbar_aria.md)
-        // The SchedulerToolbar component follows the Toolbar accessibility specification.
-        { selector: '.k-scheduler-toolbar', attribute: 'role=toolbar', usage: 'Follows Toolbar spec: sets the component role.' },
-        { selector: '.k-scheduler-toolbar', attribute: 'aria-label or title', usage: 'Follows Toolbar spec: each toolbar must have a label specifying its purpose.' },
-
-        // Toolbar tools: navigation icon-only buttons
-        { selector: '.k-scheduler-navigation .k-button:has([class*="i-chevron-left"])', attribute: 'aria-label', usage: 'Required as the previous navigation button contains only an icon (no text).' },
-        { selector: '.k-scheduler-navigation .k-button:has([class*="i-chevron-right"])', attribute: 'aria-label', usage: 'Required as the next navigation button contains only an icon (no text).' },
-
-        // Toolbar tools: current date/period display
-        { selector: '.k-nav-current', attribute: 'aria-live=polite', usage: 'The new date of the Scheduler view will be announced upon navigation to a new time span or view type.' },
-
-        // Toolbar tools: views dropdown (select element on small screens)
-        { selector: '.k-views-dropdown', attribute: 'aria-label', usage: 'The <select> element visible on the toolbar on small screens must have its aria-label set.' },
-
-        // View selector SegmentedControl — follows SegmentedControl accessibility specification.
-        { selector: '.k-scheduler-views', attribute: 'role=group', usage: 'Follows SegmentedControl spec: sets the proper role for the group of view buttons.' },
-        { selector: '.k-scheduler-views .k-segmented-control-button', attribute: 'aria-pressed (when selected)', usage: 'Follows SegmentedControl spec: specifies the current state of the view SegmentedControl. Only the selected button within the group will have this attribute set to true.' },
-
-        // Agenda view — grid roles
-        { selector: '.k-scheduler-agendaview', attribute: 'role=grid', usage: 'The main table of the Agenda view must indicate it is a Data Grid.' },
-        { selector: '.k-scheduler-agendaview>tbody', attribute: 'role=none/presentation', usage: 'The <tbody> element must have its semantics removed.' },
-        { selector: '.k-scheduler-agendaview .k-scheduler-table', attribute: 'role=none/presentation', usage: 'Inner <table> elements within the Agenda Scheduler must have their semantic role removed.' },
-        { selector: '.k-scheduler-agendaview .k-scheduler-table>tbody', attribute: 'role=rowgroup', usage: 'Must have role explicitly set as it has been removed by the <table> role set (none/presentation).' },
-        { selector: '.k-scheduler-agendaview .k-scheduler-table>tbody>tr', attribute: 'role=row', usage: 'Must have role explicitly set as it has been removed by the <table> role set (none/presentation).' },
-        { selector: '.k-scheduler-agendaview .k-scheduler-table>tbody>tr>th', attribute: 'role=columnheader', usage: 'Must have role explicitly set as it has been removed by the <table> role set (none/presentation).' },
-        { selector: '.k-scheduler-agendaview .k-scheduler-content tr .k-selected', attribute: 'aria-selected', usage: 'Used to signify the currently selected row in Agenda view.' },
-
-        // Agenda view — content table cell roles
-        { selector: '.k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-groupcolumn,.k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-datecolumn', attribute: 'role=rowheader', usage: 'Must have role explicitly set as it has been removed by the <table> role set (none/presentation).' },
-        { selector: '.k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-timecolumn,.k-scheduler-content>.k-scheduler-table>tbody>tr>.k-scheduler-timecolumn+td', attribute: 'role=gridcell', usage: 'Must have role explicitly set as it has been removed by the <table> role set (none/presentation).' },
-
-        // Other views (non-agenda, non-year) — none/presentation on tables
-        { selector: '.k-scheduler-dayview,.k-scheduler-weekview,.k-scheduler-monthview,.k-scheduler-timelineview', attribute: 'role=none/presentation', usage: 'All <table> elements within the Scheduler must have their semantic role removed.' },
-
-        // Times sidebar tables — role propagates to child th/tr elements
-        { selector: '.k-scheduler-times .k-scheduler-table', attribute: 'role=none/presentation', usage: 'Times sidebar tables must have their semantics removed. The role propagates to child th/tr elements, resolving empty-table-header violations.' },
-
-        // Events
-        { selector: '.k-event', attribute: 'role=button', usage: 'Indicating that the event element is interactive.' },
-        { selector: '.k-event', attribute: 'aria-label', usage: 'Label containing the title, start, and end date of the appointment.' },
-
-        // Scrollable content (non-agenda)
-        { selector: '.k-scheduler-layout:not(.k-scheduler-agendaview) .k-scheduler-content', attribute: 'tabindex=0', usage: 'Scrollable elements need to be focusable to ensure scrolling with arrow keys is available (does not apply to agenda view).' },
-    ]
-};
 
 export default Scheduler;

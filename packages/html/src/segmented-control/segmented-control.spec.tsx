@@ -22,6 +22,13 @@ export type KendoSegmentedControlProps = KendoSegmentedControlOptions & {
 
 export type KendoSegmentedControlState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="group"} Sets the proper role for the group of buttons.
+ * @aria {aria-hidden="true"} The thumb is purely decorative and should be hidden from screen readers.
+ * @ux {Exclusive selection} Only one segment can be active at a time.
+ * @ux {Active indicator} The selected segment is visually highlighted.
+ * @ux {Disabled items} Individual segments can be disabled and are non-interactive.
+ */
 export const SegmentedControl: KendoComponent<KendoSegmentedControlProps & KendoSegmentedControlState & React.HTMLAttributes<HTMLDivElement>> = (
     props:
         KendoSegmentedControlProps &
@@ -64,17 +71,14 @@ SegmentedControl.moduleName = SEGMENTED_CONTROL_MODULE_NAME;
 SegmentedControl.folderName = SEGMENTED_CONTROL_FOLDER_NAME;
 
 /**
- * @see Button ariaSpec for base button accessibility within segmented control buttons
+ * @keyboard {Tab} Moves focus into the Segmented Control to the selected button. Pressing Tab again moves focus out of the control to the next focusable element on the page.
+ * @keyboard {Shift + Tab} Moves focus out of the Segmented Control to the previous focusable element on the page.
+ * @keyboard {ArrowLeft} Moves focus to the previous button.
+ * @keyboard {ArrowRight} Moves focus to the next button.
+ * @keyboard {Enter or Space} Selects the focused button.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#button WAI-ARIA `button` Role Specification
+ * @see https://www.w3.org/TR/wai-aria-1.2/#group WAI-ARIA `group` Role Specification
  */
-SegmentedControl.ariaSpec = {
-    selector: '.k-segmented-control',
-    rules: [
-        { selector: '.k-segmented-control', attribute: 'role=group', usage: 'Sets the proper role for the group of buttons.' },
-        { selector: '.k-segmented-control-button', attribute: 'role=button or nodeName=button', usage: 'Each button must have the appropriate button role.' },
-        { selector: '.k-segmented-control-button.k-selected', attribute: 'aria-pressed=true', usage: 'Only the selected button within the group will have this attribute set to true.' },
-        { selector: '.k-segmented-control-button.k-disabled', attribute: 'aria-disabled=true', usage: 'Indicates that the button is disabled and cannot be interacted with.' },
-        { selector: '.k-segmented-control-thumb', attribute: 'aria-hidden=true', usage: 'The thumb is purely decorative and should be hidden from screen readers.' },
-    ]
-};
 
 export default SegmentedControl;

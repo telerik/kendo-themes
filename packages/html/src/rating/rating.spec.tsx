@@ -30,24 +30,20 @@ const defaultOptions = {
 /**
  * Rating component - star rating input using slider pattern.
  *
- * @accessibility
- * - Uses `role="slider"` to announce the rating as a slider
- * - Uses `aria-valuenow` for current value, `aria-valuemin` and `aria-valuemax` for range
- * - Uses `tabindex="0"` to make the element focusable (removed when disabled)
- * - Must have accessible name via `aria-label`, `aria-labelledby`, or `title`
- * - Uses `aria-disabled="true"` when disabled
- * - Uses `aria-readonly="true"` when readonly (can focus but not change)
- *
- * @example
- * ```tsx
- * // Basic rating
- * <Rating value={3} aria-label="Product rating" />
- *
- * // Readonly rating display
- * <Rating value={4.5} readonly aria-label="Average rating" />
- * ```
- *
- * @wcag 4.1.2 Name, Role, Value - slider must have accessible name and value
+
+ * @aria {role="slider"} Announces the slider role of the Rating element.
+ * @aria {aria-label|aria-labelledby|title} The Rating needs an accessible name to be assigned to it.
+ * @aria {aria-valuenow} Specifies the currently selected value in the Rating.
+ * @aria {aria-valuemin} Specifies the minimum available value in the Rating.
+ * @aria {aria-valuemax} Specifies the maximum available value in the Rating.
+ * @aria {tabindex="0"} The element must be focusable. Disabled ratings are removed from tab order.
+ * @aria {aria-disabled="true"} Rendered only when the Rating is disabled.
+ * @aria {aria-readonly="true"} Rendered only when the Rating is readonly. Readonly ratings remain focusable but their value cannot be changed.
+ * @ux {Selection} Clicking an icon selects the corresponding rating value.
+ * @ux {Hover preview} Hovering over icons previews the rating value before committing.
+ * @ux {Half precision} Supports half-value increments when half-precision mode is enabled.
+ * @ux {Read-only} When read-only, the current rating is displayed but cannot be changed.
+ * @ux {Disabled state} When disabled, the rating cannot be changed.
  */
 
 export const Rating: KendoComponent<RatingState & RatingProps & React.HTMLAttributes<HTMLSpanElement>> = (
@@ -81,7 +77,6 @@ export const Rating: KendoComponent<RatingState & RatingProps & React.HTMLAttrib
     for (let i = 0; i < outlineItems; i++) {
         listChildren.push(<RatingItem dir={dir} iconType="outline"/>);
     }
-
 
     return (
         <span
@@ -120,20 +115,14 @@ Rating.moduleName = RATING_MODULE_NAME;
 Rating.folderName = RATING_FOLDER_NAME;
 
 /**
- * Accessibility specification for Rating.
+ * @keyboard {ArrowDown or ArrowLeft} Decreases value by one rating step.
+ * @keyboard {ArrowUp or ArrowRight} Increases value by one rating step.
+ * @keyboard {Home} Sets value to the Min available value in the Rating.
+ * @keyboard {End} Sets value to the Max available value in the Rating.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#slider WAI-ARIA specification for slider
+
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html WCAG 4.1.2 Name, Role, Value — slider must have accessible name and value
  */
-Rating.ariaSpec = {
-    selector: '.k-rating',
-    rules: [
-        { selector: '.k-rating', attribute: 'role=slider', usage: 'Announces the slider role of the Rating element.' },
-        { selector: '.k-rating', attribute: 'aria-label or aria-labelledby or title', usage: 'The Rating needs an accessible name to be assigned to it.' },
-        { selector: '.k-rating', attribute: 'aria-valuenow', usage: 'Specifies the currently selected value in the Rating.' },
-        { selector: '.k-rating', attribute: 'aria-valuemin', usage: 'Specifies the minimum available value in the Rating.' },
-        { selector: '.k-rating', attribute: 'aria-valuemax', usage: 'Specifies the maximum available value in the Rating.' },
-        { selector: '.k-rating:not(.k-disabled)', attribute: 'tabindex=0', usage: 'The element must be focusable. Disabled ratings are removed from tab order.' },
-        { selector: '.k-rating.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the Rating is disabled.' },
-        { selector: '.k-rating.k-readonly', attribute: 'aria-readonly=true (when readonly)', usage: 'Rendered only when the Rating is readonly. Readonly ratings remain focusable but their value cannot be changed.' },
-    ]
-};
 
 export default Rating;

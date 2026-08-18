@@ -7,7 +7,15 @@
     @include kendo-card--theme-base();
 
     .k-card {
-        backdrop-filter: k-translucency-blur(2);
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: k-translucency-blur(2);
+            border-radius: inherit;
+            pointer-events: none;
+        }
 
         &:focus,
         &.k-focus {

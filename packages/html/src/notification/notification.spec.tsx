@@ -37,6 +37,16 @@ const defaultOptions = {
     closable: false
 };
 
+/**
+ * @aria {role="status"} Notification element should be marked as a status. Uses status instead of alert to avoid interrupting screen reader workflow.
+ * @aria {aria-live="polite"} The aria-live value must be polite so it will not obscure other essential information.
+ * @aria {aria-describedby=".k-notification-content id"} Used so that the content of the Notification will be announced by assistive technologies.
+ * @aria {aria-hidden="true"} The close button icon should not be present in the accessibility tree.
+ * @ux {Auto-dismiss} Disappears automatically after a configurable timeout.
+ * @ux {Viewport position} Can be anchored to any corner of the viewport.
+ * @ux {Status variants} Supports info, success, warning, and error types.
+ * @ux {Stacking} Multiple notifications stack and can be dismissed independently.
+ */
 export const Notification: KendoComponent<KendoNotificationProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoNotificationProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -98,31 +108,8 @@ Notification.moduleName = NOTIFICATION_MODULE_NAME;
 Notification.folderName = NOTIFICATION_FOLDER_NAME;
 
 /**
- * Accessibility specification for Notification.
- *
- * Uses role="status" (implicit aria-live="polite") instead of role="alert"
- * (implicit aria-live="assertive") because notifications are non-critical
- * status messages that should not interrupt the user's current task.
- *
- * @todo The closable notification's dismiss action is not keyboard-interactable.
- *   The close icon is currently a `<span>` with `aria-hidden="true"`, meaning it is
- *   invisible to assistive technologies and unreachable via Tab/Enter. A future
- *   improvement should render the close action as a `<button>` (or add `role="button"`
- *   with `tabindex="0"` and keydown handler) so that keyboard and screen reader users
- *   can dismiss the notification. This will require a structural change to the
- *   NotificationAction component and corresponding updates to the ariaSpec rules
- *   (e.g. adding `button-name`, `aria-label="Close"` on the dismiss button).
- *
- * @wcag 4.1.3 Status Messages - status role for notification messages
+ * @see https://www.w3.org/TR/wai-aria-1.2/#alert WAI-ARIA spec: Role Alert
+ * @see https://www.w3.org/WAI/ARIA/apg/patterns/alert/ ARIA Practices: Alert
  */
-Notification.ariaSpec = {
-    selector: '.k-notification',
-    rules: [
-        { selector: '.k-notification', attribute: 'role=status', usage: 'Notification element should be marked as a status. Uses status instead of alert to avoid interrupting screen reader workflow.' },
-        { selector: '.k-notification', attribute: 'aria-live=polite', usage: 'The aria-live value must be polite so it will not obscure other essential information.' },
-        { selector: '.k-notification', attribute: 'aria-describedby=.k-notification-content id', usage: 'Used so that the content of the Notification will be announced by assistive technologies.' },
-        { selector: '.k-notification .k-svg-i-x, .k-notification .k-i-x', attribute: 'aria-hidden=true', usage: 'The close button icon should not be present in the accessibility tree.' },
-    ]
-};
 
 export default Notification;

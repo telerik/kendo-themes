@@ -667,7 +667,7 @@
             display: block;
         }
         .k-task-pct {
-            font-size: $kendo-icon-size-xxl;
+            font-size: var(--kendo-icon-size-xxl, #{$ki-icon-size-xxl});
         }
         ul {
             line-height: normal;

@@ -1,14 +1,12 @@
 $kendo-icon-default-size: null !default;
 $kendo-icon-size: null !default;
-$kendo-icon-size-xs: null !default;
-$kendo-icon-size-sm: null !default;
-$kendo-icon-size-md: null !default;
-$kendo-icon-size-lg: null !default;
-$kendo-icon-size-xl: null !default;
-$kendo-icon-size-xxl: null !default;
-$kendo-icon-size-xxxl: null !default;
 $kendo-icon-spacing: null !default;
 $kendo-icon-padding: null !default;
 
 $kendo-accent-icon-color: null !default;
 $kendo-action-icon-color: null !default;
+
+@forward "@progress/kendo-svg-icons/scss/index.scss" with (
+    $ki-icon-size: $kendo-icon-size,
+    $ki-icon-default-size: $kendo-icon-default-size
+);

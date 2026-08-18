@@ -82,8 +82,8 @@
 
 
     // Selected state
-    .k-table-tbody .k-table-row.k-selected > .k-table-td,
-    .k-table-list .k-table-row.k-selected {
+    .k-table-tbody .k-table-row.k-selected > .k-table-td:not(.k-group-cell),
+    .k-table-list .k-table-row.k-selected:not(.k-group-cell) {
         border-color: $kendo-table-selected-border;
         color: $kendo-table-selected-text;
         background-color: $kendo-table-selected-bg;

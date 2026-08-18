@@ -9,12 +9,19 @@ const states = [];
 const options = {};
 
 export type KendoPanelBarProps = {
-    /** @aria aria-activedescendant - Points to the currently focused item */
     activeDescendant?: string;
 };
 
 const defaultOptions = {};
 
+/**
+ * @aria {role="tree"} The root element of the PanelBar has role tree.
+ * @aria {aria-activedescendant} Points to the currently focused item
+ * @ux {Expand / Collapse} Clicking a panel header toggles its content section.
+ * @ux {Single expand} Can be configured so that only one panel is open at a time.
+ * @ux {Disabled items} Individual items can be disabled and cannot be toggled.
+ * @ux {Nested items} Items can contain nested sub-items forming a tree structure.
+ */
 export const PanelBar: KendoComponent<KendoPanelBarProps & React.HTMLAttributes<HTMLUListElement>> = (
     props: KendoPanelBarProps & React.HTMLAttributes<HTMLUListElement>
 ) => {
@@ -46,24 +53,16 @@ PanelBar.moduleName = PANELBAR_MODULE_NAME;
 PanelBar.folderName = PANELBAR_FOLDER_NAME;
 
 /**
- * @ariaSpec
- * PanelBar implements the WAI-ARIA tree pattern.
+ * @keyboard {ArrowUp} Focuses the previous PanelBar item. If no previous item is available, focuses the last item.
+ * @keyboard {ArrowDown} Focuses the next PanelBar item. If no next item is available, focuses the first item.
+ * @keyboard {ArrowLeft} Collapses an expanded item. If the item is collapsed, focuses its parent.
+ * @keyboard {ArrowRight} Expands a collapsed item. If the item is expanded, focuses its first child node.
+ * @keyboard {Home} Moves focus to the first item in the PanelBar without expanding or collapsing an item.
+ * @keyboard {End} Moves focus to the last item in the PanelBar that is focusable without expanding an item.
+ * @keyboard {Enter} Selects the focused item and toggles the item if it is expandable. It also triggers its action (click or opening url).
+ * @keyboard {Space} Selects the focused item and toggles the item if it is expandable. It also triggers its action (click or opening url).
  *
- * - Root element: role="tree" with aria-activedescendant
- * - Items: role="treeitem" with aria-expanded and aria-selected
- * - Child groups: role="group", aria-hidden when parent is collapsed
+ * @see https://www.w3.org/WAI/ARIA/apg/example-index/treeview/treeview-navigation.html ARIA practices Navigation Treeview Example
  */
-PanelBar.ariaSpec = {
-    selector: '.k-panelbar',
-    rules: [
-        { selector: '.k-panelbar', attribute: 'role=tree', usage: 'The root element of the PanelBar has role tree.' },
-        { selector: '.k-panelbar', attribute: 'aria-activedescendant (when present)', usage: 'Points to the currently focused item in the PanelBar.' },
-        { selector: '.k-panelbar-group', attribute: 'role=group', usage: 'The ul element that wraps child nodes.' },
-        { selector: '.k-panelbar-item:not(.k-expanded) > .k-panelbar-group', attribute: 'aria-hidden=true', usage: 'Hides the group element from assistive technologies when its parent is not expanded.' },
-        { selector: '.k-panelbar-item', attribute: 'role=treeitem', usage: 'The li element rendered for a PanelBar item.' },
-        { selector: '.k-panelbar-item', attribute: 'aria-expanded=true/false', usage: 'Announces the expanded state of the item (if expandable).' },
-        { selector: '.k-panelbar-item', attribute: 'aria-selected=true/false', usage: 'Announces the selected state of the item.' },
-    ]
-};
 
 export default PanelBar;

@@ -27,6 +27,12 @@ export type KendoCaptchaProps = {
 
 export type KendoCaptchaState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @ux {Image challenge} Presents a visual challenge the user must solve to verify they are human.
+ * @ux {Audio alternative} An audio challenge can be requested for accessibility.
+ * @ux {Refresh} A reload button requests a new challenge image.
+ * @ux {Validation} The entered response is validated and feedback is shown inline.
+ */
 export const Captcha: KendoComponent<KendoCaptchaProps & KendoCaptchaState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCaptchaProps &
         KendoCaptchaState &
@@ -98,5 +104,16 @@ Captcha.className = CAPTCHA_CLASSNAME;
 Captcha.defaultOptions = defaultOptions;
 Captcha.moduleName = CAPTCHA_MODULE_NAME;
 Captcha.folderName = CAPTCHA_FOLDER_NAME;
+
+/**
+ * @keyboard {Tab} Navigates to the next Captcha element.
+ * @keyboard {Shift + Tab} Navigates to the previous Captcha Element.
+ * @keyboard {Enter} Presses the focused Captcha button.
+ * @keyboard {Space} Presses the focused Captcha button.
+ * @keyboard {ArrowUp} Increases the Audio control volume.
+ * @keyboard {ArrowDown} Decreases the Audio control volume.
+ *
+ * @see https://www.w3.org/TR/wai-aria-1.2/#textbox WAI-ARIA specification for textbox
+ */
 
 export default Captcha;

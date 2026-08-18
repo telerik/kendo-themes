@@ -1,0 +1,2 @@
+export const AGENT_RESPONSE_MODULE_NAME = 'agent-response';
+export const AGENT_RESPONSE_FOLDER_NAME = AGENT_RESPONSE_MODULE_NAME;

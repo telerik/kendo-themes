@@ -32,12 +32,23 @@ export type KendoTreeviewItemProps = {
     checked?: boolean;
     dir?: 'ltr' | 'rtl';
     level?: number;
-    /** @aria aria-selected="true" when node is selected */
     ariaSelected?: boolean;
 };
 
 export type KendoTreeviewItemState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="treeitem"} The li element rendered for a tree node.
+ * @aria {aria-expanded="true"|\"false"} Announces the expanded state of the node.
+ * @aria {aria-checked="true"|\"false"} Announces the checked state of the node when checkboxes are enabled.
+ * @aria {aria-label} The checkbox input must have an accessible name matching the treeview item text.
+ * @aria {tabindex="-1"} The checkbox input must not be in the tab order. Keyboard interaction is handled by the treeitem.
+ * @aria {aria-selected="true"} when node is selected
+ * @ux {Expand / Collapse} A toggle arrow reveals or hides the node's children.
+ * @ux {Selection} Clicking the label selects the node.
+ * @ux {Checkbox} An optional checkbox enables hierarchical multi-selection.
+ * @ux {Drag handle} Allows the node to be dragged to a new position within the tree.
+ */
 export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeviewItemState & React.HTMLAttributes<HTMLLIElement>> = (
     props: KendoTreeviewItemProps &
         KendoTreeviewItemState &

@@ -49,6 +49,25 @@ const defaultOptions = {
     canvasOrientation: 'horizontal'
 };
 
+/**
+ * @aria {role="textbox"} The focusable wrapper should be considered a textbox with a value that could be submitted.
+ * @aria {aria-label|aria-labelledby} The component needs an accessible name including the currently selected value.
+ * @aria {tabindex="0"} The element must be focusable.
+ * @aria {aria-disabled="true"} Rendered only when the ColorGradient is disabled.
+ * @aria {role="slider"} The 2D draghandle must have slider role for ARIA-allowed attributes.
+ * @aria {aria-orientation="undefined"} The implicit orientation for the slider must be removed for the 2D handle.
+ * @aria {aria-label} Must provide information about the purpose of the slider and the currently selected color.
+ * @aria {aria-valuetext} Must specify the values on both X and Y axis.
+ * @aria {aria-valuenow} Required by the slider role.
+ * @aria {aria-valuemin} Required by the slider role.
+ * @aria {aria-valuemax} Required by the slider role.
+ * @aria {aria-label} Must provide the name of the channel (red, green, blue, or alpha).
+ * @ux {Gradient canvas} A 2D canvas lets the user pick a color by clicking or dragging.
+ * @ux {Hue slider} A slider below the canvas adjusts the hue.
+ * @ux {Opacity slider} A slider adjusts the alpha channel of the selected color.
+ * @ux {Hex input} A text input accepts a hex color code directly.
+ * @ux {RGBA inputs} Individual inputs accept red, green, blue, and alpha values.
+ */
 export const ColorGradient: KendoComponent<KendoColorGradientProps & KendoColorGradientState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColorGradientProps &
         KendoColorGradientState &
@@ -170,33 +189,21 @@ ColorGradient.moduleName = COLORGRADIENT_MODULE_NAME;
 ColorGradient.folderName = COLORGRADIENT_FOLDER_NAME;
 
 /**
- * Accessibility specification for ColorGradient.
- *
- * @accessibility
- * - Wrapper has role=textbox with aria-label and tabindex=0
- * - HSV draghandle has aria-orientation=undefined, aria-label, aria-valuetext
- * - Disabled state uses aria-disabled=true
- * - Slider drag handles follow Slider ARIA spec
- * - NumericTextbox inputs need aria-label for channel names
- *
- * @wcag 4.1.2 Name, Role, Value - textbox pattern for color value
+ * @keyboard {Enter} Activates inner ColorGradient navigation.
+ * @keyboard {Tab} Navigates to the next focusable element on the page.
+ * @keyboard {Shift + Tab} Navigates to the previous focusable element on the page.
+ * @keyboard {Escape} Moves focus back to wrapper element. Deactivates inner ColorGradient navigation.
+ * @keyboard {Tab} Navigates to the next focusable element in the ColorGradient. If current focus is on the last element, moves focus to the first focusable item in the component.
+ * @keyboard {Shift + Tab} Navigates to the previous focusable element in the ColorGradient. If current focus is on the first element, moves focus to the last focusable item in the component.
+ * @keyboard {Enter} For button items, ColorGradient executes the currently focused button action.
+ * @keyboard {ArrowUp} Moves slider up by large step.
+ * @keyboard {ArrowDown} Moves slider down by large step.
+ * @keyboard {ArrowLeft} Moves slider left by large step.
+ * @keyboard {ArrowRight} Moves slider right by large step.
+ * @keyboard {Shift + ArrowUp} Moves slider up by small step.
+ * @keyboard {Shift + ArrowDown} Moves slider down by small step.
+ * @keyboard {Shift + ArrowLeft} Moves slider left by small step.
+ * @keyboard {Shift + ArrowRight} Moves slider right by small step.
  */
-ColorGradient.ariaSpec = {
-    selector: '.k-colorgradient',
-    rules: [
-        { selector: '.k-colorgradient', attribute: 'role=textbox', usage: 'The focusable wrapper should be considered a textbox with a value that could be submitted.' },
-        { selector: '.k-colorgradient', attribute: 'aria-label or aria-labelledby', usage: 'The component needs an accessible name including the currently selected value.' },
-        { selector: '.k-colorgradient', attribute: 'tabindex=0', usage: 'The element must be focusable.' },
-        { selector: '.k-colorgradient.k-disabled', attribute: 'aria-disabled=true', usage: 'Rendered only when the ColorGradient is disabled.' },
-        { selector: '.k-hsv-draghandle', attribute: 'role=slider', usage: 'The 2D draghandle must have slider role for ARIA-allowed attributes.' },
-        { selector: '.k-hsv-draghandle', attribute: 'aria-orientation=undefined', usage: 'The implicit orientation for the slider must be removed for the 2D handle.' },
-        { selector: '.k-hsv-draghandle', attribute: 'aria-label', usage: 'Must provide information about the purpose of the slider and the currently selected color.' },
-        { selector: '.k-hsv-draghandle', attribute: 'aria-valuetext', usage: 'Must specify the values on both X and Y axis.' },
-        { selector: '.k-hsv-draghandle', attribute: 'aria-valuenow', usage: 'Required by the slider role.' },
-        { selector: '.k-hsv-draghandle', attribute: 'aria-valuemin', usage: 'Required by the slider role.' },
-        { selector: '.k-hsv-draghandle', attribute: 'aria-valuemax', usage: 'Required by the slider role.' },
-        { selector: '.k-numerictextbox>.k-input-inner', attribute: 'aria-label', usage: 'Must provide the name of the channel (red, green, blue, or alpha).' },
-    ]
-};
 
 export default ColorGradient;

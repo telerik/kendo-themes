@@ -23,6 +23,13 @@ const defaultOptions = {};
 
 export type KendoColumnMenuItemState = { [K in (typeof states)[number]]?: boolean };
 
+/**
+ * @aria {role="button"} Sets column menu item role to button.
+ * @aria {tabindex="0"} Sets column menu item tabindex.
+ * @aria {aria-expanded="true"|\"false"} Sets the expanded state of an expandable item.
+ * @aria {aria-controls} Points to id attribute of the content whose visibility the expandable item controls.
+ * @aria {id} Unique and deterministic id linked to the aria-controls attribute of the corresponding expandable item.
+ */
 export const ColumnMenuItem: KendoComponent<KendoColumnMenuItemProps & KendoColumnMenuItemState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoColumnMenuItemProps & KendoColumnMenuItemState &
         React.HTMLAttributes<HTMLDivElement>

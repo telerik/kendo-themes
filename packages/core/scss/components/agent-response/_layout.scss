@@ -1,0 +1,126 @@
+@use "../../mixins/index.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-agent-response--layout-base() {
+    // Agent Step
+    .k-agent-step-icon {
+        align-self: start;
+        margin-top: $kendo-agent-step-icon-margin-top;
+        aspect-ratio: 1;
+    }
+
+    .k-agent-step-label,
+    .k-agent-step-sep,
+    .k-agent-step-secondary,
+    .k-agent-step-added,
+    .k-agent-step-removed {
+        font-size: $kendo-agent-step-font-size;
+    }
+
+    .k-agent-step-diffstat {
+        display: inline-flex;
+        gap: k-spacing(1);
+    }
+
+    .k-agent-step-head {
+        cursor: pointer;
+        padding-inline: $kendo-agent-step-padding-x;
+        padding-inline-end: $kendo-agent-step-padding-end;
+        padding-block: $kendo-agent-step-padding-y;
+        display: flex;
+        align-items: center;
+        gap: $kendo-agent-step-gap;
+        width: fit-content;
+        max-width: 100%;
+        margin: 0;
+        border: 0;
+        background: none;
+        font: inherit;
+        color: inherit;
+        text-align: inherit;
+        outline: none;
+        appearance: none;
+        @include border-radius( $kendo-agent-step-border-radius );
+    }
+
+    .k-agent-step-content {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: $kendo-agent-step-gap;
+        min-width: 0;
+
+        .k-badge {
+            gap: k-spacing(0.5);
+        }
+    }
+
+    .k-agent-completed > .k-agent-step-head .k-agent-step-label {
+        font-weight: var(--kendo-font-weight-medium);
+    }
+
+    .k-agent-step-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: $kendo-agent-step-body-font-size;
+    }
+
+    // Reasoning Specific Styles
+    .k-reasoning {
+    }
+
+    // Tool Call Specific Styles
+    .k-tool-call .k-agent-step-body {
+        padding-inline-start: $kendo-tool-call-indent;
+        padding-block-end: $kendo-tool-call-padding-y;
+        gap: k-spacing(2);
+
+        .k-card {
+            box-shadow: none;
+        }
+
+        .k-pre {
+            margin: 0;
+            border-radius: $kendo-tool-call-pre-border-radius;
+        }
+    }
+
+    // Chain of Thought Specific Styles
+    .k-chain-of-thought {
+        .k-agent-step-body {
+            padding-block: k-spacing(2);
+            gap: k-spacing(1);
+        }
+    }
+
+    .k-thought {
+        display: flex;
+        gap: $kendo-thought-gap;
+        padding-inline-start: $kendo-thought-padding-x;
+
+        .k-agent-step-icon-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $kendo-thought-icon-col-gap;
+        }
+
+        .k-agent-step-body {
+            padding-block: 0;
+        }
+
+        &:not(:last-child) .k-agent-step-content {
+            margin-bottom: $kendo-thought-spacing;
+        }
+
+        &:has(+ .k-thought) .k-agent-step-icon-col::after {
+            content: "";
+            height: 100%;
+            width: 1px;
+            margin-inline: -1px;
+        }
+    }
+}

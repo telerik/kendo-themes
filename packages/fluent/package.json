@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-fluent",
   "description": "A css variables based theme for Kendo UI that follows the Fluent design system guidelines.",
-  "version": "14.1.1-dev.3",
+  "version": "14.5.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -44,9 +44,8 @@
     "sass:compile:dist": "npx sass --style=compressed --no-source-map --load-path=../../node_modules ./dist:dist",
     "sass:watch": "npx sass --no-source-map --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
     "css:prefix": "npx postcss --replace ./dist/**/*.css",
-    "docs": "node ../../scripts/sassdoc.js",
+    "docs": "npm run resolve-variables && node ../../scripts/sassdoc.js",
     "docs:check": "npm run docs && git diff --name-only --exit-code -- docs",
-    "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
     "nuget-pack": "jq '.version' package.json | xargs nuget pack package.nuspec -Version",
     "nuget-push": "nuget push *.nupkg -ApiKey $NUGET_API_KEY -Source $NUGET_FEED -SkipDuplicate",
@@ -54,9 +53,9 @@
     "postpublish": "echo 'no postpublish for the Fluent theme'"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "^4.9.0",
-    "@progress/kendo-theme-core": "14.1.1-dev.3",
-    "@progress/kendo-theme-utils": "14.1.1-dev.3"
+    "@progress/kendo-svg-icons": "^4.11.0",
+    "@progress/kendo-theme-core": "14.5.1-dev.0",
+    "@progress/kendo-theme-utils": "14.5.1-dev.0"
   },
   "directories": {
     "doc": "docs",

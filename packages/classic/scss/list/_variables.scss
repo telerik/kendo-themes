@@ -64,6 +64,16 @@ $kendo-list-md-header-padding-y: k-spacing(1) !default;
 /// @group list
 $kendo-list-lg-header-padding-y: k-spacing(1.5) !default;
 
+/// The vertical padding of the small List sticky header.
+/// @group list
+$kendo-list-sm-sticky-header-padding-y: k-spacing(1.5) !default;
+/// The vertical padding of the medium List sticky header.
+/// @group list
+$kendo-list-md-sticky-header-padding-y: k-spacing(2) !default;
+/// The vertical padding of the large List sticky header.
+/// @group list
+$kendo-list-lg-sticky-header-padding-y: k-spacing(2.5) !default;
+
 /// The border width of the List header.
 /// @group list
 $kendo-list-header-border-width: 0 0 1px !default;
@@ -290,7 +300,6 @@ $kendo-list-header-border: inherit !default;
 /// @group list
 $kendo-list-header-shadow: none !default;
 
-
 /// The background color of the List items.
 /// @group list
 $kendo-list-item-bg: null !default;
@@ -317,6 +326,10 @@ $kendo-list-item-focus-text: null !default;
 /// The box shadow of the focused List items.
 /// @group list
 $kendo-list-item-focus-shadow: inset 0 0 0 2px k-color(border-alt) !default;
+
+/// The box shadow of the List sticky header.
+/// @group list
+$kendo-list-sticky-header-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08) !default;
 
 /// The background color of the selected List items.
 /// @group list
@@ -378,6 +391,9 @@ $kendo-list-item-description-text: k-color(subtle) !default;
     $kendo-list-sm-header-padding-y: $kendo-list-sm-header-padding-y,
     $kendo-list-md-header-padding-y: $kendo-list-md-header-padding-y,
     $kendo-list-lg-header-padding-y: $kendo-list-lg-header-padding-y,
+    $kendo-list-sm-sticky-header-padding-y: $kendo-list-sm-sticky-header-padding-y,
+    $kendo-list-md-sticky-header-padding-y: $kendo-list-md-sticky-header-padding-y,
+    $kendo-list-lg-sticky-header-padding-y: $kendo-list-lg-sticky-header-padding-y,
     $kendo-list-header-border-width: $kendo-list-header-border-width,
     $kendo-list-header-font-size: $kendo-list-header-font-size,
     $kendo-list-sm-header-font-size: $kendo-list-sm-header-font-size,
@@ -453,6 +469,7 @@ $kendo-list-item-description-text: k-color(subtle) !default;
     $kendo-list-item-focus-bg: $kendo-list-item-focus-bg,
     $kendo-list-item-focus-text: $kendo-list-item-focus-text,
     $kendo-list-item-focus-shadow: $kendo-list-item-focus-shadow,
+    $kendo-list-sticky-header-shadow: $kendo-list-sticky-header-shadow,
     $kendo-list-item-selected-bg: $kendo-list-item-selected-bg,
     $kendo-list-item-selected-text: $kendo-list-item-selected-text,
     $kendo-list-item-selected-hover-bg: $kendo-list-item-selected-hover-bg,
