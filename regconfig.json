@@ -9,9 +9,10 @@
   },
   "plugins": {
     "reg-keygen-git-hash-plugin": true,
-    "reg-publish-gh-pages-plugin": {
+    "reg-fetch-gh-pages-plugin": {
       "branch": "gh-pages",
-      "outDir": "reports"
+      "outDir": "reports",
+      "includeCommitHash": true
     }
   }
 }

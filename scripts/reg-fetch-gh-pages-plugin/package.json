@@ -1,0 +1,7 @@
+{
+  "name": "reg-fetch-gh-pages-plugin",
+  "version": "1.0.0",
+  "description": "Local reg-suit publisher plugin: delegates publish() to reg-publish-gh-pages-plugin and adds a working fetch() that pulls the previously published baseline from the gh-pages branch.",
+  "private": true,
+  "main": "index.js"
+}

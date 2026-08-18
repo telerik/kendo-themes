@@ -29,11 +29,35 @@ jobs:
     needs: [ prime-cache ]
 
 
+  # Every merge to develop must publish a baseline snapshot, so PRs branching
+  # off develop have something to diff against (see reg-fetch-gh-pages-plugin).
+  compile-themes:
+    name: Compile themes
+    uses: ./.github/workflows/_compile-themes.yml
+
+  build-html:
+    name: Build HTML devkit
+    uses: ./.github/workflows/_build-html.yml
+
+  create-screenshots:
+    name: Create screenshots
+    uses: ./.github/workflows/_create-screenshots.yml
+    needs: [ compile-themes, build-html ]
+
+  visual-regression:
+    name: Visual regression
+    needs: [ create-screenshots ]
+    permissions:
+      contents: write        # publish baseline to gh-pages
+      pull-requests: write
+    uses: ./.github/workflows/_visual-regression.yml
+
+
   ci-develop:
     # The name of the last job is used for the branch protection status check
     name: CI Develop
     runs-on: ubuntu-latest
-    needs: [ lint-scripts, lint-styles ]
+    needs: [ lint-scripts, lint-styles, visual-regression ]
 
     steps:
 
