@@ -45,6 +45,7 @@
     "postcss-cli": "^11.0.0",
     "postcss-selector-parser": "^7.1.0",
     "reg-cli": "^0.18.16",
+    "reg-fetch-gh-pages-plugin": "file:./scripts/reg-fetch-gh-pages-plugin",
     "reg-keygen-git-hash-plugin": "^0.14.5",
     "reg-publish-gh-pages-plugin": "^0.2.2",
     "reg-suit": "^0.14.5",
