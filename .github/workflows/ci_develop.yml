@@ -51,6 +51,8 @@ jobs:
       contents: write        # publish baseline to gh-pages
       pull-requests: write
     uses: ./.github/workflows/_visual-regression.yml
+    with:
+      baseline: true
 
 
   ci-develop:

@@ -1,0 +1,39 @@
+name: Cleanup visual regression report
+
+# PR/feature-branch visual-regression runs publish to reports/pr-<number>/ and
+# republish over that same folder on every push (see _visual-regression.yml
+# and reg-fetch-gh-pages-plugin), so nothing accumulates while the PR is open.
+# Once the PR closes (merged or not) there's no further use for that report,
+# so remove it from gh-pages here to keep the branch bounded by open-PR count
+# rather than growing forever.
+
+on:
+  pull_request:
+    types: [closed]
+
+concurrency:
+  group: cleanup-visual-regression-${{ github.event.pull_request.number }}
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Remove PR report folder
+        run: |
+          DIR="reports/pr-${{ github.event.pull_request.number }}"
+          if [ -d "$DIR" ]; then
+            git config user.name "kendo-bot"
+            git config user.email "kendouiteam@progress.com"
+            git rm -r --ignore-unmatch "$DIR"
+            git commit -m "chore(ci): remove visual regression report for closed PR #${{ github.event.pull_request.number }}"
+            git push origin gh-pages
+          else
+            echo "No report folder found at $DIR, nothing to clean up."
+          fi
