@@ -66,20 +66,29 @@ jobs:
         # real "Report URL: ..." line reg-suit prints instead of hardcoding it.
         run: npx reg-suit run 2>&1 | tee reg-suit-output.log || true
 
-      - name: Ensure .nojekyll on gh-pages
+      - name: Read publish target
+        id: publish-target
         run: |
-          if git ls-remote --exit-code --heads origin gh-pages > /dev/null 2>&1; then
-            git fetch origin gh-pages
-            if ! git cat-file -e origin/gh-pages:.nojekyll 2>/dev/null; then
-              git worktree add --quiet .gh-pages-nojekyll origin/gh-pages
-              touch .gh-pages-nojekyll/.nojekyll
-              git -C .gh-pages-nojekyll add .nojekyll
-              git -C .gh-pages-nojekyll commit -q -m "chore: add .nojekyll"
-              git -C .gh-pages-nojekyll push origin HEAD:gh-pages
-              git worktree remove --force .gh-pages-nojekyll
-            fi
+          if [ -f reg-publish-info.json ]; then
+            node -e "const i=require('./reg-publish-info.json'); console.log('source-dir='+i.sourceDir); console.log('target-dir='+i.targetDir);" >> "$GITHUB_OUTPUT"
           fi
-        continue-on-error: true   # best-effort; a missed .nojekyll only affects underscore-prefixed asset paths
+
+      # reg-suit's own publish plugin shells out to `git commit`/`git push`
+      # against a worktree of the *entire* gh-pages history, which reliably
+      # crashes with ENOBUFS once a run has a real (non-"new") diff to report
+      # - see PR #5997 discussion. Publishing is done here instead, with
+      # keep_files so unrelated report folders already on gh-pages survive.
+      - name: Publish report to gh-pages
+        if: steps.publish-target.outputs.target-dir != ''
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ github.token }}
+          publish_branch: gh-pages
+          publish_dir: ${{ steps.publish-target.outputs.source-dir }}
+          destination_dir: ${{ steps.publish-target.outputs.target-dir }}
+          keep_files: true
+          user_name: kendo-bot
+          user_email: kendouiteam@progress.com
 
       - name: Summarize result
         id: summary
