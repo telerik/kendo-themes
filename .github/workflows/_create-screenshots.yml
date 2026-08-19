@@ -9,7 +9,49 @@ concurrency:
 
 jobs:
 
+  # Each matrix job below used to run its own `playwright install --with-deps`,
+  # so every run did 6 redundant full Chromium downloads in parallel - besides
+  # the waste, hammering the same CDN with 6 concurrent downloads made runs
+  # prone to stalling under any upstream flakiness. Download once here, cache
+  # it, and have the matrix jobs restore that cache instead.
+  prime-playwright:
+    name: Prime Playwright browser cache
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v7
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v6
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Cache Playwright browsers
+        id: cache-playwright
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Playwright browser
+        if: steps.cache-playwright.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
   run:
+    needs: [ prime-playwright ]
     runs-on: ubuntu-latest
     # Phase 2 (future): switch to the pinned GHCR image for font-deterministic capture:
     #   container: ghcr.io/telerik/kendo-visual:1
@@ -42,8 +84,17 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
-      - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
+      - name: Restore Playwright browser cache
+        uses: actions/cache/restore@v6
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      # The browser binary is restored from cache above; system libs
+      # (--with-deps' apt-get side) still need installing per fresh VM, but
+      # that's a fast local apt install, not a multi-hundred-MB CDN download.
+      - name: Install Playwright system dependencies
+        run: npx playwright install-deps chromium
 
       - name: Download artifacts
         uses: actions/download-artifact@v8
