@@ -254,13 +254,6 @@ $kendo-chart-tooltip-padding-y: k-spacing(0.5) !default;
 /// @group charts
 $kendo-chart-tooltip-transition: left k-transition(fade-in), top k-transition(fade-in) !default;
 
-/// The text color of the chart tooltip.
-/// @group charts
-$kendo-chart-tooltip-color: k-color(app-surface) !default;
-/// The inverse text color of the chart tooltip.
-/// @group charts
-$kendo-chart-tooltip-color-inverse: k-color(on-app-surface) !default;
-
 /// The background color of the Chart.
 /// @group charts
 $kendo-chart-bg: k-color(surface) !default;
@@ -455,8 +448,6 @@ $kendo-gauge-track-bg: k-color(primary-subtle) !default;
     $kendo-chart-area-inactive-opacity: $kendo-chart-area-inactive-opacity,
     $kendo-chart-line-inactive-opacity: $kendo-chart-line-inactive-opacity,
     $kendo-chart-tooltip-transition: $kendo-chart-tooltip-transition,
-    $kendo-chart-tooltip-color: $kendo-chart-tooltip-color,
-    $kendo-chart-tooltip-color-inverse: $kendo-chart-tooltip-color-inverse,
     $kendo-chart-bg: $kendo-chart-bg,
     $kendo-chart-text: $kendo-chart-text,
     $kendo-chart-border: $kendo-chart-border,
