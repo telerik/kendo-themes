@@ -136,6 +136,40 @@ jobs:
           user_name: kendo-bot
           user_email: kendouiteam@progress.com
 
+      # Baseline runs publish under reports/<commit-sha>/ (see "Resolve report
+      # key" above - REG_REPORT_KEY is only set for PR runs), and fetch() only
+      # ever needs the single latest one: reg-keygen-git-hash-plugin resolves
+      # the expected key to the merge-base against develop, which for an
+      # up-to-date PR branch is the most recent baseline commit. Without this,
+      # every merge to develop would leave its baseline behind forever,
+      # reintroducing the unbounded growth this PR replaces (~200MB/merge).
+      # A stale/un-rebased PR branch whose baseline got pruned just falls back
+      # to "treat as new" (see reg-fetch-gh-pages-plugin's fetch()) rather than
+      # failing.
+      - name: Prune old baseline reports
+        if: ${{ inputs.baseline && steps.publish-target.outputs.target-dir != '' }}
+        run: |
+          git fetch --depth 1 origin gh-pages
+          git worktree add gh-pages-prune origin/gh-pages
+
+          KEEP="$(basename "${{ steps.publish-target.outputs.target-dir }}")"
+          cd gh-pages-prune
+
+          for dir in reports/*/; do
+            name="$(basename "$dir")"
+            [[ "$name" == pr-* || "$name" == "$KEEP" ]] && continue
+            git rm -rq --ignore-unmatch "$dir"
+          done
+
+          if ! git diff --cached --quiet; then
+            git config user.name "kendo-bot"
+            git config user.email "kendouiteam@progress.com"
+            git commit -q -m "chore(ci): prune stale visual regression baselines, keep $KEEP"
+            # HEAD is detached (git worktree add checked out origin/gh-pages
+            # directly, no local gh-pages branch) - push it explicitly as one.
+            git push origin HEAD:gh-pages
+          fi
+
       - name: Summarize result
         id: summary
         uses: actions/github-script@v9
