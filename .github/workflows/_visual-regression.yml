@@ -36,7 +36,12 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 0      # reg-keygen-git-hash-plugin needs full history
+          # reg-keygen-git-hash-plugin needs full commit history, but only the
+          # commit graph - not file contents. A blobless partial clone gets the
+          # same history for a fraction of the transfer on a repo with this many
+          # historical image-heavy commits.
+          fetch-depth: 0
+          filter: blob:none
 
       - id: setup-node
         uses: actions/setup-node@v6
