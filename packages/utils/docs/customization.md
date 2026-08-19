@@ -5557,7 +5557,7 @@ This is equivalent to `justify-content: end;`.
 
 
 
-### `.k-justify-content-selft-start`
+### `.k-justify-content-self-start`
 
 This is equivalent to `justify-content: flex-start;`.
 
@@ -5648,7 +5648,7 @@ This is equivalent to `justify-items: end;`.
 
 
 
-### `.k-justify-items-selft-start`
+### `.k-justify-items-self-start`
 
 This is equivalent to `justify-items: flex-start;`.
 
@@ -5662,7 +5662,7 @@ This is equivalent to `justify-items: flex-end;`.
 
 
 
-### `.k-justify-items-selft-start`
+### `.k-justify-items-self-start`
 
 This is equivalent to `justify-items: self-start;`.
 
@@ -5753,7 +5753,7 @@ This is equivalent to `justify-self: end;`.
 
 
 
-### `.k-justify-self-selft-start`
+### `.k-justify-self-self-start`
 
 This is equivalent to `justify-self: flex-start;`.
 
@@ -5767,7 +5767,7 @@ This is equivalent to `justify-self: flex-end;`.
 
 
 
-### `.k-justify-self-selft-start`
+### `.k-justify-self-self-start`
 
 This is equivalent to `justify-self: self-start;`.
 
@@ -6117,14 +6117,14 @@ This is equivalent to `margin-right: -1px;`.
 
 
 
-### `.k-mt-0\.5`
+### `.k-mr-0\.5`
 
 This is equivalent to `margin-right: 0.125rem;`.
 
 
 
 
-### `.k-mt--0\.5`
+### `.k-mr--0\.5`
 
 This is equivalent to `margin-right: -0.125rem;`.
 
@@ -7993,7 +7993,7 @@ This is equivalent to `place-content: end;`.
 
 
 
-### `.k-place-content-selft-start`
+### `.k-place-content-self-start`
 
 This is equivalent to `place-content: flex-start;`.
 
@@ -8007,7 +8007,7 @@ This is equivalent to `place-content: flex-end;`.
 
 
 
-### `.k-place-content-selft-start`
+### `.k-place-content-self-start`
 
 This is equivalent to `place-content: self-start;`.
 
