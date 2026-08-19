@@ -1,6 +1,16 @@
 name: Visual regression
 on:
   workflow_call:
+    inputs:
+      baseline:
+        description: >
+          True for the develop-branch baseline publish (ci_develop.yml).
+          Keeps the per-commit report key so fetch() can look up an exact
+          baseline commit. False (default) for PR/feature-branch runs, which
+          publish under reports/pr-<number>/ instead, see "Resolve report
+          key" below.
+        type: boolean
+        default: false
     outputs:
       report-url:
         value: ${{ jobs.run.outputs.report-url }}
@@ -57,13 +67,40 @@ jobs:
           git config user.name "kendo-bot"
           git config user.email "kendouiteam@progress.com"
 
+      # Baseline (develop) runs keep the per-commit report key. PR/feature
+      # branch runs republish over reports/pr-<number>/ instead, so pushing
+      # again to the same PR doesn't leave one report folder per commit
+      # behind - see reg-fetch-gh-pages-plugin. Also drives which PR (if any)
+      # gets the result comment below, since this workflow is push-triggered
+      # and has no pull_request context of its own.
+      - name: Resolve report key
+        id: resolve-report-key
+        if: ${{ !inputs.baseline }}
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+            });
+            const openPr = prs.find(pr => pr.state === 'open');
+            if (openPr) {
+              core.exportVariable('REG_REPORT_KEY', `pr-${openPr.number}`);
+              core.setOutput('pr-number', String(openPr.number));
+              core.info(`Publishing under reports/pr-${openPr.number}/ (PR #${openPr.number})`);
+            } else {
+              core.info('No open PR found for this commit; falling back to per-commit report key.');
+            }
+
       - name: Run reg-suit
         env:
           GITHUB_TOKEN: ${{ github.token }}
         # visual change is NOT a hard failure; review is human.
-        # Output is captured because each run now publishes under a per-commit
-        # path (reports/<key>/) - the "Summarize result" step below parses the
-        # real "Report URL: ..." line reg-suit prints instead of hardcoding it.
+        # Output is captured because each run publishes under its own report
+        # key (reports/<key>/, see "Resolve report key" above) - the
+        # "Summarize result" step below parses the real "Report URL: ..."
+        # line reg-suit prints instead of hardcoding one.
         run: npx reg-suit run 2>&1 | tee reg-suit-output.log || true
 
       - name: Read publish target
@@ -76,8 +113,12 @@ jobs:
       # reg-suit's own publish plugin shells out to `git commit`/`git push`
       # against a worktree of the *entire* gh-pages history, which reliably
       # crashes with ENOBUFS once a run has a real (non-"new") diff to report
-      # - see PR #5997 discussion. Publishing is done here instead, with
-      # keep_files so unrelated report folders already on gh-pages survive.
+      # - see PR #5997 discussion. Publishing is done here instead. With
+      # destination_dir set, keep_files:false only clears *that* subfolder
+      # before copying (see peaceiris/actions-gh-pages' setRepo()) - other
+      # report folders on gh-pages are untouched, and for PR runs it wipes
+      # any file that dropped out of the report since the last push instead
+      # of leaving it behind under reports/pr-<number>/.
       - name: Publish report to gh-pages
         if: steps.publish-target.outputs.target-dir != ''
         uses: peaceiris/actions-gh-pages@v3
@@ -86,7 +127,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ${{ steps.publish-target.outputs.source-dir }}
           destination_dir: ${{ steps.publish-target.outputs.target-dir }}
-          keep_files: true
+          keep_files: false
           user_name: kendo-bot
           user_email: kendouiteam@progress.com
 
@@ -102,8 +143,9 @@ jobs:
             const deleted = out.deletedItems.length;
             const passed  = out.passedItems.length;
 
-            // Each run now publishes under a per-commit path (reports/<key>/),
-            // so read the real URL reg-suit printed instead of hardcoding one.
+            // Each run publishes under its own report key (reports/<key>/,
+            // see "Resolve report key" above) - read the real URL reg-suit
+            // printed instead of hardcoding one.
             const log = fs.existsSync('reg-suit-output.log') ? fs.readFileSync('reg-suit-output.log', 'utf8') : '';
             const match = [...log.matchAll(/Report URL:\s*(\S+)/g)].pop();
             const reportUrl = match ? match[1] : `https://${context.repo.owner}.github.io/${context.repo.repo}/reports/`;
@@ -111,7 +153,11 @@ jobs:
             core.setOutput('changed', String(changed));
             core.setOutput('new', String(added));
 
-            if (!context.issue.number) return;   // only comment on PR events
+            // This workflow is push-triggered, so there's no pull_request
+            // context (context.issue.number is always unset here) - use the
+            // PR resolved in "Resolve report key" instead.
+            const issue_number = Number('${{ steps.resolve-report-key.outputs.pr-number }}') || undefined;
+            if (!issue_number) return;   // no open PR for this commit (or a baseline run)
             const marker = '<!-- reg-suit-visual-report -->';
             const body = [
               marker,
@@ -127,7 +173,6 @@ jobs:
             ].join('\n');
 
             const { owner, repo } = context.repo;
-            const issue_number = context.issue.number;
             const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number });
             const existing = comments.find(c => c.body && c.body.includes(marker));
             if (existing) {
