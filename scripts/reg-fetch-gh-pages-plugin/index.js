@@ -19,6 +19,16 @@
  * publish target to the workflow, which pushes it with
  * `peaceiris/actions-gh-pages` instead - a purpose-built action that doesn't
  * choke on large generated-asset commits.
+ *
+ * Report key: `publish()` normally namespaces the report under the commit
+ * hash key reg-suit computed (`reg-keygen-git-hash-plugin`). For PR/feature
+ * branch runs, the workflow instead sets `REG_REPORT_KEY=pr-<number>` before
+ * invoking reg-suit, so every push to the same PR republishes over the same
+ * `reports/pr-<number>/` folder instead of piling up one folder per commit.
+ * `_visual-regression.yml`'s cleanup workflow deletes that folder once the PR
+ * closes. Baseline publishes from `develop` (`ci_develop.yml`, `baseline:
+ * true`) never set that env var, so they keep the per-commit key - later
+ * `fetch()` calls look up an exact baseline commit, not a PR.
  */
 
 const { execFileSync } = require("node:child_process");
@@ -38,7 +48,10 @@ class GhPagesFetchPublisherPlugin {
 
   publish(key) {
     const info = getRepoInfo();
-    const targetDir = [this.outDir, this.includeCommitHash ? key : ""].filter(Boolean).join("/");
+    // REG_REPORT_KEY (set by the workflow for PR runs) overrides the default
+    // commit-hash key so every push to the same PR republishes in place.
+    const reportKey = process.env.REG_REPORT_KEY || key;
+    const targetDir = [this.outDir, this.includeCommitHash ? reportKey : ""].filter(Boolean).join("/");
 
     if (!targetDir) {
       this.logger.warn("Publish skipped. Set outDir option or enable includeCommitHash.");
