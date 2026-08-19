@@ -3,20 +3,29 @@
 /**
  * Custom reg-suit publisher plugin.
  *
- * `reg-publish-gh-pages-plugin` only implements `publish()` — its `fetch()`
- * is a documented no-op, which means reg-suit never had a real baseline to
- * diff against and every run was reported as "all new".
+ * `reg-publish-gh-pages-plugin` bundles both `fetch()` and `publish()`, but
+ * neither is usable as-is for this repo's report volume:
+ *  - its `fetch()` is a documented no-op, so reg-suit never had a real
+ *    baseline to diff against and every run was reported as "all new".
+ *  - its `publish()` shells out to `git commit`/`git push` against a
+ *    `git worktree` checkout of the *entire* gh-pages history. A real (not
+ *    "new") comparison mirrors `actual/`+`expected/` for every compared item
+ *    (~9,900 files for this repo), and that commit reliably crashes the
+ *    runner with ENOBUFS - see PR #5997 discussion for the full analysis.
  *
- * This plugin keeps the same, working gh-pages deploy logic for `publish()`
- * (delegated to the official plugin) and adds a real `fetch()`: it reads the
- * previously published "actual" snapshot for the expected commit key back
- * from the `gh-pages` branch so reg-cli has something to compare against.
+ * This plugin implements a real `fetch()` (reads the previously published
+ * "actual" snapshot for the expected commit key back from `gh-pages`) and
+ * leaves `publish()` to only build the report locally + hand off the
+ * publish target to the workflow, which pushes it with
+ * `peaceiris/actions-gh-pages` instead - a purpose-built action that doesn't
+ * choke on large generated-asset commits.
  */
 
 const { execFileSync } = require("node:child_process");
 const fs = require("node:fs");
+const path = require("node:path");
 
-const { GhPagesPublisherPlugin } = require("reg-publish-gh-pages-plugin/lib/publisher");
+const { getRepoInfo } = require("reg-publish-gh-pages-plugin/lib/git-util");
 
 class GhPagesFetchPublisherPlugin {
   init(config) {
@@ -24,14 +33,33 @@ class GhPagesFetchPublisherPlugin {
     this.workingDirs = config.workingDirs;
     this.branch = config.options.branch || "gh-pages";
     this.outDir = config.options.outDir || "";
-
-    // publish() is battle-tested already - delegate to it as-is.
-    this._publisher = new GhPagesPublisherPlugin();
-    this._publisher.init(config);
+    this.includeCommitHash = config.options.includeCommitHash ?? false;
   }
 
   publish(key) {
-    return this._publisher.publish(key);
+    const info = getRepoInfo();
+    const targetDir = [this.outDir, this.includeCommitHash ? key : ""].filter(Boolean).join("/");
+
+    if (!targetDir) {
+      this.logger.warn("Publish skipped. Set outDir option or enable includeCommitHash.");
+      return Promise.resolve({ reportUrl: undefined });
+    }
+
+    // Don't push here - just leave the report on disk and tell the workflow
+    // where to publish it from/to. The actual gh-pages push is done by the
+    // `peaceiris/actions-gh-pages` step in _visual-regression.yml.
+    const publishInfo = { sourceDir: this.workingDirs.base, targetDir };
+    fs.writeFileSync(path.join(process.cwd(), "reg-publish-info.json"), JSON.stringify(publishInfo));
+
+    const reportUrl = info ? [`https://${info.owner}.github.io`, info.repo, targetDir].join("/").replace(/\/?$/, "/") : undefined;
+
+    if (reportUrl) {
+      this.logger.info(`Report URL: ${reportUrl}`);
+    } else {
+      this.logger.warn("Unable to determine repository info. Report URL will not be available.");
+    }
+
+    return Promise.resolve({ reportUrl });
   }
 
   fetch(expectedKey) {
