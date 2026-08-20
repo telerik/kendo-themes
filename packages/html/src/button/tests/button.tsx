@@ -10,7 +10,7 @@ const styles = `
 export default () => (
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid">
+        <div id="test-area" className="k-d-grid" data-smoke-test="markup-diff">
             <span></span>
             <span>Normal</span>
             {Button.states.filter(state => state !== 'generating')?.map((state) => (
