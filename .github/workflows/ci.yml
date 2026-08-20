@@ -31,6 +31,8 @@ jobs:
 
   render-test-pages:
     name: Render test pages
+    permissions:
+      contents: write   # commit regenerated markup snapshots back to the branch
     uses: ./.github/workflows/_render-test-pages.yml
     with:
       force-render: NO
