@@ -116,12 +116,17 @@ jobs:
         run: |
           npm run test:render-test-pages
 
+      - name: Configure git identity
+        run: |
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+
       - name: Pack test pages
         env:
           UPLOAD_POLICY: ${{ inputs.upload-policy }}
         run: |
           HAS_CHANGES=NO
-          git add .
+          git add tests/
           git diff --cached --exit-code --quiet -- tests/ || HAS_CHANGES=YES
 
           echo "Has changes: $HAS_CHANGES"
@@ -158,3 +163,15 @@ jobs:
           name: test-pages
           path: test-pages.tar
           if-no-files-found: warn
+
+      # Keeps the markup snapshots under tests/ (used by the "a11y" job, see
+      # ci.yml) in sync with packages/html - independent of the visual
+      # (screenshot) pipeline, which no longer commits anything back to the
+      # branch (reg-suit manages those on gh-pages instead, see
+      # _visual-regression.yml). Without this, tests/*.html could silently
+      # drift out of date with no signal.
+      - name: Commit and push markup snapshots
+        if: ${{ env.HAS_CHANGES == 'YES' }}
+        run: |
+          git commit -m "chore: update visual previews"
+          git push
