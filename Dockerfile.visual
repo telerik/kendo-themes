@@ -1,7 +1,12 @@
 # Pinned capture environment for deterministic visual regression.
 # Fixes Windows-vs-Linux font/AA drift by running the same container locally and in CI.
 #
-# Build & push (once, or when playwright/fonts are bumped):
+# Uses the official Playwright image directly: it already ships the matching
+# Chromium/Firefox/WebKit build for its tag plus the OS fonts needed for
+# consistent rendering, so no extra `playwright install` or font packages are
+# needed here - this file just adds the working directory for local captures.
+#
+# Build & push (once, or when the CI image tag is bumped):
 #   docker build -f Dockerfile.visual -t ghcr.io/telerik/kendo-visual:1 .
 #   docker push ghcr.io/telerik/kendo-visual:1
 #
@@ -9,20 +14,9 @@
 #   docker run --rm -v "${PWD}:/work" -w /work ghcr.io/telerik/kendo-visual:1 \
 #     node scripts/capture.mjs --themes meridian --components '*'
 #
-# Determinism contract: bump the image tag whenever playwright or font packages change.
-
-FROM node:24-bookworm-slim
-
-RUN apt-get update && apt-get install -y --no-install-recommends \
-      fontconfig \
-      fonts-liberation \
-      fonts-dejavu-core \
-      fonts-noto-core \
-      fonts-noto-color-emoji \
-    && rm -rf /var/lib/apt/lists/*
-
-# Pre-install Chromium at the exact version matching package.json's playwright dep.
-# Update both this pin and the image tag together to maintain the determinism contract.
-RUN npx --yes playwright@1.60.0 install --with-deps chromium
+# Determinism contract: keep this tag identical to the `container:` image used
+# in .github/workflows/_create-screenshots.yml, and to the `playwright` dep in
+# package.json, whenever any of them is bumped.
+FROM mcr.microsoft.com/playwright:v1.62.1-noble
 
 WORKDIR /work
