@@ -490,6 +490,7 @@
         }
 
         .k-resize-handle::before {
+            box-sizing: content-box;
             border-style: solid;
             border-color: $kendo-scheduler-bg;
             border-width: $kendo-scheduler-resize-handle-border-width;

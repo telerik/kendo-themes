@@ -114,10 +114,10 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
                             </SchedulerCell>
                         </SchedulerRow>
                     </SchedulerGroup>
-                    <SchedulerEvent resizable="none" style={{ top: "137px", height: "25px", width: "138px" }} title="Event 1 Title" time="9:00 AM - 10:00 AM" />
-                    <SchedulerEvent resizable="none" style={{ top: "137px", left: "141px", height: "25px", width: "138px" }} title="Event 2 Title" time="10:00 AM - 11:00 AM" />
-                    <SchedulerEvent resizable="none" style={{ top: "165px", left: "141px", height: "25px", width: "138px" }} title="Event 3 Title" time="11:00 AM - 12:00 PM" />
-                    <SchedulerEvent resizable="none" style={{ top: "137px", left: "282px", height: "25px", width: "410px" }} title="Event 4 Title" time="1:00 PM - 2:00 PM" />
+                    <SchedulerEvent resizable="horizontal" style={{ top: "137px", height: "25px", width: "138px" }} title="Event 1 Title" time="9:00 AM - 10:00 AM" />
+                    <SchedulerEvent resizable="horizontal" style={{ top: "137px", left: "141px", height: "25px", width: "138px" }} title="Event 2 Title" time="10:00 AM - 11:00 AM" />
+                    <SchedulerEvent resizable="horizontal" style={{ top: "165px", left: "141px", height: "25px", width: "138px" }} title="Event 3 Title" time="11:00 AM - 12:00 PM" />
+                    <SchedulerEvent resizable="horizontal" style={{ top: "137px", left: "282px", height: "25px", width: "410px" }} title="Event 4 Title" time="1:00 PM - 2:00 PM" />
                 </SchedulerBody>
             </>
         }
