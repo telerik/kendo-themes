@@ -815,6 +815,7 @@
             display: flex;
             align-items: center;
             gap: k-spacing(0.5);
+            align-self: flex-start;
         }
 
         .k-task > .k-event-delete {
