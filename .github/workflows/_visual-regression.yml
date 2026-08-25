@@ -213,6 +213,91 @@ jobs:
             git push origin HEAD:gh-pages
           fi
 
+      # Reviewers otherwise have to know an exact commit SHA to look at the
+      # develop baseline, and there's no single place listing which PRs
+      # currently have a live report. Both are just tiny static files, so
+      # this uses the Contents API to read/write them directly instead of
+      # the ~2GB "git worktree add" checkout the prune step above needs for
+      # bulk-deleting whole directories - that cost isn't worth paying again
+      # here, especially since this step also runs on every PR push, not
+      # just baseline runs.
+      - name: Update reports index & develop alias
+        if: steps.publish-target.outputs.target-dir != ''
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+
+            let dirs = [];
+            try {
+              const { data } = await github.rest.repos.getContent({ owner, repo, path: 'reports', ref: 'gh-pages' });
+              dirs = data.filter(e => e.type === 'dir').map(e => e.name);
+            } catch (e) {
+              core.warning(`Unable to list reports/ on gh-pages: ${e.message}`);
+              return;
+            }
+
+            // Pruning above keeps exactly the current baseline commit's
+            // directory alongside the pr-* ones, so whatever's left that
+            // isn't a PR report is the baseline.
+            const prDirs = dirs.filter(d => d.startsWith('pr-')).sort((a, b) => Number(b.slice(3)) - Number(a.slice(3)));
+            const baselineDir = dirs.find(d => !d.startsWith('pr-'));
+
+            async function putFile(path, content, message) {
+              let sha;
+              try {
+                const { data } = await github.rest.repos.getContent({ owner, repo, path, ref: 'gh-pages' });
+                sha = data.sha;
+              } catch {
+                // File doesn't exist yet - create it.
+              }
+              await github.rest.repos.createOrUpdateFileContents({
+                owner, repo, path, message,
+                content: Buffer.from(content).toString('base64'),
+                branch: 'gh-pages',
+                committer: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                author: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                ...(sha ? { sha } : {}),
+              });
+            }
+
+            // Static, SHA-independent alias: /develop/ always redirects to
+            // whatever the current baseline report is, so nobody has to look
+            // up a commit hash to see it.
+            if (baselineDir) {
+              const target = `../reports/${baselineDir}/`;
+              const redirect = [
+                '<!DOCTYPE html>',
+                '<meta charset="utf-8">',
+                `<meta http-equiv="refresh" content="0; url=${target}">`,
+                `<link rel="canonical" href="${target}">`,
+                `<script>location.replace(${JSON.stringify(target)});</script>`,
+                `<p>Redirecting to the latest <a href="${target}">develop baseline report</a>…</p>`,
+                '',
+              ].join('\n');
+              await putFile('develop/index.html', redirect, 'chore(ci): update develop baseline redirect');
+            }
+
+            // Homepage listing develop + every currently open PR's report.
+            const rows = prDirs
+              .map(d => {
+                const n = d.slice(3);
+                return `<li><a href="reports/${d}/">PR #${n} report</a> — <a href="https://github.com/${owner}/${repo}/pull/${n}">view PR</a></li>`;
+              })
+              .join('\n');
+            const home = [
+              '<!DOCTYPE html>',
+              '<meta charset="utf-8">',
+              `<title>${repo} visual regression reports</title>`,
+              `<h1>${repo} visual regression reports</h1>`,
+              '<ul>',
+              '<li><a href="develop/">develop (baseline)</a></li>',
+              rows || '<li><em>No open PR reports.</em></li>',
+              '</ul>',
+              '',
+            ].join('\n');
+            await putFile('index.html', home, 'chore(ci): update reports index');
+
       - name: Summarize result
         id: summary
         uses: actions/github-script@v9
