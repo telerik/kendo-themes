@@ -471,8 +471,10 @@
 
 
         // Resize handles
+        // Uses "base" instead of the "handle" layer so it stays below the sticky .k-scheduler-header
+        // ref: https://github.com/telerik/kendo-themes/issues/6134
         .k-resize-handle {
-            z-index: k-z-index("handle");
+            z-index: k-z-index("base", 2);
             visibility: hidden;
         }
         .k-resize-n {
