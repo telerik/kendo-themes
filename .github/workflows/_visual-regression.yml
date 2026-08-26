@@ -115,6 +115,49 @@ jobs:
             node -e "const i=require('./reg-publish-info.json'); console.log('source-dir='+i.sourceDir); console.log('target-dir='+i.targetDir);" >> "$GITHUB_OUTPUT"
           fi
 
+      # A full report publishes actual+expected images for every compared
+      # item, passed or not (~9,900 files / ~400MB for this repo, ~99% of it
+      # for items that are pixel-identical). None of that is needed:
+      #  - reg-fetch-gh-pages-plugin's fetch() only ever reads back a
+      #    baseline (develop) report's "actual/" dir as the next run's
+      #    comparison baseline - it never reads "expected/" from anywhere,
+      #    and never reads a PR report (reports/pr-<number>/) back at all.
+      #  - the published report.js viewer (reg-cli) renders plain <img> tags
+      #    with no fetch()/XHR existence check and an onerror handler, so a
+      #    missing image for a passed item just degrades to a broken
+      #    thumbnail if someone expands it, not a broken report.
+      # So it's safe to drop what nothing needs: "expected/" entirely on
+      # baseline reports, and both "actual/"+"expected/" for passed items on
+      # PR reports (keeping full images only for what's actually worth a
+      # human looking at: failed/new/deleted items). This is what keeps
+      # report size bounded well under GitHub Pages' 1GB limit even with
+      # several PRs' reports coexisting on gh-pages at once.
+      - name: Prune unneeded images before publish
+        if: steps.publish-target.outputs.target-dir != ''
+        env:
+          SOURCE_DIR: ${{ steps.publish-target.outputs.source-dir }}
+          IS_BASELINE: ${{ inputs.baseline }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+
+            const sourceDir = process.env.SOURCE_DIR;
+            const isBaseline = process.env.IS_BASELINE === "true";
+            const out = JSON.parse(fs.readFileSync(path.join(sourceDir, "out.json"), "utf8"));
+
+            if (isBaseline) {
+              fs.rmSync(path.join(sourceDir, out.expectedDir), { recursive: true, force: true });
+              console.log("Baseline report: dropped " + out.expectedDir + "/ entirely (never read back).");
+            } else {
+              for (const item of out.passedItems) {
+                fs.rmSync(path.join(sourceDir, out.actualDir, item), { force: true });
+                fs.rmSync(path.join(sourceDir, out.expectedDir, item), { force: true });
+              }
+              console.log(`PR report: dropped actual+expected for ${out.passedItems.length} passed item(s).`);
+            }
+          '
+
       # reg-suit's own publish plugin shells out to `git commit`/`git push`
       # against a worktree of the *entire* gh-pages history, which reliably
       # crashes with ENOBUFS once a run has a real (non-"new") diff to report
@@ -169,6 +212,91 @@ jobs:
             # directly, no local gh-pages branch) - push it explicitly as one.
             git push origin HEAD:gh-pages
           fi
+
+      # Reviewers otherwise have to know an exact commit SHA to look at the
+      # develop baseline, and there's no single place listing which PRs
+      # currently have a live report. Both are just tiny static files, so
+      # this uses the Contents API to read/write them directly instead of
+      # the ~2GB "git worktree add" checkout the prune step above needs for
+      # bulk-deleting whole directories - that cost isn't worth paying again
+      # here, especially since this step also runs on every PR push, not
+      # just baseline runs.
+      - name: Update reports index & develop alias
+        if: steps.publish-target.outputs.target-dir != ''
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+
+            let dirs = [];
+            try {
+              const { data } = await github.rest.repos.getContent({ owner, repo, path: 'reports', ref: 'gh-pages' });
+              dirs = data.filter(e => e.type === 'dir').map(e => e.name);
+            } catch (e) {
+              core.warning(`Unable to list reports/ on gh-pages: ${e.message}`);
+              return;
+            }
+
+            // Pruning above keeps exactly the current baseline commit's
+            // directory alongside the pr-* ones, so whatever's left that
+            // isn't a PR report is the baseline.
+            const prDirs = dirs.filter(d => d.startsWith('pr-')).sort((a, b) => Number(b.slice(3)) - Number(a.slice(3)));
+            const baselineDir = dirs.find(d => !d.startsWith('pr-'));
+
+            async function putFile(path, content, message) {
+              let sha;
+              try {
+                const { data } = await github.rest.repos.getContent({ owner, repo, path, ref: 'gh-pages' });
+                sha = data.sha;
+              } catch {
+                // File doesn't exist yet - create it.
+              }
+              await github.rest.repos.createOrUpdateFileContents({
+                owner, repo, path, message,
+                content: Buffer.from(content).toString('base64'),
+                branch: 'gh-pages',
+                committer: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                author: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                ...(sha ? { sha } : {}),
+              });
+            }
+
+            // Static, SHA-independent alias: /develop/ always redirects to
+            // whatever the current baseline report is, so nobody has to look
+            // up a commit hash to see it.
+            if (baselineDir) {
+              const target = `../reports/${baselineDir}/`;
+              const redirect = [
+                '<!DOCTYPE html>',
+                '<meta charset="utf-8">',
+                `<meta http-equiv="refresh" content="0; url=${target}">`,
+                `<link rel="canonical" href="${target}">`,
+                `<script>location.replace(${JSON.stringify(target)});</script>`,
+                `<p>Redirecting to the latest <a href="${target}">develop baseline report</a>…</p>`,
+                '',
+              ].join('\n');
+              await putFile('develop/index.html', redirect, 'chore(ci): update develop baseline redirect');
+            }
+
+            // Homepage listing develop + every currently open PR's report.
+            const rows = prDirs
+              .map(d => {
+                const n = d.slice(3);
+                return `<li><a href="reports/${d}/">PR #${n} report</a> — <a href="https://github.com/${owner}/${repo}/pull/${n}">view PR</a></li>`;
+              })
+              .join('\n');
+            const home = [
+              '<!DOCTYPE html>',
+              '<meta charset="utf-8">',
+              `<title>${repo} visual regression reports</title>`,
+              `<h1>${repo} visual regression reports</h1>`,
+              '<ul>',
+              '<li><a href="develop/">develop (baseline)</a></li>',
+              rows || '<li><em>No open PR reports.</em></li>',
+              '</ul>',
+              '',
+            ].join('\n');
+            await putFile('index.html', home, 'chore(ci): update reports index');
 
       - name: Summarize result
         id: summary
