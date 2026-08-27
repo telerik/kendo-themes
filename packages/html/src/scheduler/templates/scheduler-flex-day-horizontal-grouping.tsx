@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerHead, SchedulerToolbar, SchedulerEvent, SchedulerGroup, SchedulerRow } from '../index';
 
 
-export const SchedulerFlexHorizontalGrouping = ({ today = false, ...props }: any) => (
+export const SchedulerFlexDayHorizontalGrouping = ({ today = false, ...props }: any) => (
     <Scheduler
         layout="flex"
         view="day"
@@ -324,3 +324,6 @@ export const SchedulerFlexHorizontalGrouping = ({ today = false, ...props }: any
         {...props}
     />
 );
+
+/** @deprecated Use `SchedulerFlexDayHorizontalGrouping` instead. */
+export const SchedulerFlexHorizontalGrouping = SchedulerFlexDayHorizontalGrouping;
