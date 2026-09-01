@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { SegmentedControl, SegmentedControlButton } from '../../segmented-control';
-import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerToolbar, SchedulerEvent } from '../index';
+import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimes, SchedulerToolbar, SchedulerEvent } from '../index';
 
 
 export const SchedulerMonthVerticalGrouping = ({ style, ...props }: any) => (
@@ -36,11 +36,21 @@ export const SchedulerMonthVerticalGrouping = ({ style, ...props }: any) => (
                 <tbody>
                     <SchedulerHead as="tr">
                         <td>
+                            <SchedulerTimes>
+                                <SchedulerTable role="none">
+                                    <tbody>
+                                        <tr style={{ height: "38px" }}>
+                                            <SchedulerCell as="th" />
+                                        </tr>
+                                    </tbody>
+                                </SchedulerTable>
+                            </SchedulerTimes>
+                        </td>
+                        <td>
                             <SchedulerHeader>
                                 <SchedulerTable>
                                     <tbody>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot", "group" ]} />
                                             <SchedulerCell as="th">Sunday</SchedulerCell>
                                             <SchedulerCell as="th">Monday</SchedulerCell>
                                             <SchedulerCell as="th">Tuesday</SchedulerCell>
@@ -56,16 +66,62 @@ export const SchedulerMonthVerticalGrouping = ({ style, ...props }: any) => (
                     </SchedulerHead>
                     <SchedulerBody as="tr">
                         <td>
+                            <SchedulerTimes style={{ height: "390px" }}>
+                                <SchedulerTable role="none" style={{ height: "780px" }}>
+                                    <tbody>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot", "group" ]} rowspan={6}>Meeting Room 101</SchedulerCell>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot", "group" ]} rowspan={6}>Meeting Room 201</SchedulerCell>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                        <tr>
+                                            <SchedulerCell as="th" cellType={[ "slot" ]} className="k-hidden" rowspan={1}>&nbsp;</SchedulerCell>
+                                        </tr>
+                                    </tbody>
+                                </SchedulerTable>
+                            </SchedulerTimes>
+                        </td>
+                        <td>
                             <SchedulerContent style={{ height: "390px" }} tabIndex={0}>
                                 <SchedulerTable>
                                     <tbody>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot", "group" ]} rowspan={6}>Meeting Room 101</SchedulerCell>
                                             <SchedulerCell as="td" text="26" className="k-other-month" />
                                             <SchedulerCell as="td" text="27" className="k-other-month" />
                                             <SchedulerCell as="td" text="28" className="k-other-month" />
                                             <SchedulerCell as="td" text="29" className="k-other-month" />
                                             <SchedulerCell as="td" text="30" className="k-other-month" />
+                                            <SchedulerCell as="td" text="31" className="k-other-month" />
                                             <SchedulerCell as="td" text="Jun 01" />
                                         </tr>
                                         <tr>
@@ -114,12 +170,12 @@ export const SchedulerMonthVerticalGrouping = ({ style, ...props }: any) => (
                                             <SchedulerCell as="td" text="06" className="k-other-month" />
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot", "group" ]} rowspan={6}>Meeting Room 201</SchedulerCell>
                                             <SchedulerCell as="td" text="26" className="k-other-month" />
                                             <SchedulerCell as="td" text="27" className="k-other-month" />
                                             <SchedulerCell as="td" text="28" className="k-other-month" />
                                             <SchedulerCell as="td" text="29" className="k-other-month" />
                                             <SchedulerCell as="td" text="30" className="k-other-month" />
+                                            <SchedulerCell as="td" text="31" className="k-other-month" />
                                             <SchedulerCell as="td" text="Jun 01" />
                                         </tr>
                                         <tr>

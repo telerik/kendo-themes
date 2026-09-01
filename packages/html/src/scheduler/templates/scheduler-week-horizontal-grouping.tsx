@@ -44,10 +44,13 @@ export const SchedulerWeekHorizontalGrouping = ({ style, today = false, ...props
                             <SchedulerTimes>
                                 <SchedulerTable role="none">
                                     <tbody>
+                                        <tr style={{ height: "37px" }}>
+                                            <SchedulerCell as="th" />
+                                        </tr>
                                         <tr style={{ height: "55px" }}>
                                             <SchedulerCell as="th" />
                                         </tr>
-                                        <tr style={{ height: "36px" }}>
+                                        <tr style={{ height: "45px" }}>
                                             <SchedulerCell as="th" allDay text="all day" />
                                         </tr>
                                     </tbody>
@@ -55,7 +58,7 @@ export const SchedulerWeekHorizontalGrouping = ({ style, today = false, ...props
                             </SchedulerTimes>
                         </td>
                         <td>
-                            <SchedulerHeader style={{ paddingRight: "16px" }}>
+                            <SchedulerHeader>
                                 <SchedulerTable>
                                     <tbody>
                                         <tr>
@@ -83,7 +86,7 @@ export const SchedulerWeekHorizontalGrouping = ({ style, today = false, ...props
                                 <div style={{ position: "relative" }}>
                                     <SchedulerTable className="k-scheduler-header-all-day">
                                         <tbody>
-                                            <tr style={{ height: "36px" }}>
+                                            <tr style={{ height: "45px" }}>
                                                 <SchedulerCell as="td" />
                                                 <SchedulerCell as="td" />
                                                 <SchedulerCell as="td" />
