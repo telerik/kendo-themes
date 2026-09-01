@@ -17,7 +17,7 @@
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
-        <span>Scheduler Table Layout, Month View, Horizontal Grouping</span>
+        <span>Scheduler Table Layout, Month View, Vertical Grouping</span>
         <div class="k-scheduler" role="application">
             <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
                 <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
@@ -79,22 +79,22 @@
                 <tbody>
                     <tr class="k-scheduler-head">
                         <td>
+                            <div class="k-scheduler-times">
+                                <table role="none" class="k-scheduler-table">
+                                    <tbody>
+                                        <tr style="height: 38px;">
+                                            <th role="presentation" class="k-scheduler-cell"></th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
                             <div class="k-scheduler-header">
                                 <div class="k-scheduler-header-wrap">
                                     <table class="k-scheduler-table">
                                         <tbody>
                                             <tr>
-                                                <th colspan="7" class="k-scheduler-cell k-slot-cell k-group-cell">Meeting Room 101</th>
-                                                <th colspan="7" class="k-scheduler-cell k-slot-cell k-group-cell">Meeting Room 201</th>
-                                            </tr>
-                                            <tr>
-                                                <th class="k-scheduler-cell">Sunday</th>
-                                                <th class="k-scheduler-cell">Monday</th>
-                                                <th class="k-scheduler-cell">Tuesday</th>
-                                                <th class="k-scheduler-cell">Wednesday</th>
-                                                <th class="k-scheduler-cell">Thursday</th>
-                                                <th class="k-scheduler-cell">Friday</th>
-                                                <th class="k-scheduler-cell">Saturday</th>
                                                 <th class="k-scheduler-cell">Sunday</th>
                                                 <th class="k-scheduler-cell">Monday</th>
                                                 <th class="k-scheduler-cell">Tuesday</th>
@@ -111,7 +111,53 @@
                     </tr>
                     <tr class="k-scheduler-body">
                         <td>
-                            <div tabindex="0" class="k-scheduler-content" style="height: 195px;">
+                            <div class="k-scheduler-times" style="height: 390px;">
+                                <table role="none" class="k-scheduler-table" style="height: 780px;">
+                                    <tbody>
+                                        <tr>
+                                            <th rowspan="6" class="k-scheduler-cell k-slot-cell k-group-cell">Meeting Room 101</th>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="6" class="k-scheduler-cell k-slot-cell k-group-cell">Meeting Room 201</th>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="k-scheduler-cell k-hidden k-slot-cell" rowspan="1">&nbsp;</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
+                            <div tabindex="0" class="k-scheduler-content" style="height: 390px;">
                                 <table class="k-scheduler-table">
                                     <tbody>
                                         <tr>
@@ -136,6 +182,123 @@
                                             <td class="k-scheduler-cell">
                                                 <span class="k-link k-nav-day">Jun 01</span>
                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">02</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">03</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">04</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">05</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">06</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">07</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">08</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">09</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">10</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">11</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">12</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">13</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">14</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">15</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">16</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">17</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">18</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">19</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">20</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">21</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">22</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">23</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">24</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">25</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">26</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">27</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">28</span>
+                                            </td>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">29</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-scheduler-cell">
+                                                <span class="k-link k-nav-day">30</span>
+                                            </td>
+                                            <td class="k-scheduler-cell k-other-month">
+                                                <span class="k-link k-nav-day">Jul 01</span>
+                                            </td>
+                                            <td class="k-scheduler-cell k-other-month">
+                                                <span class="k-link k-nav-day">02</span>
+                                            </td>
+                                            <td class="k-scheduler-cell k-other-month">
+                                                <span class="k-link k-nav-day">03</span>
+                                            </td>
+                                            <td class="k-scheduler-cell k-other-month">
+                                                <span class="k-link k-nav-day">04</span>
+                                            </td>
+                                            <td class="k-scheduler-cell k-other-month">
+                                                <span class="k-link k-nav-day">05</span>
+                                            </td>
+                                            <td class="k-scheduler-cell k-other-month">
+                                                <span class="k-link k-nav-day">06</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <td class="k-scheduler-cell k-other-month">
                                                 <span class="k-link k-nav-day">26</span>
                                             </td>
@@ -180,50 +343,8 @@
                                             <td class="k-scheduler-cell">
                                                 <span class="k-link k-nav-day">08</span>
                                             </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">02</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">03</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">04</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">05</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">06</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">07</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">08</span>
-                                            </td>
                                         </tr>
                                         <tr>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">09</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">10</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">11</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">12</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">13</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">14</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">15</span>
-                                            </td>
                                             <td class="k-scheduler-cell">
                                                 <span class="k-link k-nav-day">09</span>
                                             </td>
@@ -268,27 +389,6 @@
                                             <td class="k-scheduler-cell">
                                                 <span class="k-link k-nav-day">22</span>
                                             </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">16</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">17</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">18</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">19</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">20</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">21</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">22</span>
-                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="k-scheduler-cell">
@@ -312,50 +412,8 @@
                                             <td class="k-scheduler-cell">
                                                 <span class="k-link k-nav-day">29</span>
                                             </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">23</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">24</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">25</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">26</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">27</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">28</span>
-                                            </td>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">29</span>
-                                            </td>
                                         </tr>
                                         <tr>
-                                            <td class="k-scheduler-cell">
-                                                <span class="k-link k-nav-day">30</span>
-                                            </td>
-                                            <td class="k-scheduler-cell k-other-month">
-                                                <span class="k-link k-nav-day">Jul 01</span>
-                                            </td>
-                                            <td class="k-scheduler-cell k-other-month">
-                                                <span class="k-link k-nav-day">02</span>
-                                            </td>
-                                            <td class="k-scheduler-cell k-other-month">
-                                                <span class="k-link k-nav-day">03</span>
-                                            </td>
-                                            <td class="k-scheduler-cell k-other-month">
-                                                <span class="k-link k-nav-day">04</span>
-                                            </td>
-                                            <td class="k-scheduler-cell k-other-month">
-                                                <span class="k-link k-nav-day">05</span>
-                                            </td>
-                                            <td class="k-scheduler-cell k-other-month">
-                                                <span class="k-link k-nav-day">06</span>
-                                            </td>
                                             <td class="k-scheduler-cell">
                                                 <span class="k-link k-nav-day">30</span>
                                             </td>
@@ -380,7 +438,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="k-event" role="button" aria-label="Event" style="top: 137px; height: 25px; width: 137px;">
+                                <div class="k-event" role="button" aria-label="Event" style="top: 137px; left: 137px; height: 25px; width: 137px;">
                                     <div>
                                         <div class="k-event-template k-event-title">Event 1 Title</div>
                                         <div class="k-event-template k-event-time">9:00 AM - 10:00 AM</div>
@@ -392,7 +450,7 @@
                 </tbody>
             </table>
         </div>
-        <span>Scheduler Flex Layout, Month View, Horizontal Grouping</span>
+        <span>Scheduler Flex Layout, Month View, Vertical Grouping</span>
         <div class="k-scheduler" role="application">
             <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
                 <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
@@ -452,38 +510,10 @@
             </div>
             <div class="k-scheduler-layout-flex k-scheduler-layout k-scheduler-monthview" role="none">
                 <div class="k-scheduler-head">
-                    <div class="k-scheduler-group k-group-horizontal">
+                    <div class="k-scheduler-group">
                         <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-heading-cell">Meeting Room 101</div>
-                            <div class="k-scheduler-cell k-heading-cell">Meeting Room 201</div>
-                        </div>
-                        <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-group-cell">
-                                <div class="k-scheduler-row">
-                                    <div class="k-scheduler-cell k-heading-cell">
-                                        <span class="k-link k-nav-day">Sunday</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-heading-cell">
-                                        <span class="k-link k-nav-day">Monday</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-heading-cell">
-                                        <span class="k-link k-nav-day">Tuesday</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-heading-cell">
-                                        <span class="k-link k-nav-day">Wednesday</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-heading-cell">
-                                        <span class="k-link k-nav-day">Thursday</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-heading-cell">
-                                        <span class="k-link k-nav-day">Friday</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-heading-cell">
-                                        <span class="k-link k-nav-day">Saturday</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-scheduler-cell k-group-cell">
+                            <div class="k-scheduler-cell k-heading-cell k-group-cell" style="min-width: 120px;"></div>
+                            <div class="k-scheduler-cell k-group-content">
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-heading-cell">
                                         <span class="k-link k-nav-day">Sunday</span>
@@ -512,9 +542,10 @@
                     </div>
                 </div>
                 <div class="k-scheduler-body">
-                    <div class="k-scheduler-group k-group-horizontal">
+                    <div class="k-scheduler-group">
                         <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-group-cell">
+                            <div class="k-scheduler-cell k-heading-cell k-group-cell" style="min-width: 120px;">Meeting Room 101</div>
+                            <div class="k-scheduler-cell k-group-content k-resource-row">
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-other-month k-slot-cell">
                                         <span class="k-link k-nav-day">26</span>
@@ -538,37 +569,6 @@
                                         <span class="k-link k-nav-day">01</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-scheduler-cell k-group-cell">
-                                <div class="k-scheduler-row">
-                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
-                                        <span class="k-link k-nav-day">26</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
-                                        <span class="k-link k-nav-day">27</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
-                                        <span class="k-link k-nav-day">28</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
-                                        <span class="k-link k-nav-day">29</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
-                                        <span class="k-link k-nav-day">30</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
-                                        <span class="k-link k-nav-day">31</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">01</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-scheduler-group k-group-horizontal">
-                        <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-group-cell">
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-slot-cell">
                                         <span class="k-link k-nav-day">02</span>
@@ -595,37 +595,6 @@
                                         <span class="k-link k-nav-day">08</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-scheduler-cell k-group-cell">
-                                <div class="k-scheduler-row">
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">02</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">03</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">04</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">05</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">06</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">07</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">08</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-scheduler-group k-group-horizontal">
-                        <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-group-cell">
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-slot-cell">
                                         <span class="k-link k-nav-day">09</span>
@@ -649,37 +618,6 @@
                                         <span class="k-link k-nav-day">15</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-scheduler-cell k-group-cell">
-                                <div class="k-scheduler-row">
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">09</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">10</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">11</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">12</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">13</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">14</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">15</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-scheduler-group k-group-horizontal">
-                        <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-group-cell">
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-slot-cell">
                                         <span class="k-link k-nav-day">16</span>
@@ -703,37 +641,6 @@
                                         <span class="k-link k-nav-day">22</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-scheduler-cell k-group-cell">
-                                <div class="k-scheduler-row">
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">16</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">17</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">18</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">19</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">20</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">21</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">22</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-scheduler-group k-group-horizontal">
-                        <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-group-cell">
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-slot-cell">
                                         <span class="k-link k-nav-day">23</span>
@@ -757,37 +664,6 @@
                                         <span class="k-link k-nav-day">29</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-scheduler-cell k-group-cell">
-                                <div class="k-scheduler-row">
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">23</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">24</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">25</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">26</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">27</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">28</span>
-                                    </div>
-                                    <div class="k-scheduler-cell k-slot-cell">
-                                        <span class="k-link k-nav-day">29</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-scheduler-group k-group-horizontal">
-                        <div class="k-scheduler-row">
-                            <div class="k-scheduler-cell k-group-cell">
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-slot-cell">
                                         <span class="k-link k-nav-day">30</span>
@@ -812,7 +688,125 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="k-scheduler-cell k-group-cell">
+                        </div>
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-heading-cell k-group-cell" style="min-width: 120px;">Meeting Room 201</div>
+                            <div class="k-scheduler-cell k-group-content k-resource-row">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
+                                        <span class="k-link k-nav-day">26</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
+                                        <span class="k-link k-nav-day">27</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
+                                        <span class="k-link k-nav-day">28</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
+                                        <span class="k-link k-nav-day">29</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
+                                        <span class="k-link k-nav-day">30</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-other-month k-slot-cell">
+                                        <span class="k-link k-nav-day">31</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">01</span>
+                                    </div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">02</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">03</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">04</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">05</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">06</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">07</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">08</span>
+                                    </div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">09</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">10</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">11</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">12</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">13</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">14</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">15</span>
+                                    </div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">16</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">17</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">18</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">19</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">20</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">21</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">22</span>
+                                    </div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">23</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">24</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">25</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">26</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">27</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">28</span>
+                                    </div>
+                                    <div class="k-scheduler-cell k-slot-cell">
+                                        <span class="k-link k-nav-day">29</span>
+                                    </div>
+                                </div>
                                 <div class="k-scheduler-row">
                                     <div class="k-scheduler-cell k-slot-cell">
                                         <span class="k-link k-nav-day">30</span>

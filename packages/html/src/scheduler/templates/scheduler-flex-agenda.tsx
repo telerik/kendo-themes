@@ -40,10 +40,10 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
                                     <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-datecolumn" style={{ minWidth: "168px" }} role="columnheader">
                                         Date
                                     </SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-timecolumn" style={{ minWidth: "595px" }} role="columnheader">
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-scheduler-timecolumn" style={{ minWidth: "595px" }} role="columnheader">
                                         Time
                                     </SchedulerCell>
-                                    <SchedulerCell as="div" cellType={[ "heading", "group" ]} className="k-scheduler-eventcolumn" style={{ minWidth: "168px" }} role="columnheader">
+                                    <SchedulerCell as="div" cellType={[ "heading" ]} className="k-scheduler-eventcolumn" style={{ minWidth: "168px" }} role="columnheader">
                                         Event
                                     </SchedulerCell>
                                 </SchedulerRow>

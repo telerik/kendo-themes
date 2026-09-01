@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimes, SchedulerToolbar, SchedulerEvent } from '../index';
 
-export const SchedulerHorizontalGrouping = (...props) => (
+export const SchedulerDayHorizontalGrouping = (...props) => (
     <Scheduler
         layout="table"
         view="day"
@@ -255,3 +255,6 @@ export const SchedulerHorizontalGrouping = (...props) => (
         {...props}
     />
 );
+
+/** @deprecated Use `SchedulerDayHorizontalGrouping` instead. */
+export const SchedulerHorizontalGrouping = SchedulerDayHorizontalGrouping;

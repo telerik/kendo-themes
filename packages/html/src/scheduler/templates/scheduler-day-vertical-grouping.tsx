@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { Scheduler, SchedulerBody, SchedulerCell, SchedulerContent, SchedulerHead, SchedulerHeader, SchedulerTable, SchedulerTimes, SchedulerToolbar } from '../index';
 
-export const SchedulerVerticalGrouping = (...props) => (
+export const SchedulerDayVerticalGrouping = (...props) => (
     <Scheduler
         layout="table"
         view="day"
@@ -306,3 +306,6 @@ export const SchedulerVerticalGrouping = (...props) => (
         {...props}
     />
 );
+
+/** @deprecated Use `SchedulerDayVerticalGrouping` instead. */
+export const SchedulerVerticalGrouping = SchedulerDayVerticalGrouping;
