@@ -169,7 +169,7 @@ jobs:
       # of leaving it behind under reports/pr-<number>/.
       - name: Publish report to gh-pages
         if: steps.publish-target.outputs.target-dir != ''
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ github.token }}
           publish_branch: gh-pages
