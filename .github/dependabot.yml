@@ -16,6 +16,9 @@ updates:
         exclude-patterns:
           - "sass*"
           - "@progress/kendo-svg-icons"
+        update-types:
+          - "minor"
+          - "patch"
       sass-dependencies:
         patterns:
           - "sass*"
