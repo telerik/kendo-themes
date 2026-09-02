@@ -1,148 +1,153 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: repeat(3, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span>Normal - vertical</span>
-        <span>With Label - vertical</span>
-        <span>Inside Label - vertical</span>
-        <ul class="k-radio-list k-list-vertical" role="radiogroup">
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input aria-label="Option 1" class="k-radio" type="radio" name="normal-vertical">
-                </span>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input aria-label="Option 2" class="k-radio" type="radio" name="normal-vertical">
-                </span>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input aria-label="Option 3" class="k-radio" type="radio" name="normal-vertical">
-                </span>
-            </li>
-        </ul>
-        <ul class="k-radio-list k-list-vertical" role="radiogroup">
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input id="rad-vertical-one" class="k-radio" type="radio" name="label-vertical">
-                </span>
-                <label class="k-radio-label" for="rad-vertical-one">First</label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input id="rad-vertical-two" class="k-radio" type="radio" name="label-vertical">
-                </span>
-                <label class="k-radio-label" for="rad-vertical-two">Second</label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input id="rad-vertical-thee" class="k-radio" type="radio" name="label-vertical">
-                </span>
-                <label class="k-radio-label" for="rad-vertical-thee">Third</label>
-            </li>
-        </ul>
-        <ul class="k-radio-list k-list-vertical" role="radiogroup">
-            <li class="k-radio-list-item" role="none">
-                <label class="k-radio-label">
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span>Normal - vertical</span>
+            <span>With Label - vertical</span>
+            <span>Inside Label - vertical</span>
+            <ul class="k-radio-list k-list-vertical" role="radiogroup">
+                <li class="k-radio-list-item" role="none">
                     <span class="k-radio-wrap">
-                        <input class="k-radio" type="radio" name="inside-label-vertical">
-                    </span>First
-                </label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <label class="k-radio-label">
+                        <input aria-label="Option 1" class="k-radio" type="radio" name="normal-vertical">
+                    </span>
+                </li>
+                <li class="k-radio-list-item" role="none">
                     <span class="k-radio-wrap">
-                        <input class="k-radio" type="radio" name="inside-label-vertical">
-                    </span>Second
-                </label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <label class="k-radio-label">
+                        <input aria-label="Option 2" class="k-radio" type="radio" name="normal-vertical">
+                    </span>
+                </li>
+                <li class="k-radio-list-item" role="none">
                     <span class="k-radio-wrap">
-                        <input class="k-radio" type="radio" name="inside-label-vertical">
-                    </span>Third
-                </label>
-            </li>
-        </ul>
-        <span>Normal - horizontal</span>
-        <span>With Label - horizontal</span>
-        <span>Inside Label - horizontal</span>
-        <ul class="k-radio-list k-list-horizontal" role="radiogroup">
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input aria-label="Option 1" class="k-radio" type="radio" name="normal-horizontal">
-                </span>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input aria-label="Option 2" class="k-radio" type="radio" name="normal-horizontal">
-                </span>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input aria-label="Option 3" class="k-radio" type="radio" name="normal-horizontal">
-                </span>
-            </li>
-        </ul>
-        <ul class="k-radio-list k-list-horizontal" role="radiogroup">
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input id="rad-horizontal-one" class="k-radio" type="radio" name="label-horizontal">
-                </span>
-                <label class="k-radio-label" for="rad-horizontal-one">First</label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input id="rad-horizontal-two" class="k-radio" type="radio" name="label-horizontal">
-                </span>
-                <label class="k-radio-label" for="rad-horizontal-two">Second</label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <span class="k-radio-wrap">
-                    <input id="rad-horizontal-thee" class="k-radio" type="radio" name="label-horizontal">
-                </span>
-                <label class="k-radio-label" for="rad-horizontal-thee">Third</label>
-            </li>
-        </ul>
-        <ul class="k-radio-list k-list-horizontal" role="radiogroup">
-            <li class="k-radio-list-item" role="none">
-                <label class="k-radio-label">
+                        <input aria-label="Option 3" class="k-radio" type="radio" name="normal-vertical">
+                    </span>
+                </li>
+            </ul>
+            <ul class="k-radio-list k-list-vertical" role="radiogroup">
+                <li class="k-radio-list-item" role="none">
                     <span class="k-radio-wrap">
-                        <input class="k-radio" type="radio" name="inside-label-horizontal">
-                    </span>First
-                </label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <label class="k-radio-label">
+                        <input id="rad-vertical-one" class="k-radio" type="radio" name="label-vertical">
+                    </span>
+                    <label class="k-radio-label" for="rad-vertical-one">First</label>
+                </li>
+                <li class="k-radio-list-item" role="none">
                     <span class="k-radio-wrap">
-                        <input class="k-radio" type="radio" name="inside-label-horizontal">
-                    </span>Second
-                </label>
-            </li>
-            <li class="k-radio-list-item" role="none">
-                <label class="k-radio-label">
+                        <input id="rad-vertical-two" class="k-radio" type="radio" name="label-vertical">
+                    </span>
+                    <label class="k-radio-label" for="rad-vertical-two">Second</label>
+                </li>
+                <li class="k-radio-list-item" role="none">
                     <span class="k-radio-wrap">
-                        <input class="k-radio" type="radio" name="inside-label-horizontal">
-                    </span>Third
-                </label>
-            </li>
-        </ul>
-    </div>
-</body>
+                        <input id="rad-vertical-thee" class="k-radio" type="radio" name="label-vertical">
+                    </span>
+                    <label class="k-radio-label" for="rad-vertical-thee">Third</label>
+                </li>
+            </ul>
+            <ul class="k-radio-list k-list-vertical" role="radiogroup">
+                <li class="k-radio-list-item" role="none">
+                    <label class="k-radio-label">
+                        <span class="k-radio-wrap">
+                            <input class="k-radio" type="radio" name="inside-label-vertical">
+                        </span>
+                        First
+                    </label>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <label class="k-radio-label">
+                        <span class="k-radio-wrap">
+                            <input class="k-radio" type="radio" name="inside-label-vertical">
+                        </span>
+                        Second
+                    </label>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <label class="k-radio-label">
+                        <span class="k-radio-wrap">
+                            <input class="k-radio" type="radio" name="inside-label-vertical">
+                        </span>
+                        Third
+                    </label>
+                </li>
+            </ul>
+            <span>Normal - horizontal</span>
+            <span>With Label - horizontal</span>
+            <span>Inside Label - horizontal</span>
+            <ul class="k-radio-list k-list-horizontal" role="radiogroup">
+                <li class="k-radio-list-item" role="none">
+                    <span class="k-radio-wrap">
+                        <input aria-label="Option 1" class="k-radio" type="radio" name="normal-horizontal">
+                    </span>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <span class="k-radio-wrap">
+                        <input aria-label="Option 2" class="k-radio" type="radio" name="normal-horizontal">
+                    </span>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <span class="k-radio-wrap">
+                        <input aria-label="Option 3" class="k-radio" type="radio" name="normal-horizontal">
+                    </span>
+                </li>
+            </ul>
+            <ul class="k-radio-list k-list-horizontal" role="radiogroup">
+                <li class="k-radio-list-item" role="none">
+                    <span class="k-radio-wrap">
+                        <input id="rad-horizontal-one" class="k-radio" type="radio" name="label-horizontal">
+                    </span>
+                    <label class="k-radio-label" for="rad-horizontal-one">First</label>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <span class="k-radio-wrap">
+                        <input id="rad-horizontal-two" class="k-radio" type="radio" name="label-horizontal">
+                    </span>
+                    <label class="k-radio-label" for="rad-horizontal-two">Second</label>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <span class="k-radio-wrap">
+                        <input id="rad-horizontal-thee" class="k-radio" type="radio" name="label-horizontal">
+                    </span>
+                    <label class="k-radio-label" for="rad-horizontal-thee">Third</label>
+                </li>
+            </ul>
+            <ul class="k-radio-list k-list-horizontal" role="radiogroup">
+                <li class="k-radio-list-item" role="none">
+                    <label class="k-radio-label">
+                        <span class="k-radio-wrap">
+                            <input class="k-radio" type="radio" name="inside-label-horizontal">
+                        </span>
+                        First
+                    </label>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <label class="k-radio-label">
+                        <span class="k-radio-wrap">
+                            <input class="k-radio" type="radio" name="inside-label-horizontal">
+                        </span>
+                        Second
+                    </label>
+                </li>
+                <li class="k-radio-list-item" role="none">
+                    <label class="k-radio-label">
+                        <span class="k-radio-wrap">
+                            <input class="k-radio" type="radio" name="inside-label-horizontal">
+                        </span>
+                        Third
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>

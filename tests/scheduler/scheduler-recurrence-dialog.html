@@ -1,543 +1,61 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             gap: 40px;
-        }
-        .k-dialog-wrapper {
+            }
+            .k-dialog-wrapper {
             position: relative;
-        }
-        .k-overlay {
+            }
+            .k-overlay {
             display: none;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-flex k-flex-wrap">
-        <section>
-            <span>Recurrence – Daily</span>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-1" aria-describedby="k-dialog-content-1" aria-modal="true" style="width: 540px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-1">
-                        <span class="k-window-title k-dialog-title">Recurrence</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-1">
-                        <div class="k-form k-form-horizontal">
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat every</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </span>
-                                        </span>
-                                        <span id="k-ddl-1" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
-                                            <span id="k-ddl-1-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Day</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Ends</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span id="k-ddl-2" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
-                                            <span id="k-ddl-2-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Never</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <div class="k-form-field-wrap">
-                                    <div class="k-form-hint">Repeats every day.</div>
-                                </div>
+            }
+        </style>
+        <div id="test-area" class="k-d-flex k-flex-wrap">
+            <section>
+                <span>Recurrence – Daily</span>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-1" aria-describedby="k-dialog-content-1" aria-modal="true" style="width: 540px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-1">
+                            <span class="k-window-title k-dialog-title">Recurrence</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <span class="k-spacer"></span>
-                        <button class="k-button">
-                            <span class="k-button-text">Cancel</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Save</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <span>Recurrence – Daily – After occurrences</span>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-2" aria-describedby="k-dialog-content-2" aria-modal="true" style="width: 540px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-2">
-                        <span class="k-window-title k-dialog-title">Recurrence</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-2">
-                        <div class="k-form k-form-horizontal">
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat every</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="2">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </span>
-                                        </span>
-                                        <span id="k-ddl-3" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
-                                            <span id="k-ddl-3-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Day</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Ends</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span id="k-ddl-4" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
-                                            <span id="k-ddl-4-value" class="k-input-inner">
-                                                <span class="k-input-value-text">After</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Occurrences" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="10">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <div class="k-form-field-wrap">
-                                    <div class="k-form-hint">Repeats every 2 days, after 10 time(s).</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <span class="k-spacer"></span>
-                        <button class="k-button">
-                            <span class="k-button-text">Cancel</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Save</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <span>Recurrence – Daily – On date</span>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-3" aria-describedby="k-dialog-content-3" aria-modal="true" style="width: 540px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-3">
-                        <span class="k-window-title k-dialog-title">Recurrence</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-3">
-                        <div class="k-form k-form-horizontal">
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat every</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </span>
-                                        </span>
-                                        <span id="k-ddl-5" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
-                                            <span id="k-ddl-5-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Day</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Ends</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span id="k-ddl-6" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
-                                            <span id="k-ddl-6-value" class="k-input-inner">
-                                                <span class="k-input-value-text">On</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                        <span aria-label="End date" class="k-datepicker k-input">
-                                            <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="01/31/2026">
-                                            <span class="k-clear-value">
-                                                <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <div class="k-form-field-wrap">
-                                    <div class="k-form-hint">Repeats every day until Jan 31, 2026.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <span class="k-spacer"></span>
-                        <button class="k-button">
-                            <span class="k-button-text">Cancel</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Save</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <span>Recurrence – Weekly</span>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-4" aria-describedby="k-dialog-content-4" aria-modal="true" style="width: 540px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-4">
-                        <span class="k-window-title k-dialog-title">Recurrence</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-4">
-                        <div class="k-form k-form-horizontal">
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat every</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </span>
-                                        </span>
-                                        <span id="k-ddl-7" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
-                                            <span id="k-ddl-7-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Week</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat on</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-weekday-picker" role="group" aria-label="Repeat on days">
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Monday" tabindex="-1">
-                                            <span class="k-button-text">M</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Tuesday" tabindex="0">
-                                            <span class="k-button-text">T</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Wednesday" tabindex="-1">
-                                            <span class="k-button-text">W</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Thursday" tabindex="-1">
-                                            <span class="k-button-text">T</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Friday" tabindex="-1">
-                                            <span class="k-button-text">F</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Saturday" tabindex="-1">
-                                            <span class="k-button-text">S</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Sunday" tabindex="-1">
-                                            <span class="k-button-text">S</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Ends</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span id="k-ddl-8" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
-                                            <span id="k-ddl-8-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Never</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <div class="k-form-field-wrap">
-                                    <div class="k-form-hint">Repeats every week on Tuesday.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <span class="k-spacer"></span>
-                        <button class="k-button">
-                            <span class="k-button-text">Cancel</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Save</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <span>Recurrence – Monthly</span>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-5" aria-describedby="k-dialog-content-5" aria-modal="true" style="width: 540px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-5">
-                        <span class="k-window-title k-dialog-title">Recurrence</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-5">
-                        <div class="k-form k-form-horizontal">
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat every</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </span>
-                                        </span>
-                                        <span id="k-ddl-9" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
-                                            <span id="k-ddl-9-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Month</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat on</label>
-                                <div class="k-form-field-wrap">
-                                    <ul class="k-radio-list k-list-vertical" role="radiogroup">
-                                        <li class="k-radio-list-item" role="none">
-                                            <span class="k-radio-wrap">
-                                                <input aria-label="Day of the week" id="recur-monthday" class="k-radio k-checked" type="radio" checked="">
-                                            </span>
-                                            <div class="k-scheduler-recurrence-fields">
-                                                <span id="k-ddl-10" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Position" tabindex="0">
-                                                    <span id="k-ddl-10-value" class="k-input-inner">
-                                                        <span class="k-input-value-text">Second</span>
-                                                    </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-1">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat every</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -545,11 +63,94 @@
                                                         </span>
                                                     </button>
                                                 </span>
-                                                <span id="k-ddl-11" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Day type" tabindex="0">
-                                                    <span id="k-ddl-11-value" class="k-input-inner">
-                                                        <span class="k-input-value-text">Weekend day</span>
+                                            </span>
+                                            <span id="k-ddl-1" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
+                                                <span id="k-ddl-1-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Day</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
                                                     </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Ends</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span id="k-ddl-2" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
+                                                <span id="k-ddl-2-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Never</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-form-hint">Repeats every day.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <span class="k-spacer"></span>
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <span>Recurrence – Daily – After occurrences</span>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-2" aria-describedby="k-dialog-content-2" aria-modal="true" style="width: 540px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-2">
+                            <span class="k-window-title k-dialog-title">Recurrence</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-2">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat every</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="2">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -557,24 +158,385 @@
                                                         </span>
                                                     </button>
                                                 </span>
-                                            </div>
-                                        </li>
-                                        <li class="k-radio-list-item" role="none">
-                                            <span class="k-radio-wrap">
-                                                <input aria-label="Day of the month" id="recur-weekday" class="k-radio" type="radio">
                                             </span>
-                                            <div class="k-scheduler-recurrence-fields">
-                                                <span class="k-numerictextbox k-input">
-                                                    <input role="spinbutton" aria-label="Day of month" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="31 day">
-                                                    <span class="k-spin-button k-input-spinner">
-                                                        <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                    <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                                </svg>
-                                                            </span>
-                                                        </button>
-                                                        <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                            <span id="k-ddl-3" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
+                                                <span id="k-ddl-3-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Day</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Ends</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span id="k-ddl-4" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
+                                                <span id="k-ddl-4-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">After</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Occurrences" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="10">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-form-hint">Repeats every 2 days, after 10 time(s).</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <span class="k-spacer"></span>
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <span>Recurrence – Daily – On date</span>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-3" aria-describedby="k-dialog-content-3" aria-modal="true" style="width: 540px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-3">
+                            <span class="k-window-title k-dialog-title">Recurrence</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-3">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat every</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                            <span id="k-ddl-5" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
+                                                <span id="k-ddl-5-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Day</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Ends</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span id="k-ddl-6" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
+                                                <span id="k-ddl-6-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">On</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                            <span aria-label="End date" class="k-datepicker k-input">
+                                                <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="01/31/2026">
+                                                <span class="k-clear-value">
+                                                    <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-form-hint">Repeats every day until Jan 31, 2026.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <span class="k-spacer"></span>
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <span>Recurrence – Weekly</span>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-4" aria-describedby="k-dialog-content-4" aria-modal="true" style="width: 540px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-4">
+                            <span class="k-window-title k-dialog-title">Recurrence</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-4">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat every</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                            <span id="k-ddl-7" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
+                                                <span id="k-ddl-7-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Week</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat on</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-weekday-picker" role="group" aria-label="Repeat on days">
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Monday" tabindex="-1">
+                                                <span class="k-button-text">M</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Tuesday" tabindex="0">
+                                                <span class="k-button-text">T</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Wednesday" tabindex="-1">
+                                                <span class="k-button-text">W</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Thursday" tabindex="-1">
+                                                <span class="k-button-text">T</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Friday" tabindex="-1">
+                                                <span class="k-button-text">F</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Saturday" tabindex="-1">
+                                                <span class="k-button-text">S</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Sunday" tabindex="-1">
+                                                <span class="k-button-text">S</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Ends</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span id="k-ddl-8" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
+                                                <span id="k-ddl-8-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Never</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-form-hint">Repeats every week on Tuesday.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <span class="k-spacer"></span>
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <span>Recurrence – Monthly</span>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-5" aria-describedby="k-dialog-content-5" aria-modal="true" style="width: 540px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-5">
+                            <span class="k-window-title k-dialog-title">Recurrence</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-5">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat every</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                            <span id="k-ddl-9" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
+                                                <span id="k-ddl-9-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Month</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat on</label>
+                                    <div class="k-form-field-wrap">
+                                        <ul class="k-radio-list k-list-vertical" role="radiogroup">
+                                            <li class="k-radio-list-item" role="none">
+                                                <span class="k-radio-wrap">
+                                                    <input aria-label="Day of the week" id="recur-monthday" class="k-radio k-checked" type="radio" checked="">
+                                                </span>
+                                                <div class="k-scheduler-recurrence-fields">
+                                                    <span id="k-ddl-10" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Position" tabindex="0">
+                                                        <span id="k-ddl-10-value" class="k-input-inner">
+                                                            <span class="k-input-value-text">Second</span>
+                                                        </span>
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                     <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -582,139 +544,11 @@
                                                             </span>
                                                         </button>
                                                     </span>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Ends</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span id="k-ddl-12" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
-                                            <span id="k-ddl-12-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Never</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <div class="k-form-field-wrap">
-                                    <div class="k-form-hint">Repeats every month on the second weekend day.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <span class="k-spacer"></span>
-                        <button class="k-button">
-                            <span class="k-button-text">Cancel</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Save</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <span>Recurrence – Yearly</span>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-6" aria-describedby="k-dialog-content-6" aria-modal="true" style="width: 540px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-6">
-                        <span class="k-window-title k-dialog-title">Recurrence</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-6">
-                        <div class="k-form k-form-horizontal">
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat every</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </span>
-                                        </span>
-                                        <span id="k-ddl-13" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
-                                            <span id="k-ddl-13-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Year</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat on</label>
-                                <div class="k-form-field-wrap">
-                                    <ul class="k-radio-list k-list-vertical" role="radiogroup">
-                                        <li class="k-radio-list-item" role="none">
-                                            <span class="k-radio-wrap">
-                                                <input aria-label="Day of the month" id="recur-yearly-monthday" class="k-radio k-checked" type="radio" checked="">
-                                            </span>
-                                            <div class="k-scheduler-recurrence-fields">
-                                                <span id="k-ddl-14" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Month" tabindex="0">
-                                                    <span id="k-ddl-14-value" class="k-input-inner">
-                                                        <span class="k-input-value-text">October</span>
-                                                    </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                            </svg>
+                                                    <span id="k-ddl-11" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Day type" tabindex="0">
+                                                        <span id="k-ddl-11-value" class="k-input-inner">
+                                                            <span class="k-input-value-text">Weekend day</span>
                                                         </span>
-                                                    </button>
-                                                </span>
-                                                <span class="k-numerictextbox k-input">
-                                                    <input role="spinbutton" aria-label="Day" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                                                    <span class="k-spin-button k-input-spinner">
-                                                        <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                    <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                                </svg>
-                                                            </span>
-                                                        </button>
-                                                        <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                     <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -722,19 +556,109 @@
                                                             </span>
                                                         </button>
                                                     </span>
+                                                </div>
+                                            </li>
+                                            <li class="k-radio-list-item" role="none">
+                                                <span class="k-radio-wrap">
+                                                    <input aria-label="Day of the month" id="recur-weekday" class="k-radio" type="radio">
                                                 </span>
-                                            </div>
-                                        </li>
-                                        <li class="k-radio-list-item" role="none">
-                                            <span class="k-radio-wrap">
-                                                <input aria-label="Day of the week" id="recur-yearly-weekday" class="k-radio" type="radio">
+                                                <div class="k-scheduler-recurrence-fields">
+                                                    <span class="k-numerictextbox k-input">
+                                                        <input role="spinbutton" aria-label="Day of month" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="31 day">
+                                                        <span class="k-spin-button k-input-spinner">
+                                                            <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                            <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Ends</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span id="k-ddl-12" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
+                                                <span id="k-ddl-12-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Never</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
                                             </span>
-                                            <div class="k-scheduler-recurrence-fields">
-                                                <span id="k-ddl-15" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Position" tabindex="0">
-                                                    <span id="k-ddl-15-value" class="k-input-inner">
-                                                        <span class="k-input-value-text">Second</span>
-                                                    </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-form-hint">Repeats every month on the second weekend day.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <span class="k-spacer"></span>
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <span>Recurrence – Yearly</span>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-6" aria-describedby="k-dialog-content-6" aria-modal="true" style="width: 540px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-6">
+                            <span class="k-window-title k-dialog-title">Recurrence</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-6">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat every</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -742,22 +666,33 @@
                                                         </span>
                                                     </button>
                                                 </span>
-                                                <span id="k-ddl-16" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Day type" tabindex="0">
-                                                    <span id="k-ddl-16-value" class="k-input-inner">
-                                                        <span class="k-input-value-text">Weekend day</span>
-                                                    </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </button>
+                                            </span>
+                                            <span id="k-ddl-13" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
+                                                <span id="k-ddl-13-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Year</span>
                                                 </span>
-                                                <span class="k-scheduler-edit-form-row">
-                                                    <span>of</span>
-                                                    <span id="k-ddl-17" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Month" tabindex="0">
-                                                        <span id="k-ddl-17-value" class="k-input-inner">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat on</label>
+                                    <div class="k-form-field-wrap">
+                                        <ul class="k-radio-list k-list-vertical" role="radiogroup">
+                                            <li class="k-radio-list-item" role="none">
+                                                <span class="k-radio-wrap">
+                                                    <input aria-label="Day of the month" id="recur-yearly-monthday" class="k-radio k-checked" type="radio" checked="">
+                                                </span>
+                                                <div class="k-scheduler-recurrence-fields">
+                                                    <span id="k-ddl-14" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Month" tabindex="0">
+                                                        <span id="k-ddl-14-value" class="k-input-inner">
                                                             <span class="k-input-value-text">October</span>
                                                         </span>
                                                         <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
@@ -768,84 +703,85 @@
                                                             </span>
                                                         </button>
                                                     </span>
+                                                    <span class="k-numerictextbox k-input">
+                                                        <input role="spinbutton" aria-label="Day" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                                                        <span class="k-spin-button k-input-spinner">
+                                                            <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                            <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="k-radio-list-item" role="none">
+                                                <span class="k-radio-wrap">
+                                                    <input aria-label="Day of the week" id="recur-yearly-weekday" class="k-radio" type="radio">
                                                 </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Ends</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span id="k-ddl-18" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
-                                            <span id="k-ddl-18-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Never</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
+                                                <div class="k-scheduler-recurrence-fields">
+                                                    <span id="k-ddl-15" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Position" tabindex="0">
+                                                        <span id="k-ddl-15-value" class="k-input-inner">
+                                                            <span class="k-input-value-text">Second</span>
+                                                        </span>
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                    <span id="k-ddl-16" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Day type" tabindex="0">
+                                                        <span id="k-ddl-16-value" class="k-input-inner">
+                                                            <span class="k-input-value-text">Weekend day</span>
+                                                        </span>
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                    <span class="k-scheduler-edit-form-row">
+                                                        <span>of</span>
+                                                        <span id="k-ddl-17" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Month" tabindex="0">
+                                                            <span id="k-ddl-17-value" class="k-input-inner">
+                                                                <span class="k-input-value-text">October</span>
+                                                            </span>
+                                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-form-field">
-                                <div class="k-form-field-wrap">
-                                    <div class="k-form-hint">Repeats every year on October 1st.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <span class="k-spacer"></span>
-                        <button class="k-button">
-                            <span class="k-button-text">Cancel</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Save</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <span>Recurrence – Weekly – Remove recurrence</span>
-            <div class="k-dialog-wrapper">
-                <div class="k-overlay"></div>
-                <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-7" aria-describedby="k-dialog-content-7" aria-modal="true" style="width: 540px;">
-                    <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-7">
-                        <span class="k-window-title k-dialog-title">Recurrence</span>
-                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-window-content k-dialog-content" id="k-dialog-content-7">
-                        <div class="k-form k-form-horizontal">
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat every</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Ends</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span id="k-ddl-18" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
+                                                <span id="k-ddl-18-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Never</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -853,90 +789,153 @@
                                                     </span>
                                                 </button>
                                             </span>
-                                        </span>
-                                        <span id="k-ddl-19" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
-                                            <span id="k-ddl-19-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Week</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Repeat on</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-weekday-picker" role="group" aria-label="Repeat on days">
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Monday" tabindex="-1">
-                                            <span class="k-button-text">M</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Tuesday" tabindex="0">
-                                            <span class="k-button-text">T</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Wednesday" tabindex="-1">
-                                            <span class="k-button-text">W</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Thursday" tabindex="-1">
-                                            <span class="k-button-text">T</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Friday" tabindex="-1">
-                                            <span class="k-button-text">F</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Saturday" tabindex="-1">
-                                            <span class="k-button-text">S</span>
-                                        </button>
-                                        <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Sunday" tabindex="-1">
-                                            <span class="k-button-text">S</span>
-                                        </button>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-form-hint">Repeats every year on October 1st.</div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <label class="k-form-label k-label">Ends</label>
-                                <div class="k-form-field-wrap">
-                                    <div class="k-scheduler-recurrence-fields">
-                                        <span id="k-ddl-20" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
-                                            <span id="k-ddl-20-value" class="k-input-inner">
-                                                <span class="k-input-value-text">Never</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-form-field">
-                                <div class="k-form-field-wrap">
-                                    <div class="k-form-hint">Repeats every week on Tuesday, Wednesday and Thursday.</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                        <button class="k-button k-button-flat k-button-primary">
-                            <span class="k-button-text">Remove recurrence</span>
-                        </button>
-                        <button class="k-button">
-                            <span class="k-button-text">Cancel</span>
-                        </button>
-                        <button class="k-button k-button-primary">
-                            <span class="k-button-text">Save</span>
-                        </button>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <span class="k-spacer"></span>
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Save</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+            <section>
+                <span>Recurrence – Weekly – Remove recurrence</span>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-7" aria-describedby="k-dialog-content-7" aria-modal="true" style="width: 540px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-7">
+                            <span class="k-window-title k-dialog-title">Recurrence</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-7">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat every</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" aria-label="Interval" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                            <span id="k-ddl-19" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Frequency" tabindex="0">
+                                                <span id="k-ddl-19-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Week</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Repeat on</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-weekday-picker" role="group" aria-label="Repeat on days">
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Monday" tabindex="-1">
+                                                <span class="k-button-text">M</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Tuesday" tabindex="0">
+                                                <span class="k-button-text">T</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Wednesday" tabindex="-1">
+                                                <span class="k-button-text">W</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full k-selected" aria-pressed="true" aria-label="Thursday" tabindex="-1">
+                                                <span class="k-button-text">T</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Friday" tabindex="-1">
+                                                <span class="k-button-text">F</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Saturday" tabindex="-1">
+                                                <span class="k-button-text">S</span>
+                                            </button>
+                                            <button class="k-button k-button-flat k-button-primary k-rounded-full" aria-pressed="false" aria-label="Sunday" tabindex="-1">
+                                                <span class="k-button-text">S</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-form-label k-label">Ends</label>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-scheduler-recurrence-fields">
+                                            <span id="k-ddl-20" class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="End condition" tabindex="0">
+                                                <span id="k-ddl-20-value" class="k-input-inner">
+                                                    <span class="k-input-value-text">Never</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-form-hint">Repeats every week on Tuesday, Wednesday and Thursday.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <button class="k-button k-button-flat k-button-primary">
+                                <span class="k-button-text">Remove recurrence</span>
+                            </button>
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>
