@@ -1,6 +1,9 @@
 name: Publish to npm
 
 on:
+  push:
+    branches:
+      - 'develop'
   workflow_dispatch:
     inputs:
       release-type:
@@ -16,20 +19,18 @@ on:
         required: false
         default: false
         type: boolean
-  workflow_run:
-    workflows:
-      - "CI Weekly"
-    branches:
-      - develop
-    types:
-      - completed
+
+concurrency:
+  group: "publish-npm"
+  cancel-in-progress: false
 
 env:
-  RELEASE_TYPE: ${{ github.event_name == 'workflow_run' && 'dev' || inputs.release-type }}
+  RELEASE_TYPE: ${{ github.event_name == 'workflow_dispatch' && inputs.release-type || 'dev' }}
   DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry-run) && '--dry-run' || '' }}
 
 jobs:
   publish:
+    if: ${{ !startsWith(github.event.head_commit.message, 'chore(release):') }}
     runs-on: ubuntu-latest
     environment: upload
 
