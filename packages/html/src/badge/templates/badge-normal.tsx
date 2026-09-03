@@ -1,3 +1,5 @@
-import { Badge } from "..";
+import { Badge, KendoBadgeProps } from "../badge.spec";
 
-export const BadgeNormal = (props) => <Badge {...props}/>;
+export type BadgeNormalProps = Omit<KendoBadgeProps, 'position' | 'align'> & React.HTMLAttributes<HTMLSpanElement>;
+
+export const BadgeNormal = (props: BadgeNormalProps) => <Badge {...props} />;
