@@ -1,4 +1,4 @@
-import { BadgeNormal } from '..';
+import { BadgeNormal, BadgePositioned } from '..';
 
 
 const styles = `
@@ -72,31 +72,31 @@ export default () =>(
 
             <span>Inside</span>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="top-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="top-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="top-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="top-end">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="bottom-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="bottom-end">Rect</BadgePositioned>
             </div>
             <span></span>
 
             <span>Edge</span>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="top-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="top-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="top-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="top-end">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="bottom-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="bottom-end">Rect</BadgePositioned>
             </div>
             <span></span>
 
@@ -104,16 +104,16 @@ export default () =>(
 
             <span>Outside</span>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="top-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="top-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="top-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="top-end">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="bottom-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="bottom-end">Rect</BadgePositioned>
             </div>
             <span></span>
 
@@ -121,31 +121,31 @@ export default () =>(
 
             <span>Inside RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="top-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="top-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="top-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="top-end">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="bottom-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="inside" align="bottom-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="inside" align="bottom-end">Rect</BadgePositioned>
             </div>
             <span></span>
 
             <span>Edge RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="top-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="top-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="top-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="top-end">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="bottom-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="edge" align="bottom-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="edge" align="bottom-end">Rect</BadgePositioned>
             </div>
             <span></span>
 
@@ -153,16 +153,16 @@ export default () =>(
 
             <span>Outside RTL</span>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="top-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="top-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="top-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="top-end">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-start">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="bottom-start">Rect</BadgePositioned>
             </div>
             <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium" position="outside" align="bottom-end">Rect</BadgeNormal>
+                <BadgePositioned rounded="medium" position="outside" align="bottom-end">Rect</BadgePositioned>
             </div>
             <span></span>
 
