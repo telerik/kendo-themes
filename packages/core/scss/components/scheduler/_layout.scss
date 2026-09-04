@@ -595,8 +595,8 @@
 
 
     // Draging hint
+    // The moving copy of the event, rendered with the `.k-selected` fill (see _theme.scss).
     .k-event-drag-hint {
-        opacity: .5;
         z-index: k-z-index("base", 3);
 
         .k-event-top-actions,
@@ -608,6 +608,11 @@
         .k-event-time {
             display: block;
         }
+    }
+
+    // The original event, left in place at its source slot while it is being dragged.
+    .k-event-drag-source {
+        opacity: .5;
     }
 
 

@@ -491,7 +491,8 @@ export default () => (
                     <SchedulerEvent style={{ top: "80px", height: "71px", width: "166px", left: "348px" }} recurring="non-recurring" title="Non-Recurring event" time="7:30 AM - 9:00 AM" />
                     <SchedulerEvent style={{ top: "110px", height: "71px", width: "166px", left: "520px" }} selected title="Selected event" time="8:30 AM - 9:30 AM" />
                     <SchedulerEvent style={{ top: "0px", height: "71px", width: "166px", left: "520px", color: "#333", backgroundColor: "#ddf", borderColor: "#fff" }} title="Custom color event" time="7:00 AM - 8:00 AM" />
-                    <SchedulerEvent className="k-event-drag-hint" style={{ left: "175px", top: "0px", height: "71px", width: "166px" }} title="Drag hint" time="8:00 AM - 9:00 AM" />
+                    <SchedulerEvent className="k-event-drag-source" style={{ left: "175px", top: "0px", height: "71px", width: "166px" }} title="Drag source" time="8:00 AM - 9:00 AM" />
+                    <SchedulerEvent className="k-event-drag-hint" style={{ left: "175px", top: "150px", height: "71px", width: "166px" }} title="Drag hint" time="8:00 AM - 9:00 AM" />
                     <SchedulerEvent style={{ backgroundColor: "rgb(248, 163, 152)", borderColor: "rgb(248, 163, 152)", left: "175px", top: "100px", height: "71px", width: "166px" }} inverse ongoing title="Inverse Background" time="10:00 AM - 11:00 AM" />
                     <SchedulerEvent style={{ top: "0px", height: "70px", width: "166px", left: "760px" }} readonly title="Read-only event" time="7:30 AM - 9:00 AM" />
                     <SchedulerEvent style={{ top: "110px", height: "71px", width: "166px", left: "708px" }} continuationBottom title="Multi-Day event" time="8:30 AM - 9:30 AM" />
