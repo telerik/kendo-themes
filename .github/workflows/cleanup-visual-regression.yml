@@ -12,7 +12,7 @@ on:
     types: [closed]
 
 concurrency:
-  group: cleanup-visual-regression-${{ github.event.pull_request.number }}
+  group: visual-regression-refs/heads/${{ github.event.pull_request.head.ref }}
 
 jobs:
   cleanup:
@@ -25,15 +25,72 @@ jobs:
           ref: gh-pages
           fetch-depth: 1
 
-      - name: Remove PR report folder
+      - name: Remove PR report folders
+        id: cleanup
         run: |
-          DIR="reports/pr-${{ github.event.pull_request.number }}"
-          if [ -d "$DIR" ]; then
+          PR_DIR="reports/pr-${{ github.event.pull_request.number }}"
+          SHA_DIR="reports/${{ github.event.pull_request.head.sha }}"
+          removed=false
+          if [ -d "$PR_DIR" ] || [ -d "$SHA_DIR" ]; then
             git config user.name "kendo-bot"
             git config user.email "kendouiteam@progress.com"
-            git rm -r --ignore-unmatch "$DIR"
-            git commit -m "chore(ci): remove visual regression report for closed PR #${{ github.event.pull_request.number }}"
-            git push origin gh-pages
-          else
-            echo "No report folder found at $DIR, nothing to clean up."
+            if [ -d "$PR_DIR" ]; then
+              git rm -r "$PR_DIR"
+              removed=true
+            fi
+            if [ -f "$SHA_DIR/.source-sha" ] &&
+               [ "$(cat "$SHA_DIR/.source-sha")" = "${{ github.event.pull_request.head.sha }}" ]; then
+              git rm -r "$SHA_DIR"
+              removed=true
+            fi
           fi
+
+          if [ "$removed" = "true" ]; then
+            git commit -m "chore(ci): remove visual regression report for closed PR #${{ github.event.pull_request.number }}"
+            for attempt in 1 2 3; do
+              git push origin gh-pages && break
+              [ "$attempt" -eq 3 ] && exit 1
+              git pull --rebase origin gh-pages
+            done
+            echo "removed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No report folders found for this PR, nothing to clean up."
+          fi
+
+      - name: Remove PR from reports index
+        if: steps.cleanup.outputs.removed == 'true'
+        uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const marker = `PR #${process.env.PR_NUMBER} report`;
+
+            for (let attempt = 1; attempt <= 3; attempt++) {
+              try {
+                const { data: current } = await github.rest.repos.getContent({
+                  owner, repo, path: 'index.html', ref: 'gh-pages',
+                });
+                const content = Buffer.from(current.content, 'base64').toString('utf8');
+                const updated = content
+                  .split('\n')
+                  .filter(line => !line.includes(marker))
+                  .join('\n');
+                if (updated === content) return;
+
+                await github.rest.repos.createOrUpdateFileContents({
+                  owner, repo, path: 'index.html',
+                  message: 'chore(ci): update reports index',
+                  content: Buffer.from(updated).toString('base64'),
+                  branch: 'gh-pages',
+                  sha: current.sha,
+                  committer: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                  author: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                });
+                return;
+              } catch (error) {
+                if (attempt === 3 || ![409, 422].includes(error.status)) throw error;
+                core.info(`Reports index changed concurrently; retrying (${attempt}/3).`);
+              }
+            }
