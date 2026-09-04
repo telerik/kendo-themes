@@ -84,12 +84,24 @@ jobs:
         uses: actions/github-script@v9
         with:
           script: |
-            const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              commit_sha: context.sha,
-            });
-            const openPr = prs.find(pr => pr.state === 'open');
+            // Cover the common first-push race cheaply here. The PR lifecycle
+            // reconciler handles PRs opened after this bounded wait expires.
+            let openPr;
+            for (let attempt = 1; attempt <= 6; attempt++) {
+              const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                commit_sha: context.sha,
+              });
+              openPr = prs.find(pr =>
+                pr.state === 'open' &&
+                pr.head.sha === context.sha &&
+                pr.head.repo?.full_name === `${context.repo.owner}/${context.repo.repo}`
+              );
+              if (openPr || attempt === 6) break;
+              core.info(`No open PR found (attempt ${attempt}/6); retrying in 5 seconds.`);
+              await new Promise(resolve => setTimeout(resolve, 5000));
+            }
             if (openPr) {
               core.exportVariable('REG_REPORT_KEY', `pr-${openPr.number}`);
               core.setOutput('pr-number', String(openPr.number));
@@ -158,6 +170,12 @@ jobs:
             }
           '
 
+      - name: Record report source commit
+        if: ${{ !inputs.baseline && steps.publish-target.outputs.target-dir != '' }}
+        env:
+          SOURCE_DIR: ${{ steps.publish-target.outputs.source-dir }}
+        run: printf '%s\n' '${{ github.sha }}' > "$SOURCE_DIR/.source-sha"
+
       # reg-suit's own publish plugin shells out to `git commit`/`git push`
       # against a worktree of the *entire* gh-pages history, which reliably
       # crashes with ENOBUFS once a run has a real (non-"new") diff to report
@@ -178,6 +196,52 @@ jobs:
           keep_files: false
           user_name: kendo-bot
           user_email: kendouiteam@progress.com
+
+      - name: Validate pull request report
+        id: validate-pr-report
+        if: ${{ !inputs.baseline && steps.resolve-report-key.outputs.pr-number != '' }}
+        uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ steps.resolve-report-key.outputs.pr-number }}
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              ...context.repo,
+              pull_number: Number(process.env.PR_NUMBER),
+            });
+            core.setOutput('current', String(pr.state === 'open' && pr.head.sha === context.sha));
+
+      # A PR can close or receive another push after report-key resolution.
+      # Remove this run's report only when its source marker still matches, so
+      # a stale run cannot recreate a closed report or delete a newer one.
+      - name: Remove stale pull request report
+        if: ${{ steps.validate-pr-report.outputs.current == 'false' }}
+        env:
+          PR_NUMBER: ${{ steps.resolve-report-key.outputs.pr-number }}
+        run: |
+          git fetch --depth 1 origin gh-pages
+          git worktree add --no-checkout gh-pages-stale origin/gh-pages
+          git -C gh-pages-stale sparse-checkout init --no-cone
+          git -C gh-pages-stale sparse-checkout set "reports/pr-$PR_NUMBER"
+          git -C gh-pages-stale checkout
+
+          cd gh-pages-stale
+          target_dir="reports/pr-$PR_NUMBER"
+          if [ ! -f "$target_dir/.source-sha" ] ||
+             [ "$(cat "$target_dir/.source-sha")" != "${{ github.sha }}" ]; then
+            echo "A newer report replaced this one; leaving it untouched."
+            exit 0
+          fi
+
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+          git rm -r "$target_dir"
+          git commit -m "chore(ci): remove stale visual report for PR #$PR_NUMBER"
+          for attempt in 1 2 3; do
+            git push origin HEAD:gh-pages && break
+            [ "$attempt" -eq 3 ] && exit 1
+            git pull --rebase origin gh-pages
+          done
 
       # Baseline runs publish under reports/<commit-sha>/ (see "Resolve report
       # key" above - REG_REPORT_KEY is only set for PR runs), and fetch() only
@@ -200,7 +264,9 @@ jobs:
 
           for dir in reports/*/; do
             name="$(basename "$dir")"
-            [[ "$name" == pr-* || "$name" == "$KEEP" ]] && continue
+            # Source-marked SHA reports belong to feature runs whose PR may
+            # not exist yet. The lifecycle reconciler moves or removes them.
+            [[ "$name" == pr-* || "$name" == "$KEEP" || -f "$dir/.source-sha" ]] && continue
             git rm -rq --ignore-unmatch "$dir"
           done
 
@@ -237,11 +303,11 @@ jobs:
               return;
             }
 
-            // Pruning above keeps exactly the current baseline commit's
-            // directory alongside the pr-* ones, so whatever's left that
-            // isn't a PR report is the baseline.
+            // Feature runs may temporarily leave commit-keyed reports for the
+            // lifecycle reconciler, so only a baseline run may update the
+            // develop alias.
             const prDirs = dirs.filter(d => d.startsWith('pr-')).sort((a, b) => Number(b.slice(3)) - Number(a.slice(3)));
-            const baselineDir = dirs.find(d => !d.startsWith('pr-'));
+            const baselineDir = ${{ inputs.baseline }} ? context.sha : undefined;
 
             async function putFile(path, content, message) {
               let sha;
@@ -264,7 +330,7 @@ jobs:
             // Static, SHA-independent alias: /develop/ always redirects to
             // whatever the current baseline report is, so nobody has to look
             // up a commit hash to see it.
-            if (baselineDir) {
+            if (${{ inputs.baseline }} && baselineDir) {
               const target = `../reports/${baselineDir}/`;
               const redirect = [
                 '<!DOCTYPE html>',
@@ -323,7 +389,10 @@ jobs:
             // This workflow is push-triggered, so there's no pull_request
             // context (context.issue.number is always unset here) - use the
             // PR resolved in "Resolve report key" instead.
-            const issue_number = Number('${{ steps.resolve-report-key.outputs.pr-number }}') || undefined;
+            const isCurrentPrReport = '${{ steps.validate-pr-report.outputs.current }}' !== 'false';
+            const issue_number = isCurrentPrReport
+              ? Number('${{ steps.resolve-report-key.outputs.pr-number }}') || undefined
+              : undefined;
             if (!issue_number) return;   // no open PR for this commit (or a baseline run)
             const marker = '<!-- reg-suit-visual-report -->';
             const body = [
