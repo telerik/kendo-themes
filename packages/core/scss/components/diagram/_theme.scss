@@ -1,2 +1,23 @@
+@use "../../color-system/_functions.scss" as *;
+
 @mixin kendo-diagram--theme-base() {
+
+    // Diagram rich text editor
+    .k-diagram-rich-text-editor {
+
+        .k-editor-content {
+
+            .k-placeholder:first-child::before {
+                color: k-color(subtle);
+            }
+
+            &::selection {
+                background: var(--editor-selection-bg);
+            }
+
+            .ProseMirror-selectednode { // stylelint-disable-line selector-class-pattern
+                outline-color: var(--editor-selection-bg);
+            }
+        }
+    }
 }

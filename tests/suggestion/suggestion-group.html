@@ -1,48 +1,28 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: 60px repeat(3, minmax(0, 1fr))
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-4">
-        <span></span>
-        <span>Suggestion - horizontal scroll (Default)</span>
-        <span>Suggestion - horizontal scroll with buttons</span>
-        <span>Suggestions - wrap</span>
-        <section>undefined</section>
-        <section>
-            <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
-                <div class="k-suggestions-scroll">
-                    <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                    <span class="k-suggestion k-hover" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                    <span class="k-suggestion k-focus" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                    <span class="k-suggestion k-active" role="button" tabindex="0" aria-label="Active">Active</span>
-                    <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-scrollwrap">
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
-                </button>
-                <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-4">
+            <span></span>
+            <span>Suggestion - horizontal scroll (Default)</span>
+            <span>Suggestion - horizontal scroll with buttons</span>
+            <span>Suggestions - wrap</span>
+            <section>undefined</section>
+            <section>
+                <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
                     <div class="k-suggestions-scroll">
                         <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
                         <span class="k-suggestion k-hover" role="button" tabindex="0" aria-label="Hover">Hover</span>
@@ -51,46 +31,46 @@
                         <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
                     </div>
                 </div>
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-group" role="group">
-                <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                <span class="k-suggestion k-hover" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                <span class="k-suggestion k-focus" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                <span class="k-suggestion k-active" role="button" tabindex="0" aria-label="Active">Active</span>
-                <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
-            </div>
-        </section>
-        <section>base</section>
-        <section>
-            <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
-                <div class="k-suggestions-scroll">
-                    <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                    <span class="k-suggestion k-hover k-suggestion-base" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                    <span class="k-suggestion k-focus k-suggestion-base" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                    <span class="k-suggestion k-active k-suggestion-base" role="button" tabindex="0" aria-label="Active">Active</span>
-                    <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+            </section>
+            <section>
+                <div class="k-suggestion-scrollwrap">
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+                        <div class="k-suggestions-scroll">
+                            <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                            <span class="k-suggestion k-hover" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                            <span class="k-suggestion k-focus" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                            <span class="k-suggestion k-active" role="button" tabindex="0" aria-label="Active">Active</span>
+                            <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                        </div>
+                    </div>
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-scrollwrap">
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
-                </button>
-                <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+            </section>
+            <section>
+                <div class="k-suggestion-group" role="group">
+                    <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                    <span class="k-suggestion k-hover" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                    <span class="k-suggestion k-focus" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                    <span class="k-suggestion k-active" role="button" tabindex="0" aria-label="Active">Active</span>
+                    <span class="k-suggestion" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                </div>
+            </section>
+            <section>base</section>
+            <section>
+                <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
                     <div class="k-suggestions-scroll">
                         <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
                         <span class="k-suggestion k-hover k-suggestion-base" role="button" tabindex="0" aria-label="Hover">Hover</span>
@@ -99,46 +79,46 @@
                         <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
                     </div>
                 </div>
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-group" role="group">
-                <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                <span class="k-suggestion k-hover k-suggestion-base" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                <span class="k-suggestion k-focus k-suggestion-base" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                <span class="k-suggestion k-active k-suggestion-base" role="button" tabindex="0" aria-label="Active">Active</span>
-                <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
-            </div>
-        </section>
-        <section>primary</section>
-        <section>
-            <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
-                <div class="k-suggestions-scroll">
-                    <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                    <span class="k-suggestion k-hover k-suggestion-primary" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                    <span class="k-suggestion k-focus k-suggestion-primary" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                    <span class="k-suggestion k-active k-suggestion-primary" role="button" tabindex="0" aria-label="Active">Active</span>
-                    <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+            </section>
+            <section>
+                <div class="k-suggestion-scrollwrap">
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+                        <div class="k-suggestions-scroll">
+                            <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                            <span class="k-suggestion k-hover k-suggestion-base" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                            <span class="k-suggestion k-focus k-suggestion-base" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                            <span class="k-suggestion k-active k-suggestion-base" role="button" tabindex="0" aria-label="Active">Active</span>
+                            <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                        </div>
+                    </div>
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-scrollwrap">
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
-                </button>
-                <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+            </section>
+            <section>
+                <div class="k-suggestion-group" role="group">
+                    <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                    <span class="k-suggestion k-hover k-suggestion-base" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                    <span class="k-suggestion k-focus k-suggestion-base" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                    <span class="k-suggestion k-active k-suggestion-base" role="button" tabindex="0" aria-label="Active">Active</span>
+                    <span class="k-suggestion k-suggestion-base" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                </div>
+            </section>
+            <section>primary</section>
+            <section>
+                <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
                     <div class="k-suggestions-scroll">
                         <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
                         <span class="k-suggestion k-hover k-suggestion-primary" role="button" tabindex="0" aria-label="Hover">Hover</span>
@@ -147,46 +127,46 @@
                         <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
                     </div>
                 </div>
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-group" role="group">
-                <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                <span class="k-suggestion k-hover k-suggestion-primary" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                <span class="k-suggestion k-focus k-suggestion-primary" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                <span class="k-suggestion k-active k-suggestion-primary" role="button" tabindex="0" aria-label="Active">Active</span>
-                <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
-            </div>
-        </section>
-        <section>secondary</section>
-        <section>
-            <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
-                <div class="k-suggestions-scroll">
-                    <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                    <span class="k-suggestion k-hover k-suggestion-secondary" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                    <span class="k-suggestion k-focus k-suggestion-secondary" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                    <span class="k-suggestion k-active k-suggestion-secondary" role="button" tabindex="0" aria-label="Active">Active</span>
-                    <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+            </section>
+            <section>
+                <div class="k-suggestion-scrollwrap">
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+                        <div class="k-suggestions-scroll">
+                            <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                            <span class="k-suggestion k-hover k-suggestion-primary" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                            <span class="k-suggestion k-focus k-suggestion-primary" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                            <span class="k-suggestion k-active k-suggestion-primary" role="button" tabindex="0" aria-label="Active">Active</span>
+                            <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                        </div>
+                    </div>
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-scrollwrap">
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
-                </button>
-                <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+            </section>
+            <section>
+                <div class="k-suggestion-group" role="group">
+                    <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                    <span class="k-suggestion k-hover k-suggestion-primary" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                    <span class="k-suggestion k-focus k-suggestion-primary" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                    <span class="k-suggestion k-active k-suggestion-primary" role="button" tabindex="0" aria-label="Active">Active</span>
+                    <span class="k-suggestion k-suggestion-primary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                </div>
+            </section>
+            <section>secondary</section>
+            <section>
+                <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
                     <div class="k-suggestions-scroll">
                         <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
                         <span class="k-suggestion k-hover k-suggestion-secondary" role="button" tabindex="0" aria-label="Hover">Hover</span>
@@ -195,46 +175,46 @@
                         <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
                     </div>
                 </div>
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-group" role="group">
-                <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                <span class="k-suggestion k-hover k-suggestion-secondary" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                <span class="k-suggestion k-focus k-suggestion-secondary" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                <span class="k-suggestion k-active k-suggestion-secondary" role="button" tabindex="0" aria-label="Active">Active</span>
-                <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
-            </div>
-        </section>
-        <section>tertiary</section>
-        <section>
-            <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
-                <div class="k-suggestions-scroll">
-                    <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                    <span class="k-suggestion k-hover k-suggestion-tertiary" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                    <span class="k-suggestion k-focus k-suggestion-tertiary" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                    <span class="k-suggestion k-active k-suggestion-tertiary" role="button" tabindex="0" aria-label="Active">Active</span>
-                    <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+            </section>
+            <section>
+                <div class="k-suggestion-scrollwrap">
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+                        <div class="k-suggestions-scroll">
+                            <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                            <span class="k-suggestion k-hover k-suggestion-secondary" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                            <span class="k-suggestion k-focus k-suggestion-secondary" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                            <span class="k-suggestion k-active k-suggestion-secondary" role="button" tabindex="0" aria-label="Active">Active</span>
+                            <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                        </div>
+                    </div>
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-scrollwrap">
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
-                </button>
-                <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+            </section>
+            <section>
+                <div class="k-suggestion-group" role="group">
+                    <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                    <span class="k-suggestion k-hover k-suggestion-secondary" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                    <span class="k-suggestion k-focus k-suggestion-secondary" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                    <span class="k-suggestion k-active k-suggestion-secondary" role="button" tabindex="0" aria-label="Active">Active</span>
+                    <span class="k-suggestion k-suggestion-secondary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                </div>
+            </section>
+            <section>tertiary</section>
+            <section>
+                <div class="k-suggestion-group k-suggestion-group-scrollable k-suggestion-group-scrollable-start" role="group">
                     <div class="k-suggestions-scroll">
                         <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
                         <span class="k-suggestion k-hover k-suggestion-tertiary" role="button" tabindex="0" aria-label="Hover">Hover</span>
@@ -243,24 +223,43 @@
                         <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
                     </div>
                 </div>
-                <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-        </section>
-        <section>
-            <div class="k-suggestion-group" role="group">
-                <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
-                <span class="k-suggestion k-hover k-suggestion-tertiary" role="button" tabindex="0" aria-label="Hover">Hover</span>
-                <span class="k-suggestion k-focus k-suggestion-tertiary" role="button" tabindex="0" aria-label="Focus">Focus</span>
-                <span class="k-suggestion k-active k-suggestion-tertiary" role="button" tabindex="0" aria-label="Active">Active</span>
-                <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
-            </div>
-        </section>
-    </div>
-</body>
+            </section>
+            <section>
+                <div class="k-suggestion-scrollwrap">
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll left">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="k-suggestion-group k-suggestion-group-scrollable-start" role="group">
+                        <div class="k-suggestions-scroll">
+                            <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                            <span class="k-suggestion k-hover k-suggestion-tertiary" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                            <span class="k-suggestion k-focus k-suggestion-tertiary" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                            <span class="k-suggestion k-active k-suggestion-tertiary" role="button" tabindex="0" aria-label="Active">Active</span>
+                            <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                        </div>
+                    </div>
+                    <button class="k-button k-button-xs k-button-flat k-icon-button" aria-label="Scroll right">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </section>
+            <section>
+                <div class="k-suggestion-group" role="group">
+                    <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion">Suggestion</span>
+                    <span class="k-suggestion k-hover k-suggestion-tertiary" role="button" tabindex="0" aria-label="Hover">Hover</span>
+                    <span class="k-suggestion k-focus k-suggestion-tertiary" role="button" tabindex="0" aria-label="Focus">Focus</span>
+                    <span class="k-suggestion k-active k-suggestion-tertiary" role="button" tabindex="0" aria-label="Active">Active</span>
+                    <span class="k-suggestion k-suggestion-tertiary" role="button" tabindex="0" aria-label="Suggestion with very very very very very very very very very very very very very very very long text">Suggestion with very very very very very very very very very very very very very very very long text</span>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

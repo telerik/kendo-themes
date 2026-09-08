@@ -1,574 +1,573 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             gap: 20px;
             max-width: unset;
             grid-template-columns: 20px 1fr;
-        }
-        /* These styles are used to test the pager items hiding order threshold */
-        #test-area>.k-toolbar {
+            }
+            /* These styles are used to test the pager items hiding order threshold */
+            #test-area > .k-toolbar {
             width: fit-content;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span class="k-colspan-2">Scheduler Toolbar — Day view</span>
-        <span>0</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">New Event</span>
-            </button>
-            <button class="k-toolbar-button  k-button k-button-flat">
-                <span class="k-button-text">Today</span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span class="k-colspan-2">Scheduler Toolbar — Day view</span>
+            <span>0</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
+                    <span class="k-button-text">New Event</span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">3 February</span>
+                </button>
+                <span class="k-spacer"></span>
+                <div class="k-scheduler-views k-segmented-control" role="group">
+                    <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 15%;"></div>
+                    <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                        <span class="k-segmented-control-button-text">Day</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Week</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Month</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Timeline</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Agenda</span>
+                    </button>
+                </div>
+            </div>
+            <span>1</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">3 February</span>
+                </button>
+                <span class="k-spacer"></span>
+                <span class="k-separator"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Day</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">3 February</span>
-            </button>
-            <span class="k-spacer"></span>
-            <div class="k-scheduler-views k-segmented-control" role="group">
-                <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 15%;"></div>
-                <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
-                    <span class="k-segmented-control-button-text">Day</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Week</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Month</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Timeline</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Agenda</span>
-                </button>
-            </div>
-        </div>
-        <span>1</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">New Event</span>
-            </button>
-            <button class="k-toolbar-button  k-button k-button-flat">
-                <span class="k-button-text">Today</span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+            <span>2</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">3 Feb</span>
+                </button>
+                <span class="k-spacer"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Day</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">3 February</span>
-            </button>
-            <span class="k-spacer"></span>
-            <span class="k-separator"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Day</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+            <span>3</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </button>
-        </div>
-        <span>2</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">3 Feb</span>
+                </button>
+                <span class="k-spacer"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Day</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">3 Feb</span>
-            </button>
-            <span class="k-spacer"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Day</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+            <span class="k-colspan-2">Scheduler Toolbar — Week view</span>
+            <span>0</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
-                </span>
-            </button>
-        </div>
-        <span>3</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">3 Feb</span>
-            </button>
-            <span class="k-spacer"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Day</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </button>
-        </div>
-        <span class="k-colspan-2">Scheduler Toolbar — Week view</span>
-        <span>0</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">New Event</span>
-            </button>
-            <button class="k-toolbar-button  k-button k-button-flat">
-                <span class="k-button-text">Today</span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
+                    <span class="k-button-text">New Event</span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">31 May – 6 June</span>
+                </button>
+                <span class="k-spacer"></span>
+                <div class="k-scheduler-views k-segmented-control" role="group">
+                    <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 19%; left: 15%;"></div>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Day</span>
+                    </button>
+                    <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                        <span class="k-segmented-control-button-text">Week</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Month</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Timeline</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Agenda</span>
+                    </button>
+                </div>
+            </div>
+            <span>1</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">31 May – 6 June</span>
+                </button>
+                <span class="k-spacer"></span>
+                <span class="k-separator"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Week</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">31 May – 6 June</span>
-            </button>
-            <span class="k-spacer"></span>
-            <div class="k-scheduler-views k-segmented-control" role="group">
-                <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 19%; left: 15%;"></div>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Day</span>
-                </button>
-                <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
-                    <span class="k-segmented-control-button-text">Week</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Month</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Timeline</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Agenda</span>
-                </button>
-            </div>
-        </div>
-        <span>1</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">New Event</span>
-            </button>
-            <button class="k-toolbar-button  k-button k-button-flat">
-                <span class="k-button-text">Today</span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+            <span>2</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">31 May</span>
+                </button>
+                <span class="k-spacer"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Week</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">31 May – 6 June</span>
-            </button>
-            <span class="k-spacer"></span>
-            <span class="k-separator"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Week</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+            <span>3</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </button>
-        </div>
-        <span>2</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">31 May</span>
+                </button>
+                <span class="k-spacer"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Week</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">31 May</span>
-            </button>
-            <span class="k-spacer"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Week</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+            <span class="k-colspan-2">Scheduler Toolbar — Month view</span>
+            <span>0</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
-                </span>
-            </button>
-        </div>
-        <span>3</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">31 May</span>
-            </button>
-            <span class="k-spacer"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Week</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </button>
-        </div>
-        <span class="k-colspan-2">Scheduler Toolbar — Month view</span>
-        <span>0</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">New Event</span>
-            </button>
-            <button class="k-toolbar-button  k-button k-button-flat">
-                <span class="k-button-text">Today</span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
-                        </svg>
-                    </span>
+                    <span class="k-button-text">New Event</span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">February 2026</span>
+                </button>
+                <span class="k-spacer"></span>
+                <div class="k-scheduler-views k-segmented-control" role="group">
+                    <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 19%; left: 34%;"></div>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Day</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Week</span>
+                    </button>
+                    <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                        <span class="k-segmented-control-button-text">Month</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Timeline</span>
+                    </button>
+                    <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                        <span class="k-segmented-control-button-text">Agenda</span>
+                    </button>
+                </div>
+            </div>
+            <span>1</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">New Event</span>
+                </button>
+                <button class="k-toolbar-button  k-button k-button-flat">
+                    <span class="k-button-text">Today</span>
+                </button>
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                        </svg>
+                    </span>
+                    <span class="k-button-text">February 2026</span>
+                </button>
+                <span class="k-spacer"></span>
+                <span class="k-separator"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Month</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">February 2026</span>
-            </button>
-            <span class="k-spacer"></span>
-            <div class="k-scheduler-views k-segmented-control" role="group">
-                <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 19%; left: 34%;"></div>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Day</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Week</span>
-                </button>
-                <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
-                    <span class="k-segmented-control-button-text">Month</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Timeline</span>
-                </button>
-                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
-                    <span class="k-segmented-control-button-text">Agenda</span>
-                </button>
-            </div>
-        </div>
-        <span>1</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">New Event</span>
-            </button>
-            <button class="k-toolbar-button  k-button k-button-flat">
-                <span class="k-button-text">Today</span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+            <span>2</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">Feb 2026</span>
+                </button>
+                <span class="k-spacer"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Month</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">February 2026</span>
-            </button>
-            <span class="k-spacer"></span>
-            <span class="k-separator"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Month</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+            <span>3</span>
+            <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </button>
-        </div>
-        <span>2</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-            <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416z"></path>
+                            <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                         </svg>
                     </span>
                 </button>
-                <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
                         </svg>
+                    </span>
+                    <span class="k-button-text">Feb 2026</span>
+                </button>
+                <span class="k-spacer"></span>
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
+                    <span class="k-button-text">Month</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                            </svg>
+                        </span>
                     </span>
                 </button>
             </div>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">Feb 2026</span>
-            </button>
-            <span class="k-spacer"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Month</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </button>
         </div>
-        <span>3</span>
-        <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
-            <button class="k-toolbar-button  k-button k-button-primary k-icon-button" aria-label="Add new event">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
-                    </svg>
-                </span>
-            </button>
-            <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
-                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                    </svg>
-                </span>
-                <span class="k-button-text">Feb 2026</span>
-            </button>
-            <span class="k-spacer"></span>
-            <button class="k-toolbar-menu-button  k-menu-button k-button k-button-flat" aria-expanded="false">
-                <span class="k-button-text">Month</span>
-                <span class="k-menu-button-arrow k-button-arrow">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </button>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

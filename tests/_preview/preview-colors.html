@@ -1,1043 +1,1042 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             max-width: unset;
             padding: 20px;
-        }
-        .color-group {
+            }
+            .color-group {
             margin-bottom: 32px;
-        }
-        .color-group-title {
+            }
+            .color-group-title {
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 12px;
             padding-bottom: 4px;
             border-bottom: 1px solid var(--kendo-color-border, rgba(0, 0, 0, 0.08));
-        }
-        .color-grid {
+            }
+            .color-grid {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
             gap: 8px;
-        }
-        .series-groups {
+            }
+            .series-groups {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
-        }
-        .series-groups .color-grid {
+            }
+            .series-groups .color-grid {
             grid-template-columns: repeat(5, 1fr);
-        }
-        .color-swatch {
+            }
+            .color-swatch {
             display: flex;
             flex-direction: column;
             border: 1px solid var(--kendo-color-border, rgba(0, 0, 0, 0.08));
             border-radius: 6px;
             overflow: hidden;
-        }
-        .color-swatch-preview {
+            }
+            .color-swatch-preview {
             height: 60px;
-        }
-        .color-swatch-info {
+            }
+            .color-swatch-info {
             padding: 8px 10px;
             font-size: 12px;
             line-height: 1.4;
             background: var(--kendo-color-surface-alt, #fff);
-        }
-        .color-swatch-name {
+            }
+            .color-swatch-name {
             font-weight: 600;
             word-break: break-all;
-        }
-        .color-swatch-var {
+            }
+            .color-swatch-var {
             color: var(--kendo-color-subtle, #666);
             word-break: break-all;
             font-family: monospace;
             font-size: 11px;
-        }
-
-    </style>
-    <div id="test-area">
-        <div class="color-group">
-            <div class="color-group-title">Misc</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-app-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">app-surface</div>
-                        <div class="color-swatch-var">--kendo-color-app-surface</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-app-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-app-surface</div>
-                        <div class="color-swatch-var">--kendo-color-on-app-surface</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">subtle</div>
-                        <div class="color-swatch-var">--kendo-color-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">surface</div>
-                        <div class="color-swatch-var">--kendo-color-surface</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-surface-alt);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">surface-alt</div>
-                        <div class="color-swatch-var">--kendo-color-surface-alt</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-border);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">border</div>
-                        <div class="color-swatch-var">--kendo-color-border</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-border-alt);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">border-alt</div>
-                        <div class="color-swatch-var">--kendo-color-border-alt</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Base</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-base-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-base-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-base-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base</div>
-                        <div class="color-swatch-var">--kendo-color-base</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-hover</div>
-                        <div class="color-swatch-var">--kendo-color-base-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-active</div>
-                        <div class="color-swatch-var">--kendo-color-base-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-base-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-base-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-base);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-base</div>
-                        <div class="color-swatch-var">--kendo-color-on-base</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">base-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-base-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Primary</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-primary-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-primary-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-primary-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary</div>
-                        <div class="color-swatch-var">--kendo-color-primary</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-hover</div>
-                        <div class="color-swatch-var">--kendo-color-primary-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-active</div>
-                        <div class="color-swatch-var">--kendo-color-primary-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-primary-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-primary-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-primary);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-primary</div>
-                        <div class="color-swatch-var">--kendo-color-on-primary</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">primary-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-primary-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Secondary</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary</div>
-                        <div class="color-swatch-var">--kendo-color-secondary</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-hover</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-active</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-secondary);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-secondary</div>
-                        <div class="color-swatch-var">--kendo-color-on-secondary</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">secondary-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-secondary-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Tertiary</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-hover</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-active</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-tertiary);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-tertiary</div>
-                        <div class="color-swatch-var">--kendo-color-on-tertiary</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">tertiary-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-tertiary-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Info</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-info-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-info-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-info-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info</div>
-                        <div class="color-swatch-var">--kendo-color-info</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-hover</div>
-                        <div class="color-swatch-var">--kendo-color-info-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-active</div>
-                        <div class="color-swatch-var">--kendo-color-info-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-info-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-info-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-info);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-info</div>
-                        <div class="color-swatch-var">--kendo-color-on-info</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">info-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-info-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Success</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-success-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-success-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-success-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success</div>
-                        <div class="color-swatch-var">--kendo-color-success</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-hover</div>
-                        <div class="color-swatch-var">--kendo-color-success-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-active</div>
-                        <div class="color-swatch-var">--kendo-color-success-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-success-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-success-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-success);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-success</div>
-                        <div class="color-swatch-var">--kendo-color-on-success</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">success-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-success-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Warning</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-warning-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-warning-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-warning-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning</div>
-                        <div class="color-swatch-var">--kendo-color-warning</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-hover</div>
-                        <div class="color-swatch-var">--kendo-color-warning-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-active</div>
-                        <div class="color-swatch-var">--kendo-color-warning-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-warning-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-warning-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-warning);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-warning</div>
-                        <div class="color-swatch-var">--kendo-color-on-warning</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">warning-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-warning-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Error</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-error-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-error-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-error-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error</div>
-                        <div class="color-swatch-var">--kendo-color-error</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-hover</div>
-                        <div class="color-swatch-var">--kendo-color-error-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-active</div>
-                        <div class="color-swatch-var">--kendo-color-error-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-error-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-error-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-error);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-error</div>
-                        <div class="color-swatch-var">--kendo-color-on-error</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">error-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-error-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="color-group">
-            <div class="color-group-title">Inverse</div>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-subtle-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-subtle-hover</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-subtle-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-subtle-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-subtle-active</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-subtle-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse</div>
-                        <div class="color-swatch-var">--kendo-color-inverse</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-hover);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-hover</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-hover</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-active);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-active</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-active</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-emphasis);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-emphasis</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-emphasis</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-on-subtle);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-on-subtle</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-on-subtle</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-inverse);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">on-inverse</div>
-                        <div class="color-swatch-var">--kendo-color-on-inverse</div>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-on-surface);"></div>
-                    <div class="color-swatch-info">
-                        <div class="color-swatch-name">inverse-on-surface</div>
-                        <div class="color-swatch-var">--kendo-color-inverse-on-surface</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="series-groups">
+            }
+        </style>
+        <div id="test-area">
             <div class="color-group">
-                <div class="color-group-title">Series A</div>
+                <div class="color-group-title">Misc</div>
                 <div class="color-grid">
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-app-surface);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-a</div>
-                            <div class="color-swatch-var">--kendo-color-series-a</div>
+                            <div class="color-swatch-name">app-surface</div>
+                            <div class="color-swatch-var">--kendo-color-app-surface</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-bold);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-app-surface);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-a-bold</div>
-                            <div class="color-swatch-var">--kendo-color-series-a-bold</div>
+                            <div class="color-swatch-name">on-app-surface</div>
+                            <div class="color-swatch-var">--kendo-color-on-app-surface</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-bolder);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-subtle);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-a-bolder</div>
-                            <div class="color-swatch-var">--kendo-color-series-a-bolder</div>
+                            <div class="color-swatch-name">subtle</div>
+                            <div class="color-swatch-var">--kendo-color-subtle</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-subtle);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-surface);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-a-subtle</div>
-                            <div class="color-swatch-var">--kendo-color-series-a-subtle</div>
+                            <div class="color-swatch-name">surface</div>
+                            <div class="color-swatch-var">--kendo-color-surface</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-subtler);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-surface-alt);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-a-subtler</div>
-                            <div class="color-swatch-var">--kendo-color-series-a-subtler</div>
+                            <div class="color-swatch-name">surface-alt</div>
+                            <div class="color-swatch-var">--kendo-color-surface-alt</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-border);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">border</div>
+                            <div class="color-swatch-var">--kendo-color-border</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-border-alt);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">border-alt</div>
+                            <div class="color-swatch-var">--kendo-color-border-alt</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="color-group">
-                <div class="color-group-title">Series B</div>
+                <div class="color-group-title">Base</div>
                 <div class="color-grid">
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-subtle);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-b</div>
-                            <div class="color-swatch-var">--kendo-color-series-b</div>
+                            <div class="color-swatch-name">base-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-base-subtle</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-bold);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-subtle-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-b-bold</div>
-                            <div class="color-swatch-var">--kendo-color-series-b-bold</div>
+                            <div class="color-swatch-name">base-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-base-subtle-hover</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-bolder);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-subtle-active);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-b-bolder</div>
-                            <div class="color-swatch-var">--kendo-color-series-b-bolder</div>
+                            <div class="color-swatch-name">base-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-base-subtle-active</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-subtle);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-b-subtle</div>
-                            <div class="color-swatch-var">--kendo-color-series-b-subtle</div>
+                            <div class="color-swatch-name">base</div>
+                            <div class="color-swatch-var">--kendo-color-base</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-subtler);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-b-subtler</div>
-                            <div class="color-swatch-var">--kendo-color-series-b-subtler</div>
+                            <div class="color-swatch-name">base-hover</div>
+                            <div class="color-swatch-var">--kendo-color-base-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">base-active</div>
+                            <div class="color-swatch-var">--kendo-color-base-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">base-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-base-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">base-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-base-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-base);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-base</div>
+                            <div class="color-swatch-var">--kendo-color-on-base</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-base-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">base-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-base-on-surface</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="color-group">
-                <div class="color-group-title">Series C</div>
+                <div class="color-group-title">Primary</div>
                 <div class="color-grid">
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-subtle);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-c</div>
-                            <div class="color-swatch-var">--kendo-color-series-c</div>
+                            <div class="color-swatch-name">primary-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-primary-subtle</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-bold);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-subtle-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-c-bold</div>
-                            <div class="color-swatch-var">--kendo-color-series-c-bold</div>
+                            <div class="color-swatch-name">primary-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-primary-subtle-hover</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-bolder);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-subtle-active);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-c-bolder</div>
-                            <div class="color-swatch-var">--kendo-color-series-c-bolder</div>
+                            <div class="color-swatch-name">primary-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-primary-subtle-active</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-subtle);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-c-subtle</div>
-                            <div class="color-swatch-var">--kendo-color-series-c-subtle</div>
+                            <div class="color-swatch-name">primary</div>
+                            <div class="color-swatch-var">--kendo-color-primary</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-subtler);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-c-subtler</div>
-                            <div class="color-swatch-var">--kendo-color-series-c-subtler</div>
+                            <div class="color-swatch-name">primary-hover</div>
+                            <div class="color-swatch-var">--kendo-color-primary-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">primary-active</div>
+                            <div class="color-swatch-var">--kendo-color-primary-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">primary-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-primary-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">primary-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-primary-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-primary);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-primary</div>
+                            <div class="color-swatch-var">--kendo-color-on-primary</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-primary-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">primary-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-primary-on-surface</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="color-group">
-                <div class="color-group-title">Series D</div>
+                <div class="color-group-title">Secondary</div>
                 <div class="color-grid">
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-subtle);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-d</div>
-                            <div class="color-swatch-var">--kendo-color-series-d</div>
+                            <div class="color-swatch-name">secondary-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-subtle</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-bold);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-subtle-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-d-bold</div>
-                            <div class="color-swatch-var">--kendo-color-series-d-bold</div>
+                            <div class="color-swatch-name">secondary-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-subtle-hover</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-bolder);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-subtle-active);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-d-bolder</div>
-                            <div class="color-swatch-var">--kendo-color-series-d-bolder</div>
+                            <div class="color-swatch-name">secondary-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-subtle-active</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-subtle);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-d-subtle</div>
-                            <div class="color-swatch-var">--kendo-color-series-d-subtle</div>
+                            <div class="color-swatch-name">secondary</div>
+                            <div class="color-swatch-var">--kendo-color-secondary</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-subtler);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-d-subtler</div>
-                            <div class="color-swatch-var">--kendo-color-series-d-subtler</div>
+                            <div class="color-swatch-name">secondary-hover</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">secondary-active</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">secondary-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">secondary-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-secondary);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-secondary</div>
+                            <div class="color-swatch-var">--kendo-color-on-secondary</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-secondary-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">secondary-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-secondary-on-surface</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="color-group">
-                <div class="color-group-title">Series E</div>
+                <div class="color-group-title">Tertiary</div>
                 <div class="color-grid">
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-subtle);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-e</div>
-                            <div class="color-swatch-var">--kendo-color-series-e</div>
+                            <div class="color-swatch-name">tertiary-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-subtle</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-bold);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-subtle-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-e-bold</div>
-                            <div class="color-swatch-var">--kendo-color-series-e-bold</div>
+                            <div class="color-swatch-name">tertiary-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-subtle-hover</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-bolder);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-subtle-active);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-e-bolder</div>
-                            <div class="color-swatch-var">--kendo-color-series-e-bolder</div>
+                            <div class="color-swatch-name">tertiary-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-subtle-active</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-subtle);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-e-subtle</div>
-                            <div class="color-swatch-var">--kendo-color-series-e-subtle</div>
+                            <div class="color-swatch-name">tertiary</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-subtler);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-e-subtler</div>
-                            <div class="color-swatch-var">--kendo-color-series-e-subtler</div>
+                            <div class="color-swatch-name">tertiary-hover</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">tertiary-active</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">tertiary-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">tertiary-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-tertiary);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-tertiary</div>
+                            <div class="color-swatch-var">--kendo-color-on-tertiary</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-tertiary-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">tertiary-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-tertiary-on-surface</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="color-group">
-                <div class="color-group-title">Series F</div>
+                <div class="color-group-title">Info</div>
                 <div class="color-grid">
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-subtle);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-f</div>
-                            <div class="color-swatch-var">--kendo-color-series-f</div>
+                            <div class="color-swatch-name">info-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-info-subtle</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-bold);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-subtle-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-f-bold</div>
-                            <div class="color-swatch-var">--kendo-color-series-f-bold</div>
+                            <div class="color-swatch-name">info-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-info-subtle-hover</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-bolder);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-subtle-active);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-f-bolder</div>
-                            <div class="color-swatch-var">--kendo-color-series-f-bolder</div>
+                            <div class="color-swatch-name">info-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-info-subtle-active</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-subtle);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-f-subtle</div>
-                            <div class="color-swatch-var">--kendo-color-series-f-subtle</div>
+                            <div class="color-swatch-name">info</div>
+                            <div class="color-swatch-var">--kendo-color-info</div>
                         </div>
                     </div>
                     <div class="color-swatch">
-                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-subtler);"></div>
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-hover);"></div>
                         <div class="color-swatch-info">
-                            <div class="color-swatch-name">series-f-subtler</div>
-                            <div class="color-swatch-var">--kendo-color-series-f-subtler</div>
+                            <div class="color-swatch-name">info-hover</div>
+                            <div class="color-swatch-var">--kendo-color-info-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">info-active</div>
+                            <div class="color-swatch-var">--kendo-color-info-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">info-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-info-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">info-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-info-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-info);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-info</div>
+                            <div class="color-swatch-var">--kendo-color-on-info</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-info-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">info-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-info-on-surface</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="color-group">
+                <div class="color-group-title">Success</div>
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-success-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-subtle-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-success-subtle-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-subtle-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-success-subtle-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success</div>
+                            <div class="color-swatch-var">--kendo-color-success</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-hover</div>
+                            <div class="color-swatch-var">--kendo-color-success-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-active</div>
+                            <div class="color-swatch-var">--kendo-color-success-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-success-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-success-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-success);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-success</div>
+                            <div class="color-swatch-var">--kendo-color-on-success</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-success-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">success-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-success-on-surface</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="color-group">
+                <div class="color-group-title">Warning</div>
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-warning-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-subtle-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-warning-subtle-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-subtle-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-warning-subtle-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning</div>
+                            <div class="color-swatch-var">--kendo-color-warning</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-hover</div>
+                            <div class="color-swatch-var">--kendo-color-warning-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-active</div>
+                            <div class="color-swatch-var">--kendo-color-warning-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-warning-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-warning-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-warning);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-warning</div>
+                            <div class="color-swatch-var">--kendo-color-on-warning</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-warning-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">warning-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-warning-on-surface</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="color-group">
+                <div class="color-group-title">Error</div>
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-error-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-subtle-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-error-subtle-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-subtle-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-error-subtle-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error</div>
+                            <div class="color-swatch-var">--kendo-color-error</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-hover</div>
+                            <div class="color-swatch-var">--kendo-color-error-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-active</div>
+                            <div class="color-swatch-var">--kendo-color-error-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-error-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-error-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-error);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-error</div>
+                            <div class="color-swatch-var">--kendo-color-on-error</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-error-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">error-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-error-on-surface</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="color-group">
+                <div class="color-group-title">Inverse</div>
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-subtle-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-subtle-hover</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-subtle-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-subtle-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-subtle-active</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-subtle-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse</div>
+                            <div class="color-swatch-var">--kendo-color-inverse</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-hover);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-hover</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-hover</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-active);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-active</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-active</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-emphasis);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-emphasis</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-emphasis</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-on-subtle);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-on-subtle</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-on-subtle</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-on-inverse);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">on-inverse</div>
+                            <div class="color-swatch-var">--kendo-color-on-inverse</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch-preview" style="background-color: var(--kendo-color-inverse-on-surface);"></div>
+                        <div class="color-swatch-info">
+                            <div class="color-swatch-name">inverse-on-surface</div>
+                            <div class="color-swatch-var">--kendo-color-inverse-on-surface</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="series-groups">
+                <div class="color-group">
+                    <div class="color-group-title">Series A</div>
+                    <div class="color-grid">
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-a</div>
+                                <div class="color-swatch-var">--kendo-color-series-a</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-bold);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-a-bold</div>
+                                <div class="color-swatch-var">--kendo-color-series-a-bold</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-bolder);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-a-bolder</div>
+                                <div class="color-swatch-var">--kendo-color-series-a-bolder</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-subtle);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-a-subtle</div>
+                                <div class="color-swatch-var">--kendo-color-series-a-subtle</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-a-subtler);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-a-subtler</div>
+                                <div class="color-swatch-var">--kendo-color-series-a-subtler</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <div class="color-group-title">Series B</div>
+                    <div class="color-grid">
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-b</div>
+                                <div class="color-swatch-var">--kendo-color-series-b</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-bold);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-b-bold</div>
+                                <div class="color-swatch-var">--kendo-color-series-b-bold</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-bolder);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-b-bolder</div>
+                                <div class="color-swatch-var">--kendo-color-series-b-bolder</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-subtle);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-b-subtle</div>
+                                <div class="color-swatch-var">--kendo-color-series-b-subtle</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-b-subtler);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-b-subtler</div>
+                                <div class="color-swatch-var">--kendo-color-series-b-subtler</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <div class="color-group-title">Series C</div>
+                    <div class="color-grid">
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-c</div>
+                                <div class="color-swatch-var">--kendo-color-series-c</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-bold);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-c-bold</div>
+                                <div class="color-swatch-var">--kendo-color-series-c-bold</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-bolder);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-c-bolder</div>
+                                <div class="color-swatch-var">--kendo-color-series-c-bolder</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-subtle);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-c-subtle</div>
+                                <div class="color-swatch-var">--kendo-color-series-c-subtle</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-c-subtler);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-c-subtler</div>
+                                <div class="color-swatch-var">--kendo-color-series-c-subtler</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <div class="color-group-title">Series D</div>
+                    <div class="color-grid">
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-d</div>
+                                <div class="color-swatch-var">--kendo-color-series-d</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-bold);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-d-bold</div>
+                                <div class="color-swatch-var">--kendo-color-series-d-bold</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-bolder);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-d-bolder</div>
+                                <div class="color-swatch-var">--kendo-color-series-d-bolder</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-subtle);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-d-subtle</div>
+                                <div class="color-swatch-var">--kendo-color-series-d-subtle</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-d-subtler);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-d-subtler</div>
+                                <div class="color-swatch-var">--kendo-color-series-d-subtler</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <div class="color-group-title">Series E</div>
+                    <div class="color-grid">
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-e</div>
+                                <div class="color-swatch-var">--kendo-color-series-e</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-bold);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-e-bold</div>
+                                <div class="color-swatch-var">--kendo-color-series-e-bold</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-bolder);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-e-bolder</div>
+                                <div class="color-swatch-var">--kendo-color-series-e-bolder</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-subtle);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-e-subtle</div>
+                                <div class="color-swatch-var">--kendo-color-series-e-subtle</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-e-subtler);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-e-subtler</div>
+                                <div class="color-swatch-var">--kendo-color-series-e-subtler</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <div class="color-group-title">Series F</div>
+                    <div class="color-grid">
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-f</div>
+                                <div class="color-swatch-var">--kendo-color-series-f</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-bold);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-f-bold</div>
+                                <div class="color-swatch-var">--kendo-color-series-f-bold</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-bolder);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-f-bolder</div>
+                                <div class="color-swatch-var">--kendo-color-series-f-bolder</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-subtle);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-f-subtle</div>
+                                <div class="color-swatch-var">--kendo-color-series-f-subtle</div>
+                            </div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-swatch-preview" style="background-color: var(--kendo-color-series-f-subtler);"></div>
+                            <div class="color-swatch-info">
+                                <div class="color-swatch-name">series-f-subtler</div>
+                                <div class="color-swatch-var">--kendo-color-series-f-subtler</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

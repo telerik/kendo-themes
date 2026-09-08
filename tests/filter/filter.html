@@ -1,144 +1,64 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid">
-        <div class="k-filter">
-            <ul class="k-filter-container" role="tree" aria-label="Filter">
-                <li class="k-filter-group-main" role="treeitem">
-                    <div class="k-filter-toolbar">
-                        <div class="k-toolbar k-focus" role="toolbar" aria-label="Toolbar">
-                            <div role="group" class="k-toolbar-button-group  k-button-group">
-                                <button class="k-group-start k-button k-selected">
-                                    <span class="k-button-text">And</span>
-                                </button>
-                                <button class="k-group-end k-button">
-                                    <span class="k-button-text">Or</span>
-                                </button>
-                            </div>
-                            <button class="k-toolbar-button  k-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-expression" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 64v32H32V64zm-192 96h192v-32H288zm0 128h192v-64H288zm0 96h192v-32H288zm0 64h192v-32H288zM96 352h64v-64h64v-64h-64v-64H96v64H32v64h64z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-button-text">Add Expression</span>
-                            </button>
-                            <button class="k-toolbar-button  k-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-group" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M352 352v32h-32v64h32v32h-64V352zm64 0v32h32v64h-32v32h64V352zM160 160H96v64H32v64h64v64h64v-64h64v-64h-64zm128 0h192v-32H288zM32 64v32h448V64zm256 224h192v-64H288z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-button-text">Add Group</span>
-                            </button>
-                            <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <ul class="k-filter-lines" role="group">
-                        <li class="k-filter-item" role="treeitem">
-                            <div class="k-filter-toolbar">
-                                <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
-                                    <div class="k-filter-field k-toolbar-item">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">Name</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <div class="k-filter-operator k-toolbar-item k-focus">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">Is equal to</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <div class="k-filter-value k-toolbar-item">
-                                        <span class="k-textbox k-input">
-                                            <input class="k-input-inner" placeholder="James" autocomplete="off" type="text" value="">
-                                        </span>
-                                    </div>
-                                    <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                            </svg>
-                                        </span>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid">
+            <div class="k-filter">
+                <ul class="k-filter-container" role="tree" aria-label="Filter">
+                    <li class="k-filter-group-main" role="treeitem">
+                        <div class="k-filter-toolbar">
+                            <div class="k-toolbar k-focus" role="toolbar" aria-label="Toolbar">
+                                <div role="group" class="k-toolbar-button-group  k-button-group">
+                                    <button class="k-group-start k-button k-selected">
+                                        <span class="k-button-text">And</span>
+                                    </button>
+                                    <button class="k-group-end k-button">
+                                        <span class="k-button-text">Or</span>
                                     </button>
                                 </div>
+                                <button class="k-toolbar-button  k-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-expression" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M480 64v32H32V64zm-192 96h192v-32H288zm0 128h192v-64H288zm0 96h192v-32H288zm0 64h192v-32H288zM96 352h64v-64h64v-64h-64v-64H96v64H32v64h64z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-button-text">Add Expression</span>
+                                </button>
+                                <button class="k-toolbar-button  k-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-group" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M352 352v32h-32v64h32v32h-64V352zm64 0v32h32v64h-32v32h64V352zM160 160H96v64H32v64h64v64h64v-64h64v-64h-64zm128 0h192v-32H288zM32 64v32h448V64zm256 224h192v-64H288z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="k-button-text">Add Group</span>
+                                </button>
+                                <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
                             </div>
-                        </li>
-                        <li class="k-filter-item" role="treeitem">
-                            <div class="k-filter-toolbar">
-                                <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
-                                    <div class="k-filter-field k-toolbar-item">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">Price</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
+                        </div>
+                        <ul class="k-filter-lines" role="group">
+                            <li class="k-filter-item" role="treeitem">
+                                <div class="k-filter-toolbar">
+                                    <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                                        <div class="k-filter-field k-toolbar-item">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Name</span>
                                                 </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <div class="k-filter-operator k-toolbar-item">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">Is greater than</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <div class="k-filter-value k-toolbar-item">
-                                        <span class="k-numerictextbox k-input">
-                                            <input role="spinbutton" class="k-input-inner" placeholder="100,00" autocomplete="off" type="text" value="">
-                                            <span class="k-spin-button k-input-spinner">
-                                                <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                                <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -146,158 +66,79 @@
                                                     </span>
                                                 </button>
                                             </span>
-                                        </span>
-                                    </div>
-                                    <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="k-filter-item" role="treeitem">
-                            <div class="k-filter-toolbar">
-                                <div class="k-toolbar k-focus" role="toolbar" aria-label="Toolbar">
-                                    <div class="k-filter-field k-toolbar-item">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">Discontinued</span>
+                                        </div>
+                                        <div class="k-filter-operator k-toolbar-item k-focus">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Is equal to</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
                                             </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <div class="k-filter-value k-toolbar-item">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">Is false</span>
+                                        </div>
+                                        <div class="k-filter-value k-toolbar-item">
+                                            <span class="k-textbox k-input">
+                                                <input class="k-input-inner" placeholder="James" autocomplete="off" type="text" value="">
                                             </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="k-filter-item" role="treeitem">
-                            <div class="k-filter-toolbar">
-                                <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
-                                    <div class="k-filter-field k-toolbar-item">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">First Ordered</span>
+                                        </div>
+                                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
                                             </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <div class="k-filter-operator k-toolbar-item">
-                                        <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                            <span class="k-input-inner">
-                                                <span class="k-input-value-text">Is before</span>
-                                            </span>
-                                            <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <div class="k-filter-value k-toolbar-item">
-                                        <span class="k-datepicker k-input">
-                                            <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="1/21/2021" autocomplete="off" type="text" value="">
-                                            <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                    <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="k-filter-item" role="treeitem">
-                            <div class="k-filter-toolbar">
-                                <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
-                                    <div role="group" class="k-toolbar-button-group  k-button-group">
-                                        <button class="k-group-start k-button k-selected">
-                                            <span class="k-button-text">And</span>
-                                        </button>
-                                        <button class="k-group-end k-button">
-                                            <span class="k-button-text">Or</span>
                                         </button>
                                     </div>
-                                    <button class="k-toolbar-button  k-button">
-                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-expression" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M480 64v32H32V64zm-192 96h192v-32H288zm0 128h192v-64H288zm0 96h192v-32H288zm0 64h192v-32H288zM96 352h64v-64h64v-64h-64v-64H96v64H32v64h64z"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="k-button-text">Add Expression</span>
-                                    </button>
-                                    <button class="k-toolbar-button  k-button">
-                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-group" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M352 352v32h-32v64h32v32h-64V352zm64 0v32h32v64h-32v32h64V352zM160 160H96v64H32v64h64v64h64v-64h64v-64h-64zm128 0h192v-32H288zM32 64v32h448V64zm256 224h192v-64H288z"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="k-button-text">Add Group</span>
-                                    </button>
-                                    <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
                                 </div>
-                            </div>
-                            <ul class="k-filter-lines" role="group">
-                                <li class="k-filter-item" role="treeitem">
-                                    <div class="k-filter-toolbar">
-                                        <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
-                                            <div class="k-filter-field k-toolbar-item">
-                                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                                    <span class="k-input-inner">
-                                                        <span class="k-input-value-text">Name</span>
+                            </li>
+                            <li class="k-filter-item" role="treeitem">
+                                <div class="k-filter-toolbar">
+                                    <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                                        <div class="k-filter-field k-toolbar-item">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Price</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
                                                     </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="k-filter-operator k-toolbar-item">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Is greater than</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="k-filter-value k-toolbar-item">
+                                            <span class="k-numerictextbox k-input">
+                                                <input role="spinbutton" class="k-input-inner" placeholder="100,00" autocomplete="off" type="text" value="">
+                                                <span class="k-spin-button k-input-spinner">
+                                                    <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
                                                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
                                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                                 <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
@@ -305,78 +146,237 @@
                                                         </span>
                                                     </button>
                                                 </span>
-                                            </div>
-                                            <div class="k-filter-operator k-toolbar-item">
-                                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                                    <span class="k-input-inner">
-                                                        <span class="k-input-value-text">Is empty</span>
+                                            </span>
+                                        </div>
+                                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="k-filter-item" role="treeitem">
+                                <div class="k-filter-toolbar">
+                                    <div class="k-toolbar k-focus" role="toolbar" aria-label="Toolbar">
+                                        <div class="k-filter-field k-toolbar-item">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Discontinued</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
                                                     </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </button>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="k-filter-value k-toolbar-item">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Is false</span>
                                                 </span>
-                                            </div>
-                                            <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                    </svg>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="k-filter-item" role="treeitem">
+                                <div class="k-filter-toolbar">
+                                    <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                                        <div class="k-filter-field k-toolbar-item">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">First Ordered</span>
                                                 </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="k-filter-operator k-toolbar-item">
+                                            <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Is before</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="k-filter-value k-toolbar-item">
+                                            <span class="k-datepicker k-input">
+                                                <input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" class="k-input-inner" placeholder="1/21/2021" autocomplete="off" type="text" value="">
+                                                <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="k-filter-item" role="treeitem">
+                                <div class="k-filter-toolbar">
+                                    <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                                            <button class="k-group-start k-button k-selected">
+                                                <span class="k-button-text">And</span>
+                                            </button>
+                                            <button class="k-group-end k-button">
+                                                <span class="k-button-text">Or</span>
                                             </button>
                                         </div>
+                                        <button class="k-toolbar-button  k-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-expression" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M480 64v32H32V64zm-192 96h192v-32H288zm0 128h192v-64H288zm0 96h192v-32H288zm0 64h192v-32H288zM96 352h64v-64h64v-64h-64v-64H96v64H32v64h64z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-button-text">Add Expression</span>
+                                        </button>
+                                        <button class="k-toolbar-button  k-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter-add-group" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M352 352v32h-32v64h32v32h-64V352zm64 0v32h32v64h-32v32h64V352zM160 160H96v64H32v64h64v64h64v-64h64v-64h-64zm128 0h192v-32H288zM32 64v32h448V64zm256 224h192v-64H288z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-button-text">Add Group</span>
+                                        </button>
+                                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
                                     </div>
-                                </li>
-                                <li class="k-filter-item" role="treeitem">
-                                    <div class="k-filter-toolbar">
-                                        <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
-                                            <div class="k-filter-field k-toolbar-item">
-                                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                                    <span class="k-input-inner">
-                                                        <span class="k-input-value-text">Price</span>
-                                                    </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                            </svg>
+                                </div>
+                                <ul class="k-filter-lines" role="group">
+                                    <li class="k-filter-item" role="treeitem">
+                                        <div class="k-filter-toolbar">
+                                            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                                                <div class="k-filter-field k-toolbar-item">
+                                                    <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                        <span class="k-input-inner">
+                                                            <span class="k-input-value-text">Name</span>
                                                         </span>
-                                                    </button>
-                                                </span>
-                                            </div>
-                                            <div class=" k-filter-operator k-toolbar-item">
-                                                <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
-                                                    <span class="k-input-inner">
-                                                        <span class="k-input-value-text">Is not null</span>
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
                                                     </span>
-                                                    <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
-                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                            </svg>
+                                                </div>
+                                                <div class="k-filter-operator k-toolbar-item">
+                                                    <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                        <span class="k-input-inner">
+                                                            <span class="k-input-value-text">Is empty</span>
                                                         </span>
-                                                    </button>
-                                                </span>
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
                                             </div>
-                                            <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
-                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                                    </li>
+                                    <li class="k-filter-item" role="treeitem">
+                                        <div class="k-filter-toolbar">
+                                            <div class="k-toolbar" role="toolbar" aria-label="Toolbar">
+                                                <div class="k-filter-field k-toolbar-item">
+                                                    <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                        <span class="k-input-inner">
+                                                            <span class="k-input-value-text">Price</span>
+                                                        </span>
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <div class=" k-filter-operator k-toolbar-item">
+                                                    <span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                                        <span class="k-input-inner">
+                                                            <span class="k-input-value-text">Is not null</span>
+                                                        </span>
+                                                        <button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <button class="k-toolbar-button  k-button k-button-flat k-icon-button">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
