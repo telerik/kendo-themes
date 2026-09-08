@@ -1,3 +1,13 @@
+## 14.5.1-dev.2 (2026-09-08)
+
+### 🚀 Features
+
+- **diagram:** add rich text editor styles ([60ba64c2e1](https://github.com/telerik/kendo-themes/commit/60ba64c2e1))
+
+### 🩹 Fixes
+
+- **spreadsheet:** prevent clipped focus outline on menu items in meridian ([47f9eaef9d](https://github.com/telerik/kendo-themes/commit/47f9eaef9d))
+
 ## 14.5.1-dev.1 (2026-08-31)
 
 ### 🩹 Fixes
