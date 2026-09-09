@@ -52,6 +52,9 @@ $kendo-menu-item-spacing: k-spacing(0) !default;
 /// The spacing between the Menu item text and icons.
 /// @group menu
 $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
+/// The border radius of the Menu item.
+/// @group menu
+$kendo-menu-item-border-radius: k-border-radius(sm) !default;
 
 /// The font weight of the selected Menu item.
 /// @group menu
@@ -332,6 +335,7 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-item-padding-y: $kendo-menu-item-padding-y,
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
+    $kendo-menu-item-border-radius: $kendo-menu-item-border-radius,
     $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
     $kendo-menu-item-bg: $kendo-menu-item-bg,
     $kendo-menu-item-text: $kendo-menu-item-text,

@@ -48,7 +48,7 @@ $kendo-menu-item-padding-x: k-spacing(4) !default;
 $kendo-menu-item-padding-y: k-spacing(2) !default;
 /// The spacing between the Menu items.
 /// @group menu
-$kendo-menu-item-spacing: k-spacing(0) !default;
+$kendo-menu-item-spacing: null !default;
 /// The spacing between the Menu item text and icons.
 /// @group menu
 $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
@@ -75,7 +75,7 @@ $kendo-menu-item-gradient: null !default;
 $kendo-menu-item-hover-bg: null !default;
 /// The text color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-text: color-mix(in srgb, k-color(on-app-surface) 93%, transparent) !default;
+$kendo-menu-item-hover-text: k-color(on-app-surface) !default;
 /// The border color of hovered Menu item.
 /// @group menu
 $kendo-menu-item-hover-border: null !default;
@@ -88,7 +88,7 @@ $kendo-menu-item-hover-gradient: null !default;
 $kendo-menu-item-active-bg: null !default;
 /// The text color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-text: color-mix(in srgb, k-color(on-app-surface) 100%, transparent) !default;
+$kendo-menu-item-active-text: k-color(on-app-surface) !default;
 /// The border color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-border: null !default;
@@ -105,7 +105,7 @@ $kendo-menu-item-focus-shadow: inset 0 0 0 3px color-mix(in srgb, k-color(on-app
 $kendo-menu-item-selected-bg: null !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: $kendo-menu-item-text !default;
+$kendo-menu-item-selected-text: k-color(on-app-surface) !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;
@@ -154,7 +154,7 @@ $kendo-menu-expand-arrow-spacing: k-spacing(2) !default;
 
 /// The inline margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-inline: k-spacing(1) !default;
+$kendo-menu-separator-margin-inline: k-spacing(2) !default;
 /// The block margin of the horizontal Menu separator.
 /// @group menu
 $kendo-menu-separator-margin-block: k-spacing(2) !default;
@@ -167,11 +167,11 @@ $kendo-menu-separator-border: k-color(border) !default;
 
 /// The horizontal padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-x: null !default;
+$kendo-menu-popup-padding-x: $kendo-list-container-padding-inline !default;
 
 /// The vertical padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-y: null !default;
+$kendo-menu-popup-padding-y: $kendo-list-container-padding-block !default;
 
 /// The width of the border around the Menu popup.
 /// @group menu
@@ -215,23 +215,23 @@ $kendo-menu-popup-gradient: null !default;
 
 /// The horizontal padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-sm-item-padding-x: $kendo-list-sm-item-padding-x !default;
 /// The horizontal padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-md-item-padding-x: $kendo-list-md-item-padding-x !default;
 /// The horizontal padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-lg-item-padding-x: $kendo-list-lg-item-padding-x !default;
 
 /// The vertical padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-y: k-spacing(0.5) !default;
+$kendo-menu-popup-sm-item-padding-y: $kendo-list-sm-item-padding-y !default;
 /// The vertical padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-y: k-spacing(1) !default;
+$kendo-menu-popup-md-item-padding-y: $kendo-list-md-item-padding-y !default;
 /// The vertical padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-y: k-spacing(1.5) !default;
+$kendo-menu-popup-lg-item-padding-y: $kendo-list-lg-item-padding-y !default;
 
 /// The end padding of the small Menu popup item.
 /// @group menu
@@ -265,7 +265,7 @@ $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-it
 
 /// The spacing between the Menu items in popup.
 /// @group menu
-$kendo-menu-popup-item-spacing: k-spacing(0) !default;
+$kendo-menu-popup-item-spacing: k-spacing(0.5) !default;
 
 /// The background color of the Menu item in popup.
 /// @group menu

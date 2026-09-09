@@ -41,17 +41,21 @@ $kendo-menu-shadow: var( --kendo-menu-shadow, none ) !default;
 
 /// The horizontal padding of Menu item.
 /// @group menu
-$kendo-menu-item-padding-x: var( --kendo-menu-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-menu-item-padding-x: var( --kendo-menu-item-padding-x, #{k-spacing(1.5)} ) !default;
 /// The vertical padding of the Menu item.
 /// @group menu
-$kendo-menu-item-padding-y: var( --kendo-menu-item-padding-y, #{k-spacing(3)} ) !default;
+$kendo-menu-item-padding-y: var( --kendo-menu-item-padding-y, #{k-spacing(1.5)} ) !default;
 
 /// The spacing between the Menu items.
 /// @group menu
 $kendo-menu-item-spacing: var( --kendo-menu-item-spacing, #{k-spacing(0)} ) !default;
 /// The spacing between the Menu item text and icons.
 /// @group menu
-$kendo-menu-item-icon-spacing: var( --kendo-menu-item-icon-spacing, #{$kendo-icon-spacing} ) !default;
+$kendo-menu-item-icon-spacing: var( --kendo-menu-item-icon-spacing, #{k-spacing(1)} ) !default;
+
+/// The border radius of the Menu item.
+/// @group menu
+$kendo-menu-item-border-radius: var( --kendo-menu-item-border-radius, #{k-border-radius(md)} ) !default;
 
 /// The spacing used for the menu expand arrow negative offset.
 /// @group menu
@@ -59,7 +63,7 @@ $kendo-menu-expand-arrow-spacing: var( --kendo-menu-expand-arrow-spacing, #{k-sp
 
 /// The font weight of the selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-font-weight: var( --kendo-menu-item-selected-font-weight, var(--kendo-font-weight-bold) ) !default;
+$kendo-menu-item-selected-font-weight: var( --kendo-menu-item-selected-font-weight, var(--kendo-font-weight-semibold) ) !default;
 
 /// The text color of Menu item.
 /// @group menu
@@ -67,6 +71,9 @@ $kendo-menu-item-text: var( --kendo-menu-item-text, #{$kendo-menu-text} ) !defau
 /// The background color of Menu item.
 /// @group menu
 $kendo-menu-item-bg: var( --kendo-menu-item-bg, transparent ) !default;
+/// The text color of the Menu item icon.
+/// @group menu
+$kendo-menu-icon-color: var( --kendo-menu-icon-color, currentColor ) !default;
 
 /// The text color of hovered Menu item.
 /// @group menu
@@ -74,6 +81,9 @@ $kendo-menu-item-hover-text: var( --kendo-menu-item-hover-text, #{k-color(on-bas
 /// The background color of hovered Menu item.
 /// @group menu
 $kendo-menu-item-hover-bg: var( --kendo-menu-item-hover-bg, #{k-color(base-hover)} ) !default;
+/// The text color of the hovered Menu item icon.
+/// @group menu
+$kendo-menu-item-hover-icon-text: var( --kendo-menu-item-hover-icon-text, #{k-color(primary-on-surface)} ) !default;
 
 /// The text color of active Menu item.
 /// @group menu
@@ -81,6 +91,9 @@ $kendo-menu-item-active-text: var( --kendo-menu-item-active-text, #{$kendo-menu-
 /// The background color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-bg: var( --kendo-menu-item-active-bg, #{k-color(base-active)} ) !default;
+/// The text color of the active Menu item icon.
+/// @group menu
+$kendo-menu-item-active-icon-text: var( --kendo-menu-item-active-icon-text, #{$kendo-menu-item-hover-icon-text} ) !default;
 
 /// The text color of focused Menu item.
 /// @group menu
@@ -115,6 +128,9 @@ $kendo-menu-item-selected-text: var( --kendo-menu-item-selected-text, null ) !de
 /// The background color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-bg: var( --kendo-menu-item-selected-bg, null ) !default;
+/// The text color of the selected Menu item icon.
+/// @group menu
+$kendo-menu-item-selected-icon-text: var( --kendo-menu-item-selected-icon-text, #{$kendo-menu-item-hover-icon-text} ) !default;
 
 
 // Menu Separator
@@ -137,10 +153,10 @@ $kendo-menu-separator-border: var( --kendo-menu-separator-border, color-mix(in s
 
 /// The horizontal padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-x: var( --kendo-menu-popup-padding-x, #{$kendo-popup-padding-x} ) !default;
+$kendo-menu-popup-padding-x: var( --kendo-menu-popup-padding-x, #{$kendo-list-container-padding-inline} ) !default;
 /// The vertical padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-y: var( --kendo-menu-popup-padding-y, #{$kendo-popup-padding-y} ) !default;
+$kendo-menu-popup-padding-y: var( --kendo-menu-popup-padding-y, #{$kendo-list-container-padding-block} ) !default;
 
 /// The width of the border around the Menu popup.
 /// @group menu
@@ -174,17 +190,17 @@ $kendo-menu-popup-bg: var( --kendo-menu-popup-bg, #{k-color(surface-alt)} ) !def
 $kendo-menu-popup-border: var( --kendo-menu-popup-border, initial ) !default;
 /// The shadow of the Menu popup.
 /// @group menu
-$kendo-menu-popup-shadow: var( --kendo-menu-popup-shadow, k-elevation(3) ) !default;
+$kendo-menu-popup-shadow: var( --kendo-menu-popup-shadow, k-elevation(5) ) !default;
 
 /// The horizontal padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-x: var( --kendo-menu-popup-sm-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-menu-popup-sm-item-padding-x: var( --kendo-menu-popup-sm-item-padding-x, #{$kendo-list-sm-item-padding-x} ) !default;
 /// The horizontal padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-x: var( --kendo-menu-popup-md-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-menu-popup-md-item-padding-x: var( --kendo-menu-popup-md-item-padding-x, #{$kendo-list-md-item-padding-x} ) !default;
 /// The horizontal padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-x: var( --kendo-menu-popup-lg-item-padding-x, #{k-spacing(2)} ) !default;
+$kendo-menu-popup-lg-item-padding-x: var( --kendo-menu-popup-lg-item-padding-x, #{$kendo-list-lg-item-padding-x} ) !default;
 /// The vertical padding of the small Menu popup item.
 /// @group menu
 $kendo-menu-popup-sm-item-padding-y: var( --kendo-menu-popup-sm-item-padding-y, #{$kendo-list-sm-item-padding-y} ) !default;
@@ -225,7 +241,7 @@ $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-icon-size} + #{$
 
 /// The spacing between the Menu items in popup.
 /// @group menu
-$kendo-menu-popup-item-spacing: var( --kendo-menu-popup-item-spacing, #{k-spacing(0)} ) !default;
+$kendo-menu-popup-item-spacing: var( --kendo-menu-popup-item-spacing, #{k-spacing(0.5)} ) !default;
 
 /// The text color of the Menu item in popup.
 /// @group menu
@@ -240,6 +256,9 @@ $kendo-menu-popup-item-hover-text: var( --kendo-menu-popup-item-hover-text, #{$k
 /// The background color of hovered Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-hover-bg: var( --kendo-menu-popup-item-hover-bg, #{$kendo-list-item-hover-bg} ) !default;
+/// The text color of the icon of hovered Menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-hover-icon-text: var( --kendo-menu-popup-item-hover-icon-text, #{$kendo-menu-item-hover-icon-text} ) !default;
 
 /// The outline of focused Menu items.
 /// @group menu
@@ -251,6 +270,9 @@ $kendo-menu-popup-item-active-text: var( --kendo-menu-popup-item-active-text, #{
 /// The background color of active Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-active-bg: var( --kendo-menu-popup-item-active-bg, #{$kendo-list-item-selected-bg} ) !default;
+/// The text color of the icon of active Menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-active-icon-text: var( --kendo-menu-popup-item-active-icon-text, #{$kendo-menu-item-active-icon-text} ) !default;
 
 /// The text color of disabled Menu item in popup.
 /// @group menu
@@ -273,10 +295,6 @@ $kendo-menu-scroll-button-hover-bg: var( --kendo-menu-scroll-button-hover-bg, nu
 /// @group menu
 $kendo-menu-scroll-button-hover-border: var( --kendo-menu-scroll-button-hover-border, null ) !default;
 
-/// The color of the Menu items icon.
-/// @group menu
-$kendo-menu-icon-color: var( --kendo-menu-icon-color, #{k-color(primary)} ) !default;
-
 @forward "@progress/kendo-theme-core/scss/components/menu/_variables.scss" with (
     $kendo-menu-group-default-size: $kendo-menu-group-default-size,
     $kendo-menu-border-width: $kendo-menu-border-width,
@@ -290,6 +308,7 @@ $kendo-menu-icon-color: var( --kendo-menu-icon-color, #{k-color(primary)} ) !def
     $kendo-menu-item-padding-y: $kendo-menu-item-padding-y,
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
+    $kendo-menu-item-border-radius: $kendo-menu-item-border-radius,
     $kendo-menu-expand-arrow-spacing: $kendo-menu-expand-arrow-spacing,
     $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
     $kendo-menu-item-bg: $kendo-menu-item-bg,

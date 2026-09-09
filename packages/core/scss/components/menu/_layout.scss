@@ -43,6 +43,7 @@
         position: relative;
         user-select: none;
         transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
+        border-radius: $kendo-menu-item-border-radius;
 
         &.k-selected {
             font-weight: $kendo-menu-item-selected-font-weight;
@@ -73,6 +74,7 @@
         position: relative;
         white-space: nowrap;
         cursor: pointer;
+        border-radius: $kendo-menu-item-border-radius;
     }
 
 
@@ -156,6 +158,7 @@
         box-sizing: border-box;
         border-width: $kendo-menu-popup-border-width;
         border-style: solid;
+        border-radius: $kendo-menu-popup-border-radius;
         overflow: auto;
         max-height: 80vh;
 
