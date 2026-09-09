@@ -4,7 +4,7 @@ import { ToolbarPopup } from '../../toolbar';
 
 const style = `
     .k-animation-container {
-        width: min-content;
+        width: max-content;
         position: relative;
         overflow: visible;
     }
