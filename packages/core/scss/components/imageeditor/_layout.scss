@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
+@use "../../z-index/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 
@@ -36,6 +37,63 @@
         border-block-end-width: $kendo-toolbar-border-width;
     }
 
+    // Non-scrolling frame: hosts the overlay so it never moves with the scrolled items
+    .k-imageeditor-sidebar {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 0 $kendo-toolbar-border-width 0 0;
+        border-bottom-left-radius: inherit;
+
+        // Scroll overlay (toggled together with -scrollable-start/-scrollable-end by the widget)
+        &.k-imageeditor-sidebar-scrollable {
+            &::before,
+            &::after {
+                content: "";
+                width: 100%;
+                aspect-ratio: 1;
+                position: absolute;
+                inset-inline-start: 0;
+                z-index: k-z-index("base", 3);
+            }
+
+            &::before {
+                inset-block-start: 0;
+            }
+
+            &::after {
+                inset-block-end: 0;
+            }
+
+            &.k-imageeditor-sidebar-scrollable-start::before,
+            &.k-imageeditor-sidebar-scrollable-end::after {
+                display: none;
+            }
+        }
+    }
+
+    // Actual scrolling element, kept separate from .k-imageeditor-sidebar so its overlay stays put
+    .k-imageeditor-sidebar-items {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: $kendo-toolbar-md-spacing;
+        padding-block: $kendo-toolbar-md-padding-y;
+        padding-inline: $kendo-toolbar-md-padding-x;
+        box-sizing: border-box;
+        flex: 1 1 auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
 
     // Content
     .k-imageeditor-content {
@@ -44,6 +102,8 @@
         border-color: inherit;
         display: flex;
         flex-flow: row nowrap;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
     }
 
 

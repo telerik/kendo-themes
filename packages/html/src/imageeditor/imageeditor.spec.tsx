@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 import { ImageEditorToolbar } from './imageeditor-toolbar';
+import { ImageEditorSidebar } from './imageeditor-sidebar';
 
 import { KendoComponent } from '../_types/component';
 import { IMAGEEDITOR_FOLDER_NAME, IMAGEEDITOR_MODULE_NAME } from './constants';
@@ -12,6 +13,7 @@ const options = {};
 export type KendoImageEditorProps = {
     toolbarItems?: React.JSX.Element | React.JSX.Element[];
     actionPane?: React.JSX.Element | React.JSX.Element[];
+    sidebarItems?: React.JSX.Element | React.JSX.Element[];
     contentHeight?: string;
 };
 
@@ -33,6 +35,7 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
     const {
         toolbarItems,
         actionPane,
+        sidebarItems,
         contentHeight,
         children,
         ...other
@@ -50,6 +53,7 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
             </div>
 
             <div className="k-imageeditor-content" style={{ height: contentHeight }}>
+                <ImageEditorSidebar sidebarItems={sidebarItems} />
                 <div className="k-imageeditor-canvas-container">
                     <div className="k-imageeditor-canvas">
                         {children}

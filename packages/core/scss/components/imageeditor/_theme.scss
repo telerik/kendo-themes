@@ -1,5 +1,6 @@
 @use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
+@use "../toolbar/variables.scss" as *;
 
 @mixin kendo-image-editor--theme-base() {
 
@@ -49,6 +50,29 @@
         @include fill (
             $bg: $kendo-image-editor-crop-overlay-bg
         );
+    }
+
+    .k-imageeditor-sidebar {
+        @include fill(
+            $color: $kendo-toolbar-flat-text,
+            $bg: var(--kendo-color-surface-alt),
+            $border: $kendo-toolbar-flat-border
+        );
+
+        &.k-imageeditor-sidebar-scrollable {
+            &::before {
+                background: linear-gradient(180deg, $kendo-toolbar-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(0deg, $kendo-toolbar-scroll-overlay);
+            }
+        }
+    }
+
+    // Forward the sidebar's border-color so nested .k-separator (border-color: inherit) still matches it
+    .k-imageeditor-sidebar-items {
+        border-color: inherit;
     }
 
 }
