@@ -11,7 +11,7 @@
     </head>
     <body id="app" class="k-body">
         <div id="test-area" class="k-d-grid k-grid-cols-1">
-            <h4>Image Editor</h4>
+            <span>Exporting</span>
             <div class="k-imageeditor">
                 <div class="k-imageeditor-header">
                     <div class="k-imageeditor-toolbar k-toolbar k-toolbar-flat" role="toolbar" aria-label="Toolbar">
@@ -67,7 +67,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="k-imageeditor-content" style="height: 250px;">
+                <div class="k-imageeditor-content" style="height: 260px;">
                     <div class="k-imageeditor-sidebar">
                         <div class="k-imageeditor-sidebar-items">
                             <button class="k-button k-button-flat k-icon-button">
@@ -139,7 +139,21 @@
                         </div>
                     </div>
                     <div class="k-imageeditor-canvas-container">
-                        <div class="k-imageeditor-canvas"></div>
+                        <div class="k-imageeditor-canvas">
+                            <canvas width="400" height="200" style="background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; background-position: center center;"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-loader-container k-loader-top" role="status" aria-live="polite" aria-label="Exporting">
+                    <div class="k-loader-container-overlay k-overlay"></div>
+                    <div class="k-loader-container-inner k-loader-container-panel">
+                        <div aria-label="Exporting" class="k-loader k-loader-pulsing-2 k-loader-md k-loader-base" role="status">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment"></span>
+                                <span class="k-loader-segment"></span>
+                            </div>
+                        </div>
+                        <div class="k-loader-container-label">Exporting</div>
                     </div>
                 </div>
             </div>
