@@ -14,6 +14,7 @@ The Imageeditor is compliant with the [Web Content Accessibility Guidelines (WCA
 | --- | --- |
 | `role="img"` | Indicates the canvas role as an image. Applicable when an image is loaded. |
 | `aria-label|aria-labelledby` | Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded. |
+| `role="status"` | Announces the busy overlay shown while `exporting` is true. |
 
 #### Keyboard Navigation
 
@@ -33,6 +34,7 @@ The Imageeditor is compliant with the [Web Content Accessibility Guidelines (WCA
 | Pan and zoom | The canvas can be panned by dragging and zoomed with the mouse wheel. |
 | Undo / Redo | All edit operations can be undone and redone. |
 | Export | The edited image can be saved or downloaded. |
+| Exporting | While `exporting` is true, a busy overlay covers the editor and interaction is blocked. |
 
 ### Testing
 
