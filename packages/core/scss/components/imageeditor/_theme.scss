@@ -1,4 +1,5 @@
 @use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
 @use "../toolbar/variables.scss" as *;
 
@@ -73,6 +74,23 @@
     // Forward the sidebar's border-color so nested .k-separator (border-color: inherit) still matches it
     .k-imageeditor-sidebar-items {
         border-color: inherit;
+    }
+
+    .k-imageeditor-placeholder {
+        border-color: k-color(border);
+
+        .k-imageeditor-placeholder-icon {
+            color: k-color(secondary);
+            opacity: .5;
+        }
+
+        .k-imageeditor-placeholder-title {
+            color: k-color(on-app-surface);
+        }
+
+        .k-imageeditor-placeholder-text {
+            color: k-color(subtle);
+        }
     }
 
 }

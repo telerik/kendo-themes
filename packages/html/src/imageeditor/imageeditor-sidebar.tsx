@@ -9,18 +9,18 @@ export type KendoImageEditorSidebarProps = {
 };
 
 const defaultSidebarItems = [
-    <Button fillMode="flat" icon="image-resize" />,
-    <Button fillMode="flat" icon="crop" />,
-    <Button fillMode="flat" icon="rotate" />,
-    <div className="k-separator" />,
-    <Button fillMode="flat" icon="free-text" />,
-    <Button fillMode="flat" icon="shapes" />,
-    <div className="k-separator" />,
-    <Button fillMode="flat" icon="droplet" />,
-    <Button fillMode="flat" icon="sliders" />,
-    <div className="k-separator" />,
-    <Button fillMode="flat" icon="image" />,
-    <Button fillMode="flat" icon="brightness-contrast" />
+    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" />,
+    <Button fillMode="flat" key="sidebar-button-2" icon="crop" />,
+    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" />,
+    <div className="k-separator" key="sidebar-separator-1" />,
+    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" />,
+    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" />,
+    <div className="k-separator" key="sidebar-separator-2" />,
+    <Button fillMode="flat" key="sidebar-button-6" icon="droplet" />,
+    <Button fillMode="flat" key="sidebar-button-7" icon="sliders" />,
+    <div className="k-separator" key="sidebar-separator-3" />,
+    <Button fillMode="flat" key="sidebar-button-8" icon="image" />,
+    <Button fillMode="flat" key="sidebar-button-9" icon="brightness-contrast" />
 ];
 
 const defaultOptions = {

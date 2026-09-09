@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "../../color-system/_constants.scss" as *;
+@use "../../spacing/index.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "./variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
@@ -8,6 +9,7 @@
 
     // Image Editor
     .k-imageeditor {
+        position: relative;
         margin-block: $kendo-image-editor-margin-y;
         margin-inline: $kendo-image-editor-margin-x;
         padding-block: $kendo-image-editor-padding-y;
@@ -113,12 +115,45 @@
         display: flex;
         flex-flow: row nowrap;
         overflow: auto;
+        padding: k-spacing(6);
+        box-sizing: border-box;
     }
     .k-imageeditor-canvas {
         margin: auto;
         display: flex;
         flex-direction: column;
         position: relative;
+    }
+
+    // Placeholder: replaces the canvas for non-editable states (empty, loading, error)
+    .k-imageeditor-placeholder {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 auto;
+        width: 100%;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+
+        .k-imageeditor-placeholder-icon,
+        .k-imageeditor-placeholder-loader {
+            margin-block-end: k-spacing(6);
+        }
+
+        .k-imageeditor-placeholder-hint {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: k-spacing(2);
+        }
+
+        .k-imageeditor-placeholder-title {
+            font-size: var(--kendo-font-size-xl);
+            font-weight: var(--kendo-font-weight-medium);
+        }
     }
 
 

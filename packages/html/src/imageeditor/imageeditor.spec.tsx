@@ -1,6 +1,8 @@
 import { classNames } from '../misc';
 import { ImageEditorToolbar } from './imageeditor-toolbar';
 import { ImageEditorSidebar } from './imageeditor-sidebar';
+import { Overlay } from '../overlay';
+import { Loader } from '../loader';
 
 import { KendoComponent } from '../_types/component';
 import { IMAGEEDITOR_FOLDER_NAME, IMAGEEDITOR_MODULE_NAME } from './constants';
@@ -14,7 +16,9 @@ export type KendoImageEditorProps = {
     toolbarItems?: React.JSX.Element | React.JSX.Element[];
     actionPane?: React.JSX.Element | React.JSX.Element[];
     sidebarItems?: React.JSX.Element | React.JSX.Element[];
+    placeholder?: React.JSX.Element;
     contentHeight?: string;
+    exporting?: boolean;
 };
 
 const defaultOptions = {};
@@ -22,11 +26,13 @@ const defaultOptions = {};
 /**
  * @aria {role="img"} Indicates the canvas role as an image. Applicable when an image is loaded.
  * @aria {aria-label|aria-labelledby} Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded.
+ * @aria {role="status"} Announces the busy overlay shown while `exporting` is true.
  * @ux {Canvas} Renders the image on an editable canvas.
  * @ux {Crop} A crop tool lets the user select and apply a cropping region.
  * @ux {Pan and zoom} The canvas can be panned by dragging and zoomed with the mouse wheel.
  * @ux {Undo / Redo} All edit operations can be undone and redone.
  * @ux {Export} The edited image can be saved or downloaded.
+ * @ux {Exporting} While `exporting` is true, a busy overlay covers the editor and interaction is blocked.
  */
 export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoImageEditorProps &
@@ -36,7 +42,9 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
         toolbarItems,
         actionPane,
         sidebarItems,
+        placeholder,
         contentHeight,
+        exporting,
         children,
         ...other
     } = props;
@@ -55,15 +63,27 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
             <div className="k-imageeditor-content" style={{ height: contentHeight }}>
                 <ImageEditorSidebar sidebarItems={sidebarItems} />
                 <div className="k-imageeditor-canvas-container">
-                    <div className="k-imageeditor-canvas">
-                        {children}
-                    </div>
+                    {placeholder ?? (
+                        <div className="k-imageeditor-canvas">
+                            {children}
+                        </div>
+                    )}
                 </div>
 
                 {actionPane &&
                 <div className="k-imageeditor-action-pane">{actionPane}</div>
                 }
             </div>
+
+            {exporting &&
+            <div className="k-loader-container k-loader-top" role="status" aria-live="polite" aria-label="Exporting">
+                <Overlay className="k-loader-container-overlay" />
+                <div className="k-loader-container-inner k-loader-container-panel">
+                    <Loader animation="pulsing" themeColor="base" size="medium" aria-label="Exporting" />
+                    <div className="k-loader-container-label">Exporting</div>
+                </div>
+            </div>
+            }
         </div>
     );
 };

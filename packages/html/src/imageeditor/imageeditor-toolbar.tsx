@@ -20,7 +20,7 @@ const defaultToolbarItems = [
     <Button fillMode="flat" key="toolbar-button-3" disabled icon="redo" aria-label="Redo"></Button>,
     <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
     <Button fillMode="flat" key="toolbar-button-4" icon="download" aria-label="Download"></Button>,
-    <div className="k-spacer"></div>,
+    <div className="k-spacer" key="toolbar-spacer"></div>,
      <Button fillMode="flat" key="toolbar-button-5" icon="zoom-in" aria-label="Zoom In"></Button>,
     <ToolbarItem key="toolbar-item-1">
         <Autocomplete disabled value="Fit" aria-label="Zoom options" />
