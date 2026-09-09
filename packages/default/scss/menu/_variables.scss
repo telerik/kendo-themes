@@ -51,7 +51,10 @@ $kendo-menu-item-padding-y: k-spacing(1.5) !default;
 $kendo-menu-item-spacing: k-spacing(0) !default;
 /// The spacing between the Menu item text and icons.
 /// @group menu
-$kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
+$kendo-menu-item-icon-spacing: k-spacing(2) !default;
+/// The border radius of the Menu item.
+/// @group menu
+$kendo-menu-item-border-radius: k-border-radius(md) !default;
 
 /// The font weight of the selected Menu item.
 /// @group menu
@@ -167,15 +170,19 @@ $kendo-menu-separator-border: k-color(border) !default;
 
 /// The horizontal padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-x: null !default;
+$kendo-menu-popup-padding-x: $kendo-list-container-padding-inline !default;
 
 /// The vertical padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-y: null !default;
+$kendo-menu-popup-padding-y: $kendo-list-container-padding-block !default;
 
 /// The width of the border around the Menu popup.
 /// @group menu
 $kendo-menu-popup-border-width: $kendo-popup-border-width !default;
+
+/// The border radius of the Menu popup.
+/// @group menu
+$kendo-menu-popup-border-radius: k-border-radius(xxl) !default;
 
 /// The font size of the small Menu popup.
 /// @group menu
@@ -215,23 +222,23 @@ $kendo-menu-popup-gradient: null !default;
 
 /// The horizontal padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-x: k-spacing(2) !default;
+$kendo-menu-popup-sm-item-padding-x: $kendo-list-sm-item-padding-x !default;
 /// The horizontal padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-x: k-spacing(2) !default;
+$kendo-menu-popup-md-item-padding-x: $kendo-list-md-item-padding-x !default;
 /// The horizontal padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-x: k-spacing(2) !default;
+$kendo-menu-popup-lg-item-padding-x: $kendo-list-lg-item-padding-x !default;
 
 /// The vertical padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-y: k-spacing(0.5) !default;
+$kendo-menu-popup-sm-item-padding-y: $kendo-list-sm-item-padding-y !default;
 /// The vertical padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-y: k-spacing(1) !default;
+$kendo-menu-popup-md-item-padding-y: $kendo-list-md-item-padding-y !default;
 /// The vertical padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-y: k-spacing(1.5) !default;
+$kendo-menu-popup-lg-item-padding-y: $kendo-list-lg-item-padding-y !default;
 
 /// The end padding of the small Menu popup item.
 /// @group menu
@@ -265,7 +272,7 @@ $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-it
 
 /// The spacing between the Menu items in popup.
 /// @group menu
-$kendo-menu-popup-item-spacing: k-spacing(0) !default;
+$kendo-menu-popup-item-spacing: k-spacing(0.5) !default;
 
 /// The background color of the Menu item in popup.
 /// @group menu
@@ -324,6 +331,7 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-item-padding-y: $kendo-menu-item-padding-y,
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
+    $kendo-menu-item-border-radius: $kendo-menu-item-border-radius,
     $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
     $kendo-menu-item-bg: $kendo-menu-item-bg,
     $kendo-menu-item-text: $kendo-menu-item-text,
@@ -359,6 +367,7 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-popup-padding-x: $kendo-menu-popup-padding-x,
     $kendo-menu-popup-padding-y: $kendo-menu-popup-padding-y,
     $kendo-menu-popup-border-width: $kendo-menu-popup-border-width,
+    $kendo-menu-popup-border-radius: $kendo-menu-popup-border-radius,
     $kendo-menu-popup-sm-font-size: $kendo-menu-popup-sm-font-size,
     $kendo-menu-popup-md-font-size: $kendo-menu-popup-md-font-size,
     $kendo-menu-popup-lg-font-size: $kendo-menu-popup-lg-font-size,
