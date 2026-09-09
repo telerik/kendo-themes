@@ -5,20 +5,8 @@
 @mixin kendo-menu--layout() {
     @include kendo-menu--layout-base();
 
-    .k-menu-item {
-        border-radius: k-border-radius(sm);
-    }
-
     .k-menu-group {
         gap: k-spacing(0.5);
-    }
-
-    // Popup item border-radius
-    .k-menu-group,
-    .k-menu.k-context-menu {
-        .k-item > .k-link {
-            border-radius: k-border-radius(sm);
-        }
     }
 
     .k-context-menu {

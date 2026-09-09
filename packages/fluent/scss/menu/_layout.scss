@@ -21,7 +21,6 @@
             outline-offset: $kendo-menu-item-focus-outline-offset;
             outline-width: $kendo-menu-item-focus-outline-width;
             outline-style: $kendo-menu-item-focus-outline-style;
-            border-radius: k-border-radius(md);
         }
     }
 
@@ -30,11 +29,6 @@
         > .k-separator {
             border-inline-start-width: $kendo-menu-separator-width;
         }
-    }
-
-    .k-menu-group {
-        padding: k-spacing(1);
-        gap: k-spacing(0.5);
     }
 
     // Sub menu group focus styles
