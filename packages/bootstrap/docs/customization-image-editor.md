@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>Calculation</td>
-    <td><code>if( $kendo-image-editor-content-border-width == null, 250px, calc( 250px + #{$kendo-image-editor-content-border-width} ) )</code></td>
-    <td><code>calc(250px + 1px)</code></td>
+    <td><code>if( $kendo-image-editor-content-border-width == null, 320px, calc( 320px + #{$kendo-image-editor-content-border-width} ) )</code></td>
+    <td><code>calc(320px + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ImageEditor action pane.</div></div>
@@ -268,6 +268,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-aspect-ratio-options-scroll-gradient</td>
+    <td>List</td>
+    <td><code>rgba(255, 255, 255, 0) 0%, k-color(surface-alt) 100%</code></td>
+    <td><code>(rgba(255, 255, 255, 0) 0%, var(--kendo-color-surface-alt) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The scroll-fade gradient stops of the ImageEditor aspect ratio presets list.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-aspect-ratio-preview-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
@@ -310,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-crop-border-width</td>
     <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ImageEditor crop area.</div></div>
@@ -320,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-crop-border-style</td>
     <td>String</td>
-    <td><code>dashed</code></td>
-    <td><code>dashed</code></td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border around the ImageEditor crop area.</div></div>
@@ -329,9 +339,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1px)</code></td>
-    <td><code>var(--kendo-spacing-1px)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the ImageEditor resize handle.</div></div>
@@ -339,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-y</td>
-    <td>String</td>
-    <td><code>k-spacing(1px)</code></td>
-    <td><code>var(--kendo-spacing-1px)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the ImageEditor resize handle.</div></div>
@@ -349,9 +359,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-image-editor-resize-handle-border-width</td>
-    <td>List</td>
-    <td><code>0 2px 2px 0</code></td>
-    <td><code>(0 2px 2px 0)</code></td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ImageEditor resize handle.</div></div>
@@ -360,11 +370,31 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-resize-handle-size</td>
     <td>Number</td>
-    <td><code>15px</code></td>
-    <td><code>15px</code></td>
+    <td><code>24px</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the ImageEditor resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-resize-handle-thickness</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thickness of the ImageEditor resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-resize-handle-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(full)</code></td>
+    <td><code>var(--kendo-border-radius-full)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ImageEditor resize handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -529,9 +559,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-image-editor-crop-border</td>
-    <td>Color</td>
-    <td><code>white</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td>String</td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor crop area.</div></div>
@@ -545,6 +575,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ImageEditor crop overlay.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-crop-grid-color</td>
+    <td>String</td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the ImageEditor crop grid lines.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-resize-handle-bg</td>
+    <td>String</td>
+    <td><code>k-color(secondary-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ImageEditor resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-resize-handle-border</td>
+    <td>String</td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor resize handle.</div></div>
     </td>
 </tr>
 </tbody>
