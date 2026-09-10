@@ -16,6 +16,26 @@ $kendo-image-editor-action-pane-padding-y: null !default;
 $kendo-image-editor-action-pane-padding-x: null !default;
 $kendo-image-editor-action-pane-width: null !default;
 
+$kendo-image-editor-pane-header-padding-y: null !default;
+$kendo-image-editor-pane-header-padding-x: null !default;
+$kendo-image-editor-pane-header-gap: null !default;
+
+$kendo-image-editor-pane-content-padding-top: null !default;
+$kendo-image-editor-pane-content-padding-bottom: null !default;
+$kendo-image-editor-pane-content-padding-x: null !default;
+$kendo-image-editor-pane-content-gap: null !default;
+$kendo-image-editor-pane-field-gap: null !default;
+
+$kendo-image-editor-pane-footer-padding-y: null !default;
+$kendo-image-editor-pane-footer-padding-x: null !default;
+
+$kendo-image-editor-aspect-ratio-options-gap: null !default;
+$kendo-image-editor-aspect-ratio-options-scroll-gradient: null !default;
+$kendo-image-editor-aspect-ratio-preview-padding-y: null !default;
+$kendo-image-editor-aspect-ratio-preview-padding-x: null !default;
+$kendo-image-editor-aspect-ratio-preview-border-radius: null !default;
+$kendo-image-editor-aspect-ratio-preview-width: null !default;
+
 $kendo-image-editor-crop-border-width: null !default;
 $kendo-image-editor-crop-border-style: null !default;
 
@@ -23,6 +43,8 @@ $kendo-image-editor-resize-handle-margin-x: null !default;
 $kendo-image-editor-resize-handle-margin-y: null !default;
 $kendo-image-editor-resize-handle-border-width: null !default;
 $kendo-image-editor-resize-handle-size: null !default;
+$kendo-image-editor-resize-handle-thickness: null !default;
+$kendo-image-editor-resize-handle-border-radius: null !default;
 
 $kendo-image-editor-bg: null !default;
 $kendo-image-editor-text: null !default;
@@ -36,8 +58,20 @@ $kendo-image-editor-action-pane-bg: null !default;
 $kendo-image-editor-action-pane-text: null !default;
 $kendo-image-editor-action-pane-border: null !default;
 
+$kendo-image-editor-pane-title-text: null !default;
+
+$kendo-image-editor-aspect-ratio-preview-bg: null !default;
+$kendo-image-editor-aspect-ratio-preview-text: null !default;
+$kendo-image-editor-aspect-ratio-preview-border: null !default;
+$kendo-image-editor-aspect-ratio-preview-selected-shadow: null !default;
+
 $kendo-image-editor-crop-bg: null !default;
 $kendo-image-editor-crop-text: null !default;
 $kendo-image-editor-crop-border: null !default;
 
 $kendo-image-editor-crop-overlay-bg: null !default;
+
+$kendo-image-editor-crop-grid-color: null !default;
+
+$kendo-image-editor-resize-handle-bg: null !default;
+$kendo-image-editor-resize-handle-border: null !default;

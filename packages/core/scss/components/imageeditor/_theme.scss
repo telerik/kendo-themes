@@ -37,6 +37,33 @@
         );
     }
 
+    .k-imageeditor-pane-title {
+        color: $kendo-image-editor-pane-title-text;
+    }
+
+    // Aspect ratio presets
+    .k-imageeditor-aspect-ratio-options.k-imageeditor-aspect-ratio-options-scrollable {
+        &::before {
+            background: linear-gradient(270deg, $kendo-image-editor-aspect-ratio-options-scroll-gradient);
+        }
+
+        &::after {
+            background: linear-gradient(90deg, $kendo-image-editor-aspect-ratio-options-scroll-gradient);
+        }
+    }
+
+    .k-imageeditor-aspect-ratio-preview {
+        @include fill(
+            $kendo-image-editor-aspect-ratio-preview-text,
+            $kendo-image-editor-aspect-ratio-preview-bg,
+            $kendo-image-editor-aspect-ratio-preview-border
+        );
+
+        &.k-selected {
+            box-shadow: $kendo-image-editor-aspect-ratio-preview-selected-shadow;
+        }
+    }
+
     // Crop Tool
     .k-imageeditor-crop {
         @include fill(
@@ -44,6 +71,36 @@
             $kendo-image-editor-crop-bg,
             $kendo-image-editor-crop-border
         );
+
+        .k-imageeditor-crop-grid {
+            background-image:
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color),
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color),
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color),
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color);
+        }
+
+        .k-resize-handle {
+            border-color: $kendo-image-editor-resize-handle-border;
+        }
+
+        .k-resize-sw,
+        .k-resize-se,
+        .k-resize-nw,
+        .k-resize-ne {
+            background-color: $kendo-image-editor-resize-handle-border;
+
+            &::before {
+                background-color: $kendo-image-editor-resize-handle-bg;
+            }
+        }
+
+        .k-resize-n,
+        .k-resize-s,
+        .k-resize-w,
+        .k-resize-e {
+            background-color: $kendo-image-editor-resize-handle-bg;
+        }
     }
 
     // Crop Overlay
