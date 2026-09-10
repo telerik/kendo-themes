@@ -3,7 +3,7 @@ import { Textbox } from "../../textbox";
 import { TimePicker } from "../../timepicker";
 import { Switch } from "../../switch";
 import { Dialog } from "../../dialog";
-import { Form, FormField } from "../../form";
+import { Form, FormField, FormHint } from "../../form";
 import { Icon } from "../../icon";
 import Textarea from "../../textarea/textarea.spec";
 import { DatePicker } from "../../datepicker";
@@ -24,6 +24,22 @@ const style = `
 
     .k-animation-container {
      position: relative;
+    }
+
+    .k-scheduler-recurrence-section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--kendo-spacing-2);
+        align-items: flex-start;
+    }
+
+    .k-scheduler-recurrence-summary {
+        margin-block-start: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        cursor: help;
     }
 `;
 
@@ -183,6 +199,125 @@ export default () => (
             />
 
             <FormField orientation="horizontal" label={<Icon size="xlarge" icon="comment" />} editor={<Textarea resize="y" placeholder="Add description" aria-label="Description" />} />
+          </Form>
+        </Dialog>
+      </section>
+
+      <section>
+        <span>Dialog - More options, recurrence set, short summary</span>
+        <Dialog
+          modal={false}
+          title="New event"
+          actions={["x"]}
+          actionButtonsAlign="end"
+          actionButtons={
+            <>
+              <Button>Cancel</Button>
+              <Button themeColor="primary">Save</Button>
+            </>
+          }
+          style={{ width: "650px" }}
+        >
+          <Form className="k-scheduler-edit-form" orientation="horizontal">
+            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="right-double-quotes" />} editor={<Textbox placeholder="New event" aria-label="Event title" />} />
+
+            <FormField
+              label={<Icon size="xlarge" icon="clock" />}
+              editor={
+                <div className="k-scheduler-datetime-section">
+                  <div className="k-scheduler-edit-form-row">
+                    <Switch checked={false} aria-label="All day" />
+                    <span>All day</span>
+                  </div>
+                  <div className="k-scheduler-datetime-grid">
+                    <div className="k-scheduler-edit-form-row">
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="Start date" />
+                      <span className="k-scheduler-datetime-label">from</span>
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="Start time" />
+                    </div>
+                    <Button className="k-col-span-2" title="Set Timezone" fillMode="flat" themeColor="primary" icon="globe">
+                      Time zone
+                    </Button>
+                    <div className="k-scheduler-edit-form-row">
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="End date" />
+                      <span className="k-scheduler-datetime-label">to</span>
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="End time" />
+                    </div>
+                  </div>
+                  <div className="k-scheduler-recurrence-section">
+                    <Button className="k-scheduler-recurrence-button" fillMode="flat" icon="arrow-rotate-cw" themeColor="primary" selected togglable>
+                      Edit recurrence
+                    </Button>
+                    <FormHint className="k-scheduler-recurrence-summary" title="Repeats every 2 week(s) on Monday, ending after 6 occurrence(s).">
+                      Repeats every 2 week(s) on Monday, ending after 6 occurrence(s).
+                    </FormHint>
+                  </div>
+                </div>
+              }
+            />
+
+            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="comment" />} editor={<Textarea resize="y" placeholder="Add Description" aria-label="Description" />} />
+          </Form>
+        </Dialog>
+      </section>
+
+      <section>
+        <span>Dialog - More options, recurrence set, long summary</span>
+        <Dialog
+          modal={false}
+          title="New event"
+          actions={["x"]}
+          actionButtonsAlign="end"
+          actionButtons={
+            <>
+              <Button>Cancel</Button>
+              <Button themeColor="primary">Save</Button>
+            </>
+          }
+          style={{ width: "650px" }}
+        >
+          <Form className="k-scheduler-edit-form" orientation="horizontal">
+            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="right-double-quotes" />} editor={<Textbox placeholder="New event" aria-label="Event title" />} />
+
+            <FormField
+              label={<Icon size="xlarge" icon="clock" />}
+              editor={
+                <div className="k-scheduler-datetime-section">
+                  <div className="k-scheduler-edit-form-row">
+                    <Switch checked={false} aria-label="All day" />
+                    <span>All day</span>
+                  </div>
+                  <div className="k-scheduler-datetime-grid">
+                    <div className="k-scheduler-edit-form-row">
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="Start date" />
+                      <span className="k-scheduler-datetime-label">from</span>
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="Start time" />
+                    </div>
+                    <Button className="k-col-span-2" title="Set Timezone" fillMode="flat" themeColor="primary" icon="globe">
+                      Time zone
+                    </Button>
+                    <div className="k-scheduler-edit-form-row">
+                      <DatePicker showClearButton={false} value="1/21/2021" aria-label="End date" />
+                      <span className="k-scheduler-datetime-label">to</span>
+                      <TimePicker showClearButton={false} value="3:07 AM" aria-label="End time" />
+                    </div>
+                  </div>
+                  <div className="k-scheduler-recurrence-section">
+                    <Button className="k-scheduler-recurrence-button" fillMode="flat" icon="arrow-rotate-cw" themeColor="primary" selected togglable>
+                      Edit recurrence
+                    </Button>
+                    <FormHint
+                      className="k-scheduler-recurrence-summary"
+                      title="Repeats every 2 week(s) on Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday, starting from January 21, 2021, ending after 128 occurrence(s) or on December 31, 2026, whichever comes first, unless the series is modified or cancelled beforehand."
+                    >
+                      Repeats every 2 week(s) on Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday, starting from January 21, 2021, ending after 128 occurrence(s) or on December 31, 2026, whichever comes first, unless the series is modified or cancelled beforehand.
+                    </FormHint>
+                  </div>
+                </div>
+              }
+            />
+
+            <FormField orientation="horizontal" label={<Icon size="xlarge" icon="comment" />} editor={<Textarea resize="y" placeholder="Add Description" aria-label="Description" />} />
           </Form>
         </Dialog>
       </section>
