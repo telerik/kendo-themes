@@ -111,9 +111,6 @@ $kendo-image-editor-pane-content-padding-x: var( --kendo-image-editor-pane-conte
 /// Gap between the fields of the imageeditor pane content.
 /// @group image-editor
 $kendo-image-editor-pane-content-gap: var( --kendo-image-editor-pane-content-gap, #{k-spacing(4)} ) !default;
-/// Gap between the label and the editor of an imageeditor pane field.
-/// @group image-editor
-$kendo-image-editor-pane-field-gap: var( --kendo-image-editor-pane-field-gap, #{k-spacing(1)} ) !default;
 
 /// Imageeditor pane footer vertical padding.
 /// @group image-editor
@@ -189,6 +186,9 @@ $kendo-image-editor-resize-handle-thickness: var( --kendo-image-editor-resize-ha
 /// Imageeditor resize handle border radius.
 /// @group image-editor
 $kendo-image-editor-resize-handle-border-radius: var( --kendo-image-editor-resize-handle-border-radius, #{k-border-radius(full)} ) !default;
+/// Imageeditor scale handle size.
+/// @group image-editor
+$kendo-image-editor-scale-handle-size: var( --kendo-image-editor-scale-handle-size, #{k-spacing(3)} ) !default;
 /// Imageeditor resize handle top offset.
 /// @group image-editor
 $kendo-image-editor-resize-top-offset: var( --kendo-image-editor-resize-top-offset, calc( #{$kendo-image-editor-resize-handle-size} / 2 ) ) !default;
@@ -217,7 +217,6 @@ $kendo-image-editor-resize-left-offset: var( --kendo-image-editor-resize-left-of
     $kendo-image-editor-pane-content-padding-bottom: $kendo-image-editor-pane-content-padding-bottom,
     $kendo-image-editor-pane-content-padding-x: $kendo-image-editor-pane-content-padding-x,
     $kendo-image-editor-pane-content-gap: $kendo-image-editor-pane-content-gap,
-    $kendo-image-editor-pane-field-gap: $kendo-image-editor-pane-field-gap,
     $kendo-image-editor-pane-footer-padding-y: $kendo-image-editor-pane-footer-padding-y,
     $kendo-image-editor-pane-footer-padding-x: $kendo-image-editor-pane-footer-padding-x,
     $kendo-image-editor-aspect-ratio-options-gap: $kendo-image-editor-aspect-ratio-options-gap,
@@ -234,6 +233,7 @@ $kendo-image-editor-resize-left-offset: var( --kendo-image-editor-resize-left-of
     $kendo-image-editor-resize-handle-size: $kendo-image-editor-resize-handle-size,
     $kendo-image-editor-resize-handle-thickness: $kendo-image-editor-resize-handle-thickness,
     $kendo-image-editor-resize-handle-border-radius: $kendo-image-editor-resize-handle-border-radius,
+    $kendo-image-editor-scale-handle-size: $kendo-image-editor-scale-handle-size,
     $kendo-image-editor-bg: $kendo-image-editor-bg,
     $kendo-image-editor-text: $kendo-image-editor-text,
     $kendo-image-editor-border: $kendo-image-editor-border,

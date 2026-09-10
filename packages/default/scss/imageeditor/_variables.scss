@@ -66,9 +66,6 @@ $kendo-image-editor-pane-content-padding-x: k-spacing(4) !default;
 /// The gap between the fields of the ImageEditor pane content.
 /// @group image-editor
 $kendo-image-editor-pane-content-gap: k-spacing(4) !default;
-/// The gap between the label and the editor of an ImageEditor pane field.
-/// @group image-editor
-$kendo-image-editor-pane-field-gap: k-spacing(1) !default;
 
 /// The vertical padding of the ImageEditor pane footer.
 /// @group image-editor
@@ -121,6 +118,10 @@ $kendo-image-editor-resize-handle-thickness: 12px !default;
 /// The border radius of the ImageEditor resize handle.
 /// @group image-editor
 $kendo-image-editor-resize-handle-border-radius: k-border-radius(full) !default;
+
+/// The size of the ImageEditor scale handle.
+/// @group image-editor
+$kendo-image-editor-scale-handle-size: 12px !default;
 
 /// The background color of the ImageEditor.
 /// @group image-editor
@@ -215,7 +216,6 @@ $kendo-image-editor-resize-handle-border: k-color(secondary) !default;
     $kendo-image-editor-pane-content-padding-bottom: $kendo-image-editor-pane-content-padding-bottom,
     $kendo-image-editor-pane-content-padding-x: $kendo-image-editor-pane-content-padding-x,
     $kendo-image-editor-pane-content-gap: $kendo-image-editor-pane-content-gap,
-    $kendo-image-editor-pane-field-gap: $kendo-image-editor-pane-field-gap,
     $kendo-image-editor-pane-footer-padding-y: $kendo-image-editor-pane-footer-padding-y,
     $kendo-image-editor-pane-footer-padding-x: $kendo-image-editor-pane-footer-padding-x,
     $kendo-image-editor-aspect-ratio-options-gap: $kendo-image-editor-aspect-ratio-options-gap,
@@ -232,6 +232,7 @@ $kendo-image-editor-resize-handle-border: k-color(secondary) !default;
     $kendo-image-editor-resize-handle-size: $kendo-image-editor-resize-handle-size,
     $kendo-image-editor-resize-handle-thickness: $kendo-image-editor-resize-handle-thickness,
     $kendo-image-editor-resize-handle-border-radius: $kendo-image-editor-resize-handle-border-radius,
+    $kendo-image-editor-scale-handle-size: $kendo-image-editor-scale-handle-size,
     $kendo-image-editor-bg: $kendo-image-editor-bg,
     $kendo-image-editor-text: $kendo-image-editor-text,
     $kendo-image-editor-border: $kendo-image-editor-border,

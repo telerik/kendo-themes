@@ -110,6 +110,21 @@
         );
     }
 
+    // Resize Tool
+    .k-imageeditor-resize {
+        @include fill(
+            $kendo-image-editor-crop-text,
+            $kendo-image-editor-crop-bg,
+            $kendo-image-editor-crop-border
+        );
+
+        .k-resize-handle,
+        .k-scale-handle {
+            border-color: $kendo-image-editor-resize-handle-border;
+            background-color: $kendo-image-editor-resize-handle-bg;
+        }
+    }
+
     .k-imageeditor-sidebar {
         @include fill(
             $color: $kendo-toolbar-flat-text,

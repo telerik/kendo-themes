@@ -2,7 +2,7 @@ import { ImageEditor, ImageEditorPane, ImageEditorAspectRatioPreview } from ".."
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { NumericTextbox } from "../../numerictextbox";
-import { FormField } from "../../form";
+import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
 import { Autocomplete } from "../../autocomplete";
 import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
@@ -31,53 +31,51 @@ export const ImageEditorCrop = (props: any) => (
                     <Button themeColor="primary">Apply</Button>
                 </>
             }>
-                <FormField
-                    className="k-imageeditor-pane-field"
-                    label="Orientation"
-                    editor={
-                        <RadioGroup layout="horizontal">
-                            <RadioItem>
-                                <RadioButtonWithLabelAfter id="crop-orientation-landscape" name="crop-orientation" checked>Landscape</RadioButtonWithLabelAfter>
-                            </RadioItem>
-                            <RadioItem>
-                                <RadioButtonWithLabelAfter id="crop-orientation-portrait" name="crop-orientation">Portrait</RadioButtonWithLabelAfter>
-                            </RadioItem>
-                        </RadioGroup>
-                    }
-                />
-                <FormField
-                    className="k-imageeditor-pane-field"
-                    label="Aspect Ratio"
-                    editor={
-                        <div className="k-imageeditor-aspect-ratio-options k-imageeditor-aspect-ratio-options-scrollable k-imageeditor-aspect-ratio-options-scrollable-end">
-                            <div className="k-imageeditor-aspect-ratio-options-list">
-                                <ImageEditorAspectRatioPreview label="Original" />
-                                <ImageEditorAspectRatioPreview label="1:1" />
-                                <ImageEditorAspectRatioPreview label="3:2" />
-                                <ImageEditorAspectRatioPreview label="4:3" />
-                                <ImageEditorAspectRatioPreview label="5:4" />
-                                <ImageEditorAspectRatioPreview label="7:5" />
-                                <ImageEditorAspectRatioPreview label="16:9" />
-                                <ImageEditorAspectRatioPreview label="Custom" />
+                <Form tag="div">
+                    <FormField
+                        label="Orientation"
+                        editor={
+                            <RadioGroup layout="horizontal">
+                                <RadioItem>
+                                    <RadioButtonWithLabelAfter id="crop-orientation-landscape" name="crop-orientation" checked>Landscape</RadioButtonWithLabelAfter>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonWithLabelAfter id="crop-orientation-portrait" name="crop-orientation">Portrait</RadioButtonWithLabelAfter>
+                                </RadioItem>
+                            </RadioGroup>
+                        }
+                    />
+                    <FormField
+                        label="Aspect Ratio"
+                        editor={
+                            <div className="k-imageeditor-aspect-ratio-options k-imageeditor-aspect-ratio-options-scrollable k-imageeditor-aspect-ratio-options-scrollable-end">
+                                <div className="k-imageeditor-aspect-ratio-options-list">
+                                    <ImageEditorAspectRatioPreview label="Original" />
+                                    <ImageEditorAspectRatioPreview label="1:1" />
+                                    <ImageEditorAspectRatioPreview label="3:2" />
+                                    <ImageEditorAspectRatioPreview label="4:3" />
+                                    <ImageEditorAspectRatioPreview label="5:4" />
+                                    <ImageEditorAspectRatioPreview label="7:5" />
+                                    <ImageEditorAspectRatioPreview label="16:9" />
+                                    <ImageEditorAspectRatioPreview label="Custom" />
+                                </div>
                             </div>
-                        </div>
-                    }
-                />
-                <div className="k-imageeditor-pane-field-row">
-                    <FormField
-                        className="k-imageeditor-pane-field"
-                        label="Width"
-                        editorId="crop-width"
-                        editor={ <NumericTextbox id="crop-width" showClearButton={false} value="400" prefix={<Icon icon="arrows-left-right" />} /> }
+                        }
                     />
-                    <FormField
-                        className="k-imageeditor-pane-field"
-                        label="Height"
-                        editorId="crop-height"
-                        editor={ <NumericTextbox id="crop-height" showClearButton={false} value="360" prefix={<Icon icon="arrows-top-bottom" />} /> }
-                    />
-                </div>
-                <CheckboxWithLabelAfter id="crop-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter>
+                    <Fieldset layout="grid" cols={2} gutters={{ cols: "8px" }}>
+                        <FormField
+                            label="Width"
+                            editorId="crop-width"
+                            editor={ <NumericTextbox id="crop-width" showClearButton={false} value="400" prefix={<Icon icon="arrows-left-right" />} /> }
+                        />
+                        <FormField
+                            label="Height"
+                            editorId="crop-height"
+                            editor={ <NumericTextbox id="crop-height" showClearButton={false} value="360" prefix={<Icon icon="arrows-top-bottom" />} /> }
+                        />
+                    </Fieldset>
+                    <FormField editor={ <CheckboxWithLabelAfter id="crop-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter> } />
+                </Form>
             </ImageEditorPane>
         }
 
