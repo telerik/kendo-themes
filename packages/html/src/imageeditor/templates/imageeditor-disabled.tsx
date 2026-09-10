@@ -1,12 +1,8 @@
-import { ImageEditor } from '..';
-import { ImageEditorPlaceholder } from '../imageeditor-placeholder';
-import { ToolbarItem, ToolbarSeparator } from '../../toolbar';
-import { Button } from '../../button';
-import { Autocomplete } from '../../autocomplete';
-import { Loader } from '../../loader';
+import { ImageEditor } from "..";
+import { ToolbarItem, ToolbarSeparator } from "../../toolbar";
+import { Button } from "../../button";
+import { Autocomplete } from "../../autocomplete";
 
-// Loading state: an image is being fetched/decoded — same disabled toolbar/sidebar
-// as Empty, but the placeholder shows a pulsing loader instead of an icon.
 const disabledToolbarItems = [
     <Button fillMode="flat" key="toolbar-button-1" icon="image-add" aria-label="Image Add"></Button>,
     <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
@@ -37,29 +33,12 @@ const disabledSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-9" disabled icon="brightness-contrast" />
 ];
 
-export default () => (
-    <div id="test-area" className="k-d-grid k-grid-cols-1">
-
-        <span>Loading</span>
-        <ImageEditor
-            contentHeight="260px"
-            toolbarItems={disabledToolbarItems}
-            sidebarItems={disabledSidebarItems}
-            placeholder={
-                <ImageEditorPlaceholder>
-                    <Loader
-                        animation="pulsing"
-                        themeColor="secondary"
-                        size="large"
-                        className="k-imageeditor-placeholder-loader"
-                    />
-                    <div className="k-imageeditor-placeholder-hint">
-                        <div className="k-imageeditor-placeholder-title">Getting your canvas ready...</div>
-                        <div className="k-imageeditor-placeholder-text">Just a moment while we load your image!</div>
-                    </div>
-                </ImageEditorPlaceholder>
-            }
-        />
-
-    </div>
+// Non-editable state (Empty, Loading, Error): only the upload action is available,
+// sidebar tools and the rest of the toolbar are disabled.
+export const ImageEditorDisabled = (props: any) => (
+    <ImageEditor
+        toolbarItems={disabledToolbarItems}
+        sidebarItems={disabledSidebarItems}
+        {...props}
+    />
 );
