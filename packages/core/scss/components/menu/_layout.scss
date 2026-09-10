@@ -217,6 +217,10 @@
             $_item-padding-end: map.get( $size-props, item-padding-end);
             $_item-icon-margin-start: map.get( $size-props, item-icon-margin-start);
             $_item-icon-margin-end: map.get( $size-props, item-icon-margin-end);
+            $_group-header-padding-x: map.get( $size-props, group-header-padding-x);
+            $_group-header-padding-y: map.get( $size-props, group-header-padding-y);
+            $_group-header-font-size: map.get( $size-props, group-header-font-size);
+            $_group-header-line-height: map.get( $size-props, group-header-line-height);
 
             #{k-when-default($kendo-menu-group-default-size, $size)}
             &.k-menu-group-#{$size} {
@@ -239,12 +243,31 @@
                     margin-inline-start: $_item-icon-margin-start;
                     margin-inline-end: $_item-icon-margin-end;
                 }
+
+                .k-menu-group-header {
+                    padding-block: $_group-header-padding-y;
+                    padding-inline: $_group-header-padding-x;
+                    font-size: $_group-header-font-size;
+                    line-height: $_group-header-line-height;
+                }
             }
         }
 
     }
     .k-menu-popup .k-menu-group {
         position: relative;
+    }
+
+
+    // Menu group header
+    .k-menu-group-header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: $kendo-menu-item-icon-spacing;
+        font-weight: $kendo-menu-popup-group-header-font-weight;
+        white-space: nowrap;
+        cursor: default;
     }
 
     // Context menu

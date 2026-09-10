@@ -307,6 +307,57 @@ $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-it
 /// @group menu
 $kendo-menu-popup-item-spacing: k-spacing(0.5) !default;
 
+/// The horizontal padding of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-padding-x: $kendo-list-sm-group-item-padding-x !default;
+/// The horizontal padding of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-padding-x: $kendo-list-md-group-item-padding-x !default;
+/// The horizontal padding of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-padding-x: $kendo-list-lg-group-item-padding-x !default;
+
+/// The vertical padding of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-padding-y: $kendo-list-sm-group-item-padding-y !default;
+/// The vertical padding of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-padding-y: $kendo-list-md-group-item-padding-y !default;
+/// The vertical padding of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-padding-y: $kendo-list-lg-group-item-padding-y !default;
+
+/// The font size of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-font-size: $kendo-list-item-group-label-sm-font-size !default;
+/// The font size of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-font-size: $kendo-list-item-group-label-md-font-size !default;
+/// The font size of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-font-size: $kendo-list-item-group-label-lg-font-size !default;
+
+/// The line height of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-line-height: $kendo-menu-popup-sm-line-height !default;
+/// The line height of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-line-height: $kendo-menu-popup-md-line-height !default;
+/// The line height of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-line-height: $kendo-menu-popup-lg-line-height !default;
+
+/// The font weight of the Menu popup group header.
+/// @group menu
+$kendo-menu-popup-group-header-font-weight: $kendo-list-group-item-font-weight !default;
+
+/// The background color of the Menu popup group header.
+/// @group menu
+$kendo-menu-popup-group-header-bg: $kendo-list-group-item-bg !default;
+/// The text color of the Menu popup group header.
+/// @group menu
+$kendo-menu-popup-group-header-text: $kendo-list-group-item-text !default;
+
 /// The background color of the Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-bg: null !default;
@@ -436,6 +487,21 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-popup-md-item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end,
     $kendo-menu-popup-lg-item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end,
     $kendo-menu-popup-item-spacing: $kendo-menu-popup-item-spacing,
+    $kendo-menu-popup-sm-group-header-padding-x: $kendo-menu-popup-sm-group-header-padding-x,
+    $kendo-menu-popup-md-group-header-padding-x: $kendo-menu-popup-md-group-header-padding-x,
+    $kendo-menu-popup-lg-group-header-padding-x: $kendo-menu-popup-lg-group-header-padding-x,
+    $kendo-menu-popup-sm-group-header-padding-y: $kendo-menu-popup-sm-group-header-padding-y,
+    $kendo-menu-popup-md-group-header-padding-y: $kendo-menu-popup-md-group-header-padding-y,
+    $kendo-menu-popup-lg-group-header-padding-y: $kendo-menu-popup-lg-group-header-padding-y,
+    $kendo-menu-popup-sm-group-header-font-size: $kendo-menu-popup-sm-group-header-font-size,
+    $kendo-menu-popup-md-group-header-font-size: $kendo-menu-popup-md-group-header-font-size,
+    $kendo-menu-popup-lg-group-header-font-size: $kendo-menu-popup-lg-group-header-font-size,
+    $kendo-menu-popup-sm-group-header-line-height: $kendo-menu-popup-sm-group-header-line-height,
+    $kendo-menu-popup-md-group-header-line-height: $kendo-menu-popup-md-group-header-line-height,
+    $kendo-menu-popup-lg-group-header-line-height: $kendo-menu-popup-lg-group-header-line-height,
+    $kendo-menu-popup-group-header-font-weight: $kendo-menu-popup-group-header-font-weight,
+    $kendo-menu-popup-group-header-bg: $kendo-menu-popup-group-header-bg,
+    $kendo-menu-popup-group-header-text: $kendo-menu-popup-group-header-text,
     $kendo-menu-popup-item-bg: $kendo-menu-popup-item-bg,
     $kendo-menu-popup-item-text: $kendo-menu-popup-item-text,
     $kendo-menu-popup-item-border: $kendo-menu-popup-item-border,
