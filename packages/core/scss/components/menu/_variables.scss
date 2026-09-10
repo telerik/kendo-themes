@@ -1,5 +1,6 @@
 // Menu
 
+$kendo-menu-default-size: null !default;
 $kendo-menu-group-default-size: null !default;
 
 $kendo-menu-border-width: null !default;
@@ -7,6 +8,12 @@ $kendo-menu-border-width: null !default;
 $kendo-menu-font-family: null !default;
 $kendo-menu-font-size: null !default;
 $kendo-menu-line-height: null !default;
+
+$kendo-menu-sm-font-size: null !default;
+$kendo-menu-lg-font-size: null !default;
+
+$kendo-menu-sm-line-height: null !default;
+$kendo-menu-lg-line-height: null !default;
 
 $kendo-menu-bg: null !default;
 $kendo-menu-text: null !default;
@@ -20,6 +27,35 @@ $kendo-menu-item-padding-y: null !default;
 $kendo-menu-item-spacing: null !default;
 $kendo-menu-item-icon-spacing: null !default;
 $kendo-menu-item-border-radius: null !default;
+
+$kendo-menu-sm-item-padding-x: null !default;
+$kendo-menu-lg-item-padding-x: null !default;
+
+$kendo-menu-sm-item-padding-y: null !default;
+$kendo-menu-lg-item-padding-y: null !default;
+
+/// The sizes map of the Menu.
+/// @group menu
+$kendo-menu-sizes: (
+    sm: (
+        font-size: $kendo-menu-sm-font-size,
+        line-height: $kendo-menu-sm-line-height,
+        item-padding-x: $kendo-menu-sm-item-padding-x,
+        item-padding-y: $kendo-menu-sm-item-padding-y
+    ),
+    md: (
+        font-size: $kendo-menu-font-size,
+        line-height: $kendo-menu-line-height,
+        item-padding-x: $kendo-menu-item-padding-x,
+        item-padding-y: $kendo-menu-item-padding-y
+    ),
+    lg: (
+        font-size: $kendo-menu-lg-font-size,
+        line-height: $kendo-menu-lg-line-height,
+        item-padding-x: $kendo-menu-lg-item-padding-x,
+        item-padding-y: $kendo-menu-lg-item-padding-y
+    )
+) !default;
 
 $kendo-menu-item-selected-font-weight: null !default;
 
