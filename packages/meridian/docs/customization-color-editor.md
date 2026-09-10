@@ -60,8 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-sm-min-width</td>
     <td>Number</td>
-    <td><code>252px</code></td>
-    <td><code>252px</code></td>
+    <td><code>256px</code></td>
+    <td><code>256px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-md-min-width</td>
     <td>Number</td>
-    <td><code>272px</code></td>
-    <td><code>272px</code></td>
+    <td><code>280px</code></td>
+    <td><code>280px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-min-width</td>
     <td>Number</td>
-    <td><code>362px</code></td>
-    <td><code>362px</code></td>
+    <td><code>364px</code></td>
+    <td><code>364px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
@@ -513,7 +513,7 @@ The following table lists the available variables for customization.
         preview-height: $kendo-color-editor-lg-color-preview-height,
     )
 )</code></td>
-    <td><ul><li>sm: "min-width":"252px","header-padding-x":"var(--kendo-spacing-3)","header-padding-y":"var(--kendo-spacing-3)","views-padding-x":"var(--kendo-spacing-3)","views-padding-y":"var(--kendo-spacing-3)","preview-gap":"var(--kendo-spacing-0\\.5)","preview-width":"34px","preview-height":"12px"</li><li>md: "min-width":"272px","header-padding-x":"var(--kendo-spacing-3)","header-padding-y":"var(--kendo-spacing-3)","views-padding-x":"var(--kendo-spacing-3)","views-padding-y":"var(--kendo-spacing-3)","preview-gap":"var(--kendo-spacing-0\\.5)","preview-width":"34px","preview-height":"14px"</li><li>lg: "min-width":"362px","header-padding-x":"var(--kendo-spacing-4\\.5)","header-padding-y":"var(--kendo-spacing-4\\.5)","views-padding-x":"var(--kendo-spacing-4\\.5)","views-padding-y":"var(--kendo-spacing-4\\.5)","preview-gap":"var(--kendo-spacing-1)","preview-width":"44px","preview-height":"16px"</li></ul></td>
+    <td><ul><li>sm: "min-width":"256px","header-padding-x":"var(--kendo-spacing-3)","header-padding-y":"var(--kendo-spacing-3)","views-padding-x":"var(--kendo-spacing-3)","views-padding-y":"var(--kendo-spacing-3)","preview-gap":"var(--kendo-spacing-0\\.5)","preview-width":"34px","preview-height":"12px"</li><li>md: "min-width":"280px","header-padding-x":"var(--kendo-spacing-3)","header-padding-y":"var(--kendo-spacing-3)","views-padding-x":"var(--kendo-spacing-3)","views-padding-y":"var(--kendo-spacing-3)","preview-gap":"var(--kendo-spacing-0\\.5)","preview-width":"34px","preview-height":"14px"</li><li>lg: "min-width":"364px","header-padding-x":"var(--kendo-spacing-4\\.5)","header-padding-y":"var(--kendo-spacing-4\\.5)","views-padding-x":"var(--kendo-spacing-4\\.5)","views-padding-y":"var(--kendo-spacing-4\\.5)","preview-gap":"var(--kendo-spacing-1)","preview-width":"44px","preview-height":"16px"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorEditor.</div></div>
