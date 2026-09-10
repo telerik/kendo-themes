@@ -19099,16 +19099,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-pane-field-gap</td>
-    <td>String</td>
-    <td><code>var( --kendo-image-editor-pane-field-gap, #{k-spacing(1)} )</code></td>
-    <td><code>var(--kendo-image-editor-pane-field-gap, var(--kendo-spacing-1))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gap between the label and the editor of an imageeditor pane field.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-image-editor-pane-footer-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-pane-footer-padding-y, #{k-spacing(4)} )</code></td>
@@ -19336,6 +19326,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle border radius.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-scale-handle-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-scale-handle-size, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-image-editor-scale-handle-size, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor scale handle size.</div></div>
     </td>
 </tr>
 <tr>

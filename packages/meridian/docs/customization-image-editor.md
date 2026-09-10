@@ -228,16 +228,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-pane-field-gap</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the label and the editor of an ImageEditor pane field.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-image-editor-pane-footer-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -395,6 +385,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ImageEditor resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-scale-handle-size</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the ImageEditor scale handle.</div></div>
     </td>
 </tr>
 <tr>
