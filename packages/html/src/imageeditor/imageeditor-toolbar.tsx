@@ -23,7 +23,7 @@ const defaultToolbarItems = [
     <div className="k-spacer" key="toolbar-spacer"></div>,
      <Button fillMode="flat" key="toolbar-button-5" icon="zoom-in" aria-label="Zoom In"></Button>,
     <ToolbarItem key="toolbar-item-1">
-        <Autocomplete disabled value="Fit" aria-label="Zoom options" />
+        <Autocomplete fillMode="flat" disabled value="Fit" aria-label="Zoom options" />
     </ToolbarItem>,
      <Button fillMode="flat" key="toolbar-button-6" icon="zoom-out" aria-label="Zoom Out"></Button>
 ];

@@ -62,6 +62,11 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
 
             <div className="k-imageeditor-content" style={{ height: contentHeight }}>
                 <ImageEditorSidebar sidebarItems={sidebarItems} />
+
+                {actionPane &&
+                <div className="k-imageeditor-action-pane">{actionPane}</div>
+                }
+
                 <div className="k-imageeditor-canvas-container">
                     {placeholder ?? (
                         <div className="k-imageeditor-canvas">
@@ -69,10 +74,6 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
                         </div>
                     )}
                 </div>
-
-                {actionPane &&
-                <div className="k-imageeditor-action-pane">{actionPane}</div>
-                }
             </div>
 
             {exporting &&
