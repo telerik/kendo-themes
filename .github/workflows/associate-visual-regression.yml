@@ -1,0 +1,356 @@
+name: Associate visual regression report
+
+# Feature CI starts on push, so its first report can finish before a PR exists
+# and publish under reports/<commit-sha>/. Reconcile on both sides of that race:
+# PR-open handles an already-published report, while CI-completed handles a PR
+# that appeared while CI was still running. No pull request code is checked out
+# or executed, and fork PRs are explicitly excluded.
+on:
+  pull_request_target:
+    types: [opened]
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+
+permissions: {}
+
+concurrency:
+  # Match the push-triggered publisher's github.ref key and the close cleanup's
+  # head.ref key, so all report operations for a branch are serialized.
+  group: visual-regression-refs/heads/${{ github.event.pull_request.head.ref || github.event.workflow_run.head_branch }}
+
+jobs:
+  associate:
+    if: >-
+      (github.event_name == 'pull_request_target' &&
+       github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Resolve current pull request
+        id: resolve
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const isPrEvent = context.eventName === 'pull_request_target';
+            const sha = isPrEvent
+              ? context.payload.pull_request.head.sha
+              : context.payload.workflow_run.head_sha;
+            let pr = isPrEvent ? context.payload.pull_request : undefined;
+
+            if (!pr) {
+              const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+                owner, repo, commit_sha: sha,
+              });
+              const matching = prs.filter(candidate =>
+                candidate.head.sha === sha &&
+                candidate.head.repo?.full_name === `${owner}/${repo}`
+              );
+              pr = matching.find(candidate => candidate.state === 'open') || matching[0];
+            }
+
+            if (!pr) {
+              core.info('No PR points at this commit; nothing to reconcile.');
+              return;
+            }
+
+            core.setOutput('pr-number', String(pr.number));
+            core.setOutput('sha', sha);
+            core.setOutput(
+              'mode',
+              pr.state === 'open' && pr.head.sha === sha ? 'associate' : 'cleanup'
+            );
+
+      - name: Wait for a published report
+        id: report
+        if: steps.resolve.outputs.pr-number != ''
+        uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
+          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const sha = process.env.REPORT_SHA;
+            const prNumber = process.env.PR_NUMBER;
+            const attempts = context.eventName === 'pull_request_target' ? 24 : 6;
+
+            async function read(path) {
+              try {
+                const { data } = await github.rest.repos.getContent({
+                  owner, repo, path, ref: 'gh-pages',
+                });
+                return data;
+              } catch (error) {
+                if (error.status === 404) return undefined;
+                throw error;
+              }
+            }
+
+            for (let attempt = 1; attempt <= attempts; attempt++) {
+              if (await read(`reports/${sha}/out.json`)) {
+                core.setOutput('location', 'commit');
+                return;
+              }
+
+              const marker = await read(`reports/pr-${prNumber}/.source-sha`);
+              if (marker) {
+                const markerSha = Buffer.from(marker.content, 'base64').toString('utf8').trim();
+                if (markerSha === sha) {
+                  core.setOutput('location', 'pr');
+                  return;
+                }
+              }
+
+              if (attempt < attempts) {
+                core.info(`Report is not published yet (attempt ${attempt}/${attempts}); retrying in 10 seconds.`);
+                await new Promise(resolve => setTimeout(resolve, 10000));
+              }
+            }
+
+            core.notice(
+              'No report is available yet. The CI-completed event will retry if CI is still running.'
+            );
+
+      - name: Check out report paths
+        if: steps.report.outputs.location != ''
+        uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+          sparse-checkout: |
+            reports/${{ steps.resolve.outputs.sha }}
+            reports/pr-${{ steps.resolve.outputs.pr-number }}
+          sparse-checkout-cone-mode: false
+
+      - name: Confirm pull request still points at commit
+        id: current
+        if: steps.report.outputs.location != '' && steps.resolve.outputs.mode == 'associate'
+        uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
+          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              ...context.repo,
+              pull_number: Number(process.env.PR_NUMBER),
+            });
+            core.setOutput(
+              'matches',
+              String(pr.state === 'open' && pr.head.sha === process.env.REPORT_SHA)
+            );
+
+      - name: Remove report for closed pull request
+        id: closed-cleanup
+        if: steps.report.outputs.location != '' && steps.resolve.outputs.mode == 'cleanup'
+        env:
+          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
+          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+        run: |
+          removed=false
+          for target_dir in "reports/$REPORT_SHA" "reports/pr-$PR_NUMBER"; do
+            if [ -f "$target_dir/.source-sha" ] &&
+               [ "$(cat "$target_dir/.source-sha")" = "$REPORT_SHA" ]; then
+              git rm -r "$target_dir"
+              removed=true
+            fi
+          done
+
+          if [ "$removed" != "true" ]; then
+            echo "No report owned by this commit remains."
+            exit 0
+          fi
+
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+          git commit -m "chore(ci): remove visual report for closed PR #$PR_NUMBER"
+          for attempt in 1 2 3; do
+            git push origin HEAD:gh-pages && break
+            [ "$attempt" -eq 3 ] && exit 1
+            git pull --rebase origin gh-pages
+          done
+          echo "removed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Move commit report to pull request
+        id: move
+        if: steps.report.outputs.location == 'commit' && steps.current.outputs.matches == 'true'
+        env:
+          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
+          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+        run: |
+          source_dir="reports/$REPORT_SHA"
+          target_dir="reports/pr-$PR_NUMBER"
+
+          if [ ! -f "$source_dir/out.json" ]; then
+            echo "The source report was already moved."
+            exit 0
+          fi
+
+          rm -rf "$target_dir"
+          mv "$source_dir" "$target_dir"
+          printf '%s\n' "$REPORT_SHA" > "$target_dir/.source-sha"
+
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+          git add -A "$source_dir" "$target_dir"
+          git commit -m "chore(ci): associate visual report with PR #$PR_NUMBER"
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:gh-pages; then
+              echo "moved=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            [ "$attempt" -eq 3 ] && exit 1
+            git pull --rebase origin gh-pages
+          done
+
+      - name: Validate published association
+        id: final
+        if: steps.current.outputs.matches == 'true'
+        uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
+          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              ...context.repo,
+              pull_number: Number(process.env.PR_NUMBER),
+            });
+            core.setOutput(
+              'matches',
+              String(pr.state === 'open' && pr.head.sha === process.env.REPORT_SHA)
+            );
+
+      - name: Remove stale moved report
+        if: steps.move.outputs.moved == 'true' && steps.final.outputs.matches != 'true'
+        env:
+          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
+          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+        run: |
+          target_dir="reports/pr-$PR_NUMBER"
+          git pull --rebase origin gh-pages
+
+          if [ ! -f "$target_dir/.source-sha" ] ||
+             [ "$(cat "$target_dir/.source-sha")" != "$REPORT_SHA" ]; then
+            echo "A newer report replaced this one; leaving it untouched."
+            exit 0
+          fi
+
+          git rm -r "$target_dir"
+          git commit -m "chore(ci): remove stale visual report for PR #$PR_NUMBER"
+          git push origin HEAD:gh-pages
+
+      - name: Repair reports index
+        if: >-
+          (steps.move.outputs.moved == 'true' && steps.final.outputs.matches == 'true') ||
+          steps.closed-cleanup.outputs.removed == 'true'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const { data } = await github.rest.repos.getContent({
+              owner, repo, path: 'reports', ref: 'gh-pages',
+            });
+            const prDirs = data
+              .filter(entry => entry.type === 'dir' && entry.name.startsWith('pr-'))
+              .map(entry => entry.name)
+              .sort((a, b) => Number(b.slice(3)) - Number(a.slice(3)));
+            const rows = prDirs
+              .map(dir => {
+                const number = dir.slice(3);
+                return `<li><a href="reports/${dir}/">PR #${number} report</a> — <a href="https://github.com/${owner}/${repo}/pull/${number}">view PR</a></li>`;
+              })
+              .join('\n');
+            const body = [
+              '<!DOCTYPE html>',
+              '<meta charset="utf-8">',
+              `<title>${repo} visual regression reports</title>`,
+              `<h1>${repo} visual regression reports</h1>`,
+              '<ul>',
+              '<li><a href="develop/">develop (baseline)</a></li>',
+              rows || '<li><em>No open PR reports.</em></li>',
+              '</ul>',
+              '',
+            ].join('\n');
+
+            for (let attempt = 1; attempt <= 3; attempt++) {
+              let current;
+              try {
+                ({ data: current } = await github.rest.repos.getContent({
+                  owner, repo, path: 'index.html', ref: 'gh-pages',
+                }));
+                await github.rest.repos.createOrUpdateFileContents({
+                  owner, repo, path: 'index.html',
+                  message: 'chore(ci): update reports index',
+                  content: Buffer.from(body).toString('base64'),
+                  branch: 'gh-pages',
+                  sha: current.sha,
+                  committer: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                  author: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
+                });
+                break;
+              } catch (error) {
+                if (attempt === 3 || ![409, 422].includes(error.status)) throw error;
+                core.info(`Reports index changed concurrently; retrying (${attempt}/3).`);
+              }
+            }
+
+      - name: Comment on pull request
+        if: steps.final.outputs.matches == 'true'
+        uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
+          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+        with:
+          script: |
+            const fs = require('fs');
+            const prNumber = Number(process.env.PR_NUMBER);
+            const reportDir = `reports/pr-${prNumber}`;
+            const markerPath = `${reportDir}/.source-sha`;
+            if (!fs.existsSync(markerPath) ||
+                fs.readFileSync(markerPath, 'utf8').trim() !== process.env.REPORT_SHA) {
+              core.info('The PR report does not match the current head commit; skipping comment.');
+              return;
+            }
+
+            const out = JSON.parse(fs.readFileSync(`${reportDir}/out.json`, 'utf8'));
+            const changed = out.failedItems.length;
+            const added = out.newItems.length;
+            const deleted = out.deletedItems.length;
+            const passed = out.passedItems.length;
+            const reportUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/reports/pr-${prNumber}/`;
+            const marker = '<!-- reg-suit-visual-report -->';
+            const body = [
+              marker,
+              '### 🖼️ Visual regression',
+              '| Changed | New | Deleted | Passed |',
+              '|--:|--:|--:|--:|',
+              `| **${changed}** | ${added} | ${deleted} | ${passed} |`,
+              '',
+              `📊 [Open the diff report](${reportUrl})`,
+              changed === 0 && added === 0
+                ? '_No visual changes detected._'
+                : '_Review the report, then approve by merging — the baseline updates on `develop`._',
+            ].join('\n');
+
+            const { owner, repo } = context.repo;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner, repo, issue_number: prNumber,
+            });
+            const existing = comments.find(comment => comment.body?.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner, repo, comment_id: existing.id, body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: prNumber, body,
+              });
+            }
