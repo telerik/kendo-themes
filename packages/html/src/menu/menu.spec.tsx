@@ -93,26 +93,26 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
                 (<MenuScrollableWrapper orientation={orientation} style={wrapperStyles} dir={props.dir}>
                     {scrollButtonsPosition === 'start' &&
                         <>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" tabIndex={-1} aria-label="Scroll previous"></Button>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" tabIndex={-1} aria-label="Scroll next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
-                        <Button fillMode="flat"
+                        <Button fillMode="flat" size="xsmall"
                             icon={`chevron-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" tabIndex={-1} aria-label="Scroll previous"></Button>}
                     {ulMenu}
                     {scrollButtonsPosition === 'end' &&
                         <>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" tabIndex={-1} aria-label="Scroll previous"></Button>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" tabIndex={-1} aria-label="Scroll next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
-                        <Button fillMode="flat"
+                        <Button fillMode="flat" size="xsmall"
                             icon={`chevron-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" tabIndex={-1} aria-label="Scroll next"></Button>}
                 </MenuScrollableWrapper>) :
                 ulMenu
