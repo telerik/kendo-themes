@@ -19,8 +19,6 @@ const defaultOptions = {};
 
 export type KendoListItemProps = {
     text?: string;
-    groupLabel?: string;
-    group?: boolean;
     iconName?: string;
     iconClassName?: string;
     checked?: boolean;
@@ -47,8 +45,6 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
 ) => {
     const {
         text,
-        groupLabel,
-        group,
         iconName,
         iconClassName,
         showCheckbox,
@@ -70,8 +66,6 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
     // Checkbox needs a string accessible name — fall back to string children when `text` isn't provided
     const checkboxLabel = text || (typeof textOrChildren === 'string' ? textOrChildren : undefined);
 
-    // Group items have role="presentation", regular items have role="option"
-    const itemRole = group ? 'presentation' : 'option';
     // Non-focused items should have tabIndex=-1 for proper keyboard navigation
     const tabIndexValue = focus ? 0 : -1;
 
@@ -79,13 +73,13 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
         <li
             {...other}
             id={id}
-            role={itemRole}
-            tabIndex={!group ? tabIndexValue : undefined}
-            aria-selected={!group && selected ? 'true' : (!group ? 'false' : undefined)}
-            aria-disabled={!group && disabled ? 'true' : undefined}
+            role="option"
+            tabIndex={tabIndexValue}
+            aria-selected={selected ? 'true' : 'false'}
+            aria-disabled={disabled ? 'true' : undefined}
             className={classNames(
                 props.className,
-                group ? `k-list-group-item` : LISTITEM_CLASSNAME,
+                LISTITEM_CLASSNAME,
                 stateClassNames(LISTITEM_CLASSNAME, {
                     hover,
                     focus,
@@ -99,7 +93,6 @@ export const ListItem: KendoComponent<KendoListItemProps & KendoListItemState & 
             <span className="k-list-item-text">{textOrChildren}</span>
             {actions && <div className="k-list-item-actions">{actions}</div>}
             {description && <span className="k-list-item-description">{description}</span>}
-            {groupLabel && groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
         </li>
     );
 };

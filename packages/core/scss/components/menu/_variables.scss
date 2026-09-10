@@ -151,6 +151,24 @@ $kendo-menu-popup-lg-item-icon-margin-end: null !default;
 
 $kendo-menu-popup-item-spacing: null !default;
 
+// Menu popup group header
+
+$kendo-menu-popup-sm-group-header-padding-x: null !default;
+$kendo-menu-popup-md-group-header-padding-x: null !default;
+$kendo-menu-popup-lg-group-header-padding-x: null !default;
+
+$kendo-menu-popup-sm-group-header-padding-y: null !default;
+$kendo-menu-popup-md-group-header-padding-y: null !default;
+$kendo-menu-popup-lg-group-header-padding-y: null !default;
+
+$kendo-menu-popup-sm-group-header-font-size: null !default;
+$kendo-menu-popup-md-group-header-font-size: null !default;
+$kendo-menu-popup-lg-group-header-font-size: null !default;
+
+$kendo-menu-popup-sm-group-header-line-height: null !default;
+$kendo-menu-popup-md-group-header-line-height: null !default;
+$kendo-menu-popup-lg-group-header-line-height: null !default;
+
 /// The sizes map of the Menu group.
 /// @group menu
 $kendo-menu-group-sizes: (
@@ -161,7 +179,11 @@ $kendo-menu-group-sizes: (
         item-padding-x: $kendo-menu-popup-sm-item-padding-x,
         item-padding-end: $kendo-menu-popup-sm-item-padding-end,
         item-icon-margin-start: $kendo-menu-popup-sm-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-sm-item-icon-margin-end
+        item-icon-margin-end: $kendo-menu-popup-sm-item-icon-margin-end,
+        group-header-padding-x: $kendo-menu-popup-sm-group-header-padding-x,
+        group-header-padding-y: $kendo-menu-popup-sm-group-header-padding-y,
+        group-header-font-size: $kendo-menu-popup-sm-group-header-font-size,
+        group-header-line-height: $kendo-menu-popup-sm-group-header-line-height
     ),
     md: (
         font-size: $kendo-menu-popup-md-font-size,
@@ -170,7 +192,11 @@ $kendo-menu-group-sizes: (
         item-padding-x: $kendo-menu-popup-md-item-padding-x,
         item-padding-end: $kendo-menu-popup-md-item-padding-end,
         item-icon-margin-start: $kendo-menu-popup-md-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end
+        item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end,
+        group-header-padding-x: $kendo-menu-popup-md-group-header-padding-x,
+        group-header-padding-y: $kendo-menu-popup-md-group-header-padding-y,
+        group-header-font-size: $kendo-menu-popup-md-group-header-font-size,
+        group-header-line-height: $kendo-menu-popup-md-group-header-line-height
     ),
     lg: (
         font-size: $kendo-menu-popup-lg-font-size,
@@ -179,9 +205,20 @@ $kendo-menu-group-sizes: (
         item-padding-x: $kendo-menu-popup-lg-item-padding-x,
         item-padding-end: $kendo-menu-popup-lg-item-padding-end,
         item-icon-margin-start: $kendo-menu-popup-lg-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end
+        item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end,
+        group-header-padding-x: $kendo-menu-popup-lg-group-header-padding-x,
+        group-header-padding-y: $kendo-menu-popup-lg-group-header-padding-y,
+        group-header-font-size: $kendo-menu-popup-lg-group-header-font-size,
+        group-header-line-height: $kendo-menu-popup-lg-group-header-line-height
     )
 ) !default;
+
+$kendo-menu-popup-group-header-font-weight: null !default;
+
+$kendo-menu-popup-group-header-bg: null !default;
+$kendo-menu-popup-group-header-text: null !default;
+$kendo-menu-popup-group-header-border: null !default;
+$kendo-menu-popup-group-header-gradient: null !default;
 
 $kendo-menu-popup-item-bg: null !default;
 $kendo-menu-popup-item-text: null !default;
