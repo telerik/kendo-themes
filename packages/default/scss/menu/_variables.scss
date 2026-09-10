@@ -6,6 +6,11 @@
 
 // Menu
 
+/// The default size of the Menu.
+/// @group menu
+/// @role default
+$kendo-menu-default-size: "md" !default;
+
 /// The default size of the Menu group.
 /// @group menu
 /// @role default
@@ -24,6 +29,20 @@ $kendo-menu-font-size: var(--kendo-font-size) !default;
 /// The line height of the Menu used along with $kendo-font-size.
 /// @group menu
 $kendo-menu-line-height: var(--kendo-line-height) !default;
+
+/// The font size of the small Menu.
+/// @group menu
+$kendo-menu-sm-font-size: var(--kendo-font-size) !default;
+/// The font size of the large Menu.
+/// @group menu
+$kendo-menu-lg-font-size: var(--kendo-font-size-lg) !default;
+
+/// The line height of the small Menu.
+/// @group menu
+$kendo-menu-sm-line-height: var(--kendo-line-height) !default;
+/// The line height of the large Menu.
+/// @group menu
+$kendo-menu-lg-line-height: var(--kendo-line-height-lg) !default;
 
 /// The background color of the Menu.
 /// @group menu
@@ -55,6 +74,20 @@ $kendo-menu-item-icon-spacing: k-spacing(2) !default;
 /// The border radius of the Menu item.
 /// @group menu
 $kendo-menu-item-border-radius: k-border-radius(md) !default;
+
+/// The horizontal padding of the small Menu item.
+/// @group menu
+$kendo-menu-sm-item-padding-x: k-spacing(3) !default;
+/// The horizontal padding of the large Menu item.
+/// @group menu
+$kendo-menu-lg-item-padding-x: k-spacing(3) !default;
+
+/// The vertical padding of the small Menu item.
+/// @group menu
+$kendo-menu-sm-item-padding-y: k-spacing(1) !default;
+/// The vertical padding of the large Menu item.
+/// @group menu
+$kendo-menu-lg-item-padding-y: k-spacing(2) !default;
 
 /// The font weight of the selected Menu item.
 /// @group menu
@@ -318,17 +351,26 @@ $kendo-menu-popup-item-active-gradient: null !default;
 $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
 
 @forward "@progress/kendo-theme-core/scss/components/menu/_variables.scss" with (
+    $kendo-menu-default-size: $kendo-menu-default-size,
     $kendo-menu-group-default-size: $kendo-menu-group-default-size,
     $kendo-menu-border-width: $kendo-menu-border-width,
     $kendo-menu-font-family: $kendo-menu-font-family,
     $kendo-menu-font-size: $kendo-menu-font-size,
     $kendo-menu-line-height: $kendo-menu-line-height,
+    $kendo-menu-sm-font-size: $kendo-menu-sm-font-size,
+    $kendo-menu-lg-font-size: $kendo-menu-lg-font-size,
+    $kendo-menu-sm-line-height: $kendo-menu-sm-line-height,
+    $kendo-menu-lg-line-height: $kendo-menu-lg-line-height,
     $kendo-menu-bg: $kendo-menu-bg,
     $kendo-menu-text: $kendo-menu-text,
     $kendo-menu-border: $kendo-menu-border,
     $kendo-menu-gradient: $kendo-menu-gradient,
     $kendo-menu-item-padding-x: $kendo-menu-item-padding-x,
     $kendo-menu-item-padding-y: $kendo-menu-item-padding-y,
+    $kendo-menu-sm-item-padding-x: $kendo-menu-sm-item-padding-x,
+    $kendo-menu-lg-item-padding-x: $kendo-menu-lg-item-padding-x,
+    $kendo-menu-sm-item-padding-y: $kendo-menu-sm-item-padding-y,
+    $kendo-menu-lg-item-padding-y: $kendo-menu-lg-item-padding-y,
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
     $kendo-menu-item-border-radius: $kendo-menu-item-border-radius,

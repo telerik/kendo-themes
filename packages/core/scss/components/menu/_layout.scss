@@ -30,6 +30,25 @@
         *::after {
             box-sizing: border-box;
         }
+
+        // Sizes
+        @each $size, $size-props in $kendo-menu-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_item-padding-x: map.get( $size-props, item-padding-x );
+            $_item-padding-y: map.get( $size-props, item-padding-y );
+
+            #{k-when-default($kendo-menu-default-size, $size)}
+            &.k-menu-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                > .k-menu-item > .k-menu-link {
+                    padding-block: $_item-padding-y;
+                    padding-inline: $_item-padding-x;
+                }
+            }
+        }
     }
     .k-menu { @extend .k-menu-bar !optional; }
 
@@ -127,17 +146,6 @@
 
         > .k-menu-item + .k-menu-item {
             margin-block-start: $kendo-menu-item-spacing;
-        }
-
-        > .k-menu-item > .k-menu-link {
-            padding-block: $kendo-menu-popup-md-item-padding-y;
-            padding-inline: $kendo-menu-popup-md-item-padding-x;
-            padding-inline-end: $kendo-menu-popup-md-item-padding-end;
-        }
-
-        > .k-menu-item > .k-menu-link > .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-md-item-icon-margin-start;
-            margin-inline-end: $kendo-menu-popup-md-item-icon-margin-end;
         }
 
         > .k-separator {
