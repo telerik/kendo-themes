@@ -51,6 +51,7 @@
     "prepublishOnly": "npm run build && npm run typegen"
   },
   "dependencies": {
+    "@progress/kendo-e2e": "2.0.0",
     "@progress/kendo-svg-icons": "^4.11.0"
   },
   "peerDependencies": {
@@ -62,6 +63,6 @@
     "@vitest/coverage-v8": "4.1.10",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "vitest": "4.1.10"
+    "vitest": "^4.1.11"
   }
 }
