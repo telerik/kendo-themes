@@ -522,4 +522,84 @@
         }
     }
 
+
+    // Rotate Tool: selection frame spans the full image with a rule-of-thirds guide (reusing the
+    // Crop tool's grid) and a round "scale handle" anchor at every corner and edge midpoint.
+    .k-imageeditor-rotate {
+        width: 100%;
+        height: 100%;
+        border-width: $kendo-image-editor-crop-border-width;
+        border-style: $kendo-image-editor-crop-border-style;
+        box-sizing: border-box;
+        position: absolute;
+
+        .k-imageeditor-crop-grid {
+            position: absolute;
+            inset: 0;
+            opacity: .5;
+            pointer-events: none;
+            background-repeat: no-repeat;
+            background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px;
+            background-position:
+                calc(100% / 3 - 1px) 0,
+                calc(100% / 3 * 2 - 1px) 0,
+                0 calc(100% / 3 - 1px),
+                0 calc(100% / 3 * 2 - 1px);
+        }
+
+        .k-scale-handle {
+            margin-block: $kendo-image-editor-resize-handle-margin-y;
+            margin-inline: $kendo-image-editor-resize-handle-margin-x;
+            box-sizing: border-box;
+            position: absolute;
+            width: $kendo-image-editor-scale-handle-size;
+            height: $kendo-image-editor-scale-handle-size;
+            border-style: solid;
+            border-width: $kendo-image-editor-resize-handle-border-width;
+            border-radius: $kendo-image-editor-resize-handle-border-radius;
+        }
+
+        $scale-handle-offset: calc(-1 * $kendo-image-editor-scale-handle-size / 2);
+
+        .k-scale-handle.k-resize-nw {
+            top: $scale-handle-offset;
+            left: $scale-handle-offset;
+        }
+
+        .k-scale-handle.k-resize-ne {
+            top: $scale-handle-offset;
+            right: $scale-handle-offset;
+        }
+
+        .k-scale-handle.k-resize-sw {
+            bottom: $scale-handle-offset;
+            left: $scale-handle-offset;
+        }
+
+        .k-scale-handle.k-resize-se {
+            bottom: $scale-handle-offset;
+            right: $scale-handle-offset;
+        }
+
+        .k-scale-handle.k-resize-n {
+            top: $scale-handle-offset;
+            left: calc(50% - ($kendo-image-editor-scale-handle-size / 2));
+        }
+
+        .k-scale-handle.k-resize-s {
+            bottom: $scale-handle-offset;
+            left: calc(50% - ($kendo-image-editor-scale-handle-size / 2));
+        }
+
+        .k-scale-handle.k-resize-w {
+            left: $scale-handle-offset;
+            top: calc(50% - ($kendo-image-editor-scale-handle-size / 2));
+        }
+
+        .k-scale-handle.k-resize-e {
+            right: $scale-handle-offset;
+            top: calc(50% - ($kendo-image-editor-scale-handle-size / 2));
+        }
+    }
+
 }

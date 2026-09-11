@@ -125,6 +125,28 @@
         }
     }
 
+    // Rotate Tool
+    .k-imageeditor-rotate {
+        @include fill(
+            $kendo-image-editor-crop-text,
+            $kendo-image-editor-crop-bg,
+            $kendo-image-editor-crop-border
+        );
+
+        .k-imageeditor-crop-grid {
+            background-image:
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color),
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color),
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color),
+                linear-gradient($kendo-image-editor-crop-grid-color, $kendo-image-editor-crop-grid-color);
+        }
+
+        .k-scale-handle {
+            border-color: $kendo-image-editor-resize-handle-border;
+            background-color: $kendo-image-editor-resize-handle-bg;
+        }
+    }
+
     .k-imageeditor-sidebar {
         @include fill(
             $color: $kendo-toolbar-flat-text,

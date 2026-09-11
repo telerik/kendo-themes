@@ -6,5 +6,6 @@ export * from './imageeditor-pane';
 export * from './imageeditor-aspect-ratio-preview';
 export * from './templates/imageeditor-normal';
 export * from './templates/imageeditor-resize';
+export * from './templates/imageeditor-rotate';
 export * from './templates/imageeditor-crop';
 export * from './templates/imageeditor-disabled';
