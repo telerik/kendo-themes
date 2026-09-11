@@ -1,4 +1,4 @@
-import { ImageEditor } from "..";
+import { ImageEditor, KendoImageEditorProps } from "..";
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { DropdownList } from "../../dropdownlist";
@@ -11,8 +11,7 @@ const shapeButtons = [
     { icon: "circle-shape", label: "Ellipse" },
     { icon: "hexagon-shape", label: "Rounded Rectangle" },
     { icon: "minus", label: "Line" },
-    { icon: "arrow-right", label: "Arrow" },
-    { icon: "star-outline", label: "Star" }
+    { icon: "arrow-right", label: "Arrow" }
 ];
 
 const resizeHandleStyle = {
@@ -23,7 +22,84 @@ const resizeHandleStyle = {
     background: "#fff"
 };
 
-export const ImageEditorInsertShapes = (props: any) => (
+const canvasShapes = [
+    {
+        key: "rounded-rectangle",
+        style: {
+            position: "absolute" as const,
+            top: "40px",
+            left: "72px",
+            width: "220px",
+            height: "132px",
+            border: "4px solid #0058e9",
+            background: "rgba(0, 88, 233, 0.18)",
+            borderRadius: "16px"
+        }
+    },
+    {
+        key: "ellipse",
+        style: {
+            position: "absolute" as const,
+            top: "218px",
+            left: "106px",
+            width: "128px",
+            height: "128px",
+            border: "4px solid #9b51e0",
+            background: "rgba(155, 81, 224, 0.2)",
+            borderRadius: "50%"
+        }
+    },
+    {
+        key: "arrow-line",
+        style: {
+            position: "absolute" as const,
+            top: "116px",
+            left: "342px",
+            width: "190px",
+            height: "0",
+            borderTop: "6px solid #ff6358",
+            transform: "rotate(-16deg)",
+            transformOrigin: "left center"
+        },
+        arrowHeadStyle: {
+            position: "absolute" as const,
+            top: "-11px",
+            right: "-2px",
+            width: "0",
+            height: "0",
+            borderTop: "11px solid transparent",
+            borderBottom: "11px solid transparent",
+            borderLeft: "18px solid #ff6358"
+        }
+    }
+];
+
+const selectedShapeStyle = {
+    position: "absolute" as const,
+    top: "150px",
+    left: "430px",
+    width: "168px",
+    height: "112px",
+    border: "4px solid #0058e9",
+    background: "rgba(0, 88, 233, 0.14)",
+    color: "#0058e9",
+    boxShadow: "0 0 0 2px #fff"
+};
+
+const resizeHandles = [
+    { top: "-7px", left: "-7px" },
+    { top: "-7px", left: "calc(50% - 5px)" },
+    { top: "-7px", right: "-7px" },
+    { top: "calc(50% - 5px)", left: "-7px" },
+    { top: "calc(50% - 5px)", right: "-7px" },
+    { bottom: "-7px", left: "-7px" },
+    { bottom: "-7px", left: "calc(50% - 5px)" },
+    { bottom: "-7px", right: "-7px" }
+];
+
+export type ImageEditorInsertShapesProps = KendoImageEditorProps & React.HTMLAttributes<HTMLDivElement>;
+
+export const ImageEditorInsertShapes = (props: ImageEditorInsertShapesProps) => (
     <ImageEditor
         toolbarItems={[
             <Button key="toolbar-button-1" icon="upload" aria-label="Upload"></Button>,
@@ -107,7 +183,7 @@ export const ImageEditorInsertShapes = (props: any) => (
                     width="700"
                     height="400"
                     role="img"
-                    aria-label="Image being edited"
+                    aria-label="Image being edited with inserted rounded rectangle, ellipse, arrow, and selected rectangle shapes"
                     style={{
                         backgroundImage: "url('/packages/html/assets/sofia.jpg')",
                         backgroundPosition: "50px -350px"
@@ -120,76 +196,15 @@ export const ImageEditorInsertShapes = (props: any) => (
                         inset: 0
                     }}
                 >
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "40px",
-                            left: "72px",
-                            width: "220px",
-                            height: "132px",
-                            border: "4px solid #0058e9",
-                            background: "rgba(0, 88, 233, 0.18)",
-                            borderRadius: "16px"
-                        }}
-                    ></div>
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "218px",
-                            left: "106px",
-                            width: "128px",
-                            height: "128px",
-                            border: "4px solid #9b51e0",
-                            background: "rgba(155, 81, 224, 0.2)",
-                            borderRadius: "50%"
-                        }}
-                    ></div>
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "116px",
-                            left: "342px",
-                            width: "190px",
-                            height: "0",
-                            borderTop: "6px solid #ff6358",
-                            transform: "rotate(-16deg)",
-                            transformOrigin: "left center"
-                        }}
-                    >
-                        <span
-                            style={{
-                                position: "absolute",
-                                top: "-11px",
-                                right: "-2px",
-                                width: "0",
-                                height: "0",
-                                borderTop: "11px solid transparent",
-                                borderBottom: "11px solid transparent",
-                                borderLeft: "18px solid #ff6358"
-                            }}
-                        ></span>
-                    </div>
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "150px",
-                            left: "430px",
-                            width: "168px",
-                            height: "112px",
-                            border: "4px solid #0058e9",
-                            background: "rgba(0, 88, 233, 0.14)",
-                            color: "#0058e9",
-                            boxShadow: "0 0 0 2px #fff"
-                        }}
-                    >
-                        <span style={{ ...resizeHandleStyle, top: "-7px", left: "-7px" }}></span>
-                        <span style={{ ...resizeHandleStyle, top: "-7px", left: "calc(50% - 5px)" }}></span>
-                        <span style={{ ...resizeHandleStyle, top: "-7px", right: "-7px" }}></span>
-                        <span style={{ ...resizeHandleStyle, top: "calc(50% - 5px)", left: "-7px" }}></span>
-                        <span style={{ ...resizeHandleStyle, top: "calc(50% - 5px)", right: "-7px" }}></span>
-                        <span style={{ ...resizeHandleStyle, bottom: "-7px", left: "-7px" }}></span>
-                        <span style={{ ...resizeHandleStyle, bottom: "-7px", left: "calc(50% - 5px)" }}></span>
-                        <span style={{ ...resizeHandleStyle, bottom: "-7px", right: "-7px" }}></span>
+                    {canvasShapes.map(({ key, style, arrowHeadStyle }) => (
+                        <div key={key} style={style}>
+                            {arrowHeadStyle && <span style={arrowHeadStyle}></span>}
+                        </div>
+                    ))}
+                    <div style={selectedShapeStyle}>
+                        {resizeHandles.map((handle, index) => (
+                            <span key={index} style={{ ...resizeHandleStyle, ...handle }}></span>
+                        ))}
                     </div>
                 </div>
             </>

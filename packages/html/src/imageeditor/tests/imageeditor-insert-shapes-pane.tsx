@@ -24,6 +24,10 @@ export default () =>(
 
             <ImageEditorInsertShapes contentHeight="482px"></ImageEditorInsertShapes>
 
+            <h4>Image Editor Insert Shapes Pane RTL</h4>
+
+            <ImageEditorInsertShapes contentHeight="482px" dir="rtl"></ImageEditorInsertShapes>
+
         </div>
     </>
 );
