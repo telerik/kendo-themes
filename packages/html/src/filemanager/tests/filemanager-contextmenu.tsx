@@ -11,6 +11,7 @@ const styles = `
         left: 350px;
         z-index: 2;
         overflow: visible;
+        width: max-content;
     }
 `;
 
