@@ -70,7 +70,73 @@ $kendo-image-editor-action-pane-padding-y: var( --kendo-image-editor-action-pane
 $kendo-image-editor-action-pane-padding-x: var( --kendo-image-editor-action-pane-padding-x, #{k-spacing(3)} ) !default;
 /// Imageeditor action pane width.
 /// @group image-editor
-$kendo-image-editor-action-pane-width: var( --kendo-image-editor-action-pane-width, calc( 270px + #{$kendo-image-editor-content-border-width}) ) !default;
+$kendo-image-editor-action-pane-width: var( --kendo-image-editor-action-pane-width, calc( 320px + #{$kendo-image-editor-content-border-width}) ) !default;
+
+/// Imageeditor pane title text color.
+/// @group image-editor
+$kendo-image-editor-pane-title-text: var( --kendo-image-editor-pane-title-text, inherit ) !default;
+
+/// Imageeditor aspect ratio preset background color.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-bg: var( --kendo-image-editor-aspect-ratio-preview-bg, null ) !default;
+/// Imageeditor aspect ratio preset text color.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-text: var( --kendo-image-editor-aspect-ratio-preview-text, inherit ) !default;
+/// Imageeditor aspect ratio preset border color.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-border: var( --kendo-image-editor-aspect-ratio-preview-border, color-mix(in srgb, #{k-color(border)} 16%, transparent) ) !default;
+/// Imageeditor aspect ratio preset selected box shadow.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-selected-shadow: var( --kendo-image-editor-aspect-ratio-preview-selected-shadow, 0 0 0 1px #{k-color(surface-alt)}, 0 0 0 2px #{k-color(secondary-on-surface)} ) !default;
+
+/// Imageeditor pane header vertical padding.
+/// @group image-editor
+$kendo-image-editor-pane-header-padding-y: var( --kendo-image-editor-pane-header-padding-y, #{k-spacing(4)} ) !default;
+/// Imageeditor pane header horizontal padding.
+/// @group image-editor
+$kendo-image-editor-pane-header-padding-x: var( --kendo-image-editor-pane-header-padding-x, #{k-spacing(4)} ) !default;
+/// Gap between the title and the actions of the imageeditor pane header.
+/// @group image-editor
+$kendo-image-editor-pane-header-gap: var( --kendo-image-editor-pane-header-gap, #{k-spacing(2)} ) !default;
+
+/// Imageeditor pane content top padding.
+/// @group image-editor
+$kendo-image-editor-pane-content-padding-top: var( --kendo-image-editor-pane-content-padding-top, #{k-spacing(2)} ) !default;
+/// Imageeditor pane content bottom padding.
+/// @group image-editor
+$kendo-image-editor-pane-content-padding-bottom: var( --kendo-image-editor-pane-content-padding-bottom, #{k-spacing(4)} ) !default;
+/// Imageeditor pane content horizontal padding.
+/// @group image-editor
+$kendo-image-editor-pane-content-padding-x: var( --kendo-image-editor-pane-content-padding-x, #{k-spacing(4)} ) !default;
+/// Gap between the fields of the imageeditor pane content.
+/// @group image-editor
+$kendo-image-editor-pane-content-gap: var( --kendo-image-editor-pane-content-gap, #{k-spacing(4)} ) !default;
+
+/// Imageeditor pane footer vertical padding.
+/// @group image-editor
+$kendo-image-editor-pane-footer-padding-y: var( --kendo-image-editor-pane-footer-padding-y, #{k-spacing(4)} ) !default;
+/// Imageeditor pane footer horizontal padding.
+/// @group image-editor
+$kendo-image-editor-pane-footer-padding-x: var( --kendo-image-editor-pane-footer-padding-x, #{k-spacing(4)} ) !default;
+
+/// Gap between the imageeditor aspect ratio presets.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-options-gap: var( --kendo-image-editor-aspect-ratio-options-gap, #{k-spacing(2)} ) !default;
+/// The scroll-fade gradient stops of the ImageEditor aspect ratio presets list.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-options-scroll-gradient: var( --kendo-image-editor-aspect-ratio-options-scroll-gradient, rgba(255, 255, 255, 0) 0%, #{k-color(surface-alt)} 100% ) !default;
+/// Vertical padding of an imageeditor aspect ratio preset.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-padding-y: var( --kendo-image-editor-aspect-ratio-preview-padding-y, #{k-spacing(1.5)} ) !default;
+/// Horizontal padding of an imageeditor aspect ratio preset.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-padding-x: var( --kendo-image-editor-aspect-ratio-preview-padding-x, #{k-spacing(2)} ) !default;
+/// Border radius of an imageeditor aspect ratio preset.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-border-radius: var( --kendo-image-editor-aspect-ratio-preview-border-radius, #{k-border-radius(sm)} ) !default;
+/// Width of an imageeditor aspect ratio preset.
+/// @group image-editor
+$kendo-image-editor-aspect-ratio-preview-width: var( --kendo-image-editor-aspect-ratio-preview-width, 88px ) !default;
 
 /// Crop background color of the imageeditor.
 /// @group image-editor
@@ -80,29 +146,49 @@ $kendo-image-editor-crop-bg: var( --kendo-image-editor-crop-bg, inherit ) !defau
 $kendo-image-editor-crop-text: var( --kendo-image-editor-crop-text, inherit ) !default;
 /// Crop border color of the imageeditor.
 /// @group image-editor
-$kendo-image-editor-crop-border: var( --kendo-image-editor-crop-border, #{k-color(app-surface)} ) !default;
+$kendo-image-editor-crop-border: var( --kendo-image-editor-crop-border, #{k-color(secondary)} ) !default;
 /// Crop overlay background color of the imageeditor.
 /// @group image-editor
 $kendo-image-editor-crop-overlay-bg: var( --kendo-image-editor-crop-overlay-bg, rgba( $kendo-color-black, .3 ) ) !default;
+
+/// Crop grid line color of the imageeditor.
+/// @group image-editor
+$kendo-image-editor-crop-grid-color: var( --kendo-image-editor-crop-grid-color, #{k-color(secondary)} ) !default;
+
+/// Resize handle background color of the imageeditor.
+/// @group image-editor
+$kendo-image-editor-resize-handle-bg: var( --kendo-image-editor-resize-handle-bg, #{k-color(secondary-subtle)} ) !default;
+/// Resize handle border color of the imageeditor.
+/// @group image-editor
+$kendo-image-editor-resize-handle-border: var( --kendo-image-editor-resize-handle-border, #{k-color(secondary)} ) !default;
 /// Crop border width of the imageeditor.
 /// @group image-editor
-$kendo-image-editor-crop-border-width: var( --kendo-image-editor-crop-border-width, 1px ) !default;
+$kendo-image-editor-crop-border-width: var( --kendo-image-editor-crop-border-width, 2px ) !default;
 /// Crop border style of the imageeditor.
 /// @group image-editor
-$kendo-image-editor-crop-border-style: var( --kendo-image-editor-crop-border-style, dashed ) !default;
+$kendo-image-editor-crop-border-style: var( --kendo-image-editor-crop-border-style, solid ) !default;
 
 /// Imageeditor resize handle horizontal margin.
 /// @group image-editor
-$kendo-image-editor-resize-handle-margin-x: var( --kendo-image-editor-resize-handle-margin-x, #{k-spacing(1px)} ) !default;
+$kendo-image-editor-resize-handle-margin-x: var( --kendo-image-editor-resize-handle-margin-x, 0 ) !default;
 /// Imageeditor resize handle vertical margin.
 /// @group image-editor
-$kendo-image-editor-resize-handle-margin-y: var( --kendo-image-editor-resize-handle-margin-y, #{k-spacing(1px)} ) !default;
+$kendo-image-editor-resize-handle-margin-y: var( --kendo-image-editor-resize-handle-margin-y, 0 ) !default;
 /// Imageeditor resize handle border width.
 /// @group image-editor
-$kendo-image-editor-resize-handle-border-width: var( --kendo-image-editor-resize-handle-border-width, 0 2px 2px 0 ) !default;
+$kendo-image-editor-resize-handle-border-width: var( --kendo-image-editor-resize-handle-border-width, 2px ) !default;
 /// Imageeditor resize handle size.
 /// @group image-editor
-$kendo-image-editor-resize-handle-size: var( --kendo-image-editor-resize-handle-size, #{k-spacing(4)} ) !default;
+$kendo-image-editor-resize-handle-size: var( --kendo-image-editor-resize-handle-size, #{k-spacing(6)} ) !default;
+/// Imageeditor resize handle thickness.
+/// @group image-editor
+$kendo-image-editor-resize-handle-thickness: var( --kendo-image-editor-resize-handle-thickness, #{k-spacing(3)} ) !default;
+/// Imageeditor resize handle border radius.
+/// @group image-editor
+$kendo-image-editor-resize-handle-border-radius: var( --kendo-image-editor-resize-handle-border-radius, #{k-border-radius(full)} ) !default;
+/// Imageeditor scale handle size.
+/// @group image-editor
+$kendo-image-editor-scale-handle-size: var( --kendo-image-editor-scale-handle-size, #{k-spacing(3)} ) !default;
 /// Imageeditor resize handle top offset.
 /// @group image-editor
 $kendo-image-editor-resize-top-offset: var( --kendo-image-editor-resize-top-offset, calc( #{$kendo-image-editor-resize-handle-size} / 2 ) ) !default;
@@ -124,12 +210,30 @@ $kendo-image-editor-resize-left-offset: var( --kendo-image-editor-resize-left-of
     $kendo-image-editor-action-pane-padding-y: $kendo-image-editor-action-pane-padding-y,
     $kendo-image-editor-action-pane-padding-x: $kendo-image-editor-action-pane-padding-x,
     $kendo-image-editor-action-pane-width: $kendo-image-editor-action-pane-width,
+    $kendo-image-editor-pane-header-padding-y: $kendo-image-editor-pane-header-padding-y,
+    $kendo-image-editor-pane-header-padding-x: $kendo-image-editor-pane-header-padding-x,
+    $kendo-image-editor-pane-header-gap: $kendo-image-editor-pane-header-gap,
+    $kendo-image-editor-pane-content-padding-top: $kendo-image-editor-pane-content-padding-top,
+    $kendo-image-editor-pane-content-padding-bottom: $kendo-image-editor-pane-content-padding-bottom,
+    $kendo-image-editor-pane-content-padding-x: $kendo-image-editor-pane-content-padding-x,
+    $kendo-image-editor-pane-content-gap: $kendo-image-editor-pane-content-gap,
+    $kendo-image-editor-pane-footer-padding-y: $kendo-image-editor-pane-footer-padding-y,
+    $kendo-image-editor-pane-footer-padding-x: $kendo-image-editor-pane-footer-padding-x,
+    $kendo-image-editor-aspect-ratio-options-gap: $kendo-image-editor-aspect-ratio-options-gap,
+    $kendo-image-editor-aspect-ratio-options-scroll-gradient: $kendo-image-editor-aspect-ratio-options-scroll-gradient,
+    $kendo-image-editor-aspect-ratio-preview-padding-y: $kendo-image-editor-aspect-ratio-preview-padding-y,
+    $kendo-image-editor-aspect-ratio-preview-padding-x: $kendo-image-editor-aspect-ratio-preview-padding-x,
+    $kendo-image-editor-aspect-ratio-preview-border-radius: $kendo-image-editor-aspect-ratio-preview-border-radius,
+    $kendo-image-editor-aspect-ratio-preview-width: $kendo-image-editor-aspect-ratio-preview-width,
     $kendo-image-editor-crop-border-width: $kendo-image-editor-crop-border-width,
     $kendo-image-editor-crop-border-style: $kendo-image-editor-crop-border-style,
     $kendo-image-editor-resize-handle-margin-x: $kendo-image-editor-resize-handle-margin-x,
     $kendo-image-editor-resize-handle-margin-y: $kendo-image-editor-resize-handle-margin-y,
     $kendo-image-editor-resize-handle-border-width: $kendo-image-editor-resize-handle-border-width,
     $kendo-image-editor-resize-handle-size: $kendo-image-editor-resize-handle-size,
+    $kendo-image-editor-resize-handle-thickness: $kendo-image-editor-resize-handle-thickness,
+    $kendo-image-editor-resize-handle-border-radius: $kendo-image-editor-resize-handle-border-radius,
+    $kendo-image-editor-scale-handle-size: $kendo-image-editor-scale-handle-size,
     $kendo-image-editor-bg: $kendo-image-editor-bg,
     $kendo-image-editor-text: $kendo-image-editor-text,
     $kendo-image-editor-border: $kendo-image-editor-border,
@@ -139,8 +243,16 @@ $kendo-image-editor-resize-left-offset: var( --kendo-image-editor-resize-left-of
     $kendo-image-editor-action-pane-bg: $kendo-image-editor-action-pane-bg,
     $kendo-image-editor-action-pane-text: $kendo-image-editor-action-pane-text,
     $kendo-image-editor-action-pane-border: $kendo-image-editor-action-pane-border,
+    $kendo-image-editor-pane-title-text: $kendo-image-editor-pane-title-text,
+    $kendo-image-editor-aspect-ratio-preview-bg: $kendo-image-editor-aspect-ratio-preview-bg,
+    $kendo-image-editor-aspect-ratio-preview-text: $kendo-image-editor-aspect-ratio-preview-text,
+    $kendo-image-editor-aspect-ratio-preview-border: $kendo-image-editor-aspect-ratio-preview-border,
+    $kendo-image-editor-aspect-ratio-preview-selected-shadow: $kendo-image-editor-aspect-ratio-preview-selected-shadow,
     $kendo-image-editor-crop-bg: $kendo-image-editor-crop-bg,
     $kendo-image-editor-crop-text: $kendo-image-editor-crop-text,
     $kendo-image-editor-crop-border: $kendo-image-editor-crop-border,
-    $kendo-image-editor-crop-overlay-bg: $kendo-image-editor-crop-overlay-bg
+    $kendo-image-editor-crop-overlay-bg: $kendo-image-editor-crop-overlay-bg,
+    $kendo-image-editor-crop-grid-color: $kendo-image-editor-crop-grid-color,
+    $kendo-image-editor-resize-handle-bg: $kendo-image-editor-resize-handle-bg,
+    $kendo-image-editor-resize-handle-border: $kendo-image-editor-resize-handle-border
 );

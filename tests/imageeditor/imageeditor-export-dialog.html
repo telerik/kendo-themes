@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-dialog-wrapper {
+            position: absolute;
+            }
+            .k-overlay {
+            position: absolute;
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-1">
+            <h4>Image Editor Export Dialog</h4>
+            <div class="k-pos-relative">
+                <div class="k-imageeditor">
+                    <div class="k-imageeditor-header">
+                        <div class="k-imageeditor-toolbar k-toolbar k-toolbar-flat" role="toolbar" aria-label="Toolbar">
+                            <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Image Add">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-image-add" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M272 160c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48m80 112-16 16-64 64-128-128L32 336V96.1l.1-.1h383.8l.1.1-.1 191.9H448V96c0-17.6-14.4-32-32-32H32C14.4 64 0 78.4 0 96v320c0 17.6 14.4 32 32 32h256v-64h64zm128 144h-32v-64h-32v64h-64v32h64v64h32v-64h64v-32z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="k-toolbar-separator k-separator"></div>
+                            <button class="k-toolbar-button  k-button k-button-flat k-disabled k-icon-button" aria-label="Undo" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-undo" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-toolbar-button  k-button k-button-flat k-disabled k-icon-button" aria-label="Redo" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-redo" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="k-toolbar-separator k-separator"></div>
+                            <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Download">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-download" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M32 384v96h448v-96zM288 32h-64v128h-96l128 160 128-160h-96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="k-spacer"></div>
+                            <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Zoom In">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-zoom-in" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M288 224h-64v64h-64v-64H96v-64h64V96h64v64h64zm192 210.7L434.7 480 320 365.3v-22.7l-26.7-26.7C265.7 338.5 230.4 352 192 352c-88.4 0-160-71.6-160-160S103.6 32 192 32s160 71.6 160 160c0 38.4-13.5 73.7-36.1 101.3l26.7 26.7h22.7zM192 320c70.7 0 128-57.3 128-128S262.7 64 192 64 64 121.3 64 192s57.3 128 128 128"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="k-toolbar-item">
+                                <span class="k-autocomplete k-input k-input-flat k-disabled">
+                                    <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Zoom options" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="Fit">
+                                </span>
+                            </div>
+                            <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Zoom Out">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-zoom-out" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M288 224H96v-64h192zm192 210.7L434.7 480 320 365.3v-22.7l-26.7-26.7C265.7 338.5 230.4 352 192 352c-88.4 0-160-71.6-160-160S103.6 32 192 32s160 71.6 160 160c0 38.4-13.5 73.7-36.1 101.3l26.7 26.7h22.7zM192 320c70.7 0 128-57.3 128-128S262.7 64 192 64 64 121.3 64 192s57.3 128 128 128"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-imageeditor-content" style="height: 482px;">
+                        <div class="k-imageeditor-sidebar">
+                            <div class="k-imageeditor-sidebar-items">
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-image-resize" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M427.3 404.7 352 329.4V32H32v320h297.4l75.3 75.3L352 480h128V352zM64 320V64h256v233.4L203.3 180.7 256 128H128v128l52.7-52.7L297.4 320z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-crop" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M0 96h64v64H0zm448 256v64h64v-64zm-32-224c0-17.6-14.4-32-32-32H192v64h160v320h64zM96 384c0 17.6 14.4 32 32 32h192v-64H160V32H96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-rotate" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 448q12.3 0 24-1.8v32.3q-11.85 1.5-24 1.5c-12.15 0-16.1-.5-24-1.5v-32.3q11.7 1.8 24 1.8m-116-7c12.7 9.7 26.6 17.8 41.5 24l16.2-28c-15.1-5.9-29.1-14.1-41.5-24.1zm-61-78.5c6.3 14.9 14.4 28.8 24 41.5l28-16.2c-10-12.5-18.1-26.4-24.1-41.5zM256 128v64l128-80-128-80v64q-12.15 0-24 1.5c-17.7 2.2-34.6 6.8-50.5 13.5-14.9 6.3-28.8 14.4-41.5 24-14 10.6-26.4 23-37 37-9.7 12.7-17.8 26.6-24 41.5-6.7 15.9-11.3 32.8-13.5 50.5Q64 275.85 64 288c0 12.15.5 16.1 1.5 24h32.3Q96 300.3 96 288c0-12.3.6-16.2 1.8-24 1.8-11.9 4.9-23.4 9.2-34.3 5.9-15.1 14.1-29.1 24.1-41.5 7.4-9.3 15.8-17.7 25.1-25.1 12.5-10 26.4-18.1 41.5-24.1 10.9-4.3 22.4-7.4 34.3-9.2q11.7-1.8 24-1.8m190.5 136h-32.3q1.8 11.7 1.8 24c0 12.3-.6 16.2-1.8 24h32.3q1.5-11.85 1.5-24c0-12.15-.5-16.1-1.5-24m-65.6 123.8 28 16.2c9.7-12.7 17.8-26.6 24-41.5l-28-16.2c-5.8 15.1-14 29.1-24 41.5M314.3 437l16.2 28c14.9-6.3 28.8-14.4 41.5-24l-16.2-28c-12.4 9.9-26.4 18.1-41.5 24"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="k-separator"></div>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-free-text" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M448 125.27c18.64-6.59 32-24.37 32-45.27 0-26.51-21.49-48-48-48-20.9 0-38.68 13.36-45.27 32H128V32H32v96h32v258.73C45.36 393.32 32 411.1 32 432c0 26.51 21.49 48 48 48 20.9 0 38.68-13.36 45.27-32H384v32h96v-96h-32zM432 64c8.82 0 16 7.18 16 16s-7.18 16-16 16-16-7.18-16-16 7.18-16 16-16M64 64h32v32H64zm16 384c-8.82 0-16-7.18-16-16s7.18-16 16-16 16 7.18 16 16-7.18 16-16 16m368 0h-32v-32h32zm-64-64v32H125.27c-4.82-13.64-15.63-24.45-29.27-29.27V128h32V96h258.73c4.82 13.64 15.63 24.45 29.27 29.27V384zm-153.6 0V179.2h-76.16l-.64-51.2h204.8v51.2h-76.8V384z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-shapes" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M480 32H160v131.204C86.969 178.029 32 242.594 32 320c0 88.365 71.635 160 160 160 77.406 0 141.972-54.969 156.797-128H480zM192 448c-70.692 0-128-57.308-128-128 0-59.643 40.793-109.758 96-123.967 1.173-.302 2.354-.583 3.539-.852.357-.081.717-.156 1.076-.234a125 125 0 0 1 3.764-.762 126 126 0 0 1 2.557-.448c.369-.061.736-.125 1.105-.184q3.635-.569 7.335-.932c.379-.037.759-.067 1.139-.101a132 132 0 0 1 3.913-.29q1.309-.075 2.623-.125c.392-.015.782-.033 1.174-.045 1.254-.036 2.512-.06 3.775-.06 70.692 0 128 57.308 128 128 0 1.264-.023 2.521-.06 3.775-.012.393-.03.782-.045 1.174a127 127 0 0 1-.207 3.922q-.09 1.31-.207 2.613c-.034.38-.064.761-.102 1.14a127 127 0 0 1-.933 7.339c-.057.365-.121.728-.181 1.092a128 128 0 0 1-.683 3.785q-.256 1.29-.535 2.571c-.075.346-.147.692-.226 1.037a135 135 0 0 1-.855 3.552c-14.208 55.207-64.323 96-123.966 96m256-128h-96c0-88.365-71.635-160-160-160V64h256z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="k-separator"></div>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-droplet" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 384v32c-53 0-96-43-96-96h32c0 35.3 28.7 64 64 64m160-72c0 92.8-71.6 168-160 168S96 404.8 96 312C96 181.3 256 32 256 32s160 149.3 160 280m-32 0c0-46.3-25.3-104.7-73-169-20-27-40.3-49.8-55-65.4-14.7 15.6-34.9 38.5-55 65.4-47.8 64.3-73 122.8-73 169 0 75 57.4 136 128 136s128-61 128-136"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-sliders" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M480 96v32H285.3c-6.6 18.6-24.4 32-45.3 32s-38.7-13.4-45.3-32H32V96h162.7c6.6-18.6 24.4-32 45.3-32s38.7 13.4 45.3 32zm-112 96c-20.9 0-38.7 13.4-45.3 32H32v32h290.7c6.6 18.6 24.4 32 45.3 32s38.7-13.4 45.3-32H480v-32h-66.7c-6.6-18.6-24.4-32-45.3-32M176 320c-20.9 0-38.7 13.4-45.3 32H32v32h98.7c6.6 18.6 24.4 32 45.3 32s38.7-13.4 45.3-32H480v-32H221.3c-6.6-18.6-24.4-32-45.3-32"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="k-separator"></div>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-image" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M304 160c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48m144-96H64c-17.6 0-32 14.4-32 32v320c0 17.6 14.4 32 32 32h384c17.6 0 32-14.4 32-32V96c0-17.6-14.4-32-32-32m-.1 272-64-64-80 80L176 224 64 336V96.1l.1-.1h383.8l.1.1z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="k-button k-button-flat k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-brightness-contrast" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M165.5 346.5c12.4 12.5 12.4 32.9 0 45.3l-22.6 22.6c-12.5 12.4-32.8 12.4-45.3 0-12.4-12.5-12.4-32.9 0-45.3l22.6-22.6c12.5-12.4 32.9-12.4 45.3 0M256 128c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32s-32 14.4-32 32v32c0 17.6 14.4 32 32 32m135.8 37.5 22.6-22.6c12.4-12.4 12.4-32.8 0-45.3-12.4-12.4-32.8-12.4-45.3 0l-22.6 22.6c-12.4 12.4-12.4 32.8 0 45.3 12.5 12.4 32.8 12.4 45.3 0m-271.6 0c12.4 12.4 32.8 12.4 45.3 0 12.4-12.4 12.4-32.8 0-45.3l-22.6-22.6c-12.4-12.4-32.8-12.4-45.3 0-12.4 12.5-12.4 32.8 0 45.3zM128 256c0-17.6-14.4-32-32-32H64c-17.6 0-32 14.4-32 32s14.4 32 32 32h32c17.6 0 32-14.4 32-32m263.8 90.5c-12.4-12.4-32.8-12.4-45.3 0-12.4 12.5-12.4 32.8 0 45.3l22.6 22.6c12.4 12.4 32.8 12.4 45.3 0 12.4-12.4 12.4-32.8 0-45.3zM448 224h-32c-17.6 0-32 14.4-32 32s14.4 32 32 32h32c17.6 0 32-14.4 32-32s-14.4-32-32-32m-96 32c0 53-43 96-96 96s-96-43-96-96 43-96 96-96 96 43 96 96m-32 0c0-35.3-28.7-64-64-64v128c35.3 0 64-28.7 64-64m-64 128c-17.6 0-32 14.4-32 32v32c0 17.6 14.4 32 32 32s32-14.4 32-32v-32c0-17.6-14.4-32-32-32"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-imageeditor-canvas-container">
+                            <div class="k-imageeditor-canvas">
+                                <canvas width="860" height="430" role="img" aria-label="Image being edited" style="background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-dialog-wrapper">
+                    <div class="k-overlay"></div>
+                    <div class="k-dialog k-window" role="dialog" aria-labelledby="k-dialog-titlebar-1" aria-describedby="k-dialog-content-1" aria-modal="true" style="width: 520px;">
+                        <div class="k-window-titlebar k-dialog-titlebar" id="k-dialog-titlebar-1">
+                            <span class="k-window-title k-dialog-title">Export Image</span>
+                            <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                                <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-xs k-button-flat k-icon-button" aria-label="x">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-window-content k-dialog-content" id="k-dialog-content-1">
+                            <div class="k-d-flex k-gap-6">
+                                <div>
+                                    <img alt="" class="k-border k-border-solid k-border-secondary" src="/packages/html/assets/sofia.jpg" style="width: 144px; height: 144px; object-fit: cover; border-radius: 4px;">
+                                    <div class="k-form-hint">Size: 12.34 MB</div>
+                                </div>
+                                <div class="k-form">
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="export-file-name-label" for="export-file-name">File Name</label>
+                                        <div class="k-form-field-wrap">
+                                            <span class="k-textbox k-input">
+                                                <input id="export-file-name" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="sofia">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label">File Format</label>
+                                        <div class="k-form-field-wrap">
+                                            <ul class="k-radio-list k-list-horizontal" role="radiogroup">
+                                                <li class="k-radio-list-item" role="none">
+                                                    <span class="k-radio-wrap">
+                                                        <input id="export-format-jpeg" class="k-radio k-checked" type="radio" checked="" name="export-format">
+                                                    </span>
+                                                    <label class="k-radio-label" for="export-format-jpeg">JPEG</label>
+                                                </li>
+                                                <li class="k-radio-list-item" role="none">
+                                                    <span class="k-radio-wrap">
+                                                        <input id="export-format-png" class="k-radio" type="radio" name="export-format">
+                                                    </span>
+                                                    <label class="k-radio-label" for="export-format-png">PNG</label>
+                                                </li>
+                                                <li class="k-radio-list-item" role="none">
+                                                    <span class="k-radio-wrap">
+                                                        <input id="export-format-webp" class="k-radio" type="radio" name="export-format">
+                                                    </span>
+                                                    <label class="k-radio-label" for="export-format-webp">WebP</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                            <button class="k-button">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-primary">
+                                <span class="k-button-text">Export</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

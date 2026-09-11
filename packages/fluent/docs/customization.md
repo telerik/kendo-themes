@@ -18971,11 +18971,211 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-action-pane-width, calc( 270px + #{$kendo-image-editor-content-border-width}) )</code></td>
-    <td><code>var(--kendo-image-editor-action-pane-width, calc(270px + 0px))</code></td>
+    <td><code>var( --kendo-image-editor-action-pane-width, calc( 320px + #{$kendo-image-editor-content-border-width}) )</code></td>
+    <td><code>var(--kendo-image-editor-action-pane-width, calc(320px + 0px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor action pane width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-title-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-title-text, inherit )</code></td>
+    <td><code>var(--kendo-image-editor-pane-title-text, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane title text color.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-bg, null )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-bg, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset background color.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-text, inherit )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-text, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset text color.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-border, color-mix(in srgb, #{k-color(border)} 16%, transparent) )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset border color.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-selected-shadow</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-selected-shadow, 0 0 0 1px #{k-color(surface-alt)}, 0 0 0 2px #{k-color(secondary-on-surface)} )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-selected-shadow, 0 0 0 1px var(--kendo-color-surface-alt), 0 0 0 2px var(--kendo-color-secondary-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset selected box shadow.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-header-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-header-padding-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-header-padding-y, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane header vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-header-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-header-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-header-padding-x, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane header horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-header-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-header-gap, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-header-gap, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gap between the title and the actions of the imageeditor pane header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-content-padding-top</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-content-padding-top, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-content-padding-top, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane content top padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-content-padding-bottom</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-content-padding-bottom, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-content-padding-bottom, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane content bottom padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-content-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-content-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-content-padding-x, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane content horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-content-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-content-gap, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-content-gap, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gap between the fields of the imageeditor pane content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-footer-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-footer-padding-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-footer-padding-y, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane footer vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-pane-footer-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-pane-footer-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-image-editor-pane-footer-padding-x, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor pane footer horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-options-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-options-gap, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-options-gap, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gap between the imageeditor aspect ratio presets.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-options-scroll-gradient</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-options-scroll-gradient, rgba(255, 255, 255, 0) 0%, #{k-color(surface-alt)} 100% )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-options-scroll-gradient, rgba(255, 255, 255, 0) 0%, var(--kendo-color-surface-alt) 100%)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The scroll-fade gradient stops of the ImageEditor aspect ratio presets list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-padding-y, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-padding-y, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of an imageeditor aspect ratio preset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-padding-x, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of an imageeditor aspect ratio preset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-border-radius, #{k-border-radius(sm)} )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-border-radius, var(--kendo-border-radius-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of an imageeditor aspect ratio preset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-aspect-ratio-preview-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-aspect-ratio-preview-width, 88px )</code></td>
+    <td><code>var(--kendo-image-editor-aspect-ratio-preview-width, 88px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of an imageeditor aspect ratio preset.</div></div>
     </td>
 </tr>
 <tr>
@@ -19001,8 +19201,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-crop-border</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-crop-border, #{k-color(app-surface)} )</code></td>
-    <td><code>var(--kendo-image-editor-crop-border, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-image-editor-crop-border, #{k-color(secondary)} )</code></td>
+    <td><code>var(--kendo-image-editor-crop-border, var(--kendo-color-secondary))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Crop border color of the imageeditor.</div></div>
@@ -19019,10 +19219,40 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-crop-grid-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-crop-grid-color, #{k-color(secondary)} )</code></td>
+    <td><code>var(--kendo-image-editor-crop-grid-color, var(--kendo-color-secondary))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Crop grid line color of the imageeditor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-resize-handle-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-resize-handle-bg, #{k-color(secondary-subtle)} )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-bg, var(--kendo-color-secondary-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Resize handle background color of the imageeditor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-resize-handle-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-resize-handle-border, #{k-color(secondary)} )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-border, var(--kendo-color-secondary))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Resize handle border color of the imageeditor.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-crop-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-crop-border-width, 1px )</code></td>
-    <td><code>var(--kendo-image-editor-crop-border-width, 1px)</code></td>
+    <td><code>var( --kendo-image-editor-crop-border-width, 2px )</code></td>
+    <td><code>var(--kendo-image-editor-crop-border-width, 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Crop border width of the imageeditor.</div></div>
@@ -19031,8 +19261,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-crop-border-style</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-crop-border-style, dashed )</code></td>
-    <td><code>var(--kendo-image-editor-crop-border-style, dashed)</code></td>
+    <td><code>var( --kendo-image-editor-crop-border-style, solid )</code></td>
+    <td><code>var(--kendo-image-editor-crop-border-style, solid)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Crop border style of the imageeditor.</div></div>
@@ -19041,8 +19271,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-x</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-resize-handle-margin-x, #{k-spacing(1px)} )</code></td>
-    <td><code>var(--kendo-image-editor-resize-handle-margin-x, var(--kendo-spacing-1px))</code></td>
+    <td><code>var( --kendo-image-editor-resize-handle-margin-x, 0 )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-margin-x, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle horizontal margin.</div></div>
@@ -19051,8 +19281,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-y</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-resize-handle-margin-y, #{k-spacing(1px)} )</code></td>
-    <td><code>var(--kendo-image-editor-resize-handle-margin-y, var(--kendo-spacing-1px))</code></td>
+    <td><code>var( --kendo-image-editor-resize-handle-margin-y, 0 )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-margin-y, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle vertical margin.</div></div>
@@ -19061,8 +19291,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-handle-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-resize-handle-border-width, 0 2px 2px 0 )</code></td>
-    <td><code>var(--kendo-image-editor-resize-handle-border-width, 0 2px 2px 0)</code></td>
+    <td><code>var( --kendo-image-editor-resize-handle-border-width, 2px )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-border-width, 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle border width.</div></div>
@@ -19071,18 +19301,48 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-handle-size</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-resize-handle-size, #{k-spacing(4)} )</code></td>
-    <td><code>var(--kendo-image-editor-resize-handle-size, var(--kendo-spacing-4))</code></td>
+    <td><code>var( --kendo-image-editor-resize-handle-size, #{k-spacing(6)} )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-size, var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle size.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-resize-handle-thickness</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-resize-handle-thickness, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-thickness, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle thickness.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-resize-handle-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-resize-handle-border-radius, #{k-border-radius(full)} )</code></td>
+    <td><code>var(--kendo-image-editor-resize-handle-border-radius, var(--kendo-border-radius-full))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle border radius.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-scale-handle-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-scale-handle-size, #{k-spacing(3)} )</code></td>
+    <td><code>var(--kendo-image-editor-scale-handle-size, var(--kendo-spacing-3))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor scale handle size.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-resize-top-offset</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-resize-top-offset, calc( #{$kendo-image-editor-resize-handle-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-image-editor-resize-top-offset, calc(var(--kendo-image-editor-resize-handle-size, var(--kendo-spacing-4)) / 2))</code></td>
+    <td><code>var(--kendo-image-editor-resize-top-offset, calc(var(--kendo-image-editor-resize-handle-size, var(--kendo-spacing-6)) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle top offset.</div></div>
@@ -19092,7 +19352,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-image-editor-resize-left-offset</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-resize-left-offset, calc( #{$kendo-image-editor-resize-handle-size} / 2 ) )</code></td>
-    <td><code>var(--kendo-image-editor-resize-left-offset, calc(var(--kendo-image-editor-resize-handle-size, var(--kendo-spacing-4)) / 2))</code></td>
+    <td><code>var(--kendo-image-editor-resize-left-offset, calc(var(--kendo-image-editor-resize-handle-size, var(--kendo-spacing-6)) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle left offset.</div></div>

@@ -1,70 +1,82 @@
-import { ImageEditor } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorAspectRatioPreview } from "..";
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
-import { DropdownList } from "../../dropdownlist";
-import { FormNormal, Fieldset, FormField } from "../../form";
 import { NumericTextbox } from "../../numerictextbox";
-import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
+import { Form, FormField, Fieldset } from "../../form";
+import { Icon } from "../../icon";
+import { Autocomplete } from "../../autocomplete";
+import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
 import { ToolbarSeparator, ToolbarItem } from "../../toolbar";
 
 export const ImageEditorCrop = (props: any) => (
     <ImageEditor
         toolbarItems={[
-            <Button key="toolbar-button-1" icon="upload" aria-label="Upload"></Button>,
-            <Button key="toolbar-button-2" icon="download" aria-label="Download"></Button>,
-            <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-            <Button key="toolbar-button-3" disabled icon="undo" aria-label="Undo"></Button>,
-            <Button key="toolbar-button-4" disabled icon="redo" aria-label="Redo"></Button>,
-            <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-            <Button key="toolbar-button-5" icon="crop" aria-label="Crop"></Button>,
-            <Button key="toolbar-button-6" icon="image-resize" aria-label="Resize"></Button>,
-            <Button key="toolbar-button-7" icon="zoom-in" aria-label="Zoom in"></Button>,
-            <Button key="toolbar-button-8" icon="zoom-out" aria-label="Zoom out"></Button>,
-            <ToolbarItem key="toolbar-item-1">
-                <DropdownList value="Zoom options" aria-label="Zoom options" />
-            </ToolbarItem>
+    <Button fillMode="flat" key="toolbar-button-1" icon="image-add" aria-label="Image Add"></Button>,
+    <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
+    <Button fillMode="flat" key="toolbar-button-2" icon="undo" aria-label="Undo"></Button>,
+    <Button fillMode="flat" key="toolbar-button-3" icon="redo" aria-label="Redo"></Button>,
+    <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
+    <Button fillMode="flat" key="toolbar-button-4" icon="download" aria-label="Download"></Button>,
+    <div className="k-spacer" key="toolbar-spacer"></div>,
+     <Button fillMode="flat" key="toolbar-button-5" icon="zoom-in" aria-label="Zoom In"></Button>,
+    <ToolbarItem key="toolbar-item-1">
+        <Autocomplete fillMode="flat" value="Fit" aria-label="Zoom options" />
+    </ToolbarItem>,
+     <Button fillMode="flat" key="toolbar-button-6" icon="zoom-out" aria-label="Zoom Out"></Button>
         ]}
         actionPane={
-            <FormNormal tag="div" className="k-imageeditor-pane-form" formButtons={
+            <ImageEditorPane title="Crop" actions={
                 <>
-                    <Button themeColor="primary" icon="check">Confirm</Button>
-                    <Button icon="cancel">Cancel</Button>
+                    <Button>Reset</Button>
+                    <Button themeColor="primary">Apply</Button>
                 </>
             }>
-                <Fieldset layout="grid" legend="Crop Image" cols={2} gutters={{cols: "8px"}}>
+                <Form tag="div">
                     <FormField
-                        colSpan="2"
-                        label="Aspect Ratio:"
-                        editor={ <DropdownList value="Original ratio" aria-label="Aspect ratio" /> }
-                    />
-                    <FormField
-                        colSpan="2"
-                        label="Orientation:"
+                        label="Orientation"
                         editor={
-                            <SegmentedControl thumbStyles={{ width: "50%" }} stretched>
-                                <SegmentedControlButton selected>Portrait</SegmentedControlButton>
-                                <SegmentedControlButton>Landscape</SegmentedControlButton>
-                            </SegmentedControl>
+                            <RadioGroup layout="horizontal">
+                                <RadioItem>
+                                    <RadioButtonWithLabelAfter id="crop-orientation-landscape" name="crop-orientation" checked>Landscape</RadioButtonWithLabelAfter>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonWithLabelAfter id="crop-orientation-portrait" name="crop-orientation">Portrait</RadioButtonWithLabelAfter>
+                                </RadioItem>
+                            </RadioGroup>
                         }
                     />
                     <FormField
-                        colSpan="1"
-                        label="Width:"
-                        editorId="crop-width"
-                        editor={ <NumericTextbox id="crop-width" showClearButton={false} value="61" /> }
+                        label="Aspect Ratio"
+                        editor={
+                            <div className="k-imageeditor-aspect-ratio-options k-imageeditor-aspect-ratio-options-scrollable k-imageeditor-aspect-ratio-options-scrollable-end">
+                                <div className="k-imageeditor-aspect-ratio-options-list">
+                                    <ImageEditorAspectRatioPreview label="Original" />
+                                    <ImageEditorAspectRatioPreview label="1:1" />
+                                    <ImageEditorAspectRatioPreview label="3:2" />
+                                    <ImageEditorAspectRatioPreview label="4:3" />
+                                    <ImageEditorAspectRatioPreview label="5:4" />
+                                    <ImageEditorAspectRatioPreview label="7:5" />
+                                    <ImageEditorAspectRatioPreview label="16:9" />
+                                    <ImageEditorAspectRatioPreview label="Custom" />
+                                </div>
+                            </div>
+                        }
                     />
-                    <FormField
-                        colSpan="1"
-                        label="Height:"
-                        editorId="crop-height"
-                        editor={ <NumericTextbox id="crop-height" showClearButton={false} value="68" /> }
-                    />
-                   <FormField
-                        colSpan="2"
-                        editor={ <CheckboxWithLabelAfter id="crop-lock">Lock aspect ratio</CheckboxWithLabelAfter> }
-                    />
-                </Fieldset>
-            </FormNormal>
+                    <Fieldset layout="grid" cols={2} gutters={{ cols: "8px" }}>
+                        <FormField
+                            label="Width"
+                            editorId="crop-width"
+                            editor={ <NumericTextbox id="crop-width" showClearButton={false} value="400" prefix={<Icon icon="arrows-left-right" />} /> }
+                        />
+                        <FormField
+                            label="Height"
+                            editorId="crop-height"
+                            editor={ <NumericTextbox id="crop-height" showClearButton={false} value="360" prefix={<Icon icon="arrows-top-bottom" />} /> }
+                        />
+                    </Fieldset>
+                    <FormField editor={ <CheckboxWithLabelAfter id="crop-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter> } />
+                </Form>
+            </ImageEditorPane>
         }
 
         children={
@@ -72,6 +84,7 @@ export const ImageEditorCrop = (props: any) => (
                 <canvas width="61" height="68" role="img" aria-label="Image being edited"></canvas>
                 <div className="k-imageeditor-crop-overlay">
                     <div className="k-imageeditor-crop" style={{ width: "61px", height: "68px" }}>
+                        <div className="k-imageeditor-crop-grid"></div>
                         <span className="k-resize-handle k-resize-nw"></span>
                         <span className="k-resize-handle k-resize-n"></span>
                         <span className="k-resize-handle k-resize-ne"></span>
@@ -86,3 +99,4 @@ export const ImageEditorCrop = (props: any) => (
         }
         {...props} />
 );
+
