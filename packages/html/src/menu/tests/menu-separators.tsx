@@ -1,6 +1,5 @@
-import { Popup } from '../../popup';
-import { MenuList, MenuItem, MenuVertical, MenuNormal, MenuListItem, MenuSeparator } from '..';
-
+import { Popup } from "../../popup";
+import { MenuList, MenuItem, MenuVertical, MenuNormal, MenuListItem, MenuSeparator } from "..";
 
 const style = `
     #test-area section {
@@ -8,71 +7,49 @@ const style = `
     }
 
     .k-animation-container {
-        position: absolute;
-        top: 100%;
+        position: relative;
     }
 `;
 
-export default () =>(
-    <>
-        <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
+export default () => (
+  <>
+    <style>{style}</style>
+    <div id="test-area" className="k-d-grid k-grid-cols-3">
+      <span>Horizontal Menu with Separators</span>
+      <span>Vertical Menu with Separators</span>
+      <span>Popup Menu with Separators</span>
 
-            <span>Horizontal Menu with Separators</span>
-            <span>Vertical Menu with Separators</span>
+      <section>
+        <MenuNormal>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuSeparator></MenuSeparator>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem last text="Item"></MenuItem>
+        </MenuNormal>
+      </section>
 
-            <section>
-                <MenuNormal popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "175px", top: "auto" }}>
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                    <MenuSeparator></MenuSeparator>
-                                    <MenuListItem text="Active" active showArrow></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuSeparator></MenuSeparator>
-                    <MenuItem text="Active" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem text="Selected" selected showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem text="Focus" focus></MenuItem>
-                    <MenuItem last text="Disabled" disabled></MenuItem>
-                </MenuNormal>
-            </section>
+      <section>
+        <MenuVertical>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuSeparator></MenuSeparator>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem last text="Item"></MenuItem>
+        </MenuVertical>
+      </section>
 
-            <section>
-                <MenuVertical popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "520px", top: "160px" }}>
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                    <MenuSeparator></MenuSeparator>
-                                    <MenuListItem text="Active" active showArrow></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuSeparator></MenuSeparator>
-                    <MenuItem text="Active" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem text="Selected" selected showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem text="Focus" focus></MenuItem>
-                    <MenuItem last text="Disabled" disabled></MenuItem>
-                </MenuVertical>
-            </section>
-        </div>
-
-    </>
+      <section>
+        <Popup className="k-menu-popup">
+          <MenuList>
+            <MenuListItem first text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
+            <MenuSeparator></MenuSeparator>
+            <MenuListItem text="Item"></MenuListItem>
+            <MenuListItem last text="Item"></MenuListItem>
+          </MenuList>
+        </Popup>
+      </section>
+    </div>
+  </>
 );
