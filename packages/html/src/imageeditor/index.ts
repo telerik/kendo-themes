@@ -10,3 +10,4 @@ export * from './templates/imageeditor-rotate';
 export * from './templates/imageeditor-crop';
 export * from './templates/imageeditor-disabled';
 export * from './templates/imageeditor-insert-text';
+export * from './templates/imageeditor-insert-shape';
