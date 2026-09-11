@@ -86,7 +86,7 @@
         outline: 0;
         color: inherit;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         flex: 1 1 auto;
         gap: $kendo-menu-item-icon-spacing;
         align-items: center;
@@ -99,11 +99,31 @@
 
     // Menu item text
     .k-menu-link-text {
-        display: flex;
-        flex-flow: row nowrap;
-        flex: 1 1 auto;
-        overflow: hidden;
+        white-space: nowrap;
+        flex: 1;
         text-overflow: ellipsis;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+
+    // Menu item actions
+    .k-menu-link-actions {
+        display: flex;
+        align-items: center;
+        gap: $kendo-menu-item-icon-spacing;
+        flex: none;
+    }
+
+    // Menu item description
+    .k-menu-link-description {
+        flex-basis: 100%;
+        font-size: $kendo-menu-item-description-font-size;
+        line-height: $kendo-menu-item-description-line-height;
+        white-space: normal;
+    }
+    .k-menu-link:has(.k-menu-link-icon:first-child) .k-menu-link-description {
+        padding-inline-start: calc( #{$ki-icon-size} + #{$kendo-menu-item-icon-spacing} );
     }
 
 
@@ -236,7 +256,6 @@
                 .k-menu-link {
                     padding-block: $_item-padding-y;
                     padding-inline: $_item-padding-x;
-                    padding-inline-end: $_item-padding-end;
                 }
 
                 .k-menu-expand-arrow {
@@ -249,6 +268,23 @@
                     padding-inline: $_group-header-padding-x;
                     font-size: $_group-header-font-size;
                     line-height: $_group-header-line-height;
+                }
+
+                // Align item text: items without an icon get pushed by the icon width so their
+                // text lines up with items that do have one.
+                &:has(.k-menu-link .k-menu-link-icon:first-child) .k-menu-link,
+                &:has(.k-menu-link .k-menu-link-icon:first-child) .k-menu-group-header {
+                    padding-inline-start: calc( #{$ki-icon-size} + #{$_item-padding-x} + #{$kendo-menu-item-icon-spacing} );
+                }
+
+                .k-menu-item .k-menu-link:has(.k-menu-link-icon:first-child),
+                .k-menu-item .k-menu-group-header:has(.k-menu-link-icon) {
+                    padding-inline-start: $_item-padding-x;
+                }
+
+                // Reserve end padding for the expand arrow only when at least one item in the group has one.
+                &:has(.k-menu-expand-arrow) .k-menu-link {
+                    padding-inline-end: $_item-padding-end;
                 }
             }
         }

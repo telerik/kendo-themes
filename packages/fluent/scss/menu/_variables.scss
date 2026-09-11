@@ -90,6 +90,16 @@ $kendo-menu-item-icon-spacing: var( --kendo-menu-item-icon-spacing, #{k-spacing(
 /// @group menu
 $kendo-menu-item-border-radius: var( --kendo-menu-item-border-radius, #{k-border-radius(md)} ) !default;
 
+/// The font size of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-font-size: var( --kendo-menu-item-description-font-size, #{$kendo-list-item-description-font-size} ) !default;
+/// The line height of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-line-height: var( --kendo-menu-item-description-line-height, #{$kendo-list-item-description-line-height} ) !default;
+/// The text color of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-text: var( --kendo-menu-item-description-text, #{$kendo-list-item-description-text} ) !default;
+
 /// The spacing used for the menu expand arrow negative offset.
 /// @group menu
 $kendo-menu-expand-arrow-spacing: var( --kendo-menu-expand-arrow-spacing, #{k-spacing(2)} ) !default;
@@ -402,6 +412,9 @@ $kendo-menu-scroll-button-hover-border: var( --kendo-menu-scroll-button-hover-bo
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
     $kendo-menu-item-border-radius: $kendo-menu-item-border-radius,
+    $kendo-menu-item-description-font-size: $kendo-menu-item-description-font-size,
+    $kendo-menu-item-description-line-height: $kendo-menu-item-description-line-height,
+    $kendo-menu-item-description-text: $kendo-menu-item-description-text,
     $kendo-menu-expand-arrow-spacing: $kendo-menu-expand-arrow-spacing,
     $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
     $kendo-menu-item-bg: $kendo-menu-item-bg,
