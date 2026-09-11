@@ -95,7 +95,10 @@ const resizeHandles = [
     { bottom: "-7px", left: "-7px" },
     { bottom: "-7px", left: "calc(50% - 5px)" },
     { bottom: "-7px", right: "-7px" }
-];
+].map((handle) => ({
+    ...handle,
+    key: Object.entries(handle).map(([position, value]) => `${position}-${value}`).join("-")
+}));
 
 export type ImageEditorInsertShapesProps = KendoImageEditorProps & React.HTMLAttributes<HTMLDivElement>;
 
@@ -136,7 +139,7 @@ export const ImageEditorInsertShapes = (props: ImageEditorInsertShapesProps) => 
                                         icon={icon}
                                         fillMode="flat"
                                         selected={selected}
-                                        aria-selected={selected}
+                                        aria-pressed={selected}
                                         aria-label={label}
                                     />
                                 ))}
@@ -202,8 +205,8 @@ export const ImageEditorInsertShapes = (props: ImageEditorInsertShapesProps) => 
                         </div>
                     ))}
                     <div style={selectedShapeStyle}>
-                        {resizeHandles.map((handle, index) => (
-                            <span key={index} style={{ ...resizeHandleStyle, ...handle }}></span>
+                        {resizeHandles.map(({ key, ...handle }) => (
+                            <span key={key} style={{ ...resizeHandleStyle, ...handle }}></span>
                         ))}
                     </div>
                 </div>
