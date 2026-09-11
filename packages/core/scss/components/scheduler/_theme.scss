@@ -130,10 +130,7 @@
             @include box-shadow( $kendo-scheduler-event-hover-shadow );
         }
 
-        // The drag hint reuses the selected-state fill so the event being
-        // moved is clearly highlighted while its original slot is dimmed.
-        &.k-selected,
-        &.k-event-drag-hint {
+        &.k-selected {
             @include fill(
                 $kendo-scheduler-event-selected-text,
                 $kendo-scheduler-event-selected-bg,
@@ -165,8 +162,7 @@
 
 
     // Drag hint
-    // Visuals are merged into the `.k-selected` rule above.
-    .k-event-drag-source {}
+    .k-event-drag-hint {}
 
 
     // Resizing
