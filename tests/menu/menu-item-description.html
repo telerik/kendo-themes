@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-animation-container {
+            position: relative;
+            width: 500px;
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-1">
+            <span>Description</span>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-menu-popup k-popup">
+                            <ul role="menu" class="k-menu-group">
+                                <li role="menuitem" class="k-menu-item k-item k-first">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Normal</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Normal</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Normal very very very very very very very very very very very very very very very very long</span>
+                                        <span class="k-menu-link-description">Description goes here very very very very very very very very very very very very very very very very very very very very very very very very long</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <span>Description + One Icon</span>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-menu-popup k-popup">
+                            <ul role="menu" class="k-menu-group">
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Normal</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item k-first">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Icon</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Normal</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <span>Description + All Icons</span>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-menu-popup k-popup">
+                            <ul role="menu" class="k-menu-group">
+                                <li role="menuitem" class="k-menu-item k-item k-first">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Icon</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Icon</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-text">Icon</span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <span>Description + Icons After</span>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-menu-popup k-popup">
+                            <ul role="menu" class="k-menu-group">
+                                <li role="menuitem" class="k-menu-item k-item k-first">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Icon</span>
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Icon</span>
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item">
+                                    <span class="k-link k-menu-link">
+                                        <span class="k-menu-link-text">Icon</span>
+                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-menu-link-description">Description goes here here here here here here</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

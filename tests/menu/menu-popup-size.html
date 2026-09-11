@@ -15,7 +15,6 @@
             grid-template-columns: 120px 1fr 1fr 1fr 1fr;
             }
             .k-animation-container {
-            width: min-content;
             position: relative;
             overflow: visible;
             }
@@ -26,7 +25,7 @@
             <span>small</span>
             <span>medium</span>
             <span>large</span>
-            <span>no arrow</span>
+            <span>Normal</span>
             <section>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container">
@@ -187,7 +186,7 @@
                     </div>
                 </div>
             </section>
-            <span>default arrow</span>
+            <span>With arrow</span>
             <section>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container">
@@ -205,19 +204,57 @@
                                         </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-hover">
+                                        <span class="k-menu-link-text">Hover</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
                                     <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
+                                        <span class="k-menu-link-text">Focus</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
                                         </span>
-                                        <span class="k-menu-link-text">With icon</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Active</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Focus &amp; Active</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item k-disabled k-last" aria-haspopup="menu" aria-expanded="false" aria-disabled="true">
+                                    <span class="k-link k-menu-link k-disabled">
+                                        <span class="k-menu-link-text">Disabled</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -249,19 +286,57 @@
                                         </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-hover">
+                                        <span class="k-menu-link-text">Hover</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
                                     <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
+                                        <span class="k-menu-link-text">Focus</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
                                         </span>
-                                        <span class="k-menu-link-text">With icon</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Active</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Focus &amp; Active</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item k-disabled k-last" aria-haspopup="menu" aria-expanded="false" aria-disabled="true">
+                                    <span class="k-link k-menu-link k-disabled">
+                                        <span class="k-menu-link-text">Disabled</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -293,19 +368,57 @@
                                         </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-hover">
+                                        <span class="k-menu-link-text">Hover</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
                                     <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
+                                        <span class="k-menu-link-text">Focus</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
                                         </span>
-                                        <span class="k-menu-link-text">With icon</span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Active</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Focus &amp; Active</span>
+                                        <span class="k-menu-expand-arrow" aria-hidden="true">
+                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li role="menuitem" class="k-menu-item k-item k-disabled k-last" aria-haspopup="menu" aria-expanded="false" aria-disabled="true">
+                                    <span class="k-link k-menu-link k-disabled">
+                                        <span class="k-menu-link-text">Disabled</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -337,19 +450,9 @@
                                         </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
-                                    </span>
-                                </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="k-menu-link-text">With icon</span>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-hover">
+                                        <span class="k-menu-link-text">Hover</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -359,20 +462,9 @@
                                         </span>
                                     </span>
                                 </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <span>custom arrow</span>
-            <section>
-                <div class="k-animation-container k-animation-container-shown">
-                    <div class="k-child-animation-container">
-                        <div class="k-menu-popup k-popup">
-                            <ul role="menu" class="k-menu-group">
-                                <li role="menuitem" class="k-menu-item k-item k-first" aria-haspopup="menu" aria-expanded="false">
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
                                     <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">Normal</span>
+                                        <span class="k-menu-link-text">Focus</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -382,19 +474,9 @@
                                         </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
-                                    </span>
-                                </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="k-menu-link-text">With icon</span>
+                                <li role="menuitem" class="k-menu-item k-item" aria-haspopup="menu" aria-expanded="false">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Active</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -404,19 +486,9 @@
                                         </span>
                                     </span>
                                 </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="k-animation-container k-animation-container-shown">
-                    <div class="k-child-animation-container">
-                        <div class="k-menu-popup k-popup">
-                            <ul role="menu" class="k-menu-group k-menu-group-sm">
-                                <li role="menuitem" class="k-menu-item k-item k-first" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">Normal</span>
+                                <li role="menuitem" class="k-menu-item k-item k-focus" aria-haspopup="menu" aria-expanded="false" tabindex="0">
+                                    <span class="k-link k-menu-link k-active">
+                                        <span class="k-menu-link-text">Focus &amp; Active</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -426,107 +498,9 @@
                                         </span>
                                     </span>
                                 </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
-                                    </span>
-                                </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="k-menu-link-text">With icon</span>
-                                        <span class="k-menu-expand-arrow" aria-hidden="true">
-                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="k-animation-container k-animation-container-shown">
-                    <div class="k-child-animation-container">
-                        <div class="k-menu-popup k-popup">
-                            <ul role="menu" class="k-menu-group k-menu-group-md">
-                                <li role="menuitem" class="k-menu-item k-item k-first" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">Normal</span>
-                                        <span class="k-menu-expand-arrow" aria-hidden="true">
-                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
-                                    </span>
-                                </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="k-menu-link-text">With icon</span>
-                                        <span class="k-menu-expand-arrow" aria-hidden="true">
-                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="k-animation-container k-animation-container-shown">
-                    <div class="k-child-animation-container">
-                        <div class="k-menu-popup k-popup">
-                            <ul role="menu" class="k-menu-group k-menu-group-lg">
-                                <li role="menuitem" class="k-menu-item k-item k-first" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">Normal</span>
-                                        <span class="k-menu-expand-arrow" aria-hidden="true">
-                                            <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li role="menuitem" class="k-menu-item k-item">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-text">No arrow</span>
-                                    </span>
-                                </li>
-                                <li role="menuitem" class="k-menu-item k-item k-last" aria-haspopup="menu" aria-expanded="false">
-                                    <span class="k-link k-menu-link">
-                                        <span class="k-menu-link-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="k-menu-link-text">With icon</span>
+                                <li role="menuitem" class="k-menu-item k-item k-disabled k-last" aria-haspopup="menu" aria-expanded="false" aria-disabled="true">
+                                    <span class="k-link k-menu-link k-disabled">
+                                        <span class="k-menu-link-text">Disabled</span>
                                         <span class="k-menu-expand-arrow" aria-hidden="true">
                                             <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
