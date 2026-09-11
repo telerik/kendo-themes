@@ -91,10 +91,10 @@ const defaultOptions = {
  * @ux {Placeholder} Displays hint text when no value is selected.
  * @ux {Disabled state} When disabled, the control is non-interactive.
  */
-export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & React.HTMLAttributes<HTMLSpanElement>> = (
+export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoComboboxProps &
         KendoComboboxState &
-        React.HTMLAttributes<HTMLSpanElement>
+        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
         size,
