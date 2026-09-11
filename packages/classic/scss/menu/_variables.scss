@@ -72,6 +72,16 @@ $kendo-menu-item-spacing: unset !default;
 /// @group menu
 $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
 
+/// The font size of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-font-size: $kendo-list-item-description-font-size !default;
+/// The line height of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-line-height: $kendo-list-item-description-line-height !default;
+/// The text color of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-text: $kendo-list-item-description-text !default;
+
 /// The horizontal padding of the small Menu item.
 /// @group menu
 $kendo-menu-sm-item-padding-x: k-spacing(2) !default;
@@ -418,6 +428,9 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-lg-item-padding-y: $kendo-menu-lg-item-padding-y,
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
+    $kendo-menu-item-description-font-size: $kendo-menu-item-description-font-size,
+    $kendo-menu-item-description-line-height: $kendo-menu-item-description-line-height,
+    $kendo-menu-item-description-text: $kendo-menu-item-description-text,
     $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
     $kendo-menu-item-bg: $kendo-menu-item-bg,
     $kendo-menu-item-text: $kendo-menu-item-text,
