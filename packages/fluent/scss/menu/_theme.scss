@@ -9,6 +9,29 @@
         box-shadow: $kendo-menu-shadow;
 
         > .k-item {
+            > .k-menu-link > .k-menu-link-icon {
+                color: $kendo-menu-icon-color;
+            }
+
+            &:hover,
+            &.k-hover {
+                > .k-menu-link > .k-menu-link-icon {
+                    color: $kendo-menu-item-hover-icon-text;
+                }
+            }
+
+            &:active,
+            &.k-active {
+                > .k-menu-link > .k-menu-link-icon {
+                    color: $kendo-menu-item-active-icon-text;
+                }
+            }
+
+            &.k-selected {
+                > .k-menu-link > .k-menu-link-icon {
+                    color: $kendo-menu-item-selected-icon-text;
+                }
+            }
 
             &:focus,
             &.k-focus {
@@ -22,10 +45,6 @@
                 background-color: $kendo-menu-item-disabled-bg;
             }
         }
-
-        .k-link > .k-icon {
-            color: $kendo-menu-icon-color;
-        }
     }
 
     .k-menu-popup {
@@ -37,6 +56,24 @@
         .k-item {
 
             & > .k-link {
+                > .k-menu-link-icon {
+                    color: $kendo-menu-icon-color;
+                }
+
+                &:hover,
+                &.k-hover {
+                    > .k-menu-link-icon {
+                        color: $kendo-menu-popup-item-hover-icon-text;
+                    }
+                }
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    > .k-menu-link-icon {
+                        color: $kendo-menu-popup-item-active-icon-text;
+                    }
+                }
 
                 &.k-disabled {
                     color: $kendo-menu-popup-item-disabled-text;

@@ -1,156 +1,135 @@
-import { MenuItem, MenuNormal, MenuList, MenuListItem } from '..';
-import { Popup } from '../../popup';
+import { MenuItem, MenuNormal, MenuList, MenuListItem, MenuVertical } from "..";
+import { Popup } from "../../popup";
 
 const style = `
-    #test-area section {
-        height: 300px;
-    }
-
     .k-animation-container {
-        position: absolute;
+        position: relative;
     }
 `;
 
-export default () =>(
-    <>
-        <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
+export default () => (
+  <>
+    <style>{style}</style>
+    <div id="test-area" className="k-d-grid k-grid-cols-3">
+      <span>Horizontal - No icon</span>
+      <span>Vertical - No icon</span>
+      <span>Popup - No icon</span>
 
-            <span>Horizontal Menu</span>
-            <span>Horizontal Menu RTL</span>
+      <section>
+        <MenuNormal>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem last text="Item"></MenuItem>
+        </MenuNormal>
+      </section>
 
-            <section>
-                <MenuNormal popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "110px", top: "auto" }}>
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem last selected text="Selected" icon="folder"></MenuItem>
-                </MenuNormal>
-            </section>
+      <section>
+        <MenuVertical>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem last text="Item"></MenuItem>
+        </MenuVertical>
+      </section>
 
-            <section>
-                <MenuNormal dir="rtl"  popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "780px", top: "auto" }} dir="rtl">
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow dir="rtl"></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow dir="rtl"></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem last selected text="Selected" icon="folder"></MenuItem>
-                </MenuNormal>
-            </section>
+      <section>
+        <Popup className="k-menu-popup">
+          <MenuList>
+            <MenuListItem first text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
+            <MenuListItem last text="Item"></MenuListItem>
+          </MenuList>
+        </Popup>
+      </section>
 
-            <span>Horizontal Menu Custom Expand Icon</span>
-            <span>Horizontal Menu RTL Expand Icon</span>
+      <span>Horizontal - One icon</span>
+      <span>Vertical - One icon</span>
+      <span>Popup - One icon</span>
 
-            <section>
-                <MenuNormal popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "110px", top: "auto" }}>
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-right"></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-right"></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem last selected text="Selected" icon="folder"></MenuItem>
-                </MenuNormal>
-            </section>
+      <section>
+        <MenuNormal>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
+          <MenuItem last text="Item"></MenuItem>
+        </MenuNormal>
+      </section>
 
-            <section>
-                <MenuNormal dir="rtl"  popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "780px", top: "auto" }} dir="rtl">
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-left"></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-left"></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal" icon="folder"></MenuItem>
-                    <MenuItem text="Active" icon="folder" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem last selected text="Selected" icon="folder"></MenuItem>
-                </MenuNormal>
-            </section>
+      <section>
+        <MenuVertical>
+          <MenuItem first text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
+          <MenuItem last text="Item"></MenuItem>
+        </MenuVertical>
+      </section>
 
-            <span>Horizontal Menu Icon After Text</span>
-            <span>Horizontal Menu RTL Icon After Text</span>
+      <section>
+        <Popup className="k-menu-popup">
+          <MenuList>
+            <MenuListItem first text="Item"></MenuListItem>
+            <MenuListItem icon="folder" text="Item"></MenuListItem>
+            <MenuListItem last text="Item"></MenuListItem>
+          </MenuList>
+        </Popup>
+      </section>
 
-            <section>
-                <MenuNormal popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "110px", top: "auto" }}>
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-right"></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-right"></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal" icon="folder" iconPosition="after"></MenuItem>
-                    <MenuItem text="Active" icon="folder" iconPosition="after" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem last selected text="Selected" icon="folder" iconPosition="after"></MenuItem>
-                </MenuNormal>
-            </section>
+      <span>Horizontal - All icons</span>
+      <span>Vertical - All icons</span>
+      <span>Popup - All icons</span>
 
-            <section>
-                <MenuNormal dir="rtl" popup={
-                        <>
-                            <Popup className="k-menu-popup" offset={{ left: "780px", top: "auto" }} dir="rtl">
-                                <MenuList>
-                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                    <MenuListItem text="Normal"></MenuListItem>
-                                    <MenuListItem text="Hover" hover showArrow arrowIconName="chevron-left"></MenuListItem>
-                                    <MenuListItem text="Active" active showArrow arrowIconName="chevron-left"></MenuListItem>
-                                    <MenuListItem text="Focus" focus></MenuListItem>
-                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                </MenuList>
-                            </Popup>
-                        </>
-                    }>
-                    <MenuItem first text="Normal" icon="folder" iconPosition="after"></MenuItem>
-                    <MenuItem text="Active" icon="folder" iconPosition="after" active showArrow arrowIconName="chevron-down"></MenuItem>
-                    <MenuItem last selected text="Selected" icon="folder" iconPosition="after" showArrow arrowIconName="chevron-down"></MenuItem>
-                </MenuNormal>
-            </section>
-        </div>
+      <section>
+        <MenuNormal>
+          <MenuItem icon="folder" first text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
+          <MenuItem icon="folder" last text="Item"></MenuItem>
+        </MenuNormal>
+      </section>
 
-    </>
+      <section>
+        <MenuVertical>
+          <MenuItem icon="folder" first text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
+          <MenuItem icon="folder" last text="Item"></MenuItem>
+        </MenuVertical>
+      </section>
+
+      <section>
+        <Popup className="k-menu-popup">
+          <MenuList>
+            <MenuListItem icon="folder" first text="Item"></MenuListItem>
+            <MenuListItem icon="folder" text="Item"></MenuListItem>
+            <MenuListItem icon="folder" last text="Item"></MenuListItem>
+          </MenuList>
+        </Popup>
+      </section>
+
+      <span>Horizontal - After icons</span>
+      <span>Vertical - After icons</span>
+      <span>Popup - After icons</span>
+
+      <section>
+        <MenuNormal>
+          <MenuItem icon="folder" iconPosition="after" first text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" last text="Item"></MenuItem>
+        </MenuNormal>
+      </section>
+
+      <section>
+        <MenuVertical>
+          <MenuItem icon="folder" iconPosition="after" first text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" last text="Item"></MenuItem>
+        </MenuVertical>
+      </section>
+
+      <section>
+        <Popup className="k-menu-popup">
+          <MenuList>
+            <MenuListItem icon="folder" iconPosition="after" first text="Item"></MenuListItem>
+            <MenuListItem icon="folder" iconPosition="after" text="Item"></MenuListItem>
+            <MenuListItem icon="folder" iconPosition="after" last text="Item"></MenuListItem>
+          </MenuList>
+        </Popup>
+      </section>
+    </div>
+  </>
 );

@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames } from '../misc';
+import { classNames, Size, optionClassNames } from '../misc';
 import MenuScrollableWrapper from './menu-scrollable-wrapper.spec';
 
 import { KendoComponent } from '../_types/component';
@@ -8,7 +8,9 @@ export const MENU_CLASSNAME = `k-menu`;
 
 const states = [];
 
-const options = {};
+const options = {
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
+};
 
 export type KendoMenuProps = {
     orientation?: 'horizontal' | 'vertical';
@@ -19,6 +21,7 @@ export type KendoMenuProps = {
     dir?: "rtl" | "ltr";
     popup?: React.JSX.Element;
     contextMenu?: boolean;
+    size?: (typeof options.size)[number] | null;
 };
 
 const defaultOptions = {
@@ -50,6 +53,7 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
         scrollButtonsPosition = defaultOptions.scrollButtonsPosition,
         wrapperStyles,
         dir,
+        size,
         popup,
         contextMenu,
         ...other
@@ -71,7 +75,10 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
                 {
                     [`${MENU_CLASSNAME}-${orientation}`]: orientation,
                     ["k-header"]: header
-                }
+                },
+                optionClassNames(MENU_CLASSNAME, {
+                    size,
+                })
             )}
             role={contextMenu ? 'menu' : 'menubar'}
             {...(orientation === 'vertical' && { 'aria-orientation': 'vertical' as React.AriaAttributes['aria-orientation'] })}
@@ -86,26 +93,26 @@ export const Menu: KendoComponent<KendoMenuProps & React.HTMLAttributes<HTMLULis
                 (<MenuScrollableWrapper orientation={orientation} style={wrapperStyles} dir={props.dir}>
                     {scrollButtonsPosition === 'start' &&
                         <>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" tabIndex={-1} aria-label="Scroll previous"></Button>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" tabIndex={-1} aria-label="Scroll next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
-                        <Button fillMode="flat"
+                        <Button fillMode="flat" size="xsmall"
                             icon={`chevron-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" tabIndex={-1} aria-label="Scroll previous"></Button>}
                     {ulMenu}
                     {scrollButtonsPosition === 'end' &&
                         <>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev" tabIndex={-1} aria-label="Scroll previous"></Button>
-                            <Button fillMode="flat"
+                            <Button fillMode="flat" size="xsmall"
                                 icon={`chevron-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" tabIndex={-1} aria-label="Scroll next"></Button>
                         </>
                     }
                     {scrollButtonsPosition === 'around' &&
-                        <Button fillMode="flat"
+                        <Button fillMode="flat" size="xsmall"
                             icon={`chevron-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next" tabIndex={-1} aria-label="Scroll next"></Button>}
                 </MenuScrollableWrapper>) :
                 ulMenu
