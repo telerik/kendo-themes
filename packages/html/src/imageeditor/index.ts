@@ -17,4 +17,5 @@ export * from './templates/imageeditor-pixelate';
 export * from './templates/imageeditor-filters';
 export * from './templates/imageeditor-adjustments';
 export * from './templates/imageeditor-frames';
+export * from './templates/imageeditor-shadow';
 
