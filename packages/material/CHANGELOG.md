@@ -1,3 +1,16 @@
+## 14.5.1-dev.3 (2026-09-14)
+
+### 🩹 Fixes
+
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+- **coloreditor:** bump min-width to match actual widest view content ([886d25df5d](https://github.com/telerik/kendo-themes/commit/886d25df5d))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+- zhpenkov
+
 ## 14.5.1-dev.2 (2026-09-08)
 
 This was a version bump only for @progress/kendo-theme-material to align it with other projects, there were no code changes.

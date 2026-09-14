@@ -1,4 +1,4 @@
-import { Badge, BadgeNormal } from '..';
+import { Badge, BadgeNormal, BadgePositioned } from '..';
 
 
 const styles = `
@@ -53,36 +53,36 @@ export default () =>(
 
                     <span>inside</span>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="none" position="inside" align="top-start" cutoutBorder>Rect</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="none" position="inside" align="top-start" cutoutBorder>Rect</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="medium" position="inside" align="top-start" cutoutBorder>Round</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="medium" position="inside" align="top-start" cutoutBorder>Round</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="full" position="inside" align="top-start" cutoutBorder>Pill</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="full" position="inside" align="top-start" cutoutBorder>Pill</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="full" position="inside" align="top-start" cutoutBorder>1</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="full" position="inside" align="top-start" cutoutBorder>1</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="full" position="inside" align="top-start" cutoutBorder></BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="full" position="inside" align="top-start" cutoutBorder></BadgePositioned>
                     </div>
 
                     <span>edge</span>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="none" position="edge" align="top-start" cutoutBorder>Rect</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="none" position="edge" align="top-start" cutoutBorder>Rect</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="medium" position="edge" align="top-start" cutoutBorder>Round</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="medium" position="edge" align="top-start" cutoutBorder>Round</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="full" position="edge" align="top-start" cutoutBorder>Pill</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="full" position="edge" align="top-start" cutoutBorder>Pill</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="full" position="edge" align="top-start" cutoutBorder>1</BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="full" position="edge" align="top-start" cutoutBorder>1</BadgePositioned>
                     </div>
                     <div className="k-badge-container">
-                        <BadgeNormal fillMode={fillMode} rounded="full" position="edge" align="top-start" cutoutBorder></BadgeNormal>
+                        <BadgePositioned fillMode={fillMode} rounded="full" position="edge" align="top-start" cutoutBorder></BadgePositioned>
                     </div>
                 </>
             ))}
