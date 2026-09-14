@@ -18217,7 +18217,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-padding-y</td>
+    <td>$kendo-image-editor-option-preview-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5)</code></td>
@@ -18227,7 +18227,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-padding-x</td>
+    <td>$kendo-image-editor-option-preview-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
@@ -18237,7 +18237,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-border-radius</td>
+    <td>$kendo-image-editor-option-preview-border-radius</td>
     <td>String</td>
     <td><code>k-border-radius(sm)</code></td>
     <td><code>var(--kendo-border-radius-sm)</code></td>
@@ -18247,7 +18247,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-width</td>
+    <td>$kendo-image-editor-option-preview-width</td>
     <td>Number</td>
     <td><code>88px</code></td>
     <td><code>88px</code></td>
@@ -18447,7 +18447,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-bg</td>
+    <td>$kendo-image-editor-option-preview-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
     <td><code>null</code></td>
@@ -18457,7 +18457,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-text</td>
+    <td>$kendo-image-editor-option-preview-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface)</code></td>
@@ -18467,7 +18467,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-border</td>
+    <td>$kendo-image-editor-option-preview-border</td>
     <td>String</td>
     <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border)</code></td>
@@ -18477,7 +18477,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-selected-shadow</td>
+    <td>$kendo-image-editor-option-preview-selected-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px k-color(surface-alt), 0 0 0 2px k-color(secondary-on-surface)</code></td>
     <td><code>(0 0 0 1px var(--kendo-color-surface-alt), 0 0 0 2px var(--kendo-color-secondary-on-surface))</code></td>

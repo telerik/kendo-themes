@@ -18989,40 +18989,40 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-bg</td>
+    <td>$kendo-image-editor-option-preview-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-bg, null )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-bg, )</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-bg, null )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-bg, )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset background color.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-text</td>
+    <td>$kendo-image-editor-option-preview-text</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-text, inherit )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-text, inherit)</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-text, inherit )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset text color.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-border</td>
+    <td>$kendo-image-editor-option-preview-border</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-border, color-mix(in srgb, #{k-color(border)} 16%, transparent) )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-border, color-mix(in srgb, #{k-color(border)} 16%, transparent) )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset border color.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-selected-shadow</td>
+    <td>$kendo-image-editor-option-preview-selected-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-selected-shadow, 0 0 0 1px #{k-color(surface-alt)}, 0 0 0 2px #{k-color(secondary-on-surface)} )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-selected-shadow, 0 0 0 1px var(--kendo-color-surface-alt), 0 0 0 2px var(--kendo-color-secondary-on-surface))</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-selected-shadow, 0 0 0 1px #{k-color(surface-alt)}, 0 0 0 2px #{k-color(secondary-on-surface)} )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-selected-shadow, 0 0 0 1px var(--kendo-color-surface-alt), 0 0 0 2px var(--kendo-color-secondary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor aspect ratio preset selected box shadow.</div></div>
@@ -19139,40 +19139,40 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-padding-y</td>
+    <td>$kendo-image-editor-option-preview-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-padding-y, #{k-spacing(1.5)} )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-padding-y, var(--kendo-spacing-1\.5))</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-padding-y, #{k-spacing(1.5)} )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-padding-y, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of an imageeditor aspect ratio preset.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-padding-x</td>
+    <td>$kendo-image-editor-option-preview-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-padding-x, #{k-spacing(2)} )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-padding-x, var(--kendo-spacing-2))</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-padding-x, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-padding-x, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of an imageeditor aspect ratio preset.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-border-radius</td>
+    <td>$kendo-image-editor-option-preview-border-radius</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-border-radius, #{k-border-radius(sm)} )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-border-radius, var(--kendo-border-radius-sm))</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-border-radius, #{k-border-radius(sm)} )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-border-radius, var(--kendo-border-radius-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of an imageeditor aspect ratio preset.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-image-editor-aspect-ratio-preview-width</td>
+    <td>$kendo-image-editor-option-preview-width</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-aspect-ratio-preview-width, 88px )</code></td>
-    <td><code>var(--kendo-image-editor-aspect-ratio-preview-width, 88px)</code></td>
+    <td><code>var( --kendo-image-editor-option-preview-width, 88px )</code></td>
+    <td><code>var(--kendo-image-editor-option-preview-width, 88px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of an imageeditor aspect ratio preset.</div></div>
