@@ -13,4 +13,5 @@ export * from './templates/imageeditor-insert-text';
 export * from './templates/imageeditor-insert-shape';
 export * from './templates/imageeditor-insert-line';
 export * from './templates/imageeditor-blur';
+export * from './templates/imageeditor-pixelate';
 
