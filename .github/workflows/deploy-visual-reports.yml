@@ -1,0 +1,51 @@
+name: Deploy visual reports
+
+# Report workflows update the gh-pages branch, sometimes several times in
+# quick succession. Deploy the latest complete branch snapshot without
+# interrupting an active Pages deployment. GitHub retains one pending run per
+# concurrency group and replaces that pending run when a newer one arrives.
+on:
+  workflow_run:
+    workflows:
+      - CI
+      - CI Develop
+      - Associate visual regression report
+      - Cleanup visual regression report
+    types: [completed]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out published reports
+        uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+          include-hidden-files: true
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
