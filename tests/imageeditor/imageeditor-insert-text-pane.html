@@ -77,17 +77,17 @@
                 <div class="k-imageeditor-content" style="height: 640px;">
                     <div class="k-imageeditor-sidebar">
                         <div class="k-imageeditor-sidebar-items">
-                            <button class="k-button k-button-flat k-icon-button" aria-label="Resize">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-image-resize" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M427.3 404.7 352 329.4V32H32v320h297.4l75.3 75.3L352 480h128V352zM64 320V64h256v233.4L203.3 180.7 256 128H128v128l52.7-52.7L297.4 320z"></path>
-                                    </svg>
-                                </span>
-                            </button>
                             <button class="k-button k-button-flat k-icon-button" aria-label="Crop">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-crop" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M0 96h64v64H0zm448 256v64h64v-64zm-32-224c0-17.6-14.4-32-32-32H192v64h160v320h64zM96 384c0 17.6 14.4 32 32 32h192v-64H160V32H96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Resize">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-image-resize" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M427.3 404.7 352 329.4V32H32v320h297.4l75.3 75.3L352 480h128V352zM64 320V64h256v233.4L203.3 180.7 256 128H128v128l52.7-52.7L297.4 320z"></path>
                                     </svg>
                                 </span>
                             </button>
@@ -114,7 +114,7 @@
                                 </span>
                             </button>
                             <div class="k-separator"></div>
-                            <button class="k-button k-button-flat k-icon-button" aria-label="Overlay">
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Blur">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-droplet" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M256 384v32c-53 0-96-43-96-96h32c0 35.3 28.7 64 64 64m160-72c0 92.8-71.6 168-160 168S96 404.8 96 312C96 181.3 256 32 256 32s160 149.3 160 280m-32 0c0-46.3-25.3-104.7-73-169-20-27-40.3-49.8-55-65.4-14.7 15.6-34.9 38.5-55 65.4-47.8 64.3-73 122.8-73 169 0 75 57.4 136 128 136s128-61 128-136"></path>
@@ -128,18 +128,25 @@
                                     </svg>
                                 </span>
                             </button>
-                            <div class="k-separator"></div>
                             <button class="k-button k-button-flat k-icon-button" aria-label="Filters">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-image" aria-hidden="true">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-filter" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M304 160c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48m144-96H64c-17.6 0-32 14.4-32 32v320c0 17.6 14.4 32 32 32h384c17.6 0 32-14.4 32-32V96c0-17.6-14.4-32-32-32m-.1 272-64-64-80 80L176 224 64 336V96.1l.1-.1h383.8l.1.1z"></path>
+                                        <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-button-flat k-icon-button" aria-label="Brightness / Contrast">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-brightness-contrast" aria-hidden="true">
+                            <div class="k-separator"></div>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Frame">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-borders-all" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M165.5 346.5c12.4 12.5 12.4 32.9 0 45.3l-22.6 22.6c-12.5 12.4-32.8 12.4-45.3 0-12.4-12.5-12.4-32.9 0-45.3l22.6-22.6c12.5-12.4 32.9-12.4 45.3 0M256 128c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32s-32 14.4-32 32v32c0 17.6 14.4 32 32 32m135.8 37.5 22.6-22.6c12.4-12.4 12.4-32.8 0-45.3-12.4-12.4-32.8-12.4-45.3 0l-22.6 22.6c-12.4 12.4-12.4 32.8 0 45.3 12.5 12.4 32.8 12.4 45.3 0m-271.6 0c12.4 12.4 32.8 12.4 45.3 0 12.4-12.4 12.4-32.8 0-45.3l-22.6-22.6c-12.4-12.4-32.8-12.4-45.3 0-12.4 12.5-12.4 32.8 0 45.3zM128 256c0-17.6-14.4-32-32-32H64c-17.6 0-32 14.4-32 32s14.4 32 32 32h32c17.6 0 32-14.4 32-32m263.8 90.5c-12.4-12.4-32.8-12.4-45.3 0-12.4 12.5-12.4 32.8 0 45.3l22.6 22.6c12.4 12.4 32.8 12.4 45.3 0 12.4-12.4 12.4-32.8 0-45.3zM448 224h-32c-17.6 0-32 14.4-32 32s14.4 32 32 32h32c17.6 0 32-14.4 32-32s-14.4-32-32-32m-96 32c0 53-43 96-96 96s-96-43-96-96 43-96 96-96 96 43 96 96m-32 0c0-35.3-28.7-64-64-64v128c35.3 0 64-28.7 64-64m-64 128c-17.6 0-32 14.4-32 32v32c0 17.6 14.4 32 32 32s32-14.4 32-32v-32c0-17.6-14.4-32-32-32"></path>
+                                        <path d="M32 32v416h416V32zm32 32h160v160H64zm0 352V256h160v160zm352 0H256V256h160zm0-192H256V64h160z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Shadow">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-bring-to-back" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M128 192h64V64H64v128zM96 96h64v64H96zm192 192h96V128H224v96h-96v160h160zm128 32h-96v128h128V320zm0 96h-64v-64h64z"></path>
                                     </svg>
                                 </span>
                             </button>
