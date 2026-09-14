@@ -9,12 +9,12 @@ export default () => (
         <section key={i}>
           <span>{`${size}`}</span>
           <MenuNormal size={size}>
-            <MenuItem first text="Normal" icon="folder"></MenuItem>
+            <MenuItem text="Normal" icon="folder"></MenuItem>
             <MenuItem text="Hover" hover icon="folder"></MenuItem>
             <MenuItem text="Active" icon="folder" active></MenuItem>
             <MenuItem text="Selected" selected icon="folder"></MenuItem>
             <MenuItem focus text="Focused" icon="folder"></MenuItem>
-            <MenuItem last text="Disabled" icon="folder" disabled></MenuItem>
+            <MenuItem text="Disabled" icon="folder" disabled></MenuItem>
           </MenuNormal>
         </section>
       ))}
@@ -26,12 +26,12 @@ export default () => (
           <section key={i}>
             <span>{`${size}`}</span>
             <MenuNormal orientation="vertical" size={size}>
-              <MenuItem first text="Normal" icon="folder"></MenuItem>
+              <MenuItem text="Normal" icon="folder"></MenuItem>
               <MenuItem text="Hover" hover icon="folder"></MenuItem>
               <MenuItem text="Active" icon="folder" active></MenuItem>
               <MenuItem text="Selected" selected icon="folder"></MenuItem>
               <MenuItem focus text="Focused" icon="folder"></MenuItem>
-              <MenuItem last text="Disabled" icon="folder" disabled></MenuItem>
+              <MenuItem text="Disabled" icon="folder" disabled></MenuItem>
             </MenuNormal>
           </section>
         ))}

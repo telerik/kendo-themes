@@ -24,7 +24,7 @@ export default () => (
           <MenuSeparator></MenuSeparator>
           <MenuGroupHeader>Group 2</MenuGroupHeader>
           <MenuListItem text="Sub item 2.1"></MenuListItem>
-          <MenuListItem last text="Sub item 2.2"></MenuListItem>
+          <MenuListItem text="Sub item 2.2"></MenuListItem>
         </MenuList>
       </Popup>
 
@@ -36,7 +36,7 @@ export default () => (
           <MenuSeparator></MenuSeparator>
           <MenuGroupHeader groupIconName="gear">Group 2</MenuGroupHeader>
           <MenuListItem text="Sub item 2.1"></MenuListItem>
-          <MenuListItem last text="Sub item 2.2"></MenuListItem>
+          <MenuListItem text="Sub item 2.2"></MenuListItem>
         </MenuList>
       </Popup>
 
@@ -48,7 +48,7 @@ export default () => (
           <MenuSeparator></MenuSeparator>
           <MenuGroupHeader>Group 2</MenuGroupHeader>
           <MenuListItem icon="folder" text="Sub item 2.1"></MenuListItem>
-          <MenuListItem last text="Sub item 2.2"></MenuListItem>
+          <MenuListItem text="Sub item 2.2"></MenuListItem>
         </MenuList>
       </Popup>
     </div>

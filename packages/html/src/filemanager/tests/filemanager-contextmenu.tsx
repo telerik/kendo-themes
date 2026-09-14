@@ -25,8 +25,8 @@ export default () =>(
 
             <Popup id="filemanager-context-menu" className="k-menu-popup k-context-menu-popup">
                 <ContextMenuNormal>
-                    <MenuListItem first text="Rename" icon="pencil"></MenuListItem>
-                    <MenuListItem last text="Delete" icon="trash"></MenuListItem>
+                    <MenuListItem text="Rename" icon="pencil"></MenuListItem>
+                    <MenuListItem text="Delete" icon="trash"></MenuListItem>
                 </ContextMenuNormal>
             </Popup>
 

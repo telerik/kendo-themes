@@ -19,8 +19,6 @@ export type KendoMenuListItemProps = {
     text?: string;
     icon?: string;
     iconPosition?: string;
-    first?: boolean;
-    last?: boolean;
     showArrow?: boolean;
     arrowIconName?: string;
     dir?: "rtl" | "ltr";
@@ -54,8 +52,6 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
         disabled,
         icon,
         text,
-        first,
-        last,
         showArrow,
         arrowIconName,
         iconPosition = defaultOptions.iconPosition,
@@ -88,11 +84,7 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                 stateClassNames(MENULISTITEM_CLASSNAME, {
                     focus,
                     disabled
-                }),
-                {
-                    ["k-first"]: first,
-                    ["k-last"]: last,
-                }
+                })
             )}
             {...(showArrow && { 'aria-haspopup': 'menu' as const })}
             {...(showArrow && { 'aria-expanded': expanded ? 'true' : 'false' })}

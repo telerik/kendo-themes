@@ -20,7 +20,7 @@ export default () =>(
                 <SpreadsheetHeader
                     toolbarItems={[ <Button icon="formula-fx" fillMode="flat">Insert Formula</Button> ]}
                     menuItems={[
-                        <li className="k-item k-menu-item k-first">
+                        <li className="k-item k-menu-item">
                             <span className="k-link k-menu-link">File</span>
                         </li>,
                         <li className="k-item k-menu-item">
@@ -38,7 +38,7 @@ export default () =>(
                         <li className="k-item k-menu-item">
                             <span className="k-link k-menu-link">Data</span>
                         </li>,
-                        <li className="k-item k-menu-item k-last">
+                        <li className="k-item k-menu-item">
                             <span className="k-link k-menu-link">View</span>
                         </li>,
                     ]}

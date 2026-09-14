@@ -5,18 +5,18 @@ export const MenuPopup = (props) => (
     <Menu  popup={
         <Popup className="k-menu-popup" offset={{ left: "90px", top: "auto" }}>
             <MenuList id="submenu-popup-1">
-                <MenuListItem first text="Sub item 1"></MenuListItem>
+                <MenuListItem text="Sub item 1"></MenuListItem>
                 <MenuListItem text="Sub item 2" showArrow ></MenuListItem>
-                <MenuListItem last text="Sub item 3"></MenuListItem>
+                <MenuListItem text="Sub item 3"></MenuListItem>
             </MenuList>
         </Popup>
     } children={
         <>
-            <MenuItem first text="Item 1" focus></MenuItem>
+            <MenuItem text="Item 1" focus></MenuItem>
             <MenuItem showArrow arrowIconName="chevron-down" text="Item 2" expanded aria-controls="submenu-popup-1"></MenuItem>
             <MenuItem showArrow arrowIconName="chevron-down" text="Item 3"></MenuItem>
             <MenuItem text="Item 4" disabled></MenuItem>
-            <MenuItem last text="Item 5"></MenuItem>
+            <MenuItem text="Item 5"></MenuItem>
         </>
     }
     {...props}

@@ -65,21 +65,21 @@ export default () => (
         {/* Row Pinning Context Menu */}
         <Popup className="k-menu-popup" offset={{ left: "145px", top: "185px" }}>
           <ContextMenu>
-            <MenuListItem first text="Hide row" icon="eye-slash" />
+            <MenuListItem text="Hide row" icon="eye-slash" />
             <MenuListItem text="Set row sticky" icon="stick" />
             <MenuListItem text="Pin row" icon="pin" showArrow active />
             <MenuSeparator />
             <MenuListItem text="Copy" icon="copy" showArrow />
             <MenuListItem text="Select all rows" icon="grid-layout" />
-            <MenuListItem last text="Export" icon="export" showArrow />
+            <MenuListItem text="Export" icon="export" showArrow />
           </ContextMenu>
         </Popup>
 
         {/* Pin row submenu */}
         <Popup className="k-menu-popup" offset={{ left: "296px", top: "241px" }}>
           <ContextMenu>
-            <MenuListItem first text="Pin row to top" icon="pin-top" selected />
-            <MenuListItem last text="Pin row to bottom" icon="pin-bottom" />
+            <MenuListItem text="Pin row to top" icon="pin-top" selected />
+            <MenuListItem text="Pin row to bottom" icon="pin-bottom" />
           </ContextMenu>
         </Popup>
       </section>
@@ -287,8 +287,8 @@ export default () => (
         {/* Row Pinning Context Menu */}
         <Popup className="k-menu-popup" offset={{ left: "50px", top: "580px" }}>
           <ContextMenu>
-            <MenuListItem first text="Pin row to top" icon="pin-top" selected />
-            <MenuListItem last text="Pin row to bottom" icon="pin-bottom" />
+            <MenuListItem text="Pin row to top" icon="pin-top" selected />
+            <MenuListItem text="Pin row to bottom" icon="pin-bottom" />
           </ContextMenu>
         </Popup>
       </section>

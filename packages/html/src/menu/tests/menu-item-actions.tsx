@@ -17,9 +17,9 @@ export default () => (
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem first text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
             <MenuListItem text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
-            <MenuListItem last text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
           </MenuList>
         </Popup>
       </section>
@@ -29,9 +29,9 @@ export default () => (
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem first text="Item" icon="folder" iconPosition="after" actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem text="Item" icon="folder" iconPosition="after" actions={<kbd>⌘C</kbd>}></MenuListItem>
             <MenuListItem text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
-            <MenuListItem last text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
           </MenuList>
         </Popup>
       </section>
@@ -41,9 +41,9 @@ export default () => (
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem first text="Item" icon="folder" iconPosition="after" actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem text="Item" icon="folder" iconPosition="after" actions={<kbd>⌘C</kbd>}></MenuListItem>
             <MenuListItem showArrow text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
-            <MenuListItem last text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
           </MenuList>
         </Popup>
       </section>
@@ -53,9 +53,9 @@ export default () => (
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem showArrow first text="Item" icon="folder" iconPosition="after"  actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem showArrow text="Item" icon="folder" iconPosition="after"  actions={<kbd>⌘C</kbd>}></MenuListItem>
             <MenuListItem showArrow text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
-            <MenuListItem showArrow last text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
+            <MenuListItem showArrow text="Item" actions={<kbd>⌘C</kbd>}></MenuListItem>
           </MenuList>
         </Popup>
       </section>

@@ -27,12 +27,12 @@ export default () => (
         <section key={i}>
           <Popup className="k-menu-popup">
             <MenuList size={size}>
-              <MenuListItem first text="Normal"></MenuListItem>
+              <MenuListItem text="Normal"></MenuListItem>
               <MenuListItem text="Hover" hover></MenuListItem>
               <MenuListItem text="Focus" focus></MenuListItem>
               <MenuListItem text="Active" active></MenuListItem>
               <MenuListItem text="Focus & Active" active focus></MenuListItem>
-              <MenuListItem last text="Disabled" disabled></MenuListItem>
+              <MenuListItem text="Disabled" disabled></MenuListItem>
             </MenuList>
           </Popup>
         </section>
@@ -44,12 +44,12 @@ export default () => (
         <section key={i}>
           <Popup className="k-menu-popup">
             <MenuList size={size}>
-              <MenuListItem first text="Normal" showArrow></MenuListItem>
+              <MenuListItem text="Normal" showArrow></MenuListItem>
               <MenuListItem text="Hover" hover showArrow></MenuListItem>
               <MenuListItem text="Focus" focus showArrow></MenuListItem>
               <MenuListItem text="Active" active showArrow></MenuListItem>
               <MenuListItem text="Focus & Active" active focus showArrow></MenuListItem>
-              <MenuListItem last text="Disabled" disabled showArrow></MenuListItem>
+              <MenuListItem text="Disabled" disabled showArrow></MenuListItem>
             </MenuList>
           </Popup>
         </section>
