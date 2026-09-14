@@ -147,6 +147,7 @@
         &.k-event-ongoing {
             @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
         }
+
     }
 
     // Read-only events

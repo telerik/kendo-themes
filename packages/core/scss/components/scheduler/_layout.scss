@@ -460,6 +460,32 @@
             }
         }
 
+        // All-day events have a fixed, single-line height — the title and time labels
+        // share one row instead of stacking like the min-height driven timed events.
+        &.k-event-all-day {
+            align-items: center;
+
+            > div {
+                flex-direction: row;
+                align-items: center;
+                gap: k-spacing(1);
+                padding-inline: $kendo-scheduler-event-template-padding-x;
+            }
+
+            .k-event-title {
+                flex: 1 1 auto;
+                min-width: 0;
+                padding-block: 0;
+                padding-inline: 0;
+            }
+        }
+        .k-event-all-day-time {
+            flex: none;
+            font-size: $kendo-scheduler-event-time-font-size;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
         >  .k-event-recurrence-icon {
             display: none;
             flex: 0 0 auto;
@@ -478,16 +504,20 @@
             visibility: hidden;
         }
         .k-resize-n {
+            top: 0;
             height: $kendo-scheduler-resizer-size;
         }
         .k-resize-s {
+            bottom: 0;
             height: $kendo-scheduler-resizer-size;
         }
 
         .k-resize-w {
+            left: 0;
             width: $kendo-scheduler-resizer-size;
         }
         .k-resize-e {
+            right: 0;
             width: $kendo-scheduler-resizer-size;
         }
 
@@ -500,11 +530,15 @@
             background-color: $kendo-scheduler-resize-handle-bg;
         }
 
-        .k-resize-w::before,
-        .k-resize-e::before,
         .k-resize-n::before,
         .k-resize-s::before {
             width: $kendo-scheduler-resize-handle-size;
+            height: $kendo-scheduler-resize-handle-thickness;
+        }
+
+        .k-resize-w::before,
+        .k-resize-e::before {
+            width: $kendo-scheduler-resize-handle-thickness;
             height: $kendo-scheduler-resize-handle-size;
         }
 
@@ -1006,7 +1040,9 @@
     .k-scheduler-edit-form-row {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: k-spacing(3);
+        row-gap: k-spacing(2);
         min-width: 0;
 
         > .k-datepicker,
@@ -1033,6 +1069,16 @@
                 min-width: 0;
             }
         }
+    }
+
+    .k-scheduler-recurrence-summary {
+        flex-basis: 100%;
+        margin-block-start: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
     }
 
     .k-scheduler-recurrence-fields {
