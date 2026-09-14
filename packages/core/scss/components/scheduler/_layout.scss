@@ -1006,7 +1006,9 @@
     .k-scheduler-edit-form-row {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: k-spacing(3);
+        row-gap: k-spacing(2);
         min-width: 0;
 
         > .k-datepicker,
@@ -1033,6 +1035,16 @@
                 min-width: 0;
             }
         }
+    }
+
+    .k-scheduler-recurrence-summary {
+        flex-basis: 100%;
+        margin-block-start: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
     }
 
     .k-scheduler-recurrence-fields {
