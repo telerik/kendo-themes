@@ -5,7 +5,7 @@ export const TextboxPrefix = (props) => (
     <Textbox
         prefix={
             <>
-                <Icon icon="envelop" />
+                <Icon icon="envelope" />
             </>
         }
         {...props}
