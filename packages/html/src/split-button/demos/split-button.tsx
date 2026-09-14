@@ -39,9 +39,9 @@ export const SplitButtonDemo = (
 
   const popup = (
     <MenuList size={other.size}>
-      <MenuListItem first text="Menu Item"></MenuListItem>
       <MenuListItem text="Menu Item"></MenuListItem>
-      <MenuListItem last text="Menu Item"></MenuListItem>
+      <MenuListItem text="Menu Item"></MenuListItem>
+      <MenuListItem text="Menu Item"></MenuListItem>
     </MenuList>
   );
 

@@ -17,26 +17,26 @@ export default () => (
 
       <section>
         <MenuNormal>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
       <section>
         <MenuVertical>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuVertical>
       </section>
 
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem first text="Item"></MenuListItem>
             <MenuListItem text="Item"></MenuListItem>
-            <MenuListItem last text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
           </MenuList>
         </Popup>
       </section>
@@ -47,26 +47,26 @@ export default () => (
 
       <section>
         <MenuNormal>
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuItem icon="folder" text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
       <section>
         <MenuVertical>
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuItem icon="folder" text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuVertical>
       </section>
 
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem first text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
             <MenuListItem icon="folder" text="Item"></MenuListItem>
-            <MenuListItem last text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
           </MenuList>
         </Popup>
       </section>
@@ -77,26 +77,26 @@ export default () => (
 
       <section>
         <MenuNormal>
-          <MenuItem icon="folder" first text="Item"></MenuItem>
           <MenuItem icon="folder" text="Item"></MenuItem>
-          <MenuItem icon="folder" last text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
       <section>
         <MenuVertical>
-          <MenuItem icon="folder" first text="Item"></MenuItem>
           <MenuItem icon="folder" text="Item"></MenuItem>
-          <MenuItem icon="folder" last text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
+          <MenuItem icon="folder" text="Item"></MenuItem>
         </MenuVertical>
       </section>
 
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem icon="folder" first text="Item"></MenuListItem>
             <MenuListItem icon="folder" text="Item"></MenuListItem>
-            <MenuListItem icon="folder" last text="Item"></MenuListItem>
+            <MenuListItem icon="folder" text="Item"></MenuListItem>
+            <MenuListItem icon="folder" text="Item"></MenuListItem>
           </MenuList>
         </Popup>
       </section>
@@ -107,26 +107,26 @@ export default () => (
 
       <section>
         <MenuNormal>
-          <MenuItem icon="folder" iconPosition="after" first text="Item"></MenuItem>
           <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
-          <MenuItem icon="folder" iconPosition="after" last text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
       <section>
         <MenuVertical>
-          <MenuItem icon="folder" iconPosition="after" first text="Item"></MenuItem>
           <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
-          <MenuItem icon="folder" iconPosition="after" last text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
+          <MenuItem icon="folder" iconPosition="after" text="Item"></MenuItem>
         </MenuVertical>
       </section>
 
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem icon="folder" iconPosition="after" first text="Item"></MenuListItem>
             <MenuListItem icon="folder" iconPosition="after" text="Item"></MenuListItem>
-            <MenuListItem icon="folder" iconPosition="after" last text="Item"></MenuListItem>
+            <MenuListItem icon="folder" iconPosition="after" text="Item"></MenuListItem>
+            <MenuListItem icon="folder" iconPosition="after" text="Item"></MenuListItem>
           </MenuList>
         </Popup>
       </section>

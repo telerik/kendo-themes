@@ -28,19 +28,19 @@ export default () => (
             <>
               <Popup className="k-menu-popup" offset={{ left: "125px", top: "auto" }}>
                 <MenuList>
-                  <MenuListItem first text="Item"></MenuListItem>
+                  <MenuListItem text="Item"></MenuListItem>
                   <MenuListItem text="Item" showArrow></MenuListItem>
-                  <MenuListItem last text="Item"></MenuListItem>
+                  <MenuListItem text="Item"></MenuListItem>
                 </MenuList>
               </Popup>
             </>
           }
         >
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item" showArrow arrowIconName="chevron-down"></MenuItem>
           <MenuItem text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
@@ -51,19 +51,19 @@ export default () => (
             <>
               <Popup className="k-menu-popup" offset={{ left: "825px", top: "auto" }}>
                 <MenuList>
-                  <MenuListItem first text="Item"></MenuListItem>
+                  <MenuListItem text="Item"></MenuListItem>
                   <MenuListItem text="Item" showArrow></MenuListItem>
-                  <MenuListItem last text="Item"></MenuListItem>
+                  <MenuListItem text="Item"></MenuListItem>
                 </MenuList>
               </Popup>
             </>
           }
         >
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item" showArrow arrowIconName="chevron-down"></MenuItem>
           <MenuItem text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
@@ -72,21 +72,21 @@ export default () => (
 
       <section>
         <MenuNormal orientation="vertical">
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item" showArrow arrowIconName="chevron-right"></MenuItem>
           <MenuItem text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
       <section>
         <MenuNormal dir="rtl" orientation="vertical">
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item"></MenuItem>
           <MenuItem text="Item" showArrow arrowIconName="chevron-left"></MenuItem>
           <MenuItem text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuNormal>
       </section>
     </div>

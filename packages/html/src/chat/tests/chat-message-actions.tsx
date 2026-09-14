@@ -55,18 +55,18 @@ export default () =>(
 
             <Popup className="k-menu-popup">
                 <ContextMenuNormal>
-                    <MenuListItem first text="Reply" icon="undo"></MenuListItem>
+                    <MenuListItem text="Reply" icon="undo"></MenuListItem>
                     <MenuListItem text="Copy" icon="copy"></MenuListItem>
                     <MenuListItem text="Pin" icon="pin"></MenuListItem>
-                    <MenuListItem last text="Delete" icon="trash"></MenuListItem>
+                    <MenuListItem text="Delete" icon="trash"></MenuListItem>
                 </ContextMenuNormal>
             </Popup>
 
             <Popup className="k-menu-popup receiver-popup">
                 <ContextMenuNormal>
-                    <MenuListItem first text="Reply" icon="undo"></MenuListItem>
+                    <MenuListItem text="Reply" icon="undo"></MenuListItem>
                     <MenuListItem text="Copy" icon="copy"></MenuListItem>
-                    <MenuListItem last text="Pin" icon="pin"></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin"></MenuListItem>
                 </ContextMenuNormal>
             </Popup>
         </div>
