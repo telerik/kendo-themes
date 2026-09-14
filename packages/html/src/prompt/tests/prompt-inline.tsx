@@ -39,21 +39,21 @@ export default () =>(
                     <>
                         <Popup className="k-menu-popup">
                             <ContextMenuNormal>
-                                <MenuListItem first icon="arrow-rotate-cw" text="Rewrite"></MenuListItem>
+                                <MenuListItem icon="arrow-rotate-cw" text="Rewrite"></MenuListItem>
                                 <MenuListItem icon="spell-checker" text="Fix spelling"></MenuListItem>
                                 <MenuListItem icon="tell-a-friend" text="Change tone" showArrow hover></MenuListItem>
                                 <MenuListItem icon="col-resize" text="Adjust length" showArrow></MenuListItem>
                                 <MenuListItem icon="spell-checker" text="Polish formatting"></MenuListItem>
-                                <MenuListItem last icon="edit-tools" text="Translate" showArrow></MenuListItem>
+                                <MenuListItem icon="edit-tools" text="Translate" showArrow></MenuListItem>
                             </ContextMenuNormal>
                         </Popup>
 
                         <Popup className="k-menu-popup" offset={{ left: "777px", top: "353px"}}>
                             <ContextMenuNormal>
-                                <MenuListItem first text="Neutral" hover></MenuListItem>
+                                <MenuListItem text="Neutral" hover></MenuListItem>
                                 <MenuListItem text="Friendly"></MenuListItem>
                                 <MenuListItem text="Casual"></MenuListItem>
-                                <MenuListItem last text="Formal"></MenuListItem>
+                                <MenuListItem text="Formal"></MenuListItem>
                             </ContextMenuNormal>
                         </Popup>
                     </>

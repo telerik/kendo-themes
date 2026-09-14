@@ -60,13 +60,13 @@ const defaultToolbarItems = ([
 ]);
 
 const defaultMenuItems = ([
-    <MenuItem key="file" first text="File" />,
+    <MenuItem key="file" text="File" />,
     <MenuItem key="home" text="Home" active />,
     <MenuItem key="insert" text="Insert" />,
     <MenuItem key="format" text="Format" />,
     <MenuItem key="formulas" text="Formulas" />,
     <MenuItem key="data" text="Data" />,
-    <MenuItem key="view" last text="View" />,
+    <MenuItem key="view" text="View" />,
 ]);
 
 const defaultOptions = {

@@ -17,7 +17,7 @@ export default () => (
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem first text="Normal" description="Description goes here here here here here here"></MenuListItem>
+            <MenuListItem text="Normal" description="Description goes here here here here here here"></MenuListItem>
             <MenuListItem text="Normal" description="Description goes here here here here here here"></MenuListItem>
             <MenuListItem text="Normal very very very very very very very very very very very very very very very very long" description="Description goes here very very very very very very very very very very very very very very very very very very very very very very very very long"></MenuListItem>
           </MenuList>
@@ -30,7 +30,7 @@ export default () => (
         <Popup className="k-menu-popup">
           <MenuList>
             <MenuListItem text="Normal" description="Description goes here here here here here here"></MenuListItem>
-            <MenuListItem icon="folder" first text="Icon" description="Description goes here here here here here here"></MenuListItem>
+            <MenuListItem icon="folder" text="Icon" description="Description goes here here here here here here"></MenuListItem>
             <MenuListItem text="Normal" description="Description goes here here here here here here"></MenuListItem>
           </MenuList>
         </Popup>
@@ -41,7 +41,7 @@ export default () => (
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem icon="folder" first text="Icon" description="Description goes here here here here here here"></MenuListItem>
+            <MenuListItem icon="folder" text="Icon" description="Description goes here here here here here here"></MenuListItem>
             <MenuListItem icon="folder" text="Icon" description="Description goes here here here here here here"></MenuListItem>
             <MenuListItem icon="folder" text="Icon" description="Description goes here here here here here here"></MenuListItem>
           </MenuList>
@@ -53,7 +53,7 @@ export default () => (
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem icon="folder" first text="Icon" iconPosition="after" description="Description goes here here here here here here"></MenuListItem>
+            <MenuListItem icon="folder" text="Icon" iconPosition="after" description="Description goes here here here here here here"></MenuListItem>
             <MenuListItem icon="folder" text="Icon" iconPosition="after" description="Description goes here here here here here here"></MenuListItem>
             <MenuListItem icon="folder" text="Icon" iconPosition="after" description="Description goes here here here here here here"></MenuListItem>
           </MenuList>

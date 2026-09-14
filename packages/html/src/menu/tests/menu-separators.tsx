@@ -21,32 +21,32 @@ export default () => (
 
       <section>
         <MenuNormal>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuSeparator></MenuSeparator>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuNormal>
       </section>
 
       <section>
         <MenuVertical>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem first text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
           <MenuSeparator></MenuSeparator>
-          <MenuItem first text="Item"></MenuItem>
-          <MenuItem last text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
+          <MenuItem text="Item"></MenuItem>
         </MenuVertical>
       </section>
 
       <section>
         <Popup className="k-menu-popup">
           <MenuList>
-            <MenuListItem first text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
             <MenuListItem text="Item"></MenuListItem>
             <MenuSeparator></MenuSeparator>
             <MenuListItem text="Item"></MenuListItem>
-            <MenuListItem last text="Item"></MenuListItem>
+            <MenuListItem text="Item"></MenuListItem>
           </MenuList>
         </Popup>
       </section>
