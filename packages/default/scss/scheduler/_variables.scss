@@ -157,16 +157,19 @@ $kendo-scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px #ff0000 !default;
 $kendo-scheduler-resizer-size: 0.5em !default;
 /// The length of the Scheduler resize handle visual indicator.
 /// @group scheduler
-$kendo-scheduler-resize-handle-size: 8px !default;
+$kendo-scheduler-resize-handle-size: 12px !default;
+/// The thickness of the Scheduler resize handle visual indicator.
+/// @group scheduler
+$kendo-scheduler-resize-handle-thickness: 1px !default;
 /// The border radius of the Scheduler resize handle.
 /// @group scheduler
 $kendo-scheduler-resize-handle-border-radius: k-border-radius(full) !default;
 /// The border width of the Scheduler resize handle.
 /// @group scheduler
-$kendo-scheduler-resize-handle-border-width: 2px !default;
+$kendo-scheduler-resize-handle-border-width: 0 !default;
 /// The background color of the Scheduler resize handle.
 /// @group scheduler
-$kendo-scheduler-resize-handle-bg: $kendo-scheduler-event-bg !default;
+$kendo-scheduler-resize-handle-bg: k-color(primary-subtle) !default;
 
 /// The horizontal padding of the Scheduler cell.
 /// @group scheduler
@@ -346,6 +349,7 @@ $kendo-scheduler-recurrence-fields-row-gap: k-spacing(2) !default;
     $kendo-scheduler-event-ongoing-shadow: $kendo-scheduler-event-ongoing-shadow,
     $kendo-scheduler-resizer-size: $kendo-scheduler-resizer-size,
     $kendo-scheduler-resize-handle-size: $kendo-scheduler-resize-handle-size,
+    $kendo-scheduler-resize-handle-thickness: $kendo-scheduler-resize-handle-thickness,
     $kendo-scheduler-resize-handle-border-radius: $kendo-scheduler-resize-handle-border-radius,
     $kendo-scheduler-resize-handle-border-width: $kendo-scheduler-resize-handle-border-width,
     $kendo-scheduler-resize-handle-bg: $kendo-scheduler-resize-handle-bg,
