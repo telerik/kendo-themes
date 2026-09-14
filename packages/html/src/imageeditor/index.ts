@@ -15,4 +15,5 @@ export * from './templates/imageeditor-insert-line';
 export * from './templates/imageeditor-blur';
 export * from './templates/imageeditor-pixelate';
 export * from './templates/imageeditor-filters';
+export * from './templates/imageeditor-adjustments';
 
