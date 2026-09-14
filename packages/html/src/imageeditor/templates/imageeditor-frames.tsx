@@ -1,18 +1,15 @@
-import { ImageEditor, ImageEditorPane, ImageEditorAspectRatioPreview } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionPreview, ImageEditorPreviewThumbnail } from "..";
 import { Button } from "../../button";
 import { NumericTextbox } from "../../numerictextbox";
 import { ColorPicker } from "../../colorpicker";
 import { DropdownList } from "../../dropdownlist";
 import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
-import { Autocomplete } from "../../autocomplete";
 import { Slider } from "../../slider";
-import { ToolbarSeparator, ToolbarItem } from "../../toolbar";
 
-// icon names below are Figma-only placeholders and are not yet part of the Kendo icon set
 const framesSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
+    <Button fillMode="flat" key="sidebar-button-1" icon="crop" aria-label="Crop"></Button>,
+    <Button fillMode="flat" key="sidebar-button-2" icon="image-resize" aria-label="Resize"></Button>,
     <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
     <div className="k-separator" key="sidebar-separator-1"></div>,
     <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
@@ -20,10 +17,10 @@ const framesSidebarItems = [
     <div className="k-separator" key="sidebar-separator-2"></div>,
     <Button fillMode="flat" key="sidebar-button-6" icon="droplet" aria-label="Blur"></Button>,
     <Button fillMode="flat" key="sidebar-button-7" icon="sliders" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
+    <Button fillMode="flat" key="sidebar-button-8" icon="filter" aria-label="Filters"></Button>,
     <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" selected aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Brightness / Contrast"></Button>
+    <Button fillMode="flat" key="sidebar-button-9" icon="borders-all" selected aria-label="Frame"></Button>,
+    <Button fillMode="flat" key="sidebar-button-10" icon="bring-to-back" aria-label="Shadow"></Button>
 ];
 
 const FrameSlider = ({ id, label, value }: { id: string; label: string; value: number }) => (
@@ -61,21 +58,8 @@ const frameStylePreviews: { [key: string]: React.CSSProperties } = {
 };
 
 const FrameStylePreview = ({ styleKey, label, selected }: { styleKey: string; label: string; selected: boolean }) => (
-    <ImageEditorAspectRatioPreview selected={selected} aria-label={label}>
-        <span
-            aria-hidden="true"
-            style={{
-                position: "relative",
-                display: "block",
-                width: "100%",
-                height: "40px",
-                borderRadius: "2px",
-                backgroundImage: "url('/packages/html/assets/sofia.jpg')",
-                backgroundSize: "cover",
-                boxSizing: "border-box",
-                ...frameStylePreviews[styleKey]
-            }}
-        >
+    <ImageEditorOptionPreview selected={selected} aria-label={label}>
+        <ImageEditorPreviewThumbnail label={label} style={frameStylePreviews[styleKey]}>
             {styleKey === "multiple" && (
                 <span style={{
                     position: "absolute",
@@ -86,9 +70,8 @@ const FrameStylePreview = ({ styleKey, label, selected }: { styleKey: string; la
                     pointerEvents: "none"
                 }}></span>
             )}
-        </span>
-        <span style={{ marginBlockStart: "6px" }}>{label}</span>
-    </ImageEditorAspectRatioPreview>
+        </ImageEditorPreviewThumbnail>
+    </ImageEditorOptionPreview>
 );
 
 export const ImageEditorFrames = ({
@@ -106,20 +89,6 @@ export const ImageEditorFrames = ({
     return (
         <ImageEditor
             sidebarItems={framesSidebarItems}
-            toolbarItems={[
-        <Button fillMode="flat" key="toolbar-button-1" icon="image-add" aria-label="Image Add"></Button>,
-        <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-        <Button fillMode="flat" key="toolbar-button-2" icon="undo" aria-label="Undo"></Button>,
-        <Button fillMode="flat" key="toolbar-button-3" icon="redo" aria-label="Redo"></Button>,
-        <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-        <Button fillMode="flat" key="toolbar-button-4" icon="download" aria-label="Download"></Button>,
-        <div className="k-spacer" key="toolbar-spacer"></div>,
-         <Button fillMode="flat" key="toolbar-button-5" icon="zoom-in" aria-label="Zoom In"></Button>,
-        <ToolbarItem key="toolbar-item-1">
-            <Autocomplete fillMode="flat" value="Fit" aria-label="Zoom options" />
-        </ToolbarItem>,
-         <Button fillMode="flat" key="toolbar-button-6" icon="zoom-out" aria-label="Zoom Out"></Button>
-            ]}
             actionPane={
                 <ImageEditorPane title="Frame" actions={
                     <>

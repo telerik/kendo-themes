@@ -52,15 +52,15 @@
         }
     }
 
-    .k-imageeditor-aspect-ratio-preview {
+    .k-imageeditor-option-preview {
         @include fill(
-            $kendo-image-editor-aspect-ratio-preview-text,
-            $kendo-image-editor-aspect-ratio-preview-bg,
-            $kendo-image-editor-aspect-ratio-preview-border
+            $kendo-image-editor-option-preview-text,
+            $kendo-image-editor-option-preview-bg,
+            $kendo-image-editor-option-preview-border
         );
 
         &.k-selected {
-            box-shadow: $kendo-image-editor-aspect-ratio-preview-selected-shadow;
+            box-shadow: $kendo-image-editor-option-preview-selected-shadow;
         }
     }
 

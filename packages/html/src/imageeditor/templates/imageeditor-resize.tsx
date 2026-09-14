@@ -1,30 +1,32 @@
-import { ImageEditor, ImageEditorPane } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles } from "..";
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { NumericTextbox } from "../../numerictextbox";
 import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
-import { Autocomplete } from "../../autocomplete";
 import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
-import { ToolbarSeparator, ToolbarItem, FloatingToolbar } from "../../toolbar";
+import { FloatingToolbar } from "../../toolbar";
 import { Tooltip } from "../../tooltip";
+
+const resizeSidebarItems = [
+    <Button fillMode="flat" key="sidebar-button-1" icon="crop" aria-label="Crop"></Button>,
+    <Button fillMode="flat" key="sidebar-button-2" icon="image-resize" selected aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
+    <div className="k-separator" key="sidebar-separator-1"></div>,
+    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
+    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
+    <div className="k-separator" key="sidebar-separator-2"></div>,
+    <Button fillMode="flat" key="sidebar-button-6" icon="droplet" aria-label="Blur"></Button>,
+    <Button fillMode="flat" key="sidebar-button-7" icon="sliders" aria-label="Adjustments"></Button>,
+    <Button fillMode="flat" key="sidebar-button-8" icon="filter" aria-label="Filters"></Button>,
+    <div className="k-separator" key="sidebar-separator-3"></div>,
+    <Button fillMode="flat" key="sidebar-button-9" icon="borders-all" aria-label="Frame"></Button>,
+    <Button fillMode="flat" key="sidebar-button-10" icon="bring-to-back" aria-label="Shadow"></Button>
+];
 
 export const ImageEditorResize = (props: any) => (
     <ImageEditor
-        toolbarItems={[
-    <Button fillMode="flat" key="toolbar-button-1" icon="image-add" aria-label="Image Add"></Button>,
-    <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-    <Button fillMode="flat" key="toolbar-button-2" icon="undo" aria-label="Undo"></Button>,
-    <Button fillMode="flat" key="toolbar-button-3" icon="redo" aria-label="Redo"></Button>,
-    <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-    <Button fillMode="flat" key="toolbar-button-4" icon="download" aria-label="Download"></Button>,
-    <div className="k-spacer" key="toolbar-spacer"></div>,
-     <Button fillMode="flat" key="toolbar-button-5" icon="zoom-in" aria-label="Zoom In"></Button>,
-    <ToolbarItem key="toolbar-item-1">
-        <Autocomplete fillMode="flat" value="Fit" aria-label="Zoom options" />
-    </ToolbarItem>,
-     <Button fillMode="flat" key="toolbar-button-6" icon="zoom-out" aria-label="Zoom Out"></Button>
-        ]}
+        sidebarItems={resizeSidebarItems}
         actionPane={
             <ImageEditorPane title="Resize" actions={
                 <>
@@ -67,14 +69,7 @@ export const ImageEditorResize = (props: any) => (
             <>
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div className="k-imageeditor-resize">
-                    <span className="k-scale-handle k-resize-nw"></span>
-                    <span className="k-scale-handle k-resize-ne"></span>
-                    <span className="k-scale-handle k-resize-sw"></span>
-                    <span className="k-scale-handle k-resize-se"></span>
-                    <span className="k-resize-handle k-resize-n"></span>
-                    <span className="k-resize-handle k-resize-s"></span>
-                    <span className="k-resize-handle k-resize-w"></span>
-                    <span className="k-resize-handle k-resize-e"></span>
+                    <ImageEditorResizeHandles variant="mixed" />
                 </div>
                 <FloatingToolbar style={{ position: "absolute", insetBlockEnd: "-64px", insetInlineEnd: "10px" }}>
                     <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>

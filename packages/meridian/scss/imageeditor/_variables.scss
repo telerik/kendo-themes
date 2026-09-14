@@ -82,16 +82,16 @@ $kendo-image-editor-aspect-ratio-options-gap: k-spacing(2) !default;
 $kendo-image-editor-aspect-ratio-options-scroll-gradient: rgba(255, 255, 255, 0) 0%, k-color(surface-alt) 100% !default;
 /// The vertical padding of an ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-padding-y: k-spacing(1.5) !default;
+$kendo-image-editor-option-preview-padding-y: k-spacing(1.5) !default;
 /// The horizontal padding of an ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-padding-x: k-spacing(2) !default;
+$kendo-image-editor-option-preview-padding-x: k-spacing(2) !default;
 /// The border radius of an ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-border-radius: k-border-radius(sm) !default;
+$kendo-image-editor-option-preview-border-radius: k-border-radius(sm) !default;
 /// The width of an ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-width: 88px !default;
+$kendo-image-editor-option-preview-width: 88px !default;
 
 /// The width of the border around the ImageEditor crop area.
 /// @group image-editor
@@ -159,16 +159,16 @@ $kendo-image-editor-pane-title-text: k-color(on-app-surface) !default;
 
 /// The background color of an ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-bg: null !default;
+$kendo-image-editor-option-preview-bg: null !default;
 /// The text color of an ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-text: k-color(on-app-surface) !default;
+$kendo-image-editor-option-preview-text: k-color(on-app-surface) !default;
 /// The border color of an ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-border: k-color(border) !default;
+$kendo-image-editor-option-preview-border: k-color(border) !default;
 /// The box shadow of a selected ImageEditor aspect ratio preset.
 /// @group image-editor
-$kendo-image-editor-aspect-ratio-preview-selected-shadow: 0 0 0 1px k-color(surface-alt), 0 0 0 2px k-color(secondary-on-surface) !default;
+$kendo-image-editor-option-preview-selected-shadow: 0 0 0 1px k-color(surface-alt), 0 0 0 2px k-color(secondary-on-surface) !default;
 
 /// The background color of the ImageEditor crop area.
 /// @group image-editor
@@ -220,10 +220,10 @@ $kendo-image-editor-resize-handle-border: k-color(secondary) !default;
     $kendo-image-editor-pane-footer-padding-x: $kendo-image-editor-pane-footer-padding-x,
     $kendo-image-editor-aspect-ratio-options-gap: $kendo-image-editor-aspect-ratio-options-gap,
     $kendo-image-editor-aspect-ratio-options-scroll-gradient: $kendo-image-editor-aspect-ratio-options-scroll-gradient,
-    $kendo-image-editor-aspect-ratio-preview-padding-y: $kendo-image-editor-aspect-ratio-preview-padding-y,
-    $kendo-image-editor-aspect-ratio-preview-padding-x: $kendo-image-editor-aspect-ratio-preview-padding-x,
-    $kendo-image-editor-aspect-ratio-preview-border-radius: $kendo-image-editor-aspect-ratio-preview-border-radius,
-    $kendo-image-editor-aspect-ratio-preview-width: $kendo-image-editor-aspect-ratio-preview-width,
+    $kendo-image-editor-option-preview-padding-y: $kendo-image-editor-option-preview-padding-y,
+    $kendo-image-editor-option-preview-padding-x: $kendo-image-editor-option-preview-padding-x,
+    $kendo-image-editor-option-preview-border-radius: $kendo-image-editor-option-preview-border-radius,
+    $kendo-image-editor-option-preview-width: $kendo-image-editor-option-preview-width,
     $kendo-image-editor-crop-border-width: $kendo-image-editor-crop-border-width,
     $kendo-image-editor-crop-border-style: $kendo-image-editor-crop-border-style,
     $kendo-image-editor-resize-handle-margin-x: $kendo-image-editor-resize-handle-margin-x,
@@ -243,10 +243,10 @@ $kendo-image-editor-resize-handle-border: k-color(secondary) !default;
     $kendo-image-editor-action-pane-text: $kendo-image-editor-action-pane-text,
     $kendo-image-editor-action-pane-border: $kendo-image-editor-action-pane-border,
     $kendo-image-editor-pane-title-text: $kendo-image-editor-pane-title-text,
-    $kendo-image-editor-aspect-ratio-preview-bg: $kendo-image-editor-aspect-ratio-preview-bg,
-    $kendo-image-editor-aspect-ratio-preview-text: $kendo-image-editor-aspect-ratio-preview-text,
-    $kendo-image-editor-aspect-ratio-preview-border: $kendo-image-editor-aspect-ratio-preview-border,
-    $kendo-image-editor-aspect-ratio-preview-selected-shadow: $kendo-image-editor-aspect-ratio-preview-selected-shadow,
+    $kendo-image-editor-option-preview-bg: $kendo-image-editor-option-preview-bg,
+    $kendo-image-editor-option-preview-text: $kendo-image-editor-option-preview-text,
+    $kendo-image-editor-option-preview-border: $kendo-image-editor-option-preview-border,
+    $kendo-image-editor-option-preview-selected-shadow: $kendo-image-editor-option-preview-selected-shadow,
     $kendo-image-editor-crop-bg: $kendo-image-editor-crop-bg,
     $kendo-image-editor-crop-text: $kendo-image-editor-crop-text,
     $kendo-image-editor-crop-border: $kendo-image-editor-crop-border,

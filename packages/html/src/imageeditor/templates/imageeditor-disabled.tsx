@@ -19,8 +19,8 @@ const disabledToolbarItems = [
 ];
 
 const disabledSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" disabled icon="image-resize" />,
-    <Button fillMode="flat" key="sidebar-button-2" disabled icon="crop" />,
+    <Button fillMode="flat" key="sidebar-button-1" disabled icon="crop" />,
+    <Button fillMode="flat" key="sidebar-button-2" disabled icon="image-resize" />,
     <Button fillMode="flat" key="sidebar-button-3" disabled icon="rotate" />,
     <div className="k-separator" key="sidebar-separator-1" />,
     <Button fillMode="flat" key="sidebar-button-4" disabled icon="free-text" />,
@@ -28,9 +28,10 @@ const disabledSidebarItems = [
     <div className="k-separator" key="sidebar-separator-2" />,
     <Button fillMode="flat" key="sidebar-button-6" disabled icon="droplet" />,
     <Button fillMode="flat" key="sidebar-button-7" disabled icon="sliders" />,
+    <Button fillMode="flat" key="sidebar-button-8" disabled icon="filter" />,
     <div className="k-separator" key="sidebar-separator-3" />,
-    <Button fillMode="flat" key="sidebar-button-8" disabled icon="image" />,
-    <Button fillMode="flat" key="sidebar-button-9" disabled icon="brightness-contrast" />
+    <Button fillMode="flat" key="sidebar-button-9" disabled icon="borders-all" />,
+    <Button fillMode="flat" key="sidebar-button-10" disabled icon="bring-to-back" />
 ];
 
 // Non-editable state (Empty, Loading, Error): only the upload action is available,
