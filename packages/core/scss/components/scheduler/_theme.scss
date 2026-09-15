@@ -147,6 +147,11 @@
         &.k-event-ongoing {
             @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
         }
+
+        .k-event-time,
+        .k-event-all-day-time {
+            color: $kendo-scheduler-event-time-text;
+        }
     }
 
     // Read-only events

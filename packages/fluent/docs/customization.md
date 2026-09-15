@@ -29417,6 +29417,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-scheduler-event-time-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-event-time-text, k-color(primary-subtle) )</code></td>
+    <td><code>var(--kendo-scheduler-event-time-text, var(--kendo-color-primary-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler event time labels.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-scheduler-event-template-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-padding-x, k-spacing(2) )</code></td>

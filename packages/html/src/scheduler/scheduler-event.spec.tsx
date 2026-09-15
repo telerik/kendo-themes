@@ -29,6 +29,12 @@ export type KendoSchedulerEventProps = {
   continuationBottom?: boolean;
   title?: string;
   time?: string;
+  /** Renders the single-row all-day layout (`k-event-all-day`). Inferred automatically when `startTime` or `endTime` is set. */
+  allDayEvent?: boolean;
+  /** Start time label shown for all-day events, to the left of the title. Omitted when `continuationLeft` is set. */
+  startTime?: string;
+  /** End time label shown for all-day events, aligned to the right edge. Omitted when `continuationRight` is set. */
+  endTime?: string;
 };
 
 
@@ -41,7 +47,8 @@ export type KendoSchedulerEventProps = {
  * @ux {Overflow indicator} A count badge shows when multiple events overlap in the same slot.
  */
 export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTMLAttributes<HTMLDivElement>> = (props: KendoSchedulerEventProps & React.HTMLAttributes<HTMLDivElement>) => {
-  const { inverse, ongoing, readonly, title, time, recurring, resizable = defaultOptions.resizable, hover, focus, selected, continuationLeft, continuationRight, continuationTop, continuationBottom, ...others } = props;
+  const { inverse, ongoing, readonly, title, time, allDayEvent, startTime, endTime, recurring, resizable = defaultOptions.resizable, hover, focus, selected, continuationLeft, continuationRight, continuationTop, continuationBottom, ...others } = props;
+  const isAllDay = allDayEvent || startTime !== undefined || endTime !== undefined;
 
   return (
     <div
@@ -58,6 +65,7 @@ export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTM
           "k-event-inverse": inverse,
           "k-event-ongoing": ongoing,
           "k-readonly": readonly,
+          "k-event-all-day": isAllDay,
         },
       )}
       role="button"
@@ -70,31 +78,41 @@ export const SchedulerEvent: KendoComponent<KendoSchedulerEventProps & React.HTM
         </span>
       )}
       <div>
-        {continuationTop && (
-          <span className="k-event-continuation">
-            <Icon icon="chevron-up" />
-          </span>
-        )}
-        {title && <div className="k-event-template k-event-title">{title}</div>}
-        {time && (
-          <div className="k-event-template k-event-time">
-            {recurring === "recurring" && (
-              <span className="k-event-recurrence-icon">
-                <Icon size="small" icon="arrow-rotate-cw" />
+        {isAllDay ? (
+          <>
+            {!continuationLeft && startTime && <span className="k-event-all-day-time">{startTime}</span>}
+            {title && <div className="k-event-template k-event-title">{title}</div>}
+            {!continuationRight && endTime && <span className="k-event-all-day-time">{endTime}</span>}
+          </>
+        ) : (
+          <>
+            {continuationTop && (
+              <span className="k-event-continuation">
+                <Icon icon="chevron-up" />
               </span>
             )}
-            {recurring === "non-recurring" && (
-              <span className="k-event-recurrence-icon">
-                <Icon size="small" icon="arrows-no-repeat" />
+            {title && <div className="k-event-template k-event-title">{title}</div>}
+            {time && (
+              <div className="k-event-template k-event-time">
+                {recurring === "recurring" && (
+                  <span className="k-event-recurrence-icon">
+                    <Icon size="small" icon="arrow-rotate-cw" />
+                  </span>
+                )}
+                {recurring === "non-recurring" && (
+                  <span className="k-event-recurrence-icon">
+                    <Icon size="small" icon="arrows-no-repeat" />
+                  </span>
+                )}
+                {time}
+              </div>
+            )}
+            {continuationBottom && (
+              <span className="k-event-continuation">
+                <Icon icon="chevron-down" />
               </span>
             )}
-            {time}
-          </div>
-        )}
-        {continuationBottom && (
-          <span className="k-event-continuation">
-            <Icon icon="chevron-down" />
-          </span>
+          </>
         )}
       </div>
       {recurring === "recurring" && (
