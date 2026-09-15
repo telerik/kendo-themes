@@ -29506,6 +29506,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-segmented-control-default-roundness</td>
+    <td>String</td>
+    <td><code>"full"</code></td>
+    <td><code>"full"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the Segmented Control.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-segmented-control-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
