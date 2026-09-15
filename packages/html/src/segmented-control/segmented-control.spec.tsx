@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../misc';
+import { classNames, optionClassNames, Roundness, Size } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { SEGMENTED_CONTROL_FOLDER_NAME, SEGMENTED_CONTROL_MODULE_NAME } from './constants';
@@ -7,11 +7,13 @@ export const SEGMENTED_CONTROL_CLASSNAME = `k-segmented-control`;
 const states = [];
 
 const options = {
-    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
+    size: [ Size.undefined, Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ]
 };
 
 export type KendoSegmentedControlOptions = {
     size?: (typeof options.size)[number] | null;
+    rounded?: (typeof options.rounded)[number] | null;
 };
 
 export type KendoSegmentedControlProps = KendoSegmentedControlOptions & {
@@ -37,6 +39,7 @@ export const SegmentedControl: KendoComponent<KendoSegmentedControlProps & Kendo
 ) => {
     const {
         size,
+        rounded,
         stretched,
         children,
         thumbStyles,
@@ -50,7 +53,8 @@ export const SegmentedControl: KendoComponent<KendoSegmentedControlProps & Kendo
                 props.className,
                 SEGMENTED_CONTROL_CLASSNAME,
                 optionClassNames(SEGMENTED_CONTROL_CLASSNAME, {
-                    size
+                    size,
+                    rounded
                 }),
                 {
                     [`${SEGMENTED_CONTROL_CLASSNAME}-stretched`]: stretched
