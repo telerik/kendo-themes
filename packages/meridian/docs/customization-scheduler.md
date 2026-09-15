@@ -288,6 +288,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-scheduler-event-time-text</td>
+    <td>String</td>
+    <td><code>k-color(secondary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Scheduler event time labels.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-scheduler-event-bg</td>
     <td>String</td>
     <td><code>k-color(secondary-subtle)</code></td>
@@ -410,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-resize-handle-bg</td>
     <td>String</td>
-    <td><code>$kendo-scheduler-event-bg</code></td>
-    <td><code>var(--kendo-color-secondary-subtle)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler resize handle.</div></div>
