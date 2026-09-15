@@ -1,653 +1,652 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             max-width: 800px;
             grid-template-columns: 80px repeat(2, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>TextBox</span>
-        <span>TextBox RTL</span>
-        <span>normal</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span></span>
+            <span>TextBox</span>
+            <span>TextBox RTL</span>
+            <span>normal</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
                 </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>placeholder</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>normal</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>hover</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-hover">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-hover">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>focus</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-focus">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-focus">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>valid</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>invalid</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp k-invalid">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp k-invalid">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>required</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid" required="">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>disabled</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>readonly</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
+                            <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>invalid focus</span>
+            <div>
+                <div aria-label="One-time password" role="group" class="k-otp k-invalid">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid k-focus">
+                            <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div aria-label="One-time password" role="group" class="k-otp k-invalid">
+                    <input aria-hidden="true" type="hidden">
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid k-focus">
+                            <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
+                    <div class="k-otp-separator">-</div>
+                    <div class="k-input-group k-input-group-solid">
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                        <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
+                            <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>placeholder</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="#" autocomplete="off" type="text" value="">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>normal</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>hover</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-hover">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-hover">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>focus</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-focus">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-focus">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>valid</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-valid">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>invalid</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp k-invalid">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp k-invalid">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>required</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid" required="">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>disabled</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-disabled">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>readonly</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 1 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 2 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 3 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 4 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 5 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-readonly">
-                        <input aria-label="Digit 6 of 6" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <span>invalid focus</span>
-        <div>
-            <div aria-label="One-time password" role="group" class="k-otp k-invalid">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid k-focus">
-                        <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div aria-label="One-time password" role="group" class="k-otp k-invalid">
-                <input aria-hidden="true" type="hidden">
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid k-focus">
-                        <input aria-label="Digit 1 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 2 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 3 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-                <div class="k-otp-separator">-</div>
-                <div class="k-input-group k-input-group-solid">
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 4 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 5 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                    <span class="k-otp-input k-textbox k-input k-input-solid k-invalid">
-                        <input aria-label="Digit 6 of 6" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1">
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

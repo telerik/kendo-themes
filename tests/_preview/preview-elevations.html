@@ -1,26 +1,26 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             max-width: unset;
             padding: 40px;
-        }
-        .elevation-grid {
+            }
+            .elevation-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             gap: 24px;
-        }
-        .elevation-surface-card {
+            }
+            .elevation-surface-card {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -30,37 +30,36 @@
             min-height: 120px;
             border: 1px solid var(--kendo-color-border, rgba(0, 0, 0, 0.08));
             background: var(--kendo-color-app-surface);
-        }
-
-    </style>
-    <div id="test-area">
-        <div class="k-font-size-lg k-mb-6 k-font-bold">Elevations - Background + Border + Box Shadow</div>
-        <div class="elevation-grid">
-            <div class="elevation-surface-card">
-                <div class="k-font-size-xl k-font-bold">0</div>
-                <div>No Elevation</div>
-            </div>
-            <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 1 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-1);">
-                <div class="k-font-size-xl k-font-bold">1</div>
-                <div>Elevation</div>
-            </div>
-            <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-2);">
-                <div class="k-font-size-xl k-font-bold">2</div>
-                <div>Elevation</div>
-            </div>
-            <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 3 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 3 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 3 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-3);">
-                <div class="k-font-size-xl k-font-bold">3</div>
-                <div>Elevation</div>
-            </div>
-            <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 4 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 4 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 4 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-4);">
-                <div class="k-font-size-xl k-font-bold">4</div>
-                <div>Elevation</div>
-            </div>
-            <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 5 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 5 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 5 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-5);">
-                <div class="k-font-size-xl k-font-bold">5</div>
-                <div>Elevation</div>
+            }
+        </style>
+        <div id="test-area">
+            <div class="k-font-size-lg k-mb-6 k-font-bold">Elevations - Background + Border + Box Shadow</div>
+            <div class="elevation-grid">
+                <div class="elevation-surface-card">
+                    <div class="k-font-size-xl k-font-bold">0</div>
+                    <div>No Elevation</div>
+                </div>
+                <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 1 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 1 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 1 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-1);">
+                    <div class="k-font-size-xl k-font-bold">1</div>
+                    <div>Elevation</div>
+                </div>
+                <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 2 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 2 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 2 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-2);">
+                    <div class="k-font-size-xl k-font-bold">2</div>
+                    <div>Elevation</div>
+                </div>
+                <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 3 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 3 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 3 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-3);">
+                    <div class="k-font-size-xl k-font-bold">3</div>
+                    <div>Elevation</div>
+                </div>
+                <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 4 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 4 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 4 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-4);">
+                    <div class="k-font-size-xl k-font-bold">4</div>
+                    <div>Elevation</div>
+                </div>
+                <div class="elevation-surface-card" style="background: oklch(from var(--kendo-color-app-surface) calc(l + 5 * 0.015 * clamp(0, (0.5 - l) * 99999, 1)) calc(c + 5 * 0.001 * clamp(0, (0.5 - l) * 99999, 1)) h); border-color: oklch(from var(--kendo-color-border) l c h / calc(alpha + 5 * 10 / 100 * clamp(0, (l - 0.5) * 99999, 1))); box-shadow: var(--kendo-elevation-5);">
+                    <div class="k-font-size-xl k-font-bold">5</div>
+                    <div>Elevation</div>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,3 +1,29 @@
+## 14.5.1-dev.3 (2026-09-14)
+
+### 🩹 Fixes
+
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+
+## 14.5.1-dev.2 (2026-09-08)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.1 (2026-08-31)
+
+### 🩹 Fixes
+
+- **charts:** restore chart tooltip to color-white/color-black ([#5664](https://github.com/telerik/kendo-themes/issues/5664))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.5.1-dev.0 (2026-08-17)
 
 This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.

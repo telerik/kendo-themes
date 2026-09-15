@@ -1,3 +1,29 @@
+## 14.5.1-dev.3 (2026-09-14)
+
+### 🩹 Fixes
+
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+- **coloreditor:** bump min-width to match actual widest view content ([886d25df5d](https://github.com/telerik/kendo-themes/commit/886d25df5d))
+
+## 14.5.1-dev.2 (2026-09-08)
+
+### 🚀 Features
+
+- **diagram:** add rich text editor styles ([60ba64c2e1](https://github.com/telerik/kendo-themes/commit/60ba64c2e1))
+
+### 🩹 Fixes
+
+- **spreadsheet:** prevent clipped focus outline on menu items in meridian ([47f9eaef9d](https://github.com/telerik/kendo-themes/commit/47f9eaef9d))
+
+## 14.5.1-dev.1 (2026-08-31)
+
+### 🩹 Fixes
+
+- **charts:** restore chart tooltip to color-white/color-black ([#5664](https://github.com/telerik/kendo-themes/issues/5664))
+- **scheduler:** correct event resize handle box-sizing ([583751d2af](https://github.com/telerik/kendo-themes/commit/583751d2af))
+- **scheduler:** resize handles should stay below the sticky scheduler header ([efd10d84a5](https://github.com/telerik/kendo-themes/commit/efd10d84a5))
+- **scheduler:** time and event are misaligned in agenda view ([378a82e05a](https://github.com/telerik/kendo-themes/commit/378a82e05a))
+
 ## 14.5.1-dev.0 (2026-08-17)
 
 ### 🩹 Fixes

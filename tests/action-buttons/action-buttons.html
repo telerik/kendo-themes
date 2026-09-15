@@ -1,190 +1,189 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        .k-actions {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-actions {
             outline: 1px dotted;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <span>start</span>
-        <span>end</span>
-        <span>center</span>
-        <div>
-            <div class="k-actions k-actions-start k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-3">
+            <span>start</span>
+            <span>end</span>
+            <span>center</span>
+            <div>
+                <div class="k-actions k-actions-start k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="k-actions k-actions-end k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="k-actions k-actions-center k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <span>stretch</span>
+            <span>justify</span>
+            <span>orientation - vertical</span>
+            <div>
+                <div class="k-actions k-actions-stretched k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="k-actions k-actions-justify k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="k-actions k-actions-start k-actions-vertical">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <span>rtl start</span>
+            <span>rtl end</span>
+            <span>rtl center</span>
+            <div dir="rtl">
+                <div class="k-actions k-actions-start k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div class="k-actions k-actions-end k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div class="k-actions k-actions-center k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <span>rtl stretch</span>
+            <span>rtl justify</span>
+            <span>rtl orientation - vertical</span>
+            <div dir="rtl">
+                <div class="k-actions k-actions-stretched k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div class="k-actions k-actions-justify k-actions-horizontal">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
+            </div>
+            <div dir="rtl">
+                <div class="k-actions k-actions-start k-actions-vertical">
+                    <button class="k-button">
+                        <span class="k-button-text">First</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Second</span>
+                    </button>
+                    <button class="k-button">
+                        <span class="k-button-text">Third</span>
+                    </button>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="k-actions k-actions-end k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <div>
-            <div class="k-actions k-actions-center k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <span>stretch</span>
-        <span>justify</span>
-        <span>orientation - vertical</span>
-        <div>
-            <div class="k-actions k-actions-stretched k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <div>
-            <div class="k-actions k-actions-justify k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <div>
-            <div class="k-actions k-actions-start k-actions-vertical">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <span>rtl start</span>
-        <span>rtl end</span>
-        <span>rtl center</span>
-        <div dir="rtl">
-            <div class="k-actions k-actions-start k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div class="k-actions k-actions-end k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div class="k-actions k-actions-center k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <span>rtl stretch</span>
-        <span>rtl justify</span>
-        <span>rtl orientation - vertical</span>
-        <div dir="rtl">
-            <div class="k-actions k-actions-stretched k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div class="k-actions k-actions-justify k-actions-horizontal">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-        <div dir="rtl">
-            <div class="k-actions k-actions-start k-actions-vertical">
-                <button class="k-button">
-                    <span class="k-button-text">First</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Second</span>
-                </button>
-                <button class="k-button">
-                    <span class="k-button-text">Third</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

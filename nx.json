@@ -89,7 +89,9 @@
         "stageChanges": true
       }
     },
-    "releaseTagPattern": "v{version}"
+    "releaseTag": {
+      "pattern": "v{version}"
+    }
   },
   "analytics": false
 }
