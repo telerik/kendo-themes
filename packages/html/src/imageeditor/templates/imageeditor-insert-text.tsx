@@ -127,12 +127,12 @@ export const ImageEditorInsertText = (props: any) => (
                         whiteSpace: "nowrap"
                     }}>Text Example</p>
                     <ImageEditorResizeHandles variant="mixed" />
-                    <FloatingToolbar offset={{ top: "72px", left: "0" }}>
-                        <Button icon="copy" aria-label="Duplicate"></Button>
-                        <Button icon="pencil" aria-label="Edit"></Button>
-                        <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
-                        <Button icon="flip-vertical" aria-label="Flip Vertical"></Button>
-                        <Button icon="trash" aria-label="Delete"></Button>
+                    <FloatingToolbar fillMode="flat" offset={{ top: "72px", left: "0" }}>
+                        <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
+                        <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
+                        <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                        <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                        <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
                     </FloatingToolbar>
                 </div>
             </>

@@ -71,11 +71,11 @@ export const ImageEditorResize = (props: any) => (
                 <div className="k-imageeditor-resize">
                     <ImageEditorResizeHandles variant="mixed" />
                 </div>
-                <FloatingToolbar style={{ position: "absolute", insetBlockEnd: "-64px", insetInlineEnd: "10px" }}>
-                    <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
-                    <Button icon="flip-vertical" aria-label="Flip Vertical"></Button>
-                    <Button icon="download" aria-label="Download"></Button>
-                    <Button icon="trash" aria-label="Delete"></Button>
+                <FloatingToolbar fillMode="flat" style={{ position: "absolute", insetBlockEnd: "-64px", insetInlineEnd: "10px" }}>
+                    <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                    <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                    <Button fillMode="flat" icon="download" aria-label="Download"></Button>
+                    <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
                 </FloatingToolbar>
                 <Tooltip
                     themeColor="inverse"

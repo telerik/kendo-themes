@@ -121,12 +121,12 @@ export const ImageEditorInsertLine = (props: any) => (
                             background: "#fff", transform: "translate(-50%, -50%)"
                         }}></span>
                     </span>
-                    <FloatingToolbar resizable offset={{ top: "36px", left: "-10px" }}>
-                        <Button icon="copy" aria-label="Duplicate"></Button>
-                        <Button icon="pencil" aria-label="Edit"></Button>
-                        <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
-                        <Button icon="flip-vertical" aria-label="Flip Vertical"></Button>
-                        <Button icon="trash" aria-label="Delete"></Button>
+                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "36px", left: "-10px" }}>
+                        <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
+                        <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
+                        <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                        <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                        <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
                     </FloatingToolbar>
                 </div>
             </>
