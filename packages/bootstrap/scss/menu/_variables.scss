@@ -6,6 +6,11 @@
 
 // Menu
 
+/// The default size of the Menu.
+/// @group menu
+/// @role default
+$kendo-menu-default-size: "md" !default;
+
 /// The default size of the Menu group.
 /// @group menu
 /// @role default
@@ -24,6 +29,20 @@ $kendo-menu-font-size: var(--kendo-font-size) !default;
 /// The line height of the Menu used along with $kendo-font-size.
 /// @group menu
 $kendo-menu-line-height: var(--kendo-line-height) !default;
+
+/// The font size of the small Menu.
+/// @group menu
+$kendo-menu-sm-font-size: var(--kendo-font-size-sm) !default;
+/// The font size of the large Menu.
+/// @group menu
+$kendo-menu-lg-font-size: var(--kendo-font-size-lg) !default;
+
+/// The line height of the small Menu.
+/// @group menu
+$kendo-menu-sm-line-height: var(--kendo-line-height) !default;
+/// The line height of the large Menu.
+/// @group menu
+$kendo-menu-lg-line-height: var(--kendo-line-height) !default;
 
 /// The background color of the Menu.
 /// @group menu
@@ -48,10 +67,34 @@ $kendo-menu-item-padding-x: k-spacing(4) !default;
 $kendo-menu-item-padding-y: k-spacing(2) !default;
 /// The spacing between the Menu items.
 /// @group menu
-$kendo-menu-item-spacing: k-spacing(0) !default;
+$kendo-menu-item-spacing: null !default;
 /// The spacing between the Menu item text and icons.
 /// @group menu
 $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
+
+/// The font size of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-font-size: $kendo-list-item-description-font-size !default;
+/// The line height of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-line-height: $kendo-list-item-description-line-height !default;
+/// The text color of the Menu item description.
+/// @group menu
+$kendo-menu-item-description-text: $kendo-list-item-description-text !default;
+
+/// The horizontal padding of the small Menu item.
+/// @group menu
+$kendo-menu-sm-item-padding-x: k-spacing(4) !default;
+/// The horizontal padding of the large Menu item.
+/// @group menu
+$kendo-menu-lg-item-padding-x: k-spacing(4) !default;
+
+/// The vertical padding of the small Menu item.
+/// @group menu
+$kendo-menu-sm-item-padding-y: k-spacing(1.5) !default;
+/// The vertical padding of the large Menu item.
+/// @group menu
+$kendo-menu-lg-item-padding-y: k-spacing(2.5) !default;
 
 /// The font weight of the selected Menu item.
 /// @group menu
@@ -75,7 +118,7 @@ $kendo-menu-item-gradient: null !default;
 $kendo-menu-item-hover-bg: null !default;
 /// The text color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-text: color-mix(in srgb, k-color(on-app-surface) 93%, transparent) !default;
+$kendo-menu-item-hover-text: k-color(on-app-surface) !default;
 /// The border color of hovered Menu item.
 /// @group menu
 $kendo-menu-item-hover-border: null !default;
@@ -88,7 +131,7 @@ $kendo-menu-item-hover-gradient: null !default;
 $kendo-menu-item-active-bg: null !default;
 /// The text color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-text: color-mix(in srgb, k-color(on-app-surface) 100%, transparent) !default;
+$kendo-menu-item-active-text: k-color(on-app-surface) !default;
 /// The border color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-border: null !default;
@@ -105,7 +148,7 @@ $kendo-menu-item-focus-shadow: inset 0 0 0 3px color-mix(in srgb, k-color(on-app
 $kendo-menu-item-selected-bg: null !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: $kendo-menu-item-text !default;
+$kendo-menu-item-selected-text: k-color(on-app-surface) !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;
@@ -154,7 +197,7 @@ $kendo-menu-expand-arrow-spacing: k-spacing(2) !default;
 
 /// The inline margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-inline: k-spacing(1) !default;
+$kendo-menu-separator-margin-inline: k-spacing(2) !default;
 /// The block margin of the horizontal Menu separator.
 /// @group menu
 $kendo-menu-separator-margin-block: k-spacing(2) !default;
@@ -167,11 +210,11 @@ $kendo-menu-separator-border: k-color(border) !default;
 
 /// The horizontal padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-x: null !default;
+$kendo-menu-popup-padding-x: $kendo-list-container-padding-inline !default;
 
 /// The vertical padding of the Menu popup.
 /// @group menu
-$kendo-menu-popup-padding-y: null !default;
+$kendo-menu-popup-padding-y: $kendo-list-container-padding-block !default;
 
 /// The width of the border around the Menu popup.
 /// @group menu
@@ -215,23 +258,23 @@ $kendo-menu-popup-gradient: null !default;
 
 /// The horizontal padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-sm-item-padding-x: $kendo-list-sm-item-padding-x !default;
 /// The horizontal padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-md-item-padding-x: $kendo-list-md-item-padding-x !default;
 /// The horizontal padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-lg-item-padding-x: $kendo-list-lg-item-padding-x !default;
 
 /// The vertical padding of the small Menu popup item.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-y: k-spacing(0.5) !default;
+$kendo-menu-popup-sm-item-padding-y: $kendo-list-sm-item-padding-y !default;
 /// The vertical padding of the medium Menu popup item.
 /// @group menu
-$kendo-menu-popup-md-item-padding-y: k-spacing(1) !default;
+$kendo-menu-popup-md-item-padding-y: $kendo-list-md-item-padding-y !default;
 /// The vertical padding of the large Menu popup item.
 /// @group menu
-$kendo-menu-popup-lg-item-padding-y: k-spacing(1.5) !default;
+$kendo-menu-popup-lg-item-padding-y: $kendo-list-lg-item-padding-y !default;
 
 /// The end padding of the small Menu popup item.
 /// @group menu
@@ -265,7 +308,58 @@ $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-it
 
 /// The spacing between the Menu items in popup.
 /// @group menu
-$kendo-menu-popup-item-spacing: k-spacing(0) !default;
+$kendo-menu-popup-item-spacing: k-spacing(0.5) !default;
+
+/// The horizontal padding of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-padding-x: $kendo-list-sm-group-item-padding-x !default;
+/// The horizontal padding of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-padding-x: $kendo-list-md-group-item-padding-x !default;
+/// The horizontal padding of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-padding-x: $kendo-list-lg-group-item-padding-x !default;
+
+/// The vertical padding of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-padding-y: $kendo-list-sm-group-item-padding-y !default;
+/// The vertical padding of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-padding-y: $kendo-list-md-group-item-padding-y !default;
+/// The vertical padding of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-padding-y: $kendo-list-lg-group-item-padding-y !default;
+
+/// The font size of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-font-size: $kendo-list-item-group-label-sm-font-size !default;
+/// The font size of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-font-size: $kendo-list-item-group-label-md-font-size !default;
+/// The font size of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-font-size: $kendo-list-item-group-label-lg-font-size !default;
+
+/// The line height of the small Menu popup group header.
+/// @group menu
+$kendo-menu-popup-sm-group-header-line-height: $kendo-menu-popup-sm-line-height !default;
+/// The line height of the medium Menu popup group header.
+/// @group menu
+$kendo-menu-popup-md-group-header-line-height: $kendo-menu-popup-md-line-height !default;
+/// The line height of the large Menu popup group header.
+/// @group menu
+$kendo-menu-popup-lg-group-header-line-height: $kendo-menu-popup-lg-line-height !default;
+
+/// The font weight of the Menu popup group header.
+/// @group menu
+$kendo-menu-popup-group-header-font-weight: $kendo-list-group-item-font-weight !default;
+
+/// The background color of the Menu popup group header.
+/// @group menu
+$kendo-menu-popup-group-header-bg: $kendo-list-group-item-bg !default;
+/// The text color of the Menu popup group header.
+/// @group menu
+$kendo-menu-popup-group-header-text: $kendo-list-group-item-text !default;
 
 /// The background color of the Menu item in popup.
 /// @group menu
@@ -312,19 +406,31 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/menu/_variables.scss" with (
+    $kendo-menu-default-size: $kendo-menu-default-size,
     $kendo-menu-group-default-size: $kendo-menu-group-default-size,
     $kendo-menu-border-width: $kendo-menu-border-width,
     $kendo-menu-font-family: $kendo-menu-font-family,
     $kendo-menu-font-size: $kendo-menu-font-size,
     $kendo-menu-line-height: $kendo-menu-line-height,
+    $kendo-menu-sm-font-size: $kendo-menu-sm-font-size,
+    $kendo-menu-lg-font-size: $kendo-menu-lg-font-size,
+    $kendo-menu-sm-line-height: $kendo-menu-sm-line-height,
+    $kendo-menu-lg-line-height: $kendo-menu-lg-line-height,
     $kendo-menu-bg: $kendo-menu-bg,
     $kendo-menu-text: $kendo-menu-text,
     $kendo-menu-border: $kendo-menu-border,
     $kendo-menu-gradient: $kendo-menu-gradient,
     $kendo-menu-item-padding-x: $kendo-menu-item-padding-x,
     $kendo-menu-item-padding-y: $kendo-menu-item-padding-y,
+    $kendo-menu-sm-item-padding-x: $kendo-menu-sm-item-padding-x,
+    $kendo-menu-lg-item-padding-x: $kendo-menu-lg-item-padding-x,
+    $kendo-menu-sm-item-padding-y: $kendo-menu-sm-item-padding-y,
+    $kendo-menu-lg-item-padding-y: $kendo-menu-lg-item-padding-y,
     $kendo-menu-item-spacing: $kendo-menu-item-spacing,
     $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
+    $kendo-menu-item-description-font-size: $kendo-menu-item-description-font-size,
+    $kendo-menu-item-description-line-height: $kendo-menu-item-description-line-height,
+    $kendo-menu-item-description-text: $kendo-menu-item-description-text,
     $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
     $kendo-menu-item-bg: $kendo-menu-item-bg,
     $kendo-menu-item-text: $kendo-menu-item-text,
@@ -386,6 +492,21 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-popup-md-item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end,
     $kendo-menu-popup-lg-item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end,
     $kendo-menu-popup-item-spacing: $kendo-menu-popup-item-spacing,
+    $kendo-menu-popup-sm-group-header-padding-x: $kendo-menu-popup-sm-group-header-padding-x,
+    $kendo-menu-popup-md-group-header-padding-x: $kendo-menu-popup-md-group-header-padding-x,
+    $kendo-menu-popup-lg-group-header-padding-x: $kendo-menu-popup-lg-group-header-padding-x,
+    $kendo-menu-popup-sm-group-header-padding-y: $kendo-menu-popup-sm-group-header-padding-y,
+    $kendo-menu-popup-md-group-header-padding-y: $kendo-menu-popup-md-group-header-padding-y,
+    $kendo-menu-popup-lg-group-header-padding-y: $kendo-menu-popup-lg-group-header-padding-y,
+    $kendo-menu-popup-sm-group-header-font-size: $kendo-menu-popup-sm-group-header-font-size,
+    $kendo-menu-popup-md-group-header-font-size: $kendo-menu-popup-md-group-header-font-size,
+    $kendo-menu-popup-lg-group-header-font-size: $kendo-menu-popup-lg-group-header-font-size,
+    $kendo-menu-popup-sm-group-header-line-height: $kendo-menu-popup-sm-group-header-line-height,
+    $kendo-menu-popup-md-group-header-line-height: $kendo-menu-popup-md-group-header-line-height,
+    $kendo-menu-popup-lg-group-header-line-height: $kendo-menu-popup-lg-group-header-line-height,
+    $kendo-menu-popup-group-header-font-weight: $kendo-menu-popup-group-header-font-weight,
+    $kendo-menu-popup-group-header-bg: $kendo-menu-popup-group-header-bg,
+    $kendo-menu-popup-group-header-text: $kendo-menu-popup-group-header-text,
     $kendo-menu-popup-item-bg: $kendo-menu-popup-item-bg,
     $kendo-menu-popup-item-text: $kendo-menu-popup-item-text,
     $kendo-menu-popup-item-border: $kendo-menu-popup-item-border,

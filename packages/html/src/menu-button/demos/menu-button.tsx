@@ -44,9 +44,9 @@ export const MenuButtonDemo = (
   const popup = (
     <Popup className="k-menu-popup">
       <MenuList size={other.size}>
-      <MenuListItem first text="Menu Item"></MenuListItem>
       <MenuListItem text="Menu Item"></MenuListItem>
-      <MenuListItem last text="Menu Item"></MenuListItem>
+      <MenuListItem text="Menu Item"></MenuListItem>
+      <MenuListItem text="Menu Item"></MenuListItem>
       </MenuList>
     </Popup>
   );

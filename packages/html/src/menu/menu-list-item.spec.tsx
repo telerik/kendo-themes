@@ -19,14 +19,14 @@ export type KendoMenuListItemProps = {
     text?: string;
     icon?: string;
     iconPosition?: string;
-    first?: boolean;
-    last?: boolean;
     showArrow?: boolean;
     arrowIconName?: string;
     dir?: "rtl" | "ltr";
     children?: React.JSX.Element[];
     popup?: React.JSX.Element;
     expanded?: boolean;
+    actions?: React.JSX.Element;
+    description?: string;
 };
 
 export type KendoMenuListItemState = { [K in (typeof states)[number]]?: boolean };
@@ -52,8 +52,6 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
         disabled,
         icon,
         text,
-        first,
-        last,
         showArrow,
         arrowIconName,
         iconPosition = defaultOptions.iconPosition,
@@ -61,6 +59,8 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
         children,
         popup,
         expanded,
+        actions,
+        description,
         ...other
     } = props;
 
@@ -84,11 +84,7 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                 stateClassNames(MENULISTITEM_CLASSNAME, {
                     focus,
                     disabled
-                }),
-                {
-                    ["k-first"]: first,
-                    ["k-last"]: last,
-                }
+                })
             )}
             {...(showArrow && { 'aria-haspopup': 'menu' as const })}
             {...(showArrow && { 'aria-expanded': expanded ? 'true' : 'false' })}
@@ -109,7 +105,9 @@ export const MenuListItem: KendoComponent<KendoMenuListItemProps & KendoMenuList
                 {icon && iconPosition === 'before' && <Icon className="k-menu-link-icon" icon={icon} />}
                 <span className="k-menu-link-text">{text}</span>
                 {icon && iconPosition === 'after' && <Icon className="k-menu-link-icon" icon={icon} />}
+                {actions && <span className="k-menu-link-actions">{actions}</span>}
                 {showArrow && <span className="k-menu-expand-arrow" aria-hidden="true"><Icon icon={expandArrowName} /></span>}
+                {description && <span className="k-menu-link-description">{description}</span>}
             </span>
             {children}
             {popup}
