@@ -100,7 +100,6 @@
         // Overflow anchor
         .k-toolbar-overflow-button {
             margin-inline-start: auto;
-            border-radius: 0;
         }
 
         // Overflow separator
@@ -338,7 +337,7 @@
             width: 100%;
             height: auto;
             border-width: 0;
-            border-radius: 0;
+            border-radius: $kendo-toolbar-overflow-button-border-radius;
             aspect-ratio: auto;
             color: inherit;
             background-color: transparent;
