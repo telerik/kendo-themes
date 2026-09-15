@@ -94,6 +94,11 @@ $kendo-scheduler-event-time-padding-top: k-spacing(0.5) !default;
 /// The bottom padding of the Scheduler event time.
 /// @group scheduler
 $kendo-scheduler-event-time-padding-bottom: k-spacing(0.5) !default;
+
+/// The text color of the Scheduler event time labels.
+/// @group scheduler
+$kendo-scheduler-event-time-text: var( --kendo-scheduler-event-time-text, k-color(primary-subtle) ) !default;
+
 /// The horizontal padding of the Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-template-padding-x: var( --kendo-scheduler-event-padding-x, k-spacing(2) ) !default;
@@ -327,6 +332,7 @@ $kendo-scheduler-recurrence-fields-row-gap: k-spacing(3) !default;
     $kendo-scheduler-event-time-line-height: $kendo-scheduler-event-time-line-height,
     $kendo-scheduler-event-time-padding-top: $kendo-scheduler-event-time-padding-top,
     $kendo-scheduler-event-time-padding-bottom: $kendo-scheduler-event-time-padding-bottom,
+    $kendo-scheduler-event-time-text: $kendo-scheduler-event-time-text,
     $kendo-scheduler-event-bg: $kendo-scheduler-event-bg,
     $kendo-scheduler-event-text: $kendo-scheduler-event-text,
     $kendo-scheduler-event-border: $kendo-scheduler-event-border,
