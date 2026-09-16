@@ -25005,8 +25005,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(secondary-hover)</code></td>
-    <td><code>var(--kendo-color-secondary-hover)</code></td>
+    <td><code>$kendo-panelbar-header-selected-bg</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar header.</div></div>
@@ -25014,9 +25014,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-panelbar-header-selected-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-panelbar-header-selected-text</code></td>
+    <td><code>var(--kendo-color-on-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered PanelBar header.</div></div>
@@ -25025,7 +25025,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25035,7 +25035,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25085,8 +25085,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(secondary), k-color(secondary-emphasis))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-secondary), var(--kendo-color-secondary-emphasis))</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-bg</code></td>
+    <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected, hovered and focused PanelBar header.</div></div>
@@ -25095,7 +25095,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-text</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-text</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25105,7 +25105,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25115,7 +25115,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25295,8 +25295,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-selected-hover-bg</code></td>
-    <td><code>var(--kendo-color-secondary-hover)</code></td>
+    <td><code>$kendo-panelbar-item-selected-bg</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar items.</div></div>
@@ -25305,7 +25305,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-text</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-text</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25315,7 +25315,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25325,7 +25325,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25375,8 +25375,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-panelbar-header-selected-hover-focus-bg</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-secondary), var(--kendo-color-secondary-emphasis))</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-bg</code></td>
+    <td><code>var(--kendo-color-secondary-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected, hovered and focused PanelBar items.</div></div>
@@ -25385,7 +25385,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-text</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-text</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25395,7 +25395,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -25405,7 +25405,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
