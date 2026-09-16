@@ -36,6 +36,11 @@ jobs:
         with:
           ref: gh-pages
           fetch-depth: 1
+          sparse-checkout: |
+            reports
+            index.html
+            favicon.ico
+            .nojekyll
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
@@ -44,7 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: .
-          include-hidden-files: true
+          include-hidden-files: false
 
       - name: Deploy to GitHub Pages
         id: deployment
