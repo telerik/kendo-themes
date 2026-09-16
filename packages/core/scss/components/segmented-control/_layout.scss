@@ -1,6 +1,8 @@
 @use "sass:map";
 @use "./variables.scss" as *;
 @use "../../functions/index.scss" as *;
+@use "../../mixins/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "../icons/_variables.scss" as *;
 
@@ -20,6 +22,28 @@
         scrollbar-width: none;
         white-space: nowrap;
         box-sizing: border-box;
+
+        .k-segmented-control-thumb,
+        .k-segmented-control-button {
+            border-radius: inherit;
+        }
+
+        // Roundness
+        @each $roundness in $kendo-segmented-control-roundness {
+            #{k-when-default($kendo-segmented-control-default-roundness, $roundness)}
+            &.k-rounded-#{$roundness} {
+
+                @if $roundness != "full" {
+                    @include concentric-radius(
+                        k-border-radius($roundness),
+                        $kendo-segmented-control-padding-y,
+                        ".k-segmented-control-thumb, .k-segmented-control-button"
+                    );
+                } else {
+                    border-radius: k-border-radius($roundness);
+                }
+            }
+        }
 
         // Sizes
         @each $size, $size-props in $kendo-segmented-control-sizes {
