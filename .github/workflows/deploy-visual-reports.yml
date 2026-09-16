@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      deployments: read
       pages: write
       id-token: write
     environment:
@@ -50,6 +51,43 @@ jobs:
         with:
           path: .
           include-hidden-files: false
+
+      # gh-pages updates land every couple of minutes, so successive runs of
+      # this workflow queue up behind the concurrency group above. GitHub's
+      # Pages API still rejects a new deployment if the previous one hasn't
+      # been marked terminal yet, failing with "due to in progress
+      # deployment". Wait it out instead of racing it.
+      - name: Wait for any in-progress Pages deployment
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const maxAttempts = 20;
+            const waitMs = 15000;
+            for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+              const { data: deployments } = await github.rest.repos.listDeployments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                environment: 'github-pages',
+                per_page: 1,
+              });
+              if (deployments.length === 0) {
+                core.info('No prior Pages deployment found; proceeding.');
+                break;
+              }
+              const { data: statuses } = await github.rest.repos.listDeploymentStatuses({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployments[0].id,
+                per_page: 1,
+              });
+              const state = statuses[0]?.state;
+              if (!state || ['success', 'failure', 'error', 'inactive'].includes(state)) {
+                core.info(`Latest Pages deployment ${deployments[0].id} is "${state ?? 'unknown'}"; proceeding.`);
+                break;
+              }
+              core.info(`Latest Pages deployment ${deployments[0].id} is "${state}" (attempt ${attempt}/${maxAttempts}); waiting ${waitMs / 1000}s.`);
+              await new Promise((resolve) => setTimeout(resolve, waitMs));
+            }
 
       - name: Deploy to GitHub Pages
         id: deployment
