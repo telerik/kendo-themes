@@ -27,6 +27,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     permissions:
+      actions: read         # verify this is the latest CI run for the branch
       contents: write        # push baseline + report to gh-pages
       pull-requests: write   # post the PR comment
     outputs:
@@ -84,19 +85,24 @@ jobs:
         uses: actions/github-script@v9
         with:
           script: |
-            // Cover the common first-push race cheaply here. The PR lifecycle
-            // reconciler handles PRs opened after this bounded wait expires.
+            // Resolve by branch rather than exact SHA: render-test-pages may
+            // push a generated-preview commit with GITHUB_TOKEN while this CI
+            // run continues, and that push intentionally does not start CI.
+            // The lifecycle reconciler handles PRs opened after this bounded
+            // wait expires.
+            const { owner, repo } = context.repo;
+            const branch = context.ref.replace('refs/heads/', '');
             let openPr;
             for (let attempt = 1; attempt <= 6; attempt++) {
-              const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                commit_sha: context.sha,
+              const { data: prs } = await github.rest.pulls.list({
+                owner,
+                repo,
+                state: 'open',
+                head: `${owner}:${branch}`,
               });
               openPr = prs.find(pr =>
-                pr.state === 'open' &&
-                pr.head.sha === context.sha &&
-                pr.head.repo?.full_name === `${context.repo.owner}/${context.repo.repo}`
+                pr.head.ref === branch &&
+                pr.head.repo?.full_name === `${owner}/${repo}`
               );
               if (openPr || attempt === 6) break;
               core.info(`No open PR found (attempt ${attempt}/6); retrying in 5 seconds.`);
@@ -205,11 +211,28 @@ jobs:
           PR_NUMBER: ${{ steps.resolve-report-key.outputs.pr-number }}
         with:
           script: |
+            const { owner, repo } = context.repo;
+            const branch = context.ref.replace('refs/heads/', '');
             const { data: pr } = await github.rest.pulls.get({
-              ...context.repo,
+              owner,
+              repo,
               pull_number: Number(process.env.PR_NUMBER),
             });
-            core.setOutput('current', String(pr.state === 'open' && pr.head.sha === context.sha));
+            const { data: runs } = await github.rest.actions.listWorkflowRuns({
+              owner,
+              repo,
+              workflow_id: 'ci.yml',
+              branch,
+              event: 'push',
+              per_page: 1,
+            });
+            const latestRun = runs.workflow_runs[0];
+            const current =
+              pr.state === 'open' &&
+              pr.head.ref === branch &&
+              pr.head.repo?.full_name === `${owner}/${repo}` &&
+              String(latestRun?.id) === String(context.runId);
+            core.setOutput('current', String(current));
 
       # A PR can close or receive another push after report-key resolution.
       # Remove this run's report only when its source marker still matches, so

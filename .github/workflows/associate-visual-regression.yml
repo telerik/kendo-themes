@@ -28,6 +28,7 @@ jobs:
        github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       contents: write
       pull-requests: write
     steps:
@@ -38,33 +39,51 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const isPrEvent = context.eventName === 'pull_request_target';
-            const sha = isPrEvent
-              ? context.payload.pull_request.head.sha
-              : context.payload.workflow_run.head_sha;
+            const branch = isPrEvent
+              ? context.payload.pull_request.head.ref
+              : context.payload.workflow_run.head_branch;
             let pr = isPrEvent ? context.payload.pull_request : undefined;
+            let ciRun = isPrEvent ? undefined : context.payload.workflow_run;
 
             if (!pr) {
-              const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
-                owner, repo, commit_sha: sha,
+              const { data: prs } = await github.rest.pulls.list({
+                owner,
+                repo,
+                state: 'open',
+                head: `${owner}:${branch}`,
               });
-              const matching = prs.filter(candidate =>
-                candidate.head.sha === sha &&
+              pr = prs.find(candidate =>
+                candidate.head.ref === branch &&
                 candidate.head.repo?.full_name === `${owner}/${repo}`
               );
-              pr = matching.find(candidate => candidate.state === 'open') || matching[0];
             }
 
             if (!pr) {
-              core.info('No PR points at this commit; nothing to reconcile.');
+              core.info('No open PR points at this branch; nothing to reconcile.');
+              return;
+            }
+
+            if (!ciRun) {
+              const { data: runs } = await github.rest.actions.listWorkflowRuns({
+                owner,
+                repo,
+                workflow_id: 'ci.yml',
+                branch,
+                event: 'push',
+                per_page: 1,
+              });
+              ciRun = runs.workflow_runs[0];
+            }
+
+            if (!ciRun) {
+              core.info('No CI run found for this branch; nothing to reconcile.');
               return;
             }
 
             core.setOutput('pr-number', String(pr.number));
-            core.setOutput('sha', sha);
-            core.setOutput(
-              'mode',
-              pr.state === 'open' && pr.head.sha === sha ? 'associate' : 'cleanup'
-            );
+            core.setOutput('sha', ciRun.head_sha);
+            core.setOutput('branch', branch);
+            core.setOutput('ci-run-id', String(ciRun.id));
 
       - name: Wait for a published report
         id: report
@@ -128,54 +147,39 @@ jobs:
             reports/pr-${{ steps.resolve.outputs.pr-number }}
           sparse-checkout-cone-mode: false
 
-      - name: Confirm pull request still points at commit
+      - name: Confirm report is for latest branch CI
         id: current
-        if: steps.report.outputs.location != '' && steps.resolve.outputs.mode == 'associate'
+        if: steps.report.outputs.location != ''
         uses: actions/github-script@v9
         env:
           PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
-          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+          HEAD_BRANCH: ${{ steps.resolve.outputs.branch }}
+          CI_RUN_ID: ${{ steps.resolve.outputs.ci-run-id }}
         with:
           script: |
+            const { owner, repo } = context.repo;
             const { data: pr } = await github.rest.pulls.get({
-              ...context.repo,
+              owner,
+              repo,
               pull_number: Number(process.env.PR_NUMBER),
+            });
+            const { data: runs } = await github.rest.actions.listWorkflowRuns({
+              owner,
+              repo,
+              workflow_id: 'ci.yml',
+              branch: process.env.HEAD_BRANCH,
+              event: 'push',
+              per_page: 1,
             });
             core.setOutput(
               'matches',
-              String(pr.state === 'open' && pr.head.sha === process.env.REPORT_SHA)
+              String(
+                pr.state === 'open' &&
+                pr.head.ref === process.env.HEAD_BRANCH &&
+                pr.head.repo?.full_name === `${owner}/${repo}` &&
+                String(runs.workflow_runs[0]?.id) === process.env.CI_RUN_ID
+              )
             );
-
-      - name: Remove report for closed pull request
-        id: closed-cleanup
-        if: steps.report.outputs.location != '' && steps.resolve.outputs.mode == 'cleanup'
-        env:
-          PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
-          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
-        run: |
-          removed=false
-          for target_dir in "reports/$REPORT_SHA" "reports/pr-$PR_NUMBER"; do
-            if [ -f "$target_dir/.source-sha" ] &&
-               [ "$(cat "$target_dir/.source-sha")" = "$REPORT_SHA" ]; then
-              git rm -r "$target_dir"
-              removed=true
-            fi
-          done
-
-          if [ "$removed" != "true" ]; then
-            echo "No report owned by this commit remains."
-            exit 0
-          fi
-
-          git config user.name "kendo-bot"
-          git config user.email "kendouiteam@progress.com"
-          git commit -m "chore(ci): remove visual report for closed PR #$PR_NUMBER"
-          for attempt in 1 2 3; do
-            git push origin HEAD:gh-pages && break
-            [ "$attempt" -eq 3 ] && exit 1
-            git pull --rebase origin gh-pages
-          done
-          echo "removed=true" >> "$GITHUB_OUTPUT"
 
       - name: Move commit report to pull request
         id: move
@@ -216,16 +220,32 @@ jobs:
         uses: actions/github-script@v9
         env:
           PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
-          REPORT_SHA: ${{ steps.resolve.outputs.sha }}
+          HEAD_BRANCH: ${{ steps.resolve.outputs.branch }}
+          CI_RUN_ID: ${{ steps.resolve.outputs.ci-run-id }}
         with:
           script: |
+            const { owner, repo } = context.repo;
             const { data: pr } = await github.rest.pulls.get({
-              ...context.repo,
+              owner,
+              repo,
               pull_number: Number(process.env.PR_NUMBER),
+            });
+            const { data: runs } = await github.rest.actions.listWorkflowRuns({
+              owner,
+              repo,
+              workflow_id: 'ci.yml',
+              branch: process.env.HEAD_BRANCH,
+              event: 'push',
+              per_page: 1,
             });
             core.setOutput(
               'matches',
-              String(pr.state === 'open' && pr.head.sha === process.env.REPORT_SHA)
+              String(
+                pr.state === 'open' &&
+                pr.head.ref === process.env.HEAD_BRANCH &&
+                pr.head.repo?.full_name === `${owner}/${repo}` &&
+                String(runs.workflow_runs[0]?.id) === process.env.CI_RUN_ID
+              )
             );
 
       - name: Remove stale moved report
@@ -248,9 +268,7 @@ jobs:
           git push origin HEAD:gh-pages
 
       - name: Repair reports index
-        if: >-
-          (steps.move.outputs.moved == 'true' && steps.final.outputs.matches == 'true') ||
-          steps.closed-cleanup.outputs.removed == 'true'
+        if: steps.move.outputs.moved == 'true' && steps.final.outputs.matches == 'true'
         uses: actions/github-script@v9
         with:
           script: |
@@ -316,7 +334,7 @@ jobs:
             const markerPath = `${reportDir}/.source-sha`;
             if (!fs.existsSync(markerPath) ||
                 fs.readFileSync(markerPath, 'utf8').trim() !== process.env.REPORT_SHA) {
-              core.info('The PR report does not match the current head commit; skipping comment.');
+              core.info('The PR report does not match the expected CI run; skipping comment.');
               return;
             }
 
