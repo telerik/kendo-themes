@@ -1,0 +1,37 @@
+@use "./_variables.scss" as *;
+@use "../../spacing/index.scss" as *;
+@use "../../typography/index.scss" as *;
+
+@mixin kendo-floating-toolbar--layout-base() {
+
+    // Base
+    .k-floating-toolbar {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        max-width: fit-content;
+        border-radius: $kendo-floating-toolbar-border-radius;
+
+        .k-toolbar {
+            flex: 1 1 auto;
+            min-width: 0;
+            border-width: 0;
+            border-radius: inherit;
+        }
+        .k-floating-toolbar-drag-handle {
+            display: inline-flex;
+            flex: none;
+            align-items: center;
+            justify-content: center;
+            margin-inline: k-spacing(2.5);
+            padding-inline: k-spacing(1);
+            padding-block: k-spacing(2.5);
+            cursor: move;
+        }
+
+        > .k-separator-vertical {
+            align-self: center;
+            height: $kendo-line-height-em;
+        }
+    }
+}
