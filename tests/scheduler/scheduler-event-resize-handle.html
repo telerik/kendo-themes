@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            width: 320px;
+            }
+            .scheduler-event-resize-handle-test {
+            position: relative;
+            width: 520px;
+            height: 190px;
+            padding: 24px;
+            }
+            .scheduler-event-resize-handle-test .k-event {
+            position: relative;
+            width: 220px;
+            height: 96px;
+            }
+            .scheduler-event-resize-handle-test .k-event-min-height {
+            position: absolute;
+            top: 132px;
+            left: 24px;
+            width: 220px;
+            min-height: 12px;
+            height: 12px;
+            }
+            .scheduler-event-resize-handle-test .k-event-min-height .k-event-title {
+            height: 12px;
+            padding-block: 0;
+            line-height: 12px;
+            }
+            .scheduler-event-resize-handle-test .k-event-horizontal {
+            position: absolute;
+            top: 24px;
+            left: 268px;
+            width: 220px;
+            height: 25px;
+            }
+            .scheduler-event-resize-handle-test .k-resize-n,
+            .scheduler-event-resize-handle-test .k-resize-s {
+            top: 0;
+            height: 8px;
+            }
+            .scheduler-event-resize-handle-test .k-resize-s {
+            top: auto;
+            bottom: 0;
+            }
+            .scheduler-event-resize-handle-test .k-resize-w,
+            .scheduler-event-resize-handle-test .k-resize-e {
+            left: 0;
+            width: 8px;
+            }
+            .scheduler-event-resize-handle-test .k-resize-w {
+            right: auto;
+            }
+            .scheduler-event-resize-handle-test .k-resize-e {
+            left: auto;
+            right: 0;
+            }
+            .scheduler-event-resize-handle-test .k-resize-handle::before {
+            border: 0;
+            border-radius: 1px;
+            background-color: color-mix(in srgb, var(--kendo-color-on-primary) 70%, transparent);
+            }
+            .scheduler-event-resize-handle-test .k-resize-n::before,
+            .scheduler-event-resize-handle-test .k-resize-s::before {
+            width: 12px;
+            height: 1px;
+            }
+            .scheduler-event-resize-handle-test .k-resize-w::before,
+            .scheduler-event-resize-handle-test .k-resize-e::before {
+            width: 1px;
+            height: 12px;
+            }
+            .scheduler-event-resize-handle-test .k-resize-n,
+            .scheduler-event-resize-handle-test .k-resize-s,
+            .scheduler-event-resize-handle-test .k-resize-w,
+            .scheduler-event-resize-handle-test .k-resize-e {
+            background: transparent;
+            }
+            .scheduler-event-resize-handle-test.meridian .k-resize-handle::before {
+            background-color: color-mix(in srgb, var(--kendo-color-secondary-on-subtle) 70%, transparent);
+            }
+        </style>
+        <div id="test-area">
+            <span>Scheduler events - active resize handles</span>
+            <div class="scheduler-event-resize-handle-test">
+                <div aria-label="Event title, 11:00 AM - 11:30 AM" class="k-event k-hover" role="button">
+                    <div>
+                        <div class="k-event-template k-event-title">Event title</div>
+                        <div class="k-event-template k-event-time">11:00 AM - 11:30 AM</div>
+                    </div>
+                    <span class="k-resize-handle k-resize-n"></span>
+                    <span class="k-resize-handle k-resize-s"></span>
+                </div>
+                <div class="k-event k-event-min-height k-hover" aria-label="Minimum-height event, 11:30 AM - 11:45 AM" role="button">
+                    <div>
+                        <div class="k-event-template k-event-title">Minimum-height event</div>
+                        <div class="k-event-template k-event-time">11:30 AM - 11:45 AM</div>
+                    </div>
+                    <span class="k-resize-handle k-resize-n"></span>
+                    <span class="k-resize-handle k-resize-s"></span>
+                </div>
+                <div class="k-event k-event-horizontal k-hover" aria-label="All-day event" role="button">
+                    <div>
+                        <div class="k-event-template k-event-title">All-day event</div>
+                        <div class="k-event-template k-event-time">All day</div>
+                    </div>
+                    <span class="k-resize-handle k-resize-w"></span>
+                    <span class="k-resize-handle k-resize-e"></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
