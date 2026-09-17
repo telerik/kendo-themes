@@ -1,5 +1,5 @@
 import { PDFViewer, PDFViewerPage } from "..";
-import { FloatingToolbar } from "../../toolbar/floating-toolbar.spec";
+import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
 import { Textbox } from "../../textbox/textbox.spec";
 import { Button } from "../../button/button.spec";
@@ -15,9 +15,7 @@ export const PDFViewerWithSearchPanel = (props) => (
         }
         {...props}
     />
-    <FloatingToolbar fillMode="flat">
-        <Button aria-label="Drag handle" className="k-search-dialog-draghandle" fillMode="flat" icon="handle-drag-dots"/>
-        <ToolbarSeparator />
+    <FloatingToolbar fillMode="flat" draggable dragHandleAriaLabel="Drag handle">
         <Textbox fillMode="flat" placeholder="Search" suffix={<Button aria-label="Match case" className="k-match-case-button" fillMode="flat" icon="convert-lowercase" />}  />
         <div className="k-search-matches">
            <span>0</span> of <span>0</span>
