@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionPreview, ImageEditorResizeHandles } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles } from "..";
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { NumericTextbox } from "../../numerictextbox";
@@ -49,18 +49,16 @@ export const ImageEditorCrop = (props: any) => (
                     <FormField
                         label="Aspect Ratio"
                         editor={
-                            <div className="k-imageeditor-aspect-ratio-options k-imageeditor-aspect-ratio-options-scrollable k-imageeditor-aspect-ratio-options-scrollable-end">
-                                <div className="k-imageeditor-aspect-ratio-options-list">
-                                    <ImageEditorOptionPreview label="Original" />
-                                    <ImageEditorOptionPreview label="1:1" />
-                                    <ImageEditorOptionPreview label="3:2" />
-                                    <ImageEditorOptionPreview label="4:3" />
-                                    <ImageEditorOptionPreview label="5:4" />
-                                    <ImageEditorOptionPreview label="7:5" />
-                                    <ImageEditorOptionPreview label="16:9" />
-                                    <ImageEditorOptionPreview label="Custom" />
-                                </div>
-                            </div>
+                            <ImageEditorOptionList scrollable scrollableEnd>
+                                <ImageEditorOptionPreview label="Original" />
+                                <ImageEditorOptionPreview label="1:1" />
+                                <ImageEditorOptionPreview label="3:2" />
+                                <ImageEditorOptionPreview label="4:3" />
+                                <ImageEditorOptionPreview label="5:4" />
+                                <ImageEditorOptionPreview label="7:5" />
+                                <ImageEditorOptionPreview label="16:9" />
+                                <ImageEditorOptionPreview label="Custom" />
+                            </ImageEditorOptionList>
                         }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "8px" }}>
