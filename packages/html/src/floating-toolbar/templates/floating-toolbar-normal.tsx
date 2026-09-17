@@ -1,5 +1,5 @@
 import { FloatingToolbar } from "../floating-toolbar.spec";
-import { ToolbarSeparator } from '../toolbar-separator';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
 import { Button } from '../../button/button.spec';
 import { ButtonGroup } from '../../button-group/button-group.spec';
 import { SplitButton } from '../../split-button/split-button.spec';
