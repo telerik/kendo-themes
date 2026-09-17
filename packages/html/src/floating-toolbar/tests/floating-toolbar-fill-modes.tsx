@@ -1,5 +1,5 @@
 import { FloatingToolbar } from '../floating-toolbar.spec';
-import { ToolbarSeparator } from '../toolbar-separator';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
 import { Combobox } from '../../combobox/combobox.spec';
 import { ColorPicker } from '../../colorpicker/colorpicker.spec';
 import { Button } from '../../button/button.spec';

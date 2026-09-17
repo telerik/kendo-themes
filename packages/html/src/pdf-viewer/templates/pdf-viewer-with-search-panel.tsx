@@ -1,5 +1,5 @@
 import { PDFViewer, PDFViewerPage } from "..";
-import { FloatingToolbar } from "../../toolbar/floating-toolbar.spec";
+import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 import { ToolbarSeparator } from "../../toolbar/toolbar-separator";
 import { Textbox } from "../../textbox/textbox.spec";
 import { Button } from "../../button/button.spec";
