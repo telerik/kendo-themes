@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionPreview, ImageEditorResizeHandles } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles } from "..";
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { Combobox } from "../../combobox";
@@ -55,13 +55,11 @@ export const ImageEditorInsertShape = (props: any) => (
                     <FormField
                         label="Type"
                         editor={
-                            <div className="k-imageeditor-aspect-ratio-options k-imageeditor-aspect-ratio-options-scrollable k-imageeditor-aspect-ratio-options-scrollable-end">
-                                <div className="k-imageeditor-aspect-ratio-options-list">
-                                    {shapeTypes.map((label) => (
-                                        <ImageEditorOptionPreview key={label} label={label} selected={label === "Oval"} />
-                                    ))}
-                                </div>
-                            </div>
+                            <ImageEditorOptionList scrollable scrollableEnd>
+                                {shapeTypes.map((label) => (
+                                    <ImageEditorOptionPreview key={label} label={label} selected={label === "Oval"} />
+                                ))}
+                            </ImageEditorOptionList>
                         }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>

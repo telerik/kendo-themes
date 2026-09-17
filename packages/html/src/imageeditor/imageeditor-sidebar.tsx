@@ -6,6 +6,7 @@ export const IMAGEEDITORSIDEBAR_CLASSNAME = `k-imageeditor-sidebar`;
 export type KendoImageEditorSidebarProps = {
     sidebarItems?: React.JSX.Element | React.JSX.Element[];
     scrollable?: boolean;
+    scrollingPosition?: 'start' | 'end' | 'both';
 };
 
 const defaultSidebarItems = [
@@ -27,6 +28,7 @@ const defaultSidebarItems = [
 const defaultOptions = {
     sidebarItems: defaultSidebarItems,
     scrollable: false,
+    scrollingPosition: 'start' as const,
 };
 
 /**
@@ -40,6 +42,7 @@ export const ImageEditorSidebar = (
     const {
         sidebarItems = defaultOptions.sidebarItems,
         scrollable = defaultOptions.scrollable,
+        scrollingPosition = defaultOptions.scrollingPosition,
         ...other
     } = props;
 
@@ -51,6 +54,7 @@ export const ImageEditorSidebar = (
                 IMAGEEDITORSIDEBAR_CLASSNAME,
                 {
                     [`${IMAGEEDITORSIDEBAR_CLASSNAME}-scrollable`]: scrollable,
+                    [`${IMAGEEDITORSIDEBAR_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollable,
                 }
             )}
         >
