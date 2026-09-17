@@ -29649,11 +29649,21 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-resize-handle-size</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-resize-handle-size, 8px )</code></td>
-    <td><code>var(--kendo-scheduler-resize-handle-size, 8px)</code></td>
+    <td><code>var( --kendo-scheduler-resize-handle-size, 12px )</code></td>
+    <td><code>var(--kendo-scheduler-resize-handle-size, 12px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The length of the Scheduler resize handle visual indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-thickness</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-resize-handle-thickness, 1px )</code></td>
+    <td><code>var(--kendo-scheduler-resize-handle-thickness, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thickness of the Scheduler resize handle visual indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -29669,8 +29679,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-resize-handle-border-width</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-resize-handle-border-width, 2px )</code></td>
-    <td><code>var(--kendo-scheduler-resize-handle-border-width, 2px)</code></td>
+    <td><code>var( --kendo-scheduler-resize-handle-border-width, 0 )</code></td>
+    <td><code>var(--kendo-scheduler-resize-handle-border-width, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Scheduler resize handle.</div></div>
@@ -29679,8 +29689,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-resize-handle-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-resize-handle-bg, $kendo-scheduler-event-bg )</code></td>
-    <td><code>var(--kendo-scheduler-resize-handle-bg, var(--kendo-scheduler-event-bg, var(--kendo-color-primary)))</code></td>
+    <td><code>var( --kendo-scheduler-resize-handle-bg, k-color(primary-subtle) )</code></td>
+    <td><code>var(--kendo-scheduler-resize-handle-bg, var(--kendo-color-primary-subtle))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler resize handle.</div></div>
