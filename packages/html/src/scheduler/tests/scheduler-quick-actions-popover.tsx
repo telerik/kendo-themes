@@ -37,7 +37,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 - 11:30</div>} />
               </Form>
             }
-            style={{ width: "380px" }}
+            style={{ width: "360px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="stretched">
               <Button fillMode="flat" themeColor="primary" icon="arrows-resizing">
@@ -62,7 +62,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 – 11:30</div>} />
               </Form>
             }
-            style={{ width: "380px" }}
+            style={{ width: "360px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="end">
               <Button>Delete</Button>
@@ -83,7 +83,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 – 11:30</div>} />
               </Form>
             }
-            style={{ width: "380px" }}
+            style={{ width: "360px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="end">
               <MenuButton showArrow={false}>Delete</MenuButton>
@@ -106,7 +106,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="comment" />} editor={<div className="k-scheduler-edit-form-row">This is a description of the event saying what the event will be about and other stuff.</div>} />
               </Form>
             }
-            style={{ width: "380px" }}
+            style={{ width: "360px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="end">
               <Button>Delete</Button>
@@ -127,7 +127,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 – 11:30</div>} />
               </Form>
             }
-            style={{ width: "380px" }}
+            style={{ width: "360px" }}
           />
         </div>
       </section>
