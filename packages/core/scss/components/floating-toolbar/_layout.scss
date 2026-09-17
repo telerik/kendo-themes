@@ -1,0 +1,30 @@
+@use "./_variables.scss" as *;
+@use "../../z-index/index.scss" as *;
+
+@mixin kendo-floating-toolbar--layout-base() {
+
+    // Base
+    .k-floating-toolbar {
+        max-width: fit-content;
+        border-radius: $kendo-floating-toolbar-border-radius;
+
+        .k-toolbar {
+            border-width: 0;
+            border-radius: inherit;
+        }
+
+        // Drag handle: stays pinned to the start edge while the items scroll past it.
+        .k-floating-toolbar-drag-handle {
+            cursor: move;
+            position: sticky;
+            inset-inline-start: 0;
+            z-index: k-z-index("base", 3);
+        }
+
+        &.k-floating-toolbar-sticky {
+            position: sticky;
+            inset-block-start: $kendo-floating-toolbar-sticky-offset;
+            z-index: k-z-index("floating");
+        }
+    }
+}
