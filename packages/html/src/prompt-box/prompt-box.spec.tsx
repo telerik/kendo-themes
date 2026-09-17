@@ -2,8 +2,8 @@ import { classNames, States, FillMode } from '../misc';
 import { InputInnerInput } from '../input/input-inner-input';
 import { InputInnerTextarea } from '../input/input-inner-textarea';
 import { PROMPT_BOX_FOLDER_NAME, PROMPT_BOX_MODULE_NAME } from './constants';
-import { IconButton } from '../button';
-import { SpeechToTextButton } from '../speech-to-text-button';
+import { IconButton, KendoButtonProps } from '../button';
+import { SpeechToTextButton, KendoSpeechToTextButtonProps } from '../speech-to-text-button';
 import { KendoComponent } from '../_types/component';
 export const PROMPT_BOX_CLASSNAME = `k-prompt-box`;
 
@@ -30,6 +30,9 @@ export type KendoPromptBoxProps = KendoPromptBoxOptions & {
     value?: string;
     placeholder?: string;
     generating?: boolean;
+    actionButtonConfig?: KendoButtonProps & React.HTMLAttributes<HTMLButtonElement>;
+    speechToTextButtonConfig?: KendoSpeechToTextButtonProps & React.HTMLAttributes<HTMLButtonElement>;
+    uploadButtonConfig?: KendoButtonProps & React.HTMLAttributes<HTMLButtonElement>;
 };
 
 export type KendoPromptBoxState = { [K in (typeof states)[number]]?: boolean };
@@ -68,6 +71,9 @@ export const PromptBox: KendoComponent<KendoPromptBoxProps & KendoPromptBoxState
         value,
         placeholder,
         generating,
+        actionButtonConfig,
+        speechToTextButtonConfig,
+        uploadButtonConfig,
         hover,
         focus,
         disabled,
@@ -116,16 +122,32 @@ export const PromptBox: KendoComponent<KendoPromptBoxProps & KendoPromptBoxState
                 )}
                 <div className={`${PROMPT_BOX_CLASSNAME}-affix`}>
                     {endAffix}
-                    <SpeechToTextButton size="small" fillMode="flat" rounded="full"/>
+                    {uploadButtonConfig && (
+                        <IconButton
+                            icon="paperclip"
+                            size="small"
+                            fillMode="flat"
+                            rounded="full"
+                            aria-label="Attach files"
+                            {...uploadButtonConfig}
+                        />
+                    )}
+                    <SpeechToTextButton
+                        size="small"
+                        fillMode="flat"
+                        rounded="full"
+                        {...speechToTextButtonConfig}
+                    />
                     <IconButton
                         icon={generating ? "stop" : "arrow-up"}
                         size="small"
                         rounded="full"
                         active={generating}
                         disabled={!value && !generating}
-                        className={classNames({ "k-generating": generating })}
                         aria-label={generating ? "Stop generating" : "Send prompt"}
                         aria-live="polite"
+                        {...actionButtonConfig}
+                        className={classNames({ "k-generating": generating }, actionButtonConfig?.className)}
                     />
                 </div>
             </div>
