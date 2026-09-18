@@ -47,15 +47,48 @@ jobs:
     uses: ./.github/workflows/_create-screenshots.yml
     needs: [ compile-themes, build-html ]
 
+  # Runs immediately (no needs) so the PR sees this the moment CI starts,
+  # rather than only once create-screenshots' several-minute matrix finishes
+  # - matches Package Report's post-status-comment job, which does the same
+  # thing for its own PR comment.
+  visual-regression-placeholder:
+    name: Visual regression (placeholder)
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    outputs:
+      pr-number: ${{ steps.placeholder.outputs.pr-number }}
+    steps:
+      - name: Resolve pull request and post placeholder comment
+        id: placeholder
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = context.ref.replace('refs/heads/', '');
+            const { data: prs } = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${branch}` });
+            const pr = prs.find(p => p.head.ref === branch && p.head.repo?.full_name === `${owner}/${repo}`);
+            if (!pr) return;   // no open PR for this branch right now
+            core.setOutput('pr-number', String(pr.number));
+
+            const marker = '<!-- visual-regression-report -->';
+            const body = [marker, '### 🖼️ Visual regression', '', 'Generating... ⚠️'].join('\n');
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number });
+            const existing = comments.find(c => c.body && c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
+            }
 
   visual-regression:
     name: Visual regression
-    needs: [ create-screenshots ]
+    needs: [ create-screenshots, visual-regression-placeholder ]
     permissions:
-      actions: read
-      contents: write
       pull-requests: write
     uses: ./.github/workflows/_visual-regression.yml
+    with:
+      pr-number: ${{ needs.visual-regression-placeholder.outputs.pr-number }}
 
 
   set-commit-status:
@@ -89,7 +122,7 @@ jobs:
             const mapState = (r) => r === 'success' ? 'success' : 'failure';
 
             const sha = context.sha;
-            const targetUrl = '${{ needs.visual-regression.outputs.report-url }}' || `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const targetUrl = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
 
             await Promise.all(results.map(([result, contextName]) =>
               github.rest.repos.createCommitStatus({

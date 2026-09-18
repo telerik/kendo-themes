@@ -20,9 +20,12 @@ async function captureAndDiff() {
     await capture({ themes: THEMES, components: [component], serverPort: 3000 });
 
     // Diff this component's output against the saved baseline → update report
+    // Thresholds match _visual-regression.yml's CI comparison.
     execFileSync('npx', ['reg-cli',
         'tests/_output', '.reg/expected', '.reg/diff',
-        '--report', '.reg/report.html', '--json', '.reg/out.json'],
+        '--report', '.reg/report.html', '--json', '.reg/out.json',
+        '--matchingThreshold', '0.05', '--thresholdRate', '0.001', '--enableAntialias',
+        '--additionalDetection', 'client'],
     { stdio: 'inherit', shell: true });
     console.log('Report: .reg/report.html  (refresh the tab)');
 }

@@ -27,6 +27,9 @@ if (!existsSync(EXPECTED)) {
     process.exit(1);
 }
 
-execFileSync('npx', ['reg-cli', ACTUAL, EXPECTED, DIFF, '--report', REPORT, '--json', JSON_OUT],
+// Thresholds match _visual-regression.yml's CI comparison.
+const REG_CLI_FLAGS = ['--matchingThreshold', '0.05', '--thresholdRate', '0.001', '--enableAntialias', '--additionalDetection', 'client'];
+
+execFileSync('npx', ['reg-cli', ACTUAL, EXPECTED, DIFF, '--report', REPORT, '--json', JSON_OUT, ...REG_CLI_FLAGS],
     { stdio: 'inherit', shell: true });
 console.log(`\nReport: ${REPORT}`);
