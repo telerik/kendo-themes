@@ -10,8 +10,8 @@
         <script src="/packages/html/assets/scripts.js"></script>
     </head>
     <body id="app" class="k-body">
-        <div id="test-area" class="k-d-grid">
-            <h4>Image Editor Crop Pane</h4>
+        <div id="test-area" class="k-d-grid k-grid-cols-1">
+            <h4>Image Editor Shadow Pane</h4>
             <div class="k-imageeditor">
                 <div class="k-imageeditor-header">
                     <div class="k-imageeditor-toolbar k-toolbar k-toolbar-flat" role="toolbar" aria-label="Toolbar">
@@ -74,10 +74,10 @@
                         </button>
                     </div>
                 </div>
-                <div class="k-imageeditor-content" style="height: 482px;">
+                <div class="k-imageeditor-content" style="height: 640px;">
                     <div class="k-imageeditor-sidebar">
                         <div class="k-imageeditor-sidebar-items" role="toolbar" aria-label="Tools">
-                            <button class="k-button k-button-flat k-selected k-icon-button" aria-label="Crop">
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Crop">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-crop" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M0 96h64v64H0zm448 256v64h64v-64zm-32-224c0-17.6-14.4-32-32-32H192v64h160v320h64zM96 384c0 17.6 14.4 32 32 32h192v-64H160V32H96z"></path>
@@ -143,7 +143,7 @@
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-button-flat k-icon-button" aria-label="Shadow">
+                            <button class="k-button k-button-flat k-selected k-icon-button" aria-label="Shadow">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-bring-to-back" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M128 192h64V64H64v128zM96 96h64v64H96zm192 192h96V128H224v96h-96v160h160zm128 32h-96v128h128V320zm0 96h-64v-64h64z"></path>
@@ -155,7 +155,7 @@
                     <div class="k-imageeditor-action-pane">
                         <div class="k-imageeditor-pane">
                             <div class="k-imageeditor-pane-header">
-                                <div class="k-imageeditor-pane-title">Crop</div>
+                                <div class="k-imageeditor-pane-title">Shadow</div>
                                 <button class="k-button k-button-flat k-icon-button" aria-label="Close" title="Close">
                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -167,117 +167,138 @@
                             <div class="k-imageeditor-pane-content">
                                 <div class="k-form">
                                     <div class="k-form-field">
-                                        <label class="k-form-label k-label">Orientation</label>
+                                        <label class="k-form-label k-label">Position</label>
                                         <div class="k-form-field-wrap">
-                                            <ul class="k-radio-list k-list-horizontal" role="radiogroup">
-                                                <li class="k-radio-list-item" role="none">
-                                                    <span class="k-radio-wrap">
-                                                        <input id="crop-orientation-landscape" class="k-radio k-checked" type="radio" checked="" name="crop-orientation">
+                                            <fieldset class="k-form-fieldset">
+                                                <div class="k-form-layout k-d-grid k-grid-cols-2" style="column-gap: 16px;">
+                                                    <span class="k-numerictextbox k-input">
+                                                        <span class="k-input-prefix k-input-prefix-horizontal">
+                                                            <span class="k-input-prefix-text">X</span>
+                                                        </span>
+                                                        <span class="k-input-separator k-input-separator-vertical"></span>
+                                                        <input id="shadow-position-x" role="spinbutton" aria-label="Position X" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="2">
+                                                        <span class="k-clear-value">
+                                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
                                                     </span>
-                                                    <label class="k-radio-label" for="crop-orientation-landscape">Landscape</label>
-                                                </li>
-                                                <li class="k-radio-list-item" role="none">
-                                                    <span class="k-radio-wrap">
-                                                        <input id="crop-orientation-portrait" class="k-radio" type="radio" name="crop-orientation">
+                                                    <span class="k-numerictextbox k-input">
+                                                        <span class="k-input-prefix k-input-prefix-horizontal">
+                                                            <span class="k-input-prefix-text">Y</span>
+                                                        </span>
+                                                        <span class="k-input-separator k-input-separator-vertical"></span>
+                                                        <input id="shadow-position-y" role="spinbutton" aria-label="Position Y" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="-4">
+                                                        <span class="k-clear-value">
+                                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
                                                     </span>
-                                                    <label class="k-radio-label" for="crop-orientation-portrait">Portrait</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="k-form-field">
-                                        <label class="k-form-label k-label">Aspect Ratio</label>
-                                        <div class="k-form-field-wrap">
-                                            <div class="k-imageeditor-option-list k-imageeditor-option-list-scrollable k-imageeditor-option-list-scrollable-end">
-                                                <div class="k-imageeditor-option-list-items">
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">Original</div>
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">1:1</div>
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">3:2</div>
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">4:3</div>
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">5:4</div>
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">7:5</div>
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">16:9</div>
-                                                    <div class="k-imageeditor-option-preview" role="button" aria-pressed="false">Custom</div>
                                                 </div>
-                                            </div>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <fieldset class="k-form-fieldset">
-                                        <div class="k-form-layout k-d-grid k-grid-cols-2" style="column-gap: 8px;">
+                                        <div class="k-form-layout k-d-grid k-grid-cols-2" style="column-gap: 16px;">
                                             <div class="k-form-field">
-                                                <label class="k-form-label k-label" id="crop-width-label" for="crop-width">Width</label>
+                                                <label class="k-form-label k-label" id="shadow-blur-label" for="shadow-blur">Blur</label>
                                                 <div class="k-form-field-wrap">
                                                     <span class="k-numerictextbox k-input">
                                                         <span class="k-input-prefix k-input-prefix-horizontal">
-                                                            <span class="k-icon k-svg-icon k-svg-i-arrows-left-right" aria-hidden="true">
+                                                            <span class="k-icon k-svg-icon k-svg-i-blur" aria-hidden="true">
                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                    <path d="m512 240-128-80v64H128v-64L0 240l128 80v-64h256v64z"></path>
+                                                                    <path d="M384 320c0 64-32 128-128 128-64 0-128-48-128-128 0-96 128-128 128-256 0 0 128 129.1 128 256"></path>
                                                                 </svg>
                                                             </span>
                                                         </span>
                                                         <span class="k-input-separator k-input-separator-vertical"></span>
-                                                        <input id="crop-width" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="400">
-                                                        <span class="k-spin-button k-input-spinner">
-                                                            <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                        <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                                    </svg>
-                                                                </span>
-                                                            </button>
-                                                            <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                                    </svg>
-                                                                </span>
-                                                            </button>
+                                                        <input id="shadow-blur" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="32">
+                                                        <span class="k-clear-value">
+                                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                                </svg>
+                                                            </span>
                                                         </span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <div class="k-form-field">
-                                                <label class="k-form-label k-label" id="crop-height-label" for="crop-height">Height</label>
+                                                <label class="k-form-label k-label" id="shadow-spread-label" for="shadow-spread">Spread</label>
                                                 <div class="k-form-field-wrap">
                                                     <span class="k-numerictextbox k-input">
                                                         <span class="k-input-prefix k-input-prefix-horizontal">
-                                                            <span class="k-icon k-svg-icon k-svg-i-arrows-top-bottom" aria-hidden="true">
+                                                            <span class="k-icon k-svg-icon k-svg-i-brightness-contrast" aria-hidden="true">
                                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                    <path d="m240 512 80-128h-64V128h64L240 0l-80 128h64v256h-64z"></path>
+                                                                    <path d="M165.5 346.5c12.4 12.5 12.4 32.9 0 45.3l-22.6 22.6c-12.5 12.4-32.8 12.4-45.3 0-12.4-12.5-12.4-32.9 0-45.3l22.6-22.6c12.5-12.4 32.9-12.4 45.3 0M256 128c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32s-32 14.4-32 32v32c0 17.6 14.4 32 32 32m135.8 37.5 22.6-22.6c12.4-12.4 12.4-32.8 0-45.3-12.4-12.4-32.8-12.4-45.3 0l-22.6 22.6c-12.4 12.4-12.4 32.8 0 45.3 12.5 12.4 32.8 12.4 45.3 0m-271.6 0c12.4 12.4 32.8 12.4 45.3 0 12.4-12.4 12.4-32.8 0-45.3l-22.6-22.6c-12.4-12.4-32.8-12.4-45.3 0-12.4 12.5-12.4 32.8 0 45.3zM128 256c0-17.6-14.4-32-32-32H64c-17.6 0-32 14.4-32 32s14.4 32 32 32h32c17.6 0 32-14.4 32-32m263.8 90.5c-12.4-12.4-32.8-12.4-45.3 0-12.4 12.5-12.4 32.8 0 45.3l22.6 22.6c12.4 12.4 32.8 12.4 45.3 0 12.4-12.4 12.4-32.8 0-45.3zM448 224h-32c-17.6 0-32 14.4-32 32s14.4 32 32 32h32c17.6 0 32-14.4 32-32s-14.4-32-32-32m-96 32c0 53-43 96-96 96s-96-43-96-96 43-96 96-96 96 43 96 96m-32 0c0-35.3-28.7-64-64-64v128c35.3 0 64-28.7 64-64m-64 128c-17.6 0-32 14.4-32 32v32c0 17.6 14.4 32 32 32s32-14.4 32-32v-32c0-17.6-14.4-32-32-32"></path>
                                                                 </svg>
                                                             </span>
                                                         </span>
                                                         <span class="k-input-separator k-input-separator-vertical"></span>
-                                                        <input id="crop-height" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="360">
-                                                        <span class="k-spin-button k-input-spinner">
-                                                            <button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value">
-                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                        <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                                                    </svg>
-                                                                </span>
-                                                            </button>
-                                                            <button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value">
-                                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                                                    </svg>
-                                                                </span>
-                                                            </button>
+                                                        <input id="shadow-spread" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="12">
+                                                        <span class="k-clear-value">
+                                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                                </svg>
+                                                            </span>
                                                         </span>
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <div class="k-form-field">
-                                        <div class="k-form-field-wrap">
-                                            <span class="k-checkbox-wrap">
-                                                <input id="crop-lock" class="k-checkbox k-checked" type="checkbox" checked="">
-                                            </span>
-                                            <label class="k-checkbox-label" for="crop-lock">Lock Aspect Ratio</label>
+                                    <fieldset class="k-form-fieldset">
+                                        <div class="k-form-layout k-d-grid k-grid-cols-2" style="column-gap: 16px;">
+                                            <div class="k-form-field">
+                                                <label class="k-form-label k-label">Color</label>
+                                                <div class="k-form-field-wrap">
+                                                    <span id="shadow-color" aria-label="Color picker" role="combobox" aria-haspopup="dialog" aria-expanded="false" tabindex="0" class="k-colorpicker k-icon-picker k-picker">
+                                                        <span class="k-input-inner">
+                                                            <span class="k-value-icon k-color-preview">
+                                                                <span class="k-color-preview-mask" style="background-color: rgb(35, 42, 54);"></span>
+                                                            </span>
+                                                        </span>
+                                                        <button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Open color picker">
+                                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="k-form-field">
+                                                <label class="k-form-label k-label" id="shadow-opacity-label" for="shadow-opacity">Opacity</label>
+                                                <div class="k-form-field-wrap">
+                                                    <span class="k-numerictextbox k-input">
+                                                        <span class="k-input-prefix k-input-prefix-horizontal">
+                                                            <span class="k-icon k-svg-icon k-svg-i-transparency" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M64 64v352h352V64zm32 32h96v96h96V96h96v96h-96v96h96v96h-96v-96h-96v96H96v-96h96v-96H96z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-input-separator k-input-separator-vertical"></span>
+                                                        <input id="shadow-opacity" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="32%">
+                                                        <span class="k-clear-value">
+                                                            <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                             <div class="k-actions k-actions-end k-actions-horizontal k-imageeditor-pane-footer">
@@ -292,20 +313,7 @@
                     </div>
                     <div class="k-imageeditor-canvas-container">
                         <div class="k-imageeditor-canvas">
-                            <canvas width="700" height="400" role="img" aria-label="Image being edited" style="background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-position: 50px -350px;"></canvas>
-                            <div class="k-imageeditor-crop-overlay">
-                                <div class="k-imageeditor-crop" style="width: 400px; height: 400px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-clip: content-box; background-position: 748px -350px;">
-                                    <div class="k-imageeditor-crop-grid"></div>
-                                    <span class="k-resize-handle k-resize-nw"></span>
-                                    <span class="k-resize-handle k-resize-n"></span>
-                                    <span class="k-resize-handle k-resize-ne"></span>
-                                    <span class="k-resize-handle k-resize-w"></span>
-                                    <span class="k-resize-handle k-resize-e"></span>
-                                    <span class="k-resize-handle k-resize-sw"></span>
-                                    <span class="k-resize-handle k-resize-s"></span>
-                                    <span class="k-resize-handle k-resize-se"></span>
-                                </div>
-                            </div>
+                            <canvas width="494" height="307" role="img" aria-label="Image being edited" style="background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-shadow: rgba(35, 42, 54, 0.32) 2px -4px 32px 12px;"></canvas>
                         </div>
                     </div>
                 </div>

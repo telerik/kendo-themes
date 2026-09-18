@@ -11,7 +11,7 @@
     </head>
     <body id="app" class="k-body">
         <div id="test-area" class="k-d-grid k-grid-cols-1">
-            <h4>Image Editor</h4>
+            <h4>Image Editor Adjustments Pane</h4>
             <div class="k-imageeditor">
                 <div class="k-imageeditor-header">
                     <div class="k-imageeditor-toolbar k-toolbar k-toolbar-flat" role="toolbar" aria-label="Toolbar">
@@ -23,14 +23,14 @@
                             </span>
                         </button>
                         <div class="k-toolbar-separator k-separator"></div>
-                        <button class="k-toolbar-button  k-button k-button-flat k-disabled k-icon-button" aria-label="Undo" disabled="">
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Undo">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-undo" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224"></path>
                                 </svg>
                             </span>
                         </button>
-                        <button class="k-toolbar-button  k-button k-button-flat k-disabled k-icon-button" aria-label="Redo" disabled="">
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Redo">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-redo" aria-hidden="true">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192"></path>
@@ -74,7 +74,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="k-imageeditor-content" style="height: 250px;">
+                <div class="k-imageeditor-content" style="height: 640px;">
                     <div class="k-imageeditor-sidebar">
                         <div class="k-imageeditor-sidebar-items" role="toolbar" aria-label="Tools">
                             <button class="k-button k-button-flat k-icon-button" aria-label="Crop">
@@ -121,7 +121,7 @@
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-button-flat k-icon-button" aria-label="Adjustments">
+                            <button class="k-button k-button-flat k-selected k-icon-button" aria-label="Adjustments">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-sliders" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M480 96v32H285.3c-6.6 18.6-24.4 32-45.3 32s-38.7-13.4-45.3-32H32V96h162.7c6.6-18.6 24.4-32 45.3-32s38.7 13.4 45.3 32zm-112 96c-20.9 0-38.7 13.4-45.3 32H32v32h290.7c6.6 18.6 24.4 32 45.3 32s38.7-13.4 45.3-32H480v-32h-66.7c-6.6-18.6-24.4-32-45.3-32M176 320c-20.9 0-38.7 13.4-45.3 32H32v32h98.7c6.6 18.6 24.4 32 45.3 32s38.7-13.4 45.3-32H480v-32H221.3c-6.6-18.6-24.4-32-45.3-32"></path>
@@ -152,8 +152,162 @@
                             </button>
                         </div>
                     </div>
+                    <div class="k-imageeditor-action-pane">
+                        <div class="k-imageeditor-pane">
+                            <div class="k-imageeditor-pane-header">
+                                <div class="k-imageeditor-pane-title">Adjustments</div>
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Close" title="Close">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="k-imageeditor-pane-content">
+                                <div class="k-form">
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="adjustments-brightness-label" for="adjustments-brightness">Brightness</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-flex k-gap-4 k-align-items-center">
+                                                <div class="k-slider k-flex-1 k-slider-horizontal" aria-label="Brightness" style="--kendo-slider-start: 0; --kendo-slider-end: 0;">
+                                                    <div class="k-slider-track-wrap">
+                                                        <div class="k-slider-track">
+                                                            <div class="k-slider-selection"></div>
+                                                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="0" aria-valuemin="-100" aria-valuemax="100" aria-label="Brightness"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="k-numerictextbox k-input" style="width: 80px; flex: 0 0 auto;">
+                                                    <input id="adjustments-brightness" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="0">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="adjustments-contrast-label" for="adjustments-contrast">Contrast</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-flex k-gap-4 k-align-items-center">
+                                                <div class="k-slider k-flex-1 k-slider-horizontal" aria-label="Contrast" style="--kendo-slider-start: 0; --kendo-slider-end: 0;">
+                                                    <div class="k-slider-track-wrap">
+                                                        <div class="k-slider-track">
+                                                            <div class="k-slider-selection"></div>
+                                                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="0" aria-valuemin="-100" aria-valuemax="100" aria-label="Contrast"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="k-numerictextbox k-input" style="width: 80px; flex: 0 0 auto;">
+                                                    <input id="adjustments-contrast" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="0">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="adjustments-saturation-label" for="adjustments-saturation">Saturation</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-flex k-gap-4 k-align-items-center">
+                                                <div class="k-slider k-flex-1 k-slider-horizontal" aria-label="Saturation" style="--kendo-slider-start: 0; --kendo-slider-end: 0;">
+                                                    <div class="k-slider-track-wrap">
+                                                        <div class="k-slider-track">
+                                                            <div class="k-slider-selection"></div>
+                                                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="0" aria-valuemin="-100" aria-valuemax="100" aria-label="Saturation"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="k-numerictextbox k-input" style="width: 80px; flex: 0 0 auto;">
+                                                    <input id="adjustments-saturation" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="0">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="adjustments-hue-label" for="adjustments-hue">Hue</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-flex k-gap-4 k-align-items-center">
+                                                <div class="k-slider k-flex-1 k-slider-horizontal" aria-label="Hue" style="--kendo-slider-start: 0; --kendo-slider-end: 0;">
+                                                    <div class="k-slider-track-wrap">
+                                                        <div class="k-slider-track">
+                                                            <div class="k-slider-selection"></div>
+                                                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="0" aria-valuemin="-100" aria-valuemax="100" aria-label="Hue"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="k-numerictextbox k-input" style="width: 80px; flex: 0 0 auto;">
+                                                    <input id="adjustments-hue" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="0">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="adjustments-exposure-label" for="adjustments-exposure">Exposure</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-flex k-gap-4 k-align-items-center">
+                                                <div class="k-slider k-flex-1 k-slider-horizontal" aria-label="Exposure" style="--kendo-slider-start: 0; --kendo-slider-end: 0;">
+                                                    <div class="k-slider-track-wrap">
+                                                        <div class="k-slider-track">
+                                                            <div class="k-slider-selection"></div>
+                                                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="0" aria-valuemin="-100" aria-valuemax="100" aria-label="Exposure"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="k-numerictextbox k-input" style="width: 80px; flex: 0 0 auto;">
+                                                    <input id="adjustments-exposure" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="0">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="adjustments-blur-label" for="adjustments-blur">Blur</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-flex k-gap-4 k-align-items-center">
+                                                <div class="k-slider k-flex-1 k-slider-horizontal" aria-label="Blur" style="--kendo-slider-start: 0; --kendo-slider-end: 24;">
+                                                    <div class="k-slider-track-wrap">
+                                                        <div class="k-slider-track">
+                                                            <div class="k-slider-selection"></div>
+                                                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" aria-label="Blur"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="k-numerictextbox k-input" style="width: 80px; flex: 0 0 auto;">
+                                                    <input id="adjustments-blur" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="24">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label" id="adjustments-opacity-label" for="adjustments-opacity">Opacity</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-flex k-gap-4 k-align-items-center">
+                                                <div class="k-slider k-flex-1 k-slider-horizontal" aria-label="Opacity" style="--kendo-slider-start: 0; --kendo-slider-end: 24;">
+                                                    <div class="k-slider-track-wrap">
+                                                        <div class="k-slider-track">
+                                                            <div class="k-slider-selection"></div>
+                                                            <span class="k-draghandle k-draghandle-end" role="slider" tabindex="0" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" aria-label="Opacity"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="k-numerictextbox k-input" style="width: 80px; flex: 0 0 auto;">
+                                                    <input id="adjustments-opacity" role="spinbutton" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="24">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-end k-actions-horizontal k-imageeditor-pane-footer">
+                                <button class="k-button">
+                                    <span class="k-button-text">Reset</span>
+                                </button>
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="k-imageeditor-canvas-container">
-                        <div class="k-imageeditor-canvas"></div>
+                        <div class="k-imageeditor-canvas">
+                            <canvas width="494" height="307" role="img" aria-label="Image being edited" style="background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover;"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
