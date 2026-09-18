@@ -11910,8 +11910,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-pane-header-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-manager-pane-header-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-dock-manager-pane-header-padding-y, var(--kendo-spacing-4))</code></td>
+    <td><code>var( --kendo-dock-manager-pane-header-padding-y, k-spacing(4.5) )</code></td>
+    <td><code>var(--kendo-dock-manager-pane-header-padding-y, var(--kendo-spacing-4\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the pane header in the DockManager component.</div></div>
@@ -12050,8 +12050,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-tabbed-pane-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-dock-manager-tabbed-pane-padding-y, k-spacing(7) )</code></td>
-    <td><code>var(--kendo-dock-manager-tabbed-pane-padding-y, var(--kendo-spacing-7))</code></td>
+    <td><code>var( --kendo-dock-manager-tabbed-pane-padding-y, var( --kendo-dock-manager-pane-header-padding-y, k-spacing(4.5) ) )</code></td>
+    <td><code>var(--kendo-dock-manager-tabbed-pane-padding-y, var(--kendo-dock-manager-pane-header-padding-y, var(--kendo-spacing-4\.5)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabbed pane in the DockManager component.</div></div>
@@ -30404,6 +30404,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Segmented control.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-segmented-control-default-roundness</td>
+    <td>String</td>
+    <td><code>"full"</code></td>
+    <td><code>"full"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the Segmented Control.</div></div>
     </td>
 </tr>
 <tr>
