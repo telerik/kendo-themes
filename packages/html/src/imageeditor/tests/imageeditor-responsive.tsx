@@ -50,7 +50,7 @@ export default () => (
                                 fontFamily: "'Trebuchet MS', sans-serif",
                                 fontSize: "13px",
                                 lineHeight: 1,
-                                color: "#706903",
+                                color: "#4a4500",
                                 whiteSpace: "nowrap"
                             }}>Shape text</p>
                         </div>
