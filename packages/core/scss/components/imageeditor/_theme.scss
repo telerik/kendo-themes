@@ -1,5 +1,7 @@
 @use "../../mixins/index.scss" as *;
+@use "../../color-system/_functions.scss" as *;
 @use "./variables.scss" as *;
+@use "../toolbar/variables.scss" as *;
 
 @mixin kendo-image-editor--theme-base() {
 
@@ -35,13 +37,107 @@
         );
     }
 
-    // Crop Tool
-    .k-imageeditor-crop {
+    .k-imageeditor-pane-title {
+        color: $kendo-image-editor-pane-title-text;
+    }
+
+    // Option list scroll-fade overlay (aspect ratios, shapes, presets, ...)
+    .k-imageeditor-option-list.k-imageeditor-option-list-scrollable {
+        &::before {
+            background: linear-gradient(270deg, $kendo-image-editor-option-list-scroll-gradient);
+        }
+
+        &::after {
+            background: linear-gradient(90deg, $kendo-image-editor-option-list-scroll-gradient);
+        }
+    }
+
+    .k-imageeditor-option-preview {
         @include fill(
-            $kendo-image-editor-crop-text,
-            $kendo-image-editor-crop-bg,
-            $kendo-image-editor-crop-border
+            $kendo-image-editor-option-preview-text,
+            $kendo-image-editor-option-preview-bg,
+            $kendo-image-editor-option-preview-border
         );
+
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-image-editor-option-preview-hover-text,
+                $kendo-image-editor-option-preview-hover-bg
+            );
+        }
+
+        &:focus,
+        &:focus-visible,
+        &.k-focus {
+            box-shadow: $kendo-image-editor-option-preview-focus-shadow;
+        }
+
+        &.k-selected {
+            @include fill(
+                $kendo-image-editor-option-preview-selected-text,
+                null,
+                $kendo-image-editor-option-preview-selected-border
+            );
+            box-shadow: $kendo-image-editor-option-preview-selected-shadow;
+            font-weight: $kendo-image-editor-option-preview-selected-font-weight;
+        }
+    }
+
+    // Crop/Resize/Rotate overlay frame, shared border/bg/text
+    .k-imageeditor-crop,
+    .k-imageeditor-resize,
+    .k-imageeditor-rotate {
+        @include fill(
+            $kendo-image-editor-frame-text,
+            $kendo-image-editor-frame-bg,
+            $kendo-image-editor-frame-border
+        );
+    }
+
+    // Rule-of-thirds guide lines, shared by Crop and Rotate
+    .k-imageeditor-crop .k-imageeditor-crop-grid,
+    .k-imageeditor-rotate .k-imageeditor-crop-grid {
+        background-image:
+            linear-gradient($kendo-image-editor-grid-line-color, $kendo-image-editor-grid-line-color),
+            linear-gradient($kendo-image-editor-grid-line-color, $kendo-image-editor-grid-line-color),
+            linear-gradient($kendo-image-editor-grid-line-color, $kendo-image-editor-grid-line-color),
+            linear-gradient($kendo-image-editor-grid-line-color, $kendo-image-editor-grid-line-color);
+    }
+
+    // Handle color, shared by Crop's edge pills, Resize's pills/scale handles and Rotate's scale handles
+    .k-imageeditor-crop .k-resize-handle,
+    .k-imageeditor-resize .k-resize-handle,
+    .k-imageeditor-resize .k-scale-handle,
+    .k-imageeditor-rotate .k-scale-handle {
+        border-color: $kendo-image-editor-handle-border;
+    }
+
+    .k-imageeditor-resize .k-resize-handle,
+    .k-imageeditor-resize .k-scale-handle,
+    .k-imageeditor-rotate .k-scale-handle {
+        background-color: $kendo-image-editor-handle-bg;
+    }
+
+    // Crop tool's L-bracket corner handles
+    .k-imageeditor-crop {
+        .k-resize-sw,
+        .k-resize-se,
+        .k-resize-nw,
+        .k-resize-ne {
+            background-color: $kendo-image-editor-handle-border;
+
+            &::before {
+                background-color: $kendo-image-editor-handle-bg;
+            }
+        }
+
+        .k-resize-n,
+        .k-resize-s,
+        .k-resize-w,
+        .k-resize-e {
+            background-color: $kendo-image-editor-handle-bg;
+        }
     }
 
     // Crop Overlay
@@ -49,6 +145,46 @@
         @include fill (
             $bg: $kendo-image-editor-crop-overlay-bg
         );
+    }
+
+    .k-imageeditor-sidebar {
+        @include fill(
+            $color: $kendo-toolbar-flat-text,
+            $bg: var(--kendo-color-surface-alt),
+            $border: $kendo-toolbar-flat-border
+        );
+
+        &.k-imageeditor-sidebar-scrollable {
+            &::before {
+                background: linear-gradient(180deg, $kendo-toolbar-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(0deg, $kendo-toolbar-scroll-overlay);
+            }
+        }
+    }
+
+    // Forward the sidebar's border-color so nested .k-separator (border-color: inherit) still matches it
+    .k-imageeditor-sidebar-items {
+        border-color: inherit;
+    }
+
+    .k-imageeditor-placeholder {
+        border-color: k-color(border);
+
+        .k-imageeditor-placeholder-icon {
+            color: k-color(secondary);
+            opacity: .5;
+        }
+
+        .k-imageeditor-placeholder-title {
+            color: k-color(on-app-surface);
+        }
+
+        .k-imageeditor-placeholder-text {
+            color: k-color(subtle);
+        }
     }
 
 }
