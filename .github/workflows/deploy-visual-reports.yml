@@ -1,9 +1,16 @@
 name: Deploy visual reports
 
 # Report workflows update the gh-pages branch, sometimes several times in
-# quick succession. Deploy the latest complete branch snapshot without
-# interrupting an active Pages deployment. GitHub retains one pending run per
-# concurrency group and replaces that pending run when a newer one arrives.
+# quick succession. Deploy the latest complete branch snapshot. GitHub retains
+# one pending run per concurrency group and replaces that pending run when a
+# newer one arrives.
+#
+# cancel-in-progress must stay true: with it false, a prior run that doesn't
+# finish cleanly can leave a stale/stuck deployment on the Pages backend, and
+# the next run's deployment then conflicts with it and fails outright
+# ("Error: Creating Pages deployment failed... Deployment request failed for
+# <id> due to in progress deployment. Please cancel <id> first or wait for it
+# to complete."). See https://github.com/actions/deploy-pages/issues/418.
 on:
   workflow_run:
     workflows:
@@ -18,7 +25,7 @@ permissions: {}
 
 concurrency:
   group: github-pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
