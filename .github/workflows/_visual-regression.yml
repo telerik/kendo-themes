@@ -82,9 +82,20 @@ jobs:
       - name: Compare against baseline
         if: ${{ !inputs.baseline }}
         run: |
+          # reg-cli's report.html references its actual/expected dirs with
+          # paths relative to itself (e.g. "../tests/_output" if pointed at
+          # that directly) - so they must live inside .reg/ alongside the
+          # report, or the artifact below is only a self-contained report
+          # for actual diffs, with every new/passed thumbnail broken once
+          # downloaded and unzipped elsewhere. Copy them in first so the
+          # whole .reg/ directory is portable on its own.
           mkdir -p baseline-images
+          mkdir -p .reg
+          cp -r tests/_output .reg/actual
+          cp -r baseline-images .reg/expected
+
           # Thresholds match the previous regconfig.json (reg-suit) settings.
-          npx reg-cli tests/_output baseline-images .reg/diff \
+          npx reg-cli .reg/actual .reg/expected .reg/diff \
             --report .reg/report.html --json .reg/out.json \
             --matchingThreshold 0.05 --thresholdRate 0.001 --enableAntialias \
             --additionalDetection client || true
