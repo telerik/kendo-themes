@@ -94,6 +94,20 @@ jobs:
             exit 1
           fi
 
+      # include-hidden-files is required: .reg is a dot-directory, and
+      # actions/upload-artifact excludes hidden files/directories by default
+      # - without this it silently uploads an empty artifact (just a
+      # warning, not a failure) instead of the actual report, confirmed in
+      # production.
+      - name: Upload visual report
+        if: ${{ !inputs.baseline }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: visual-regression-report
+          path: .reg
+          retention-days: 30
+          include-hidden-files: true
+
       - name: Stage new baseline
         if: inputs.baseline
         run: cp -r tests/_output baseline-images
@@ -155,19 +169,3 @@ jobs:
             } else {
               await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
             }
-
-      # Placed after "Summarize result" rather than right after the compare
-      # step: reg-cli's own process printed its "N file(s) appended" summary
-      # and returned before its --report/--json writes were actually visible
-      # to a sibling step - confirmed in production, twice: an upload step
-      # placed directly after the compare step found .reg/ empty both times,
-      # while "Summarize result" (which itself reads .reg/out.json) always
-      # succeeded. Uploading only after that read is proven to succeed
-      # sidesteps the race without depending on understanding its exact cause.
-      - name: Upload visual report
-        if: ${{ !inputs.baseline }}
-        uses: actions/upload-artifact@v7
-        with:
-          name: visual-regression-report
-          path: .reg
-          retention-days: 30
