@@ -29,8 +29,8 @@ jobs:
     needs: [ prime-cache ]
 
 
-  # Every merge to develop must publish a baseline snapshot, so PRs branching
-  # off develop have something to diff against (see reg-fetch-gh-pages-plugin).
+  # Every merge to develop must save a new baseline cache, so PRs branching
+  # off develop have something to diff against (see _visual-regression.yml).
   compile-themes:
     name: Compile themes
     uses: ./.github/workflows/_compile-themes.yml
@@ -47,10 +47,6 @@ jobs:
   visual-regression:
     name: Visual regression
     needs: [ create-screenshots ]
-    permissions:
-      actions: read
-      contents: write        # publish baseline to gh-pages
-      pull-requests: write
     uses: ./.github/workflows/_visual-regression.yml
     with:
       baseline: true

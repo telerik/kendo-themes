@@ -167,9 +167,10 @@ jobs:
       # Keeps the markup snapshots under tests/ (used by the "a11y" job, see
       # ci.yml) in sync with packages/html - independent of the visual
       # (screenshot) pipeline, which no longer commits anything back to the
-      # branch (reg-suit manages those on gh-pages instead, see
-      # _visual-regression.yml). Without this, tests/*.html could silently
-      # drift out of date with no signal.
+      # branch (screenshots are compared and reported by
+      # _visual-regression.yml instead, via a build artifact + cache, not a
+      # branch commit). Without this, tests/*.html could silently drift out
+      # of date with no signal.
       - name: Commit and push markup snapshots
         if: ${{ env.HAS_CHANGES == 'YES' }}
         run: |

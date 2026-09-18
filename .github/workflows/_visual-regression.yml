@@ -1,19 +1,25 @@
 name: Visual regression
+
+# Compares this run's screenshots against the last develop baseline using
+# reg-cli directly (no reg-suit, no gh-pages). The baseline is just an
+# actions/cache entry - GitHub's built-in cache eviction (7 days unused, or
+# oldest-first past the repo's 10GB quota) keeps it bounded automatically, no
+# custom pruning workflow needed. The report is uploaded as a build artifact
+# instead of a hosted site: reg-cli's report.html only ever uses plain <img>
+# tags with relative paths (no fetch()/XHR), so it renders correctly straight
+# out of a downloaded/unzipped artifact with no server required. This trades
+# a one-click hosted diff viewer for zero hosting/lifecycle machinery - see
+# the "Visual regression: reg-suit vs artifact-based" discussion for the
+# full rationale.
+
 on:
   workflow_call:
     inputs:
       baseline:
-        description: >
-          True for the develop-branch baseline publish (ci_develop.yml).
-          Keeps the per-commit report key so fetch() can look up an exact
-          baseline commit. False (default) for PR/feature-branch runs, which
-          publish under reports/pr-<number>/ instead, see "Resolve report
-          key" below.
+        description: True for the develop-branch baseline run (ci_develop.yml), which saves this run's screenshots as the new baseline cache instead of comparing against one.
         type: boolean
         default: false
     outputs:
-      report-url:
-        value: ${{ jobs.run.outputs.report-url }}
       changed:
         value: ${{ jobs.run.outputs.changed }}
       new:
@@ -27,22 +33,12 @@ jobs:
   run:
     runs-on: ubuntu-latest
     permissions:
-      actions: read         # verify this is the latest CI run for the branch
-      contents: write        # push baseline + report to gh-pages
       pull-requests: write   # post the PR comment
     outputs:
-      report-url: ${{ steps.summary.outputs.report-url }}
-      changed:    ${{ steps.summary.outputs.changed }}
-      new:        ${{ steps.summary.outputs.new }}
+      changed: ${{ steps.summary.outputs.changed }}
+      new:     ${{ steps.summary.outputs.new }}
     steps:
       - uses: actions/checkout@v7
-        with:
-          # reg-keygen-git-hash-plugin needs full commit history, but only the
-          # commit graph - not file contents. A blobless partial clone gets the
-          # same history for a fraction of the transfer on a repo with this many
-          # historical image-heavy commits.
-          fetch-depth: 0
-          filter: blob:none
 
       - id: setup-node
         uses: actions/setup-node@v7
@@ -68,327 +64,57 @@ jobs:
       - name: Unpack artifacts
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
-      - name: Configure git identity
-        run: |
-          git config user.name "kendo-bot"
-          git config user.email "kendouiteam@progress.com"
-
-      # Baseline (develop) runs keep the per-commit report key. PR/feature
-      # branch runs republish over reports/pr-<number>/ instead, so pushing
-      # again to the same PR doesn't leave one report folder per commit
-      # behind - see reg-fetch-gh-pages-plugin. Also drives which PR (if any)
-      # gets the result comment below, since this workflow is push-triggered
-      # and has no pull_request context of its own.
-      - name: Resolve report key
-        id: resolve-report-key
+      # The develop baseline is just a cache entry, keyed by commit so it's
+      # never ambiguous which one is "latest" - restore-keys (prefix match,
+      # newest first) finds it without needing to know the exact SHA. A cache
+      # miss (first run ever, or one older than 7 days with nothing since to
+      # refresh it) just means "nothing to compare against yet" - reg-cli
+      # below reports every screenshot as new rather than failing.
+      - name: Restore baseline screenshots
         if: ${{ !inputs.baseline }}
-        uses: actions/github-script@v9
+        uses: actions/cache/restore@v4
         with:
-          script: |
-            // Resolve by branch rather than exact SHA: render-test-pages may
-            // push a generated-preview commit with GITHUB_TOKEN while this CI
-            // run continues, and that push intentionally does not start CI.
-            // The lifecycle reconciler handles PRs opened after this bounded
-            // wait expires.
-            const { owner, repo } = context.repo;
-            const branch = context.ref.replace('refs/heads/', '');
-            let openPr;
-            for (let attempt = 1; attempt <= 6; attempt++) {
-              const { data: prs } = await github.rest.pulls.list({
-                owner,
-                repo,
-                state: 'open',
-                head: `${owner}:${branch}`,
-              });
-              openPr = prs.find(pr =>
-                pr.head.ref === branch &&
-                pr.head.repo?.full_name === `${owner}/${repo}`
-              );
-              if (openPr || attempt === 6) break;
-              core.info(`No open PR found (attempt ${attempt}/6); retrying in 5 seconds.`);
-              await new Promise(resolve => setTimeout(resolve, 5000));
-            }
-            if (openPr) {
-              core.exportVariable('REG_REPORT_KEY', `pr-${openPr.number}`);
-              core.setOutput('pr-number', String(openPr.number));
-              core.info(`Publishing under reports/pr-${openPr.number}/ (PR #${openPr.number})`);
-            } else {
-              core.info('No open PR found for this commit; falling back to per-commit report key.');
-            }
+          path: baseline-images
+          key: visual-baseline-${{ github.sha }}
+          restore-keys: |
+            visual-baseline-
 
-      - name: Run reg-suit
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        # visual change is NOT a hard failure; review is human.
-        # Output is captured because each run publishes under its own report
-        # key (reports/<key>/, see "Resolve report key" above) - the
-        # "Summarize result" step below parses the real "Report URL: ..."
-        # line reg-suit prints instead of hardcoding one.
-        run: npx reg-suit run 2>&1 | tee reg-suit-output.log || true
-
-      - name: Read publish target
-        id: publish-target
+      - name: Compare against baseline
+        if: ${{ !inputs.baseline }}
         run: |
-          if [ -f reg-publish-info.json ]; then
-            node -e "const i=require('./reg-publish-info.json'); console.log('source-dir='+i.sourceDir); console.log('target-dir='+i.targetDir);" >> "$GITHUB_OUTPUT"
-          fi
+          mkdir -p baseline-images
+          # Thresholds match the previous regconfig.json (reg-suit) settings.
+          npx reg-cli tests/_output baseline-images .reg/diff \
+            --report .reg/report.html --json .reg/out.json \
+            --matchingThreshold 0.05 --thresholdRate 0.001 --enableAntialias \
+            --additionalDetection client || true
 
-      # A full report publishes actual+expected images for every compared
-      # item, passed or not (~9,900 files / ~400MB for this repo, ~99% of it
-      # for items that are pixel-identical). None of that is needed:
-      #  - reg-fetch-gh-pages-plugin's fetch() only ever reads back a
-      #    baseline (develop) report's "actual/" dir as the next run's
-      #    comparison baseline - it never reads "expected/" from anywhere,
-      #    and never reads a PR report (reports/pr-<number>/) back at all.
-      #  - the published report.js viewer (reg-cli) renders plain <img> tags
-      #    with no fetch()/XHR existence check and an onerror handler, so a
-      #    missing image for a passed item just degrades to a broken
-      #    thumbnail if someone expands it, not a broken report.
-      # So it's safe to drop what nothing needs: "expected/" entirely on
-      # baseline reports, and both "actual/"+"expected/" for passed items on
-      # PR reports (keeping full images only for what's actually worth a
-      # human looking at: failed/new/deleted items). This is what keeps
-      # report size bounded well under GitHub Pages' 1GB limit even with
-      # several PRs' reports coexisting on gh-pages at once.
-      - name: Prune unneeded images before publish
-        if: steps.publish-target.outputs.target-dir != ''
-        env:
-          SOURCE_DIR: ${{ steps.publish-target.outputs.source-dir }}
-          IS_BASELINE: ${{ inputs.baseline }}
-        run: |
-          node -e '
-            const fs = require("fs");
-            const path = require("path");
-
-            const sourceDir = process.env.SOURCE_DIR;
-            const isBaseline = process.env.IS_BASELINE === "true";
-            const out = JSON.parse(fs.readFileSync(path.join(sourceDir, "out.json"), "utf8"));
-
-            if (isBaseline) {
-              fs.rmSync(path.join(sourceDir, out.expectedDir), { recursive: true, force: true });
-              console.log("Baseline report: dropped " + out.expectedDir + "/ entirely (never read back).");
-            } else {
-              for (const item of out.passedItems) {
-                fs.rmSync(path.join(sourceDir, out.actualDir, item), { force: true });
-                fs.rmSync(path.join(sourceDir, out.expectedDir, item), { force: true });
-              }
-              console.log(`PR report: dropped actual+expected for ${out.passedItems.length} passed item(s).`);
-            }
-          '
-
-      - name: Record report source commit
-        if: ${{ !inputs.baseline && steps.publish-target.outputs.target-dir != '' }}
-        env:
-          SOURCE_DIR: ${{ steps.publish-target.outputs.source-dir }}
-        run: printf '%s\n' '${{ github.sha }}' > "$SOURCE_DIR/.source-sha"
-
-      # reg-suit's own publish plugin shells out to `git commit`/`git push`
-      # against a worktree of the *entire* gh-pages history, which reliably
-      # crashes with ENOBUFS once a run has a real (non-"new") diff to report
-      # - see PR #5997 discussion. Publishing is done here instead. With
-      # destination_dir set, keep_files:false only clears *that* subfolder
-      # before copying (see peaceiris/actions-gh-pages' setRepo()) - other
-      # report folders on gh-pages are untouched, and for PR runs it wipes
-      # any file that dropped out of the report since the last push instead
-      # of leaving it behind under reports/pr-<number>/.
-      - name: Publish report to gh-pages
-        if: steps.publish-target.outputs.target-dir != ''
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload visual report
+        if: ${{ !inputs.baseline }}
+        uses: actions/upload-artifact@v7
         with:
-          github_token: ${{ github.token }}
-          publish_branch: gh-pages
-          publish_dir: ${{ steps.publish-target.outputs.source-dir }}
-          destination_dir: ${{ steps.publish-target.outputs.target-dir }}
-          keep_files: false
-          user_name: kendo-bot
-          user_email: kendouiteam@progress.com
+          name: visual-regression-report
+          path: .reg
+          retention-days: 30
 
-      - name: Validate pull request report
-        id: validate-pr-report
-        if: ${{ !inputs.baseline && steps.resolve-report-key.outputs.pr-number != '' }}
-        uses: actions/github-script@v9
-        env:
-          PR_NUMBER: ${{ steps.resolve-report-key.outputs.pr-number }}
+      - name: Stage new baseline
+        if: inputs.baseline
+        run: cp -r tests/_output baseline-images
+
+      # Every merge to develop replaces the baseline wholesale (one cache
+      # entry per commit; old ones age out via GitHub's own eviction, see
+      # above) rather than mutating it in place, so a run reading it never
+      # races a run writing it.
+      - name: Save new baseline
+        if: inputs.baseline
+        uses: actions/cache/save@v4
         with:
-          script: |
-            const { owner, repo } = context.repo;
-            const branch = context.ref.replace('refs/heads/', '');
-            const { data: pr } = await github.rest.pulls.get({
-              owner,
-              repo,
-              pull_number: Number(process.env.PR_NUMBER),
-            });
-            const { data: runs } = await github.rest.actions.listWorkflowRuns({
-              owner,
-              repo,
-              workflow_id: 'ci.yml',
-              branch,
-              event: 'push',
-              per_page: 1,
-            });
-            const latestRun = runs.workflow_runs[0];
-            const current =
-              pr.state === 'open' &&
-              pr.head.ref === branch &&
-              pr.head.repo?.full_name === `${owner}/${repo}` &&
-              String(latestRun?.id) === String(context.runId);
-            core.setOutput('current', String(current));
-
-      # A PR can close or receive another push after report-key resolution.
-      # Remove this run's report only when its source marker still matches, so
-      # a stale run cannot recreate a closed report or delete a newer one.
-      - name: Remove stale pull request report
-        if: ${{ steps.validate-pr-report.outputs.current == 'false' }}
-        env:
-          PR_NUMBER: ${{ steps.resolve-report-key.outputs.pr-number }}
-        run: |
-          git fetch --depth 1 origin gh-pages
-          git worktree add --no-checkout gh-pages-stale origin/gh-pages
-          git -C gh-pages-stale sparse-checkout init --no-cone
-          git -C gh-pages-stale sparse-checkout set "reports/pr-$PR_NUMBER"
-          git -C gh-pages-stale checkout
-
-          cd gh-pages-stale
-          target_dir="reports/pr-$PR_NUMBER"
-          if [ ! -f "$target_dir/.source-sha" ] ||
-             [ "$(cat "$target_dir/.source-sha")" != "${{ github.sha }}" ]; then
-            echo "A newer report replaced this one; leaving it untouched."
-            exit 0
-          fi
-
-          git config user.name "kendo-bot"
-          git config user.email "kendouiteam@progress.com"
-          git rm -r "$target_dir"
-          git commit -m "chore(ci): remove stale visual report for PR #$PR_NUMBER"
-          for attempt in 1 2 3; do
-            git push origin HEAD:gh-pages && break
-            [ "$attempt" -eq 3 ] && exit 1
-            git pull --rebase origin gh-pages
-          done
-
-      # Baseline runs publish under reports/<commit-sha>/ (see "Resolve report
-      # key" above - REG_REPORT_KEY is only set for PR runs), and fetch() only
-      # ever needs the single latest one: reg-keygen-git-hash-plugin resolves
-      # the expected key to the merge-base against develop, which for an
-      # up-to-date PR branch is the most recent baseline commit. Without this,
-      # every merge to develop would leave its baseline behind forever,
-      # reintroducing the unbounded growth this PR replaces (~200MB/merge).
-      # A stale/un-rebased PR branch whose baseline got pruned just falls back
-      # to "treat as new" (see reg-fetch-gh-pages-plugin's fetch()) rather than
-      # failing.
-      - name: Prune old baseline reports
-        if: ${{ inputs.baseline && steps.publish-target.outputs.target-dir != '' }}
-        run: |
-          git fetch --depth 1 origin gh-pages
-          git worktree add gh-pages-prune origin/gh-pages
-
-          KEEP="$(basename "${{ steps.publish-target.outputs.target-dir }}")"
-          cd gh-pages-prune
-
-          for dir in reports/*/; do
-            name="$(basename "$dir")"
-            # Source-marked SHA reports belong to feature runs whose PR may
-            # not exist yet. The lifecycle reconciler moves or removes them.
-            [[ "$name" == pr-* || "$name" == "$KEEP" || -f "$dir/.source-sha" ]] && continue
-            git rm -rq --ignore-unmatch "$dir"
-          done
-
-          if ! git diff --cached --quiet; then
-            git config user.name "kendo-bot"
-            git config user.email "kendouiteam@progress.com"
-            git commit -q -m "chore(ci): prune stale visual regression baselines, keep $KEEP"
-            # HEAD is detached (git worktree add checked out origin/gh-pages
-            # directly, no local gh-pages branch) - push it explicitly as one.
-            git push origin HEAD:gh-pages
-          fi
-
-      # Reviewers otherwise have to know an exact commit SHA to look at the
-      # develop baseline, and there's no single place listing which PRs
-      # currently have a live report. Both are just tiny static files, so
-      # this uses the Contents API to read/write them directly instead of
-      # the ~2GB "git worktree add" checkout the prune step above needs for
-      # bulk-deleting whole directories - that cost isn't worth paying again
-      # here, especially since this step also runs on every PR push, not
-      # just baseline runs.
-      - name: Update reports index & develop alias
-        if: steps.publish-target.outputs.target-dir != ''
-        uses: actions/github-script@v9
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-
-            let dirs = [];
-            try {
-              const { data } = await github.rest.repos.getContent({ owner, repo, path: 'reports', ref: 'gh-pages' });
-              dirs = data.filter(e => e.type === 'dir').map(e => e.name);
-            } catch (e) {
-              core.warning(`Unable to list reports/ on gh-pages: ${e.message}`);
-              return;
-            }
-
-            // Feature runs may temporarily leave commit-keyed reports for the
-            // lifecycle reconciler, so only a baseline run may update the
-            // develop alias.
-            const prDirs = dirs.filter(d => d.startsWith('pr-')).sort((a, b) => Number(b.slice(3)) - Number(a.slice(3)));
-            const baselineDir = ${{ inputs.baseline }} ? context.sha : undefined;
-
-            async function putFile(path, content, message) {
-              let sha;
-              try {
-                const { data } = await github.rest.repos.getContent({ owner, repo, path, ref: 'gh-pages' });
-                sha = data.sha;
-              } catch {
-                // File doesn't exist yet - create it.
-              }
-              await github.rest.repos.createOrUpdateFileContents({
-                owner, repo, path, message,
-                content: Buffer.from(content).toString('base64'),
-                branch: 'gh-pages',
-                committer: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
-                author: { name: 'kendo-bot', email: 'kendouiteam@progress.com' },
-                ...(sha ? { sha } : {}),
-              });
-            }
-
-            // Static, SHA-independent alias: /develop/ always redirects to
-            // whatever the current baseline report is, so nobody has to look
-            // up a commit hash to see it.
-            if (${{ inputs.baseline }} && baselineDir) {
-              const target = `../reports/${baselineDir}/`;
-              const redirect = [
-                '<!DOCTYPE html>',
-                '<meta charset="utf-8">',
-                `<meta http-equiv="refresh" content="0; url=${target}">`,
-                `<link rel="canonical" href="${target}">`,
-                `<script>location.replace(${JSON.stringify(target)});</script>`,
-                `<p>Redirecting to the latest <a href="${target}">develop baseline report</a>…</p>`,
-                '',
-              ].join('\n');
-              await putFile('develop/index.html', redirect, 'chore(ci): update develop baseline redirect');
-            }
-
-            // Homepage listing develop + every currently open PR's report.
-            const rows = prDirs
-              .map(d => {
-                const n = d.slice(3);
-                return `<li><a href="reports/${d}/">PR #${n} report</a> — <a href="https://github.com/${owner}/${repo}/pull/${n}">view PR</a></li>`;
-              })
-              .join('\n');
-            const home = [
-              '<!DOCTYPE html>',
-              '<meta charset="utf-8">',
-              `<title>${repo} visual regression reports</title>`,
-              `<h1>${repo} visual regression reports</h1>`,
-              '<ul>',
-              '<li><a href="develop/">develop (baseline)</a></li>',
-              rows || '<li><em>No open PR reports.</em></li>',
-              '</ul>',
-              '',
-            ].join('\n');
-            await putFile('index.html', home, 'chore(ci): update reports index');
+          path: baseline-images
+          key: visual-baseline-${{ github.sha }}
 
       - name: Summarize result
         id: summary
+        if: ${{ !inputs.baseline }}
         uses: actions/github-script@v9
         with:
           script: |
@@ -398,44 +124,37 @@ jobs:
             const added   = out.newItems.length;
             const deleted = out.deletedItems.length;
             const passed  = out.passedItems.length;
-
-            // Each run publishes under its own report key (reports/<key>/,
-            // see "Resolve report key" above) - read the real URL reg-suit
-            // printed instead of hardcoding one.
-            const log = fs.existsSync('reg-suit-output.log') ? fs.readFileSync('reg-suit-output.log', 'utf8') : '';
-            const match = [...log.matchAll(/Report URL:\s*(\S+)/g)].pop();
-            const reportUrl = match ? match[1] : `https://${context.repo.owner}.github.io/${context.repo.repo}/reports/`;
-            core.setOutput('report-url', reportUrl);
             core.setOutput('changed', String(changed));
             core.setOutput('new', String(added));
 
-            // This workflow is push-triggered, so there's no pull_request
-            // context (context.issue.number is always unset here) - use the
-            // PR resolved in "Resolve report key" instead.
-            const isCurrentPrReport = '${{ steps.validate-pr-report.outputs.current }}' !== 'false';
-            const issue_number = isCurrentPrReport
-              ? Number('${{ steps.resolve-report-key.outputs.pr-number }}') || undefined
-              : undefined;
-            if (!issue_number) return;   // no open PR for this commit (or a baseline run)
-            const marker = '<!-- reg-suit-visual-report -->';
+            // This job is push-triggered (see _visual-regression.yml's
+            // callers), so there's no pull_request context - find whichever
+            // open PR currently points at this branch, if any.
+            const { owner, repo } = context.repo;
+            const branch = context.ref.replace('refs/heads/', '');
+            const { data: prs } = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${branch}` });
+            const pr = prs.find(p => p.head.ref === branch && p.head.repo?.full_name === `${owner}/${repo}`);
+            if (!pr) return;   // no open PR for this branch right now
+
+            const runUrl = `${process.env.GITHUB_SERVER_URL}/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const marker = '<!-- visual-regression-report -->';
             const body = [
               marker,
               '### 🖼️ Visual regression',
-              `| Changed | New | Deleted | Passed |`,
-              `|--:|--:|--:|--:|`,
+              '| Changed | New | Deleted | Passed |',
+              '|--:|--:|--:|--:|',
               `| **${changed}** | ${added} | ${deleted} | ${passed} |`,
               '',
-              `📊 [Open the diff report](${reportUrl})`,
+              `📦 [Download the report](${runUrl}) from this run's artifacts (\`visual-regression-report\`), unzip, and open \`report.html\`.`,
               changed === 0 && added === 0
                 ? '_No visual changes detected._'
                 : '_Review the report, then approve by merging — the baseline updates on `develop`._',
             ].join('\n');
 
-            const { owner, repo } = context.repo;
-            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number });
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number });
             const existing = comments.find(c => c.body && c.body.includes(marker));
             if (existing) {
               await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
             } else {
-              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
             }

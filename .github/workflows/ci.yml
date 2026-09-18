@@ -52,8 +52,6 @@ jobs:
     name: Visual regression
     needs: [ create-screenshots ]
     permissions:
-      actions: read
-      contents: write
       pull-requests: write
     uses: ./.github/workflows/_visual-regression.yml
 
@@ -89,7 +87,7 @@ jobs:
             const mapState = (r) => r === 'success' ? 'success' : 'failure';
 
             const sha = context.sha;
-            const targetUrl = '${{ needs.visual-regression.outputs.report-url }}' || `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const targetUrl = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
 
             await Promise.all(results.map(([result, contextName]) =>
               github.rest.repos.createCommitStatus({
