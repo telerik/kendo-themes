@@ -80,7 +80,7 @@ export const ImageEditorInsertShape = (props: any) => (
                         />
                         <FormField
                             label="Text Color"
-                            editor={ <ColorPicker id="shape-text-color" value="#706903" valueIconName="foreground-color" aria-label="Text Color" /> }
+                            editor={ <ColorPicker id="shape-text-color" value="#4a4500" valueIconName="foreground-color" aria-label="Text Color" /> }
                         />
                     </Fieldset>
                     <FormField
@@ -166,7 +166,7 @@ export const ImageEditorInsertShape = (props: any) => (
                             fontFamily: "'Trebuchet MS', sans-serif",
                             fontSize: "16px",
                             lineHeight: 1,
-                            color: "#706903",
+                            color: "#4a4500",
                             whiteSpace: "nowrap"
                         }}>Shape text</p>
                     </div>
