@@ -126,7 +126,7 @@ export default () => (
                                     />
                                     <FormField
                                         label="Text Color"
-                                        editor={ <ColorPicker id="mobile-shape-text-color" value="#706903" valueIconName="foreground-color" aria-label="Text Color" /> }
+                                        editor={ <ColorPicker id="mobile-shape-text-color" value="#4a4500" valueIconName="foreground-color" aria-label="Text Color" /> }
                                     />
                                 </Fieldset>
                                 <FormField
@@ -210,7 +210,7 @@ export default () => (
                                 fontFamily: "'Trebuchet MS', sans-serif",
                                 fontSize: "16px",
                                 lineHeight: 1,
-                                color: "#706903",
+                                color: "#4a4500",
                                 whiteSpace: "nowrap"
                             }}>Shape text</p>
                         </div>
@@ -262,7 +262,7 @@ export default () => (
                                     />
                                     <FormField
                                         label="Text Color"
-                                        editor={ <ColorPicker id="tablet-shape-text-color" value="#706903" valueIconName="foreground-color" aria-label="Text Color" /> }
+                                        editor={ <ColorPicker id="tablet-shape-text-color" value="#4a4500" valueIconName="foreground-color" aria-label="Text Color" /> }
                                     />
                                 </Fieldset>
                                 <FormField
@@ -346,7 +346,7 @@ export default () => (
                                 fontFamily: "'Trebuchet MS', sans-serif",
                                 fontSize: "16px",
                                 lineHeight: 1,
-                                color: "#706903",
+                                color: "#4a4500",
                                 whiteSpace: "nowrap"
                             }}>Shape text</p>
                         </div>
