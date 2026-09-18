@@ -14,15 +14,43 @@ The Imageeditor is compliant with the [Web Content Accessibility Guidelines (WCA
 | --- | --- |
 | `role="img"` | Indicates the canvas role as an image. Applicable when an image is loaded. |
 | `aria-label|aria-labelledby` | Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded. |
+| `role="status"` | Announces the busy overlay shown while `exporting` is true. |
 
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
-| `Tab` | Focuses next focusable element (the ToolBar or an input/button on the Edit pane). |
-| `Shift + Tab` | Focuses previous focusable element. |
-| `Control + Z` | Undo the last modification performed on the image. |
-| `Control + Y` | Redo a modification performed on the image. |
+| `Alt/Opt(Mac) + Number` | Focuses the component. |
+| `Tab` | Focuses the next focusable item. |
+| `Shift + Tab` | Focuses the previous focusable item. |
+| `Enter` | Presses the focused button. |
+| `Space` | Presses the focused button. |
+| `Control/Cmd(Mac) + Z` | Undo the operation. |
+| `Control/Cmd(Mac) + Y` | Redo the operation. |
+| `Escape` | Deselect / Cancel operation. |
+| `Delete` | Delete selected element. |
+| `Control/Cmd(Mac) + Plus` | Zooms in on the image. Conflicts with the browser zoom in all browsers; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + Minus` | Zooms out from the image. Conflicts with the browser zoom out in all browsers; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + O` | Opens the image browser to import a new image. Conflicts with the Open File dialog in all browsers; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + D` | Duplicates the selected element. Conflicts with Bookmark Page in all browsers; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + Shift + S` | Exports the image. Conflicts with the Firefox Screenshot tool; requires `preventDefault` when the component is focused. |
+| `Shift + 1` | Fit to screen. |
+| `Shift + 0` | Zoom to 100%. |
+| `Control/Cmd(Mac) + F3` | Moves keyboard focus directly to the Side Panel. |
+| `R` | Inserts a rectangle shape and selects it. The Floating Toolbar appears, but the side panel remains closed. |
+| `O` | Inserts an oval shape and selects it. The Floating Toolbar appears, but the side panel remains closed. |
+| `L` | Inserts a line shape and selects it. The Floating Toolbar appears, but the side panel remains closed. |
+| `T` | Inserts a text box with a typing cursor and selects it. The Floating Toolbar appears, but the side panel remains closed. |
+| `ArrowLeft` | Moves the selected object left. |
+| `ArrowRight` | Moves the selected object right. |
+| `ArrowUp` | Moves the selected object up. |
+| `ArrowDown` | Moves the selected object down. |
+| `Control/Cmd(Mac) + B` | Bolds the text. Conflicts with the Firefox Bookmarks Sidebar; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + I` | Italicizes the text. Conflicts with Firefox Page Info; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + U` | Underlines the text. Conflicts with View Source in Chrome, Firefox, and Edge; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + Shift + L` | Left-aligns the text. |
+| `Control/Cmd(Mac) + Shift + E` | Center-aligns the text. Conflicts with Firefox Search in Tabs; requires `preventDefault` when the component is focused. |
+| `Control/Cmd(Mac) + Shift + R` | Right-aligns the text. Conflicts with Hard Refresh in all browsers; requires `preventDefault` when the component is focused. |
 
 #### UX Behavior
 
@@ -33,6 +61,7 @@ The Imageeditor is compliant with the [Web Content Accessibility Guidelines (WCA
 | Pan and zoom | The canvas can be panned by dragging and zoomed with the mouse wheel. |
 | Undo / Redo | All edit operations can be undone and redone. |
 | Export | The edited image can be saved or downloaded. |
+| Exporting | While `exporting` is true, a busy overlay covers the editor and interaction is blocked. |
 
 ### Testing
 
