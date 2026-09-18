@@ -89,6 +89,21 @@ jobs:
             --matchingThreshold 0.05 --thresholdRate 0.001 --enableAntialias \
             --additionalDetection client || true
 
+          # reg-cli's own process can print its "N file(s) appended" summary
+          # and exit before its --report/--json writes are flushed to disk -
+          # confirmed in production: the upload-artifact step immediately
+          # after this one found .reg/ empty, while the step after THAT one
+          # read .reg/out.json successfully a moment later. Poll instead of
+          # trusting the process exit as "fully written".
+          for _ in 1 2 3 4 5 6 7 8 9 10; do
+            [ -f .reg/out.json ] && break
+            sleep 1
+          done
+          if [ ! -f .reg/out.json ]; then
+            echo "::error::.reg/out.json was not written by reg-cli after 10s; failing loudly instead of reporting stale/empty results."
+            exit 1
+          fi
+
       - name: Upload visual report
         if: ${{ !inputs.baseline }}
         uses: actions/upload-artifact@v7
