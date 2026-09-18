@@ -40,6 +40,35 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # This job is push-triggered (see _visual-regression.yml's callers), so
+      # there's no pull_request context - find whichever open PR currently
+      # points at this branch, if any, and update it with a placeholder
+      # immediately (matching Package Report's "Generating..." pattern)
+      # rather than leaving the PR with no comment at all for the several
+      # minutes screenshots+compare take.
+      - name: Resolve pull request and post placeholder comment
+        id: resolve-pr
+        if: ${{ !inputs.baseline }}
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = context.ref.replace('refs/heads/', '');
+            const { data: prs } = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${branch}` });
+            const pr = prs.find(p => p.head.ref === branch && p.head.repo?.full_name === `${owner}/${repo}`);
+            if (!pr) return;   // no open PR for this branch right now
+            core.setOutput('pr-number', String(pr.number));
+
+            const marker = '<!-- visual-regression-report -->';
+            const body = [marker, '### 🖼️ Visual regression', '', 'Generating... ⚠️'].join('\n');
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number });
+            const existing = comments.find(c => c.body && c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
+            }
+
       - id: setup-node
         uses: actions/setup-node@v7
         with:
@@ -150,14 +179,13 @@ jobs:
             core.setOutput('changed', String(changed));
             core.setOutput('new', String(added));
 
-            // This job is push-triggered (see _visual-regression.yml's
-            // callers), so there's no pull_request context - find whichever
-            // open PR currently points at this branch, if any.
+            // Reuse the PR resolved by "Resolve pull request and post
+            // placeholder comment" at the start of the job, rather than
+            // re-resolving it - avoids a second PR-list lookup and keeps
+            // this update targeting the exact comment that step created.
+            const prNumber = '${{ steps.resolve-pr.outputs.pr-number }}';
+            if (!prNumber) return;   // no open PR for this branch right now
             const { owner, repo } = context.repo;
-            const branch = context.ref.replace('refs/heads/', '');
-            const { data: prs } = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${branch}` });
-            const pr = prs.find(p => p.head.ref === branch && p.head.repo?.full_name === `${owner}/${repo}`);
-            if (!pr) return;   // no open PR for this branch right now
 
             // This is the github.com UI artifact page, not the api.github.com
             // archive_download_url the upload step's own "artifact-url"
@@ -182,10 +210,10 @@ jobs:
                 : '_Review the report, then approve by merging — the baseline updates on `develop`._',
             ].join('\n');
 
-            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number });
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: Number(prNumber) });
             const existing = comments.find(c => c.body && c.body.includes(marker));
             if (existing) {
               await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
             } else {
-              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
+              await github.rest.issues.createComment({ owner, repo, issue_number: Number(prNumber), body });
             }
