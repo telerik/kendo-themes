@@ -13,7 +13,6 @@ export const ToolbarOverflowExpanded = (props) => (
                 icon="more-vertical"
                 className="k-toolbar-overflow-button"
                 fillMode="flat"
-                rounded="none"
                 id="overflow-menu-btn"
                 aria-label="More options"
                 aria-haspopup="menu"

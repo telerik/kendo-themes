@@ -30049,11 +30049,21 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-resize-handle-size</td>
     <td>Number</td>
-    <td><code>8px</code></td>
-    <td><code>8px</code></td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The length of the Scheduler resize handle visual indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-resize-handle-thickness</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thickness of the Scheduler resize handle visual indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -30069,8 +30079,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-resize-handle-border-width</td>
     <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Scheduler resize handle.</div></div>
@@ -30079,8 +30089,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-resize-handle-bg</td>
     <td>String</td>
-    <td><code>$kendo-scheduler-event-bg</code></td>
-    <td><code>var(--kendo-color-secondary-subtle)</code></td>
+    <td><code>k-color(secondary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler resize handle.</div></div>
