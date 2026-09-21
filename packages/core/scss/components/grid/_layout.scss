@@ -206,6 +206,7 @@
                 position: absolute;
                 inset-inline-end: $kendo-grid-header-menu-icon-spacing;
                 z-index: k-z-index("base", 1);
+                -webkit-user-drag: none;
 
                 &:hover {
                     cursor: pointer;
