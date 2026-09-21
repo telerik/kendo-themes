@@ -1,3 +1,22 @@
+## 14.5.1-dev.4 (2026-09-21)
+
+### 🚀 Features
+
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+
+### 🩹 Fixes
+
+- **dock-manager:** content and tab panes have different heights ([af706e6821](https://github.com/telerik/kendo-themes/commit/af706e6821))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 ## 14.5.1-dev.3 (2026-09-14)
 
 ### 🩹 Fixes
