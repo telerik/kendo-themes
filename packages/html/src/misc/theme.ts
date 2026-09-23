@@ -21,6 +21,7 @@ export const Roundness = {
 export const FillMode = {
   undefined: undefined,
   solid: "solid",
+  subtle: "subtle",
   flat: "flat",
   outline: "outline",
   clear: "clear",
