@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            padding: 20px;
+            gap: 25px;
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-7">
+            <span>Default</span>
+            <span>Red</span>
+            <span>Orange</span>
+            <span>Green</span>
+            <span>Teal</span>
+            <span>Purple</span>
+            <span>Yellow</span>
+            <div></div>
+            <div style="background: rgb(244, 67, 54); width: 25px; height: 25px;"></div>
+            <div style="background: rgb(255, 152, 0); width: 25px; height: 25px;"></div>
+            <div style="background: rgb(76, 175, 80); width: 25px; height: 25px;"></div>
+            <div style="background: rgb(0, 150, 136); width: 25px; height: 25px;"></div>
+            <div style="background: rgb(156, 39, 176); width: 25px; height: 25px;"></div>
+            <div style="background: rgb(255, 235, 59); width: 25px; height: 25px;"></div>
+            <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px;">
+                <div>
+                    <div class="k-event-template k-event-title">Event Title</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #f44336;">
+                <div>
+                    <div class="k-event-template k-event-title">Normal</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #ff9800;">
+                <div>
+                    <div class="k-event-template k-event-title">Normal</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #4caf50;">
+                <div>
+                    <div class="k-event-template k-event-title">Normal</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #009688;">
+                <div>
+                    <div class="k-event-template k-event-title">Normal</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #9c27b0;">
+                <div>
+                    <div class="k-event-template k-event-title">Normal</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #ffeb3b;">
+                <div>
+                    <div class="k-event-template k-event-title">Normal</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px;">
+                <div>
+                    <div class="k-event-template k-event-title">Event Title</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #f44336;">
+                <div>
+                    <div class="k-event-template k-event-title">Hover</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #ff9800;">
+                <div>
+                    <div class="k-event-template k-event-title">Hover</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #4caf50;">
+                <div>
+                    <div class="k-event-template k-event-title">Hover</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #009688;">
+                <div>
+                    <div class="k-event-template k-event-title">Hover</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #9c27b0;">
+                <div>
+                    <div class="k-event-template k-event-title">Hover</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #ffeb3b;">
+                <div>
+                    <div class="k-event-template k-event-title">Hover</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px;">
+                <div>
+                    <div class="k-event-template k-event-title">Event Title</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #f44336;">
+                <div>
+                    <div class="k-event-template k-event-title">Selected</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #ff9800;">
+                <div>
+                    <div class="k-event-template k-event-title">Selected</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #4caf50;">
+                <div>
+                    <div class="k-event-template k-event-title">Selected</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #009688;">
+                <div>
+                    <div class="k-event-template k-event-title">Selected</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #9c27b0;">
+                <div>
+                    <div class="k-event-template k-event-title">Selected</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px; --kendo-scheduler-event-color: #ffeb3b;">
+                <div>
+                    <div class="k-event-template k-event-title">Selected</div>
+                    <div class="k-event-template k-event-time">10:00 AM – 10:30 AM</div>
+                </div>
+                <span class="k-resize-handle k-resize-n"></span>
+                <span class="k-resize-handle k-resize-s"></span>
+            </div>
+        </div>
+    </body>
+</html>
