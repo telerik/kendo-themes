@@ -39,8 +39,8 @@ $kendo-scheduler-event-border: null !default;
 $kendo-scheduler-event-gradient: null !default;
 $kendo-scheduler-event-shadow: null !default;
 
-$kendo-scheduler-event-hover-bg: null !default;
-$kendo-scheduler-event-hover-text: null !default;
+$kendo-scheduler-event-hover-bg: $kendo-scheduler-event-bg !default;
+$kendo-scheduler-event-hover-text: $kendo-scheduler-event-text !default;
 $kendo-scheduler-event-hover-border: null !default;
 $kendo-scheduler-event-hover-gradient: null !default;
 $kendo-scheduler-event-hover-shadow: null !default;
