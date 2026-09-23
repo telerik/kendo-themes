@@ -29999,8 +29999,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-shadow</td>
     <td>List</td>
-    <td><code>inset 3px 0 0 0 k-color(secondary)</code></td>
-    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary))</code></td>
+    <td><code>inset 3px 0 0 0 var(--kendo-scheduler-event-accent, k-color(secondary))</code></td>
+    <td><code>(inset 3px 0 0 0 var(--kendo-scheduler-event-accent, var(--kendo-color-secondary)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler event.</div></div>
@@ -30098,9 +30098,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-scheduler-event-hover-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-scheduler-event-bg</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Scheduler event.</div></div>
@@ -30108,9 +30108,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-scheduler-event-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-scheduler-event-text</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Scheduler event.</div></div>
@@ -30189,8 +30189,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-selected-shadow</td>
     <td>List</td>
-    <td><code>inset 3px 0 0 0 k-color(secondary), 0 0 0 1px white, 0 0 0 2px k-color(primary-on-surface)</code></td>
-    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary), 0 0 0 1px white, 0 0 0 2px var(--kendo-color-primary-on-surface))</code></td>
+    <td><code>inset 3px 0 0 0 var(--kendo-scheduler-event-accent, k-color(secondary)), 0 0 0 1px white, 0 0 0 2px k-color(primary-on-surface)</code></td>
+    <td><code>(inset 3px 0 0 0 var(--kendo-scheduler-event-accent, var(--kendo-color-secondary)), 0 0 0 1px white, 0 0 0 2px var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Scheduler event.</div></div>
