@@ -112,18 +112,22 @@
     // Events
     .k-event {
         @include fill(
-            $kendo-scheduler-event-text,
-            $kendo-scheduler-event-bg,
+            var(--kendo-scheduler-on-event, $kendo-scheduler-event-text),
+            var(--kendo-scheduler-event-bg, $kendo-scheduler-event-bg),
             $kendo-scheduler-event-border,
             $kendo-scheduler-event-gradient
         );
         @include box-shadow( $kendo-scheduler-event-shadow );
 
+        --kendo-scheduler-event-bg: var(--kendo-scheduler-event-color);
+        --kendo-scheduler-on-event: oklch(from var(--kendo-scheduler-event-bg) clamp(0.10, (0.75 - l) * 99999, 1) 0 h);
+
+
         &:hover,
         &.k-hover {
             @include fill(
-                $kendo-scheduler-event-hover-text,
-                $kendo-scheduler-event-hover-bg,
+                var(--kendo-scheduler-on-event, $kendo-scheduler-event-hover-text),
+                var(--kendo-scheduler-event-bg, $kendo-scheduler-event-hover-bg),
                 $kendo-scheduler-event-hover-border,
                 $kendo-scheduler-event-hover-gradient
             );
@@ -132,8 +136,8 @@
 
         &.k-selected {
             @include fill(
-                $kendo-scheduler-event-selected-text,
-                $kendo-scheduler-event-selected-bg,
+                var(--kendo-scheduler-on-event, $kendo-scheduler-event-selected-text),
+                var(--kendo-scheduler-event-bg, $kendo-scheduler-event-selected-bg),
                 $kendo-scheduler-event-selected-border,
                 $kendo-scheduler-event-selected-gradient
             );
