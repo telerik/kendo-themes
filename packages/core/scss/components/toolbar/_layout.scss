@@ -144,6 +144,11 @@
         justify-content: flex-start;
         flex: 1 1 auto;
         overflow: hidden;
+
+        // Items only get flex-shrink: 0 from the Toolbar's own "> *" rule when NOT wrapped in this scroll container.
+        > * {
+            flex-shrink: 0;
+        }
     }
 
     .k-toolbar-items-scroll {
