@@ -61,7 +61,7 @@ jobs:
   set-commit-status:
     name: Set commit status
     runs-on: ubuntu-latest
-    needs: [ visual-regression, ci-lint-scripts, ci-lint-styles, ci-audit-css, ci-docs, ci-test-units, ci-test-integrations, ci-a11y, ci-test-html-spec, ci-a11y-specs ]
+    needs: [ visual-regression, ci-lint-scripts, ci-lint-styles, ci-audit-css, ci-docs, ci-test-units, ci-test-integrations, ci-a11y, ci-test-html-spec, ci-a11y-specs, render-test-pages ]
     timeout-minutes: 30
     if: ${{ always() }}
 
@@ -88,7 +88,10 @@ jobs:
 
             const mapState = (r) => r === 'success' ? 'success' : 'failure';
 
-            const sha = context.sha;
+            // render-test-pages may push a bot commit that becomes the PR's
+            // HEAD without triggering its own CI run, so report against its
+            // final sha rather than the (possibly stale) triggering commit.
+            const sha = '${{ needs.render-test-pages.outputs.sha }}';
             const targetUrl = '${{ needs.visual-regression.outputs.report-url }}' || `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
 
             console.log(`Setting statuses for commit ${sha}`);

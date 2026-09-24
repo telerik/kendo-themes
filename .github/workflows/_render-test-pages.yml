@@ -18,6 +18,10 @@ on:
         required: false
         type: string
         default: 'conditionally'
+    outputs:
+      sha:
+        description: 'Final commit SHA on the branch after this workflow ran'
+        value: ${{ jobs.run.outputs.sha || github.sha }}
 
 concurrency:
   group: render-test-pages-${{ github.ref }}
@@ -73,6 +77,8 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ needs.verify.outputs.should-render == 'YES' }}
     needs: [ verify ]
+    outputs:
+      sha: ${{ steps.push.outputs.sha }}
 
     steps:
 
@@ -170,8 +176,15 @@ jobs:
       # branch (reg-suit manages those on gh-pages instead, see
       # _visual-regression.yml). Without this, tests/*.html could silently
       # drift out of date with no signal.
+      #
+      # This push never triggers its own CI run, so callers must report
+      # status checks against the emitted sha, not the triggering commit.
       - name: Commit and push markup snapshots
-        if: ${{ env.HAS_CHANGES == 'YES' }}
+        id: push
         run: |
-          git commit -m "chore: update visual previews"
-          git push
+          if [ "$HAS_CHANGES" = "YES" ]
+          then
+            git commit -m "chore: update visual previews"
+            git push
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
