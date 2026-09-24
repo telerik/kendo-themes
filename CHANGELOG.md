@@ -1,3 +1,11 @@
+## 14.5.1-dev.5 (2026-09-24)
+
+### 🩹 Fixes
+
+- **grid:** prevent column menu icon from being draggable ([60f738edbe](https://github.com/telerik/kendo-themes/commit/60f738edbe))
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+- **toolbar:** items only get flex-shrink: 0 when not wrapped in scroll container ([cdb1c0d51a](https://github.com/telerik/kendo-themes/commit/cdb1c0d51a))
+
 ## 14.5.1-dev.4 (2026-09-21)
 
 ### 🚀 Features

@@ -1,3 +1,15 @@
+## 14.5.1-dev.5 (2026-09-24)
+
+### 🩹 Fixes
+
+- **toolbar:** items only get flex-shrink: 0 when not wrapped in scroll container ([cdb1c0d51a](https://github.com/telerik/kendo-themes/commit/cdb1c0d51a))
+- **grid:** prevent column menu icon from being draggable ([60f738edbe](https://github.com/telerik/kendo-themes/commit/60f738edbe))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
 ## 14.5.1-dev.4 (2026-09-21)
 
 ### 🚀 Features

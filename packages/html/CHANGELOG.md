@@ -1,3 +1,13 @@
+## 14.5.1-dev.5 (2026-09-24)
+
+### 🩹 Fixes
+
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.5.1-dev.4 (2026-09-21)
 
 ### 🚀 Features
