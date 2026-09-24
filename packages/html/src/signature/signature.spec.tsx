@@ -110,7 +110,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                         'k-signature-minimize',
                         maximized ? '' : 'k-hidden'
                     )}
-                    icon="hyperlink-open"
+                    icon="x"
                     rounded={rounded}
                     size={size}
                     fillMode="flat"
@@ -128,7 +128,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                         'k-signature-action',
                         'k-signature-clear',
                     )}
-                    icon="x"
+                    icon="eraser"
                     rounded={props.rounded}
                     size={props.size}
                     fillMode="flat"
