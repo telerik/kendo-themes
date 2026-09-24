@@ -91,17 +91,28 @@ jobs:
             const sha = context.sha;
             const targetUrl = '${{ needs.visual-regression.outputs.report-url }}' || `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
 
-            await Promise.all(results.map(([result, contextName]) =>
-              github.rest.repos.createCommitStatus({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                sha,
-                context: contextName,
-                state: mapState(result),
-                target_url: targetUrl,
-                description: 'CI status check'
-              })
-            ));
+            console.log(`Setting statuses for commit ${sha}`);
+            console.log(`Target URL: ${targetUrl}`);
+
+            for (const [result, contextName] of results) {
+              try {
+                const state = mapState(result);
+                console.log(`Setting status: ${contextName} = ${state}`);
+                await github.rest.repos.createCommitStatus({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  sha,
+                  context: contextName,
+                  state,
+                  target_url: targetUrl,
+                  description: 'CI status check'
+                });
+                console.log(`✓ ${contextName} set to ${state}`);
+              } catch (error) {
+                console.error(`✗ Failed to set ${contextName}: ${error.message}`);
+                throw error;
+              }
+            }
 
   ci-visual:
     name: Status check > Visual
