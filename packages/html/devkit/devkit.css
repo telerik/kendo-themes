@@ -161,27 +161,6 @@
     transform: translateY(0);
 }
 
-/* Brand. */
-.devkit-brand {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    gap: var(--dk-space-2);
-    padding: 0 var(--dk-space-1);
-    color: var(--dk-text);
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: -0.01em;
-    user-select: none;
-}
-
-.devkit-logo {
-    flex-shrink: 0;
-    width: 18px;
-    height: 18px;
-    border-radius: 5px;
-}
-
 /* Separator. */
 .devkit-sep {
     flex-shrink: 0;
@@ -221,54 +200,29 @@
     background: var(--dk-surface-3);
 }
 
-/* Motion toggle + switch. */
+/* Motion toggle. */
 .devkit-motion-toggle {
     color: var(--dk-text-dim);
 }
 
 .devkit-toggle-on {
-    border-color: rgba(255, 255, 255, 0.35);
-    background: rgba(255, 255, 255, 0.14);
-    color: #f1f5f9;
+    border-color: var(--dk-accent-edge);
+    background: var(--dk-accent-soft);
+    color: var(--dk-accent-text);
 }
 
 .devkit-toggle-on:hover {
-    border-color: rgba(255, 255, 255, 0.45);
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+    border-color: var(--dk-accent-edge);
+    background: color-mix(in oklab, var(--dk-accent-color) 26%, transparent);
+    color: var(--dk-text);
 }
 
-.devkit-switch {
-    display: inline-flex;
-    align-items: center;
-    flex-shrink: 0;
-    width: 28px;
-    height: 16px;
-    margin-left: 2px;
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    border-radius: 99px;
-    background: rgba(255, 255, 255, 0.12);
-    transition: background var(--dk-dur-base), border-color var(--dk-dur-base);
-}
-
-.devkit-switch-thumb {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.55);
-    margin-left: 2px;
-    transition: transform var(--dk-dur-base) var(--dk-ease), background var(--dk-dur-base);
-}
-
-.devkit-toggle-on .devkit-switch {
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.28);
-}
-
-.devkit-toggle-on .devkit-switch-thumb {
-    background: #ffffff;
-    transform: translateX(12px);
+/* Icon-only action button (Animations, Translucency triggers). */
+.devkit-icon-btn {
+    gap: 0;
+    width: 34px;
+    padding: 0;
+    justify-content: center;
 }
 
 /* Icon / kbd. */
@@ -289,7 +243,7 @@
     border: 1px solid var(--dk-border);
     border-radius: 5px;
     background: var(--dk-surface-2);
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-family: inherit;
     font-size: 10.5px;
     font-weight: 500;
@@ -297,31 +251,61 @@
 }
 
 /* Custom select (listbox). */
-.devkit-select-group {
-    display: flex;
+.devkit-select-wrap {
+    position: relative;
     flex-shrink: 0;
-    align-items: center;
-    gap: var(--dk-space-2);
 }
 
-.devkit-select-label {
-    color: var(--dk-text-muted);
-    font-size: 10px;
+.devkit-select-gap {
+    margin-left: var(--dk-space-3);
+}
+
+.devkit-select-hint {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    padding: 0 var(--dk-space-3);
+    margin-bottom: 2px;
+    border-bottom: 1px solid var(--dk-hairline);
+    color: var(--dk-text-dim);
+    font-size: 10.5px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     user-select: none;
 }
 
-.devkit-select-wrap {
-    position: relative;
+/* Translucency slider. */
+.devkit-slider-group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: var(--dk-space-3);
+}
+
+.devkit-slider {
+    width: 110px;
+    height: 14px;
+    margin: 0;
+    background: transparent;
+    accent-color: var(--dk-accent-color);
+    cursor: pointer;
+}
+
+.devkit-slider-value {
+    flex-shrink: 0;
+    width: 36px;
+    color: var(--dk-text);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
 }
 
 .devkit-select {
     display: inline-flex;
     align-items: center;
     gap: var(--dk-space-2);
-    min-width: 116px;
+    width: 116px;
     height: 34px;
     padding: 0 var(--dk-space-2) 0 var(--dk-space-3);
     border: 1px solid var(--dk-border);
@@ -355,7 +339,7 @@
     flex-shrink: 0;
     width: 11px;
     height: 11px;
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     transform: rotate(90deg);
     transition: transform var(--dk-dur-base) var(--dk-ease-out), color var(--dk-dur-fast);
 }
@@ -398,13 +382,17 @@
 .devkit-select-option {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: var(--dk-space-3);
     height: 30px;
     padding: 0 var(--dk-space-3);
+    border: 1px solid transparent;
     border-radius: var(--dk-radius-sm);
     color: var(--dk-text-dim);
     font-size: 12.5px;
     white-space: nowrap;
     cursor: pointer;
+    transition: background var(--dk-dur-fast), color var(--dk-dur-fast), border-color var(--dk-dur-fast);
 }
 
 .devkit-select-option[data-active="true"] {
@@ -413,8 +401,90 @@
 }
 
 .devkit-select-option[aria-selected="true"] {
+    border-color: var(--dk-accent-edge);
+    background: var(--dk-accent-soft);
     color: var(--dk-text);
     font-weight: 600;
+}
+
+/* Hover-triggered popovers (Translucency, Animations). */
+.devkit-hover-group {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.devkit-hover-panel {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    z-index: 1;
+    padding: var(--dk-space-3);
+    border: 1px solid var(--dk-border);
+    border-radius: var(--dk-radius-md);
+    background-color: var(--dk-bg);
+    box-shadow: var(--dk-shadow-pop);
+    backdrop-filter: blur(var(--dk-blur)) saturate(160%);
+    transform: translateX(-50%);
+}
+
+.devkit-hover-panel-title {
+    padding: 0 var(--dk-space-1) var(--dk-space-2);
+    margin-bottom: var(--dk-space-2);
+    border-bottom: 1px solid var(--dk-hairline);
+    color: var(--dk-text-dim);
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.devkit-option-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dk-space-1);
+    min-width: 110px;
+}
+
+.devkit-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--dk-space-3);
+    height: 32px;
+    padding: 0 var(--dk-space-3);
+    border: 1px solid transparent;
+    border-radius: var(--dk-radius-sm);
+    background: transparent;
+    color: var(--dk-text-dim);
+    font-family: inherit;
+    font-size: 12.5px;
+    white-space: nowrap;
+    text-align: left;
+    cursor: pointer;
+    transition: background var(--dk-dur-fast), color var(--dk-dur-fast), border-color var(--dk-dur-fast);
+}
+
+.devkit-option:hover {
+    background: var(--dk-surface-2);
+    color: var(--dk-text);
+}
+
+.devkit-option-active {
+    border-color: var(--dk-accent-edge);
+    color: var(--dk-text);
+    font-weight: 600;
+    background: var(--dk-accent-soft);
+}
+
+.devkit-option-check {
+    flex-shrink: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4ade80;
 }
 
 /* Quick-cycle toast. */
@@ -441,7 +511,7 @@
 }
 
 .devkit-toast-label {
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
@@ -543,7 +613,7 @@
     flex-shrink: 0;
     width: 18px;
     height: 18px;
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
 }
 
 .devkit-search-input {
@@ -559,7 +629,7 @@
 }
 
 .devkit-search-input::placeholder {
-    color: var(--dk-text-faint);
+    color: var(--dk-text-muted);
 }
 
 .devkit-search-esc {
@@ -571,7 +641,7 @@
     border: 1px solid var(--dk-border);
     border-radius: 6px;
     background: var(--dk-surface-2);
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-family: inherit;
     font-size: 11px;
     cursor: pointer;
@@ -580,7 +650,7 @@
 
 .devkit-search-esc:hover {
     background: var(--dk-surface-3);
-    color: var(--dk-text-dim);
+    color: var(--dk-text);
 }
 
 .devkit-search-results {
@@ -595,7 +665,7 @@
     align-items: center;
     gap: var(--dk-space-2);
     padding: var(--dk-space-3) var(--dk-space-5) var(--dk-space-1);
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -633,7 +703,7 @@
     flex-shrink: 0;
     width: 14px;
     height: 14px;
-    color: var(--dk-text-faint);
+    color: var(--dk-text-muted);
 }
 
 .devkit-search-item-active .devkit-search-item-icon {
@@ -652,7 +722,7 @@
 
 .devkit-search-empty {
     padding: 44px var(--dk-space-5);
-    color: var(--dk-text-faint);
+    color: var(--dk-text-dim);
     font-size: 14px;
     text-align: center;
 }
@@ -664,7 +734,7 @@
     gap: var(--dk-space-4);
     padding: var(--dk-space-3) var(--dk-space-5);
     border-top: 1px solid var(--dk-hairline);
-    color: var(--dk-text-faint);
+    color: var(--dk-text-muted);
     font-size: 11px;
 }
 
@@ -684,14 +754,14 @@
     border: 1px solid var(--dk-border);
     border-radius: 5px;
     background: var(--dk-surface);
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-size: 10px;
     font-family: inherit;
 }
 
 .devkit-search-count {
     margin-left: auto;
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
 }
 
 /* Landing page. */
@@ -735,12 +805,12 @@
 
 .devkit-landing-stats {
     margin-left: auto;
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-size: 12px;
 }
 
 .devkit-landing-stats strong {
-    color: var(--dk-text-dim);
+    color: var(--dk-text);
     font-weight: 600;
 }
 
@@ -764,7 +834,7 @@
     left: var(--dk-space-4);
     width: 16px;
     height: 16px;
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     transform: translateY(-50%);
     pointer-events: none;
 }
@@ -790,7 +860,7 @@
 }
 
 .devkit-landing-search-input::placeholder {
-    color: var(--dk-text-faint);
+    color: var(--dk-text-muted);
 }
 
 .devkit-landing-search-kbd {
@@ -800,7 +870,7 @@
     display: inline-flex;
     align-items: center;
     gap: var(--dk-space-1);
-    color: var(--dk-text-faint);
+    color: var(--dk-text-muted);
     font-size: 11px;
     transform: translateY(-50%);
     pointer-events: none;
@@ -816,7 +886,7 @@
     border: 1px solid var(--dk-border);
     border-radius: 5px;
     background: var(--dk-surface);
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-size: 10px;
 }
 
@@ -867,7 +937,7 @@
     flex-shrink: 0;
     width: 12px;
     height: 12px;
-    color: var(--dk-text-faint);
+    color: var(--dk-text-muted);
     transition: transform var(--dk-dur-base) var(--dk-ease-out), color var(--dk-dur-fast);
 }
 
@@ -892,7 +962,7 @@
     border: 1px solid var(--dk-hairline);
     border-radius: 99px;
     background: var(--dk-surface-2);
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-size: 11px;
     font-weight: 500;
     font-variant-numeric: tabular-nums;
@@ -935,7 +1005,7 @@
     gap: var(--dk-space-2);
     padding: 6px var(--dk-space-2);
     border-radius: var(--dk-radius-sm);
-    color: var(--dk-text-muted);
+    color: var(--dk-text-dim);
     font-size: 12.5px;
     text-decoration: none;
     transition: background var(--dk-dur-fast), color var(--dk-dur-fast);
@@ -948,7 +1018,7 @@
 
 .devkit-no-results {
     padding: 56px 0;
-    color: var(--dk-text-faint);
+    color: var(--dk-text-dim);
     font-size: 14px;
     text-align: center;
 }
@@ -1027,6 +1097,19 @@
 
 .devkit-error-back:hover {
     background: var(--dk-accent-ring);
+}
+
+/* Translucent background preview: tints the page body so glass surfaces
+ * (blurred bar/panels) have something to show through once translucency > 0.
+ * `html` needs an explicit height so the gradient fills the viewport even
+ * when the page content is shorter than it. */
+html {
+    height: 100%;
+}
+
+.devkit-translucent-bg {
+    min-height: 100%;
+    background: linear-gradient(135deg, var(--kendo-color-primary), var(--kendo-color-secondary));
 }
 
 /* Reduced motion: neutralize all devkit animation/transition.
