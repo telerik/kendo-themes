@@ -20,6 +20,7 @@ export default () => (
             <span>Selected</span>
             <span>Selected+Focus</span>
             <span>Disabled</span>
+            <span>TEST</span>
 
             <span>base</span>
             <span><TextButton>Normal</TextButton></span>
@@ -74,6 +75,9 @@ export default () => (
             <span dir="rtl"><IconButton selected={true}></IconButton></span>
             <span dir="rtl"><IconButton selected={true} focus={true}></IconButton></span>
             <span dir="rtl"><IconButton disabled={true}></IconButton></span>
+
+            <span>TEST</span>
+            <TextButton>TEST</TextButton>
         </div>
     </>
 );
