@@ -2,6 +2,7 @@ const esbuild = require("esbuild");
 const fs = require("fs");
 const p = require("path");
 const { globSync } = require("glob");
+const sideEffectFree = require("../misc/esbuild-plugin-side-effect-free");
 
 const components = globSync("./src/**/*.tsx", { dotRelative: true, ignore: ["./src/utils/**/*.tsx", "./src/**/tests/*.tsx"] });
 components.push("./src/index.ts");
@@ -14,6 +15,7 @@ const commonConfig = {
     minify: true,
     sourcemap: false,
     external: [ "react", "react-dom", "@progress/kendo-svg-icons" ],
+    plugins: [ sideEffectFree() ],
 };
 
 (async() => {
