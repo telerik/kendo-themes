@@ -48,6 +48,8 @@
 
             #{k-when-default($kendo-button-default-size, $size)}
             &.k-button-#{$size} {
+                gap: if( $size == xs or $size == sm, k-spacing(1), k-spacing(1.5) );
+
                 &.k-icon-button {
 
                     .k-button-icon {
