@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            display: grid;
+            gap: 24px;
+            }
+            .badge-redesign-section {
+            display: grid;
+            gap: 12px;
+            }
+            .badge-redesign-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            }
+            .badge-redesign-size {
+            min-width: 48px;
+            }
+        </style>
+        <div id="test-area">
+            <section class="badge-redesign-section">
+                <h3>Content alignment</h3>
+                <div class="badge-redesign-row">
+                    <span class="badge-redesign-size">small</span>
+                    <span class="k-badge k-badge-sm">
+                        <span class="k-badge-text">Text</span>
+                    </span>
+                    <span class="k-badge k-badge-sm">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-badge-text">Leading</span>
+                    </span>
+                    <span class="k-badge k-badge-sm">
+                        <span class="k-badge-text">Trailing</span>
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-badge-icon-only k-badge k-badge-sm k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="badge-redesign-row">
+                    <span class="badge-redesign-size">medium</span>
+                    <span class="k-badge k-badge-md">
+                        <span class="k-badge-text">Text</span>
+                    </span>
+                    <span class="k-badge k-badge-md">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-badge-text">Leading</span>
+                    </span>
+                    <span class="k-badge k-badge-md">
+                        <span class="k-badge-text">Trailing</span>
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-badge-icon-only k-badge k-badge-md k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="badge-redesign-row">
+                    <span class="badge-redesign-size">large</span>
+                    <span class="k-badge k-badge-lg">
+                        <span class="k-badge-text">Text</span>
+                    </span>
+                    <span class="k-badge k-badge-lg">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-badge-text">Leading</span>
+                    </span>
+                    <span class="k-badge k-badge-lg">
+                        <span class="k-badge-text">Trailing</span>
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-badge-icon-only k-badge k-badge-lg k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <h3>Pill content alignment</h3>
+                <div class="badge-redesign-row">
+                    <span class="badge-redesign-size">small</span>
+                    <span class="k-badge k-badge-sm k-rounded-full">
+                        <span class="k-badge-text">Text</span>
+                    </span>
+                    <span class="k-badge k-badge-sm k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-badge-text">Leading</span>
+                    </span>
+                    <span class="k-badge k-badge-sm k-rounded-full">
+                        <span class="k-badge-text">Trailing</span>
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-badge-icon-only k-badge k-badge-sm k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="badge-redesign-row">
+                    <span class="badge-redesign-size">medium</span>
+                    <span class="k-badge k-badge-md k-rounded-full">
+                        <span class="k-badge-text">Text</span>
+                    </span>
+                    <span class="k-badge k-badge-md k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-badge-text">Leading</span>
+                    </span>
+                    <span class="k-badge k-badge-md k-rounded-full">
+                        <span class="k-badge-text">Trailing</span>
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-badge-icon-only k-badge k-badge-md k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="badge-redesign-row">
+                    <span class="badge-redesign-size">large</span>
+                    <span class="k-badge k-badge-lg k-rounded-full">
+                        <span class="k-badge-text">Text</span>
+                    </span>
+                    <span class="k-badge k-badge-lg k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-badge-text">Leading</span>
+                    </span>
+                    <span class="k-badge k-badge-lg k-rounded-full">
+                        <span class="k-badge-text">Trailing</span>
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-badge-icon-only k-badge k-badge-lg k-rounded-full">
+                        <span class="k-badge-icon k-icon k-svg-icon k-svg-i-star" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 17.7272 5.13 3.1547a.787.787 0 0 0 .874-.0378.787.787 0 0 0 .2998-.8219l-1.395-5.8865 4.5656-3.9375a.7926.7926 0 0 0-.0273-1.215.793.793 0 0 0-.4217-.1707l-5.9916-.4875-2.3081-5.5874a.7838.7838 0 0 0-1.4513 0L8.9663 8.325l-5.9916.4876a.7932.7932 0 0 0-.449 1.3903l4.5656 3.9375-1.395 5.8818a.7876.7876 0 0 0 1.1737.8597z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+            </section>
+            <section class="badge-redesign-section">
+                <h3>Shapes and padding</h3>
+                <div class="badge-redesign-row">
+                    <span class="k-badge k-rounded-none">
+                        <span class="k-badge-text">Rectangle</span>
+                    </span>
+                    <span class="k-badge k-rounded-sm">
+                        <span class="k-badge-text">Rounded</span>
+                    </span>
+                    <span class="k-badge k-rounded-md">
+                        <span class="k-badge-text">Rounded</span>
+                    </span>
+                    <span class="k-badge k-rounded-lg">
+                        <span class="k-badge-text">Rounded</span>
+                    </span>
+                    <span class="k-badge k-rounded-full">
+                        <span class="k-badge-text">Pill</span>
+                    </span>
+                    <span class="k-badge k-rounded-full">
+                        <span class="k-badge-text">99</span>
+                    </span>
+                </div>
+            </section>
+            <section class="badge-redesign-section">
+                <h3>Subtle theme colors</h3>
+                <div class="badge-redesign-row">
+                    <span class="k-badge k-badge-subtle k-badge-base k-rounded-full">
+                        <span class="k-badge-text">base</span>
+                    </span>
+                    <span class="k-badge k-badge-subtle k-badge-primary k-rounded-full">
+                        <span class="k-badge-text">primary</span>
+                    </span>
+                    <span class="k-badge k-badge-subtle k-badge-secondary k-rounded-full">
+                        <span class="k-badge-text">secondary</span>
+                    </span>
+                    <span class="k-badge k-badge-subtle k-badge-tertiary k-rounded-full">
+                        <span class="k-badge-text">tertiary</span>
+                    </span>
+                    <span class="k-badge k-badge-subtle k-badge-info k-rounded-full">
+                        <span class="k-badge-text">info</span>
+                    </span>
+                    <span class="k-badge k-badge-subtle k-badge-success k-rounded-full">
+                        <span class="k-badge-text">success</span>
+                    </span>
+                    <span class="k-badge k-badge-subtle k-badge-warning k-rounded-full">
+                        <span class="k-badge-text">warning</span>
+                    </span>
+                    <span class="k-badge k-badge-subtle k-badge-error k-rounded-full">
+                        <span class="k-badge-text">error</span>
+                    </span>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

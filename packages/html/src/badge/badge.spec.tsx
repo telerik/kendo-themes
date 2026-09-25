@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
@@ -10,7 +11,7 @@ const states = [];
 const options = {
     size: [ Size.undefined, Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.outline ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.subtle, FillMode.outline ],
     themeColor: [
         ThemeColor.undefined,
         ThemeColor.base,
@@ -82,7 +83,11 @@ export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSp
                 }
             )}
         >
-            {props.children}
+            {React.Children.map(props.children, child =>
+                typeof child === 'string' || typeof child === 'number'
+                    ? <span className="k-badge-text">{child}</span>
+                    : child
+            )}
         </span>
     );
 };

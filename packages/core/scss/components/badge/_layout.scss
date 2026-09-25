@@ -21,6 +21,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        gap: 0;
         vertical-align: middle;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -43,6 +44,7 @@
         @each $size, $size-props in $kendo-badge-sizes {
             $_padding-x: map.get( $size-props, padding-x );
             $_padding-y: map.get( $size-props, padding-y );
+            $_gap: map.get( $size-props, gap );
             $_font-size: map.get( $size-props, font-size );
             $_line-height: map.get( $size-props, line-height );
             $_min-width: map.get( $size-props, min-width );
@@ -55,12 +57,20 @@
                 line-height: $_line-height;
                 min-width: $_min-width;
 
+                .k-badge-text {
+                    padding-inline: $_gap;
+                }
+
                 &:empty {
                     padding: $_padding-y;
                     min-width: auto;
                 }
             }
         }
+    }
+    .k-badge.k-badge-icon-only {
+        padding-inline: 0;
+        aspect-ratio: 1;
     }
     .k-badge > * {
         color: inherit;

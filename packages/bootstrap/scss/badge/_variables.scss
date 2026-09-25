@@ -33,6 +33,19 @@ $kendo-badge-md-padding-x: .65em !default;
 /// @group badge
 $kendo-badge-lg-padding-x: calc( $kendo-badge-md-padding-x * 1.5 ) !default;
 
+/// The spacing between Badge content items.
+/// @group badge
+$kendo-badge-gap: .5em !default;
+/// The icon-to-text gap of the small Badge.
+/// @group badge
+$kendo-badge-sm-gap: k-spacing(0.5) !default;
+/// The icon-to-text gap of the medium Badge.
+/// @group badge
+$kendo-badge-md-gap: k-spacing(0.5) !default;
+/// The icon-to-text gap of the large Badge.
+/// @group badge
+$kendo-badge-lg-gap: k-spacing(1) !default;
+
 /// The vertical padding of the small Badge.
 /// @group badge
 $kendo-badge-sm-padding-y: calc( .35em / 2 ) !default;
@@ -92,6 +105,10 @@ $kendo-badge-lg-min-width: calc( #{$kendo-badge-lg-line-height * 1em} + calc( #{
     $kendo-badge-sm-padding-x: $kendo-badge-sm-padding-x,
     $kendo-badge-md-padding-x: $kendo-badge-md-padding-x,
     $kendo-badge-lg-padding-x: $kendo-badge-lg-padding-x,
+    $kendo-badge-gap: $kendo-badge-gap,
+    $kendo-badge-sm-gap: $kendo-badge-sm-gap,
+    $kendo-badge-md-gap: $kendo-badge-md-gap,
+    $kendo-badge-lg-gap: $kendo-badge-lg-gap,
     $kendo-badge-sm-padding-y: $kendo-badge-sm-padding-y,
     $kendo-badge-md-padding-y: $kendo-badge-md-padding-y,
     $kendo-badge-lg-padding-y: $kendo-badge-lg-padding-y,

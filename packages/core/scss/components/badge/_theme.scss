@@ -19,6 +19,19 @@
             }
         }
 
+        // Subtle badges
+        #{k-when-default($kendo-badge-default-fill-mode, "subtle")}
+        &.k-badge-subtle {
+            @each $name in $kendo-badge-theme-colors {
+                #{k-when-default($kendo-badge-default-theme-color, $name)}
+                &.k-badge-#{$name} {
+                    border-color: k-color(#{$name}-subtle);
+                    color: k-color(#{$name}-on-subtle);
+                    background-color: k-color(#{$name}-subtle);
+                }
+            }
+        }
+
         // Outline badges
         #{k-when-default($kendo-badge-default-fill-mode, "outline")}
         &.k-badge-outline {
