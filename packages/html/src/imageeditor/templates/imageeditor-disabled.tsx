@@ -19,19 +19,19 @@ const disabledToolbarItems = [
 ];
 
 const disabledSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" disabled icon="crop" aria-label="Crop" />,
-    <Button fillMode="flat" key="sidebar-button-2" disabled icon="image-resize" aria-label="Resize" />,
+    <Button fillMode="flat" key="sidebar-button-1" disabled icon="image-resize" aria-label="Resize" />,
+    <Button fillMode="flat" key="sidebar-button-2" disabled icon="crop" aria-label="Crop" />,
     <Button fillMode="flat" key="sidebar-button-3" disabled icon="rotate" aria-label="Rotate" />,
     <div className="k-separator" key="sidebar-separator-1" />,
     <Button fillMode="flat" key="sidebar-button-4" disabled icon="free-text" aria-label="Text" />,
     <Button fillMode="flat" key="sidebar-button-5" disabled icon="shapes" aria-label="Shapes" />,
     <div className="k-separator" key="sidebar-separator-2" />,
-    <Button fillMode="flat" key="sidebar-button-6" disabled icon="droplet" aria-label="Blur" />,
-    <Button fillMode="flat" key="sidebar-button-7" disabled icon="sliders" aria-label="Adjustments" />,
-    <Button fillMode="flat" key="sidebar-button-8" disabled icon="filter" aria-label="Filters" />,
-    <div className="k-separator" key="sidebar-separator-3" />,
-    <Button fillMode="flat" key="sidebar-button-9" disabled icon="borders-all" aria-label="Frame" />,
-    <Button fillMode="flat" key="sidebar-button-10" disabled icon="bring-to-back" aria-label="Shadow" />
+    <Button fillMode="flat" key="sidebar-button-6" disabled icon="drop-half-pixelated" aria-label="Blur" />,
+    <Button fillMode="flat" key="sidebar-button-7" disabled icon="sliders-horizontal" aria-label="Adjustments" />,
+    <Button fillMode="flat" key="sidebar-button-8" disabled icon="circles-three-intersecting" aria-label="Filters" />,
+    <div className="k-separator" key="sidebar-separator-3"></div>,
+    <Button fillMode="flat" key="sidebar-button-9" disabled icon="frame-corners" aria-label="Frame" />,
+    <Button fillMode="flat" key="sidebar-button-10" disabled icon="circle-half-tilted" aria-label="Shadow" />
 ];
 
 // Non-editable state (Empty, Loading, Error): only the upload action is available,
