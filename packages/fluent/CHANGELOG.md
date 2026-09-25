@@ -1,3 +1,7 @@
+## 14.5.1-dev.6 (2026-09-25)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
 ## 14.5.1-dev.5 (2026-09-24)
 
 This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.

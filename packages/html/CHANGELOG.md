@@ -1,3 +1,14 @@
+## 14.5.1-dev.6 (2026-09-25)
+
+### 🩹 Fixes
+
+- **html:** export floating-toolbar from main index ([12e1b479a1](https://github.com/telerik/kendo-themes/commit/12e1b479a1))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+
 ## 14.5.1-dev.5 (2026-09-24)
 
 ### 🩹 Fixes
