@@ -104,7 +104,13 @@ export async function capture({
     }
 
     const CONCURRENCY = Math.min(4, Math.max(2, os.cpus().length - 1));
-    const browser = await chromium.launch();
+    const browser = await chromium.launch({
+        args: [
+            '--disable-lcd-text',
+            '--font-render-hinting=none',
+            '--disable-font-subpixel-positioning',
+        ],
+    });
     const queue   = [...variants];
 
     async function worker() {
