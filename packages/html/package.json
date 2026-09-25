@@ -43,7 +43,7 @@
     "typegen": "npx tsc --emitDeclarationOnly --declaration --declarationDir dist/types/",
     "typecheck": "npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json ",
     "build:tests": "node ./scripts/build-tests.js",
-    "docs": "node ./scripts/render-a11y-docs.mjs",
+    "docs": "npm run build && node ./scripts/render-a11y-docs.mjs",
     "docs:check": "npm run docs && git diff --name-only --exit-code -- docs",
     "test": "vitest run",
     "test:watch": "vitest",
