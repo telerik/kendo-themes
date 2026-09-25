@@ -2,7 +2,7 @@
   "core": {
     "workingDir": ".reg",
     "actualDir": "tests/_output",
-    "thresholdRate": 0.001,
+    "thresholdRate": 0,
     "matchingThreshold": 0.05,
     "enableAntialias": true,
     "ximgdiff": { "invocationType": "client" }
