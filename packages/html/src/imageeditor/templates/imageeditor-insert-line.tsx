@@ -10,19 +10,19 @@ import { SegmentedControl, SegmentedControlButton } from "../../segmented-contro
 import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 
 const insertLineSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="image-resize" aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
     <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
     <div className="k-separator" key="sidebar-separator-1"></div>,
     <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
     <Button fillMode="flat" key="sidebar-button-5" icon="shapes" selected aria-label="Shapes"></Button>,
     <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="droplet" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="filter" aria-label="Filters"></Button>,
+    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
+    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
+    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
     <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="borders-all" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="bring-to-back" aria-label="Shadow"></Button>
+    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
+    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
 
 export const ImageEditorInsertLine = (props: any) => (
@@ -54,16 +54,16 @@ export const ImageEditorInsertLine = (props: any) => (
                     </Fieldset>
                     <FormField
                         label="Stroke Type"
-                        editor={ <DropdownList id="line-stroke-type" value="Dotted" prefix={<Icon icon="border-style" />} aria-label="Stroke Type" /> }
+                        editor={ <DropdownList id="line-stroke-type" value="Dotted" prefix={<Icon icon="square-dotted" />} aria-label="Stroke Type" /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Start Point"
-                            editor={ <DropdownList id="line-start-point" value="Circle" prefix={<Icon icon="circle" />} aria-label="Start Point" /> }
+                            editor={ <DropdownList id="line-start-point" value="Circle" prefix={<Icon icon="line-point-circle" />} aria-label="Start Point" /> }
                         />
                         <FormField
                             label="End Point"
-                            editor={ <DropdownList id="line-end-point" value="Diamond" prefix={<Icon icon="rectangle-shape" />} aria-label="End Point" /> }
+                            editor={ <DropdownList id="line-end-point" value="Diamond" prefix={<Icon icon="line-point-rhombus" />} aria-label="End Point" /> }
                         />
                     </Fieldset>
                     <FormField

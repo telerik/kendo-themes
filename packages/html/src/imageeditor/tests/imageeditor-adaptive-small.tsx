@@ -34,19 +34,19 @@ const contextualToolbarItems = [
 ];
 
 const shapeSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="image-resize" aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
     <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
     <div className="k-separator" key="sidebar-separator-1"></div>,
     <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
     <Button fillMode="flat" key="sidebar-button-5" icon="shapes" selected aria-label="Shapes"></Button>,
     <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="droplet" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="filter" aria-label="Filters"></Button>,
+    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
+    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
+    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
     <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="borders-all" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="bring-to-back" aria-label="Shadow"></Button>
+    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
+    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
 
 const shapeTypes = [

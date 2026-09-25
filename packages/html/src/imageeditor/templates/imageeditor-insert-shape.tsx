@@ -10,30 +10,33 @@ import { SegmentedControl, SegmentedControlButton } from "../../segmented-contro
 import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 
 const insertShapeSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="image-resize" aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
     <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
     <div className="k-separator" key="sidebar-separator-1"></div>,
     <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
     <Button fillMode="flat" key="sidebar-button-5" icon="shapes" selected aria-label="Shapes"></Button>,
     <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="droplet" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="filter" aria-label="Filters"></Button>,
+    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
+    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
+    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
     <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="borders-all" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="bring-to-back" aria-label="Shadow"></Button>
+    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
+    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
 
 const shapeTypes = [
-    "Circle",
-    "Oval",
-    "Square",
-    "Rectangle",
-    "Triangle",
-    "Star",
-    "Heart",
-    "Diamond"
+    { label: "Square", icon: "square-dotted" },
+    { label: "Rectangle", icon: "rectangle-shape" },
+    { label: "Circle", icon: "circle-shape" },
+    { label: "Oval", icon: "oval-shape" },
+    { label: "Triangle", icon: "line-point-angular" },
+    { label: "Star", icon: "star" },
+    { label: "Heart", icon: "heart" },
+    { label: "Diamond", icon: "line-point-rhombus" },
+    { label: "Hexagon", icon: "hexagon-shape" },
+    { label: "Pentagon", icon: "pentagon-shape" },
+    { label: "Arrow", icon: "arrow-shape" }
 ];
 
 export const ImageEditorInsertShape = (props: any) => (
@@ -56,8 +59,13 @@ export const ImageEditorInsertShape = (props: any) => (
                         label="Type"
                         editor={
                             <ImageEditorOptionList scrollable scrollableEnd>
-                                {shapeTypes.map((label) => (
-                                    <ImageEditorOptionPreview key={label} label={label} selected={label === "Oval"} />
+                                {shapeTypes.map((shape) => (
+                                    <ImageEditorOptionPreview key={shape.label} selected={shape.label === "Circle"}>
+                                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
+                                            <Icon icon={shape.icon} />
+                                            <span style={{ fontSize: "12px" }}>{shape.label}</span>
+                                        </div>
+                                    </ImageEditorOptionPreview>
                                 ))}
                             </ImageEditorOptionList>
                         }
