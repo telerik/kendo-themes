@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid k-grid-cols-1">
+            <h4>Image Editor Filters Pane — None Selected</h4>
+            <div class="k-imageeditor">
+                <div class="k-imageeditor-header">
+                    <div class="k-imageeditor-toolbar k-toolbar k-toolbar-flat" role="toolbar" aria-label="Toolbar">
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Image Add">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-image-add" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5422 19.5H3.75a.75.75 0 0 1-.75-.75V5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 .75.75v9.7836h-1.6569l-2.0641-2.0641a.75.75 0 0 0-1.0603 0l-2.4084 2.4057-.0287-.0298-4.626-4.626a.7507.7507 0 0 0-1.0613 0L3 15.8148M18.7822 19.5h4.4445m-2.2223-2.2224v4.4445M15 9a.75.75 0 1 1-1.5 0A.75.75 0 0 1 15 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Undo">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-undo" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75 3 8.25l4.5 4.5M3 8.25h12.75a5.25 5.25 0 0 1 0 10.5H7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Redo">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-redo" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.5 3.75 4.5 4.5-4.5 4.5m4.5-4.5H8.25a5.25 5.25 0 1 0 0 10.5h8.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-toolbar-separator k-separator"></div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Download">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-download" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 13.5V3M8.25 9.75 12 13.5l3.75-3.75m4.5 3.75v6H3.75v-6" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-spacer"></div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Zoom In">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-zoom-in" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 10.5h6m2.3032 5.3037 5.1966 5.1966M10.5 7.5v6m7.5-3c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="k-toolbar-item">
+                            <span class="k-autocomplete k-input k-input-flat">
+                                <input role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Zoom options" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="Fit">
+                                <span class="k-clear-value">
+                                    <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <button class="k-toolbar-button  k-button k-button-flat k-icon-button" aria-label="Zoom Out">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-zoom-out" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 10.5h6m2.3032 5.3037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-imageeditor-content" style="height: 640px;">
+                    <div class="k-imageeditor-sidebar">
+                        <div class="k-imageeditor-sidebar-items" role="toolbar" aria-label="Tools">
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Resize">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-image-resize" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9V4.5H15m4.5 0-6 6m-9 4.5v4.5H9m-4.5 0 6-6" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Crop">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-crop" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 2.25V18h15.75M2.25 6H6m3 0h9v9m0 3v3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Rotate">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-rotate" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 4.499v4.5h-4.5m4.5 0L17.5988 6.348A8.25 8.25 0 0 0 6 6.2804M3.75 19.499v-4.5h4.5m-4.5 0 2.6513 2.6513A8.25 8.25 0 0 0 18 17.7178" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="k-separator"></div>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Text">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-free-text" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 5.25v13.5M5.25 8.25v-3h13.5v3M9 18.75h6" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Shapes">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-shapes" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6 2.25 17.25h7.5zM14.625 11.25c2.2782 0 4.125-1.8468 4.125-4.125S16.9032 3 14.625 3 10.5 4.8468 10.5 7.125s1.8468 4.125 4.125 4.125M21 14.25h-8.25v5.25H21z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="k-separator"></div>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Blur">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-drop-half-pixelated" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linejoin="round" d="M19.5 13.5c0-6.75-7.5-12-7.5-12s-7.5 5.25-7.5 12a7.5 7.5 0 0 0 15 0Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linejoin="round" d="M12.2505 17.4576a.05.05 0 0 0-.05-.05H11.55a.05.05 0 0 0-.05.05v.6497a.05.05 0 0 0 .05.0499h.6505a.05.05 0 0 0 .05-.0499zM15.25 8.4587a.05.05 0 0 0-.05-.05h-.6505a.05.05 0 0 0-.05.05v.6497a.05.05 0 0 0 .05.05H15.2a.05.05 0 0 0 .05-.05zM15.25 14.4578a.05.05 0 0 0-.05-.05h-.6505a.05.05 0 0 0-.05.05v.6496a.05.05 0 0 0 .05.05H15.2a.05.05 0 0 0 .05-.05zM12.2505 11.4584a.05.05 0 0 0-.05-.0499H11.55a.05.05 0 0 0-.05.0499v.6497a.05.05 0 0 0 .05.05h.6505a.05.05 0 0 0 .05-.05zM12.2505 5.4572a.05.05 0 0 0-.05-.05H11.55a.05.05 0 0 0-.05.05v.6496a.05.05 0 0 0 .05.05h.6505a.05.05 0 0 0 .05-.05z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Adjustments">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-sliders-horizontal" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5c0 1.2426-1.0074 2.25-2.25 2.25S7.5 8.7426 7.5 7.5m4.5 0c0-1.2426-1.0074-2.25-2.25-2.25S7.5 6.2574 7.5 7.5m4.5 0h8.25M7.5 7.5H3.75m14.25 9c0 1.2426-1.0074 2.25-2.25 2.25s-2.25-1.0074-2.25-2.25m4.5 0c0-1.2426-1.0074-2.25-2.25-2.25s-2.25 1.0074-2.25 2.25m4.5 0h2.25m-6.75 0H3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-selected k-icon-button" aria-label="Filters">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-circles-three-intersecting" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14.25c3.1066 0 5.625-2.5184 5.625-5.625S15.1066 3 12 3 6.375 5.5184 6.375 8.625 8.8934 14.25 12 14.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.375 20.25c3.1066 0 5.625-2.5184 5.625-5.625S18.4816 9 15.375 9 9.75 11.5184 9.75 14.625s2.5184 5.625 5.625 5.625" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 20.25c3.1066 0 5.625-2.5184 5.625-5.625S11.7316 9 8.625 9 3 11.5184 3 14.625s2.5184 5.625 5.625 5.625" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="k-separator"></div>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Frame">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-frame-corners" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 7.5h3v3m-9 6H6v-3m-2.25-9h16.5a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H3.75a.75.75 0 0 1-.75-.75V5.25a.75.75 0 0 1 .75-.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-button-flat k-icon-button" aria-label="Shadow">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-circle-half-tilted" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c4.9706 0 9-4.0294 9-9s-4.0294-9-9-9-9 4.0294-9 9 4.0294 9 9 9m0 0v-9m6.3637-6.3633L5.6362 18.3642M18 6v12.7078M15 9v11.4872M9 15v5.4872" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-imageeditor-action-pane">
+                        <div class="k-imageeditor-pane">
+                            <div class="k-imageeditor-pane-header">
+                                <div class="k-imageeditor-pane-title">Filters</div>
+                                <button class="k-button k-button-flat k-icon-button" aria-label="Close" title="Close">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="k-imageeditor-pane-content">
+                                <div class="k-form">
+                                    <div class="k-form-field">
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-grid k-grid-cols-3 k-gap-3">
+                                                <div aria-label="None" class="k-imageeditor-option-preview k-selected" role="button" aria-pressed="true">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">None</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label">Monochrome</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-grid k-grid-cols-3 k-gap-3">
+                                                <div aria-label="Black and White" class="k-imageeditor-option-preview" role="button" aria-pressed="false">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">Black and White</span>
+                                                </div>
+                                                <div aria-label="Greyscale" class="k-imageeditor-option-preview" role="button" aria-pressed="false">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">Greyscale</span>
+                                                </div>
+                                                <div aria-label="Sepia" class="k-imageeditor-option-preview" role="button" aria-pressed="false">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">Sepia</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label">Color Temperature &amp; Mood</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-grid k-grid-cols-3 k-gap-3">
+                                                <div aria-label="Warm" class="k-imageeditor-option-preview" role="button" aria-pressed="false">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">Warm</span>
+                                                </div>
+                                                <div aria-label="Cold" class="k-imageeditor-option-preview" role="button" aria-pressed="false">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">Cold</span>
+                                                </div>
+                                                <div aria-label="Chrome" class="k-imageeditor-option-preview" role="button" aria-pressed="false">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">Chrome</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-form-label k-label">Color Reversal</label>
+                                        <div class="k-form-field-wrap">
+                                            <div class="k-d-grid k-grid-cols-3 k-gap-3">
+                                                <div aria-label="Invert" class="k-imageeditor-option-preview" role="button" aria-pressed="false">
+                                                    <span aria-hidden="true" style="position: relative; display: block; width: 100%; height: 40px; border-radius: 2px; background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover; box-sizing: border-box;"></span>
+                                                    <span class="k-imageeditor-preview-thumbnail-label" style="margin-block-start: 6px;">Invert</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-end k-actions-horizontal k-imageeditor-pane-footer">
+                                <button class="k-button">
+                                    <span class="k-button-text">Reset</span>
+                                </button>
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-imageeditor-canvas-container">
+                        <div class="k-imageeditor-canvas">
+                            <canvas width="494" height="307" role="img" aria-label="Image being edited" style="background-image: url(&quot;/packages/html/assets/sofia.jpg&quot;); background-size: cover;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
