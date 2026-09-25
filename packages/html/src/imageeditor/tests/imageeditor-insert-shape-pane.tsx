@@ -1,6 +1,6 @@
 import { ImageEditorInsertShape } from '..';
 import { Button } from '../../button';
-import { FloatingToolbar } from '../../toolbar';
+import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
 
 export default () => (

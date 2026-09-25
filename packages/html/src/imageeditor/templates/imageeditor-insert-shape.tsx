@@ -7,7 +7,7 @@ import { ColorPicker } from "../../colorpicker";
 import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
-import { FloatingToolbar } from "../../toolbar";
+import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 
 const insertShapeSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-1" icon="crop" aria-label="Crop"></Button>,

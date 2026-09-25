@@ -1,6 +1,6 @@
 import { ImageEditorNormal, ImageEditorInsertShape, ImageEditorResizeHandles } from '..';
 import { Button } from '../../button';
-import { FloatingToolbar } from '../../toolbar';
+import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
 // Tablet-width container (768px) - the plain desktop layout (left icon sidebar, right side panel)
 // simply reflows into the available width; no adaptive/bottom-sheet behaviour kicks in here.
