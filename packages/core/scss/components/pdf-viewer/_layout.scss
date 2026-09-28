@@ -348,10 +348,6 @@
 
     // Search (floating toolbar)
     .k-floating-toolbar {
-        .k-search-dialog-draghandle {
-            cursor: move;
-        }
-
         .k-search-matches {
             display: inline-flex;
             gap: $kendo-pdf-viewer-search-panel-matches-spacing;

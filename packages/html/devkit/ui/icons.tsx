@@ -28,7 +28,7 @@ function Icon({ className, children, viewBox = '0 0 16 16' }: IconProps & {
 
 export const SearchIcon = ({ className }: IconProps) => (
     <Icon className={className}>
-        <path d="M6.5 1a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm5.443 8.736.707.707-3.5 3.5-.707-.707 3.5-3.5z" />
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
     </Icon>
 );
 
@@ -66,6 +66,12 @@ export const ClockIcon = ({ className }: IconProps) => (
     <Icon className={className}>
         <path d="M8 3.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .252.434l2.5 1.5a.5.5 0 0 0 .496-.868L8.5 7.71V4a.5.5 0 0 0-.5-.5z" />
         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+    </Icon>
+);
+
+export const TranslucencyIcon = ({ className }: IconProps) => (
+    <Icon className={className}>
+        <path fillRule="evenodd" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1v14A7 7 0 0 1 8 1z" />
     </Icon>
 );
 

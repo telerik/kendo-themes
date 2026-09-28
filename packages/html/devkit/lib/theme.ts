@@ -10,12 +10,14 @@ export interface DevKitParams {
     theme: string;
     swatch: string;
     animations: boolean;
+    translucency: number;
 }
 
 const DEFAULTS: DevKitParams = {
     theme: 'meridian',
     swatch: 'all',
     animations: false,
+    translucency: 0,
 };
 
 const THEME_LINK = 'link[data-role="kendo-theme"]';
@@ -35,10 +37,14 @@ export function getThemeLink(): HTMLLinkElement | null {
 /** Reads the current params from the URL query string. */
 export function readParams(): DevKitParams {
     const p = new URLSearchParams(location.search);
+    const translucency = Number(p.get('translucency'));
     return {
         theme: p.get('theme') || DEFAULTS.theme,
         swatch: p.get('swatch') || DEFAULTS.swatch,
         animations: p.get('animations') === 'true',
+        translucency: Number.isFinite(translucency)
+            ? Math.min(100, Math.max(0, translucency))
+            : DEFAULTS.translucency,
     };
 }
 
@@ -114,15 +120,18 @@ export function refreshThemeLink(theme: string): void {
     link.href = url.toString();
 }
 
-/** Applies params to the DOM: URL, theme stylesheet, animations class, accent. */
+/** Applies params to the DOM: URL, theme stylesheet, animations class, translucency, accent. */
 export function applyParams(params: DevKitParams): void {
     const url = new URL(location.href);
     url.searchParams.set('theme', params.theme);
     url.searchParams.set('swatch', params.swatch);
     url.searchParams.set('animations', String(params.animations));
+    url.searchParams.set('translucency', String(params.translucency));
     history.replaceState({}, '', url.toString());
 
     swapThemeLink(params.theme, params.swatch);
 
     document.documentElement.classList.toggle('k-no-animations', !params.animations);
+    document.documentElement.style.setProperty('--kendo-translucency-base', `${params.translucency}%`);
+    document.body.classList.toggle('devkit-translucent-bg', params.translucency > 0);
 }

@@ -1,3 +1,65 @@
+## 14.5.1-dev.7 (2026-09-28)
+
+### 🩹 Fixes
+
+- **signature:** update icons and simplify component ([a21976fba3](https://github.com/telerik/kendo-themes/commit/a21976fba3))
+
+## 14.5.1-dev.6 (2026-09-25)
+
+### 🩹 Fixes
+
+- **html:** export floating-toolbar from main index ([12e1b479a1](https://github.com/telerik/kendo-themes/commit/12e1b479a1))
+
+## 14.5.1-dev.5 (2026-09-24)
+
+### 🩹 Fixes
+
+- **grid:** prevent column menu icon from being draggable ([60f738edbe](https://github.com/telerik/kendo-themes/commit/60f738edbe))
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+- **toolbar:** items only get flex-shrink: 0 when not wrapped in scroll container ([cdb1c0d51a](https://github.com/telerik/kendo-themes/commit/cdb1c0d51a))
+
+## 14.5.1-dev.4 (2026-09-21)
+
+### 🚀 Features
+
+- **html:** add buttons config to promptBox ([1226e8c373](https://github.com/telerik/kendo-themes/commit/1226e8c373))
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+
+### 🩹 Fixes
+
+- context menu in menu popup should not have padding ([4a73cde0e5](https://github.com/telerik/kendo-themes/commit/4a73cde0e5))
+- **dock-manager:** content and tab panes have different heights ([af706e6821](https://github.com/telerik/kendo-themes/commit/af706e6821))
+- **html:** apply default border radius to toolbar overflow buttons ([0e4bb3c21b](https://github.com/telerik/kendo-themes/commit/0e4bb3c21b))
+- **html:** remove menu item first and last classes ([fda270f49b](https://github.com/telerik/kendo-themes/commit/fda270f49b))
+
+## 14.5.1-dev.3 (2026-09-14)
+
+### 🩹 Fixes
+
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+- **coloreditor:** bump min-width to match actual widest view content ([886d25df5d](https://github.com/telerik/kendo-themes/commit/886d25df5d))
+
+## 14.5.1-dev.2 (2026-09-08)
+
+### 🚀 Features
+
+- **diagram:** add rich text editor styles ([60ba64c2e1](https://github.com/telerik/kendo-themes/commit/60ba64c2e1))
+
+### 🩹 Fixes
+
+- **spreadsheet:** prevent clipped focus outline on menu items in meridian ([47f9eaef9d](https://github.com/telerik/kendo-themes/commit/47f9eaef9d))
+
+## 14.5.1-dev.1 (2026-08-31)
+
+### 🩹 Fixes
+
+- **charts:** restore chart tooltip to color-white/color-black ([#5664](https://github.com/telerik/kendo-themes/issues/5664))
+- **scheduler:** correct event resize handle box-sizing ([583751d2af](https://github.com/telerik/kendo-themes/commit/583751d2af))
+- **scheduler:** resize handles should stay below the sticky scheduler header ([efd10d84a5](https://github.com/telerik/kendo-themes/commit/efd10d84a5))
+- **scheduler:** time and event are misaligned in agenda view ([378a82e05a](https://github.com/telerik/kendo-themes/commit/378a82e05a))
+
 ## 14.5.1-dev.0 (2026-08-17)
 
 ### 🩹 Fixes

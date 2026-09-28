@@ -39,6 +39,8 @@ export type KendoBadgeProps = KendoBadgeOptions & {
 
 const defaultOptions = {
     cutoutBorder: false,
+    position: null,
+    align: null,
 };
 
 /**
@@ -56,8 +58,8 @@ export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSp
         themeColor,
         cutoutBorder = defaultOptions.cutoutBorder,
         rounded,
-        position,
-        align,
+        position = defaultOptions.position,
+        align = defaultOptions.align,
         ...other
     } = props;
 

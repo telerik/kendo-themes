@@ -10,4 +10,35 @@
         gap: k-spacing(3);
     }
 
+    // Diagram rich text editor
+    .k-diagram-rich-text-editor {
+
+        .k-editor-content {
+
+            .k-placeholder:first-child::before {
+                content: attr(data-placeholder);
+                cursor: text;
+                height: 0;
+                font-style: italic;
+                opacity: 0.6;
+            }
+
+            .k-placeholder::before {
+                float: inline-start;
+                width: 100%;
+            }
+
+            outline: none;
+
+            p {
+                margin-block: var(--editor-p-margin-top, 0) var(--editor-p-margin-bottom, 0);
+            }
+
+            .ProseMirror-selectednode { // stylelint-disable-line selector-class-pattern
+                outline-width: 2px;
+                outline-style: solid;
+            }
+        }
+    }
+
 }

@@ -48,6 +48,7 @@ jobs:
     name: Visual regression
     needs: [ create-screenshots ]
     permissions:
+      actions: read
       contents: write        # publish baseline to gh-pages
       pull-requests: write
     uses: ./.github/workflows/_visual-regression.yml

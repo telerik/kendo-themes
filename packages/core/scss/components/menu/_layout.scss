@@ -30,6 +30,25 @@
         *::after {
             box-sizing: border-box;
         }
+
+        // Sizes
+        @each $size, $size-props in $kendo-menu-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_item-padding-x: map.get( $size-props, item-padding-x );
+            $_item-padding-y: map.get( $size-props, item-padding-y );
+
+            #{k-when-default($kendo-menu-default-size, $size)}
+            &.k-menu-#{$size} {
+                font-size: $_font-size;
+                line-height: $_line-height;
+
+                > .k-menu-item > .k-menu-link {
+                    padding-block: $_item-padding-y;
+                    padding-inline: $_item-padding-x;
+                }
+            }
+        }
     }
     .k-menu { @extend .k-menu-bar !optional; }
 
@@ -43,6 +62,7 @@
         position: relative;
         user-select: none;
         transition: color k-transition(rapid), background-color k-transition(rapid), border-color k-transition(rapid), box-shadow k-transition(rapid);
+        border-radius: $kendo-menu-item-border-radius;
 
         &.k-selected {
             font-weight: $kendo-menu-item-selected-font-weight;
@@ -66,23 +86,44 @@
         outline: 0;
         color: inherit;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         flex: 1 1 auto;
         gap: $kendo-menu-item-icon-spacing;
         align-items: center;
         position: relative;
         white-space: nowrap;
         cursor: pointer;
+        border-radius: $kendo-menu-item-border-radius;
     }
 
 
     // Menu item text
     .k-menu-link-text {
-        display: flex;
-        flex-flow: row nowrap;
-        flex: 1 1 auto;
-        overflow: hidden;
+        white-space: nowrap;
+        flex: 1;
         text-overflow: ellipsis;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+
+    // Menu item actions
+    .k-menu-link-actions {
+        display: flex;
+        align-items: center;
+        gap: $kendo-menu-item-icon-spacing;
+        flex: none;
+    }
+
+    // Menu item description
+    .k-menu-link-description {
+        flex-basis: 100%;
+        font-size: $kendo-menu-item-description-font-size;
+        line-height: $kendo-menu-item-description-line-height;
+        white-space: normal;
+    }
+    .k-menu-link:has(.k-menu-link-icon:first-child) .k-menu-link-description {
+        padding-inline-start: calc( #{$ki-icon-size} + #{$kendo-menu-item-icon-spacing} );
     }
 
 
@@ -127,17 +168,6 @@
             margin-block-start: $kendo-menu-item-spacing;
         }
 
-        > .k-menu-item > .k-menu-link {
-            padding-block: $kendo-menu-popup-md-item-padding-y;
-            padding-inline: $kendo-menu-popup-md-item-padding-x;
-            padding-inline-end: $kendo-menu-popup-md-item-padding-end;
-        }
-
-        > .k-menu-item > .k-menu-link > .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-md-item-icon-margin-start;
-            margin-inline-end: $kendo-menu-popup-md-item-icon-margin-end;
-        }
-
         > .k-separator {
             margin-block: $kendo-menu-separator-margin-block;
             margin-inline: 0;
@@ -156,6 +186,7 @@
         box-sizing: border-box;
         border-width: $kendo-menu-popup-border-width;
         border-style: solid;
+        border-radius: $kendo-menu-popup-border-radius;
         overflow: auto;
         max-height: 80vh;
 
@@ -167,6 +198,10 @@
 
         .k-menu-item {
             font-weight: initial;
+        }
+
+        .k-context-menu {
+            padding: 0;
         }
     }
 
@@ -202,6 +237,10 @@
             $_item-padding-end: map.get( $size-props, item-padding-end);
             $_item-icon-margin-start: map.get( $size-props, item-icon-margin-start);
             $_item-icon-margin-end: map.get( $size-props, item-icon-margin-end);
+            $_group-header-padding-x: map.get( $size-props, group-header-padding-x);
+            $_group-header-padding-y: map.get( $size-props, group-header-padding-y);
+            $_group-header-font-size: map.get( $size-props, group-header-font-size);
+            $_group-header-line-height: map.get( $size-props, group-header-line-height);
 
             #{k-when-default($kendo-menu-group-default-size, $size)}
             &.k-menu-group-#{$size} {
@@ -217,12 +256,35 @@
                 .k-menu-link {
                     padding-block: $_item-padding-y;
                     padding-inline: $_item-padding-x;
-                    padding-inline-end: $_item-padding-end;
                 }
 
                 .k-menu-expand-arrow {
                     margin-inline-start: $_item-icon-margin-start;
                     margin-inline-end: $_item-icon-margin-end;
+                }
+
+                .k-menu-group-header {
+                    padding-block: $_group-header-padding-y;
+                    padding-inline: $_group-header-padding-x;
+                    font-size: $_group-header-font-size;
+                    line-height: $_group-header-line-height;
+                }
+
+                // Align item text: items without an icon get pushed by the icon width so their
+                // text lines up with items that do have one.
+                &:has(.k-menu-link .k-menu-link-icon:first-child) .k-menu-link,
+                &:has(.k-menu-link .k-menu-link-icon:first-child) .k-menu-group-header {
+                    padding-inline-start: calc( #{$ki-icon-size} + #{$_item-padding-x} + #{$kendo-menu-item-icon-spacing} );
+                }
+
+                .k-menu-item .k-menu-link:has(.k-menu-link-icon:first-child),
+                .k-menu-item .k-menu-group-header:has(.k-menu-link-icon) {
+                    padding-inline-start: $_item-padding-x;
+                }
+
+                // Reserve end padding for the expand arrow only when at least one item in the group has one.
+                &:has(.k-menu-expand-arrow) .k-menu-link {
+                    padding-inline-end: $_item-padding-end;
                 }
             }
         }
@@ -230,6 +292,18 @@
     }
     .k-menu-popup .k-menu-group {
         position: relative;
+    }
+
+
+    // Menu group header
+    .k-menu-group-header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: $kendo-menu-item-icon-spacing;
+        font-weight: $kendo-menu-popup-group-header-font-weight;
+        white-space: nowrap;
+        cursor: default;
     }
 
     // Context menu

@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-overflow-button-padding-y</td>
     <td>String</td>
     <td><code>$kendo-menu-popup-md-item-padding-y</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar overflow button.</div></div>
@@ -455,16 +455,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar overflow button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-floating-toolbar-border-radius</td>
-    <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
     </td>
 </tr>
 <tr>

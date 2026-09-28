@@ -15,7 +15,7 @@ $kendo-dock-manager-border-radius: null !default;
 
 /// The vertical padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-y: k-spacing(2) !default;
+$kendo-dock-manager-pane-header-padding-y: k-spacing(2.5) !default;
 /// The horizontal padding of the pane header in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-pane-header-padding-x: k-spacing(4) !default;
@@ -57,7 +57,7 @@ $kendo-dock-manager-pane-content-padding-y: $kendo-dock-manager-pane-header-padd
 
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-tabbed-pane-padding-y: k-spacing(3.5) !default;
+$kendo-dock-manager-tabbed-pane-padding-y: $kendo-dock-manager-pane-header-padding-y !default;
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-tabbed-pane-padding-x: k-spacing(2) !default;

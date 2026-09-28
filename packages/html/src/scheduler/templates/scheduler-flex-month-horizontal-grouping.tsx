@@ -70,6 +70,7 @@ export const SchedulerFlexMonthHorizontalGrouping = ({ style, ...props }: any) =
           </SchedulerGroup>
         </SchedulerHead>
         <SchedulerBody as="div">
+          {/* month + horizontal grouping repeats a SchedulerGroup per week, each holding one row per resource */}
           <SchedulerGroup>
             <SchedulerRow>
               <SchedulerCell as="div" cellType={["group"]}>
@@ -82,6 +83,23 @@ export const SchedulerFlexMonthHorizontalGrouping = ({ style, ...props }: any) =
                   <SchedulerCell as="div" cellType={["slot"]} text="31" className="k-other-month" />
                   <SchedulerCell as="div" cellType={["slot"]} text="01" />
                 </SchedulerRow>
+              </SchedulerCell>
+              <SchedulerCell as="div" cellType={["group"]}>
+                <SchedulerRow>
+                  <SchedulerCell as="div" cellType={["slot"]} text="26" className="k-other-month" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="27" className="k-other-month" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="28" className="k-other-month" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="29" className="k-other-month" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="30" className="k-other-month" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="31" className="k-other-month" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="01" />
+                </SchedulerRow>
+              </SchedulerCell>
+            </SchedulerRow>
+          </SchedulerGroup>
+          <SchedulerGroup>
+            <SchedulerRow>
+              <SchedulerCell as="div" cellType={["group"]}>
                 <SchedulerRow>
                   <SchedulerCell as="div" cellType={["slot"]}>
                     <span className="k-link k-nav-day">02</span>
@@ -96,6 +114,23 @@ export const SchedulerFlexMonthHorizontalGrouping = ({ style, ...props }: any) =
                   <SchedulerCell as="div" cellType={["slot"]} text="07" />
                   <SchedulerCell as="div" cellType={["slot"]} text="08" />
                 </SchedulerRow>
+              </SchedulerCell>
+              <SchedulerCell as="div" cellType={["group"]}>
+                <SchedulerRow>
+                  <SchedulerCell as="div" cellType={["slot"]} text="02" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="03" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="04" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="05" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="06" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="07" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="08" />
+                </SchedulerRow>
+              </SchedulerCell>
+            </SchedulerRow>
+          </SchedulerGroup>
+          <SchedulerGroup>
+            <SchedulerRow>
+              <SchedulerCell as="div" cellType={["group"]}>
                 <SchedulerRow>
                   <SchedulerCell as="div" cellType={["slot"]} text="09" />
                   <SchedulerCell as="div" cellType={["slot"]} text="10" />
@@ -105,6 +140,23 @@ export const SchedulerFlexMonthHorizontalGrouping = ({ style, ...props }: any) =
                   <SchedulerCell as="div" cellType={["slot"]} text="14" />
                   <SchedulerCell as="div" cellType={["slot"]} text="15" />
                 </SchedulerRow>
+              </SchedulerCell>
+              <SchedulerCell as="div" cellType={["group"]}>
+                <SchedulerRow>
+                  <SchedulerCell as="div" cellType={["slot"]} text="09" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="10" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="11" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="12" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="13" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="14" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="15" />
+                </SchedulerRow>
+              </SchedulerCell>
+            </SchedulerRow>
+          </SchedulerGroup>
+          <SchedulerGroup>
+            <SchedulerRow>
+              <SchedulerCell as="div" cellType={["group"]}>
                 <SchedulerRow>
                   <SchedulerCell as="div" cellType={["slot"]} text="16" />
                   <SchedulerCell as="div" cellType={["slot"]} text="17" />
@@ -114,6 +166,23 @@ export const SchedulerFlexMonthHorizontalGrouping = ({ style, ...props }: any) =
                   <SchedulerCell as="div" cellType={["slot"]} text="21" />
                   <SchedulerCell as="div" cellType={["slot"]} text="22" />
                 </SchedulerRow>
+              </SchedulerCell>
+              <SchedulerCell as="div" cellType={["group"]}>
+                <SchedulerRow>
+                  <SchedulerCell as="div" cellType={["slot"]} text="16" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="17" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="18" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="19" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="20" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="21" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="22" />
+                </SchedulerRow>
+              </SchedulerCell>
+            </SchedulerRow>
+          </SchedulerGroup>
+          <SchedulerGroup>
+            <SchedulerRow>
+              <SchedulerCell as="div" cellType={["group"]}>
                 <SchedulerRow>
                   <SchedulerCell as="div" cellType={["slot"]} text="23" />
                   <SchedulerCell as="div" cellType={["slot"]} text="24" />
@@ -123,6 +192,23 @@ export const SchedulerFlexMonthHorizontalGrouping = ({ style, ...props }: any) =
                   <SchedulerCell as="div" cellType={["slot"]} text="28" />
                   <SchedulerCell as="div" cellType={["slot"]} text="29" />
                 </SchedulerRow>
+              </SchedulerCell>
+              <SchedulerCell as="div" cellType={["group"]}>
+                <SchedulerRow>
+                  <SchedulerCell as="div" cellType={["slot"]} text="23" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="24" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="25" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="26" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="27" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="28" />
+                  <SchedulerCell as="div" cellType={["slot"]} text="29" />
+                </SchedulerRow>
+              </SchedulerCell>
+            </SchedulerRow>
+          </SchedulerGroup>
+          <SchedulerGroup>
+            <SchedulerRow>
+              <SchedulerCell as="div" cellType={["group"]}>
                 <SchedulerRow>
                   <SchedulerCell as="div" cellType={["slot"]} text="30" />
                   <SchedulerCell as="div" cellType={["slot"]} text="31" />
@@ -134,51 +220,6 @@ export const SchedulerFlexMonthHorizontalGrouping = ({ style, ...props }: any) =
                 </SchedulerRow>
               </SchedulerCell>
               <SchedulerCell as="div" cellType={["group"]}>
-                <SchedulerRow>
-                  <SchedulerCell as="div" cellType={["slot"]} text="26" className="k-other-month" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="27" className="k-other-month" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="28" className="k-other-month" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="29" className="k-other-month" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="30" className="k-other-month" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="31" className="k-other-month" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="01" />
-                </SchedulerRow>
-                <SchedulerRow>
-                  <SchedulerCell as="div" cellType={["slot"]} text="02" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="03" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="04" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="05" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="06" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="07" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="08" />
-                </SchedulerRow>
-                <SchedulerRow>
-                  <SchedulerCell as="div" cellType={["slot"]} text="09" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="10" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="11" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="12" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="13" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="14" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="15" />
-                </SchedulerRow>
-                <SchedulerRow>
-                  <SchedulerCell as="div" cellType={["slot"]} text="16" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="17" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="18" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="19" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="20" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="21" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="22" />
-                </SchedulerRow>
-                <SchedulerRow>
-                  <SchedulerCell as="div" cellType={["slot"]} text="23" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="24" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="25" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="26" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="27" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="28" />
-                  <SchedulerCell as="div" cellType={["slot"]} text="29" />
-                </SchedulerRow>
                 <SchedulerRow>
                   <SchedulerCell as="div" cellType={["slot"]} text="30" />
                   <SchedulerCell as="div" cellType={["slot"]} text="31" />

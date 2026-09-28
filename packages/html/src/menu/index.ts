@@ -5,6 +5,7 @@ export * from './menu-scrollable-wrapper.spec';
 export * from './menu-separator.spec';
 export * from './menu-item-content';
 export * from './menu-list.spec';
+export * from './menu-group-header';
 export * from './templates/menu-normal';
 export * from './templates/menu-popup';
 export * from './templates/menu-scrollable';

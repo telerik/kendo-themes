@@ -43,6 +43,7 @@
 @forward "./menu-button/_index.scss";
 @forward "./split-button/_index.scss";
 @forward "./toolbar/_index.scss";
+@forward "./floating-toolbar/_index.scss";
 @forward "./forms/_index.scss";
 @forward "./validator/_index.scss";
 @forward "./calendar/_index.scss";
@@ -225,6 +226,7 @@
 @use "./fab/_index.scss" as *;
 @use "./menu/_index.scss" as *;
 @use "./toolbar/_index.scss" as *;
+@use "./floating-toolbar/_index.scss" as *;
 
 
 // Popups and modals
@@ -409,6 +411,7 @@
     @include kendo-fab--styles();
     @include kendo-menu--styles();
     @include kendo-toolbar--styles();
+    @include kendo-floating-toolbar--styles();
 
 
     // Popups and modals

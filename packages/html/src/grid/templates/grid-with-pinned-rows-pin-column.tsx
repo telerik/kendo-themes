@@ -118,8 +118,8 @@ export const GridWithPinnedRowsPinColumn = ({ contentClassName, ...other }: any)
             {/* Pin/unpin context menu popup — aria-controls on pin column cells references this */}
             <Popup className="k-menu-popup">
                 <ContextMenu id={ctxMenuId}>
-                    <MenuListItem first text="Pin row to top" icon="pin-top" />
-                    <MenuListItem last text="Pin row to bottom" icon="pin-bottom" />
+                    <MenuListItem text="Pin row to top" icon="pin-top" />
+                    <MenuListItem text="Pin row to bottom" icon="pin-bottom" />
                 </ContextMenu>
             </Popup>
         </>

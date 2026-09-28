@@ -13,6 +13,7 @@ The SegmentedControl is compliant with the [Web Content Accessibility Guidelines
 | Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+| `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 
 #### ARIA Attributes
 

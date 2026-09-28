@@ -100,7 +100,6 @@
         // Overflow anchor
         .k-toolbar-overflow-button {
             margin-inline-start: auto;
-            border-radius: 0;
         }
 
         // Overflow separator
@@ -145,6 +144,11 @@
         justify-content: flex-start;
         flex: 1 1 auto;
         overflow: hidden;
+
+        // Items only get flex-shrink: 0 from the Toolbar's own "> *" rule when NOT wrapped in this scroll container.
+        > * {
+            flex-shrink: 0;
+        }
     }
 
     .k-toolbar-items-scroll {
@@ -272,16 +276,6 @@
         }
     }
 
-    .k-floating-toolbar {
-        max-width: fit-content;
-        border-radius: $kendo-floating-toolbar-border-radius;
-
-        .k-toolbar {
-            border-width: 0;
-            border-radius: inherit;
-        }
-    }
-
     .k-window-content:where(.editorToolbarWindow) { // stylelint-disable-line
         padding-block: $kendo-toolbar-md-padding-y !important; // stylelint-disable-line declaration-no-important
         padding-inline: $kendo-toolbar-md-padding-x !important; // stylelint-disable-line declaration-no-important
@@ -338,7 +332,6 @@
             width: 100%;
             height: auto;
             border-width: 0;
-            border-radius: 0;
             aspect-ratio: auto;
             color: inherit;
             background-color: transparent;

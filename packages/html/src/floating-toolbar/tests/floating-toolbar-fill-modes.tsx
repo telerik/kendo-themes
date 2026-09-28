@@ -1,5 +1,5 @@
 import { FloatingToolbar } from '../floating-toolbar.spec';
-import { ToolbarSeparator } from '../toolbar-separator';
+import { ToolbarSeparator } from '../../toolbar/toolbar-separator';
 import { Combobox } from '../../combobox/combobox.spec';
 import { ColorPicker } from '../../colorpicker/colorpicker.spec';
 import { Button } from '../../button/button.spec';
@@ -20,7 +20,7 @@ export default () =>(
                 <>
                     <span className="k-colspan-all k-col-span-full">{`${fillMode}`}</span>
                     <section className="k-colspan-all k-col-span-full">
-                        <FloatingToolbar fillMode={fillMode}>
+                        <FloatingToolbar draggable fillMode={fillMode}>
                             <Combobox fillMode={fillMode} value="(inherited)" />
                             <Combobox fillMode={fillMode} value="16" />
                             <ToolbarSeparator />

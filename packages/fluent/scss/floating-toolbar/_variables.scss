@@ -1,0 +1,10 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.scss" as *;
+
+/// The border radius of the floating Toolbar.
+/// @group floating-toolbar
+$kendo-floating-toolbar-border-radius: var( --kendo-floating-toolbar-border-radius, #{k-border-radius(md)} ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/floating-toolbar/_variables.scss" with (
+    $kendo-floating-toolbar-border-radius: $kendo-floating-toolbar-border-radius
+);

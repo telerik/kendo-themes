@@ -22,8 +22,8 @@ export default () => (
       </section>
       <Popup className="k-menu-popup">
         <MenuList id="submenu-popup-1">
-          <MenuListItem icon="chevron-left" first text="Move previous"></MenuListItem>
-          <MenuListItem icon="chevron-right" last text="Move next"></MenuListItem>
+          <MenuListItem icon="chevron-left" text="Move previous"></MenuListItem>
+          <MenuListItem icon="chevron-right" text="Move next"></MenuListItem>
         </MenuList>
       </Popup>
     </div>

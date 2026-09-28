@@ -1,300 +1,299 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        body {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            body {
             background: #fcfcfc;
-        }
-        #test-area {
+            }
+            #test-area {
             max-width: 600px;
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-5">
-        <span></span>
-        <span>Off</span>
-        <span>On</span>
-        <span>RTL - Off</span>
-        <span>RTL - On</span>
-        <span>normal</span>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-5">
+            <span></span>
+            <span>Off</span>
+            <span>On</span>
+            <span>RTL - Off</span>
+            <span>RTL - On</span>
+            <span>normal</span>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <span>hover</span>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-hover k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-hover k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-hover k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-hover k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <span>hover</span>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-hover k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <span>focus</span>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-focus k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-focus k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-hover k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-focus k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-focus k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-hover k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <span>disabled</span>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-off" role="switch" aria-checked="false" aria-disabled="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-on" role="switch" aria-checked="true" aria-disabled="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-hover k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-off" role="switch" aria-checked="false" aria-disabled="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-on" role="switch" aria-checked="true" aria-disabled="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <span>focus</span>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-focus k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <span>readonly</span>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-off" role="switch" aria-checked="false" tabindex="0" aria-readonly="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-on" role="switch" aria-checked="true" tabindex="0" aria-readonly="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-focus k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-off" role="switch" aria-checked="false" tabindex="0" aria-readonly="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-on" role="switch" aria-checked="true" tabindex="0" aria-readonly="true">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-focus k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <span>localized</span>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section>
+                <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-focus k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
+            </section>
+            <section dir="rtl">
+                <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
+                    <span class="k-switch-track">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb"></span>
+                    </span>
                 </span>
-            </span>
-        </section>
-        <span>disabled</span>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-off" role="switch" aria-checked="false" aria-disabled="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-on" role="switch" aria-checked="true" aria-disabled="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-off" role="switch" aria-checked="false" aria-disabled="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-disabled k-switch-on" role="switch" aria-checked="true" aria-disabled="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <span>readonly</span>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-off" role="switch" aria-checked="false" tabindex="0" aria-readonly="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-on" role="switch" aria-checked="true" tabindex="0" aria-readonly="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-off" role="switch" aria-checked="false" tabindex="0" aria-readonly="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-readonly k-switch-on" role="switch" aria-checked="true" tabindex="0" aria-readonly="true">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <span>localized</span>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-switch-off" role="switch" aria-checked="false" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-        <section dir="rtl">
-            <span aria-label="Toggle switch" class="k-switch k-switch-on" role="switch" aria-checked="true" tabindex="0">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </section>
-    </div>
-</body>
+            </section>
+        </div>
+    </body>
 </html>

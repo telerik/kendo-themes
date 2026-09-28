@@ -1,218 +1,217 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
-<head>
-    <title>Document</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
-    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
-</head>
-<body id="app" class="k-body">
-    <style>
-        #test-area {
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
             grid-template-columns: repeat(4, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="k-d-grid">
-        <span>undefined</span>
-        <span>Small</span>
-        <span>Medium</span>
-        <span>Large</span>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-unchecked-" class="k-radio" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-unchecked-">unchecked</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-unchecked-small" class="k-radio k-radio-sm" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-unchecked-small">unchecked</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-unchecked-medium" class="k-radio k-radio-md" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-unchecked-medium">unchecked</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-unchecked-large" class="k-radio k-radio-lg" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-unchecked-large">unchecked</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-hover-" class="k-radio k-hover" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-hover-">hover</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-hover-small" class="k-radio k-radio-sm k-hover" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-hover-small">hover</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-hover-medium" class="k-radio k-radio-md k-hover" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-hover-medium">hover</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-hover-large" class="k-radio k-radio-lg k-hover" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-hover-large">hover</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-focus-" class="k-radio k-focus" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-focus-">focus</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-focus-small" class="k-radio k-radio-sm k-focus" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-focus-small">focus</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-focus-medium" class="k-radio k-radio-md k-focus" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-focus-medium">focus</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-focus-large" class="k-radio k-radio-lg k-focus" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-focus-large">focus</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-valid-" class="k-radio k-valid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-valid-">valid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-valid-small" class="k-radio k-radio-sm k-valid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-valid-small">valid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-valid-medium" class="k-radio k-radio-md k-valid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-valid-medium">valid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-valid-large" class="k-radio k-radio-lg k-valid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-valid-large">valid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-invalid-" aria-invalid="true" class="k-radio k-invalid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-invalid-">invalid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-invalid-small" aria-invalid="true" class="k-radio k-radio-sm k-invalid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-invalid-small">invalid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-invalid-medium" aria-invalid="true" class="k-radio k-radio-md k-invalid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-invalid-medium">invalid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-invalid-large" aria-invalid="true" class="k-radio k-radio-lg k-invalid" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-invalid-large">invalid</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-required-" required="" class="k-radio" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-required-">required</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-required-small" required="" class="k-radio k-radio-sm" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-required-small">required</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-required-medium" required="" class="k-radio k-radio-md" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-required-medium">required</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-required-large" required="" class="k-radio k-radio-lg" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-required-large">required</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-disabled-" disabled="" class="k-radio k-disabled" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-disabled-">disabled</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-disabled-small" disabled="" class="k-radio k-radio-sm k-disabled" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-disabled-small">disabled</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-disabled-medium" disabled="" class="k-radio k-radio-md k-disabled" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-disabled-medium">disabled</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-disabled-large" disabled="" class="k-radio k-radio-lg k-disabled" type="radio">
-            </span>
-            <label class="k-radio-label" for="rad-disabled-large">disabled</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-checked-" class="k-radio k-checked" type="radio" checked="">
-            </span>
-            <label class="k-radio-label" for="rad-checked-">checked</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-checked-small" class="k-radio k-radio-sm k-checked" type="radio" checked="">
-            </span>
-            <label class="k-radio-label" for="rad-checked-small">checked</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-checked-medium" class="k-radio k-radio-md k-checked" type="radio" checked="">
-            </span>
-            <label class="k-radio-label" for="rad-checked-medium">checked</label>
-        </section>
-        <section>
-            <span class="k-radio-wrap">
-                <input id="rad-checked-large" class="k-radio k-radio-lg k-checked" type="radio" checked="">
-            </span>
-            <label class="k-radio-label" for="rad-checked-large">checked</label>
-        </section>
-    </div>
-</body>
+            }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <span>undefined</span>
+            <span>Small</span>
+            <span>Medium</span>
+            <span>Large</span>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-unchecked-" class="k-radio" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-unchecked-">unchecked</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-unchecked-small" class="k-radio k-radio-sm" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-unchecked-small">unchecked</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-unchecked-medium" class="k-radio k-radio-md" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-unchecked-medium">unchecked</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-unchecked-large" class="k-radio k-radio-lg" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-unchecked-large">unchecked</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-hover-" class="k-radio k-hover" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-hover-">hover</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-hover-small" class="k-radio k-radio-sm k-hover" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-hover-small">hover</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-hover-medium" class="k-radio k-radio-md k-hover" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-hover-medium">hover</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-hover-large" class="k-radio k-radio-lg k-hover" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-hover-large">hover</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-focus-" class="k-radio k-focus" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-focus-">focus</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-focus-small" class="k-radio k-radio-sm k-focus" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-focus-small">focus</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-focus-medium" class="k-radio k-radio-md k-focus" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-focus-medium">focus</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-focus-large" class="k-radio k-radio-lg k-focus" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-focus-large">focus</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-valid-" class="k-radio k-valid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-valid-">valid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-valid-small" class="k-radio k-radio-sm k-valid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-valid-small">valid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-valid-medium" class="k-radio k-radio-md k-valid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-valid-medium">valid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-valid-large" class="k-radio k-radio-lg k-valid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-valid-large">valid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-invalid-" aria-invalid="true" class="k-radio k-invalid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-invalid-">invalid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-invalid-small" aria-invalid="true" class="k-radio k-radio-sm k-invalid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-invalid-small">invalid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-invalid-medium" aria-invalid="true" class="k-radio k-radio-md k-invalid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-invalid-medium">invalid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-invalid-large" aria-invalid="true" class="k-radio k-radio-lg k-invalid" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-invalid-large">invalid</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-required-" required="" class="k-radio" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-required-">required</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-required-small" required="" class="k-radio k-radio-sm" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-required-small">required</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-required-medium" required="" class="k-radio k-radio-md" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-required-medium">required</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-required-large" required="" class="k-radio k-radio-lg" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-required-large">required</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-disabled-" disabled="" class="k-radio k-disabled" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-disabled-">disabled</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-disabled-small" disabled="" class="k-radio k-radio-sm k-disabled" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-disabled-small">disabled</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-disabled-medium" disabled="" class="k-radio k-radio-md k-disabled" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-disabled-medium">disabled</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-disabled-large" disabled="" class="k-radio k-radio-lg k-disabled" type="radio">
+                </span>
+                <label class="k-radio-label" for="rad-disabled-large">disabled</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-checked-" class="k-radio k-checked" type="radio" checked="">
+                </span>
+                <label class="k-radio-label" for="rad-checked-">checked</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-checked-small" class="k-radio k-radio-sm k-checked" type="radio" checked="">
+                </span>
+                <label class="k-radio-label" for="rad-checked-small">checked</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-checked-medium" class="k-radio k-radio-md k-checked" type="radio" checked="">
+                </span>
+                <label class="k-radio-label" for="rad-checked-medium">checked</label>
+            </section>
+            <section>
+                <span class="k-radio-wrap">
+                    <input id="rad-checked-large" class="k-radio k-radio-lg k-checked" type="radio" checked="">
+                </span>
+                <label class="k-radio-label" for="rad-checked-large">checked</label>
+            </section>
+        </div>
+    </body>
 </html>

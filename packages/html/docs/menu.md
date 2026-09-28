@@ -8,6 +8,12 @@ The Menu is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 
 ### Menu
 
+#### Component Style Options
+
+| Option | Values | Default |
+| --- | --- | --- |
+| `size` | `small`, `medium`, `large` | — |
+
 #### ARIA Attributes
 
 | Attribute | Description |

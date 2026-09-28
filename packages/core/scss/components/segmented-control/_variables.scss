@@ -1,6 +1,9 @@
 // Segmented control
 
 $kendo-segmented-control-default-size: null !default;
+$kendo-segmented-control-default-roundness: null !default;
+
+$kendo-segmented-control-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 
 $kendo-segmented-control-padding-x: null !default;
 $kendo-segmented-control-padding-y: null !default;
@@ -67,7 +70,6 @@ $kendo-segmented-control-sizes: (
         button-gap: $kendo-segmented-control-lg-button-gap
     )
 ) !default;
-
 
 
 
