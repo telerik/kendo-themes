@@ -115,7 +115,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                         'k-signature-action',
                         'k-signature-clear',
                     )}
-                    icon="eraser"
+                    icon="x"
                     rounded={props.rounded}
                     size={props.size}
                     fillMode="flat"
