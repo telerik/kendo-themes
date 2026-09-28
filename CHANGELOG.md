@@ -1,3 +1,9 @@
+## 14.5.1-dev.7 (2026-09-28)
+
+### 🩹 Fixes
+
+- **signature:** update icons and simplify component ([a21976fba3](https://github.com/telerik/kendo-themes/commit/a21976fba3))
+
 ## 14.5.1-dev.6 (2026-09-25)
 
 ### 🩹 Fixes
