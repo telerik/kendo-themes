@@ -17,6 +17,15 @@ export type KendoActionSheetViewProps = {
     adaptive?: boolean;
     animated?: boolean;
     titleId?: string;
+    side?: 'top' | 'right' | 'bottom' | 'left';
+    /**
+     * @ux {Resize handle} Renders a drag handle used to resize the ActionSheet.
+     */
+    resizable?: boolean;
+    /**
+     * @ux {Constrained width} Caps the content and footer width on wide viewports.
+     */
+    constrained?: boolean;
 }
 
 export const ActionSheetView = (
@@ -30,11 +39,33 @@ export const ActionSheetView = (
         header,
         footer,
         titleId,
+        side,
+        resizable,
+        constrained,
         ...other
     } = props;
 
     const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} titleId={titleId} {...header?.props} />;
-    const _ActionSheetFooter = footer?.type === ActionSheetFooter && <ActionSheetFooter {...footer?.props} />;
+    const _ActionSheetFooter = footer?.type === ActionSheetFooter && (
+        <ActionSheetFooter
+            {...footer?.props}
+            className={classNames((footer?.props as { className?: string })?.className, { 'k-actionsheet-constrained': constrained })}
+        />
+    );
+
+    // The handle sits on the edge opposite the anchored side, since that's the edge being dragged.
+    const isHorizontal = resizable && (side === 'left' || side === 'right');
+    const handle = resizable && <div className="k-actionsheet-resize-handle" aria-hidden="true" />;
+
+    const body = (
+        <div className="k-actionsheet-view-body">
+            {_ActionSheetHeader}
+            <div className={classNames('k-actionsheet-content', { 'k-actionsheet-constrained': constrained })}>
+                {children}
+            </div>
+            {_ActionSheetFooter}
+        </div>
+    );
 
     return (
         <div {...other}
@@ -43,14 +74,24 @@ export const ActionSheetView = (
                 ACTIONSHEETVIEW_CLASSNAME,
                 {
                     [`${ACTIONSHEETVIEW_CLASSNAME}-animated`]: animated,
+                    'k-actionsheet-resizable': resizable,
+                    [`k-actionsheet-${side}`]: resizable && !!side,
                 }
             )}
         >
-            {_ActionSheetHeader}
-            <div className="k-actionsheet-content" >
-                {children}
-            </div>
-            {_ActionSheetFooter}
+            {isHorizontal ? (
+                <>
+                    {side === 'right' && handle}
+                    {body}
+                    {side === 'left' && handle}
+                </>
+            ) : (
+                <>
+                    {side !== 'top' && handle}
+                    {body}
+                    {side === 'top' && handle}
+                </>
+            )}
         </div >
     );
 };

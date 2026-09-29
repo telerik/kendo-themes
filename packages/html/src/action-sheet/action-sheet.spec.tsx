@@ -23,10 +23,13 @@ export type KendoActionSheetProps = {
     template?: React.JSX.Element | React.JSX.Element[];
     side?: 'top' | 'right' | 'bottom' | 'left';
     id?: string;
+    resizable?: boolean;
+    maximized?: boolean;
+    constrained?: boolean;
 }
 
 const defaultOptions = {
-    side: 'bottom',
+    side: 'bottom' as const,
     fullscreen: false,
     adaptive: false,
     overlay: true
@@ -58,6 +61,9 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
         header,
         footer,
         id,
+        resizable,
+        maximized,
+        constrained,
         ...other
     } = props;
 
@@ -86,11 +92,12 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                         {
                             [`k-actionsheet-${side}`]: fullscreen === false,
                             'k-actionsheet-fullscreen': fullscreen === true,
-                            'k-adaptive-actionsheet': adaptive
+                            'k-adaptive-actionsheet': adaptive,
+                            'k-actionsheet-maximized': maximized
                         },
                     )}>
                     {template ? template :
-                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} titleId={titleId} {...props}>
+                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} titleId={titleId} side={side} resizable={resizable} constrained={constrained} {...props}>
                             {children}
                         </ActionSheetView>
                     }
