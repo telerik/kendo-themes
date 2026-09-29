@@ -1,3 +1,13 @@
+## 14.5.1-dev.8 (2026-09-29)
+
+### 🚀 Features
+
+- **html:** redesign imageeditor toolbar, sidebar and templates ([4bf323d50b](https://github.com/telerik/kendo-themes/commit/4bf323d50b))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.5.1-dev.7 (2026-09-28)
 
 ### 🩹 Fixes

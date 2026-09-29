@@ -1,3 +1,13 @@
+## 14.5.1-dev.8 (2026-09-29)
+
+### 🚀 Features
+
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.5.1-dev.7 (2026-09-28)
 
 This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
