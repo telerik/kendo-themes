@@ -1,0 +1,39 @@
+@use "../core/_index.scss" as *;
+
+// Label
+
+/// The font size of the Label.
+/// @group label
+$kendo-label-font-size: var(--kendo-label-font-size, inherit) !default;
+/// The font weight of the Label.
+/// @group label
+$kendo-label-font-weight: var(--kendo-label-font-weight, inherit) !default;
+/// The line height of the Label.
+/// @group label
+$kendo-label-line-height: var(--kendo-label-line-height, inherit) !default;
+
+/// The horizontal margin of the optional Label.
+/// @group label
+$kendo-label-optional-margin-x: var(--kendo-label-optional-margin-x, #{k-spacing(1.5)}) !default;
+/// The font size of the optional Label.
+/// @group label
+$kendo-label-optional-font-size: var(--kendo-label-optional-font-size, var(--kendo-font-size-sm)) !default;
+/// The font style of the optional Label.
+/// @group label
+$kendo-label-optional-font-style: var(--kendo-label-optional-font-style, normal) !default;
+/// The font weight of the optional Label.
+/// @group label
+$kendo-label-optional-font-weight: var(--kendo-label-optional-font-weight, inherit) !default;
+/// The text color of the optional Label.
+/// @group label
+$kendo-label-optional-text: var(--kendo-label-optional-text, #{k-color(subtle)}) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/label/_variables.scss" with (
+    $kendo-label-font-size: $kendo-label-font-size,
+    $kendo-label-font-weight: $kendo-label-font-weight,
+    $kendo-label-line-height: $kendo-label-line-height,
+    $kendo-label-optional-margin-x: $kendo-label-optional-margin-x,
+    $kendo-label-optional-font-size: $kendo-label-optional-font-size,
+    $kendo-label-optional-font-style: $kendo-label-optional-font-style,
+    $kendo-label-optional-font-weight: $kendo-label-optional-font-weight
+);
