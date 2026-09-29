@@ -1,3 +1,32 @@
+## 14.6.0 (2026-09-29)
+
+### 🚀 Features
+
+- **html:** redesign imageeditor toolbar, sidebar and templates ([4bf323d50b](https://github.com/telerik/kendo-themes/commit/4bf323d50b))
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+- **html:** add buttons config to promptBox ([1226e8c373](https://github.com/telerik/kendo-themes/commit/1226e8c373))
+
+### 🩹 Fixes
+
+- **signature:** update icons and simplify component ([a21976fba3](https://github.com/telerik/kendo-themes/commit/a21976fba3))
+- **html:** export floating-toolbar from main index ([12e1b479a1](https://github.com/telerik/kendo-themes/commit/12e1b479a1))
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+- **html:** remove menu item first and last classes ([fda270f49b](https://github.com/telerik/kendo-themes/commit/fda270f49b))
+- **html:** apply default border radius to toolbar overflow buttons ([0e4bb3c21b](https://github.com/telerik/kendo-themes/commit/0e4bb3c21b))
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Ivailo Alexandrov
+- Kiril Peyanski
+- Teya Veselinova
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
 ## 14.5.1-dev.8 (2026-09-29)
 
 ### 🚀 Features
