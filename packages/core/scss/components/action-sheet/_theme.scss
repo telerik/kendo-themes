@@ -92,6 +92,38 @@
     }
 
 
+    // Actionsheet group item
+    .k-actionsheet-group-item {
+        @include fill(
+            $kendo-actionsheet-group-item-text,
+            $kendo-actionsheet-group-item-bg,
+            $kendo-actionsheet-group-item-border
+        );
+        @include box-shadow( $kendo-actionsheet-group-item-shadow );
+
+        // No separator above the first group in the list.
+        &:first-child {
+            box-shadow: none;
+        }
+    }
+
+
+    // Actionsheet resize handle
+    .k-actionsheet-resize-handle {
+        background-color: $kendo-actionsheet-resize-handle-bg;
+
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-actionsheet-resize-handle-hover-bg;
+        }
+
+        &:active,
+        &.k-active {
+            background-color: $kendo-actionsheet-resize-handle-active-bg;
+        }
+    }
+
+
     // Actionsheet action
     .k-actionsheet-action {}
 
