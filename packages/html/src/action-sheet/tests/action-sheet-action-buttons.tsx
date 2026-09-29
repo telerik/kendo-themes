@@ -20,15 +20,14 @@ export default () => (
                 <ActionSheetNormal adaptive fullscreen title="Action Buttons Start"
                     footer={
                         <ActionSheetFooter alignment='start'>
-                            <Button text="Cancel" size="large" />
-                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" icon="cancel" size="large" />
+                            <Button text="Apply" icon="check" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >
                     <ActionSheetItems>
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
+                        <ActionSheetItem text="Item Title" />
+                        <ActionSheetItem text="Item Title" />
                     </ActionSheetItems>
                 </ActionSheetNormal>
             </section>
@@ -37,15 +36,14 @@ export default () => (
                 <ActionSheetNormal adaptive fullscreen title="Action Buttons End"
                     footer={
                         <ActionSheetFooter alignment='end'>
-                            <Button text="Cancel" size="large" />
-                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" icon="cancel" size="large" />
+                            <Button text="Apply" icon="check" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >
                     <ActionSheetItems>
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
+                        <ActionSheetItem text="Item Title" />
+                        <ActionSheetItem text="Item Title" />
                     </ActionSheetItems>
                 </ActionSheetNormal>
             </section>
@@ -54,15 +52,14 @@ export default () => (
                 <ActionSheetNormal adaptive fullscreen title="Action Buttons Center"
                     footer={
                         <ActionSheetFooter alignment='center'>
-                            <Button text="Cancel" size="large" />
-                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" icon="cancel" size="large" />
+                            <Button text="Apply" icon="check" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >
                     <ActionSheetItems>
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
+                        <ActionSheetItem text="Item Title" />
+                        <ActionSheetItem text="Item Title" />
                     </ActionSheetItems>
                 </ActionSheetNormal>
             </section>
@@ -71,15 +68,14 @@ export default () => (
                 <ActionSheetNormal adaptive fullscreen title="Action Buttons Stretch"
                     footer={
                         <ActionSheetFooter alignment='stretched'>
-                            <Button text="Cancel" size="large" />
-                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" icon="cancel" size="large" />
+                            <Button text="Apply" icon="check" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >
                     <ActionSheetItems>
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
+                        <ActionSheetItem text="Item Title" />
+                        <ActionSheetItem text="Item Title" />
                     </ActionSheetItems>
                 </ActionSheetNormal>
             </section>
@@ -88,15 +84,14 @@ export default () => (
                 <ActionSheetNormal adaptive fullscreen title="Action Buttons Justify"
                     footer={
                         <ActionSheetFooter alignment='justify'>
-                            <Button text="Cancel" size="large" />
-                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" icon="cancel" size="large" />
+                            <Button text="Apply" icon="check" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >
                     <ActionSheetItems>
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
+                        <ActionSheetItem text="Item Title" />
+                        <ActionSheetItem text="Item Title" />
                     </ActionSheetItems>
                 </ActionSheetNormal>
             </section>
@@ -105,15 +100,14 @@ export default () => (
                 <ActionSheetNormal adaptive fullscreen title="Action Buttons Vertical"
                     footer={
                         <ActionSheetFooter orientation="vertical" alignment='start'>
-                            <Button text="Cancel" size="large" />
-                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" icon="cancel" size="large" />
+                            <Button text="Apply" icon="check" size="large" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >
                     <ActionSheetItems>
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
-                        <ActionSheetItem text="Item" />
+                        <ActionSheetItem text="Item Title" />
+                        <ActionSheetItem text="Item Title" />
                     </ActionSheetItems>
                 </ActionSheetNormal>
             </section>
