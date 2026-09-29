@@ -18,8 +18,7 @@
         @include fill( $color: $kendo-forms-invalid-color );
     }
 
-    .k-form-hint,
-    .k-label-optional {
+    .k-form-hint {
         @include fill( $color: $kendo-form-hint-text );
     }
 
