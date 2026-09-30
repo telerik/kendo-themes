@@ -31,7 +31,7 @@ export type KendoPromptBoxProps = KendoPromptBoxOptions & {
     placeholder?: string;
     generating?: boolean;
     actionButtonConfig?: KendoButtonProps & React.HTMLAttributes<HTMLButtonElement>;
-    speechToTextButtonConfig?: KendoSpeechToTextButtonProps & React.HTMLAttributes<HTMLButtonElement>;
+    speechToTextButtonConfig?: (KendoSpeechToTextButtonProps & React.HTMLAttributes<HTMLButtonElement>) | false;
     uploadButtonConfig?: KendoButtonProps & React.HTMLAttributes<HTMLButtonElement>;
 };
 
@@ -132,12 +132,14 @@ export const PromptBox: KendoComponent<KendoPromptBoxProps & KendoPromptBoxState
                             {...uploadButtonConfig}
                         />
                     )}
-                    <SpeechToTextButton
-                        size="small"
-                        fillMode="flat"
-                        rounded="full"
-                        {...speechToTextButtonConfig}
-                    />
+                    {speechToTextButtonConfig !== false && (
+                        <SpeechToTextButton
+                            size="small"
+                            fillMode="flat"
+                            rounded="full"
+                            {...speechToTextButtonConfig}
+                        />
+                    )}
                     <IconButton
                         icon={generating ? "stop" : "arrow-up"}
                         size="small"
