@@ -120,7 +120,7 @@ $kendo-chip-solid-selected-bg: k-color(base-subtle-active) !default;
 $kendo-chip-outline-text: k-color(base-on-surface) !default;
 /// The base border color of the outline Chip.
 /// @group chip
-$kendo-chip-outline-border: $kendo-chip-outline-text !default;
+$kendo-chip-outline-border: k-color(base-emphasis) !default;
 /// The base shadow of the outline Chip.
 /// @group chip
 $kendo-chip-outline-shadow: null !default;
