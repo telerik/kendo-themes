@@ -119,21 +119,21 @@ $kendo-chip-solid-selected-bg: $kendo-button-active-bg !default;
 $kendo-chip-outline-text: k-color(base-on-surface) !default;
 /// The base border color of the outline Chip.
 /// @group chip
-$kendo-chip-outline-border: $kendo-chip-outline-text !default;
+$kendo-chip-outline-border: k-color(base-emphasis) !default;
 /// The base shadow of the outline Chip.
 /// @group chip
 $kendo-chip-outline-shadow: 0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent) !default;
 
 /// The base background color of the hovered outline Chip.
 /// @group chip
-$kendo-chip-outline-hover-bg: $kendo-chip-outline-text !default;
+$kendo-chip-outline-hover-bg: k-color(base-hover) !default;
 /// The base text color of the hovered outline Chip.
 /// @group chip
-$kendo-chip-outline-hover-text: k-color(base) !default;
+$kendo-chip-outline-hover-text: k-color(base-on-surface) !default;
 
 /// The base background color of the selected outline Chip.
 /// @group chip
-$kendo-chip-outline-selected-bg: $kendo-chip-outline-hover-bg !default;
+$kendo-chip-outline-selected-bg: k-color(base-active) !default;
 /// The base text color of the selected outline Chip.
 /// @group chip
 $kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;
