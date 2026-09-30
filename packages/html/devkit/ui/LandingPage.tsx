@@ -22,16 +22,23 @@ interface MatchedComponent {
 
 const RETURN_COMPONENT_KEY = 'kendo-themes-dev:return-component';
 
-function consumeReturnComponent(): string | null {
+function peekReturnComponent(): string | null {
     try {
-        const component = sessionStorage.getItem(RETURN_COMPONENT_KEY);
-        if (component) sessionStorage.removeItem(RETURN_COMPONENT_KEY);
-        return component;
+        return sessionStorage.getItem(RETURN_COMPONENT_KEY);
     } catch (error) {
         if (error instanceof DOMException) {
             console.warn('Unable to restore dev component return target', error);
             return null;
         }
+        throw error;
+    }
+}
+
+function clearReturnComponent(): void {
+    try {
+        sessionStorage.removeItem(RETURN_COMPONENT_KEY);
+    } catch (error) {
+        if (error instanceof DOMException) return;
         throw error;
     }
 }
@@ -87,13 +94,17 @@ function LandingPageContent() {
 
     useLayoutEffect(() => {
         function restoreReturnComponent() {
-            const component = consumeReturnComponent();
+            const component = peekReturnComponent();
             if (!component) return;
             setOpen(new Set([component]));
             window.requestAnimationFrame(() => {
                 document.getElementById(`devkit-component-${component}`)
                     ?.scrollIntoView({ block: 'center' });
             });
+            // Some browsers restore this page from cache and then reload it (e.g. a dev
+            // server keeps a live socket open, which disqualifies bfcache). Delay clearing
+            // the key so a near-immediate second restore on that reload still finds it.
+            window.setTimeout(clearReturnComponent, 2000);
         }
 
         restoreReturnComponent();
