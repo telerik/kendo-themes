@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useLayoutEffect, useMemo, useState } from 'react';
 import { testRoutes } from 'virtual:test-routes';
 import { DevKitProvider, useDevKit } from '../context';
 import { fuzzyMatch } from '../lib/fuzzy';
@@ -20,33 +20,17 @@ interface MatchedComponent {
     tests: MatchedTest[];
 }
 
-const OPEN_COMPONENTS_KEY = 'kendo-themes-dev:expanded-components';
 const RETURN_COMPONENT_KEY = 'kendo-themes-dev:return-component';
 
-function getOpenComponents(): Set<string> {
+function consumeReturnComponent(): string | null {
     try {
-        const stored = sessionStorage.getItem(OPEN_COMPONENTS_KEY);
-        if (!stored) return new Set();
-        const parsed: unknown = JSON.parse(stored);
-        return Array.isArray(parsed)
-            ? new Set(parsed.filter((component): component is string => typeof component === 'string'))
-            : new Set();
-    } catch (error) {
-        if (error instanceof SyntaxError || error instanceof DOMException) {
-            console.warn('Unable to restore expanded dev components', error);
-            return new Set();
-        }
-        throw error;
-    }
-}
-
-function saveOpenComponents(components: Set<string>): void {
-    try {
-        sessionStorage.setItem(OPEN_COMPONENTS_KEY, JSON.stringify([...components]));
+        const component = sessionStorage.getItem(RETURN_COMPONENT_KEY);
+        if (component) sessionStorage.removeItem(RETURN_COMPONENT_KEY);
+        return component;
     } catch (error) {
         if (error instanceof DOMException) {
-            console.warn('Unable to save expanded dev components', error);
-            return;
+            console.warn('Unable to restore dev component return target', error);
+            return null;
         }
         throw error;
     }
@@ -67,7 +51,7 @@ function saveReturnComponent(component: string): void {
 function LandingPageContent() {
     const { params } = useDevKit();
     const [search, setSearch] = useState('');
-    const [open, setOpen] = useState<Set<string>>(getOpenComponents);
+    const [open, setOpen] = useState<Set<string>>(new Set());
 
     const themeQs = themeQuery(params.theme, params.swatch);
     const q = search.trim();
@@ -101,32 +85,29 @@ function LandingPageContent() {
         []
     );
 
-    useEffect(() => {
-        let component: string | null;
-        try {
-            component = sessionStorage.getItem(RETURN_COMPONENT_KEY);
-            if (component) sessionStorage.removeItem(RETURN_COMPONENT_KEY);
-        } catch (error) {
-            if (error instanceof DOMException) {
-                console.warn('Unable to restore dev component return target', error);
-                return;
-            }
-            throw error;
+    useLayoutEffect(() => {
+        function restoreReturnComponent() {
+            const component = consumeReturnComponent();
+            if (!component) return;
+            setOpen(new Set([component]));
+            window.requestAnimationFrame(() => {
+                document.getElementById(`devkit-component-${component}`)
+                    ?.scrollIntoView({ block: 'center' });
+            });
         }
 
-        if (component) {
-            document.getElementById(`devkit-component-${component}`)
-                ?.scrollIntoView({ block: 'center' });
-        }
+        restoreReturnComponent();
+        window.addEventListener('pageshow', restoreReturnComponent);
+        return () => window.removeEventListener('pageshow', restoreReturnComponent);
     }, []);
 
-    const toggle = (component: string) => {
-        const next = new Set(open);
-        if (next.has(component)) next.delete(component);
-        else next.add(component);
-        saveOpenComponents(next);
-        setOpen(next);
-    };
+    const toggle = (component: string) =>
+        setOpen(prev => {
+            const next = new Set(prev);
+            if (next.has(component)) next.delete(component);
+            else next.add(component);
+            return next;
+        });
 
     return (
         <div className="devkit-landing">
