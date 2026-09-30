@@ -120,6 +120,7 @@
 
                         &:hover,
                         &.k-hover {
+                            background-color: k-color(base-hover);
                             border-color: $kendo-chip-hover-border;
                         }
                     }
