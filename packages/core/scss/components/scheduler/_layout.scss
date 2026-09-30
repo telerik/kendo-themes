@@ -728,12 +728,14 @@
     }
 
 
-    // Day view
-    .k-scheduler-dayview {}
-
-
-    // Week view
-    .k-scheduler-weekview {}
+    // Day/Week view
+    .k-scheduler-dayview,
+    .k-scheduler-weekview {
+        .k-scheduler-content .k-current-time {
+            width: 100%;
+            height: 1px;
+        }
+    }
 
 
     // Time column cells (table: th in .k-scheduler-times; flex: .k-side-cell)
@@ -893,6 +895,11 @@
         }
         .k-scheduler-content {
             overflow: auto;
+
+            .k-current-time {
+                width: 1px;
+                height: 100%;
+            }
         }
     }
 
