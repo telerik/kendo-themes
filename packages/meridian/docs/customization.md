@@ -8738,8 +8738,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-chip-solid-bg</td>
     <td>String</td>
-    <td><code>$kendo-chip-base-bg</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the solid Chip.</div></div>
@@ -8748,8 +8748,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-chip-solid-text</td>
     <td>String</td>
-    <td><code>k-color(on-base)</code></td>
-    <td><code>var(--kendo-color-on-base)</code></td>
+    <td><code>k-color(base-on-subtle)</code></td>
+    <td><code>var(--kendo-color-base-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the solid Chip.</div></div>
@@ -8757,9 +8757,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-chip-solid-border</td>
-    <td>Color</td>
-    <td><code>transparent</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+    <td>String</td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the solid Chip.</div></div>
@@ -8798,8 +8798,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
     <td>String</td>
-    <td><code>k-color(base-hover)</code></td>
-    <td><code>var(--kendo-color-base-hover)</code></td>
+    <td><code>k-color(base-subtle-hover)</code></td>
+    <td><code>var(--kendo-color-base-subtle-hover)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered solid Chip.</div></div>
@@ -8808,8 +8808,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-chip-solid-selected-bg</td>
     <td>String</td>
-    <td><code>k-color(base-active)</code></td>
-    <td><code>var(--kendo-color-base-active)</code></td>
+    <td><code>k-color(base-subtle-active)</code></td>
+    <td><code>var(--kendo-color-base-subtle-active)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected solid Chip.</div></div>
@@ -8828,8 +8828,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-chip-outline-border</td>
     <td>String</td>
-    <td><code>$kendo-chip-outline-text</code></td>
-    <td><code>var(--kendo-color-base-on-surface)</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the outline Chip.</div></div>
