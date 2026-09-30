@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { testRoutes } from 'virtual:test-routes';
 import { DevKitProvider, useDevKit } from '../context';
 import { fuzzyMatch } from '../lib/fuzzy';
@@ -20,10 +20,54 @@ interface MatchedComponent {
     tests: MatchedTest[];
 }
 
+const OPEN_COMPONENTS_KEY = 'kendo-themes-dev:expanded-components';
+const RETURN_COMPONENT_KEY = 'kendo-themes-dev:return-component';
+
+function getOpenComponents(): Set<string> {
+    try {
+        const stored = sessionStorage.getItem(OPEN_COMPONENTS_KEY);
+        if (!stored) return new Set();
+        const parsed: unknown = JSON.parse(stored);
+        return Array.isArray(parsed)
+            ? new Set(parsed.filter((component): component is string => typeof component === 'string'))
+            : new Set();
+    } catch (error) {
+        if (error instanceof SyntaxError || error instanceof DOMException) {
+            console.warn('Unable to restore expanded dev components', error);
+            return new Set();
+        }
+        throw error;
+    }
+}
+
+function saveOpenComponents(components: Set<string>): void {
+    try {
+        sessionStorage.setItem(OPEN_COMPONENTS_KEY, JSON.stringify([...components]));
+    } catch (error) {
+        if (error instanceof DOMException) {
+            console.warn('Unable to save expanded dev components', error);
+            return;
+        }
+        throw error;
+    }
+}
+
+function saveReturnComponent(component: string): void {
+    try {
+        sessionStorage.setItem(RETURN_COMPONENT_KEY, component);
+    } catch (error) {
+        if (error instanceof DOMException) {
+            console.warn('Unable to save dev component return target', error);
+            return;
+        }
+        throw error;
+    }
+}
+
 function LandingPageContent() {
     const { params } = useDevKit();
     const [search, setSearch] = useState('');
-    const [open, setOpen] = useState<Set<string>>(new Set());
+    const [open, setOpen] = useState<Set<string>>(getOpenComponents);
 
     const themeQs = themeQuery(params.theme, params.swatch);
     const q = search.trim();
@@ -57,13 +101,32 @@ function LandingPageContent() {
         []
     );
 
-    const toggle = (component: string) =>
-        setOpen(prev => {
-            const next = new Set(prev);
-            if (next.has(component)) next.delete(component);
-            else next.add(component);
-            return next;
-        });
+    useEffect(() => {
+        let component: string | null;
+        try {
+            component = sessionStorage.getItem(RETURN_COMPONENT_KEY);
+            if (component) sessionStorage.removeItem(RETURN_COMPONENT_KEY);
+        } catch (error) {
+            if (error instanceof DOMException) {
+                console.warn('Unable to restore dev component return target', error);
+                return;
+            }
+            throw error;
+        }
+
+        if (component) {
+            document.getElementById(`devkit-component-${component}`)
+                ?.scrollIntoView({ block: 'center' });
+        }
+    }, []);
+
+    const toggle = (component: string) => {
+        const next = new Set(open);
+        if (next.has(component)) next.delete(component);
+        else next.add(component);
+        saveOpenComponents(next);
+        setOpen(next);
+    };
 
     return (
         <div className="devkit-landing">
@@ -102,7 +165,12 @@ function LandingPageContent() {
                             const isOpen = q ? true : open.has(component);
                             const regionId = `devkit-region-${component}`;
                             return (
-                                <div key={component} className="devkit-acc-item" data-open={isOpen}>
+                                <div
+                                    key={component}
+                                    id={`devkit-component-${component}`}
+                                    className="devkit-acc-item"
+                                    data-open={isOpen}
+                                >
                                     <button
                                         className="devkit-acc-summary"
                                         onClick={() => toggle(component)}
@@ -123,7 +191,10 @@ function LandingPageContent() {
                                                         key={test}
                                                         className="devkit-test-link"
                                                         href={`/${component}/${test}${themeQs}`}
-                                                        onClick={() => pushRecent(component, test)}
+                                                        onClick={() => {
+                                                            pushRecent(component, test);
+                                                            saveReturnComponent(component);
+                                                        }}
                                                     >
                                                         <Highlight text={test} matched={matched} />
                                                     </a>
