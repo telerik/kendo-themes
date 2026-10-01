@@ -1,3 +1,9 @@
+## 14.6.1-dev.0 (2026-10-01)
+
+### 🩹 Fixes
+
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
 ## 14.6.0 (2026-09-29)
 
 ### 🚀 Features

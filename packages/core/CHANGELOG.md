@@ -1,3 +1,7 @@
+## 14.6.1-dev.0 (2026-10-01)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
 ## 14.6.0 (2026-09-29)
 
 ### 🚀 Features

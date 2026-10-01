@@ -34810,9 +34810,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-table-font-size</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the table if no size is specified.</div></div>
@@ -34891,7 +34891,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>$kendo-table-font-size</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -34911,7 +34911,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-md-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>$kendo-table-font-size</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
@@ -34931,7 +34931,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-lg-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>$kendo-table-font-size</code></td>
     <td><code>var(--kendo-font-size)</code></td>
 </tr>
 <tr>
