@@ -57,7 +57,7 @@ $kendo-badge-text-padding-x: var( --kendo-badge-text-padding-x, #{k-spacing(0.5)
 $kendo-badge-sm-gap: var( --kendo-badge-sm-gap, #{k-spacing(0)} ) !default;
 /// The icon-to-text gap of the medium Badge.
 /// @group badge
-$kendo-badge-md-gap: var( --kendo-badge-md-gap, #{k-spacing(0)} ) !default;
+$kendo-badge-md-gap: var( --kendo-badge-md-gap, #{k-spacing(1px)} ) !default;
 /// The icon-to-text gap of the large Badge.
 /// @group badge
 $kendo-badge-lg-gap: var( --kendo-badge-lg-gap, #{k-spacing(0.5)} ) !default;

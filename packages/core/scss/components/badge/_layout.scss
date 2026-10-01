@@ -64,8 +64,7 @@
 
                 &:empty {
                     padding: $_padding-y;
-                    min-width: $_min-width;
-                    width: $_min-width;
+                    min-width: auto;
                 }
             }
         }

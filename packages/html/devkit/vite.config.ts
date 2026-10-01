@@ -74,30 +74,6 @@ function htmlFallbackPlugin(): Plugin {
     };
 }
 
-/** Serves local, standalone comparison pages that are not component tests. */
-function localPagePlugin(): Plugin {
-    const pagePath = resolve(devkitDir, 'badge-theme-stacks.html');
-
-    return {
-        name: 'devkit-local-pages',
-        configureServer(server) {
-            server.middlewares.use((req, res, next) => {
-                const path = (req.url ?? '').split('?')[0];
-                if (path !== '/badge-theme-stacks' && path !== '/badge-theme-stacks.html') {
-                    return next();
-                }
-
-                try {
-                    const rawHtml = readFileSync(pagePath, 'utf-8');
-                    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-                    res.end(rawHtml);
-                } catch (e) {
-                    next(e as Error);
-                }
-            });
-        },
-    };
-}
 
 /**
  * Redirects legacy esbuild dev-server URLs to clean devkit routes so that
@@ -365,7 +341,6 @@ export default defineConfig({
     plugins: [
         legacyRedirectPlugin(),
         lazyCssPlugin(),
-        localPagePlugin(),
         htmlFallbackPlugin(),
         react(),
         testRoutesPlugin(),
