@@ -59,8 +59,12 @@ jobs:
         # Restores packages/html/dist (html-dist.tar) and packages/*/dist/all.css (theme tars)
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
+      # tests/_output is tracked, so the checkout already holds the previous
+      # screenshots; start from empty so removed variants don't linger.
       - name: Create screenshots
-        run: node scripts/capture.mjs --themes ${{ matrix.theme }} --components '*'
+        run: |
+          rm -rf tests/_output/${{ matrix.theme }}
+          node scripts/capture.mjs --themes ${{ matrix.theme }} --components '*'
 
       - name: Pack screenshots
         run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
