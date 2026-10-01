@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-gap</td>
     <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
+    <td><code>k-spacing(1px)</code></td>
+    <td><code>var(--kendo-spacing-1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the medium Badge.</div></div>
@@ -336,7 +336,7 @@ The following table lists the available variables for customization.
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"0.16666666666666666em","padding-y":"0.175em","gap":"var(--kendo-spacing-0)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.3333333333333333em","padding-y":"0.35em","gap":"var(--kendo-spacing-0)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.5em","padding-y":"0.525em","gap":"var(--kendo-spacing-0\\.5)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"0.16666666666666666em","padding-y":"0.175em","gap":"var(--kendo-spacing-0)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.3333333333333333em","padding-y":"0.35em","gap":"var(--kendo-spacing-1px)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.5em","padding-y":"0.525em","gap":"var(--kendo-spacing-0\\.5)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>

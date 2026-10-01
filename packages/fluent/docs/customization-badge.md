@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-gap</td>
     <td>String</td>
-    <td><code>var( --kendo-badge-md-gap, #{k-spacing(0)} )</code></td>
-    <td><code>var(--kendo-badge-md-gap, var(--kendo-spacing-0))</code></td>
+    <td><code>var( --kendo-badge-md-gap, #{k-spacing(1px)} )</code></td>
+    <td><code>var(--kendo-badge-md-gap, var(--kendo-spacing-1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the medium Badge.</div></div>
@@ -346,7 +346,7 @@ The following table lists the available variables for customization.
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5)","padding-y":"var(--kendo-spacing-0\\.5)","gap":"var(--kendo-badge-sm-gap, var(--kendo-spacing-0))","font-size":"var(--kendo-font-size-xs)","line-height":"var(--kendo-line-height-xs)","min-width":"calc(var(--kendo-line-height-xs) * 1em + var(--kendo-spacing-0\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-badge-padding-x, var(--kendo-spacing-1))","padding-y":"var(--kendo-badge-padding-y, var(--kendo-spacing-1))","gap":"var(--kendo-badge-md-gap, var(--kendo-spacing-0))","font-size":"var(--kendo-badge-font-size, var(--kendo-font-size-xs))","line-height":"var(--kendo-badge-line-height, var(--kendo-line-height-xs))","min-width":"calc(var(--kendo-badge-line-height, var(--kendo-line-height-xs)) * 1em + var(--kendo-badge-padding-y, var(--kendo-spacing-1)) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","gap":"var(--kendo-badge-lg-gap, var(--kendo-spacing-0\\.5))","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)","min-width":"calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-1\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5)","padding-y":"var(--kendo-spacing-0\\.5)","gap":"var(--kendo-badge-sm-gap, var(--kendo-spacing-0))","font-size":"var(--kendo-font-size-xs)","line-height":"var(--kendo-line-height-xs)","min-width":"calc(var(--kendo-line-height-xs) * 1em + var(--kendo-spacing-0\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-badge-padding-x, var(--kendo-spacing-1))","padding-y":"var(--kendo-badge-padding-y, var(--kendo-spacing-1))","gap":"var(--kendo-badge-md-gap, var(--kendo-spacing-1px))","font-size":"var(--kendo-badge-font-size, var(--kendo-font-size-xs))","line-height":"var(--kendo-badge-line-height, var(--kendo-line-height-xs))","min-width":"calc(var(--kendo-badge-line-height, var(--kendo-line-height-xs)) * 1em + var(--kendo-badge-padding-y, var(--kendo-spacing-1)) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","gap":"var(--kendo-badge-lg-gap, var(--kendo-spacing-0\\.5))","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)","min-width":"calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-1\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>
