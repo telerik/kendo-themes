@@ -17,6 +17,7 @@ env:
 
 jobs:
   nuget-publish:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-22.04
     environment: upload
 
@@ -48,19 +49,32 @@ jobs:
       - name: Setup nuget
         uses: nuget/setup-nuget@v4
 
+      - name: Check for release commit
+        id: check-release
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "$(git log -1 --pretty=%s)" == chore\(release\):* ]]; then
+            echo "released=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "released=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Install
+        if: steps.check-release.outputs.released == 'true'
         run: npm ci --no-audit --no-fund
 
       - name: Build themes for dist
+        if: steps.check-release.outputs.released == 'true'
         run: |
           npm run sass:dist
           npm run docs
 
       - name: Pack nuget
+        if: steps.check-release.outputs.released == 'true'
         run: |
           npx nx run-many -t nuget-pack --parallel=1
 
       - name: Push nuget
+        if: steps.check-release.outputs.released == 'true'
         run: |
           nuget sources add -username ${{ env.NUGET_USER }} -password %NUGET_API_KEY% -StorePasswordInClearText -Name github -Source ${{ env.NUGET_FEED }}
           npx nx run-many -t nuget-push
