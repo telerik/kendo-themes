@@ -1,3 +1,18 @@
+## 14.6.0 (2026-09-29)
+
+### 🩹 Fixes
+
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Kiril Peyanski
+
+## 14.5.1-dev.8 (2026-09-29)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
 ## 14.5.1-dev.7 (2026-09-28)
 
 This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.

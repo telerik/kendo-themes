@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useLayoutEffect, useMemo, useState } from 'react';
 import { testRoutes } from 'virtual:test-routes';
 import { DevKitProvider, useDevKit } from '../context';
 import { fuzzyMatch } from '../lib/fuzzy';
@@ -18,6 +18,41 @@ interface MatchedComponent {
     component: string;
     componentMatched: number[];
     tests: MatchedTest[];
+}
+
+const RETURN_COMPONENT_KEY = 'kendo-themes-dev:return-component';
+
+function peekReturnComponent(): string | null {
+    try {
+        return sessionStorage.getItem(RETURN_COMPONENT_KEY);
+    } catch (error) {
+        if (error instanceof DOMException) {
+            console.warn('Unable to restore dev component return target', error);
+            return null;
+        }
+        throw error;
+    }
+}
+
+function clearReturnComponent(): void {
+    try {
+        sessionStorage.removeItem(RETURN_COMPONENT_KEY);
+    } catch (error) {
+        if (error instanceof DOMException) return;
+        throw error;
+    }
+}
+
+function saveReturnComponent(component: string): void {
+    try {
+        sessionStorage.setItem(RETURN_COMPONENT_KEY, component);
+    } catch (error) {
+        if (error instanceof DOMException) {
+            console.warn('Unable to save dev component return target', error);
+            return;
+        }
+        throw error;
+    }
 }
 
 function LandingPageContent() {
@@ -56,6 +91,26 @@ function LandingPageContent() {
         () => Object.values(testRoutes).reduce((sum, tests) => sum + tests.length, 0),
         []
     );
+
+    useLayoutEffect(() => {
+        function restoreReturnComponent() {
+            const component = peekReturnComponent();
+            if (!component) return;
+            setOpen(new Set([component]));
+            window.requestAnimationFrame(() => {
+                document.getElementById(`devkit-component-${component}`)
+                    ?.scrollIntoView({ block: 'center' });
+            });
+            // Some browsers restore this page from cache and then reload it (e.g. a dev
+            // server keeps a live socket open, which disqualifies bfcache). Delay clearing
+            // the key so a near-immediate second restore on that reload still finds it.
+            window.setTimeout(clearReturnComponent, 2000);
+        }
+
+        restoreReturnComponent();
+        window.addEventListener('pageshow', restoreReturnComponent);
+        return () => window.removeEventListener('pageshow', restoreReturnComponent);
+    }, []);
 
     const toggle = (component: string) =>
         setOpen(prev => {
@@ -102,7 +157,12 @@ function LandingPageContent() {
                             const isOpen = q ? true : open.has(component);
                             const regionId = `devkit-region-${component}`;
                             return (
-                                <div key={component} className="devkit-acc-item" data-open={isOpen}>
+                                <div
+                                    key={component}
+                                    id={`devkit-component-${component}`}
+                                    className="devkit-acc-item"
+                                    data-open={isOpen}
+                                >
                                     <button
                                         className="devkit-acc-summary"
                                         onClick={() => toggle(component)}
@@ -123,7 +183,10 @@ function LandingPageContent() {
                                                         key={test}
                                                         className="devkit-test-link"
                                                         href={`/${component}/${test}${themeQs}`}
-                                                        onClick={() => pushRecent(component, test)}
+                                                        onClick={() => {
+                                                            pushRecent(component, test);
+                                                            saveReturnComponent(component);
+                                                        }}
                                                     >
                                                         <Highlight text={test} matched={matched} />
                                                     </a>
