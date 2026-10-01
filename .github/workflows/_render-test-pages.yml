@@ -18,10 +18,6 @@ on:
         required: false
         type: string
         default: 'conditionally'
-    outputs:
-      sha:
-        description: 'Final commit SHA on the branch after this workflow ran'
-        value: ${{ jobs.run.outputs.sha || github.sha }}
 
 concurrency:
   group: render-test-pages-${{ github.ref }}
@@ -77,19 +73,8 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ needs.verify.outputs.should-render == 'YES' }}
     needs: [ verify ]
-    outputs:
-      sha: ${{ steps.push.outputs.sha }}
 
     steps:
-
-      - name: Setup Firefox
-        run: |
-          sudo wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
-          sudo tar xJf /tmp/firefox.tar.bz2 -C /opt
-          sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
-
-      - name: Print Firefox version
-        run: firefox --version
 
       - name: Checkout branch
         uses: actions/checkout@v7
@@ -121,11 +106,6 @@ jobs:
           HEADLESS: 'true'
         run: |
           npm run test:render-test-pages
-
-      - name: Configure git identity
-        run: |
-          git config user.name "kendo-bot"
-          git config user.email "kendouiteam@progress.com"
 
       - name: Pack test pages
         env:
@@ -162,6 +142,13 @@ jobs:
             echo "Test pages will NOT be uploaded" >> $GITHUB_STEP_SUMMARY
           fi
 
+      # Markup snapshots are uploaded as an artifact, not committed here.
+      # Both the "a11y" job (see ci.yml, _test-contrast.yml) and
+      # visual-regression (see _visual-regression.yml) consume this artifact
+      # directly rather than reading tests/ off the branch, so this job
+      # doesn't need write access to the repo at all. visual-regression
+      # unpacks this same artifact into its own checkout and commits the
+      # markup snapshots together with the screenshot baseline in one commit.
       - name: Upload test pages
         if: ${{ inputs.upload-policy != 'never' }}
         uses: actions/upload-artifact@v7
@@ -169,22 +156,3 @@ jobs:
           name: test-pages
           path: test-pages.tar
           if-no-files-found: warn
-
-      # Keeps the markup snapshots under tests/ (used by the "a11y" job, see
-      # ci.yml) in sync with packages/html - independent of the visual
-      # (screenshot) pipeline, which no longer commits anything back to the
-      # branch (reg-suit manages those on gh-pages instead, see
-      # _visual-regression.yml). Without this, tests/*.html could silently
-      # drift out of date with no signal.
-      #
-      # This push never triggers its own CI run, so callers must report
-      # status checks against the emitted sha, not the triggering commit.
-      - name: Commit and push markup snapshots
-        id: push
-        run: |
-          if [ "$HAS_CHANGES" = "YES" ]
-          then
-            git commit -m "chore: update visual previews"
-            git push
-          fi
-          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"

@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
 // Local visual-regression sandbox. No CI / gh-pages / git needed.
-//   node scripts/visual-local.mjs --save   # snapshot current tests/_output as the baseline
+//   node scripts/visual-local.mjs --save   # overlay current tests/_output onto the baseline
 //   node scripts/visual-local.mjs          # compare tests/_output vs baseline -> .reg/report.html
-import { cpSync, existsSync, mkdirSync, rmSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
-const ACTUAL = 'tests/_output', EXPECTED = '.reg/expected', DIFF = '.reg/diff';
+const ACTUAL = 'tests/_output', EXPECTED = 'tests/_baseline', DIFF = '.reg/diff';
 const REPORT = '.reg/report.html', JSON_OUT = '.reg/out.json';
 
 if (!existsSync(ACTUAL)) {
@@ -15,7 +15,9 @@ if (!existsSync(ACTUAL)) {
 }
 
 if (process.argv.includes('--save')) {
-    rmSync(EXPECTED, { recursive: true, force: true });
+    // tests/_baseline is git-tracked (develop is always the baseline), so this
+    // is an overlay copy, not a wipe-and-recreate: removed/renamed items stay
+    // on disk unless `git rm`'d separately.
     mkdirSync(EXPECTED, { recursive: true });
     cpSync(ACTUAL, EXPECTED, { recursive: true });
     console.log(`Saved baseline: ${ACTUAL} -> ${EXPECTED}`);
@@ -27,6 +29,8 @@ if (!existsSync(EXPECTED)) {
     process.exit(1);
 }
 
-execFileSync('npx', ['reg-cli', ACTUAL, EXPECTED, DIFF, '--report', REPORT, '--json', JSON_OUT],
-    { stdio: 'inherit', shell: true });
+execFileSync('npx', ['reg-cli', ACTUAL, EXPECTED, DIFF,
+    '--matchingThreshold', '0.05', '--enableAntialias',
+    '--report', REPORT, '--json', JSON_OUT],
+{ stdio: 'inherit', shell: true });
 console.log(`\nReport: ${REPORT}`);
