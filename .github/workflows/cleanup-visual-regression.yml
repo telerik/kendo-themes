@@ -1,11 +1,11 @@
 name: Cleanup visual regression report
 
 # PR/feature-branch visual-regression runs publish to reports/pr-<number>/ and
-# republish over that same folder on every push (see _visual-regression.yml
-# and reg-fetch-gh-pages-plugin), so nothing accumulates while the PR is open.
-# Once the PR closes (merged or not) there's no further use for that report,
-# so remove it from gh-pages here to keep the branch bounded by open-PR count
-# rather than growing forever.
+# republish over that same folder on every push (see _visual-regression.yml),
+# so nothing accumulates while the PR is open. Once the PR closes (merged or
+# not) there's no further use for that report, so remove it from gh-pages
+# here to keep the branch bounded by open-PR count rather than growing
+# forever.
 
 on:
   pull_request:
@@ -25,24 +25,16 @@ jobs:
           ref: gh-pages
           fetch-depth: 1
 
-      - name: Remove PR report folders
+      - name: Remove PR report folder
         id: cleanup
         run: |
           PR_DIR="reports/pr-${{ github.event.pull_request.number }}"
-          SHA_DIR="reports/${{ github.event.pull_request.head.sha }}"
           removed=false
-          if [ -d "$PR_DIR" ] || [ -d "$SHA_DIR" ]; then
+          if [ -d "$PR_DIR" ]; then
             git config user.name "kendo-bot"
             git config user.email "kendouiteam@progress.com"
-            if [ -d "$PR_DIR" ]; then
-              git rm -r "$PR_DIR"
-              removed=true
-            fi
-            if [ -f "$SHA_DIR/.source-sha" ] &&
-               [ "$(cat "$SHA_DIR/.source-sha")" = "${{ github.event.pull_request.head.sha }}" ]; then
-              git rm -r "$SHA_DIR"
-              removed=true
-            fi
+            git rm -r "$PR_DIR"
+            removed=true
           fi
 
           if [ "$removed" = "true" ]; then
