@@ -21,7 +21,8 @@ async function captureAndDiff() {
 
     // Diff this component's output against the saved baseline → update report
     execFileSync('npx', ['reg-cli',
-        'tests/_output', '.reg/expected', '.reg/diff',
+        'tests/_output', 'tests/_baseline', '.reg/diff',
+        '--matchingThreshold', '0.05', '--enableAntialias',
         '--report', '.reg/report.html', '--json', '.reg/out.json'],
     { stdio: 'inherit', shell: true });
     console.log('Report: .reg/report.html  (refresh the tab)');

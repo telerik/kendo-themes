@@ -22,7 +22,8 @@ debug.log
 .nx/cache
 .nx/workspace-data
 
-# Visual regression (reg-suit manages snapshots on gh-pages; local working dirs are throwaway)
+# Visual regression (tests/_baseline is git-tracked and is the source of
+# truth; tests/_output and .reg/ are throwaway working dirs regenerated every run)
 tests/_output/
 .reg/
 *.tsbuildinfo
