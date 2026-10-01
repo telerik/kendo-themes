@@ -1,6 +1,11 @@
 @use "@progress/kendo-theme-core/scss/components/button/_layout.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-button--layout() {
     @include kendo-button--layout-base();
+
+    .k-button.k-button-xs {
+        gap: $kendo-button-xs-padding-x;
+    }
 }
