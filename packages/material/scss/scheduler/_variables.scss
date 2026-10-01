@@ -119,10 +119,10 @@ $kendo-scheduler-event-readonly-border: k-color(primary-emphasis) !default;
 
 /// The background color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-bg: null !default;
+$kendo-scheduler-event-hover-bg: $kendo-scheduler-event-bg !default;
 /// The text color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-text: null !default;
+$kendo-scheduler-event-hover-text: $kendo-scheduler-event-text !default;
 /// The border color of the hovered Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-hover-border: null !default;
