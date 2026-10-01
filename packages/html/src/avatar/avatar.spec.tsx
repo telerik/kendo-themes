@@ -79,7 +79,7 @@ export const Avatar: KendoComponent<KendoAvatarProps & KendoAvatarState & React.
             {...other}
             className={classNames(
                 props.className,
-                AVATAR_CLASSNAME,
+                // AVATAR_CLASSNAME,
                 optionClassNames(AVATAR_CLASSNAME, {
                     size,
                     rounded,
