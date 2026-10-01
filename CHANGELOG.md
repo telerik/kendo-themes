@@ -1,3 +1,9 @@
+## 14.6.1-dev.1 (2026-10-01)
+
+### 🩹 Fixes
+
+- **scheduler:** standardize current-time marker dimensions across views ([a05fc1c994](https://github.com/telerik/kendo-themes/commit/a05fc1c994))
+
 ## 14.6.1-dev.0 (2026-10-01)
 
 ### 🩹 Fixes
