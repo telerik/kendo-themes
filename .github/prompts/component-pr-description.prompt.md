@@ -16,7 +16,8 @@ Your goal is to write a simple, accurate GitHub PR description for the component
    - Edited component → show "before" and "after" HTML, based on the diff.
 4. **Add an HTML example for every scenario** found in the test fixtures (e.g. collapsed/expanded, default/completed, with/without status) — not just one state.
 5. **Add accessibility info** — copy the `@aria`, `@keyboard`, and `@ux` annotations from the spec file(s) as-is.
-6. **Build the closing reference table** — one row per component, linking its test fixture (`packages/html/src/<folder>/tests/<file>.tsx`) and its generated HTML/screenshot. Verify the generated-file convention against an already-built component (e.g. `packages/html/src/popover/tests/popover.tsx` → `tests/popover/popover.html` / `tests/_output/meridian/popover/popover.png`) rather than assuming.
+6. **Build the closing reference table** — one row per component, linking its test fixture (`packages/html/src/<folder>/tests/<file>.tsx`) and its generated HTML/screenshot. Verify the generated-file convention against an already-built component (e.g. `packages/html/src/popover/tests/popover.tsx` → `tests/popover/popover.html`) rather than assuming.
+7. **Find the PR number for the screenshot report.** Determine the GitHub PR number for the current branch (e.g. via `gh pr view --json number` or by asking the user). The visual regression report is published to the `gh-pages` branch at `reports/pr-<number>/actual/<theme>/<folder>/<file>.png`. Confirm each screenshot path actually exists by fetching the `gh-pages` branch tree (e.g. `git fetch origin gh-pages --depth=1 && git ls-tree -r --name-only origin/gh-pages | grep reports/pr-<number>/actual/meridian/<folder>/`) rather than assuming the file is there.
 
 ## Output format
 
@@ -42,13 +43,16 @@ End the file with this table (always include it — do not skip it):
 ```md
 ## Visual & Rendering Reference
 
-| Feature | HTML Test | Screenshot (Bootstrap) |
+| Feature | HTML Test | Screenshot (Meridian) |
 |---------|-----------|------------------------|
-| <Component> | [<file>.html](<repo-blob-url>/tests/<folder>/<file>.html) | [screenshot](<repo-blob-url>/tests/_output/bootstrap/<folder>/<file>.png) |
+| <Component> | [<file>.html](<repo-blob-url>/tests/<folder>/<file>.html) | [screenshot](<reg-suit-report-url>/actual/meridian/<folder>/<file>.png) |
 ```
 
 Use the current git branch (from repo context) for the blob URLs:
 `https://github.com/<owner>/<repo>/blob/<branch>/tests/<folder>/<file>.html`
+
+Use the published reg-suit report for the screenshot URLs:
+`https://telerik.github.io/kendo-themes/reports/pr-<number>/actual/meridian/<folder>/<file>.png`
 
 ## Rules
 
@@ -57,5 +61,6 @@ Use the current git branch (from repo context) for the blob URLs:
 - Represent icons as `<span class="k-icon k-svg-icon" aria-hidden="true"><!-- icon-name --></span>`.
 - Don't guess accessibility behavior — if it isn't documented in the spec, don't include it.
 - One table row per component that has its own test fixture; if several public components share one internal test fixture, mention that in prose instead of forcing separate rows.
+- Never link to `tests/_output/...` for screenshots — those files are gitignored and don't exist on GitHub. Always use the published reg-suit report under `reports/pr-<number>/actual/meridian/...` on the `gh-pages` branch, and verify each path exists before linking it.
 - Save the result as a Markdown file (default: `PR_DESCRIPTION.md` at repo root) so it can be pasted into GitHub.
 - Always include the visual & rendering reference table at the end of the file.
