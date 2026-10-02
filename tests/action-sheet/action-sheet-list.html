@@ -33,101 +33,103 @@
                         <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
                             <div id="actionsheet-list-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-list-1-title" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
                                 <div id="actionsheet-list-1" class="k-actionsheet-view">
-                                    <div class="k-actionsheet-titlebar">
-                                        <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-list-1-title">
-                                                <div class="k-text-center">Select Item</div>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-list-1-title">
+                                                    <div class="k-text-center">Select Item</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
+                                                <span class="k-searchbox k-input k-input-lg">
+                                                    <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                                         </svg>
                                                     </span>
-                                                </button>
+                                                    <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
+                                                </span>
                                             </div>
                                         </div>
-                                        <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
-                                            <span class="k-searchbox k-input k-input-lg">
-                                                <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                    </svg>
-                                                </span>
-                                                <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="k-actionsheet-content">
-                                        <div class="k-list-container">
-                                            <div class="k-list k-list-lg">
-                                                <div class="k-list-content">
-                                                    <ul role="listbox" class="k-list-ul">
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
-                                                            <span class="k-list-item-text">Hover</span>
-                                                        </li>
-                                                        <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                                            <span class="k-list-item-text">Focus</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                                            <span class="k-list-item-text">Selected</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
-                                                            <span class="k-list-item-text">Hover selected</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
-                                                            <span class="k-list-item-text">Disabled</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Checkbox" tabindex="-1" class="k-checkbox" type="checkbox">
-                                                            </span>
-                                                            <span class="k-list-item-text">Checkbox</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-icon-wrapper">
-                                                                <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                    </svg>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-list-container">
+                                                <div class="k-list k-list-lg">
+                                                    <div class="k-list-content">
+                                                        <ul role="listbox" class="k-list-ul">
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
+                                                                <span class="k-list-item-text">Hover</span>
+                                                            </li>
+                                                            <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                                                <span class="k-list-item-text">Focus</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                                                <span class="k-list-item-text">Selected</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
+                                                                <span class="k-list-item-text">Hover selected</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
+                                                                <span class="k-list-item-text">Disabled</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input aria-label="Checkbox" tabindex="-1" class="k-checkbox" type="checkbox">
                                                                 </span>
-                                                            </span>
-                                                            <span class="k-list-item-text">Icon</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Checkbox icon" tabindex="-1" class="k-checkbox" type="checkbox">
-                                                            </span>
-                                                            <span class="k-list-item-icon-wrapper">
-                                                                <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                    </svg>
+                                                                <span class="k-list-item-text">Checkbox</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-icon-wrapper">
+                                                                    <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
-                                                            </span>
-                                                            <span class="k-list-item-text">Checkbox icon</span>
-                                                        </li>
-                                                    </ul>
+                                                                <span class="k-list-item-text">Icon</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input aria-label="Checkbox icon" tabindex="-1" class="k-checkbox" type="checkbox">
+                                                                </span>
+                                                                <span class="k-list-item-icon-wrapper">
+                                                                    <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="k-list-item-text">Checkbox icon</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                            <button class="k-button k-button-lg k-button-primary">
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                            <button class="k-button k-button-lg">
+                                                <span class="k-button-text">Cancel</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -142,101 +144,103 @@
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
                             <div id="actionsheet-list-2" role="dialog" aria-modal="true" aria-labelledby="actionsheet-list-2-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
                                 <div id="actionsheet-list-2" class="k-actionsheet-view">
-                                    <div class="k-actionsheet-titlebar">
-                                        <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-list-2-title">
-                                                <div class="k-text-center">Select Item</div>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-list-2-title">
+                                                    <div class="k-text-center">Select Item</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
+                                                <span class="k-searchbox k-input k-input-lg">
+                                                    <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                                         </svg>
                                                     </span>
-                                                </button>
+                                                    <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
+                                                </span>
                                             </div>
                                         </div>
-                                        <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
-                                            <span class="k-searchbox k-input k-input-lg">
-                                                <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                    </svg>
-                                                </span>
-                                                <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="k-actionsheet-content">
-                                        <div class="k-list-container">
-                                            <div class="k-list k-list-lg">
-                                                <div class="k-list-content">
-                                                    <ul role="listbox" class="k-list-ul">
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
-                                                            <span class="k-list-item-text">Hover</span>
-                                                        </li>
-                                                        <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                                            <span class="k-list-item-text">Focus</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                                            <span class="k-list-item-text">Selected</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
-                                                            <span class="k-list-item-text">Hover selected</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
-                                                            <span class="k-list-item-text">Disabled</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Checkbox" tabindex="-1" class="k-checkbox" type="checkbox">
-                                                            </span>
-                                                            <span class="k-list-item-text">Checkbox</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-icon-wrapper">
-                                                                <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                    </svg>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-list-container">
+                                                <div class="k-list k-list-lg">
+                                                    <div class="k-list-content">
+                                                        <ul role="listbox" class="k-list-ul">
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item k-hover">
+                                                                <span class="k-list-item-text">Hover</span>
+                                                            </li>
+                                                            <li role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
+                                                                <span class="k-list-item-text">Focus</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
+                                                                <span class="k-list-item-text">Selected</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="true" class="k-list-item k-hover k-selected">
+                                                                <span class="k-list-item-text">Hover selected</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" aria-disabled="true" class="k-list-item k-disabled">
+                                                                <span class="k-list-item-text">Disabled</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input aria-label="Checkbox" tabindex="-1" class="k-checkbox" type="checkbox">
                                                                 </span>
-                                                            </span>
-                                                            <span class="k-list-item-text">Icon</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Checkbox icon" tabindex="-1" class="k-checkbox" type="checkbox">
-                                                            </span>
-                                                            <span class="k-list-item-icon-wrapper">
-                                                                <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                    </svg>
+                                                                <span class="k-list-item-text">Checkbox</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-icon-wrapper">
+                                                                    <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
-                                                            </span>
-                                                            <span class="k-list-item-text">Checkbox icon</span>
-                                                        </li>
-                                                    </ul>
+                                                                <span class="k-list-item-text">Icon</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input aria-label="Checkbox icon" tabindex="-1" class="k-checkbox" type="checkbox">
+                                                                </span>
+                                                                <span class="k-list-item-icon-wrapper">
+                                                                    <span class="k-list-item-icon k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="k-list-item-text">Checkbox icon</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                            <button class="k-button k-button-lg k-button-primary">
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                            <button class="k-button k-button-lg">
+                                                <span class="k-button-text">Cancel</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -251,89 +255,91 @@
                         <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
                             <div id="actionsheet-list-3" role="dialog" aria-modal="true" aria-labelledby="actionsheet-list-3-title" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
                                 <div id="actionsheet-list-3" class="k-actionsheet-view">
-                                    <div class="k-actionsheet-titlebar">
-                                        <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-list-3-title">
-                                                <div class="k-text-center">Select Item</div>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-list-3-title">
+                                                    <div class="k-text-center">Select Item</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
+                                                <span class="k-searchbox k-input k-input-lg">
+                                                    <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                                         </svg>
                                                     </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
-                                            <span class="k-searchbox k-input k-input-lg">
-                                                <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                    </svg>
+                                                    <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
                                                 </span>
-                                                <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
-                                            </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actionsheet-content">
-                                        <div class="k-list-container">
-                                            <div class="k-list k-list-lg">
-                                                <div class="k-list-group-sticky-header">
-                                                    <div class="k-list-header-text">Group 1</div>
-                                                </div>
-                                                <div class="k-list-content" role="listbox">
-                                                    <ul class="k-list-ul">
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 1.1</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 1.2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 1.3</span>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="k-list-ul">
-                                                        <li role="presentation" class="k-list-group-item">
-                                                            <span class="k-list-item-text">Group 2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 2.1</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 2.2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 2.3</span>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="k-list-ul">
-                                                        <li role="presentation" class="k-list-group-item">
-                                                            <span class="k-list-item-text">Group 3</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 3.1</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 3.2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 3.3</span>
-                                                        </li>
-                                                    </ul>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-list-container">
+                                                <div class="k-list k-list-lg">
+                                                    <div class="k-list-group-sticky-header">
+                                                        <div class="k-list-header-text">Group 1</div>
+                                                    </div>
+                                                    <div class="k-list-content" role="listbox">
+                                                        <ul class="k-list-ul">
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 1.1</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 1.2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 1.3</span>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="k-list-ul">
+                                                            <li role="presentation" class="k-list-group-item">
+                                                                <span class="k-list-item-text">Group 2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 2.1</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 2.2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 2.3</span>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="k-list-ul">
+                                                            <li role="presentation" class="k-list-group-item">
+                                                                <span class="k-list-item-text">Group 3</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 3.1</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 3.2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 3.3</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                            <button class="k-button k-button-lg k-button-primary">
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                            <button class="k-button k-button-lg">
+                                                <span class="k-button-text">Cancel</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -348,89 +354,91 @@
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
                             <div id="actionsheet-list-4" role="dialog" aria-modal="true" aria-labelledby="actionsheet-list-4-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
                                 <div id="actionsheet-list-4" class="k-actionsheet-view">
-                                    <div class="k-actionsheet-titlebar">
-                                        <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-list-4-title">
-                                                <div class="k-text-center">Select Item</div>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-list-4-title">
+                                                    <div class="k-text-center">Select Item</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                            <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
+                                                <span class="k-searchbox k-input k-input-lg">
+                                                    <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                                         </svg>
                                                     </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
-                                            <span class="k-searchbox k-input k-input-lg">
-                                                <span class="k-input-icon k-icon k-svg-icon k-svg-i-search" aria-hidden="true">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m15.8032 15.8037 5.1966 5.1966M18 10.5c0 4.1421-3.3579 7.5-7.5 7.5S3 14.6421 3 10.5 6.3579 3 10.5 3 18 6.3579 18 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                    </svg>
+                                                    <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
                                                 </span>
-                                                <input aria-label="Filter options" class="k-input-inner" placeholder="Filter" autocomplete="off" type="text" value="">
-                                            </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actionsheet-content">
-                                        <div class="k-list-container">
-                                            <div class="k-list k-list-lg">
-                                                <div class="k-list-group-sticky-header">
-                                                    <div class="k-list-header-text">Group 1</div>
-                                                </div>
-                                                <div class="k-list-content" role="listbox">
-                                                    <ul class="k-list-ul">
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 1.1</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 1.2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 1.3</span>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="k-list-ul">
-                                                        <li role="presentation" class="k-list-group-item">
-                                                            <span class="k-list-item-text">Group 2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 2.1</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 2.2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 2.3</span>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="k-list-ul">
-                                                        <li role="presentation" class="k-list-group-item">
-                                                            <span class="k-list-item-text">Group 3</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 3.1</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 3.2</span>
-                                                        </li>
-                                                        <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                                            <span class="k-list-item-text">List item 3.3</span>
-                                                        </li>
-                                                    </ul>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-list-container">
+                                                <div class="k-list k-list-lg">
+                                                    <div class="k-list-group-sticky-header">
+                                                        <div class="k-list-header-text">Group 1</div>
+                                                    </div>
+                                                    <div class="k-list-content" role="listbox">
+                                                        <ul class="k-list-ul">
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 1.1</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 1.2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 1.3</span>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="k-list-ul">
+                                                            <li role="presentation" class="k-list-group-item">
+                                                                <span class="k-list-item-text">Group 2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 2.1</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 2.2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 2.3</span>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="k-list-ul">
+                                                            <li role="presentation" class="k-list-group-item">
+                                                                <span class="k-list-item-text">Group 3</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 3.1</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 3.2</span>
+                                                            </li>
+                                                            <li role="option" tabindex="-1" aria-selected="false" class="k-list-item">
+                                                                <span class="k-list-item-text">List item 3.3</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                            <button class="k-button k-button-lg k-button-primary">
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                            <button class="k-button k-button-lg">
+                                                <span class="k-button-text">Cancel</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

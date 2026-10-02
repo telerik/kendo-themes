@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            max-width: 767px;
+            }
+            #test-area > section {
+            outline: 1px dotted;
+            overflow: hidden;
+            position: relative;
+            height: 480px;
+            transform: translateZ(0);
+            }
+            #test-area > section:nth-of-type(1) {
+            --kendo-actionsheet-height: 288px;
+            --kendo-actionsheet-max-height: 288px;
+            }
+            #test-area > section:nth-of-type(2) {
+            --kendo-actionsheet-height: 480px;
+            --kendo-actionsheet-max-height: 480px;
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-2">
+            <span>Small / Mobile (&lt;768px), from 60vh...</span>
+            <span>...to 100vh (full screen)</span>
+            <section>
+                <div class="k-actionsheet-container">
+                    <div class="k-overlay"></div>
+                    <div class="k-animation-container k-animation-container-shown">
+                        <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                            <div id="actionsheet-resizable-small-initial" role="dialog" aria-modal="true" aria-labelledby="actionsheet-resizable-small-initial-title" class="k-actionsheet k-actionsheet-bottom" style="width: 100%;">
+                                <div id="actionsheet-resizable-small-initial" class="k-actionsheet-view k-actionsheet-resizable k-actionsheet-bottom" style="width: 100%;">
+                                    <div class="k-actionsheet-resize-handle" aria-hidden="true"></div>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-flat k-icon-button" aria-label="Back">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="k-actionsheet-title" id="actionsheet-resizable-small-initial-title">
+                                                    <div class="k-text-center">Title</div>
+                                                    <div class="k-actionsheet-subtitle k-text-center">Subtitle</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-flat k-icon-button" aria-label="Close">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actionsheet-content k-actionsheet-constrained">
+                                            <div class="k-list-ul">
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-constrained k-actionsheet-footer">
+                                            <button class="k-button">
+                                                <span class="k-button-text">Cancel</span>
+                                            </button>
+                                            <button class="k-button k-button-primary">
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="k-actionsheet-container">
+                    <div class="k-overlay"></div>
+                    <div class="k-animation-container k-animation-container-shown">
+                        <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                            <div id="actionsheet-resizable-small-full" role="dialog" aria-modal="true" aria-labelledby="actionsheet-resizable-small-full-title" class="k-actionsheet k-actionsheet-bottom" style="width: 100%;">
+                                <div id="actionsheet-resizable-small-full" class="k-actionsheet-view k-actionsheet-resizable k-actionsheet-bottom" style="width: 100%;">
+                                    <div class="k-actionsheet-resize-handle" aria-hidden="true"></div>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-flat k-icon-button" aria-label="Back">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="k-actionsheet-title" id="actionsheet-resizable-small-full-title">
+                                                    <div class="k-text-center">Title</div>
+                                                    <div class="k-actionsheet-subtitle k-text-center">Subtitle</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-flat k-icon-button" aria-label="Close">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actionsheet-content k-actionsheet-constrained">
+                                            <div class="k-list-ul">
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                            <span class="k-actionsheet-item-description">Subtitle</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 6 18 11.25m-9.3103 9.0001H4.5a.75.75 0 0 1-.75-.75v-4.1897c0-.1986.079-.3891.2194-.5297L15.5306 3.2195a.75.75 0 0 1 1.0603 0l4.1897 4.1869a.75.75 0 0 1 0 1.0603L9.2194 20.0307a.75.75 0 0 1-.5297.2194" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item Title</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-constrained k-actionsheet-footer">
+                                            <button class="k-button">
+                                                <span class="k-button-text">Cancel</span>
+                                            </button>
+                                            <button class="k-button k-button-primary">
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
