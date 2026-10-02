@@ -1,7 +1,7 @@
 ---
 title: Customizing FloatingToolbar
-description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
-slug: variables_kendothemebootstrap_floating-toolbar
+description: "Refer to the list of the Kendo UI Theme Core theme variables available for customization."
+slug: variables_kendothemecore_floating-toolbar
 position: 9
 ---
 
@@ -28,20 +28,10 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-floating-toolbar-border-radius</td>
-    <td>String</td>
-    <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-floating-toolbar-width</td>
-    <td>Number</td>
-    <td><code>400px</code></td>
-    <td><code>400px</code></td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the floating Toolbar when it contains a resizable Toolbar (menu/overflow mode).</div></div>
