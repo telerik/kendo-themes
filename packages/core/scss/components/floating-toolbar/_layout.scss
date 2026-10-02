@@ -13,7 +13,7 @@
         max-width: 100vw;
         border-radius: $kendo-floating-toolbar-border-radius;
 
-        &:has(.k-toolbar-resizable) {
+        &:has(.k-toolbar-resizable, .k-toolbar-scrollable) {
             width: $kendo-floating-toolbar-width;
         }
 
