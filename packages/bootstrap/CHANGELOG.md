@@ -1,3 +1,17 @@
+## 14.6.1-dev.1 (2026-10-01)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.6.1-dev.0 (2026-10-01)
+
+### 🩹 Fixes
+
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.6.0 (2026-09-29)
 
 ### 🚀 Features
