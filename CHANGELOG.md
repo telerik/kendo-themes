@@ -1,3 +1,9 @@
+## 14.6.1-dev.2 (2026-10-05)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+
 ## 14.6.1-dev.1 (2026-10-01)
 
 ### 🩹 Fixes
