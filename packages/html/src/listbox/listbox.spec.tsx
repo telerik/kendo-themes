@@ -11,17 +11,19 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.undefined, Size.small, Size.medium, Size.large ]
+    size: [Size.undefined, Size.small, Size.medium, Size.large]
 };
 
 export type KendoListBoxOptions = {
-  size?: (typeof options.size)[number] | null;
+    size?: (typeof options.size)[number] | null;
 };
 
 export type KendoListBoxProps = KendoListBoxOptions & {
     children?: React.JSX.Element[];
     actionsPosition?: 'left' | 'right' | 'top' | 'bottom';
     actions?: string[];
+    actionsScrollable?: boolean;
+    actionsScrollingPosition?: 'start' | 'end' | 'both';
     dir?: 'ltr' | 'rtl';
     'aria-label'?: string;
     multiselectable?: boolean;
@@ -59,6 +61,8 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
         children,
         actionsPosition = defaultOptions.actionsPosition,
         actions,
+        actionsScrollable,
+        actionsScrollingPosition,
         dir,
         'aria-label': ariaLabel,
         multiselectable,
@@ -78,6 +82,16 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
         "x": "Remove"
     };
 
+    const actionsIconMap = {
+        "left": dir !== "rtl" ? "chevron-left" : "chevron-right",
+        "right": dir !== 'rtl' ? "chevron-right" : "chevron-left",
+        "to": dir !== 'rtl' ? "chevron-double-right" : "chevron-double-left",
+        "from": dir !== 'rtl' ? "chevron-double-left" : "chevron-double-right",
+        "up": "chevron-up",
+        "down": "chevron-down",
+        "x": "x"
+    };
+
     return (
         <div
             {...other}
@@ -93,26 +107,24 @@ export const ListBox: KendoComponent<KendoListBoxProps & KendoListBoxState & Rea
                 }
             )}
         >
-            { actions && (
-                <div className="k-listbox-actions"
+            {actions && (
+                <div className={classNames(
+                    'k-listbox-actions',
+                    {
+                        'k-listbox-actions-scrollable': actionsScrollable,
+                        'k-listbox-actions-scrollable-start': actionsScrollable && actionsScrollingPosition === 'start',
+                        'k-listbox-actions-scrollable-end': actionsScrollable && actionsScrollingPosition === 'end',
+                    }
+                )}
                     role="toolbar"
                     aria-label="ListBox actions"
                     aria-controls={listId}
                 >
-                    {actions.map(action => {
-
-                        const actionsIconMap = {
-                            "left": dir !== "rtl" ? "chevron-left" : "chevron-right",
-                            "right": dir !== 'rtl' ? "chevron-right" : "chevron-left",
-                            "to": dir !== 'rtl' ? "chevron-double-right" : "chevron-double-left",
-                            "from": dir !== 'rtl' ? "chevron-double-left" : "chevron-double-right",
-                            "up": "chevron-up",
-                            "down": "chevron-down",
-                            "x": "x"
-                        };
-
-                        return <Button key={action} icon={actionsIconMap[action]} size={size} aria-label={actionsLabelMap[action] || action} />;
-                    })}
+                    <div className="k-listbox-actions-items">
+                        {actions.map(action => {
+                            return <Button key={action} icon={actionsIconMap[action]} size={size} aria-label={actionsLabelMap[action] || action} />;
+                        })}
+                    </div>
                 </div>
             )}
             <div className={classNames(
