@@ -604,6 +604,23 @@
         }
     }
 
+    // Rotation handle: anchored below the bottom edge of the selection frame, centered horizontally
+    .k-rotate-handle {
+        padding: $kendo-image-editor-rotate-handle-padding;
+        border-width: $kendo-image-editor-handle-border-width;
+        border-style: solid;
+        border-radius: $kendo-image-editor-handle-border-radius;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: calc(100% + #{$kendo-image-editor-rotate-handle-offset});
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        cursor: grab;
+    }
+
     // Mobile: single scoping class for every part that needs a different layout on small screens
     .k-imageeditor-adaptive {
         display: flex;

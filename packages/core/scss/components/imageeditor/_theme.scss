@@ -119,6 +119,12 @@
         background-color: $kendo-image-editor-handle-bg;
     }
 
+    .k-rotate-handle {
+        color: $kendo-image-editor-handle-border;
+        border-color: $kendo-image-editor-handle-border;
+        background-color: $kendo-image-editor-handle-bg;
+    }
+
     // Crop tool's L-bracket corner handles
     .k-imageeditor-crop {
         .k-resize-sw,
