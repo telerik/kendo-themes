@@ -1,4 +1,4 @@
-import { ImageEditorNormal, ImageEditorInsertShape, ImageEditorResizeHandles } from '..';
+import { ImageEditorNormal, ImageEditorInsertShape, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -55,7 +55,8 @@ export default () => (
                             }}>Shape text</p>
                         </div>
                         <ImageEditorResizeHandles variant="mixed" />
-                        <FloatingToolbar fillMode="flat" resizable offset={{ top: "51px", left: "0" }}>
+                        <ImageEditorRotateHandle />
+                        <FloatingToolbar fillMode="flat" resizable style={{ width: "max-content" }} offset={{ top: "99px", left: "0" }}>
                             <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                             <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                             <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>

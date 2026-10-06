@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles } from '..';
+import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Combobox } from '../../combobox';
@@ -223,6 +223,7 @@ export default () => (
                             }}>Shape text</p>
                         </div>
                         <ImageEditorResizeHandles variant="mixed" />
+                        <ImageEditorRotateHandle />
                     </div>
                 </ImageEditor>
             </div>
@@ -364,6 +365,7 @@ export default () => (
                             }}>Shape text</p>
                         </div>
                         <ImageEditorResizeHandles variant="mixed" />
+                        <ImageEditorRotateHandle />
                     </div>
                 </ImageEditor>
             </div>

@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles, ImageEditorRotateHandle } from "..";
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { Combobox } from "../../combobox";
@@ -127,7 +127,8 @@ export const ImageEditorInsertText = (props: any) => (
                         whiteSpace: "nowrap"
                     }}>Text Example</p>
                     <ImageEditorResizeHandles variant="mixed" />
-                    <FloatingToolbar fillMode="flat" offset={{ top: "72px", left: "0" }}>
+                    <ImageEditorRotateHandle />
+                    <FloatingToolbar fillMode="flat" offset={{ top: "120px", left: "0" }}>
                         <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
