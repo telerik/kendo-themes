@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorRotateHandle } from "..";
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { NumericTextbox } from "../../numerictextbox";
@@ -125,7 +125,8 @@ export const ImageEditorInsertLine = (props: any) => (
                             background: "#fff", transform: "translate(-50%, -50%)"
                         }}></span>
                     </span>
-                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "36px", left: "-10px" }}>
+                    <ImageEditorRotateHandle />
+                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "60px", left: "-10px" }}>
                         <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
