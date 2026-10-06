@@ -54,16 +54,16 @@ export const ImageEditorInsertLine = (props: any) => (
                     </Fieldset>
                     <FormField
                         label="Stroke Type"
-                        editor={ <DropdownList id="line-stroke-type" value="Dotted" prefix={<Icon icon="square-dotted" />} aria-label="Stroke Type" /> }
+                        editor={ <DropdownList id="line-stroke-type" value="Dotted" aria-label="Stroke Type" /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Start Point"
-                            editor={ <DropdownList id="line-start-point" value="Circle" prefix={<Icon icon="line-point-circle" />} aria-label="Start Point" /> }
+                            editor={ <DropdownList id="line-start-point" value="Circle" aria-label="Start Point" /> }
                         />
                         <FormField
                             label="End Point"
-                            editor={ <DropdownList id="line-end-point" value="Diamond" prefix={<Icon icon="line-point-rhombus" />} aria-label="End Point" /> }
+                            editor={ <DropdownList id="line-end-point" value="Diamond" aria-label="End Point" /> }
                         />
                     </Fieldset>
                     <FormField
