@@ -1,3 +1,9 @@
+## 14.7.0-dev.0 (2026-10-06)
+
+### 🚀 Features
+
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
 ## 14.6.1 (2026-10-06)
 
 ### 🩹 Fixes
