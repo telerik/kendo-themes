@@ -1,3 +1,14 @@
+## 14.6.1 (2026-10-06)
+
+### 🩹 Fixes
+
+- **scheduler:** standardize current-time marker dimensions across views ([a05fc1c994](https://github.com/telerik/kendo-themes/commit/a05fc1c994))
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.6.1-dev.2 (2026-10-05)
 
 This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.

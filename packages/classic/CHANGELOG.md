@@ -1,3 +1,15 @@
+## 14.6.1 (2026-10-06)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
 ## 14.6.1-dev.2 (2026-10-05)
 
 ### 🩹 Fixes
