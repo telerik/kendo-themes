@@ -27,6 +27,7 @@
 @forward "./button/_index.scss";
 @forward "./speech-to-text-button/_index.scss";
 @forward "./input/_index.scss";
+@forward "./label/_index.scss";
 @forward "./floating-label/_index.scss";
 @forward "./textbox/_index.scss";
 @forward "./textarea/_index.scss";
@@ -174,6 +175,7 @@
 @use "./forms/index.scss" as *;
 @use "./validator/index.scss" as *;
 @use "./floating-label/index.scss" as *;
+@use "./label/index.scss" as *;
 
 
 // Native forms
@@ -354,6 +356,7 @@
 
 
     // Form helpers
+    @include kendo-label--styles();
     @include kendo-form--styles();
     @include kendo-validator--styles();
     @include kendo-floating-label--styles();

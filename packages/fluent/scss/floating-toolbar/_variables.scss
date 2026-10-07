@@ -5,6 +5,11 @@
 /// @group floating-toolbar
 $kendo-floating-toolbar-border-radius: var( --kendo-floating-toolbar-border-radius, #{k-border-radius(md)} ) !default;
 
+/// The width of the floating Toolbar when it contains a resizable Toolbar (menu/overflow mode).
+/// @group floating-toolbar
+$kendo-floating-toolbar-width: var( --kendo-floating-toolbar-width, 360px ) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/floating-toolbar/_variables.scss" with (
-    $kendo-floating-toolbar-border-radius: $kendo-floating-toolbar-border-radius
+    $kendo-floating-toolbar-border-radius: $kendo-floating-toolbar-border-radius,
+    $kendo-floating-toolbar-width: $kendo-floating-toolbar-width
 );

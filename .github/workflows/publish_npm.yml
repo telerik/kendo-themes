@@ -1,6 +1,9 @@
 name: Publish to npm
 
 on:
+  push:
+    branches:
+      - 'develop'
   workflow_dispatch:
     inputs:
       release-type:
@@ -16,20 +19,18 @@ on:
         required: false
         default: false
         type: boolean
-  workflow_run:
-    workflows:
-      - "CI Weekly"
-    branches:
-      - develop
-    types:
-      - completed
+
+concurrency:
+  group: "publish-npm"
+  cancel-in-progress: false
 
 env:
-  RELEASE_TYPE: ${{ github.event_name == 'workflow_run' && 'dev' || inputs.release-type }}
+  RELEASE_TYPE: ${{ github.event_name == 'workflow_dispatch' && inputs.release-type || 'dev' }}
   DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry-run) && '--dry-run' || '' }}
 
 jobs:
   publish:
+    if: ${{ !startsWith(github.event.head_commit.message, 'chore(release):') }}
     runs-on: ubuntu-latest
     environment: upload
 
@@ -85,11 +86,16 @@ jobs:
       - name: Nx release (stable)
         if: env.RELEASE_TYPE == 'stable'
         run: |
+          OLD_VERSION=$(jq -r '.version' packages/core/package.json)
           npm run release:version -- ${{ env.DRY_RUN }}
+          STABLE_VERSION=$(jq -r '.version' packages/core/package.json)
           if [[ -z "${{ env.DRY_RUN }}" ]]; then
-            STABLE_VERSION=$(jq -r '.version' packages/core/package.json)
-            npm run release:changelog -- "$STABLE_VERSION"
-            npm run release:publish
+            if [[ "$STABLE_VERSION" == "$OLD_VERSION" ]]; then
+              echo "No version change detected ($STABLE_VERSION); skipping changelog and publish."
+            else
+              npm run release:changelog -- "$STABLE_VERSION"
+              npm run release:publish
+            fi
           fi
         env:
           GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
@@ -99,11 +105,16 @@ jobs:
       - name: Nx release (dev)
         if: env.RELEASE_TYPE == 'dev'
         run: |
+          OLD_VERSION=$(jq -r '.version' packages/core/package.json)
           npm run release:prerelease -- ${{ env.DRY_RUN }}
+          DEV_VERSION=$(jq -r '.version' packages/core/package.json)
           if [[ -z "${{ env.DRY_RUN }}" ]]; then
-            DEV_VERSION=$(jq -r '.version' packages/core/package.json)
-            npm run release:changelog -- "$DEV_VERSION"
-            npm run release:publish -- --tag dev
+            if [[ "$DEV_VERSION" == "$OLD_VERSION" ]]; then
+              echo "No version change detected ($DEV_VERSION); skipping changelog and publish."
+            else
+              npm run release:changelog -- "$DEV_VERSION"
+              npm run release:publish -- --tag dev
+            fi
           fi
         env:
           GITHUB_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}

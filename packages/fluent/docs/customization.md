@@ -15623,6 +15623,16 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-floating-toolbar-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-floating-toolbar-width, 360px )</code></td>
+    <td><code>var(--kendo-floating-toolbar-width, 360px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the floating Toolbar when it contains a resizable Toolbar (menu/overflow mode).</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -15804,36 +15814,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-label-font-size</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-font-size, inherit)</code></td>
-    <td><code>var(--kendo-label-font-size, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-font-weight</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-font-weight, inherit)</code></td>
-    <td><code>var(--kendo-label-font-weight, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Form label.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-line-height</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-line-height, inherit)</code></td>
-    <td><code>var(--kendo-label-line-height, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form label.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-form-hint-font-size</td>
     <td>String</td>
     <td><code>var(--kendo-form-hint-font-size, var(--kendo-font-size-sm))</code></td>
@@ -15991,46 +15971,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-margin-x</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-margin-x, #{k-spacing(1.5)})</code></td>
-    <td><code>var(--kendo-label-optional-margin-x, var(--kendo-spacing-1\.5))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the optional label in the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-font-size</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
-    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional label in the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-font-style</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
-    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional label in the Form.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-label-optional-font-weight</td>
-    <td>String</td>
-    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
-    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the optional label in the Form.</div></div>
     </td>
 </tr>
 <tr>
@@ -20327,6 +20267,106 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered Input clear value icon.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Label
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-label-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-font-size, inherit)</code></td>
+    <td><code>var(--kendo-label-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-font-weight</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-font-weight, inherit)</code></td>
+    <td><code>var(--kendo-label-font-weight, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-line-height, inherit)</code></td>
+    <td><code>var(--kendo-label-line-height, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-margin-x</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-optional-margin-x, #{k-spacing(1.5)})</code></td>
+    <td><code>var(--kendo-label-optional-margin-x, var(--kendo-spacing-1\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the optional Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
+    <td><code>var(--kendo-label-optional-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-style</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
+    <td><code>var(--kendo-label-optional-font-style, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-weight</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
+    <td><code>var(--kendo-label-optional-font-weight, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the optional Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-text</td>
+    <td>String</td>
+    <td><code>var(--kendo-label-optional-text, #{k-color(subtle)})</code></td>
+    <td><code>var(--kendo-label-optional-text, var(--kendo-color-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the optional Label.</div></div>
     </td>
 </tr>
 </tbody>
@@ -35374,10 +35414,30 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-table-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-table-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var(--kendo-table-font-size, var(--kendo-font-size))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the table if no size is specified.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-line-height</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the table if no size is specified.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-table-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-table-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-table-sm-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-table-sm-font-size, #{$kendo-table-font-size} )</code></td>
+    <td><code>var(--kendo-table-sm-font-size, var(--kendo-table-font-size, var(--kendo-font-size)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for small size.</div></div>
@@ -35396,8 +35456,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-md-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-table-md-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-table-md-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-table-md-font-size, #{$kendo-table-font-size} )</code></td>
+    <td><code>var(--kendo-table-md-font-size, var(--kendo-table-font-size, var(--kendo-font-size)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for medium size.</div></div>
@@ -35416,8 +35476,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-lg-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-table-lg-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-table-lg-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-table-lg-font-size, #{$kendo-table-font-size} )</code></td>
+    <td><code>var(--kendo-table-lg-font-size, var(--kendo-table-font-size, var(--kendo-font-size)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Table for large size.</div></div>
@@ -35816,7 +35876,7 @@ The following table lists the available variables for customizing the Fluent the
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-table-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-table-sm-line-height, var(--kendo-line-height))","cell-padding-x":"var(--kendo-table-sm-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-sm-cell-padding-y, var(--kendo-spacing-2))"</li><li>md: "font-size":"var(--kendo-table-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-table-md-line-height, var(--kendo-line-height))","cell-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))"</li><li>lg: "font-size":"var(--kendo-table-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-table-lg-line-height, var(--kendo-line-height))","cell-padding-x":"var(--kendo-table-lg-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-lg-cell-padding-y, var(--kendo-spacing-3))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-table-sm-font-size, var(--kendo-table-font-size, var(--kendo-font-size)))","line-height":"var(--kendo-table-sm-line-height, var(--kendo-line-height))","cell-padding-x":"var(--kendo-table-sm-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-sm-cell-padding-y, var(--kendo-spacing-2))"</li><li>md: "font-size":"var(--kendo-table-md-font-size, var(--kendo-table-font-size, var(--kendo-font-size)))","line-height":"var(--kendo-table-md-line-height, var(--kendo-line-height))","cell-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))"</li><li>lg: "font-size":"var(--kendo-table-lg-font-size, var(--kendo-table-font-size, var(--kendo-font-size)))","line-height":"var(--kendo-table-lg-line-height, var(--kendo-line-height))","cell-padding-x":"var(--kendo-table-lg-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-lg-cell-padding-y, var(--kendo-spacing-3))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Table.</div></div>
