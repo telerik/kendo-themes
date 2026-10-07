@@ -120,7 +120,7 @@ export default () => (
                                 <FormField
                                     label="Type"
                                     editor={
-                                        <ImageEditorOptionList scrollable scrollableEnd>
+                                        <ImageEditorOptionList scrollable scrollableBoth>
                                             {shapeTypes.map((shape) => (
                                                 <ImageEditorOptionPreview key={shape.label} label={shape.label} selected={shape.label === "Oval"}>
                                                     <div className="k-imageeditor-option-content">
