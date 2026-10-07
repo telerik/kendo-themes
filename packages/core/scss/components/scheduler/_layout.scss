@@ -417,6 +417,10 @@
         align-items: flex-start;
         container-type: size;
 
+        &.k-selected {
+            z-index: k-z-index("base", 2);
+        }
+
         > div {
             flex: 1 1 0;
             min-width: 0;
@@ -631,7 +635,7 @@
     // Draging hint
     .k-event-drag-hint {
         opacity: .5;
-        z-index: k-z-index("base", 3);
+        z-index: k-z-index("base", 1);
 
         .k-event-top-actions,
         .k-event-bottom-actions,
