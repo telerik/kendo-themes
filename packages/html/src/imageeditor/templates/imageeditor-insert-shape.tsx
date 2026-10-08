@@ -8,6 +8,8 @@ import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
+import { InputSuffixText } from "../../input";
+import { Slider } from "../../slider";
 
 const insertShapeSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
@@ -148,6 +150,30 @@ export const ImageEditorInsertShape = (props: any) => (
                             }
                         />
                     </Fieldset>
+                    <FormField
+                        label="Rotation"
+                        editor={
+                            <div className="k-imageeditor-field-row">
+                                <Slider
+                                    style={{ width: "170px", flex: "none" }}
+                                    aria-label="Rotation"
+                                    showButtons={false}
+                                    showTicks={false}
+                                    value={0}
+                                    min={0}
+                                    max={360}
+                                />
+                                <NumericTextbox
+                                    style={{ width: "72px", flex: "none" }}
+                                    showClearButton={false}
+                                    showSpinButton={false}
+                                    separators={false}
+                                    value="0"
+                                    suffix={<InputSuffixText>°</InputSuffixText>}
+                                />
+                            </div>
+                        }
+                    />
                 </Form>
             </ImageEditorPane>
         }
