@@ -15,10 +15,6 @@ const variants = [
     title: 'Normal',
   },
   {
-    name: 'adaptive',
-    title: 'Adaptive',
-  },
-  {
     name: 'fullScreen',
     title: 'Full Screen',
   },
@@ -60,7 +56,6 @@ export const ActionSheetDemo = (
   );
 
   const subtitle = 'Choose from the items below';
-  const title = 'Select Item';
 
   if (variant === 'fullScreen') {
     additionalProps.fullScreen = true;
@@ -84,40 +79,6 @@ export const ActionSheetDemo = (
   });
 
   switch (variant) {
-    case 'adaptive':
-      return (
-        <ActionSheet
-          {...other}
-          adaptive={true}
-          fullscreen={additionalProps.fullScreen}
-          header={
-            <ActionSheetHeader
-              actionsStart={
-                additionalProps.actionsStart ? (
-                  <Button icon="chevron-left" size="large" fillMode="flat" />
-                ) : undefined
-              }
-              actionsEnd={
-                additionalProps.actionsEnd ? (
-                  <Button icon="x" size="large" fillMode="flat" />
-                ) : undefined
-              }
-              title={title}
-              subtitle={additionalProps.subtitle}
-            />
-          }
-          footer={
-            additionalProps.footer ? (
-              <ActionSheetFooter alignment="stretched">
-                <Button text="Cancel" size="large" themeColor="base" />
-                <Button text="Apply" size="large" themeColor="primary" />
-              </ActionSheetFooter>
-            ) : undefined
-          }
-        >
-          {actionSheetItems}
-        </ActionSheet>
-      );
     case 'normal':
     default:
       return (

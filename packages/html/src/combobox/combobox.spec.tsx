@@ -207,7 +207,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                 </Popup>
             }
             {adaptive &&
-                <ActionSheet adaptive={true} id={id ? `${id}-adaptive` : undefined} {...adaptiveSettings}
+                <ActionSheet id={id ? `${id}-adaptive` : undefined} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}

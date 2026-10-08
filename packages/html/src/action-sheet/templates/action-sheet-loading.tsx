@@ -17,8 +17,10 @@ const ItemRow = () => <Row height="60px" skeletonHeight="44px" />;
 export const ActionSheetLoading = ({ id = "actionsheet-loading", ...other }) => (
     <ActionSheet
         id={id}
+        aria-busy="true"
         header={
             <ActionSheetHeader>
+                <span className="k-sr-only">Loading</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "var( --kendo-spacing-2 )" }}>
                     <SkeletonRectangle style={{ flex: "none", width: "24px", height: "24px" }} />
                     <div style={{ flex: "1 1 0", minWidth: 0, display: "flex", flexFlow: "column nowrap", gap: "6px" }}>

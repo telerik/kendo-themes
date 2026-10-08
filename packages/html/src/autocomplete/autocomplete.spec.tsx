@@ -189,7 +189,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                 </Popup>
             }
             {adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings}
+                <ActionSheet {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}

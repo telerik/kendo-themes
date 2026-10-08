@@ -166,7 +166,7 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                 </Popup>
             }
             {adaptive &&
-                <ActionSheet adaptive={true} id={popupId} {...adaptiveSettings}
+                <ActionSheet id={popupId} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply" />}

@@ -18,20 +18,15 @@ export type KendoActionSheetProps = {
     header?: React.ReactElement<typeof ActionSheetHeader>;
     footer?: React.ReactElement<typeof ActionSheetFooter>;
     fullscreen?: boolean;
-    adaptive?: boolean;
     overlay?: boolean;
     template?: React.JSX.Element | React.JSX.Element[];
-    side?: 'top' | 'right' | 'bottom' | 'left';
     id?: string;
     resizable?: boolean;
     maximized?: boolean;
-    constrained?: boolean;
 }
 
 const defaultOptions = {
-    side: 'bottom' as const,
     fullscreen: false,
-    adaptive: false,
     overlay: true
 };
 
@@ -42,7 +37,6 @@ const defaultOptions = {
  * @aria {id} Used to associate the title with the action sheet wrapper element.
  * @aria {aria-labelledby} references ${id}-title
  * @ux {Overlay} Renders over the page content and prevents interaction with the rest of the UI.
- * @ux {Side} Can be anchored to any edge of the screen: top, right, bottom, or left.
  * @ux {Title and subtitle} Optionally renders a title and subtitle to describe the available actions.
  * @ux {Items} Each action item consists of a label and an optional icon.
  * @ux {Dismiss} Closes when the user taps the overlay backdrop or presses Escape.
@@ -52,9 +46,7 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        side = defaultOptions.side,
         fullscreen = defaultOptions.fullscreen,
-        adaptive = defaultOptions.adaptive,
         overlay = defaultOptions.overlay,
         template,
         children,
@@ -63,7 +55,6 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
         id,
         resizable,
         maximized,
-        constrained,
         ...other
     } = props;
 
@@ -73,13 +64,9 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
         <div className="k-actionsheet-container">
             {overlay && <Overlay />}
             <AnimationContainer
-                animationStyle={{
-                    [`${fullscreen === true ? 'top' : side}`]: 0,
-                    [`${fullscreen === true ? 'width' : null}`]: '100%',
-                    [`${fullscreen === true ? 'height' : null}`]: '100%',
-                    [`${side === 'top' || side === 'bottom' ? 'width' : null}`]: '100%',
-                    [`${side === 'left' || side === 'right' ? 'height' : null}`]: '100%'
-                }}>
+                animationStyle={fullscreen === true
+                    ? { top: 0, width: '100%', height: '100%' }
+                    : { bottom: 0, width: '100%' }}>
                 <div
                     {...other}
                     id={id}
@@ -90,14 +77,13 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                         props.className,
                         ACTIONSHEET_CLASSNAME,
                         {
-                            [`k-actionsheet-${side}`]: fullscreen === false,
+                            'k-actionsheet-bottom': fullscreen === false,
                             'k-actionsheet-fullscreen': fullscreen === true,
-                            'k-adaptive-actionsheet': adaptive,
                             'k-actionsheet-maximized': maximized
                         },
                     )}>
                     {template ? template :
-                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} titleId={titleId} side={side} resizable={resizable} constrained={constrained} {...props}>
+                        <ActionSheetView header={header} footer={footer} titleId={titleId} resizable={resizable} {...props}>
                             {children}
                         </ActionSheetView>
                     }
@@ -119,6 +105,8 @@ ActionSheet.folderName = ACTION_SHEET_FOLDER_NAME;
  * @keyboard {Tab} Moves focus to the next focusable item.
  * @keyboard {Shift + Tab} Moves focus to the previous focusable item.
  * @keyboard {Enter} Triggers the action associated with the currently focused item.
+ * @keyboard {Page Up} Expands a resizable ActionSheet to its maximum height.
+ * @keyboard {Page Down} Collapses a resizable ActionSheet at maximum height back to its initial height.
  *
  * @see https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/ ARIA practices Modal Dialog Example
  */

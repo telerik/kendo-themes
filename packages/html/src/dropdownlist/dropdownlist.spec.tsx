@@ -194,7 +194,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                 </Popup>
             }
             {adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings}
+                <ActionSheet {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}
