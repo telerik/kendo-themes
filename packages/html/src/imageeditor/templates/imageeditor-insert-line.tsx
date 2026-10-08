@@ -6,6 +6,8 @@ import { ColorPicker } from "../../colorpicker";
 import { DropdownList } from "../../dropdownlist";
 import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
+import { InputSuffixText } from "../../input";
+import { Slider } from "../../slider";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 
@@ -89,6 +91,51 @@ export const ImageEditorInsertLine = (props: any) => (
                                     <Button icon="align-items-center-alt" selected aria-label="Align Middle"></Button>
                                     <Button className="k-group-end" icon="align-items-end-alt" aria-label="Align Bottom"></Button>
                                 </ButtonGroup>
+                            }
+                        />
+                    </Fieldset>
+                    <FormField
+                        label="Rotation"
+                        editor={
+                            <div className="k-imageeditor-field-row">
+                                <Slider
+                                    style={{ flex: 1 }}
+                                    aria-label="Rotation"
+                                    showButtons={false}
+                                    showTicks={false}
+                                    value={0}
+                                    min={0}
+                                    max={360}
+                                />
+                                <NumericTextbox
+                                    style={{ width: "80px", flex: "none" }}
+                                    aria-label="Rotation angle"
+                                    showClearButton={false}
+                                    showSpinButton={false}
+                                    separators={false}
+                                    value="0"
+                                    suffix={<InputSuffixText>°</InputSuffixText>}
+                                />
+                            </div>
+                        }
+                    />
+                    <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
+                        <FormField
+                            label="Rotate Options"
+                            editor={
+                                <div className="k-imageeditor-controls">
+                                    <Button icon="rotate-right" aria-label="Rotate Right"></Button>
+                                    <Button icon="rotate-left" aria-label="Rotate Left"></Button>
+                                </div>
+                            }
+                        />
+                        <FormField
+                            label="Flip Options"
+                            editor={
+                                <div className="k-imageeditor-controls">
+                                    <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                                    <Button icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                                </div>
                             }
                         />
                     </Fieldset>

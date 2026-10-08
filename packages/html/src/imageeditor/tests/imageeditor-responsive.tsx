@@ -22,14 +22,14 @@ export default () => (
 
             <div>
                 <h4>Tablet / Responsive / Unselected Tool</h4>
-                <ImageEditorNormal contentHeight="841px">
+                <ImageEditorNormal contentHeight="997px">
                     <canvas width="659" height="410" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
                 </ImageEditorNormal>
             </div>
 
             <div>
                 <h4>Tablet / Responsive / Selected Tool / Panel Opened</h4>
-                <ImageEditorInsertShape contentHeight="841px">
+                <ImageEditorInsertShape contentHeight="997px">
                     <canvas width="338" height="211" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
                     <div className="k-imageeditor-resize" style={{ width: "130px", height: "43px", top: "84px", left: "105px" }}>
                         <div style={{
