@@ -11,18 +11,15 @@
     </head>
     <body id="app" class="k-body">
         <style>
-            #test-area {
-            gap: 40px 24px;
-            }
-            .vertical-listbox, .horizontal-listbox {
-            height: 250px;
+            #test-area .k-listbox {
             width: 250px;
+            height: 250px;
             }
         </style>
         <div id="test-area" class="k-d-grid k-grid-cols-3">
             <div>
-                <p>Actions left (scroll start)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
+                <span>Actions left (scroll start)</span>
+                <div class="k-listbox k-listbox-actions-left">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-1-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -105,8 +102,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions left (scroll end)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
+                <span>Actions left (scroll end)</span>
+                <div class="k-listbox k-listbox-actions-left">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-2-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -189,8 +186,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions left (scroll both)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
+                <span>Actions left (scroll both)</span>
+                <div class="k-listbox k-listbox-actions-left">
                     <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-3-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -273,8 +270,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions right (scroll start)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-right">
+                <span>Actions top (scroll start)</span>
+                <div class="k-listbox k-listbox-actions-top">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-4-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -357,8 +354,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions right (scroll end)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-right">
+                <span>Actions top (scroll end)</span>
+                <div class="k-listbox k-listbox-actions-top">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-5-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -441,8 +438,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions right (scroll both)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-right">
+                <span>Actions top (scroll both)</span>
+                <div class="k-listbox k-listbox-actions-top">
                     <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-6-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -525,8 +522,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions top (scroll start)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top">
+                <span>Actions left RTL (scroll start)</span>
+                <div dir="rtl" class="k-listbox k-listbox-actions-left">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-7-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -544,30 +541,30 @@
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
+                            <button class="k-button k-icon-button" aria-label="Move right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Move all right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
@@ -609,8 +606,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions top (scroll end)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top">
+                <span>Actions left RTL (scroll end)</span>
+                <div dir="rtl" class="k-listbox k-listbox-actions-left">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-8-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -628,30 +625,30 @@
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
+                            <button class="k-button k-icon-button" aria-label="Move right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Move all right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
@@ -693,8 +690,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions top (scroll both)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top">
+                <span>Actions left RTL (scroll both)</span>
+                <div dir="rtl" class="k-listbox k-listbox-actions-left">
                     <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-9-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -712,30 +709,30 @@
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
+                            <button class="k-button k-icon-button" aria-label="Move right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Move all right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
@@ -777,8 +774,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions bottom (scroll start)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-bottom">
+                <span>Actions top RTL (scroll start)</span>
+                <div dir="rtl" class="k-listbox k-listbox-actions-top">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-10-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -796,30 +793,30 @@
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
+                            <button class="k-button k-icon-button" aria-label="Move right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Move all right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
@@ -861,8 +858,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions bottom (scroll end)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-bottom">
+                <span>Actions top RTL (scroll end)</span>
+                <div dir="rtl" class="k-listbox k-listbox-actions-top">
                     <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-11-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -880,30 +877,30 @@
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
+                            <button class="k-button k-icon-button" aria-label="Move right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Move all right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
@@ -945,8 +942,8 @@
                 </div>
             </div>
             <div>
-                <p>Actions bottom (scroll both)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-bottom">
+                <span>Actions top RTL (scroll both)</span>
+                <div dir="rtl" class="k-listbox k-listbox-actions-top">
                     <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-12-list">
                         <div class="k-listbox-actions-items">
                             <button class="k-button k-icon-button" aria-label="Move up">
@@ -964,30 +961,30 @@
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
+                            <button class="k-button k-icon-button" aria-label="Move right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Move all right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
                             <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
                                     </svg>
                                 </span>
                             </button>
@@ -1020,1266 +1017,6 @@
                                         <span class="k-list-item-text">List item 5</span>
                                     </li>
                                     <li id="k-lb-item-72" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions top RTL (scroll start)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top" dir="rtl">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-13-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-13-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-73" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-74" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-75" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-76" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-77" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-78" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions top RTL (scroll end)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top" dir="rtl">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-14-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-14-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-79" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-80" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-81" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-82" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-83" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-84" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions top RTL (scroll both)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top" dir="rtl">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-15-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-15-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-85" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-86" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-87" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-88" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-89" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-90" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions bottom RTL (scroll start)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-bottom" dir="rtl">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-16-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-16-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-91" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-92" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-93" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-94" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-95" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-96" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions bottom RTL (scroll end)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-bottom" dir="rtl">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-17-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-17-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-97" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-98" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-99" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-100" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-101" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-102" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions bottom RTL (scroll both)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-bottom" dir="rtl">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-18-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-18-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-103" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-104" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-105" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-106" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-107" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-108" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions left small (scroll start)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-19-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-sm">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-19-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-109" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-110" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-111" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-112" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-113" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-114" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions left small (scroll end)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-20-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-sm">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-20-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-115" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-116" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-117" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-118" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-119" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-120" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions left small (scroll both)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-21-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-sm k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-sm">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-21-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-121" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-122" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-123" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-124" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-125" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-126" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions left large (scroll start)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-22-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-lg">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-22-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-127" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-128" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-129" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-130" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-131" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-132" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions left large (scroll end)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-23-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-lg">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-23-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-133" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-134" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-135" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-136" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-137" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-138" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions left large (scroll both)</p>
-                <div class="vertical-listbox k-listbox k-listbox-actions-left">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-24-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-lg">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-24-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-139" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-140" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-141" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-142" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-143" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-144" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions top large (scroll start)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-start" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-25-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-lg">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-25-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-145" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-146" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-147" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-148" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-149" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-150" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions top large (scroll end)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable k-listbox-actions-scrollable-end" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-26-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-lg">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-26-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-151" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-152" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-153" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-154" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-155" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-156" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 6</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Actions top large (scroll both)</p>
-                <div class="horizontal-listbox k-listbox k-listbox-actions-top">
-                    <div class="k-listbox-actions k-listbox-actions-scrollable" role="toolbar" aria-label="ListBox actions" aria-controls="k-listbox-27-list">
-                        <div class="k-listbox-actions-items">
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move up">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move down">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all right">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-right" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m7.5-15 7.5 7.5-7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Move all left">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-double-left" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 19.5-7.5-7.5 7.5-7.5m-7.5 15L3.75 12l7.5-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <button class="k-button k-button-lg k-icon-button" aria-label="Remove">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="k-list-scroller k-selectable">
-                        <div class="k-list k-list-lg">
-                            <div class="k-list-content">
-                                <ul aria-label="Available items" id="k-listbox-27-list" role="listbox" class="k-list-ul">
-                                    <li id="k-lb-item-157" role="option" tabindex="0" aria-selected="false" class="k-list-item k-focus">
-                                        <span class="k-list-item-text">List item 1</span>
-                                    </li>
-                                    <li id="k-lb-item-158" role="option" tabindex="-1" aria-selected="true" class="k-list-item k-selected">
-                                        <span class="k-list-item-text">List item 2</span>
-                                    </li>
-                                    <li id="k-lb-item-159" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 3</span>
-                                    </li>
-                                    <li id="k-lb-item-160" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 4</span>
-                                    </li>
-                                    <li id="k-lb-item-161" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
-                                        <span class="k-list-item-text">List item 5</span>
-                                    </li>
-                                    <li id="k-lb-item-162" role="option" tabindex="-1" aria-selected="false" class="k-list-item">
                                         <span class="k-list-item-text">List item 6</span>
                                     </li>
                                 </ul>
