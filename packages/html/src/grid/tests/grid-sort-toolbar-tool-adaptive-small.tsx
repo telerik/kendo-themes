@@ -178,7 +178,6 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Sort by" />
                     }
@@ -276,7 +275,6 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Sort by" />
                     }

@@ -26,7 +26,7 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <ActionSheet id="actionsheet-cal-inf-1" adaptive={true}
+                <ActionSheet id="actionsheet-cal-inf-1"
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
 
@@ -36,7 +36,7 @@ export default () =>(
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-cal-inf-2" adaptive={true} fullscreen={true}
+                <ActionSheet id="actionsheet-cal-inf-2" fullscreen={true}
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
                     }>

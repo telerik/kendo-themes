@@ -178,7 +178,6 @@ export default () => (
                     }
                 ></Grid>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                     }
@@ -274,7 +273,6 @@ export default () => (
                     }
                 ></Grid>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                     }

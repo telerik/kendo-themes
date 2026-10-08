@@ -106,10 +106,9 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
                     fullscreen
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
                                 }
@@ -134,7 +133,7 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
@@ -237,10 +236,9 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" }}
                     fullscreen
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
                                 }
@@ -265,7 +263,7 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
@@ -368,10 +366,9 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" }}
                     fullscreen
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
                                 }
@@ -396,7 +393,7 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
@@ -503,10 +500,9 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
                     fullscreen
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
                                 }
@@ -531,7 +527,7 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
                                     <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }

@@ -26,7 +26,7 @@ export default () => (
             <span>full screen</span>
 
             <section>
-                <ActionSheet id="actionsheet-time-1" adaptive={true}
+                <ActionSheet id="actionsheet-time-1"
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select time" />
                     }
@@ -46,7 +46,7 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-time-2" adaptive={true} fullscreen={true}
+                <ActionSheet id="actionsheet-time-2" fullscreen={true}
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select time" />
                     }

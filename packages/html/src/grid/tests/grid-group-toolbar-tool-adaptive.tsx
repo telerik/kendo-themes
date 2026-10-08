@@ -96,7 +96,6 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
                     }
@@ -189,7 +188,6 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
                     }
@@ -284,7 +282,6 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
                     }
@@ -379,7 +376,6 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
                     }

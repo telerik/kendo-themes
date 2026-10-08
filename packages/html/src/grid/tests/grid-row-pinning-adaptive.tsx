@@ -155,7 +155,6 @@ export default () => (
           </GridContainer>
         </Grid>
         <ActionSheetNormal
-          adaptive
           header={<ActionSheetHeader actionsEnd={<Button icon="check" size="large" fillMode="flat" />} title="Row Content Menu" />}
           footer={
             <ActionSheetFooter>
@@ -243,7 +242,6 @@ export default () => (
           </GridContainer>
         </Grid>
         <ActionSheetNormal
-          adaptive
           header={<ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="check" size="large" fillMode="flat" />} title="Pin row" />}
           footer={
             <ActionSheetFooter>

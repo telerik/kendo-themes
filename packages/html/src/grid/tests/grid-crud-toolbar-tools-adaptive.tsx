@@ -201,7 +201,6 @@ export default () => (
                     }>
                 </Grid>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Add new record" />
                     }
@@ -392,7 +391,6 @@ export default () => (
                     }>
                 </Grid>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Edit record" />
                     }

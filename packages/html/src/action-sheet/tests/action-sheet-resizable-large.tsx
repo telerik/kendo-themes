@@ -58,7 +58,7 @@ export default () => (
             <span>...to 90vh (full screen)</span>
 
             <section>
-                <ActionSheet id="actionsheet-resizable-large-initial" side="bottom" resizable constrained
+                <ActionSheet id="actionsheet-resizable-large-initial" resizable
                     header={header}
                     footer={footer}
                     style={{ width: "100%" }}
@@ -68,7 +68,7 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-resizable-large-full" side="bottom" resizable constrained
+                <ActionSheet id="actionsheet-resizable-large-full" resizable
                     header={header}
                     footer={footer}
                     style={{ width: "100%" }}

@@ -161,7 +161,6 @@ export default () => (
                     }
                 ></Grid>
                 <ActionSheetNormal
-                    adaptive
                     header={
                         <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 1" />
                     }

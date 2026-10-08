@@ -26,7 +26,7 @@ export default () => (
             <span>full screen</span>
 
             <section>
-                <ActionSheet id="actionsheet-list-1" adaptive={true}
+                <ActionSheet id="actionsheet-list-1"
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
@@ -61,7 +61,7 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-list-2" adaptive={true} fullscreen={true}
+                <ActionSheet id="actionsheet-list-2" fullscreen={true}
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
@@ -96,7 +96,7 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-list-3" adaptive={true}
+                <ActionSheet id="actionsheet-list-3"
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
@@ -138,7 +138,7 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-list-4" adaptive={true} fullscreen={true}
+                <ActionSheet id="actionsheet-list-4" fullscreen={true}
                     header={
                         <ActionSheetHeader
                             actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
