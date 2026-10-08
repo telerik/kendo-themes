@@ -9,7 +9,7 @@ export default () => (
 
             <h4>Image Editor Insert Text Pane</h4>
 
-            <ImageEditorInsertText contentHeight="640px">
+            <ImageEditorInsertText contentHeight="694px">
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div className="k-imageeditor-resize" style={{ width: "270px", height: "64px", top: "122px", left: "112px" }}>
                     <p style={{
