@@ -4,16 +4,11 @@ export const IMAGEEDITOROPTIONLIST_CLASSNAME = `k-imageeditor-option-list`;
 
 export type KendoImageEditorOptionListProps = {
     scrollable?: boolean;
-    scrollableStart?: boolean;
-    scrollableEnd?: boolean;
-    scrollableBoth?: boolean;
+    scrollingPosition?: 'start' | 'end' | 'both';
 };
 
 const defaultOptions = {
     scrollable: false,
-    scrollableStart: false,
-    scrollableEnd: false,
-    scrollableBoth: false,
 };
 
 export const ImageEditorOptionList = (
@@ -21,9 +16,7 @@ export const ImageEditorOptionList = (
 ) => {
     const {
         scrollable = defaultOptions.scrollable,
-        scrollableStart = defaultOptions.scrollableStart,
-        scrollableEnd = defaultOptions.scrollableEnd,
-        scrollableBoth = defaultOptions.scrollableBoth,
+        scrollingPosition,
         children,
         ...other
     } = props;
@@ -36,9 +29,7 @@ export const ImageEditorOptionList = (
                 IMAGEEDITOROPTIONLIST_CLASSNAME,
                 {
                     [`${IMAGEEDITOROPTIONLIST_CLASSNAME}-scrollable`]: scrollable,
-                    [`${IMAGEEDITOROPTIONLIST_CLASSNAME}-scrollable-start`]: scrollableStart,
-                    [`${IMAGEEDITOROPTIONLIST_CLASSNAME}-scrollable-end`]: scrollableEnd,
-                    [`${IMAGEEDITOROPTIONLIST_CLASSNAME}-scrollable-both`]: scrollableBoth,
+                    [`${IMAGEEDITOROPTIONLIST_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition && scrollingPosition !== 'both',
                 }
             )}
         >
