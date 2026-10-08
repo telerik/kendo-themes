@@ -1,3 +1,9 @@
+## 14.7.0-dev.1 (2026-10-08)
+
+### 🩹 Fixes
+
+- **scheduler:** adjust event z-index ([88aac9b63c](https://github.com/telerik/kendo-themes/commit/88aac9b63c))
+
 ## 14.7.0-dev.0 (2026-10-06)
 
 ### 🚀 Features
