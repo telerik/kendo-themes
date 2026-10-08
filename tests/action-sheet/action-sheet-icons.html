@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            --kendo-actionsheet-height: 352px;
+            --kendo-actionsheet-max-height: 352px;
+            }
+            #test-area > section {
+            height: 360px;
+            outline: 1px dotted;
+            overflow: hidden;
+            position: relative;
+            transform: translateZ(0);
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-3">
+            <span>No icons</span>
+            <span>Icons on group items</span>
+            <span>One icon (first item only)</span>
+            <section>
+                <div class="k-actionsheet-container">
+                    <div class="k-overlay"></div>
+                    <div class="k-animation-container k-animation-container-shown">
+                        <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                            <div id="actionsheet-icons-none" role="dialog" aria-modal="true" aria-labelledby="actionsheet-icons-none-title" class="k-actionsheet k-actionsheet-bottom">
+                                <div id="actionsheet-icons-none" class="k-actionsheet-view">
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-icons-none-title">
+                                                    <div>Title</div>
+                                                    <div class="k-actionsheet-subtitle">Subtitle</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-list-ul">
+                                                <div role="presentation" class="k-actionsheet-group-item">Group 1</div>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <div role="presentation" class="k-actionsheet-group-item">Group 2</div>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="k-actionsheet-container">
+                    <div class="k-overlay"></div>
+                    <div class="k-animation-container k-animation-container-shown">
+                        <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                            <div id="actionsheet-icons-group" role="dialog" aria-modal="true" aria-labelledby="actionsheet-icons-group-title" class="k-actionsheet k-actionsheet-bottom">
+                                <div id="actionsheet-icons-group" class="k-actionsheet-view">
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-icons-group-title">
+                                                    <div>Title</div>
+                                                    <div class="k-actionsheet-subtitle">Subtitle</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-list-ul">
+                                                <div role="presentation" class="k-actionsheet-group-item">
+                                                    <span class="k-icon-wrap">
+                                                        <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                    Group 1
+                                                </div>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <div role="presentation" class="k-actionsheet-group-item">
+                                                    <span class="k-icon-wrap">
+                                                        <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                    Group 2
+                                                </div>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="k-actionsheet-container">
+                    <div class="k-overlay"></div>
+                    <div class="k-animation-container k-animation-container-shown">
+                        <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                            <div id="actionsheet-icons-item" role="dialog" aria-modal="true" aria-labelledby="actionsheet-icons-item-title" class="k-actionsheet k-actionsheet-bottom">
+                                <div id="actionsheet-icons-item" class="k-actionsheet-view">
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-icons-item-title">
+                                                    <div>Title</div>
+                                                    <div class="k-actionsheet-subtitle">Subtitle</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-list-ul">
+                                                <div role="presentation" class="k-actionsheet-group-item">Group 1</div>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-icon-wrap">
+                                                            <span class="k-actionsheet-item-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <div role="presentation" class="k-actionsheet-group-item">Group 2</div>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-actionsheet-item">
+                                                    <span class="k-actionsheet-action">
+                                                        <span class="k-actionsheet-item-text">
+                                                            <span class="k-actionsheet-item-title">Item</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
