@@ -60,7 +60,7 @@ export const ImageEditorInsertShape = (props: any) => (
                     <FormField
                         label="Type"
                         editor={
-                            <ImageEditorOptionList scrollable scrollableBoth>
+                            <ImageEditorOptionList scrollable scrollingPosition="both">
                                 {shapeTypes.map((shape) => (
                                     <ImageEditorOptionPreview key={shape.label} selected={shape.label === "Circle"}>
                                         <div className="k-imageeditor-option-content">
