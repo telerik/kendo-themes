@@ -86,12 +86,6 @@
             // flex-shrink is 0, so without this, wide content (e.g. a data table) forces the view past the actionsheet's width/height.
             min-width: 0;
             min-height: 0;
-
-            // Resizable left/right sheets place the handle beside the header/content/footer column.
-            &.k-actionsheet-resizable.k-actionsheet-left,
-            &.k-actionsheet-resizable.k-actionsheet-right {
-                flex-flow: row nowrap;
-            }
         }
 
         .k-actionsheet-view-body {
@@ -193,32 +187,9 @@
         }
     }
 
-    // Left/right handles are a vertical bar centered on the resize edge instead of a horizontal one.
-    .k-actionsheet-resizable.k-actionsheet-left,
-    .k-actionsheet-resizable.k-actionsheet-right {
-        > .k-actionsheet-resize-handle {
-            width: $kendo-actionsheet-resize-handle-height;
-            height: $kendo-actionsheet-resize-handle-width;
-            margin-block: auto;
-            margin-inline: $kendo-actionsheet-resize-handle-margin;
-        }
-    }
-
-    // Reduce the titlebar/footer padding on the resize-handle side to accommodate the handle.
-    // The handle sits opposite the anchored side, so top/bottom reduce different edges; left/right need no adjustment.
-    .k-actionsheet-resizable {
-        &:not(.k-actionsheet-top):not(.k-actionsheet-left):not(.k-actionsheet-right) > .k-actionsheet-view-body > .k-actionsheet-titlebar {
-            padding-block-start: calc( #{$kendo-actionsheet-titlebar-padding-y} / 2 );
-        }
-
-        &.k-actionsheet-top > .k-actionsheet-view-body > .k-actionsheet-footer {
-            padding-block-end: calc( #{$kendo-actionsheet-footer-border-width} / 2 );
-        }
-    }
-
-    // Full-height / maximized state: square off the rounded corners.
-    .k-actionsheet-maximized {
-        border-radius: 0;
+    // Reduce the titlebar top padding to accommodate the resize handle.
+    .k-actionsheet-resizable > .k-actionsheet-view-body > .k-actionsheet-titlebar {
+        padding-block-start: calc( #{$kendo-actionsheet-titlebar-padding-y} / 2 );
     }
 
 
@@ -229,14 +200,12 @@
         position: relative;
     }
 
-    // Constrain content/footer width on wide viewports, matching the resizable ActionSheet spec.
+    // Cap content/footer width on wide viewports at every breakpoint.
     .k-actionsheet-content,
     .k-actionsheet-footer {
-        &.k-actionsheet-constrained {
-            margin-inline: auto;
-            width: 100%;
-            max-width: $kendo-actionsheet-content-max-width;
-        }
+        margin-inline: auto;
+        width: 100%;
+        max-width: $kendo-actionsheet-content-max-width;
     }
 
 
@@ -334,45 +303,25 @@
 
 
     // Action sheet position
-    // Scoped to the outer ".k-actionsheet" wrapper only — the nested ".k-actionsheet-view" also
-    // carries the side class (for resizable padding tweaks below) but must not be repositioned by it.
-    .k-actionsheet.k-actionsheet-top {
-        @include border-bottom-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-block-start-width: if( $kendo-actionsheet-border-width, 0, null );
-        inset-block-start: 0;
-        inset-inline-start: 50%;
-        transform: translateX( -50% );
-    }
     .k-actionsheet.k-actionsheet-bottom {
         @include border-top-radius( $kendo-actionsheet-border-radius );
+        width: var( --kendo-actionsheet-width, 100% );
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
         border-block-end-width: if( $kendo-actionsheet-border-width, 0, null );
         inset-block-end: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
-    .k-actionsheet.k-actionsheet-left {
-        @include border-right-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-inline-start-width: if( $kendo-actionsheet-border-width, 0, null );
-        inset-inline-start: 0;
-        inset-block-start: 50%;
-        transform: translateY( -50% );
-    }
-    .k-actionsheet.k-actionsheet-right {
-        @include border-left-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-inline-end-width: if( $kendo-actionsheet-border-width, 0, null );
-        inset-inline-end: 0;
-        inset-block-start: 50%;
-        transform: translateY( -50% );
-    }
     .k-actionsheet-fullscreen {
         width: 100%;
         max-width: 100%;
         max-height: 100%;
         height: 100%;
+    }
+
+    // Full-height state squares the rounded corners; must follow the position rules to win on specificity.
+    .k-actionsheet.k-actionsheet-maximized {
+        border-radius: 0;
     }
 
 
@@ -386,35 +335,11 @@
     }
 
 
-    // Adaptive action sheet
-    .k-adaptive-actionsheet {
-        max-width: 100%;
-        width: 100%;
-        font-size: $kendo-adaptive-actionsheet-font-size;
-        line-height: $kendo-adaptive-actionsheet-line-height;
-
-        .k-actionsheet-titlebar {
-            padding-block: $kendo-adaptive-actionsheet-titlebar-padding-y;
-            padding-inline: $kendo-adaptive-actionsheet-titlebar-padding-x;
-        }
-
-        .k-actionsheet-content {
-            padding-block: $kendo-adaptive-actionsheet-content-padding-y;
-            padding-inline: $kendo-adaptive-actionsheet-content-padding-x;
-        }
-
-        .k-actionsheet-footer {
-            padding-block: $kendo-adaptive-actionsheet-footer-padding-y;
-            padding-inline: $kendo-adaptive-actionsheet-footer-padding-x;
-        }
-
+    // Hosted components (adaptive popups of ComboBox, DatePicker, Grid menus, etc.)
+    .k-actionsheet {
         .k-actionsheet-filter {
-            width: calc( #{$kendo-adaptive-actionsheet-content-max-width} - #{$kendo-adaptive-actionsheet-titlebar-padding-x} * 2 );
-        }
-        .k-actionsheet-content,
-        .k-actionsheet-footer {
-            margin-inline: auto;
-            width: min(100%, #{$kendo-adaptive-actionsheet-content-max-width});
+            width: 100%;
+            max-width: calc( #{$kendo-actionsheet-content-max-width} - #{$kendo-actionsheet-titlebar-padding-x} * 2 );
         }
 
         .k-list-container,
@@ -541,7 +466,6 @@
     // RTL
     .k-rtl,
     [dir="rtl"] {
-        .k-actionsheet-top,
         .k-actionsheet-bottom {
             transform: translateX( 50% );
         }
