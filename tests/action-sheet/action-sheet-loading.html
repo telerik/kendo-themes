@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            --kendo-actionsheet-height: 511px;
+            --kendo-actionsheet-max-height: 511px;
+            }
+            #test-area > section {
+            width: 360px;
+            height: 520px;
+            outline: 1px dotted;
+            overflow: hidden;
+            position: relative;
+            transform: translateZ(0);
+            }
+        </style>
+        <div id="test-area">
+            <section>
+                <div class="k-actionsheet-container">
+                    <div class="k-overlay"></div>
+                    <div class="k-animation-container k-animation-container-shown">
+                        <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                            <div id="actionsheet-loading" role="dialog" aria-modal="true" aria-labelledby="actionsheet-loading-title" class="k-actionsheet k-actionsheet-bottom">
+                                <div id="actionsheet-loading" class="k-actionsheet-view">
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title k-actionsheet-title-template" id="actionsheet-loading-title">
+                                                    <div style="display: flex; align-items: center; gap: var( --kendo-spacing-2 );">
+                                                        <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="flex: 0 0 auto; width: 24px; height: 24px;"></span>
+                                                        <div style="flex: 1 1 0px; min-width: 0px; display: flex; flex-flow: column; gap: 6px;">
+                                                            <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 22px;"></span>
+                                                            <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 20px;"></span>
+                                                        </div>
+                                                        <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="flex: 0 0 auto; width: 24px; height: 24px;"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-skeleton-container" style="display: flex; flex-flow: column; gap: 2px; padding: var( --kendo-spacing-2 );">
+                                                <div style="flex: 0 0 auto; height: 44px; display: flex; align-items: center; padding-inline: var( --kendo-spacing-4 );">
+                                                    <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 28px;"></span>
+                                                </div>
+                                                <div style="flex: 0 0 auto; height: 60px; display: flex; align-items: center; padding-inline: var( --kendo-spacing-4 );">
+                                                    <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 44px;"></span>
+                                                </div>
+                                                <div style="flex: 0 0 auto; height: 60px; display: flex; align-items: center; padding-inline: var( --kendo-spacing-4 );">
+                                                    <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 44px;"></span>
+                                                </div>
+                                                <hr class="k-hr">
+                                                <div style="flex: 0 0 auto; height: 44px; display: flex; align-items: center; padding-inline: var( --kendo-spacing-4 );">
+                                                    <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 28px;"></span>
+                                                </div>
+                                                <div style="flex: 0 0 auto; height: 60px; display: flex; align-items: center; padding-inline: var( --kendo-spacing-4 );">
+                                                    <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 44px;"></span>
+                                                </div>
+                                                <div style="flex: 0 0 auto; height: 60px; display: flex; align-items: center; padding-inline: var( --kendo-spacing-4 );">
+                                                    <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="width: 100%; height: 44px;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                            <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="flex: 1 1 0px; height: 38px;"></span>
+                                            <span class="k-skeleton k-skeleton-rect k-skeleton-pulse" style="flex: 1 1 0px; height: 38px;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
