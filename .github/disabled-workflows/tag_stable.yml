@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Import Secrets
         id: import-secrets
-        uses: LanceMcCarthy/akeyless-action@v5
+        uses: LanceMcCarthy/akeyless-action@42b5bde870ef7d135f863a035245e735bfd2ef8c # v5.7.0
         with:
           access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
           static-secrets: |
@@ -27,13 +27,13 @@ jobs:
           export-secrets-to-environment: false
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
           ref: master
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version: 24.x
           registry-url: 'https://registry.npmjs.org'
