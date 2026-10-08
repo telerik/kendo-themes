@@ -30,14 +30,14 @@ jobs:
     steps:
       - name: Import Secrets
         id: import-secrets
-        uses: LanceMcCarthy/akeyless-action@v5
+        uses: LanceMcCarthy/akeyless-action@42b5bde870ef7d135f863a035245e735bfd2ef8c # v5.7.0
         with:
           access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
           static-secrets: '{ "/WebComponents/prod/tokens/GH_TOKEN": "GH_TOKEN" }'
           export-secrets-to-environment: false
 
       - name: Checkout branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
           ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.event.inputs.ref }}
 
@@ -55,13 +55,13 @@ jobs:
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version: 24.x
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
-        uses: actions/cache@v5
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5.1.0
         with:
           path: node_modules
           key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
@@ -75,7 +75,7 @@ jobs:
           npm run sass:dist
 
       - name: Checkout artifact repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
           repository: telerik/themes-cdn
           token: ${{ steps.import-secrets.outputs.GH_TOKEN }}
