@@ -1,3 +1,13 @@
+## 14.7.0-dev.2 (2026-10-09)
+
+### 🚀 Features
+
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.7.0-dev.1 (2026-10-08)
 
 This was a version bump only for @progress/kendo-theme-material to align it with other projects, there were no code changes.
