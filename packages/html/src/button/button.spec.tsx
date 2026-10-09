@@ -44,6 +44,7 @@ export type KendoButtonOptions = {
 
 export type KendoButtonProps = KendoButtonOptions & {
   icon?: string | React.ReactNode;
+  endIcon?: string | React.ReactNode;
   iconSize?: typeof Size[keyof typeof Size];
   text?: string;
   iconClassName?: string;
@@ -97,6 +98,7 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
         togglable,
         ariaDisabled,
         icon,
+        endIcon,
         iconSize,
         text,
         iconClassName,
@@ -156,6 +158,18 @@ export const Button: KendoComponent<KendoButtonProps & KendoButtonState & React.
                 </>
                 : props.children && <span className="k-button-text">{props.children}</span>
             }
+
+            {typeof endIcon === 'string' && endIcon && (
+                <Icon
+                    className={classNames(iconClassName, 'k-button-icon')}
+                    icon={endIcon}
+                    size={iconSize}
+                />
+            )}
+
+            {endIcon && typeof endIcon !== 'string' && (
+                <>{endIcon}</>
+            )}
 
             {showArrow && (<span className="k-menu-button-arrow k-button-arrow"><Icon icon= {arrowIconName} /></span>)}
 
