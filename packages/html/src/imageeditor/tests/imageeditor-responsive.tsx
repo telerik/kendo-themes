@@ -1,4 +1,4 @@
-import { ImageEditorNormal, ImageEditorInsertShape, ImageEditorResizeHandles } from '..';
+import { ImageEditorNormal, ImageEditorInsertShape, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -22,14 +22,14 @@ export default () => (
 
             <div>
                 <h4>Tablet / Responsive / Unselected Tool</h4>
-                <ImageEditorNormal contentHeight="841px">
+                <ImageEditorNormal contentHeight="997px">
                     <canvas width="659" height="410" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
                 </ImageEditorNormal>
             </div>
 
             <div>
                 <h4>Tablet / Responsive / Selected Tool / Panel Opened</h4>
-                <ImageEditorInsertShape contentHeight="841px">
+                <ImageEditorInsertShape contentHeight="997px">
                     <canvas width="338" height="211" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
                     <div className="k-imageeditor-resize" style={{ width: "130px", height: "43px", top: "84px", left: "105px" }}>
                         <div style={{
@@ -55,7 +55,8 @@ export default () => (
                             }}>Shape text</p>
                         </div>
                         <ImageEditorResizeHandles variant="mixed" />
-                        <FloatingToolbar fillMode="flat" resizable offset={{ top: "51px", left: "0" }}>
+                        <ImageEditorRotateHandle />
+                        <FloatingToolbar fillMode="flat" resizable style={{ width: "max-content" }} offset={{ top: "99px", left: "0" }}>
                             <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                             <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                             <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>

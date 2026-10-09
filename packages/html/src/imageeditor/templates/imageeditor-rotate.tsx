@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles, ImageEditorRotateHandle } from "..";
 import { Button } from "../../button";
 import { NumericTextbox } from "../../numerictextbox";
 import { InputSuffixText } from "../../input";
@@ -86,6 +86,7 @@ export const ImageEditorRotate = (props: any) => (
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div className="k-imageeditor-rotate">
                     <ImageEditorResizeHandles variant="scale" grid />
+                    <ImageEditorRotateHandle />
                 </div>
                 <Tooltip
                     themeColor="inverse"

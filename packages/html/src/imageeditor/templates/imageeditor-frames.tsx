@@ -123,7 +123,7 @@ export const ImageEditorFrames = ({
                                 <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                                     <FormField
                                         label="Stroke Type"
-                                        editor={ <DropdownList id="frame-stroke-type" value="Dashed" prefix={<Icon icon="border-style" />} aria-label="Stroke Type" /> }
+                                        editor={ <DropdownList id="frame-stroke-type" value="Dashed" aria-label="Stroke Type" /> }
                                     />
                                     <FormField
                                         label="Offset"

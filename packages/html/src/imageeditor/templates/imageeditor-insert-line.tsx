@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorRotateHandle } from "..";
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { NumericTextbox } from "../../numerictextbox";
@@ -6,6 +6,8 @@ import { ColorPicker } from "../../colorpicker";
 import { DropdownList } from "../../dropdownlist";
 import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
+import { InputSuffixText } from "../../input";
+import { Slider } from "../../slider";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 
@@ -54,16 +56,16 @@ export const ImageEditorInsertLine = (props: any) => (
                     </Fieldset>
                     <FormField
                         label="Stroke Type"
-                        editor={ <DropdownList id="line-stroke-type" value="Dotted" prefix={<Icon icon="square-dotted" />} aria-label="Stroke Type" /> }
+                        editor={ <DropdownList id="line-stroke-type" value="Dotted" aria-label="Stroke Type" /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Start Point"
-                            editor={ <DropdownList id="line-start-point" value="Circle" prefix={<Icon icon="line-point-circle" />} aria-label="Start Point" /> }
+                            editor={ <DropdownList id="line-start-point" value="Circle" aria-label="Start Point" /> }
                         />
                         <FormField
                             label="End Point"
-                            editor={ <DropdownList id="line-end-point" value="Diamond" prefix={<Icon icon="line-point-rhombus" />} aria-label="End Point" /> }
+                            editor={ <DropdownList id="line-end-point" value="Diamond" aria-label="End Point" /> }
                         />
                     </Fieldset>
                     <FormField
@@ -89,6 +91,51 @@ export const ImageEditorInsertLine = (props: any) => (
                                     <Button icon="align-items-center-alt" selected aria-label="Align Middle"></Button>
                                     <Button className="k-group-end" icon="align-items-end-alt" aria-label="Align Bottom"></Button>
                                 </ButtonGroup>
+                            }
+                        />
+                    </Fieldset>
+                    <FormField
+                        label="Rotation"
+                        editor={
+                            <div className="k-imageeditor-field-row">
+                                <Slider
+                                    style={{ flex: 1 }}
+                                    aria-label="Rotation"
+                                    showButtons={false}
+                                    showTicks={false}
+                                    value={0}
+                                    min={0}
+                                    max={360}
+                                />
+                                <NumericTextbox
+                                    style={{ width: "80px", flex: "none" }}
+                                    aria-label="Rotation angle"
+                                    showClearButton={false}
+                                    showSpinButton={false}
+                                    separators={false}
+                                    value="0"
+                                    suffix={<InputSuffixText>°</InputSuffixText>}
+                                />
+                            </div>
+                        }
+                    />
+                    <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
+                        <FormField
+                            label="Rotate Options"
+                            editor={
+                                <div className="k-imageeditor-controls">
+                                    <Button icon="rotate-right" aria-label="Rotate Right"></Button>
+                                    <Button icon="rotate-left" aria-label="Rotate Left"></Button>
+                                </div>
+                            }
+                        />
+                        <FormField
+                            label="Flip Options"
+                            editor={
+                                <div className="k-imageeditor-controls">
+                                    <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                                    <Button icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                                </div>
                             }
                         />
                     </Fieldset>
@@ -125,7 +172,8 @@ export const ImageEditorInsertLine = (props: any) => (
                             background: "#fff", transform: "translate(-50%, -50%)"
                         }}></span>
                     </span>
-                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "36px", left: "-10px" }}>
+                    <ImageEditorRotateHandle />
+                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "60px", left: "-10px" }}>
                         <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>

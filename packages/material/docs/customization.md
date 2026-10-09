@@ -8521,8 +8521,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-border</td>
     <td>String</td>
-    <td><code>$kendo-chip-outline-text</code></td>
-    <td><code>var(--kendo-color-base-on-surface)</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the outline Chip.</div></div>
@@ -18337,6 +18337,26 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the ImageEditor scale handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-rotate-handle-offset</td>
+    <td>Number</td>
+    <td><code>24px</code></td>
+    <td><code>24px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The distance between the bottom edge of the selection frame and the ImageEditor rotate handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-rotate-handle-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the ImageEditor rotate handle.</div></div>
     </td>
 </tr>
 <tr>
