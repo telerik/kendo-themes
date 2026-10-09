@@ -43,6 +43,7 @@ export type KendoMultiSelectTreeOptions = {
 export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
+    showClearButton?: boolean;
     type?: string;
     placeholder?: string;
     tags?: React.JSX.Element;
@@ -62,6 +63,7 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
+    showClearButton: true
 };
 
 /**
@@ -94,6 +96,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
         size,
         rounded,
         fillMode,
+        showClearButton = defaultOptions.showClearButton,
         prefix,
         suffix,
         placeholder,
@@ -169,11 +172,11 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                 <InputLoadingIcon
                     loading={loading}
                     disabled={disabled} />
-                <InputClearValue
+                {showClearButton && <InputClearValue
                     loading={loading}
                     disabled={disabled}
                     readonly={readonly}
-                    value={tags ? 'value' : ''} />
+                    value={tags ? 'value' : ''} />}
                 <InputSuffix>{suffix}</InputSuffix>
                 {showArrowButton && (
                     <Button

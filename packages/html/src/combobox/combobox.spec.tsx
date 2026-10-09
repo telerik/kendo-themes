@@ -45,6 +45,7 @@ export type KendoComboboxProps = KendoComboboxOptions & {
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
     separators?: boolean;
+    showClearButton?: boolean;
     value?: string;
     placeholder?: string;
     popup?: React.JSX.Element;
@@ -62,7 +63,8 @@ export type KendoComboboxProps = KendoComboboxOptions & {
 export type KendoComboboxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    separators: true
+    separators: true,
+    showClearButton: true
 };
 
 /**
@@ -101,6 +103,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
         rounded,
         fillMode,
         separators = defaultOptions.separators,
+        showClearButton = defaultOptions.showClearButton,
         prefix,
         suffix,
         value,
@@ -176,11 +179,11 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                 <InputLoadingIcon
                     loading={loading}
                     disabled={disabled} />
-                <InputClearValue
+                {showClearButton && <InputClearValue
                     loading={loading}
                     disabled={disabled}
                     readonly={readonly}
-                    value={value} />
+                    value={value} />}
                 {suffix &&
                     <>
                         {separators && <InputSeparator />}

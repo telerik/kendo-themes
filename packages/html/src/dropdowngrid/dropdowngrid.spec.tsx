@@ -36,7 +36,8 @@ const options = {
 };
 
 const defaultOptions = {
-    separators: true
+    separators: true,
+    showClearButton: true
 };
 
 export type KendoDropdownGridOptions = {
@@ -49,6 +50,7 @@ export type KendoDropdownGridProps = KendoDropdownGridOptions & {
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
     separators?: boolean;
+    showClearButton?: boolean;
     type?: string;
     value?: string;
     placeholder?: string;
@@ -94,6 +96,7 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
         rounded,
         fillMode,
         separators = defaultOptions.separators,
+        showClearButton = defaultOptions.showClearButton,
         prefix,
         suffix,
         value,
@@ -171,11 +174,11 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                 <InputLoadingIcon
                     loading={loading}
                     disabled={disabled} />
-                <InputClearValue
+                {showClearButton && <InputClearValue
                     loading={loading}
                     disabled={disabled}
                     readonly={readonly}
-                    value={value} />
+                    value={value} />}
                 {suffix &&
                     <>
                         {separators && <InputSeparator />}

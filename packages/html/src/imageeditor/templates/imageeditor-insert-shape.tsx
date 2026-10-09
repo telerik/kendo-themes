@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles, ImageEditorRotateHandle } from "..";
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { Combobox } from "../../combobox";
@@ -6,6 +6,8 @@ import { NumericTextbox } from "../../numerictextbox";
 import { ColorPicker } from "../../colorpicker";
 import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
+import { InputSuffixText } from "../../input";
+import { Slider } from "../../slider";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 
@@ -58,7 +60,7 @@ export const ImageEditorInsertShape = (props: any) => (
                     <FormField
                         label="Type"
                         editor={
-                            <ImageEditorOptionList scrollable scrollableEnd>
+                            <ImageEditorOptionList scrollable scrollingPosition="both">
                                 {shapeTypes.map((shape) => (
                                     <ImageEditorOptionPreview key={shape.label} selected={shape.label === "Circle"}>
                                         <div className="k-imageeditor-option-content">
@@ -148,6 +150,51 @@ export const ImageEditorInsertShape = (props: any) => (
                             }
                         />
                     </Fieldset>
+                    <FormField
+                        label="Rotation"
+                        editor={
+                            <div className="k-imageeditor-field-row">
+                                <Slider
+                                    style={{ flex: 1 }}
+                                    aria-label="Rotation"
+                                    showButtons={false}
+                                    showTicks={false}
+                                    value={0}
+                                    min={0}
+                                    max={360}
+                                />
+                                <NumericTextbox
+                                    style={{ width: "80px", flex: "none" }}
+                                    aria-label="Rotation angle"
+                                    showClearButton={false}
+                                    showSpinButton={false}
+                                    separators={false}
+                                    value="0"
+                                    suffix={<InputSuffixText>°</InputSuffixText>}
+                                />
+                            </div>
+                        }
+                    />
+                    <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
+                        <FormField
+                            label="Rotate Options"
+                            editor={
+                                <div className="k-imageeditor-controls">
+                                    <Button icon="rotate-right" aria-label="Rotate Right"></Button>
+                                    <Button icon="rotate-left" aria-label="Rotate Left"></Button>
+                                </div>
+                            }
+                        />
+                        <FormField
+                            label="Flip Options"
+                            editor={
+                                <div className="k-imageeditor-controls">
+                                    <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                                    <Button icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                                </div>
+                            }
+                        />
+                    </Fieldset>
                 </Form>
             </ImageEditorPane>
         }
@@ -179,7 +226,8 @@ export const ImageEditorInsertShape = (props: any) => (
                         }}>Shape text</p>
                     </div>
                     <ImageEditorResizeHandles variant="mixed" />
-                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "62px", left: "0" }}>
+                    <ImageEditorRotateHandle />
+                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "110px", left: "0" }}>
                         <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>

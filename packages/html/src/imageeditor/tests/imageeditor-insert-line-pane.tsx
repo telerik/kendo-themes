@@ -1,4 +1,4 @@
-import { ImageEditorInsertLine } from '..';
+import { ImageEditorInsertLine, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -9,7 +9,7 @@ export default () => (
 
             <h4>Image Editor Insert Line Pane</h4>
 
-            <ImageEditorInsertLine contentHeight="640px">
+            <ImageEditorInsertLine contentHeight="796px">
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div style={{ position: "absolute", top: "150px", left: "90px", width: "220px", height: "0" }}>
                     <div style={{
@@ -37,7 +37,8 @@ export default () => (
                             background: "#fff", transform: "translate(-50%, -50%)"
                         }}></span>
                     </span>
-                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "36px", left: "-10px" }}>
+                    <ImageEditorRotateHandle />
+                    <FloatingToolbar fillMode="flat" resizable style={{ width: "max-content" }} offset={{ top: "60px", left: "-10px" }}>
                         <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
