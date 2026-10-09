@@ -335,7 +335,14 @@
     }
 
 
-    // Hosted components (adaptive popups of ComboBox, DatePicker, Grid menus, etc.)
+    // Sheets hosting components (adaptive popups of ComboBox, DatePicker, Grid menus, etc.).
+    // Anything other than ActionSheet items, separators or a skeleton counts as hosted content; :where() keeps specificity low.
+    .k-actionsheet-view-body:where(:has(> .k-actionsheet-content > :not(.k-list-ul, .k-hr, .k-skeleton-container))) > .k-actionsheet-content {
+        padding-block: $kendo-actionsheet-titlebar-padding-y;
+        padding-inline: $kendo-actionsheet-titlebar-padding-x;
+    }
+
+    // Hosted component fixups
     .k-actionsheet {
         .k-actionsheet-filter {
             width: 100%;
@@ -418,7 +425,12 @@
         }
 
         .k-coloreditor {
-            min-width: 100%;
+            margin-inline: auto;
+            display: flex;
+            width: 100%;
+            min-width: 0;
+            // The gradient canvas is square, so keep it from growing with the 640px content cap.
+            max-width: calc( 360px - #{$kendo-actionsheet-titlebar-padding-x} * 2 );
             height: 100%;
             border: 0;
             overflow: auto;
