@@ -26573,7 +26573,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>$kendo-panelbar-header-selected-bg</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
@@ -26583,7 +26583,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>$kendo-panelbar-header-selected-text</code></td>
     <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
@@ -26593,7 +26593,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26603,7 +26603,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26653,7 +26653,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-bg</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26663,7 +26663,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-text</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-text</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26673,7 +26673,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26683,7 +26683,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-header-selected-focus-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26893,7 +26893,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
+    <td><code>$kendo-panelbar-item-selected-bg</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary-subtle-active) 70%, transparent)</code></td>
 </tr>
 <tr>
@@ -26903,7 +26903,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-text</td>
     <td>String</td>
-    <td><code>k-color(primary-on-subtle)</code></td>
+    <td><code>$kendo-panelbar-item-selected-text</code></td>
     <td><code>var(--kendo-color-primary-on-subtle)</code></td>
 </tr>
 <tr>
@@ -26913,7 +26913,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26923,7 +26923,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26973,7 +26973,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-bg</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26983,7 +26983,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-text</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-text</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -26993,7 +26993,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-border</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-border</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -27003,7 +27003,7 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>$kendo-panelbar-item-selected-focus-gradient</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
