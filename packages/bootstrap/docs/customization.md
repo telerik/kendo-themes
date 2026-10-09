@@ -20852,6 +20852,26 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-listbox-actions-scroll-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding around the ListBox actions that keeps the button focus indicators visible when the actions scroll.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-actions-scroll-overlay</td>
+    <td>List</td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
+    <td><code>(var(--kendo-color-app-surface), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient color stops of the ListBox actions scroll overlay.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-listbox-scroller-padding-x</td>
     <td>Null</td>
     <td><code>null</code></td>
