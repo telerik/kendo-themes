@@ -4,7 +4,7 @@ import { classNames } from '../misc';
 
 export const IMAGEEDITORPANE_CLASSNAME = `k-imageeditor-pane`;
 
-const states = [];
+const states = [] as const;
 
 const options = {};
 

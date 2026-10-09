@@ -264,6 +264,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        flex: none;
     }
 
     // Placeholder: replaces the canvas for non-editable states (empty, loading, error)
@@ -382,11 +383,35 @@
     .k-imageeditor-option-list {
         position: relative;
         width: 100%;
+
+        // Overlays live on the non-scrolling wrapper so they stay fixed while the items scroll; the -3px insets match the items' negative margins so they cover the selected chip's shadow ring.
+        &.k-imageeditor-option-list-scrollable {
+            &::before,
+            &::after {
+                content: "";
+                aspect-ratio: 1;
+                position: absolute;
+                inset-block: -3px;
+                z-index: k-z-index("base", 3);
+                pointer-events: none;
+            }
+
+            &::before {
+                inset-inline-start: -3px;
+            }
+
+            &::after {
+                inset-inline-end: -3px;
+            }
+
+            &.k-imageeditor-option-list-scrollable-start::before,
+            &.k-imageeditor-option-list-scrollable-end::after {
+                display: none;
+            }
+        }
     }
 
-    // Actual scrolling element. The scroll-fade overlay lives here (rather than on the
-    // non-scrolling .k-imageeditor-option-list wrapper) so it aligns with the negative
-    // margins below and fully covers the selected chip's shadow ring at the scroll edges.
+    // Actual scrolling element
     .k-imageeditor-option-list-items {
         display: flex;
         flex-flow: row nowrap;
@@ -403,32 +428,6 @@
         scrollbar-width: none;
 
         &::-webkit-scrollbar {
-            display: none;
-        }
-
-        .k-imageeditor-option-list-scrollable & {
-            &::before,
-            &::after {
-                content: "";
-                height: 100%;
-                aspect-ratio: 1;
-                position: absolute;
-                inset-block-start: 0;
-                z-index: k-z-index("base", 3);
-                pointer-events: none;
-            }
-
-            &::before {
-                inset-inline-start: 0;
-            }
-
-            &::after {
-                inset-inline-end: 0;
-            }
-        }
-
-        .k-imageeditor-option-list-scrollable-start &::before,
-        .k-imageeditor-option-list-scrollable-end &::after {
             display: none;
         }
     }
@@ -602,6 +601,23 @@
             right: $scale-handle-offset;
             top: calc(50% - ($kendo-image-editor-scale-handle-size / 2));
         }
+    }
+
+    // Rotation handle: anchored below the bottom edge of the selection frame, centered horizontally
+    .k-rotate-handle {
+        padding: $kendo-image-editor-rotate-handle-padding;
+        border-width: $kendo-image-editor-handle-border-width;
+        border-style: solid;
+        border-radius: $kendo-image-editor-handle-border-radius;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: calc(100% + #{$kendo-image-editor-rotate-handle-offset});
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        cursor: grab;
     }
 
     // Mobile: single scoping class for every part that needs a different layout on small screens

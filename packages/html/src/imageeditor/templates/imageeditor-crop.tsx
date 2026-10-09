@@ -49,7 +49,7 @@ export const ImageEditorCrop = (props: any) => (
                     <FormField
                         label="Aspect Ratio"
                         editor={
-                            <ImageEditorOptionList scrollable scrollableEnd>
+                            <ImageEditorOptionList scrollable scrollingPosition="both">
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">Original</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">1:1</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">3:2</span></ImageEditorOptionPreview>

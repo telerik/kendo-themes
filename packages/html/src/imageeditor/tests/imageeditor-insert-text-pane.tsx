@@ -1,4 +1,4 @@
-import { ImageEditorInsertText } from '..';
+import { ImageEditorInsertText, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -9,7 +9,7 @@ export default () => (
 
             <h4>Image Editor Insert Text Pane</h4>
 
-            <ImageEditorInsertText contentHeight="640px">
+            <ImageEditorInsertText contentHeight="694px">
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div className="k-imageeditor-resize" style={{ width: "270px", height: "64px", top: "122px", left: "112px" }}>
                     <p style={{
@@ -36,7 +36,8 @@ export default () => (
                     <span className="k-resize-handle k-resize-s"></span>
                     <span className="k-resize-handle k-resize-w"></span>
                     <span className="k-resize-handle k-resize-e"></span>
-                    <FloatingToolbar fillMode="flat" offset={{ top: "72px", left: "0" }}>
+                    <ImageEditorRotateHandle />
+                    <FloatingToolbar fillMode="flat" style={{ width: "max-content" }} offset={{ top: "120px", left: "0" }}>
                         <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
