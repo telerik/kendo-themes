@@ -17,27 +17,12 @@
         }
     }
 
-    .k-actionsheet-top {
-        border-width: $kendo-actionsheet-border-width;
-        border-block-start-width: 0;
-    }
-
     .k-actionsheet-bottom {
         border-width: $kendo-actionsheet-border-width;
         border-block-end-width: 0;
     }
 
-    .k-actionsheet-left {
-        border-width: $kendo-actionsheet-border-width;
-        border-inline-start-width: $kendo-actionsheet-border-width;
-    }
-
-    .k-actionsheet-right {
-        border-width: $kendo-actionsheet-border-width;
-        border-inline-end-width: 0;
-    }
-
-    .k-adaptive-actionsheet .k-coloreditor {
+    .k-actionsheet .k-coloreditor {
         box-shadow: none;
     }
 }

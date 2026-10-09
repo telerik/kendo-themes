@@ -325,72 +325,74 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen">
                                 <div id="actionsheet-1" class="k-actionsheet-view">
-                                    <div class="k-actionsheet-titlebar">
-                                        <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Column chooser</div>
-                                                <div class="k-actionsheet-subtitle k-text-center">Selected fields are visible</div>
-                                            </div>
-                                            <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="k-actionsheet-content">
-                                        <div class="k-column-list-wrapper">
-                                            <div class="k-column-list k-column-list-lg" role="listbox" aria-multiselectable="true">
-                                                <span class="k-column-list-item k-disabled" role="option" aria-checked="true">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 1" disabled="" class="k-checkbox k-checked k-disabled" type="checkbox" checked="">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 1</span>
-                                                </span>
-                                                <span class="k-column-list-item" role="option" aria-checked="false">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 2" class="k-checkbox" type="checkbox">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 2</span>
-                                                </span>
-                                                <span class="k-column-list-item" role="option" aria-checked="false">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 3" class="k-checkbox" type="checkbox">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 3</span>
-                                                </span>
-                                                <span class="k-column-list-item" role="option" aria-checked="false">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 4" class="k-checkbox" type="checkbox">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 4</span>
-                                                </span>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-1-title">
+                                                    <div>Column chooser</div>
+                                                    <div class="k-actionsheet-subtitle">Selected fields are visible</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-xs k-button-flat k-icon-button">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-ccw" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 9.75h-4.5v-4.5m0 4.5 3.916-3.5842A8.25 8.25 0 1 1 6.3365 18" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="k-button-text">Reset</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 9 18.75l12-12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-column-list-wrapper">
+                                                <div class="k-column-list k-column-list-lg" role="listbox" aria-multiselectable="true">
+                                                    <span class="k-column-list-item k-disabled" role="option" aria-checked="true">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 1" disabled="" class="k-checkbox k-checked k-disabled" type="checkbox" checked="">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 1</span>
+                                                    </span>
+                                                    <span class="k-column-list-item" role="option" aria-checked="false">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 2" class="k-checkbox" type="checkbox">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 2</span>
+                                                    </span>
+                                                    <span class="k-column-list-item" role="option" aria-checked="false">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 3" class="k-checkbox" type="checkbox">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 3</span>
+                                                    </span>
+                                                    <span class="k-column-list-item" role="option" aria-checked="false">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 4" class="k-checkbox" type="checkbox">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 4</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                            <button class="k-button k-button-lg">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-ccw" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 9.75h-4.5v-4.5m0 4.5 3.916-3.5842A8.25 8.25 0 1 1 6.3365 18" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Reset</span>
+                                            </button>
+                                            <button class="k-button k-button-lg k-button-primary">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 9 18.75l12-12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -549,72 +551,74 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen">
                                 <div id="actionsheet-1" class="k-actionsheet-view">
-                                    <div class="k-actionsheet-titlebar">
-                                        <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Column chooser</div>
-                                                <div class="k-actionsheet-subtitle k-text-center">Selected fields are visible</div>
-                                            </div>
-                                            <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="k-actionsheet-content">
-                                        <div class="k-column-list-wrapper">
-                                            <div class="k-column-list k-column-list-lg" role="listbox" aria-multiselectable="true">
-                                                <span class="k-column-list-item" role="option" aria-checked="true">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 1" class="k-checkbox k-checked" type="checkbox" checked="">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 1</span>
-                                                </span>
-                                                <span class="k-column-list-item" role="option" aria-checked="true">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 2" class="k-checkbox k-checked" type="checkbox" checked="">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 2</span>
-                                                </span>
-                                                <span class="k-column-list-item" role="option" aria-checked="false">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 3" class="k-checkbox" type="checkbox">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 3</span>
-                                                </span>
-                                                <span class="k-column-list-item" role="option" aria-checked="false">
-                                                    <span class="k-checkbox-wrap">
-                                                        <input aria-label="Header Name 4" class="k-checkbox" type="checkbox">
-                                                    </span>
-                                                    <span class="k-checkbox-label">Header Name 4</span>
-                                                </span>
+                                    <div class="k-actionsheet-view-body">
+                                        <div class="k-actionsheet-titlebar">
+                                            <div class="k-actionsheet-titlebar-group">
+                                                <div class="k-actionsheet-title" id="actionsheet-1-title">
+                                                    <div>Column chooser</div>
+                                                    <div class="k-actionsheet-subtitle">Selected fields are visible</div>
+                                                </div>
+                                                <div class="k-actionsheet-actions">
+                                                    <button class="k-button k-button-xs k-button-flat k-icon-button">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-ccw" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 9.75h-4.5v-4.5m0 4.5 3.916-3.5842A8.25 8.25 0 1 1 6.3365 18" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="k-button-text">Reset</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 9 18.75l12-12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
+                                        <div class="k-actionsheet-content">
+                                            <div class="k-column-list-wrapper">
+                                                <div class="k-column-list k-column-list-lg" role="listbox" aria-multiselectable="true">
+                                                    <span class="k-column-list-item" role="option" aria-checked="true">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 1" class="k-checkbox k-checked" type="checkbox" checked="">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 1</span>
+                                                    </span>
+                                                    <span class="k-column-list-item" role="option" aria-checked="true">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 2" class="k-checkbox k-checked" type="checkbox" checked="">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 2</span>
+                                                    </span>
+                                                    <span class="k-column-list-item" role="option" aria-checked="false">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 3" class="k-checkbox" type="checkbox">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 3</span>
+                                                    </span>
+                                                    <span class="k-column-list-item" role="option" aria-checked="false">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input aria-label="Header Name 4" class="k-checkbox" type="checkbox">
+                                                        </span>
+                                                        <span class="k-checkbox-label">Header Name 4</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                            <button class="k-button k-button-lg">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-arrow-rotate-ccw" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 9.75h-4.5v-4.5m0 4.5 3.916-3.5842A8.25 8.25 0 1 1 6.3365 18" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Reset</span>
+                                            </button>
+                                            <button class="k-button k-button-lg k-button-primary">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 9 18.75l12-12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="k-button-text">Apply</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

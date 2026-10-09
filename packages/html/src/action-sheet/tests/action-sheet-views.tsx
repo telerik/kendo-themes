@@ -25,11 +25,10 @@ export default () => (
 
             <section>
                 <ActionSheetNormal id="actionsheet-views-1" style={{ "--kendo-actionsheet-view-current": "1" } as React.CSSProperties}
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="View 1" />
+                            <ActionSheetView animated header={
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="View 1" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -37,9 +36,9 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="View 2" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="View 2" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -62,11 +61,10 @@ export default () => (
 
             <section>
                 <ActionSheetNormal id="actionsheet-views-2" style={{ "--kendo-actionsheet-view-current": "2" } as React.CSSProperties}
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="View 1" />
+                            <ActionSheetView animated header={
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="View 1" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -74,9 +72,9 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="View 2" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="View 2" />
                                 }
                                 footer={
                                     <ActionSheetFooter>

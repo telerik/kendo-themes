@@ -30,10 +30,9 @@ export default () => (
             <section>
                 <PagerInput responsive={true} pageTitleInfo={false} refresh={false} info={false} />
                 <ActionSheet
-                    adaptive
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="xsmall" themeColor="primary" fillMode="flat" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }
@@ -53,11 +52,10 @@ export default () => (
             <section>
                 <PagerInput responsive={true} pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                 <ActionSheet
-                    adaptive
                     fullscreen
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="xsmall" themeColor="primary" fillMode="flat" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }

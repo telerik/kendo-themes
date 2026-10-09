@@ -161,11 +161,10 @@ export default () => (
                     }
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" } as React.CSSProperties}
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column Menu" />
+                            <ActionSheetView animated header={
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column Menu" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -183,9 +182,9 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 1" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 1" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -276,11 +275,10 @@ export default () => (
                     }
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" } as React.CSSProperties}
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column Menu" />
+                            <ActionSheetView animated header={
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column Menu" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -298,9 +296,9 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 1" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 1" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -391,11 +389,10 @@ export default () => (
                     }
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" } as React.CSSProperties}
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column Menu" />
+                            <ActionSheetView animated header={
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column Menu" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -414,10 +411,9 @@ export default () => (
                                 </ColumnMenuNormal>
                             </ActionSheetView>
                             <ActionSheetView
-                                adaptive
                                 animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                                 }
                                 footer={
                                     <ActionSheetFooter>

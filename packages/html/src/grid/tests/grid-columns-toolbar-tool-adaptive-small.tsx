@@ -179,9 +179,8 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -276,9 +275,8 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                     }
                     footer={
                         <ActionSheetFooter>

@@ -2,6 +2,7 @@
 @use "./variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
+@use "../icons/_variables.scss" as *;
 
 @mixin kendo-action-sheet--layout-base() {
 
@@ -82,6 +83,17 @@
             display: flex;
             flex-flow: column nowrap;
             flex: 0 0 100%;
+            // flex-shrink is 0, so without this, wide content (e.g. a data table) forces the view past the actionsheet's width/height.
+            min-width: 0;
+            min-height: 0;
+        }
+
+        .k-actionsheet-view-body {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1 1 auto;
+            min-width: 0;
+            min-height: 0;
         }
 
         .k-actionsheet-view.k-actionsheet-view-animated {
@@ -113,13 +125,42 @@
         gap: $kendo-actionsheet-titlebar-gap;
     }
     .k-actionsheet-titlebar-group {
-        display: flex;
-        flex-flow: row nowrap;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
         align-items: center;
         width: 100%;
+
+        // Reserve equal start/end slots so the title stays centered when only one action slot is present.
+        > .k-actionsheet-actions:first-child {
+            grid-column: 1;
+            justify-self: start;
+        }
+        > .k-actionsheet-title {
+            grid-column: 2;
+        }
+        > .k-actionsheet-actions:last-child {
+            grid-column: 3;
+            justify-self: end;
+        }
+
+        // Without action buttons, let the title/header-template content span the full width instead of shrinking to its own content width.
+        &:not(:has(> .k-actionsheet-actions)) {
+            grid-template-columns: 1fr;
+
+            > .k-actionsheet-title {
+                grid-column: 1;
+            }
+        }
     }
     .k-actionsheet-title {
-        flex: 1;
+        min-width: 0;
+        text-align: center;
+    }
+    // Custom header content (text, inputs, other components) is stacked vertically.
+    .k-actionsheet-title-template {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: $kendo-actionsheet-titlebar-gap;
     }
     .k-actionsheet-subtitle {
         font-size: $kendo-actionsheet-subtitle-font-size;
@@ -130,11 +171,41 @@
     }
 
 
+    // Actionsheet resize handle
+    .k-actionsheet-resize-handle {
+        width: $kendo-actionsheet-resize-handle-width;
+        height: $kendo-actionsheet-resize-handle-height;
+        margin-block: $kendo-actionsheet-resize-handle-margin;
+        margin-inline: auto;
+        border-radius: $kendo-actionsheet-resize-handle-border-radius;
+        flex: none;
+        cursor: grab;
+        touch-action: none;
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    // Reduce the titlebar top padding to accommodate the resize handle.
+    .k-actionsheet-resizable > .k-actionsheet-view-body > .k-actionsheet-titlebar {
+        padding-block-start: calc( #{$kendo-actionsheet-titlebar-padding-y} / 2 );
+    }
+
+
     // Actionsheet content
     .k-actionsheet-content {
         flex: 1;
         overflow: auto;
         position: relative;
+    }
+
+    // Cap content/footer width on wide viewports at every breakpoint.
+    .k-actionsheet-content,
+    .k-actionsheet-footer {
+        margin-inline: auto;
+        width: 100%;
+        max-width: $kendo-actionsheet-content-max-width;
     }
 
 
@@ -152,6 +223,11 @@
         padding: 0;
         list-style: none;
         flex: none;
+    }
+
+    .k-actionsheet .k-list-ul {
+        padding-inline: $kendo-actionsheet-list-padding-x;
+        padding-block: $kendo-actionsheet-list-padding-y;
     }
 
 
@@ -193,6 +269,32 @@
     }
 
 
+    // Actionsheet group item
+    .k-actionsheet-group-item {
+        padding-block: $kendo-actionsheet-group-item-padding-y;
+        padding-inline: $kendo-actionsheet-group-item-padding-x;
+        font-size: $kendo-actionsheet-group-item-font-size;
+        font-weight: $kendo-actionsheet-group-item-font-weight;
+        line-height: $kendo-actionsheet-group-item-line-height;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: $kendo-actionsheet-group-item-gap;
+    }
+
+    // Preserve the icon slot width so labels stay aligned across groups, even when a group has no icon.
+    // Uses the sibling item's own padding/spacing (not the group item's) since it must match where the item's text actually starts.
+    .k-actionsheet :is(.k-actionsheet-items, .k-list-ul):has(.k-actionsheet-item-icon) .k-actionsheet-group-item:not(:has(.k-actionsheet-item-icon)) {
+        padding-inline-start: calc( #{$kendo-actionsheet-item-padding-x} + #{$ki-icon-size} + #{$kendo-actionsheet-item-spacing} );
+    }
+
+    // Items without an icon are pushed by the icon slot width so their text lines up with sibling items that have an icon.
+    .k-actionsheet :is(.k-actionsheet-items, .k-list-ul):has(.k-actionsheet-action .k-actionsheet-item-icon) .k-actionsheet-action:not(:has(.k-actionsheet-item-icon)) {
+        padding-inline-start: calc( #{$kendo-actionsheet-item-padding-x} + #{$ki-icon-size} + #{$kendo-actionsheet-item-spacing} );
+    }
+
+
     // Actionsheet separator
     .k-actionsheet .k-hr {
         margin: 0;
@@ -201,43 +303,25 @@
 
 
     // Action sheet position
-    .k-actionsheet-top {
-        @include border-bottom-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-block-start-width: if( $kendo-actionsheet-border-width, 0, null );
-        inset-block-start: 0;
-        inset-inline-start: 50%;
-        transform: translateX( -50% );
-    }
-    .k-actionsheet-bottom {
+    .k-actionsheet.k-actionsheet-bottom {
         @include border-top-radius( $kendo-actionsheet-border-radius );
+        width: var( --kendo-actionsheet-width, 100% );
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
         border-block-end-width: if( $kendo-actionsheet-border-width, 0, null );
         inset-block-end: 0;
         inset-inline-start: 50%;
         transform: translateX( -50% );
     }
-    .k-actionsheet-left {
-        @include border-right-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-inline-start-width: if( $kendo-actionsheet-border-width, 0, null );
-        inset-inline-start: 0;
-        inset-block-start: 50%;
-        transform: translateY( -50% );
-    }
-    .k-actionsheet-right {
-        @include border-left-radius( $kendo-actionsheet-border-radius );
-        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
-        border-inline-end-width: if( $kendo-actionsheet-border-width, 0, null );
-        inset-inline-end: 0;
-        inset-block-start: 50%;
-        transform: translateY( -50% );
-    }
     .k-actionsheet-fullscreen {
         width: 100%;
         max-width: 100%;
         max-height: 100%;
         height: 100%;
+    }
+
+    // Full-height state squares the rounded corners; must follow the position rules to win on specificity.
+    .k-actionsheet.k-actionsheet-maximized {
+        border-radius: 0;
     }
 
 
@@ -251,35 +335,18 @@
     }
 
 
-    // Adaptive action sheet
-    .k-adaptive-actionsheet {
-        max-width: 100%;
-        width: 100%;
-        font-size: $kendo-adaptive-actionsheet-font-size;
-        line-height: $kendo-adaptive-actionsheet-line-height;
+    // Sheets hosting components (adaptive popups of ComboBox, DatePicker, Grid menus, etc.).
+    // Anything other than ActionSheet items, separators or a skeleton counts as hosted content; :where() keeps specificity low.
+    .k-actionsheet-view-body:where(:has(> .k-actionsheet-content > :not(.k-list-ul, .k-hr, .k-skeleton-container))) > .k-actionsheet-content {
+        padding-block: $kendo-actionsheet-titlebar-padding-y;
+        padding-inline: $kendo-actionsheet-titlebar-padding-x;
+    }
 
-        .k-actionsheet-titlebar {
-            padding-block: $kendo-adaptive-actionsheet-titlebar-padding-y;
-            padding-inline: $kendo-adaptive-actionsheet-titlebar-padding-x;
-        }
-
-        .k-actionsheet-content {
-            padding-block: $kendo-adaptive-actionsheet-content-padding-y;
-            padding-inline: $kendo-adaptive-actionsheet-content-padding-x;
-        }
-
-        .k-actionsheet-footer {
-            padding-block: $kendo-adaptive-actionsheet-footer-padding-y;
-            padding-inline: $kendo-adaptive-actionsheet-footer-padding-x;
-        }
-
+    // Hosted component fixups
+    .k-actionsheet {
         .k-actionsheet-filter {
-            width: calc( 360px - #{$kendo-adaptive-actionsheet-titlebar-padding-x} * 2 );
-        }
-        .k-actionsheet-content,
-        .k-actionsheet-footer {
-            margin-inline: auto;
-            width: min(100%, 360px);
+            width: 100%;
+            max-width: calc( #{$kendo-actionsheet-content-max-width} - #{$kendo-actionsheet-titlebar-padding-x} * 2 );
         }
 
         .k-list-container,
@@ -358,7 +425,12 @@
         }
 
         .k-coloreditor {
-            min-width: 100%;
+            margin-inline: auto;
+            display: flex;
+            width: 100%;
+            min-width: 0;
+            // The gradient canvas is square, so keep it from growing with the 640px content cap.
+            max-width: calc( 360px - #{$kendo-actionsheet-titlebar-padding-x} * 2 );
             height: 100%;
             border: 0;
             overflow: auto;
@@ -406,7 +478,6 @@
     // RTL
     .k-rtl,
     [dir="rtl"] {
-        .k-actionsheet-top,
         .k-actionsheet-bottom {
             transform: translateX( 50% );
         }

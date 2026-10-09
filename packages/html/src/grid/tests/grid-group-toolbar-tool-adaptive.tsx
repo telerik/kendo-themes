@@ -96,9 +96,8 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Group by" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -189,9 +188,8 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Group by" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -284,9 +282,8 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Group by" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -379,9 +376,8 @@ export default () => (
                     }
                 ></GridNormal>
                 <ActionSheetNormal
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Group by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Group by" />
                     }
                     footer={
                         <ActionSheetFooter>

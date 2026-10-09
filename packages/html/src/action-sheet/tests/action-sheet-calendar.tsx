@@ -26,18 +26,18 @@ export default () => (
             <span>full screen</span>
 
             <section>
-                <ActionSheet id="actionsheet-calendar-1" adaptive={true}
+                <ActionSheet id="actionsheet-calendar-1"
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Select date" />
                     }>
                     <CalendarNormal size="large" />
                 </ActionSheet>
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-calendar-2" adaptive={true} fullscreen={true}
+                <ActionSheet id="actionsheet-calendar-2" fullscreen={true}
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Select date" />
                     }>
                     <CalendarNormal size="large" />
                 </ActionSheet>

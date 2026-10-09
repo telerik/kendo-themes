@@ -202,9 +202,8 @@ export default () => (
                 </Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Add new record" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Add new record" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -393,9 +392,8 @@ export default () => (
                 </Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Edit record" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Edit record" />
                     }
                     footer={
                         <ActionSheetFooter>
