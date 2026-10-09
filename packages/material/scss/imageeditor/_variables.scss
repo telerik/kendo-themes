@@ -130,6 +130,12 @@ $kendo-image-editor-handle-border-radius: k-border-radius(full) !default;
 /// The size of the ImageEditor scale handle.
 /// @group image-editor
 $kendo-image-editor-scale-handle-size: 12px !default;
+/// The distance between the bottom edge of the selection frame and the ImageEditor rotate handle.
+/// @group image-editor
+$kendo-image-editor-rotate-handle-offset: 24px !default;
+/// The padding of the ImageEditor rotate handle.
+/// @group image-editor
+$kendo-image-editor-rotate-handle-padding: k-spacing(0.5) !default;
 
 /// The background color of the ImageEditor.
 /// @group image-editor
@@ -264,6 +270,8 @@ $kendo-image-editor-handle-border: k-color(primary) !default;
     $kendo-image-editor-handle-thickness: $kendo-image-editor-handle-thickness,
     $kendo-image-editor-handle-border-radius: $kendo-image-editor-handle-border-radius,
     $kendo-image-editor-scale-handle-size: $kendo-image-editor-scale-handle-size,
+    $kendo-image-editor-rotate-handle-offset: $kendo-image-editor-rotate-handle-offset,
+    $kendo-image-editor-rotate-handle-padding: $kendo-image-editor-rotate-handle-padding,
     $kendo-image-editor-bg: $kendo-image-editor-bg,
     $kendo-image-editor-text: $kendo-image-editor-text,
     $kendo-image-editor-border: $kendo-image-editor-border,

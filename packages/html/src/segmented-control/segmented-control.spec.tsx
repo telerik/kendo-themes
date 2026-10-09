@@ -4,7 +4,7 @@ import { KendoComponent } from '../_types/component';
 import { SEGMENTED_CONTROL_FOLDER_NAME, SEGMENTED_CONTROL_MODULE_NAME } from './constants';
 export const SEGMENTED_CONTROL_CLASSNAME = `k-segmented-control`;
 
-const states = [];
+const states = [] as const;
 
 const options = {
     size: [ Size.undefined, Size.small, Size.medium, Size.large ],

@@ -698,6 +698,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-rotate-handle-offset</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-rotate-handle-offset, 24px )</code></td>
+    <td><code>var(--kendo-image-editor-rotate-handle-offset, 24px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor rotate handle offset from the bottom edge of the selection frame.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-rotate-handle-padding</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-rotate-handle-padding, #{k-spacing(0.5)} )</code></td>
+    <td><code>var(--kendo-image-editor-rotate-handle-padding, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor rotate handle padding.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-resize-top-offset</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-resize-top-offset, calc( #{$kendo-image-editor-handle-size} / 2 ) )</code></td>

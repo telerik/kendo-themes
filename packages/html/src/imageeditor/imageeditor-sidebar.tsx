@@ -28,7 +28,6 @@ const defaultSidebarItems = [
 const defaultOptions = {
     sidebarItems: defaultSidebarItems,
     scrollable: false,
-    scrollingPosition: 'start' as const,
 };
 
 /**
@@ -42,7 +41,7 @@ export const ImageEditorSidebar = (
     const {
         sidebarItems = defaultOptions.sidebarItems,
         scrollable = defaultOptions.scrollable,
-        scrollingPosition = defaultOptions.scrollingPosition,
+        scrollingPosition,
         ...other
     } = props;
 
@@ -54,7 +53,7 @@ export const ImageEditorSidebar = (
                 IMAGEEDITORSIDEBAR_CLASSNAME,
                 {
                     [`${IMAGEEDITORSIDEBAR_CLASSNAME}-scrollable`]: scrollable,
-                    [`${IMAGEEDITORSIDEBAR_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollable,
+                    [`${IMAGEEDITORSIDEBAR_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition && scrollingPosition !== 'both',
                 }
             )}
         >

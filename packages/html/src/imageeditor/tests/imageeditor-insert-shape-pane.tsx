@@ -1,4 +1,4 @@
-import { ImageEditorInsertShape } from '..';
+import { ImageEditorInsertShape, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -9,7 +9,7 @@ export default () => (
 
             <h4>Image Editor Insert Shape Pane</h4>
 
-            <ImageEditorInsertShape contentHeight="860px">
+            <ImageEditorInsertShape contentHeight="1016px">
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div className="k-imageeditor-resize" style={{ width: "165px", height: "54px", top: "140px", left: "165px" }}>
                     <div style={{
@@ -42,7 +42,8 @@ export default () => (
                     <span className="k-resize-handle k-resize-s"></span>
                     <span className="k-resize-handle k-resize-w"></span>
                     <span className="k-resize-handle k-resize-e"></span>
-                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "62px", left: "0" }}>
+                    <ImageEditorRotateHandle />
+                    <FloatingToolbar fillMode="flat" resizable style={{ width: "max-content" }} offset={{ top: "110px", left: "0" }}>
                         <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>

@@ -75,5 +75,17 @@ export default () => (
             }
         />
 
+        <span>Error - Maximum File Size Exceeded</span>
+        <ImageEditorDisabled
+            contentHeight="260px"
+            placeholder={
+                <ImageEditorPlaceholder
+                    icon="file-error"
+                    title="Maximum file size exceeded!"
+                    text="Please upload a file smaller than 6 MB"
+                />
+            }
+        />
+
     </div>
 );
