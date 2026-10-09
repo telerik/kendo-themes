@@ -69,6 +69,7 @@
 
         // Sizes
         @each $size, $size-props in $kendo-button-sizes {
+            $_gap: map.get( $size-props, gap );
             $_padding-x: map.get( $size-props, padding-x );
             $_padding-y: map.get( $size-props, padding-y );
             $_font-size: map.get( $size-props, font-size );
@@ -78,6 +79,7 @@
             &.k-button-#{$size} {
                 padding-block: $_padding-y;
                 padding-inline: $_padding-x;
+                gap: $_gap;
                 font-size: $_font-size;
                 line-height: $_line-height;
 
