@@ -1,3 +1,10 @@
+## 14.7.0-dev.3 (2026-10-09)
+
+### 🩹 Fixes
+
+- **prompt-box:** allow hiding speech-to-text button via speechToTextButtonConfig={false} ([16901705e3](https://github.com/telerik/kendo-themes/commit/16901705e3))
+- **treeview:** allow custom leaf content ([38433b76b2](https://github.com/telerik/kendo-themes/commit/38433b76b2))
+
 ## 14.7.0-dev.2 (2026-10-09)
 
 ### 🚀 Features
