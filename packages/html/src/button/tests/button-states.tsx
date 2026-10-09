@@ -1,8 +1,8 @@
-import { IconButton, IconTextButton, TextButton } from '..';
+import { IconButton, IconTextButton, TextButton, Button } from '..';
 
 const styles = `
     #test-area {
-        grid-template-columns: 120px repeat(7, 1fr);
+        grid-template-columns: 120px repeat(6, 1fr);
         max-width: 1240px;
     }
 `;
@@ -12,7 +12,6 @@ export default () => (
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
 
-            <span></span>
             <span>Normal</span>
             <span>Hover</span>
             <span>Focus</span>
@@ -21,25 +20,38 @@ export default () => (
             <span>Selected+Focus</span>
             <span>Disabled</span>
 
-            <span>base</span>
-            <span><TextButton>Normal</TextButton></span>
-            <span><TextButton hover={true}>Hover</TextButton></span>
-            <span><TextButton focus={true}>Focus</TextButton></span>
-            <span><TextButton active={true}>Active</TextButton></span>
-            <span><TextButton selected={true}>Selected</TextButton></span>
-            <span><TextButton selected={true} focus={true}>Selected+Focus</TextButton></span>
-            <span><TextButton disabled={true}>Disabled</TextButton></span>
+            <span><TextButton>Text</TextButton></span>
+            <span><TextButton hover={true}>Text</TextButton></span>
+            <span><TextButton focus={true}>Text</TextButton></span>
+            <span><TextButton active={true}>Text</TextButton></span>
+            <span><TextButton selected={true}>Text</TextButton></span>
+            <span><TextButton selected={true} focus={true}>Text</TextButton></span>
+            <span><TextButton disabled={true}>Text</TextButton></span>
 
-            <span>^ text + icon</span>
-            <span><IconTextButton>Normal</IconTextButton></span>
-            <span><IconTextButton hover={true}>Hover</IconTextButton></span>
-            <span><IconTextButton focus={true}>Focus</IconTextButton></span>
-            <span><IconTextButton active={true}>Active</IconTextButton></span>
-            <span><IconTextButton selected={true}>Selected</IconTextButton></span>
-            <span><IconTextButton selected={true} focus={true}>Selected+Focus</IconTextButton></span>
-            <span><IconTextButton disabled={true}>Disabled</IconTextButton></span>
+            <span><IconTextButton>Text</IconTextButton></span>
+            <span><IconTextButton hover={true}>Text</IconTextButton></span>
+            <span><IconTextButton focus={true}>Text</IconTextButton></span>
+            <span><IconTextButton active={true}>Text</IconTextButton></span>
+            <span><IconTextButton selected={true}>Text</IconTextButton></span>
+            <span><IconTextButton selected={true} focus={true}>Text</IconTextButton></span>
+            <span><IconTextButton disabled={true}>Text</IconTextButton></span>
 
-            <span>^ icon</span>
+            <span><Button endIcon="folder">Text</Button></span>
+            <span><Button endIcon="folder" hover={true}>Text</Button></span>
+            <span><Button endIcon="folder" focus={true}>Text</Button></span>
+            <span><Button endIcon="folder" active={true}>Text</Button></span>
+            <span><Button endIcon="folder" selected={true}>Text</Button></span>
+            <span><Button endIcon="folder" selected={true} focus={true}>Text</Button></span>
+            <span><Button endIcon="folder" disabled={true}>Text</Button></span>
+
+            <span><Button icon="folder" endIcon="folder">Text</Button></span>
+            <span><Button icon="folder" endIcon="folder" hover={true}>Text</Button></span>
+            <span><Button icon="folder" endIcon="folder" focus={true}>Text</Button></span>
+            <span><Button icon="folder" endIcon="folder" active={true}>Text</Button></span>
+            <span><Button icon="folder" endIcon="folder" selected={true}>Text</Button></span>
+            <span><Button icon="folder" endIcon="folder" selected={true} focus={true}>Text</Button></span>
+            <span><Button icon="folder" endIcon="folder" disabled={true}>Text</Button></span>
+
             <span><IconButton></IconButton></span>
             <span><IconButton hover></IconButton></span>
             <span><IconButton focus={true}></IconButton></span>
@@ -48,25 +60,40 @@ export default () => (
             <span><IconButton selected={true} focus={true}></IconButton></span>
             <span><IconButton disabled={true}></IconButton></span>
 
-            <span>base RTL</span>
-            <span dir="rtl"><TextButton>Normal</TextButton></span>
-            <span dir="rtl"><TextButton hover={true}>Hover</TextButton></span>
-            <span dir="rtl"><TextButton focus={true}>Focus</TextButton></span>
-            <span dir="rtl"><TextButton active={true}>Active</TextButton></span>
-            <span dir="rtl"><TextButton selected={true}>Selected</TextButton></span>
-            <span dir="rtl"><TextButton selected={true} focus={true}>Selected+Focus</TextButton></span>
-            <span dir="rtl"><TextButton disabled={true}>Disabled</TextButton></span>
+            <span className='k-col-span-full'><center>RTL</center></span>
 
-            <span>^ text + icon</span>
-            <span dir="rtl"><IconTextButton>Normal</IconTextButton></span>
-            <span dir="rtl"><IconTextButton hover={true}>Hover</IconTextButton></span>
-            <span dir="rtl"><IconTextButton focus={true}>Focus</IconTextButton></span>
-            <span dir="rtl"><IconTextButton active={true}>Active</IconTextButton></span>
-            <span dir="rtl"><IconTextButton selected={true}>Selected</IconTextButton></span>
-            <span dir="rtl"><IconTextButton selected={true} focus={true}>Selected+Focus</IconTextButton></span>
-            <span dir="rtl"><IconTextButton disabled={true}>Disabled</IconTextButton></span>
+            <span dir="rtl"><TextButton>Text</TextButton></span>
+            <span dir="rtl"><TextButton hover={true}>Text</TextButton></span>
+            <span dir="rtl"><TextButton focus={true}>Text</TextButton></span>
+            <span dir="rtl"><TextButton active={true}>Text</TextButton></span>
+            <span dir="rtl"><TextButton selected={true}>Text</TextButton></span>
+            <span dir="rtl"><TextButton selected={true} focus={true}>Text</TextButton></span>
+            <span dir="rtl"><TextButton disabled={true}>Text</TextButton></span>
 
-            <span>^ icon</span>
+            <span dir="rtl"><IconTextButton>Text</IconTextButton></span>
+            <span dir="rtl"><IconTextButton hover={true}>Text</IconTextButton></span>
+            <span dir="rtl"><IconTextButton focus={true}>Text</IconTextButton></span>
+            <span dir="rtl"><IconTextButton active={true}>Text</IconTextButton></span>
+            <span dir="rtl"><IconTextButton selected={true}>Text</IconTextButton></span>
+            <span dir="rtl"><IconTextButton selected={true} focus={true}>Text</IconTextButton></span>
+            <span dir="rtl"><IconTextButton disabled={true}>Text</IconTextButton></span>
+
+            <span dir="rtl"><Button endIcon="folder">Text</Button></span>
+            <span dir="rtl"><Button endIcon="folder" hover={true}>Text</Button></span>
+            <span dir="rtl"><Button endIcon="folder" focus={true}>Text</Button></span>
+            <span dir="rtl"><Button endIcon="folder" active={true}>Text</Button></span>
+            <span dir="rtl"><Button endIcon="folder" selected={true}>Text</Button></span>
+            <span dir="rtl"><Button endIcon="folder" selected={true} focus={true}>Text</Button></span>
+            <span dir="rtl"><Button endIcon="folder" disabled={true}>Text</Button></span>
+
+            <span dir="rtl"><Button icon="folder" endIcon="folder">Text</Button></span>
+            <span dir="rtl"><Button icon="folder" endIcon="folder" hover={true}>Text</Button></span>
+            <span dir="rtl"><Button icon="folder" endIcon="folder" focus={true}>Text</Button></span>
+            <span dir="rtl"><Button icon="folder" endIcon="folder" active={true}>Text</Button></span>
+            <span dir="rtl"><Button icon="folder" endIcon="folder" selected={true}>Text</Button></span>
+            <span dir="rtl"><Button icon="folder" endIcon="folder" selected={true} focus={true}>Text</Button></span>
+            <span dir="rtl"><Button icon="folder" endIcon="folder" disabled={true}>Text</Button></span>
+
             <span dir="rtl"><IconButton></IconButton></span>
             <span dir="rtl"><IconButton hover></IconButton></span>
             <span dir="rtl"><IconButton focus={true}></IconButton></span>
