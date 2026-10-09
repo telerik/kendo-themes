@@ -33,6 +33,22 @@ $kendo-button-border-radius: null !default;
 /// @group button
 $kendo-button-gap: k-spacing(2) !default;
 
+/// The spacing between icon and text inside the xsmall Button.
+/// @group button
+$kendo-button-xs-gap: $kendo-button-gap !default;
+
+/// The spacing between icon and text inside the small Button.
+/// @group button
+$kendo-button-sm-gap: $kendo-button-gap !default;
+
+/// The spacing between icon and text inside the medium Button.
+/// @group button
+$kendo-button-md-gap: $kendo-button-gap !default;
+
+/// The spacing between icon and text inside the large Button.
+/// @group button
+$kendo-button-lg-gap: $kendo-button-gap !default;
+
 /// The horizontal padding of the xsmall Button.
 /// @group button
 $kendo-button-xs-padding-x: k-spacing(3) !default;
@@ -274,6 +290,10 @@ $kendo-button-transition: color k-transition(rapid), background-color k-transiti
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-border-radius: $kendo-button-border-radius,
     $kendo-button-gap: $kendo-button-gap,
+    $kendo-button-xs-gap: $kendo-button-xs-gap,
+    $kendo-button-sm-gap: $kendo-button-sm-gap,
+    $kendo-button-md-gap: $kendo-button-md-gap,
+    $kendo-button-lg-gap: $kendo-button-lg-gap,
     $kendo-button-xs-padding-x: $kendo-button-xs-padding-x,
     $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
     $kendo-button-md-padding-x: $kendo-button-md-padding-x,
