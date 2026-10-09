@@ -42,7 +42,7 @@
     }
 
     // Option list scroll-fade overlay (aspect ratios, shapes, presets, ...)
-    .k-imageeditor-option-list-scrollable .k-imageeditor-option-list-items {
+    .k-imageeditor-option-list-scrollable {
         &::before {
             background: linear-gradient(270deg, $kendo-image-editor-option-list-scroll-gradient);
         }
@@ -116,6 +116,12 @@
     .k-imageeditor-resize .k-resize-handle,
     .k-imageeditor-resize .k-scale-handle,
     .k-imageeditor-rotate .k-scale-handle {
+        background-color: $kendo-image-editor-handle-bg;
+    }
+
+    .k-rotate-handle {
+        color: $kendo-image-editor-handle-border;
+        border-color: $kendo-image-editor-handle-border;
         background-color: $kendo-image-editor-handle-bg;
     }
 

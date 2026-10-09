@@ -39,6 +39,7 @@ export type KendoSearchboxProps = KendoSearchboxOptions & {
     value?: string;
     placeholder?: string;
     showIcon?: boolean;
+    showClearButton?: boolean;
     icon?: string;
     'aria-label'?: string;
 };
@@ -47,6 +48,7 @@ export type KendoSearchboxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     showIcon: true,
+    showClearButton: true,
     icon: "search"
 };
 
@@ -74,6 +76,7 @@ export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState
         loading,
         disabled,
         showIcon = defaultOptions.showIcon,
+        showClearButton = defaultOptions.showClearButton,
         icon = defaultOptions.icon,
         'aria-label': ariaLabel,
         ...other
@@ -98,7 +101,7 @@ export const Searchbox: KendoComponent<KendoSearchboxProps & KendoSearchboxState
             <InputInnerInput placeholder={placeholder} value={value} aria-label={ariaLabel} />
             <InputLoadingIcon {...props} />
             <InputValidationIcon {...props} />
-            <InputClearValue {...props} />
+            { showClearButton && <InputClearValue {...props} /> }
         </Input>
     );
 };

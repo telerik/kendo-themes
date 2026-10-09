@@ -1,4 +1,4 @@
-import { ImageEditorRotate } from '..';
+import { ImageEditorRotate, ImageEditorRotateHandle } from '..';
 
 
 export default () =>(
@@ -19,6 +19,7 @@ export default () =>(
                     <span className="k-scale-handle k-resize-sw"></span>
                     <span className="k-scale-handle k-resize-s"></span>
                     <span className="k-scale-handle k-resize-se"></span>
+                    <ImageEditorRotateHandle />
                 </div>
             </ImageEditorRotate>
 
