@@ -4,6 +4,7 @@
   "version": "14.7.0-dev.5",
   "author": "Progress",
   "license": "Apache-2.0",
+  "sideEffects": false,
   "keywords": [
     "Kendo UI",
     "Theme",
