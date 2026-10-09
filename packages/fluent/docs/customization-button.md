@@ -90,11 +90,51 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-xs-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the xsmall Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-gap</td>
+    <td>String</td>
+    <td><code>$kendo-button-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-gap</td>
+    <td>String</td>
+    <td><code>$kendo-button-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -572,31 +612,35 @@ The following table lists the available variables for customization.
     <td>Map</td>
     <td><code>(
     xs: (
+        gap: $kendo-button-xs-gap,
         padding-x: $kendo-button-xs-padding-x,
         padding-y: $kendo-button-xs-padding-y,
         font-size: $kendo-button-xs-font-size,
         line-height: $kendo-button-xs-line-height
     ),
     sm: (
+        gap: $kendo-button-sm-gap,
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,
         font-size: $kendo-button-sm-font-size,
         line-height: $kendo-button-sm-line-height
     ),
     md: (
+        gap: $kendo-button-md-gap,
         padding-x: $kendo-button-md-padding-x,
         padding-y: $kendo-button-md-padding-y,
         font-size: $kendo-button-md-font-size,
         line-height: $kendo-button-md-line-height
     ),
     lg: (
+        gap: $kendo-button-lg-gap,
         padding-x: $kendo-button-lg-padding-x,
         padding-y: $kendo-button-lg-padding-y,
         font-size: $kendo-button-lg-font-size,
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><ul><li>xs: "padding-x":"var(--kendo-button-xs-padding-x, var(--kendo-spacing-1))","padding-y":"calc(var(--kendo-button-xs-padding-y, var(--kendo-spacing-0\\.5)) + 1px)","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)"</li><li>sm: "padding-x":"var(--kendo-button-sm-padding-x, var(--kendo-spacing-2))","padding-y":"calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px)","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)"</li><li>md: "padding-x":"var(--kendo-button-md-padding-x, var(--kendo-spacing-3))","padding-y":"calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "padding-x":"var(--kendo-button-lg-padding-x, var(--kendo-spacing-4))","padding-y":"calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2)) + 1px)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-sm)"</li></ul></td>
+    <td><ul><li>xs: "gap":"var(--kendo-spacing-1)","padding-x":"var(--kendo-button-xs-padding-x, var(--kendo-spacing-1))","padding-y":"calc(var(--kendo-button-xs-padding-y, var(--kendo-spacing-0\\.5)) + 1px)","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)"</li><li>sm: "gap":"var(--kendo-spacing-1)","padding-x":"var(--kendo-button-sm-padding-x, var(--kendo-spacing-2))","padding-y":"calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px)","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)"</li><li>md: "gap":"var(--kendo-spacing-1\\.5)","padding-x":"var(--kendo-button-md-padding-x, var(--kendo-spacing-3))","padding-y":"calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "gap":"var(--kendo-spacing-1\\.5)","padding-x":"var(--kendo-button-lg-padding-x, var(--kendo-spacing-4))","padding-y":"calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2)) + 1px)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-sm)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Button.</div></div>
