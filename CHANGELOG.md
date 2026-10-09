@@ -1,3 +1,9 @@
+## 14.7.0-dev.4 (2026-10-09)
+
+### 🩹 Fixes
+
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
 ## 14.7.0-dev.3 (2026-10-09)
 
 ### 🩹 Fixes
