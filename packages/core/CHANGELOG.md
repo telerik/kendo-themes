@@ -1,3 +1,13 @@
+## 14.7.0-dev.5 (2026-10-09)
+
+### 🩹 Fixes
+
+- **scheduler:** remove redundant drag hint event-time rule ([48bc28d7cf](https://github.com/telerik/kendo-themes/commit/48bc28d7cf))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.0-dev.4 (2026-10-09)
 
 This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
