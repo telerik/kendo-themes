@@ -1,3 +1,36 @@
+## 14.7.0-dev.5 (2026-10-09)
+
+### 🩹 Fixes
+
+- **scheduler:** remove redundant drag hint event-time rule ([48bc28d7cf](https://github.com/telerik/kendo-themes/commit/48bc28d7cf))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.4 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.3 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.2 (2026-10-09)
+
+### 🚀 Features
+
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+
+### 🩹 Fixes
+
+- **imageeditor:** overlays should live on the non-scrolling wrapper ([cf6c962084](https://github.com/telerik/kendo-themes/commit/cf6c962084))
+- **imageeditor:** canvas should not grow/shrink with zoom ([6b279d46ae](https://github.com/telerik/kendo-themes/commit/6b279d46ae))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.7.0-dev.1 (2026-10-08)
 
 ### 🩹 Fixes

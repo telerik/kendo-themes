@@ -555,10 +555,6 @@
             }
         }
 
-        &.k-event-drag-hint .k-event-time {
-            display: block;
-        }
-
         .k-event-top-actions,
         .k-event-bottom-actions {
             position: absolute;
@@ -641,10 +637,6 @@
         .k-event-bottom-actions,
         .k-resize-handle {
             display: none;
-        }
-
-        .k-event-time {
-            display: block;
         }
     }
 

@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles } from '..';
+import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Combobox } from '../../combobox';
@@ -33,18 +33,34 @@ const contextualToolbarItems = [
     <Button fillMode="flat" key="contextual-button-5" icon="trash" aria-label="Delete"></Button>
 ];
 
+const sidebarItems = [
+    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
+    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
+    <div className="k-separator k-separator-vertical" key="sidebar-separator-1"></div>,
+    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
+    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
+    <div className="k-separator k-separator-vertical" key="sidebar-separator-2"></div>,
+    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
+    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
+    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
+    <div className="k-separator k-separator-vertical" key="sidebar-separator-3"></div>,
+    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
+    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
+];
+
 const shapeSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
     <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
     <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
+    <div className="k-separator k-separator-vertical" key="sidebar-separator-1"></div>,
     <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
     <Button fillMode="flat" key="sidebar-button-5" icon="shapes" selected aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
+    <div className="k-separator k-separator-vertical" key="sidebar-separator-2"></div>,
     <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
     <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
     <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
+    <div className="k-separator k-separator-vertical" key="sidebar-separator-3"></div>,
     <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
     <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
@@ -82,7 +98,7 @@ export default () => (
 
             <div>
                 <h4>Mobile / Adaptive / Unselected Tool</h4>
-                <ImageEditor adaptive toolbarItems={mobileToolbarItems}>
+                <ImageEditor adaptive toolbarItems={mobileToolbarItems} sidebarItems={sidebarItems}>
                     <canvas width="326" height="203" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
                 </ImageEditor>
             </div>
@@ -104,7 +120,7 @@ export default () => (
                                 <FormField
                                     label="Type"
                                     editor={
-                                        <ImageEditorOptionList scrollable scrollableEnd>
+                                        <ImageEditorOptionList scrollable scrollingPosition="both">
                                             {shapeTypes.map((shape) => (
                                                 <ImageEditorOptionPreview key={shape.label} label={shape.label} selected={shape.label === "Oval"}>
                                                     <div className="k-imageeditor-option-content">
@@ -223,6 +239,7 @@ export default () => (
                             }}>Shape text</p>
                         </div>
                         <ImageEditorResizeHandles variant="mixed" />
+                        <ImageEditorRotateHandle />
                     </div>
                 </ImageEditor>
             </div>
@@ -245,7 +262,7 @@ export default () => (
                                 <FormField
                                     label="Type"
                                     editor={
-                                        <ImageEditorOptionList scrollable scrollableEnd>
+                                        <ImageEditorOptionList scrollable scrollingPosition="end">
                                             {shapeTypes.map((shape) => (
                                                 <ImageEditorOptionPreview key={shape.label} label={shape.label} selected={shape.label === "Oval"}>
                                                     <div className="k-imageeditor-option-content">
@@ -364,6 +381,7 @@ export default () => (
                             }}>Shape text</p>
                         </div>
                         <ImageEditorResizeHandles variant="mixed" />
+                        <ImageEditorRotateHandle />
                     </div>
                 </ImageEditor>
             </div>

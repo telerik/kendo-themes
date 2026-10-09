@@ -1,3 +1,33 @@
+## 14.7.0-dev.5 (2026-10-09)
+
+### 🩹 Fixes
+
+- **scheduler:** remove redundant drag hint event-time rule ([48bc28d7cf](https://github.com/telerik/kendo-themes/commit/48bc28d7cf))
+
+## 14.7.0-dev.4 (2026-10-09)
+
+### 🩹 Fixes
+
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
+## 14.7.0-dev.3 (2026-10-09)
+
+### 🩹 Fixes
+
+- **prompt-box:** allow hiding speech-to-text button via speechToTextButtonConfig={false} ([16901705e3](https://github.com/telerik/kendo-themes/commit/16901705e3))
+- **treeview:** allow custom leaf content ([38433b76b2](https://github.com/telerik/kendo-themes/commit/38433b76b2))
+
+## 14.7.0-dev.2 (2026-10-09)
+
+### 🚀 Features
+
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+
+### 🩹 Fixes
+
+- **imageeditor:** canvas should not grow/shrink with zoom ([6b279d46ae](https://github.com/telerik/kendo-themes/commit/6b279d46ae))
+- **imageeditor:** overlays should live on the non-scrolling wrapper ([cf6c962084](https://github.com/telerik/kendo-themes/commit/cf6c962084))
+
 ## 14.7.0-dev.1 (2026-10-08)
 
 ### 🩹 Fixes

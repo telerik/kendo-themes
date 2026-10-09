@@ -7,6 +7,7 @@ export * from './imageeditor-option-preview';
 export * from './imageeditor-option-list';
 export * from './imageeditor-preview-thumbnail';
 export * from './imageeditor-resize-handles';
+export * from './imageeditor-rotate-handle';
 export * from './templates/imageeditor-normal';
 export * from './templates/imageeditor-resize';
 export * from './templates/imageeditor-rotate';

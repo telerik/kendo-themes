@@ -218,6 +218,12 @@ $kendo-image-editor-handle-border-radius: var( --kendo-image-editor-handle-borde
 /// Imageeditor scale handle size.
 /// @group image-editor
 $kendo-image-editor-scale-handle-size: var( --kendo-image-editor-scale-handle-size, #{k-spacing(3)} ) !default;
+/// Imageeditor rotate handle offset from the bottom edge of the selection frame.
+/// @group image-editor
+$kendo-image-editor-rotate-handle-offset: var( --kendo-image-editor-rotate-handle-offset, 24px ) !default;
+/// Imageeditor rotate handle padding.
+/// @group image-editor
+$kendo-image-editor-rotate-handle-padding: var( --kendo-image-editor-rotate-handle-padding, #{k-spacing(0.5)} ) !default;
 /// Imageeditor resize handle top offset.
 /// @group image-editor
 $kendo-image-editor-resize-top-offset: var( --kendo-image-editor-resize-top-offset, calc( #{$kendo-image-editor-handle-size} / 2 ) ) !default;
@@ -265,6 +271,8 @@ $kendo-image-editor-resize-left-offset: var( --kendo-image-editor-resize-left-of
     $kendo-image-editor-handle-thickness: $kendo-image-editor-handle-thickness,
     $kendo-image-editor-handle-border-radius: $kendo-image-editor-handle-border-radius,
     $kendo-image-editor-scale-handle-size: $kendo-image-editor-scale-handle-size,
+    $kendo-image-editor-rotate-handle-offset: $kendo-image-editor-rotate-handle-offset,
+    $kendo-image-editor-rotate-handle-padding: $kendo-image-editor-rotate-handle-padding,
     $kendo-image-editor-bg: $kendo-image-editor-bg,
     $kendo-image-editor-text: $kendo-image-editor-text,
     $kendo-image-editor-border: $kendo-image-editor-border,
