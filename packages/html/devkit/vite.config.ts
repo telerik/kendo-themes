@@ -74,6 +74,7 @@ function htmlFallbackPlugin(): Plugin {
     };
 }
 
+
 /**
  * Redirects legacy esbuild dev-server URLs to clean devkit routes so that
  * existing bookmarks and render-test-pages URLs continue to work.

@@ -38,13 +38,29 @@ $kendo-badge-font-weight: var( --kendo-badge-font-weight, var(--kendo-font-weigh
 
 /// Horizontal padding of the small Badge.
 /// @group badge
-$kendo-badge-sm-padding-x: k-spacing(1.5) !default;
+$kendo-badge-sm-padding-x: k-spacing(0.5) !default;
 /// Horizontal padding of the medium Badge.
 /// @group badge
-$kendo-badge-md-padding-x: var( --kendo-badge-padding-x, k-spacing(1.5) ) !default;
+$kendo-badge-md-padding-x: var( --kendo-badge-padding-x, k-spacing(1) ) !default;
 /// Horizontal padding of the large Badge.
 /// @group badge
 $kendo-badge-lg-padding-x: k-spacing(1.5) !default;
+
+/// The spacing between Badge content items.
+/// @group badge
+$kendo-badge-gap: var( --kendo-badge-gap, #{k-spacing(1)} ) !default;
+/// The horizontal padding of Badge text content.
+/// @group badge
+$kendo-badge-text-padding-x: var( --kendo-badge-text-padding-x, #{k-spacing(0.5)} ) !default;
+/// The icon-to-text gap of the small Badge.
+/// @group badge
+$kendo-badge-sm-gap: var( --kendo-badge-sm-gap, #{k-spacing(0)} ) !default;
+/// The icon-to-text gap of the medium Badge.
+/// @group badge
+$kendo-badge-md-gap: var( --kendo-badge-md-gap, #{k-spacing(1px)} ) !default;
+/// The icon-to-text gap of the large Badge.
+/// @group badge
+$kendo-badge-lg-gap: var( --kendo-badge-lg-gap, #{k-spacing(0.5)} ) !default;
 
 /// Vertical padding of the small Badge.
 /// @group badge
@@ -97,6 +113,11 @@ $kendo-badge-lg-min-width: calc( #{$kendo-badge-lg-line-height} * 1em + #{$kendo
     $kendo-badge-sm-padding-x: $kendo-badge-sm-padding-x,
     $kendo-badge-md-padding-x: $kendo-badge-md-padding-x,
     $kendo-badge-lg-padding-x: $kendo-badge-lg-padding-x,
+    $kendo-badge-gap: $kendo-badge-gap,
+    $kendo-badge-text-padding-x: $kendo-badge-text-padding-x,
+    $kendo-badge-sm-gap: $kendo-badge-sm-gap,
+    $kendo-badge-md-gap: $kendo-badge-md-gap,
+    $kendo-badge-lg-gap: $kendo-badge-lg-gap,
     $kendo-badge-sm-padding-y: $kendo-badge-sm-padding-y,
     $kendo-badge-md-padding-y: $kendo-badge-md-padding-y,
     $kendo-badge-lg-padding-y: $kendo-badge-lg-padding-y,
