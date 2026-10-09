@@ -15,8 +15,6 @@ on:
   workflow_run:
     workflows:
       - CI
-      - CI Develop
-      - Associate visual regression report
       - Cleanup visual regression report
     types: [completed]
   workflow_dispatch:
@@ -34,6 +32,7 @@ jobs:
       contents: read
       pages: write
       id-token: write
+      pull-requests: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -56,3 +55,30 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+      # visual-regression leaves the PR comment saying "Deploying..." because
+      # the report only becomes reachable once Pages has published it.
+      - name: Replace "Deploying" with the report link in the PR comment
+        if: github.event_name == 'workflow_run' && github.event.workflow_run.name == 'CI'
+        uses: actions/github-script@v9
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const { data: prs } = await github.rest.pulls.list({
+              owner, repo, state: 'open', head: `${owner}:${process.env.HEAD_BRANCH}`,
+            });
+            const pr = prs.find(p => p.head.ref === process.env.HEAD_BRANCH);
+            if (!pr) return;
+
+            const marker = '<!-- visual-regression-report -->';
+            const deploying = '⏳ Deploying the diff report...';
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number });
+            const existing = comments.find(c => c.body && c.body.includes(marker));
+            if (!existing || !existing.body.includes(deploying)) return;
+
+            const url = `${process.env.PAGE_URL}reports/pr-${pr.number}/report.html`;
+            const body = existing.body.replace(deploying, `📊 [Open the diff report](${url})`);
+            await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
