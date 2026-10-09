@@ -21,7 +21,7 @@ export default () => (
             <section>
                 <ActionSheetNormal id="actionsheet-actions-1" fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
                     }
                 >
                     <ActionSheetItems>
@@ -35,7 +35,7 @@ export default () => (
             <section>
                 <ActionSheetNormal id="actionsheet-actions-2" fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" aria-label="Back" />} title="Start" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />} title="Start" subtitle="Subtitle" />
                     }
                 >
                     <ActionSheetItems>
@@ -49,7 +49,7 @@ export default () => (
             <section>
                 <ActionSheetNormal id="actionsheet-actions-3" fullscreen
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="End" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="End" subtitle="Subtitle" />
                     }
                 >
                     <ActionSheetItems>
@@ -65,7 +65,7 @@ export default () => (
             <section className="k-rtl">
                 <ActionSheetNormal id="actionsheet-actions-4" fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="xsmall" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
                     }
                 >
                     <ActionSheetItems>
@@ -79,7 +79,7 @@ export default () => (
             <section className="k-rtl">
                 <ActionSheetNormal id="actionsheet-actions-5" fullscreen
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" aria-label="Back" />} title="Start" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="xsmall" fillMode="flat" aria-label="Back" />} title="Start" subtitle="Subtitle" />
                     }
                 >
                     <ActionSheetItems>
@@ -93,7 +93,7 @@ export default () => (
             <section className="k-rtl">
                 <ActionSheetNormal id="actionsheet-actions-6" fullscreen
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="End" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="End" subtitle="Subtitle" />
                     }
                 >
                     <ActionSheetItems>

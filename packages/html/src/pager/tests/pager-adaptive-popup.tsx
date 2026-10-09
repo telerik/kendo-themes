@@ -32,7 +32,7 @@ export default () => (
                 <ActionSheet
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="xsmall" themeColor="primary" fillMode="flat" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }
@@ -55,7 +55,7 @@ export default () => (
                     fullscreen
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="xsmall" themeColor="primary" fillMode="flat" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }

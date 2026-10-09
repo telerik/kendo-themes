@@ -225,7 +225,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 <ActionSheet {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" aria-label="Apply selection" />}
                             input={true}
                             inputValue={value}
                             inputPlaceholder={placeholder}

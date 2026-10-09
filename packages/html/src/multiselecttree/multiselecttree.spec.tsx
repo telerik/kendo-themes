@@ -203,7 +203,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                 <ActionSheet {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply selection" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" aria-label="Apply selection" />}
                             filter={adaptiveFilter}
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}

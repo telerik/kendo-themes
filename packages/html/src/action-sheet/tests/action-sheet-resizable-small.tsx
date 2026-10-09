@@ -34,8 +34,8 @@ const items = (
 
 const header = (
     <ActionSheetHeader
-        actionsStart={<Button icon="chevron-left" fillMode="flat" aria-label="Back" />}
-        actionsEnd={<Button icon="x" fillMode="flat" aria-label="Close" />}
+        actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />}
+        actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
         title="Title"
         subtitle="Subtitle"
     />

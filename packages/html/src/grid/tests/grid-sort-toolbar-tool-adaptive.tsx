@@ -178,7 +178,7 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Sort by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Sort by" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -274,7 +274,7 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Sort by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Sort by" />
                     }
                     footer={
                         <ActionSheetFooter>

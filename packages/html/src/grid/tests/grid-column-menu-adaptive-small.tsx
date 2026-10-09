@@ -165,7 +165,7 @@ export default () => (
                     template={
                         <>
                             <ActionSheetView animated header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column Menu" />
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column Menu" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -185,7 +185,7 @@ export default () => (
                             </ActionSheetView>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 1" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 1" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -280,7 +280,7 @@ export default () => (
                     template={
                         <>
                             <ActionSheetView animated header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column Menu" />
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column Menu" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -300,7 +300,7 @@ export default () => (
                             </ActionSheetView>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 1" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 1" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -395,7 +395,7 @@ export default () => (
                     template={
                         <>
                             <ActionSheetView animated header={
-                                <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column Menu" />
+                                <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column Menu" />
                             }>
                                 <ColumnMenuNormal size="large">
                                     <ColumnMenuItemWrapper>
@@ -416,7 +416,7 @@ export default () => (
                             <ActionSheetView
                                 animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                                 }
                                 footer={
                                     <ActionSheetFooter>

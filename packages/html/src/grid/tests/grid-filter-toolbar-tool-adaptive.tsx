@@ -109,7 +109,7 @@ export default () => (
                         <>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -134,7 +134,7 @@ export default () => (
                             </ActionSheetView>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -238,7 +238,7 @@ export default () => (
                         <>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -263,7 +263,7 @@ export default () => (
                             </ActionSheetView>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -367,7 +367,7 @@ export default () => (
                         <>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -392,7 +392,7 @@ export default () => (
                             </ActionSheetView>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -500,7 +500,7 @@ export default () => (
                         <>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -525,7 +525,7 @@ export default () => (
                             </ActionSheetView>
                             <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
                                 footer={
                                     <ActionSheetFooter>

@@ -28,7 +28,7 @@ export default () => (
             <section>
                 <ActionSheet id="actionsheet-calendar-1"
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Select date" />
                     }>
                     <CalendarNormal size="large" />
                 </ActionSheet>
@@ -37,7 +37,7 @@ export default () => (
             <section>
                 <ActionSheet id="actionsheet-calendar-2" fullscreen={true}
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Select date" />
                     }>
                     <CalendarNormal size="large" />
                 </ActionSheet>

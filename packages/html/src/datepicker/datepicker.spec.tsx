@@ -171,7 +171,7 @@ export const DatePicker: KendoComponent<KendoDatePickerProps & KendoDatePickerSt
                 <ActionSheet id={popupId} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" aria-label="Apply" />}
+                            actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" aria-label="Apply" />}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />

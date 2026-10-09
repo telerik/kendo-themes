@@ -163,7 +163,7 @@ export default () => (
                 <ActionSheetNormal
                     fullscreen
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 1" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 1" />
                     }
                     footer={
                         <ActionSheetFooter>

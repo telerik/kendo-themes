@@ -27,7 +27,7 @@ export default () => (
             <section>
                 <ActionSheetNormal id="actionsheet-grouping-1"
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -50,7 +50,7 @@ export default () => (
             <section>
                 <ActionSheetNormal id="actionsheet-grouping-2"
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Start & End" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>

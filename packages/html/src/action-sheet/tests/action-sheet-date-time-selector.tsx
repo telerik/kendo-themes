@@ -31,7 +31,7 @@ export default () => (
                 <ActionSheet id="actionsheet-datetime-1"
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             title="Select Date & Time"
                             subtitle="DD / MM / YY">
                         </ActionSheetHeader>
@@ -66,7 +66,7 @@ export default () => (
                 <ActionSheet id="actionsheet-datetime-2" fullscreen={true}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             title="Select Date & Time"
                             subtitle="DD / MM / YY">
                         </ActionSheetHeader>

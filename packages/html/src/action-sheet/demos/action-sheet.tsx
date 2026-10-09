@@ -89,11 +89,11 @@ export const ActionSheetDemo = (
             <ActionSheetHeader
               actionsStart={
                 additionalProps.actionsStart ? (
-                  <Button icon="chevron-left" fillMode="flat" />
+                  <Button icon="chevron-left" size="xsmall" fillMode="flat" />
                 ) : undefined
               }
               actionsEnd={
-                additionalProps.actionsEnd ? <Button icon="x" fillMode="flat" /> : undefined
+                additionalProps.actionsEnd ? <Button icon="x" size="xsmall" fillMode="flat" /> : undefined
               }
               title="Select Item"
               subtitle={additionalProps.subtitle}

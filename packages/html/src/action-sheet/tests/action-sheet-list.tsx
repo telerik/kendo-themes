@@ -29,7 +29,7 @@ export default () => (
                 <ActionSheet id="actionsheet-list-1"
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>
@@ -64,7 +64,7 @@ export default () => (
                 <ActionSheet id="actionsheet-list-2" fullscreen={true}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>
@@ -99,7 +99,7 @@ export default () => (
                 <ActionSheet id="actionsheet-list-3"
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>
@@ -141,7 +141,7 @@ export default () => (
                 <ActionSheet id="actionsheet-list-4" fullscreen={true}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>

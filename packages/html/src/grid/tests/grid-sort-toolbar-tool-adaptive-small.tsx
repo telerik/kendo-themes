@@ -179,7 +179,7 @@ export default () => (
                 <ActionSheetNormal
                     fullscreen
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Sort by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Sort by" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -276,7 +276,7 @@ export default () => (
                 <ActionSheetNormal
                     fullscreen
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Sort by" />
+                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="xsmall" fillMode="flat" />} title="Sort by" />
                     }
                     footer={
                         <ActionSheetFooter>

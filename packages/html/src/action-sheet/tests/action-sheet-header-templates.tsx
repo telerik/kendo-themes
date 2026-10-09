@@ -25,8 +25,8 @@ export default () => (
                 <ActionSheetNormal fullscreen
                     header={
                         <ActionSheetHeader
-                            actionsStart={<Button icon="chevron-left" fillMode="flat" aria-label="Back" />}
-                            actionsEnd={<Button icon="x" fillMode="flat" aria-label="Close" />}
+                            actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                         >
                             <Textbox placeholder="Search Start & End" size="large" aria-label="Search Start & End" />
                         </ActionSheetHeader>

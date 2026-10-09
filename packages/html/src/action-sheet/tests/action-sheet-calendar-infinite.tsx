@@ -28,7 +28,7 @@ export default () =>(
             <section>
                 <ActionSheet id="actionsheet-cal-inf-1"
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Select date" />
 
                     }>
                     <CalendarInfiniteNormal size="large" showNavigation={false} />
@@ -38,7 +38,7 @@ export default () =>(
             <section>
                 <ActionSheet id="actionsheet-cal-inf-2" fullscreen={true}
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />} title="Select date" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />} title="Select date" />
                     }>
                     <CalendarInfiniteNormal size="large" showNavigation={false} />
                 </ActionSheet>
