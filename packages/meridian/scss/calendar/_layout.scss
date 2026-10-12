@@ -40,6 +40,41 @@
         border-end-start-radius: $kendo-calendar-border-radius;
     }
 
+    .k-calendar-infinite.k-calendar-md.k-week-number {
+        --INTERNAL--kendo-calendar-view-width: calc( #{7 * $kendo-calendar-md-cell-size} + #{k-spacing(6)} );
+
+        .k-calendar-view {
+            .k-calendar-table {
+                width: var( --INTERNAL--kendo-calendar-view-width );
+
+                col:first-child {
+                    width: k-spacing(6);
+                }
+
+                col:nth-child(n + 2) {
+                    width: $kendo-calendar-md-cell-size;
+                }
+            }
+
+            .k-calendar-caption {
+                height: $kendo-calendar-md-cell-size;
+                padding-block: 0;
+                padding-inline: k-spacing(2.5);
+                font-size: var( --kendo-font-size-md, inherit );
+                line-height: var( --kendo-line-height-md, normal );
+                font-weight: var( --kendo-font-weight-medium, normal );
+                vertical-align: middle;
+            }
+
+            .k-calendar-td:not(.k-alt) .k-calendar-cell-inner {
+                width: calc( #{$kendo-calendar-md-cell-size} - #{k-spacing(1)} );
+                height: calc( #{$kendo-calendar-md-cell-size} - #{k-spacing(1)} );
+                margin-block: k-spacing(.5);
+                margin-inline: auto;
+            }
+        }
+    }
+
     // Calendar in popup
     .k-popup > .k-calendar {
         border-radius: inherit;

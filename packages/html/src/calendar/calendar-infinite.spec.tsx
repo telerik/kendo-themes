@@ -85,7 +85,10 @@ export const CalendarInfinite: KendoComponent<KendoCalendarInfiniteProps & Kendo
                 props.className,
                 'k-calendar',
                 CALENDARINFINITE_CLASSNAME,
-                optionClassNames('k-calendar', { size })
+                optionClassNames('k-calendar', { size }),
+                {
+                    'k-week-number': showWeekNumbers,
+                }
             )}>
             {showNavigation &&
                 <CalendarNavigation>
