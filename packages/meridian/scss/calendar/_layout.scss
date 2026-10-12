@@ -75,6 +75,10 @@
         }
     }
 
+    .k-calendar-infinite.k-calendar-md:not(.k-week-number) {
+        --INTERNAL--kendo-calendar-view-width: #{7 * $kendo-calendar-md-cell-size};
+    }
+
     // Calendar in popup
     .k-popup > .k-calendar {
         border-radius: inherit;

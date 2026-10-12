@@ -1,4 +1,4 @@
-import { CalendarInfiniteWeekNumber } from '../index';
+import { CalendarInfiniteNormal, CalendarInfiniteWeekNumber } from '../index';
 
 export default () => (
     <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -10,6 +10,16 @@ export default () => (
         <section>
             <div>infinite calendar month body without navigation bar</div>
             <CalendarInfiniteWeekNumber size="medium" showNavigation={false} />
+        </section>
+
+        <section>
+            <div>infinite calendar month body without week numbers</div>
+            <CalendarInfiniteNormal size="medium" />
+        </section>
+
+        <section>
+            <div>infinite calendar month body without week numbers or navigation bar</div>
+            <CalendarInfiniteNormal size="medium" showNavigation={false} />
         </section>
     </div>
 );
