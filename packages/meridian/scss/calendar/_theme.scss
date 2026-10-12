@@ -20,6 +20,10 @@
             background-color: $kendo-calendar-bg;
         }
 
+        &.k-calendar-md .k-calendar-td.k-other-month .k-calendar-cell-inner {
+            opacity: .7;
+        }
+
         .k-calendar-td {
             &:focus,
             &.k-focus {
