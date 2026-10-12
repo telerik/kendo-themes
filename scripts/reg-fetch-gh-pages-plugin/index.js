@@ -44,6 +44,7 @@ class GhPagesFetchPublisherPlugin {
     this.branch = config.options.branch || "gh-pages";
     this.outDir = config.options.outDir || "";
     this.includeCommitHash = config.options.includeCommitHash ?? false;
+    this.baseBranch = config.options.baseBranch || "develop";
   }
 
   publish(key) {
@@ -75,32 +76,91 @@ class GhPagesFetchPublisherPlugin {
     return Promise.resolve({ reportUrl });
   }
 
+  // The key reg-keygen-git-hash-plugin passes in is unreliable as a baseline
+  // lookup: it can be a `[skip ci]` release commit or a commit from another
+  // feature branch, neither of which ever publishes a baseline. Resolve from
+  // the fork point off the base branch instead.
   fetch(expectedKey) {
-    if (!expectedKey) {
-      this.logger.info("No expected key. Treating as new.");
+    const expectedDir = this.workingDirs.expectedDir;
+    const base = this._forkPoint() || expectedKey;
+
+    if (!base) {
+      this.logger.info("No base commit. Treating as new.");
       return Promise.resolve();
     }
-
-    const remoteDir = [this.outDir, expectedKey].filter(Boolean).join("/");
-    const remotePath = `${remoteDir}/actual`;
-    const expectedDir = this.workingDirs.expectedDir;
 
     if (!this._fetchBranch()) {
       return Promise.resolve();
     }
 
-    fs.rmSync(expectedDir, { recursive: true, force: true });
-    fs.mkdirSync(expectedDir, { recursive: true });
+    for (const { key } of this._baselineCandidates(base)) {
+      const remotePath = `${[this.outDir, key].filter(Boolean).join("/")}/actual`;
 
-    if (!this._extract(remotePath, expectedDir)) {
-      this.logger.warn(
-        `No published report found for key "${expectedKey}" (${remotePath} on ${this.branch}). Treating as new.`,
-      );
-      return Promise.resolve();
+      fs.rmSync(expectedDir, { recursive: true, force: true });
+      fs.mkdirSync(expectedDir, { recursive: true });
+
+      if (this._extract(remotePath, expectedDir)) {
+        this.logger.info(`Fetched expected images from ${this.branch}:${remotePath}`);
+        return Promise.resolve();
+      }
     }
 
-    this.logger.info(`Fetched expected images from ${this.branch}:${remotePath}`);
+    this.logger.warn(`No published baseline found for fork point ${base} on ${this.branch}. Treating as new.`);
     return Promise.resolve();
+  }
+
+  _git(args) {
+    return execFileSync("git", args, { encoding: "utf8", stdio: "pipe" }).trim();
+  }
+
+  _forkPoint() {
+    try {
+      return this._git(["merge-base", "HEAD", `origin/${this.baseBranch}`]);
+    } catch {
+      return undefined;
+    }
+  }
+
+  // Published baselines nearest to `base` first: ancestors (exact content match
+  // once release commits are skipped), then newer ones ordered by how far ahead they are.
+  _baselineCandidates(base) {
+    const prefix = this.outDir ? `${this.outDir}/` : "";
+    let entries;
+    try {
+      entries = this._git(["ls-tree", "--name-only", `origin/${this.branch}`, prefix || "./"]).split("\n");
+    } catch {
+      return [];
+    }
+
+    const candidates = [];
+    for (const entry of entries) {
+      const key = entry.slice(prefix.length);
+      // PR reports (pr-<n>) and feature-run reports (.source-sha marker) are not baselines.
+      if (!/^[0-9a-f]{40}$/.test(key)) {
+        continue;
+      }
+      try {
+        if (this._git(["ls-tree", "--name-only", `origin/${this.branch}`, "--", `${prefix}${key}/.source-sha`])) {
+          continue;
+        }
+        let isAncestor = true;
+        try {
+          execFileSync("git", ["merge-base", "--is-ancestor", key, base], { stdio: "pipe" });
+        } catch {
+          isAncestor = false;
+        }
+        const distance = isAncestor
+          ? Number(this._git(["rev-list", "--count", `${key}..${base}`]))
+          : Number(
+              this._git(["rev-list", "--count", "--invert-grep", "--grep=^chore(release):", `${base}..${key}`]),
+            );
+        candidates.push({ key, isAncestor, distance });
+      } catch {
+        // Commit not in the local clone - can't be placed relative to `base`.
+      }
+    }
+
+    return candidates.sort((a, b) => Number(b.isAncestor) - Number(a.isAncestor) || a.distance - b.distance);
   }
 
   _fetchBranch() {
