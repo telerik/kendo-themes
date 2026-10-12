@@ -23,6 +23,7 @@
         &.k-calendar-md .k-calendar-td.k-other-month {
             .k-calendar-cell-inner,
             .k-link {
+                font-weight: var( --kendo-font-weight-light, 300 );
                 opacity: .7;
             }
         }
