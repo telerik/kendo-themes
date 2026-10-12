@@ -14,9 +14,12 @@ export type KendoActionSheetViewProps = {
     children?: React.JSX.Element | React.JSX.Element[];
     header?: React.ReactElement<typeof ActionSheetHeader>;
     footer?: React.ReactElement<typeof ActionSheetFooter>;
-    adaptive?: boolean;
     animated?: boolean;
     titleId?: string;
+    /**
+     * @ux {Resize handle} Renders a drag handle used to resize the ActionSheet.
+     */
+    resizable?: boolean;
 }
 
 export const ActionSheetView = (
@@ -24,17 +27,19 @@ export const ActionSheetView = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        adaptive,
         animated,
         children,
         header,
         footer,
         titleId,
+        resizable,
         ...other
     } = props;
 
-    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} titleId={titleId} {...header?.props} />;
+    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader titleId={titleId} {...header?.props} />;
     const _ActionSheetFooter = footer?.type === ActionSheetFooter && <ActionSheetFooter {...footer?.props} />;
+
+    const handle = resizable && <div className="k-actionsheet-resize-handle" aria-hidden="true" />;
 
     return (
         <div {...other}
@@ -43,11 +48,13 @@ export const ActionSheetView = (
                 ACTIONSHEETVIEW_CLASSNAME,
                 {
                     [`${ACTIONSHEETVIEW_CLASSNAME}-animated`]: animated,
+                    'k-actionsheet-resizable': resizable,
                 }
             )}
         >
+            {handle}
             {_ActionSheetHeader}
-            <div className="k-actionsheet-content" >
+            <div className="k-actionsheet-content">
                 {children}
             </div>
             {_ActionSheetFooter}
