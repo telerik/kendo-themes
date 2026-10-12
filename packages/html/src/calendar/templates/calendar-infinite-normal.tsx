@@ -24,7 +24,7 @@ export const CalendarInfiniteNormal = ({ firstCaption = "January 2021", secondCa
                         <CalendarCell empty></CalendarCell>
                         <CalendarCell empty></CalendarCell>
                         <CalendarCell empty></CalendarCell>
-                        <CalendarCell text="1"></CalendarCell>
+                        <CalendarCell text="1" selected></CalendarCell>
                         <CalendarCell text="2" weekend></CalendarCell>
                     </CalendarTableRow>
                     <CalendarTableRow>
@@ -33,7 +33,7 @@ export const CalendarInfiniteNormal = ({ firstCaption = "January 2021", secondCa
                         <CalendarCell text="5"></CalendarCell>
                         <CalendarCell text="6"></CalendarCell>
                         <CalendarCell text="7"></CalendarCell>
-                        <CalendarCell text="8"></CalendarCell>
+                        <CalendarCell text="8" focus></CalendarCell>
                         <CalendarCell text="9" weekend></CalendarCell>
                     </CalendarTableRow>
                     <CalendarTableRow>
