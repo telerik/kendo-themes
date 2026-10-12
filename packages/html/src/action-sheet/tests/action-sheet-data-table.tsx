@@ -4,12 +4,11 @@ import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader,
 
 
 const styles = `
-    #test-area {
-        --kendo-actionsheet-height: 400px;
-        --kendo-actionsheet-max-height: 400px;
-    }
     #test-area > section {
-        height: 600px;
+        height: 720px;
+        --kendo-actionsheet-height: 60cqh;
+        --kendo-actionsheet-max-height: 60cqh;
+        container-type: size;
         outline: 1px dotted;
         overflow: hidden;
         position: relative;
@@ -26,10 +25,10 @@ export default () => (
             <span>full screen</span>
 
             <section>
-                <ActionSheet id="actionsheet-datatable-1" adaptive={true}
+                <ActionSheet id="actionsheet-datatable-1"
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>
@@ -106,10 +105,10 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheet id="actionsheet-datatable-2" adaptive={true} fullscreen={true}
+                <ActionSheet id="actionsheet-datatable-2" fullscreen={true}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" aria-label="Close" />}
+                            actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" aria-label="Close" />}
                             filter={true}
                             title="Select Item">
                         </ActionSheetHeader>

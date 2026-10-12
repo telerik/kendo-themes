@@ -3,34 +3,40 @@ import { ColorPicker } from '..';
 
 const styles = `
     #test-area {
-        --kendo-actionsheet-height: 650px;
-        --kendo-actionsheet-max-height: 650px;
+        max-width: 1100px;
     }
     #test-area > section {
-        height: 750px;
+        height: 720px;
+        --kendo-actionsheet-height: 60cqh;
+        --kendo-actionsheet-max-height: 60cqh;
+        container-type: size;
         outline: 1px dotted;
         overflow: hidden;
         position: relative;
         transform: translateZ(0);
     }
+    #test-area > section:nth-of-type(2) {
+        --kendo-actionsheet-height: 100cqh;
+        --kendo-actionsheet-max-height: 100cqh;
+    }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-5">
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span className="k-colspan-3 k-col-span-3">partial</span>
-            <span className="k-colspan-2 k-col-span-2">full screen</span>
+            <span>initial height</span>
+            <span>max height</span>
 
-            <section className="k-colspan-3 k-col-span-3">
+            <section>
                 <div className="k-label">Label</div>
                 <ColorPicker adaptive={true} adaptiveTitle="Label" />
             </section>
 
-            <section className="k-colspan-2 k-col-span-2">
+            <section>
                 <div className="k-label">Label</div>
-                <ColorPicker adaptive={true} adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
+                <ColorPicker adaptive={true} adaptiveTitle="Label" adaptiveSettings={{ resizable: true, fullscreen: true }} />
             </section>
         </div>
     </>
