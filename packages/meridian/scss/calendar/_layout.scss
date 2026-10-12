@@ -40,20 +40,10 @@
         border-end-start-radius: $kendo-calendar-border-radius;
     }
 
-    .k-calendar-infinite.k-calendar-md.k-week-number {
-        --INTERNAL--kendo-calendar-view-width: calc( #{7 * $kendo-calendar-md-cell-size} + #{k-spacing(6)} );
-
+    .k-calendar-infinite.k-calendar-md {
         .k-calendar-view {
             .k-calendar-table {
                 width: var( --INTERNAL--kendo-calendar-view-width );
-
-                col:first-child {
-                    width: k-spacing(6);
-                }
-
-                col:nth-child(n + 2) {
-                    width: $kendo-calendar-md-cell-size;
-                }
             }
 
             .k-calendar-caption {
@@ -71,6 +61,20 @@
                 height: calc( #{$kendo-calendar-md-cell-size} - #{k-spacing(1)} );
                 margin-block: k-spacing(.5);
                 margin-inline: auto;
+            }
+        }
+    }
+
+    .k-calendar-infinite.k-calendar-md.k-week-number {
+        --INTERNAL--kendo-calendar-view-width: calc( #{7 * $kendo-calendar-md-cell-size} + #{k-spacing(6)} );
+
+        .k-calendar-view .k-calendar-table {
+            col:first-child {
+                width: k-spacing(6);
+            }
+
+            col:nth-child(n + 2) {
+                width: $kendo-calendar-md-cell-size;
             }
         }
     }
