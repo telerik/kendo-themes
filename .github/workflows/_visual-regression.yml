@@ -193,7 +193,8 @@ jobs:
       # of leaving it behind under reports/pr-<number>/.
       - name: Publish report to gh-pages
         if: steps.publish-target.outputs.target-dir != ''
-        uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3.9.3
+        # Keep the tag: the org allowlist only matches @v3, a SHA pin fails workflow startup.
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ github.token }}
           publish_branch: gh-pages
