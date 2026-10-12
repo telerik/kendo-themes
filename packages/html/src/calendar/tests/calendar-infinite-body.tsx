@@ -32,12 +32,12 @@ export default () => (
 
         <section>
             <div className="k-mb-2">modern calendar month</div>
-            <CalendarNormal size="medium" showOtherMonth showComparisonStates />
+            <CalendarNormal size="medium" showOtherMonth showComparisonStates showCalendarFooter />
         </section>
 
         <section>
             <div className="k-mb-2">modern calendar week number</div>
-            <CalendarWithWeeks size="medium" showOtherMonth showComparisonStates />
+            <CalendarWithWeeks size="medium" showOtherMonth showComparisonStates showCalendarFooter />
         </section>
     </div>
 );
