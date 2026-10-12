@@ -113,7 +113,6 @@ export default () =>(
                 </List>
             </section>
 
-
             <span>Group with icon</span>
             <span>Virtual grouping with icon</span>
             <span>Group with icon (rtl)</span>
@@ -180,6 +179,79 @@ export default () =>(
                         </ListUl>
                         <ListUl>
                             <ListGroupItem groupIconName="gear">Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+                        <span>Group with item icon</span>
+            <span>Virtual grouping with item icon</span>
+            <span>Group with item icon (rtl)</span>
+            <span>Virtual grouping with item icon (rtl)</span>
+
+            <section>
+                <List>
+                    <ListContent grouping>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem iconName="folder">List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+            <section>
+                <List virtualization>
+                    <ListContent grouping virtualization>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem iconName="folder">List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+            <section dir="rtl">
+                <List>
+                    <ListContent grouping>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem iconName="folder">List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
+                            <ListItem>List item 2.1</ListItem>
+                            <ListItem>List item 2.2</ListItem>
+                        </ListUl>
+                    </ListContent>
+                </List>
+            </section>
+
+            <section dir="rtl">
+                <List virtualization>
+                    <ListContent grouping virtualization>
+                        <ListUl>
+                            <ListGroupItem>Group 1</ListGroupItem>
+                            <ListItem iconName="folder">List item 1.1</ListItem>
+                            <ListItem>List item 1.2</ListItem>
+                        </ListUl>
+                        <ListUl>
+                            <ListGroupItem>Group 2</ListGroupItem>
                             <ListItem>List item 2.1</ListItem>
                             <ListItem>List item 2.2</ListItem>
                         </ListUl>

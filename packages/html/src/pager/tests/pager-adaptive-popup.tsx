@@ -7,11 +7,12 @@ import { PagerInput } from '../templates/pager-input';
 const styles = `
     #test-area {
         grid-template-columns: 550px 350px;
-        --kendo-actionsheet-height: 400px;
-        --kendo-actionsheet-max-height: 400px;
     }
     #test-area > section {
-        height: 600px;
+        height: 720px;
+        --kendo-actionsheet-height: 60cqh;
+        --kendo-actionsheet-max-height: 60cqh;
+        container-type: size;
         outline: 1px dotted;
         overflow: hidden;
         position: relative;
@@ -30,10 +31,9 @@ export default () => (
             <section>
                 <PagerInput responsive={true} pageTitleInfo={false} refresh={false} info={false} />
                 <ActionSheet
-                    adaptive
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="xsmall" themeColor="primary" fillMode="flat" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }
@@ -53,11 +53,10 @@ export default () => (
             <section>
                 <PagerInput responsive={true} pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                 <ActionSheet
-                    adaptive
                     fullscreen
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="check" size="large" themeColor="primary" fillMode="flat" />}
+                            actionsEnd={<Button icon="check" size="xsmall" themeColor="primary" fillMode="flat" />}
                             title="Items per page">
                         </ActionSheetHeader>
                     }
