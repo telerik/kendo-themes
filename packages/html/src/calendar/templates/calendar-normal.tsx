@@ -1,6 +1,6 @@
 import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
 
-export const CalendarNormal = ({ showCaptions, showOtherMonth, ...props }: any) => (
+export const CalendarNormal = ({ showCaptions, showComparisonStates, showOtherMonth, ...props }: any) => (
     <Calendar calendarView="month"
         children={
             <CalendarTable calendarCaption={showCaptions && "October 2021"} showTableHead>
@@ -10,7 +10,7 @@ export const CalendarNormal = ({ showCaptions, showOtherMonth, ...props }: any) 
                     <CalendarCell text="28" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
                     <CalendarCell text="29" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
                     <CalendarCell text="30" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
-                    <CalendarCell text="1" />
+                    <CalendarCell text="1" selected={showComparisonStates} />
                     <CalendarCell text="2" weekend />
                 </CalendarTableRow>
                 <CalendarTableRow>
@@ -19,7 +19,7 @@ export const CalendarNormal = ({ showCaptions, showOtherMonth, ...props }: any) 
                     <CalendarCell text="5" />
                     <CalendarCell text="6" />
                     <CalendarCell text="7" />
-                    <CalendarCell text="8" />
+                    <CalendarCell text="8" focus={showComparisonStates} />
                     <CalendarCell text="9" weekend />
                 </CalendarTableRow>
                 <CalendarTableRow>

@@ -8,6 +8,7 @@ export type KendoCalendarTableProps = {
     calendarCaption?: string;
     showTableHead?: boolean;
     showWeek?: boolean;
+    colgroup?: React.ReactNode;
     ariaLabelledBy?: string;
     ariaActiveDescendant?: string;
     gridRole?: boolean;
@@ -26,6 +27,7 @@ export const CalendarTable = (
         calendarCaption,
         showTableHead,
         showWeek,
+        colgroup,
         ariaLabelledBy,
         ariaActiveDescendant,
         gridRole,
@@ -47,6 +49,7 @@ export const CalendarTable = (
             } : {
                 role: 'none'
             })}>
+            {colgroup}
             {calendarCaption &&
                 <caption className="k-calendar-caption">{calendarCaption}</caption>
             }
