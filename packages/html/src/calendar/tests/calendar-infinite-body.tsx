@@ -13,12 +13,20 @@ export default () => (
         </section>
 
         <section>
-            <div>infinite calendar month body without week numbers</div>
+            <div>
+                without week numbers
+                <br />
+                infinite calendar month body
+            </div>
             <CalendarInfiniteNormal size="medium" />
         </section>
 
         <section>
-            <div>infinite calendar month body without week numbers or navigation bar</div>
+            <div>
+                without week numbers
+                <br />
+                infinite calendar month body without navigation bar
+            </div>
             <CalendarInfiniteNormal size="medium" showNavigation={false} />
         </section>
     </div>
