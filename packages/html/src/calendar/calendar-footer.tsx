@@ -13,7 +13,7 @@ export type KendoCalendarFooterProps = {
 };
 
 const defaultOptions = {
-    calendarFooterText: "Tuesday, October 12, 2021"
+    calendarFooterText: "Today"
 };
 
 export const CalendarFooter = (
@@ -28,7 +28,7 @@ export const CalendarFooter = (
 
     return (
         <div {...other} className={classNames(props.className, CALENDARFOOTER_CLASSNAME)}>
-            <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">{calendarFooterText}</Button>
+            <Button size={size} fillMode="flat" themeColor="secondary" className="k-calendar-nav-today">{calendarFooterText}</Button>
         </div>
     );
 };
