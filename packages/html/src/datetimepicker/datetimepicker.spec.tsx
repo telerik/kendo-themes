@@ -43,6 +43,7 @@ export type KendoDateTimePickerOptions = {
 export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
+    showClearButton?: boolean;
     value?: string;
     placeholder?: string;
     opened?: boolean;
@@ -57,7 +58,8 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    tab: 'date'
+    tab: 'date',
+    showClearButton: true
 } as const;
 
 /**
@@ -85,6 +87,7 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
         rounded,
         fillMode,
         tab = defaultOptions.tab,
+        showClearButton = defaultOptions.showClearButton,
         prefix,
         suffix,
         value,
@@ -144,11 +147,11 @@ export const DateTimePicker: KendoComponent<KendoDateTimePickerProps & KendoDate
                 <InputLoadingIcon
                     loading={loading}
                     disabled={disabled} />
-                <InputClearValue
+                {showClearButton && <InputClearValue
                     loading={loading}
                     disabled={disabled}
                     readonly={readonly}
-                    value={value} />
+                    value={value} />}
                 <InputSuffix>{suffix}</InputSuffix>
                 <Button
                     className="k-input-button"

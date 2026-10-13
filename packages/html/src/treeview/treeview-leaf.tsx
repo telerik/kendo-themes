@@ -15,6 +15,7 @@ export type KendoTreeviewLeafProps = {
     text?: string;
     showIcon?: boolean;
     icon?: string;
+    children?: React.ReactNode;
 };
 
 export type KendoTreeviewLeafState = { [K in (typeof states)[number]]?: boolean };
@@ -28,6 +29,7 @@ export const TreeviewLeaf = (
         text,
         showIcon,
         icon,
+        children,
         hover,
         focus,
         selected,
@@ -49,7 +51,7 @@ export const TreeviewLeaf = (
         >
             {showIcon && <Icon icon={icon} />}
             <span className="k-treeview-leaf-text">
-                {text}
+                {children ?? text}
             </span>
         </span>
     );

@@ -1,3 +1,146 @@
+## 14.7.0-dev.7 (2026-10-13)
+
+### 🚀 Features
+
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.7.0-dev.6 (2026-10-13)
+
+### 🚀 Features
+
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.5 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.4 (2026-10-09)
+
+### 🩹 Fixes
+
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.7.0-dev.3 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.2 (2026-10-09)
+
+### 🚀 Features
+
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.7.0-dev.1 (2026-10-08)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.0 (2026-10-06)
+
+### 🚀 Features
+
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.6.1 (2026-10-06)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
+## 14.6.1-dev.2 (2026-10-05)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.6.1-dev.1 (2026-10-01)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
+## 14.6.1-dev.0 (2026-10-01)
+
+### 🩹 Fixes
+
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.6.0 (2026-09-29)
+
+### 🚀 Features
+
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+
+### 🩹 Fixes
+
+- **dock-manager:** content and tab panes have different heights ([af706e6821](https://github.com/telerik/kendo-themes/commit/af706e6821))
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+- **charts:** restore chart tooltip to color-white/color-black ([2c28b60f62](https://github.com/telerik/kendo-themes/commit/2c28b60f62))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
+## 14.5.1-dev.8 (2026-09-29)
+
+### 🚀 Features
+
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.5.1-dev.7 (2026-09-28)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.6 (2026-09-25)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.5 (2026-09-24)
+
+This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
+
 ## 14.5.1-dev.4 (2026-09-21)
 
 ### 🚀 Features

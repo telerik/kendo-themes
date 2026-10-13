@@ -33,7 +33,7 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Check for differences in packages/html
         run: |
@@ -76,27 +76,18 @@ jobs:
 
     steps:
 
-      - name: Setup Firefox
-        run: |
-          sudo wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
-          sudo tar xJf /tmp/firefox.tar.bz2 -C /opt
-          sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
-
-      - name: Print Firefox version
-        run: firefox --version
-
       - name: Checkout branch
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: ${{ inputs.node-version }}
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
-        uses: actions/cache@v6
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: node_modules
           key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
@@ -115,11 +106,6 @@ jobs:
           HEADLESS: 'true'
         run: |
           npm run test:render-test-pages
-
-      - name: Configure git identity
-        run: |
-          git config user.name "kendo-bot"
-          git config user.email "kendouiteam@progress.com"
 
       - name: Pack test pages
         env:
@@ -156,22 +142,17 @@ jobs:
             echo "Test pages will NOT be uploaded" >> $GITHUB_STEP_SUMMARY
           fi
 
+      # Markup snapshots are uploaded as an artifact, not committed here.
+      # Both the "a11y" job (see ci.yml, _test-contrast.yml) and
+      # visual-regression (see _visual-regression.yml) consume this artifact
+      # directly rather than reading tests/ off the branch, so this job
+      # doesn't need write access to the repo at all. visual-regression
+      # unpacks this same artifact into its own checkout and commits the
+      # markup snapshots together with the screenshot baseline in one commit.
       - name: Upload test pages
         if: ${{ inputs.upload-policy != 'never' }}
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: test-pages
           path: test-pages.tar
           if-no-files-found: warn
-
-      # Keeps the markup snapshots under tests/ (used by the "a11y" job, see
-      # ci.yml) in sync with packages/html - independent of the visual
-      # (screenshot) pipeline, which no longer commits anything back to the
-      # branch (reg-suit manages those on gh-pages instead, see
-      # _visual-regression.yml). Without this, tests/*.html could silently
-      # drift out of date with no signal.
-      - name: Commit and push markup snapshots
-        if: ${{ env.HAS_CHANGES == 'YES' }}
-        run: |
-          git commit -m "chore: update visual previews"
-          git push

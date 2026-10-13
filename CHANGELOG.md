@@ -1,3 +1,147 @@
+## 14.7.0-dev.7 (2026-10-13)
+
+### 🚀 Features
+
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+
+## 14.7.0-dev.6 (2026-10-13)
+
+### 🚀 Features
+
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+- **html:** add button end icon support ([74195b8c83](https://github.com/telerik/kendo-themes/commit/74195b8c83))
+
+## 14.7.0-dev.5 (2026-10-09)
+
+### 🩹 Fixes
+
+- **scheduler:** remove redundant drag hint event-time rule ([48bc28d7cf](https://github.com/telerik/kendo-themes/commit/48bc28d7cf))
+
+## 14.7.0-dev.4 (2026-10-09)
+
+### 🩹 Fixes
+
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
+## 14.7.0-dev.3 (2026-10-09)
+
+### 🩹 Fixes
+
+- **prompt-box:** allow hiding speech-to-text button via speechToTextButtonConfig={false} ([16901705e3](https://github.com/telerik/kendo-themes/commit/16901705e3))
+- **treeview:** allow custom leaf content ([38433b76b2](https://github.com/telerik/kendo-themes/commit/38433b76b2))
+
+## 14.7.0-dev.2 (2026-10-09)
+
+### 🚀 Features
+
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+
+### 🩹 Fixes
+
+- **imageeditor:** canvas should not grow/shrink with zoom ([6b279d46ae](https://github.com/telerik/kendo-themes/commit/6b279d46ae))
+- **imageeditor:** overlays should live on the non-scrolling wrapper ([cf6c962084](https://github.com/telerik/kendo-themes/commit/cf6c962084))
+
+## 14.7.0-dev.1 (2026-10-08)
+
+### 🩹 Fixes
+
+- **scheduler:** adjust event z-index ([88aac9b63c](https://github.com/telerik/kendo-themes/commit/88aac9b63c))
+
+## 14.7.0-dev.0 (2026-10-06)
+
+### 🚀 Features
+
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+## 14.6.1 (2026-10-06)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+- **scheduler:** standardize current-time marker dimensions across views ([a05fc1c994](https://github.com/telerik/kendo-themes/commit/a05fc1c994))
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+## 14.6.1-dev.2 (2026-10-05)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+
+## 14.6.1-dev.1 (2026-10-01)
+
+### 🩹 Fixes
+
+- **scheduler:** standardize current-time marker dimensions across views ([a05fc1c994](https://github.com/telerik/kendo-themes/commit/a05fc1c994))
+
+## 14.6.1-dev.0 (2026-10-01)
+
+### 🩹 Fixes
+
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+## 14.6.0 (2026-09-29)
+
+### 🚀 Features
+
+- **diagram:** add rich text editor styles ([60ba64c2e1](https://github.com/telerik/kendo-themes/commit/60ba64c2e1))
+- **html:** add buttons config to promptBox ([1226e8c373](https://github.com/telerik/kendo-themes/commit/1226e8c373))
+- **html:** redesign imageeditor toolbar, sidebar and templates ([4bf323d50b](https://github.com/telerik/kendo-themes/commit/4bf323d50b))
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+
+### 🩹 Fixes
+
+- context menu in menu popup should not have padding ([4a73cde0e5](https://github.com/telerik/kendo-themes/commit/4a73cde0e5))
+- **charts:** restore chart tooltip to color-white/color-black ([2c28b60f62](https://github.com/telerik/kendo-themes/commit/2c28b60f62))
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+- **coloreditor:** bump min-width to match actual widest view content ([886d25df5d](https://github.com/telerik/kendo-themes/commit/886d25df5d))
+- **dock-manager:** content and tab panes have different heights ([af706e6821](https://github.com/telerik/kendo-themes/commit/af706e6821))
+- **grid:** prevent column menu icon from being draggable ([60f738edbe](https://github.com/telerik/kendo-themes/commit/60f738edbe))
+- **html:** apply default border radius to toolbar overflow buttons ([0e4bb3c21b](https://github.com/telerik/kendo-themes/commit/0e4bb3c21b))
+- **html:** remove menu item first and last classes ([fda270f49b](https://github.com/telerik/kendo-themes/commit/fda270f49b))
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+- **html:** export floating-toolbar from main index ([12e1b479a1](https://github.com/telerik/kendo-themes/commit/12e1b479a1))
+- **meridian:** move backdrop-filter off .k-appbar to avoid trapping fixed descendants ([#6096](https://github.com/telerik/kendo-themes/issues/6096))
+- **meridian:** move backdrop-filter off .k-bottom-nav to avoid trapping fixed descendants ([6fdcb98fd5](https://github.com/telerik/kendo-themes/commit/6fdcb98fd5))
+- **meridian:** move backdrop-filter off .k-drawer to avoid trapping fixed descendants ([13c87061ca](https://github.com/telerik/kendo-themes/commit/13c87061ca))
+- **meridian:** move backdrop-filter off .k-expander to avoid trapping fixed descendants ([22787cbb6d](https://github.com/telerik/kendo-themes/commit/22787cbb6d))
+- **meridian:** move backdrop-filter off .k-pager to avoid trapping fixed descendants ([1ec286585c](https://github.com/telerik/kendo-themes/commit/1ec286585c))
+- **scheduler:** correct event resize handle box-sizing ([583751d2af](https://github.com/telerik/kendo-themes/commit/583751d2af))
+- **scheduler:** resize handles should stay below the sticky scheduler header ([efd10d84a5](https://github.com/telerik/kendo-themes/commit/efd10d84a5))
+- **scheduler:** time and event are misaligned in agenda view ([378a82e05a](https://github.com/telerik/kendo-themes/commit/378a82e05a))
+- **signature:** update icons and simplify component ([a21976fba3](https://github.com/telerik/kendo-themes/commit/a21976fba3))
+- **spreadsheet:** prevent clipped focus outline on menu items in meridian ([47f9eaef9d](https://github.com/telerik/kendo-themes/commit/47f9eaef9d))
+- **toolbar:** items only get flex-shrink: 0 when not wrapped in scroll container ([cdb1c0d51a](https://github.com/telerik/kendo-themes/commit/cdb1c0d51a))
+
+## 14.5.1-dev.8 (2026-09-29)
+
+### 🚀 Features
+
+- **html:** redesign imageeditor toolbar, sidebar and templates ([4bf323d50b](https://github.com/telerik/kendo-themes/commit/4bf323d50b))
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+
+## 14.5.1-dev.7 (2026-09-28)
+
+### 🩹 Fixes
+
+- **signature:** update icons and simplify component ([a21976fba3](https://github.com/telerik/kendo-themes/commit/a21976fba3))
+
+## 14.5.1-dev.6 (2026-09-25)
+
+### 🩹 Fixes
+
+- **html:** export floating-toolbar from main index ([12e1b479a1](https://github.com/telerik/kendo-themes/commit/12e1b479a1))
+
+## 14.5.1-dev.5 (2026-09-24)
+
+### 🩹 Fixes
+
+- **grid:** prevent column menu icon from being draggable ([60f738edbe](https://github.com/telerik/kendo-themes/commit/60f738edbe))
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+- **toolbar:** items only get flex-shrink: 0 when not wrapped in scroll container ([cdb1c0d51a](https://github.com/telerik/kendo-themes/commit/cdb1c0d51a))
+
 ## 14.5.1-dev.4 (2026-09-21)
 
 ### 🚀 Features

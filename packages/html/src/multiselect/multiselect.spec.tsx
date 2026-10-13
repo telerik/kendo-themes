@@ -46,6 +46,7 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
     separators?: boolean;
+    showClearButton?: boolean;
     type?: string;
     value?: string;
     placeholder?: string;
@@ -65,7 +66,8 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    separators: true
+    separators: true,
+    showClearButton: true
 };
 
 /**
@@ -103,6 +105,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
         rounded,
         fillMode,
         separators = defaultOptions.separators,
+        showClearButton = defaultOptions.showClearButton,
         prefix,
         suffix,
         value,
@@ -187,11 +190,11 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 <InputLoadingIcon
                     loading={loading}
                     disabled={disabled} />
-                <InputClearValue
+                {showClearButton && <InputClearValue
                     loading={loading}
                     disabled={disabled}
                     readonly={readonly}
-                    value={tags ? 'value' : ''} />
+                    value={tags ? 'value' : ''} />}
                 {suffix &&
                     <>
                         {separators && <InputSeparator />}

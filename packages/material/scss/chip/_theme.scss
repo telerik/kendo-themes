@@ -46,7 +46,10 @@
                 #{k-when-default($kendo-chip-default-theme-color, $name)}
                 &.k-chip-#{$name} {
                     color: k-color(#{$name}-on-surface);
-                    border-color: k-color(#{$name}-on-surface);
+
+                    @if $name != "base" {
+                        border-color: k-color(#{$name}-on-surface);
+                    }
 
                     &:hover,
                     &.k-hover,

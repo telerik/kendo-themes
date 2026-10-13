@@ -43,6 +43,7 @@ export type KendoTimeDurationPickerOptions = {
 export type KendoTimeDurationPickerProps = KendoTimeDurationPickerOptions & {
     prefix?: React.JSX.Element;
     suffix?: React.JSX.Element;
+    showClearButton?: boolean;
     value?: string;
     placeholder?: string;
     opened?: boolean;
@@ -51,6 +52,7 @@ export type KendoTimeDurationPickerProps = KendoTimeDurationPickerOptions & {
 export type KendoTimeDurationPickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
+    showClearButton: true
 };
 
 /**
@@ -81,6 +83,7 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
         size,
         rounded,
         fillMode,
+        showClearButton = defaultOptions.showClearButton,
         prefix,
         suffix,
         value,
@@ -134,11 +137,11 @@ export const TimeDurationPicker: KendoComponent<KendoTimeDurationPickerProps & K
                 <InputLoadingIcon
                     loading={loading}
                     disabled={disabled} />
-                <InputClearValue
+                {showClearButton && <InputClearValue
                     loading={loading}
                     disabled={disabled}
                     readonly={readonly}
-                    value={value} />
+                    value={value} />}
                 <InputSuffix>{suffix}</InputSuffix>
                 <Button
                     className="k-input-button"

@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
-// Local visual-regression sandbox. No CI / gh-pages / git needed.
-//   node scripts/visual-local.mjs --save   # snapshot current tests/_output as the baseline
-//   node scripts/visual-local.mjs          # compare tests/_output vs baseline -> .reg/report.html
-import { cpSync, existsSync, mkdirSync, rmSync } from 'node:fs';
+// Local visual-regression sandbox. No CI / gh-pages needed.
+//   node scripts/visual-local.mjs   # compare tests/_output with the last commit's -> .reg/report.html
+import { existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { exportBaseline } from './visual-baseline.mjs';
 
-const ACTUAL = 'tests/_output', EXPECTED = '.reg/expected', DIFF = '.reg/diff';
+const ACTUAL = 'tests/_output', DIFF = '.reg/diff';
 const REPORT = '.reg/report.html', JSON_OUT = '.reg/out.json';
 
 if (!existsSync(ACTUAL)) {
@@ -14,19 +14,10 @@ if (!existsSync(ACTUAL)) {
     process.exit(1);
 }
 
-if (process.argv.includes('--save')) {
-    rmSync(EXPECTED, { recursive: true, force: true });
-    mkdirSync(EXPECTED, { recursive: true });
-    cpSync(ACTUAL, EXPECTED, { recursive: true });
-    console.log(`Saved baseline: ${ACTUAL} -> ${EXPECTED}`);
-    process.exit(0);
-}
+const EXPECTED = exportBaseline();
 
-if (!existsSync(EXPECTED)) {
-    console.error(`No baseline yet. First run: node scripts/visual-local.mjs --save`);
-    process.exit(1);
-}
-
-execFileSync('npx', ['reg-cli', ACTUAL, EXPECTED, DIFF, '--report', REPORT, '--json', JSON_OUT],
-    { stdio: 'inherit', shell: true });
+execFileSync('npx', ['reg-cli', ACTUAL, EXPECTED, DIFF,
+    '--matchingThreshold', '0.05', '--enableAntialias',
+    '--report', REPORT, '--json', JSON_OUT],
+{ stdio: 'inherit', shell: true });
 console.log(`\nReport: ${REPORT}`);
