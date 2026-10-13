@@ -13,12 +13,22 @@ concurrency:
 
 jobs:
 
-  compile-themes:
-    name: Compile themes
-    uses: ./.github/workflows/_compile-themes.yml
+  build-html:
+    name: Build HTML devkit
+    uses: ./.github/workflows/_build-html.yml
+
+  build-themes:
+    name: Build themes
+    uses: ./.github/workflows/_build-themes.yml
+
+  build-metadata:
+    name: Build metadata
+    needs: [ build-html ]
+    uses: ./.github/workflows/_build-metadata.yml
 
   test-html-spec:
     name: Test HTML spec
+    needs: [ build-html ]
     uses: ./.github/workflows/_test-html-spec.yml
 
   ci-test-html-spec:
@@ -31,19 +41,16 @@ jobs:
 
   render-test-pages:
     name: Render test pages
+    needs: [ build-html ]
     uses: ./.github/workflows/_render-test-pages.yml
     with:
       force-render: NO
       upload-policy: conditionally
 
-  build-html:
-    name: Build HTML devkit
-    uses: ./.github/workflows/_build-html.yml
-
   create-screenshots:
     name: Create screenshots
     uses: ./.github/workflows/_create-screenshots.yml
-    needs: [ compile-themes, build-html ]
+    needs: [ build-themes, build-html ]
 
 
   # Same as before reg-suit: tests/ (markup + screenshots) is committed as-is
@@ -214,7 +221,7 @@ jobs:
 
   audit-css:
     name: Audit CSS
-    needs: [ compile-themes ]
+    needs: [ build-themes ]
     uses: ./.github/workflows/_audit-css.yml
 
   ci-audit-css:
@@ -227,7 +234,7 @@ jobs:
 
   a11y:
     name: A11y
-    needs: [ compile-themes, render-test-pages ]
+    needs: [ build-themes, render-test-pages ]
     uses: ./.github/workflows/_test-contrast.yml
     with:
       max-chunks: 4
@@ -242,7 +249,7 @@ jobs:
 
   a11y-specs:
     name: A11y Specs
-    needs: [ compile-themes ]
+    needs: [ build-html ]
     uses: ./.github/workflows/_test-a11y-specs.yml
 
   ci-a11y-specs:
@@ -254,15 +261,10 @@ jobs:
         run: echo "Done!"
 
 
-  docs:
-    name: Docs
-    needs: [ compile-themes ]
-    uses: ./.github/workflows/_docs-check.yml
-
   ci-docs:
     name: Status check > Docs
     runs-on: ubuntu-latest
-    needs: [ docs ]
+    needs: [ build-metadata ]
     steps:
       - name: Done
         run: echo "Done!"
@@ -270,6 +272,7 @@ jobs:
 
   test-units:
     name: Test units
+    needs: [ build-metadata ]
     uses: ./.github/workflows/_test-units.yml
 
   ci-test-units:
@@ -283,6 +286,7 @@ jobs:
 
   test-integrations:
     name: Test integrations
+    needs: [ build-metadata ]
     uses: ./.github/workflows/_test-integrations.yml
 
   ci-test-integrations:

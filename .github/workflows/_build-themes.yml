@@ -1,0 +1,64 @@
+name: Build themes
+
+on:
+  workflow_call:
+
+concurrency:
+  group: build-themes-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Build test assets
+        run: |
+          npm run sass
+
+      - name: Build Meridian swatches
+        run: |
+          npm --workspace=@progress/kendo-theme-meridian run sass:dist
+
+      - name: Pack themes
+        run: |
+          tar -cf themes.tar \
+            packages/core/dist/all.css \
+            packages/default/dist/all.css \
+            packages/bootstrap/dist/all.css \
+            packages/classic/dist/all.css \
+            packages/fluent/dist/all.css \
+            packages/material/dist/all.css \
+            packages/meridian/dist/all.css \
+            packages/meridian/dist/meridian-main.css \
+            packages/meridian/dist/meridian-main-dark.css \
+            packages/utils/dist/all.css
+
+      - name: Upload themes
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: themes
+          path: themes.tar

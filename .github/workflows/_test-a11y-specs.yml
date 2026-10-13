@@ -35,16 +35,14 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Download artifacts
+      - name: Download html-dist
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
-          path: .tmp
+          name: html-dist
+          path: .tmp/html-dist
 
       - name: Unpack artifacts
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
-
-      - name: Build HTML package
-        run: npm run build --prefix packages/html
 
       - name: Run A11y tests
         id: a11y-tests
