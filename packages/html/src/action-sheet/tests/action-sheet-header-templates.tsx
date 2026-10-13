@@ -22,7 +22,7 @@ export default () => (
             <span>Header with SegmentedControl (Adaptive Smartbox)</span>
 
             <section>
-                <ActionSheetNormal aria-label="Header with Searchbox" fullscreen
+                <ActionSheetNormal id="actionsheet-header-templates-1" aria-label="Header with Searchbox" fullscreen
                     header={
                         <ActionSheetHeader
                             actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" aria-label="Back" />}
@@ -50,7 +50,7 @@ export default () => (
             </section>
 
             <section>
-                <ActionSheetNormal aria-label="Header with SegmentedControl" fullscreen
+                <ActionSheetNormal id="actionsheet-header-templates-2" aria-label="Header with SegmentedControl" fullscreen
                     header={
                         <ActionSheetHeader>
                             <SegmentedControl stretched thumbStyles={{ left: "50%", right: "2px" }}>

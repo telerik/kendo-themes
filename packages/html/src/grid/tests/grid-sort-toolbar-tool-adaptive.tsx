@@ -187,6 +187,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary">Done</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-sort-1"
                 >
                     <ColumnMenuNormal size="large">
                         <ColumnMenuItemWrapper>
@@ -283,6 +284,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary">Done</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-sort-2"
                 >
                     <ColumnMenuNormal size="large">
                         <ColumnMenuItemWrapper>
