@@ -106,6 +106,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary" >Done</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-group-1"
                 >
                     <GroupMenu size="large">
                         <GroupMenuItemWrapper>
@@ -198,6 +199,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary" >Done</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-group-2"
                 >
                     <GroupMenu size="large">
                         <GroupMenuItemWrapper>
@@ -292,6 +294,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary" >Done</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-group-3"
                 >
                     <GroupMenu size="large">
                         <GroupMenuItemWrapper>
@@ -386,6 +389,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary" >Done</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-group-4"
                 >
                     <GroupMenu size="large">
                         <GroupMenuItemWrapper>

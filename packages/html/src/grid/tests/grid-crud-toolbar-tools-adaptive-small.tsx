@@ -212,9 +212,10 @@ export default () => (
                             <Button icon="save" size="large" themeColor="primary">Save</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-crud-1"
                 >
                     <FormNormal formButtons={null}>
-                        <FormField label="Header for Text" editor={ <TextboxNormal  /> }/>
+                        <FormField label="Header for Text" editor={ <TextboxNormal /> }/>
                         <FormField label="Header for Num" hint="Hint text" editor={ <NumericTextboxNormal /> }/>
                         <FormField label="Header for Date" editor={ <DatePickerNormal  /> }/>
                         <FormField editor={
@@ -402,6 +403,7 @@ export default () => (
                             <Button icon="save" size="large" themeColor="primary">Save</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-crud-2"
                 >
                     <FormNormal formButtons={null}>
                         <FormField label="Header for Text" editor={ <TextboxNormal value="Text Grid Cell" /> }/>
