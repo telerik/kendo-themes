@@ -1,3 +1,10 @@
+## 14.7.0-dev.6 (2026-10-13)
+
+### 🚀 Features
+
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+- **html:** add button end icon support ([74195b8c83](https://github.com/telerik/kendo-themes/commit/74195b8c83))
+
 ## 14.7.0-dev.5 (2026-10-09)
 
 ### 🩹 Fixes

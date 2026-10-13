@@ -1,3 +1,13 @@
+## 14.7.0-dev.6 (2026-10-13)
+
+### 🚀 Features
+
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.0-dev.5 (2026-10-09)
 
 This was a version bump only for @progress/kendo-theme-material to align it with other projects, there were no code changes.
