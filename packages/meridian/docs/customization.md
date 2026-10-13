@@ -3273,6 +3273,46 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-xs-gap</td>
+    <td>String</td>
+    <td><code>$kendo-button-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the xsmall Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-gap</td>
+    <td>String</td>
+    <td><code>$kendo-button-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-gap</td>
+    <td>String</td>
+    <td><code>$kendo-button-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-gap</td>
+    <td>String</td>
+    <td><code>$kendo-button-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between icon and text inside the large Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-xs-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -3987,31 +4027,35 @@ The following table lists the available variables for customizing the Meridian t
     <td>Map</td>
     <td><code>(
     xs: (
+        gap: $kendo-button-xs-gap,
         padding-x: $kendo-button-xs-padding-x,
         padding-y: $kendo-button-xs-padding-y,
         font-size: $kendo-button-xs-font-size,
         line-height: $kendo-button-xs-line-height
     ),
     sm: (
+        gap: $kendo-button-sm-gap,
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,
         font-size: $kendo-button-sm-font-size,
         line-height: $kendo-button-sm-line-height
     ),
     md: (
+        gap: $kendo-button-md-gap,
         padding-x: $kendo-button-md-padding-x,
         padding-y: $kendo-button-md-padding-y,
         font-size: $kendo-button-md-font-size,
         line-height: $kendo-button-md-line-height
     ),
     lg: (
+        gap: $kendo-button-lg-gap,
         padding-x: $kendo-button-lg-padding-x,
         padding-y: $kendo-button-lg-padding-y,
         font-size: $kendo-button-lg-font-size,
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><ul><li>xs: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-2\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li></ul></td>
+    <td><ul><li>xs: "gap":"var(--kendo-spacing-1\\.5)","padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li><li>sm: "gap":"var(--kendo-spacing-1\\.5)","padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)"</li><li>md: "gap":"var(--kendo-spacing-1\\.5)","padding-x":"var(--kendo-spacing-2\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "gap":"var(--kendo-spacing-1\\.5)","padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Button.</div></div>
@@ -21512,6 +21556,26 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-listbox-actions-scroll-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding around the ListBox actions that keeps the button focus indicators visible when the actions scroll.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-actions-scroll-overlay</td>
+    <td>List</td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
+    <td><code>(var(--kendo-color-app-surface), color-mix(in srgb, var(--kendo-color-app-surface) 0%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient color stops of the ListBox actions scroll overlay.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-listbox-scroller-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -30429,8 +30493,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-shadow</td>
     <td>List</td>
-    <td><code>inset 3px 0 0 0 k-color(secondary)</code></td>
-    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary))</code></td>
+    <td><code>inset 3px 0 0 0 var(--kendo-scheduler-event-accent, k-color(secondary))</code></td>
+    <td><code>(inset 3px 0 0 0 var(--kendo-scheduler-event-accent, var(--kendo-color-secondary)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Scheduler event.</div></div>
@@ -30528,9 +30592,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-scheduler-event-hover-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-scheduler-event-bg</code></td>
+    <td><code>var(--kendo-color-secondary-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Scheduler event.</div></div>
@@ -30538,9 +30602,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-scheduler-event-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-scheduler-event-text</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Scheduler event.</div></div>
@@ -30619,8 +30683,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-scheduler-event-selected-shadow</td>
     <td>List</td>
-    <td><code>inset 3px 0 0 0 k-color(secondary), 0 0 0 1px white, 0 0 0 2px k-color(primary-on-surface)</code></td>
-    <td><code>(inset 3px 0 0 0 var(--kendo-color-secondary), 0 0 0 1px white, 0 0 0 2px var(--kendo-color-primary-on-surface))</code></td>
+    <td><code>inset 3px 0 0 0 var(--kendo-scheduler-event-accent, k-color(secondary)), 0 0 0 1px white, 0 0 0 2px k-color(primary-on-surface)</code></td>
+    <td><code>(inset 3px 0 0 0 var(--kendo-scheduler-event-accent, var(--kendo-color-secondary)), 0 0 0 1px white, 0 0 0 2px var(--kendo-color-primary-on-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Scheduler event.</div></div>
