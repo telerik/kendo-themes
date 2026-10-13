@@ -170,7 +170,6 @@ jobs:
 
             const issue_number = Number(prNumber);
             const marker = '<!-- visual-regression-report -->';
-            const DEPLOYING_LINE = '⏳ Deploying the diff report...';
             const body = [
               marker,
               '## Visual Regression',
@@ -179,9 +178,7 @@ jobs:
               '|--:|--:|--:|--:|',
               `| **${changed}** | ${added} | ${deleted} | ${passed} |`,
               '',
-              // deploy-visual-reports.yml swaps this line for the report link
-              // once the Pages deployment is live.
-              DEPLOYING_LINE,
+              `📊 [Open the diff report](${reportUrl})`,
             ].join('\n');
 
             const { owner, repo } = context.repo;
