@@ -46,6 +46,7 @@ jobs:
 
       - name: Build theme metadata and docs
         run: |
+          for p in packages/*/; do mkdir -p "$p/dist/meta"; done
           npx nx run-many -t docs --exclude=@progress/kendo-themes-html
 
       - name: Build HTML a11y docs
