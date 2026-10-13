@@ -1,3 +1,13 @@
+## 14.7.0-dev.8 (2026-10-13)
+
+### 🚀 Features
+
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.0-dev.7 (2026-10-13)
 
 ### 🚀 Features
