@@ -1,3 +1,13 @@
+## 14.7.0-dev.7 (2026-10-13)
+
+### 🚀 Features
+
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
 ## 14.7.0-dev.6 (2026-10-13)
 
 ### 🚀 Features
