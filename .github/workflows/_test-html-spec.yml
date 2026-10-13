@@ -35,10 +35,6 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Build scripts
-        run: |
-          npm run build
-
       - name: Check types
         run: |
           npm run typecheck -w packages/html

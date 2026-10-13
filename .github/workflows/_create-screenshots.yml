@@ -50,13 +50,19 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
-      - name: Download artifacts
+      - name: Download html-dist
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
-          path: .tmp
+          name: html-dist
+          path: .tmp/html-dist
+
+      - name: Download themes
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: themes
+          path: .tmp/themes
 
       - name: Unpack artifacts
-        # Restores packages/html/dist (html-dist.tar) and packages/*/dist/all.css (theme tars)
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
       # tests/_output is tracked, so the checkout already holds the previous

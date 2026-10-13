@@ -1,15 +1,15 @@
-name: Compile themes
+name: Build themes
 
 on:
   workflow_call:
 
 concurrency:
-  group: compile-themes-${{ github.ref }}
+  group: build-themes-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
 
-  run:
+  compile:
     runs-on: ubuntu-latest
 
     steps:
@@ -62,3 +62,44 @@ jobs:
         with:
           name: themes
           path: themes.tar
+
+
+  dist:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Build all swatches
+        run: |
+          npm run sass:dist
+
+      - name: Pack themes dist
+        run: |
+          tar --exclude='packages/*/dist/meta' -cf themes-dist.tar packages/*/dist
+
+      - name: Upload themes dist
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: themes-dist
+          path: themes-dist.tar

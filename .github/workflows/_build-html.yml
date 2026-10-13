@@ -32,6 +32,9 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
+      - name: Build HTML package
+        run: npm run build
+
       - name: Build HTML devkit test pages
         run: npm run build:tests
 
