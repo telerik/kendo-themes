@@ -211,6 +211,7 @@ export default () => (
                             <Button icon="save" size="large" themeColor="primary">Save</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-crud-1"
                 >
                     <FormNormal formButtons={null}>
                         <FormField label="Header for Text" editor={ <TextboxNormal /> }/>
@@ -401,6 +402,7 @@ export default () => (
                             <Button icon="save" size="large" themeColor="primary">Save</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-crud-2"
                 >
                     <FormNormal formButtons={null}>
                         <FormField label="Header for Text" editor={ <TextboxNormal value="Text Grid Cell" /> }/>

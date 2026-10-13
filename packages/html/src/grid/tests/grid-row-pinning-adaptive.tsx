@@ -167,6 +167,7 @@ export default () => (
               </Button>
             </ActionSheetFooter>
           }
+          id="actionsheet-row-pinning-1"
         >
           <ColumnMenuNormal size="large">
             <ColumnMenuItemWrapper>
@@ -254,6 +255,7 @@ export default () => (
               </Button>
             </ActionSheetFooter>
           }
+          id="actionsheet-row-pinning-2"
         >
           <ColumnMenuNormal size="large">
             <ColumnMenuItemWrapper>
