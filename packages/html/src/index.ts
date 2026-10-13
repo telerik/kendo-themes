@@ -76,6 +76,7 @@ export * from './otp/index';
 export * from './fab/index';
 export * from './menu/index';
 export * from './toolbar/index';
+export * from './floating-toolbar/index';
 
 // Popups and modals
 export * from './animation-container';

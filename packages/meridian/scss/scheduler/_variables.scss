@@ -104,7 +104,7 @@ $kendo-scheduler-event-border: k-color(secondary-subtle) !default;
 $kendo-scheduler-event-gradient: null !default;
 /// The shadow of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-shadow: inset 3px 0 0 0 k-color(secondary) !default;
+$kendo-scheduler-event-shadow: inset 3px 0 0 0 var(--kendo-scheduler-event-accent, k-color(secondary)) !default;
 
 
 /// The background color of the read-only Scheduler event.
@@ -122,23 +122,26 @@ $kendo-scheduler-event-readonly-border: k-color(primary-emphasis) !default;
 $kendo-scheduler-resizer-size: 0.5em !default;
 /// The length of the Scheduler resize handle visual indicator.
 /// @group scheduler
-$kendo-scheduler-resize-handle-size: 8px !default;
+$kendo-scheduler-resize-handle-size: 12px !default;
+/// The thickness of the Scheduler resize handle visual indicator.
+/// @group scheduler
+$kendo-scheduler-resize-handle-thickness: 1px !default;
 /// The border radius of the Scheduler resize handle.
 /// @group scheduler
 $kendo-scheduler-resize-handle-border-radius: k-border-radius(full) !default;
 /// The border width of the Scheduler resize handle.
 /// @group scheduler
-$kendo-scheduler-resize-handle-border-width: 2px !default;
+$kendo-scheduler-resize-handle-border-width: 0 !default;
 /// The background color of the Scheduler resize handle.
 /// @group scheduler
-$kendo-scheduler-resize-handle-bg: $kendo-scheduler-event-bg !default;
+$kendo-scheduler-resize-handle-bg: k-color(secondary-on-subtle) !default;
 
 /// The background color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-bg: null !default;
+$kendo-scheduler-event-hover-bg: $kendo-scheduler-event-bg !default;
 /// The text color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-text: null !default;
+$kendo-scheduler-event-hover-text: $kendo-scheduler-event-text !default;
 /// The border color of the hovered Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-hover-border: null !default;
@@ -163,7 +166,7 @@ $kendo-scheduler-event-selected-border: null !default;
 $kendo-scheduler-event-selected-gradient: null !default;
 /// The shadow of the selected Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-shadow: inset 3px 0 0 0 k-color(secondary), 0 0 0 1px white, 0 0 0 2px k-color(primary-on-surface) !default;
+$kendo-scheduler-event-selected-shadow: inset 3px 0 0 0 var(--kendo-scheduler-event-accent, k-color(secondary)), 0 0 0 1px white, 0 0 0 2px k-color(primary-on-surface) !default;
 
 /// The shadow of the ongoing Scheduler event.
 /// @group scheduler
@@ -349,6 +352,7 @@ $kendo-scheduler-recurrence-fields-row-gap: k-spacing(3) !default;
     $kendo-scheduler-event-ongoing-shadow: $kendo-scheduler-event-ongoing-shadow,
     $kendo-scheduler-resizer-size: $kendo-scheduler-resizer-size,
     $kendo-scheduler-resize-handle-size: $kendo-scheduler-resize-handle-size,
+    $kendo-scheduler-resize-handle-thickness: $kendo-scheduler-resize-handle-thickness,
     $kendo-scheduler-resize-handle-border-radius: $kendo-scheduler-resize-handle-border-radius,
     $kendo-scheduler-resize-handle-border-width: $kendo-scheduler-resize-handle-border-width,
     $kendo-scheduler-resize-handle-bg: $kendo-scheduler-resize-handle-bg,

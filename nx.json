@@ -85,11 +85,13 @@
       "git": {
         "commit": true,
         "tag": true,
-        "commitMessage": "chore(release): {version}",
+        "commitMessage": "chore(release): {version} [skip ci]",
         "stageChanges": true
       }
     },
-    "releaseTagPattern": "v{version}"
+    "releaseTag": {
+      "pattern": "v{version}"
+    }
   },
   "analytics": false
 }

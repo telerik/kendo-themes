@@ -8,6 +8,10 @@
 /// @group segmented-control
 /// @role default
 $kendo-segmented-control-default-size: "md" !default;
+/// The default roundness of the Segmented Control.
+/// @group segmented-control
+/// @role default
+$kendo-segmented-control-default-roundness: "full" !default;
 
 /// The horizontal padding of the Segmented Control.
 /// @group segmented-control
@@ -111,6 +115,7 @@ $kendo-segmented-control-button-focus-indicator: inset 0 0 0 2px color-mix(in sr
 
 @forward "@progress/kendo-theme-core/scss/components/segmented-control/_variables.scss" with (
     $kendo-segmented-control-default-size: $kendo-segmented-control-default-size,
+    $kendo-segmented-control-default-roundness: $kendo-segmented-control-default-roundness,
     $kendo-segmented-control-padding-x: $kendo-segmented-control-padding-x,
     $kendo-segmented-control-padding-y: $kendo-segmented-control-padding-y,
     $kendo-segmented-control-border-radius: $kendo-segmented-control-border-radius,

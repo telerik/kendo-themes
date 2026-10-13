@@ -58,9 +58,9 @@ export default () =>(
 
             <Popup className="k-menu-popup">
                 <ContextMenu>
-                    <MenuListItem first text="Reply" icon="undo"></MenuListItem>
+                    <MenuListItem text="Reply" icon="undo"></MenuListItem>
                     <MenuListItem text="Copy" icon="copy" selected></MenuListItem>
-                    <MenuListItem last text="Pin" icon="pin"></MenuListItem>
+                    <MenuListItem text="Pin" icon="pin"></MenuListItem>
                 </ContextMenu>
             </Popup>
 

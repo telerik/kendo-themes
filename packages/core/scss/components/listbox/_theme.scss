@@ -16,6 +16,44 @@
         .k-drop-hint {
             border-block-start-color: k-color(primary);
         }
+
+        &.k-listbox-actions-left,
+        &.k-listbox-actions-right {
+            .k-listbox-actions-scrollable {
+                &::before {
+                    background: linear-gradient(180deg, $kendo-listbox-actions-scroll-overlay);
+                }
+
+                &::after {
+                    background: linear-gradient(0deg, $kendo-listbox-actions-scroll-overlay);
+                }
+            }
+        }
+
+        &.k-listbox-actions-top,
+        &.k-listbox-actions-bottom {
+            .k-listbox-actions-scrollable {
+                &::before {
+                    background: linear-gradient(90deg, $kendo-listbox-actions-scroll-overlay);
+                }
+
+                &::after {
+                    background: linear-gradient(270deg, $kendo-listbox-actions-scroll-overlay);
+                }
+            }
+        }
+    }
+
+    // RTL: reverse gradient directions for horizontal scrolling
+    :is(.k-rtl, [dir="rtl"]) .k-listbox:is(.k-listbox-actions-top, .k-listbox-actions-bottom) .k-listbox-actions-scrollable,
+    .k-listbox:is(.k-listbox-actions-top, .k-listbox-actions-bottom):is(.k-rtl, [dir="rtl"]) .k-listbox-actions-scrollable {
+        &::before {
+            background: linear-gradient(270deg, $kendo-listbox-actions-scroll-overlay);
+        }
+
+        &::after {
+            background: linear-gradient(90deg, $kendo-listbox-actions-scroll-overlay);
+        }
     }
 
 }

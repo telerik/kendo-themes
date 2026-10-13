@@ -5,13 +5,6 @@
 
     @include kendo-menu--layout-base();
 
-    .k-menu.k-menu-horizontal:not(.k-context-menu) {
-        padding-block: k-spacing(2);
-    }
-    .k-menu.k-menu-vertical:not(.k-context-menu) {
-        padding-block: k-spacing(2);
-    }
-
     .k-menu-popup :is(.k-menu-group, .k-menu-vertical) {
         padding: 0;
     }

@@ -12,4 +12,9 @@
     .k-spreadsheet-sheets-bar {
         border-inline-start: 0;
     }
+
+    // Prevent the focus outline from being clipped by the menu bounds
+    .k-spreadsheet-menu > .k-item {
+        --kendo-focus-outline-offset: -1px;
+    }
 }

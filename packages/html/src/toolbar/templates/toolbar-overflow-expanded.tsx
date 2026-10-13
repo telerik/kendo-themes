@@ -13,7 +13,6 @@ export const ToolbarOverflowExpanded = (props) => (
                 icon="more-vertical"
                 className="k-toolbar-overflow-button"
                 fillMode="flat"
-                rounded="none"
                 id="overflow-menu-btn"
                 aria-label="More options"
                 aria-haspopup="menu"
@@ -25,8 +24,8 @@ export const ToolbarOverflowExpanded = (props) => (
         </Toolbar>
         <ToolbarPopup>
             <MenuList id="overflow-menu-group" aria-labelledby="overflow-menu-btn">
-                <MenuListItem first text="Item 1" />
-                <MenuListItem last text="Item 2" />
+                <MenuListItem text="Item 1" />
+                <MenuListItem text="Item 2" />
             </MenuList>
         </ToolbarPopup>
     </>

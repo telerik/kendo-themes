@@ -26,6 +26,7 @@ export type KendoTreeviewItemProps = {
     expanded?: boolean;
     loading?: boolean;
     text?: string;
+    content?: React.ReactNode;
     showIcon?: boolean;
     icon?: string;
     showCheckbox?: boolean;
@@ -61,6 +62,7 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
         expanded,
         loading,
         text,
+        content,
         showIcon,
         icon,
         showCheckbox,
@@ -122,7 +124,9 @@ export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeview
                     text={text}
                     showIcon={showIcon}
                     icon={icon}
-                />
+                >
+                    {content}
+                </TreeviewLeaf>
             </span>
             {expanded && _hasChildren &&
                 React.Children.map(children, (child, index) =>

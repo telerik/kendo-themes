@@ -7,8 +7,9 @@ import { isEditable } from '../lib/dom';
 import { useQuickCycle } from '../lib/useShortcuts';
 import { useThemeStatus } from '../lib/useThemeStatus';
 import { DevBarSearch } from './DevBarSearch';
+import { HoverPopover } from './HoverPopover';
 import { Select } from './Select';
-import { BackIcon, KendoLogo, PlayIcon, SearchIcon } from './icons';
+import { BackIcon, PlayIcon, SearchIcon, TranslucencyIcon } from './icons';
 import '../devkit.css';
 
 export function DevBar() {
@@ -69,12 +70,15 @@ export function DevBar() {
                     className="devkit-bar"
                     data-visible={expanded}
                 >
-                    <div className="devkit-brand">
-                        <KendoLogo className="devkit-logo" />
-                        <span>Dev</span>
-                    </div>
-
-                    <div className="devkit-sep" aria-hidden="true" />
+                    {isDemo && (
+                        <>
+                            <a className="devkit-action" href={listingHref} aria-label="Back to component listing">
+                                <BackIcon className="devkit-icon" />
+                                <span>Home</span>
+                            </a>
+                            <div className="devkit-sep" aria-hidden="true" />
+                        </>
+                    )}
 
                     <button
                         className="devkit-action"
@@ -86,16 +90,6 @@ export function DevBar() {
                         <kbd className="devkit-kbd">⌘K</kbd>
                     </button>
 
-                    {isDemo && (
-                        <>
-                            <div className="devkit-sep" aria-hidden="true" />
-                            <a className="devkit-action" href={listingHref} aria-label="Back to component listing">
-                                <BackIcon className="devkit-icon" />
-                                <span>All demos</span>
-                            </a>
-                        </>
-                    )}
-
                     <div className="devkit-sep" aria-hidden="true" />
 
                     <Select
@@ -105,26 +99,91 @@ export function DevBar() {
                         onChange={theme => setParams({ theme })}
                     />
                     <Select
+                        className="devkit-select-gap"
                         label="Swatch"
                         value={params.swatch}
                         options={swatches}
                         onChange={swatch => setParams({ swatch })}
                     />
 
+                    {params.theme === 'meridian' && (
+                        <>
+                            <div className="devkit-sep" aria-hidden="true" />
+                            <HoverPopover
+                                label="Translucency"
+                                trigger={open => (
+                                    <button
+                                        type="button"
+                                        className={`devkit-action devkit-icon-btn${params.translucency > 0 ? ' devkit-toggle-on' : ''}`}
+                                        aria-haspopup="true"
+                                        aria-expanded={open}
+                                        aria-label="Translucency"
+                                        title={`Translucency: ${params.translucency}%`}
+                                    >
+                                        <TranslucencyIcon className="devkit-icon" />
+                                    </button>
+                                )}
+                            >
+                                <div className="devkit-hover-panel-title">Translucency</div>
+                                <div className="devkit-slider-group">
+                                    <input
+                                        type="range"
+                                        className="devkit-slider"
+                                        min={0}
+                                        max={100}
+                                        step={5}
+                                        value={params.translucency}
+                                        aria-label="Translucency"
+                                        aria-valuetext={`${params.translucency}%`}
+                                        onChange={e => setParams({ translucency: Number(e.target.value) })}
+                                    />
+                                    <span className="devkit-slider-value">{params.translucency}%</span>
+                                </div>
+                            </HoverPopover>
+                        </>
+                    )}
+
                     <div className="devkit-sep" aria-hidden="true" />
 
-                    <button
-                        className={`devkit-action devkit-motion-toggle${params.animations ? ' devkit-toggle-on' : ''}`}
-                        onClick={() => setParams({ animations: !params.animations })}
-                        aria-pressed={params.animations}
-                        title={params.animations ? 'Disable animations' : 'Enable animations'}
+                    <HoverPopover
+                        label="Animations"
+                        trigger={open => (
+                            <button
+                                type="button"
+                                className={`devkit-action devkit-icon-btn devkit-motion-toggle${params.animations ? ' devkit-toggle-on' : ''}`}
+                                aria-haspopup="true"
+                                aria-expanded={open}
+                                aria-label="Animations"
+                                title={params.animations ? 'Animations on' : 'Animations off'}
+                            >
+                                <PlayIcon className="devkit-icon" />
+                            </button>
+                        )}
                     >
-                        <PlayIcon className="devkit-icon" />
-                        <span>Animations</span>
-                        <span className="devkit-switch" aria-hidden="true">
-                            <span className="devkit-switch-thumb" />
-                        </span>
-                    </button>
+                        <div className="devkit-hover-panel-title">Animations</div>
+                        <div className="devkit-option-list">
+                            <button
+                                type="button"
+                                role="menuitemradio"
+                                aria-checked={!params.animations}
+                                className={`devkit-option${!params.animations ? ' devkit-option-active' : ''}`}
+                                onClick={() => setParams({ animations: false })}
+                            >
+                                <span>Off</span>
+                                {!params.animations && <span className="devkit-option-check" aria-hidden="true" />}
+                            </button>
+                            <button
+                                type="button"
+                                role="menuitemradio"
+                                aria-checked={params.animations}
+                                className={`devkit-option${params.animations ? ' devkit-option-active' : ''}`}
+                                onClick={() => setParams({ animations: true })}
+                            >
+                                <span>On</span>
+                                {params.animations && <span className="devkit-option-check" aria-hidden="true" />}
+                            </button>
+                        </div>
+                    </HoverPopover>
                 </div>
             </div>
 

@@ -715,6 +715,21 @@ const getIndicatorColor = async(el, browser) => {
                 value = colorMatch[0];
             }
         }
+    } else if (typeof value === 'string' && value.indexOf(',') > -1) {
+        // Multi-layer non-inset box-shadow (e.g. a two-tone ring: a spacer
+        // color matching the element's own background, followed by the
+        // actual accent-colored ring). The last-listed layer has the
+        // largest spread and is the one that sits against the surrounding
+        // background — that is the visible indicator; earlier layers are
+        // just spacers separating the ring from the element's own border.
+        const segments = value.split(/,(?![^()]*\))/).map(s => s.trim());
+        const colorMatch = segments[segments.length - 1].match(
+            /rgba?\([^)]+\)|#[0-9a-fA-F]{3,8}|oklch\([^)]+\)|color\(srgb[^)]+\)/
+        );
+
+        if (colorMatch) {
+            value = colorMatch[0];
+        }
     }
 
     return decomposeColor(value);

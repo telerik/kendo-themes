@@ -10,7 +10,7 @@ const styles = `
     }
 
     .k-animation-container {
-        width: min-content;
+        width: max-content;
         position: relative;
         overflow: visible;
     }
@@ -28,11 +28,11 @@ export default () =>(
                 <MenuButton icon="menu" fillMode="flat" showArrow={false} />
                 <Popup className="k-menu-popup">
                     <MenuList>
-                        <MenuListItem first icon="folder-open" text="Open" />
+                        <MenuListItem icon="folder-open" text="Open" />
                         <MenuListItem icon="download" text="Download" />
                         <MenuListItem icon="print" text="Print" />
                         <MenuSeparator></MenuSeparator>
-                        <MenuListItem last icon="question" text="Help" />
+                        <MenuListItem icon="question" text="Help" />
                     </MenuList>
                 </Popup>
             </div>

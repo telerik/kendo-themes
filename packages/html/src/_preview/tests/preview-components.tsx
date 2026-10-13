@@ -960,7 +960,7 @@ export default () => (
                 <Menu
                   children={
                     <>
-                      <MenuItem first text="Item 1"></MenuItem>
+                      <MenuItem text="Item 1"></MenuItem>
                       <MenuItem showArrow arrowIconName="chevron-down" text="Item 2" active></MenuItem>
                       <MenuItem showArrow arrowIconName="chevron-down" text="Item 3"></MenuItem>
                     </>
@@ -969,13 +969,13 @@ export default () => (
                     <>
                       <Popup className="k-menu-popup">
                         <MenuList>
-                          <MenuListItem first text="Disabled" disabled></MenuListItem>
+                          <MenuListItem text="Disabled" disabled></MenuListItem>
                           <MenuListItem text="Normal"></MenuListItem>
                           <MenuListItem text="Hover" hover showArrow></MenuListItem>
                           <MenuSeparator></MenuSeparator>
                           <MenuListItem text="Active" active showArrow></MenuListItem>
                           <MenuListItem text="Focus" focus></MenuListItem>
-                          <MenuListItem last text="Focus & Active" active focus></MenuListItem>
+                          <MenuListItem text="Focus & Active" active focus></MenuListItem>
                         </MenuList>
                       </Popup>
                     </>
@@ -1090,7 +1090,7 @@ export default () => (
               <div>
                 <div className="preview-label">Spreadsheet</div>
                 <SpreadsheetNormal>
-                  <SpreadsheetHeader menuItems={[<MenuItem first text="File" active />, <MenuItem text="Home" />, <MenuItem text="Insert" />, <MenuItem text="Format" />, <MenuItem text="Formulas" />, <MenuItem text="Data" />, <MenuItem last text="View" />]} toolbarItems={[<Button icon="file-add" fillMode="flat"></Button>, <Button icon="folder-add" fillMode="flat"></Button>, <ToolbarSeparator></ToolbarSeparator>, <Button icon="download" fillMode="flat"></Button>, <ToolbarSeparator></ToolbarSeparator>, <Button icon="print" fillMode="flat"></Button>]} />
+                  <SpreadsheetHeader menuItems={[<MenuItem text="File" active />, <MenuItem text="Home" />, <MenuItem text="Insert" />, <MenuItem text="Format" />, <MenuItem text="Formulas" />, <MenuItem text="Data" />, <MenuItem text="View" />]} toolbarItems={[<Button icon="file-add" fillMode="flat"></Button>, <Button icon="folder-add" fillMode="flat"></Button>, <ToolbarSeparator></ToolbarSeparator>, <Button icon="download" fillMode="flat"></Button>, <ToolbarSeparator></ToolbarSeparator>, <Button icon="print" fillMode="flat"></Button>]} />
                   <SpreadsheetActionBar />
                   <SpreadsheetView selection={<div className="k-spreadsheet-selection k-single-selection" style={{ width: "101px", height: "31px", top: "125px", left: "30px" }} />} rowHeaderSelection={{ 3: "partial" }} activeCellIndex={8} />
                   <SpreadsheetSheetsBar />

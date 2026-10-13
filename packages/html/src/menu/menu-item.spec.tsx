@@ -19,8 +19,6 @@ export type KendoMenuItemProps = {
     text?: string;
     icon?: string;
     iconPosition?: "before" | "after";
-    first?: boolean;
-    last?: boolean;
     showArrow?: boolean;
     arrowIconName?: string;
     dir?: "rtl" | "ltr";
@@ -59,8 +57,6 @@ export const MenuItem: KendoComponent<KendoMenuItemProps & KendoMenuItemState & 
         disabled,
         icon,
         text,
-        first,
-        last,
         showArrow,
         arrowIconName,
         iconPosition = defaultOptions.iconPosition,
@@ -92,11 +88,7 @@ export const MenuItem: KendoComponent<KendoMenuItemProps & KendoMenuItemState & 
                     hover,
                     active,
                     selected,
-                }),
-                {
-                    ["k-first"]: first,
-                    ["k-last"]: last,
-                }
+                })
             )}
             role="menuitem"
             {...(showArrow && { 'aria-haspopup': 'menu' as const })}

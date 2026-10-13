@@ -1,18 +1,18 @@
 name: Cleanup visual regression report
 
 # PR/feature-branch visual-regression runs publish to reports/pr-<number>/ and
-# republish over that same folder on every push (see _visual-regression.yml
-# and reg-fetch-gh-pages-plugin), so nothing accumulates while the PR is open.
-# Once the PR closes (merged or not) there's no further use for that report,
-# so remove it from gh-pages here to keep the branch bounded by open-PR count
-# rather than growing forever.
+# republish over that same folder on every push (see _visual-regression.yml),
+# so nothing accumulates while the PR is open. Once the PR closes (merged or
+# not) there's no further use for that report, so remove it from gh-pages
+# here to keep the branch bounded by open-PR count rather than growing
+# forever.
 
 on:
   pull_request:
     types: [closed]
 
 concurrency:
-  group: cleanup-visual-regression-${{ github.event.pull_request.number }}
+  group: visual-regression-refs/heads/${{ github.event.pull_request.head.ref }}
 
 jobs:
   cleanup:
@@ -20,20 +20,31 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: gh-pages
           fetch-depth: 1
 
       - name: Remove PR report folder
+        id: cleanup
         run: |
-          DIR="reports/pr-${{ github.event.pull_request.number }}"
-          if [ -d "$DIR" ]; then
+          PR_DIR="reports/pr-${{ github.event.pull_request.number }}"
+          removed=false
+          if [ -d "$PR_DIR" ]; then
             git config user.name "kendo-bot"
             git config user.email "kendouiteam@progress.com"
-            git rm -r --ignore-unmatch "$DIR"
+            git rm -r "$PR_DIR"
+            removed=true
+          fi
+
+          if [ "$removed" = "true" ]; then
             git commit -m "chore(ci): remove visual regression report for closed PR #${{ github.event.pull_request.number }}"
-            git push origin gh-pages
+            for attempt in 1 2 3; do
+              git push origin gh-pages && break
+              [ "$attempt" -eq 3 ] && exit 1
+              git pull --rebase origin gh-pages
+            done
+            echo "removed=true" >> "$GITHUB_OUTPUT"
           else
-            echo "No report folder found at $DIR, nothing to clean up."
+            echo "No report folders found for this PR, nothing to clean up."
           fi

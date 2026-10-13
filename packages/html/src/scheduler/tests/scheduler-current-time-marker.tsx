@@ -206,7 +206,7 @@ export default () => (
                                 </td>
                                 <td>
                                     <SchedulerContent style={{ height: "195px" }} >
-                                        <div className="k-current-time" style={{ top: "115px", height: "1px", right: "0px", width: "888px", left: "0px;" }}></div>
+                                        <div className="k-current-time" style={{ top: "115px", right: "0px", left: "0px;" }}></div>
                                         <SchedulerTable>
                                             <tbody>
                                                 <tr className="k-middle-row">
@@ -539,7 +539,7 @@ export default () => (
                                 </td>
                                 <td>
                                     <SchedulerContent style={{ height: "100px" }}>
-                                        <div className="k-current-time" style={{ left: "528px", width: "1px", height: "100px", top: '0px' }} ></div>
+                                        <div className="k-current-time" style={{ left: "528px", top: '0px' }} ></div>
                                         <SchedulerTable style={{ width: '100%' }}>
                                             <tbody>
                                                 <tr style={{ height: '50px' }}>
