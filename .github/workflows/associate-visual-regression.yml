@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Resolve current pull request
         id: resolve
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const { owner, repo } = context.repo;
@@ -88,7 +88,7 @@ jobs:
       - name: Wait for a published report
         id: report
         if: steps.resolve.outputs.pr-number != ''
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
           REPORT_SHA: ${{ steps.resolve.outputs.sha }}
@@ -138,7 +138,7 @@ jobs:
 
       - name: Check out report paths
         if: steps.report.outputs.location != ''
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: gh-pages
           fetch-depth: 1
@@ -150,7 +150,7 @@ jobs:
       - name: Confirm report is for latest branch CI
         id: current
         if: steps.report.outputs.location != ''
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
           HEAD_BRANCH: ${{ steps.resolve.outputs.branch }}
@@ -217,7 +217,7 @@ jobs:
       - name: Validate published association
         id: final
         if: steps.current.outputs.matches == 'true'
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
           HEAD_BRANCH: ${{ steps.resolve.outputs.branch }}
@@ -269,7 +269,7 @@ jobs:
 
       - name: Repair reports index
         if: steps.move.outputs.moved == 'true' && steps.final.outputs.matches == 'true'
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const { owner, repo } = context.repo;
@@ -322,7 +322,7 @@ jobs:
 
       - name: Comment on pull request
         if: steps.final.outputs.matches == 'true'
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           PR_NUMBER: ${{ steps.resolve.outputs.pr-number }}
           REPORT_SHA: ${{ steps.resolve.outputs.sha }}
