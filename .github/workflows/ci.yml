@@ -286,7 +286,7 @@ jobs:
 
   test-integrations:
     name: Test integrations
-    needs: [ build-themes ]
+    needs: [ build-metadata ]
     uses: ./.github/workflows/_test-integrations.yml
 
   ci-test-integrations:

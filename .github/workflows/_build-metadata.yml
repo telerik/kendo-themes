@@ -60,7 +60,7 @@ jobs:
 
       - name: Pack metadata
         run: |
-          tar -cf metadata.tar packages/*/dist/meta
+          find packages -maxdepth 3 \( -path "*/dist/meta" -o -path "*/dist/all.scss" \) -print0 | xargs -0 tar -cf metadata.tar
 
       - name: Upload metadata
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
