@@ -188,6 +188,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary">Apply</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-columns-1"
                 >
                     <ColumnList size="large">
                         <ColumnListItem checked disabled label="Header Name 1" />
@@ -283,6 +284,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary">Apply</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-columns-2"
                 >
                     <ColumnList size="large">
                         <ColumnListItem checked label="Header Name 1" />

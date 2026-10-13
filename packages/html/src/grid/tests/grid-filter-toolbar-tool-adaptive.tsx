@@ -105,7 +105,7 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
+                <ActionSheetNormal id="actionsheet-filter-1" style={{ "--kendo-actionsheet-view-current": "1" }}
                     template={
                         <>
                             <ActionSheetView animated
@@ -234,7 +234,7 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" }}
+                <ActionSheetNormal id="actionsheet-filter-2" style={{ "--kendo-actionsheet-view-current": "2" }}
                     template={
                         <>
                             <ActionSheetView animated
@@ -415,6 +415,7 @@ export default () => (
                             </ActionSheetView>
                         </>
                     }
+                    id="actionsheet-filter-3"
                 >
                 </ActionSheetNormal>
             </section>
@@ -496,7 +497,7 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
+                <ActionSheetNormal id="actionsheet-filter-4" style={{ "--kendo-actionsheet-view-current": "1" }}
                     template={
                         <>
                             <ActionSheetView animated

@@ -79,7 +79,7 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                         },
                     )}>
                     {template ? template :
-                        <ActionSheetView header={header} footer={footer} titleId={titleId} resizable={resizable} {...props}>
+                        <ActionSheetView header={header} footer={footer} titleId={titleId} resizable={resizable}>
                             {children}
                         </ActionSheetView>
                     }

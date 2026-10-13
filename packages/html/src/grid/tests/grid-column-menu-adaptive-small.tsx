@@ -161,7 +161,7 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" } as React.CSSProperties}
+                <ActionSheetNormal id="actionsheet-column-menu-1" style={{ "--kendo-actionsheet-view-current": "1" } as React.CSSProperties}
                     fullscreen
                     template={
                         <>
@@ -276,7 +276,7 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" } as React.CSSProperties}
+                <ActionSheetNormal id="actionsheet-column-menu-2" style={{ "--kendo-actionsheet-view-current": "2" } as React.CSSProperties}
                     fullscreen
                     template={
                         <>
@@ -391,7 +391,7 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" } as React.CSSProperties}
+                <ActionSheetNormal id="actionsheet-column-menu-3" style={{ "--kendo-actionsheet-view-current": "2" } as React.CSSProperties}
                     fullscreen
                     template={
                         <>
