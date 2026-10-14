@@ -14,7 +14,7 @@ The Badge is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
-| `fillMode` | `solid`, `outline` | — |
+| `fillMode` | `solid`, `tint`, `outline` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `info`, `success`, `warning`, `error` | — |
 
 #### UX Behavior
