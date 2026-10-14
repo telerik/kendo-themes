@@ -15,7 +15,9 @@ permissions:
 
 jobs:
   post-status-comment:
-    if: github.actor != 'dependabot[bot]'
+    # kendo-bot only pushes "update visual previews" commits (tests/ only),
+    # which cannot change package sizes; skipping avoids a second run needing approval.
+    if: github.actor != 'dependabot[bot]' && github.actor != 'kendo-bot'
     name: Post Status Comment
     runs-on: ubuntu-latest
     steps:
