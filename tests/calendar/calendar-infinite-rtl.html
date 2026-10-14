@@ -160,7 +160,7 @@
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
-                                        <td class="k-calendar-td" role="gridcell">
+                                        <td class="k-calendar-td k-selected" role="gridcell" aria-selected="true">
                                             <span class="k-link">1</span>
                                         </td>
                                         <td class="k-calendar-td k-weekend" role="gridcell">
@@ -183,7 +183,7 @@
                                         <td class="k-calendar-td" role="gridcell">
                                             <span class="k-link">7</span>
                                         </td>
-                                        <td class="k-calendar-td" role="gridcell">
+                                        <td class="k-calendar-td k-focus" role="gridcell">
                                             <span class="k-link">8</span>
                                         </td>
                                         <td class="k-calendar-td k-weekend" role="gridcell">
@@ -340,7 +340,7 @@
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
-                                        <td class="k-calendar-td" role="gridcell">
+                                        <td class="k-calendar-td k-selected" role="gridcell" aria-selected="true">
                                             <span class="k-link">1</span>
                                         </td>
                                         <td class="k-calendar-td k-weekend" role="gridcell">
@@ -363,7 +363,7 @@
                                         <td class="k-calendar-td" role="gridcell">
                                             <span class="k-link">7</span>
                                         </td>
-                                        <td class="k-calendar-td" role="gridcell">
+                                        <td class="k-calendar-td k-focus" role="gridcell">
                                             <span class="k-link">8</span>
                                         </td>
                                         <td class="k-calendar-td k-weekend" role="gridcell">
@@ -464,7 +464,7 @@
             </section>
             <section>
                 <div>infinite calendar - week number column</div>
-                <div dir="rtl" class="k-calendar k-calendar-infinite">
+                <div dir="rtl" class="k-calendar k-calendar-infinite k-week-number">
                     <div class="k-calendar-navigation">
                         <span class="k-calendar-navigation-highlight"></span>
                         <div class="k-content k-scrollable">
@@ -566,6 +566,7 @@
                                 <col>
                                 <col>
                                 <col>
+                                <col>
                             </colgroup>
                             <thead class="k-calendar-thead" role="rowgroup">
                                 <tr class="k-calendar-tr" role="row">
@@ -592,9 +593,11 @@
                                     <col>
                                     <col>
                                     <col>
+                                    <col>
                                 </colgroup>
                                 <tbody class="k-calendar-tbody" role="rowgroup">
                                     <tr aria-hidden="true" class="k-calendar-tr" role="row">
+                                        <td class="k-calendar-td k-alt"></td>
                                         <th scope="col" colspan="7" class="k-calendar-caption">January 2021</th>
                                     </tr>
                                     <tr class="k-calendar-tr" role="row">
@@ -604,7 +607,7 @@
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
                                         <td class="k-calendar-td k-empty" role="gridcell">&nbsp;</td>
-                                        <td class="k-calendar-td" role="gridcell">
+                                        <td class="k-calendar-td k-selected" role="gridcell" aria-selected="true">
                                             <span class="k-link">1</span>
                                         </td>
                                         <td class="k-calendar-td k-weekend" role="gridcell">
@@ -628,7 +631,7 @@
                                         <td class="k-calendar-td" role="gridcell">
                                             <span class="k-link">7</span>
                                         </td>
-                                        <td class="k-calendar-td" role="gridcell">
+                                        <td class="k-calendar-td k-focus" role="gridcell">
                                             <span class="k-link">8</span>
                                         </td>
                                         <td class="k-calendar-td k-weekend" role="gridcell">
@@ -722,6 +725,7 @@
                                 </tbody>
                                 <tbody class="k-calendar-tbody" role="rowgroup">
                                     <tr aria-hidden="true" class="k-calendar-tr" role="row">
+                                        <td class="k-calendar-td k-alt"></td>
                                         <th scope="col" colspan="7" class="k-calendar-caption">February 2021</th>
                                     </tr>
                                 </tbody>
@@ -1295,7 +1299,7 @@
             </section>
             <section>
                 <div>infinite calendar - week number column with selected range</div>
-                <div dir="rtl" class="k-calendar-range k-calendar k-calendar-infinite">
+                <div dir="rtl" class="k-calendar-range k-calendar k-calendar-infinite k-week-number">
                     <div class="k-calendar-navigation">
                         <span class="k-calendar-navigation-highlight"></span>
                         <div class="k-content k-scrollable">
@@ -1390,6 +1394,7 @@
                         </div>
                         <table class="k-calendar-weekdays k-calendar-table" role="table">
                             <colgroup>
+                                <col>
                                 <col>
                                 <col>
                                 <col>

@@ -1,9 +1,23 @@
 import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
 
-export const CalendarWithWeeks = ({ showOtherMonth, ...props }: any) => (
+export const CalendarWithWeeks = ({ showComparisonStates, showOtherMonth, ...props }: any) => (
     <Calendar calendarView="month" showWeek
         children={
-            <CalendarTable showTableHead showWeek>
+            <CalendarTable
+                showTableHead
+                showWeek
+                colgroup={
+                    <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </colgroup>
+                }>
                 <CalendarTableRow>
                     <CalendarCell text="39" weekCell />
                     <CalendarCell text="26" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
@@ -11,7 +25,7 @@ export const CalendarWithWeeks = ({ showOtherMonth, ...props }: any) => (
                     <CalendarCell text="28" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
                     <CalendarCell text="29" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
                     <CalendarCell text="30" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
-                    <CalendarCell text="1" />
+                    <CalendarCell text="1" selected={showComparisonStates} />
                     <CalendarCell text="2" weekend />
                 </CalendarTableRow>
                 <CalendarTableRow>
@@ -21,7 +35,7 @@ export const CalendarWithWeeks = ({ showOtherMonth, ...props }: any) => (
                     <CalendarCell text="5" />
                     <CalendarCell text="6" />
                     <CalendarCell text="7" />
-                    <CalendarCell text="8" />
+                    <CalendarCell text="8" focus={showComparisonStates} />
                     <CalendarCell text="9" weekend />
                 </CalendarTableRow>
                 <CalendarTableRow>

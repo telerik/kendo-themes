@@ -12,9 +12,11 @@ export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", seco
                     <col />
                     <col />
                     <col />
+                    <col />
                 </colgroup>
                 <CalendarTbody>
                     <CalendarTableRow aria-hidden="true">
+                        <CalendarCell weekCell />
                         <CalendarCaptionCell scope="col" colSpan={7} text={firstCaption}></CalendarCaptionCell>
                     </CalendarTableRow>
                     <CalendarTableRow>
@@ -24,7 +26,7 @@ export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", seco
                         <CalendarCell empty></CalendarCell>
                         <CalendarCell empty></CalendarCell>
                         <CalendarCell empty></CalendarCell>
-                        <CalendarCell text="1"></CalendarCell>
+                        <CalendarCell text="1" selected></CalendarCell>
                         <CalendarCell text="2" weekend></CalendarCell>
                     </CalendarTableRow>
                     <CalendarTableRow>
@@ -34,7 +36,7 @@ export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", seco
                         <CalendarCell text="5"></CalendarCell>
                         <CalendarCell text="6"></CalendarCell>
                         <CalendarCell text="7"></CalendarCell>
-                        <CalendarCell text="8"></CalendarCell>
+                        <CalendarCell text="8" focus></CalendarCell>
                         <CalendarCell text="9" weekend></CalendarCell>
                     </CalendarTableRow>
                     <CalendarTableRow>
@@ -80,6 +82,7 @@ export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", seco
                 </CalendarTbody>
                 <CalendarTbody>
                     <CalendarTableRow aria-hidden="true">
+                        <CalendarCell weekCell />
                         <CalendarCaptionCell scope="col" colSpan={7} text={secondCaption}></CalendarCaptionCell>
                     </CalendarTableRow>
                 </CalendarTbody>

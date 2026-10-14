@@ -65,6 +65,7 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
             {showWeekdays &&
             <CalendarInfiniteTable className="k-calendar-weekdays" tableRole="table">
                 <colgroup>
+                    {showWeekNumbers && <col />}
                     <col />
                     <col />
                     <col />
