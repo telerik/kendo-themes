@@ -242,7 +242,6 @@ jobs:
 
   a11y-specs:
     name: A11y Specs
-    needs: [ compile-themes ]
     uses: ./.github/workflows/_test-a11y-specs.yml
 
   ci-a11y-specs:
