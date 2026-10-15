@@ -53,6 +53,9 @@
                 $kendo-calendar-other-month-bg
             );
         }
+        &:not(.k-calendar-infinite, .k-calendar-range) .k-other-month .k-link {
+            color: color-mix( in srgb, #{$kendo-calendar-other-month-text} 50%, transparent );
+        }
         .k-weekend {
             @include fill(
                 $kendo-calendar-weekend-text,

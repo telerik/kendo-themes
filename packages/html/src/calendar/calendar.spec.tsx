@@ -27,13 +27,11 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     showCalendarFooter?: boolean;
     calendarFooterText?: string;
     dir?: 'ltr' | 'rtl';
-    /** Enables the fluid calendar: split month/year titles, resizable layout and responsive Today placement. */
-    revamp?: boolean;
     monthTitleText?: string;
     yearTitleText?: string;
-    /** Which title button has its selection view open (revamp only). */
+    /** Which title button has its selection view open. */
     expandedTitle?: 'month' | 'year';
-    /** Where the Today button is rendered (revamp only). "auto" moves it into the header when there is room. */
+    /** Where the Today button is rendered "auto" moves it into the header when there is room. */
     todayPlacement?: 'auto' | 'header' | 'footer';
 };
 
@@ -74,7 +72,6 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         showCalendarFooter,
         calendarFooterText,
         dir,
-        revamp,
         monthTitleText,
         yearTitleText,
         expandedTitle,
@@ -82,8 +79,9 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         ...other
     } = props;
 
-    const headerToday = revamp ? (!showCalendarFooter && todayPlacement !== 'footer') : !showCalendarFooter;
-    const footerToday = revamp && !showCalendarFooter && todayPlacement !== 'header';
+    const isRange = Boolean(props.className?.includes('k-calendar-range'));
+    const headerToday = !showCalendarFooter && (isRange || todayPlacement !== 'footer');
+    const footerToday = !showCalendarFooter && !isRange && todayPlacement !== 'header';
 
     const titleId = nextId('calendar-title');
 
@@ -99,15 +97,13 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
                 }),
                 {
                     'k-week-number': showWeek,
-                    'k-calendar-revamp': revamp,
-                    [`k-calendar-today-${todayPlacement}`]: revamp,
                 }
             )}>
             {showCalendarHeader &&
                 <CalendarHeader
                     calendarView={calendarView}
                     showToday={headerToday}
-                    splitTitle={revamp}
+                    splitTitle={!isRange}
                     monthTitleText={monthTitleText}
                     yearTitleText={yearTitleText}
                     expanded={expandedTitle}

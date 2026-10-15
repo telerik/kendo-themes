@@ -64,12 +64,6 @@
         background-color: $kendo-calendar-header-bg;
     }
 
-    .k-calendar-revamp {
-        .k-other-month .k-link {
-            color: color-mix( in srgb, #{$kendo-calendar-other-month-text} 50%, transparent );
-        }
-    }
-
     .k-calendar-nav {
         color: k-color(secondary-on-surface);
     }

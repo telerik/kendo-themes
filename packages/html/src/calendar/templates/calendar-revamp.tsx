@@ -19,7 +19,7 @@ const YEARS = Array.from({ length: 27 }, (_, i) => 2009 + i);
 const isOtherMonth = (index: number) => (index < 5 || index > 35);
 
 export const CalendarRevampMonth = ({ showWeek, ...props }: any) => (
-    <Calendar revamp calendarView="month" showWeek={showWeek} monthTitleText="October" yearTitleText="2021"
+    <Calendar calendarView="month" showWeek={showWeek} monthTitleText="October" yearTitleText="2021"
         children={
             <CalendarTable showTableHead showWeek={showWeek}>
                 {chunk(MONTH_DAYS, 7).map((week, row) => (
@@ -48,7 +48,7 @@ export const CalendarRevampMonth = ({ showWeek, ...props }: any) => (
 );
 
 export const CalendarRevampMonthSelect = (props: any) => (
-    <Calendar revamp calendarView="year" expandedTitle="month" monthTitleText="October" yearTitleText="2021"
+    <Calendar calendarView="year" expandedTitle="month" monthTitleText="October" yearTitleText="2021"
         children={
             <CalendarTable>
                 {chunk(MONTHS, 3).map((months, row) => (
@@ -65,7 +65,7 @@ export const CalendarRevampMonthSelect = (props: any) => (
 );
 
 export const CalendarRevampYearSelect = (props: any) => (
-    <Calendar revamp calendarView="decade" expandedTitle="year" monthTitleText="October" yearTitleText="2021"
+    <Calendar calendarView="decade" expandedTitle="year" monthTitleText="October" yearTitleText="2021"
         children={
             <CalendarTable>
                 {chunk(YEARS, 3).map((years, row) => (

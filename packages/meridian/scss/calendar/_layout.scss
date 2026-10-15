@@ -25,10 +25,6 @@
             #{k-when-default($kendo-calendar-default-size, $size)}
             &.k-calendar-#{$size} {
                 --INTERNAL--kendo-calendar-view-width: calc( 8 * #{$_cell-size} + 2 * #{$_cell-padding-x} );
-
-                &.k-calendar-revamp {
-                    --INTERNAL--kendo-calendar-revamp-cell-size: #{$_cell-size};
-                }
             }
         }
     }
@@ -39,8 +35,6 @@
         }
     }
 
-    @include kendo-calendar--revamp-layout();
-
     .k-calendar-infinite .k-calendar-navigation {
         border-start-start-radius: $kendo-calendar-border-radius;
         border-end-start-radius: $kendo-calendar-border-radius;
@@ -49,145 +43,5 @@
     // Calendar in popup
     .k-popup > .k-calendar {
         border-radius: inherit;
-    }
-}
-
-
-// Fluid calendar. The calendar fills its container; extra space is distributed between
-// columns and rows, while the date, month and year targets keep their size.
-@mixin kendo-calendar--revamp-layout() {
-    $_cell-size: var( --INTERNAL--kendo-calendar-revamp-cell-size, #{$kendo-calendar-cell-size} );
-    $_week-width: var( --INTERNAL--kendo-calendar-revamp-week-width, 0px );
-    $_inner-size: calc( #{$_cell-size} - 2 * #{$kendo-calendar-cell-inset} );
-    $_view-padding: $kendo-calendar-header-padding-x;
-
-    .k-calendar-revamp {
-        --INTERNAL--kendo-calendar-revamp-week-width: 0px;
-        container-type: inline-size;
-        inline-size: var(
-            --INTERNAL--kendo-calendar-width,
-            calc( 7 * #{$_cell-size} + #{$_week-width} + 2 * #{$_view-padding} + 2 * #{$kendo-calendar-border-width} )
-        );
-        block-size: var( --INTERNAL--kendo-calendar-height, auto );
-
-        &.k-week-number {
-            --INTERNAL--kendo-calendar-revamp-week-width: #{$kendo-calendar-week-number-width};
-        }
-
-        // Header
-        .k-calendar-header {
-            min-width: 0;
-            gap: $kendo-calendar-nav-gap;
-        }
-
-        .k-calendar-title-group {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-        }
-
-        .k-spacer {
-            flex: 1 1 auto;
-        }
-
-        // View
-        .k-calendar-view {
-            margin: 0;
-            padding-block: 0 $_view-padding;
-            padding-inline: $_view-padding;
-            inline-size: auto;
-            width: auto;
-            min-height: 0;
-            box-sizing: border-box;
-            flex: 1 1 auto;
-            align-items: stretch;
-            justify-content: stretch;
-        }
-
-        .k-calendar-table {
-            margin: 0;
-            inline-size: 100%;
-            block-size: 100%;
-            flex: 1 1 auto;
-        }
-
-        .k-calendar-monthview .k-calendar-table {
-            min-inline-size: calc( 7 * #{$_cell-size} + #{$_week-width} );
-        }
-
-        // Cells keep the same size and are centered in the space distributed between columns and rows.
-        .k-calendar-view .k-calendar-td,
-        .k-calendar-view .k-calendar-th {
-            inline-size: auto;
-            width: auto;
-            vertical-align: middle;
-        }
-
-        .k-calendar-view .k-calendar-td {
-            block-size: $_cell-size;
-            height: $_cell-size;
-        }
-
-        .k-calendar-monthview .k-calendar-th {
-            block-size: $_cell-size;
-        }
-
-        .k-calendar-view .k-calendar-th.k-alt,
-        .k-calendar-view .k-calendar-td.k-alt {
-            inline-size: $kendo-calendar-week-number-width;
-            width: $kendo-calendar-week-number-width;
-        }
-
-        .k-calendar-view .k-calendar-td > .k-link {
-            inline-size: $_inner-size;
-            block-size: $_inner-size;
-            margin-inline: auto;
-        }
-
-        // Month and year selection views
-        .k-calendar-yearview .k-calendar-td > .k-link,
-        .k-calendar-decadeview .k-calendar-td > .k-link {
-            inline-size: calc( 2 * #{$_cell-size} );
-            max-inline-size: 100%;
-        }
-
-        .k-calendar-decadeview {
-            flex: 1 1 calc( 7 * #{$_cell-size} );
-            min-block-size: 0;
-            padding-block: 0;
-            overflow-y: auto;
-            scrollbar-width: thin;
-            mask-image: linear-gradient( to bottom, transparent, #000000 #{$_cell-size}, #000000 calc( 100% - #{$_cell-size} ), transparent );
-
-            .k-calendar-table {
-                block-size: auto;
-                flex: 0 0 auto;
-            }
-        }
-
-        // Today
-        .k-calendar-footer.k-calendar-today-footer {
-            padding-block: 0 $kendo-calendar-header-padding-y;
-            padding-inline: $kendo-calendar-header-padding-x;
-            display: flex;
-            justify-content: flex-end;
-            flex: 0 0 auto;
-        }
-
-        &.k-calendar-today-auto .k-calendar-header .k-calendar-nav-today {
-            display: none;
-        }
-    }
-
-    @container ( min-width: #{$kendo-calendar-today-header-breakpoint} ) {
-        .k-calendar-revamp.k-calendar-today-auto {
-            .k-calendar-header .k-calendar-nav-today {
-                display: inline-flex;
-            }
-
-            .k-calendar-footer.k-calendar-today-footer {
-                display: none;
-            }
-        }
     }
 }
