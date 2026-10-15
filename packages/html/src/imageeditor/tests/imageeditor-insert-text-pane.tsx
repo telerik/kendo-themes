@@ -7,9 +7,15 @@ export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <h4>Image Editor Insert Text Pane</h4>
+            <h4>Image Editor Insert Text Pane &mdash; No Selection</h4>
 
             <ImageEditorInsertText contentHeight="694px">
+                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+            </ImageEditorInsertText>
+
+            <h4>Image Editor Insert Text Pane &mdash; Selected Text</h4>
+
+            <ImageEditorInsertText contentHeight="694px" selected fontSize={70} fillColor="#f5e93d" opacity={70}>
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div className="k-imageeditor-resize" style={{ width: "270px", height: "64px", top: "122px", left: "112px" }}>
                     <p style={{
@@ -38,7 +44,7 @@ export default () => (
                     <span className="k-resize-handle k-resize-e"></span>
                     <ImageEditorRotateHandle />
                     <FloatingToolbar fillMode="flat" style={{ width: "max-content" }} offset={{ top: "120px", left: "0" }}>
-                        <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
+                        <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
                         <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
