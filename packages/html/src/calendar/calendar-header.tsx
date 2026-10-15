@@ -18,6 +18,12 @@ export type KendoCalendarHeaderProps = {
     orientation?: 'vertical' | 'horizontal';
     dir?: 'ltr' | 'rtl';
     titleId?: string;
+    /** Renders separate month and year title buttons instead of a single title. */
+    splitTitle?: boolean;
+    monthTitleText?: string;
+    yearTitleText?: string;
+    /** Marks which of the split title buttons has its selection view open. */
+    expanded?: 'month' | 'year';
 };
 
 const defaultOptions = {
@@ -43,6 +49,10 @@ export const CalendarHeader = (
         calendarView,
         dir,
         titleId,
+        splitTitle,
+        monthTitleText = 'October',
+        yearTitleText = '2021',
+        expanded,
         ...other
     } = props;
 
@@ -60,7 +70,32 @@ export const CalendarHeader = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
-            <Button
+            {splitTitle ? <>
+                <span className="k-calendar-title-group" id={resolvedTitleId}>
+                    <Button
+                        className="k-calendar-title k-calendar-title-month"
+                        text={monthTitleText}
+                        size={size}
+                        fillMode="flat"
+                        themeColor="primary"
+                        tabIndex={-1}
+                        aria-haspopup="listbox"
+                        aria-expanded={expanded === 'month'}
+                        aria-label={`Select month: ${monthTitleText}`}
+                    />
+                    <Button
+                        className="k-calendar-title k-calendar-title-year"
+                        text={yearTitleText}
+                        size={size}
+                        fillMode="flat"
+                        themeColor="primary"
+                        tabIndex={-1}
+                        aria-haspopup="listbox"
+                        aria-expanded={expanded === 'year'}
+                        aria-label={`Select year: ${yearTitleText}`}
+                    />
+                </span>
+            </> : <Button
                 disabled={calendarView === "century"}
                 className="k-calendar-title"
                 text={calendarTitleText}
@@ -71,7 +106,7 @@ export const CalendarHeader = (
                 tabIndex={-1}
                 aria-label={`Navigate to parent view: ${calendarTitleText}`}
                 {...(calendarView === 'century' ? { 'aria-disabled': 'true' } : {})}
-            />
+            />}
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
                 {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat" tabIndex={-1} aria-label="Navigate to previous view" />}
