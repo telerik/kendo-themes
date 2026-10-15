@@ -296,6 +296,19 @@
             font-size: var(--kendo-font-size-xl);
             font-weight: var(--kendo-font-weight-medium);
         }
+
+        // Upload renders as a bare button: no frame, background or drop hint
+        .k-imageeditor-placeholder-upload {
+            margin-block-start: k-spacing(6);
+            border-width: 0;
+            background-color: transparent;
+            overflow: visible;
+
+            .k-upload-dropzone {
+                padding: 0;
+                justify-content: center;
+            }
+        }
     }
 
 
@@ -466,6 +479,23 @@
         position: absolute;
         inset-block-start: 0;
         inset-inline-start: 0;
+    }
+
+    // Dims the image around the crop frame. The frame's position and size are passed through
+    // --crop-x, --crop-y, --crop-w and --crop-h (set on the overlay) and cut out of the layer.
+    .k-imageeditor-crop-dim {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        clip-path: polygon(
+            evenodd,
+            0 0, 100% 0, 100% 100%, 0 100%, 0 0,
+            var(--crop-x, 0px) var(--crop-y, 0px),
+            var(--crop-x, 0px) calc(var(--crop-y, 0px) + var(--crop-h, 0px)),
+            calc(var(--crop-x, 0px) + var(--crop-w, 0px)) calc(var(--crop-y, 0px) + var(--crop-h, 0px)),
+            calc(var(--crop-x, 0px) + var(--crop-w, 0px)) var(--crop-y, 0px),
+            var(--crop-x, 0px) var(--crop-y, 0px)
+        );
     }
 
     .k-imageeditor-crop {
