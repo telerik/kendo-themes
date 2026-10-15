@@ -276,10 +276,6 @@ $kendo-scheduler-popover-event-border-radius: var( --kendo-scheduler-popover-eve
 /// @group scheduler
 $kendo-scheduler-popover-event-gap: var( --kendo-scheduler-popover-event-gap, k-spacing(0.5) ) !default;
 
-/// The color of the Scheduler marquee.
-/// @group scheduler
-$kendo-scheduler-marquee-color: var( --kendo-scheduler-marquee-color, k-color(primary) ) !default;
-
 /// The spacing between icon and text in Scheduler navigation items.
 /// @group scheduler
 $kendo-scheduler-nav-item-icon-spacing: var( --kendo-scheduler-nav-item-icon-spacing, #{k-spacing(2)} ) !default;
