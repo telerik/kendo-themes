@@ -10,6 +10,8 @@ const options = {
 export type KendoCalendarFooterProps = {
     size?: (typeof options.size)[number] | null;
     calendarFooterText?: string;
+    /** Renders the built-in Today footer used by the fluid calendar. */
+    today?: boolean;
 };
 
 const defaultOptions = {
@@ -23,12 +25,13 @@ export const CalendarFooter = (
     const {
         size,
         calendarFooterText = defaultOptions.calendarFooterText,
+        today,
         ...other
     } = props;
 
     return (
-        <div {...other} className={classNames(props.className, CALENDARFOOTER_CLASSNAME)}>
-            <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">{calendarFooterText}</Button>
+        <div {...other} className={classNames(props.className, CALENDARFOOTER_CLASSNAME, { 'k-calendar-today-footer': today })}>
+            <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">{today ? 'Today' : calendarFooterText}</Button>
         </div>
     );
 };

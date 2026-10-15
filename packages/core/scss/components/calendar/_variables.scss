@@ -140,6 +140,18 @@ $kendo-calendar-lg-cell-size: null !default;
 $kendo-calendar-lg-cell-padding-x: null !default;
 $kendo-calendar-lg-cell-padding-y: null !default;
 
+/// The width of the week number column of the fluid Calendar.
+/// @group calendar
+$kendo-calendar-week-number-width: null !default;
+
+/// The padding around the date cell content of the fluid Calendar. Reduces the visible date target without changing the grid dimensions.
+/// @group calendar
+$kendo-calendar-cell-inset: null !default;
+
+/// The Calendar width, above which the Today button moves into the header.
+/// @group calendar
+$kendo-calendar-today-header-breakpoint: null !default;
+
 /// The sizes map of the Calendar.
 /// @group calendar
 $kendo-calendar-sizes: (

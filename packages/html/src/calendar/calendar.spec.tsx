@@ -27,6 +27,14 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     showCalendarFooter?: boolean;
     calendarFooterText?: string;
     dir?: 'ltr' | 'rtl';
+    /** Enables the fluid calendar: split month/year titles, resizable layout and responsive Today placement. */
+    revamp?: boolean;
+    monthTitleText?: string;
+    yearTitleText?: string;
+    /** Which title button has its selection view open (revamp only). */
+    expandedTitle?: 'month' | 'year';
+    /** Where the Today button is rendered (revamp only). "auto" moves it into the header when there is room. */
+    todayPlacement?: 'auto' | 'header' | 'footer';
 };
 
 const defaultOptions = {
@@ -66,8 +74,16 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
         showCalendarFooter,
         calendarFooterText,
         dir,
+        revamp,
+        monthTitleText,
+        yearTitleText,
+        expandedTitle,
+        todayPlacement = 'auto',
         ...other
     } = props;
+
+    const headerToday = revamp ? (!showCalendarFooter && todayPlacement !== 'footer') : !showCalendarFooter;
+    const footerToday = revamp && !showCalendarFooter && todayPlacement !== 'header';
 
     const titleId = nextId('calendar-title');
 
@@ -83,12 +99,18 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
                 }),
                 {
                     'k-week-number': showWeek,
+                    'k-calendar-revamp': revamp,
+                    [`k-calendar-today-${todayPlacement}`]: revamp,
                 }
             )}>
             {showCalendarHeader &&
                 <CalendarHeader
                     calendarView={calendarView}
-                    showToday={showCalendarFooter ? false : true}
+                    showToday={headerToday}
+                    splitTitle={revamp}
+                    monthTitleText={monthTitleText}
+                    yearTitleText={yearTitleText}
+                    expanded={expandedTitle}
                     calendarTitleText={calendarTitleText}
                     orientation={orientation}
                     size={size}
@@ -106,6 +128,7 @@ export const Calendar: KendoComponent<KendoCalendarProps & React.HTMLAttributes<
                 {props.children}
             </CalendarView>
 
+            {footerToday && <CalendarFooter today size={size} />}
             {showCalendarFooter && <CalendarFooter calendarFooterText={calendarFooterText} size={size}/>}
         </div>
     );

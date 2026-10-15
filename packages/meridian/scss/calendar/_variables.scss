@@ -289,6 +289,20 @@ $kendo-infinite-calendar-view-padding-y: k-spacing(0) !default;
 $kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default;
 
 
+// Fluid calendar
+
+/// The width of the week number column of the fluid Calendar.
+/// @group calendar
+$kendo-calendar-week-number-width: 24px !default;
+
+/// The padding around the date cell content of the fluid Calendar. Reduces the visible date target without changing the grid dimensions.
+/// @group calendar
+$kendo-calendar-cell-inset: k-spacing(0.5) !default;
+
+/// The Calendar width, above which the Today button moves into the header.
+/// @group calendar
+$kendo-calendar-today-header-breakpoint: 340px !default;
+
 // Multiview calendar
 
 /// The border radius of the range cells in the Multiview Calendar.
@@ -425,6 +439,9 @@ $kendo-calendar-lg-cell-padding-y: k-spacing(2) !default;
     $kendo-infinite-calendar-view-padding-x: $kendo-infinite-calendar-view-padding-x,
     $kendo-infinite-calendar-view-padding-y: $kendo-infinite-calendar-view-padding-y,
     $kendo-infinite-calendar-view-height: $kendo-infinite-calendar-view-height,
+    $kendo-calendar-week-number-width: $kendo-calendar-week-number-width,
+    $kendo-calendar-cell-inset: $kendo-calendar-cell-inset,
+    $kendo-calendar-today-header-breakpoint: $kendo-calendar-today-header-breakpoint,
     $kendo-calendar-range-cell-border-radius: $kendo-calendar-range-cell-border-radius,
     $kendo-calendar-sm-font-size: $kendo-calendar-sm-font-size,
     $kendo-calendar-sm-line-height: $kendo-calendar-sm-line-height,
