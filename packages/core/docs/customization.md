@@ -3293,6 +3293,36 @@ The following table lists the available variables for customizing the Theme Core
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-calendar-week-number-width</td>
+    <td></td>
+    <td><code>24px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the week number column of the fluid Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-inset</td>
+    <td></td>
+    <td><code>2px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding around the date cell content of the fluid Calendar. Reduces the visible date target without changing the grid dimensions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-header-breakpoint</td>
+    <td></td>
+    <td><code>340px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Calendar width, above which the Today button moves into the header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-sizes</td>
     <td></td>
     <td><code>(

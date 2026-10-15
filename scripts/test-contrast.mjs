@@ -72,6 +72,7 @@ const EXCLUSIONS = {
         '.k-disabled',
         '.k-event-drag-hint',
         '.k-button-clear.k-button-warning',
+        '.k-calendar-td.k-other-month', // adjacent-month dates are intentionally muted to 50% by design
     ]
 };
 
