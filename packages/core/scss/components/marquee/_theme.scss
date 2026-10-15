@@ -1,15 +1,24 @@
+@use "../../color-system/_functions.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-marquee--theme-base() {
     // Marquee
+    .k-marquee {
+        --kendo-marquee-bg: var(--kendo-marquee-color);
+        // Contrast is computed against the bg as it renders: translucent over the surface
+        --kendo-marquee-on-color: oklch(from color-mix(in srgb, var(--kendo-marquee-bg) 60%, #{k-color(surface)}) clamp(0.10, (0.6 - l) * 99999, 1) 0 h);
+    }
     .k-marquee-color {
-        color: $kendo-marquee-text;
-        background-color: $kendo-marquee-bg;
-        border-color: $kendo-marquee-border;
-        opacity: .6;
+        color: var(--kendo-marquee-on-color, #{$kendo-marquee-text});
+        background-color: oklch(from var(--kendo-marquee-bg, #{$kendo-marquee-bg}) l c h / calc(alpha * .6));
+        border-color: oklch(from #{$kendo-marquee-border} l c h / calc(alpha * .6));
+    }
+    .k-scheduler-marquee::before,
+    .k-scheduler-marquee::after {
+        border-color: var(--kendo-marquee-bg, #{$kendo-marquee-bg});
     }
     .k-marquee-text {
-        color: $kendo-marquee-text;
+        color: var(--kendo-marquee-on-color, #{$kendo-marquee-text});
     }
 
     // Text selection

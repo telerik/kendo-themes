@@ -50,12 +50,6 @@
         }
     }
 
-    // Marquee
-    .k-scheduler-marquee::before,
-    .k-scheduler-marquee::after {
-        border-color: $kendo-scheduler-marquee-color;
-    }
-
     // Year view
     .k-scheduler-yearview {
         .k-day-indicator {
