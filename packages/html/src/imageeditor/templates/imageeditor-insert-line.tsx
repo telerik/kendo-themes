@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorRotateHandle } from "..";
+import { ImageEditor, ImageEditorPane } from "..";
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { NumericTextbox } from "../../numerictextbox";
@@ -9,7 +9,6 @@ import { Icon } from "../../icon";
 import { InputSuffixText } from "../../input";
 import { Slider } from "../../slider";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
-import { FloatingToolbar } from "../../floating-toolbar/floating-toolbar.spec";
 
 const insertLineSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
@@ -27,7 +26,16 @@ const insertLineSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
 
-export const ImageEditorInsertLine = (props: any) => (
+export const ImageEditorInsertLine = ({
+    selected = false,
+    strokeColor = "#000000",
+    strokeWidth = 4,
+    strokeType = "Dotted",
+    startPoint = "None",
+    endPoint = "None",
+    opacity = 100,
+    ...props
+}: any) => (
     <ImageEditor
         sidebarItems={insertLineSidebarItems}
         actionPane={
@@ -46,50 +54,50 @@ export const ImageEditorInsertLine = (props: any) => (
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Stroke Color"
-                            editor={ <ColorPicker id="line-stroke-color" value="#b0e855" aria-label="Stroke Color" /> }
+                            editor={ <ColorPicker id="line-stroke-color" value={strokeColor} aria-label="Stroke Color" /> }
                         />
                         <FormField
                             label="Stroke Width"
                             editorId="line-stroke-width"
-                            editor={ <NumericTextbox id="line-stroke-width" showSpinButton={false} value="8" prefix={<Icon icon="border-width" />} /> }
+                            editor={ <NumericTextbox id="line-stroke-width" showSpinButton={false} value={String(strokeWidth)} prefix={<Icon icon="border-width" />} /> }
                         />
                     </Fieldset>
                     <FormField
                         label="Stroke Type"
-                        editor={ <DropdownList id="line-stroke-type" value="Dotted" aria-label="Stroke Type" /> }
+                        editor={ <DropdownList id="line-stroke-type" value={strokeType} aria-label="Stroke Type" /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Start Point"
-                            editor={ <DropdownList id="line-start-point" value="Circle" aria-label="Start Point" /> }
+                            editor={ <DropdownList id="line-start-point" value={startPoint} aria-label="Start Point" /> }
                         />
                         <FormField
                             label="End Point"
-                            editor={ <DropdownList id="line-end-point" value="Diamond" aria-label="End Point" /> }
+                            editor={ <DropdownList id="line-end-point" value={endPoint} aria-label="End Point" /> }
                         />
                     </Fieldset>
                     <FormField
                         label="Opacity"
-                        editor={ <NumericTextbox id="line-opacity" showSpinButton={false} value="100%" prefix={<Icon icon="transparency" />} aria-label="Opacity" /> }
+                        editor={ <NumericTextbox id="line-opacity" showSpinButton={false} value={`${opacity}%`} prefix={<Icon icon="transparency" />} aria-label="Opacity" /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Align"
                             editor={
-                                <ButtonGroup>
-                                    <Button className="k-group-start" icon="align-items-start" aria-label="Align Left"></Button>
-                                    <Button icon="align-items-center" selected aria-label="Align Center"></Button>
-                                    <Button className="k-group-end" icon="align-items-end" aria-label="Align Right"></Button>
+                                <ButtonGroup disabled={!selected}>
+                                    <Button disabled={!selected} className="k-group-start" icon="align-items-start" aria-label="Align Left"></Button>
+                                    <Button disabled={!selected} icon="align-items-center" selected={selected} aria-label="Align Center"></Button>
+                                    <Button disabled={!selected} className="k-group-end" icon="align-items-end" aria-label="Align Right"></Button>
                                 </ButtonGroup>
                             }
                         />
                         <FormField
                             label="Align Vertical"
                             editor={
-                                <ButtonGroup>
-                                    <Button className="k-group-start" icon="align-items-start-alt" aria-label="Align Top"></Button>
-                                    <Button icon="align-items-center-alt" selected aria-label="Align Middle"></Button>
-                                    <Button className="k-group-end" icon="align-items-end-alt" aria-label="Align Bottom"></Button>
+                                <ButtonGroup disabled={!selected}>
+                                    <Button disabled={!selected} className="k-group-start" icon="align-items-start-alt" aria-label="Align Top"></Button>
+                                    <Button disabled={!selected} icon="align-items-center-alt" selected={selected} aria-label="Align Middle"></Button>
+                                    <Button disabled={!selected} className="k-group-end" icon="align-items-end-alt" aria-label="Align Bottom"></Button>
                                 </ButtonGroup>
                             }
                         />
@@ -99,6 +107,7 @@ export const ImageEditorInsertLine = (props: any) => (
                         editor={
                             <div className="k-imageeditor-field-row">
                                 <Slider
+                                    disabled={!selected}
                                     style={{ flex: 1 }}
                                     aria-label="Rotation"
                                     showButtons={false}
@@ -108,6 +117,7 @@ export const ImageEditorInsertLine = (props: any) => (
                                     max={360}
                                 />
                                 <NumericTextbox
+                                    disabled={!selected}
                                     style={{ width: "80px", flex: "none" }}
                                     aria-label="Rotation angle"
                                     showClearButton={false}
@@ -124,8 +134,8 @@ export const ImageEditorInsertLine = (props: any) => (
                             label="Rotate Options"
                             editor={
                                 <div className="k-imageeditor-controls">
-                                    <Button icon="rotate-right" aria-label="Rotate Right"></Button>
-                                    <Button icon="rotate-left" aria-label="Rotate Left"></Button>
+                                    <Button disabled={!selected} icon="rotate-right" aria-label="Rotate Right"></Button>
+                                    <Button disabled={!selected} icon="rotate-left" aria-label="Rotate Left"></Button>
                                 </div>
                             }
                         />
@@ -133,8 +143,8 @@ export const ImageEditorInsertLine = (props: any) => (
                             label="Flip Options"
                             editor={
                                 <div className="k-imageeditor-controls">
-                                    <Button icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
-                                    <Button icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                                    <Button disabled={!selected} icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                                    <Button disabled={!selected} icon="flip-vertical" aria-label="Flip Vertical"></Button>
                                 </div>
                             }
                         />
@@ -144,44 +154,7 @@ export const ImageEditorInsertLine = (props: any) => (
         }
 
         children={
-            <>
-                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
-                <div style={{ position: "absolute", top: "150px", left: "90px", width: "220px", height: "0" }}>
-                    <div style={{
-                        position: "absolute", left: "0", right: "0", top: "-1px", height: "2px",
-                        background: "#5558e8"
-                    }}></div>
-                    <div style={{
-                        position: "absolute", left: "0", right: "0", top: "-4px", height: "8px",
-                        backgroundImage: "radial-gradient(circle, #b0e855 45%, transparent 46%)",
-                        backgroundSize: "16px 8px", backgroundRepeat: "repeat-x", backgroundPosition: "left center"
-                    }}></div>
-                    <span style={{
-                        position: "absolute", left: "-7px", top: "-7px",
-                        width: "14px", height: "14px", borderRadius: "50%",
-                        background: "#fff", border: "2px solid #5558e8", boxSizing: "border-box"
-                    }}></span>
-                    <span style={{
-                        position: "absolute", right: "-9px", top: "-9px",
-                        width: "18px", height: "18px", transform: "rotate(45deg)",
-                        background: "#b0e855", border: "2px solid #5558e8", boxSizing: "border-box"
-                    }}>
-                        <span style={{
-                            position: "absolute", left: "50%", top: "50%",
-                            width: "5px", height: "5px", borderRadius: "50%",
-                            background: "#fff", transform: "translate(-50%, -50%)"
-                        }}></span>
-                    </span>
-                    <ImageEditorRotateHandle />
-                    <FloatingToolbar fillMode="flat" resizable offset={{ top: "60px", left: "-10px" }}>
-                        <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
-                        <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
-                        <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
-                        <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
-                        <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
-                    </FloatingToolbar>
-                </div>
-            </>
+            <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
         }
         {...props} />
 );
