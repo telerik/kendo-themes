@@ -1,4 +1,5 @@
 import { ImageEditor } from "..";
+import { ImageEditorPlaceholder } from "../imageeditor-placeholder";
 import { ToolbarItem, ToolbarSeparator } from "../../toolbar";
 import { Button } from "../../button";
 import { Autocomplete } from "../../autocomplete";
@@ -40,6 +41,14 @@ export const ImageEditorDisabled = (props: any) => (
     <ImageEditor
         toolbarItems={disabledToolbarItems}
         sidebarItems={disabledSidebarItems}
+        placeholder={
+            <ImageEditorPlaceholder
+                icon="image-add"
+                title="Ready to create?"
+                text="Upload a JPEG, PNG, or WebP file to unlock the full capabilities of ImageEditor."
+                buttonText="Upload Image"
+            />
+        }
         {...props}
     />
 );

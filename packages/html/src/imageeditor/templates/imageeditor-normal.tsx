@@ -1,4 +1,5 @@
 import { ImageEditor } from "..";
+import { ImageEditorPlaceholder } from "../imageeditor-placeholder";
 import { Button } from "../../button";
 import { Autocomplete } from "../../autocomplete";
 import { ToolbarItem, ToolbarSeparator } from "../../toolbar";
@@ -19,6 +20,17 @@ const normalToolbarItems = [
      <Button fillMode="flat" key="toolbar-button-6" icon="zoom-out" aria-label="Zoom Out"></Button>
 ];
 
+// Without an image the editor shows the upload placeholder; passing children (the canvas) replaces it
 export const ImageEditorNormal = (props: any) => (
-    <ImageEditor toolbarItems={normalToolbarItems} {...props} />
+    <ImageEditor
+        toolbarItems={normalToolbarItems}
+        placeholder={props.children ? undefined : (
+            <ImageEditorPlaceholder
+                icon="image-add"
+                title="Ready to create?"
+                text="Upload a JPEG, PNG, or WebP file to unlock the full capabilities of ImageEditor."
+                buttonText="Upload Image"
+            />
+        )}
+        {...props} />
 );
