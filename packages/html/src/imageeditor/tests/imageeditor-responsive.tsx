@@ -29,7 +29,7 @@ export default () => (
 
             <div>
                 <h4>Tablet / Responsive / Selected Tool / Panel Opened</h4>
-                <ImageEditorInsertShape contentHeight="997px">
+                <ImageEditorInsertShape contentHeight="997px" selected shapeType="Oval" strokeColor="#b0e855" strokeWidth={8} fillColor="#eae382" textColor="#4a4500" fontSize={24}>
                     <canvas width="338" height="211" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
                     <div className="k-imageeditor-resize" style={{ width: "130px", height: "43px", top: "84px", left: "105px" }}>
                         <div style={{
@@ -57,7 +57,7 @@ export default () => (
                         <ImageEditorResizeHandles variant="mixed" />
                         <ImageEditorRotateHandle />
                         <FloatingToolbar fillMode="flat" resizable style={{ width: "max-content" }} offset={{ top: "99px", left: "0" }}>
-                            <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
+                            <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
                             <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                             <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
                             <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
