@@ -88,6 +88,10 @@
             width: var( --INTERNAL--kendo-calendar-view-width );
         }
 
+        .k-calendar-footer {
+            text-align: end;
+        }
+
         .k-calendar-td:not(.k-alt) .k-calendar-cell-inner {
             width: calc( #{$kendo-calendar-md-cell-size} - #{k-spacing(1)} );
             height: calc( #{$kendo-calendar-md-cell-size} - #{k-spacing(1)} );
