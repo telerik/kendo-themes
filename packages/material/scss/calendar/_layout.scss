@@ -8,6 +8,10 @@
     @include kendo-calendar--layout-base();
 
     .k-calendar {
+        .k-button {
+            border-radius: $kendo-calendar-cell-border-radius;
+        }
+
         .k-range-start,
         .k-range-end {
             border-radius: 0;
@@ -39,8 +43,12 @@
         }
 
         &:not(.k-calendar-infinite).k-calendar-md {
-            .k-calendar-view .k-calendar-table {
-                width: var( --INTERNAL--kendo-calendar-view-width );
+            .k-calendar-view {
+                padding-block: 12px;
+
+                .k-calendar-table {
+                    width: var( --INTERNAL--kendo-calendar-view-width );
+                }
             }
 
             &:not(.k-week-number) {
