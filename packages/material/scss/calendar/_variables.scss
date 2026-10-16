@@ -267,10 +267,10 @@ $kendo-calendar-range-end-bg: linear-gradient(to left, k-color(surface) 0%, k-co
 
 /// The horizontal padding of the header in the Infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-header-padding-x: k-spacing(1) !default;
+$kendo-infinite-calendar-header-padding-x: 8px !default;
 /// The vertical padding of the header in the Infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-header-padding-y: k-spacing(3) !default;
+$kendo-infinite-calendar-header-padding-y: 8px !default;
 
 /// The horizontal padding of the Calendar view in the Infinite Calendar.
 /// @group calendar
