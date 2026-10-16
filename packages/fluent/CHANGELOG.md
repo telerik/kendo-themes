@@ -1,3 +1,13 @@
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **badge:** update badge styles ([2fdd51af87](https://github.com/telerik/kendo-themes/commit/2fdd51af87))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.0-dev.8 (2026-10-13)
 
 This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.
