@@ -68,6 +68,63 @@ export default () =>(
                     <ListItem showCheckbox>Checkbox</ListItem>
                 </ListVirtualization>
             </section>
+
+            <span>Static list with description</span>
+            <span>Virtual list with description</span>
+            <span>Static list with description (rtl)</span>
+            <span>Virtual list with description (rtl)</span>
+
+            <section>
+                <ListNormal>
+                    <ListItem description="Description text">List item</ListItem>
+                    <ListItem hover description="Description text">Hover</ListItem>
+                    <ListItem focus description="Description text">Focus</ListItem>
+                    <ListItem selected description="Description text">Selected</ListItem>
+                    <ListItem hover selected description="Description text">Hover selected</ListItem>
+                    <ListItem disabled description="Description text">Disabled</ListItem>
+                    <ListItem description="Description text">List item with very long text, that spans on multiple lines</ListItem>
+                    <ListItem showCheckbox description="Description text">Checkbox</ListItem>
+                </ListNormal>
+            </section>
+
+            <section>
+                <ListVirtualization>
+                    <ListItem description="Description text">List item</ListItem>
+                    <ListItem hover description="Description text">Hover</ListItem>
+                    <ListItem focus description="Description text">Focus</ListItem>
+                    <ListItem selected description="Description text">Selected</ListItem>
+                    <ListItem hover selected description="Description text">Hover selected</ListItem>
+                    <ListItem disabled description="Description text">Disabled</ListItem>
+                    <ListItem description="Description text">List item with very long text, that spans on multiple lines</ListItem>
+                    <ListItem showCheckbox description="Description text">Checkbox</ListItem>
+                </ListVirtualization>
+            </section>
+
+            <section dir="rtl">
+                <ListNormal>
+                    <ListItem description="Description text">List item</ListItem>
+                    <ListItem hover description="Description text">Hover</ListItem>
+                    <ListItem focus description="Description text">Focus</ListItem>
+                    <ListItem selected description="Description text">Selected</ListItem>
+                    <ListItem hover selected description="Description text">Hover selected</ListItem>
+                    <ListItem disabled description="Description text">Disabled</ListItem>
+                    <ListItem description="Description text">List item with very long text, that spans on multiple lines</ListItem>
+                    <ListItem showCheckbox description="Description text">Checkbox</ListItem>
+                </ListNormal>
+            </section>
+
+            <section dir="rtl">
+                <ListVirtualization>
+                    <ListItem description="Description text">List item</ListItem>
+                    <ListItem hover description="Description text">Hover</ListItem>
+                    <ListItem focus description="Description text">Focus</ListItem>
+                    <ListItem selected description="Description text">Selected</ListItem>
+                    <ListItem hover selected description="Description text">Hover selected</ListItem>
+                    <ListItem disabled description="Description text">Disabled</ListItem>
+                    <ListItem description="Description text">List item with very long text, that spans on multiple lines</ListItem>
+                    <ListItem showCheckbox description="Description text">Checkbox</ListItem>
+                </ListVirtualization>
+            </section>
         </div>
     </>
 );
