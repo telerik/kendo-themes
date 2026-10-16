@@ -1,3 +1,24 @@
+## 14.7.0-dev.11 (2026-10-16)
+
+### 🚀 Features
+
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.10 (2026-10-16)
+
+### 🚀 Features
+
+- **imageeditor:** add crop dim layer and upload button styles ([ffa92dc327](https://github.com/telerik/kendo-themes/commit/ffa92dc327))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
 ## 14.7.0-dev.9 (2026-10-16)
 
 ### 🚀 Features

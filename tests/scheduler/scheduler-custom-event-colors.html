@@ -14,9 +14,11 @@
             #test-area {
             padding: 20px;
             gap: 25px;
+            grid-template-columns: 60px repeat(7, 1fr);
             }
         </style>
-        <div id="test-area" class="k-d-grid k-grid-cols-7">
+        <div id="test-area" class="k-d-grid">
+            <span></span>
             <span>Default</span>
             <span>Red</span>
             <span>Orange</span>
@@ -24,13 +26,15 @@
             <span>Teal</span>
             <span>Purple</span>
             <span>Yellow</span>
-            <div></div>
-            <div style="background: rgb(244, 67, 54); width: 25px; height: 25px;"></div>
-            <div style="background: rgb(255, 152, 0); width: 25px; height: 25px;"></div>
-            <div style="background: rgb(76, 175, 80); width: 25px; height: 25px;"></div>
-            <div style="background: rgb(0, 150, 136); width: 25px; height: 25px;"></div>
-            <div style="background: rgb(156, 39, 176); width: 25px; height: 25px;"></div>
-            <div style="background: rgb(255, 235, 59); width: 25px; height: 25px;"></div>
+            <span>Mark</span>
+            <div class="k-scheduler-mark"></div>
+            <div class="k-scheduler-mark" style="background: rgb(244, 67, 54);"></div>
+            <div class="k-scheduler-mark" style="background: rgb(255, 152, 0);"></div>
+            <div class="k-scheduler-mark" style="background: rgb(76, 175, 80);"></div>
+            <div class="k-scheduler-mark" style="background: rgb(0, 150, 136);"></div>
+            <div class="k-scheduler-mark" style="background: rgb(156, 39, 176);"></div>
+            <div class="k-scheduler-mark" style="background: rgb(255, 235, 59);"></div>
+            <span>Event</span>
             <div class="k-event" role="button" aria-label="Event" style="position: relative; height: 71px;">
                 <div>
                     <div class="k-event-template k-event-title">Event Title</div>
@@ -87,6 +91,7 @@
                 <span class="k-resize-handle k-resize-n"></span>
                 <span class="k-resize-handle k-resize-s"></span>
             </div>
+            <span>Event Hovered</span>
             <div class="k-event k-hover" role="button" aria-label="Event" style="position: relative; height: 71px;">
                 <div>
                     <div class="k-event-template k-event-title">Event Title</div>
@@ -143,6 +148,7 @@
                 <span class="k-resize-handle k-resize-n"></span>
                 <span class="k-resize-handle k-resize-s"></span>
             </div>
+            <span>Event Selected</span>
             <div class="k-event k-selected" role="button" aria-label="Event" style="position: relative; height: 71px;">
                 <div>
                     <div class="k-event-template k-event-title">Event Title</div>
@@ -198,6 +204,56 @@
                 </div>
                 <span class="k-resize-handle k-resize-n"></span>
                 <span class="k-resize-handle k-resize-s"></span>
+            </div>
+            <span>Marquee</span>
+            <div class="k-marquee k-scheduler-marquee k-first k-last" style="position: relative; height: 71px;">
+                <div class="k-marquee-color"></div>
+                <div class="k-marquee-text">
+                    <div class="k-label-top">7:00 AM</div>
+                    <div class="k-label-bottom">10:30 AM</div>
+                </div>
+            </div>
+            <div class="k-marquee k-scheduler-marquee k-first k-last" style="position: relative; height: 71px; --kendo-marquee-color: #f44336;">
+                <div class="k-marquee-color"></div>
+                <div class="k-marquee-text">
+                    <div class="k-label-top">7:00 AM</div>
+                    <div class="k-label-bottom">10:30 AM</div>
+                </div>
+            </div>
+            <div class="k-marquee k-scheduler-marquee k-first k-last" style="position: relative; height: 71px; --kendo-marquee-color: #ff9800;">
+                <div class="k-marquee-color"></div>
+                <div class="k-marquee-text">
+                    <div class="k-label-top">7:00 AM</div>
+                    <div class="k-label-bottom">10:30 AM</div>
+                </div>
+            </div>
+            <div class="k-marquee k-scheduler-marquee k-first k-last" style="position: relative; height: 71px; --kendo-marquee-color: #4caf50;">
+                <div class="k-marquee-color"></div>
+                <div class="k-marquee-text">
+                    <div class="k-label-top">7:00 AM</div>
+                    <div class="k-label-bottom">10:30 AM</div>
+                </div>
+            </div>
+            <div class="k-marquee k-scheduler-marquee k-first k-last" style="position: relative; height: 71px; --kendo-marquee-color: #009688;">
+                <div class="k-marquee-color"></div>
+                <div class="k-marquee-text">
+                    <div class="k-label-top">7:00 AM</div>
+                    <div class="k-label-bottom">10:30 AM</div>
+                </div>
+            </div>
+            <div class="k-marquee k-scheduler-marquee k-first k-last" style="position: relative; height: 71px; --kendo-marquee-color: #9c27b0;">
+                <div class="k-marquee-color"></div>
+                <div class="k-marquee-text">
+                    <div class="k-label-top">7:00 AM</div>
+                    <div class="k-label-bottom">10:30 AM</div>
+                </div>
+            </div>
+            <div class="k-marquee k-scheduler-marquee k-first k-last" style="position: relative; height: 71px; --kendo-marquee-color: #ffeb3b;">
+                <div class="k-marquee-color"></div>
+                <div class="k-marquee-text">
+                    <div class="k-label-top">7:00 AM</div>
+                    <div class="k-label-bottom">10:30 AM</div>
+                </div>
             </div>
         </div>
     </body>

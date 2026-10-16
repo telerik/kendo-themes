@@ -1,3 +1,24 @@
+## 14.7.0-dev.11 (2026-10-16)
+
+### 🚀 Features
+
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.10 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** add handles to blur and pixelate, align imageeditor templates with default state ([8b13765cc7](https://github.com/telerik/kendo-themes/commit/8b13765cc7))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
 ## 14.7.0-dev.9 (2026-10-16)
 
 ### 🚀 Features
