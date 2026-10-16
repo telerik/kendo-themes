@@ -1048,6 +1048,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent) )</code></td>
+    <td><code>var(--kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description on hover.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent) )</code></td>
+    <td><code>var(--kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-hover-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-selected-hover-description-text, color-mix(in srgb, currentColor 85%, transparent) )</code></td>
+    <td><code>var(--kendo-list-item-selected-hover-description-text, color-mix(in srgb, currentColor 85%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected and hovered.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-disabled-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-disabled-description-text, inherit )</code></td>
+    <td><code>var(--kendo-list-item-disabled-description-text, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is disabled.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
