@@ -44,8 +44,6 @@
 
         &:not(.k-calendar-infinite).k-calendar-md {
             .k-calendar-view {
-                padding-block: 12px;
-
                 .k-calendar-table {
                     width: var( --INTERNAL--kendo-calendar-view-width );
                 }
