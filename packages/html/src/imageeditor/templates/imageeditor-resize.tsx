@@ -1,68 +1,86 @@
-import { ImageEditor } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles } from "..";
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
-import { DropdownList } from "../../dropdownlist";
-import { FormNormal, Fieldset, FormField } from "../../form";
 import { NumericTextbox } from "../../numerictextbox";
-import { ToolbarSeparator, ToolbarItem } from "../../toolbar";
+import { Form, FormField, Fieldset } from "../../form";
+import { Icon } from "../../icon";
+import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
+import { Tooltip } from "../../tooltip";
+
+const resizeSidebarItems = [
+    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" selected aria-label="Resize"></Button>,
+    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
+    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
+    <div className="k-separator" key="sidebar-separator-1"></div>,
+    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
+    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
+    <div className="k-separator" key="sidebar-separator-2"></div>,
+    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
+    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
+    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
+    <div className="k-separator" key="sidebar-separator-3"></div>,
+    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
+    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
+];
 
 export const ImageEditorResize = (props: any) => (
     <ImageEditor
-        toolbarItems={[
-            <Button key="toolbar-button-1" icon="upload" aria-label="Upload"></Button>,
-            <Button key="toolbar-button-2" icon="download" aria-label="Download"></Button>,
-            <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-            <Button key="toolbar-button-3" disabled icon="undo" aria-label="Undo"></Button>,
-            <Button key="toolbar-button-4" disabled icon="redo" aria-label="Redo"></Button>,
-            <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-            <Button key="toolbar-button-5" icon="crop" aria-label="Crop"></Button>,
-            <Button key="toolbar-button-6" icon="image-resize" aria-label="Resize"></Button>,
-            <Button key="toolbar-button-7" icon="zoom-in" aria-label="Zoom in"></Button>,
-            <Button key="toolbar-button-8" icon="zoom-out" aria-label="Zoom out"></Button>,
-            <ToolbarItem key="toolbar-item-1">
-                <DropdownList value="Zoom options" aria-label="Zoom options" />
-            </ToolbarItem>
-        ]}
+        sidebarItems={resizeSidebarItems}
         actionPane={
-            <FormNormal tag="div" className="k-imageeditor-pane-form" formButtons={
+            <ImageEditorPane title="Resize" actions={
                 <>
-                    <Button themeColor="primary" icon="check">Confirm</Button>
-                    <Button icon="cancel">Cancel</Button>
+                    <Button>Reset</Button>
+                    <Button themeColor="primary">Apply</Button>
                 </>
             }>
-                <Fieldset layout="grid" legend="Resize Image" cols={2} gutters={{cols: "8px"}}>
+                <Form tag="div">
                     <FormField
-                        colSpan="1"
-                        label="Width:"
-                        editorId="resize-width"
-                        editor={ <NumericTextbox id="resize-width" showClearButton={false} value="61" /> }
+                        label="Scale Unit"
+                        editor={
+                            <RadioGroup layout="horizontal">
+                                <RadioItem>
+                                    <RadioButtonWithLabelAfter id="resize-scale-unit-pixel" name="resize-scale-unit" checked>Pixel</RadioButtonWithLabelAfter>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonWithLabelAfter id="resize-scale-unit-percentage" name="resize-scale-unit">Percentage</RadioButtonWithLabelAfter>
+                                </RadioItem>
+                            </RadioGroup>
+                        }
                     />
-                    <FormField
-                        colSpan="1"
-                        label="&nbsp;"
-                        editor={ <DropdownList value="Pixels" aria-label="Width unit" /> }
-                    />
-                    <FormField
-                        colSpan="1"
-                        label="Height:"
-                        editorId="resize-height"
-                        editor={ <NumericTextbox id="resize-height" showClearButton={false} value="68" /> }
-                    />
-                    <FormField
-                        colSpan="1"
-                        label="&nbsp;"
-                        editor={ <DropdownList value="Pixels" aria-label="Height unit" /> }
-                    />
-                    <FormField
-                        colSpan="2"
-                        editor={ <CheckboxWithLabelAfter id="resize-lock">Lock aspect ratio</CheckboxWithLabelAfter> }
-                    />
-                </Fieldset>
-            </FormNormal>
+                    <Fieldset layout="grid" cols={2} gutters={{ cols: "8px" }}>
+                        <FormField
+                            label="Width"
+                            editorId="resize-width"
+                            editor={ <NumericTextbox id="resize-width" showClearButton={false} value="494" prefix={<Icon icon="arrows-left-right" />} /> }
+                        />
+                        <FormField
+                            label="Height"
+                            editorId="resize-height"
+                            editor={ <NumericTextbox id="resize-height" showClearButton={false} value="307" prefix={<Icon icon="arrows-top-bottom" />} /> }
+                        />
+                    </Fieldset>
+                    <FormField editor={ <CheckboxWithLabelAfter id="resize-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter> } />
+                </Form>
+            </ImageEditorPane>
         }
 
         children={
-            <canvas width="61" height="68" role="img" aria-label="Image being edited"></canvas>
+            <>
+                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+                <div className="k-imageeditor-resize">
+                    <ImageEditorResizeHandles variant="mixed" />
+                </div>
+                <Tooltip
+                    themeColor="inverse"
+                    style={{ position: "absolute", insetBlockEnd: "-52px", insetInlineEnd: "0" }}
+                    content={
+                        <>
+                            <div>W: 494</div>
+                            <div>H: 307</div>
+                        </>
+                    }
+                ></Tooltip>
+            </>
         }
         {...props} />
 );

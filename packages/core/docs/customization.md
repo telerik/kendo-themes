@@ -3238,24 +3238,28 @@ The following table lists the available variables for customizing the Theme Core
     <td></td>
     <td><code>(
     xs: (
+        gap: $kendo-button-xs-gap,
         padding-x: $kendo-button-xs-padding-x,
         padding-y: $kendo-button-xs-padding-y,
         font-size: $kendo-button-xs-font-size,
         line-height: $kendo-button-xs-line-height
     ),
     sm: (
+        gap: $kendo-button-sm-gap,
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,
         font-size: $kendo-button-sm-font-size,
         line-height: $kendo-button-sm-line-height
     ),
     md: (
+        gap: $kendo-button-md-gap,
         padding-x: $kendo-button-md-padding-x,
         padding-y: $kendo-button-md-padding-y,
         font-size: $kendo-button-md-font-size,
         line-height: $kendo-button-md-line-height
     ),
     lg: (
+        gap: $kendo-button-lg-gap,
         padding-x: $kendo-button-lg-padding-x,
         padding-y: $kendo-button-lg-padding-y,
         font-size: $kendo-button-lg-font-size,
@@ -4835,6 +4839,36 @@ The following table lists the available variables for customizing the Theme Core
 </tbody>
 </table>
 
+### FloatingToolbar
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-floating-toolbar-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the floating Toolbar when it contains a resizable Toolbar (menu/overflow mode).</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Form
 
 <table class="theme-variables">
@@ -5143,6 +5177,35 @@ The following table lists the available variables for customizing the Theme Core
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-menu-sizes</td>
+    <td></td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-menu-sm-font-size,
+        line-height: $kendo-menu-sm-line-height,
+        item-padding-x: $kendo-menu-sm-item-padding-x,
+        item-padding-y: $kendo-menu-sm-item-padding-y
+    ),
+    md: (
+        font-size: $kendo-menu-font-size,
+        line-height: $kendo-menu-line-height,
+        item-padding-x: $kendo-menu-item-padding-x,
+        item-padding-y: $kendo-menu-item-padding-y
+    ),
+    lg: (
+        font-size: $kendo-menu-lg-font-size,
+        line-height: $kendo-menu-lg-line-height,
+        item-padding-x: $kendo-menu-lg-item-padding-x,
+        item-padding-y: $kendo-menu-lg-item-padding-y
+    )
+)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Menu.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-group-sizes</td>
     <td></td>
     <td><code>(
@@ -5153,7 +5216,11 @@ The following table lists the available variables for customizing the Theme Core
         item-padding-x: $kendo-menu-popup-sm-item-padding-x,
         item-padding-end: $kendo-menu-popup-sm-item-padding-end,
         item-icon-margin-start: $kendo-menu-popup-sm-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-sm-item-icon-margin-end
+        item-icon-margin-end: $kendo-menu-popup-sm-item-icon-margin-end,
+        group-header-padding-x: $kendo-menu-popup-sm-group-header-padding-x,
+        group-header-padding-y: $kendo-menu-popup-sm-group-header-padding-y,
+        group-header-font-size: $kendo-menu-popup-sm-group-header-font-size,
+        group-header-line-height: $kendo-menu-popup-sm-group-header-line-height
     ),
     md: (
         font-size: $kendo-menu-popup-md-font-size,
@@ -5162,7 +5229,11 @@ The following table lists the available variables for customizing the Theme Core
         item-padding-x: $kendo-menu-popup-md-item-padding-x,
         item-padding-end: $kendo-menu-popup-md-item-padding-end,
         item-icon-margin-start: $kendo-menu-popup-md-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end
+        item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end,
+        group-header-padding-x: $kendo-menu-popup-md-group-header-padding-x,
+        group-header-padding-y: $kendo-menu-popup-md-group-header-padding-y,
+        group-header-font-size: $kendo-menu-popup-md-group-header-font-size,
+        group-header-line-height: $kendo-menu-popup-md-group-header-line-height
     ),
     lg: (
         font-size: $kendo-menu-popup-lg-font-size,
@@ -5171,7 +5242,11 @@ The following table lists the available variables for customizing the Theme Core
         item-padding-x: $kendo-menu-popup-lg-item-padding-x,
         item-padding-end: $kendo-menu-popup-lg-item-padding-end,
         item-icon-margin-start: $kendo-menu-popup-lg-item-icon-margin-start,
-        item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end
+        item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end,
+        group-header-padding-x: $kendo-menu-popup-lg-group-header-padding-x,
+        group-header-padding-y: $kendo-menu-popup-lg-group-header-padding-y,
+        group-header-font-size: $kendo-menu-popup-lg-group-header-font-size,
+        group-header-line-height: $kendo-menu-popup-lg-group-header-line-height
     )
 )</code></td>
     <td></td>

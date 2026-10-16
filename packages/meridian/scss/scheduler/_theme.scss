@@ -11,6 +11,12 @@
         background-color: unset;
     }
 
+    .k-event {
+        --kendo-scheduler-event-bg: oklch(from var(--kendo-scheduler-event-color) calc(l + 0.5966) calc(c - 0.0323) calc(h - 9.39));
+        --kendo-scheduler-event-accent: var(--kendo-scheduler-event-color);
+        --kendo-scheduler-on-event: oklch(from var(--kendo-scheduler-event-bg) clamp(0.1, (0.75 - l) * 99999, 1) 0 h);
+    }
+
     .k-scheduler-layout {
         background-color: $kendo-scheduler-bg;
     }

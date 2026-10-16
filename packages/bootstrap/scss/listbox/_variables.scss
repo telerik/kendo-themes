@@ -41,6 +41,13 @@ $kendo-listbox-border: k-color(border) !default;
 /// @group listbox
 $kendo-listbox-drop-hint-width: 1px !default;
 
+/// The padding around the ListBox actions that keeps the button focus indicators visible when the actions scroll.
+/// @group listbox
+$kendo-listbox-actions-scroll-padding: k-spacing(1) !default;
+/// The gradient color stops of the ListBox actions scroll overlay.
+/// @group listbox
+$kendo-listbox-actions-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
+
 /// The horizontal padding of the ListBox scroller.
 /// @group listbox
 $kendo-listbox-scroller-padding-x: null !default;
@@ -65,6 +72,8 @@ $kendo-listbox-border-radius: null !default;
     $kendo-listbox-bg: $kendo-listbox-bg,
     $kendo-listbox-border: $kendo-listbox-border,
     $kendo-listbox-drop-hint-width: $kendo-listbox-drop-hint-width,
+    $kendo-listbox-actions-scroll-padding: $kendo-listbox-actions-scroll-padding,
+    $kendo-listbox-actions-scroll-overlay: $kendo-listbox-actions-scroll-overlay,
     $kendo-listbox-scroller-padding-x: $kendo-listbox-scroller-padding-x,
     $kendo-listbox-scroller-padding-y: $kendo-listbox-scroller-padding-y,
     $kendo-listbox-border-radius: $kendo-listbox-border-radius

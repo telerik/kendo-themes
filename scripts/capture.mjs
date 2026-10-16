@@ -104,14 +104,22 @@ export async function capture({
     }
 
     const CONCURRENCY = Math.min(4, Math.max(2, os.cpus().length - 1));
-    const browser = await chromium.launch();
+    const browser = await chromium.launch({
+        args: [
+            '--disable-lcd-text',
+            '--font-render-hinting=none',
+            '--disable-font-subpixel-positioning',
+            // Chromium rasters in tiles and can draw the same area differently
+            // between runs/runners; these two make the PNG bytes reproducible.
+            '--disable-partial-raster',
+            '--disable-checker-imaging',
+        ],
+    });
     const queue   = [...variants];
 
+    const pageOptions = { viewport: { width: 1024, height: 768 }, deviceScaleFactor: 1 };
+
     async function worker() {
-        const page = await browser.newPage({
-            viewport: { width: 1024, height: 768 },
-            deviceScaleFactor: 1,
-        });
 
         for (let v = queue.shift(); v; v = queue.shift()) {
             // Derive component name and variant name from the path
@@ -121,6 +129,9 @@ export async function capture({
 
             for (const theme of themes) {
                 const url = `${baseUrl}/${v}?theme=${theme}&swatch=all`;
+                // A fresh page per screenshot: reusing one leaks state from the
+                // previous variant and makes some PNGs flip between renderings.
+                const page = await browser.newPage(pageOptions);
                 await page.goto(url, { waitUntil: 'load' });
                 // Ensure fonts are ready after the theme CSS loads
                 await page.evaluate(() => document.fonts.ready);
@@ -131,6 +142,7 @@ export async function capture({
                 );
                 if (!hasThemeLink) {
                     console.error(`Page missing link[data-role="kendo-theme"]: ${url}`);
+                    await page.close();
                     continue;
                 }
 
@@ -138,10 +150,9 @@ export async function capture({
                 mkdirSync(join(outDir, theme, compName), { recursive: true });
                 await page.locator('#test-area, #app').first()
                     .screenshot({ path: outPath, animations: 'disabled' });
+                await page.close();
             }
         }
-
-        await page.close();
     }
 
     try {
