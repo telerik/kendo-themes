@@ -1,3 +1,13 @@
+## 14.7.0-dev.11 (2026-10-16)
+
+### 🚀 Features
+
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+
+### 🩹 Fixes
+
+- **fluent:** add scheduler marquee label insets ([bb2fad3dee](https://github.com/telerik/kendo-themes/commit/bb2fad3dee))
+
 ## 14.7.0-dev.10 (2026-10-16)
 
 ### 🚀 Features
