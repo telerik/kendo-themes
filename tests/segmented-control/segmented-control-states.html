@@ -11,7 +11,7 @@
     </head>
     <body id="app" class="k-body">
         <style>
-            #test-area>section {
+            #test-area {
             padding: 20px;
             display: grid;
             grid-template-columns: 1fr;
@@ -20,6 +20,7 @@
             }
         </style>
         <div id="test-area" class="k-d-grid">
+            <div>text</div>
             <div class="k-segmented-control" role="group">
                 <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 20%;"></div>
                 <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
@@ -36,6 +37,202 @@
                 </button>
                 <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
                     <span class="k-segmented-control-button-text">normal</span>
+                </button>
+            </div>
+            <div>icon</div>
+            <div class="k-segmented-control" role="group">
+                <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 20%;"></div>
+                <button aria-label="selected" class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button aria-label="hover" class="k-segmented-control-button k-hover" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button aria-label="focus" class="k-segmented-control-button k-focus" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button aria-label="disabled" class="k-segmented-control-button k-disabled" aria-pressed="false" aria-disabled="true" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button aria-label="normal" class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div>text + icon</div>
+            <div class="k-segmented-control" role="group">
+                <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 20%;"></div>
+                <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                    <span class="k-segmented-control-button-text">selected</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button k-hover" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-text">hover</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button k-focus" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-text">focus</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button k-disabled" aria-pressed="false" aria-disabled="true" tabindex="-1">
+                    <span class="k-segmented-control-button-text">disabled</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-text">normal</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div>icon + text</div>
+            <div class="k-segmented-control" role="group">
+                <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 20%;"></div>
+                <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">selected</span>
+                </button>
+                <button class="k-segmented-control-button k-hover" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">hover</span>
+                </button>
+                <button class="k-segmented-control-button k-focus" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">focus</span>
+                </button>
+                <button class="k-segmented-control-button k-disabled" aria-pressed="false" aria-disabled="true" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">disabled</span>
+                </button>
+                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">normal</span>
+                </button>
+            </div>
+            <div>icon + text + icon</div>
+            <div class="k-segmented-control" role="group">
+                <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 20%;"></div>
+                <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">selected</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button k-hover" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">hover</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button k-focus" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">focus</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button k-disabled" aria-pressed="false" aria-disabled="true" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">disabled</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-segmented-control-button-text">normal</span>
+                    <span class="k-segmented-control-button-icon k-icon k-svg-icon k-svg-i-folder" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5v11.3081a.6936.6936 0 0 0 .6919.6919h16.6415A.6667.6667 0 0 0 21 18.8334V8.25a.75.75 0 0 0-.75-.75zm0 0V5.25a.75.75 0 0 1 .75-.75h4.9397a.75.75 0 0 1 .5297.2194L12 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
                 </button>
             </div>
         </div>

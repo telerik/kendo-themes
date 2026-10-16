@@ -41,6 +41,7 @@ export type KendoSplitButtonOptions = {
 
 export type KendoSplitButtonProps = KendoSplitButtonOptions & {
   icon?: string;
+  endIcon?: string;
   text?: string;
   iconClassName?: string;
   showArrow?: boolean;
@@ -85,6 +86,7 @@ export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButto
         selected,
         disabled,
         icon,
+        endIcon,
         text,
         arrowIconName = defaultOptions.arrowIconName,
         popup,
@@ -108,6 +110,7 @@ export const SplitButton: KendoComponent<KendoSplitButtonProps & KendoSplitButto
                 <Button
                     text={text}
                     icon={icon}
+                    endIcon={endIcon}
                     size={size}
                     rounded={rounded}
                     fillMode={fillMode}

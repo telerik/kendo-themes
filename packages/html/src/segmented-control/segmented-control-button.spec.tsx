@@ -18,6 +18,7 @@ export type KendoSegmentedControlButtonOptions = {};
 
 export type KendoSegmentedControlButtonProps = KendoSegmentedControlButtonOptions & {
   icon?: string;
+  endIcon?: string;
   text?: string;
   iconClassName?: string;
   children?: string;
@@ -46,6 +47,7 @@ export const SegmentedControlButton: KendoComponent<KendoSegmentedControlButtonP
         selected,
         disabled,
         icon,
+        endIcon,
         text,
         iconClassName,
         ...other
@@ -77,6 +79,13 @@ export const SegmentedControlButton: KendoComponent<KendoSegmentedControlButtonP
 
             {(text || props.children) && (
                 <span className="k-segmented-control-button-text">{text || props.children}</span>
+            )}
+
+            {endIcon && (
+                <Icon
+                    className={classNames(iconClassName, 'k-segmented-control-button-icon')}
+                    icon={endIcon}
+                />
             )}
         </button>
     );
