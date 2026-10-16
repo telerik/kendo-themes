@@ -1,7 +1,7 @@
 import { CalendarInfiniteNormal, CalendarInfiniteWeekNumber, CalendarNormal, CalendarWithWeeks } from '../index';
 
 export default () => (
-    <div id="test-area" className="k-d-grid k-grid-cols-2 k-pb-16">
+    <div id="test-area" className="k-d-grid k-grid-cols-2" style={{ paddingBlockEnd: "64px" }}>
         <section>
             <div className="k-mb-2">infinite calendar month body</div>
             <CalendarInfiniteWeekNumber size="medium" />
