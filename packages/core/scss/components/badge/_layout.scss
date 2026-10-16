@@ -31,6 +31,10 @@
             box-sizing: border-box;
         }
 
+        .k-badge-text {
+            padding-inline: $kendo-badge-text-padding-x;
+        }
+
         // Roundness
         @each $roundness in $kendo-badge-roundness {
             #{k-when-default($kendo-badge-default-roundness, $roundness)}
@@ -43,6 +47,7 @@
         @each $size, $size-props in $kendo-badge-sizes {
             $_padding-x: map.get( $size-props, padding-x );
             $_padding-y: map.get( $size-props, padding-y );
+            $_gap: map.get( $size-props, gap );
             $_font-size: map.get( $size-props, font-size );
             $_line-height: map.get( $size-props, line-height );
             $_min-width: map.get( $size-props, min-width );
@@ -54,6 +59,7 @@
                 font-size: $_font-size;
                 line-height: $_line-height;
                 min-width: $_min-width;
+                gap: $_gap;
 
                 &:empty {
                     padding: $_padding-y;
@@ -61,6 +67,10 @@
                 }
             }
         }
+    }
+    .k-badge:has(> .k-badge-icon:only-child) {
+        padding-inline: 0;
+        aspect-ratio: 1;
     }
     .k-badge > * {
         color: inherit;

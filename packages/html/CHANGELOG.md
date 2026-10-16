@@ -1,3 +1,13 @@
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** enhance badge spec ([963b6a03c9](https://github.com/telerik/kendo-themes/commit/963b6a03c9))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.0-dev.8 (2026-10-13)
 
 ### 🚀 Features
