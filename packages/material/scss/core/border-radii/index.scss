@@ -27,7 +27,7 @@ $kendo-border-radius-xl: calc(var(--kendo-border-radius-base) * 3) !default;
 $kendo-border-radius-xxl: calc(var(--kendo-border-radius-base) * 4) !default;
 /// The second largest border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xxxl: calc(var(--kendo-border-radius-base) * 5) !default;
+$kendo-border-radius-xxxl: 28px !default;
 /// The largest border radius used across the Components.
 /// @group radii
 $kendo-border-radius-full: calc(var(--kendo-border-radius-base) * 9999) !default;
