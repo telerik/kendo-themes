@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
+@use "../core/functions/index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/calendar/_layout.scss" as *;
 
 
