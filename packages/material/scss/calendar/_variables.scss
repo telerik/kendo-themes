@@ -42,10 +42,10 @@ $kendo-calendar-border: k-color(border) !default;
 
 /// The horizontal padding of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-padding-x: k-spacing(1) !default;
+$kendo-calendar-header-padding-x: 8px !default;
 /// The vertical padding of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-padding-y: k-spacing(3) !default;
+$kendo-calendar-header-padding-y: 8px !default;
 /// The height of the header in the Calendar.
 /// @group calendar
 $kendo-calendar-header-border-width: 0px !default;
