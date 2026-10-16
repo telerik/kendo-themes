@@ -7,9 +7,15 @@ export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <h4>Image Editor Insert Line Pane</h4>
+            <h4>Image Editor Insert Line Pane &mdash; No Selection</h4>
 
             <ImageEditorInsertLine contentHeight="796px">
+                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+            </ImageEditorInsertLine>
+
+            <h4>Image Editor Insert Line Pane &mdash; Selected Line</h4>
+
+            <ImageEditorInsertLine contentHeight="796px" selected strokeColor="#b0e855" strokeWidth={8} startPoint="Circle" endPoint="Diamond">
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div style={{ position: "absolute", top: "150px", left: "90px", width: "220px", height: "0" }}>
                     <div style={{
@@ -39,7 +45,7 @@ export default () => (
                     </span>
                     <ImageEditorRotateHandle />
                     <FloatingToolbar fillMode="flat" resizable style={{ width: "max-content" }} offset={{ top: "60px", left: "-10px" }}>
-                        <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
+                        <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
                         <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>

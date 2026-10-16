@@ -7,9 +7,15 @@ export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <h4>Image Editor Insert Shape Pane</h4>
+            <h4>Image Editor Insert Shape Pane &mdash; No Selection</h4>
 
             <ImageEditorInsertShape contentHeight="1016px">
+                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+            </ImageEditorInsertShape>
+
+            <h4>Image Editor Insert Shape Pane &mdash; Selected Shape</h4>
+
+            <ImageEditorInsertShape contentHeight="1016px" selected shapeType="Oval" strokeColor="#b0e855" strokeWidth={8} fillColor="#eae382" textColor="#4a4500" fontSize={24}>
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <div className="k-imageeditor-resize" style={{ width: "165px", height: "54px", top: "140px", left: "165px" }}>
                     <div style={{
@@ -44,7 +50,7 @@ export default () => (
                     <span className="k-resize-handle k-resize-e"></span>
                     <ImageEditorRotateHandle />
                     <FloatingToolbar fillMode="flat" resizable style={{ width: "max-content" }} offset={{ top: "110px", left: "0" }}>
-                        <Button fillMode="flat" icon="copy" aria-label="Duplicate"></Button>
+                        <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
                         <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
                         <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
                         <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>

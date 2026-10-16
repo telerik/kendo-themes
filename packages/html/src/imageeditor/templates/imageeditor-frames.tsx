@@ -74,8 +74,8 @@ const FrameStylePreview = ({ styleKey, label, selected }: { styleKey: string; la
 );
 
 export const ImageEditorFrames = ({
-    style = "single",
-    imageRoundness = 24,
+    style = "none",
+    imageRoundness = 0,
     framesAmount = 3,
     frameThickness = 12,
     frameRoundness = style === "multiple" ? 40 : 16,

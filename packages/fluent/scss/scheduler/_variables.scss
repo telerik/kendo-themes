@@ -276,9 +276,12 @@ $kendo-scheduler-popover-event-border-radius: var( --kendo-scheduler-popover-eve
 /// @group scheduler
 $kendo-scheduler-popover-event-gap: var( --kendo-scheduler-popover-event-gap, k-spacing(0.5) ) !default;
 
-/// The color of the Scheduler marquee.
+/// The inline inset of the Scheduler marquee labels.
 /// @group scheduler
-$kendo-scheduler-marquee-color: var( --kendo-scheduler-marquee-color, k-color(primary) ) !default;
+$kendo-scheduler-marquee-label-inset-x: var( --kendo-scheduler-marquee-label-inset-x, k-spacing(1) ) !default;
+/// The block inset of the Scheduler marquee labels.
+/// @group scheduler
+$kendo-scheduler-marquee-label-inset-y: var( --kendo-scheduler-marquee-label-inset-y, k-spacing(0.5) ) !default;
 
 /// The spacing between icon and text in Scheduler navigation items.
 /// @group scheduler
@@ -396,5 +399,7 @@ $kendo-scheduler-recurrence-fields-row-gap: k-spacing(3) !default;
     $kendo-scheduler-adaptive-subtle-text: $kendo-scheduler-adaptive-subtle-text,
     $kendo-scheduler-datetime-section-margin-top: $kendo-scheduler-datetime-section-margin-top,
     $kendo-scheduler-recurrence-fields-row-gap: $kendo-scheduler-recurrence-fields-row-gap,
-    $kendo-scheduler-nav-item-icon-spacing: $kendo-scheduler-nav-item-icon-spacing
+    $kendo-scheduler-nav-item-icon-spacing: $kendo-scheduler-nav-item-icon-spacing,
+    $kendo-scheduler-marquee-label-inset-x: $kendo-scheduler-marquee-label-inset-x,
+    $kendo-scheduler-marquee-label-inset-y: $kendo-scheduler-marquee-label-inset-y
 );

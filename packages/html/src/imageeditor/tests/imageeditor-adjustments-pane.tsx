@@ -7,7 +7,7 @@ export default () => (
 
             <h4>Image Editor Adjustments Pane</h4>
 
-            <ImageEditorAdjustments contentHeight="640px" />
+            <ImageEditorAdjustments contentHeight="640px" blur={24} opacity={24} />
 
         </div>
     </>
