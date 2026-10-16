@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid k-grid-cols-7">
+            <span></span>
+            <span>Text</span>
+            <span>Text + Icon</span>
+            <span>Icon + Text</span>
+            <span>Icon</span>
+            <span>Number</span>
+            <span>Empty</span>
+            <span>undefined</span>
+            <span>
+                <span class="k-badge k-badge-tint">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint"></span>
+            </span>
+            <span>base</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-base">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-base">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-base">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-base">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-base">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-base"></span>
+            </span>
+            <span>primary</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-primary">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-primary">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-primary">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-primary">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-primary">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-primary"></span>
+            </span>
+            <span>secondary</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-secondary">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-secondary">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-secondary">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-secondary">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-secondary">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-secondary"></span>
+            </span>
+            <span>tertiary</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-tertiary">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-tertiary">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-tertiary">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-tertiary">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-tertiary">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-tertiary"></span>
+            </span>
+            <span>info</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-info">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-info">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-info">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-info">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-info">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-info"></span>
+            </span>
+            <span>success</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-success">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-success">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-success">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-success">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-success">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-success"></span>
+            </span>
+            <span>warning</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-warning">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-warning">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-warning">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-warning">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-warning">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-warning"></span>
+            </span>
+            <span>error</span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-error">
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-error">
+                    <span class="k-badge-text">Text</span>
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-error">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-badge-text">Text</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-error">
+                    <span class="k-badge-icon k-icon k-svg-icon k-svg-i-plus-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M8.25 12h7.5M12 8.25v7.5M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-error">
+                    <span class="k-badge-text">1</span>
+                </span>
+            </span>
+            <span>
+                <span class="k-badge k-badge-tint k-badge-error"></span>
+            </span>
+        </div>
+    </body>
+</html>
