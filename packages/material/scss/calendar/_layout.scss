@@ -25,6 +25,18 @@
                 margin: 4px;
             }
         }
+
+        &.k-calendar-md.k-week-number .k-calendar-table {
+            width: calc( #{7 * $kendo-calendar-cell-size} + 24px );
+
+            col:first-child {
+                width: 24px;
+            }
+
+            col:nth-child(n + 2) {
+                width: $kendo-calendar-cell-size;
+            }
+        }
     }
 
      // Calendar in popup
