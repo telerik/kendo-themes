@@ -24,7 +24,7 @@ const mobileToolbarItems = [
 
 // Same 5 actions as the desktop FloatingToolbar (imageeditor-insert-shape.tsx) - on mobile they dock at the top instead of floating over the canvas
 const contextualToolbarItems = [
-    <Button fillMode="flat" key="contextual-button-1" icon="copy" aria-label="Duplicate"></Button>,
+    <Button fillMode="flat" key="contextual-button-1" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>,
     <Button fillMode="flat" key="contextual-button-2" icon="pencil" aria-label="Edit"></Button>,
     <ToolbarSeparator key="contextual-separator-1"></ToolbarSeparator>,
     <Button fillMode="flat" key="contextual-button-3" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>,

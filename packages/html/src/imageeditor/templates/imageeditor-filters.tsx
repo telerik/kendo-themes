@@ -39,7 +39,7 @@ const FilterPreview = ({ presetKey, selected }: { presetKey: string; selected: b
     );
 };
 
-export const ImageEditorFilters = ({ preset = "greyscale", ...props }: any) => (
+export const ImageEditorFilters = ({ preset = "none", ...props }: any) => (
     <ImageEditor
         sidebarItems={filtersSidebarItems}
         actionPane={

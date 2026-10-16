@@ -1,3 +1,17 @@
+## 14.7.0-dev.10 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** add handles to blur and pixelate, align imageeditor templates with default state ([8b13765cc7](https://github.com/telerik/kendo-themes/commit/8b13765cc7))
+- **imageeditor:** add crop dim layer and upload button styles ([ffa92dc327](https://github.com/telerik/kendo-themes/commit/ffa92dc327))
+
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **badge:** update badge styles ([2fdd51af87](https://github.com/telerik/kendo-themes/commit/2fdd51af87))
+- **html:** enhance badge spec ([963b6a03c9](https://github.com/telerik/kendo-themes/commit/963b6a03c9))
+
 ## 14.7.0-dev.8 (2026-10-13)
 
 ### 🚀 Features

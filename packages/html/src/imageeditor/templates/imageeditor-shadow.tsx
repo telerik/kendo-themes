@@ -31,12 +31,12 @@ const hexToRgba = (hex: string, alphaPercent: number) => {
 };
 
 export const ImageEditorShadow = ({
-    positionX = 2,
+    positionX = 0,
     positionY = -4,
-    blur = 32,
-    spread = 12,
-    color = "#232a36",
-    opacity = 32,
+    blur = 12,
+    spread = 0,
+    color = "#000000",
+    opacity = 20,
     ...props
 }: any) => (
     <ImageEditor

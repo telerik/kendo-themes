@@ -34,7 +34,7 @@ const AdjustmentSlider = ({ id, label, value, min = 0, max = 100 }: { id: string
                     value={value}
                     min={min}
                     max={max}
-                    style={{ "--kendo-slider-start": min < 0 ? 0 : min, "--kendo-slider-end": value } as React.CSSProperties}
+                    style={{ "--kendo-slider-start": 0, "--kendo-slider-end": (value - min) / (max - min) * 100 } as React.CSSProperties}
                 />
                 <NumericTextbox
                     id={id}
@@ -54,8 +54,8 @@ export const ImageEditorAdjustments = ({
     saturation = 0,
     hue = 0,
     exposure = 0,
-    blur = 24,
-    opacity = 24,
+    blur = 0,
+    opacity = 100,
     ...props
 }: any) => (
     <ImageEditor

@@ -22,7 +22,7 @@ const cropSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
 
-export const ImageEditorCrop = (props: any) => (
+export const ImageEditorCrop = ({ cropWidth = 494, cropHeight = 307, ...props }: any) => (
     <ImageEditor
         sidebarItems={cropSidebarItems}
         actionPane={
@@ -50,7 +50,7 @@ export const ImageEditorCrop = (props: any) => (
                         label="Aspect Ratio"
                         editor={
                             <ImageEditorOptionList scrollable scrollingPosition="both">
-                                <ImageEditorOptionPreview><span className="k-imageeditor-option-label">Original</span></ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected><span className="k-imageeditor-option-label">Original</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">1:1</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">3:2</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">4:3</span></ImageEditorOptionPreview>
@@ -65,12 +65,12 @@ export const ImageEditorCrop = (props: any) => (
                         <FormField
                             label="Width"
                             editorId="crop-width"
-                            editor={ <NumericTextbox id="crop-width" showClearButton={false} value="400" prefix={<Icon icon="arrows-left-right" />} /> }
+                            editor={ <NumericTextbox id="crop-width" showClearButton={false} value={String(cropWidth)} prefix={<Icon icon="arrows-left-right" />} /> }
                         />
                         <FormField
                             label="Height"
                             editorId="crop-height"
-                            editor={ <NumericTextbox id="crop-height" showClearButton={false} value="360" prefix={<Icon icon="arrows-top-bottom" />} /> }
+                            editor={ <NumericTextbox id="crop-height" showClearButton={false} value={String(cropHeight)} prefix={<Icon icon="arrows-top-bottom" />} /> }
                         />
                     </Fieldset>
                     <FormField editor={ <CheckboxWithLabelAfter id="crop-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter> } />
@@ -80,9 +80,10 @@ export const ImageEditorCrop = (props: any) => (
 
         children={
             <>
-                <canvas width="61" height="68" role="img" aria-label="Image being edited"></canvas>
-                <div className="k-imageeditor-crop-overlay">
-                    <div className="k-imageeditor-crop" style={{ width: "61px", height: "68px" }}>
+                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+                <div className="k-imageeditor-crop-overlay" style={{ "--crop-x": "0px", "--crop-y": "0px", "--crop-w": "494px", "--crop-h": "307px" } as React.CSSProperties}>
+                    <div className="k-imageeditor-crop-dim"></div>
+                    <div className="k-imageeditor-crop" style={{ width: "494px", height: "307px" }}>
                         <ImageEditorResizeHandles variant="crop" grid />
                     </div>
                 </div>

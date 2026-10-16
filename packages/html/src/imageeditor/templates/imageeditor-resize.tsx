@@ -5,7 +5,6 @@ import { NumericTextbox } from "../../numerictextbox";
 import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
 import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
-import { Tooltip } from "../../tooltip";
 
 const resizeSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" selected aria-label="Resize"></Button>,
@@ -23,7 +22,7 @@ const resizeSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
 
-export const ImageEditorResize = (props: any) => (
+export const ImageEditorResize = ({ scaleUnit = "percentage", ...props }: any) => (
     <ImageEditor
         sidebarItems={resizeSidebarItems}
         actionPane={
@@ -39,10 +38,10 @@ export const ImageEditorResize = (props: any) => (
                         editor={
                             <RadioGroup layout="horizontal">
                                 <RadioItem>
-                                    <RadioButtonWithLabelAfter id="resize-scale-unit-pixel" name="resize-scale-unit" checked>Pixel</RadioButtonWithLabelAfter>
+                                    <RadioButtonWithLabelAfter id="resize-scale-unit-pixel" name="resize-scale-unit" checked={scaleUnit === "pixel"}>Pixel</RadioButtonWithLabelAfter>
                                 </RadioItem>
                                 <RadioItem>
-                                    <RadioButtonWithLabelAfter id="resize-scale-unit-percentage" name="resize-scale-unit">Percentage</RadioButtonWithLabelAfter>
+                                    <RadioButtonWithLabelAfter id="resize-scale-unit-percentage" name="resize-scale-unit" checked={scaleUnit === "percentage"}>Percentage</RadioButtonWithLabelAfter>
                                 </RadioItem>
                             </RadioGroup>
                         }
@@ -51,12 +50,12 @@ export const ImageEditorResize = (props: any) => (
                         <FormField
                             label="Width"
                             editorId="resize-width"
-                            editor={ <NumericTextbox id="resize-width" showClearButton={false} value="494" prefix={<Icon icon="arrows-left-right" />} /> }
+                            editor={ <NumericTextbox id="resize-width" showClearButton={false} value={scaleUnit === "percentage" ? "100%" : "494"} prefix={<Icon icon="arrows-left-right" />} /> }
                         />
                         <FormField
                             label="Height"
                             editorId="resize-height"
-                            editor={ <NumericTextbox id="resize-height" showClearButton={false} value="307" prefix={<Icon icon="arrows-top-bottom" />} /> }
+                            editor={ <NumericTextbox id="resize-height" showClearButton={false} value={scaleUnit === "percentage" ? "100%" : "307"} prefix={<Icon icon="arrows-top-bottom" />} /> }
                         />
                     </Fieldset>
                     <FormField editor={ <CheckboxWithLabelAfter id="resize-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter> } />
@@ -70,16 +69,6 @@ export const ImageEditorResize = (props: any) => (
                 <div className="k-imageeditor-resize">
                     <ImageEditorResizeHandles variant="mixed" />
                 </div>
-                <Tooltip
-                    themeColor="inverse"
-                    style={{ position: "absolute", insetBlockEnd: "-52px", insetInlineEnd: "0" }}
-                    content={
-                        <>
-                            <div>W: 494</div>
-                            <div>H: 307</div>
-                        </>
-                    }
-                ></Tooltip>
             </>
         }
         {...props} />

@@ -1,3 +1,24 @@
+## 14.7.0-dev.10 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** add handles to blur and pixelate, align imageeditor templates with default state ([8b13765cc7](https://github.com/telerik/kendo-themes/commit/8b13765cc7))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** enhance badge spec ([963b6a03c9](https://github.com/telerik/kendo-themes/commit/963b6a03c9))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.0-dev.8 (2026-10-13)
 
 ### 🚀 Features

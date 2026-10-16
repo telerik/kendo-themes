@@ -5,6 +5,7 @@ import { Form, FormField } from "../../form";
 import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { Slider } from "../../slider";
+import { InputSuffixText } from "../../input";
 
 
 const blurSidebarItems = [
@@ -23,7 +24,7 @@ const blurSidebarItems = [
     <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
 ];
 
-export const ImageEditorBlur = ({ shape = "rectangular", intensity = 16, ...props }: any) => (
+export const ImageEditorBlur = ({ selected = false, shape = "rectangular", intensity = 16, ...props }: any) => (
     <ImageEditor
         sidebarItems={blurSidebarItems}
         actionPane={
@@ -76,17 +77,39 @@ export const ImageEditorBlur = ({ shape = "rectangular", intensity = 16, ...prop
                             </div>
                         }
                     />
+                    <FormField
+                        label="Rotation"
+                        editor={
+                            <div className="k-imageeditor-field-row">
+                                <Slider
+                                    disabled={!selected}
+                                    style={{ flex: 1 }}
+                                    aria-label="Rotation"
+                                    showButtons={false}
+                                    showTicks={false}
+                                    value={0}
+                                    min={0}
+                                    max={360}
+                                />
+                                <NumericTextbox
+                                    disabled={!selected}
+                                    style={{ width: "80px", flex: "none" }}
+                                    aria-label="Rotation angle"
+                                    showClearButton={false}
+                                    showSpinButton={false}
+                                    separators={false}
+                                    value="0"
+                                    suffix={<InputSuffixText>°</InputSuffixText>}
+                                />
+                            </div>
+                        }
+                    />
                 </Form>
             </ImageEditorPane>
         }
 
         children={
-            <>
-                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", filter: "blur(8px)" }}></canvas>
-                <div className="k-imageeditor-crop-overlay">
-                    <div className="k-imageeditor-crop" style={{ borderStyle: "dashed" }}></div>
-                </div>
-            </>
+            <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
         }
         {...props} />
 );

@@ -53,9 +53,7 @@ export const BadgeDemo = (
           <AvatarIcon>
             <Icon icon="user" />
           </AvatarIcon>
-          <Badge align={'bottom-end'} position="edge" {...other} {...additionalProps}>
-            <Icon icon="minus" />
-          </Badge>
+          <Badge align={'bottom-end'} position="edge" icon="minus" {...other} {...additionalProps} />
         </div>
       );
   }
