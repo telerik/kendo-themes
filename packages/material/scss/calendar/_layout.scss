@@ -37,6 +37,20 @@
                 width: $kendo-calendar-cell-size;
             }
         }
+
+        &:not(.k-calendar-infinite).k-calendar-md {
+            .k-calendar-view .k-calendar-table {
+                width: var( --INTERNAL--kendo-calendar-view-width );
+            }
+
+            &:not(.k-week-number) {
+                --INTERNAL--kendo-calendar-view-width: #{7 * $kendo-calendar-cell-size};
+            }
+
+            &.k-week-number {
+                --INTERNAL--kendo-calendar-view-width: calc( #{7 * $kendo-calendar-cell-size} + 24px );
+            }
+        }
     }
 
      // Calendar in popup
