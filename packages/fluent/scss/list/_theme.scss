@@ -14,6 +14,10 @@
         &.k-disabled {
             color: $kendo-list-item-disabled-text;
             background-color: $kendo-list-item-disabled-bg;
+
+            .k-list-item-description {
+                color: $kendo-list-item-disabled-description-text;
+            }
         }
     }
 
