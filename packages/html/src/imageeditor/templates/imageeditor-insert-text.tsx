@@ -1,5 +1,6 @@
-import { ImageEditor, ImageEditorPane } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
+import { ToolbarSeparator } from "../../toolbar";
 import { ButtonGroup } from "../../button-group";
 import { Combobox } from "../../combobox";
 import { NumericTextbox } from "../../numerictextbox";
@@ -9,22 +10,6 @@ import { Icon } from "../../icon";
 import { InputSuffixText } from "../../input";
 import { Slider } from "../../slider";
 
-const insertTextSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" selected aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
 export const ImageEditorInsertText = ({
     selected = false,
     fontFamily = "Trebuchet MS",
@@ -32,28 +17,42 @@ export const ImageEditorInsertText = ({
     alignment = "center",
     fillColor = "#000000",
     opacity = 100,
+    adaptive,
+    imageSrc,
     ...props
 }: any) => (
     <ImageEditor
-        sidebarItems={insertTextSidebarItems}
+        adaptive={adaptive}
+        activeTool="Text"
+        toolbarItems={adaptive && selected ? (
+            <>
+                <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
+                <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
+                <ToolbarSeparator></ToolbarSeparator>
+                <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                <ToolbarSeparator></ToolbarSeparator>
+                <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
+            </>
+        ) : undefined}
         actionPane={
-            <ImageEditorPane title="Text" actions={
+            <ImageEditorPane title="Text" adaptive={adaptive} confirmDisabled={!selected} actions={
                 <>
-                    <Button>Remove</Button>
-                    <Button themeColor="primary">Insert</Button>
+                    <Button disabled={!selected}>Remove</Button>
+                    <Button themeColor="primary" disabled={!selected}>Insert</Button>
                 </>
             }>
                 <Form tag="div">
                     <FormField
                         label="Font Family"
                         editorId="text-font-family"
-                        editor={ <Combobox id="text-font-family" prefix={<Icon icon="font-family" />} value={fontFamily} /> }
+                        editor={ <Combobox id="text-font-family" showClearButton={false} prefix={<Icon icon="font-family" />} value={fontFamily} /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Font Size"
                             editorId="text-font-size"
-                            editor={ <NumericTextbox id="text-font-size" showSpinButton={false} value={String(fontSize)} prefix={<Icon icon="font-size" />} /> }
+                            editor={ <NumericTextbox id="text-font-size" showClearButton={false} showSpinButton={false} value={String(fontSize)} prefix={<Icon icon="font-size" />} /> }
                         />
                         <FormField
                             label="Alignment"
@@ -86,7 +85,7 @@ export const ImageEditorInsertText = ({
                         />
                         <FormField
                             label="Text Opacity"
-                            editor={ <NumericTextbox id="text-opacity" showSpinButton={false} value={`${opacity}%`} prefix={<Icon icon="transparency" />} aria-label="Text Opacity" /> }
+                            editor={ <NumericTextbox id="text-opacity" showClearButton={false} showSpinButton={false} value={`${opacity}%`} prefix={<Icon icon="transparency" />} aria-label="Text Opacity" /> }
                         />
                     </Fieldset>
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
@@ -163,7 +162,7 @@ export const ImageEditorInsertText = ({
         }
 
         children={
-            <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+            <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
         }
         {...props} />
 );

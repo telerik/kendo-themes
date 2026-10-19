@@ -1,4 +1,5 @@
 import { ImageEditorRotate, ImageEditorRotateHandle } from '..';
+import { IMAGEEDITOR_TEST_IMAGE_SRC } from '../constants';
 import { Tooltip } from '../../tooltip';
 
 
@@ -8,7 +9,7 @@ export default () =>(
 
             <h4>Image Editor Rotate Pane &mdash; Default</h4>
 
-            <ImageEditorRotate contentHeight="482px" />
+            <ImageEditorRotate contentHeight="482px" imageSrc={IMAGEEDITOR_TEST_IMAGE_SRC} />
 
             <h4>Image Editor Rotate Pane &mdash; Rotating</h4>
 

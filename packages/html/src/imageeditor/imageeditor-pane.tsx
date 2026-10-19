@@ -13,6 +13,8 @@ export type KendoImageEditorPaneProps = {
     actions?: React.JSX.Element | React.JSX.Element[];
     /** Renders the mobile bottom-sheet header (Close/Title/Confirm) and omits the `actions` footer. */
     adaptive?: boolean;
+    /** Disables the adaptive Confirm button (nothing to apply yet). */
+    confirmDisabled?: boolean;
 };
 
 const defaultOptions = {};
@@ -26,6 +28,7 @@ export const ImageEditorPane = (
         title,
         actions,
         adaptive,
+        confirmDisabled,
         children,
         ...other
     } = props;
@@ -42,7 +45,7 @@ export const ImageEditorPane = (
                 {adaptive && <Button fillMode="flat" icon="x" aria-label="Close" title="Close"></Button>}
                 <div className="k-imageeditor-pane-title">{title}</div>
                 {adaptive
-                    ? <Button fillMode="flat" icon="check" aria-label="Confirm" title="Confirm"></Button>
+                    ? <Button fillMode="flat" icon="check" disabled={confirmDisabled} aria-label="Confirm" title="Confirm"></Button>
                     : <Button fillMode="flat" icon="x" aria-label="Close" title="Close"></Button>
                 }
             </div>
