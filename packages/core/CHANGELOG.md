@@ -1,3 +1,13 @@
+## 14.7.0-dev.12 (2026-10-16)
+
+### 🚀 Features
+
+- **column-menu:** support item actions indent ([794ea3c8dc](https://github.com/telerik/kendo-themes/commit/794ea3c8dc))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.7.0-dev.11 (2026-10-16)
 
 ### 🚀 Features

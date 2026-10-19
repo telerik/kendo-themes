@@ -2,6 +2,7 @@
 @use "../../functions/index.scss" as *;
 @use "../../spacing/index.scss" as *;
 @use "../../border-radii/index.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "_variables.scss" as *;
 
 @mixin kendo-column-menu--layout-base() {
@@ -56,6 +57,20 @@
                     padding-inline: $_padding-x;
                     font-size: $_font-size;
                     line-height: $_line-height;
+                }
+
+                // Items without start actions are pushed by the actions width so their text lines up with items that have them.
+                // Action width = icon + k-spacing(1) padding on both sides; the gap to the text is k-spacing(1).
+                &:where(:has(.k-group-menu-item > .k-group-menu-item-actions:first-child)) .k-group-menu-item {
+                    padding-inline-start: calc( #{$_padding-x} + ( #{$ki-icon-size} + #{k-spacing(1)} * 2 ) + #{k-spacing(1)} );
+                }
+
+                &:where(:has(.k-group-menu-item > .k-group-menu-item-actions:first-child > .k-group-menu-item-action + .k-group-menu-item-action)) .k-group-menu-item {
+                    padding-inline-start: calc( #{$_padding-x} + ( #{$ki-icon-size} + #{k-spacing(1)} * 2 ) * 2 + #{k-spacing(1)} );
+                }
+
+                .k-group-menu-item:has(> .k-group-menu-item-actions:first-child) {
+                    padding-inline-start: $_padding-x;
                 }
             }
         }
