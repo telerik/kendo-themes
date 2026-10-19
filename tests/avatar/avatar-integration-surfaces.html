@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area { grid-template-columns: repeat(2, minmax(320px, 1fr)); gap: 24px; align-items: start; }
+            #test-area > section { min-width: 0; padding: 12px; border: 1px solid var(--kendo-color-border); }
+            #test-area h3 { margin: 0 0 8px; }
+            #test-area .avatar-controls { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+            #test-area .avatar-controls select { min-width: 100px; }
+            #test-area .avatar-guidance { margin: 10px 0 0; font-size: 12px; }
+            #test-area .avatar-row { display: flex; align-items: center; gap: 8px; }
+            #test-area .avatar-slot { display: inline-flex; position: relative; width: var(--avatar-slot-size);
+            height: var(--avatar-slot-size); flex: 0 0 var(--avatar-slot-size); overflow: hidden;
+            align-items: center; justify-content: center; vertical-align: middle; }
+            #test-area .avatar-slot > .k-avatar { position: absolute; flex: none;
+            width: var(--avatar-preview-size); height: var(--avatar-preview-size); }
+            #test-area .k-card-header, #test-area .k-appbar-section { display: flex; align-items: center; gap: 8px; }
+            #test-area .k-card, #test-area .k-taskboard-card { width: 190px; }
+            #test-area .avatar-profile-card { position: relative; width: 240px; }
+            #test-area .avatar-profile-card > .avatar-slot {
+            position: absolute; inset-inline-end: 12px; top: 50%; transform: translateY(-50%); z-index: 2;
+            }
+            #test-area .avatar-profile-card > .avatar-slot > .k-avatar { margin: 0; }
+            #test-area .avatar-profile-card .k-card-header,
+            #test-area .avatar-profile-card .k-card-body { padding-inline-end: 80px; }
+            #test-area .k-appbar { min-width: 190px; }
+            #test-area .k-messagebox { width: 200px; }
+            #test-area .k-panelbar { min-width: 210px; }
+            #test-area .k-notification { max-width: 220px; }
+            #test-area .k-expander { width: 215px; }
+            #test-area .k-tooltip { position: static; max-width: 210px; }
+        </style>
+        <div id="test-area" class="k-d-grid">
+            <section>
+                <h3>Form</h3>
+                <div class="avatar-controls">
+                    <label for="_r_0_">Avatar size</label>
+                    <select id="_r_0_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <form class="k-form">
+                        <div class="k-form-field" data-avatar-baseline-height="36" style="box-sizing: border-box; height: 36px; min-height: 0px; max-height: 36px; overflow: hidden;">
+                            <label class="k-form-label k-label">Profile photo</label>
+                            <div class="k-form-field-wrap">
+                                <span class="avatar-row">
+                                    <span class="avatar-slot" style="--avatar-slot-size: 16px; --avatar-preview-size: 16px;">
+                                        <div class="k-avatar k-avatar-sm" style="width: 16px; height: 16px; flex: 0 0 16px;">
+                                            <span class="k-avatar-image">
+                                                <img alt="Alex Morgan" src="/packages/html/assets/avatar.jpg">
+                                            </span>
+                                        </div>
+                                    </span>
+                                    Alex Morgan
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <p class="avatar-guidance">Recommended: 16px. XS keeps the form field compact; S only fits when an existing editor row already has room. The slot stays 16px. Sizes above it are clipped, not fully usable at this component height.</p>
+            </section>
+            <section>
+                <h3>MessageBox</h3>
+                <div class="avatar-controls">
+                    <label for="_r_1_">Avatar size</label>
+                    <select id="_r_1_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="k-messagebox" data-avatar-baseline-height="36" style="box-sizing: border-box; height: 36px; min-height: 0px; max-height: 36px; overflow: hidden;">
+                        <span class="avatar-row">
+                            <span class="avatar-slot" style="--avatar-slot-size: 16px; --avatar-preview-size: 16px;">
+                                <div class="k-avatar k-avatar-sm" style="width: 16px; height: 16px; flex: 0 0 16px;">
+                                    <span class="k-avatar-image">
+                                        <img alt="" src="/packages/html/assets/avatar.jpg">
+                                    </span>
+                                </div>
+                            </span>
+                            Alex Morgan joined the team.
+                        </span>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 16px. XS is conditional: even this size can wrap text and increase the natural height in Fluent. The preview holds the original height and may clip text. The slot stays 16px. Sizes above it are clipped, not fully usable at this component height.</p>
+            </section>
+            <section>
+                <h3>Notification</h3>
+                <div class="avatar-controls">
+                    <label for="_r_2_">Avatar size</label>
+                    <select id="_r_2_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="k-notification" role="status" aria-live="polite" aria-describedby="k-notification-content-1" data-avatar-baseline-height="18" style="box-sizing: border-box; height: 18px; min-height: 0px; max-height: 18px; overflow: hidden;">
+                        <div id="k-notification-content-1" class="k-notification-content">
+                            <span class="avatar-row">
+                                <span class="avatar-slot" style="--avatar-slot-size: 16px; --avatar-preview-size: 16px;">
+                                    <div class="k-avatar k-avatar-sm" style="width: 16px; height: 16px; flex: 0 0 16px;">
+                                        <span class="k-avatar-image">
+                                            <img alt="" src="/packages/html/assets/avatar.jpg">
+                                        </span>
+                                    </div>
+                                </span>
+                                New message from Alex.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 16px. XS is conditional: Bootstrap may wrap this content onto an extra line. The original height is retained by clipping overflow. The slot stays 16px. Sizes above it are clipped, not fully usable at this component height.</p>
+            </section>
+            <section>
+                <h3>Card</h3>
+                <div class="avatar-controls">
+                    <label for="_r_3_">Avatar size</label>
+                    <select id="_r_3_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="avatar-profile-card k-card" data-avatar-baseline-height="36" style="box-sizing: border-box; height: 36px; min-height: 0px; max-height: 36px; overflow: hidden;">
+                        <span class="avatar-slot" style="--avatar-slot-size: 64px; --avatar-preview-size: 48px;">
+                            <div class="k-avatar k-avatar-lg" style="width: 48px; height: 48px; flex: 0 0 48px;">
+                                <span class="k-avatar-image">
+                                    <img alt="Alex Morgan" src="/packages/html/assets/avatar.jpg">
+                                </span>
+                            </div>
+                        </span>
+                        <div class="k-card-header">
+                            <strong>Alex Morgan</strong>
+                        </div>
+                        <div class="k-card-body">Profile card</div>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 48px. L highlights the profile in a reserved card-side area; XS/S/M are more compact, and XL also fits. The slot stays 64px.</p>
+            </section>
+            <section>
+                <h3>PanelBar</h3>
+                <div class="avatar-controls">
+                    <label for="_r_4_">Avatar size</label>
+                    <select id="_r_4_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <ul class="k-panelbar" role="tree" data-avatar-baseline-height="960" style="box-sizing: border-box; height: 960px; min-height: 0px; max-height: 960px; overflow: hidden;">
+                        <li class="k-panelbar-item k-level-0 k-expanded" role="treeitem" aria-expanded="true" aria-selected="false">
+                            <span class="k-link">
+                                <span class="k-panelbar-item-text">Team members</span>
+                                <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="k-panelbar-content">
+                                <span class="avatar-row">
+                                    <span class="avatar-slot" style="--avatar-slot-size: 16px; --avatar-preview-size: 16px;">
+                                        <div class="k-avatar k-avatar-sm" style="width: 16px; height: 16px; flex: 0 0 16px;">
+                                            <span class="k-avatar-image">
+                                                <img alt="" src="/packages/html/assets/avatar.jpg">
+                                            </span>
+                                        </div>
+                                    </span>
+                                    Alex Morgan
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <p class="avatar-guidance">Recommended: 16px. XS respects the existing panel item and disclosure alignment; larger images need reserved space. The slot stays 16px. Sizes above it are clipped, not fully usable at this component height.</p>
+            </section>
+            <section>
+                <h3>AppBar</h3>
+                <div class="avatar-controls">
+                    <label for="_r_5_">Avatar size</label>
+                    <select id="_r_5_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="k-appbar" data-avatar-baseline-height="18" style="box-sizing: border-box; height: 18px; min-height: 0px; max-height: 18px; overflow: hidden;">
+                        <div class="k-appbar-section">
+                            <span class="k-spacer">Workspace</span>
+                            <span class="avatar-slot" style="--avatar-slot-size: 16px; --avatar-preview-size: 16px;">
+                                <div class="k-avatar k-avatar-sm" style="width: 16px; height: 16px; flex: 0 0 16px;">
+                                    <span class="k-avatar-image">
+                                        <img alt="Account" src="/packages/html/assets/avatar.jpg">
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 16px. XS fits without changing bar height; S/M need an existing account-control slot. The slot stays 16px. Sizes above it are clipped, not fully usable at this component height.</p>
+            </section>
+            <section>
+                <h3>ExpansionPanel Content</h3>
+                <div class="avatar-controls">
+                    <label for="_r_6_">Avatar size</label>
+                    <select id="_r_6_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="k-expander k-expanded" data-avatar-baseline-height="255" style="box-sizing: border-box; height: 255px; min-height: 0px; max-height: 255px; overflow: hidden;">
+                        <div class="k-expander-header" role="button" aria-controls="k-expander-content-1" aria-expanded="true" tabindex="0">
+                            <div class="k-expander-title">Team</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper" id="k-expander-content-1">
+                            <div class="k-expander-content">
+                                <span class="avatar-row">
+                                    <span class="avatar-slot" style="--avatar-slot-size: 16px; --avatar-preview-size: 16px;">
+                                        <div class="k-avatar k-avatar-sm" style="width: 16px; height: 16px; flex: 0 0 16px;">
+                                            <span class="k-avatar-image">
+                                                <img alt="" src="/packages/html/assets/avatar.jpg">
+                                            </span>
+                                        </div>
+                                    </span>
+                                    Alex Morgan
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 16px. XS preserves content height; larger images need a pre-existing media region. The slot stays 16px. Sizes above it are clipped, not fully usable at this component height.</p>
+            </section>
+            <section>
+                <h3>TaskBoard Card</h3>
+                <div class="avatar-controls">
+                    <label for="_r_7_">Avatar size</label>
+                    <select id="_r_7_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="avatar-profile-card k-taskboard-card k-card" role="listitem" tabindex="0" data-avatar-baseline-height="36" style="box-sizing: border-box; height: 36px; min-height: 0px; max-height: 36px; overflow: hidden;">
+                        <span class="avatar-slot" style="--avatar-slot-size: 64px; --avatar-preview-size: 32px;">
+                            <div class="k-avatar k-avatar-md" style="width: 32px; height: 32px; flex: 0 0 32px;">
+                                <span class="k-avatar-image">
+                                    <img alt="Alex Morgan" src="/packages/html/assets/avatar.jpg">
+                                </span>
+                            </div>
+                        </span>
+                        <div class="k-card-header">Design review</div>
+                        <div class="k-card-body">Alex Morgan</div>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 32px. M identifies the assignee without crowding the task; XS/S are denser, while L/XL fit the reserved side area. The slot stays 64px.</p>
+            </section>
+            <section>
+                <h3>Timeline Card</h3>
+                <div class="avatar-controls">
+                    <label for="_r_8_">Avatar size</label>
+                    <select id="_r_8_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="avatar-profile-card k-card k-card-vertical k-card-with-callout" data-avatar-baseline-height="36" style="box-sizing: border-box; height: 36px; min-height: 0px; max-height: 36px; overflow: hidden;">
+                        <span class="avatar-slot" style="--avatar-slot-size: 64px; --avatar-preview-size: 32px;">
+                            <div class="k-avatar k-avatar-md" style="width: 32px; height: 32px; flex: 0 0 32px;">
+                                <span class="k-avatar-image">
+                                    <img alt="Alex Morgan" src="/packages/html/assets/avatar.jpg">
+                                </span>
+                            </div>
+                        </span>
+                        <div class="k-card-header">Milestone</div>
+                        <div class="k-card-body">Alex Morgan</div>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 32px. M balances the author image with the milestone; XS/S are compact, and L/XL use the reserved side area. The slot stays 64px.</p>
+            </section>
+            <section>
+                <h3>Tooltip</h3>
+                <div class="avatar-controls">
+                    <label for="_r_9_">Avatar size</label>
+                    <select id="_r_9_">
+                        <option value="16">XS - 16px</option>
+                        <option value="24">S - 24px</option>
+                        <option value="32">M - 32px</option>
+                        <option value="48">L - 48px</option>
+                        <option value="64">XL - 64px</option>
+                    </select>
+                </div>
+                <div class="avatar-example">
+                    <div class="k-tooltip" role="tooltip" id="k-tooltip-1" data-avatar-baseline-height="18" style="box-sizing: border-box; height: 18px; min-height: 0px; max-height: 18px; overflow: hidden;">
+                        <div class="k-tooltip-content">
+                            <span class="avatar-row">
+                                <span class="avatar-slot" style="--avatar-slot-size: 16px; --avatar-preview-size: 16px;">
+                                    <div class="k-avatar k-avatar-sm" style="width: 16px; height: 16px; flex: 0 0 16px;">
+                                        <span class="k-avatar-image">
+                                            <img alt="" src="/packages/html/assets/avatar.jpg">
+                                        </span>
+                                    </div>
+                                </span>
+                                Alex Morgan
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="avatar-guidance">Recommended: 16px. XS limits text wrapping; larger images are conditional on the existing tooltip width and content height. The slot stays 16px. Sizes above it are clipped, not fully usable at this component height.</p>
+            </section>
+        </div>
+    </body>
+</html>
