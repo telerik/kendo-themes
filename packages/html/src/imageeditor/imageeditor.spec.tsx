@@ -1,6 +1,6 @@
 import { classNames } from '../misc';
 import { ImageEditorToolbar } from './imageeditor-toolbar';
-import { ImageEditorSidebar } from './imageeditor-sidebar';
+import { ImageEditorSidebar, ImageEditorSidebarTool } from './imageeditor-sidebar';
 import { Overlay } from '../overlay';
 import { Loader } from '../loader';
 
@@ -16,6 +16,9 @@ export type KendoImageEditorProps = {
     toolbarItems?: React.JSX.Element | React.JSX.Element[];
     actionPane?: React.JSX.Element | React.JSX.Element[];
     sidebarItems?: React.JSX.Element | React.JSX.Element[];
+    /** The tool whose pane is open; its sidebar button is pressed. */
+    activeTool?: ImageEditorSidebarTool;
+    /** Shown instead of the canvas while no image is loaded; the toolbar actions and sidebar tools are disabled. */
     placeholder?: React.JSX.Element;
     contentHeight?: string;
     exporting?: boolean;
@@ -28,8 +31,8 @@ export type KendoImageEditorProps = {
 const defaultOptions = {};
 
 /**
- * @aria {role="img"} Indicates the canvas role as an image. Applicable when an image is loaded.
- * @aria {aria-label|aria-labelledby} Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded.
+ * @aria {role="application"} Indicates that the ImageEditor has its own keyboard navigation implemented.
+ * @aria {aria-label} Provides an accessible name for the application.
  * @aria {role="status"} Announces the busy overlay shown while `exporting` is true.
  * @ux {Canvas} Renders the image on an editable canvas.
  * @ux {Crop} A crop tool lets the user select and apply a cropping region.
@@ -46,6 +49,7 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
         toolbarItems,
         actionPane,
         sidebarItems,
+        activeTool,
         placeholder,
         contentHeight,
         exporting,
@@ -55,6 +59,8 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
         children,
         ...other
     } = props;
+
+    const noImage = Boolean(placeholder);
 
     const canvasContainer = (
         <div className="k-imageeditor-canvas-container">
@@ -69,10 +75,12 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
     const pane = actionPane &&
         <div className="k-imageeditor-action-pane">{actionPane}</div>;
 
-    const sidebar = <ImageEditorSidebar sidebarItems={sidebarItems} scrollable={sidebarScrollable} scrollingPosition={sidebarScrollingPosition} />;
+    const sidebar = <ImageEditorSidebar sidebarItems={sidebarItems} activeTool={activeTool} disabled={noImage} adaptive={adaptive} scrollable={sidebarScrollable} scrollingPosition={sidebarScrollingPosition} />;
 
     return (
         <div
+            role="application"
+            aria-label="Image Editor"
             {...other}
             className={classNames(
                 props.className,
@@ -80,7 +88,7 @@ export const ImageEditor: KendoComponent<KendoImageEditorProps & React.HTMLAttri
                 { [`${IMAGEEDITOR_CLASSNAME}-adaptive`]: adaptive }
             )}>
             <div className="k-imageeditor-header">
-                <ImageEditorToolbar toolbarItems={toolbarItems} />
+                <ImageEditorToolbar toolbarItems={toolbarItems} adaptive={adaptive} disabled={noImage} />
             </div>
 
             <div className="k-imageeditor-content" style={{ height: contentHeight }}>
@@ -111,7 +119,7 @@ ImageEditor.moduleName = IMAGEEDITOR_MODULE_NAME;
 ImageEditor.folderName = IMAGEEDITOR_FOLDER_NAME;
 
 /**
- * @keyboard {Alt/Opt(Mac) + Number} Focuses the component.
+ * @keyboard {Alt/Opt(Mac) + W} Focuses the first focusable element in the Image Editor Toolbar.
  * @keyboard {Tab} Focuses the next focusable item.
  * @keyboard {Shift + Tab} Focuses the previous focusable item.
  * @keyboard {Enter} Presses the focused button.

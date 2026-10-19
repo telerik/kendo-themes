@@ -1,4 +1,5 @@
 import { ImageEditorCrop } from '..';
+import { IMAGEEDITOR_TEST_IMAGE_SRC } from '../constants';
 
 
 export default () =>(
@@ -7,7 +8,7 @@ export default () =>(
 
             <h4>Image Editor Crop Pane &mdash; Default</h4>
 
-            <ImageEditorCrop contentHeight="482px" />
+            <ImageEditorCrop contentHeight="482px" imageSrc={IMAGEEDITOR_TEST_IMAGE_SRC} />
 
             <h4>Image Editor Crop Pane &mdash; Custom Crop</h4>
 

@@ -1,5 +1,6 @@
-import { ImageEditor, ImageEditorPane } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
+import { ToolbarSeparator } from "../../toolbar";
 import { ButtonGroup } from "../../button-group";
 import { NumericTextbox } from "../../numerictextbox";
 import { ColorPicker } from "../../colorpicker";
@@ -10,22 +11,6 @@ import { InputSuffixText } from "../../input";
 import { Slider } from "../../slider";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 
-const insertLineSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" selected aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
 export const ImageEditorInsertLine = ({
     selected = false,
     strokeColor = "#000000",
@@ -34,18 +19,32 @@ export const ImageEditorInsertLine = ({
     startPoint = "None",
     endPoint = "None",
     opacity = 100,
+    adaptive,
+    imageSrc,
     ...props
 }: any) => (
     <ImageEditor
-        sidebarItems={insertLineSidebarItems}
+        adaptive={adaptive}
+        activeTool="Shapes"
+        toolbarItems={adaptive && selected ? (
+            <>
+                <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
+                <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
+                <ToolbarSeparator></ToolbarSeparator>
+                <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                <ToolbarSeparator></ToolbarSeparator>
+                <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
+            </>
+        ) : undefined}
         actionPane={
-            <ImageEditorPane title="Shapes and Lines" actions={
+            <ImageEditorPane title="Shapes and Lines" adaptive={adaptive} confirmDisabled={!selected} actions={
                 <>
-                    <Button>Remove</Button>
-                    <Button themeColor="primary">Insert</Button>
+                    <Button disabled={!selected}>Remove</Button>
+                    <Button themeColor="primary" disabled={!selected}>Insert</Button>
                 </>
             }>
-                <SegmentedControl thumbStyles={{ width: "50%", left: "50%" }} stretched aria-label="Shape or Line" style={{ flexShrink: 0 }}>
+                <SegmentedControl thumbStyles={{ width: "50%", left: "50%" }} stretched aria-label="Shape or Line">
                     <SegmentedControlButton icon="shapes">Shape</SegmentedControlButton>
                     <SegmentedControlButton icon="shape-line" selected>Line</SegmentedControlButton>
                 </SegmentedControl>
@@ -59,7 +58,7 @@ export const ImageEditorInsertLine = ({
                         <FormField
                             label="Stroke Width"
                             editorId="line-stroke-width"
-                            editor={ <NumericTextbox id="line-stroke-width" showSpinButton={false} value={String(strokeWidth)} prefix={<Icon icon="border-width" />} /> }
+                            editor={ <NumericTextbox id="line-stroke-width" showClearButton={false} showSpinButton={false} value={String(strokeWidth)} prefix={<Icon icon="border-width" />} /> }
                         />
                     </Fieldset>
                     <FormField
@@ -78,7 +77,7 @@ export const ImageEditorInsertLine = ({
                     </Fieldset>
                     <FormField
                         label="Opacity"
-                        editor={ <NumericTextbox id="line-opacity" showSpinButton={false} value={`${opacity}%`} prefix={<Icon icon="transparency" />} aria-label="Opacity" /> }
+                        editor={ <NumericTextbox id="line-opacity" showClearButton={false} showSpinButton={false} value={`${opacity}%`} prefix={<Icon icon="transparency" />} aria-label="Opacity" /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
@@ -154,7 +153,7 @@ export const ImageEditorInsertLine = ({
         }
 
         children={
-            <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+            <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
         }
         {...props} />
 );

@@ -1,4 +1,5 @@
 import { ImageEditorBlur, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
+import { IMAGEEDITOR_TEST_IMAGE_SRC } from '../constants';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -9,7 +10,7 @@ export default () =>(
 
             <h4>Image Editor Blur Pane &mdash; No Selection</h4>
 
-            <ImageEditorBlur contentHeight="482px" />
+            <ImageEditorBlur contentHeight="482px" imageSrc={IMAGEEDITOR_TEST_IMAGE_SRC} />
 
             <h4>Image Editor Blur Pane &mdash; Rectangular Markee</h4>
 

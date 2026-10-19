@@ -1,4 +1,5 @@
 import { ImageEditorPixelate, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
+import { IMAGEEDITOR_TEST_IMAGE_SRC } from '../constants';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -9,7 +10,7 @@ export default () =>(
 
             <h4>Image Editor Pixelate Pane &mdash; No Selection</h4>
 
-            <ImageEditorPixelate contentHeight="482px" />
+            <ImageEditorPixelate contentHeight="482px" imageSrc={IMAGEEDITOR_TEST_IMAGE_SRC} />
 
             <h4>Image Editor Pixelate Pane &mdash; Rectangular Markee</h4>
 

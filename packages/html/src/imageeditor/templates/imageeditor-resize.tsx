@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { NumericTextbox } from "../../numerictextbox";
@@ -6,30 +6,15 @@ import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
 import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
 
-const resizeSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" selected aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-export const ImageEditorResize = ({ scaleUnit = "percentage", ...props }: any) => (
+export const ImageEditorResize = ({ scaleUnit = "percentage", modified = false, adaptive, imageSrc, ...props }: any) => (
     <ImageEditor
-        sidebarItems={resizeSidebarItems}
+        adaptive={adaptive}
+        activeTool="Resize"
         actionPane={
-            <ImageEditorPane title="Resize" actions={
+            <ImageEditorPane title="Resize" adaptive={adaptive} confirmDisabled={!modified} actions={
                 <>
-                    <Button>Reset</Button>
-                    <Button themeColor="primary">Apply</Button>
+                    <Button disabled={!modified}>Reset</Button>
+                    <Button themeColor="primary" disabled={!modified}>Apply</Button>
                 </>
             }>
                 <Form tag="div">
@@ -50,12 +35,12 @@ export const ImageEditorResize = ({ scaleUnit = "percentage", ...props }: any) =
                         <FormField
                             label="Width"
                             editorId="resize-width"
-                            editor={ <NumericTextbox id="resize-width" showClearButton={false} value={scaleUnit === "percentage" ? "100%" : "494"} prefix={<Icon icon="arrows-left-right" />} /> }
+                            editor={ <NumericTextbox id="resize-width" showClearButton={false} showSpinButton={false} value={scaleUnit === "percentage" ? "100%" : "494"} prefix={<Icon icon="arrows-left-right" />} /> }
                         />
                         <FormField
                             label="Height"
                             editorId="resize-height"
-                            editor={ <NumericTextbox id="resize-height" showClearButton={false} value={scaleUnit === "percentage" ? "100%" : "307"} prefix={<Icon icon="arrows-top-bottom" />} /> }
+                            editor={ <NumericTextbox id="resize-height" showClearButton={false} showSpinButton={false} value={scaleUnit === "percentage" ? "100%" : "307"} prefix={<Icon icon="arrows-top-bottom" />} /> }
                         />
                     </Fieldset>
                     <FormField editor={ <CheckboxWithLabelAfter id="resize-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter> } />
@@ -65,7 +50,7 @@ export const ImageEditorResize = ({ scaleUnit = "percentage", ...props }: any) =
 
         children={
             <>
-                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+                <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
                 <div className="k-imageeditor-resize">
                     <ImageEditorResizeHandles variant="mixed" />
                 </div>

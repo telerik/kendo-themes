@@ -1,4 +1,5 @@
 import { ImageEditorResize } from '..';
+import { IMAGEEDITOR_TEST_IMAGE_SRC } from '../constants';
 import { Tooltip } from '../../tooltip';
 
 
@@ -8,7 +9,7 @@ export default () =>(
 
             <h4>Image Editor Resize Pane &mdash; Default</h4>
 
-            <ImageEditorResize contentHeight="482px" />
+            <ImageEditorResize contentHeight="482px" imageSrc={IMAGEEDITOR_TEST_IMAGE_SRC} />
 
             <h4>Image Editor Resize Pane &mdash; Resizing</h4>
 
