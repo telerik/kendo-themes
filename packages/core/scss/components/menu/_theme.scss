@@ -92,6 +92,10 @@
                     $kendo-menu-popup-item-hover-border,
                     $kendo-menu-popup-item-hover-gradient
                 );
+
+                .k-menu-link-description {
+                    color: $kendo-menu-popup-item-hover-description-text;
+                }
             }
 
             &:active,
@@ -103,6 +107,10 @@
                     $kendo-menu-popup-item-active-border,
                     $kendo-menu-popup-item-active-gradient
                 );
+
+                .k-menu-link-description {
+                    color: $kendo-menu-popup-item-active-description-text;
+                }
             }
         }
 
