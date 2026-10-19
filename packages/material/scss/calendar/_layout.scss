@@ -49,6 +49,10 @@
                 }
             }
 
+            .k-calendar-footer {
+                text-align: end;
+            }
+
             &:not(.k-week-number) {
                 --INTERNAL--kendo-calendar-view-width: #{7 * $kendo-calendar-cell-size};
             }
