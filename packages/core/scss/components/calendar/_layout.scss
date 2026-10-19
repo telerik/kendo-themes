@@ -224,7 +224,11 @@
 
         .k-today {
             font-weight: $kendo-calendar-today-font-weight;
-            box-shadow: $kendo-calendar-today-box-shadow;
+
+            .k-calendar-cell-inner,
+            .k-link {
+                box-shadow: $kendo-calendar-today-box-shadow;
+            }
         }
     }
 
