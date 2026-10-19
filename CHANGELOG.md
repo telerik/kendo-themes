@@ -1,3 +1,9 @@
+## 14.7.0-dev.13 (2026-10-19)
+
+### 🚀 Features
+
+- **html:** add Non scrollable grid template and test ([3d9d7a605a](https://github.com/telerik/kendo-themes/commit/3d9d7a605a))
+
 ## 14.7.0-dev.12 (2026-10-16)
 
 ### 🚀 Features
