@@ -372,6 +372,11 @@
         gap: $kendo-image-editor-pane-content-gap;
         flex: 1 1 auto;
         overflow-y: auto;
+
+        // Keeps a mode switch above the form from shrinking when the content overflows
+        > .k-segmented-control {
+            flex-shrink: 0;
+        }
     }
 
     .k-imageeditor-pane-footer {
