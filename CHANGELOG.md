@@ -1,3 +1,10 @@
+## 14.7.0-dev.14 (2026-10-20)
+
+### 🩹 Fixes
+
+- **list:** item description text color does not meet contrast requirements ([51b8d4cc9f](https://github.com/telerik/kendo-themes/commit/51b8d4cc9f))
+- **menu:** item description text color does not meet contrast requirements ([0887cb7ffe](https://github.com/telerik/kendo-themes/commit/0887cb7ffe))
+
 ## 14.7.0-dev.13 (2026-10-19)
 
 ### 🚀 Features

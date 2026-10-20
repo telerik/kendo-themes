@@ -1,3 +1,16 @@
+## 14.7.0-dev.14 (2026-10-20)
+
+### 🩹 Fixes
+
+- **menu:** item description text color does not meet contrast requirements ([0887cb7ffe](https://github.com/telerik/kendo-themes/commit/0887cb7ffe))
+- **list:** item description text color does not meet contrast requirements ([51b8d4cc9f](https://github.com/telerik/kendo-themes/commit/51b8d4cc9f))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Irina Masyukova
+
 ## 14.7.0-dev.13 (2026-10-19)
 
 This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
