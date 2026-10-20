@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-border-radius-xxxl</td>
     <td>Calculation</td>
-    <td><code>calc(var(--kendo-border-radius-base) * 5)</code></td>
+    <td><code>28px</code></td>
     <td><code>calc(var(--kendo-border-radius-base) * 4)</code></td>
 </tr>
 <tr>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>$_default-border-radii</code></td>
-    <td><ul><li>none: 0px</li><li>xs: calc(var(--kendo-border-radius-base) * 0.25)</li><li>sm: calc(var(--kendo-border-radius-base) * 0.5)</li><li>md: var(--kendo-border-radius-base)</li><li>lg: calc(var(--kendo-border-radius-base) * 2)</li><li>xl: calc(var(--kendo-border-radius-base) * 3)</li><li>xxl: calc(var(--kendo-border-radius-base) * 4)</li><li>xxxl: calc(var(--kendo-border-radius-base) * 5)</li><li>full: calc(var(--kendo-border-radius-base) * 9999)</li></ul></td>
+    <td><ul><li>none: 0px</li><li>xs: calc(var(--kendo-border-radius-base) * 0.25)</li><li>sm: calc(var(--kendo-border-radius-base) * 0.5)</li><li>md: var(--kendo-border-radius-base)</li><li>lg: calc(var(--kendo-border-radius-base) * 2)</li><li>xl: calc(var(--kendo-border-radius-base) * 3)</li><li>xxl: calc(var(--kendo-border-radius-base) * 4)</li><li>xxxl: 28px</li><li>full: calc(var(--kendo-border-radius-base) * 9999)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>

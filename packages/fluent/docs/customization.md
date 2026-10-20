@@ -3992,6 +3992,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-title-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-calendar-title-padding-x, 8px )</code></td>
+    <td><code>var(--kendo-calendar-title-padding-x, 8px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the title buttons in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-footer-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-calendar-footer-padding-x, k-spacing(1) )</code></td>

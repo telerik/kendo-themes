@@ -4072,6 +4072,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-title-padding-x</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the title buttons in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-footer-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>

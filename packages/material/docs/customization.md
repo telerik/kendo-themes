@@ -1870,7 +1870,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-border-radius-xxxl</td>
     <td>Calculation</td>
-    <td><code>calc(var(--kendo-border-radius-base) * 5)</code></td>
+    <td><code>28px</code></td>
     <td><code>calc(var(--kendo-border-radius-base) * 4)</code></td>
 </tr>
 <tr>
@@ -1891,7 +1891,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>$_default-border-radii</code></td>
-    <td><ul><li>none: 0px</li><li>xs: calc(var(--kendo-border-radius-base) * 0.25)</li><li>sm: calc(var(--kendo-border-radius-base) * 0.5)</li><li>md: var(--kendo-border-radius-base)</li><li>lg: calc(var(--kendo-border-radius-base) * 2)</li><li>xl: calc(var(--kendo-border-radius-base) * 3)</li><li>xxl: calc(var(--kendo-border-radius-base) * 4)</li><li>xxxl: calc(var(--kendo-border-radius-base) * 5)</li><li>full: calc(var(--kendo-border-radius-base) * 9999)</li></ul></td>
+    <td><ul><li>none: 0px</li><li>xs: calc(var(--kendo-border-radius-base) * 0.25)</li><li>sm: calc(var(--kendo-border-radius-base) * 0.5)</li><li>md: var(--kendo-border-radius-base)</li><li>lg: calc(var(--kendo-border-radius-base) * 2)</li><li>xl: calc(var(--kendo-border-radius-base) * 3)</li><li>xxl: calc(var(--kendo-border-radius-base) * 4)</li><li>xxxl: 28px</li><li>full: calc(var(--kendo-border-radius-base) * 9999)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
@@ -4043,9 +4043,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-calendar-header-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the header in the Calendar.</div></div>
@@ -4053,9 +4053,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-calendar-header-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the header in the Calendar.</div></div>
@@ -4119,6 +4119,16 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the navigation of the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-title-padding-x</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the title buttons in the Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -4703,9 +4713,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-infinite-calendar-header-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the header in the Infinite Calendar.</div></div>
@@ -4713,9 +4723,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-infinite-calendar-header-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(3)</code></td>
-    <td><code>var(--kendo-spacing-3)</code></td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the header in the Infinite Calendar.</div></div>
@@ -4723,9 +4733,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-infinite-calendar-view-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1)</code></td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Calendar view in the Infinite Calendar.</div></div>
@@ -4733,9 +4743,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-infinite-calendar-view-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(0)</code></td>
-    <td><code>var(--kendo-spacing-0)</code></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Calendar view in the Infinite Calendar.</div></div>
@@ -11569,7 +11579,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-datetime-width</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-calendar-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
-    <td><code>calc(48px * 8 + var(--kendo-spacing-1) * 2)</code></td>
+    <td><code>calc(48px * 8 + 12px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateTimePicker.</div></div>
@@ -11579,7 +11589,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-datetime-sm-width</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-calendar-sm-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
-    <td><code>calc(40px * 8 + var(--kendo-spacing-1) * 2)</code></td>
+    <td><code>calc(40px * 8 + 12px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small DateTimePicker.</div></div>
@@ -11589,7 +11599,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-datetime-md-width</td>
     <td>Calculation</td>
     <td><code>$kendo-datetime-width</code></td>
-    <td><code>calc(48px * 8 + var(--kendo-spacing-1) * 2)</code></td>
+    <td><code>calc(48px * 8 + 12px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium DateTimePicker.</div></div>
@@ -11599,7 +11609,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-datetime-lg-width</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-calendar-lg-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 ))</code></td>
-    <td><code>calc(56px * 8 + var(--kendo-spacing-1) * 2)</code></td>
+    <td><code>calc(56px * 8 + 12px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large DateTimePicker.</div></div>
@@ -11619,7 +11629,7 @@ The following table lists the available variables for customizing the Material t
         width: $kendo-datetime-lg-width
     )
 )</code></td>
-    <td><ul><li>sm: "width":"calc(40px * 8 + var(--kendo-spacing-1) * 2)"</li><li>md: "width":"calc(48px * 8 + var(--kendo-spacing-1) * 2)"</li><li>lg: "width":"calc(56px * 8 + var(--kendo-spacing-1) * 2)"</li></ul></td>
+    <td><ul><li>sm: "width":"calc(40px * 8 + 12px * 2)"</li><li>md: "width":"calc(48px * 8 + 12px * 2)"</li><li>lg: "width":"calc(56px * 8 + 12px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the DateTimePicker.</div></div>
