@@ -67,6 +67,10 @@ $kendo-calendar-header-shadow: k-elevation(1) !default;
 /// @group calendar
 $kendo-calendar-nav-gap: null !default;
 
+/// The horizontal padding of the title buttons in the Calendar.
+/// @group calendar
+$kendo-calendar-title-padding-x: 6px !default;
+
 /// The horizontal padding of the footer in the Calendar.
 /// @group calendar
 $kendo-calendar-footer-padding-x: k-spacing(4) !default;
@@ -352,6 +356,7 @@ $kendo-calendar-lg-cell-padding-y: k-spacing(2) !default;
     $kendo-calendar-header-gradient: $kendo-calendar-header-gradient,
     $kendo-calendar-header-shadow: $kendo-calendar-header-shadow,
     $kendo-calendar-nav-gap: $kendo-calendar-nav-gap,
+    $kendo-calendar-title-padding-x: $kendo-calendar-title-padding-x,
     $kendo-calendar-footer-padding-x: $kendo-calendar-footer-padding-x,
     $kendo-calendar-footer-padding-y: $kendo-calendar-footer-padding-y,
     $kendo-calendar-cell-padding-x: $kendo-calendar-cell-padding-x,
