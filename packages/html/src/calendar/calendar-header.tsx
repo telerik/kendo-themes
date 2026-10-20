@@ -49,6 +49,10 @@ export const CalendarHeader = (
     const iconPrev = dir === 'rtl' ? 'chevron-right' : 'chevron-left';
     const iconNext = dir === 'rtl' ? 'chevron-left' : 'chevron-right';
     const resolvedTitleId = titleId || nextId('calendar-title');
+    const titleParts = calendarView === 'month' && calendarTitleText.match(/^(.*\S)\s+(\d{4})$/);
+    const monthText = titleParts?.[1];
+    const yearText = titleParts?.[2] || calendarTitleText;
+    const titleDisabled = calendarView === "century";
 
     return (
         <div
@@ -60,18 +64,32 @@ export const CalendarHeader = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
-            <Button
-                disabled={calendarView === "century"}
-                className="k-calendar-title"
-                text={calendarTitleText}
-                size={size}
-                fillMode="flat"
-                themeColor="primary"
-                id={resolvedTitleId}
-                tabIndex={-1}
-                aria-label={`Navigate to parent view: ${calendarTitleText}`}
-                {...(calendarView === 'century' ? { 'aria-disabled': 'true' } : {})}
-            />
+            <span className="k-calendar-title-group" id={resolvedTitleId}>
+                {monthText &&
+                    <Button
+                        disabled={titleDisabled}
+                        className="k-calendar-title k-calendar-title-month"
+                        text={monthText}
+                        size={size}
+                        fillMode="flat"
+                        themeColor="primary"
+                        tabIndex={-1}
+                        aria-label={`Navigate to year view: ${monthText}`}
+                        {...(titleDisabled ? { 'aria-disabled': 'true' } : {})}
+                    />
+                }
+                <Button
+                    disabled={titleDisabled}
+                    className="k-calendar-title k-calendar-title-year"
+                    text={yearText}
+                    size={size}
+                    fillMode="flat"
+                    themeColor="primary"
+                    tabIndex={-1}
+                    aria-label={`Navigate to parent view: ${yearText}`}
+                    {...(titleDisabled ? { 'aria-disabled': 'true' } : {})}
+                />
+            </span>
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
                 {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat" tabIndex={-1} aria-label="Navigate to previous view" />}

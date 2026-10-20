@@ -163,6 +163,11 @@
 
 
     // Calendar header
+    .k-calendar-title-group {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
     .k-calendar .k-header {
         padding-block: $kendo-calendar-header-padding-y;
         padding-inline: $kendo-calendar-header-padding-x;

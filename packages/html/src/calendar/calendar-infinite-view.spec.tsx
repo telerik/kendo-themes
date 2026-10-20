@@ -58,6 +58,7 @@ export const CalendarInfiniteView: KendoComponent<KendoCalendarInfiniteViewProps
                 }
             )}>
             <CalendarHeader
+                calendarView={calendarView}
                 showNavigationButtons={showNavigationButtons}
                 calendarTitleText={headerText}
                 orientation="horizontal"
