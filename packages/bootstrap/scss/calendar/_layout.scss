@@ -19,6 +19,10 @@
         }
 
         &.k-calendar-infinite.k-calendar-md {
+            --INTERNAL--kendo-calendar-width: calc(
+                var( --INTERNAL--kendo-calendar-view-width ) + #{2 * $kendo-calendar-border-width}
+            );
+
             .k-calendar-view .k-calendar-table {
                 width: var( --INTERNAL--kendo-calendar-view-width );
                 margin-inline: 0;
@@ -26,6 +30,8 @@
 
             .k-content.k-scrollable {
                 width: var( --INTERNAL--kendo-calendar-view-width );
+                margin-inline: 0;
+                padding-inline: 0;
             }
 
             &:not(.k-week-number) {
