@@ -21637,6 +21637,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent) )</code></td>
+    <td><code>var(--kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description on hover.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent) )</code></td>
+    <td><code>var(--kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -24267,6 +24287,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-popup-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-menu-popup-item-hover-description-text, #{$kendo-list-item-hover-description-text} )</code></td>
+    <td><code>var(--kendo-menu-popup-item-hover-description-text, var(--kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of hovered Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-popup-item-focus-outline</td>
     <td>String</td>
     <td><code>var( --kendo-menu-popup-item-focus-outline, #{k-color(border-alt)} )</code></td>
@@ -24304,6 +24334,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the icon of active Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-active-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-menu-popup-item-active-description-text, #{$kendo-list-item-selected-description-text} )</code></td>
+    <td><code>var(--kendo-menu-popup-item-active-description-text, var(--kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of active Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>

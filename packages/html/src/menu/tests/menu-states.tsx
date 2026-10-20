@@ -46,6 +46,19 @@ export default () => (
           </MenuList>
         </Popup>
       </section>
+      <span>Popup Menu with description</span>
+      <section>
+        <Popup className="k-menu-popup">
+          <MenuList>
+            <MenuListItem icon="folder" text="Normal" description="Description text" showArrow></MenuListItem>
+            <MenuListItem icon="folder" text="Hover" description="Description text" hover showArrow></MenuListItem>
+            <MenuListItem icon="folder" text="Active" description="Description text" active showArrow></MenuListItem>
+            <MenuListItem icon="folder" text="Focus" description="Description text" focus showArrow></MenuListItem>
+            <MenuListItem icon="folder" text="Focus + Active" description="Description text" focus active showArrow></MenuListItem>
+            <MenuListItem icon="folder" text="Disabled" description="Description text" disabled showArrow></MenuListItem>
+          </MenuList>
+        </Popup>
+      </section>
     </div>
   </>
 );

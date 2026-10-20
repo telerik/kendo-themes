@@ -78,6 +78,10 @@
                 &.k-disabled {
                     color: $kendo-menu-popup-item-disabled-text;
                     background-color: $kendo-menu-popup-item-disabled-bg;
+
+                    .k-menu-link-description {
+                        color: inherit;
+                    }
                 }
             }
             &:focus,
