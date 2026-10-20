@@ -19,7 +19,11 @@
         }
 
         &.k-calendar-infinite.k-calendar-md {
-            .k-calendar-view .k-calendar-table,
+            .k-calendar-view .k-calendar-table {
+                width: var( --INTERNAL--kendo-calendar-view-width );
+                margin-inline: 0;
+            }
+
             .k-content.k-scrollable {
                 width: var( --INTERNAL--kendo-calendar-view-width );
             }
