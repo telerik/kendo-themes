@@ -1,6 +1,39 @@
 @use "@progress/kendo-theme-core/scss/components/calendar/_layout.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-calendar--layout() {
     @include kendo-calendar--layout-base();
+
+    .k-calendar {
+        &.k-calendar-md.k-week-number .k-calendar-table {
+            width: calc( #{7 * $kendo-calendar-md-cell-size} + 24px );
+
+            col:first-child {
+                width: 24px;
+            }
+
+            col:nth-child(n + 2) {
+                width: $kendo-calendar-md-cell-size;
+            }
+        }
+
+        &:not(.k-calendar-infinite).k-calendar-md {
+            .k-calendar-view .k-calendar-table {
+                width: var( --INTERNAL--kendo-calendar-view-width );
+            }
+
+            .k-calendar-footer {
+                text-align: end;
+            }
+
+            &:not(.k-week-number) {
+                --INTERNAL--kendo-calendar-view-width: #{7 * $kendo-calendar-md-cell-size};
+            }
+
+            &.k-week-number {
+                --INTERNAL--kendo-calendar-view-width: calc( #{7 * $kendo-calendar-md-cell-size} + 24px );
+            }
+        }
+    }
 }
