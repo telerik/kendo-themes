@@ -40,25 +40,24 @@ export const ImageEditorToolbar = (
             )}
             fillMode="flat"
         >
-            {toolbarItems ?? (
+            {/* Toolbar only decorates direct array children; a Fragment would leave the buttons without k-toolbar-* classes */}
+            {toolbarItems ?? [
+                <Button key="image-add" fillMode="flat" icon="image-add" aria-label="Image Add"></Button>,
+                <ToolbarSeparator key="separator-1"></ToolbarSeparator>,
                 // A freshly-loaded image has no edit history, so undo and redo are always disabled
-                <>
-                    <Button fillMode="flat" icon="image-add" aria-label="Image Add"></Button>
-                    <ToolbarSeparator></ToolbarSeparator>
-                    <Button fillMode="flat" disabled icon="undo" aria-label="Undo"></Button>
-                    <Button fillMode="flat" disabled icon="redo" aria-label="Redo"></Button>
-                    <ToolbarSeparator></ToolbarSeparator>
-                    <Button fillMode="flat" disabled={disabled} icon="download" aria-label="Download"></Button>
-                    <div className="k-spacer"></div>
-                    <Button fillMode="flat" disabled={disabled} icon="zoom-in" aria-label="Zoom In"></Button>
-                    {!adaptive &&
-                    <ToolbarItem>
+                <Button key="undo" fillMode="flat" disabled icon="undo" aria-label="Undo"></Button>,
+                <Button key="redo" fillMode="flat" disabled icon="redo" aria-label="Redo"></Button>,
+                <ToolbarSeparator key="separator-2"></ToolbarSeparator>,
+                <Button key="download" fillMode="flat" disabled={disabled} icon="download" aria-label="Download"></Button>,
+                <div key="spacer" className="k-spacer"></div>,
+                <Button key="zoom-in" fillMode="flat" disabled={disabled} icon="zoom-in" aria-label="Zoom In"></Button>,
+                ...(adaptive ? [] : [
+                    <ToolbarItem key="zoom-options">
                         <Autocomplete fillMode="flat" disabled={disabled} value="Fit" showClearButton={false} aria-label="Zoom options" />
                     </ToolbarItem>
-                    }
-                    <Button fillMode="flat" disabled={disabled} icon="zoom-out" aria-label="Zoom Out"></Button>
-                </>
-            )}
+                ]),
+                <Button key="zoom-out" fillMode="flat" disabled={disabled} icon="zoom-out" aria-label="Zoom Out"></Button>
+            ]}
         </Toolbar>
     );
 };
