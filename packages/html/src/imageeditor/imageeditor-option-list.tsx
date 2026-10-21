@@ -9,6 +9,7 @@ export type KendoImageEditorOptionListProps = {
 
 const defaultOptions = {
     scrollable: false,
+    scrollingPosition: 'start' as const,
 };
 
 export const ImageEditorOptionList = (
@@ -16,7 +17,7 @@ export const ImageEditorOptionList = (
 ) => {
     const {
         scrollable = defaultOptions.scrollable,
-        scrollingPosition,
+        scrollingPosition = defaultOptions.scrollingPosition,
         children,
         ...other
     } = props;

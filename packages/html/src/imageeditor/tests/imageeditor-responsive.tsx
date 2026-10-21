@@ -1,4 +1,4 @@
-import { ImageEditorNormal, ImageEditorInsertShape, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
+import { ImageEditor, ImageEditorInsertShape, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
 import { Button } from '../../button';
 import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
@@ -22,14 +22,14 @@ export default () => (
 
             <div>
                 <h4>Tablet / Responsive / Unselected Tool</h4>
-                <ImageEditorNormal contentHeight="997px">
+                <ImageEditor contentHeight="997px">
                     <canvas width="659" height="410" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
-                </ImageEditorNormal>
+                </ImageEditor>
             </div>
 
             <div>
                 <h4>Tablet / Responsive / Selected Tool / Panel Opened</h4>
-                <ImageEditorInsertShape contentHeight="997px" selected shapeType="Oval" strokeColor="#b0e855" strokeWidth={8} fillColor="#eae382" textColor="#4a4500" fontSize={24}>
+                <ImageEditorInsertShape contentHeight="997px" selected shapeType="Oval" alignment="center" strokeColor="#b0e855" strokeWidth={8} fillColor="#eae382" textColor="#4a4500" fontSize={24}>
                     <canvas width="338" height="211" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}></canvas>
                     <div className="k-imageeditor-resize" style={{ width: "130px", height: "43px", top: "84px", left: "105px" }}>
                         <div style={{

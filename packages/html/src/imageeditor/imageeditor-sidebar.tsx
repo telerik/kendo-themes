@@ -3,30 +3,22 @@ import { Button } from '../button/button.spec';
 
 export const IMAGEEDITORSIDEBAR_CLASSNAME = `k-imageeditor-sidebar`;
 
+export type ImageEditorSidebarTool = 'Resize' | 'Crop' | 'Rotate' | 'Text' | 'Shapes' | 'Blur' | 'Adjustments' | 'Filters' | 'Frame' | 'Shadow';
+
 export type KendoImageEditorSidebarProps = {
+    /** Replaces the default tool buttons. */
     sidebarItems?: React.JSX.Element | React.JSX.Element[];
+    /** The tool whose pane is open; its button is pressed. */
+    activeTool?: ImageEditorSidebarTool;
+    /** Disables the tool buttons (no image loaded). */
+    disabled?: boolean;
+    /** Lays the rail out horizontally, so separators are vertical. */
+    adaptive?: boolean;
     scrollable?: boolean;
     scrollingPosition?: 'start' | 'end' | 'both';
 };
 
-const defaultSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize" />,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop" />,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate" />,
-    <div className="k-separator" key="sidebar-separator-1" />,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text" />,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes" />,
-    <div className="k-separator" key="sidebar-separator-2" />,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur" />,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments" />,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters" />,
-    <div className="k-separator" key="sidebar-separator-3" />,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame" />,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow" />
-];
-
 const defaultOptions = {
-    sidebarItems: defaultSidebarItems,
     scrollable: false,
 };
 
@@ -39,11 +31,16 @@ export const ImageEditorSidebar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        sidebarItems = defaultOptions.sidebarItems,
+        sidebarItems,
+        activeTool,
+        disabled,
+        adaptive,
         scrollable = defaultOptions.scrollable,
         scrollingPosition,
         ...other
     } = props;
+
+    const separatorClassName = adaptive ? 'k-separator k-separator-vertical' : 'k-separator';
 
     return (
         <div
@@ -58,7 +55,23 @@ export const ImageEditorSidebar = (
             )}
         >
             <div className="k-imageeditor-sidebar-items" role="toolbar" aria-label="Tools">
-                {sidebarItems ?? props.children}
+                {sidebarItems ?? (
+                    <>
+                        <Button fillMode="flat" togglable icon="image-resize" aria-label="Resize" selected={activeTool === 'Resize'} disabled={disabled}></Button>
+                        <Button fillMode="flat" togglable icon="crop" aria-label="Crop" selected={activeTool === 'Crop'} disabled={disabled}></Button>
+                        <Button fillMode="flat" togglable icon="rotate" aria-label="Rotate" selected={activeTool === 'Rotate'} disabled={disabled}></Button>
+                        <div className={separatorClassName}></div>
+                        <Button fillMode="flat" togglable icon="free-text" aria-label="Text" selected={activeTool === 'Text'} disabled={disabled}></Button>
+                        <Button fillMode="flat" togglable icon="shapes" aria-label="Shapes" selected={activeTool === 'Shapes'} disabled={disabled}></Button>
+                        <div className={separatorClassName}></div>
+                        <Button fillMode="flat" togglable icon="drop-half-pixelated" aria-label="Blur" selected={activeTool === 'Blur'} disabled={disabled}></Button>
+                        <Button fillMode="flat" togglable icon="sliders-horizontal" aria-label="Adjustments" selected={activeTool === 'Adjustments'} disabled={disabled}></Button>
+                        <Button fillMode="flat" togglable icon="circles-three-intersecting" aria-label="Filters" selected={activeTool === 'Filters'} disabled={disabled}></Button>
+                        <div className={separatorClassName}></div>
+                        <Button fillMode="flat" togglable icon="frame-corners" aria-label="Frame" selected={activeTool === 'Frame'} disabled={disabled}></Button>
+                        <Button fillMode="flat" togglable icon="circle-half-tilted" aria-label="Shadow" selected={activeTool === 'Shadow'} disabled={disabled}></Button>
+                    </>
+                )}
             </div>
         </div>
     );

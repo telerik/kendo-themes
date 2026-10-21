@@ -1,4 +1,4 @@
-import { ImageEditor, ImageEditorDisabled, ImageEditorInsertText, ImageEditorResize, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
+import { ImageEditor, ImageEditorNormal, ImageEditorInsertText, ImageEditorResize, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
 import { ImageEditorPlaceholder } from '../imageeditor-placeholder';
 import { Loader } from '../../loader';
 import { Button } from '../../button';
@@ -21,7 +21,7 @@ export default () => (
     <div id="test-area" className="k-d-grid k-grid-cols-1">
 
         <span>Empty</span>
-        <ImageEditorDisabled
+        <ImageEditorNormal
             contentHeight="260px"
             placeholder={
                 <ImageEditorPlaceholder
@@ -34,7 +34,7 @@ export default () => (
         />
 
         <span>Loading</span>
-        <ImageEditorDisabled
+        <ImageEditorNormal
             contentHeight="260px"
             placeholder={
                 <ImageEditorPlaceholder>
@@ -68,7 +68,7 @@ export default () => (
         </ImageEditor>
 
         <span>Error - Failed Upload</span>
-        <ImageEditorDisabled
+        <ImageEditorNormal
             contentHeight="260px"
             placeholder={
                 <ImageEditorPlaceholder
@@ -81,7 +81,7 @@ export default () => (
         />
 
         <span>Error - Unsupported File Format</span>
-        <ImageEditorDisabled
+        <ImageEditorNormal
             contentHeight="260px"
             placeholder={
                 <ImageEditorPlaceholder
@@ -94,7 +94,7 @@ export default () => (
         />
 
         <span>Error - Maximum File Size Exceeded</span>
-        <ImageEditorDisabled
+        <ImageEditorNormal
             contentHeight="260px"
             placeholder={
                 <ImageEditorPlaceholder

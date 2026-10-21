@@ -1,3 +1,14 @@
+## 14.7.0-dev.15 (2026-10-20)
+
+### 🚀 Features
+
+- **html:** add ImageEditor adaptive pane templates and tests ([747a9acd38](https://github.com/telerik/kendo-themes/commit/747a9acd38))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
 ## 14.7.0-dev.14 (2026-10-20)
 
 This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.

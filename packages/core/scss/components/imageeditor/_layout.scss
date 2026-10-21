@@ -245,6 +245,8 @@
         flex-flow: row nowrap;
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
+        // Clips the canvas scrollbars/corner, which otherwise paint square over the rounded corner
+        overflow: hidden;
     }
 
 
@@ -253,6 +255,8 @@
         flex: 1 1 100%;
         display: flex;
         flex-flow: row nowrap;
+        min-height: 0;
+        min-width: 0;
         overflow: auto;
         padding: k-spacing(6);
         box-sizing: border-box;
@@ -372,6 +376,11 @@
         gap: $kendo-image-editor-pane-content-gap;
         flex: 1 1 auto;
         overflow-y: auto;
+
+        // Keeps a mode switch above the form from shrinking when the content overflows
+        > .k-segmented-control {
+            flex-shrink: 0;
+        }
     }
 
     .k-imageeditor-pane-footer {
