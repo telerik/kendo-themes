@@ -1,3 +1,14 @@
+## 14.7.0-dev.16 (2026-10-21)
+
+### 🩹 Fixes
+
+- **imageeditor:** scrollbar/corner paints square over the canvas rounded conrners if not clipped ([ec39f2ea03](https://github.com/telerik/kendo-themes/commit/ec39f2ea03))
+- **imageeditor:** canvas container prevents uploaded image to fit ([407e3a22da](https://github.com/telerik/kendo-themes/commit/407e3a22da))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.7.0-dev.15 (2026-10-20)
 
 ### 🩹 Fixes
