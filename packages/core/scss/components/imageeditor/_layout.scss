@@ -245,6 +245,8 @@
         flex-flow: row nowrap;
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
+        // Clips the canvas scrollbars/corner, which otherwise paint square over the rounded corner
+        overflow: hidden;
     }
 
 
