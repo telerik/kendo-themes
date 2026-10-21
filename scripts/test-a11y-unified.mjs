@@ -3,7 +3,7 @@
 /**
  * Unified A11y Test Runner
  *
- * Renders HTML package templates via specToHtml, then validates WCAG compliance
+ * Renders HTML package templates via react-dom/server, then validates WCAG compliance
  * using axe-core in JSDOM (no browser required). Color-contrast is intentionally
  * excluded — it requires computed CSS and is covered by test:contrast.
  *
@@ -13,7 +13,8 @@
  *   npm run test:a11y -- --build     # Build HTML package first
  */
 
-import { specToHtml } from '@progress/kendo-e2e';
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { JSDOM } from 'jsdom';
 import { globSync } from 'glob';
 import { execSync } from 'child_process';
@@ -177,7 +178,7 @@ async function main() {
 
         for (const { exportName, component: TemplateComponent } of templates) {
             try {
-                const componentHtml = specToHtml(TemplateComponent);
+                const componentHtml = renderToStaticMarkup(createElement(TemplateComponent));
                 const fullHtml = wrapInHtmlPage(componentHtml);
 
                 const wcag = await validateWcag(fullHtml);
