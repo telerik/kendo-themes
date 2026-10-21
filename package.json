@@ -14,6 +14,7 @@
     "./packages/utils"
   ],
   "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
     "@commitlint/cli": "21.2.2",
     "@commitlint/config-conventional": "21.2.2",
     "@commitlint/core": "21.2.2",
@@ -27,6 +28,7 @@
     "@types/react": "19.2.15",
     "@vitejs/plugin-react": "^6.0.5",
     "autoprefixer": "^10.5.4",
+    "axe-core": "~4.12.1",
     "css-tree": "^3.2.1",
     "esbuild": "0.28.2",
     "eslint": "10.8.1",
@@ -37,7 +39,6 @@
     "husky": "^9.0.10",
     "jsdom": "^30.0.1",
     "lint-staged": "^17.3.0",
-    "@progress/kendo-e2e": "5.0.6",
     "sassdoc": "^2.7.4",
     "nunjucks": "^3.2.3",
     "nx": "^23.1.1",

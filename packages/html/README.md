@@ -28,6 +28,6 @@ The workflow can look like this:
 1. Copy and reference the [styles.css](https://github.com/telerik/kendo-themes/blob/develop/packages/html/assets/styles.css) stylesheet in your example.
 1. Run the demo and copy the source code of the page.
     1. Either manually, by using the [Pretty HTML](https://pretty-html.stackblitz.io/) tool or an [existing page](https://github.com/telerik/kendo-themes/blob/b777e466fa0275f165be5646e51f5be577d55c36/tests/visual/src/reference/buttons/buttons-blazor.html#L1-L22) as a template.
-    1. Or as part of the E2E test suite of the component using the `snapshotMarkup` helper from `@progress/kendo-e2e`.
+    1. Or by running `npm run test:render-test-pages`, which snapshots the rendered test pages with Playwright (see `scripts/render-test-pages.mjs`).
 1. Create a new file following this name template: `packages/html/src/[component]/[component]/[component]-[scenario]-[platform].html`
 1. Create a PR and submit the new example.

@@ -59,7 +59,8 @@ npm run docs                # Generate the theme customization docs (core only p
 npm run lint                # ESLint + Stylelint
 npm run test:units          # Vitest unit tests (run `npm run docs` first)
 npm run test:a11y [comp]    # axe-core WCAG validation
-npm run test:contrast       # Color contrast tests
+npm run test:contrast       # Color contrast tests (Playwright; needs `npx playwright install chromium`, run `npm run sass:dist` first)
+npm run test:render-test-pages [comp]  # Regenerate tests/*.html markup snapshots (Playwright; run `npm run build:tests` first; CI commits the output)
 npm start                   # Dev server on localhost:3000
 npm run typecheck --prefix packages/html
 npm run build:tests --prefix packages/html
