@@ -101,9 +101,10 @@ jobs:
         run: |
           npm run build:tests
 
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
       - name: Update markup snapshots
-        env:
-          HEADLESS: 'true'
         run: |
           npm run test:render-test-pages
 
