@@ -8,9 +8,9 @@ export const ColumnMenuTabbed = (props) => (
             <TabStripNormal className="k-pos-relative"
                 tabStripItems={
                     <>
-                        <TabStripItem active icon="filter" />
-                        <TabStripItem icon="sliders" />
-                        <TabStripItem icon="columns" />
+                        <TabStripItem active icon="filter" aria-label="Filter" />
+                        <TabStripItem icon="sliders" aria-label="Settings" />
+                        <TabStripItem icon="columns" aria-label="Columns" />
                     </>
                 }
             >
