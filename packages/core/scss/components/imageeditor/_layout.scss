@@ -253,6 +253,8 @@
         flex: 1 1 100%;
         display: flex;
         flex-flow: row nowrap;
+        min-height: 0;
+        min-width: 0;
         overflow: auto;
         padding: k-spacing(6);
         box-sizing: border-box;
