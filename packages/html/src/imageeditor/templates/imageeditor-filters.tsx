@@ -1,59 +1,25 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionPreview, ImageEditorPreviewThumbnail } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionPreview, ImageEditorPreviewThumbnail, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
 import { Form, FormField } from "../../form";
 
-const filtersSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" selected aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-export const filterPresets: { [key: string]: { label: string } } = {
-    "none": { label: "None" },
-    "black-white": { label: "Black and White" },
-    "greyscale": { label: "Greyscale" },
-    "sepia": { label: "Sepia" },
-    "warm": { label: "Warm" },
-    "cold": { label: "Cold" },
-    "chrome": { label: "Chrome" },
-    "invert": { label: "Invert" }
-};
-
-const FilterPreview = ({ presetKey, selected }: { presetKey: string; selected: boolean }) => {
-    const preset = filterPresets[presetKey];
-
-    return (
-        <ImageEditorOptionPreview key={presetKey} selected={selected} aria-label={preset.label}>
-            <ImageEditorPreviewThumbnail label={preset.label} />
-        </ImageEditorOptionPreview>
-    );
-};
-
-export const ImageEditorFilters = ({ preset = "none", ...props }: any) => (
+export const ImageEditorFilters = ({ preset = "none", adaptive, imageSrc, ...props }: any) => (
     <ImageEditor
-        sidebarItems={filtersSidebarItems}
+        adaptive={adaptive}
+        activeTool="Filters"
         actionPane={
-            <ImageEditorPane title="Filters" actions={
+            <ImageEditorPane title="Filters" adaptive={adaptive} confirmDisabled={preset === "none"} actions={
                 <>
-                    <Button>Reset</Button>
-                    <Button themeColor="primary">Apply</Button>
+                    <Button disabled={preset === "none"}>Reset</Button>
+                    <Button themeColor="primary" disabled={preset === "none"}>Apply</Button>
                 </>
             }>
                 <Form tag="div">
                     <FormField
                         editor={
                             <div className="k-imageeditor-option-grid">
-                                <FilterPreview presetKey="none" selected={preset === "none"} />
+                                <ImageEditorOptionPreview selected={preset === "none"} aria-label="None">
+                                    <ImageEditorPreviewThumbnail label="None" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
                             </div>
                         }
                     />
@@ -61,9 +27,15 @@ export const ImageEditorFilters = ({ preset = "none", ...props }: any) => (
                         label="Monochrome"
                         editor={
                             <div className="k-imageeditor-option-grid">
-                                <FilterPreview presetKey="black-white" selected={preset === "black-white"} />
-                                <FilterPreview presetKey="greyscale" selected={preset === "greyscale"} />
-                                <FilterPreview presetKey="sepia" selected={preset === "sepia"} />
+                                <ImageEditorOptionPreview selected={preset === "black-white"} aria-label="Black and White">
+                                    <ImageEditorPreviewThumbnail label="Black and White" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={preset === "greyscale"} aria-label="Greyscale">
+                                    <ImageEditorPreviewThumbnail label="Greyscale" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={preset === "sepia"} aria-label="Sepia">
+                                    <ImageEditorPreviewThumbnail label="Sepia" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
                             </div>
                         }
                     />
@@ -71,9 +43,15 @@ export const ImageEditorFilters = ({ preset = "none", ...props }: any) => (
                         label="Color Temperature & Mood"
                         editor={
                             <div className="k-imageeditor-option-grid">
-                                <FilterPreview presetKey="warm" selected={preset === "warm"} />
-                                <FilterPreview presetKey="cold" selected={preset === "cold"} />
-                                <FilterPreview presetKey="chrome" selected={preset === "chrome"} />
+                                <ImageEditorOptionPreview selected={preset === "warm"} aria-label="Warm">
+                                    <ImageEditorPreviewThumbnail label="Warm" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={preset === "cold"} aria-label="Cold">
+                                    <ImageEditorPreviewThumbnail label="Cold" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={preset === "chrome"} aria-label="Chrome">
+                                    <ImageEditorPreviewThumbnail label="Chrome" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
                             </div>
                         }
                     />
@@ -81,7 +59,9 @@ export const ImageEditorFilters = ({ preset = "none", ...props }: any) => (
                         label="Color Reversal"
                         editor={
                             <div className="k-imageeditor-option-grid">
-                                <FilterPreview presetKey="invert" selected={preset === "invert"} />
+                                <ImageEditorOptionPreview selected={preset === "invert"} aria-label="Invert">
+                                    <ImageEditorPreviewThumbnail label="Invert" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
                             </div>
                         }
                     />
@@ -91,7 +71,7 @@ export const ImageEditorFilters = ({ preset = "none", ...props }: any) => (
 
         children={
             <>
-                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+                <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
             </>
         }
         {...props} />

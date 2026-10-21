@@ -1,4 +1,5 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionPreview, ImageEditorPreviewThumbnail } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionPreview, ImageEditorPreviewThumbnail, ImageEditorCanvas } from "..";
+import { IMAGEEDITOR_ADAPTIVE_CANVAS_SIZE, IMAGEEDITOR_CANVAS_SIZE } from "../constants";
 import { Button } from "../../button";
 import { NumericTextbox } from "../../numerictextbox";
 import { ColorPicker } from "../../colorpicker";
@@ -7,174 +8,147 @@ import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
 import { Slider } from "../../slider";
 
-const framesSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" selected aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-const FrameSlider = ({ id, label, value }: { id: string; label: string; value: number }) => (
-    <FormField
-        label={label}
-        editorId={id}
-        editor={
-            <div className="k-imageeditor-field-row">
-                <Slider
-                    style={{ flex: 1, "--kendo-slider-start": 0, "--kendo-slider-end": value } as React.CSSProperties}
-                    aria-label={label}
-                    showButtons={false}
-                    showTicks={false}
-                    value={value}
-                    min={0}
-                    max={100}
-                />
-                <NumericTextbox
-                    id={id}
-                    style={{ width: "80px", flex: "none" }}
-                    showClearButton={false}
-                    showSpinButton={false}
-                    value={String(value)}
-                />
-            </div>
-        }
-    />
-);
-
-const frameStylePreviews: { [key: string]: React.CSSProperties } = {
-    none: {},
-    single: { border: "3px dashed #b0e855", borderRadius: "4px" },
-    multiple: { border: "3px dashed #b0e855", borderRadius: "4px" }
-};
-
-const FrameStylePreview = ({ styleKey, label, selected }: { styleKey: string; label: string; selected: boolean }) => (
-    <ImageEditorOptionPreview selected={selected} aria-label={label}>
-        <ImageEditorPreviewThumbnail label={label} style={frameStylePreviews[styleKey]}>
-            {styleKey === "multiple" && (
-                <span style={{
-                    position: "absolute",
-                    inset: "6px",
-                    border: "3px dashed #b0e855",
-                    borderRadius: "1px",
-                    boxSizing: "border-box",
-                    pointerEvents: "none"
-                }}></span>
-            )}
-        </ImageEditorPreviewThumbnail>
-    </ImageEditorOptionPreview>
-);
-
 export const ImageEditorFrames = ({
     style = "none",
     imageRoundness = 0,
+    isPristine = style === "none" && imageRoundness === 0,
     framesAmount = 3,
-    frameThickness = 12,
-    frameRoundness = style === "multiple" ? 40 : 16,
-    offset = 12,
+    frameThickness = 0,
+    frameRoundness = 0,
+    offset = 0,
     strokeColor = "#b0e855",
+    adaptive,
+    canvas = adaptive ? IMAGEEDITOR_ADAPTIVE_CANVAS_SIZE : IMAGEEDITOR_CANVAS_SIZE,
+    imageSrc,
     ...props
-}: any) => {
-    const framePadding = 0;
-
-    return (
-        <ImageEditor
-            sidebarItems={framesSidebarItems}
-            actionPane={
-                <ImageEditorPane title="Frame" actions={
-                    <>
-                        <Button>Reset</Button>
-                        <Button themeColor="primary">Apply</Button>
-                    </>
-                }>
-                    <Form tag="div">
+}: any) => (
+    <ImageEditor
+        adaptive={adaptive}
+        activeTool="Frame"
+        actionPane={
+            <ImageEditorPane title="Frame" adaptive={adaptive} confirmDisabled={isPristine} actions={
+                <>
+                    <Button disabled={isPristine}>Reset</Button>
+                    <Button themeColor="primary" disabled={isPristine}>Apply</Button>
+                </>
+            }>
+                <Form tag="div">
+                    <FormField
+                        label="Frame Style"
+                        editor={
+                            <div className="k-imageeditor-option-grid">
+                                <ImageEditorOptionPreview selected={style === "none"} aria-label="None">
+                                    <ImageEditorPreviewThumbnail label="None" imageSrc={imageSrc} />
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={style === "single"} aria-label="Single">
+                                    <ImageEditorPreviewThumbnail label="Single" imageSrc={imageSrc} style={{ border: "3px dashed #b0e855", borderRadius: "4px" }} />
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={style === "multiple"} aria-label="Multiple">
+                                    <ImageEditorPreviewThumbnail label="Multiple" imageSrc={imageSrc} style={{ border: "3px dashed #b0e855", borderRadius: "4px" }}>
+                                        <span style={{
+                                            position: "absolute",
+                                            inset: "6px",
+                                            border: "3px dashed #b0e855",
+                                            borderRadius: "1px",
+                                            boxSizing: "border-box",
+                                            pointerEvents: "none"
+                                        }}></span>
+                                    </ImageEditorPreviewThumbnail>
+                                </ImageEditorOptionPreview>
+                            </div>
+                        }
+                    />
+                    <FormField
+                        label="Image Roundness"
+                        editorId="frame-image-roundness"
+                        editor={
+                            <div className="k-imageeditor-field-row">
+                                <Slider style={{ flex: 1, "--kendo-slider-start": 0, "--kendo-slider-end": imageRoundness } as React.CSSProperties} aria-label="Image Roundness" showButtons={false} showTicks={false} value={imageRoundness} min={0} max={100} />
+                                <NumericTextbox id="frame-image-roundness" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(imageRoundness)} />
+                            </div>
+                        }
+                    />
+                    {style === "multiple" && (
                         <FormField
-                            label="Frame Style"
+                            label="Frames Amount"
+                            editorId="frame-frames-amount"
                             editor={
-                                <div className="k-imageeditor-option-grid">
-                                    <FrameStylePreview styleKey="none" label="None" selected={style === "none"} />
-                                    <FrameStylePreview styleKey="single" label="Single" selected={style === "single"} />
-                                    <FrameStylePreview styleKey="multiple" label="Multiple" selected={style === "multiple"} />
-                                </div>
+                                <NumericTextbox id="frame-frames-amount" showClearButton={false} showSpinButton={false} value={String(framesAmount)} />
                             }
                         />
-                        <FrameSlider id="frame-image-roundness" label="Image Roundness" value={imageRoundness} />
-                        {style === "multiple" && (
+                    )}
+                    {style !== "none" && (
+                        <>
                             <FormField
-                                label="Frames Amount"
-                                editorId="frame-frames-amount"
+                                label="Frame Thickness"
+                                editorId="frame-thickness"
                                 editor={
-                                    <NumericTextbox id="frame-frames-amount" showClearButton={false} value={String(framesAmount)} />
+                                    <div className="k-imageeditor-field-row">
+                                        <Slider style={{ flex: 1, "--kendo-slider-start": 0, "--kendo-slider-end": frameThickness } as React.CSSProperties} aria-label="Frame Thickness" showButtons={false} showTicks={false} value={frameThickness} min={0} max={100} />
+                                        <NumericTextbox id="frame-thickness" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(frameThickness)} />
+                                    </div>
                                 }
                             />
-                        )}
-                        {style !== "none" && (
-                            <>
-                                <FrameSlider id="frame-thickness" label="Frame Thickness" value={frameThickness} />
-                                <FrameSlider id="frame-roundness" label="Frame Roundness" value={frameRoundness} />
-                                <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
-                                    <FormField
-                                        label="Stroke Type"
-                                        editor={ <DropdownList id="frame-stroke-type" value="Dashed" aria-label="Stroke Type" /> }
-                                    />
-                                    <FormField
-                                        label="Offset"
-                                        editorId="frame-offset"
-                                        editor={ <NumericTextbox id="frame-offset" showSpinButton={false} value={String(offset)} prefix={<Icon icon="max-width" />} /> }
-                                    />
-                                </Fieldset>
+                            <FormField
+                                label="Frame Roundness"
+                                editorId="frame-roundness"
+                                editor={
+                                    <div className="k-imageeditor-field-row">
+                                        <Slider style={{ flex: 1, "--kendo-slider-start": 0, "--kendo-slider-end": frameRoundness } as React.CSSProperties} aria-label="Frame Roundness" showButtons={false} showTicks={false} value={frameRoundness} min={0} max={100} />
+                                        <NumericTextbox id="frame-roundness" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(frameRoundness)} />
+                                    </div>
+                                }
+                            />
+                            <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                                 <FormField
-                                    label="Stroke Color"
-                                    editor={ <ColorPicker id="frame-stroke-color" value={strokeColor} aria-label="Stroke Color" /> }
+                                    label="Stroke Type"
+                                    editor={ <DropdownList id="frame-stroke-type" value="Dashed" aria-label="Stroke Type" /> }
                                 />
-                            </>
-                        )}
-                    </Form>
-                </ImageEditorPane>
-            }
+                                <FormField
+                                    label="Offset"
+                                    editorId="frame-offset"
+                                    editor={ <NumericTextbox id="frame-offset" showClearButton={false} showSpinButton={false} value={String(offset)} prefix={<Icon icon="max-width" />} /> }
+                                />
+                            </Fieldset>
+                            <FormField
+                                label="Stroke Color"
+                                editor={ <ColorPicker id="frame-stroke-color" value={strokeColor} aria-label="Stroke Color" /> }
+                            />
+                        </>
+                    )}
+                </Form>
+            </ImageEditorPane>
+        }
 
-            children={
-                style === "none" ? (
-                    <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", borderRadius: `${imageRoundness}px` }}></canvas>
-                ) : (
-                    <div style={{ position: "relative", width: `${494 + framePadding * 2}px`, height: `${307 + framePadding * 2}px` }}>
-                        <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{
-                            position: "absolute", top: `${framePadding}px`, left: `${framePadding}px`,
-                            backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover",
-                            borderRadius: `${imageRoundness}px`
-                        }}></canvas>
-                        {/* inner ring sits flush on the image edge, overlaying it */}
+        children={
+            style === "none" ? (
+                <ImageEditorCanvas {...canvas} imageSrc={imageSrc} style={{ borderRadius: `${imageRoundness}px` }} />
+            ) : (
+                <div style={{ position: "relative", width: `${canvas.width}px`, height: `${canvas.height}px` }}>
+                    <ImageEditorCanvas {...canvas} imageSrc={imageSrc} style={{ position: "absolute", top: 0, left: 0, borderRadius: `${imageRoundness}px` }} />
+                    {/* inner ring sits flush on the image edge, overlaying it */}
+                    <div style={{
+                        position: "absolute",
+                        top: 0, left: 0,
+                        width: `${canvas.width}px`, height: `${canvas.height}px`,
+                        border: `${frameThickness}px dashed ${strokeColor}`,
+                        borderRadius: `${frameRoundness}px`,
+                        boxSizing: "border-box",
+                        pointerEvents: "none"
+                    }}></div>
+                    {style === "multiple" && (
                         <div style={{
                             position: "absolute",
-                            top: `${framePadding}px`, left: `${framePadding}px`,
-                            width: "494px", height: "307px",
+                            top: `${frameThickness + offset}px`, left: `${frameThickness + offset}px`,
+                            width: `${canvas.width - (frameThickness + offset) * 2}px`, height: `${canvas.height - (frameThickness + offset) * 2}px`,
                             border: `${frameThickness}px dashed ${strokeColor}`,
-                            borderRadius: `${frameRoundness}px`,
+                            borderRadius: `${Math.max(frameRoundness - frameThickness - offset, 0)}px`,
                             boxSizing: "border-box",
                             pointerEvents: "none"
                         }}></div>
-                        {style === "multiple" && (
-                            <div style={{
-                                position: "absolute",
-                                top: `${framePadding + frameThickness + offset}px`, left: `${framePadding + frameThickness + offset}px`,
-                                width: `${494 - (frameThickness + offset) * 2}px`, height: `${307 - (frameThickness + offset) * 2}px`,
-                                border: `${frameThickness}px dashed ${strokeColor}`,
-                                borderRadius: `${Math.max(frameRoundness - frameThickness - offset, 0)}px`,
-                                boxSizing: "border-box",
-                                pointerEvents: "none"
-                            }}></div>
-                        )}
-                    </div>
-                )
-            }
-            {...props} />
-    );
-};
+                    )}
+                </div>
+            )
+        }
+        {...props} />
+);

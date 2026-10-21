@@ -1,5 +1,6 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
+import { ToolbarSeparator } from "../../toolbar";
 import { ButtonGroup } from "../../button-group";
 import { Combobox } from "../../combobox";
 import { NumericTextbox } from "../../numerictextbox";
@@ -10,36 +11,6 @@ import { InputSuffixText } from "../../input";
 import { Slider } from "../../slider";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 
-const insertShapeSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" selected aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-const shapeTypes = [
-    { label: "Square", icon: "checkbox" },
-    { label: "Rectangle", icon: "rectangle-shape" },
-    { label: "Circle", icon: "circle-shape" },
-    { label: "Oval", icon: "oval-shape" },
-    { label: "Triangle", icon: "kpi-status-hold" },
-    { label: "Star", icon: "star" },
-    { label: "Heart", icon: "heart" },
-    { label: "Diamond", icon: "kpi-status-deny" },
-    { label: "Hexagon", icon: "hexagon-shape" },
-    { label: "Pentagon", icon: "pentagon-shape" },
-    { label: "Arrow", icon: "arrow-right" }
-];
-
 export const ImageEditorInsertShape = ({
     selected = false,
     shapeType = "Oval",
@@ -49,19 +20,33 @@ export const ImageEditorInsertShape = ({
     textColor = "#000000",
     fontFamily = "Trebuchet MS",
     fontSize = 48,
-    alignment = "center",
+    alignment,
+    adaptive,
+    imageSrc,
     ...props
 }: any) => (
     <ImageEditor
-        sidebarItems={insertShapeSidebarItems}
+        adaptive={adaptive}
+        activeTool="Shapes"
+        toolbarItems={adaptive && selected ? (
+            <>
+                <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
+                <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
+                <ToolbarSeparator></ToolbarSeparator>
+                <Button fillMode="flat" icon="flip-horizontal" aria-label="Flip Horizontal"></Button>
+                <Button fillMode="flat" icon="flip-vertical" aria-label="Flip Vertical"></Button>
+                <ToolbarSeparator></ToolbarSeparator>
+                <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
+            </>
+        ) : undefined}
         actionPane={
-            <ImageEditorPane title="Shapes and Lines" actions={
+            <ImageEditorPane title="Shapes and Lines" adaptive={adaptive} confirmDisabled={!selected} actions={
                 <>
-                    <Button>Remove</Button>
-                    <Button themeColor="primary">Insert</Button>
+                    <Button disabled={!selected}>Remove</Button>
+                    <Button themeColor="primary" disabled={!selected}>Insert</Button>
                 </>
             }>
-                <SegmentedControl thumbStyles={{ width: "50%" }} stretched aria-label="Shape or Line" style={{ flexShrink: 0 }}>
+                <SegmentedControl thumbStyles={{ width: "50%" }} stretched aria-label="Shape or Line">
                     <SegmentedControlButton icon="shapes" selected>Shape</SegmentedControlButton>
                     <SegmentedControlButton icon="shape-line">Line</SegmentedControlButton>
                 </SegmentedControl>
@@ -70,15 +55,73 @@ export const ImageEditorInsertShape = ({
                     <FormField
                         label="Type"
                         editor={
-                            <ImageEditorOptionList scrollable scrollingPosition="both">
-                                {shapeTypes.map((shape) => (
-                                    <ImageEditorOptionPreview key={shape.label} selected={shape.label === shapeType}>
-                                        <div className="k-imageeditor-option-content">
-                                            <Icon icon={shape.icon} />
-                                            <span className="k-imageeditor-option-label">{shape.label}</span>
-                                        </div>
-                                    </ImageEditorOptionPreview>
-                                ))}
+                            <ImageEditorOptionList scrollable>
+                                <ImageEditorOptionPreview selected={shapeType === "Square"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="checkbox" />
+                                        <span className="k-imageeditor-option-label">Square</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Rectangle"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="rectangle-shape" />
+                                        <span className="k-imageeditor-option-label">Rectangle</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Circle"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="circle-shape" />
+                                        <span className="k-imageeditor-option-label">Circle</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Oval"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="oval-shape" />
+                                        <span className="k-imageeditor-option-label">Oval</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Triangle"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="kpi-status-hold" />
+                                        <span className="k-imageeditor-option-label">Triangle</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Star"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="star" />
+                                        <span className="k-imageeditor-option-label">Star</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Heart"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="heart" />
+                                        <span className="k-imageeditor-option-label">Heart</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Diamond"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="kpi-status-deny" />
+                                        <span className="k-imageeditor-option-label">Diamond</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Hexagon"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="hexagon-shape" />
+                                        <span className="k-imageeditor-option-label">Hexagon</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Pentagon"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="pentagon-shape" />
+                                        <span className="k-imageeditor-option-label">Pentagon</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
+                                <ImageEditorOptionPreview selected={shapeType === "Arrow"}>
+                                    <div className="k-imageeditor-option-content">
+                                        <Icon icon="arrow-right" />
+                                        <span className="k-imageeditor-option-label">Arrow</span>
+                                    </div>
+                                </ImageEditorOptionPreview>
                             </ImageEditorOptionList>
                         }
                     />
@@ -90,7 +133,7 @@ export const ImageEditorInsertShape = ({
                         <FormField
                             label="Stroke Width"
                             editorId="shape-stroke-width"
-                            editor={ <NumericTextbox id="shape-stroke-width" showSpinButton={false} value={String(strokeWidth)} prefix={<Icon icon="border-width" />} /> }
+                            editor={ <NumericTextbox id="shape-stroke-width" showClearButton={false} showSpinButton={false} value={String(strokeWidth)} prefix={<Icon icon="border-width" />} /> }
                         />
                     </Fieldset>
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
@@ -106,13 +149,13 @@ export const ImageEditorInsertShape = ({
                     <FormField
                         label="Font Family"
                         editorId="shape-font-family"
-                        editor={ <Combobox disabled={!selected} id="shape-font-family" prefix={<Icon icon="font-family" />} value={fontFamily} /> }
+                        editor={ <Combobox disabled={!selected} id="shape-font-family" showClearButton={false} prefix={<Icon icon="font-family" />} value={fontFamily} /> }
                     />
                     <Fieldset layout="grid" cols={2} gutters={{ cols: "16px" }}>
                         <FormField
                             label="Font Size"
                             editorId="shape-font-size"
-                            editor={ <NumericTextbox disabled={!selected} id="shape-font-size" showSpinButton={false} value={String(fontSize)} prefix={<Icon icon="font-size" />} /> }
+                            editor={ <NumericTextbox disabled={!selected} id="shape-font-size" showClearButton={false} showSpinButton={false} value={String(fontSize)} prefix={<Icon icon="font-size" />} /> }
                         />
                         <FormField
                             label="Alignment"
@@ -212,7 +255,7 @@ export const ImageEditorInsertShape = ({
         }
 
         children={
-            <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+            <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
         }
         {...props} />
 );

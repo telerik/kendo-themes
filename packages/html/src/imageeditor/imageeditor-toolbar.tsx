@@ -11,27 +11,13 @@ const options = {};
 
 export type KendoImageEditorToolbarProps = {
     toolbarItems?: React.JSX.Element | React.JSX.Element[];
+    /** Omits the zoom-level combobox. */
+    adaptive?: boolean;
+    /** Disables the image-dependent actions (no image loaded). */
+    disabled?: boolean;
 };
 
-// Shared toolbar preset for tool templates that have an active image/history (undo, redo and zoom enabled)
-export const imageEditorToolbarItems = [
-    <Button fillMode="flat" key="toolbar-button-1" icon="image-add" aria-label="Image Add"></Button>,
-    <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-    <Button fillMode="flat" key="toolbar-button-2" icon="undo" aria-label="Undo"></Button>,
-    <Button fillMode="flat" key="toolbar-button-3" icon="redo" aria-label="Redo"></Button>,
-    <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-    <Button fillMode="flat" key="toolbar-button-4" icon="download" aria-label="Download"></Button>,
-    <div className="k-spacer" key="toolbar-spacer"></div>,
-     <Button fillMode="flat" key="toolbar-button-5" icon="zoom-in" aria-label="Zoom In"></Button>,
-    <ToolbarItem key="toolbar-item-1">
-        <Autocomplete fillMode="flat" value="Fit" showClearButton={false} aria-label="Zoom options" />
-    </ToolbarItem>,
-     <Button fillMode="flat" key="toolbar-button-6" icon="zoom-out" aria-label="Zoom Out"></Button>
-];
-
-const defaultOptions = {
-    toolbarItems: imageEditorToolbarItems
-};
+const defaultOptions = {};
 
 export const ImageEditorToolbar = (
     props: KendoToolbarProps &
@@ -39,7 +25,9 @@ export const ImageEditorToolbar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultOptions.toolbarItems,
+        toolbarItems,
+        adaptive,
+        disabled,
         ...other
     } = props;
 
@@ -52,7 +40,25 @@ export const ImageEditorToolbar = (
             )}
             fillMode="flat"
         >
-            {toolbarItems}
+            {toolbarItems ?? (
+                // A freshly-loaded image has no edit history, so undo and redo are always disabled
+                <>
+                    <Button fillMode="flat" icon="image-add" aria-label="Image Add"></Button>
+                    <ToolbarSeparator></ToolbarSeparator>
+                    <Button fillMode="flat" disabled icon="undo" aria-label="Undo"></Button>
+                    <Button fillMode="flat" disabled icon="redo" aria-label="Redo"></Button>
+                    <ToolbarSeparator></ToolbarSeparator>
+                    <Button fillMode="flat" disabled={disabled} icon="download" aria-label="Download"></Button>
+                    <div className="k-spacer"></div>
+                    <Button fillMode="flat" disabled={disabled} icon="zoom-in" aria-label="Zoom In"></Button>
+                    {!adaptive &&
+                    <ToolbarItem>
+                        <Autocomplete fillMode="flat" disabled={disabled} value="Fit" showClearButton={false} aria-label="Zoom options" />
+                    </ToolbarItem>
+                    }
+                    <Button fillMode="flat" disabled={disabled} icon="zoom-out" aria-label="Zoom Out"></Button>
+                </>
+            )}
         </Toolbar>
     );
 };

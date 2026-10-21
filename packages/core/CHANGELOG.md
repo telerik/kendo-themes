@@ -1,3 +1,13 @@
+## 14.7.0-dev.15 (2026-10-20)
+
+### 🩹 Fixes
+
+- **imageeditor:** keep segmented control above form from shrinking ([dd0d832a48](https://github.com/telerik/kendo-themes/commit/dd0d832a48))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.7.0-dev.14 (2026-10-20)
 
 ### 🩹 Fixes
