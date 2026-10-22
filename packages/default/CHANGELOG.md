@@ -1,3 +1,13 @@
+## 14.7.1-dev.0 (2026-10-22)
+
+### 🩹 Fixes
+
+- **grid:** fix border color on focus in Grid component ([ba0d6b83c9](https://github.com/telerik/kendo-themes/commit/ba0d6b83c9))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
 ## 14.7.0 (2026-10-21)
 
 ### 🚀 Features
