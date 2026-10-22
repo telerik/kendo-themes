@@ -7,6 +7,7 @@
 @use "../toolbar/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 @use "../radio/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../listgroup/_variables.scss" as *;
@@ -1005,6 +1006,11 @@
 
         .k-form-field > .k-form-label {
             width: fit-content;
+            padding-block: 0;
+            margin-block: 0;
+            align-self: flex-start;
+            min-height: $kendo-input-md-calc-size;
+            justify-content: center;
         }
         .k-form-field-wrap {
             max-width: none;
@@ -1020,7 +1026,10 @@
         display: flex;
         flex-direction: column;
         gap: k-spacing(4);
-        margin-top: $kendo-scheduler-datetime-section-margin-top;
+
+        > .k-scheduler-edit-form-row:first-child {
+            min-height: $kendo-input-md-calc-size;
+        }
     }
 
     .k-scheduler-datetime-label {
