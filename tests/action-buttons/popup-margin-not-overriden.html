@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            .k-popup .k-actions {
+            outline: 1px dotted red;
+            }
+            .popup-margin-section {
+            margin-block-end: 24px;
+            border-block-end: 1px solid #ccc;
+            }
+            .popup-margin-section > .k-animation-container {
+            position: relative;
+            width: min-content;
+            overflow: visible;
+            }
+            .popup-margin-section > h3 {
+            margin: 0 0 8px;
+            }
+        </style>
+        <div id="test-area">
+            <div class="popup-margin-section">
+                <h3>Generic popup with action buttons</h3>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container">
+                        <div class="k-popup" style="position: relative;">
+                            <div class="k-p-4">Popup content</div>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal">
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                                <button class="k-button">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-margin-section">
+                <h3>popover/popover (k-popover-actions)</h3>
+                <iframe title="popover/popover" src="/packages/html/dist/popover/tests/popover/" style="width: 100%; height: 508px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>scheduler/scheduler-quick-actions-popover (k-popover-actions)</h3>
+                <iframe title="scheduler/scheduler-quick-actions-popover" src="/packages/html/dist/scheduler/tests/scheduler-quick-actions-popover/" style="width: 100%; height: 2999px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>prompt/prompt-inline (k-card-actions)</h3>
+                <iframe title="prompt/prompt-inline" src="/packages/html/dist/prompt/tests/prompt-inline/" style="width: 100%; height: 8723px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>prompt/prompt-inline-response-generation (k-card-actions)</h3>
+                <iframe title="prompt/prompt-inline-response-generation" src="/packages/html/dist/prompt/tests/prompt-inline-response-generation/" style="width: 100%; height: 459px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>prompt/prompt-output (k-card-actions)</h3>
+                <iframe title="prompt/prompt-output" src="/packages/html/dist/prompt/tests/prompt-output/" style="width: 100%; height: 463px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>grid/grid-angular</h3>
+                <iframe title="grid/grid-angular" src="/packages/html/dist/grid/tests/grid-angular/" style="width: 100%; height: 722px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>time-selector/time-selector (Meridian overrides: k-time-footer)</h3>
+                <iframe title="time-selector/time-selector" src="/packages/html/dist/time-selector/tests/time-selector/" style="width: 100%; height: 2440px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>timepicker/timepicker-opened (Meridian overrides: k-time-footer)</h3>
+                <iframe title="timepicker/timepicker-opened" src="/packages/html/dist/timepicker/tests/timepicker-opened/" style="width: 100%; height: 3138px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>timedurationpicker/timedurationpicker-expanded (Meridian overrides: k-timeduration-footer)</h3>
+                <iframe title="timedurationpicker/timedurationpicker-expanded" src="/packages/html/dist/timedurationpicker/tests/timedurationpicker-expanded/" style="width: 100%; height: 1676px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>datetime-selector/datetime-selector (Meridian overrides: k-datetime-footer)</h3>
+                <iframe title="datetime-selector/datetime-selector" src="/packages/html/dist/datetime-selector/tests/datetime-selector/" style="width: 100%; height: 1270px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>datetimepicker/datetimepicker-opened (Meridian overrides: k-datetime-footer)</h3>
+                <iframe title="datetimepicker/datetimepicker-opened" src="/packages/html/dist/datetimepicker/tests/datetimepicker-opened/" style="width: 100%; height: 3274px; border: 0px; display: block;"></iframe>
+            </div>
+            <div class="popup-margin-section">
+                <h3>datetimepicker/datetimepicker-opened-sizes (Meridian overrides: k-datetime-footer)</h3>
+                <iframe title="datetimepicker/datetimepicker-opened-sizes" src="/packages/html/dist/datetimepicker/tests/datetimepicker-opened-sizes/" style="width: 100%; height: 9212px; border: 0px; display: block;"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
