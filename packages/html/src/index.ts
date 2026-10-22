@@ -40,6 +40,7 @@ export * from './slider/index';
 export * from './segmented-control/index';
 export * from './smart-box/index';
 export * from './prompt-box/index';
+export * from './datainsights-composer/index';
 
 // Augmented inputs
 export * from './floating-label/index';

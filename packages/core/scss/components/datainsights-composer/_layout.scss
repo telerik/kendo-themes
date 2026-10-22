@@ -1,0 +1,273 @@
+@use "../../spacing/index.scss" as *;
+@use "../../border-radii/index.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-datainsights-composer--layout-base() {
+
+    .k-datainsights-composer-title,
+    .k-datainsights-composer-report-title {
+        font-size: var(--kendo-font-size-xl);
+        font-weight: var(--kendo-font-weight-normal);
+        margin: 0;
+    }
+
+    .k-datainsights-composer .k-prompt-box {
+        z-index: 1;
+    }
+
+    .k-datainsights-composer-actions {
+        display: flex;
+        align-items: center;
+        gap: k-spacing(2);
+        flex-shrink: 0;
+    }
+
+    // Composer card: the bordered, filled panel that groups a state's content.
+    .k-datainsights-composer-card {
+        display: flex;
+        flex-direction: column;
+        gap: k-spacing(6);
+        box-sizing: border-box;
+        border-radius: $kendo-datainsights-composer-border-radius;
+        border: $kendo-datainsights-composer-border-width solid;
+        padding: k-spacing(6);
+        height: 100%;
+    }
+
+    // MessageBox ships with its own bottom margin (--kendo-spacing-4, 16px), which
+    // Stacked on top of this card's 24px gap. The gap alone should control spacing.
+    .k-datainsights-composer-card .k-messagebox {
+        margin-bottom: 0;
+    }
+
+    // ── Field chips (data-source columns footer, attached under the PromptBox) ──
+    .k-datainsights-composer-fields {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: k-spacing(1.5);
+        border-radius: 0 0 $kendo-datainsights-composer-fields-border-radius $kendo-datainsights-composer-fields-border-radius;
+        padding: k-spacing(7) k-spacing(4) k-spacing(3);
+        margin-top: calc(-1 * k-spacing(4));
+        border: 1px solid;
+    }
+
+    .k-datainsights-composer-fields-scrollable {
+        position: relative;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .k-datainsights-composer-fields-scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: k-spacing(1.5);
+        min-width: 0;
+        padding: k-spacing(1);
+        margin: calc(-1 * k-spacing(1));
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .k-datainsights-composer-fields-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .k-datainsights-composer-fields-scroll .k-chip {
+        flex: 0 0 auto;
+    }
+
+    .k-datainsights-composer-fields-scrollable-end::before,
+    .k-datainsights-composer-fields-scrollable-start::after {
+        content: "";
+        position: absolute;
+        inset-block-start: k-spacing(6);
+        inset-block-end: k-spacing(2);
+        z-index: 1;
+        width: calc(k-spacing(8) + k-spacing(1));
+        pointer-events: none;
+    }
+
+    .k-datainsights-composer-fields-scrollable-end::before {
+        inset-inline-start: k-spacing(3);
+    }
+
+    .k-datainsights-composer-fields-scrollable-start::after {
+        inset-inline-end: k-spacing(3);
+    }
+
+    .k-datainsights-composer-report-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: k-spacing(4);
+    }
+
+    .k-datainsights-composer-report-content {
+        box-sizing: border-box;
+        padding: k-spacing(6);
+        border-radius: $kendo-datainsights-composer-border-radius;
+        border: $kendo-datainsights-composer-border-width solid;
+    }
+
+    .k-datainsights-composer-preview {
+        background: $kendo-datainsights-composer-preview-background;
+        border-radius: $kendo-datainsights-composer-border-radius;
+    }
+
+    .k-datainsights-composer-report-content .k-datainsights-composer-report-output {
+        margin-top: k-spacing(4);
+        display: flex;
+        justify-content: center;
+    }
+
+    .k-datainsights-composer-report-output > .k-chart {
+        width: 100%;
+    }
+
+    // ── Loading state ──────────────────────────────────────
+    .k-datainsights-composer-loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: k-spacing(3);
+        height: $kendo-datainsights-composer-loading-height;
+        padding: k-spacing(6);
+    }
+
+    .k-datainsights-composer-loading-message {
+        font-size: var(--kendo-font-size-sm);
+    }
+
+    .k-datainsights-composer-report-content-loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: dashed;
+    }
+
+    // ── Data source popup (browse-all / single-source field list) ──
+    .k-datainsights-composer-popup {
+        box-sizing: border-box;
+        min-width: $kendo-datainsights-composer-popup-min-width;
+        max-width: $kendo-datainsights-composer-popup-max-width;
+        max-height: $kendo-datainsights-composer-popup-max-height;
+    }
+
+    .k-datainsights-composer-popup {
+        gap: k-spacing(2);
+        padding: k-spacing(3);
+    }
+
+    .k-datainsights-composer-popup:has(> .k-searchbox) > .k-searchbox {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .k-datainsights-composer-popup:has(> .k-datainsights-composer-popup-tree) > .k-datainsights-composer-popup-tree {
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow-y: auto;
+    }
+
+    .k-datainsights-composer-popup-field-list {
+        min-height: 0;
+        overflow-y: auto;
+        padding: k-spacing(1);
+        margin: calc( k-spacing(1) * -1);
+
+        .k-chip {
+            flex: 0 0 auto;
+        }
+    }
+
+    .k-datainsights-composer-popup-title {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: k-spacing(1.5) k-spacing(2);
+    }
+
+    .k-datainsights-composer-popup-title,
+    .k-datainsights-composer-popup-tree > .k-treeview-group > .k-treeview-item > .k-treeview-item-content {
+        font-size: var(--kendo-font-size-sm);
+        font-weight: var(--kendo-font-weight-semibold);
+        line-height: var(--kendo-line-height-sm);
+    }
+
+    .k-datainsights-composer-popup .k-chip {
+        width: 100%;
+        box-sizing: border-box;
+        cursor: default;
+
+        // Field chips are static labels, not interactive controls — pointer
+        // events pass through to whatever sits underneath them (the field
+        // list container, or the TreeView row the chip is nested in), so
+        // clicking a chip does not focus or activate it directly.
+        pointer-events: none;
+    }
+
+    .k-datainsights-composer-popup-tree {
+        min-width: 0;
+        max-width: 100%;
+        padding: k-spacing(1);
+        margin: calc( k-spacing(1) * -1);
+
+        .k-treeview-item-content:has(.k-chip) {
+            border-radius: var(--kendo-border-radius-full);
+            padding: k-spacing(0.5);
+            margin: calc( k-spacing(0.5) * -1);
+
+            .k-treeview-leaf {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .k-chip {
+            justify-content: flex-start;
+            max-width: 100%;
+            overflow: hidden;
+            cursor: default;
+        }
+
+        .k-chip-label {
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        // Disable treeview level for chips
+        .k-treeview-item:has(> .k-treeview-item-content .k-chip) > .k-treeview-item-content {
+            --kendo-treeview-level: 0;
+        }
+
+        .k-treeview-group,
+        .k-treeview-item:has(.k-chip) > .k-treeview-item-content {
+            min-width: 0;
+            max-width: 100%;
+        }
+    }
+
+    .k-datainsights-composer-popup-field-list,
+    .k-datainsights-composer-popup-tree .k-treeview-group {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: k-spacing(1.5);
+    }
+
+    // ── History dialog ─────────────────────────────────────
+    .k-datainsights-composer-popup:has(> .k-datainsights-composer-popup-title) {
+        width: max-content;
+        overflow-y: auto;
+    }
+
+    .k-datainsights-composer-history-checkpoint .k-list-item-text {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+}
