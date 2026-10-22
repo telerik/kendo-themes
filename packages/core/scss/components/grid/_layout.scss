@@ -1493,7 +1493,6 @@
         }
 
         .k-actions {
-            margin: 0;
             padding: 0;
         }
 
@@ -1576,10 +1575,6 @@
             padding-block: $kendo-grid-column-menu-popup-padding-y;
             padding-inline: $kendo-grid-column-menu-popup-padding-x;
             max-width: $kendo-grid-column-menu-max-width;
-        }
-
-        .k-actions {
-            margin: 0;
         }
 
     }

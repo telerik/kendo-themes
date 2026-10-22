@@ -1,9 +1,6 @@
 @use "../core/_index.scss" as *;
 
 // Actions
-/// The top margin of the ActionButtons.
-/// @group action-buttons
-$kendo-actions-margin-top: k-spacing(4) !default;
 /// The horizontal padding of the ActionButtons.
 /// @group action-buttons
 $kendo-actions-padding-x: k-spacing(2) !default;
@@ -32,7 +29,6 @@ $kendo-actions-gradient: null !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/action-buttons/_variables.scss" with (
-    $kendo-actions-margin-top: $kendo-actions-margin-top,
     $kendo-actions-padding-x: $kendo-actions-padding-x,
     $kendo-actions-padding-y: $kendo-actions-padding-y,
     $kendo-actions-border-width: $kendo-actions-border-width,
