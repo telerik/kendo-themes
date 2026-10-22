@@ -1,3 +1,14 @@
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.7.1-dev.0 (2026-10-22)
 
 This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.

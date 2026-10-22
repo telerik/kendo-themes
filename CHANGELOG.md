@@ -1,3 +1,9 @@
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
 ## 14.7.1-dev.0 (2026-10-22)
 
 ### 🩹 Fixes
