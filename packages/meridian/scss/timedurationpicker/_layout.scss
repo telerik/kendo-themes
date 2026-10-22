@@ -6,8 +6,6 @@
     @include kendo-time-duration-picker--layout-base();
 
     .k-timeduration-footer.k-actions {
-        margin-top: 0;
-
         border-bottom-left-radius: $kendo-popup-border-radius;
         border-bottom-right-radius: $kendo-popup-border-radius;
     }
