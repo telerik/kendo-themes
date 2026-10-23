@@ -17,14 +17,14 @@
       "import": "./dist/esm/index.mjs",
       "require": "./dist/cjs/index.js"
     },
-    "./a11y/*.json": "./dist/a11y/*.json"
+    "./meta/*.json": "./dist/meta/*.json"
   },
   "files": [
     "dist/**/*.js",
     "dist/**/*.mjs",
     "dist/**/*.d.ts",
     "dist/**/*.js.map",
-    "dist/a11y/*.json",
+    "dist/meta/*.json",
     "src/**/**.ts",
     "src/**/**.tsx"
   ],
@@ -47,12 +47,13 @@
     "typegen": "npx tsc --emitDeclarationOnly --declaration --declarationDir dist/types/",
     "typecheck": "npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json ",
     "build:tests": "node ./scripts/build-tests.js",
-    "docs": "npm run build && node ./scripts/render-a11y-docs.mjs",
+    "build:meta": "node ./scripts/render-a11y-docs.mjs",
+    "docs": "npm run build && npm run build:meta",
     "docs:check": "npm run docs && git diff --name-only --exit-code -- docs",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepublishOnly": "npm run build && npm run typegen && node ./scripts/render-a11y-docs.mjs"
+    "prepublishOnly": "npm run build && npm run typegen && npm run build:meta"
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^5.5.0"

@@ -72,6 +72,7 @@
     "audit:css": "node ./scripts/audit-css.mjs",
     "build": "nx run @progress/kendo-themes-html:build",
     "build:tests": "nx run @progress/kendo-themes-html:build:tests",
+    "build:meta": "npm run build:meta --prefix packages/html",
     "sass": "nx run-many -t sass",
     "sass:dist": "nx run-many -t sass:dist",
     "docs": "nx run-many -t docs",
