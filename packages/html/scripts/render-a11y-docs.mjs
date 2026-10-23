@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+// Flow: spec.tsx -> dist/a11y/*.json -> nunjucks -> docs/*.md
+
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from 'fs';
 import { resolve, dirname, join } from 'path';
 import { globSync } from 'glob';
 import nunjucks from 'nunjucks';
@@ -12,6 +14,7 @@ const htmlRoot = resolve(dirname(new URL(import.meta.url).pathname), '..');
 const miscDir = join(htmlRoot, 'misc');
 const srcDir = join(htmlRoot, 'src');
 const outDir = join(htmlRoot, 'docs');
+const jsonOutDir = join(htmlRoot, 'dist', 'a11y');
 
 const toPascalCase = (str) => str.replace(/(^|-)([a-z])/g, (_, _sep, ch) => ch.toUpperCase());
 
@@ -25,10 +28,6 @@ env.addFilter('mdtags', (str) =>
 
 const template = readFileSync(join(miscDir, 'accessibility.md.njk'), 'utf8');
 
-// ─── JSON-based components (chart has no spec files so stays JSON) ───────────
-const jsonFiles = globSync('*/behavior/accessibility.json', { cwd: srcDir });
-
-// ─── Package-based components (all fully-migrated components) ────────────────
 // Requires `npm run build` in the html package to be run first.
 let htmlPackage = null;
 try {
@@ -38,18 +37,16 @@ try {
 }
 
 /**
- * Scan spec files in each component directory and build a per-spec `components`
- * array for every directory that has templates (all fully-migrated components).
+ * Scan spec files in every component directory and build the a11y data model
+ * (raw values only) for each directory.
  */
-function buildPackageSpecMap() {
+function collectSpecData() {
     if (!htmlPackage) { return new Map(); }
     const map = new Map();
 
-    const templateDirs = globSync('*/templates/', { cwd: srcDir })
-        .map(p => p.replace(/\/+$/, '').split('/').at(-2))
-        .filter(Boolean);
+    const dirs = [...new Set(globSync('*/*.spec.tsx', { cwd: srcDir }).map(p => p.split('/')[0]))].sort();
 
-    for (const dir of templateDirs) {
+    for (const dir of dirs) {
         const specFiles = globSync(`${dir}/*.spec.tsx`, { cwd: srcDir });
         const components = [];
         const resources = [];
@@ -92,40 +89,24 @@ function buildPackageSpecMap() {
                 if (typeof exp !== 'function') { continue; }
 
                 const isPrimary = Boolean(exp.folderName);
-                const kbSpec = isPrimary ? fileKbSpec : [];
-                const uxSpec = isPrimary ? fileUxSpec : [];
+                // File-level @keyboard/@ux belong to the primary component
+                const keyboard = isPrimary ? fileKbSpec : [];
+                const ux = isPrimary ? fileUxSpec : [];
                 // @aria annotations belong to the default export of each spec file
-                const ariaAnnotations = (match[1] === defaultExport) ? fileAriaAnnotations : [];
+                const aria = (match[1] === defaultExport) ? fileAriaAnnotations : [];
 
-                // Options table from primary component only
-                const apiRows = [];
-                if (isPrimary && exp.options) {
-                    for (const [key, values] of Object.entries(exp.options)) {
-                        const valid = values.filter(v => v !== null && v !== undefined && v !== '');
-                        if (valid.length) {
-                            apiRows.push({
-                                option: key,
-                                values: valid.map(v => `\`${v}\``).join(', '),
-                                default: exp.defaultOptions?.[key] !== undefined ? `\`${exp.defaultOptions[key]}\`` : null
-                            });
-                        }
-                    }
-                }
+                const options = Object.entries(exp.options ?? {})
+                    .map(([name, values]) => ({
+                        name,
+                        values: values.filter(v => v !== null && v !== undefined && v !== ''),
+                        default: exp.defaultOptions?.[name] ?? null
+                    }))
+                    .filter(o => o.values.length);
+                const states = (exp.states ?? []).filter(s => s !== null && s !== undefined && s !== '');
+                const rootClass = exp.className ?? null;
 
-                // States table from primary component only
-                const stateRows = [];
-                if (isPrimary && exp.states) {
-                    for (const state of exp.states) {
-                        if (state !== null && state !== undefined && state !== '') {
-                            stateRows.push({ state, cssClass: `k-${state}` });
-                        }
-                    }
-                }
-
-                const rootClass = (isPrimary && exp.className) ? exp.className : null;
-
-                if (!apiRows.length && !stateRows.length && !kbSpec.length && !uxSpec.length && !ariaAnnotations.length) { continue; }
-                components.push({ name: match[1], isPrimary, rootClass, apiRows, stateRows, kbSpec, uxSpec, ariaAnnotations });
+                if (!options.length && !states.length && !keyboard.length && !ux.length && !aria.length) { continue; }
+                components.push({ name: match[1], isPrimary, rootClass, options, states, aria, keyboard, ux });
             }
         }
 
@@ -135,52 +116,38 @@ function buildPackageSpecMap() {
             return a.name.localeCompare(b.name);
         });
 
-        if (components.length) { map.set(dir, { components, resources }); }
+        if (components.length) { map.set(dir, { component: dir, name: toPascalCase(dir), components, resources }); }
     }
 
     return map;
 }
 
+// ─── spec.tsx -> JSON ────────────────────────────────────────────────────────
 mkdirSync(outDir, { recursive: true });
+rmSync(jsonOutDir, { recursive: true, force: true });
+mkdirSync(jsonOutDir, { recursive: true });
 
-// ─── Generate docs for JSON-based components ─────────────────────────────────
-for (const file of jsonFiles.sort()) {
-    const component = file.split('/')[0];
-    const json = JSON.parse(readFileSync(join(srcDir, file), 'utf8'));
-
-    const ariaSpec = json.ariaSpec || [];
-    const kbSpec = json.kbSpec || [];
-    const uxSpec = json.uxSpec || [];
-    const resources = json.resources || [];
-
-    if (!ariaSpec.length && !kbSpec.length && !uxSpec.length) { continue; }
-
-    const name = toPascalCase(component);
-    const components = [{ name, isPrimary: true, apiRows: [], kbSpec, uxSpec }];
-
-    const md = nunjucks.renderString(template, {
-        name,
-        componentDir: component,
-        components,
-        resources,
-        hasKbSpec: kbSpec.length > 0
-    });
-
-    writeFileSync(join(outDir, `${component}.md`), md.trim() + '\n');
+const a11yIndex = {};
+for (const [dir, data] of collectSpecData()) {
+    a11yIndex[dir] = data;
+    writeFileSync(join(jsonOutDir, `${dir}.json`), JSON.stringify(data, null, 2) + '\n');
 }
+writeFileSync(join(jsonOutDir, 'index.json'), JSON.stringify(a11yIndex, null, 2) + '\n');
 
-// ─── Generate docs for inline-spec components (no JSON) ──────────────────────
-const packageSpecMap = buildPackageSpecMap();
+// ─── JSON -> nunjucks -> docs/*.md ───────────────────────────────────────────
+const jsonFiles = readdirSync(jsonOutDir).filter(f => f.endsWith('.json') && f !== 'index.json').sort();
 
-for (const [dir, { components, resources }] of [...packageSpecMap.entries()].sort()) {
+for (const file of jsonFiles) {
+    const data = JSON.parse(readFileSync(join(jsonOutDir, file), 'utf8'));
+
     const md = nunjucks.renderString(template, {
-        name: toPascalCase(dir),
-        componentDir: dir,
-        components,
-        resources,
-        hasKbSpec: components.some(c => c.kbSpec.length > 0)
+        name: data.name,
+        componentDir: data.component,
+        components: data.components,
+        resources: data.resources,
+        hasKbSpec: data.components.some(c => c.keyboard.length > 0)
     });
 
-    writeFileSync(join(outDir, `${dir}.md`), md.trim() + '\n');
+    writeFileSync(join(outDir, `${data.component}.md`), md.trim() + '\n');
 }
 
