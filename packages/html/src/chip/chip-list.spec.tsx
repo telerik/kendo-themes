@@ -31,7 +31,6 @@ const defaultOptions = {
  * @aria {aria-keyshortcuts="Enter Delete"} Announces the Delete action along with the default Enter key.
  * @aria {aria-multiselectable="true"} Indicates multiple selections are allowed.
  * @aria {aria-label} Accessible name for the chip list; required when role="listbox".
- * @aria {role="group"} Groups chips that each act as independent controls (e.g. popup triggers) rather than selectable options; `aria-orientation` is omitted since it is not supported on this role.
  * @ux {Chip group} Renders a horizontal or wrapping collection of chip elements.
  * @ux {Selection} Supports single or multi-selection across the chips in the list.
  * @ux {Add chip} Can include an add-chip control to allow the user to create new chips.
