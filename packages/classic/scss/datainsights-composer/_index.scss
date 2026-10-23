@@ -1,0 +1,35 @@
+@use "../core/_index.scss" as *;
+@use "../badge/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../chip/_index.scss" as *;
+@use "../dataviz/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../list/_index.scss" as *;
+@use "../loader/_index.scss" as *;
+@use "../messagebox/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+@use "../prompt-box/_index.scss" as *;
+@use "../searchbox/_index.scss" as *;
+@use "../treeview/_index.scss" as *;
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+@mixin kendo-datainsights-composer--styles() {
+    @include import-once("datainsights-composer") {
+        @include core-styles();
+        @include kendo-badge--styles();
+        @include kendo-button--styles();
+        @include kendo-chip--styles();
+        @include kendo-dataviz--styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
+        @include kendo-loader--styles();
+        @include kendo-messagebox--styles();
+        @include kendo-popup--styles();
+        @include kendo-prompt-box--styles();
+        @include kendo-searchbox--styles();
+        @include kendo-treeview--styles();
+        @include kendo-datainsights-composer--layout();
+        @include kendo-datainsights-composer--theme();
+    }
+}

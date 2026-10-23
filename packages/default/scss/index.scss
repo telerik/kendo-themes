@@ -110,6 +110,7 @@
 @forward "./scheduler/_index.scss";
 @forward "./file-box/_index.scss";
 @forward "./prompt-box/_index.scss";
+@forward "./datainsights-composer/_index.scss";
 @forward "./chat/_index.scss";
 @forward "./agent-response/_index.scss";
 @forward "./citation/_index.scss";
@@ -303,6 +304,7 @@
 @use "./segmented-control/_index.scss" as *;
 @use "./smart-box/_index.scss" as *;
 @use "./prompt-box/_index.scss" as *;
+@use "./datainsights-composer/_index.scss" as *;
 
 
 // Dataviz
@@ -487,6 +489,7 @@
     @include kendo-prompt--styles();
     @include kendo-segmented-control--styles();
     @include kendo-smart-box--styles();
+    @include kendo-datainsights-composer--styles();
     @include kendo-prompt-box--styles();
 
 

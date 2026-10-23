@@ -1,0 +1,90 @@
+@use "./variables.scss" as *;
+@use "../../color-system/index.scss" as *;
+
+@mixin kendo-datainsights-composer--theme-base() {
+
+    .k-datainsights-composer-card {
+        background: $kendo-datainsights-composer-background;
+        border-color: $kendo-datainsights-composer-border-color;
+    }
+
+    .k-datainsights-composer-fields {
+        background: $kendo-datainsights-composer-preview-background;
+        border-color: $kendo-datainsights-composer-border-color;
+    }
+
+    .k-datainsights-composer-fields-scrollable-end::before {
+        background: linear-gradient(90deg, $kendo-datainsights-composer-preview-background, transparent);
+    }
+
+    .k-datainsights-composer-fields-scrollable-start::after {
+        background: linear-gradient(270deg, $kendo-datainsights-composer-preview-background, transparent);
+    }
+
+    .k-datainsights-composer-report-content {
+        background: $kendo-datainsights-composer-preview-background;
+        border-color: $kendo-datainsights-composer-border-color;
+    }
+
+    .k-datainsights-composer-loading-message {
+        color: k-color(subtle);
+    }
+
+    .k-datainsights-composer-report-content-loading {
+        animation: k-datainsights-composer-shimmer 1.8s infinite var(--kendo-easing-standard);
+    }
+
+    @keyframes k-datainsights-composer-shimmer {
+        0%,
+        100% {
+            border-color: color-mix(in srgb, #e682ff 60%, transparent);
+        }
+        50% {
+            border-color: #2c44fe;
+        }
+    }
+
+    .k-datainsights-composer-popup {
+
+        .k-chip:hover,
+        .k-chip:focus,
+        .k-chip.k-hover,
+        .k-chip.k-focus {
+            background-color: transparent;
+            color: inherit;
+            outline: none;
+        }
+
+        .k-chip.k-chip-outline.k-chip-base:hover,
+        .k-chip.k-chip-outline.k-chip-base.k-hover {
+            color: k-color(on-app-surface);
+            background-color: transparent;
+            background-image: none;
+            border-color: k-color(base-emphasis);
+        }
+    }
+
+    .k-datainsights-composer-popup-title,
+    .k-datainsights-composer-popup-tree > .k-treeview-group > .k-treeview-item > .k-treeview-item-content {
+        color: k-color(subtle);
+    }
+
+    .k-datainsights-composer-popup-tree .k-treeview-item-content:hover,
+    .k-datainsights-composer-popup-tree .k-treeview-item-content.k-hover {
+        color: inherit;
+        background-color: transparent;
+        background-image: none;
+        border-color: transparent;
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-datainsights-composer-fields-scrollable-end::before {
+            background: linear-gradient(270deg, $kendo-datainsights-composer-preview-background, transparent);
+        }
+
+        .k-datainsights-composer-fields-scrollable-start::after {
+            background: linear-gradient(90deg, $kendo-datainsights-composer-preview-background, transparent);
+        }
+    }
+}

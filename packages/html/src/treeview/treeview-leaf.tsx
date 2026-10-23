@@ -50,9 +50,8 @@ export const TreeviewLeaf = (
             )}
         >
             {showIcon && <Icon icon={icon} />}
-            <span className="k-treeview-leaf-text">
-                {children ?? text}
-            </span>
+            {text !== undefined && <span className="k-treeview-leaf-text">{text}</span>}
+            {children}
         </span>
     );
 };
