@@ -13,7 +13,6 @@ export type KendoActionSheetHeaderProps = {
     input?: boolean;
     inputValue?: string;
     inputPlaceholder?: string;
-    adaptive?: boolean;
     titleId?: string;
 }
 
@@ -36,7 +35,6 @@ export const ActionSheetHeader = (
         input,
         inputValue,
         inputPlaceholder,
-        adaptive,
         titleId,
         children,
         ...other
@@ -57,11 +55,11 @@ export const ActionSheetHeader = (
                 )}
                 {!children &&
                     <div className="k-actionsheet-title" id={titleId}>
-                        {title && <div className="k-text-center">{title}</div>}
-                        {subtitle && <div className="k-actionsheet-subtitle k-text-center">{subtitle}</div>}
+                        {title && <div>{title}</div>}
+                        {subtitle && <div className="k-actionsheet-subtitle">{subtitle}</div>}
                     </div>
                 }
-                {children && <div className="k-actionsheet-title" id={titleId}>{children}</div>}
+                {children && <div className="k-actionsheet-title k-actionsheet-title-template" id={titleId}>{children}</div>}
                 {actionsEnd && (
                     <div className="k-actionsheet-actions">
                         {actionsEnd}
@@ -71,9 +69,9 @@ export const ActionSheetHeader = (
             {(input || filter) && (
                 <div className="k-actionsheet-titlebar-group k-actionsheet-filter">
                     {input ? (
-                        <Textbox value={inputValue} placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} aria-label={title || inputPlaceholder || "Input"} />
+                        <Textbox value={inputValue} placeholder={inputPlaceholder} size="large" aria-label={title || inputPlaceholder || "Input"} />
                     ) : (
-                        <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} aria-label="Filter options" />
+                        <Searchbox placeholder="Filter" size="large" aria-label="Filter options" />
                     )}
                 </div>
             )}

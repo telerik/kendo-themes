@@ -7,11 +7,12 @@ import { ColumnList, ColumnListItem } from "../../column-menu";
 const styles = `
     #test-area {
         max-width: 780px;
-        --kendo-actionsheet-height: 400px;
-        --kendo-actionsheet-max-height: 400px;
     }
     #test-area > section {
-        height: 600px;
+        height: 720px;
+        --kendo-actionsheet-height: 60cqh;
+        --kendo-actionsheet-max-height: 60cqh;
+        container-type: size;
         outline: 1px dotted;
         overflow: hidden;
         position: relative;
@@ -179,9 +180,8 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -189,6 +189,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary">Apply</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-columns-1"
                 >
                     <ColumnList size="large">
                         <ColumnListItem checked disabled label="Header Name 1" />
@@ -276,9 +277,8 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal
                     fullscreen
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Column chooser" subtitle="Selected fields are visible" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -286,6 +286,7 @@ export default () => (
                             <Button icon="check" size="large" themeColor="primary">Apply</Button>
                         </ActionSheetFooter>
                     }
+                    id="actionsheet-columns-2"
                 >
                     <ColumnList size="large">
                         <ColumnListItem checked label="Header Name 1" />
