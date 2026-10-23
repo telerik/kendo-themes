@@ -1,10 +1,10 @@
-import { classNames } from '../misc';
+import { classNames, States, stateClassNames } from '../misc';
 
 import { KendoComponent } from '../_types/component';
 import { SCHEDULER_FOLDER_NAME, SCHEDULER_MODULE_NAME } from './constants';
 const className = 'k-scheduler-cell';
 
-const states = [];
+const states = [States.selected, States.readonly];
 
 const options = {};
 
@@ -18,6 +18,9 @@ export type KendoSchedulerCellProps = {
     dayText?: string;
     colspan?: number;
     rowspan?: number;
+    selected?: boolean;
+    readonly?: boolean;
+    nonwork?: boolean;
 }
 
 export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React.AllHTMLAttributes<HTMLDivElement> & { as: 'div' } ) | ( React.HTMLAttributes<HTMLTableCellElement> & { as: 'th' |'td' } ) )> = (
@@ -34,6 +37,9 @@ export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React
         dayText,
         colspan,
         rowspan,
+        selected,
+        readonly,
+        nonwork,
         as: Component = 'div',
         ...other
     } = props;
@@ -51,9 +57,14 @@ export const SchedulerCell: KendoComponent<KendoSchedulerCellProps & ( | ( React
             className={classNames(
                 className,
                 props.className,
+                stateClassNames(className, {
+                    selected,
+                    readonly,
+                }),
                 {
                     'k-scheduler-times-all-day': allDay,
                     'k-today': today,
+                    'k-nonwork-hour': nonwork,
                 },
                 cellType?.map((t) => ({
                     [`k-${t}-cell`]: true,
