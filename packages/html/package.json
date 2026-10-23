@@ -12,15 +12,19 @@
   ],
   "types": "./dist/types/index.d.ts",
   "exports": {
-    "types": "./dist/types/index.d.ts",
-    "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js"
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js"
+    },
+    "./a11y/*.json": "./dist/a11y/*.json"
   },
   "files": [
     "dist/**/*.js",
     "dist/**/*.mjs",
     "dist/**/*.d.ts",
     "dist/**/*.js.map",
+    "dist/a11y/*.json",
     "src/**/**.ts",
     "src/**/**.tsx"
   ],
@@ -48,7 +52,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepublishOnly": "npm run build && npm run typegen"
+    "prepublishOnly": "npm run build && npm run typegen && node ./scripts/render-a11y-docs.mjs"
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^5.5.0"
