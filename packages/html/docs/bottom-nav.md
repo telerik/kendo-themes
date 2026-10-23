@@ -50,6 +50,16 @@ These CSS classes are applied to the `k-bottom-nav` element.
 
 ### BottomNavItem
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-bottom-nav-item` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |

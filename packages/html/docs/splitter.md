@@ -31,6 +31,17 @@ The Splitter is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | Collapse / Expand | Individual panes can be collapsed and expanded using toggle arrows. |
 | Orientation | Can be laid out horizontally (side-by-side) or vertically (stacked). |
 
+### SplitterSplitbar
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-splitbar` element.
+
 ### Testing
 
 The Splitter has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
