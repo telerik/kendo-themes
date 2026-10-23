@@ -1,3 +1,13 @@
+## 14.7.1-dev.2 (2026-10-23)
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.1-dev.1 (2026-10-22)
 
 ### 🚀 Features
