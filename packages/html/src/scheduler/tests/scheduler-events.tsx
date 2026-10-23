@@ -246,27 +246,13 @@ export default () => (
                     <SchedulerTable>
                       <tbody>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour" />
-                          <SchedulerCell as="td" className="k-nonwork-hour k-selected" />
-                        </tr>
-                        <tr className="k-middle-row">
-                          <SchedulerCell as="td" />
-                          <SchedulerCell as="td" />
-                          <SchedulerCell as="td" />
-                          <SchedulerCell as="td" />
-                          <SchedulerCell as="td" className="k-selected" />
-                        </tr>
-                        <tr>
                           <SchedulerCell as="td" />
                           <SchedulerCell as="td" />
                           <SchedulerCell as="td" />
@@ -386,102 +372,116 @@ export default () => (
                           <SchedulerCell as="td" />
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
                         </tr>
                         <tr>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
+                          <SchedulerCell as="td" />
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr className="k-middle-row">
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                         <tr>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
-                          <SchedulerCell as="td" className="k-nonwork-hour"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                        </tr>
+                        <tr className="k-middle-row">
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                        </tr>
+                        <tr>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
+                          <SchedulerCell as="td"></SchedulerCell>
                         </tr>
                       </tbody>
                     </SchedulerTable>
