@@ -8,11 +8,21 @@ The DatainsightsComposer is compliant with the [Web Content Accessibility Guidel
 
 ### DataInsightsComposerFields
 
+#### ARIA Attributes
+
+| Attribute | Description |
+| --- | --- |
+| `role="group"` | Groups data-source chips that act as popup triggers. |
+| `aria-label` | Names the data-source chip group. |
+| `aria-haspopup="true"` | Indicates that each data-source chip opens a popup. |
+| `tabindex="0" or "-1"` | Maintains one data-source chip in the tab order using roving tabindex. |
+
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
-| `Tab or Shift+Tab` | Moves focus into or out of the chip group as a single stop (lands on the roving tab stop chip). |
+| `Tab` | Moves focus into the group through its active roving-tabindex chip, or from that chip to the next focusable element. |
+| `Shift+Tab` | Moves focus from the active chip to the previous focusable element. |
 | `ArrowRight or ArrowLeft` | Moves the roving tab stop between the data source chips, same as the standalone ChipList. |
 | `Enter or Space` | Opens the Data Source popup for the focused chip. |
 
@@ -30,8 +40,8 @@ The DatainsightsComposer is compliant with the [Web Content Accessibility Guidel
 | Trigger | Behavior |
 | --- | --- |
 | `ArrowUp or ArrowDown` | Moves the roving tab stop between checkpoints, same as a standard list. |
-| `Tab` | From the active (focused) checkpoint, moves focus to its own restore button; the restore buttons of all other checkpoints have `tabindex="-1"` so Tab does not walk through them one by one. |
-| `Shift+Tab` | From a restore button, returns focus to its own checkpoint. |
+| `Tab` | From the active checkpoint, moves focus to its restore button. From that button, or from the current checkpoint which has no restore action, moves focus outside the popup. |
+| `Shift+Tab` | From a restore button, returns focus to its own checkpoint. From the active checkpoint, moves focus to the previous focusable element outside the popup. |
 
 ### DataInsightsComposerOutput
 
@@ -41,6 +51,25 @@ The DatainsightsComposer is compliant with the [Web Content Accessibility Guidel
 | --- | --- |
 | `role="group"` | Groups the chart with its visible report title. |
 | `aria-labelledby` | Names the chart output from the associated report title. |
+
+### DataInsightsComposerPopup
+
+#### ARIA Attributes
+
+| Attribute | Description |
+| --- | --- |
+| `role="presentation"` | Removes button semantics from field-label chips in data-source popups. |
+| `tabindex="0" or "-1"` | Uses roving tabindex for a standalone field list; chips embedded in TreeView items stay out of the tab order. |
+
+#### Keyboard Navigation
+
+| Trigger | Behavior |
+| --- | --- |
+| `ArrowDown` | Moves to the next chip in a data-source field list, or from the browser search box to the first TreeView item. |
+| `ArrowUp` | Moves to the previous chip in a data-source field list, or from the first browser TreeView item to the search box. |
+| `Tab` | In a data-source field-list popup, moves focus into the list through its active roving-tabindex chip; pressing Tab again moves focus outside the popup. |
+| `Shift+Tab` | From the active chip in a data-source field-list popup, moves focus to the previous focusable element outside the popup. |
+| `Escape` | Closes the popup and returns focus to the element that opened it. |
 
 ### DataInsightsComposerReportTitle
 

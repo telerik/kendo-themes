@@ -29,22 +29,12 @@ The Chip is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 
 These CSS classes are applied to the `k-chip` element.
 
-#### ARIA Attributes
-
-| Attribute | Description |
-| --- | --- |
-| `role="presentation" or "listitem"` | Used for read-only, informational chips that must still be announced; `aria-pressed` is omitted for these. |
-| `aria-haspopup` | Indicates the Chip opens a popup on activation instead of toggling a pressed state; `aria-pressed` is omitted when present. |
-| `tabindex="-1"` | When used as a static label inside another focusable or roving-tabindex container (e.g. a TreeView row), the Chip must not be independently focusable; pairing it with `pointer-events: none` also lets clicks and hover pass through to that container. |
-
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
 | `ArrowRight` | Focuses the next chip in a horizontally oriented chiplist. |
 | `ArrowLeft` | Focuses the previous chip in a horizontally oriented group. |
-| `ArrowDown` | Focuses the next chip in a vertically stacked group (e.g. a field list). |
-| `ArrowUp` | Focuses the previous chip in a vertically stacked group. |
 | `Enter or Space` | Triggers a click action on the Chip. |
 | `Delete or Backspace` | Removes the Chip when a delete action is configured. |
 
@@ -77,7 +67,6 @@ These CSS classes are applied to the `k-chip` element.
 | `aria-keyshortcuts="Enter Delete"` | Announces the Delete action along with the default Enter key. |
 | `aria-multiselectable="true"` | Indicates multiple selections are allowed. |
 | `aria-label` | Accessible name for the chip list; required when role="listbox". |
-| `role="group"` | Groups chips that each act as independent controls (e.g. popup triggers) rather than selectable options; `aria-orientation` is omitted since it is not supported on this role. |
 
 #### UX Behavior
 
