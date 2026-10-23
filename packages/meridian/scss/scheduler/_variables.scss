@@ -76,11 +76,14 @@ $kendo-scheduler-cell-height: $kendo-line-height-em !default;
 $kendo-scheduler-datecolumn-width: 12rem !default;
 $kendo-scheduler-timecolumn-width: 11rem !default;
 
-$kendo-scheduler-nonwork-bg: k-color(base) !default;
+$kendo-scheduler-nonwork-bg: k-color(surface) !default;
 $kendo-scheduler-nonwork-text: null !default;
 
 $kendo-scheduler-othermonth-bg: k-color(base) !default;
 $kendo-scheduler-othermonth-text: null !default;
+
+$kendo-scheduler-readonly-cell-bg: k-color(base-subtle) !default;
+$kendo-scheduler-readonly-cell-text: null !default;
 
 $kendo-scheduler-yearview-padding-x: k-spacing(3) !default;
 $kendo-scheduler-yearview-padding-y: $kendo-scheduler-yearview-padding-x !default;
@@ -196,6 +199,8 @@ $kendo-scheduler-recurrence-fields-row-gap: k-spacing(3) !default;
     $kendo-scheduler-nonwork-text: $kendo-scheduler-nonwork-text,
     $kendo-scheduler-othermonth-bg: $kendo-scheduler-othermonth-bg,
     $kendo-scheduler-othermonth-text: $kendo-scheduler-othermonth-text,
+    $kendo-scheduler-readonly-cell-bg: $kendo-scheduler-readonly-cell-bg,
+    $kendo-scheduler-readonly-cell-text: $kendo-scheduler-readonly-cell-text,
     $kendo-scheduler-yearview-padding-x: $kendo-scheduler-yearview-padding-x,
     $kendo-scheduler-yearview-padding-y: $kendo-scheduler-yearview-padding-y,
     $kendo-scheduler-yearview-calendar-gap: $kendo-scheduler-yearview-calendar-gap,
