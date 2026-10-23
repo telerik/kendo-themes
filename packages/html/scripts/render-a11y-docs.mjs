@@ -12,6 +12,7 @@ const htmlRoot = resolve(dirname(new URL(import.meta.url).pathname), '..');
 const miscDir = join(htmlRoot, 'misc');
 const srcDir = join(htmlRoot, 'src');
 const outDir = join(htmlRoot, 'docs');
+const jsonOutDir = join(htmlRoot, 'dist', 'a11y');
 
 const toPascalCase = (str) => str.replace(/(^|-)([a-z])/g, (_, _sep, ch) => ch.toUpperCase());
 
@@ -99,10 +100,12 @@ function buildPackageSpecMap() {
 
                 // Options table from primary component only
                 const apiRows = [];
+                const options = [];
                 if (isPrimary && exp.options) {
                     for (const [key, values] of Object.entries(exp.options)) {
                         const valid = values.filter(v => v !== null && v !== undefined && v !== '');
                         if (valid.length) {
+                            options.push({ name: key, values: valid, default: exp.defaultOptions?.[key] ?? null });
                             apiRows.push({
                                 option: key,
                                 values: valid.map(v => `\`${v}\``).join(', '),
@@ -125,7 +128,7 @@ function buildPackageSpecMap() {
                 const rootClass = (isPrimary && exp.className) ? exp.className : null;
 
                 if (!apiRows.length && !stateRows.length && !kbSpec.length && !uxSpec.length && !ariaAnnotations.length) { continue; }
-                components.push({ name: match[1], isPrimary, rootClass, apiRows, stateRows, kbSpec, uxSpec, ariaAnnotations });
+                components.push({ name: match[1], isPrimary, rootClass, apiRows, stateRows, options, kbSpec, uxSpec, ariaAnnotations });
             }
         }
 
@@ -142,6 +145,30 @@ function buildPackageSpecMap() {
 }
 
 mkdirSync(outDir, { recursive: true });
+mkdirSync(jsonOutDir, { recursive: true });
+
+const a11yIndex = {};
+
+// Consumer-facing JSON shape: raw values only, no markdown formatting.
+function writeJson(dir, name, components, resources) {
+    const data = {
+        component: dir,
+        name,
+        components: components.map(c => ({
+            name: c.name,
+            isPrimary: c.isPrimary,
+            rootClass: c.rootClass ?? null,
+            options: c.options ?? [],
+            states: (c.stateRows ?? []).map(s => s.state),
+            aria: (c.ariaAnnotations ?? []).map(a => ({ prop: a.prop, attribute: a.attribute, description: a.description })),
+            keyboard: c.kbSpec ?? [],
+            ux: c.uxSpec ?? []
+        })),
+        resources
+    };
+    a11yIndex[dir] = data;
+    writeFileSync(join(jsonOutDir, `${dir}.json`), JSON.stringify(data, null, 2) + '\n');
+}
 
 // ─── Generate docs for JSON-based components ─────────────────────────────────
 for (const file of jsonFiles.sort()) {
@@ -167,6 +194,7 @@ for (const file of jsonFiles.sort()) {
     });
 
     writeFileSync(join(outDir, `${component}.md`), md.trim() + '\n');
+    writeJson(component, name, components, resources);
 }
 
 // ─── Generate docs for inline-spec components (no JSON) ──────────────────────
@@ -182,5 +210,8 @@ for (const [dir, { components, resources }] of [...packageSpecMap.entries()].sor
     });
 
     writeFileSync(join(outDir, `${dir}.md`), md.trim() + '\n');
+    writeJson(dir, toPascalCase(dir), components, resources);
 }
+
+writeFileSync(join(jsonOutDir, 'index.json'), JSON.stringify(a11yIndex, null, 2) + '\n');
 
