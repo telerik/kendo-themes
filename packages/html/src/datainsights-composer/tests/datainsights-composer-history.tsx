@@ -1,4 +1,3 @@
-import { DataInsightsComposerHistoryPopup } from '../templates/datainsights-composer-history-popup';
 import { DataInsightsComposerHistoryCheckpoint, DataInsightsComposerPopupListGroupHeader } from '..';
 import { List, ListContent } from '../../list';
 import { Popup } from '../../popup';
@@ -13,10 +12,6 @@ const styles = `
 export default () => (
     <>
         <style>{styles}</style>
-        <div id="test-area">
-            <h3>History popup</h3>
-            <DataInsightsComposerHistoryPopup />
-        </div>
         <div id="test-area">
             <h3>History popup states</h3>
             <Popup className={classNames('k-list-container', 'k-datainsights-composer-popup')} containerRole="region" containerAriaLabel="History">

@@ -1,5 +1,4 @@
 @use "../../spacing/index.scss" as *;
-@use "../../border-radii/index.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-datainsights-composer--layout-base() {
@@ -32,12 +31,12 @@
         border: $kendo-datainsights-composer-border-width solid;
         padding: k-spacing(6);
         height: 100%;
-    }
 
-    // MessageBox ships with its own bottom margin (--kendo-spacing-4, 16px), which
-    // Stacked on top of this card's 24px gap. The gap alone should control spacing.
-    .k-datainsights-composer-card .k-messagebox {
-        margin-bottom: 0;
+        // MessageBox ships with its own bottom margin (--kendo-spacing-4, 16px), which
+        // Stacked on top of this card's 24px gap. The gap alone should control spacing.
+        .k-messagebox {
+            margin-bottom: 0;
+        }
     }
 
     // ── Field chips (data-source columns footer, attached under the PromptBox) ──
@@ -67,15 +66,16 @@
         margin: calc(-1 * k-spacing(1));
         overflow-x: auto;
         scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .k-chip {
+            flex: 0 0 auto;
+        }
     }
 
-    .k-datainsights-composer-fields-scroll::-webkit-scrollbar {
-        display: none;
-    }
-
-    .k-datainsights-composer-fields-scroll .k-chip {
-        flex: 0 0 auto;
-    }
 
     .k-datainsights-composer-fields-scrollable-end::before,
     .k-datainsights-composer-fields-scrollable-start::after {
@@ -110,19 +110,15 @@
         border: $kendo-datainsights-composer-border-width solid;
     }
 
-    .k-datainsights-composer-preview {
-        background: $kendo-datainsights-composer-preview-background;
-        border-radius: $kendo-datainsights-composer-border-radius;
-    }
-
-    .k-datainsights-composer-report-content .k-datainsights-composer-report-output {
+    .k-datainsights-composer-report-output {
         margin-top: k-spacing(4);
         display: flex;
         justify-content: center;
-    }
 
-    .k-datainsights-composer-report-output > .k-chart {
-        width: 100%;
+        > .k-chart {
+            width: 100%;
+        }
+
     }
 
     // ── Loading state ──────────────────────────────────────
@@ -148,27 +144,36 @@
 
     // ── Data source popup (browse-all / single-source field list) ──
     .k-datainsights-composer-popup {
-        box-sizing: border-box;
         min-width: $kendo-datainsights-composer-popup-min-width;
         max-width: $kendo-datainsights-composer-popup-max-width;
         max-height: $kendo-datainsights-composer-popup-max-height;
-    }
-
-    .k-datainsights-composer-popup {
         gap: k-spacing(2);
         padding: k-spacing(3);
+
+        &:has(> .k-searchbox) > .k-searchbox {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        &:has(> .k-datainsights-composer-popup-tree) > .k-datainsights-composer-popup-tree {
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow-y: auto;
+        }
+
+        .k-chip {
+            width: 100%;
+            box-sizing: border-box;
+            cursor: default;
+
+            // Field chips are static labels, not interactive controls — pointer
+            // events pass through to whatever sits underneath them (the field
+            // list container, or the TreeView row the chip is nested in), so
+            // clicking a chip does not focus or activate it directly.
+            pointer-events: none;
+        }
     }
 
-    .k-datainsights-composer-popup:has(> .k-searchbox) > .k-searchbox {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .k-datainsights-composer-popup:has(> .k-datainsights-composer-popup-tree) > .k-datainsights-composer-popup-tree {
-        flex: 1 1 auto;
-        min-height: 0;
-        overflow-y: auto;
-    }
 
     .k-datainsights-composer-popup-field-list {
         min-height: 0;
@@ -195,18 +200,6 @@
         line-height: var(--kendo-line-height-sm);
     }
 
-    .k-datainsights-composer-popup .k-chip {
-        width: 100%;
-        box-sizing: border-box;
-        cursor: default;
-
-        // Field chips are static labels, not interactive controls — pointer
-        // events pass through to whatever sits underneath them (the field
-        // list container, or the TreeView row the chip is nested in), so
-        // clicking a chip does not focus or activate it directly.
-        pointer-events: none;
-    }
-
     .k-datainsights-composer-popup-tree {
         min-width: 0;
         max-width: 100%;
@@ -227,8 +220,6 @@
         .k-chip {
             justify-content: flex-start;
             max-width: 100%;
-            overflow: hidden;
-            cursor: default;
         }
 
         .k-chip-label {
@@ -236,6 +227,12 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+
+        // Fix for focused chips within animation container
+        .k-treeview-item .k-animation-container {
+            padding: k-spacing(0.5);
+            margin: calc( k-spacing(0.5) * -1);
         }
 
         // Disable treeview level for chips
@@ -258,11 +255,6 @@
     }
 
     // ── History dialog ─────────────────────────────────────
-    .k-datainsights-composer-popup:has(> .k-datainsights-composer-popup-title) {
-        width: max-content;
-        overflow-y: auto;
-    }
-
     .k-datainsights-composer-history-checkpoint .k-list-item-text {
         min-width: 0;
         overflow: hidden;
