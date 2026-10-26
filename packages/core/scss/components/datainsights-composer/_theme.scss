@@ -31,7 +31,7 @@
     }
 
     .k-datainsights-composer-report-content-loading {
-        animation: k-datainsights-composer-shimmer 1.8s infinite var(--kendo-easing-standard);
+        animation: k-datainsights-composer-shimmer var(--kendo-duration-global, 1.8s) infinite var(--kendo-easing-standard);
     }
 
     @keyframes k-datainsights-composer-shimmer {
@@ -46,21 +46,11 @@
 
     .k-datainsights-composer-popup {
 
-        .k-chip:hover,
         .k-chip:focus,
-        .k-chip.k-hover,
         .k-chip.k-focus {
             background-color: transparent;
             color: inherit;
             outline: none;
-        }
-
-        .k-chip.k-chip-outline.k-chip-base:hover,
-        .k-chip.k-chip-outline.k-chip-base.k-hover {
-            color: k-color(on-app-surface);
-            background-color: transparent;
-            background-image: none;
-            border-color: k-color(base-emphasis);
         }
     }
 

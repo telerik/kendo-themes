@@ -6,7 +6,12 @@ export const DATA_INSIGHTS_COMPOSER_FIELDS_CLASSNAME = 'k-datainsights-composer-
 
 /**
  * Wraps the row of field chips shown in the empty/prompt state.
- * @keyboard {Tab or Shift+Tab} Moves focus into or out of the chip group as a single stop (lands on the roving tab stop chip).
+ * @aria {role="group"} Groups data-source chips that act as popup triggers.
+ * @aria {aria-label} Names the data-source chip group.
+ * @aria {aria-haspopup="true"} Indicates that each data-source chip opens a popup.
+ * @aria {tabindex="0" or "-1"} Maintains one data-source chip in the tab order using roving tabindex.
+ * @keyboard {Tab} Moves focus into the group through its active roving-tabindex chip, or from that chip to the next focusable element.
+ * @keyboard {Shift+Tab} Moves focus from the active chip to the previous focusable element.
  * @keyboard {ArrowRight or ArrowLeft} Moves the roving tab stop between the data source chips, same as the standalone ChipList.
  * @keyboard {Enter or Space} Opens the Data Source popup for the focused chip.
  */

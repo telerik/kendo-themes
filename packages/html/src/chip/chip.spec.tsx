@@ -54,9 +54,6 @@ const defaultOptions = {
  * @ux {Removable} An optional remove icon allows the chip to be dismissed.
  * @ux {Icon or avatar} Can display an icon or avatar image alongside the label.
  * @ux {Disabled state} When disabled, the chip is non-interactive.
- * @aria {role="presentation" or "listitem"} Used for read-only, informational chips that must still be announced; `aria-pressed` is omitted for these.
- * @aria {aria-haspopup} Indicates the Chip opens a popup on activation instead of toggling a pressed state; `aria-pressed` is omitted when present.
- * @aria {tabindex="-1"} When used as a static label inside another focusable or roving-tabindex container (e.g. a TreeView row), the Chip must not be independently focusable; pairing it with `pointer-events: none` also lets clicks and hover pass through to that container.
  */
 export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoChipProps &
@@ -141,8 +138,6 @@ Chip.folderName = CHIP_FOLDER_NAME;
 /**
  * @keyboard {ArrowRight} Focuses the next chip in a horizontally oriented chiplist.
  * @keyboard {ArrowLeft} Focuses the previous chip in a horizontally oriented group.
- * @keyboard {ArrowDown} Focuses the next chip in a vertically stacked group (e.g. a field list).
- * @keyboard {ArrowUp} Focuses the previous chip in a vertically stacked group.
  * @keyboard {Enter or Space} Triggers a click action on the Chip.
  * @keyboard {Delete or Backspace} Removes the Chip when a delete action is configured.
  *

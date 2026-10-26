@@ -23,8 +23,8 @@ export interface DataInsightsComposerHistoryCheckpointProps extends React.HTMLAt
  * @aria {role="option"} Each checkpoint is an option in the history listbox.
  * @aria {tabindex="-1"} Non-active checkpoints stay out of the tab order.
  * @keyboard {ArrowUp or ArrowDown} Moves the roving tab stop between checkpoints, same as a standard list.
- * @keyboard {Tab} From the active (focused) checkpoint, moves focus to its own restore button; the restore buttons of all other checkpoints have `tabindex="-1"` so Tab does not walk through them one by one.
- * @keyboard {Shift+Tab} From a restore button, returns focus to its own checkpoint.
+ * @keyboard {Tab} From the active checkpoint, moves focus to its restore button. From that button, or from the current checkpoint which has no restore action, moves focus outside the popup.
+ * @keyboard {Shift+Tab} From a restore button, returns focus to its own checkpoint. From the active checkpoint, moves focus to the previous focusable element outside the popup.
  * A history item with a timestamp and an optional restore action.
  */
 export const DataInsightsComposerHistoryCheckpoint: KendoComponent<DataInsightsComposerHistoryCheckpointProps> = (props) => {
