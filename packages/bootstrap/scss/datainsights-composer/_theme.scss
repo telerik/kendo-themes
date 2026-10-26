@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/datainsights-composer/_theme.scss" as *;
+
+@mixin kendo-datainsights-composer--theme() {
+    @include kendo-datainsights-composer--theme-base();
+}

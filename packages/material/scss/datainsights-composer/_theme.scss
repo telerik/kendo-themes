@@ -1,0 +1,15 @@
+@use "@progress/kendo-theme-core/scss/components/datainsights-composer/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-datainsights-composer--theme() {
+    @include kendo-datainsights-composer--theme-base();
+
+    .k-datainsights-composer {
+        .k-prompt-box {
+            border-top-color: $kendo-datainsights-composer-border-color;
+            border-inline: $kendo-datainsights-composer-border-width solid $kendo-datainsights-composer-border-color;
+            background-color: $kendo-datainsights-composer-preview-background;
+        }
+    }
+}

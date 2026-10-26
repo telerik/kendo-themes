@@ -58,7 +58,7 @@ export const ChipList: KendoComponent<KendoChipListProps & React.HTMLAttributes<
             )}
             role={props.role || "listbox"}
             aria-label={props.role === 'none' ? undefined : (ariaLabel || 'chip list')}
-            aria-orientation={props.role === 'none' ? undefined : "horizontal"}
+            aria-orientation={(props.role === 'none' || props.role === 'group') ? undefined : "horizontal"}
             aria-multiselectable={multiselectable ? 'true' : undefined}
         >
             {props.children}

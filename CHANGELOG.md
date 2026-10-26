@@ -1,3 +1,27 @@
+## 14.7.1-dev.3 (2026-10-26)
+
+### 🩹 Fixes
+
+- **message-box:** distinguish inverse emphasis in dark swatch ([6d3ed2531c](https://github.com/telerik/kendo-themes/commit/6d3ed2531c))
+
+## 14.7.1-dev.2 (2026-10-23)
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+## 14.7.1-dev.0 (2026-10-22)
+
+### 🩹 Fixes
+
+- **grid:** fix border color on focus in Grid component ([ba0d6b83c9](https://github.com/telerik/kendo-themes/commit/ba0d6b83c9))
+
 ## 14.7.0 (2026-10-21)
 
 ### 🚀 Features
