@@ -15,9 +15,10 @@ You work with a designer, not a developer. They think in visuals, variants and s
 - **Git is yours, not theirs.** Branches, commits, pushes, pull requests, merges and conflicts are handled by you, silently. Never ask the designer to run or approve a git step in git terms. Use plain equivalents when it matters:
   - commit → "saved a version"
   - checkout an earlier commit → "went back to the earlier version"
-  - push / open a pull request → "shared it with the developers for review"
+  - push / open a draft pull request → "shared it with the team"
+  - mark the pull request ready → "sent it to the developers for review"
   - review comment → "a developer asked about…"
-- Save versions often so any earlier state can be restored on request ("go back to the one with the bigger padding"). See *Git in this repo* for how they're tidied before sharing.
+- Save versions often so any earlier state can be restored on request ("go back to the one with the bigger padding"). See *Git in this repo*.
 
 Work happens in two modes. These names are for you; don't expect the designer to use them. Infer the mode from what they say ("let me try…" vs "this is the one"), and ask in plain words when unsure ("Still trying options, or ready to make this official?").
 
@@ -70,7 +71,7 @@ To measure reach: search for consumers of the variable or token, list components
 - Use existing tokens rather than deriving new colors on the spot. If the token set can't express the design, say so; that's a design-system conversation, not a local fix.
 - Keep themes consistent. Prefer theme variables over theme-specific layout exceptions.
 
-### Before the PR
+### Before the PR is ready for review
 
 - Reduce the exploration page to the final design, or turn it into the proper visual test for the change; remove discarded versions.
 - PR description, in this order:
@@ -80,20 +81,29 @@ To measure reach: search for consumers of the variable or token, list components
 
 ## Git in this repo
 
-Follow the repo's own setup, not generic git habits.
+Follow the repo's own setup, not generic git habits. Two stages matter: **sharing** (a draft pull request, the designer's equivalent of a Figma link) and **ready for review**.
 
-- **Branch** from `develop`, named `<github-username>-<topic>` (e.g. `jdoe-badge-tint`). Pull requests target `develop`.
-- **Rebase-merge only.** Squash and merge commits are disabled, so every commit on the branch lands on `develop` as-is, and `feat`/`fix` commits drive the version bump and changelog (`nx release`, conventional commits). So:
-  - while exploring, save versions as often as useful;
-  - before sharing, rewrite the branch into a few meaningful commits, one per change (e.g. `feat(badge): …`, `test(badge): …`, `chore: regen docs`). Exploration pages and abandoned tries must be **gone from history**, not deleted in a later commit;
-  - `fix` for corrections to existing visuals, `feat` for new visuals.
-- **Commit messages** follow `.commitlintrc.json` (conventional types, header ≤ 100 chars, scope = component). Don't use `WIP` on a shared branch.
-- **Hooks run automatically; never bypass them** (`--no-verify`):
-  - commit: commitlint + eslint/stylelint on staged files;
-  - push: `npm run sass && npm run docs:check`. When variables change, run `npm run docs` and commit the result as `chore: regen docs`.
+### Sharing: early and often
+
+Designers used to show work through Figma, which is always shareable. Keep the repo just as easy: encourage sharing half-done work, explorations and rough versions as a **draft pull request**, and push updates whenever there's something worth showing.
+
+- **Branch** from `develop`, named `<github-username>-<topic>` (e.g. `jdoe-badge-tint`). The draft pull request targets `develop`.
+- On a draft, anything goes: messy history, `WIP:` commits (`.commitlintrc.json` allows the type), exploration pages, lint failures.
+- Only two things block a push:
+  1. **It doesn't render.** If the SCSS doesn't compile, there's nothing to look at. Fix it, or set the broken part aside, then push.
+  2. **It touches other people's work.** Never push to `develop` or someone else's branch, and never rewrite commits a developer has pushed to the branch; add yours on top.
+- **Hooks** run on commit (commitlint, eslint/stylelint on staged files) and on push (`npm run sass && npm run docs:check`). Fix what's quick (e.g. run `npm run docs` and commit `chore: regen docs` when variables changed). If a lint or docs check would block sharing a draft, skip the hooks (`--no-verify`) and note the leftovers in the pull request; never skip because the SCSS doesn't compile.
 - **CI pushes to the branch** (`chore: update visual previews`). Rebase onto the remote branch before pushing again.
-- Once a developer has pushed to the branch, don't rewrite their commits; add yours on top and coordinate.
-- The PR's **Visual Regression** comment links a report of every changed screenshot. That's what to show the designer ("here's everything that changed").
+- After each push, CI posts a **Visual Regression** report link on the pull request: every changed screenshot, in every theme. That's the shareable view; give the designer the link.
+
+### Ready for review
+
+When the designer wants the developers to pick it up ("this is the one"):
+
+- **Rebase-merge only.** Squash and merge commits are disabled, so every commit lands on `develop` as-is, and `feat`/`fix` commits drive the version bump and changelog (`nx release`). So rewrite the branch into a few meaningful commits, one per change (e.g. `feat(badge): …`, `test(badge): …`, `chore: regen docs`). Exploration pages, `WIP` commits and abandoned tries must be **gone from history**, not deleted in a later commit. Don't rewrite developers' commits; ask them to help if they're mixed in.
+- Commit messages follow `.commitlintrc.json` (conventional types, header ≤ 100 chars, scope = component); `fix` for corrections to existing visuals, `feat` for new visuals.
+- All hooks and CI checks pass; nothing is skipped.
+- Then follow *Before the PR is ready for review* and mark the pull request ready.
 
 ## Tools
 
