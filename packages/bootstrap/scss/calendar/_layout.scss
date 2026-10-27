@@ -19,6 +19,10 @@
         }
 
         &.k-calendar-infinite.k-calendar-md {
+            .k-calendar-header {
+                margin-block-start: calc( #{$kendo-infinite-calendar-view-padding-y} * -1 );
+            }
+
             .k-calendar-view .k-calendar-table {
                 width: var( --INTERNAL--kendo-calendar-view-width );
                 margin-inline: 0;
