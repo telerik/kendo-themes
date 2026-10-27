@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
-import { Browser, snapshotMarkup } from '@progress/kendo-e2e';
+import { chromium } from 'playwright';
+import { JSDOM } from 'jsdom';
 import { createServer } from 'http-server';
 import { globSync } from 'glob';
 import fs from 'fs';
 import path from 'path';
+import { formatHtml } from './utils/format-html.mjs';
 
 const PORT = 18111;
 const HOST = 'localhost';
@@ -20,22 +22,26 @@ function pathUrl(url) {
     return `http://${HOST}:${PORT}/${path.dirname(url).replace('./', '')}`;
 }
 
-async function loadUrl(browser, url) {
-    await browser.wait(async() => {
+async function loadUrl(page, url) {
+    const deadline = Date.now() + 10000;
+
+    for (;;) {
         try {
-            await browser.navigateTo(url);
-            return true;
-        } catch {
-            return false;
+            await page.goto(url, { waitUntil: 'load' });
+            return;
+        } catch (err) {
+            if (Date.now() > deadline) {
+                throw new Error(`Failed to load ${url}`, { cause: err });
+            }
+            await page.waitForTimeout(500);
         }
-    }, 10000, `Failed to load ${url}`, 500);
+    }
 }
 
 function trimScriptTag(content) {
     return content.replace(/<script src=".\/app.js">.*?<\/script>/g, '');
 }
 
-const browser = new Browser();
 const server = createServer({
     root: './',
     port: PORT
@@ -55,39 +61,31 @@ server.listen(PORT, HOST, async() => {
             ? `Component "${componentFilter}" has no test pages. Check that ${TESTS_PATH}/${componentFilter}/ exists and contains ${COMPONENT_PAGE_EXT} files.`
             : `No test pages found in ${TESTS_PATH}/. Run "npm run build:tests" first.`
         );
-        await browser.close();
         server.close();
         process.exit(1);
     }
+
+    // Playwright hides scrollbars in headless mode by default, which changes layout-dependent markup.
+    const browser = await chromium.launch({ ignoreDefaultArgs: [ '--hide-scrollbars' ] });
+    const page = await browser.newPage({ viewport: { width: 1366, height: 768 }, deviceScaleFactor: 1 });
 
     const pages = files.map(path => [ path, pathUrl(path) ]);
 
     for (let i = 0; i < pages.length; i++) {
         const [ filePath, url ] = pages[i];
 
-        await loadUrl(browser, url);
+        await loadUrl(page, url);
 
         const [ /** index.html */, folderName, /** /tests */, componentName ] = filePath.split('/').reverse();
         const outputPath = `${OUTPUT_PATH}/${componentName}/${folderName}.html`;
 
         fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
-        await snapshotMarkup(browser.driver, 'html', outputPath, {
-            template: (output) => `<!doctype html>${trimScriptTag(output)}`,
-            preserveAttributes: true,
-            preserveCommentNodes: true,
-            beautifyOptions: {
-                /* eslint-disable camelcase */
-                newline_between_rules: false,
-                brace_style: 'collapse',
-                indent_size: 4,
-                inline: [],
-                extra_liners: [],
-                preserve_newlines: false,
-                end_with_newline: true
-                /* eslint-enable */
-            }
-        });
+        const source = await page.evaluate(() => document.documentElement.outerHTML);
+        // Round-trip through a parser so the serialization is normalized.
+        const { outerHTML } = new JSDOM(source).window.document.documentElement;
+
+        fs.writeFileSync(outputPath, formatHtml(`<!doctype html>${trimScriptTag(outerHTML)}`));
     }
 
     await browser.close();

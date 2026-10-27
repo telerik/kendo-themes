@@ -51,7 +51,7 @@ _For specific version numbers, refer to package.json files in the root and indiv
 
 ### Testing Infrastructure
 
-- **@progress/kendo-e2e** - Visual regression testing
+- **Playwright + axe-core** - Visual regression screenshots, markup snapshots and contrast testing
 - **AxeCore** - Accessibility testing
 - **Jest** - Unit testing framework
 

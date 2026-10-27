@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { Browser, By } from '@progress/kendo-e2e';
-import AxeBuilder from '@axe-core/webdriverjs';
+import { chromium } from 'playwright';
+import AxeBuilder from '@axe-core/playwright';
 import { createServer } from 'http-server';
 import { globSync } from 'glob';
 
@@ -146,13 +146,32 @@ const PROBE_RULES = [
 const hasAny = (classes, list) => list.some(c => classes.indexOf(c) > -1);
 const findRule = (classes, rules) => rules.find(r => hasAny(classes, r.match));
 const isExcluded = (classes, map) => classes.split(' ').some(c => Object.prototype.hasOwnProperty.call(map, c));
-const pseudoStyle = (browser, el, pseudo, prop) => browser.driver.executeScript(
-    `return window.getComputedStyle(arguments[0], arguments[1])[arguments[2]];`,
-    el, pseudo, prop
+const COLOR_PROPS = new Set([ 'backgroundColor', 'borderColor', 'outlineColor' ]);
+// Opaque colors are reported as rgba(r, g, b, 1) so the alpha checks below see one consistent shape.
+const cssValue = async(el, prop) => {
+    const value = await el.evaluate((node, p) => window.getComputedStyle(node)[p], prop);
+
+    return COLOR_PROPS.has(prop) ? value.replace(/^rgb\(([^)]*)\)$/, 'rgba($1, 1)') : value;
+};
+const parentOf = async(el) => (await el.evaluateHandle((node) => node.parentElement)).asElement();
+const tagNameOf = (el) => el.evaluate((node) => node.tagName.toLowerCase());
+const childByClass = async(el, className) => {
+    const child = await el.$(`.${className}`);
+
+    if (!child) {
+        throw new Error(`No descendant with class "${className}"`);
+    }
+
+    return child;
+};
+const pseudoStyle = (el, pseudo, prop) => el.evaluate(
+    (node, [ p, name ]) => window.getComputedStyle(node, p)[name],
+    [ pseudo, prop ]
 );
-// Reads outline-* on an element in a single executeScript round-trip.
-const readOutline = (browser, el) => browser.driver.executeScript(`
-    const s = window.getComputedStyle(arguments[0]);
+// Reads outline-* on an element in a single round-trip.
+const readOutline = (el) => el.evaluate((node) => {
+    const s = window.getComputedStyle(node);
+
     return {
         width: s.outlineWidth,
         style: s.outlineStyle,
@@ -160,7 +179,7 @@ const readOutline = (browser, el) => browser.driver.executeScript(`
         offset: parseFloat(s.outlineOffset) || 0,
         boxShadow: s.boxShadow
     };
-`, el);
+});
 const isPaintedOutline = (o) =>
     o.width !== '0px' && o.style !== 'none' && o.color !== 'rgba(0, 0, 0, 0)';
 
@@ -182,7 +201,7 @@ function arrayChunks( array, chunkCount ) {
 const pathUrl = ( path ) => `http://${HOST}:${PORT}/${path.replace('./', '')}?theme=${THEME}&swatch=${SWATCH}&gradientoff=true`;
 
 /* eslint-disable max-params */
-const addViolation = async( output, target, filePath, countField, browser ) => {
+const addViolation = async( output, target, filePath, countField, page ) => {
     let nodes = [];
 
     await Promise.all(output[0].nodes.map(async( node ) => {
@@ -221,21 +240,17 @@ const addViolation = async( output, target, filePath, countField, browser ) => {
                     // Drop axe violations whose target sits inside any of the
                     // ancestor selectors listed in EXCLUSIONS.axeAncestorSelectors
                     // (disabled wrappers, drag hints, warning-color buttons …).
-                    const excludedParent = await browser.driver.executeScript(`
+                    const excluded = await page.evaluate(([ selector, ancestors ]) => {
                         try {
-                            const el = document.querySelector(arguments[0]);
-                            if (!el) return null;
-                            for (const sel of arguments[1]) {
-                                const hit = el.closest(sel);
-                                if (hit) return hit;
-                            }
-                            return null;
-                        } catch (e) {
-                            return null;
-                        }
-                    `, targetSelector, EXCLUSIONS.axeAncestorSelectors);
+                            const el = document.querySelector(selector);
 
-                    if (excludedParent !== null) {
+                            return el ? ancestors.some((sel) => el.closest(sel) !== null) : false;
+                        } catch {
+                            return false;
+                        }
+                    }, [ targetSelector, EXCLUSIONS.axeAncestorSelectors ]);
+
+                    if (excluded) {
                         return;
                     }
                 }
@@ -400,28 +415,28 @@ const getContrast = ( col, self, background ) => {
 
 const selfAndBackground = async(el, parent) => {
     const classes = await el.getAttribute('class');
-    const boxShadow = await el.getCssValue('boxShadow');
+    const boxShadow = await cssValue(el, 'boxShadow');
 
-    let background = await parent.getCssValue('backgroundColor');
-    let self = await el.getCssValue('backgroundColor');
-    let border = await el.getCssValue('borderColor');
-    let borderWidth = await el.getCssValue('borderWidth');
-    let outlineOffset = await el.getCssValue('outlineOffset');
+    let background = await cssValue(parent, 'backgroundColor');
+    let self = await cssValue(el, 'backgroundColor');
+    let border = await cssValue(el, 'borderColor');
+    let borderWidth = await cssValue(el, 'borderWidth');
+    let outlineOffset = await cssValue(el, 'outlineOffset');
     let temp, par, decomposed;
 
     // If background is fully transparent, get the background of the parent element
     if (background === 'rgba(0, 0, 0, 0)') {
-        par = await parent.findElement(By.xpath('..'));
-        background = await par.getCssValue('backgroundColor');
+        par = await parentOf(parent);
+        background = await cssValue(par, 'backgroundColor');
 
-        while ((await par.getTagName()).toLowerCase() !== 'body' && background === 'rgba(0, 0, 0, 0)') {
-            par = await par.findElement(By.xpath('..'));
-            background = await par.getCssValue('backgroundColor');
+        while (await tagNameOf(par) !== 'body' && background === 'rgba(0, 0, 0, 0)') {
+            par = await parentOf(par);
+            background = await cssValue(par, 'backgroundColor');
         }
 
         if (background === 'rgba(0, 0, 0, 0)') {
-            const html = await el.getDriver().findElement(By.css('html'));
-            const htmlBackground = await html.getCssValue('backgroundColor');
+            const html = (await el.evaluateHandle(() => document.documentElement)).asElement();
+            const htmlBackground = await cssValue(html, 'backgroundColor');
 
             if (htmlBackground !== 'rgba(0, 0, 0, 0)') {
                 background = htmlBackground;
@@ -436,12 +451,12 @@ const selfAndBackground = async(el, parent) => {
     if ((background.indexOf('rgba') > -1 && background !== 'rgba(255, 255, 255, 1)') ||
         (background.includes('color(srgb') && background.includes('/')) ||
         (background.includes('oklch') && background.includes('/'))) {
-        let parentParent = await (par || parent).findElement(By.xpath('..'));
-        let parentBackground = await parentParent.getCssValue('backgroundColor');
+        let parentParent = await parentOf(par || parent);
+        let parentBackground = await cssValue(parentParent, 'backgroundColor');
 
-        while ((await parentParent.getTagName()).toLowerCase() !== 'body' && parentBackground === 'rgba(0, 0, 0, 0)') {
-            parentParent = await parentParent.findElement(By.xpath('..'));
-            parentBackground = await parentParent.getCssValue('backgroundColor');
+        while (await tagNameOf(parentParent) !== 'body' && parentBackground === 'rgba(0, 0, 0, 0)') {
+            parentParent = await parentOf(parentParent);
+            parentBackground = await cssValue(parentParent, 'backgroundColor');
         }
 
         decomposed = getRGBFromRGBA(decomposeColor(background), decomposeColor(parentBackground));
@@ -473,11 +488,11 @@ const selfAndBackground = async(el, parent) => {
     if (classes.indexOf('k-menu-item') > -1 ||
         classes.indexOf('k-calendar-td') > -1) {
         try {
-            const inner = await el.findElement(By.className('k-link'));
-            const innerOutlineWidth = await inner.getCssValue('outlineWidth');
-            const innerOutlineStyle = await inner.getCssValue('outlineStyle');
-            const innerOutlineOffset = parseFloat(await inner.getCssValue('outlineOffset')) || 0;
-            const innerBoxShadow = await inner.getCssValue('boxShadow');
+            const inner = await childByClass(el, 'k-link');
+            const innerOutlineWidth = await cssValue(inner, 'outlineWidth');
+            const innerOutlineStyle = await cssValue(inner, 'outlineStyle');
+            const innerOutlineOffset = parseFloat(await cssValue(inner, 'outlineOffset')) || 0;
+            const innerBoxShadow = await cssValue(inner, 'boxShadow');
 
             if (innerBoxShadow === 'none' &&
                 innerOutlineWidth !== '0px' &&
@@ -497,8 +512,8 @@ const selfAndBackground = async(el, parent) => {
     //     background visible between it and the border. Compare ring vs parent bg.
     //   offset < 0 (inset) — outline is painted inside the element over its
     //     own background. Compare ring vs element bg.
-    const outlineWidth = await el.getCssValue('outlineWidth');
-    const outlineStyle = await el.getCssValue('outlineStyle');
+    const outlineWidth = await cssValue(el, 'outlineWidth');
+    const outlineStyle = await cssValue(el, 'outlineStyle');
     const outlineOffsetPx = parseFloat(outlineOffset) || 0;
     const usesOffsetOutline = outlineWidth !== '0px' &&
         outlineStyle !== 'none' &&
@@ -570,9 +585,9 @@ const selfAndBackground = async(el, parent) => {
     };
 };
 
-const getIndicatorColor = async(el, browser) => {
+const getIndicatorColor = async(el) => {
     const classes = await el.getAttribute('class');
-    let value = await el.getCssValue('boxShadow');
+    let value = await cssValue(el, 'boxShadow');
 
     if (classes.indexOf('k-disabled') > -1 ||
         classes.indexOf('k-breadcrumb') > -1) {
@@ -596,10 +611,10 @@ const getIndicatorColor = async(el, browser) => {
     // ring even if a faint decorative box-shadow (elevation, themed
     // accent) is also painted. Prefer the outline color in that case.
     {
-        const outlineWidth = await el.getCssValue('outlineWidth');
-        const outlineStyle = await el.getCssValue('outlineStyle');
-        const outlineColor = await el.getCssValue('outlineColor');
-        const outlineOffsetPx = parseFloat(await el.getCssValue('outlineOffset')) || 0;
+        const outlineWidth = await cssValue(el, 'outlineWidth');
+        const outlineStyle = await cssValue(el, 'outlineStyle');
+        const outlineColor = await cssValue(el, 'outlineColor');
+        const outlineOffsetPx = parseFloat(await cssValue(el, 'outlineOffset')) || 0;
 
         if (outlineWidth !== '0px' &&
             outlineStyle !== 'none' &&
@@ -614,7 +629,7 @@ const getIndicatorColor = async(el, browser) => {
     // so check borderColor regardless of `value`.
     const borderProbe = findRule(classes, PROBE_RULES);
     if (borderProbe && borderProbe.kind === 'border') {
-        return decomposeColor(await el.getCssValue('borderColor'));
+        return decomposeColor(await cssValue(el, 'borderColor'));
     }
 
     if (value === 'none') {
@@ -623,7 +638,7 @@ const getIndicatorColor = async(el, browser) => {
         // BottomNav, Calendar, Menu, ColorGradient, WizardStep, TabStrip
         // content, and any other component migrated to outline-based focus.
         {
-            const o = await readOutline(browser, el);
+            const o = await readOutline(el);
             if (isPaintedOutline(o)) {
                 return decomposeColor(o.color);
             }
@@ -641,8 +656,8 @@ const getIndicatorColor = async(el, browser) => {
                 // Calendar/Menu (.k-link), Timeline (.k-timeline-circle): the
                 // ring is on an inner element. Modern themes use outline,
                 // legacy themes used box-shadow. Check both.
-                const inner = await el.findElement(By.className(probe.innerClass));
-                const o = await readOutline(browser, inner);
+                const inner = await childByClass(el, probe.innerClass);
+                const o = await readOutline(inner);
                 if (isPaintedOutline(o)) {
                     return decomposeColor(o.color);
                 }
@@ -652,35 +667,35 @@ const getIndicatorColor = async(el, browser) => {
             case 'pseudo':
                 // Pseudo-element ring (e.g. k-button-flat:after boxShadow,
                 // k-button-clear:after backgroundColor, k-time-list-wrapper::before).
-                value = await pseudoStyle(browser, el, probe.pseudo, probe.prop);
+                value = await pseudoStyle(el, probe.pseudo, probe.prop);
                 break;
             case 'background':
                 // .k-splitbar / legacy .k-bottom-nav-item — bg change is the ring.
-                value = await el.getCssValue('backgroundColor');
+                value = await cssValue(el, 'backgroundColor');
                 break;
             case 'outline-color':
                 // Legacy outline-only fallback for ColorGradient / WizardStep /
                 // TabStrip content (the readOutline check above usually wins).
-                value = await el.getCssValue('outlineColor');
+                value = await cssValue(el, 'outlineColor');
                 break;
             case 'border':
                 // Border-as-ring case when boxShadow happens to be 'none'.
-                value = await el.getCssValue('borderColor');
+                value = await cssValue(el, 'borderColor');
                 break;
             case 'stepper':
                 // Stepper paints on .k-step-indicator::after (border-color)
                 // when an indicator dot is rendered, or on .k-step-label
                 // (outline-modern / box-shadow-legacy) when the label is
                 // the only child. Probe both in one round-trip.
-                value = await browser.driver.executeScript(`
-                    const indicator = arguments[0].querySelector('.k-step-indicator');
+                value = await el.evaluate((node) => {
+                    const indicator = node.querySelector('.k-step-indicator');
                     if (indicator) {
                         const after = window.getComputedStyle(indicator, '::after');
                         if (after.borderColor && after.borderColor !== 'rgba(0, 0, 0, 0)') {
                             return after.borderColor;
                         }
                     }
-                    const label = arguments[0].querySelector('.k-step-label');
+                    const label = node.querySelector('.k-step-label');
                     if (label) {
                         const styles = window.getComputedStyle(label);
                         if (styles.outlineWidth !== '0px' &&
@@ -691,7 +706,7 @@ const getIndicatorColor = async(el, browser) => {
                         return styles.boxShadow;
                     }
                     return 'none';
-                `, el);
+                });
                 break;
             default:
                 return null;
@@ -735,8 +750,8 @@ const getIndicatorColor = async(el, browser) => {
     return decomposeColor(value);
 };
 
-const iterateFocusedElement = async(el, parent, browser) => {
-    const value = await getIndicatorColor(el, browser);
+const iterateFocusedElement = async(el, parent) => {
+    const value = await getIndicatorColor(el);
     const sb = await selfAndBackground(el, parent);
 
     if (!value) {
@@ -746,9 +761,9 @@ const iterateFocusedElement = async(el, parent, browser) => {
     return getContrast(value, sb.self, sb.background);
 };
 
-const getFocusReport = async(el, browser) => {
-    const parent = await el.findElement(By.xpath('..'));
-    const elContrast = await iterateFocusedElement(el, parent, browser);
+const getFocusReport = async(el) => {
+    const parent = await parentOf(el);
+    const elContrast = await iterateFocusedElement(el, parent);
     let elReport = {};
     let key;
 
@@ -765,7 +780,7 @@ const getFocusReport = async(el, browser) => {
 
     count.focus += 1;
 
-    key = (await el.getAttribute('outerHTML')).replace(/\n\s+/g,'');
+    key = (await el.evaluate((node) => node.outerHTML)).replace(/\n\s+/g,'');
     elReport[key] = elContrast;
 
     return elReport;
@@ -788,12 +803,15 @@ const getContrastViolations = async() => {
     let focusContrast = {};
     let result;
 
-    const browser = new Browser();
+    const browser = await chromium.launch({ ignoreDefaultArgs: [ '--hide-scrollbars' ] });
+    // AxeBuilder requires a page that belongs to an explicit context.
+    const context = await browser.newContext({ viewport: { width: 1366, height: 768 }, deviceScaleFactor: 1 });
+    const page = await context.newPage();
     const server = createServer({
         root: './',
         port: PORT
     });
-    server.listen(PORT, HOST);
+    await new Promise((resolve) => server.listen(PORT, HOST, resolve));
 
     const chunks = arrayChunks( pages, ENV_MAX_CHUNKS );
     const chunk = chunks[ENV_CURRENT_CHUNK];
@@ -802,7 +820,7 @@ const getContrastViolations = async() => {
         const [ filePath, url ] = chunk[i];
 
         try {
-            await browser.navigateTo(url);
+            await page.goto(url, { waitUntil: 'load' });
         } catch (err) {
             // eslint-disable-next-line no-console
             console.error(`Failed to navigate to ${url}:`, err);
@@ -815,24 +833,21 @@ const getContrastViolations = async() => {
         if (!Object.prototype.hasOwnProperty.call(EXCLUSIONS.textPages, filePath)) {
 
             // Axe-core checks for contrast ratio for all elements
-            const axe = new AxeBuilder(browser.driver);
             // WCAG 2.1 Level A and AA requirements
-            axe.withRules([ 'color-contrast' ]);
-            const output = await axe.analyze();
+            const output = await new AxeBuilder({ page }).withRules([ 'color-contrast' ]).analyze();
             // WCAG 2.1 Level AAA requirements
-            axe.withRules([ 'color-contrast-enhanced' ]);
-            const enhanced = await axe.analyze();
+            const enhanced = await new AxeBuilder({ page }).withRules([ 'color-contrast-enhanced' ]).analyze();
 
             if (output.violations.length) {
-                await addViolation(output.violations, violations, filePath, 'violations', browser);
+                await addViolation(output.violations, violations, filePath, 'violations', page);
             }
 
             if (output.incomplete.length) {
-                await addViolation(output.incomplete, incomplete, filePath, 'incomplete', browser);
+                await addViolation(output.incomplete, incomplete, filePath, 'incomplete', page);
             }
 
             if (enhanced.violations.length) {
-                await addViolation(enhanced.violations, aaa, filePath, 'aaa', browser);
+                await addViolation(enhanced.violations, aaa, filePath, 'aaa', page);
             }
         }
 
@@ -841,10 +856,10 @@ const getContrastViolations = async() => {
         if (Object.prototype.hasOwnProperty.call(EXCLUSIONS.focusPages, filePath)) {
             continue;
         }
-        const focusedElements = await browser.driver.findElements(By.className('k-focus'));
+        const focusedElements = await page.$$('.k-focus');
 
         for (let el of focusedElements) {
-            const focusReport = await getFocusReport(el, browser);
+            const focusReport = await getFocusReport(el);
 
             if (!focusReport) {
                 continue;
