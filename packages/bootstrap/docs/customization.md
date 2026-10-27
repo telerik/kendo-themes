@@ -1508,8 +1508,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td>Number</td>
-    <td><code>calc( .65em / 2 )</code></td>
-    <td><code>0.325em</code></td>
+    <td><code>calc( 1em / 6 )</code></td>
+    <td><code>0.16666666666666666em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Badge.</div></div>
@@ -1518,8 +1518,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-md-padding-x</td>
     <td>Number</td>
-    <td><code>.65em</code></td>
-    <td><code>0.65em</code></td>
+    <td><code>calc( 1em / 3 )</code></td>
+    <td><code>0.3333333333333333em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Badge.</div></div>
@@ -1528,11 +1528,51 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-lg-padding-x</td>
     <td>Number</td>
-    <td><code>calc( $kendo-badge-md-padding-x * 1.5 )</code></td>
-    <td><code>0.975em</code></td>
+    <td><code>.5em</code></td>
+    <td><code>0.5em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-text-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of Badge text content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the small Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1px)</code></td>
+    <td><code>var(--kendo-spacing-1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the medium Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the large Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -1692,6 +1732,7 @@ The following table lists the available variables for customizing the Bootstrap 
     sm: (
         padding-x: $kendo-badge-sm-padding-x,
         padding-y: $kendo-badge-sm-padding-y,
+        gap: $kendo-badge-sm-gap,
         font-size: $kendo-badge-sm-font-size,
         line-height: $kendo-badge-sm-line-height,
         min-width: $kendo-badge-sm-min-width
@@ -1699,6 +1740,7 @@ The following table lists the available variables for customizing the Bootstrap 
     md: (
         padding-x: $kendo-badge-md-padding-x,
         padding-y: $kendo-badge-md-padding-y,
+        gap: $kendo-badge-md-gap,
         font-size: $kendo-badge-md-font-size,
         line-height: $kendo-badge-md-line-height,
         min-width: $kendo-badge-md-min-width
@@ -1706,12 +1748,13 @@ The following table lists the available variables for customizing the Bootstrap 
     lg: (
         padding-x: $kendo-badge-lg-padding-x,
         padding-y: $kendo-badge-lg-padding-y,
+        gap: $kendo-badge-lg-gap,
         font-size: $kendo-badge-lg-font-size,
         line-height: $kendo-badge-lg-line-height,
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"0.325em","padding-y":"0.175em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.65em","padding-y":"0.35em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.975em","padding-y":"0.525em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"0.16666666666666666em","padding-y":"0.175em","gap":"var(--kendo-spacing-0)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.3333333333333333em","padding-y":"0.35em","gap":"var(--kendo-spacing-1px)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.5em","padding-y":"0.525em","gap":"var(--kendo-spacing-0\\.5)","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>
@@ -11435,6 +11478,126 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### DatainsightsComposer
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-datainsights-composer-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-border-color</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-background</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-preview-background</td>
+    <td>String</td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The preview background color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-fields-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xl)</code></td>
+    <td><code>var(--kendo-border-radius-xl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom border radius of the Data Insights Composer fields.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-loading-height</td>
+    <td>Number</td>
+    <td><code>400px</code></td>
+    <td><code>400px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Data Insights Composer loading state.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-min-width</td>
+    <td>Number</td>
+    <td><code>250px</code></td>
+    <td><code>250px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-max-width</td>
+    <td>Number</td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-max-height</td>
+    <td>Number</td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum height of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### DateRangePicker
 
 <table class="theme-variables">
@@ -20676,6 +20839,26 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description on hover.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-description-text</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -23226,6 +23409,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-popup-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>$kendo-list-item-hover-description-text</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of hovered Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-popup-item-active-bg</td>
     <td>String</td>
     <td><code>$kendo-list-item-selected-bg</code></td>
@@ -23263,6 +23456,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-active-description-text</td>
+    <td>String</td>
+    <td><code>$kendo-list-item-selected-description-text</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of active Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>

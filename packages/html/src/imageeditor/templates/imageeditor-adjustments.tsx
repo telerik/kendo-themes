@@ -1,52 +1,8 @@
-import { ImageEditor, ImageEditorPane } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
 import { NumericTextbox } from "../../numerictextbox";
 import { Form, FormField } from "../../form";
 import { Slider } from "../../slider";
-
-const adjustmentsSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" selected aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-const AdjustmentSlider = ({ id, label, value, min = 0, max = 100 }: { id: string; label: string; value: number; min?: number; max?: number }) => (
-    <FormField
-        label={label}
-        editorId={id}
-        editor={
-            <div className="k-imageeditor-adjustment-editor">
-                <Slider
-                    className="k-imageeditor-adjustment-slider"
-                    aria-label={label}
-                    showButtons={false}
-                    showTicks={false}
-                    value={value}
-                    min={min}
-                    max={max}
-                    style={{ "--kendo-slider-start": min < 0 ? 0 : min, "--kendo-slider-end": value } as React.CSSProperties}
-                />
-                <NumericTextbox
-                    id={id}
-                    style={{ width: "80px", flex: "none" }}
-                    showClearButton={false}
-                    showSpinButton={false}
-                    value={String(value)}
-                />
-            </div>
-        }
-    />
-);
 
 export const ImageEditorAdjustments = ({
     brightness = 0,
@@ -54,34 +10,101 @@ export const ImageEditorAdjustments = ({
     saturation = 0,
     hue = 0,
     exposure = 0,
-    blur = 24,
-    opacity = 24,
+    blur = 0,
+    opacity = 100,
+    isPristine = brightness === 0 && contrast === 0 && saturation === 0 && hue === 0 && exposure === 0 && blur === 0 && opacity === 100,
+    adaptive,
+    imageSrc,
     ...props
 }: any) => (
     <ImageEditor
-        sidebarItems={adjustmentsSidebarItems}
+        adaptive={adaptive}
+        activeTool="Adjustments"
         actionPane={
-            <ImageEditorPane title="Adjustments" actions={
+            <ImageEditorPane title="Adjustments" adaptive={adaptive} confirmDisabled={isPristine} actions={
                 <>
-                    <Button>Reset</Button>
-                    <Button themeColor="primary">Apply</Button>
+                    <Button disabled={isPristine}>Reset</Button>
+                    <Button themeColor="primary" disabled={isPristine}>Apply</Button>
                 </>
             }>
                 <Form tag="div">
-                    <AdjustmentSlider id="adjustments-brightness" label="Brightness" value={brightness} min={-100} max={100} />
-                    <AdjustmentSlider id="adjustments-contrast" label="Contrast" value={contrast} min={-100} max={100} />
-                    <AdjustmentSlider id="adjustments-saturation" label="Saturation" value={saturation} min={-100} max={100} />
-                    <AdjustmentSlider id="adjustments-hue" label="Hue" value={hue} min={-100} max={100} />
-                    <AdjustmentSlider id="adjustments-exposure" label="Exposure" value={exposure} min={-100} max={100} />
-                    <AdjustmentSlider id="adjustments-blur" label="Blur" value={blur} />
-                    <AdjustmentSlider id="adjustments-opacity" label="Opacity" value={opacity} />
+                    <FormField
+                        label="Brightness"
+                        editorId="adjustments-brightness"
+                        editor={
+                            <div className="k-imageeditor-adjustment-editor">
+                                <Slider className="k-imageeditor-adjustment-slider" aria-label="Brightness" showButtons={false} showTicks={false} value={brightness} min={-100} max={100} style={{ "--kendo-slider-start": 0, "--kendo-slider-end": (brightness + 100) / 2 } as React.CSSProperties} />
+                                <NumericTextbox id="adjustments-brightness" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(brightness)} />
+                            </div>
+                        }
+                    />
+                    <FormField
+                        label="Contrast"
+                        editorId="adjustments-contrast"
+                        editor={
+                            <div className="k-imageeditor-adjustment-editor">
+                                <Slider className="k-imageeditor-adjustment-slider" aria-label="Contrast" showButtons={false} showTicks={false} value={contrast} min={-100} max={100} style={{ "--kendo-slider-start": 0, "--kendo-slider-end": (contrast + 100) / 2 } as React.CSSProperties} />
+                                <NumericTextbox id="adjustments-contrast" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(contrast)} />
+                            </div>
+                        }
+                    />
+                    <FormField
+                        label="Saturation"
+                        editorId="adjustments-saturation"
+                        editor={
+                            <div className="k-imageeditor-adjustment-editor">
+                                <Slider className="k-imageeditor-adjustment-slider" aria-label="Saturation" showButtons={false} showTicks={false} value={saturation} min={-100} max={100} style={{ "--kendo-slider-start": 0, "--kendo-slider-end": (saturation + 100) / 2 } as React.CSSProperties} />
+                                <NumericTextbox id="adjustments-saturation" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(saturation)} />
+                            </div>
+                        }
+                    />
+                    <FormField
+                        label="Hue"
+                        editorId="adjustments-hue"
+                        editor={
+                            <div className="k-imageeditor-adjustment-editor">
+                                <Slider className="k-imageeditor-adjustment-slider" aria-label="Hue" showButtons={false} showTicks={false} value={hue} min={-100} max={100} style={{ "--kendo-slider-start": 0, "--kendo-slider-end": (hue + 100) / 2 } as React.CSSProperties} />
+                                <NumericTextbox id="adjustments-hue" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(hue)} />
+                            </div>
+                        }
+                    />
+                    <FormField
+                        label="Exposure"
+                        editorId="adjustments-exposure"
+                        editor={
+                            <div className="k-imageeditor-adjustment-editor">
+                                <Slider className="k-imageeditor-adjustment-slider" aria-label="Exposure" showButtons={false} showTicks={false} value={exposure} min={-100} max={100} style={{ "--kendo-slider-start": 0, "--kendo-slider-end": (exposure + 100) / 2 } as React.CSSProperties} />
+                                <NumericTextbox id="adjustments-exposure" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(exposure)} />
+                            </div>
+                        }
+                    />
+                    <FormField
+                        label="Blur"
+                        editorId="adjustments-blur"
+                        editor={
+                            <div className="k-imageeditor-adjustment-editor">
+                                <Slider className="k-imageeditor-adjustment-slider" aria-label="Blur" showButtons={false} showTicks={false} value={blur} min={0} max={100} style={{ "--kendo-slider-start": 0, "--kendo-slider-end": blur } as React.CSSProperties} />
+                                <NumericTextbox id="adjustments-blur" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(blur)} />
+                            </div>
+                        }
+                    />
+                    <FormField
+                        label="Opacity"
+                        editorId="adjustments-opacity"
+                        editor={
+                            <div className="k-imageeditor-adjustment-editor">
+                                <Slider className="k-imageeditor-adjustment-slider" aria-label="Opacity" showButtons={false} showTicks={false} value={opacity} min={0} max={100} style={{ "--kendo-slider-start": 0, "--kendo-slider-end": opacity } as React.CSSProperties} />
+                                <NumericTextbox id="adjustments-opacity" style={{ width: "80px", flex: "none" }} showClearButton={false} showSpinButton={false} value={String(opacity)} />
+                            </div>
+                        }
+                    />
                 </Form>
             </ImageEditorPane>
         }
 
         children={
             <>
-                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+                <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
             </>
         }
         {...props} />

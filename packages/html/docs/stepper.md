@@ -36,6 +36,18 @@ The Stepper is compliant with the [Web Content Accessibility Guidelines (WCAG) 2
 
 ### Step
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `disabled` | `k-disabled` |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `invalid` | `k-invalid` |
+| `valid` | `k-valid` |
+
+These CSS classes are applied to the `k-step` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |

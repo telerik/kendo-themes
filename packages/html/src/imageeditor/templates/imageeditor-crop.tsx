@@ -1,4 +1,5 @@
-import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorOptionList, ImageEditorOptionPreview, ImageEditorResizeHandles, ImageEditorCanvas } from "..";
+import { IMAGEEDITOR_ADAPTIVE_CANVAS_SIZE, IMAGEEDITOR_CANVAS_SIZE } from "../constants";
 import { Button } from "../../button";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { NumericTextbox } from "../../numerictextbox";
@@ -6,30 +7,23 @@ import { Form, FormField, Fieldset } from "../../form";
 import { Icon } from "../../icon";
 import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
 
-const cropSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" selected aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-export const ImageEditorCrop = (props: any) => (
+export const ImageEditorCrop = ({
+    cropWidth = 494,
+    cropHeight = 307,
+    isPristine = cropWidth === 494 && cropHeight === 307,
+    adaptive,
+    canvas = adaptive ? IMAGEEDITOR_ADAPTIVE_CANVAS_SIZE : IMAGEEDITOR_CANVAS_SIZE,
+    imageSrc,
+    ...props
+}: any) => (
     <ImageEditor
-        sidebarItems={cropSidebarItems}
+        adaptive={adaptive}
+        activeTool="Crop"
         actionPane={
-            <ImageEditorPane title="Crop" actions={
+            <ImageEditorPane title="Crop" adaptive={adaptive} confirmDisabled={isPristine} actions={
                 <>
-                    <Button>Reset</Button>
-                    <Button themeColor="primary">Apply</Button>
+                    <Button disabled={isPristine}>Reset</Button>
+                    <Button themeColor="primary" disabled={isPristine}>Apply</Button>
                 </>
             }>
                 <Form tag="div">
@@ -49,8 +43,8 @@ export const ImageEditorCrop = (props: any) => (
                     <FormField
                         label="Aspect Ratio"
                         editor={
-                            <ImageEditorOptionList scrollable scrollingPosition="both">
-                                <ImageEditorOptionPreview><span className="k-imageeditor-option-label">Original</span></ImageEditorOptionPreview>
+                            <ImageEditorOptionList scrollable>
+                                <ImageEditorOptionPreview selected><span className="k-imageeditor-option-label">Original</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">1:1</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">3:2</span></ImageEditorOptionPreview>
                                 <ImageEditorOptionPreview><span className="k-imageeditor-option-label">4:3</span></ImageEditorOptionPreview>
@@ -65,12 +59,12 @@ export const ImageEditorCrop = (props: any) => (
                         <FormField
                             label="Width"
                             editorId="crop-width"
-                            editor={ <NumericTextbox id="crop-width" showClearButton={false} value="400" prefix={<Icon icon="arrows-left-right" />} /> }
+                            editor={ <NumericTextbox id="crop-width" showClearButton={false} showSpinButton={false} value={String(cropWidth)} prefix={<Icon icon="arrows-left-right" />} /> }
                         />
                         <FormField
                             label="Height"
                             editorId="crop-height"
-                            editor={ <NumericTextbox id="crop-height" showClearButton={false} value="360" prefix={<Icon icon="arrows-top-bottom" />} /> }
+                            editor={ <NumericTextbox id="crop-height" showClearButton={false} showSpinButton={false} value={String(cropHeight)} prefix={<Icon icon="arrows-top-bottom" />} /> }
                         />
                     </Fieldset>
                     <FormField editor={ <CheckboxWithLabelAfter id="crop-lock" checked>Lock Aspect Ratio</CheckboxWithLabelAfter> } />
@@ -80,9 +74,10 @@ export const ImageEditorCrop = (props: any) => (
 
         children={
             <>
-                <canvas width="61" height="68" role="img" aria-label="Image being edited"></canvas>
-                <div className="k-imageeditor-crop-overlay">
-                    <div className="k-imageeditor-crop" style={{ width: "61px", height: "68px" }}>
+                <ImageEditorCanvas {...canvas} imageSrc={imageSrc} />
+                <div className="k-imageeditor-crop-overlay" style={{ "--crop-x": "0px", "--crop-y": "0px", "--crop-w": `${canvas.width}px`, "--crop-h": `${canvas.height}px` } as React.CSSProperties}>
+                    <div className="k-imageeditor-crop-dim"></div>
+                    <div className="k-imageeditor-crop" style={{ width: `${canvas.width}px`, height: `${canvas.height}px` }}>
                         <ImageEditorResizeHandles variant="crop" grid />
                     </div>
                 </div>

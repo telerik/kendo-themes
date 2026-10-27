@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 import { Icon } from '../icon';
+import { UploadNormal } from '../upload';
 
 export const IMAGEEDITORPLACEHOLDER_CLASSNAME = `k-imageeditor-placeholder`;
 
@@ -7,6 +8,7 @@ export type KendoImageEditorPlaceholderProps = {
     icon?: string;
     title?: string;
     text?: string;
+    buttonText?: string;
 };
 
 export const ImageEditorPlaceholder = (
@@ -17,6 +19,7 @@ export const ImageEditorPlaceholder = (
         icon,
         title,
         text,
+        buttonText,
         children,
         ...other
     } = props;
@@ -43,6 +46,9 @@ export const ImageEditorPlaceholder = (
                             {title && <div className={`${IMAGEEDITORPLACEHOLDER_CLASSNAME}-title`}>{title}</div>}
                             {text && <div className={`${IMAGEEDITORPLACEHOLDER_CLASSNAME}-text`}>{text}</div>}
                         </div>
+                    }
+                    {buttonText &&
+                        <UploadNormal className={`${IMAGEEDITORPLACEHOLDER_CLASSNAME}-upload`} buttonText={buttonText} />
                     }
                 </>
             )}

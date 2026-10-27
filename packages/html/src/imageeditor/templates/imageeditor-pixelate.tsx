@@ -1,39 +1,25 @@
-import { ImageEditor, ImageEditorPane } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
 import { NumericTextbox } from "../../numerictextbox";
 import { Form, FormField } from "../../form";
 import { RadioGroup, RadioItem, RadioButtonWithLabelAfter } from "../../radio";
 import { SegmentedControl, SegmentedControlButton } from "../../segmented-control";
 import { Slider } from "../../slider";
+import { InputSuffixText } from "../../input";
 
 
-const pixelateSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" selected aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-export const ImageEditorPixelate = ({ shape = "rectangular", intensity = 24, ...props }: any) => (
+export const ImageEditorPixelate = ({ selected = false, shape = "elliptical", intensity = 0, adaptive, imageSrc, ...props }: any) => (
     <ImageEditor
-        sidebarItems={pixelateSidebarItems}
+        adaptive={adaptive}
+        activeTool="Blur"
         actionPane={
-            <ImageEditorPane title="Pixelate" actions={
+            <ImageEditorPane title="Pixelate" adaptive={adaptive} confirmDisabled={!selected} actions={
                 <>
-                    <Button>Reset</Button>
-                    <Button themeColor="primary">Apply</Button>
+                    <Button disabled={!selected}>Reset</Button>
+                    <Button themeColor="primary" disabled={!selected}>Apply</Button>
                 </>
             }>
-                <SegmentedControl thumbStyles={{ width: "50%", left: "50%" }} stretched aria-label="Redaction Tool" style={{ flexShrink: 0 }}>
+                <SegmentedControl thumbStyles={{ width: "50%", left: "50%" }} stretched aria-label="Redaction Tool">
                     <SegmentedControlButton icon="blur">Blur</SegmentedControlButton>
                     <SegmentedControlButton icon="grid" selected>Pixelate</SegmentedControlButton>
                 </SegmentedControl>
@@ -76,17 +62,39 @@ export const ImageEditorPixelate = ({ shape = "rectangular", intensity = 24, ...
                             </div>
                         }
                     />
+                    <FormField
+                        label="Rotation"
+                        editor={
+                            <div className="k-imageeditor-field-row">
+                                <Slider
+                                    disabled={!selected}
+                                    style={{ flex: 1 }}
+                                    aria-label="Rotation"
+                                    showButtons={false}
+                                    showTicks={false}
+                                    value={0}
+                                    min={0}
+                                    max={360}
+                                />
+                                <NumericTextbox
+                                    disabled={!selected}
+                                    style={{ width: "80px", flex: "none" }}
+                                    aria-label="Rotation angle"
+                                    showClearButton={false}
+                                    showSpinButton={false}
+                                    separators={false}
+                                    value="0"
+                                    suffix={<InputSuffixText>°</InputSuffixText>}
+                                />
+                            </div>
+                        }
+                    />
                 </Form>
             </ImageEditorPane>
         }
 
         children={
-            <>
-                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
-                <div className="k-imageeditor-crop-overlay">
-                    <div className="k-imageeditor-crop" style={{ borderStyle: "dashed" }}></div>
-                </div>
-            </>
+            <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
         }
         {...props} />
 );

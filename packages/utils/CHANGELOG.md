@@ -1,3 +1,74 @@
+## 14.7.1-dev.3 (2026-10-26)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.2 (2026-10-23)
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.0 (2026-10-22)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0 (2026-10-21)
+
+### 🚀 Features
+
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.7.0-dev.16 (2026-10-21)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.15 (2026-10-20)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.14 (2026-10-20)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.13 (2026-10-19)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.12 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.11 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.10 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.9 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
 ## 14.7.0-dev.8 (2026-10-13)
 
 This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.

@@ -146,8 +146,8 @@
         }
     }
 
-    // Crop Overlay: accent-tinted layer (matches the frame/handle color) stacked over a neutral dark scrim
-    .k-imageeditor-crop-overlay {
+    // Crop Dim: accent-tinted layer (matches the frame/handle color) stacked over a neutral dark scrim
+    .k-imageeditor-crop-dim {
         background-image:
             linear-gradient($kendo-image-editor-crop-overlay-accent-bg, $kendo-image-editor-crop-overlay-accent-bg),
             linear-gradient($kendo-image-editor-crop-overlay-bg, $kendo-image-editor-crop-overlay-bg);

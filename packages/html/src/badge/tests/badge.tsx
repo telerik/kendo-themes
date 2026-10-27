@@ -2,26 +2,25 @@ import { Badge, BadgeNormal } from '..';
 
 export default () =>(
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-9">
+        <div id="test-area" className="k-d-grid k-grid-cols-7">
 
             <span></span>
-            <span className="col-2">Rectangle</span>
-            <span className="col-2">Rounded</span>
-            <span className="col-2">Pill</span>
-            <span className="col">Circle</span>
-            <span className="col">Dot</span>
+            <span>Text</span>
+            <span>Text + Icon</span>
+            <span>Icon + Text</span>
+            <span>Icon</span>
+            <span>Number</span>
+            <span>Empty</span>
 
             {Badge.options.themeColor.map((themeColor) => (
                 <>
                     <span>{`${themeColor}`}</span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="none">Rectangle</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="none"></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="medium">Rounded</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="medium"></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="full">Pill</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="full"></BadgeNormal></span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="full">1</BadgeNormal></span>
-                    <span><BadgeNormal themeColor={themeColor} rounded="full"></BadgeNormal></span>
+                    <span><BadgeNormal themeColor={themeColor}>Text</BadgeNormal></span>
+                    <span><BadgeNormal themeColor={themeColor} endIcon="plus-circle">Text</BadgeNormal></span>
+                    <span><BadgeNormal themeColor={themeColor} icon="plus-circle">Text</BadgeNormal></span>
+                    <span><BadgeNormal themeColor={themeColor} icon="plus-circle" /></span>
+                    <span><BadgeNormal themeColor={themeColor}>1</BadgeNormal></span>
+                    <span><BadgeNormal themeColor={themeColor}></BadgeNormal></span>
                 </>
             ))}
         </div>

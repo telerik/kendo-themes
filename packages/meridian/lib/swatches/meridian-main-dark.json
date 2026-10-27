@@ -484,7 +484,7 @@
                 "inverse-emphasis": {
                     "name": "Inverse Emphasis",
                     "type": "color",
-                    "value": "#{\"oklch(from var(--kendo-color-inverse) calc(l - 0.5522) calc(c + 0.0223) calc(h + 2.88))\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-inverse) calc(l - 0.3111) calc(c + 0.0209) calc(h + 2.19))\"}"
                 },
                 "inverse-on-subtle": {
                     "name": "Inverse On Subtle",

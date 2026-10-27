@@ -152,6 +152,12 @@ jobs:
             develop_times+=("$LAST_TIME")
           done
 
+          # Untimed: generates dist/meta so it counts toward the html size (develop may not have the script yet)
+          if [ "$PKG" = "html" ]; then
+            npm run build:meta --if-present --prefix "./packages/html" > /dev/null
+            npm run build:meta --if-present --prefix "develop-worktree/packages/html" > /dev/null
+          fi
+
           # Size is deterministic, so it is measured once from the last build output
           echo "pr:$(measure_size "."):$(median "${pr_times[@]}")" >> data.txt
           echo "develop:$(measure_size "develop-worktree"):$(median "${develop_times[@]}")" >> data.txt

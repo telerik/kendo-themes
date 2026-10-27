@@ -44,6 +44,30 @@ The Tabstrip is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 | Disabled tabs | Individual tabs can be disabled and are non-interactive. |
 | Tab position | Tabs can be placed at the top, bottom, left, or right of the content area. |
 
+### TabStripContent
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `active` | `k-active` |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-tabstrip-content` element.
+
+### TabStripItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `active` | `k-active` |
+| `hover` | `k-hover` |
+| `disabled` | `k-disabled` |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-tabstrip-item` element.
+
 ### TabStripItems
 
 #### ARIA Attributes

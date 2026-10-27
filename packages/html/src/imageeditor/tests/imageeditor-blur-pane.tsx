@@ -1,26 +1,49 @@
-import { ImageEditorBlur } from '..';
+import { ImageEditorBlur, ImageEditorResizeHandles, ImageEditorRotateHandle } from '..';
+import { IMAGEEDITOR_TEST_IMAGE_SRC } from '../constants';
+import { Button } from '../../button';
+import { FloatingToolbar } from '../../floating-toolbar/floating-toolbar.spec';
 
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
+            <h4>Image Editor Blur Pane &mdash; No Selection</h4>
+
+            <ImageEditorBlur contentHeight="482px" imageSrc={IMAGEEDITOR_TEST_IMAGE_SRC} />
+
             <h4>Image Editor Blur Pane &mdash; Rectangular Markee</h4>
 
-            <ImageEditorBlur contentHeight="482px" shape="rectangular" intensity={16}>
+            <ImageEditorBlur contentHeight="482px" selected shape="rectangular" intensity={16}>
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", filter: "blur(8px)" }}></canvas>
                 <div className="k-imageeditor-crop-overlay">
-                    <div className="k-imageeditor-crop" style={{ borderStyle: "dashed" }}></div>
+                    <div className="k-imageeditor-crop" style={{ borderStyle: "dashed" }}>
+                        <ImageEditorResizeHandles variant="crop" corners={false} />
+                        <ImageEditorRotateHandle />
+                        <FloatingToolbar fillMode="flat" style={{ width: "max-content" }} offset={{ top: "calc(100% + 12px)", left: "calc(50% + 40px)" }}>
+                            <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
+                            <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
+                            <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
+                        </FloatingToolbar>
+                    </div>
                 </div>
             </ImageEditorBlur>
 
             <h4>Image Editor Blur Pane &mdash; Elliptical Markee</h4>
 
-            <ImageEditorBlur contentHeight="482px" shape="elliptical" intensity={18}>
+            <ImageEditorBlur contentHeight="482px" selected shape="elliptical" intensity={18}>
                 <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
                 <canvas width="494" height="307" aria-hidden="true" style={{ position: "absolute", insetBlockStart: 0, insetInlineStart: 0, backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover", filter: "blur(8px)", clipPath: "ellipse(160px 98.5px at center)" }}></canvas>
                 <div className="k-imageeditor-crop-overlay">
-                    <div className="k-imageeditor-crop" style={{ width: "320px", height: "197px", borderStyle: "dashed", borderRadius: "50%", insetInlineStart: "50%", insetBlockStart: "50%", transform: "translate(-50%, -50%)" }}></div>
+                    <div className="k-imageeditor-crop" style={{ width: "320px", height: "197px", borderStyle: "dashed", borderRadius: "50%", insetInlineStart: "50%", insetBlockStart: "50%", transform: "translate(-50%, -50%)" }}>
+                        <ImageEditorResizeHandles variant="crop" corners={false} />
+                        <ImageEditorRotateHandle />
+                        <FloatingToolbar fillMode="flat" style={{ width: "max-content" }} offset={{ top: "calc(100% + 12px)", left: "calc(50% + 40px)" }}>
+                            <Button fillMode="flat" icon="squares-overlapping-plus" aria-label="Duplicate"></Button>
+                            <Button fillMode="flat" icon="pencil" aria-label="Edit"></Button>
+                            <Button fillMode="flat" icon="trash" aria-label="Delete"></Button>
+                        </FloatingToolbar>
+                    </div>
                 </div>
             </ImageEditorBlur>
 

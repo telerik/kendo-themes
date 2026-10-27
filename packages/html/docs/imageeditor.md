@@ -12,15 +12,15 @@ The Imageeditor is compliant with the [Web Content Accessibility Guidelines (WCA
 
 | Attribute | Description |
 | --- | --- |
-| `role="img"` | Indicates the canvas role as an image. Applicable when an image is loaded. |
-| `aria-label|aria-labelledby` | Provides an accessible name for the canvas by describing the image content. Applicable when an image is loaded. |
+| `role="application"` | Indicates that the ImageEditor has its own keyboard navigation implemented. |
+| `aria-label` | Provides an accessible name for the application. |
 | `role="status"` | Announces the busy overlay shown while `exporting` is true. |
 
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
-| `Alt/Opt(Mac) + Number` | Focuses the component. |
+| `Alt/Opt(Mac) + W` | Focuses the first focusable element in the Image Editor Toolbar. |
 | `Tab` | Focuses the next focusable item. |
 | `Shift + Tab` | Focuses the previous focusable item. |
 | `Enter` | Presses the focused button. |
@@ -62,6 +62,15 @@ The Imageeditor is compliant with the [Web Content Accessibility Guidelines (WCA
 | Undo / Redo | All edit operations can be undone and redone. |
 | Export | The edited image can be saved or downloaded. |
 | Exporting | While `exporting` is true, a busy overlay covers the editor and interaction is blocked. |
+
+### ImageEditorCanvas
+
+#### ARIA Attributes
+
+| Attribute | Description |
+| --- | --- |
+| `role="img"` | Indicates the canvas role as an image. |
+| `aria-label|aria-labelledby` | Provides an accessible name for the canvas by describing the image content. |
 
 ### Testing
 

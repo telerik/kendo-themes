@@ -1508,8 +1508,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td><code>var(--kendo-spacing-1\.5)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small Badge.</div></div>
@@ -1518,8 +1518,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-md-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-badge-padding-x, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-badge-padding-x, var(--kendo-spacing-1\.5))</code></td>
+    <td><code>var( --kendo-badge-padding-x, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-badge-padding-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium Badge.</div></div>
@@ -1533,6 +1533,46 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-text-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-badge-text-padding-x, #{k-spacing(0.5)} )</code></td>
+    <td><code>var(--kendo-badge-text-padding-x, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of Badge text content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-badge-sm-gap, #{k-spacing(0)} )</code></td>
+    <td><code>var(--kendo-badge-sm-gap, var(--kendo-spacing-0))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the small Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-badge-md-gap, #{k-spacing(1px)} )</code></td>
+    <td><code>var(--kendo-badge-md-gap, var(--kendo-spacing-1px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the medium Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-gap</td>
+    <td>String</td>
+    <td><code>var( --kendo-badge-lg-gap, #{k-spacing(0.5)} )</code></td>
+    <td><code>var(--kendo-badge-lg-gap, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the large Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -1662,6 +1702,7 @@ The following table lists the available variables for customizing the Fluent the
     sm: (
         padding-x: $kendo-badge-sm-padding-x,
         padding-y: $kendo-badge-sm-padding-y,
+        gap: $kendo-badge-sm-gap,
         font-size: $kendo-badge-sm-font-size,
         line-height: $kendo-badge-sm-line-height,
         min-width: $kendo-badge-sm-min-width
@@ -1669,6 +1710,7 @@ The following table lists the available variables for customizing the Fluent the
     md: (
         padding-x: $kendo-badge-md-padding-x,
         padding-y: $kendo-badge-md-padding-y,
+        gap: $kendo-badge-md-gap,
         font-size: $kendo-badge-md-font-size,
         line-height: $kendo-badge-md-line-height,
         min-width: $kendo-badge-md-min-width
@@ -1676,12 +1718,13 @@ The following table lists the available variables for customizing the Fluent the
     lg: (
         padding-x: $kendo-badge-lg-padding-x,
         padding-y: $kendo-badge-lg-padding-y,
+        gap: $kendo-badge-lg-gap,
         font-size: $kendo-badge-lg-font-size,
         line-height: $kendo-badge-lg-line-height,
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1\\.5)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size-xs)","line-height":"var(--kendo-line-height-xs)","min-width":"calc(var(--kendo-line-height-xs) * 1em + var(--kendo-spacing-0\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-badge-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-badge-padding-y, var(--kendo-spacing-1))","font-size":"var(--kendo-badge-font-size, var(--kendo-font-size-xs))","line-height":"var(--kendo-badge-line-height, var(--kendo-line-height-xs))","min-width":"calc(var(--kendo-badge-line-height, var(--kendo-line-height-xs)) * 1em + var(--kendo-badge-padding-y, var(--kendo-spacing-1)) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)","min-width":"calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-1\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5)","padding-y":"var(--kendo-spacing-0\\.5)","gap":"var(--kendo-badge-sm-gap, var(--kendo-spacing-0))","font-size":"var(--kendo-font-size-xs)","line-height":"var(--kendo-line-height-xs)","min-width":"calc(var(--kendo-line-height-xs) * 1em + var(--kendo-spacing-0\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-badge-padding-x, var(--kendo-spacing-1))","padding-y":"var(--kendo-badge-padding-y, var(--kendo-spacing-1))","gap":"var(--kendo-badge-md-gap, var(--kendo-spacing-1px))","font-size":"var(--kendo-badge-font-size, var(--kendo-font-size-xs))","line-height":"var(--kendo-badge-line-height, var(--kendo-line-height-xs))","min-width":"calc(var(--kendo-badge-line-height, var(--kendo-line-height-xs)) * 1em + var(--kendo-badge-padding-y, var(--kendo-spacing-1)) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","gap":"var(--kendo-badge-lg-gap, var(--kendo-spacing-0\\.5))","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)","min-width":"calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-1\\.5) * 2 + var(--kendo-badge-border-width, 1px) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>
@@ -11624,6 +11667,126 @@ The following table lists the available variables for customizing the Fluent the
 </tbody>
 </table>
 
+### DatainsightsComposer
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-datainsights-composer-border-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-border-width, 1px )</code></td>
+    <td><code>var(--kendo-datainsights-composer-border-width, 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-border-color</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-border-color, color-mix(in srgb, var(--kendo-color-border) 26%, transparent) )</code></td>
+    <td><code>var(--kendo-datainsights-composer-border-color, color-mix(in srgb, var(--kendo-color-border) 26%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-background</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-background, #{k-color(surface)} )</code></td>
+    <td><code>var(--kendo-datainsights-composer-background, var(--kendo-color-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-preview-background</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-preview-background, #{k-color(surface-alt)} )</code></td>
+    <td><code>var(--kendo-datainsights-composer-preview-background, var(--kendo-color-surface-alt))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The preview background color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-border-radius, #{k-border-radius(xxl)} )</code></td>
+    <td><code>var(--kendo-datainsights-composer-border-radius, var(--kendo-border-radius-xxl))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-fields-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-fields-border-radius, #{k-border-radius(xxxl)} )</code></td>
+    <td><code>var(--kendo-datainsights-composer-fields-border-radius, var(--kendo-border-radius-xxxl))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom border radius of the Data Insights Composer fields.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-loading-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-loading-height, 400px )</code></td>
+    <td><code>var(--kendo-datainsights-composer-loading-height, 400px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Data Insights Composer loading state.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-min-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-popup-min-width, 250px )</code></td>
+    <td><code>var(--kendo-datainsights-composer-popup-min-width, 250px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-max-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-popup-max-width, 320px )</code></td>
+    <td><code>var(--kendo-datainsights-composer-popup-max-width, 320px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-max-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-datainsights-composer-popup-max-height, 320px )</code></td>
+    <td><code>var(--kendo-datainsights-composer-popup-max-height, 320px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum height of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### DateRangePicker
 
 <table class="theme-variables">
@@ -21474,6 +21637,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent) )</code></td>
+    <td><code>var(--kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description on hover.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent) )</code></td>
+    <td><code>var(--kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -24104,6 +24287,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-popup-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-menu-popup-item-hover-description-text, #{$kendo-list-item-hover-description-text} )</code></td>
+    <td><code>var(--kendo-menu-popup-item-hover-description-text, var(--kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of hovered Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-popup-item-focus-outline</td>
     <td>String</td>
     <td><code>var( --kendo-menu-popup-item-focus-outline, #{k-color(border-alt)} )</code></td>
@@ -24141,6 +24334,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the icon of active Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-active-description-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-menu-popup-item-active-description-text, #{$kendo-list-item-selected-description-text} )</code></td>
+    <td><code>var(--kendo-menu-popup-item-active-description-text, var(--kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of active Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>
@@ -30842,13 +31045,23 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-marquee-color</td>
+    <td>$kendo-scheduler-marquee-label-inset-x</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-marquee-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-scheduler-marquee-color, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-scheduler-marquee-label-inset-x, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-scheduler-marquee-label-inset-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler marquee.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline inset of the Scheduler marquee labels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-marquee-label-inset-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-marquee-label-inset-y, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-scheduler-marquee-label-inset-y, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block inset of the Scheduler marquee labels.</div></div>
     </td>
 </tr>
 <tr>

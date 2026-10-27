@@ -1,3 +1,124 @@
+## 14.7.1-dev.3 (2026-10-26)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.2 (2026-10-23)
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.0 (2026-10-22)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0 (2026-10-21)
+
+### 🚀 Features
+
+- **html:** add ImageEditor adaptive pane templates and tests ([747a9acd38](https://github.com/telerik/kendo-themes/commit/747a9acd38))
+- **html:** add Non scrollable grid template and test ([3d9d7a605a](https://github.com/telerik/kendo-themes/commit/3d9d7a605a))
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+- **html:** add handles to blur and pixelate, align imageeditor templates with default state ([8b13765cc7](https://github.com/telerik/kendo-themes/commit/8b13765cc7))
+- **html:** enhance badge spec ([963b6a03c9](https://github.com/telerik/kendo-themes/commit/963b6a03c9))
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+- **html:** add button end icon support ([74195b8c83](https://github.com/telerik/kendo-themes/commit/74195b8c83))
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### 🩹 Fixes
+
+- **treeview:** allow custom leaf content ([38433b76b2](https://github.com/telerik/kendo-themes/commit/38433b76b2))
+- **prompt-box:** allow hiding speech-to-text button via speechToTextButtonConfig={false} ([16901705e3](https://github.com/telerik/kendo-themes/commit/16901705e3))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Copilot App @Copilot
+- Emil Petrov
+- Teya Veselinova
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
+## 14.7.0-dev.16 (2026-10-21)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.15 (2026-10-20)
+
+### 🚀 Features
+
+- **html:** add ImageEditor adaptive pane templates and tests ([747a9acd38](https://github.com/telerik/kendo-themes/commit/747a9acd38))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
+## 14.7.0-dev.14 (2026-10-20)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.13 (2026-10-19)
+
+### 🚀 Features
+
+- **html:** add Non scrollable grid template and test ([3d9d7a605a](https://github.com/telerik/kendo-themes/commit/3d9d7a605a))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.7.0-dev.12 (2026-10-16)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.11 (2026-10-16)
+
+### 🚀 Features
+
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.10 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** add handles to blur and pixelate, align imageeditor templates with default state ([8b13765cc7](https://github.com/telerik/kendo-themes/commit/8b13765cc7))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** enhance badge spec ([963b6a03c9](https://github.com/telerik/kendo-themes/commit/963b6a03c9))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.7.0-dev.8 (2026-10-13)
 
 ### 🚀 Features

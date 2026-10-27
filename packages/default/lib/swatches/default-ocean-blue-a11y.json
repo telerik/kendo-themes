@@ -597,6 +597,37 @@
                     "value": "#{\"oklch(from var(--kendo-color-series-f) calc(l + 0.1153) calc(c - 0.0831) calc(h - 3.71))\"}"
                 }
             }
+        },
+        {
+            "name": "Button",
+            "variables": {
+                "kendo-flat-button-focus-ring-opacity": {
+                    "name": "Flat Button focus ring opacity",
+                    "type": "number",
+                    "value": "100%"
+                }
+            }
+        },
+        {
+            "name": "Contrast improvements",
+            "hidden": true,
+            "variables": {
+                "kendo-enable-focus-contrast": {
+                    "name": "Enable focus indicator contrast",
+                    "type": "boolean",
+                    "value": true
+                },
+                "kendo-taskboard-column-focus-border": {
+                    "name": "TaskBoard column focus border",
+                    "type": "color",
+                    "value": "oklch(37.91% 0.0000 0deg)"
+                },
+                "kendo-color-editor-color-gradient-focus-outline-color": {
+                    "name": "ColorEditor gradient focus outline color",
+                    "type": "color",
+                    "value": "oklch(37.91% 0.0000 0deg)"
+                }
+            }
         }
     ]
 }

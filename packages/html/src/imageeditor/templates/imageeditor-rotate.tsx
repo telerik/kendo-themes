@@ -1,35 +1,19 @@
-import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles, ImageEditorRotateHandle } from "..";
+import { ImageEditor, ImageEditorPane, ImageEditorResizeHandles, ImageEditorRotateHandle, ImageEditorCanvas } from "..";
 import { Button } from "../../button";
 import { NumericTextbox } from "../../numerictextbox";
 import { InputSuffixText } from "../../input";
 import { Form, FormField, Fieldset } from "../../form";
 import { Slider } from "../../slider";
-import { Tooltip } from "../../tooltip";
 
-const rotateSidebarItems = [
-    <Button fillMode="flat" key="sidebar-button-1" icon="image-resize" aria-label="Resize"></Button>,
-    <Button fillMode="flat" key="sidebar-button-2" icon="crop" aria-label="Crop"></Button>,
-    <Button fillMode="flat" key="sidebar-button-3" icon="rotate" selected aria-label="Rotate"></Button>,
-    <div className="k-separator" key="sidebar-separator-1"></div>,
-    <Button fillMode="flat" key="sidebar-button-4" icon="free-text" aria-label="Text"></Button>,
-    <Button fillMode="flat" key="sidebar-button-5" icon="shapes" aria-label="Shapes"></Button>,
-    <div className="k-separator" key="sidebar-separator-2"></div>,
-    <Button fillMode="flat" key="sidebar-button-6" icon="drop-half-pixelated" aria-label="Blur"></Button>,
-    <Button fillMode="flat" key="sidebar-button-7" icon="sliders-horizontal" aria-label="Adjustments"></Button>,
-    <Button fillMode="flat" key="sidebar-button-8" icon="circles-three-intersecting" aria-label="Filters"></Button>,
-    <div className="k-separator" key="sidebar-separator-3"></div>,
-    <Button fillMode="flat" key="sidebar-button-9" icon="frame-corners" aria-label="Frame"></Button>,
-    <Button fillMode="flat" key="sidebar-button-10" icon="circle-half-tilted" aria-label="Shadow"></Button>
-];
-
-export const ImageEditorRotate = (props: any) => (
+export const ImageEditorRotate = ({ rotation = 0, adaptive, imageSrc, ...props }: any) => (
     <ImageEditor
-        sidebarItems={rotateSidebarItems}
+        adaptive={adaptive}
+        activeTool="Rotate"
         actionPane={
-            <ImageEditorPane title="Rotate" actions={
+            <ImageEditorPane title="Rotate" adaptive={adaptive} confirmDisabled={rotation === 0} actions={
                 <>
-                    <Button>Reset</Button>
-                    <Button themeColor="primary">Apply</Button>
+                    <Button disabled={rotation === 0}>Reset</Button>
+                    <Button themeColor="primary" disabled={rotation === 0}>Apply</Button>
                 </>
             }>
                 <Form tag="div">
@@ -38,20 +22,20 @@ export const ImageEditorRotate = (props: any) => (
                         editor={
                             <div className="k-imageeditor-field-row">
                                 <Slider
-                                    style={{ width: "170px", flex: "none" }}
+                                    style={{ width: "170px", flex: "none", "--kendo-slider-start": 0, "--kendo-slider-end": (rotation + 45) / 90 * 100 } as React.CSSProperties}
                                     aria-label="Rotation"
                                     showButtons={false}
                                     showTicks={false}
-                                    value={85}
-                                    min={0}
-                                    max={360}
+                                    value={rotation}
+                                    min={-45}
+                                    max={45}
                                 />
                                 <NumericTextbox
                                     style={{ width: "72px", flex: "none" }}
                                     showClearButton={false}
                                     showSpinButton={false}
                                     separators={false}
-                                    value="85"
+                                    value={String(rotation)}
                                     suffix={<InputSuffixText>°</InputSuffixText>}
                                 />
                             </div>
@@ -83,16 +67,11 @@ export const ImageEditorRotate = (props: any) => (
 
         children={
             <>
-                <canvas width="494" height="307" role="img" aria-label="Image being edited" style={{ backgroundImage: "url('/packages/html/assets/sofia.jpg')", backgroundSize: "cover" }}></canvas>
+                <ImageEditorCanvas adaptive={adaptive} imageSrc={imageSrc} />
                 <div className="k-imageeditor-rotate">
                     <ImageEditorResizeHandles variant="scale" grid />
                     <ImageEditorRotateHandle />
                 </div>
-                <Tooltip
-                    themeColor="inverse"
-                    style={{ position: "absolute", insetBlockEnd: "-52px", insetInlineEnd: "0" }}
-                    content={<div>85°</div>}
-                ></Tooltip>
             </>
         }
         {...props} />

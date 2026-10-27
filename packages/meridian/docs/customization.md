@@ -1616,6 +1616,46 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-badge-text-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of Badge text content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the small Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1px)</code></td>
+    <td><code>var(--kendo-spacing-1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the medium Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon-to-text gap of the large Badge.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-badge-sm-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -1772,6 +1812,7 @@ The following table lists the available variables for customizing the Meridian t
     sm: (
         padding-x: $kendo-badge-sm-padding-x,
         padding-y: $kendo-badge-sm-padding-y,
+        gap: $kendo-badge-sm-gap,
         font-size: $kendo-badge-sm-font-size,
         line-height: $kendo-badge-sm-line-height,
         min-width: $kendo-badge-sm-min-width
@@ -1779,6 +1820,7 @@ The following table lists the available variables for customizing the Meridian t
     md: (
         padding-x: $kendo-badge-md-padding-x,
         padding-y: $kendo-badge-md-padding-y,
+        gap: $kendo-badge-md-gap,
         font-size: $kendo-badge-md-font-size,
         line-height: $kendo-badge-md-line-height,
         min-width: $kendo-badge-md-min-width
@@ -1786,12 +1828,13 @@ The following table lists the available variables for customizing the Meridian t
     lg: (
         padding-x: $kendo-badge-lg-padding-x,
         padding-y: $kendo-badge-lg-padding-y,
+        gap: $kendo-badge-lg-gap,
         font-size: $kendo-badge-lg-font-size,
         line-height: $kendo-badge-lg-line-height,
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5)","padding-y":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-0\\.5) * 2 + 1px * 2)"</li><li>md: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1) * 2 + 1px * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5)","padding-y":"var(--kendo-spacing-0\\.5)","gap":"var(--kendo-spacing-0)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-0\\.5) * 2 + 1px * 2)"</li><li>md: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1)","gap":"var(--kendo-spacing-1px)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1) * 2 + 1px * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5)","padding-y":"var(--kendo-spacing-1\\.5)","gap":"var(--kendo-spacing-0\\.5)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Badge.</div></div>
@@ -11955,6 +11998,126 @@ The following table lists the available variables for customizing the Meridian t
 </tbody>
 </table>
 
+### DatainsightsComposer
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-datainsights-composer-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-border-color</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-background</td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-preview-background</td>
+    <td>String</td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The preview background color of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Data Insights Composer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-fields-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxxl)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom border radius of the Data Insights Composer fields.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-loading-height</td>
+    <td>Number</td>
+    <td><code>400px</code></td>
+    <td><code>400px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Data Insights Composer loading state.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-min-width</td>
+    <td>Number</td>
+    <td><code>250px</code></td>
+    <td><code>250px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-max-width</td>
+    <td>Number</td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datainsights-composer-popup-max-height</td>
+    <td>Number</td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum height of the Data Insights Composer popup.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### DateRangePicker
 
 <table class="theme-variables">
@@ -21336,6 +21499,26 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-list-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description on hover.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-description-text</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -22618,8 +22801,8 @@ The following table lists the available variables for customizing the Meridian t
 <tbody><tr>
     <td>$kendo-marquee-text</td>
     <td>String</td>
-    <td><code>k-color(on-primary)</code></td>
-    <td><code>var(--kendo-color-on-primary)</code></td>
+    <td><code>k-color(secondary-on-subtle)</code></td>
+    <td><code>var(--kendo-color-secondary-on-subtle)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Marquee.</div></div>
@@ -22628,8 +22811,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-marquee-bg</td>
     <td>String</td>
-    <td><code>k-color(primary)</code></td>
-    <td><code>var(--kendo-color-primary)</code></td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Marquee.</div></div>
@@ -23956,6 +24139,16 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-popup-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>$kendo-list-item-hover-description-text</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of hovered Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-popup-item-active-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
@@ -23993,6 +24186,16 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-active-description-text</td>
+    <td>String</td>
+    <td><code>$kendo-list-item-selected-description-text</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of active Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>

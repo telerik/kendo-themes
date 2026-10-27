@@ -50,10 +50,10 @@ export type KendoTreeviewItemState = { [K in (typeof states)[number]]?: boolean 
  * @ux {Checkbox} An optional checkbox enables hierarchical multi-selection.
  * @ux {Drag handle} Allows the node to be dragged to a new position within the tree.
  */
-export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeviewItemState & React.HTMLAttributes<HTMLLIElement>> = (
+export const TreeviewItem: KendoComponent<KendoTreeviewItemProps & KendoTreeviewItemState & Omit<React.HTMLAttributes<HTMLLIElement>, 'content'>> = (
     props: KendoTreeviewItemProps &
         KendoTreeviewItemState &
-        React.HTMLAttributes<HTMLLIElement>
+        Omit<React.HTMLAttributes<HTMLLIElement>, 'content'>
 ) => {
     const {
         leafClassName,

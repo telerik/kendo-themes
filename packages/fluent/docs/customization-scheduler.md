@@ -848,13 +848,23 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-marquee-color</td>
+    <td>$kendo-scheduler-marquee-label-inset-x</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-marquee-color, k-color(primary) )</code></td>
-    <td><code>var(--kendo-scheduler-marquee-color, var(--kendo-color-primary))</code></td>
+    <td><code>var( --kendo-scheduler-marquee-label-inset-x, k-spacing(1) )</code></td>
+    <td><code>var(--kendo-scheduler-marquee-label-inset-x, var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler marquee.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline inset of the Scheduler marquee labels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-marquee-label-inset-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-marquee-label-inset-y, k-spacing(0.5) )</code></td>
+    <td><code>var(--kendo-scheduler-marquee-label-inset-y, var(--kendo-spacing-0\.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block inset of the Scheduler marquee labels.</div></div>
     </td>
 </tr>
 <tr>

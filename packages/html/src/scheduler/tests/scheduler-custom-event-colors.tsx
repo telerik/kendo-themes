@@ -4,6 +4,7 @@ const styles = `
     #test-area {
         padding: 20px;
         gap: 25px;
+        grid-template-columns: 60px repeat(7, 1fr);
     }
 `;
 
@@ -19,7 +20,8 @@ const customEvents = [
 export default () => (
   <>
     <style>{styles}</style>
-    <div id="test-area" className="k-d-grid k-grid-cols-7">
+    <div id="test-area" className="k-d-grid">
+      <span></span>
       <span>Default</span>
 
       {customEvents.map(({ label }) => (
@@ -28,21 +30,18 @@ export default () => (
         </>
       ))}
 
-      <div></div>
+      <span>Mark</span>
+      <div className="k-scheduler-mark" />
       {customEvents.map(({ color }) => (
         <>
           <div
-            style={
-              {
-                background: color,
-                width: "25px",
-                height: "25px",
-              } as React.CSSProperties
-            }
+            className="k-scheduler-mark"
+            style={{ background: color }}
           />
         </>
       ))}
 
+      <span>Event</span>
       <SchedulerEvent style={{ position: "relative", height: "71px" }} title="Event Title" time="10:00 AM – 10:30 AM" />
       {customEvents.map(({ color }) => (
         <>
@@ -60,6 +59,7 @@ export default () => (
         </>
       ))}
 
+      <span>Event Hovered</span>
       <SchedulerEvent hover style={{ position: "relative", height: "71px" }} title="Event Title" time="10:00 AM – 10:30 AM" />
       {customEvents.map(({ color }) => (
         <>
@@ -78,6 +78,7 @@ export default () => (
         </>
       ))}
 
+      <span>Event Selected</span>
       <SchedulerEvent selected style={{ position: "relative", height: "71px" }} title="Event Title" time="10:00 AM – 10:30 AM" />
       {customEvents.map(({ color }) => (
         <>
@@ -93,6 +94,26 @@ export default () => (
             title="Selected"
             time="10:00 AM – 10:30 AM"
           />
+        </>
+      ))}
+
+      <span>Marquee</span>
+      <div className="k-marquee k-scheduler-marquee k-first k-last" style={{ position: "relative", height: "71px" }}>
+        <div className="k-marquee-color"></div>
+        <div className="k-marquee-text">
+          <div className="k-label-top">7:00 AM</div>
+          <div className="k-label-bottom">10:30 AM</div>
+        </div>
+      </div>
+      {customEvents.map(({ color }) => (
+        <>
+          <div className="k-marquee k-scheduler-marquee k-first k-last" style={{ position: "relative", height: "71px", "--kendo-marquee-color": color } as React.CSSProperties}>
+            <div className="k-marquee-color"></div>
+            <div className="k-marquee-text">
+              <div className="k-label-top">7:00 AM</div>
+              <div className="k-label-bottom">10:30 AM</div>
+            </div>
+          </div>
         </>
       ))}
     </div>
