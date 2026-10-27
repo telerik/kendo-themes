@@ -1,4 +1,5 @@
 @use "@progress/kendo-theme-core/scss/components/calendar/_layout.scss" as *;
+@use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 
 
@@ -46,6 +47,10 @@
         &:not(.k-calendar-infinite).k-calendar-md {
             .k-calendar-view .k-calendar-table {
                 width: var( --INTERNAL--kendo-calendar-view-width );
+            }
+
+            .k-calendar-view {
+                padding-inline: k-spacing(4);
             }
 
             .k-calendar-footer {
