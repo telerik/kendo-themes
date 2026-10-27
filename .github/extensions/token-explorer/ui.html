@@ -645,9 +645,9 @@ let tabs;
 // Polls the build status; when new token data is ready it re-renders in place (hot reload)
 function liveData(empty,version){
  const b=$("rf"),note=t=>{if(empty)sc.replaceChildren(el("p","empty",t))};
- const show=s=>{const run=s.status==="running",bad=s.status==="failed";b.classList.toggle("spin",run);b.classList.toggle("bad",bad);b.disabled=run;b.title=bad?"Couldn’t refresh the token data:\n"+s.log:"Refresh data";
+ const show=s=>{const run=s.status==="running",bad=s.status==="failed";b.classList.toggle("spin",run);b.classList.toggle("bad",bad);b.disabled=run;b.title=bad?(/Cannot find module|MODULE_NOT_FOUND|requireStack/.test(s.log)?"Dependencies aren’t installed. Ask Copilot to install them first.":"Couldn’t refresh the token data:\n"+s.log):"Refresh data";
   if(empty&&run)note("Loading token data…");
-  if(empty&&s.status==="failed")note("Couldn’t load the token data. Use the refresh button to try again.\n\n"+s.log);
+  if(empty&&s.status==="failed")note(/Cannot find module|MODULE_NOT_FOUND|requireStack/.test(s.log)?"Dependencies aren’t installed in this workspace yet.\n\nAsk Copilot to install dependencies first, then use the refresh button.":"Couldn’t load the token data. Use the refresh button to try again.\n\n"+s.log);
   if(s.version===version)return;
   version=s.version;
   if(empty){location.reload();return}
