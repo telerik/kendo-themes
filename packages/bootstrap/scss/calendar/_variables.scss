@@ -126,7 +126,7 @@ $kendo-calendar-caption-font-size: null !default;
 $kendo-calendar-caption-line-height: null !default;
 /// The font weight of the caption in the Calendar.
 /// @group calendar
-$kendo-calendar-caption-font-weight: bold !default;
+$kendo-calendar-caption-font-weight: $kendo-font-weight-medium !default;
 
 /// The font size of the week number cells in the Calendar.
 /// @group calendar
