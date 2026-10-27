@@ -44,16 +44,6 @@
         }
     }
 
-    .k-datainsights-composer-popup {
-
-        .k-chip:focus,
-        .k-chip.k-focus {
-            background-color: transparent;
-            color: inherit;
-            outline: none;
-        }
-    }
-
     .k-datainsights-composer-popup-title,
     .k-datainsights-composer-popup-tree > .k-treeview-group > .k-treeview-item > .k-treeview-item-content {
         color: k-color(subtle);
