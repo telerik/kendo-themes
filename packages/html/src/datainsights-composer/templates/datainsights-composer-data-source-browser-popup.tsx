@@ -6,7 +6,7 @@ import { DataInsightsComposerPopup } from '..';
 const TreeviewChipItem = ({ text }: { text: string }) => (
     <TreeviewItem
         content={
-            <Chip role="presentation" tabIndex={-1} text={text} rounded="full" fillMode="outline" themeColor="base" />
+            <Chip role="presentation" tabIndex={-1} text={text} rounded="full" fillMode="outline" />
         }
     />
 );
