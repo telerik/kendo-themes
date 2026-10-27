@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { readFileSync, existsSync, readdirSync, watch } from "node:fs";
+import { readFileSync, existsSync, readdirSync, mkdirSync, watch } from "node:fs";
 import { join, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawn } from "node:child_process";
@@ -150,73 +150,87 @@ const send = (res, code, body, type = "application/json") => {
     res.end(typeof body === "string" ? body : JSON.stringify(body));
 };
 
-// State of the `npm run docs` job started from the UI
-const ANSI = new RegExp(`${String.fromCharCode(27)}\\[[0-9;]*[A-Za-z]`, "g");
-const docs = { status: "idle", startedAt: 0, endedAt: 0, tail: "", code: null };
+// Token data is built per package by the same scripts `npm run docs` uses, but run directly:
+// no Nx cache and no full `npm run sass`, so a theme rebuilds in ~1s and everything in ~5s
+const job = { status: "idle", version: 0, log: "" };
+let data = load(REPO_ROOT);
+let running = false;
+const pending = new Set();
 
-function runDocs() {
-    if (docs.status === "running") {
-        return;
-    }
-    Object.assign(docs, { status: "running", startedAt: Date.now(), endedAt: 0, tail: "", code: null });
-    const child = spawn("npm", ["run", "docs"], { cwd: REPO_ROOT, env: process.env, shell: process.platform === "win32" });
-    const onData = (b) => {
-        docs.tail = (docs.tail + b.toString()).slice(-4000);
-    };
-    child.stdout.on("data", onData);
-    child.stderr.on("data", onData);
-    child.on("error", (e) => {
-        Object.assign(docs, { status: "failed", endedAt: Date.now(), tail: docs.tail + String(e.message) });
-    });
-    child.on("close", (code) => {
-        Object.assign(docs, { status: code === 0 ? "done" : "failed", endedAt: Date.now(), code });
+function buildPackage(pkg) {
+    return new Promise((done) => {
+        const cwd = join(REPO_ROOT, "packages", pkg);
+        mkdirSync(join(cwd, "dist", "meta"), { recursive: true });
+        const child = spawn("node ../../scripts/resolve-variables.js && node ../../scripts/sassdoc.js", { cwd, shell: true });
+        let out = "";
+        const keep = (b) => {
+            out = (out + b).slice(-1500);
+        };
+        child.stdout.on("data", keep);
+        child.stderr.on("data", keep);
+        child.on("error", (e) => done(`${pkg}: ${e.message}`));
+        child.on("close", (code) => done(code === 0 ? "" : `${pkg}: ${out.trim().split("\n").slice(-6).join("\n")}`));
     });
 }
 
-async function startServer() {
-    let data = load(REPO_ROOT);
-    let loadedAt = Date.now();
-    // Re-read while metadata is missing or after a docs run finished
-    const fresh = () => {
-        if (data.missing.length || docs.endedAt > loadedAt) {
-            data = load(REPO_ROOT);
-            loadedAt = Date.now();
+// Themes inherit core variables, so a core change (or missing core data) rebuilds every theme
+async function build(pkgs) {
+    pkgs.forEach((p) => pending.add(p));
+    if (running) {
+        return;
+    }
+    running = true;
+    job.status = "running";
+    const errors = [];
+    while (pending.size) {
+        const set = new Set(pending);
+        pending.clear();
+        if (set.has("core") || !existsSync(join(REPO_ROOT, "packages", "core", "dist", "meta", "sassdoc-raw-data.json"))) {
+            errors.push(await buildPackage("core"));
+            THEMES.forEach((t) => set.add(t));
         }
-        return data;
-    };
-    // Auto-sync: rebuild the data a moment after SCSS/swatch edits, only while the page is open and visible (it pings /api/docs)
-    let lastSeen = 0;
+        errors.push(...await Promise.all(THEMES.filter((t) => set.has(t)).map(buildPackage)));
+    }
+    data = load(REPO_ROOT);
+    running = false;
+    const failed = errors.filter(Boolean);
+    Object.assign(job, { status: failed.length ? "failed" : "done", log: failed.join("\n\n"), version: job.version + 1 });
+}
+
+async function startServer() {
+    if (data.missing.length) {
+        build(data.missing);
+    }
+    // Hot reload: rebuild the edited package shortly after SCSS or swatch changes
     let timer;
+    const changed = new Set();
     const watcher = watch(join(REPO_ROOT, "packages"), { recursive: true }, (_, file) => {
-        if (!file || !/(^|[\\/])(scss|swatches)[\\/]/.test(file) || /node_modules|[\\/]dist[\\/]/.test(file)) {return;}
-        clearTimeout(timer);
-        timer = setTimeout(function sync() {
-            if (Date.now() - lastSeen > 15000) {return;}
-            if (docs.status === "running") {
-                timer = setTimeout(sync, 2000);
-                return;
-            }
-            runDocs();
-        }, 2000);
+        const [pkg, dir, sub] = String(file || "").split(/[\\/]/);
+        if ((pkg === "core" || THEMES.includes(pkg)) && (dir === "scss" || (dir === "lib" && sub === "swatches"))) {
+            changed.add(pkg);
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                build([...changed]);
+                changed.clear();
+            }, 300);
+        }
     });
     watcher.on("error", () => {});
     const server = createServer((req, res) => {
         const u = new URL(req.url, "http://x");
         try {
-            if (u.pathname === "/api/data") {const d = fresh(); send(res, 200, { themes: d.themes, missing: d.missing }); return;}
-            if (u.pathname === "/api/docs") {
-                lastSeen = Date.now();
+            if (u.pathname === "/api/data") {send(res, 200, { themes: data.themes, missing: data.missing, version: job.version }); return;}
+            if (u.pathname === "/api/status") {
                 if (req.method === "POST") {
-                    runDocs();
+                    build(["core"]);
                 }
-                const lines = docs.tail.split("\n").map((l) => l.replace(ANSI, "").trim()).filter(Boolean);
-                send(res, 200, { ...docs, tail: undefined, last: lines.slice(-1)[0] || "", log: lines.slice(-12).join("\n"), missing: load(REPO_ROOT).missing, now: Date.now() });
+                send(res, 200, job);
                 return;
             }
-            if (u.pathname === "/api/components") {send(res, 200, fresh().components[u.searchParams.get("theme")] || []); return;}
+            if (u.pathname === "/api/components") {send(res, 200, data.components[u.searchParams.get("theme")] || []); return;}
             if (u.pathname === "/api/translucency") {send(res, 200, scanTranslucency(u.searchParams.get("theme") || "meridian")); return;}
             if (u.pathname === "/api/compare") {
-                const d = fresh();
+                const d = data;
                 const name = u.searchParams.get("name") || "";
                 const rows = Object.keys(d.index).map((theme) => ({ theme, ...(d.index[theme].get(name) || {}) }));
                 const first = rows.find((r) => r.group) || {};
@@ -243,7 +257,7 @@ await joinSession({
         createCanvas({
             id: "token-explorer",
             displayName: "Token explorer",
-            description: "Browse Kendo design tokens (color, spacing, typography, elevation, border-radius, motion) with live visual swatches per theme. Requires `npm run docs`.",
+            description: "Browse Kendo design tokens (color, spacing, typography, elevation, border-radius, motion) with live visual swatches per theme.",
             inputSchema: {
                 type: "object",
                 properties: {

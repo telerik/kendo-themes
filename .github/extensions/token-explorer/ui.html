@@ -139,9 +139,10 @@ span.cpv,code.cpv,div.cpv{display:inline-flex;align-items:center;gap:6px;cursor:
 .cv .d{color:var(--mut);font-size:12px;line-height:1.45}
 .cv.h{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);background:var(--hov);padding:6px 16px}
 .cv.h:hover{background:var(--hov)}
-.empty{color:var(--mut);padding:60px;text-align:center}
-.rf{display:grid;place-items:center;width:34px;height:34px;color:var(--fg);background:var(--card);border:1px solid var(--bd);border-radius:8px;cursor:pointer;margin-left:auto;flex:none}
-.rf:hover{background:var(--hov)}.rf:disabled{cursor:default}.rf svg{width:16px;height:16px}.rf.spin svg{animation:rfs .8s linear infinite}
+.tabs[hidden]{display:none}
+.empty{color:var(--mut);padding:60px;text-align:center;white-space:pre-line}
+.rf{display:grid;place-items:center;width:34px;height:34px;color:var(--fg);background:var(--card);border:1px solid var(--bd);border-radius:8px;cursor:pointer;flex:none}
+.rf:hover{background:var(--hov)}.rf.bad{color:#f85149;border-color:#f85149}.rf:disabled{cursor:default}.rf svg{width:16px;height:16px}.rf.spin svg{animation:rfs .8s linear infinite}
 @keyframes rfs{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.rf.spin svg{animation-duration:2s}}
 .mo-bar{flex-wrap:wrap}
 .eg{grid-template-columns:repeat(auto-fill,minmax(min(230px,100%),1fr))}
@@ -641,18 +642,25 @@ function render(){
  scrollTo(0,y);document.querySelector("#tabs button.on")?.scrollIntoView({block:"nearest",inline:"nearest"});
 }
 let tabs;
-function refreshBtn(){
- const b=$("rf");let was=false;
- const poll=()=>fetch("/api/docs").then(r=>r.json()).then(s=>{const run=s.status==="running";b.classList.toggle("spin",run);b.disabled=run;
-  if(run){was=true}else if(was){location.reload()}});
- b.onclick=()=>{was=true;b.classList.add("spin");b.disabled=true;fetch("/api/docs",{method:"POST"})};
- // Poll fast while refreshing, slowly otherwise; hidden pages stop pinging so auto-sync pauses
- const tick=()=>{if(!document.hidden){poll()}setTimeout(tick,was?1000:4000)};
+// Polls the build status; when new token data is ready it re-renders in place (hot reload)
+function liveData(empty,version){
+ const b=$("rf"),note=t=>{if(empty)sc.replaceChildren(el("p","empty",t))};
+ const show=s=>{const run=s.status==="running",bad=s.status==="failed";b.classList.toggle("spin",run);b.classList.toggle("bad",bad);b.disabled=run;b.title=bad?"Couldn’t refresh the token data:\n"+s.log:"Refresh data";
+  if(empty&&run)note("Loading token data…");
+  if(empty&&s.status==="failed")note("Couldn’t load the token data. Use the refresh button to try again.\n\n"+s.log);
+  if(s.version===version)return;
+  version=s.version;
+  if(empty){location.reload();return}
+  fetch("/api/data").then(r=>r.json()).then(d=>{DATA=d;COMP={};TL={};render()})};
+ const poll=()=>fetch("/api/status").then(r=>r.json()).then(show).catch(()=>{});
+ b.onclick=()=>{b.classList.add("spin");b.disabled=true;fetch("/api/status",{method:"POST"}).then(r=>r.json()).then(show)};
+ const tick=()=>{if(!document.hidden)poll();setTimeout(tick,1000)};
  tick()
 }
 fetch("/api/data").then(r=>r.json()).then(d=>{
  DATA=d;const th=$("theme");
- refreshBtn();
+ if(!Object.keys(d.themes).length){["dd","tabs","q"].forEach(i=>{$(i).hidden=true});liveData(true,d.version);return}
+ liveData(false,d.version);
  for(const t of Object.keys(d.themes)){const o=el("option",0,t[0].toUpperCase()+t.slice(1));o.value=t;th.appendChild(o)}
  if(!d.themes[st.theme])st.theme=Object.keys(d.themes)[0];th.value=st.theme;
  const ddb=$("ddb"),ddm=$("ddm");const cap=t=>t[0].toUpperCase()+t.slice(1);
