@@ -38,6 +38,30 @@ The Prompt is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 | Suggestions | Pre-defined prompt suggestions are displayed above the input. |
 | Toolbar | An optional toolbar provides prompt-related actions. |
 
+### PromptSendButton
+
+#### Component Style Options
+
+| Option | Values | Default |
+| --- | --- | --- |
+| `size` | `xsmall`, `small`, `medium`, `large` | — |
+| `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
+| `fillMode` | `solid`, `flat`, `outline`, `clear`, `link` | — |
+| `themeColor` | `base`, `primary`, `secondary`, `tertiary`, `success`, `warning`, `error`, `info`, `inverse` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `active` | `k-active` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+| `generating` | `k-generating` |
+
+These CSS classes are applied to the `k-prompt-send` element.
+
 ### Testing
 
 The Prompt has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
