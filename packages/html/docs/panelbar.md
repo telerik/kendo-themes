@@ -47,6 +47,17 @@ The Panelbar is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 ### PanelBarItem
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+| `disabled` | `k-disabled` |
+
+These CSS classes are applied to the `k-panelbar-item` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |
