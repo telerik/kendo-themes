@@ -12,6 +12,7 @@ import {
 import { Button } from '../button';
 import { ChipList } from '../chip';
 import { Popup } from '../popup';
+import { SrAnnouncer } from '../sr-announcer';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListContent, ListCustomValue, ListItem } from '../list';
 
@@ -61,6 +62,7 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     adaptiveCustomValue?: boolean;
     id?: string;
     activeDescendant?: string;
+    message?: string;
 };
 
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
@@ -88,6 +90,7 @@ const defaultOptions = {
  * @aria {role="option"} Each list item is an option.
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {aria-live="polite"} Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it.
  * @ux {Tags} Selected values appear as removable tag chips inside the input.
  * @ux {Popup} Clicking the input or trigger opens a filterable dropdown list.
  * @ux {Filtering} The list narrows as the user types in the input.
@@ -130,6 +133,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
         id,
         activeDescendant,
         'aria-label': ariaLabel,
+        message,
         ...other
     } = props;
 
@@ -212,6 +216,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                     />
                 )}
             </Input>
+            <SrAnnouncer message={message} />
             {opened && popup &&
                 <Popup
                     className="k-list-container k-multiselect-popup"
@@ -272,6 +277,7 @@ MultiSelect.folderName = MULTISELECT_FOLDER_NAME;
  *
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html WAI-ARIA Authoring Practices: Select-Only Combobox Example
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/listbox/listbox-scrollable.html WAI-ARIA Authoring Practices: Scrollable Listbox Example
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus
  */
 
 export default MultiSelect;

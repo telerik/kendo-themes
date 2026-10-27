@@ -8,6 +8,7 @@ export const DropdownListFiltering = (props) => (
         id={nextId('ddl')}
         aria-label="Filter options"
         opened={true}
+        message="3 found items"
         popup={
             <>
                 <div className="k-list-filter">

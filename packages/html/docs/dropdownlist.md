@@ -48,6 +48,7 @@ These CSS classes are applied to the `k-dropdownlist` element.
 | `role="option"` | Each list item is an option. |
 | `id` | Referenced by aria-controls and aria-activedescendant on the input. |
 | `aria-activedescendant` | Points to focused item when popup is open |
+| `aria-live="polite"` | Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it. |
 
 #### Keyboard Navigation
 
@@ -91,6 +92,7 @@ The Dropdownlist has been tested with the following screen readers and browsers 
 ### Resources
 
 - [WAI-ARIA Authoring Practices: Select-Only Combobox Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html)
+- [WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
 
 ### Rendered HTML Examples
 

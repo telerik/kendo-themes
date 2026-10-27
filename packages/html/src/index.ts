@@ -12,6 +12,7 @@ export * from './input-group/index';
 export * from './popup/index';
 export * from './list/index';
 export * from './nodata/index';
+export * from './sr-announcer/index';
 export * from './suggestion/index';
 
 // Indicators

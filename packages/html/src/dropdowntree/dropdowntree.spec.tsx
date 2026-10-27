@@ -9,6 +9,7 @@ import {
     InputValidationIcon
 } from '../input';
 import { Popup } from '../popup';
+import { SrAnnouncer } from '../sr-announcer';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../treeview';
 
@@ -57,6 +58,7 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     dir?: 'ltr' | 'rtl';
     id?: string;
     treeviewId?: string;
+    message?: string;
 };
 
 export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -77,6 +79,7 @@ const defaultOptions = {
  * @aria {tabindex="-1"} The button must not be focusable.
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-controls} Points to treeview when popup is open
+ * @aria {aria-live="polite"} Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it.
  * @ux {Tree popup} A hierarchical tree opens in a popup when the control is clicked.
  * @ux {Expand / Collapse} Tree nodes can be expanded to reveal children.
  * @ux {Single selection} Clicking a leaf node selects it and closes the popup.
@@ -117,6 +120,7 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
         id,
         treeviewId,
         'aria-label': ariaLabel,
+        message,
         ...other
     } = props;
 
@@ -180,6 +184,7 @@ export const DropdownTree: KendoComponent<KendoDropdownTreeProps & KendoDropdown
                     tabIndex={-1}
                 />
             </Picker>
+            <SrAnnouncer message={message} />
             {opened && popup &&
                 <Popup
                     className="k-list-container k-dropdowntree-popup"
@@ -248,6 +253,7 @@ DropdownTree.folderName = DROPDOWNTREE_FOLDER_NAME;
  *
  * @see https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/ WAI-ARIA Authoring Practices: TreeView Example
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html WAI-ARIA Authoring Practices: Select-Only Combobox Example
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus
  */
 
 export default DropdownTree;

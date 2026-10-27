@@ -11,6 +11,7 @@ import {
 } from '../input';
 import { Button } from '../button';
 import { Popup } from '../popup';
+import { SrAnnouncer } from '../sr-announcer';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListContent, ListCustomValue, ListItem } from '../list';
 
@@ -58,6 +59,7 @@ export type KendoComboboxProps = KendoComboboxOptions & {
     id?: string;
     autocomplete?: 'list' | 'both' | 'inline' | 'none';
     activeDescendant?: string;
+    message?: string;
 };
 
 export type KendoComboboxState = { [K in (typeof states)[number]]?: boolean };
@@ -83,10 +85,10 @@ const defaultOptions = {
  * @aria {aria-label|aria-labelledby} Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby.
  * @aria {role="option"} Each list item is an option.
  * @aria {aria-selected} Indicates the selected state.
- * @aria {aria-live="polite"} Announces no-data state to screen readers.
  * @aria {id} Referenced by aria-controls and aria-activedescendant on the input.
  * @aria {aria-autocomplete} Indicates autocomplete behavior to assistive technologies
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {aria-live="polite"} Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it.
  * @ux {Editable input} The user can type to filter options or enter a custom value.
  * @ux {Popup} Opens a dropdown list when the toggle button is clicked or when the user types.
  * @ux {Selection} Choosing an option fills the input and closes the popup.
@@ -127,6 +129,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
         autocomplete,
         activeDescendant,
         'aria-label': ariaLabel,
+        message,
         ...other
     } = props;
 
@@ -200,6 +203,7 @@ export const Combobox: KendoComponent<KendoComboboxProps & KendoComboboxState & 
                     disabled={disabled}
                 />
             </Input>
+            <SrAnnouncer message={message} />
             {opened && popup &&
                 <Popup
                     className="k-list-container k-combobox-popup"
@@ -255,6 +259,7 @@ Combobox.folderName = COMBOBOX_FOLDER_NAME;
  *
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html WAI-ARIA Authoring Practices: Editable Combobox With Both List and Inline Autocomplete Example
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html WAI-ARIA Authoring Practices: Editable Combobox With List Autocomplete Example
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus
  */
 
 export default Combobox;

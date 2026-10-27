@@ -11,6 +11,7 @@ import {
 } from '../input';
 import { Button } from '../button';
 import { Popup } from '../popup';
+import { SrAnnouncer } from '../sr-announcer';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../table';
 
@@ -64,6 +65,7 @@ export type KendoDropdownGridProps = KendoDropdownGridOptions & {
     id?: string;
     ariaAutocomplete?: 'list' | 'both' | 'inline' | 'none';
     activeDescendant?: string;
+    message?: string;
 };
 
 export type KendoDropdownGridState = { [K in (typeof states)[number]]?: boolean };
@@ -81,6 +83,7 @@ export type KendoDropdownGridState = { [K in (typeof states)[number]]?: boolean 
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-autocomplete} Indicates autocomplete type
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {aria-live="polite"} Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it.
  * @ux {Grid popup} A data grid opens in a popup when the control is activated.
  * @ux {Row selection} Clicking a grid row selects it and fills the input field.
  * @ux {Filtering} The input field filters the displayed rows as the user types.
@@ -119,6 +122,7 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
         ariaAutocomplete,
         activeDescendant,
         'aria-label': ariaLabel,
+        message,
         ...other
     } = props;
 
@@ -195,6 +199,7 @@ export const DropdownGrid: KendoComponent<KendoDropdownGridProps & KendoDropdown
                     disabled={disabled}
                 />
             </Input>
+            <SrAnnouncer message={message} />
             {opened && popup &&
                 <Popup className="k-dropdowngrid-popup">
                     {popup}
@@ -293,6 +298,8 @@ DropdownGrid.folderName = DROPDOWNGRID_FOLDER_NAME;
  * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} Closes popup
  * @keyboard {Escape} Clears the value if popup is not visible
  * @keyboard {Tab} Closes the actionsheet and focuses the next focusable element.
+ *
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus
  */
 
 export default DropdownGrid;
