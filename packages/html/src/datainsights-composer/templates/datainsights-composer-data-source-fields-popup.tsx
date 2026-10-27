@@ -10,11 +10,11 @@ export const DataInsightsComposerDataSourceFieldsPopup = (props: any) => (
             sales_order
         </DataInsightsComposerPopupListGroupHeader>
         <ChipList className="k-datainsights-composer-popup-field-list" role="none">
-            <Chip role="presentation" tabIndex={0} rounded="full" fillMode="outline" themeColor="base" text="SalesOrderID" />
-            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" themeColor="base" text="OrderDate" />
-            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" themeColor="base" text="ShipDate" />
-            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" themeColor="base" text="SubTotal" />
-            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" themeColor="base" text="TaxAmt" />
+            <Chip role="presentation" tabIndex={0} rounded="full" fillMode="outline" text="SalesOrderID" />
+            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" text="OrderDate" />
+            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" text="ShipDate" />
+            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" text="SubTotal" />
+            <Chip role="presentation" tabIndex={-1} rounded="full" fillMode="outline" text="TaxAmt" />
         </ChipList>
     </DataInsightsComposerPopup>
 );
