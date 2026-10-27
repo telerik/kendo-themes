@@ -28,7 +28,7 @@ export const CalendarFooter = (
 
     return (
         <div {...other} className={classNames(props.className, CALENDARFOOTER_CLASSNAME)}>
-            <Button size={size} fillMode="flat" themeColor="secondary" className="k-calendar-nav-today">{calendarFooterText}</Button>
+            <Button size={size} fillMode="flat" className="k-calendar-nav-today">{calendarFooterText}</Button>
         </div>
     );
 };
