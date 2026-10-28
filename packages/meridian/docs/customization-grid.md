@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-edit-cell-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-grid-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid edit cell.</div></div>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-edit-cell-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
+    <td><code>$kendo-grid-edit-cell-padding-x</code></td>
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
@@ -349,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-sm-edit-cell-padding-x</td>
-    <td>String</td>
-    <td><code>$kendo-grid-sm-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(1)} + 1px )</code></td>
+    <td><code>calc(var(--kendo-spacing-1) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sm-edit-cell-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{k-spacing(1)} + 1px )</code></td>
+    <td><code>$kendo-grid-sm-edit-cell-padding-x</code></td>
     <td><code>calc(var(--kendo-spacing-1) + 1px)</code></td>
 </tr>
 <tr>
@@ -501,7 +501,7 @@ The following table lists the available variables for customization.
     <td>$kendo-grid-md-edit-cell-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-edit-cell-padding-x</code></td>
-    <td><code>var(--kendo-spacing-2\.5)</code></td>
+    <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -1618,6 +1618,10 @@ The following table lists the available variables for customization.
         grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-y,
         cell-padding-x: $kendo-grid-sm-cell-padding-x,
         cell-padding-y: $kendo-grid-sm-cell-padding-y,
+        header-font-size: $kendo-grid-sm-header-font-size,
+        header-line-height: $kendo-grid-sm-header-line-height,
+        cell-font-size: $kendo-grid-sm-cell-font-size,
+        cell-line-height: $kendo-grid-sm-cell-line-height,
         filter-cell-padding-x: $kendo-grid-sm-filter-cell-padding-x,
         filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-y,
         edit-cell-padding-x: $kendo-grid-sm-edit-cell-padding-x,
@@ -1635,6 +1639,10 @@ The following table lists the available variables for customization.
         grouping-header-padding-y: $kendo-grid-md-grouping-header-padding-y,
         cell-padding-x: $kendo-grid-md-cell-padding-x,
         cell-padding-y: $kendo-grid-md-cell-padding-y,
+        header-font-size: $kendo-grid-md-header-font-size,
+        header-line-height: $kendo-grid-md-header-line-height,
+        cell-font-size: $kendo-grid-md-cell-font-size,
+        cell-line-height: $kendo-grid-md-cell-line-height,
         filter-cell-padding-x: $kendo-grid-md-filter-cell-padding-x,
         filter-cell-padding-y: $kendo-grid-md-filter-cell-padding-y,
         edit-cell-padding-x: $kendo-grid-md-edit-cell-padding-x,
@@ -1646,7 +1654,7 @@ The following table lists the available variables for customization.
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 )</code></td>
-    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-2)","grouping-header-padding-x":"var(--kendo-spacing-2)","grouping-header-padding-y":"var(--kendo-spacing-2)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2)","filter-cell-padding-x":"var(--kendo-spacing-2)","filter-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-x":"var(--kendo-spacing-2)","edit-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li><li>md: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1)","edit-cell-padding-x":"var(--kendo-spacing-2\\.5)","edit-cell-padding-y":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","selection-aggregates-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li></ul></td>
+    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-2)","grouping-header-padding-x":"var(--kendo-spacing-2)","grouping-header-padding-y":"var(--kendo-spacing-2)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2)","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-spacing-2)","filter-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-x":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li><li>md: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1)","edit-cell-padding-x":"var(--kendo-spacing-1)","edit-cell-padding-y":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","selection-aggregates-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Grid.</div></div>
