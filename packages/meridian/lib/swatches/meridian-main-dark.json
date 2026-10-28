@@ -184,7 +184,7 @@
                 "secondary-emphasis": {
                     "name": "Secondary Emphasis",
                     "type": "color",
-                    "value": "#{\"oklch(from var(--kendo-color-secondary) calc(l - 0.2673) calc(c - 0.1249) calc(h + 2.34))\"}"
+                    "value": "#{\"oklch(from var(--kendo-color-secondary) calc(l + 0.2673) calc(c - 0.1249) calc(h + 2.34))\"}"
                 },
                 "secondary-on-subtle": {
                     "name": "Secondary On Subtle",
