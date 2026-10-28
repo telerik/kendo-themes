@@ -1,3 +1,9 @@
+## 14.7.1-dev.4 (2026-10-28)
+
+### 🩹 Fixes
+
+- **message-box:** improve secondary emphasis contrast ([27fefe55e3](https://github.com/telerik/kendo-themes/commit/27fefe55e3))
+
 ## 14.7.1-dev.3 (2026-10-26)
 
 ### 🩹 Fixes
