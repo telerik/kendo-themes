@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid inline editing — Normal vs Compact — All themes</title>
+<!--
+  Playground: Grid inline editing (edit row, validation, dirty cell)
+  rendered in normal and compact (size="small") mode for every theme.
+
+  Usage:
+    npm run sass          # builds packages/*/dist/all.css
+    npm start             # or any static server started from the repo root
+    open /playground-grid-inline-editing.html
+-->
+<style>
+  :root {
+    --pg-bg: #f4f5f7;
+    --pg-fg: #1f2933;
+    --pg-muted: #667085;
+    --pg-border: #d0d5dd;
+    --pg-card: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px;
+    font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--pg-fg);
+    background: var(--pg-bg);
+  }
+  h1 { margin: 0 0 4px; font-size: 22px; }
+  .intro { margin: 0 0 16px; color: var(--pg-muted); }
+  .controls {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    align-items: center;
+    padding: 10px 16px;
+    margin: 0 -8px 24px;
+    background: var(--pg-card);
+    border: 1px solid var(--pg-border);
+    border-radius: 8px;
+  }
+  .controls label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+  .controls .group { display: inline-flex; gap: 12px; align-items: center; }
+  .controls .group > strong { font-weight: 600; }
+
+  section.theme { margin-bottom: 40px; }
+  section.theme > h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .modes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+  body.stacked .modes { grid-template-columns: minmax(0, 1fr); }
+  figure.mode.adaptive { grid-column: 1 / -1; }
+  figure.mode.adaptive iframe { max-width: 480px; }
+  figure.mode { margin: 0; }
+  figure.mode > figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 26px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--pg-muted);
+  }
+  .controls button, figcaption button {
+    font: inherit;
+    font-size: 12px;
+    padding: 3px 10px;
+    color: var(--pg-fg);
+    background: var(--pg-card);
+    border: 1px solid var(--pg-border);
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .controls button:hover, figcaption button:hover { background: var(--pg-bg); }
+  iframe {
+    display: block;
+    width: 100%;
+    height: 280px;
+    border: 1px solid var(--pg-border);
+    border-radius: 8px;
+    background: #fff;
+  }
+  @media (max-width: 1100px) {
+    .modes { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>
+</head>
+<body class="stacked">
+
+<h1>Grid inline editing</h1>
+<p class="intro">
+  Edit row, validation tooltip and dirty cell — <strong>normal</strong> and <strong>compact</strong> (<code>k-grid-sm</code> with small inputs and buttons) with <strong>row editing</strong> and <strong>in-cell editing</strong> (click a cell to edit it; click outside to close) in every theme. Adaptive (<code>k-grid-stack</code> layout) grids are hidden until enabled in the configurator.
+</p>
+
+<div class="controls">
+  <span class="group" id="themes">
+    <strong>Theme</strong>
+  </span>  <span class="group">
+    <strong>Layout</strong>
+    <label><input type="radio" name="layout" value="side"> Side by side</label>
+    <label><input type="radio" name="layout" value="stacked" checked> Stacked</label>
+  </span>
+  <span class="group">
+    <strong>Direction</strong>
+    <label><input type="radio" name="dir" value="ltr" checked> LTR</label>
+    <label><input type="radio" name="dir" value="rtl"> RTL</label>
+  </span>
+  <span class="group">
+    <strong>Edit cell padding-inline</strong>
+    <label><input type="radio" name="pad" value="default"> Default</label>
+    <label><input type="radio" name="pad" value="inputs" checked> = padding-block for inputs, pickers, dropdowns</label>
+  </span>
+  <span class="group">
+    <strong>Adaptive</strong>
+    <label><input type="checkbox" id="show-adaptive"> Show adaptive grids</label>
+  </span>
+  <span class="group">
+    <strong>Editing</strong>
+    <button type="button" id="edit-all">Enter editing</button>
+    <button type="button" id="exit-all">Exit editing</button>
+    <button type="button" id="reset-all">Reset</button>
+  </span>
+</div>
+
+<main id="root"></main>
+
+<template id="tpl-normal"><div class="k-grid-no-scrollbar k-grid"><div class="k-grid-toolbar k-toolbar" role="toolbar" aria-label="Toolbar"><button class="k-toolbar-button  k-button"><span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z" /></svg></span><span class="k-button-text">Add new record</span></button></div><div class="k-grid-aria-root" role="grid" id="k-grid-1" aria-colcount="4" aria-rowcount="8"><div class="k-grid-header"><div class="k-grid-header-wrap"><table class="k-grid-header-table k-table"><colgroup><col style="width:56px"/><col/><col/><col style="width:96px"/><col style="width:220px"/></colgroup><thead class="k-table-thead"><tr class="k-table-row"><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">ID</span></span></span></th><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">Product name</span></span></span></th><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">Price</span></span></span></th><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">Available</span></span></span></th><th class="k-header k-table-th"> </th></tr></thead></table></div></div><div class="k-grid-container"><div class="k-grid-content"><table style="height:auto" class="k-grid-table k-table"><colgroup><col style="width:56px"/><col/><col/><col style="width:96px"/><col style="width:220px"/></colgroup><tbody class="k-table-tbody"><tr class="k-master-row k-grid-edit-row k-grid-add-row k-table-row"><td class="k-table-td"> </td><td class="k-table-td"><span class="k-textbox k-input"><input type="text" class="k-input-inner" placeholder="Product name" autoComplete="off" value=""/></span></td><td class="k-table-td"><span class="k-numerictextbox k-input"><input role="spinbutton" type="text" class="k-input-inner" placeholder="" autoComplete="off" value="0"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span><span class="k-spin-button k-input-spinner"><button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z" /></svg></span></button><button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></span></td><td class="k-table-td"><span class="k-checkbox-wrap"><input id="add-md" type="checkbox" class="k-checkbox"/></span></td><td class="k-command-cell k-table-td"><button class="k-button k-button-primary"><span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z" /></svg></span><span class="k-button-text">Add</span></button><button class="k-button"><span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2" /></svg></span><span class="k-button-text">Cancel</span></button></td></tr><tr class="k-master-row k-grid-edit-row k-table-row k-table-alt-row"><td class="k-table-td">2</td><td class="k-table-td"><span class="k-textbox k-input"><input type="text" class="k-input-inner" placeholder="" autoComplete="off" value="Chang"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span></span></td><td class="k-table-td"><span class="k-numerictextbox k-input k-invalid"><input role="spinbutton" aria-invalid="true" type="text" class="k-input-inner" placeholder="" autoComplete="off" value=""/><span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z" /></svg></span><span class="k-spin-button k-input-spinner"><button class="k-spinner-increase k-button k-icon-button" aria-label="Increase value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z" /></svg></span></button><button class="k-spinner-decrease k-button k-icon-button" aria-label="Decrease value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></span><div class="k-validator-tooltip k-invalid-msg k-tooltip k-tooltip-error" role="tooltip" id="k-tooltip-1"><span class="k-tooltip-icon k-icon k-svg-icon k-svg-i-exclamation-circle" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M224 128h64v160h-64zm0 256h64v-64h-64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224m-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192" /></svg></span><div class="k-tooltip-content">Price is required</div><div class="k-callout k-callout-n"></div></div></td><td class="k-table-td"><span class="k-checkbox-wrap"><input id="edit-md" type="checkbox" class="k-checkbox k-checked" checked=""/></span></td><td class="k-command-cell k-table-td"><button class="k-button k-button-primary"><span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z" /></svg></span><span class="k-button-text">Update</span></button><button class="k-button"><span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2" /></svg></span><span class="k-button-text">Cancel</span></button></td></tr><tr class="k-master-row k-table-row"><td class="k-table-td">3</td><td class="k-dirty-cell k-table-td"><span class="k-dirty"></span>Aniseed Syrup</td><td class="k-table-td">10</td><td class="k-table-td">true</td><td class="k-command-cell k-table-td"><button class="k-button"><span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z" /></svg></span><span class="k-button-text">Edit</span></button><button class="k-button"><span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span><span class="k-button-text">Delete</span></button></td></tr><tr class="k-master-row k-table-row k-table-alt-row"><td class="k-table-td">4</td><td class="k-table-td">Chef Anton&#x27;s Cajun Seasoning</td><td class="k-table-td">22</td><td class="k-table-td">false</td><td class="k-command-cell k-table-td"><button class="k-button"><span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z" /></svg></span><span class="k-button-text">Edit</span></button><button class="k-button"><span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span><span class="k-button-text">Delete</span></button></td></tr></tbody></table></div></div></div></div></template>
+<template id="tpl-compact"><div class="k-grid-no-scrollbar k-grid k-grid-sm"><div class="k-grid-toolbar k-toolbar k-toolbar-sm" role="toolbar" aria-label="Toolbar"><button class="k-toolbar-button  k-button k-button-sm"><span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z" /></svg></span><span class="k-button-text">Add new record</span></button></div><div class="k-grid-aria-root" role="grid" id="k-grid-2" aria-colcount="4" aria-rowcount="8"><div class="k-grid-header"><div class="k-grid-header-wrap"><table class="k-grid-header-table k-table k-table-sm"><colgroup><col style="width:56px"/><col/><col/><col style="width:96px"/><col style="width:220px"/></colgroup><thead class="k-table-thead"><tr class="k-table-row"><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">ID</span></span></span></th><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">Product name</span></span></span></th><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">Price</span></span></span></th><th class="k-header k-table-th"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">Available</span></span></span></th><th class="k-header k-table-th"> </th></tr></thead></table></div></div><div class="k-grid-container"><div class="k-grid-content"><table style="height:auto" class="k-grid-table k-table k-table-sm"><colgroup><col style="width:56px"/><col/><col/><col style="width:96px"/><col style="width:220px"/></colgroup><tbody class="k-table-tbody"><tr class="k-master-row k-grid-edit-row k-grid-add-row k-table-row"><td class="k-table-td"> </td><td class="k-table-td"><span class="k-textbox k-input k-input-sm"><input type="text" class="k-input-inner" placeholder="Product name" autoComplete="off" value=""/></span></td><td class="k-table-td"><span class="k-numerictextbox k-input k-input-sm"><input role="spinbutton" type="text" class="k-input-inner" placeholder="" autoComplete="off" value="0"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span><span class="k-spin-button k-input-spinner"><button class="k-spinner-increase k-button k-button-sm k-icon-button" aria-label="Increase value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z" /></svg></span></button><button class="k-spinner-decrease k-button k-button-sm k-icon-button" aria-label="Decrease value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></span></td><td class="k-table-td"><span class="k-checkbox-wrap"><input id="add-small" type="checkbox" class="k-checkbox k-checkbox-sm"/></span></td><td class="k-command-cell k-table-td"><button class="k-button k-button-sm k-button-primary"><span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z" /></svg></span><span class="k-button-text">Add</span></button><button class="k-button k-button-sm"><span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2" /></svg></span><span class="k-button-text">Cancel</span></button></td></tr><tr class="k-master-row k-grid-edit-row k-table-row k-table-alt-row"><td class="k-table-td">2</td><td class="k-table-td"><span class="k-textbox k-input k-input-sm"><input type="text" class="k-input-inner" placeholder="" autoComplete="off" value="Chang"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span></span></td><td class="k-table-td"><span class="k-numerictextbox k-input k-input-sm k-invalid"><input role="spinbutton" aria-invalid="true" type="text" class="k-input-inner" placeholder="" autoComplete="off" value=""/><span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z" /></svg></span><span class="k-spin-button k-input-spinner"><button class="k-spinner-increase k-button k-button-sm k-icon-button" aria-label="Increase value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z" /></svg></span></button><button class="k-spinner-decrease k-button k-button-sm k-icon-button" aria-label="Decrease value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></span><div class="k-validator-tooltip k-invalid-msg k-tooltip k-tooltip-error" role="tooltip" id="k-tooltip-2"><span class="k-tooltip-icon k-icon k-svg-icon k-svg-i-exclamation-circle" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M224 128h64v160h-64zm0 256h64v-64h-64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224m-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192" /></svg></span><div class="k-tooltip-content">Price is required</div><div class="k-callout k-callout-n"></div></div></td><td class="k-table-td"><span class="k-checkbox-wrap"><input id="edit-small" type="checkbox" class="k-checkbox k-checkbox-sm k-checked" checked=""/></span></td><td class="k-command-cell k-table-td"><button class="k-button k-button-sm k-button-primary"><span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z" /></svg></span><span class="k-button-text">Update</span></button><button class="k-button k-button-sm"><span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2" /></svg></span><span class="k-button-text">Cancel</span></button></td></tr><tr class="k-master-row k-table-row"><td class="k-table-td">3</td><td class="k-dirty-cell k-table-td"><span class="k-dirty"></span>Aniseed Syrup</td><td class="k-table-td">10</td><td class="k-table-td">true</td><td class="k-command-cell k-table-td"><button class="k-button k-button-sm"><span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z" /></svg></span><span class="k-button-text">Edit</span></button><button class="k-button k-button-sm"><span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span><span class="k-button-text">Delete</span></button></td></tr><tr class="k-master-row k-table-row k-table-alt-row"><td class="k-table-td">4</td><td class="k-table-td">Chef Anton&#x27;s Cajun Seasoning</td><td class="k-table-td">22</td><td class="k-table-td">false</td><td class="k-command-cell k-table-td"><button class="k-button k-button-sm"><span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z" /></svg></span><span class="k-button-text">Edit</span></button><button class="k-button k-button-sm"><span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span><span class="k-button-text">Delete</span></button></td></tr></tbody></table></div></div></div></div></template>
+
+<template id="tpl-adaptive"><div class="k-grid-stack k-grid"><div class="k-grid-toolbar k-toolbar k-toolbar-lg" role="toolbar" aria-label="Toolbar"><button class="k-toolbar-button  k-button k-button-lg"><span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z" /></svg></span><span class="k-button-text">Add new record</span></button></div><div class="k-grid-aria-root" role="grid"><div class="k-grid-container"><div class="k-grid-content"><table role="none" class="k-grid-table k-table"><colgroup><col/></colgroup><tbody class="k-table-tbody"><tr class="k-master-row k-grid-edit-row k-grid-add-row k-table-row" role="row"><td role="gridcell" class="k-table-td"><div class="k-grid-stack-row"><div class="k-grid-stack-cell k-grid-stack-edit-cell"><div class="k-grid-stack-header">Product name</div><div class="k-grid-stack-content"><span class="k-textbox k-input k-input-lg"><input type="text" class="k-input-inner" placeholder="Product name" autoComplete="off" value=""/></span></div></div><div class="k-grid-stack-cell k-grid-stack-edit-cell"><div class="k-grid-stack-header">Price</div><div class="k-grid-stack-content"><span class="k-numerictextbox k-input k-input-lg"><input role="spinbutton" type="text" class="k-input-inner" placeholder="" autoComplete="off" value="0"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span><span class="k-spin-button k-input-spinner"><button class="k-spinner-increase k-button k-button-lg k-icon-button" aria-label="Increase value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z" /></svg></span></button><button class="k-spinner-decrease k-button k-button-lg k-icon-button" aria-label="Decrease value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></span></div></div><div class="k-grid-stack-cell k-grid-stack-edit-cell"><div class="k-grid-stack-header">Available</div><div class="k-grid-stack-content"><span class="k-checkbox-wrap"><input id="add-adaptive" type="checkbox" class="k-checkbox k-checkbox-lg"/></span></div></div><div class="k-grid-stack-cell k-command-cell"><div class="k-grid-stack-header">Commands</div><div class="k-grid-stack-content"><button class="k-button k-button-lg k-button-primary"><span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z" /></svg></span><span class="k-button-text">Add</span></button><button class="k-button k-button-lg"><span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2" /></svg></span><span class="k-button-text">Cancel</span></button></div></div></div></td></tr><tr class="k-master-row k-grid-edit-row k-table-row k-table-alt-row" role="row"><td role="gridcell" class="k-table-td"><div class="k-grid-stack-row"><div class="k-grid-stack-cell k-grid-stack-edit-cell"><div class="k-grid-stack-header">Product name</div><div class="k-grid-stack-content"><span class="k-textbox k-input k-input-lg"><input type="text" class="k-input-inner" placeholder="" autoComplete="off" value="Chang"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span></span></div></div><div class="k-grid-stack-cell k-grid-stack-edit-cell"><div class="k-grid-stack-header">Price</div><div class="k-grid-stack-content"><span class="k-numerictextbox k-input k-input-lg k-invalid"><input role="spinbutton" aria-invalid="true" type="text" class="k-input-inner" placeholder="" autoComplete="off" value=""/><span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z" /></svg></span><span class="k-spin-button k-input-spinner"><button class="k-spinner-increase k-button k-button-lg k-icon-button" aria-label="Increase value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z" /></svg></span></button><button class="k-spinner-decrease k-button k-button-lg k-icon-button" aria-label="Decrease value"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></span><div class="k-validator-tooltip k-invalid-msg k-tooltip k-tooltip-error" role="tooltip" id="k-tooltip-3"><span class="k-tooltip-icon k-icon k-svg-icon k-svg-i-exclamation-circle" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M224 128h64v160h-64zm0 256h64v-64h-64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224m-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192" /></svg></span><div class="k-tooltip-content">Price is required</div><div class="k-callout k-callout-n"></div></div></div></div><div class="k-grid-stack-cell k-grid-stack-edit-cell"><div class="k-grid-stack-header">Available</div><div class="k-grid-stack-content"><span class="k-checkbox-wrap"><input id="edit-adaptive" type="checkbox" class="k-checkbox k-checkbox-lg k-checked" checked=""/></span></div></div><div class="k-grid-stack-cell k-command-cell"><div class="k-grid-stack-header">Commands</div><div class="k-grid-stack-content"><button class="k-button k-button-lg k-button-primary"><span class="k-button-icon k-icon k-svg-icon k-svg-i-check" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z" /></svg></span><span class="k-button-text">Update</span></button><button class="k-button k-button-lg"><span class="k-button-icon k-icon k-svg-icon k-svg-i-cancel" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32c-50.3 0-96.8 16.6-134.1 44.6-17.2 12.8-32.4 28.1-45.3 45.3C48.6 159.2 32 205.7 32 256c0 123.7 100.3 224 224 224 50.3 0 96.8-16.6 134.1-44.6 17.2-12.8 32.4-28.1 45.3-45.3 28-37.4 44.6-83.8 44.6-134.1 0-123.7-100.3-224-224-224m0 384c-88.2 0-160-71.8-160-160 0-32.6 9.8-62.9 26.6-88.2l221.6 221.6C318.9 406.2 288.6 416 256 416m133.4-71.8L167.8 122.6C193.1 105.8 223.4 96 256 96c88.2 0 160 71.8 160 160 0 32.6-9.8 62.9-26.6 88.2" /></svg></span><span class="k-button-text">Cancel</span></button></div></div></div></td></tr><tr class="k-master-row k-table-row" role="row"><td role="gridcell" class="k-table-td"><div class="k-grid-stack-row"><div class="k-grid-stack-cell k-dirty-cell"><span class="k-dirty"></span><div class="k-grid-stack-header">Product name</div><div class="k-grid-stack-content">Aniseed Syrup</div></div><div class="k-grid-stack-cell"><div class="k-grid-stack-header">Price</div><div class="k-grid-stack-content">10</div></div><div class="k-grid-stack-cell"><div class="k-grid-stack-header">Available</div><div class="k-grid-stack-content">true</div></div><div class="k-grid-stack-cell k-command-cell"><div class="k-grid-stack-header">Commands</div><div class="k-grid-stack-content"><button class="k-button k-button-lg"><span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z" /></svg></span><span class="k-button-text">Edit</span></button><button class="k-button k-button-lg"><span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span><span class="k-button-text">Delete</span></button></div></div></div></td></tr><tr class="k-master-row k-table-row k-table-alt-row" role="row"><td role="gridcell" class="k-table-td"><div class="k-grid-stack-row"><div class="k-grid-stack-cell"><div class="k-grid-stack-header">Product name</div><div class="k-grid-stack-content">Chef Anton&#x27;s Cajun Seasoning</div></div><div class="k-grid-stack-cell"><div class="k-grid-stack-header">Price</div><div class="k-grid-stack-content">22</div></div><div class="k-grid-stack-cell"><div class="k-grid-stack-header">Available</div><div class="k-grid-stack-content">false</div></div><div class="k-grid-stack-cell k-command-cell"><div class="k-grid-stack-header">Commands</div><div class="k-grid-stack-content"><button class="k-button k-button-lg"><span class="k-button-icon k-icon k-svg-icon k-svg-i-pencil" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m334.9 86.6 45.3-45.3c12.4-12.4 32.8-12.4 45.3 0l45.3 45.3c12.4 12.4 12.4 32.8 0 45.3l-45.3 45.3zm-22.6 22.6L32 389.5V480h90.5l280.3-280.3zM99.9 412.1l-22.6-22.6 235-235 22.6 22.6z" /></svg></span><span class="k-button-text">Edit</span></button><button class="k-button k-button-lg"><span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span><span class="k-button-text">Delete</span></button></div></div></div></td></tr></tbody></table></div></div></div><div class="k-grid-pager k-pager k-pager-lg k-pager-responsive" role="application" aria-roledescription="pager" aria-keyshortcuts="Enter ArrowRight ArrowLeft" aria-label="Page 1 of 6"><div class="k-pager-numbers-wrap"><button class="k-pager-nav k-pager-first k-button k-button-lg k-button-flat k-disabled k-icon-button" title="Go to the first page" aria-label="Go to the first page" aria-disabled="true"><span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 384 160 256l192-128zM128 128v256h32V128z" /></svg></span></button><button class="k-pager-nav k-button k-button-lg k-button-flat k-disabled k-icon-button" title="Go to the previous page" aria-label="Go to the previous page" aria-disabled="true"><span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m160 256 192-128v256z" /></svg></span></button><span class="k-pager-input"><span class="k-numerictextbox k-input k-input-lg"><input role="spinbutton" aria-label="Current page" type="text" class="k-input-inner" placeholder="" autoComplete="off" value="1"/></span><span>of 6</span></span><button class="k-pager-nav k-button k-button-lg k-button-flat k-icon-button" title="Go to the next page" aria-label="Go to the next page"><span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 256 160 384V128z" /></svg></span></button><button class="k-pager-nav k-pager-last k-button k-button-lg k-button-flat k-icon-button" title="Go to the last page" aria-label="Go to the last page"><span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m128 128 192 128-192 128zm224 256V128h-32v256z" /></svg></span></button></div></div></div></template>
+
+<template id="frag-normal-dropdown"><span class="k-dropdownlist k-picker" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Category" tabindex="0"><span class="k-input-inner"><span class="k-input-value-text">Beverages</span></span><button class="k-input-button k-button k-icon-button" aria-label="Toggle dropdown" tabindex="-1"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></template>
+<template id="frag-normal-date"><span aria-label="Date" class="k-datepicker k-input"><input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" type="text" class="k-input-inner" placeholder="" autoComplete="off" value="10/27/2026"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span><button class="k-input-button k-button k-icon-button" tabindex="-1" aria-label="Select date"><span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z" /></svg></span></button></span></template>
+<template id="frag-compact-dropdown"><span class="k-dropdownlist k-picker k-picker-sm" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Category" tabindex="0"><span class="k-input-inner"><span class="k-input-value-text">Beverages</span></span><button class="k-input-button k-button k-button-sm k-icon-button" aria-label="Toggle dropdown" tabindex="-1"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></template>
+<template id="frag-compact-date"><span aria-label="Date" class="k-datepicker k-input k-input-sm"><input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" type="text" class="k-input-inner" placeholder="" autoComplete="off" value="10/27/2026"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span><button class="k-input-button k-button k-button-sm k-icon-button" tabindex="-1" aria-label="Select date"><span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z" /></svg></span></button></span></template>
+<template id="frag-adaptive-dropdown"><span class="k-dropdownlist k-picker k-picker-lg" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Category" tabindex="0"><span class="k-input-inner"><span class="k-input-value-text">Beverages</span></span><button class="k-input-button k-button k-button-lg k-icon-button" aria-label="Toggle dropdown" tabindex="-1"><span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z" /></svg></span></button></span></template>
+<template id="frag-adaptive-date"><span aria-label="Date" class="k-datepicker k-input k-input-lg"><input role="combobox" aria-haspopup="grid" aria-expanded="false" aria-label="Select date" type="text" class="k-input-inner" placeholder="" autoComplete="off" value="10/27/2026"/><span class="k-clear-value"><span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z" /></svg></span></span><button class="k-input-button k-button k-button-lg k-icon-button" tabindex="-1" aria-label="Select date"><span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9q-.15-.15 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z" /></svg></span></button></span></template>
+<script>
+  var THEMES = ['default', 'bootstrap', 'material', 'classic', 'fluent', 'meridian'];
+  var MODES = [
+    { id: 'normal', mode: 'normal', edit: 'row', title: 'Normal — row editing' },
+    { id: 'compact', mode: 'compact', edit: 'row', title: 'Compact (size="small") — row editing' },
+    { id: 'normal-incell', mode: 'normal', edit: 'cell', title: 'Normal — in-cell editing' },
+    { id: 'compact-incell', mode: 'compact', edit: 'cell', title: 'Compact (size="small") — in-cell editing' },
+    { id: 'adaptive', mode: 'adaptive', edit: 'row', adaptive: true, title: 'Adaptive (stack layout, size="large") — row editing' }
+  ];
+
+  var params = new URLSearchParams(location.search);
+
+  function cssHref(theme) {
+    return './packages/' + theme + '/dist/all.css?t=' + Date.now();
+  }
+
+  // Frame mode: the same file renders a single grid with a single theme stylesheet,
+  // so themes stay isolated from each other and from the playground chrome.
+  function renderFrame() {
+    var markup = document.getElementById('tpl-' + params.get('mode')).innerHTML;
+    var id = params.get('id');
+    var frags = {
+      dropdown: document.getElementById('frag-' + params.get('mode') + '-dropdown').innerHTML,
+      date: document.getElementById('frag-' + params.get('mode') + '-date').innerHTML
+    };
+
+    document.querySelectorAll('style').forEach(function (el) { el.remove(); });
+    document.documentElement.dir = params.get('dir') || 'ltr';
+    document.documentElement.className = 'k-no-animations';
+    document.body.className = 'k-body';
+    document.body.style.cssText = 'margin:0;padding:16px;background:transparent';
+    document.body.innerHTML = '';
+
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = cssHref(params.get('theme'));
+    link.onload = link.onerror = function () {
+      var base = document.createElement('style');
+      base.textContent = params.get('mode') === 'adaptive' ? '' : '.k-grid { min-width: 1100px; } .k-grid .k-table-td { white-space: nowrap; }';
+      document.head.appendChild(base);
+      document.body.innerHTML = markup;
+
+      // Edit cells with inputs/pickers get horizontal padding equal to their (theme and size specific) vertical padding
+      var probe = document.querySelector('.k-grid-edit-row .k-table-td:has(.k-input, .k-picker, .k-button), .k-edit-cell') ||
+        document.querySelector('.k-grid-edit-row .k-table-td');
+      if (probe) {
+        document.documentElement.style.setProperty('--pg-edit-py', getComputedStyle(probe).paddingTop);
+      }
+
+      setPad(params.get('pad'));
+      var editor = createEditor(params.get('mode') === 'adaptive', params.get('edit') === 'cell', frags, function () {
+        if (editor) report();
+      });
+
+      function report() {
+        parent.postMessage({
+          type: 'pg-height',
+          id: id,
+          height: document.body.offsetHeight,
+          editing: editor.isEditing()
+        }, '*');
+      }
+      new ResizeObserver(report).observe(document.body);
+
+      window.addEventListener('message', function (e) {
+        if (!e.data) return;
+        if (e.data.type === 'pg-edit') editor.setAll(e.data.editing);
+        if (e.data.type === 'pg-pad') setPad(e.data.pad);
+      });
+      report();
+    };
+    document.head.appendChild(link);
+  }
+
+  // Sets the horizontal padding of edit cells that hold an input, picker or dropdown to their vertical padding,
+  // so focus indication is not clipped; cells with checkboxes or buttons keep their own padding (the theme rules are nested and specific)
+  function setPad(pad) {
+    var style = document.getElementById('pg-pad');
+    if (!style) {
+      style = document.createElement('style');
+      style.id = 'pg-pad';
+      document.head.appendChild(style);
+    }
+    // Command buttons stay on one line so wrapping never inflates the row heights being compared
+    style.textContent = 'td.k-command-cell { white-space: nowrap !important; }' + (pad === 'inputs'
+      ? '.k-grid-edit-row .k-table-td:has(> .k-input, > .k-picker), .k-edit-cell:has(> .k-input, > .k-picker) { padding-inline: var(--pg-edit-py, 0px) !important; }'
+      : '');
+  }
+
+  // Turns the static grid snapshot into a small interactive model so rows can enter and
+  // leave the edit state and the resulting row heights can be compared.
+  function createEditor(stack, cellMode, frags, onChange) {
+    var tbody = document.querySelector('.k-grid-table .k-table-tbody');
+    var FIELDS = stack ? ['name', 'cat', 'price', 'date', 'avail'] : ['id', 'name', 'cat', 'price', 'date', 'avail'];
+
+    // Adds the Category (dropdown) and Date (datepicker) columns to the rendered snapshot
+    function augment() {
+      function frag(kind) { return frags[kind]; }
+
+      if (!stack) {
+        document.querySelectorAll('colgroup').forEach(function (group) {
+          function col(width) {
+            var el = document.createElement('col');
+            el.style.width = width;
+            return el;
+          }
+          group.children[0].style.width = '48px';
+          group.children[1].style.width = '230px';
+          group.insertBefore(col('150px'), group.children[2]);
+          group.insertBefore(col('160px'), group.children[4]);
+        });
+
+        var headRow = document.querySelector('.k-grid-header-table thead tr');
+        function th(title) {
+          var el = headRow.children[2].cloneNode(true);
+          el.querySelector('.k-column-title').textContent = title;
+          return el;
+        }
+        headRow.insertBefore(th('Category'), headRow.children[2]);
+        headRow.insertBefore(th('Date'), headRow.children[4]);
+      }
+
+      Array.prototype.forEach.call(tbody.children, function (tr) {
+        var edit = tr.classList.contains('k-grid-edit-row');
+
+        if (stack) {
+          var row = tr.querySelector('.k-grid-stack-row');
+          var cell = function (kind, label) {
+            var el = document.createElement('div');
+            el.className = 'k-grid-stack-cell' + (edit ? ' k-grid-stack-edit-cell' : '');
+            el.innerHTML = '<div class="k-grid-stack-header">' + label + '</div>' +
+              '<div class="k-grid-stack-content">' + (edit ? frag(kind) : '') + '</div>';
+            return el;
+          };
+          row.insertBefore(cell('dropdown', 'Category'), row.children[1]);
+          row.insertBefore(cell('date', 'Date'), row.children[3]);
+        } else {
+          var td = function (kind) {
+            var el = document.createElement('td');
+            el.className = 'k-table-td';
+            el.setAttribute('role', 'gridcell');
+            if (edit) el.innerHTML = frag(kind);
+            return el;
+          };
+          tr.insertBefore(td('dropdown'), tr.children[2]);
+          tr.insertBefore(td('date'), tr.children[4]);
+        }
+      });
+    }
+
+    augment();
+
+    function slots(tr) {
+      var cells = stack
+        ? tr.querySelectorAll('.k-grid-stack-cell')
+        : tr.querySelectorAll('td');
+      var out = {};
+      FIELDS.forEach(function (field, i) {
+        out[field] = stack ? cells[i].querySelector('.k-grid-stack-content') : cells[i];
+      });
+      out.cells = cells;
+      out.command = stack
+        ? tr.querySelector('.k-command-cell .k-grid-stack-content')
+        : tr.querySelector('td.k-command-cell');
+      return out;
+    }
+
+    function readRow(tr) {
+      var editing = tr.classList.contains('k-grid-edit-row');
+      var s = slots(tr);
+      var row = {
+        editing: editing,
+        add: tr.classList.contains('k-grid-add-row'),
+        dirty: !!tr.querySelector('.k-dirty')
+      };
+      FIELDS.forEach(function (field) {
+        var slot = s[field];
+        var input = slot.querySelector('input');
+        if (field === 'id') {
+          row[field] = slot.textContent.trim();
+        } else if (field === 'avail') {
+          row[field] = editing ? input.checked : slot.textContent.trim() === 'true';
+        } else if (field === 'cat') {
+          row[field] = editing ? slot.querySelector('.k-input-value-text').textContent : slot.textContent.trim();
+        } else {
+          row[field] = editing ? input.value : slot.textContent.trim();
+        }
+      });
+      return row;
+    }
+
+    function clean(tr) {
+      tr.querySelectorAll('[id]').forEach(function (el) { el.removeAttribute('id'); });
+      return tr;
+    }
+
+    var trs = Array.prototype.slice.call(tbody.children);
+    var editTpl = clean(trs.filter(function (tr) {
+      return tr.classList.contains('k-grid-edit-row') && !tr.classList.contains('k-grid-add-row');
+    })[0].cloneNode(true));
+    var viewTpl = clean(trs.filter(function (tr) {
+      return !tr.classList.contains('k-grid-edit-row') && !tr.querySelector('.k-dirty');
+    })[0].cloneNode(true));
+
+    var rows = trs.map(readRow);
+
+    var INIT = [
+      { cat: 'Beverages', date: '' },
+      { cat: 'Beverages', date: '01/15/2026' },
+      { cat: 'Condiments', date: '03/02/2026' },
+      { cat: 'Condiments', date: '05/20/2026' }
+    ];
+    rows.forEach(function (m, i) { m.cat = INIT[i].cat; m.date = INIT[i].date; });
+
+    // In-cell editing starts from read-only rows; cells open one at a time (or all at once via "Enter editing")
+    // The add row is not part of the grid markup being compared, so it is dropped; "Add new record" adds a row on demand
+    rows = rows.filter(function (m) { return !m.add; });
+    if (cellMode) {
+      rows.forEach(function (m) {
+        m.editing = false;
+        if (String(m.price) === '') m.price = '19';
+      });
+    }
+    var bulk = false;
+    var focusTarget = null;
+    var EDITABLE = FIELDS.filter(function (field) { return field !== 'id'; });
+    var editSlots = slots(editTpl);
+
+    function hasCellEdit(m) {
+      return !!m.edit && Object.keys(m.edit).length > 0;
+    }
+
+    // Reference rows that never enter the edit state, so edit-mode rows can be compared to them
+    rows.push(
+      { fixed: true, editing: false, add: false, dirty: false, id: '5', name: 'Chai', cat: 'Beverages', price: '18', date: '09/10/2026', avail: true },
+      { fixed: true, editing: false, add: false, dirty: false, id: '6', name: 'Chef Anton\u2019s Gumbo Mix', cat: 'Condiments', price: '36', date: '11/05/2026', avail: false }
+    );
+
+    function build(m, index) {
+      var tr = (m.editing ? editTpl : viewTpl).cloneNode(true);
+      var s = slots(tr);
+
+      tr.className = 'k-master-row k-table-row' +
+        (index % 2 ? ' k-table-alt-row' : '') +
+        (m.editing ? ' k-grid-edit-row' : '');
+
+      FIELDS.forEach(function (field) {
+        var slot = s[field];
+        var cellEdit = !!(m.edit && m.edit[field]);
+        if (!m.editing && !cellEdit) {
+          slot.textContent = field === 'id' && m.add ? '' : String(m[field]);
+          return;
+        }
+        if (cellEdit) {
+          slot.innerHTML = editSlots[field].innerHTML;
+          slot.classList.add('k-edit-cell');
+        }
+        if (field === 'id') {
+          slot.textContent = m.add ? '' : m.id;
+        } else if (field === 'cat') {
+          slot.querySelector('.k-input-value-text').textContent = m.cat;
+        } else if (field === 'avail') {
+          var checkbox = slot.querySelector('input');
+          checkbox.checked = m.avail;
+          if (m.avail) {
+            checkbox.setAttribute('checked', '');
+          } else {
+            checkbox.removeAttribute('checked');
+          }
+          checkbox.classList.toggle('k-checked', m.avail);
+        } else {
+          var input = slot.querySelector('input');
+          input.value = m[field];
+          input.setAttribute('value', m[field]);
+          if (field === 'date') input.placeholder = 'MM/DD/YYYY';
+          if (String(m[field]) === '' && field !== 'price') {
+            var clear = slot.querySelector('.k-clear-value');
+            if (clear) clear.remove();
+          }
+          if (field === 'price' && String(m.price) !== '') {
+            slot.querySelector('.k-invalid').classList.remove('k-invalid');
+            input.removeAttribute('aria-invalid');
+            ['.k-input-validation-icon', '.k-validator-tooltip'].forEach(function (sel) {
+              var el = slot.querySelector(sel);
+              if (el) el.remove();
+            });
+          }
+        }
+      });
+
+      if (m.editing) {
+        var label = s.command.querySelector('.k-button-primary .k-button-text');
+        label.textContent = m.add ? 'Add' : 'Update';
+      }
+
+      if (cellMode && !m.editing) {
+        Array.prototype.forEach.call(s.command.querySelectorAll('button'), function (button) {
+          if (button.textContent.trim() === 'Edit') button.remove();
+        });
+      }
+
+      if (m.dirty && !m.editing && !(m.edit && m.edit.name)) {
+        var dirtyCell = s.cells[stack ? 0 : 1];
+        dirtyCell.classList.add('k-dirty-cell');
+        var marker = document.createElement('span');
+        marker.className = 'k-dirty';
+        dirtyCell.insertBefore(marker, dirtyCell.firstChild);
+      }
+
+      return tr;
+    }
+
+    function render() {
+      tbody.innerHTML = '';
+      rows.forEach(function (m, i) { tbody.appendChild(build(m, i)); });
+      onChange();
+
+      if (focusTarget) {
+        var cell = slots(tbody.children[focusTarget.index])[focusTarget.field];
+        var focusable = cell && cell.querySelector('input, [tabindex]');
+        if (focusable) focusable.focus();
+        focusTarget = null;
+      }
+    }
+
+    // Reads the open in-cell editors back into the model and closes them
+    function commitCells() {
+      Array.prototype.forEach.call(tbody.children, function (tr, index) {
+        var m = rows[index];
+        if (!m || !hasCellEdit(m)) return;
+        var s = slots(tr);
+        Object.keys(m.edit).forEach(function (field) {
+          var slot = s[field];
+          var value;
+          if (field === 'avail') {
+            value = slot.querySelector('input').checked;
+          } else if (field === 'cat') {
+            value = slot.querySelector('.k-input-value-text').textContent;
+          } else {
+            value = slot.querySelector('input').value;
+          }
+          if (value !== m[field]) {
+            m[field] = value;
+            m.dirty = true;
+          }
+        });
+        m.edit = null;
+      });
+    }
+
+    function commit(index, save) {
+      var tr = tbody.children[index];
+      var m = rows[index];
+      if (save) {
+        var next = readRow(tr);
+        FIELDS.forEach(function (field) { m[field] = next[field]; });
+        m.dirty = true;
+      }
+      m.editing = false;
+    }
+
+    function nextId() {
+      return rows.reduce(function (max, m) { return Math.max(max, Number(m.id) || 0); }, 0) + 1;
+    }
+
+    function addRow() {
+      if (cellMode) {
+        commitCells();
+        rows.unshift({ editing: false, add: false, dirty: true, id: nextId(), name: '', cat: 'Beverages', price: '0', date: '', avail: false, edit: { name: true } });
+        focusTarget = { index: 0, field: 'name' };
+        return;
+      }
+      if (rows.some(function (m) { return m.add; })) return;
+      rows.unshift({ add: true, editing: true, dirty: false, id: '', name: '', cat: 'Beverages', price: '0', date: '', avail: false });
+    }
+
+    function onCellClick(e) {
+      var td = e.target.closest('td.k-table-td');
+      if (!td || !tbody.contains(td)) return;
+
+      var tr = td.parentNode;
+      var index = Array.prototype.indexOf.call(tbody.children, tr);
+      var m = rows[index];
+      var field = FIELDS[Array.prototype.indexOf.call(tr.children, td)];
+
+      if (bulk || (m.edit && m.edit[field])) return;
+
+      commitCells();
+      if (field && field !== 'id' && !m.fixed) {
+        m.edit = {};
+        m.edit[field] = true;
+        focusTarget = { index: index, field: field };
+      }
+      render();
+    }
+
+    tbody.closest('.k-grid').addEventListener('click', function (e) {
+      var button = e.target.closest('button');
+      if (!button && cellMode) {
+        onCellClick(e);
+        return;
+      }
+      if (!button || button.closest('.k-spin-button')) return;
+
+      if (cellMode) commitCells();
+
+      var tr = button.closest('tr.k-master-row');
+      if (!tr) {
+        if (button.closest('.k-grid-toolbar') && /add/i.test(button.textContent)) {
+          addRow();
+          render();
+        }
+        return;
+      }
+
+      var index = Array.prototype.indexOf.call(tbody.children, tr);
+      var m = rows[index];
+      var action = button.textContent.trim();
+
+      if (action === 'Edit') {
+        if (m.fixed) return;
+        m.editing = true;
+      } else if (action === 'Delete' || (action === 'Cancel' && m.add)) {
+        rows.splice(index, 1);
+      } else if (action === 'Update') {
+        commit(index, true);
+      } else if (action === 'Add') {
+        commit(index, true);
+        m.add = false;
+        m.id = nextId();
+      } else if (action === 'Cancel') {
+        commit(index, false);
+      } else {
+        return;
+      }
+      render();
+    });
+
+    // Clicking outside the grid closes the in-cell editors, like blur does in the Grid
+    var gridEl = tbody.closest('.k-grid');
+    if (cellMode) {
+      document.addEventListener('click', function (e) {
+        if (e.composedPath().indexOf(gridEl) !== -1 || !rows.some(hasCellEdit)) return;
+        bulk = false;
+        commitCells();
+        render();
+      });
+    }
+
+    render();
+
+    return {
+      isEditing: function () {
+        return rows.some(function (m) { return m.editing || hasCellEdit(m); });
+      },
+      setAll: function (editing) {
+        if (cellMode) {
+          commitCells();
+          bulk = editing;
+          if (editing) {
+            rows.forEach(function (m) {
+              if (m.fixed) return;
+              m.edit = {};
+              EDITABLE.forEach(function (field) { m.edit[field] = true; });
+            });
+          }
+        } else if (editing) {
+          rows.forEach(function (m) { m.editing = !m.fixed; });
+        } else {
+          rows = rows.filter(function (m) { return !m.add; });
+          rows.forEach(function (m) { m.editing = false; });
+        }
+        render();
+      }
+    };
+  }
+
+  function renderPage() {
+    var state = { theme: THEMES.indexOf(params.get('theme')) >= 0 ? params.get('theme') : THEMES[0], dir: 'ltr', pad: 'inputs', adaptive: false };
+    var root = document.getElementById('root');
+    var themes = document.getElementById('themes');
+
+    THEMES.forEach(function (theme) {
+      var label = document.createElement('label');
+      var input = document.createElement('input');
+      input.type = 'radio';
+      input.name = 'theme';
+      input.value = theme;
+      input.checked = theme === state.theme;
+      input.addEventListener('change', function () {
+        state.theme = theme;
+        render();
+      });
+      label.appendChild(input);
+      label.appendChild(document.createTextNode(' ' + theme));
+      themes.appendChild(label);
+    });
+
+    function render() {
+      root.innerHTML = '';
+
+      [state.theme].forEach(function (theme) {
+        var section = document.createElement('section');
+        section.className = 'theme';
+        section.id = theme;
+
+        var h2 = document.createElement('h2');
+        h2.textContent = theme;
+        section.appendChild(h2);
+
+        var modes = document.createElement('div');
+        modes.className = 'modes';
+
+        MODES.forEach(function (mode) {
+          if (mode.adaptive && !state.adaptive) return;
+          var id = theme + '-' + mode.id;
+          var figure = document.createElement('figure');
+          figure.className = 'mode ' + mode.id;
+
+          var caption = document.createElement('figcaption');
+          var title = document.createElement('span');
+          title.textContent = mode.title;
+
+          var toggle = document.createElement('button');
+          toggle.type = 'button';
+          toggle.id = 'toggle-' + id;
+          toggle.textContent = 'Enter editing';
+          toggle.addEventListener('click', function () {
+            postEdit(id, toggle.dataset.editing !== 'true');
+          });
+
+          caption.appendChild(title);
+          caption.appendChild(toggle);
+
+          var frame = document.createElement('iframe');
+          frame.id = 'frame-' + id;
+          frame.title = theme + ' — ' + mode.title;
+          frame.src = location.pathname + '?frame=1&id=' + id + '&theme=' + theme +
+            '&mode=' + mode.mode + '&edit=' + mode.edit + '&dir=' + state.dir + '&pad=' + state.pad + '&t=' + Date.now();
+
+          figure.appendChild(caption);
+          figure.appendChild(frame);
+          modes.appendChild(figure);
+        });
+
+        section.appendChild(modes);
+        root.appendChild(section);
+      });
+    }
+
+    window.addEventListener('message', function (e) {
+      if (!e.data || e.data.type !== 'pg-height') return;
+      var frame = document.getElementById('frame-' + e.data.id);
+      if (frame) frame.style.height = (e.data.height + 2) + 'px';
+
+      var toggle = document.getElementById('toggle-' + e.data.id);
+      if (toggle) {
+        toggle.dataset.editing = String(!!e.data.editing);
+        toggle.textContent = e.data.editing ? 'Exit editing' : 'Enter editing';
+      }
+    });
+
+    function postEdit(id, editing) {
+      var frame = document.getElementById('frame-' + id);
+      if (frame && frame.contentWindow) {
+        frame.contentWindow.postMessage({ type: 'pg-edit', editing: editing }, '*');
+      }
+    }
+
+    function setAll(editing) {
+      THEMES.forEach(function (theme) {
+        MODES.forEach(function (mode) { postEdit(theme + '-' + mode.id, editing); });
+      });
+    }
+
+    document.querySelectorAll('input[name="pad"]').forEach(function (input) {
+      input.addEventListener('change', function () {
+        if (!input.checked) return;
+        state.pad = input.value;
+        document.querySelectorAll('iframe').forEach(function (frame) {
+          if (frame.contentWindow) frame.contentWindow.postMessage({ type: 'pg-pad', pad: state.pad }, '*');
+        });
+      });
+    });
+
+    document.getElementById('edit-all').addEventListener('click', function () { setAll(true); });
+    document.getElementById('exit-all').addEventListener('click', function () { setAll(false); });
+    document.getElementById('reset-all').addEventListener('click', function () { render(); });
+
+    document.querySelectorAll('input[name="layout"]').forEach(function (input) {
+      input.addEventListener('change', function () {
+        document.body.classList.toggle('stacked', input.value === 'stacked' && input.checked);
+      });
+    });
+
+    document.querySelectorAll('input[name="dir"]').forEach(function (input) {
+      input.addEventListener('change', function () {
+        state.dir = input.value;
+        render();
+      });
+    });
+
+    document.getElementById('show-adaptive').addEventListener('change', function (e) {
+      state.adaptive = e.target.checked;
+      render();
+    });
+
+    render();
+  }
+
+  if (params.has('frame')) {
+    renderFrame();
+  } else {
+    renderPage();
+  }
+</script>
+</body>
+</html>
