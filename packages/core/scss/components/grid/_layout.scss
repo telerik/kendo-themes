@@ -124,6 +124,7 @@
         .k-table-th {
             border-block-end-width: 1px;
             white-space: nowrap;
+            font-weight: $kendo-grid-header-font-weight;
         }
 
         .k-table-td {
@@ -1103,6 +1104,10 @@
         $_grouping-header-padding-y: map.get( $size-props, grouping-header-padding-y );
         $_cell-padding-x: map.get( $size-props, cell-padding-x );
         $_cell-padding-y: map.get( $size-props, cell-padding-y );
+        $_header-font-size: map.get( $size-props, header-font-size );
+        $_header-line-height: map.get( $size-props, header-line-height );
+        $_cell-font-size: map.get( $size-props, cell-font-size );
+        $_cell-line-height: map.get( $size-props, cell-line-height );
         $_filter-cell-padding-x: map.get( $size-props, filter-cell-padding-x );
         $_filter-cell-padding-y: map.get( $size-props, filter-cell-padding-y );
         $_edit-cell-padding-x: map.get( $size-props, edit-cell-padding-x );
@@ -1123,11 +1128,15 @@
                 .k-table-th {
                     padding-block: $_header-padding-y;
                     padding-inline: $_header-padding-x;
+                    font-size: $_header-font-size;
+                    line-height: $_header-line-height;
                 }
 
                 .k-table-td {
                     padding-block: $_cell-padding-y;
                     padding-inline: $_cell-padding-x;
+                    font-size: $_cell-font-size;
+                    line-height: $_cell-line-height;
                 }
 
                 .k-grouping-row .k-table-td {

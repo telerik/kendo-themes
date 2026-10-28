@@ -69,10 +69,10 @@ $kendo-grid-filter-cell-padding-y: k-spacing(1) !default;
 
 /// The horizontal padding of the Grid edit cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
+$kendo-grid-edit-cell-padding-x: k-spacing(1) !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-y: k-spacing(1) !default;
+$kendo-grid-edit-cell-padding-y: $kendo-grid-edit-cell-padding-x !default;
 
 /// The drop hint size of the Grid group.
 /// @group grid
@@ -119,10 +119,10 @@ $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
 $kendo-grid-sm-filter-cell-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 /// The horizontal padding of the Grid cell.
 /// @group grid
-$kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
+$kendo-grid-sm-edit-cell-padding-x: calc( #{k-spacing(1)} + 1px ) !default;
 /// The vertical padding of the Grid cell.
 /// @group grid
-$kendo-grid-sm-edit-cell-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
+$kendo-grid-sm-edit-cell-padding-y: $kendo-grid-sm-edit-cell-padding-x !default;
 /// The height of the Grid group.
 /// @group grid
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
