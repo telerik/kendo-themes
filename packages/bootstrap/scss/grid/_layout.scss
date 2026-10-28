@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/grid/_layout.scss" as *;
 
 
@@ -6,5 +8,16 @@
 
     .k-grouping-dropclue::after {
         display: none;
+    }
+
+    // Cells without an editor keep their regular padding when the row enters edit mode.
+    .k-grid:not(.k-grid-stack) .k-grid-edit-row .k-table-td:not(:has(input, select, textarea, button, .k-input, .k-picker, .k-checkbox)) {
+        padding-block: $kendo-grid-cell-padding-y;
+        padding-inline: $kendo-grid-cell-padding-x;
+    }
+
+    .k-grid.k-grid-sm:not(.k-grid-stack) .k-grid-edit-row .k-table-td:not(:has(input, select, textarea, button, .k-input, .k-picker, .k-checkbox)) {
+        padding-block: $kendo-grid-sm-cell-padding-y;
+        padding-inline: $kendo-grid-sm-cell-padding-x;
     }
 }
