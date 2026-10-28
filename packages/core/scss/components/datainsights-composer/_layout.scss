@@ -211,7 +211,8 @@
             padding: k-spacing(0.5);
             margin: calc( k-spacing(0.5) * -1);
 
-            .k-treeview-leaf {
+            .k-treeview-leaf,
+            .k-treeview-leaf-text {
                 width: 100%;
                 padding: 0;
             }
