@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small breadcrumb.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-sm-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small breadcrumb.</div></div>
@@ -786,7 +786,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-breadcrumb-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-0\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-0\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>md: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-1\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-1\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-2))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-2))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-spacing-2\\.5))","icon-link-padding-y":"var(--kendo-breadcrumb-lg-icon-link-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li></ul></td>
+    <td><ul><li>sm: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-0\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-0\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5))","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)"</li><li>md: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-1\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-1\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-2))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-2))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-spacing-2\\.5))","icon-link-padding-y":"var(--kendo-breadcrumb-lg-icon-link-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Breadcrumb.</div></div>

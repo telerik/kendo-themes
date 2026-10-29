@@ -1,3 +1,14 @@
+## 14.7.1-dev.5 (2026-10-29)
+
+### 🩹 Fixes
+
+- **fluent:** use small font size and line height in small-sized components ([d82288c78b](https://github.com/telerik/kendo-themes/commit/d82288c78b))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.7.1-dev.4 (2026-10-28)
 
 This was a version bump only for @progress/kendo-theme-fluent to align it with other projects, there were no code changes.

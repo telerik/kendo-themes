@@ -290,8 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-time-selector-sm-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the time-selector.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height))</code></td>
+    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
         list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size-sm))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height-lg))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TimeSelector.</div></div>
