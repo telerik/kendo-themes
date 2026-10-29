@@ -17279,6 +17279,26 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-sm-header-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm )</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the compact Grid header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-sm-header-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm )</code></td>
+    <td><code>var(--kendo-line-height-sm)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the compact Grid header cell.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-sm-grouping-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-grid-sm-padding-x</code></td>
@@ -18665,7 +18685,7 @@ The following table lists the available variables for customizing the Meridian t
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 )</code></td>
-    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-2)","grouping-header-padding-x":"var(--kendo-spacing-2)","grouping-header-padding-y":"var(--kendo-spacing-2)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2)","header-font-size":null,"header-line-height":null,"cell-font-size":"var(--kendo-font-size-sm)","cell-line-height":"var(--kendo-line-height-sm)","filter-cell-padding-x":"var(--kendo-spacing-2)","filter-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-x":"calc(var(--kendo-spacing-1) - 1px)","edit-cell-padding-y":"calc(var(--kendo-spacing-1) - 1px)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li><li>md: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1)","edit-cell-padding-x":"var(--kendo-spacing-1)","edit-cell-padding-y":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","selection-aggregates-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li></ul></td>
+    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-2)","header-padding-y":"var(--kendo-spacing-2)","grouping-header-padding-x":"var(--kendo-spacing-2)","grouping-header-padding-y":"var(--kendo-spacing-2)","cell-padding-x":"var(--kendo-spacing-2)","cell-padding-y":"var(--kendo-spacing-2)","header-font-size":"var(--kendo-font-size-sm)","header-line-height":"var(--kendo-line-height-sm)","cell-font-size":"var(--kendo-font-size-sm)","cell-line-height":"var(--kendo-line-height-sm)","filter-cell-padding-x":"var(--kendo-spacing-2)","filter-cell-padding-y":"calc(var(--kendo-spacing-1) + 1px)","edit-cell-padding-x":"calc(var(--kendo-spacing-1) - 1px)","edit-cell-padding-y":"calc(var(--kendo-spacing-1) - 1px)","button-padding-y":"var(--kendo-spacing-1)","button-calc-size":"calc(var(--kendo-line-height-sm, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li><li>md: "header-padding-x":"var(--kendo-spacing-2\\.5)","header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","grouping-header-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","cell-padding-x":"var(--kendo-spacing-2\\.5)","cell-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-spacing-2\\.5)","filter-cell-padding-y":"var(--kendo-spacing-1)","edit-cell-padding-x":"var(--kendo-spacing-1)","edit-cell-padding-y":"var(--kendo-spacing-1)","button-padding-y":"var(--kendo-spacing-1\\.5)","button-calc-size":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-xs, normal) * 1em + var(--kendo-spacing-1\\.5) * 2 + 1px * 2) + 6px)","selection-aggregates-padding-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","selection-aggregates-padding-y":"calc(var(--kendo-spacing-2\\.5) + 1px)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Grid.</div></div>

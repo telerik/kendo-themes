@@ -99,6 +99,12 @@ $kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
 /// The vertical padding of the Grid header.
 /// @group grid
 $kendo-grid-sm-header-padding-y: $kendo-grid-sm-padding-y !default;
+/// The font size of the compact Grid header cell.
+/// @group grid
+$kendo-grid-sm-header-font-size: var( --kendo-font-size-sm ) !default;
+/// The line height of the compact Grid header cell.
+/// @group grid
+$kendo-grid-sm-header-line-height: var( --kendo-line-height-sm ) !default;
 /// The horizontal padding of the Grid header.
 /// @group grid
 $kendo-grid-sm-grouping-header-padding-x: $kendo-grid-sm-padding-x !default;
@@ -584,6 +590,8 @@ $kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !def
     $kendo-grid-sm-padding-y: $kendo-grid-sm-padding-y,
     $kendo-grid-sm-header-padding-x: $kendo-grid-sm-header-padding-x,
     $kendo-grid-sm-header-padding-y: $kendo-grid-sm-header-padding-y,
+    $kendo-grid-sm-header-font-size: $kendo-grid-sm-header-font-size,
+    $kendo-grid-sm-header-line-height: $kendo-grid-sm-header-line-height,
     $kendo-grid-sm-grouping-header-padding-x: $kendo-grid-sm-grouping-header-padding-x,
     $kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-y,
     $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-cell-padding-x,
