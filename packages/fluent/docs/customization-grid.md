@@ -218,6 +218,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-edit-cell-fill</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Makes the editors in the Grid edit cells fill the whole cell, without padding around them.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-group-drop-hint-size</td>
     <td>String</td>
     <td><code>var( --kendo-grid-group-drop-hint-size, 6px )</code></td>
@@ -1836,6 +1846,7 @@ The following table lists the available variables for customization.
         filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-y,
         edit-cell-padding-x: $kendo-grid-sm-edit-cell-padding-x,
         edit-cell-padding-y: $kendo-grid-sm-edit-cell-padding-y,
+        input-calc-size: $kendo-input-sm-calc-size,
         button-padding-y: $kendo-button-sm-padding-y,
         button-calc-size: $kendo-button-sm-calc-size,
         group-dropclue-height: $kendo-grid-sm-group-dropclue-height,
@@ -1857,6 +1868,7 @@ The following table lists the available variables for customization.
         filter-cell-padding-y: $kendo-grid-md-filter-cell-padding-y,
         edit-cell-padding-x: $kendo-grid-md-edit-cell-padding-x,
         edit-cell-padding-y: $kendo-grid-md-edit-cell-padding-y,
+        input-calc-size: $kendo-input-md-calc-size,
         button-padding-y: $kendo-button-md-padding-y,
         button-calc-size: $kendo-button-md-calc-size,
         group-dropclue-height: $kendo-grid-md-group-dropclue-height,
@@ -1864,7 +1876,7 @@ The following table lists the available variables for customization.
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 )</code></td>
-    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-1)","header-padding-y":"var(--kendo-spacing-1\\.5)","grouping-header-padding-x":"var(--kendo-spacing-1\\.5)","grouping-header-padding-y":"var(--kendo-spacing-1\\.5)","cell-padding-x":"var(--kendo-spacing-1)","cell-padding-y":"var(--kendo-spacing-1\\.5)","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-spacing-3)","filter-cell-padding-y":"var(--kendo-spacing-2)","edit-cell-padding-x":"var(--kendo-spacing-0\\.5)","edit-cell-padding-y":"var(--kendo-spacing-0\\.5)","button-padding-y":"calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px)","button-calc-size":"calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-spacing-0\\.5) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2) + var(--kendo-grid-group-drop-hint-size, 6px))","selection-aggregates-padding-x":"var(--kendo-spacing-1\\.5)","selection-aggregates-padding-y":"var(--kendo-spacing-1\\.5)"</li><li>md: "header-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))","header-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","grouping-header-padding-x":"calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3)) + 1px)","grouping-header-padding-y":"calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-1\\.5)) + 1px)","cell-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","filter-cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","edit-cell-padding-x":"calc(var(--kendo-spacing-2\\.5) / 2)","edit-cell-padding-y":"calc(var(--kendo-spacing-2\\.5) / 2)","button-padding-y":"calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px)","button-calc-size":"calc(var(--kendo-line-height) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)","group-dropclue-height":"var(--kendo-grid-group-drop-hint-height, calc(calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg)) * 1em + calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\\.5)) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2) + var(--kendo-grid-group-drop-hint-size, 6px)))","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li></ul></td>
+    <td><ul><li>sm: "header-padding-x":"var(--kendo-spacing-1)","header-padding-y":"var(--kendo-spacing-1\\.5)","grouping-header-padding-x":"var(--kendo-spacing-1\\.5)","grouping-header-padding-y":"var(--kendo-spacing-1\\.5)","cell-padding-x":"var(--kendo-spacing-1)","cell-padding-y":"var(--kendo-spacing-1\\.5)","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-spacing-3)","filter-cell-padding-y":"var(--kendo-spacing-2)","edit-cell-padding-x":"var(--kendo-spacing-0\\.5)","edit-cell-padding-y":"var(--kendo-spacing-0\\.5)","input-calc-size":"calc(var(--kendo-line-height) * 1em + calc(var(--kendo-spacing-0\\.5) + 1px) * 2 + 1px * 2)","button-padding-y":"calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px)","button-calc-size":"calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)","group-dropclue-height":"calc(calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-spacing-0\\.5) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2) + var(--kendo-grid-group-drop-hint-size, 6px))","selection-aggregates-padding-x":"var(--kendo-spacing-1\\.5)","selection-aggregates-padding-y":"var(--kendo-spacing-1\\.5)"</li><li>md: "header-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))","header-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","grouping-header-padding-x":"calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3)) + 1px)","grouping-header-padding-y":"calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-1\\.5)) + 1px)","cell-padding-x":"var(--kendo-table-md-cell-padding-x, var(--kendo-spacing-2))","cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","header-font-size":null,"header-line-height":null,"cell-font-size":null,"cell-line-height":null,"filter-cell-padding-x":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","filter-cell-padding-y":"var(--kendo-table-md-cell-padding-y, var(--kendo-spacing-2\\.5))","edit-cell-padding-x":"calc(var(--kendo-spacing-2\\.5) / 2)","edit-cell-padding-y":"calc(var(--kendo-spacing-2\\.5) / 2)","input-calc-size":"calc(var(--kendo-input-line-height, var(--kendo-line-height)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px) * 2 + 1px * 2)","button-padding-y":"calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px)","button-calc-size":"calc(var(--kendo-line-height) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2)","group-dropclue-height":"var(--kendo-grid-group-drop-hint-height, calc(calc(var(--kendo-chip-line-height, var(--kendo-line-height-lg)) * 1em + calc(var(--kendo-chip-padding-y, var(--kendo-spacing-1\\.5)) / 2) * 2 + var(--kendo-chip-border-width, 1px) * 2) + var(--kendo-grid-group-drop-hint-size, 6px)))","selection-aggregates-padding-x":"var(--kendo-spacing-2)","selection-aggregates-padding-y":"var(--kendo-spacing-2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Grid.</div></div>

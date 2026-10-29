@@ -4,6 +4,7 @@
 @use "../table/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../menu/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
@@ -73,6 +74,9 @@ $kendo-grid-edit-cell-padding-x: calc( #{k-spacing(1.5)} / 2 ) !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
 $kendo-grid-edit-cell-padding-y: $kendo-grid-edit-cell-padding-x !default;
+/// Makes the editors in the Grid edit cells fill the whole cell, without padding around them.
+/// @group grid
+$kendo-grid-edit-cell-fill: null !default;
 
 /// The drop hint size of the Grid group.
 /// @group grid
@@ -562,6 +566,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-bold) !default;
     $kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-y,
     $kendo-grid-edit-cell-padding-x: $kendo-grid-edit-cell-padding-x,
     $kendo-grid-edit-cell-padding-y: $kendo-grid-edit-cell-padding-y,
+    $kendo-grid-edit-cell-fill: $kendo-grid-edit-cell-fill,
     $kendo-grid-group-drop-hint-size: $kendo-grid-group-drop-hint-size,
     $kendo-grid-group-drop-hint-line-size: $kendo-grid-group-drop-hint-line-size,
     $kendo-grid-group-drop-hint-height: $kendo-grid-group-drop-hint-height,

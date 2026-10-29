@@ -124,6 +124,11 @@
     <label><input type="radio" name="pad" value="inputs" checked> = padding-block for inputs, pickers, dropdowns</label>
   </span>
   <span class="group">
+    <strong>Edit controls</strong>
+    <label><input type="radio" name="fill" value="0" checked> Padded (current)</label>
+    <label><input type="radio" name="fill" value="1"> Fill the cell (no padding)</label>
+  </span>
+  <span class="group">
     <strong>Adaptive</strong>
     <label><input type="checkbox" id="show-adaptive"> Show adaptive grids</label>
   </span>
@@ -161,7 +166,8 @@
   var params = new URLSearchParams(location.search);
 
   function cssHref(theme) {
-    return './packages/' + theme + '/dist/all.css?t=' + Date.now();
+    // all-fill.css is the same theme compiled with $kendo-grid-edit-cell-fill: true; build it with `npm run sass:grid-fill`
+    return './packages/' + theme + '/dist/' + (params.get('fill') === '1' ? 'all-fill' : 'all') + '.css?t=' + Date.now();
   }
 
   // Frame mode: the same file renders a single grid with a single theme stylesheet,
@@ -626,7 +632,7 @@
   }
 
   function renderPage() {
-    var state = { theme: THEMES.indexOf(params.get('theme')) >= 0 ? params.get('theme') : THEMES[0], dir: 'ltr', pad: 'inputs', adaptive: false };
+    var state = { theme: THEMES.indexOf(params.get('theme')) >= 0 ? params.get('theme') : THEMES[0], dir: 'ltr', pad: 'inputs', fill: params.get('fill') === '1' ? '1' : '0', adaptive: false };
     var root = document.getElementById('root');
     var themes = document.getElementById('themes');
 
@@ -686,7 +692,7 @@
           frame.id = 'frame-' + id;
           frame.title = theme + ' — ' + mode.title;
           frame.src = location.pathname + '?frame=1&id=' + id + '&theme=' + theme +
-            '&mode=' + mode.mode + '&edit=' + mode.edit + '&dir=' + state.dir + '&pad=' + state.pad + '&t=' + Date.now();
+            '&mode=' + mode.mode + '&edit=' + mode.edit + '&dir=' + state.dir + '&pad=' + (state.fill === '1' ? 'default' : state.pad) + '&fill=' + state.fill + '&t=' + Date.now();
 
           figure.appendChild(caption);
           figure.appendChild(frame);
@@ -727,6 +733,7 @@
       input.addEventListener('change', function () {
         if (!input.checked) return;
         state.pad = input.value;
+        if (state.fill === '1') return;
         document.querySelectorAll('iframe').forEach(function (frame) {
           if (frame.contentWindow) frame.contentWindow.postMessage({ type: 'pg-pad', pad: state.pad }, '*');
         });
@@ -736,6 +743,15 @@
     document.getElementById('edit-all').addEventListener('click', function () { setAll(true); });
     document.getElementById('exit-all').addEventListener('click', function () { setAll(false); });
     document.getElementById('reset-all').addEventListener('click', function () { render(); });
+
+    document.querySelectorAll('input[name="fill"]').forEach(function (input) {
+      input.checked = input.value === state.fill;
+      input.addEventListener('change', function () {
+        if (!input.checked) return;
+        state.fill = input.value;
+        render();
+      });
+    });
 
     document.querySelectorAll('input[name="layout"]').forEach(function (input) {
       input.addEventListener('change', function () {
