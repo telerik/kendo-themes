@@ -32,7 +32,7 @@ $kendo-column-menu-item-wrapper-padding-y: null !default;
 
 /// The font size of the small ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-sm-font-size: var( --kendo-column-menu-sm-font-size, var(--kendo-font-size) ) !default;
+$kendo-column-menu-sm-font-size: var( --kendo-column-menu-sm-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font size of the medium ColumnMenu.
 /// @group column-menu
 $kendo-column-menu-md-font-size: var( --kendo-column-menu-md-font-size, var(--kendo-font-size) ) !default;
@@ -42,7 +42,7 @@ $kendo-column-menu-lg-font-size: var( --kendo-column-menu-lg-font-size, var(--ke
 
 /// The line height of the small ColumnMenu.
 /// @group column-menu
-$kendo-column-menu-sm-line-height: var( --kendo-column-menu-sm-line-height, var(--kendo-line-height) ) !default;
+$kendo-column-menu-sm-line-height: var( --kendo-column-menu-sm-line-height, var(--kendo-line-height-lg) ) !default;
 /// The line height of the medium ColumnMenu.
 /// @group column-menu
 $kendo-column-menu-md-line-height: var( --kendo-column-menu-md-line-height, var(--kendo-line-height) ) !default;
