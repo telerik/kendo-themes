@@ -134,6 +134,7 @@ npm run clean                   # Full cleanup (includes node_modules)
 - For planning or scaffolding commits, use: `chore(plan): initial plan for #{issue-number}` (no “Initial Plan”).
 - For dependency updates triggered by the agent: `chore(deps): …`
 - For lint/format-only changes: `chore(format): …`
+- Regenerated docs (e.g. `packages/*/docs/*.md` produced by `npm run docs`) must be kept in their own commit, separate from the code change that triggered the regeneration, using the message `chore: regen docs`.
 
 ### Variable Creation
 
