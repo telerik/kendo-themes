@@ -207,7 +207,7 @@ $kendo-menu-popup-border-width: var( --kendo-menu-popup-border-width, #{$kendo-p
 
 /// The font size of the small Menu popup.
 /// @group menu
-$kendo-menu-popup-sm-font-size: var( --kendo-menu-popup-sm-font-size, var(--kendo-font-size) ) !default;
+$kendo-menu-popup-sm-font-size: var( --kendo-menu-popup-sm-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font size of the medium Menu popup.
 /// @group menu
 $kendo-menu-popup-md-font-size: var( --kendo-menu-popup-md-font-size, var(--kendo-font-size) ) !default;
@@ -217,7 +217,7 @@ $kendo-menu-popup-lg-font-size: var( --kendo-menu-popup-lg-font-size, var(--kend
 
 /// The line height of the small Menu popup.
 /// @group menu
-$kendo-menu-popup-sm-line-height: var( --kendo-menu-popup-sm-line-height, var(--kendo-line-height) ) !default;
+$kendo-menu-popup-sm-line-height: var( --kendo-menu-popup-sm-line-height, var(--kendo-line-height-lg) ) !default;
 /// The line height of the medium Menu popup.
 /// @group menu
 $kendo-menu-popup-md-line-height: var( --kendo-menu-popup-md-line-height, var(--kendo-line-height) ) !default;
