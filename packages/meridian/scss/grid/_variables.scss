@@ -111,6 +111,12 @@ $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-padding-x !default;
 /// The vertical padding of the Grid cell.
 /// @group grid
 $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
+/// The font size of the compact Grid cell.
+/// @group grid
+$kendo-grid-sm-cell-font-size: var( --kendo-font-size-sm ) !default;
+/// The line height of the compact Grid cell.
+/// @group grid
+$kendo-grid-sm-cell-line-height: var( --kendo-line-height-sm ) !default;
 /// The horizontal padding of the Grid cell.
 /// @group grid
 $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
@@ -119,7 +125,7 @@ $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
 $kendo-grid-sm-filter-cell-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 /// The horizontal padding of the Grid cell.
 /// @group grid
-$kendo-grid-sm-edit-cell-padding-x: calc( #{k-spacing(1)} + 1px ) !default;
+$kendo-grid-sm-edit-cell-padding-x: calc( #{k-spacing(1)} - 1px ) !default;
 /// The vertical padding of the Grid cell.
 /// @group grid
 $kendo-grid-sm-edit-cell-padding-y: $kendo-grid-sm-edit-cell-padding-x !default;
@@ -582,6 +588,8 @@ $kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !def
     $kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-y,
     $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-cell-padding-x,
     $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-cell-padding-y,
+    $kendo-grid-sm-cell-font-size: $kendo-grid-sm-cell-font-size,
+    $kendo-grid-sm-cell-line-height: $kendo-grid-sm-cell-line-height,
     $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-filter-cell-padding-x,
     $kendo-grid-sm-filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-y,
     $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-edit-cell-padding-x,
