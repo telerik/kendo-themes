@@ -75,6 +75,7 @@
     "build:meta": "npm run build:meta --prefix packages/html",
     "sass": "nx run-many -t sass",
     "sass:dist": "nx run-many -t sass:dist",
+    "sass:grid-fill": "node ./scripts/build-grid-fill-css.mjs",
     "docs": "nx run-many -t docs",
     "docs:components": "npm run build --prefix packages/html && node ./scripts/generate-component-reference.mjs",
     "docs:check": "nx run-many -t docs:check",

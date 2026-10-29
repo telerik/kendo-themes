@@ -1,5 +1,6 @@
 // Grid`
 @use "../button/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 
 $kendo-grid-default-size: null !default;
 
@@ -30,6 +31,7 @@ $kendo-grid-filter-cell-padding-y: null !default;
 
 $kendo-grid-edit-cell-padding-x: null !default;
 $kendo-grid-edit-cell-padding-y: null !default;
+$kendo-grid-edit-cell-fill: null !default;
 
 $kendo-grid-group-drop-hint-size: null !default;
 $kendo-grid-group-drop-hint-line-size: null !default;
@@ -94,6 +96,7 @@ $kendo-grid-sizes: (
         filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-y,
         edit-cell-padding-x: $kendo-grid-sm-edit-cell-padding-x,
         edit-cell-padding-y: $kendo-grid-sm-edit-cell-padding-y,
+        input-calc-size: $kendo-input-sm-calc-size,
         button-padding-y: $kendo-button-sm-padding-y,
         button-calc-size: $kendo-button-sm-calc-size,
         group-dropclue-height: $kendo-grid-sm-group-dropclue-height,
@@ -115,6 +118,7 @@ $kendo-grid-sizes: (
         filter-cell-padding-y: $kendo-grid-md-filter-cell-padding-y,
         edit-cell-padding-x: $kendo-grid-md-edit-cell-padding-x,
         edit-cell-padding-y: $kendo-grid-md-edit-cell-padding-y,
+        input-calc-size: $kendo-input-md-calc-size,
         button-padding-y: $kendo-button-md-padding-y,
         button-calc-size: $kendo-button-md-calc-size,
         group-dropclue-height: $kendo-grid-md-group-dropclue-height,
