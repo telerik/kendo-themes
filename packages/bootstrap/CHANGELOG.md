@@ -1,3 +1,7 @@
+## 14.7.1-dev.5 (2026-10-29)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
 ## 14.7.1-dev.4 (2026-10-28)
 
 This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
