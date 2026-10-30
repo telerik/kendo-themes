@@ -12,7 +12,7 @@ The Avatar is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.
 
 | Option | Values | Default |
 | --- | --- | --- |
-| `size` | `small`, `medium`, `large` | — |
+| `size` | `xsmall`, `small`, `medium`, `large`, `xlarge` | — |
 | `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 | `fillMode` | `solid`, `outline` | — |
 | `themeColor` | `base`, `primary`, `secondary`, `tertiary` | — |

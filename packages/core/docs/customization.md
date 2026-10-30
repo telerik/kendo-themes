@@ -2906,9 +2906,11 @@ The following table lists the available variables for customizing the Theme Core
     <td>$kendo-avatar-sizes</td>
     <td></td>
     <td><code>(
+    xs: $kendo-avatar-xs-size,
     sm: $kendo-avatar-sm-size,
     md: $kendo-avatar-md-size,
-    lg: $kendo-avatar-lg-size
+    lg: $kendo-avatar-lg-size,
+    xl: $kendo-avatar-xl-size
 )</code></td>
     <td></td>
 </tr>
