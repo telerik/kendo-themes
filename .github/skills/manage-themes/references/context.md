@@ -1,6 +1,6 @@
-# Shared Component Context
+# Component Context (SCSS)
 
-Common conventions, paths, and rules used by the `manage-components`, `manage-scss`, and `manage-html` skills.
+Naming, paths, theme value conventions, and gotchas for component SCSS.
 
 ## Naming Derivation
 
@@ -26,8 +26,6 @@ From a component name (e.g., `smart-badge`), derive all names used across the mo
 | **material** | `packages/material/scss/{component}/_variables.scss` | same pattern |
 | **fluent** | `packages/fluent/scss/{component}/_variables.scss` | same pattern |
 | **bootstrap** | `packages/bootstrap/scss/{component}/_variables.scss` | same pattern |
-| **HTML spec** | `packages/html/src/{component}/{component}.spec.tsx` | - |
-| **HTML tests** | `packages/html/src/{component}/tests/*.tsx` | - |
 
 **Key difference:** Core uses `packages/core/scss/components/{component}/`, themes use `packages/{theme}/scss/{component}/` (no `components/` subdirectory).
 
@@ -63,12 +61,6 @@ npm run sass 2>&1
 
 # 2. No lint violations
 npm run lint:styles 2>&1
-
-# 3. HTML package type-checks
-npm run typecheck --prefix packages/html 2>&1
-
-# 4. HTML tests build
-npm run build:tests --prefix packages/html 2>&1
 ```
 
 Fix failures before proceeding to the next validation step.
@@ -81,8 +73,6 @@ Fix failures before proceeding to the next validation step.
 - **Component names in `@include import-once("...")` must be unique** across the entire theme.
 - **BEM class names use the `k-` prefix** — `k-{component}`, `k-{component}-{element}`.
 - **SassDoc lives in themes** — every theme variable needs a `///` comment and `@group` annotation. Core variables have none, except the `sizes` / `theme-colors` maps.
-- **Test files need default exports** — `export default` is mandatory; `export const` won't be picked up by the build system.
-- **Wrap test content in `<div id="test-area">`** — screenshot tools look for this ID.
 
 ## @forward Map Pattern
 

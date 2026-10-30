@@ -2,7 +2,7 @@
 
 Create or update layout, theme, module, and registration files for a component in core and targeted themes.
 
-Read [../../_shared/component-context.md](../../_shared/component-context.md) for naming conventions, theme paths, and common gotchas.
+Read [context.md](context.md) for naming conventions, theme paths, and common gotchas.
 
 ## When to use
 
@@ -64,7 +64,7 @@ Edit `packages/core/scss/components/{component}/_layout.scss` and/or `_theme.scs
 - Keep the mixin names unchanged (`--layout-base`, `--theme-base`)
 - New CSS properties that need customization require new variables (see [variables.md](variables.md) first)
 - State selectors: `.k-{component}.k-hover`, `.k-{component}.k-selected`, etc.
-- For new components, use templates from [../../_shared/file-templates.md](../../_shared/file-templates.md)
+- For new components, use templates from [file-templates.md](file-templates.md)
 
 ### Step 3: Apply layout and theme to targeted themes
 
@@ -82,7 +82,7 @@ Only edit theme-specific layout/theme files when:
 - A theme adds **extra selectors** not in core
 - A theme has **theme-specific** visual tweaks beyond variables
 
-For new components, use templates from [../../_shared/file-templates.md](../../_shared/file-templates.md).
+For new components, use templates from [file-templates.md](file-templates.md).
 
 ### Step 4: Create or update `_index.scss`
 

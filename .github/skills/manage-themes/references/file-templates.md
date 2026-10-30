@@ -1,6 +1,6 @@
 # File Templates Reference
 
-Detailed boilerplate templates for each file in the component scaffold. Used when scaffolding a new component with `manage-components`.
+Detailed boilerplate templates for each file in the component scaffold. Used when scaffolding a new component (see [component.md](component.md)).
 
 ## Core Package Templates
 
@@ -168,11 +168,11 @@ $kendo-{component}-bg: var(--kendo-{component}-bg, #{k-color(surface-alt)}) !def
 
 ### `packages/{theme}/scss/{component}/_index.scss`
 
-See Step 4 in [../manage-scss/references/styles.md](../manage-scss/references/styles.md).
+See Step 4 in [styles.md](styles.md).
 
 ## HTML Package Templates
 
-See [../manage-html/references/](../manage-html/references/) — `spec.md` (constants, spec, index), `templates.md`, and `tests.md` contain the boilerplate.
+See [../../manage-specs/references/](../../manage-specs/references/) — `spec.md` (constants, spec, index), `templates.md`, and `tests.md` contain the boilerplate.
 
 ## Unit Test Template
 
