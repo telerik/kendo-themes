@@ -14,6 +14,10 @@ export type KendoActionSheetViewProps = {
     children?: React.JSX.Element | React.JSX.Element[];
     header?: React.ReactElement<typeof ActionSheetHeader>;
     footer?: React.ReactElement<typeof ActionSheetFooter>;
+    /** @deprecated Legacy design. Kept for backwards compatibility. */
+    adaptive?: boolean;
+    /** @deprecated Legacy design markup (centered title). Kept for backwards compatibility. */
+    legacy?: boolean;
     animated?: boolean;
     titleId?: string;
     /**
@@ -27,6 +31,8 @@ export const ActionSheetView = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        adaptive,
+        legacy,
         animated,
         children,
         header,
@@ -36,7 +42,7 @@ export const ActionSheetView = (
         ...other
     } = props;
 
-    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader titleId={titleId} {...header?.props} />;
+    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} legacy={legacy || adaptive} titleId={titleId} {...header?.props} />;
     const _ActionSheetFooter = footer?.type === ActionSheetFooter && <ActionSheetFooter {...footer?.props} />;
 
     const handle = resizable && <div className="k-actionsheet-resize-handle" aria-hidden="true" />;

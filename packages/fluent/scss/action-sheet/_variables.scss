@@ -205,6 +205,38 @@ $kendo-actionsheet-item-disabled-text: var( --kendo-actionsheet-item-disabled-te
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-border: var( --kendo-actionsheet-item-disabled-border, transparent ) !default;
 
+// Legacy Actionsheet (used by the deprecated position classes and the adaptive class)
+
+// Adaptive Actionsheet (deprecated, kept for backwards compatibility)
+
+/// Font size of the adaptive action sheet.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-font-size: var( --kendo-adaptive-actionsheet-font-size, #{$kendo-font-size-lg} ) !default;
+/// The line height of the adaptive action sheet.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-line-height: var( --kendo-adaptive-actionsheet-line-height, var(--kendo-line-height) ) !default;
+
+/// Vertical padding of the adaptive action sheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-header-padding-y: var( --kendo-adaptive-actionsheet-header-padding-y, #{k-spacing(4)} ) !default;
+/// Horizontal padding of the adaptive action sheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-header-padding-x: var( --kendo-adaptive-actionsheet-header-padding-x, #{k-spacing(4)} ) !default;
+
+/// Vertical padding of the adaptive action sheet content.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-content-padding-y: var( --kendo-adaptive-actionsheet-content-padding-y, #{k-spacing(2)} ) !default;
+/// Horizontal padding of the adaptive action sheet content.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-content-padding-x: var( --kendo-adaptive-actionsheet-content-padding-x, #{k-spacing(4)} ) !default;
+
+/// Vertical padding of the adaptive action sheet footer.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-footer-padding-y: var( --kendo-adaptive-actionsheet-footer-padding-y, #{k-spacing(2)} ) !default;
+/// Horizontal padding of the adaptive action sheet footer.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-footer-padding-x: var( --kendo-adaptive-actionsheet-footer-padding-x, #{k-spacing(4)} ) !default;
+
 /// Padding of the action sheet group item.
 /// @group action-sheet
 $kendo-actionsheet-group-item-padding-x: var( --kendo-actionsheet-group-item-padding-x, #{k-spacing(1.5)} ) !default;
@@ -320,7 +352,15 @@ $kendo-actionsheet-content-max-width: var( --kendo-actionsheet-content-max-width
     $kendo-actionsheet-item-disabled-bg: $kendo-actionsheet-item-disabled-bg,
     $kendo-actionsheet-item-disabled-text: $kendo-actionsheet-item-disabled-text,
     $kendo-actionsheet-item-disabled-border: $kendo-actionsheet-item-disabled-border,
-    $kendo-actionsheet-group-item-padding-x: $kendo-actionsheet-group-item-padding-x,
+    $kendo-adaptive-actionsheet-font-size: $kendo-adaptive-actionsheet-font-size,
+    $kendo-adaptive-actionsheet-line-height: $kendo-adaptive-actionsheet-line-height,
+    $kendo-adaptive-actionsheet-titlebar-padding-y: $kendo-adaptive-actionsheet-header-padding-y,
+    $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-header-padding-x,
+    $kendo-adaptive-actionsheet-content-padding-y: $kendo-adaptive-actionsheet-content-padding-y,
+    $kendo-adaptive-actionsheet-content-padding-x: $kendo-adaptive-actionsheet-content-padding-x,
+    $kendo-adaptive-actionsheet-footer-padding-y: $kendo-adaptive-actionsheet-footer-padding-y,
+    $kendo-adaptive-actionsheet-footer-padding-x: $kendo-adaptive-actionsheet-footer-padding-x,
+                        $kendo-actionsheet-group-item-padding-x: $kendo-actionsheet-group-item-padding-x,
     $kendo-actionsheet-group-item-padding-y: $kendo-actionsheet-group-item-padding-y,
     $kendo-actionsheet-group-item-gap: $kendo-actionsheet-group-item-gap,
     $kendo-actionsheet-group-item-font-size: $kendo-actionsheet-group-item-font-size,

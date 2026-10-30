@@ -18,8 +18,12 @@ export type KendoActionSheetProps = {
     header?: React.ReactElement<typeof ActionSheetHeader>;
     footer?: React.ReactElement<typeof ActionSheetFooter>;
     fullscreen?: boolean;
+    /** @deprecated Legacy design. Renders the `k-adaptive-actionsheet` class. Kept for backwards compatibility. */
+    adaptive?: boolean;
     overlay?: boolean;
     template?: React.JSX.Element | React.JSX.Element[];
+    /** @deprecated Legacy design. Renders the `k-actionsheet-{side}` position class. Kept for backwards compatibility. */
+    side?: 'top' | 'right' | 'bottom' | 'left';
     id?: string;
     resizable?: boolean;
 }
@@ -46,6 +50,8 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
 ) => {
     const {
         fullscreen = defaultOptions.fullscreen,
+        adaptive,
+        side: sideProp,
         overlay = defaultOptions.overlay,
         template,
         children,
@@ -56,15 +62,26 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
         ...other
     } = props;
 
+    // Legacy design is opt-in through the deprecated `side` and `adaptive` props.
+    const legacy = adaptive === true || sideProp !== undefined;
+    const side = sideProp ?? 'bottom';
     const titleId = id && !template && header ? `${id}-title` : undefined;
 
     return (
         <div className="k-actionsheet-container">
             {overlay && <Overlay />}
             <AnimationContainer
-                animationStyle={fullscreen === true
-                    ? { top: 0, width: '100%', height: '100%' }
-                    : { bottom: 0, width: '100%' }}>
+                animationStyle={legacy
+                    ? {
+                        [`${fullscreen === true ? 'top' : side}`]: 0,
+                        [`${fullscreen === true ? 'width' : null}`]: '100%',
+                        [`${fullscreen === true ? 'height' : null}`]: '100%',
+                        [`${side === 'top' || side === 'bottom' ? 'width' : null}`]: '100%',
+                        [`${side === 'left' || side === 'right' ? 'height' : null}`]: '100%'
+                    }
+                    : fullscreen === true
+                        ? { top: 0, width: '100%', height: '100%' }
+                        : { bottom: 0, width: '100%' }}>
                 <div
                     {...other}
                     id={id}
@@ -75,11 +92,13 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                         props.className,
                         ACTIONSHEET_CLASSNAME,
                         {
-                            'k-actionsheet-fullscreen': fullscreen === true
+                            [`k-actionsheet-${side}`]: legacy && fullscreen === false,
+                            'k-actionsheet-fullscreen': fullscreen === true,
+                            'k-adaptive-actionsheet': adaptive
                         },
                     )}>
                     {template ? template :
-                        <ActionSheetView header={header} footer={footer} titleId={titleId} resizable={resizable}>
+                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} legacy={legacy} titleId={titleId} resizable={resizable}>
                             {children}
                         </ActionSheetView>
                     }
