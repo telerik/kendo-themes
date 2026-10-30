@@ -1,0 +1,15 @@
+@use "@progress/kendo-theme-core/scss/components/floating-toolbar/_theme.scss" as *;
+
+@mixin kendo-floating-toolbar--theme() {
+    @include kendo-floating-toolbar--theme-base();
+
+    .k-floating-toolbar.k-popup {
+        --kendo-translucency-base: 0%;
+        backdrop-filter: none;
+
+        .k-toolbar {
+            backdrop-filter: none;
+            background: none;
+        }
+    }
+}

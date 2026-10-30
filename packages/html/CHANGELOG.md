@@ -1,3 +1,316 @@
+## 14.7.1-dev.6 (2026-10-30)
+
+### 🩹 Fixes
+
+- **html:** allow children to be rendered inside Suggestion ([f88a04227b](https://github.com/telerik/kendo-themes/commit/f88a04227b))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.5 (2026-10-29)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.4 (2026-10-28)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.3 (2026-10-26)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.2 (2026-10-23)
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.0 (2026-10-22)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0 (2026-10-21)
+
+### 🚀 Features
+
+- **html:** add ImageEditor adaptive pane templates and tests ([747a9acd38](https://github.com/telerik/kendo-themes/commit/747a9acd38))
+- **html:** add Non scrollable grid template and test ([3d9d7a605a](https://github.com/telerik/kendo-themes/commit/3d9d7a605a))
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+- **html:** add handles to blur and pixelate, align imageeditor templates with default state ([8b13765cc7](https://github.com/telerik/kendo-themes/commit/8b13765cc7))
+- **html:** enhance badge spec ([963b6a03c9](https://github.com/telerik/kendo-themes/commit/963b6a03c9))
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+- **html:** add button end icon support ([74195b8c83](https://github.com/telerik/kendo-themes/commit/74195b8c83))
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### 🩹 Fixes
+
+- **treeview:** allow custom leaf content ([38433b76b2](https://github.com/telerik/kendo-themes/commit/38433b76b2))
+- **prompt-box:** allow hiding speech-to-text button via speechToTextButtonConfig={false} ([16901705e3](https://github.com/telerik/kendo-themes/commit/16901705e3))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Copilot App @Copilot
+- Emil Petrov
+- Teya Veselinova
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
+## 14.7.0-dev.16 (2026-10-21)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.15 (2026-10-20)
+
+### 🚀 Features
+
+- **html:** add ImageEditor adaptive pane templates and tests ([747a9acd38](https://github.com/telerik/kendo-themes/commit/747a9acd38))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
+## 14.7.0-dev.14 (2026-10-20)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.13 (2026-10-19)
+
+### 🚀 Features
+
+- **html:** add Non scrollable grid template and test ([3d9d7a605a](https://github.com/telerik/kendo-themes/commit/3d9d7a605a))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.7.0-dev.12 (2026-10-16)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.11 (2026-10-16)
+
+### 🚀 Features
+
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.10 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** add handles to blur and pixelate, align imageeditor templates with default state ([8b13765cc7](https://github.com/telerik/kendo-themes/commit/8b13765cc7))
+
+### ❤️ Thank You
+
+- Copilot @Copilot
+- Emil Petrov
+
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **html:** enhance badge spec ([963b6a03c9](https://github.com/telerik/kendo-themes/commit/963b6a03c9))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.8 (2026-10-13)
+
+### 🚀 Features
+
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.7 (2026-10-13)
+
+### 🚀 Features
+
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.7.0-dev.6 (2026-10-13)
+
+### 🚀 Features
+
+- **html:** add button end icon support ([74195b8c83](https://github.com/telerik/kendo-themes/commit/74195b8c83))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.5 (2026-10-09)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.4 (2026-10-09)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.3 (2026-10-09)
+
+### 🩹 Fixes
+
+- **treeview:** allow custom leaf content ([38433b76b2](https://github.com/telerik/kendo-themes/commit/38433b76b2))
+- **prompt-box:** allow hiding speech-to-text button via speechToTextButtonConfig={false} ([16901705e3](https://github.com/telerik/kendo-themes/commit/16901705e3))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.0-dev.2 (2026-10-09)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.1 (2026-10-08)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.0 (2026-10-06)
+
+### 🚀 Features
+
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.6.1 (2026-10-06)
+
+### 🩹 Fixes
+
+- **scheduler:** standardize current-time marker dimensions across views ([a05fc1c994](https://github.com/telerik/kendo-themes/commit/a05fc1c994))
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.6.1-dev.2 (2026-10-05)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.6.1-dev.1 (2026-10-01)
+
+### 🩹 Fixes
+
+- **scheduler:** standardize current-time marker dimensions across views ([a05fc1c994](https://github.com/telerik/kendo-themes/commit/a05fc1c994))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.6.1-dev.0 (2026-10-01)
+
+### 🩹 Fixes
+
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.6.0 (2026-09-29)
+
+### 🚀 Features
+
+- **html:** redesign imageeditor toolbar, sidebar and templates ([4bf323d50b](https://github.com/telerik/kendo-themes/commit/4bf323d50b))
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+- **html:** add buttons config to promptBox ([1226e8c373](https://github.com/telerik/kendo-themes/commit/1226e8c373))
+
+### 🩹 Fixes
+
+- **signature:** update icons and simplify component ([a21976fba3](https://github.com/telerik/kendo-themes/commit/a21976fba3))
+- **html:** export floating-toolbar from main index ([12e1b479a1](https://github.com/telerik/kendo-themes/commit/12e1b479a1))
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+- **html:** remove menu item first and last classes ([fda270f49b](https://github.com/telerik/kendo-themes/commit/fda270f49b))
+- **html:** apply default border radius to toolbar overflow buttons ([0e4bb3c21b](https://github.com/telerik/kendo-themes/commit/0e4bb3c21b))
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Ivailo Alexandrov
+- Kiril Peyanski
+- Teya Veselinova
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
+## 14.5.1-dev.8 (2026-09-29)
+
+### 🚀 Features
+
+- **html:** redesign imageeditor toolbar, sidebar and templates ([4bf323d50b](https://github.com/telerik/kendo-themes/commit/4bf323d50b))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.5.1-dev.7 (2026-09-28)
+
+### 🩹 Fixes
+
+- **signature:** update icons and simplify component ([a21976fba3](https://github.com/telerik/kendo-themes/commit/a21976fba3))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.5.1-dev.6 (2026-09-25)
+
+### 🩹 Fixes
+
+- **html:** export floating-toolbar from main index ([12e1b479a1](https://github.com/telerik/kendo-themes/commit/12e1b479a1))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+
+## 14.5.1-dev.5 (2026-09-24)
+
+### 🩹 Fixes
+
+- **html:** remove stale icons from specs ([48d94268e9](https://github.com/telerik/kendo-themes/commit/48d94268e9))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
 ## 14.5.1-dev.4 (2026-09-21)
 
 ### 🚀 Features

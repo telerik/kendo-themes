@@ -1148,6 +1148,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-popup-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>$kendo-list-item-hover-description-text</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of hovered Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-popup-item-active-bg</td>
     <td>String</td>
     <td><code>color-mix(in srgb, k-color(primary-subtle-active) 70%, transparent)</code></td>
@@ -1185,6 +1195,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active Menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-active-description-text</td>
+    <td>String</td>
+    <td><code>$kendo-list-item-selected-description-text</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the description of active Menu item in popup.</div></div>
     </td>
 </tr>
 <tr>

@@ -1,3 +1,297 @@
+## 14.7.1-dev.6 (2026-10-30)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.5 (2026-10-29)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.4 (2026-10-28)
+
+### 🩹 Fixes
+
+- **message-box:** improve secondary emphasis contrast ([27fefe55e3](https://github.com/telerik/kendo-themes/commit/27fefe55e3))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.3 (2026-10-26)
+
+### 🩹 Fixes
+
+- **message-box:** distinguish inverse emphasis in dark swatch ([6d3ed2531c](https://github.com/telerik/kendo-themes/commit/6d3ed2531c))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.2 (2026-10-23)
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.0 (2026-10-22)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0 (2026-10-21)
+
+### 🚀 Features
+
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+- **badge:** update badge styles ([2fdd51af87](https://github.com/telerik/kendo-themes/commit/2fdd51af87))
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### 🩹 Fixes
+
+- **menu:** item description text color does not meet contrast requirements ([0887cb7ffe](https://github.com/telerik/kendo-themes/commit/0887cb7ffe))
+- **list:** item description text color does not meet contrast requirements ([51b8d4cc9f](https://github.com/telerik/kendo-themes/commit/51b8d4cc9f))
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Irina Masyukova
+- Teya Veselinova
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
+## 14.7.0-dev.16 (2026-10-21)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.15 (2026-10-20)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.14 (2026-10-20)
+
+### 🩹 Fixes
+
+- **menu:** item description text color does not meet contrast requirements ([0887cb7ffe](https://github.com/telerik/kendo-themes/commit/0887cb7ffe))
+- **list:** item description text color does not meet contrast requirements ([51b8d4cc9f](https://github.com/telerik/kendo-themes/commit/51b8d4cc9f))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Irina Masyukova
+
+## 14.7.0-dev.13 (2026-10-19)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.12 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.11 (2026-10-16)
+
+### 🚀 Features
+
+- **marquee:** support custom marquee color ([f6b77c7b1d](https://github.com/telerik/kendo-themes/commit/f6b77c7b1d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.10 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **badge:** update badge styles ([2fdd51af87](https://github.com/telerik/kendo-themes/commit/2fdd51af87))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.8 (2026-10-13)
+
+### 🚀 Features
+
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.7 (2026-10-13)
+
+### 🚀 Features
+
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.7.0-dev.6 (2026-10-13)
+
+### 🚀 Features
+
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.5 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.4 (2026-10-09)
+
+### 🩹 Fixes
+
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.7.0-dev.3 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.2 (2026-10-09)
+
+### 🚀 Features
+
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.7.0-dev.1 (2026-10-08)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.0 (2026-10-06)
+
+### 🚀 Features
+
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.6.1 (2026-10-06)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
+## 14.6.1-dev.2 (2026-10-05)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.6.1-dev.1 (2026-10-01)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.6.1-dev.0 (2026-10-01)
+
+### 🩹 Fixes
+
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.6.0 (2026-09-29)
+
+### 🚀 Features
+
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+
+### 🩹 Fixes
+
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+- **coloreditor:** bump min-width to match actual widest view content ([886d25df5d](https://github.com/telerik/kendo-themes/commit/886d25df5d))
+- **spreadsheet:** prevent clipped focus outline on menu items in meridian ([47f9eaef9d](https://github.com/telerik/kendo-themes/commit/47f9eaef9d))
+- **charts:** restore chart tooltip to color-white/color-black ([2c28b60f62](https://github.com/telerik/kendo-themes/commit/2c28b60f62))
+- **meridian:** move backdrop-filter off .k-pager to avoid trapping fixed descendants ([1ec286585c](https://github.com/telerik/kendo-themes/commit/1ec286585c))
+- **meridian:** move backdrop-filter off .k-expander to avoid trapping fixed descendants ([22787cbb6d](https://github.com/telerik/kendo-themes/commit/22787cbb6d))
+- **meridian:** move backdrop-filter off .k-drawer to avoid trapping fixed descendants ([13c87061ca](https://github.com/telerik/kendo-themes/commit/13c87061ca))
+- **meridian:** move backdrop-filter off .k-bottom-nav to avoid trapping fixed descendants ([6fdcb98fd5](https://github.com/telerik/kendo-themes/commit/6fdcb98fd5))
+- **meridian:** move backdrop-filter off .k-appbar to avoid trapping fixed descendants ([#6096](https://github.com/telerik/kendo-themes/issues/6096))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
+## 14.5.1-dev.8 (2026-09-29)
+
+### 🚀 Features
+
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.5.1-dev.7 (2026-09-28)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.6 (2026-09-25)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.5 (2026-09-24)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
 ## 14.5.1-dev.4 (2026-09-21)
 
 ### 🚀 Features

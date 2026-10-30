@@ -1,0 +1,52 @@
+@use "../../mixins/index.scss" as *;
+@use "../../functions/index.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+
+@mixin kendo-floating-toolbar--theme-base() {
+
+    .k-floating-toolbar {
+
+        // Solid
+        #{k-when-default($kendo-toolbar-default-fill-mode, "solid")}
+        &.k-floating-toolbar-solid {
+            @include fill(
+                $kendo-toolbar-text,
+                $kendo-toolbar-bg,
+                $kendo-toolbar-border,
+                $kendo-toolbar-gradient
+            );
+            @include box-shadow( $kendo-toolbar-shadow );
+        }
+
+        // Outline
+        #{k-when-default($kendo-toolbar-default-fill-mode, "outline")}
+        &.k-floating-toolbar-outline {
+            @include fill(
+                $kendo-toolbar-outline-text,
+                $kendo-popup-bg,
+                $kendo-toolbar-outline-border
+            );
+            @include box-shadow( $kendo-toolbar-outline-shadow );
+        }
+
+        // Flat
+        #{k-when-default($kendo-toolbar-default-fill-mode, "flat")}
+        &.k-floating-toolbar-flat {
+            @include fill(
+                $kendo-toolbar-flat-text,
+                $kendo-popup-bg,
+                $kendo-toolbar-flat-border
+            );
+            @include box-shadow( $kendo-toolbar-flat-shadow );
+        }
+
+        > .k-separator {
+            border-color: $kendo-toolbar-separator-border;
+        }
+
+        .k-toolbar {
+            box-shadow: none;
+        }
+    }
+}

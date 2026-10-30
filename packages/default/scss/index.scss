@@ -27,6 +27,7 @@
 @forward "./button/_index.scss";
 @forward "./speech-to-text-button/_index.scss";
 @forward "./input/_index.scss";
+@forward "./label/_index.scss";
 @forward "./floating-label/_index.scss";
 @forward "./textbox/_index.scss";
 @forward "./textarea/_index.scss";
@@ -43,6 +44,7 @@
 @forward "./menu-button/_index.scss";
 @forward "./split-button/_index.scss";
 @forward "./toolbar/_index.scss";
+@forward "./floating-toolbar/_index.scss";
 @forward "./forms/_index.scss";
 @forward "./validator/_index.scss";
 @forward "./calendar/_index.scss";
@@ -108,6 +110,7 @@
 @forward "./scheduler/_index.scss";
 @forward "./file-box/_index.scss";
 @forward "./prompt-box/_index.scss";
+@forward "./datainsights-composer/_index.scss";
 @forward "./chat/_index.scss";
 @forward "./agent-response/_index.scss";
 @forward "./citation/_index.scss";
@@ -187,6 +190,7 @@
 @use "./forms/_index.scss" as *;
 @use "./validator/_index.scss" as *;
 @use "./floating-label/_index.scss" as *;
+@use "./label/_index.scss" as *;
 
 // Form requirements
 @use "./calendar/_index.scss" as *;
@@ -227,6 +231,7 @@
 @use "./fab/_index.scss" as *;
 @use "./menu/_index.scss" as *;
 @use "./toolbar/_index.scss" as *;
+@use "./floating-toolbar/_index.scss" as *;
 
 
 // Popups and modals
@@ -299,6 +304,7 @@
 @use "./segmented-control/_index.scss" as *;
 @use "./smart-box/_index.scss" as *;
 @use "./prompt-box/_index.scss" as *;
+@use "./datainsights-composer/_index.scss" as *;
 
 
 // Dataviz
@@ -353,6 +359,7 @@
 
 
     // Form helpers
+    @include kendo-label--styles();
     @include kendo-form--styles();
     @include kendo-validator--styles();
     @include kendo-floating-label--styles();
@@ -411,6 +418,7 @@
     @include kendo-fab--styles();
     @include kendo-menu--styles();
     @include kendo-toolbar--styles();
+    @include kendo-floating-toolbar--styles();
 
 
     // Popups and modals
@@ -481,6 +489,7 @@
     @include kendo-prompt--styles();
     @include kendo-segmented-control--styles();
     @include kendo-smart-box--styles();
+    @include kendo-datainsights-composer--styles();
     @include kendo-prompt-box--styles();
 
 

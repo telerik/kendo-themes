@@ -19,7 +19,7 @@ $kendo-list-container-padding-block: var( --kendo-list-container-padding-block, 
 
 /// The font size of the small List.
 /// @group list
-$kendo-list-sm-font-size: var( --kendo-list-sm-font-size, var(--kendo-font-size) ) !default;
+$kendo-list-sm-font-size: var( --kendo-list-sm-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font size of the medium List.
 /// @group list
 $kendo-list-md-font-size: var( --kendo-list-md-font-size, var(--kendo-font-size) ) !default;
@@ -29,7 +29,7 @@ $kendo-list-lg-font-size: var( --kendo-list-lg-font-size, var(--kendo-font-size)
 
 /// The line height of the small List.
 /// @group list
-$kendo-list-sm-line-height: var( --kendo-list-sm-line-height, var(--kendo-line-height) ) !default;
+$kendo-list-sm-line-height: var( --kendo-list-sm-line-height, var(--kendo-line-height-lg) ) !default;
 /// The line height of the medium List.
 /// @group list
 $kendo-list-md-line-height: var( --kendo-list-md-line-height, var(--kendo-line-height) ) !default;
@@ -136,7 +136,7 @@ $kendo-list-lg-item-padding-y: var( --kendo-list-lg-item-padding-y, #{k-spacing(
 
 /// The font size of the small List item.
 /// @group list
-$kendo-list-sm-item-font-size: var( --kendo-list-sm-item-font-size, var(--kendo-font-size) ) !default;
+$kendo-list-sm-item-font-size: var( --kendo-list-sm-item-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font size of the medium List item.
 /// @group list
 $kendo-list-md-item-font-size: var( --kendo-list-md-item-font-size, var(--kendo-font-size) ) !default;
@@ -146,7 +146,7 @@ $kendo-list-lg-item-font-size: var( --kendo-list-lg-item-font-size, var(--kendo-
 
 /// The line height of the small List item.
 /// @group list
-$kendo-list-sm-item-line-height: var( --kendo-list-sm-item-line-height, var(--kendo-line-height) ) !default;
+$kendo-list-sm-item-line-height: var( --kendo-list-sm-item-line-height, var(--kendo-line-height-lg) ) !default;
 /// The line height of the medium List item.
 /// @group list
 $kendo-list-md-item-line-height: var( --kendo-list-md-item-line-height, var(--kendo-line-height) ) !default;
@@ -350,6 +350,12 @@ $kendo-list-item-description-line-height: var( --kendo-list-item-description-lin
 /// The text color of the list item description.
 /// @group list
 $kendo-list-item-description-text: var( --kendo-list-item-description-text, #{k-color(subtle)} ) !default;
+/// The text color of the list item description on hover.
+/// @group list
+$kendo-list-item-hover-description-text: var( --kendo-list-item-hover-description-text, color-mix(in srgb, currentColor 85%, transparent) ) !default;
+/// The text color of the list item description when the item is selected.
+/// @group list
+$kendo-list-item-selected-description-text: var( --kendo-list-item-selected-description-text, color-mix(in srgb, currentColor 85%, transparent) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/list/_variables.scss" with (
     $kendo-list-default-size: $kendo-list-default-size,
@@ -448,6 +454,8 @@ $kendo-list-item-description-text: var( --kendo-list-item-description-text, #{k-
     $kendo-list-group-item-shadow: $kendo-list-group-item-shadow,
     $kendo-list-option-label-text: $kendo-list-option-label-text,
     $kendo-list-item-description-text: $kendo-list-item-description-text,
+    $kendo-list-item-hover-description-text: $kendo-list-item-hover-description-text,
+    $kendo-list-item-selected-description-text: $kendo-list-item-selected-description-text,
     $kendo-list-item-description-font-size: $kendo-list-item-description-font-size,
     $kendo-list-item-description-line-height: $kendo-list-item-description-line-height
 );

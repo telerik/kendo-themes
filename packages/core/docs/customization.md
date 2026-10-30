@@ -2953,6 +2953,7 @@ The following table lists the available variables for customizing the Theme Core
     sm: (
         padding-x: $kendo-badge-sm-padding-x,
         padding-y: $kendo-badge-sm-padding-y,
+        gap: $kendo-badge-sm-gap,
         font-size: $kendo-badge-sm-font-size,
         line-height: $kendo-badge-sm-line-height,
         min-width: $kendo-badge-sm-min-width
@@ -2960,6 +2961,7 @@ The following table lists the available variables for customizing the Theme Core
     md: (
         padding-x: $kendo-badge-md-padding-x,
         padding-y: $kendo-badge-md-padding-y,
+        gap: $kendo-badge-md-gap,
         font-size: $kendo-badge-md-font-size,
         line-height: $kendo-badge-md-line-height,
         min-width: $kendo-badge-md-min-width
@@ -2967,6 +2969,7 @@ The following table lists the available variables for customizing the Theme Core
     lg: (
         padding-x: $kendo-badge-lg-padding-x,
         padding-y: $kendo-badge-lg-padding-y,
+        gap: $kendo-badge-lg-gap,
         font-size: $kendo-badge-lg-font-size,
         line-height: $kendo-badge-lg-line-height,
         min-width: $kendo-badge-lg-min-width
@@ -3238,24 +3241,28 @@ The following table lists the available variables for customizing the Theme Core
     <td></td>
     <td><code>(
     xs: (
+        gap: $kendo-button-xs-gap,
         padding-x: $kendo-button-xs-padding-x,
         padding-y: $kendo-button-xs-padding-y,
         font-size: $kendo-button-xs-font-size,
         line-height: $kendo-button-xs-line-height
     ),
     sm: (
+        gap: $kendo-button-sm-gap,
         padding-x: $kendo-button-sm-padding-x,
         padding-y: $kendo-button-sm-padding-y,
         font-size: $kendo-button-sm-font-size,
         line-height: $kendo-button-sm-line-height
     ),
     md: (
+        gap: $kendo-button-md-gap,
         padding-x: $kendo-button-md-padding-x,
         padding-y: $kendo-button-md-padding-y,
         font-size: $kendo-button-md-font-size,
         line-height: $kendo-button-md-line-height
     ),
     lg: (
+        gap: $kendo-button-lg-gap,
         padding-x: $kendo-button-lg-padding-x,
         padding-y: $kendo-button-lg-padding-y,
         font-size: $kendo-button-lg-font-size,
@@ -4830,6 +4837,36 @@ The following table lists the available variables for customizing the Theme Core
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### FloatingToolbar
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-floating-toolbar-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the floating Toolbar when it contains a resizable Toolbar (menu/overflow mode).</div></div>
     </td>
 </tr>
 </tbody>

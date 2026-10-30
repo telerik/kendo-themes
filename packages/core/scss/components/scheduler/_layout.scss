@@ -7,6 +7,7 @@
 @use "../toolbar/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 @use "../radio/_variables.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../listgroup/_variables.scss" as *;
@@ -417,6 +418,10 @@
         align-items: flex-start;
         container-type: size;
 
+        &.k-selected {
+            z-index: k-z-index("base", 2);
+        }
+
         > div {
             flex: 1 1 0;
             min-width: 0;
@@ -551,10 +556,6 @@
             }
         }
 
-        &.k-event-drag-hint .k-event-time {
-            display: block;
-        }
-
         .k-event-top-actions,
         .k-event-bottom-actions {
             position: absolute;
@@ -631,16 +632,12 @@
     // Draging hint
     .k-event-drag-hint {
         opacity: .5;
-        z-index: k-z-index("base", 3);
+        z-index: k-z-index("base", 1);
 
         .k-event-top-actions,
         .k-event-bottom-actions,
         .k-resize-handle {
             display: none;
-        }
-
-        .k-event-time {
-            display: block;
         }
     }
 
@@ -728,12 +725,14 @@
     }
 
 
-    // Day view
-    .k-scheduler-dayview {}
-
-
-    // Week view
-    .k-scheduler-weekview {}
+    // Day/Week view
+    .k-scheduler-dayview,
+    .k-scheduler-weekview {
+        .k-scheduler-content .k-current-time {
+            width: 100%;
+            height: 1px;
+        }
+    }
 
 
     // Time column cells (table: th in .k-scheduler-times; flex: .k-side-cell)
@@ -893,6 +892,11 @@
         }
         .k-scheduler-content {
             overflow: auto;
+
+            .k-current-time {
+                width: 1px;
+                height: 100%;
+            }
         }
     }
 
@@ -1002,6 +1006,11 @@
 
         .k-form-field > .k-form-label {
             width: fit-content;
+            padding-block: 0;
+            margin-block: 0;
+            align-self: flex-start;
+            min-height: $kendo-input-md-calc-size;
+            justify-content: center;
         }
         .k-form-field-wrap {
             max-width: none;
@@ -1017,7 +1026,10 @@
         display: flex;
         flex-direction: column;
         gap: k-spacing(4);
-        margin-top: $kendo-scheduler-datetime-section-margin-top;
+
+        > .k-scheduler-edit-form-row:first-child {
+            min-height: $kendo-input-md-calc-size;
+        }
     }
 
     .k-scheduler-datetime-label {

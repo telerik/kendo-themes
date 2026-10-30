@@ -93,7 +93,7 @@ $kendo-time-list-focus-bg: var( --kendo-time-list-focus-bg, color-mix(in srgb, k
 
 /// Font sizes of the time-selector.
 /// @group time-selector
-$kendo-time-selector-sm-font-size: var( --kendo-time-selector-sm-font-size, var(--kendo-font-size) ) !default;
+$kendo-time-selector-sm-font-size: var( --kendo-time-selector-sm-font-size, var(--kendo-font-size-sm) ) !default;
 /// The font size of the TimeSelector.
 /// @group time-selector
 $kendo-time-selector-md-font-size: var( --kendo-time-selector-md-font-size, var(--kendo-font-size) ) !default;
@@ -103,7 +103,7 @@ $kendo-time-selector-lg-font-size: var( --kendo-time-selector-lg-font-size, var(
 
 /// Line heights used along with $kendo-font-size.
 /// @group time-selector
-$kendo-time-selector-sm-line-height: var( --kendo-time-selector-sm-line-height, var(--kendo-line-height) ) !default;
+$kendo-time-selector-sm-line-height: var( --kendo-time-selector-sm-line-height, var(--kendo-line-height-lg) ) !default;
 /// The height of the TimeSelector.
 /// @group time-selector
 $kendo-time-selector-md-line-height: var( --kendo-time-selector-md-line-height, var(--kendo-line-height) ) !default;

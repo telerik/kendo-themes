@@ -38,7 +38,7 @@ export default () => (
                     }
                 >
                     <TimeSelector size="large" columns={["HH", "mm", "ss", "tt"]} focusedColumn="HH" header={(
-                        <TimeSelectorHeader title="10:00:00 АМ">
+                        <TimeSelectorHeader title="10:00:00 AM">
                             <Button fillMode="flat" className="k-time-now">Now</Button>
                         </TimeSelectorHeader>
                     )} />
@@ -58,7 +58,7 @@ export default () => (
                     }
                 >
                     <TimeSelector size="large" columns={["HH", "mm", "ss", "tt"]} focusedColumn="HH" header={(
-                        <TimeSelectorHeader title="10:00:00 АМ">
+                        <TimeSelectorHeader title="10:00:00 AM">
                             <Button fillMode="flat" className="k-time-now">Now</Button>
                         </TimeSelectorHeader>
                     )} />

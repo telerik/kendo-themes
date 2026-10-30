@@ -6,23 +6,6 @@ Out of the box, the Telerik and Kendo UI Toolbar provides extensive accessibilit
 
 The Toolbar is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 standards](https://www.w3.org/TR/WCAG22/) and [Section 508](https://www.section508.gov/) requirements, follows the [Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/WAI/ARIA/apg/) best practices for implementing the [keyboard navigation](#keyboard-navigation) and provides options for managing its focus and is tested against the most popular screen readers.
 
-### FloatingToolbar
-
-#### Component Style Options
-
-| Option | Values | Default |
-| --- | --- | --- |
-| `size` | `small`, `medium`, `large` | — |
-| `fillMode` | `solid`, `outline`, `flat` | — |
-
-#### UX Behavior
-
-| Feature | Description |
-| --- | --- |
-| Contextual display | Appears near selected content (e.g., selected text in an editor). |
-| Floating position | Rendered as a floating layer above the page, not in the document flow. |
-| Action buttons | Contains formatting or context-specific action buttons. |
-
 ### Toolbar
 
 #### Component Style Options

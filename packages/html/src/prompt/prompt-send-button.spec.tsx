@@ -34,7 +34,7 @@ export const PromptSendButton = (
                     ['k-generating']: generating,
                 }
             )}
-            icon={generating ? 'stop-sm' : 'paper-plane'}
+            icon={generating ? 'stop' : 'paper-plane'}
             active={generating}
             fillMode="flat"
             aria-label={generating ? 'Stop generating' : 'Send prompt'}

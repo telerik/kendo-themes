@@ -31,7 +31,7 @@ const EXCLUSIONS = {
     textPages: {
         './tests/scheduler/scheduler-react-timeline-multi.html': 'inline `background: darkred|green` on events',
         './tests/scheduler/scheduler-tooltip.html': 'inline `background-color: rgb(17,134,64)` on tooltip event',
-        './tests/button-group/button-group.html': 'inline `background: gray` / `color: magenta` demo styles',
+        './tests/button-group/button-group-states.html': 'inline `background: gray` / `color: magenta` demo styles',
         './tests/captcha/captcha-rtl.html': 'k-text-error color on surface; error color contrast is by design',
         './tests/captcha/captcha.html': 'k-text-error color on surface; error color contrast is by design',
         './tests/colorgradient/colorgradient-rtl.html': 'k-text-error color on surface; error color contrast is by design',
@@ -42,7 +42,7 @@ const EXCLUSIONS = {
     },
     // Pages skipped from focus-indicator checks — non-theme surfaces.
     focusPages: {
-        './tests/button-group/button-group.html': 'demo on `background: gray` (rgb(120,120,120)); cannot reach 3:1',
+        './tests/button-group/button-group-states.html': 'demo on `background: gray` (rgb(120,120,120)); cannot reach 3:1',
         './tests/scrollview/scrollview.html': 'translucent .k-scrollview-nav-wrap overlay; cannot satisfy 3:1 on both surfaces',
         './tests/scrollview/scrollview-rtl.html': 'translucent .k-scrollview-nav-wrap overlay; cannot satisfy 3:1 on both surfaces',
         './tests/colorgradient/colorgradient-draghandle.html': 'inline linear-gradient hue/alpha tracks; backgroundColor is transparent'
@@ -714,6 +714,21 @@ const getIndicatorColor = async(el, browser) => {
             if (colorMatch) {
                 value = colorMatch[0];
             }
+        }
+    } else if (typeof value === 'string' && value.indexOf(',') > -1) {
+        // Multi-layer non-inset box-shadow (e.g. a two-tone ring: a spacer
+        // color matching the element's own background, followed by the
+        // actual accent-colored ring). The last-listed layer has the
+        // largest spread and is the one that sits against the surrounding
+        // background — that is the visible indicator; earlier layers are
+        // just spacers separating the ring from the element's own border.
+        const segments = value.split(/,(?![^()]*\))/).map(s => s.trim());
+        const colorMatch = segments[segments.length - 1].match(
+            /rgba?\([^)]+\)|#[0-9a-fA-F]{3,8}|oklch\([^)]+\)|color\(srgb[^)]+\)/
+        );
+
+        if (colorMatch) {
+            value = colorMatch[0];
         }
     }
 

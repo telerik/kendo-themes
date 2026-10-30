@@ -444,7 +444,7 @@ The following table lists the available variables for customization.
     <td><code>60%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Тhe opacity of the generating FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the generating FAB.</div></div>
     </td>
 </tr>
 <tr>

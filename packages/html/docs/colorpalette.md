@@ -52,6 +52,18 @@ These CSS classes are applied to the `k-colorpalette` element.
 | Selection | Clicking a swatch selects the color and marks it as active. |
 | Custom palette | Supports a developer-configured set of colors. |
 
+### ColorPaletteTile
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `selected` | `k-selected` |
+
+These CSS classes are applied to the `k-colorpalette-tile` element.
+
 ### Testing
 
 The Colorpalette has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.
