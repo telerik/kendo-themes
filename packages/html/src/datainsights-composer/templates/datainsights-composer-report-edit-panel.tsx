@@ -47,9 +47,9 @@ export const DataInsightsComposerReportEditPanel = (props: any) => (
                 <DataInsightsComposerReportHeader>
                     <DataInsightsComposerReportTitle id="datainsights-composer-report-title">Revenue by region</DataInsightsComposerReportTitle>
                     <DataInsightsComposerActions>
-                        <IconButton icon="check" text="Save" size="small" fillMode="flat" title="Save" aria-label="Save" />
-                        <IconButton icon="x" text="Discard" size="small" fillMode="flat" title="Discard" aria-label="Discard" />
-                        <IconButton icon="clock-arrow-rotate" size="small" fillMode="flat" title="Version History" aria-label="History" />
+                        <IconButton icon="check" text="Confirm" fillMode="flat" title="Confirm" aria-label="Confirm" />
+                        <IconButton icon="x" text="Discard" fillMode="flat" title="Discard" aria-label="Discard" />
+                        <IconButton icon="clock-arrow-rotate" text="History" fillMode="flat" title="Version History" aria-label="History" />
                     </DataInsightsComposerActions>
                 </DataInsightsComposerReportHeader>
                 <DataInsightsComposerOutput titleId="datainsights-composer-report-title" />
