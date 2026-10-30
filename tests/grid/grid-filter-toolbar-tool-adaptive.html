@@ -13,11 +13,12 @@
         <style>
             #test-area {
             max-width: 1060px;
-            --kendo-actionsheet-height: 400px;
-            --kendo-actionsheet-max-height: 400px;
             }
             #test-area > section {
-            height: 600px;
+            height: 720px;
+            --kendo-actionsheet-height: 60cqh;
+            --kendo-actionsheet-max-height: 60cqh;
+            container-type: size;
             outline: 1px dotted;
             overflow: hidden;
             position: relative;
@@ -170,15 +171,15 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet" style="--kendo-actionsheet-view-current: 1;">
+                            <div id="actionsheet-filter-1" role="dialog" aria-modal="true" class="k-actionsheet" style="--kendo-actionsheet-view-current: 1;">
                                 <div class="k-actionsheet-view k-actionsheet-view-animated">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by</div>
+                                                <div>Filter by</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -267,7 +268,7 @@
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -276,10 +277,10 @@
                                                 </button>
                                             </div>
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by Header Name 3</div>
+                                                <div>Filter by Header Name 3</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -533,15 +534,15 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet" style="--kendo-actionsheet-view-current: 2;">
+                            <div id="actionsheet-filter-2" role="dialog" aria-modal="true" class="k-actionsheet" style="--kendo-actionsheet-view-current: 2;">
                                 <div class="k-actionsheet-view k-actionsheet-view-animated">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by</div>
+                                                <div>Filter by</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -630,7 +631,7 @@
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -639,10 +640,10 @@
                                                 </button>
                                             </div>
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by Header Name 3</div>
+                                                <div>Filter by Header Name 3</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -896,15 +897,15 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet" style="--kendo-actionsheet-view-current: 2;">
+                            <div id="actionsheet-filter-3" role="dialog" aria-modal="true" class="k-actionsheet" style="--kendo-actionsheet-view-current: 2;">
                                 <div class="k-actionsheet-view k-actionsheet-view-animated">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by</div>
+                                                <div>Filter by</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -993,7 +994,7 @@
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -1002,10 +1003,10 @@
                                                 </button>
                                             </div>
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by Header Name 3</div>
+                                                <div>Filter by Header Name 3</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -1243,15 +1244,15 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet" style="--kendo-actionsheet-view-current: 1;">
+                            <div id="actionsheet-filter-4" role="dialog" aria-modal="true" class="k-actionsheet" style="--kendo-actionsheet-view-current: 1;">
                                 <div class="k-actionsheet-view k-actionsheet-view-animated">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by</div>
+                                                <div>Filter by</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -1347,7 +1348,7 @@
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
@@ -1356,10 +1357,10 @@
                                                 </button>
                                             </div>
                                             <div class="k-actionsheet-title">
-                                                <div class="k-text-center">Filter by Header Name 3</div>
+                                                <div>Filter by Header Name 3</div>
                                             </div>
                                             <div class="k-actionsheet-actions">
-                                                <button class="k-button k-button-lg k-button-flat k-icon-button">
+                                                <button class="k-button k-button-xs k-button-flat k-icon-button">
                                                     <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
