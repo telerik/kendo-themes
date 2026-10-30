@@ -20,6 +20,7 @@ export * from './templates/datainsights-composer-loading';
 export * from './templates/datainsights-composer-error';
 export * from './templates/datainsights-composer-report';
 export * from './templates/datainsights-composer-report-edit-panel';
+export * from './templates/datainsights-composer-report-edit-panel-compact';
 export * from './templates/datainsights-composer-followup';
 export * from './templates/datainsights-composer-history-popup';
 export * from './templates/datainsights-composer-data-source-browser-popup';

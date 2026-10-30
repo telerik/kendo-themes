@@ -10,6 +10,10 @@
         margin: 0;
     }
 
+    .k-datainsights-composer {
+        container-type: inline-size;
+    }
+
     .k-datainsights-composer .k-prompt-box {
         z-index: 1;
     }
@@ -17,8 +21,14 @@
     .k-datainsights-composer-actions {
         display: flex;
         align-items: center;
-        gap: k-spacing(2);
         flex-shrink: 0;
+    }
+
+    @container (max-width: 650px) {
+        .k-datainsights-composer-title,
+        .k-datainsights-composer-report-title {
+            font-size: var(--kendo-font-size-lg);
+        }
     }
 
     // Composer card: the bordered, filled panel that groups a state's content.
@@ -99,7 +109,7 @@
     .k-datainsights-composer-report-header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         gap: k-spacing(4);
     }
 
