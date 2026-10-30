@@ -90,9 +90,9 @@
                     <label class="k-floating-label">Label</label>
                 </span>
             </div>
-            <span>(custom) horizontal offset</span>
+            <span>textbox w/ prefix</span>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 37px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textbox k-input">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
@@ -108,7 +108,7 @@
                 </span>
             </div>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 33px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textbox k-input k-input-sm">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
@@ -124,7 +124,7 @@
                 </span>
             </div>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 37px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textbox k-input k-input-md">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
@@ -140,7 +140,7 @@
                 </span>
             </div>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 41px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textbox k-input k-input-lg">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
@@ -155,9 +155,9 @@
                     <label class="k-floating-label">Label</label>
                 </span>
             </div>
-            <span>(custom) vertical offset</span>
+            <span>textarea w/ prefix</span>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-y: 57px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textarea !k-flex-col k-input">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-comment" aria-hidden="true">
@@ -173,7 +173,7 @@
                 </span>
             </div>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-y: 53px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textarea !k-flex-col k-input k-input-sm">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-comment" aria-hidden="true">
@@ -189,7 +189,7 @@
                 </span>
             </div>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-y: 57px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textarea !k-flex-col k-input k-input-md">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-comment" aria-hidden="true">
@@ -205,7 +205,7 @@
                 </span>
             </div>
             <div>
-                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-y: 65px;">
+                <span class="k-floating-label-container k-empty">
                     <span class="k-textarea !k-flex-col k-input k-input-lg">
                         <span class="k-input-prefix k-input-prefix-horizontal">
                             <span class="k-icon k-svg-icon k-svg-i-comment" aria-hidden="true">
@@ -216,6 +216,71 @@
                         </span>
                         <span class="k-input-separator k-input-separator-horizontal"></span>
                         <textarea class="!k-overflow-auto !k-flex-none k-resize k-input-inner" placeholder=""></textarea>
+                    </span>
+                    <label class="k-floating-label">Label</label>
+                </span>
+            </div>
+            <span>(custom) manual offset override</span>
+            <div>
+                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 50px;">
+                    <span class="k-textbox k-input">
+                        <span class="k-input-prefix k-input-prefix-horizontal">
+                            <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 5.25-9 8.25-9-8.25m0 0V18a.75.75 0 0 0 .75.75h16.5A.7497.7497 0 0 0 21 18V5.25zM10.3639 12l-7.1324 6.5381m17.5367 0L13.6357 12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="k-input-separator k-input-separator-vertical"></span>
+                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Label</label>
+                </span>
+            </div>
+            <div>
+                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 50px;">
+                    <span class="k-textbox k-input k-input-sm">
+                        <span class="k-input-prefix k-input-prefix-horizontal">
+                            <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 5.25-9 8.25-9-8.25m0 0V18a.75.75 0 0 0 .75.75h16.5A.7497.7497 0 0 0 21 18V5.25zM10.3639 12l-7.1324 6.5381m17.5367 0L13.6357 12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="k-input-separator k-input-separator-vertical"></span>
+                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Label</label>
+                </span>
+            </div>
+            <div>
+                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 50px;">
+                    <span class="k-textbox k-input k-input-md">
+                        <span class="k-input-prefix k-input-prefix-horizontal">
+                            <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 5.25-9 8.25-9-8.25m0 0V18a.75.75 0 0 0 .75.75h16.5A.7497.7497 0 0 0 21 18V5.25zM10.3639 12l-7.1324 6.5381m17.5367 0L13.6357 12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="k-input-separator k-input-separator-vertical"></span>
+                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
+                    </span>
+                    <label class="k-floating-label">Label</label>
+                </span>
+            </div>
+            <div>
+                <span class="k-floating-label-container k-empty" style="--kendo-floating-label-offset-x: 50px;">
+                    <span class="k-textbox k-input k-input-lg">
+                        <span class="k-input-prefix k-input-prefix-horizontal">
+                            <span class="k-icon k-svg-icon k-svg-i-envelope" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 5.25-9 8.25-9-8.25m0 0V18a.75.75 0 0 0 .75.75h16.5A.7497.7497 0 0 0 21 18V5.25zM10.3639 12l-7.1324 6.5381m17.5367 0L13.6357 12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="k-input-separator k-input-separator-vertical"></span>
+                        <input class="k-input-inner" placeholder="" autocomplete="off" type="text" value="">
                     </span>
                     <label class="k-floating-label">Label</label>
                 </span>
