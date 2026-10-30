@@ -15709,6 +15709,106 @@ The following table lists the available variables for customizing the Meridian t
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-label-sm-font-size</td>
+    <td>String</td>
+    <td><code>$kendo-input-sm-font-size</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-font-size</td>
+    <td>String</td>
+    <td><code>$kendo-input-lg-font-size</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-line-height</td>
+    <td>String</td>
+    <td><code>$kendo-input-sm-line-height</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-line-height</td>
+    <td>String</td>
+    <td><code>$kendo-input-lg-line-height</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-sm-line-height} * #{$kendo-floating-label-sm-font-size} )</code></td>
+    <td><code>calc(var(--kendo-line-height-sm, normal) * var(--kendo-font-size-sm, inherit))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-lg-line-height} * #{$kendo-floating-label-lg-font-size} )</code></td>
+    <td><code>calc(var(--kendo-line-height-lg, normal) * var(--kendo-font-size-lg, inherit))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-offset-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-input-sm-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc(var(--kendo-spacing-2) + 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-offset-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-input-lg-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc(var(--kendo-spacing-3) + 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-offset-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-sm-height} + #{$kendo-input-border-width} + #{$kendo-input-sm-padding-y} )</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-sm, normal) * var(--kendo-font-size-sm, inherit)) + 1px + var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-offset-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-lg-height} + #{$kendo-input-border-width} + #{$kendo-input-lg-padding-y} )</code></td>
+    <td><code>calc(calc(var(--kendo-line-height-lg, normal) * var(--kendo-font-size-lg, inherit)) + 1px + var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-floating-label-focus-scale</td>
     <td>Number</td>
     <td><code>1</code></td>
@@ -15786,6 +15886,38 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-floating-label-sm-font-size,
+        line-height: $kendo-floating-label-sm-line-height,
+        height: $kendo-floating-label-sm-height,
+        offset-x: $kendo-floating-label-sm-offset-x,
+        offset-y: $kendo-floating-label-sm-offset-y
+    ),
+    md: (
+        font-size: $kendo-floating-label-font-size,
+        line-height: $kendo-floating-label-line-height,
+        height: $kendo-floating-label-height,
+        offset-x: $kendo-floating-label-offset-x,
+        offset-y: $kendo-floating-label-offset-y
+    ),
+    lg: (
+        font-size: $kendo-floating-label-lg-font-size,
+        line-height: $kendo-floating-label-lg-line-height,
+        height: $kendo-floating-label-lg-height,
+        offset-x: $kendo-floating-label-lg-offset-x,
+        offset-y: $kendo-floating-label-lg-offset-y
+    )
+)</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm, normal)","height":"calc(var(--kendo-line-height-sm, normal) * var(--kendo-font-size-sm, inherit))","offset-x":"calc(var(--kendo-spacing-2) + 1px)","offset-y":"calc(calc(var(--kendo-line-height-sm, normal) * var(--kendo-font-size-sm, inherit)) + 1px + var(--kendo-spacing-1))"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","height":"calc(var(--kendo-line-height, normal) * var(--kendo-font-size, inherit))","offset-x":"calc(var(--kendo-spacing-2\\.5) + 1px)","offset-y":"calc(calc(var(--kendo-line-height, normal) * var(--kendo-font-size, inherit)) + 1px + var(--kendo-spacing-1\\.5))"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","height":"calc(var(--kendo-line-height-lg, normal) * var(--kendo-font-size-lg, inherit))","offset-x":"calc(var(--kendo-spacing-3) + 1px)","offset-y":"calc(calc(var(--kendo-line-height-lg, normal) * var(--kendo-font-size-lg, inherit)) + 1px + var(--kendo-spacing-2))"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Floating Label. Picked up automatically based on the size of the nested input/picker.</div></div>
     </td>
 </tr>
 </tbody>
