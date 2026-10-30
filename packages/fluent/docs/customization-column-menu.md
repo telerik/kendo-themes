@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-column-menu-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-column-menu-sm-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-column-menu-sm-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-column-menu-sm-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small ColumnMenu.</div></div>
@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-column-menu-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-column-menu-sm-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-column-menu-sm-line-height, var(--kendo-line-height))</code></td>
+    <td><code>var( --kendo-column-menu-sm-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-column-menu-sm-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small ColumnMenu.</div></div>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-column-menu-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-column-menu-item-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-sm-padding-y, var(--kendo-spacing-1))","font-size":"var(--kendo-column-menu-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-sm-line-height, var(--kendo-line-height))"</li><li>md: "padding-x":"var(--kendo-column-menu-item-md-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-md-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-column-menu-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-md-line-height, var(--kendo-line-height))"</li><li>lg: "padding-x":"var(--kendo-column-menu-item-lg-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-lg-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-column-menu-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-lg-line-height, var(--kendo-line-height))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-column-menu-item-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-sm-padding-y, var(--kendo-spacing-1))","font-size":"var(--kendo-column-menu-sm-font-size, var(--kendo-font-size-sm))","line-height":"var(--kendo-column-menu-sm-line-height, var(--kendo-line-height-lg))"</li><li>md: "padding-x":"var(--kendo-column-menu-item-md-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-md-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-column-menu-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-md-line-height, var(--kendo-line-height))"</li><li>lg: "padding-x":"var(--kendo-column-menu-item-lg-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-lg-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-column-menu-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-lg-line-height, var(--kendo-line-height))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the ColumnMenu.</div></div>

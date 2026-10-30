@@ -2275,8 +2275,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small breadcrumb.</div></div>
@@ -2315,8 +2315,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-sm-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small breadcrumb.</div></div>
@@ -2951,7 +2951,7 @@ The following table lists the available variables for customizing the Fluent the
         line-height: $kendo-breadcrumb-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-0\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-0\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>md: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-1\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-1\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-2))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-2))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-spacing-2\\.5))","icon-link-padding-y":"var(--kendo-breadcrumb-lg-icon-link-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li></ul></td>
+    <td><ul><li>sm: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-0\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-0\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-sm-icon-link-padding-y, var(--kendo-spacing-0\\.5))","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)"</li><li>md: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-1\\.5))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-1\\.5))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5)))","icon-link-padding-y":"var(--kendo-breadcrumb-md-icon-link-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li><li>lg: "link-padding-x":"var(--kendo-breadcrumb-link-padding-x, var(--kendo-spacing-2))","link-padding-y":"var(--kendo-breadcrumb-link-padding-y, var(--kendo-spacing-2))","icon-link-padding-x":"var(--kendo-breadcrumb-icon-link-padding-x, var(--kendo-spacing-2\\.5))","icon-link-padding-y":"var(--kendo-breadcrumb-lg-icon-link-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Breadcrumb.</div></div>
@@ -11580,8 +11580,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-column-menu-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-column-menu-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-column-menu-sm-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-column-menu-sm-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-column-menu-sm-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small ColumnMenu.</div></div>
@@ -11610,8 +11610,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-column-menu-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-column-menu-sm-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-column-menu-sm-line-height, var(--kendo-line-height))</code></td>
+    <td><code>var( --kendo-column-menu-sm-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-column-menu-sm-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small ColumnMenu.</div></div>
@@ -11720,7 +11720,7 @@ The following table lists the available variables for customizing the Fluent the
         line-height: $kendo-column-menu-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-column-menu-item-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-sm-padding-y, var(--kendo-spacing-1))","font-size":"var(--kendo-column-menu-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-sm-line-height, var(--kendo-line-height))"</li><li>md: "padding-x":"var(--kendo-column-menu-item-md-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-md-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-column-menu-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-md-line-height, var(--kendo-line-height))"</li><li>lg: "padding-x":"var(--kendo-column-menu-item-lg-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-lg-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-column-menu-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-lg-line-height, var(--kendo-line-height))"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-column-menu-item-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-sm-padding-y, var(--kendo-spacing-1))","font-size":"var(--kendo-column-menu-sm-font-size, var(--kendo-font-size-sm))","line-height":"var(--kendo-column-menu-sm-line-height, var(--kendo-line-height-lg))"</li><li>md: "padding-x":"var(--kendo-column-menu-item-md-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-md-padding-y, var(--kendo-spacing-1\\.5))","font-size":"var(--kendo-column-menu-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-md-line-height, var(--kendo-line-height))"</li><li>lg: "padding-x":"var(--kendo-column-menu-item-lg-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-column-menu-item-lg-padding-y, var(--kendo-spacing-2))","font-size":"var(--kendo-column-menu-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-column-menu-lg-line-height, var(--kendo-line-height))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the ColumnMenu.</div></div>
@@ -19860,8 +19860,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-sm-font-size</td>
     <td>String</td>
-    <td><code>var(--kendo-font-size)</code></td>
-    <td><code>var(--kendo-font-size)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
+    <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Input components.</div></div>
@@ -19890,8 +19890,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-sm-line-height</td>
     <td>String</td>
-    <td><code>var(--kendo-line-height)</code></td>
-    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height-lg)</code></td>
+    <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
@@ -20402,7 +20402,7 @@ The following table lists the available variables for customizing the Fluent the
         button-width: $kendo-input-lg-button-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","font-size":"var(--kendo-font-size)","line-height":"var(--kendo-line-height)","icon-size":"calc(1rem + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-width":"calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height))","icon-size":"calc(1rem + calc(var(--kendo-spacing-0\\.5) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-width":"calc(var(--kendo-line-height) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","icon-size":"calc(1rem + var(--kendo-spacing-2) * 2)","button-padding-x":"var(--kendo-spacing-2)","button-padding-y":"var(--kendo-spacing-2)","button-width":"calc(var(--kendo-line-height-sm) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2)) + 1px) * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height-lg)","icon-size":"calc(1rem + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px) * 2)","button-padding-x":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-padding-y":"calc(var(--kendo-spacing-0\\.5) + 1px)","button-width":"calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px) * 2)"</li><li>md: "padding-x":"var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5))","padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","font-size":"var(--kendo-input-font-size, var(--kendo-font-size))","line-height":"var(--kendo-input-line-height, var(--kendo-line-height))","icon-size":"calc(1rem + calc(var(--kendo-spacing-0\\.5) + 1px) * 2)","button-padding-x":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-padding-y":"calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px)","button-width":"calc(var(--kendo-line-height) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px) * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-4\\.5)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","icon-size":"calc(1rem + var(--kendo-spacing-2) * 2)","button-padding-x":"var(--kendo-spacing-2)","button-padding-y":"var(--kendo-spacing-2)","button-width":"calc(var(--kendo-line-height-sm) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2)) + 1px) * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
@@ -20721,8 +20721,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-list-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-list-sm-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-list-sm-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-list-sm-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small List.</div></div>
@@ -20751,8 +20751,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-list-sm-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-list-sm-line-height, var(--kendo-line-height))</code></td>
+    <td><code>var( --kendo-list-sm-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-list-sm-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small List.</div></div>
@@ -21071,8 +21071,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-item-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-list-sm-item-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-list-sm-item-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-list-sm-item-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-list-sm-item-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small List item.</div></div>
@@ -21101,8 +21101,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-item-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-list-sm-item-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-list-sm-item-line-height, var(--kendo-line-height))</code></td>
+    <td><code>var( --kendo-list-sm-item-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-list-sm-item-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small List item.</div></div>
@@ -21792,7 +21792,7 @@ The following table lists the available variables for customizing the Fluent the
         sticky-header-padding-y: $kendo-list-lg-sticky-header-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-list-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-sm-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-sm-header-padding-x, var(--kendo-spacing-1))","header-padding-y":"var(--kendo-list-sm-header-padding-y, var(--kendo-spacing-1))","header-font-size":"var(--kendo-list-sm-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-sm-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1))","item-padding-y":"var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1))","item-font-size":"var(--kendo-list-sm-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-sm-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-sm-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-sm-group-item-padding-y, var(--kendo-spacing-1\\.5))","group-item-font-size":"var(--kendo-list-sm-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-sm-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-sm-padding-x, var(--kendo-spacing-0\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-sm-padding-y, var(--kendo-spacing-0\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-sm-filter-padding-x, var(--kendo-spacing-1))","filter-padding-y":"var(--kendo-list-sm-filter-padding-y, var(--kendo-spacing-1))","sticky-header-padding-y":"var(--kendo-list-sm-sticky-header-padding-y, var(--kendo-spacing-0\\.5))"</li><li>md: "font-size":"var(--kendo-list-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-md-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-md-header-padding-x, var(--kendo-spacing-1\\.5))","header-padding-y":"var(--kendo-list-md-header-padding-y, var(--kendo-spacing-1\\.5))","header-font-size":"var(--kendo-list-md-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-md-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5))","item-padding-y":"var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5))","item-font-size":"var(--kendo-list-md-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-md-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-md-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-md-group-item-padding-y, var(--kendo-spacing-2))","group-item-font-size":"var(--kendo-list-md-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-md-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-md-padding-x, var(--kendo-spacing-1))","item-group-label-padding-y":"var(--kendo-list-item-group-label-md-padding-y, var(--kendo-spacing-1))","item-group-label-font-size":"var(--kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-md-filter-padding-x, var(--kendo-spacing-1\\.5))","filter-padding-y":"var(--kendo-list-md-filter-padding-y, var(--kendo-spacing-1\\.5))","sticky-header-padding-y":"var(--kendo-list-md-sticky-header-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-list-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-lg-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-lg-header-padding-x, var(--kendo-spacing-2\\.5))","header-padding-y":"var(--kendo-list-lg-header-padding-y, var(--kendo-spacing-2\\.5))","header-font-size":"var(--kendo-list-lg-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-lg-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5))","item-padding-y":"var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5))","item-font-size":"var(--kendo-list-lg-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-lg-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-lg-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-lg-group-item-padding-y, var(--kendo-spacing-2\\.5))","group-item-font-size":"var(--kendo-list-lg-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-lg-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-lg-padding-x, var(--kendo-spacing-1\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-lg-padding-y, var(--kendo-spacing-1\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-lg-filter-padding-x, var(--kendo-spacing-2\\.5))","filter-padding-y":"var(--kendo-list-lg-filter-padding-y, calc(var(--kendo-spacing-2) + 1px))","sticky-header-padding-y":"var(--kendo-list-lg-sticky-header-padding-y, var(--kendo-spacing-1\\.5))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-list-sm-font-size, var(--kendo-font-size-sm))","line-height":"var(--kendo-list-sm-line-height, var(--kendo-line-height-lg))","header-padding-x":"var(--kendo-list-sm-header-padding-x, var(--kendo-spacing-1))","header-padding-y":"var(--kendo-list-sm-header-padding-y, var(--kendo-spacing-1))","header-font-size":"var(--kendo-list-sm-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-sm-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1))","item-padding-y":"var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1))","item-font-size":"var(--kendo-list-sm-item-font-size, var(--kendo-font-size-sm))","item-line-height":"var(--kendo-list-sm-item-line-height, var(--kendo-line-height-lg))","group-item-padding-x":"var(--kendo-list-sm-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-sm-group-item-padding-y, var(--kendo-spacing-1\\.5))","group-item-font-size":"var(--kendo-list-sm-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-sm-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-sm-padding-x, var(--kendo-spacing-0\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-sm-padding-y, var(--kendo-spacing-0\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-sm-filter-padding-x, var(--kendo-spacing-1))","filter-padding-y":"var(--kendo-list-sm-filter-padding-y, var(--kendo-spacing-1))","sticky-header-padding-y":"var(--kendo-list-sm-sticky-header-padding-y, var(--kendo-spacing-0\\.5))"</li><li>md: "font-size":"var(--kendo-list-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-md-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-md-header-padding-x, var(--kendo-spacing-1\\.5))","header-padding-y":"var(--kendo-list-md-header-padding-y, var(--kendo-spacing-1\\.5))","header-font-size":"var(--kendo-list-md-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-md-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5))","item-padding-y":"var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5))","item-font-size":"var(--kendo-list-md-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-md-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-md-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-md-group-item-padding-y, var(--kendo-spacing-2))","group-item-font-size":"var(--kendo-list-md-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-md-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-md-padding-x, var(--kendo-spacing-1))","item-group-label-padding-y":"var(--kendo-list-item-group-label-md-padding-y, var(--kendo-spacing-1))","item-group-label-font-size":"var(--kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-md-filter-padding-x, var(--kendo-spacing-1\\.5))","filter-padding-y":"var(--kendo-list-md-filter-padding-y, var(--kendo-spacing-1\\.5))","sticky-header-padding-y":"var(--kendo-list-md-sticky-header-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-list-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-list-lg-line-height, var(--kendo-line-height))","header-padding-x":"var(--kendo-list-lg-header-padding-x, var(--kendo-spacing-2\\.5))","header-padding-y":"var(--kendo-list-lg-header-padding-y, var(--kendo-spacing-2\\.5))","header-font-size":"var(--kendo-list-lg-header-font-size, var(--kendo-font-size-sm))","header-line-height":"var(--kendo-list-lg-header-line-height, var(--kendo-line-height-lg))","item-padding-x":"var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5))","item-padding-y":"var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5))","item-font-size":"var(--kendo-list-lg-item-font-size, var(--kendo-font-size))","item-line-height":"var(--kendo-list-lg-item-line-height, var(--kendo-line-height))","group-item-padding-x":"var(--kendo-list-lg-group-item-padding-x, var(--kendo-spacing-2))","group-item-padding-y":"var(--kendo-list-lg-group-item-padding-y, var(--kendo-spacing-2\\.5))","group-item-font-size":"var(--kendo-list-lg-group-item-font-size, var(--kendo-font-size-sm))","group-item-line-height":"var(--kendo-list-lg-group-item-line-height, var(--kendo-line-height-lg))","item-group-label-padding-x":"var(--kendo-list-item-group-label-lg-padding-x, var(--kendo-spacing-1\\.5))","item-group-label-padding-y":"var(--kendo-list-item-group-label-lg-padding-y, var(--kendo-spacing-1\\.5))","item-group-label-font-size":"var(--kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs))","item-group-label-line-height":"inherit","filter-padding-x":"var(--kendo-list-lg-filter-padding-x, var(--kendo-spacing-2\\.5))","filter-padding-y":"var(--kendo-list-lg-filter-padding-y, calc(var(--kendo-spacing-2) + 1px))","sticky-header-padding-y":"var(--kendo-list-lg-sticky-header-padding-y, var(--kendo-spacing-1\\.5))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the List.</div></div>
@@ -23901,8 +23901,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-menu-popup-sm-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Menu popup.</div></div>
@@ -23931,8 +23931,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-menu-popup-sm-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height))</code></td>
+    <td><code>var( --kendo-menu-popup-sm-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Menu popup.</div></div>
@@ -24242,7 +24242,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-menu-popup-sm-group-header-line-height</td>
     <td>String</td>
     <td><code>var( --kendo-menu-popup-sm-group-header-line-height, #{$kendo-menu-popup-sm-line-height} )</code></td>
-    <td><code>var(--kendo-menu-popup-sm-group-header-line-height, var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height)))</code></td>
+    <td><code>var(--kendo-menu-popup-sm-group-header-line-height, var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height-lg)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Menu popup group header.</div></div>
@@ -24541,7 +24541,7 @@ The following table lists the available variables for customizing the Fluent the
         group-header-line-height: $kendo-menu-popup-lg-group-header-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1)))","item-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1)))","item-padding-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1))) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1)))))","group-header-padding-x":"var(--kendo-menu-popup-sm-group-header-padding-x, var(--kendo-list-sm-group-item-padding-x, var(--kendo-spacing-2)))","group-header-padding-y":"var(--kendo-menu-popup-sm-group-header-padding-y, var(--kendo-list-sm-group-item-padding-y, var(--kendo-spacing-1\\.5)))","group-header-font-size":"var(--kendo-menu-popup-sm-group-header-font-size, var(--kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs)))","group-header-line-height":"var(--kendo-menu-popup-sm-group-header-line-height, var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height)))"</li><li>md: "font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5)))","item-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5)))","item-padding-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5))) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5)))))","group-header-padding-x":"var(--kendo-menu-popup-md-group-header-padding-x, var(--kendo-list-md-group-item-padding-x, var(--kendo-spacing-2)))","group-header-padding-y":"var(--kendo-menu-popup-md-group-header-padding-y, var(--kendo-list-md-group-item-padding-y, var(--kendo-spacing-2)))","group-header-font-size":"var(--kendo-menu-popup-md-group-header-font-size, var(--kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs)))","group-header-line-height":"var(--kendo-menu-popup-md-group-header-line-height, var(--kendo-menu-popup-md-line-height, var(--kendo-line-height)))"</li><li>lg: "font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg))","line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5)))","item-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5)))","item-padding-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5))) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5)))))","group-header-padding-x":"var(--kendo-menu-popup-lg-group-header-padding-x, var(--kendo-list-lg-group-item-padding-x, var(--kendo-spacing-2)))","group-header-padding-y":"var(--kendo-menu-popup-lg-group-header-padding-y, var(--kendo-list-lg-group-item-padding-y, var(--kendo-spacing-2\\.5)))","group-header-font-size":"var(--kendo-menu-popup-lg-group-header-font-size, var(--kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs)))","group-header-line-height":"var(--kendo-menu-popup-lg-group-header-line-height, var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height)))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-menu-popup-sm-font-size, var(--kendo-font-size-sm))","line-height":"var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height-lg))","item-padding-y":"var(--kendo-menu-popup-sm-item-padding-y, var(--kendo-list-sm-item-padding-y, var(--kendo-spacing-1)))","item-padding-x":"var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1)))","item-padding-end":"calc(var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1))) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-sm-item-padding-x, var(--kendo-list-sm-item-padding-x, var(--kendo-spacing-1)))))","group-header-padding-x":"var(--kendo-menu-popup-sm-group-header-padding-x, var(--kendo-list-sm-group-item-padding-x, var(--kendo-spacing-2)))","group-header-padding-y":"var(--kendo-menu-popup-sm-group-header-padding-y, var(--kendo-list-sm-group-item-padding-y, var(--kendo-spacing-1\\.5)))","group-header-font-size":"var(--kendo-menu-popup-sm-group-header-font-size, var(--kendo-list-item-group-label-sm-font-size, var(--kendo-font-size-xs)))","group-header-line-height":"var(--kendo-menu-popup-sm-group-header-line-height, var(--kendo-menu-popup-sm-line-height, var(--kendo-line-height-lg)))"</li><li>md: "font-size":"var(--kendo-menu-popup-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-menu-popup-md-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-md-item-padding-y, var(--kendo-list-md-item-padding-y, var(--kendo-spacing-1\\.5)))","item-padding-x":"var(--kendo-menu-popup-md-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5)))","item-padding-end":"calc(var(--kendo-menu-popup-md-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5))) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-md-item-padding-x, var(--kendo-list-md-item-padding-x, var(--kendo-spacing-1\\.5)))))","group-header-padding-x":"var(--kendo-menu-popup-md-group-header-padding-x, var(--kendo-list-md-group-item-padding-x, var(--kendo-spacing-2)))","group-header-padding-y":"var(--kendo-menu-popup-md-group-header-padding-y, var(--kendo-list-md-group-item-padding-y, var(--kendo-spacing-2)))","group-header-font-size":"var(--kendo-menu-popup-md-group-header-font-size, var(--kendo-list-item-group-label-md-font-size, var(--kendo-font-size-xs)))","group-header-line-height":"var(--kendo-menu-popup-md-group-header-line-height, var(--kendo-menu-popup-md-line-height, var(--kendo-line-height)))"</li><li>lg: "font-size":"var(--kendo-menu-popup-lg-font-size, var(--kendo-font-size-lg))","line-height":"var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height))","item-padding-y":"var(--kendo-menu-popup-lg-item-padding-y, var(--kendo-list-lg-item-padding-y, var(--kendo-spacing-2\\.5)))","item-padding-x":"var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5)))","item-padding-end":"calc(var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5))) * 2 + 1rem)","item-icon-margin-start":"var(--kendo-spacing-0)","item-icon-margin-end":"calc(-1 * (1rem + var(--kendo-menu-popup-lg-item-padding-x, var(--kendo-list-lg-item-padding-x, var(--kendo-spacing-2\\.5)))))","group-header-padding-x":"var(--kendo-menu-popup-lg-group-header-padding-x, var(--kendo-list-lg-group-item-padding-x, var(--kendo-spacing-2)))","group-header-padding-y":"var(--kendo-menu-popup-lg-group-header-padding-y, var(--kendo-list-lg-group-item-padding-y, var(--kendo-spacing-2\\.5)))","group-header-font-size":"var(--kendo-menu-popup-lg-group-header-font-size, var(--kendo-list-item-group-label-lg-font-size, var(--kendo-font-size-xs)))","group-header-line-height":"var(--kendo-menu-popup-lg-group-header-line-height, var(--kendo-menu-popup-lg-line-height, var(--kendo-line-height)))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Menu group.</div></div>
@@ -25196,7 +25196,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-otp-sm-input-width</td>
     <td>String</td>
     <td><code>var( --kendo-otp-sm-input-width, #{$kendo-input-sm-calc-size} )</code></td>
-    <td><code>var(--kendo-otp-sm-input-width, calc(var(--kendo-line-height) * 1em + calc(var(--kendo-spacing-0\.5) + 1px) * 2 + 1px * 2))</code></td>
+    <td><code>var(--kendo-otp-sm-input-width, calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-spacing-0\.5) + 1px) * 2 + 1px * 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small OTP separator.</div></div>
@@ -25732,7 +25732,7 @@ The following table lists the available variables for customizing the Fluent the
         input-width: $kendo-otp-lg-input-width
     )
 )</code></td>
-    <td><ul><li>sm: "gap":"var(--kendo-otp-sm-gap, var(--kendo-spacing-1))","separator-padding-x":"var(--kendo-otp-sm-separator-padding-x, var(--kendo-otp-sm-gap, var(--kendo-spacing-1)))","input-width":"var(--kendo-otp-sm-input-width, calc(var(--kendo-line-height) * 1em + calc(var(--kendo-spacing-0\\.5) + 1px) * 2 + 1px * 2))"</li><li>md: "gap":"var(--kendo-otp-md-gap, var(--kendo-otp-gap, var(--kendo-spacing-1\\.5)))","separator-padding-x":"var(--kendo-otp-md-separator-padding-x, var(--kendo-otp-separator-padding-x, var(--kendo-otp-gap, var(--kendo-spacing-1\\.5))))","input-width":"var(--kendo-otp-md-input-width, var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px) * 2 + 1px * 2)))"</li><li>lg: "gap":"var(--kendo-otp-lg-gap, var(--kendo-spacing-2))","separator-padding-x":"var(--kendo-otp-lg-separator-padding-x, var(--kendo-otp-lg-gap, var(--kendo-spacing-2)))","input-width":"var(--kendo-otp-lg-input-width, calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2))"</li></ul></td>
+    <td><ul><li>sm: "gap":"var(--kendo-otp-sm-gap, var(--kendo-spacing-1))","separator-padding-x":"var(--kendo-otp-sm-separator-padding-x, var(--kendo-otp-sm-gap, var(--kendo-spacing-1)))","input-width":"var(--kendo-otp-sm-input-width, calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-spacing-0\\.5) + 1px) * 2 + 1px * 2))"</li><li>md: "gap":"var(--kendo-otp-md-gap, var(--kendo-otp-gap, var(--kendo-spacing-1\\.5)))","separator-padding-x":"var(--kendo-otp-md-separator-padding-x, var(--kendo-otp-separator-padding-x, var(--kendo-otp-gap, var(--kendo-spacing-1\\.5))))","input-width":"var(--kendo-otp-md-input-width, var(--kendo-otp-input-width, calc(var(--kendo-input-line-height, var(--kendo-line-height)) * 1em + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px) * 2 + 1px * 2)))"</li><li>lg: "gap":"var(--kendo-otp-lg-gap, var(--kendo-spacing-2))","separator-padding-x":"var(--kendo-otp-lg-separator-padding-x, var(--kendo-otp-lg-gap, var(--kendo-spacing-2)))","input-width":"var(--kendo-otp-lg-input-width, calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the OTPInput.</div></div>
@@ -37973,8 +37973,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-sm-font-size</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-font-size, var(--kendo-font-size) )</code></td>
-    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size))</code></td>
+    <td><code>var( --kendo-time-selector-sm-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-font-size, var(--kendo-font-size-sm))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the time-selector.</div></div>
@@ -38003,8 +38003,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-sm-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height) )</code></td>
-    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height))</code></td>
+    <td><code>var( --kendo-time-selector-sm-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-time-selector-sm-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
@@ -38153,7 +38153,7 @@ The following table lists the available variables for customizing the Fluent the
         list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2))"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-time-selector-sm-font-size, var(--kendo-font-size-sm))","line-height":"var(--kendo-time-selector-sm-line-height, var(--kendo-line-height-lg))","list-item-padding-x":"var(--kendo-time-selector-sm-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-sm-list-item-padding-y, var(--kendo-spacing-1))"</li><li>md: "font-size":"var(--kendo-time-selector-md-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-md-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-md-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-md-list-item-padding-y, var(--kendo-spacing-1))"</li><li>lg: "font-size":"var(--kendo-time-selector-lg-font-size, var(--kendo-font-size))","line-height":"var(--kendo-time-selector-lg-line-height, var(--kendo-line-height))","list-item-padding-x":"var(--kendo-time-selector-lg-list-item-padding-x, var(--kendo-spacing-3))","list-item-padding-y":"var(--kendo-time-selector-lg-list-item-padding-y, var(--kendo-spacing-2))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TimeSelector.</div></div>

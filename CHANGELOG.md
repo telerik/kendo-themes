@@ -1,3 +1,15 @@
+## 14.7.1-dev.5 (2026-10-29)
+
+### 🩹 Fixes
+
+- **fluent:** use small font size and line height in small-sized components ([d82288c78b](https://github.com/telerik/kendo-themes/commit/d82288c78b))
+
+## 14.7.1-dev.4 (2026-10-28)
+
+### 🩹 Fixes
+
+- **message-box:** improve secondary emphasis contrast ([27fefe55e3](https://github.com/telerik/kendo-themes/commit/27fefe55e3))
+
 ## 14.7.1-dev.3 (2026-10-26)
 
 ### 🩹 Fixes

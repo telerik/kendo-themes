@@ -1,3 +1,18 @@
+## 14.7.1-dev.5 (2026-10-29)
+
+This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.4 (2026-10-28)
+
+### 🩹 Fixes
+
+- **message-box:** improve secondary emphasis contrast ([27fefe55e3](https://github.com/telerik/kendo-themes/commit/27fefe55e3))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.7.1-dev.3 (2026-10-26)
 
 ### 🩹 Fixes
