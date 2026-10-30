@@ -150,14 +150,22 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
 }
 [data-label-mode="border"] .fl:has(input:read-only) { --notch-bottom: var(--readonly-bg); }
 [data-label-mode="border"] .fl:has(input:disabled) { --notch-bottom: var(--disabled-bg); }
-/* Material becomes the outlined variant; Fluent/Bootstrap keep their own focus treatment */
-[data-label-mode="border"] .theme-material .fl { --notch-bottom: transparent; --border: #79747e; --float: translateY(-.6em) scale(.75); }
-[data-label-mode="border"] .theme-material .fl input { background: transparent; border: 1px solid var(--border); border-radius: 4px; padding: 0 var(--pad-x); }
-[data-label-mode="border"] .theme-material .fl input:hover:not(:disabled), [data-label-mode="border"] .theme-material .fl.is-hover input { background: transparent; border-color: var(--border-hover); }
-[data-label-mode="border"] .theme-material .fl input:focus, [data-label-mode="border"] .theme-material .fl.is-focus input { border-width: 1px; padding: 0 var(--pad-x); box-shadow: inset 0 0 0 1px var(--focus); }
-[data-label-mode="border"] .theme-material .fl input[aria-invalid="true"] { border-width: 1px; box-shadow: inset 0 0 0 1px var(--error); }
-[data-label-mode="border"] .theme-material .fl input:disabled { border: 1px solid #1d1b201f; background: transparent; }
-[data-label-mode="border"] .theme-material .fl:has(input:read-only) input { background: transparent; }
+/* Material variants (configurator): filled (default), outlined, flat */
+[data-material-variant="outlined"] .theme-material .fl input { background: transparent; border: 1px solid #79747e; border-radius: 4px; }
+[data-material-variant="outlined"] .theme-material .fl input:hover:not(:disabled), [data-material-variant="outlined"] .theme-material .fl.is-hover input { background: transparent; border-color: var(--fg); }
+[data-material-variant="outlined"] .theme-material .fl input:focus, [data-material-variant="outlined"] .theme-material .fl.is-focus input { border-width: 1px; padding-bottom: calc(var(--h) * .12); box-shadow: inset 0 0 0 1px var(--focus); }
+[data-material-variant="outlined"] .theme-material .fl input[aria-invalid="true"] { border-width: 1px; border-color: var(--error); box-shadow: inset 0 0 0 1px var(--error); }
+[data-material-variant="outlined"] .theme-material .fl input:disabled { border: 1px solid #1d1b201f; background: transparent; }
+[data-material-variant="outlined"] .theme-material .fl input:read-only:not(:disabled) { background: transparent; }
+[data-material-variant="flat"] .theme-material .fl input,
+[data-material-variant="flat"] .theme-material .fl input:hover:not(:disabled),
+[data-material-variant="flat"] .theme-material .fl.is-hover input,
+[data-material-variant="flat"] .theme-material .fl input:disabled,
+[data-material-variant="flat"] .theme-material .fl input:read-only:not(:disabled) { background: transparent; }
+
+/* Border mode: the label is centred on the top edge of every variant (notched for outlined, overhanging for filled/flat) */
+[data-label-mode="border"] .theme-material .fl, [data-label-mode="border"] .theme-material .fl:has(input:read-only), [data-label-mode="border"] .theme-material .fl:has(input:disabled) { --notch-bottom: transparent; --float: translateY(-.6em) scale(.75); }
+[data-label-mode="border"] .theme-material .fl input:focus, [data-label-mode="border"] .theme-material .fl.is-focus input { padding: 0 var(--pad-x); }
 [data-label-mode="border"] .theme-fluent .fl input { border-bottom-color: var(--border); }
 
 /* ---------- Configurator ---------- */
@@ -188,7 +196,10 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
   <fieldset class="configurator">
     <legend>Configurator</legend>
     <label><input type="radio" name="label-mode" value="inside" checked> Label inside (floats within input)</label>
-    <label><input type="radio" name="label-mode" value="border"> Label on top border (outlined)</label>
+    <label><input type="radio" name="label-mode" value="border"> Label on top border</label>
+    <label class="select">Material variant
+      <select id="material-variant"><option value="filled">Filled</option><option value="outlined">Outlined</option><option value="flat">Flat</option></select>
+    </label>
     <label class="toggle"><input type="checkbox" id="fluent-dark"> Fluent dark mode</label>
   </fieldset>
 </header>
@@ -238,6 +249,10 @@ document.querySelectorAll('.fl.is-focus input, .fl.is-hover input').forEach(inpu
 
 document.querySelectorAll('input[name="label-mode"]').forEach(r =>
   r.addEventListener('change', () => { document.getElementById('canvas').dataset.labelMode = r.value; }));
+
+document.getElementById('material-variant').addEventListener('change', e => {
+  document.getElementById('canvas').dataset.materialVariant = e.target.value;
+});
 
 document.getElementById('fluent-dark').addEventListener('change', e =>
   document.querySelector('.theme-fluent').classList.toggle('dark', e.target.checked));
