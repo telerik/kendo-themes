@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights of the Menu used along with $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Menu used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-item-padding-x, var(--kendo-spacing-1\.5))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of Menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-item-text, var(--kendo-menu-text, var(--kendo-color-on-app-surface)))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -324,7 +324,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-item-bg, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -1114,7 +1114,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-scroll-button-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Menu scroll buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu scroll buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -1124,7 +1124,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-scroll-button-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Menu scroll buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Menu scroll buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -1134,7 +1134,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-scroll-button-hover-bg, )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hover Menu scroll buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered Menu scroll buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -1144,7 +1144,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-menu-scroll-button-hover-border, )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hover Menu scroll buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered Menu scroll buttons.</div></div>
     </td>
 </tr>
 <tr>

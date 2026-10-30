@@ -104,7 +104,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>

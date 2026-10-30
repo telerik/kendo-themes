@@ -1,13 +1,7 @@
 @use "../core/_index.scss" as *;
 
-/// The text color of the Marquee.
-/// @group marquee
 $kendo-marquee-text: k-color(secondary-on-subtle) !default;
-/// The background color of the Marquee.
-/// @group marquee
 $kendo-marquee-bg: k-color(secondary) !default;
-/// The border color of the Marquee.
-/// @group marquee
 $kendo-marquee-border: k-color(border) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/marquee/_variables.scss" with (

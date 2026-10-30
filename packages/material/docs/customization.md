@@ -3392,7 +3392,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with the $kendo-font-size variable.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the.</div></div>
     </td>
 </tr>
 <tr>
@@ -3602,7 +3602,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3612,7 +3612,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the selected Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3622,7 +3622,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>none</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the selected Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3662,7 +3662,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 12%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the disabled Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3882,7 +3882,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>0.16</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create a background for the flat Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3892,7 +3892,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>0.22</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create a background for the flat Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -4111,7 +4111,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the header in the Calendar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the header in the Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -4701,7 +4701,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered items in the Calendar navigation.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered items in the Calendar navigation.</div></div>
     </td>
 </tr>
 <tr>
@@ -7802,7 +7802,7 @@ The following table lists the available variables for customizing the Material t
     <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3)","ripple-size":"var(--kendo-spacing-8)","indicator-size":"var(--kendo-spacing-8)"</li><li>md: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-4)","ripple-size":"var(--kendo-spacing-10)","indicator-size":"var(--kendo-spacing-10)"</li><li>lg: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-5)","ripple-size":"var(--kendo-spacing-12)","indicator-size":"var(--kendo-spacing-12)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -10812,7 +10812,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-inverse)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -14775,7 +14775,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing FAB icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -14885,7 +14885,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FAB item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item icon border.</div></div>
     </td>
 </tr>
 <tr>
@@ -15598,7 +15598,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>calc(var(--kendo-spacing-1) + 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the inline Form field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the inline Form field.</div></div>
     </td>
 </tr>
 <tr>
@@ -15608,7 +15608,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>(0 var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the block Form field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the inline Form field.</div></div>
     </td>
 </tr>
 <tr>
@@ -27517,7 +27517,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end shadow of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -27527,7 +27527,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end shadow of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start shadow of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -27537,7 +27537,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start shadow of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top shadow of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -27547,7 +27547,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-elevation-3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top shadow of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom shadow of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -28876,7 +28876,7 @@ The following table lists the available variables for customizing the Material t
     <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-2\\.5)","ripple-size":"var(--kendo-spacing-8)","indicator-size":"var(--kendo-spacing-8)"</li><li>md: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3\\.5)","ripple-size":"var(--kendo-spacing-10)","indicator-size":"var(--kendo-spacing-10)"</li><li>lg: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-4\\.5)","ripple-size":"var(--kendo-spacing-12)","indicator-size":"var(--kendo-spacing-12)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -29186,7 +29186,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple..</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple.</div></div>
     </td>
 </tr>
 <tr>
@@ -30096,7 +30096,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-font-size-sm)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the month inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the month inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30106,7 +30106,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>calc(var(--kendo-font-size-sm) * 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the day inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the day inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30116,7 +30116,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>250px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The max height of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The max height of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30126,7 +30126,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30136,7 +30136,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>25px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30146,7 +30146,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30156,7 +30156,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30166,7 +30166,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -30176,7 +30176,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events items inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events items inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -34302,7 +34302,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-base-emphasis)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is not checked</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -39048,7 +39048,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>color-mix(in srgb, currentColor 8%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -39323,7 +39323,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>0.625rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra extra small font size across all components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small font size across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -39583,7 +39583,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>0.5px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Wide letter spacing across all components</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Wide letter spacing across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -40292,7 +40292,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the code tag.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border of the code tag.</div></div>
     </td>
 </tr>
 <tr>

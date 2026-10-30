@@ -2,35 +2,17 @@
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/functions/index.scss" as *;
 
-/// Border radius of the color preview.
-/// @group color-preview
 $kendo-color-preview-border-radius: var(--kendo-color-preview-border-radius, k-border-radius(md)) !default;
-/// Border width of the color preview.
-/// @group color-preview
 $kendo-color-preview-border-width: var(--kendo-color-preview-border-width, 1px) !default;
-/// Default background color of the color preview.
-/// @group color-preview
 $kendo-color-preview-bg: var(--kendo-color-preview-bg, transparent) !default;
-/// Text color of the color preview.
-/// @group color-preview
 $kendo-color-preview-text: var(--kendo-color-preview-text, inherit) !default;
-/// Border color of the color preview.
-/// @group color-preview
 $kendo-color-preview-border: var(--kendo-color-preview-border, color-mix(in srgb, k-color(on-app-surface) 28%, transparent)) !default;
-/// Hover Border color of the color preview.
-/// @group color-preview
 $kendo-color-preview-hover-border: var(--kendo-color-preview-hover-border, color-mix(in srgb, k-color(on-app-surface) 28%, transparent)) !default;
 
-/// Background color of the color preview when no color is selected.
-/// @group color-preview
 $kendo-color-preview-no-color-bg: var(--kendo-color-preview-no-color-bg, k-color(app-surface)) !default;
 
 // Do not use css variable for the $kendo-color-preview-no-color-text, as it is used in the SVG data URI for the no-color image, which does not support CSS variables.
-/// Text color of the color preview when no color is selected.
-/// @group color-preview
 $kendo-color-preview-no-color-text: map.get($kendo-colors, error) !default;
-/// Border color of the color preview when no color is selected.
-/// @group color-preview
 $kendo-color-preview-no-color-border: var(--kendo-color-preview-no-color-border, currentColor) !default;
 // Background image of the color preview when no color is selected.
 $kendo-color-preview-no-color-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' version='1.1'><line x1='0' x2='20' y1='0' y2='20' stroke='#{$kendo-color-preview-no-color-text}' stroke-width='1'/></svg>") ) !default;

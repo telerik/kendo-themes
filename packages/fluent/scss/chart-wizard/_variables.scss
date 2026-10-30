@@ -3,54 +3,24 @@
 
 // Chart wizard
 
-/// The color of the area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-color: var( --kendo-chart-wizard-icon-area-color, k-color(primary-on-subtle) ) !default;
-/// The background color of the area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-bg: var( --kendo-chart-wizard-icon-area-bg, k-color(primary-subtle) ) !default;
-/// The border radius of the area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-border-radius: var( --kendo-chart-wizard-icon-area-border-radius, k-border-radius(none) ) !default;
-/// The padding of the area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-padding: var( --kendo-chart-wizard-icon-area-padding, k-spacing(4) ) !default;
-/// The border width of the area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-border-width: null !default;
-/// The border color of the area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-border-color: null !default;
-/// The box shadow of the focused area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-focus-shadow: var( --kendo-chart-wizard-icon-area-focus-shadow, inset 0 0 0 1px k-color(primary-emphasis) ) !default;
-/// The box shadow of the selected area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-selected-shadow: var( --kendo-chart-wizard-icon-area-selected-shadow, inset 0 0 0 1px $kendo-chart-wizard-icon-area-color ) !default;
 
-/// The border color of the selected area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-selected-border-color: null !default;
-/// The background color of the selected area around the chart type icon.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-area-selected-bg: null !default;
 
-/// The color of the selected chart type items in the Property panel.
-/// @group chart-wizard
 $kendo-chart-wizard-chart-type-selected-color: var( --kendo-chart-wizard-chart-type-selected-color, k-color(primary) ) !default;
 
-/// The padding of the preview pane.
-/// @group chart-wizard
 $kendo-chart-wizard-preview-pane-padding: var( --kendo-chart-wizard-preview-pane-padding, k-spacing(3) ) !default;
-/// The padding of the property pane.
-/// @group chart-wizard
 $kendo-chart-wizard-property-pane-padding: var( --kendo-chart-wizard-property-pane-padding, k-spacing(3) ) !default;
 
-/// The gap between the chart type items in the Property panel.
-/// @group chart-wizard
 $kendo-chart-wizard-chart-type-spacing: var( --kendo-chart-wizard-chart-type-spacing, k-spacing(4) ) !default;
-/// The gap between the icon area and its text.
-/// @group chart-wizard
 $kendo-chart-wizard-icon-text-gap: var( --kendo-chart-wizard-icon-text-gap, k-spacing(3) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/chart-wizard/_variables.scss" with (

@@ -1,21 +1,48 @@
 // Message box
 
+/// The default theme color of the MessageBox.
+/// @group messagebox
+/// @role default
 $kendo-message-box-default-theme-color: null !default;
 
+/// The margin of the MessageBox.
+/// @group messagebox
 $kendo-message-box-margin: null !default;
+/// The horizontal padding of the MessageBox.
+/// @group messagebox
 $kendo-message-box-padding-x: null !default;
+/// The vertical padding of the MessageBox.
+/// @group messagebox
 $kendo-message-box-padding-y: null !default;
+/// The width of the border around the MessageBox.
+/// @group messagebox
 $kendo-message-box-border-width: null !default;
+/// The border radius of the MessageBox.
+/// @group messagebox
 $kendo-message-box-border-radius: null !default;
 
+/// The font size of the MessageBox.
+/// @group messagebox
 $kendo-message-box-font-size: null !default;
+/// The line height of the MessageBox.
+/// @group messagebox
 $kendo-message-box-line-height: null !default;
 
+/// The background color level of the MessageBox.
+/// @group messagebox
 $kendo-message-box-bg-level: null !default;
+/// The text color level of the MessageBox.
+/// @group messagebox
 $kendo-message-box-text-level: null !default;
+/// The border color level of the MessageBox.
+/// @group messagebox
 $kendo-message-box-border-level: null !default;
 
+/// The font style of the MessageBox link.
+/// @group messagebox
 $kendo-message-box-link-font-style: null !default;
+/// The text decoration of the MessageBox link.
+/// @group messagebox
 $kendo-message-box-link-text-decoration: null !default;
 
 /// The theme colors map of the MessageBox.

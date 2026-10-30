@@ -163,7 +163,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-2\\.5)","ripple-size":"var(--kendo-spacing-8)","indicator-size":"var(--kendo-spacing-8)"</li><li>md: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3\\.5)","ripple-size":"var(--kendo-spacing-10)","indicator-size":"var(--kendo-spacing-10)"</li><li>lg: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-4\\.5)","ripple-size":"var(--kendo-spacing-12)","indicator-size":"var(--kendo-spacing-12)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -473,7 +473,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-color-primary)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple..</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple.</div></div>
     </td>
 </tr>
 <tr>

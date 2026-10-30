@@ -1,9 +1,22 @@
+/// The default size of the Icon.
+/// @group icon
+/// @role default
 $kendo-icon-default-size: null !default;
+/// The default size icon size.
+/// @group icon
 $kendo-icon-size: null !default;
+/// The default icon spacing.
+/// @group icon
 $kendo-icon-spacing: null !default;
+/// The default icon padding.
+/// @group icon
 $kendo-icon-padding: null !default;
 
+/// The color of accent icons.
+/// @group icon
 $kendo-accent-icon-color: null !default;
+/// The color of action icons.
+/// @group icon
 $kendo-action-icon-color: null !default;
 
 @forward "@progress/kendo-svg-icons/scss/index.scss" with (

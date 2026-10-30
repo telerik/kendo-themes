@@ -2537,7 +2537,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container">
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Breadcrumb link.</div></div>
     </td>
 </tr>
 <tr>
@@ -3352,7 +3352,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the.</div></div>
     </td>
 </tr>
 <tr>
@@ -8519,7 +8519,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected solid Chip</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -10739,7 +10739,7 @@ The following table lists the available variables for customizing the Classic th
     <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -18990,7 +18990,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -19000,7 +19000,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -19040,7 +19040,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -25285,7 +25285,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the small Pager..</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the small Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -34502,7 +34502,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34512,7 +34512,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34522,7 +34522,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34532,7 +34532,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track wen the hovered Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34542,7 +34542,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34552,7 +34552,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34562,7 +34562,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34572,7 +34572,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -34582,7 +34582,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-on-app-surface) 25%, transparent))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track wen the focused Switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -38832,7 +38832,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TreeView items</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -39042,7 +39042,7 @@ The following table lists the available variables for customizing the Classic th
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -39052,7 +39052,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -39062,7 +39062,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -39072,7 +39072,7 @@ The following table lists the available variables for customizing the Classic th
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -40036,7 +40036,7 @@ The following table lists the available variables for customizing the Classic th
     <td><ul><li>h1: "font-size":"calc(var(--kendo-font-size) * 4)","font-family":"var(--kendo-font-family)","line-height":"74px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h2: "font-size":"calc(var(--kendo-font-size) * 3)","font-family":"var(--kendo-font-family)","line-height":"56px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h3: "font-size":"calc(var(--kendo-font-size) * 2.5)","font-family":"var(--kendo-font-family)","line-height":"42px","font-weight":"var(--kendo-font-weight-normal)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h4: "font-size":"calc(var(--kendo-font-size) * 2)","font-family":"var(--kendo-font-family)","line-height":"40px","font-weight":"var(--kendo-font-weight-bold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h5: "font-size":"calc(var(--kendo-font-size) * 1.5)","font-family":"var(--kendo-font-family)","line-height":"28px","font-weight":"var(--kendo-font-weight-bold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li><li>h6: "font-size":"var(--kendo-font-size)","font-family":"var(--kendo-font-family)","line-height":"20px","font-weight":"var(--kendo-font-weight-bold)","letter-spacing":null,"margin":"(0 0 var(--kendo-font-size))"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -40465,7 +40465,7 @@ The following table lists the available variables for customizing the Classic th
     <td><ul><li>1: "font-size":"calc(var(--kendo-font-size) * 8)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li><li>2: "font-size":"calc(var(--kendo-font-size) * 7)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li><li>3: "font-size":"calc(var(--kendo-font-size) * 6)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li><li>4: "font-size":"calc(var(--kendo-font-size) * 5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light)","letter-spacing":null</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
     </td>
 </tr>
 </tbody>
@@ -40805,7 +40805,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>calc(-1 * var(--kendo-spacing-1))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload files list.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload list.</div></div>
     </td>
 </tr>
 <tr>
@@ -40815,7 +40815,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload file info.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload.</div></div>
     </td>
 </tr>
 </tbody>

@@ -3,28 +3,12 @@
 
 // Chip
 
-/// The default theme color of the Chip.
-/// @group chip
-/// @role default
 $kendo-chip-default-theme-color: "base" !default;
-/// The default fill mode of the Chip.
-/// @group chip
-/// @role default
 $kendo-chip-default-fill-mode: "solid" !default;
-/// The default roundness of the Chip.
-/// @group chip
-/// @role default
 $kendo-chip-default-roundness: "md" !default;
-/// The default size of the Chip.
-/// @group chip
-/// @role default
 $kendo-chip-default-size: "md" !default;
 
-/// The width of the border around the Chip.
-/// @group chip
 $kendo-chip-border-width: var( --kendo-chip-border-width, 1px ) !default;
-/// The spacing between the text and the icons of the Chip.
-/// @group chip
 $kendo-chip-spacing: var( --kendo-chip-spacing, k-spacing(1) ) !default;
 
 /// The font family of the Chip.
@@ -51,48 +35,22 @@ $kendo-chip-focus-outline-width: 2px !default;
 /// @group chip
 $kendo-chip-focus-outline-style: solid !default;
 
-/// The horizontal padding of the small Chip.
-/// @group chip
 $kendo-chip-sm-padding-x: k-spacing(1.5) !default;
-/// The horizontal padding of the medium Chip.
-/// @group chip
 $kendo-chip-md-padding-x: var( --kendo-chip-padding-x, k-spacing(1.5) ) !default;
-/// The horizontal padding of the large Chip.
-/// @group chip
 $kendo-chip-lg-padding-x: k-spacing(2) !default;
 
-/// The vertical padding of the small Chip.
-/// @group chip
 $kendo-chip-sm-padding-y: calc( #{k-spacing(0.5)} / 2 ) !default;
-/// The vertical padding of the medium Chip.
-/// @group chip
 $kendo-chip-md-padding-y: calc( var( --kendo-chip-padding-y, #{k-spacing(1.5)} ) / 2 ) !default;
-/// The vertical padding of the large Chip.
-/// @group chip
 $kendo-chip-lg-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;
 
-/// The font weight of the Chip.
-/// @group chip
 $kendo-chip-font-weight: var(--kendo-chip-font-weight, var(--kendo-font-weight-normal) ) !default;
 
-/// The font size of the small Chip.
-/// @group chip
 $kendo-chip-sm-font-size: var(--kendo-font-size-sm) !default;
-/// The font size of the medium Chip.
-/// @group chip
 $kendo-chip-md-font-size: var( --kendo-chip-font-size, var(--kendo-font-size-sm) ) !default;
-/// The font size of the large Chip.
-/// @group chip
 $kendo-chip-lg-font-size: var(--kendo-font-size) !default;
 
-/// The small Chip's line height that is related to the $kendo-font-size.
-/// @group chip
 $kendo-chip-sm-line-height: var(--kendo-line-height-lg) !default;
-/// The medium Chip's line height that is related to the $kendo-font-size.
-/// @group chip
 $kendo-chip-md-line-height: var( --kendo-chip-line-height, var(--kendo-line-height-lg) ) !default;
-/// The large Chip's line height that is related to the $kendo-font-size.
-/// @group chip
 $kendo-chip-lg-line-height: var(--kendo-line-height) !default;
 
 $kendo-chip-calc-size: calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 ) !default;
@@ -146,24 +104,12 @@ $kendo-chip-selected-bg: var( --kendo-chip-selected-bg, k-color(primary) ) !defa
 /// The base border color of the selected solid Chip.
 /// @group chip
 $kendo-chip-selected-border: var( --kendo-chip-selected-border, k-color(primary) ) !default;
-/// The base text color of the disabled solid Chip.
-/// @group chip
 $kendo-chip-disabled-text: var( --kendo-chip-disabled-text, color-mix(in srgb, k-color(on-app-surface) 30%, transparent) ) !default;
-/// The base background color of the disabled solid Chip.
-/// @group chip
 $kendo-chip-disabled-bg: var( --kendo-chip-disabled-bg, color-mix(in srgb, k-color(on-app-surface) 7%, transparent) ) !default;
-/// The base border color of the disabled solid Chip.
-/// @group chip
 $kendo-chip-disabled-border: var( --kendo-chip-disabled-border, transparent ) !default;
 
-/// The sizes of the small Chip list.
-/// @group chip
 $kendo-chip-list-size-sm: k-spacing(1) !default;
-/// The sizes of the medium Chip list.
-/// @group chip
 $kendo-chip-list-size-md: k-spacing(1) !default;
-/// The sizes of the large Chip list.
-/// @group chip
 $kendo-chip-list-size-lg: k-spacing(1) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/chip/_variables.scss" with (

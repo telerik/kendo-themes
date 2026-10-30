@@ -1,41 +1,22 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The default theme color of the MessageBox.
-/// @group messagebox
-/// @role default
 $kendo-message-box-default-theme-color: null !default;
 
-/// Margin around the message box.
-/// @group messagebox
 $kendo-message-box-margin: var( --kendo-message-box-margin, 0 0 k-spacing(3) 0 ) !default;
-/// Horizontal padding of the message box.
-/// @group messagebox
 $kendo-message-box-padding-x: var( --kendo-message-box-padding-x, k-spacing(3) ) !default;
-/// Vertical padding of the message box.
-/// @group messagebox
 $kendo-message-box-padding-y: var( --kendo-message-box-padding-y, k-spacing(2.5) ) !default;
-/// Border width of the message box.
-/// @group messagebox
 $kendo-message-box-border-width: var( --kendo-message-box-border-width, 1px ) !default;
 /// Border style of the message box.
 /// @group messagebox
 $kendo-message-box-border-style: var( --kendo-message-box-border-style, solid ) !default;
-/// The radius of the border around the message box.
-/// @group messagebox
 $kendo-message-box-border-radius: k-border-radius(md) !default;
 /// Font family of the message box.
 /// @group messagebox
 $kendo-message-box-font-family: var( --kendo-message-box-font-family, var(--kendo-font-family) ) !default;
-/// Font size of the message box.
-/// @group messagebox
 $kendo-message-box-font-size: var( --kendo-message-box-font-size, var(--kendo-font-size-sm) ) !default;
-/// Line height of the message box.
-/// @group messagebox
 $kendo-message-box-line-height: var( --kendo-message-box-line-height, var(--kendo-line-height-lg) ) !default;
 
-/// Font style of the message box links.
-/// @group messagebox
 $kendo-message-box-link-font-style: var( --kendo-message-box-link-font-style, normal ) !default;
 /// Text decoration of the message box links.
 /// @group messagebox

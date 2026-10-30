@@ -1,38 +1,91 @@
 // Pager
 
+/// The default size of the Pager.
+/// @group pager
+/// @role default
 $kendo-pager-default-size: null !default;
 
+/// The horizontal padding of the small Pager.
+/// @group pager
 $kendo-pager-sm-padding-x: null !default;
+/// The horizontal padding of the medium Pager.
+/// @group pager
 $kendo-pager-md-padding-x: null !default;
+/// The horizontal padding of the large Pager.
+/// @group pager
 $kendo-pager-lg-padding-x: null !default;
+/// The vertical padding of the small Pager.
+/// @group pager
 $kendo-pager-sm-padding-y: null !default;
+/// The vertical padding of the medium Pager.
+/// @group pager
 $kendo-pager-md-padding-y: null !default;
+/// The vertical padding of the large Pager.
+/// @group pager
 $kendo-pager-lg-padding-y: null !default;
 
+/// The minimum width of the items in the small Pager.
+/// @group pager
 $kendo-pager-sm-item-min-width: null !default;
+/// The minimum width of the items in the medium Pagers.
+/// @group pager
 $kendo-pager-md-item-min-width: null !default;
+/// The minimum width of the items in the large Pagers.
+/// @group pager
 $kendo-pager-lg-item-min-width: null !default;
 
+/// The margin between the item groups in the small Pager.
+/// @group pager
 $kendo-pager-sm-item-group-spacing: null !default;
+/// The margin between the item groups in the medium Pager.
+/// @group pager
 $kendo-pager-md-item-group-spacing: null !default;
+/// The margin between the item groups in the large Pager.
+/// @group pager
 $kendo-pager-lg-item-group-spacing: null !default;
 
+/// The border width of the Pager.
+/// @group pager
 $kendo-pager-border-width: null !default;
+/// The font family of the Pager.
+/// @group pager
 $kendo-pager-font-family: null !default;
+/// The font size of the Pager.
+/// @group pager
 $kendo-pager-font-size: null !default;
+/// The line height of the Pager.
+/// @group pager
 $kendo-pager-line-height: null !default;
+/// The background color of the Pager.
+/// @group pager
 $kendo-pager-bg: null !default;
+/// The text color of the Pager.
+/// @group pager
 $kendo-pager-text: null !default;
+/// The border color of the Pager.
+/// @group pager
 $kendo-pager-border: null !default;
 
+/// The background color of the focused Pager.
+/// @group pager
 $kendo-pager-focus-bg: null !default;
+/// The box shadow of the focused Pager.
+/// @group pager
 $kendo-pager-focus-shadow: null !default;
 
+/// The border width of the Pager items.
+/// @group pager
 $kendo-pager-item-border-width: null !default;
+/// The spacing around the Pager items.
+/// @group pager
 $kendo-pager-item-spacing: null !default;
 
+/// The width of the Inputs in the Pager.
+/// @group pager
 $kendo-pager-input-width: null !default;
 
+/// The width of the DropDowns in the Pager.
+/// @group pager
 $kendo-pager-dropdown-width: null !default;
 
 /// The sizes map of the Pager.

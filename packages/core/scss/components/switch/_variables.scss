@@ -1,117 +1,294 @@
 // Switch
 
+/// The default size of the Switch.
+/// @group switch
+/// @role default
 $kendo-switch-default-size: null !default;
+/// The default border radius of the Switch track.
+/// @group switch
+/// @role default
 $kendo-switch-default-track-roundness: null !default;
+/// The default border radius of the Switch thumb.
+/// @group switch
+/// @role default
 $kendo-switch-default-thumb-roundness: null !default;
 
 $kendo-switch-track-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 $kendo-switch-thumb-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 
+/// The font family of the Switch.
+/// @group switch
 $kendo-switch-font-family: null !default;
 
+/// The border width of the Switch track.
+/// @group switch
 $kendo-switch-track-border-width: null !default;
 
+/// The border width of the Switch thumb.
+/// @group switch
 $kendo-switch-thumb-border-width: null !default;
 
+/// The text transform of the Switch label.
+/// @group switch
 $kendo-switch-label-text-transform: null !default;
 
+/// The display of the Switch label.
+/// @group switch
 $kendo-switch-label-display: null !default;
 
+/// The font size of the small Switch.
+/// @group switch
 $kendo-switch-sm-font-size: null !default;
+/// The track width of the small Switch.
+/// @group switch
 $kendo-switch-sm-track-width: null !default;
+/// The track height of the small Switch.
+/// @group switch
 $kendo-switch-sm-track-height: null !default;
+/// The thumb width of the small Switch.
+/// @group switch
 $kendo-switch-sm-thumb-width: null !default;
+/// The thumb height of the small Switch.
+/// @group switch
 $kendo-switch-sm-thumb-height: null !default;
+/// The thumb offset of the small Switch.
+/// @group switch
 $kendo-switch-sm-thumb-offset: null !default;
+/// The label offset of the small Switch.
+/// @group switch
 $kendo-switch-sm-label-offset: null !default;
 
+/// The font size of the medium Switch.
+/// @group switch
 $kendo-switch-md-font-size: null !default;
+/// The track width of the medium Switch.
+/// @group switch
 $kendo-switch-md-track-width: null !default;
+/// The track height of the medium Switch.
+/// @group switch
 $kendo-switch-md-track-height: null !default;
+/// The thumb width of the medium Switch.
+/// @group switch
 $kendo-switch-md-thumb-width: null !default;
+/// The thumb height of the medium Switch.
+/// @group switch
 $kendo-switch-md-thumb-height: null !default;
+/// The thumb offset of the medium Switch.
+/// @group switch
 $kendo-switch-md-thumb-offset: null !default;
+/// The label offset of the medium Switch.
+/// @group switch
 $kendo-switch-md-label-offset: null !default;
 
+/// The font size of the large Switch.
+/// @group switch
 $kendo-switch-lg-font-size: null !default;
+/// The track width of the large Switch.
+/// @group switch
 $kendo-switch-lg-track-width: null !default;
+/// The track height of the large Switch.
+/// @group switch
 $kendo-switch-lg-track-height: null !default;
+/// The thumb width of the large Switch.
+/// @group switch
 $kendo-switch-lg-thumb-width: null !default;
+/// The thumb height of the large Switch.
+/// @group switch
 $kendo-switch-lg-thumb-height: null !default;
+/// The thumb offset of the large Switch.
+/// @group switch
 $kendo-switch-lg-thumb-offset: null !default;
+/// The label offset of the large Switch.
+/// @group switch
 $kendo-switch-lg-label-offset: null !default;
 
+/// The background of the track when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-bg: null !default;
+/// The text color of the track when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-text: null !default;
+/// The border color of the track when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-border: null !default;
+/// The background gradient of the track when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-gradient: null !default;
 
+/// The background of the track when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-hover-bg: null !default;
+/// The text color of the track when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-hover-text: null !default;
+/// The border color of the track when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-hover-border: null !default;
+/// The background gradient of the track when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-hover-gradient: null !default;
 
+/// The background of the track when the focused Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-focus-bg: null !default;
+/// The text color of the track when the focused Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-focus-text: null !default;
+/// The border color of the track when the focused Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-focus-border: null !default;
+/// The background gradient of the track when the focused Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-focus-gradient: null !default;
+/// The ring around the track when the focused Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-focus-ring: null !default;
 
+/// The background of the track when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-disabled-bg: null !default;
+/// The text color of the track when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-disabled-text: null !default;
+/// The border color of the track when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-disabled-border: null !default;
+/// The background gradient of the track when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-track-disabled-gradient: null !default;
 
+/// The background of the thumb when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-bg: null !default;
+/// The text color of the thumb when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-text: null !default;
+/// The border color of the thumb when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-border: null !default;
+/// The background gradient of the thumb when the Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-gradient: null !default;
 
+/// The background of the thumb when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-hover-bg: null !default;
+/// The text color of the thumb when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-hover-text: null !default;
+/// The border color of the thumb when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-hover-border: null !default;
+/// The background gradient of the thumb when the hovered Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-hover-gradient: null !default;
 
+/// The background of the thumb when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-disabled-bg: null !default;
+/// The text color of the thumb when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-disabled-text: null !default;
+/// The border color of the thumb when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-disabled-border: null !default;
+/// The background gradient of the thumb when the disabled Switch is not checked.
+/// @group switch
 $kendo-switch-off-thumb-disabled-gradient: null !default;
 
 
+/// The background of the track when the Switch is checked.
+/// @group switch
 $kendo-switch-on-track-bg: null !default;
+/// The text color of the track when the Switch is checked.
+/// @group switch
 $kendo-switch-on-track-text: null !default;
+/// The border color of the track when the Switch is checked.
+/// @group switch
 $kendo-switch-on-track-border: null !default;
+/// The background gradient of the track when the Switch is checked.
+/// @group switch
 $kendo-switch-on-track-gradient: null !default;
 
+/// The background of the track when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-track-hover-bg: null !default;
+/// The text color of the track when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-track-hover-text: null !default;
+/// The border color of the track when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-track-hover-border: null !default;
+/// The background gradient of the track when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-track-hover-gradient: null !default;
 
+/// The background of the track when the focused Switch is checked.
+/// @group switch
 $kendo-switch-on-track-focus-bg: null !default;
+/// The text color of the track when the focused Switch is checked.
+/// @group switch
 $kendo-switch-on-track-focus-text: null !default;
+/// The border color of the track when the focused Switch is checked.
+/// @group switch
 $kendo-switch-on-track-focus-border: null !default;
+/// The background gradient of the track when the focused Switch is checked.
+/// @group switch
 $kendo-switch-on-track-focus-gradient: null !default;
+/// The ring around the track when the focused Switch is checked.
+/// @group switch
 $kendo-switch-on-track-focus-ring: null !default;
 
+/// The background of the track when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-track-disabled-bg: null !default;
+/// The text color of the track when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-track-disabled-text: null !default;
+/// The border color of the track when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-track-disabled-border: null !default;
+/// The background gradient of the track when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-track-disabled-gradient: null !default;
 
+/// The background of the thumb when the Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-bg: null !default;
+/// The text color of the thumb when the Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-text: null !default;
+/// The border color of the thumb when the Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-border: null !default;
+/// The background gradient of the thumb when the Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-gradient: null !default;
 
+/// The background of the thumb when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-hover-bg: null !default;
+/// The text color of the thumb when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-hover-text: null !default;
+/// The border color of the thumb when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-hover-border: null !default;
+/// The background gradient of the thumb when the hovered Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-hover-gradient: null !default;
 
+/// The background of the thumb when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-disabled-bg: null !default;
+/// The text color of the thumb when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-disabled-text: null !default;
+/// The border color of the thumb when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-disabled-border: null !default;
+/// The background gradient of the thumb when the disabled Switch is checked.
+/// @group switch
 $kendo-switch-on-thumb-disabled-gradient: null !default;
 
 /// The map with the different Switch sizes.

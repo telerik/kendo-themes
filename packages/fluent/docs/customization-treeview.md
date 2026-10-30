@@ -394,7 +394,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-treeview-item-hover-border, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered TreeView items</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>

@@ -3352,7 +3352,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the.</div></div>
     </td>
 </tr>
 <tr>
@@ -3832,7 +3832,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.16</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create a background for the flat Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3842,7 +3842,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.2</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create a background for the flat Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -4101,7 +4101,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>none</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the header in the Calendar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the header in the Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -7713,7 +7713,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-surface-alt)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -7723,7 +7723,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -7733,7 +7733,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-border-alt)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -7783,7 +7783,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -7933,7 +7933,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-error-on-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the invalid CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of an invalid CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -7943,7 +7943,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-error-on-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of an invalid CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -8063,7 +8063,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the CheckBox list items</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the CheckBox list items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8439,7 +8439,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-base-subtle)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the Chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -8459,7 +8459,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-base-on-subtle)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">he base text color of the solid Chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -10739,7 +10739,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-inverse)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -15575,7 +15575,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>(0 var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the inline Form field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the inline Form field.</div></div>
     </td>
 </tr>
 <tr>
@@ -17395,7 +17395,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sorting index vertical spacing of the Grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -17405,7 +17405,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>calc(var(--kendo-spacing-0\.5) * -1)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sorting index horizontal spacing of the Grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -18070,7 +18070,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the icons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size icon size.</div></div>
     </td>
 </tr>
 <tr>
@@ -18080,7 +18080,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the icons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default icon spacing.</div></div>
     </td>
 </tr>
 <tr>
@@ -18090,7 +18090,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Padding of the action icons container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default icon padding.</div></div>
     </td>
 </tr>
 <tr>
@@ -18970,7 +18970,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-font-family)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -18980,7 +18980,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -19020,7 +19020,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -20605,7 +20605,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List header</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20785,7 +20785,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List group items..</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List group items.</div></div>
     </td>
 </tr>
 <tr>
@@ -21035,7 +21035,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ListBoxx.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ListBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -22435,7 +22435,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -28854,7 +28854,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -28884,7 +28884,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered RadioButton.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -28914,7 +28914,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-on-primary)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the checked RadioButton.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -29034,7 +29034,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-error-on-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the invalid RadioButton.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the invalid RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -32012,7 +32012,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-spacing-3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -39082,7 +39082,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -39092,7 +39092,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -39102,7 +39102,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -39112,7 +39112,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Load More button in the TreeView.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Load More button in the TreeView</div></div>
     </td>
 </tr>
 <tr>
@@ -40505,7 +40505,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><ul><li>1: "font-size":"calc(1rem * 5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>2: "font-size":"calc(1rem * 4.5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>3: "font-size":"calc(1rem * 4)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>4: "font-size":"calc(1rem * 3.5)","font-family":"var(--kendo-font-family)","line-height":1.2,"font-weight":300,"letter-spacing":null</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
     </td>
 </tr>
 </tbody>

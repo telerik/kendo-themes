@@ -3432,7 +3432,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the xsmall Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the xsmall Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3442,7 +3442,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the small Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3452,7 +3452,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the medium Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the medium Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3462,7 +3462,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-line-height-lg)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the large Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3742,7 +3742,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button gradient of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3752,7 +3752,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>true</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3762,7 +3762,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3772,7 +3772,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3782,7 +3782,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.3</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3792,7 +3792,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>true</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3802,7 +3802,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3812,7 +3812,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3822,7 +3822,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.3</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3832,7 +3832,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>true</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3842,7 +3842,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3852,7 +3852,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3862,7 +3862,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.3</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3872,7 +3872,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button focus opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the clear Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -22965,7 +22965,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Menu separator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Menu separator.</div></div>
     </td>
 </tr>
 <tr>
@@ -23674,7 +23674,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-1)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button..</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button.</div></div>
     </td>
 </tr>
 </tbody>
@@ -31258,7 +31258,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton wave animation.</div></div>
     </td>
 </tr>
 </tbody>
@@ -36774,7 +36774,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
     </td>
 </tr>
 <tr>
@@ -36784,7 +36784,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-color-primary-on-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
     </td>
 </tr>
 <tr>
@@ -40306,7 +40306,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the code tag.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the code tag.</div></div>
     </td>
 </tr>
 <tr>

@@ -714,7 +714,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-list-group-item-font-weight, var(--kendo-font-weight-semibold))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the List group item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of a List group item.</div></div>
     </td>
 </tr>
 <tr>
@@ -734,7 +734,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-list-item-border-radius, var(--kendo-border-radius-md))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the List item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -1034,7 +1034,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-list-item-description-line-height, var(--kendo-line-height-lg))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the list item description.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line of the list item description.</div></div>
     </td>
 </tr>
 <tr>
@@ -1065,6 +1065,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-sm-line-height</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-md-line-height</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium List item group label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-group-label-lg-line-height</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large List item group label.</div></div>
     </td>
 </tr>
 <tr>

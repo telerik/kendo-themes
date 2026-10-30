@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-timeline-track-arrow-disabled-bg, var(--kendo-color-base-subtle))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Timeline arrow.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Timeline track arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -234,7 +234,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-timeline-track-arrow-disabled-text, color-mix(in srgb, var(--kendo-color-on-app-surface) 46%, transparent))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Timeline arrow.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Timeline track arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -244,7 +244,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-timeline-track-arrow-disabled-border, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Timeline arrow.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Timeline track arrow.</div></div>
     </td>
 </tr>
 <tr>

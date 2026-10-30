@@ -414,7 +414,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-orgchart-card-body-border-width, 2px 0 0)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top border width of the OrgChart Card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart Card body.</div></div>
     </td>
 </tr>
 <tr>

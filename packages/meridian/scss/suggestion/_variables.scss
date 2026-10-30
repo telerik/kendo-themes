@@ -1,44 +1,20 @@
 @use "../core/_index.scss" as *;
 
 
-/// The vertical padding of the Suggestion wrapper.
-/// @group suggestion
 $kendo-suggestion-padding-y: k-spacing(1.5) !default;
-/// The horizontal padding of the Suggestion wrapper.
-/// @group suggestion
 $kendo-suggestion-padding-x: k-spacing(3) !default;
-/// The horizontal padding of the Suggestion wrapper.
-/// @group suggestion
 $kendo-suggestion-spacing: k-spacing(2) !default;
-/// The border width of the Suggestion.
-/// @group suggestion
 $kendo-suggestion-border-width: 1px !default;
-/// The border style of the Suggestion.
-/// @group suggestion
 $kendo-suggestion-border-style: solid !default;
 
-/// The font size of the Suggestion.
-/// @group suggestion
 $kendo-suggestion-font-size: var( --kendo-font-size-sm, inherit ) !default;
 
-/// The line height of the Suggestion.
-/// @group suggestion
 $kendo-suggestion-line-height: var( --kendo-line-height-sm, normal ) !default;
-/// The font weight of the Suggestion.
-/// @group suggestion
 $kendo-suggestion-font-weight: var( --kendo-font-weight-medium, normal ) !default;
-/// The border radius of the Suggestion.
-/// @group suggestion
 $kendo-suggestion-border-radius: k-border-radius(full) !default;
 
-/// The shadow blur of the focused Suggestion.
-/// @group suggestion
 $kendo-suggestion-focus-shadow-blur: null !default;
-/// The shadow spread of the focused Suggestion.
-/// @group suggestion
 $kendo-suggestion-focus-shadow-spread: null !default;
-/// The shadow color of the focused Suggestion.
-/// @group suggestion
 $kendo-suggestion-focus-shadow-color: null !default;
 
 /// The outline color of the focused Suggestion.
@@ -51,13 +27,8 @@ $kendo-suggestion-focus-outline-width: 1px !default;
 /// @group suggestion
 $kendo-suggestion-focus-outline-offset: 1px !default;
 
-/// The default theme color of the Suggestion.
-/// @group suggestion
-/// @role default
 $kendo-suggestion-default-theme-color: "base" !default;
 
-/// The gradient used for scroll indicators in the Suggestion group.
-/// @group suggestion
 $kendo-suggestion-scroll-gradient: rgba(255, 255, 255, 0.00) 0%, k-color(app-surface) 100% !default;
 
 @forward "@progress/kendo-theme-core/scss/components/suggestion/_variables.scss" with (

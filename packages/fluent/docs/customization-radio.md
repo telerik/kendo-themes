@@ -73,7 +73,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3\\.5)","indicator-size":"var(--kendo-spacing-2)","ripple-size":"300%"</li><li>md: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-4\\.5)","indicator-size":"var(--kendo-spacing-2\\.5)","ripple-size":"300%"</li><li>lg: "size":"var(--kendo-spacing-6)","glyph-size":"var(--kendo-spacing-5\\.5)","indicator-size":"var(--kendo-spacing-3)","ripple-size":"300%"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -293,7 +293,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-radio-disabled-checked-border, var(--kendo-radio-disabled-border, color-mix(in srgb, var(--kendo-color-on-app-surface) 30%, transparent)))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled and checked RadioButton.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-radio-glyph-font-family, "WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph font family of the RadioButton indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the RadioButton indicator glyph.</div></div>
     </td>
 </tr>
 <tr>

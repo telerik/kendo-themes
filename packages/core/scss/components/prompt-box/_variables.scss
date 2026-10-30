@@ -1,11 +1,23 @@
 // Prompt box
 
+/// The border radius of the PromptBox.
+/// @group prompt-box
 $kendo-prompt-box-border-radius: null !default;
 
+/// The box shadow of the PromptBox.
+/// @group prompt-box
 $kendo-prompt-box-box-shadow: null !default;
 
+/// The padding of the PromptBox header.
+/// @group prompt-box
 $kendo-prompt-box-header-padding: null !default;
+/// The inner padding of the PromptBox input.
+/// @group prompt-box
 $kendo-prompt-box-input-inner-padding: null !default;
+/// The padding of the PromptBox affix.
+/// @group prompt-box
 $kendo-prompt-box-affix-padding: null !default;
 
+/// The spacing between the PromptBox affixes.
+/// @group prompt-box
 $kendo-prompt-box-affix-spacing: null !default;
