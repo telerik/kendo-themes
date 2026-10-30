@@ -1,16 +1,16 @@
 ---
-name: manage-html
-description: Create or update the HTML package portion of a Kendo UI component — the component spec (.spec.tsx with types, options, states, render function, constants, index exports), reusable templates (preset variants), visual test scenarios for screenshot regression testing, and accessibility (@aria/@keyboard/@ux/@see JSDoc annotations, ARIA attributes, axe-core WCAG 2.2 AA validation). Use this skill when the user wants to create or change an HTML spec, add states/options or change a component's HTML structure, add a template variant, add/extend visual test coverage, add accessibility support, fix ARIA violations, or document keyboard shortcuts.
+name: manage-specs
+description: Create or update the HTML package (packages/html) for a Kendo UI component — the component spec (.spec.tsx with types, options, states, render function, constants, index exports), reusable templates (preset variants), visual test scenarios for screenshot regression testing, and accessibility (@aria/@keyboard/@ux/@see JSDoc annotations, ARIA attributes, axe-core WCAG 2.2 AA validation). Use this skill when the user wants to create or change an HTML spec, add states/options or change a component's HTML structure, add a template variant, add/extend visual test coverage, add accessibility support, fix ARIA violations, document keyboard shortcuts, or build the HTML half of a new component.
 argument-hint: "[component] [spec|templates|tests|a11y] e.g. chip tests, button a11y"
 metadata:
   internal: true
 ---
 
-# HTML Package
+# Specs (HTML package)
 
 Create or update a component's spec, templates, visual tests, and accessibility in `packages/html/src/{component}/`.
 
-Read [../_shared/component-context.md](../_shared/component-context.md) for naming conventions and validation steps.
+Read [references/context.md](references/context.md) for naming conventions, paths, and validation steps.
 
 ## When to use
 
@@ -19,7 +19,7 @@ Read [../_shared/component-context.md](../_shared/component-context.md) for nami
 - **Tests** — new or extended visual test scenarios (e.g., "add size tests for badge")
 - **Accessibility** — ARIA attributes, `@aria`/`@keyboard`/`@ux`/`@see` annotations, WCAG validation (e.g., "add a11y to checkbox")
 
-Not for SCSS (use `manage-scss`).
+Not for SCSS (use `manage-themes`). For a **new component** or an update spanning SCSS + HTML, start from `manage-themes` → `references/component.md`; it hands the HTML half back here.
 
 ## Component folder layout
 
@@ -45,6 +45,7 @@ Pick the parts the request touches and follow the matching reference. For a new 
 | Visual tests | [references/tests.md](references/tests.md) |
 | Accessibility workflow | [references/a11y.md](references/a11y.md) |
 | Annotation format and patterns | [references/a11y-annotations.md](references/a11y-annotations.md) |
+| Checklists for state/option/structure changes | [references/update-checklist.md](references/update-checklist.md) |
 
 Use an existing component of similar complexity as a structural reference: `badge`/`avatar` (simple), `button`/`chip`/`card` (medium), `grid`/`toolbar`/`scheduler` (complex).
 

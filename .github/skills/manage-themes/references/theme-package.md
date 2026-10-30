@@ -1,21 +1,14 @@
----
-name: manage-theme
-description: Create a new Kendo UI theme package from scratch or update an existing theme's design tokens, swatches, and component overrides. Handles package scaffolding, core re-exports, swatch configuration, theme-level token overrides, and broad component-level overrides. Use this skill when the user wants to create a new theme, add or edit swatches, or apply broad styling changes across a theme.
-argument-hint: "[theme-name] e.g. new-brand, default, fluent"
-metadata:
-  internal: true
----
-
-# Theme
+# Theme Package
 
 Create a new theme package or update an existing theme's tokens, swatches, and component overrides.
 
-## Related skills
+## Related references
 
-| Skill / reference | When to use |
-|-------|-----------------|
-| [manage-scss](../manage-scss/SKILL.md) | Component variables/styles, or design system foundation tokens in core (spacing, colors, elevation, typography, border-radii, motion, z-index) |
-| [manage-components](../manage-components/SKILL.md) | Full component create/update across SCSS + HTML |
+| Reference | When to use |
+|-----------|-------------|
+| [foundation-modules.md](foundation-modules.md) | Design system foundation tokens in core (spacing, colors, elevation, typography, border-radii, motion, z-index) |
+| [variables.md](variables.md) / [styles.md](styles.md) | Component variables or layout/theme mixins |
+| [component.md](component.md) | Full component create/update across SCSS + HTML |
 
 ## When to use
 
@@ -24,7 +17,7 @@ Create a new theme package or update an existing theme's tokens, swatches, and c
 - **Swatch changes** — "add a high-contrast swatch to fluent", "change ocean-blue primary"
 - **Broad component updates** — "update padding across all form components in bootstrap"
 
-Not for single-component work (use [manage-scss](../manage-scss/SKILL.md) or [manage-components](../manage-components/SKILL.md)). For core design system modules, use [manage-scss](../manage-scss/SKILL.md).
+Not for single-component work (use [variables.md](variables.md), [styles.md](styles.md), or [component.md](component.md)). For core design system modules, use [foundation-modules.md](foundation-modules.md).
 
 ## Inputs
 
@@ -141,18 +134,18 @@ Update swatch JSON files: rename files from `{base}-*.json` to `{theme}-*.json`,
 
 ### Step 3: Apply design token customizations
 
-Customize the theme's visual identity. Use the appropriate sub-skill for each change type:
+Customize the theme's visual identity. Use the appropriate reference for each change type:
 
 **Design system tokens** (spacing, colors, elevation, typography, border-radii):
-- Follow [manage-scss → foundation-modules](../manage-scss/references/foundation-modules.md) if the change should be in core (affects all themes)
+- Follow [foundation-modules.md](foundation-modules.md) if the change should be in core (affects all themes)
 - Edit `scss/core/_index.scss` if the change is a theme-specific override of a core module
 
 **Component variables** (padding, font-size, border-width, colors per component):
-- Follow [manage-scss → variables](../manage-scss/references/variables.md) for systematic variable changes
+- Follow [variables.md](variables.md) for systematic variable changes
 - Or edit `scss/{component}/_variables.scss` directly for simple value changes
 
 **Component styles** (layout, theme mixins):
-- Follow [manage-scss → styles](../manage-scss/references/styles.md) for structural or visual mixin changes
+- Follow [styles.md](styles.md) for structural or visual mixin changes
 
 **Swatch colors**:
 - Edit `lib/swatches/{theme}-main.json` directly
@@ -171,13 +164,13 @@ npx stylelint "scss/**/*.scss" 2>&1
 
 Categorize the requested changes:
 
-| Change type | Skill / reference | Files affected |
+| Change type | Reference | Files affected |
 |-------------|-------------|----------------|
-| **Design token** (spacing, colors, elevation) | [manage-scss → foundation-modules](../manage-scss/references/foundation-modules.md) | `packages/core/scss/{module}/`, theme core re-exports |
+| **Design token** (spacing, colors, elevation) | [foundation-modules.md](foundation-modules.md) | `packages/core/scss/{module}/`, theme core re-exports |
 | **Theme-level variable** (z-index, focus-shadow) | Direct edit | `scss/_variables.scss` |
-| **Component variable** | [manage-scss → variables](../manage-scss/references/variables.md) | `scss/{component}/_variables.scss` |
-| **Component style** | [manage-scss → styles](../manage-scss/references/styles.md) | `scss/{component}/_layout.scss`, `_theme.scss` |
-| **Multiple components** | [manage-components](../manage-components/SKILL.md) | Multiple component directories |
+| **Component variable** | [variables.md](variables.md) | `scss/{component}/_variables.scss` |
+| **Component style** | [styles.md](styles.md) | `scss/{component}/_layout.scss`, `_theme.scss` |
+| **Multiple components** | [component.md](component.md) | Multiple component directories |
 | **Swatch color** | Direct edit | `lib/swatches/{swatch}.json` |
 | **New swatch** | Direct edit | `lib/swatches/{new}.json`, `lib/swatches/index.js` |
 
@@ -191,18 +184,18 @@ For non-trivial changes, present the plan and **wait for user confirmation**:
 1. **[Type]** — {description}
    - Files: {list}
    - Before → After: {values}
-   - Skill: {which sub-skill to delegate to}
+   - Reference: {which reference to follow}
 ### Summary: Files modified N, Files created N
 ```
 
 ### Step 3: Apply changes
 
-Delegate to sub-skills or edit directly based on the change plan:
+Follow the references or edit directly based on the change plan:
 
-- **Token changes** → follow [manage-scss → foundation-modules](../manage-scss/references/foundation-modules.md) for core changes, or edit `scss/core/_index.scss` for theme-only overrides
-- **Component variable changes** → follow [manage-scss → variables](../manage-scss/references/variables.md)
-- **Component style changes** → follow [manage-scss → styles](../manage-scss/references/styles.md)
-- **Multi-component changes** → delegate to [manage-components](../manage-components/SKILL.md)
+- **Token changes** → follow [foundation-modules.md](foundation-modules.md) for core changes, or edit `scss/core/_index.scss` for theme-only overrides
+- **Component variable changes** → follow [variables.md](variables.md)
+- **Component style changes** → follow [styles.md](styles.md)
+- **Multi-component changes** → delegate to [component.md](component.md)
 - **Swatch changes** → edit directly:
   - Existing swatch: edit the JSON in `lib/swatches/`
   - New swatch: copy an existing swatch JSON, change `name`, colors, and `previewColors`, register in `lib/swatches/index.js`

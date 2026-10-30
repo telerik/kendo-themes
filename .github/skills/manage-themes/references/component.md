@@ -1,16 +1,8 @@
----
-name: manage-components
-description: Create or update a Kendo UI component end to end across kendo-themes packages (SCSS + HTML + unit tests). For new components, scaffolds core skeleton, theme overrides, HTML spec, templates, visual tests, and unit tests. For existing components, audits the current state, produces a change plan, and coordinates SCSS and HTML changes. Use this skill when the user wants to add a new component, update a component's design across packages, add new states or options, or align a component with design assets.
-argument-hint: "[component-name] e.g. chip, button, info-bar"
-metadata:
-  internal: true
----
+# Component Workflow (SCSS + HTML)
 
-# Component
+Create or update a Kendo UI component across the monorepo. This file drives the whole flow; the HTML steps hand off to the `manage-specs` skill.
 
-Create or update a Kendo UI component across the monorepo.
-
-Read [../_shared/component-context.md](../_shared/component-context.md) for naming conventions, theme paths, and common gotchas.
+Read [context.md](context.md) for naming conventions, theme paths, and common gotchas.
 
 ## When to use
 
@@ -18,12 +10,7 @@ Read [../_shared/component-context.md](../_shared/component-context.md) for nami
 - **Update component** — "update the chip based on this design", "change button padding", "add a `warning` state to badge"
 - **Partial update** — "just update the chip variables in default and fluent"
 
-This skill coordinates; the details live in the package skills. For a single-package task, use that skill directly:
-
-| Sub-task | Skill |
-|----------|-------|
-| Component variables, layout/theme mixins, `_index.scss` wiring, theme registration | [manage-scss](../manage-scss/SKILL.md) |
-| HTML spec, templates, visual tests, ARIA/accessibility | [manage-html](../manage-html/SKILL.md) |
+For a single-package task, skip this workflow: use [variables.md](variables.md) / [styles.md](styles.md) for SCSS only, or the [manage-specs skill](../../manage-specs/SKILL.md) for HTML only.
 
 ## Inputs
 
@@ -47,21 +34,21 @@ This skill coordinates; the details live in the package skills. For a single-pac
 
 ### Step 1: Derive naming constants
 
-Use the naming derivation table from [../_shared/component-context.md](../_shared/component-context.md).
+Use the naming derivation table from [context.md](context.md).
 
 ### Step 2: Research a reference component
 
-Find an existing component of similar complexity in `packages/core/scss/components/`. See reference component guidance in [../_shared/component-context.md](../_shared/component-context.md).
+Find an existing component of similar complexity in `packages/core/scss/components/`. See reference component guidance in [context.md](context.md).
 
 If the user doesn't specify variables/states/options, use reasonable defaults based on the reference.
 
 ### Step 3: Create SCSS variables
 
-Follow [manage-scss → variables](../manage-scss/references/variables.md) to create variables in core (null `!default`) and all targeted themes (concrete values + `@forward` maps).
+Follow [variables.md](variables.md) to create variables in core (null `!default`) and all targeted themes (concrete values + `@forward` maps).
 
 ### Step 4: Create SCSS styles, module, and register
 
-Follow [manage-scss → styles](../manage-scss/references/styles.md) to:
+Follow [styles.md](styles.md) to:
 
 - Create layout and theme mixins in core and targeted themes
 - Create `_index.scss` in each targeted theme
@@ -69,21 +56,21 @@ Follow [manage-scss → styles](../manage-scss/references/styles.md) to:
 
 ### Step 5: Create HTML spec, templates, and visual tests
 
-Use the [manage-html skill](../manage-html/SKILL.md) to create `constants.ts`, `{component}.spec.tsx`, `index.ts`, at least one default template, and test files covering default, states, sizes, and fill modes as applicable.
+Use the [manage-specs skill](../../manage-specs/SKILL.md) to create `constants.ts`, `{component}.spec.tsx`, `index.ts`, at least one default template, and test files covering default, states, sizes, and fill modes as applicable.
 
 ### Step 6: Create unit test
 
-Create `units/default/{component}.test.ts` using the template from [../_shared/file-templates.md](../_shared/file-templates.md).
+Create `units/default/{component}.test.ts` using the template from [file-templates.md](file-templates.md).
 
 ### Step 7: Validate
 
-Run the validation steps from [../_shared/component-context.md](../_shared/component-context.md).
+Run the SCSS validation steps from [context.md](context.md) and the HTML ones from [manage-specs → context.md](../../manage-specs/references/context.md).
 
 ## Procedure — Update Component
 
 ### Step 1: Derive naming constants
 
-Use the naming derivation table from [../_shared/component-context.md](../_shared/component-context.md).
+Use the naming derivation table from [context.md](context.md).
 
 ### Step 2: Audit the current state
 
@@ -133,19 +120,19 @@ Present the plan and **wait for user confirmation** before editing:
 
 ### Step 5: Apply variable changes
 
-Follow [manage-scss → variables](../manage-scss/references/variables.md) and the checklist in [references/update-checklist.md](references/update-checklist.md).
+Follow [variables.md](variables.md) and the checklist in [update-checklist.md](update-checklist.md).
 
 ### Step 6: Apply style and module changes
 
-Follow [manage-scss → styles](../manage-scss/references/styles.md) for layout, theme, and `_index.scss` changes.
+Follow [styles.md](styles.md) for layout, theme, and `_index.scss` changes.
 
 ### Step 7: Apply HTML changes
 
-Use the [manage-html skill](../manage-html/SKILL.md) for spec structure/state/option changes, template variants, and visual test coverage for every visible change.
+Use the [manage-specs skill](../../manage-specs/SKILL.md) for spec structure/state/option changes, template variants, and visual test coverage for every visible change.
 
 ### Step 8: Validate
 
-Run the validation steps from [../_shared/component-context.md](../_shared/component-context.md).
+Run the SCSS validation steps from [context.md](context.md) and the HTML ones from [manage-specs → context.md](../../manage-specs/references/context.md).
 
 ### Step 9: Report
 
@@ -162,7 +149,7 @@ Run the validation steps from [../_shared/component-context.md](../_shared/compo
 
 ## Gotchas
 
-See shared gotchas in [../_shared/component-context.md](../_shared/component-context.md). Additionally:
+See shared gotchas in [context.md](context.md). Additionally:
 
 - **New components:** register the component in `packages/{theme}/scss/index.scss`, preserving existing dependency/import order (do not alphabetize). `packages/{theme}/scss/all.scss` is just a wrapper. When target themes is not `all`, always create core and HTML files regardless.
 - **Updates — audit first:** never assume the current state. Read the files first; components vary in complexity.
