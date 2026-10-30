@@ -8,6 +8,47 @@ $kendo-floating-label-height: null !default;
 $kendo-floating-label-offset-x: null !default;
 $kendo-floating-label-offset-y: null !default;
 
+$kendo-floating-label-sm-font-size: null !default;
+$kendo-floating-label-lg-font-size: null !default;
+
+$kendo-floating-label-sm-line-height: null !default;
+$kendo-floating-label-lg-line-height: null !default;
+
+$kendo-floating-label-sm-height: null !default;
+$kendo-floating-label-lg-height: null !default;
+
+$kendo-floating-label-sm-offset-x: null !default;
+$kendo-floating-label-lg-offset-x: null !default;
+
+$kendo-floating-label-sm-offset-y: null !default;
+$kendo-floating-label-lg-offset-y: null !default;
+
+/// The sizes map of the Floating Label. Picked up automatically based on the size of the nested input/picker.
+/// @group floating-label
+$kendo-floating-label-sizes: (
+    sm: (
+        font-size: $kendo-floating-label-sm-font-size,
+        line-height: $kendo-floating-label-sm-line-height,
+        height: $kendo-floating-label-sm-height,
+        offset-x: $kendo-floating-label-sm-offset-x,
+        offset-y: $kendo-floating-label-sm-offset-y
+    ),
+    md: (
+        font-size: $kendo-floating-label-font-size,
+        line-height: $kendo-floating-label-line-height,
+        height: $kendo-floating-label-height,
+        offset-x: $kendo-floating-label-offset-x,
+        offset-y: $kendo-floating-label-offset-y
+    ),
+    lg: (
+        font-size: $kendo-floating-label-lg-font-size,
+        line-height: $kendo-floating-label-lg-line-height,
+        height: $kendo-floating-label-lg-height,
+        offset-x: $kendo-floating-label-lg-offset-x,
+        offset-y: $kendo-floating-label-lg-offset-y
+    )
+) !default;
+
 $kendo-floating-label-focus-scale: null !default;
 $kendo-floating-label-focus-offset-x: null !default;
 $kendo-floating-label-focus-offset-y: null !default;

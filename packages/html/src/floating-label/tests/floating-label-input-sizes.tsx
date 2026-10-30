@@ -45,49 +45,46 @@ export default () =>(
                 </div>
             ))}
 
-            <span>(custom) horizontal offset</span>
+            <span>textbox w/ prefix</span>
+
+            {Input.options.size.map((size) => (
+                <div>
+                    <FloatingLabelNormal label="Label">
+                        <TextboxPrefix size={size}/>
+                    </FloatingLabelNormal>
+                </div>
+            ))}
+
+            <span>textarea w/ prefix</span>
+
+            {Input.options.size.map((size) => (
+                <div>
+                    <FloatingLabelNormal label="Label">
+                        <TextareaPrefix size={size}/>
+                    </FloatingLabelNormal>
+                </div>
+            ))}
+
+            <span>(custom) manual offset override</span>
 
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "37px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "50px" }} label="Label">
                     <TextboxPrefix/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "33px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "50px" }} label="Label">
                     <TextboxPrefix size="small"/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "37px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "50px" }} label="Label">
                     <TextboxPrefix size="medium"/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "41px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "50px" }} label="Label">
                     <TextboxPrefix size="large"/>
-                </FloatingLabelNormal>
-            </div>
-
-            <span>(custom) vertical offset</span>
-
-            <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "57px" }} label="Label">
-                    <TextareaPrefix/>
-                </FloatingLabelNormal>
-            </div>
-            <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "53px" }} label="Label">
-                    <TextareaPrefix size="small"/>
-                </FloatingLabelNormal>
-            </div>
-            <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "57px" }} label="Label">
-                    <TextareaPrefix size="medium"/>
-                </FloatingLabelNormal>
-            </div>
-            <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "65px" }} label="Label">
-                    <TextareaPrefix size="large"/>
                 </FloatingLabelNormal>
             </div>
 

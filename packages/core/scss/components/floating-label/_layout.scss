@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "./_variables.scss" as *;
 
 @mixin kendo-floating-label--layout-base() {
@@ -5,6 +6,12 @@
 
     // Floating label
     .k-floating-label-container {
+        // Internal, size-aware fallbacks for the empty-state offsets. Automatically follow the
+        // size (`k-input-{size}` / `k-picker-{size}`) of the nested input/picker, unless explicitly
+        // overridden through `--kendo-floating-label-offset-x` / `--kendo-floating-label-offset-y`.
+        --kendo-floating-label-size-offset-x: #{$kendo-floating-label-offset-x};
+        --kendo-floating-label-size-offset-y: #{$kendo-floating-label-offset-y};
+
         padding-block-start: $kendo-floating-label-height;
         box-sizing: border-box;
         display: inline-flex;
@@ -26,19 +33,39 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             position: absolute;
-            inset-block-start: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
-            inset-inline-start: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
+            inset-block-start: var(--kendo-floating-label-offset-y, var(--kendo-floating-label-size-offset-y));
+            inset-inline-start: var(--kendo-floating-label-offset-x, var(--kendo-floating-label-size-offset-x));
             overflow: hidden;
             cursor: text;
             transform-origin: left center;
             transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, left $kendo-floating-label-transition;
         }
 
+        // Follow the size (`k-input-{size}` / `k-picker-{size}`) of the nested input/picker.
+        @each $size, $size-props in $kendo-floating-label-sizes {
+            $_font-size: map.get( $size-props, font-size );
+            $_line-height: map.get( $size-props, line-height );
+            $_height: map.get( $size-props, height );
+            $_offset-x: map.get( $size-props, offset-x );
+            $_offset-y: map.get( $size-props, offset-y );
+
+            &:has(> .k-input-#{$size}, > .k-picker-#{$size}) {
+                --kendo-floating-label-size-offset-x: #{$_offset-x};
+                --kendo-floating-label-size-offset-y: #{$_offset-y};
+
+                padding-block-start: $_height;
+
+                > .k-floating-label {
+                    font-size: $_font-size;
+                    line-height: $_line-height;
+                }
+            }
+        }
 
         &.k-empty {
             > .k-floating-label {
-                inset-block-start: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
-                inset-inline-start: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
+                inset-block-start: var(--kendo-floating-label-offset-y, var(--kendo-floating-label-size-offset-y));
+                inset-inline-start: var(--kendo-floating-label-offset-x, var(--kendo-floating-label-size-offset-x));
                 transform: scale( $kendo-floating-label-scale );
                 pointer-events: none;
             }
