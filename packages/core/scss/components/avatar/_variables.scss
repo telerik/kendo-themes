@@ -14,19 +14,28 @@ $kendo-avatar-border-radius: null !default;
 
 $kendo-avatar-font-family: null !default;
 $kendo-avatar-font-size: null !default;
+$kendo-avatar-xs-font-size: null !default;
+$kendo-avatar-xl-font-size: null !default;
 $kendo-avatar-line-height: null !default;
 
+$kendo-avatar-xs-icon-size: null !default;
+$kendo-avatar-xl-icon-size: null !default;
 
+
+$kendo-avatar-xs-size: null !default;
 $kendo-avatar-sm-size: null !default;
 $kendo-avatar-md-size: null !default;
 $kendo-avatar-lg-size: null !default;
+$kendo-avatar-xl-size: null !default;
 
 /// The sizes map of the Avatar.
 /// @group avatar
 $kendo-avatar-sizes: (
+    xs: $kendo-avatar-xs-size,
     sm: $kendo-avatar-sm-size,
     md: $kendo-avatar-md-size,
-    lg: $kendo-avatar-lg-size
+    lg: $kendo-avatar-lg-size,
+    xl: $kendo-avatar-xl-size
 ) !default;
 
 /// The theme colors map of the Avatar.

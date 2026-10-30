@@ -3,7 +3,7 @@ import { Avatar, AvatarIcon, AvatarImage, AvatarText } from '../../avatar';
 
 const styles = `
     #test-area {
-        grid-template-columns: 120px repeat(4, 1fr);
+        grid-template-columns: 120px repeat(6, 1fr);
         align-items: center;
     }
 `;
@@ -14,10 +14,9 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
 
             <span><small>rounded / size</small></span>
-            <span>undefined</span>
-            <span>small</span>
-            <span>medium</span>
-            <span>large</span>
+            {Avatar.options.size.map((size) => (
+                <span>{`${size}`}</span>
+            ))}
             {Avatar.options.rounded.map((roundness) => (
                 <>
                     <span>{`${roundness}`}</span>
