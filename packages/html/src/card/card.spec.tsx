@@ -29,7 +29,12 @@ export type KendoCardState = { [K in (typeof states)[number]]?: boolean };
  * @ux {Content container} Groups related content in a visually elevated surface.
  * @ux {Header and footer} Optional header and footer sections hold titles and actions.
  * @ux {Media} Supports an image or other media element at the top of the card.
+ * @aria {role="listitem"} Required when the card is located in a `.k-card-list`.
+ * @aria {tabindex="0"} The card is focusable when navigatable; inner elements are not focusable until Enter is pressed.
+ * @aria {aria-describedby=".k-card-title id"} Associates the card with its title element.
+ * @aria {aria-keyshortcuts="Enter"} Announces the Enter key that enables navigation inside the card.
  * @ux {Actions} Optional action buttons are placed in the card body or footer.
+ * @ux {No built-in keyboard support} The Card has no ARIA role or keyboard navigation unless used in a Card List.
  */
 export const Card: KendoComponent<KendoCardProps & KendoCardState & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoCardProps &
@@ -78,5 +83,10 @@ Card.className = CARD_CLASSNAME;
 Card.defaultOptions = defaultOptions;
 Card.moduleName = CARD_MODULE_NAME;
 Card.folderName = CARD_FOLDER_NAME;
+
+/**
+ * @keyboard {Enter} Enables navigation inside a navigatable card.
+ * @keyboard {Tab} Moves focus through the elements inside the card, following their own keyboard navigation sequence.
+ */
 
 export default Card;

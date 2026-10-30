@@ -31,6 +31,7 @@ export type KendoAppbarProps = KendoAppbarOptions & {
  * @ux {Application header} Renders as the primary header bar of the application.
  * @ux {Sticky positioning} Stays fixed at the top of the viewport as the user scrolls.
  * @ux {Sections} Divided into start, center, and end sections for flexible content placement.
+ * @ux {No ARIA attributes} The AppBar is a container and does not implement any WAI-ARIA attributes.
  */
 export const Appbar: KendoComponent<KendoAppbarProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoAppbarProps &
@@ -68,4 +69,8 @@ Appbar.className = APPBAR_CLASSNAME;
 Appbar.defaultOptions = defaultOptions;
 Appbar.moduleName = APPBAR_MODULE_NAME;
 Appbar.folderName = APPBAR_FOLDER_NAME;
+/**
+ * @keyboard {Tab} Moves focus through the inner elements; the AppBar itself has no keyboard navigation.
+ */
+
 export default Appbar;
