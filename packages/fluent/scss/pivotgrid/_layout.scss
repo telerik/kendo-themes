@@ -35,6 +35,20 @@
         border-inline-start-width: 0;
     }
 
+    .k-pivotgrid-values .k-pivotgrid-table tr:first-child .k-pivotgrid-cell {
+        border-block-start-style: solid;
+        border-block-start-width: $kendo-pivotgrid-cell-border-width;
+    }
+
+    .k-pivotgrid-column-headers .k-pivotgrid-table tr:nth-last-child(3) .k-pivotgrid-cell[rowspan="2"] {
+        border-block-end-width: 0;
+    }
+
+    .k-pivotgrid-column-headers .k-pivotgrid-table tr:last-child .k-pivotgrid-cell:nth-child(3) {
+        border-block-start-style: solid;
+        border-block-start-width: $kendo-pivotgrid-cell-border-width;
+    }
+
     .k-pivotgrid-configurator-content .k-form .k-label {
         font-weight: 400;
     }
