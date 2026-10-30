@@ -19,7 +19,7 @@ Read [../_shared/component-context.md](../_shared/component-context.md) for nami
 - **Tests** — new or extended visual test scenarios (e.g., "add size tests for badge")
 - **Accessibility** — ARIA attributes, `@aria`/`@keyboard`/`@ux`/`@see` annotations, WCAG validation (e.g., "add a11y to checkbox")
 
-Not for SCSS (use `manage-components`).
+Not for SCSS (use `manage-scss`).
 
 ## Component folder layout
 

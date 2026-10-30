@@ -12,7 +12,7 @@ When the user asks to:
 - Create all variables for a new component (as part of `component`)
 - Remove or deprecate a variable
 
-Not for layout/theme mixin changes or component registration (see [scss-styles.md](scss-styles.md)) or design system foundation modules like spacing/colors (see [foundation-modules.md](../../manage-theme/references/foundation-modules.md)).
+Not for layout/theme mixin changes or component registration (see [styles.md](styles.md)) or design system foundation modules like spacing/colors (see [foundation-modules.md](foundation-modules.md)).
 
 ## Inputs
 

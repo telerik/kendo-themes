@@ -14,7 +14,7 @@ When the user asks to:
 - Add or change a component's dependencies
 - Add box-shadow, border-radius, or other visual properties
 
-Not for variable declarations (see [scss-variables.md](scss-variables.md)) or design system foundation modules like spacing/color-system/typography (see [foundation-modules.md](../../manage-theme/references/foundation-modules.md)).
+Not for variable declarations (see [variables.md](variables.md)) or design system foundation modules like spacing/color-system/typography (see [foundation-modules.md](foundation-modules.md)).
 
 ## Inputs
 
@@ -62,7 +62,7 @@ Edit `packages/core/scss/components/{component}/_layout.scss` and/or `_theme.scs
 **Rules:**
 - Never assign concrete values in core — only reference `$kendo-{component}-*` variables
 - Keep the mixin names unchanged (`--layout-base`, `--theme-base`)
-- New CSS properties that need customization require new variables (see [scss-variables.md](scss-variables.md) first)
+- New CSS properties that need customization require new variables (see [variables.md](variables.md) first)
 - State selectors: `.k-{component}.k-hover`, `.k-{component}.k-selected`, etc.
 - For new components, use templates from [../../_shared/file-templates.md](../../_shared/file-templates.md)
 
@@ -140,7 +140,7 @@ npm run sass 2>&1
 ## Gotchas
 
 - **Core changes propagate automatically** — most themes call `@include kendo-{component}--layout-base()`, so changes to core affect all themes.
-- **New CSS properties need variables** — don't hardcode values in core. Add a variable via [scss-variables.md](scss-variables.md) first, then reference it here.
+- **New CSS properties need variables** — don't hardcode values in core. Add a variable via [variables.md](variables.md) first, then reference it here.
 - **State classes, not pseudo-classes** — use `.k-{component}.k-hover` (class applied by JS), not `.k-{component}:hover` (CSS pseudo).
 - **BEM naming** — sub-elements: `.k-{component}-{element}`, modifiers: `.k-{component}-{modifier}`.
 - **Component names in `@include import-once("...")` must be unique** across the entire theme.

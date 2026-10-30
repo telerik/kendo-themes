@@ -168,7 +168,7 @@ $kendo-{component}-bg: var(--kendo-{component}-bg, #{k-color(surface-alt)}) !def
 
 ### `packages/{theme}/scss/{component}/_index.scss`
 
-See Step 4 in [../manage-components/references/scss-styles.md](../manage-components/references/scss-styles.md).
+See Step 4 in [../manage-scss/references/styles.md](../manage-scss/references/styles.md).
 
 ## HTML Package Templates
 
