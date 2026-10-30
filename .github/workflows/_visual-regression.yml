@@ -136,15 +136,33 @@ jobs:
 
       - name: Publish report to gh-pages
         if: steps.resolve-pr.outputs.pr-number != ''
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ github.token }}
-          publish_branch: gh-pages
-          publish_dir: .reg
-          destination_dir: reports/pr-${{ steps.resolve-pr.outputs.pr-number }}
-          keep_files: false
-          user_name: kendo-bot
-          user_email: kendouiteam@progress.com
+        env:
+          DEST: reports/pr-${{ steps.resolve-pr.outputs.pr-number }}
+        run: |
+          git config user.name kendo-bot
+          git config user.email kendouiteam@progress.com
+          rm -rf .gh-pages
+          git fetch --depth=1 origin gh-pages
+          for attempt in 1 2 3; do
+            git worktree add -f .gh-pages FETCH_HEAD
+            rm -rf ".gh-pages/$DEST"
+            mkdir -p ".gh-pages/$DEST"
+            cp -r .reg/. ".gh-pages/$DEST/"
+            git -C .gh-pages add -A
+            if git -C .gh-pages diff --cached --quiet; then
+              echo "Nothing to publish."
+              break
+            fi
+            git -C .gh-pages commit -m "Publish visual regression report for $DEST"
+            if git -C .gh-pages push origin HEAD:gh-pages; then
+              break
+            fi
+            echo "Push failed (attempt $attempt); refetching and retrying."
+            git worktree remove --force .gh-pages
+            git fetch --depth=1 origin gh-pages
+            if [ "$attempt" = 3 ]; then exit 1; fi
+          done
+          git worktree remove --force .gh-pages
 
       - name: Summarize result
         id: summary
