@@ -22,7 +22,7 @@ Use the skills in `.github/skills/` for multi-step work:
 - `manage-themes` — all SCSS (core + themes): variables, styles, design tokens, theme packages/swatches, and the end-to-end component workflow
 - `manage-specs` — HTML package: specs, templates, visual tests, and accessibility
 - `audit-design-tokens` — find hardcoded values that should use tokens
-- `component-pr-description` — PR descriptions for component changes
+- `write-pr-description` — PR descriptions for component changes
 
 ## Commands
 

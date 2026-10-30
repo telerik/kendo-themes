@@ -1,5 +1,5 @@
 ---
-name: component-pr-description
+name: write-pr-description
 description: Write a GitHub-ready PR description for new or changed HTML package components — idea, before/after HTML rendering, per-scenario snippets, accessibility summary, and a visual test reference table. Use this skill when the user asks for a PR description, PR summary, or release write-up of component changes on the current branch.
 argument-hint: "[component...] optional; defaults to all components changed on the branch"
 metadata:
