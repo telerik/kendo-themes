@@ -654,7 +654,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-font-size, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
     </td>
 </tr>
 <tr>
@@ -664,7 +664,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the adaptive action sheet.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">The line height of the adaptive action sheet.</div></div>
     </td>
 </tr>
 <tr>
@@ -674,7 +674,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-header-padding-y, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet titlebar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet titlebar.</div></div>
     </td>
 </tr>
 <tr>
@@ -684,7 +684,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-header-padding-x, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet titlebar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet titlebar.</div></div>
     </td>
 </tr>
 <tr>
@@ -694,7 +694,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-content-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet content.</div></div>
     </td>
 </tr>
 <tr>
@@ -704,7 +704,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-content-padding-x, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet content.</div></div>
     </td>
 </tr>
 <tr>
@@ -714,7 +714,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-footer-padding-y, var(--kendo-spacing-2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -724,7 +724,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-adaptive-actionsheet-footer-padding-x, var(--kendo-spacing-4))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.</div></div><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet footer.</div></div>
     </td>
 </tr>
 <tr>

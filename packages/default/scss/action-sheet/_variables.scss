@@ -231,32 +231,41 @@ $kendo-actionsheet-item-disabled-opacity: null !default;
 // Adaptive Actionsheet (deprecated, kept for backwards compatibility)
 /// The font size of the adaptive ActionSheet.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-font-size: var(--kendo-font-size-lg) !default;
 /// The line height of the adaptive ActionSheet.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-line-height: var(--kendo-line-height) !default;
 /// The vertical padding of the adaptive ActionSheet titlebar.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-titlebar-padding-y: k-spacing(4) !default;
 /// The horizontal padding of the adaptive ActionSheet titlebar.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;
 /// The border color of the adaptive ActionSheet titlebar.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-titlebar-border: k-color(border) !default;
 
 /// The vertical padding of the adaptive ActionSheet content.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-content-padding-y: k-spacing(2) !default;
 /// The horizontal padding of the adaptive ActionSheet content.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-content-padding-x: k-spacing(4) !default;
 
 /// The vertical padding of the adaptive ActionSheet footer.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-footer-padding-y: k-spacing(2) !default;
 /// The horizontal padding of the adaptive ActionSheet footer.
 /// @group action-sheet
+/// @deprecated Use the $kendo-actionsheet-* variables with the new ActionSheet markup. Kept for the deprecated k-adaptive-actionsheet class.
 $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
 
 // Actionsheet group item
