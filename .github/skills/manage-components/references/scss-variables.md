@@ -1,16 +1,8 @@
----
-name: manage-scss-variables
-description: Create or update SCSS variables for a Kendo UI component — null declarations in core and concrete overrides in targeted theme packages. Handles theme SassDoc comments, @forward maps, and theme-specific conventions (Fluent CSS custom properties). Use this skill when the user wants to add, change, or remove a component variable.
-argument-hint: "[component] [variable-name] e.g. chip gap, button padding-x"
-metadata:
-  internal: true
----
-
 # SCSS Variables
 
 Create or update SCSS variables for a component in core and targeted themes.
 
-Read [../_shared/component-context.md](../_shared/component-context.md) for naming conventions, theme paths, and common gotchas.
+Read [../../_shared/component-context.md](../../_shared/component-context.md) for naming conventions, theme paths, and common gotchas.
 
 ## When to use
 
@@ -20,7 +12,7 @@ When the user asks to:
 - Create all variables for a new component (as part of `component`)
 - Remove or deprecate a variable
 
-Not for layout/theme mixin changes or component registration (use `manage-scss-styles`) or design system foundation modules like spacing/colors (use `manage-scss-modules`).
+Not for layout/theme mixin changes or component registration (see [scss-styles.md](scss-styles.md)) or design system foundation modules like spacing/colors (see [foundation-modules.md](../../manage-theme/references/foundation-modules.md)).
 
 ## Inputs
 
@@ -52,7 +44,7 @@ $kendo-{component}-gap: null !default;
 - Every variable is `null !default` — never assign concrete values in core
 - No SassDoc in core — documentation lives in the themes. Exceptions: the `$kendo-{component}-sizes` and `$kendo-{component}-theme-colors` maps
 - Place near related variables (all padding vars together, all color vars together)
-- For a new component, use the core template from [../_shared/file-templates.md](../_shared/file-templates.md)
+- For a new component, use the core template from [../../_shared/file-templates.md](../../_shared/file-templates.md)
 
 ### Step 3: Apply to targeted themes
 
@@ -73,9 +65,9 @@ For each theme in the **target themes** list, edit `packages/{theme}/scss/{compo
    );
    ```
 
-3. **Follow theme-specific conventions** from [../_shared/component-context.md](../_shared/component-context.md)
+3. **Follow theme-specific conventions** from [../../_shared/component-context.md](../../_shared/component-context.md)
 
-For a new component, use the theme variable template from [../_shared/file-templates.md](../_shared/file-templates.md).
+For a new component, use the theme variable template from [../../_shared/file-templates.md](../../_shared/file-templates.md).
 
 ### Step 4: Fluent special handling
 

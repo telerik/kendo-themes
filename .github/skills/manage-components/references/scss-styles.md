@@ -1,16 +1,8 @@
----
-name: manage-scss-styles
-description: Create or update SCSS layout mixins, theme mixins, module entry points (_index.scss), and registration in theme entry points for a Kendo UI component. Covers the full component SCSS lifecycle — structural styles, visual styles, wiring, and registration. Use this skill when the user wants to change a component's CSS structure, add visual states, create the style skeleton for a new component, wire up dependencies, or register a component in a theme.
-argument-hint: "[component] e.g. chip, button, tooltip"
-metadata:
-  internal: true
----
-
-# SCSS Styles
+# SCSS Styles (layout, theme, wiring, registration)
 
 Create or update layout, theme, module, and registration files for a component in core and targeted themes.
 
-Read [../_shared/component-context.md](../_shared/component-context.md) for naming conventions, theme paths, and common gotchas.
+Read [../../_shared/component-context.md](../../_shared/component-context.md) for naming conventions, theme paths, and common gotchas.
 
 ## When to use
 
@@ -22,7 +14,7 @@ When the user asks to:
 - Add or change a component's dependencies
 - Add box-shadow, border-radius, or other visual properties
 
-Not for variable declarations (use `manage-scss-variables`) or design system foundation modules like spacing/color-system/typography (use `manage-scss-modules`).
+Not for variable declarations (see [scss-variables.md](scss-variables.md)) or design system foundation modules like spacing/color-system/typography (see [foundation-modules.md](../../manage-theme/references/foundation-modules.md)).
 
 ## Inputs
 
@@ -70,9 +62,9 @@ Edit `packages/core/scss/components/{component}/_layout.scss` and/or `_theme.scs
 **Rules:**
 - Never assign concrete values in core — only reference `$kendo-{component}-*` variables
 - Keep the mixin names unchanged (`--layout-base`, `--theme-base`)
-- New CSS properties that need customization require new variables (use `manage-scss-variables` skill first)
+- New CSS properties that need customization require new variables (see [scss-variables.md](scss-variables.md) first)
 - State selectors: `.k-{component}.k-hover`, `.k-{component}.k-selected`, etc.
-- For new components, use templates from [../_shared/file-templates.md](../_shared/file-templates.md)
+- For new components, use templates from [../../_shared/file-templates.md](../../_shared/file-templates.md)
 
 ### Step 3: Apply layout and theme to targeted themes
 
@@ -90,7 +82,7 @@ Only edit theme-specific layout/theme files when:
 - A theme adds **extra selectors** not in core
 - A theme has **theme-specific** visual tweaks beyond variables
 
-For new components, use templates from [../_shared/file-templates.md](../_shared/file-templates.md).
+For new components, use templates from [../../_shared/file-templates.md](../../_shared/file-templates.md).
 
 ### Step 4: Create or update `_index.scss`
 
@@ -148,7 +140,7 @@ npm run sass 2>&1
 ## Gotchas
 
 - **Core changes propagate automatically** — most themes call `@include kendo-{component}--layout-base()`, so changes to core affect all themes.
-- **New CSS properties need variables** — don't hardcode values in core. Add a variable via `manage-scss-variables` first, then reference it here.
+- **New CSS properties need variables** — don't hardcode values in core. Add a variable via [scss-variables.md](scss-variables.md) first, then reference it here.
 - **State classes, not pseudo-classes** — use `.k-{component}.k-hover` (class applied by JS), not `.k-{component}:hover` (CSS pseudo).
 - **BEM naming** — sub-elements: `.k-{component}-{element}`, modifiers: `.k-{component}-{modifier}`.
 - **Component names in `@include import-once("...")` must be unique** across the entire theme.
