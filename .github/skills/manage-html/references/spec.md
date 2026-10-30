@@ -1,18 +1,10 @@
----
-name: manage-html-specs
-description: Create or update an HTML component specification (.spec.tsx) in the HTML package. Defines the component's TypeScript types, options, states, render function, constants, and index exports. Use this skill when the user wants to create a new HTML spec, add states/options to a component, or modify a component's HTML structure.
-argument-hint: "[component] e.g. button, chip, grid"
-metadata:
-  internal: true
----
-
-# Add HTML Component Spec
+# HTML Component Spec
 
 Create or update an HTML component specification in `packages/html/src/{component}/`.
 
 ## When to use
 
-When the user asks to create a new component spec, add new states or options to a component, modify the HTML structure or class names of a component, or scaffold the HTML package portion of a new component. Not for visual tests (use `manage-html-tests`) or templates (use `manage-html-templates`).
+When the user asks to create a new component spec, add new states or options to a component, modify the HTML structure or class names of a component, or scaffold the HTML package portion of a new component. Not for visual tests ([tests.md](tests.md)) or templates ([templates.md](templates.md)).
 
 ## Inputs
 
@@ -196,7 +188,7 @@ Create `packages/html/src/{component}/index.ts`:
 export * from './{component}.spec';
 ```
 
-This file will be extended by the `manage-html-templates` skill when templates are added.
+This file is extended with template exports (see [templates.md](templates.md)).
 
 ### Step 6: Register in main index (new components only)
 

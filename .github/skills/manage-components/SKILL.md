@@ -1,6 +1,6 @@
 ---
 name: manage-components
-description: Create or update a Kendo UI component across kendo-themes packages. For new components, scaffolds core skeleton with null variables, theme overrides for targeted themes, HTML spec, templates, visual tests, and unit tests. For existing components, audits the current state, produces a change plan, and applies SCSS variable changes, layout/theme updates, HTML spec modifications, and test additions. Use this skill when the user wants to add a new component, update a component's design, change styling values, add new states or options, or align a component with design assets.
+description: Create or update a Kendo UI component across kendo-themes packages. For new components, scaffolds core skeleton with null variables, theme overrides for targeted themes, HTML spec, templates, visual tests, and unit tests. For existing components, audits the current state, produces a change plan, and applies SCSS variable changes, layout/theme mixin updates, _index.scss wiring and theme registration, HTML spec modifications, and test additions. Use this skill when the user wants to add a new component, update a component's design, add/change/remove a component SCSS variable, change a component's layout or visual styles, wire up dependencies, add new states or options, or align a component with design assets.
 argument-hint: "[component-name] e.g. chip, button, info-bar"
 metadata:
   internal: true
@@ -18,7 +18,14 @@ Read [../_shared/component-context.md](../_shared/component-context.md) for nami
 - **Update component** — "update the chip based on this design", "change button padding", "add a `warning` state to badge"
 - **Partial update** — "just update the chip variables in default and fluent"
 
-For individual sub-tasks without the full orchestration, use the sub-skills directly: `scss-variables`, `scss-styles`, `html-spec`, `html-template`, `html-test`, `html-a11y`.
+For a single sub-task, skip the orchestration and follow only the matching reference:
+
+| Sub-task | Reference |
+|----------|-----------|
+| Add/change/remove/deprecate a component variable | [references/scss-variables.md](references/scss-variables.md) |
+| Layout/theme mixins, `_index.scss` wiring, theme registration | [references/scss-styles.md](references/scss-styles.md) |
+| HTML spec, templates, visual tests | `manage-html` skill |
+| ARIA annotations | `manage-html-a11y` skill |
 
 ## Inputs
 
@@ -52,33 +59,25 @@ If the user doesn't specify variables/states/options, use reasonable defaults ba
 
 ### Step 3: Create SCSS variables
 
-Use the [manage-scss-variables skill](../manage-scss-variables/SKILL.md) to create variables in core (null `!default`) and all targeted themes (concrete values + `@forward` maps).
+Follow [references/scss-variables.md](references/scss-variables.md) to create variables in core (null `!default`) and all targeted themes (concrete values + `@forward` maps).
 
 ### Step 4: Create SCSS styles, module, and register
 
-Use the [manage-scss-styles skill](../manage-scss-styles/SKILL.md) to:
+Follow [references/scss-styles.md](references/scss-styles.md) to:
 
 - Create layout and theme mixins in core and targeted themes
 - Create `_index.scss` in each targeted theme
 - Register the component in each theme's `index.scss`
 
-### Step 5: Create HTML spec
+### Step 5: Create HTML spec, templates, and visual tests
 
-Use the [manage-html-specs skill](../manage-html-specs/SKILL.md) to create `constants.ts`, `{component}.spec.tsx`, and `index.ts`.
+Use the [manage-html skill](../manage-html/SKILL.md) to create `constants.ts`, `{component}.spec.tsx`, `index.ts`, at least one default template, and test files covering default, states, sizes, and fill modes as applicable.
 
-### Step 6: Create HTML templates
-
-Use the [manage-html-templates skill](../manage-html-templates/SKILL.md) to create at least one default template.
-
-### Step 7: Create visual tests
-
-Use the [manage-html-tests skill](../manage-html-tests/SKILL.md) to create test files covering default, states, sizes, and fill modes as applicable.
-
-### Step 8: Create unit test
+### Step 6: Create unit test
 
 Create `units/default/{component}.test.ts` using the template from [../_shared/file-templates.md](../_shared/file-templates.md).
 
-### Step 9: Validate
+### Step 7: Validate
 
 Run the validation steps from [../_shared/component-context.md](../_shared/component-context.md).
 
@@ -136,29 +135,21 @@ Present the plan and **wait for user confirmation** before editing:
 
 ### Step 5: Apply variable changes
 
-Use the [manage-scss-variables skill](../manage-scss-variables/SKILL.md). Follow the checklist in [references/update-checklist.md](references/update-checklist.md).
+Follow [references/scss-variables.md](references/scss-variables.md) and the checklist in [references/update-checklist.md](references/update-checklist.md).
 
 ### Step 6: Apply style and module changes
 
-Use the [manage-scss-styles skill](../manage-scss-styles/SKILL.md) for layout, theme, and `_index.scss` changes.
+Follow [references/scss-styles.md](references/scss-styles.md) for layout, theme, and `_index.scss` changes.
 
-### Step 7: Apply HTML spec changes
+### Step 7: Apply HTML changes
 
-Use the [manage-html-specs skill](../manage-html-specs/SKILL.md) for structure, state, or option changes.
+Use the [manage-html skill](../manage-html/SKILL.md) for spec structure/state/option changes, template variants, and visual test coverage for every visible change.
 
-### Step 8: Update or add templates
-
-Use the [manage-html-templates skill](../manage-html-templates/SKILL.md) for new or modified template variants.
-
-### Step 9: Update or add visual tests
-
-Use the [manage-html-tests skill](../manage-html-tests/SKILL.md) to ensure coverage for every visible change.
-
-### Step 10: Validate
+### Step 8: Validate
 
 Run the validation steps from [../_shared/component-context.md](../_shared/component-context.md).
 
-### Step 11: Report
+### Step 9: Report
 
 | Metric | Count |
 |--------|-------|

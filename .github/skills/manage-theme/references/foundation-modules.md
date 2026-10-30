@@ -1,12 +1,4 @@
----
-name: manage-scss-modules
-description: Create or update design system foundation modules — spacing, color-system, typography, elevation, border-radii, motion, and z-index. These modules live in packages/core/scss/ and are re-exported by each theme via packages/{theme}/scss/core/. Use this skill when the user wants to add a spacing token, color constant, font size, elevation level, border-radius scale value, or animation timing.
-argument-hint: "[module] e.g. spacing, color-system, typography, elevation"
-metadata:
-  internal: true
----
-
-# SCSS Module
+# Design System Foundation Modules
 
 Create or update design system foundation modules in core and theme packages.
 
@@ -21,7 +13,7 @@ When the user asks to:
 - Update motion/animation timing or easing
 - Add or change z-index layers
 
-Not for component-level SCSS (use `manage-scss-variables` for component variables, `manage-scss-styles` for component layout/theme/wiring).
+Not for component-level SCSS (use the `manage-components` skill).
 
 ## Module inventory
 
