@@ -1,3 +1,9 @@
+## 14.7.1-dev.6 (2026-10-30)
+
+### 🩹 Fixes
+
+- **html:** allow children to be rendered inside Suggestion ([f88a04227b](https://github.com/telerik/kendo-themes/commit/f88a04227b))
+
 ## 14.7.1-dev.5 (2026-10-29)
 
 ### 🩹 Fixes

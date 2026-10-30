@@ -1,3 +1,7 @@
+## 14.7.1-dev.6 (2026-10-30)
+
+This was a version bump only for @progress/kendo-theme-classic to align it with other projects, there were no code changes.
+
 ## 14.7.1-dev.5 (2026-10-29)
 
 This was a version bump only for @progress/kendo-theme-classic to align it with other projects, there were no code changes.
