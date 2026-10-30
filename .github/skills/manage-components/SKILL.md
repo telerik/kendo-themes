@@ -24,8 +24,7 @@ For a single sub-task, skip the orchestration and follow only the matching refer
 |----------|-----------|
 | Add/change/remove/deprecate a component variable | [references/scss-variables.md](references/scss-variables.md) |
 | Layout/theme mixins, `_index.scss` wiring, theme registration | [references/scss-styles.md](references/scss-styles.md) |
-| HTML spec, templates, visual tests | `manage-html` skill |
-| ARIA annotations | `manage-html-a11y` skill |
+| HTML spec, templates, visual tests, ARIA/accessibility | `manage-html` skill |
 
 ## Inputs
 

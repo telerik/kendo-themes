@@ -190,7 +190,7 @@ export default Autocomplete;
 
 - The `@aria` annotations are read by `npm run docs` to generate the **ARIA Attributes** section in `docs/[component].md`
 - WCAG validation: `npm run test:a11y [component]` (axe-core in JSDOM, target: 0 violations)
-- Full workflow: use the `manage-html-a11y` skill
+- Full workflow: follow `references/a11y.md` in the `manage-html` skill
 
 ## Related Documentation
 

@@ -4,7 +4,7 @@ Create visual test scenarios for a component in `packages/html/src/{component}/t
 
 ## When to use
 
-When the user asks to add visual tests, improve test coverage, or create screenshot test cases for a component. Not for unit tests (those are in `units/`) or accessibility tests (use the `manage-html-a11y` skill).
+When the user asks to add visual tests, improve test coverage, or create screenshot test cases for a component. Not for unit tests (those are in `units/`) or accessibility tests (see [a11y.md](a11y.md)).
 
 ## Inputs
 
