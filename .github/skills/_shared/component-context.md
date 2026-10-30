@@ -80,7 +80,7 @@ Fix failures before proceeding to the next validation step.
 - **Fluent wraps every value** in `var(--kendo-{var-name}, {fallback})` — forgetting this breaks the Fluent CSS custom property system.
 - **Component names in `@include import-once("...")` must be unique** across the entire theme.
 - **BEM class names use the `k-` prefix** — `k-{component}`, `k-{component}-{element}`.
-- **SassDoc is required** — every variable must have a `///` comment and `@group` annotation.
+- **SassDoc lives in themes** — every theme variable needs a `///` comment and `@group` annotation. Core variables have none, except the `sizes` / `theme-colors` maps.
 - **Test files need default exports** — `export default` is mandatory; `export const` won't be picked up by the build system.
 - **Wrap test content in `<div id="test-area">`** — screenshot tools look for this ID.
 

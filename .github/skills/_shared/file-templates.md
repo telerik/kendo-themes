@@ -14,44 +14,15 @@ $kendo-{component}-default-fill-mode: null !default;
 $kendo-{component}-default-roundness: null !default;
 $kendo-{component}-default-size: null !default;
 
-/// The width of the border around the {ComponentName}.
-/// @group {component}
 $kendo-{component}-border-width: null !default;
-
-/// The border radius of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-border-radius: null !default;
-
-/// The horizontal padding of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-padding-x: null !default;
-
-/// The vertical padding of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-padding-y: null !default;
-
-/// The font family of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-font-family: null !default;
-
-/// The font size of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-font-size: null !default;
-
-/// The line height of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-line-height: null !default;
-
-/// The background color of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-bg: null !default;
-
-/// The text color of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-text: null !default;
-
-/// The border color of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-border: null !default;
 ```
 

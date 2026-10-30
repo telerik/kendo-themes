@@ -61,22 +61,17 @@ Each component follows this 4-file structure:
 ```
 [component]/
 ├── _index.scss       # Entry point with mixin and dependencies
-├── _variables.scss   # Null variables with SassDoc
+├── _variables.scss   # Null variables (no SassDoc)
 ├── _layout.scss      # Structural styles (no values)
 └── _theme.scss       # Visual patterns (no values)
 ```
 
 ### Variables (`_variables.scss`)
 
-Define customizable properties as null:
+Define customizable properties as null. Don't add SassDoc here — themes document variables. Exceptions: the `$kendo-component-sizes` and `$kendo-component-theme-colors` maps.
 
 ```scss
-/// Component background color
-/// @group component-name
 $kendo-component-bg: null !default;
-
-/// Component padding
-/// @group component-name
 $kendo-component-padding: null !default;
 ```
 
