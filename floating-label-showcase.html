@@ -91,10 +91,11 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
   transition: transform .2s ease-in-out, color .2s ease-in-out;
 }
 /* floated: focus, has value, or forced demo state */
+.fl { --float: translateY(calc(var(--h) * .14)) scale(.8); }
 .fl input:focus + label,
 .fl input:not(:placeholder-shown) + label,
 .fl.is-focus input + label {
-  transform: translateY(calc(var(--h) * .14)) scale(.8);
+  transform: var(--float);
 }
 .fl input:focus + label, .fl.is-focus input + label { color: var(--label-active); }
 
@@ -125,8 +126,7 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
 .theme-bootstrap .fl input:focus + label, .theme-bootstrap .fl.is-focus input + label { color: var(--label); }
 .theme-bootstrap .fl input[aria-invalid="true"] { border-color: #dc3545; }
 .theme-bootstrap .fl input[aria-invalid="true"]:focus, .theme-bootstrap .fl.is-focus input[aria-invalid="true"] { box-shadow: 0 0 0 .25rem rgb(220 53 69 / .25); }
-.theme-bootstrap .fl label { transform: translateY(calc(var(--h) / 2 - .6em)); }
-.theme-bootstrap .fl input:focus + label, .theme-bootstrap .fl input:not(:placeholder-shown) + label, .theme-bootstrap .fl.is-focus input + label { transform: translateY(.45rem) scale(.82); }
+.theme-bootstrap .fl { --float: translateY(.45rem) scale(.82); }
 
 /* Fluent: bottom accent stroke + 2px focus underline, subtle rounding */
 .theme-fluent .fl input { border-bottom-color: var(--border-hover); }
@@ -137,6 +137,32 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
 
 /* Meridian: soft elevation on focus */
 .theme-meridian .fl input:focus, .theme-meridian .fl.is-focus input { box-shadow: var(--focus-ring), 0 1px 2px rgb(15 23 42 / .08); }
+
+/* ---------- Label mode: "border" (outlined, label sits on the top border) ---------- */
+[data-label-mode="border"] .fl { --float: translateY(-.6em) scale(.8); --notch-bottom: var(--bg); }
+[data-label-mode="border"] .fl input { padding: 0 var(--pad-x); }
+[data-label-mode="border"] .fl label {
+  left: calc(var(--pad-x) - 4px); padding: 0 4px; max-width: calc(100% - 2 * var(--pad-x) + 8px);
+  transform-origin: left center;
+  /* cut the border with the card colour above the line, keep the field fill below it */
+  background: linear-gradient(to bottom, var(--card) 50%, var(--notch-bottom) 50%);
+}
+[data-label-mode="border"] .fl:has(input:read-only) { --notch-bottom: var(--readonly-bg); }
+[data-label-mode="border"] .fl:has(input:disabled) { --notch-bottom: var(--disabled-bg); }
+/* Material becomes the outlined variant; Fluent/Bootstrap keep their own focus treatment */
+[data-label-mode="border"] .theme-material .fl { --notch-bottom: transparent; }
+[data-label-mode="border"] .theme-material .fl input { background: transparent; border: 1px solid var(--border); border-radius: 4px; padding: 0 var(--pad-x); }
+[data-label-mode="border"] .theme-material .fl input:hover:not(:disabled), [data-label-mode="border"] .theme-material .fl.is-hover input { background: transparent; border-color: var(--border-hover); }
+[data-label-mode="border"] .theme-material .fl input:focus, [data-label-mode="border"] .theme-material .fl.is-focus input { border-width: 1px; padding: 0 var(--pad-x); box-shadow: inset 0 0 0 1px var(--focus); }
+[data-label-mode="border"] .theme-material .fl input[aria-invalid="true"] { border-width: 1px; box-shadow: inset 0 0 0 1px var(--error); }
+[data-label-mode="border"] .theme-material .fl input:disabled { border: 1px solid var(--disabled-fg); background: transparent; }
+[data-label-mode="border"] .theme-material .fl:has(input:read-only) input { background: transparent; }
+[data-label-mode="border"] .theme-fluent .fl input { border-bottom-color: var(--border); }
+
+/* ---------- Configurator ---------- */
+.configurator { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 0; padding: 8px 12px; background: #fff; border: 1px solid #d5d9e0; border-radius: 10px; }
+.configurator legend { font-weight: 600; padding: 0 4px; }
+.configurator label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
 
 /* ---------- Accessibility ---------- */
 .fl input:focus-visible { outline: 2px solid transparent; outline-offset: 2px; }
@@ -158,7 +184,12 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
     <h1>Floating label text input — theme comparison</h1>
     <p>The same floating-label behaviour (200ms ease-in-out, label scales to 80%) across five themes. Every field is live: click, type, tab, or hover to try it. The “Focused” and “Hover” rows are pinned for review.</p>
   </div>
-  <label class="toggle"><input type="checkbox" id="fluent-dark"> Fluent dark mode</label>
+  <fieldset class="configurator">
+    <legend>Configurator</legend>
+    <label><input type="radio" name="label-mode" value="inside" checked> Label inside (floats within input)</label>
+    <label><input type="radio" name="label-mode" value="border"> Label on top border (outlined)</label>
+    <label class="toggle"><input type="checkbox" id="fluent-dark"> Fluent dark mode</label>
+  </fieldset>
 </header>
 
 <main class="canvas" id="canvas" aria-label="Theme comparison"></main>
@@ -203,6 +234,9 @@ document.querySelectorAll('.fl.is-focus input, .fl.is-hover input').forEach(inpu
   input.addEventListener('focus', release, { once: true });
   input.addEventListener('pointerenter', () => wrap.classList.remove('is-hover'), { once: true });
 });
+
+document.querySelectorAll('input[name="label-mode"]').forEach(r =>
+  r.addEventListener('change', () => { document.getElementById('canvas').dataset.labelMode = r.value; }));
 
 document.getElementById('fluent-dark').addEventListener('change', e =>
   document.querySelector('.theme-fluent').classList.toggle('dark', e.target.checked));
