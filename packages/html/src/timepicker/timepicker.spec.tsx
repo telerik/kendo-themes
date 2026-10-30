@@ -193,7 +193,7 @@ export const TimePicker: KendoComponent<KendoTimePickerProps & KendoTimePickerSt
                     }
                 >
                     <TimeSelector size="large" columns={["HH", "mm", "ss", "tt"]} focusedColumn="HH" header={(
-                        <TimeSelectorHeader title="10:00:00 АМ">
+                        <TimeSelectorHeader title="10:00:00 AM">
                             <Button size="large" fillMode="flat" className="k-time-now">Now</Button>
                         </TimeSelectorHeader>
                     )} />

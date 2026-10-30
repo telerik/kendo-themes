@@ -2,19 +2,19 @@
 @use "../core/_index.scss" as *;
 @use "../input/_variables.scss" as *;
 
-/// The width of the border around the Еditor.
+/// The width of the border around the Editor.
 /// @group editor
 $kendo-editor-border-width: var( --kendo-editor-border-width, 1px ) !default;
 /// The border radius of the Editor.
 /// @group editor
 $kendo-editor-border-radius: var( --kendo-editor-border-radius, null ) !default;
-/// The font family of the Еditor.
+/// The font family of the Editor.
 /// @group editor
 $kendo-editor-font-family: var( --kendo-editor-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the Еditor.
+/// The font size of the Editor.
 /// @group editor
 $kendo-editor-font-size: var( --kendo-editor-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the Еditor.
+/// The line height of the Editor.
 /// @group editor
 $kendo-editor-line-height: var( --kendo-editor-line-height, var(--kendo-line-height) ) !default;
 /// The text color of the Editor.
@@ -26,7 +26,7 @@ $kendo-editor-bg: var( --kendo-editor-bg, #{k-color(surface-alt)} ) !default;
 /// The color of the border around Editor.
 /// @group editor
 $kendo-editor-border: var( --kendo-editor-border, #{color-mix(in srgb, k-color(border) 16%, transparent)} ) !default;
-/// The text color of the Еditor's placeholder.
+/// The text color of the Editor's placeholder.
 /// @group editor
 $kendo-editor-placeholder-text: var( --kendo-editor-placeholder-text, var( --kendo-input-placeholder-text, #{$kendo-input-placeholder-text} ) ) !default;
 /// The opacity of the Editor's placeholder.
