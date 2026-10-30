@@ -14,9 +14,16 @@ export type KendoActionSheetViewProps = {
     children?: React.JSX.Element | React.JSX.Element[];
     header?: React.ReactElement<typeof ActionSheetHeader>;
     footer?: React.ReactElement<typeof ActionSheetFooter>;
+    /** @deprecated Legacy design. Kept for backwards compatibility. */
     adaptive?: boolean;
+    /** @deprecated Legacy design markup (centered title). Kept for backwards compatibility. */
+    legacy?: boolean;
     animated?: boolean;
     titleId?: string;
+    /**
+     * @ux {Resize handle} Renders a drag handle used to resize the ActionSheet.
+     */
+    resizable?: boolean;
 }
 
 export const ActionSheetView = (
@@ -25,16 +32,20 @@ export const ActionSheetView = (
 ) => {
     const {
         adaptive,
+        legacy,
         animated,
         children,
         header,
         footer,
         titleId,
+        resizable,
         ...other
     } = props;
 
-    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} titleId={titleId} {...header?.props} />;
+    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} legacy={legacy || adaptive} titleId={titleId} {...header?.props} />;
     const _ActionSheetFooter = footer?.type === ActionSheetFooter && <ActionSheetFooter {...footer?.props} />;
+
+    const handle = resizable && <div className="k-actionsheet-resize-handle" aria-hidden="true" />;
 
     return (
         <div {...other}
@@ -43,11 +54,13 @@ export const ActionSheetView = (
                 ACTIONSHEETVIEW_CLASSNAME,
                 {
                     [`${ACTIONSHEETVIEW_CLASSNAME}-animated`]: animated,
+                    'k-actionsheet-resizable': resizable,
                 }
             )}
         >
+            {handle}
             {_ActionSheetHeader}
-            <div className="k-actionsheet-content" >
+            <div className="k-actionsheet-content">
                 {children}
             </div>
             {_ActionSheetFooter}

@@ -12,11 +12,12 @@ import { Searchbox } from "../../searchbox";
 const styles = `
     #test-area {
         max-width: 780px;
-        --kendo-actionsheet-height: 400px;
-        --kendo-actionsheet-max-height: 400px;
     }
     #test-area > section {
-        height: 600px;
+        height: 720px;
+        --kendo-actionsheet-height: 60cqh;
+        --kendo-actionsheet-max-height: 60cqh;
+        container-type: size;
         outline: 1px dotted;
         overflow: hidden;
         position: relative;
@@ -104,14 +105,13 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
+                <ActionSheetNormal id="actionsheet-filter-1" style={{ "--kendo-actionsheet-view-current": "1" }}
                     fullscreen
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -134,9 +134,139 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button size="large" icon="filter-clear">Clear</Button>
+                                        <Button size="large" themeColor="primary" icon="filter">Filter</Button>
+                                    </ActionSheetFooter>
+                                }>
+                                <FilterMenu>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                    <ButtonGroup>
+                                        <Button size="large">And</Button>
+                                        <Button size="large">Or</Button>
+                                    </ButtonGroup>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                </FilterMenu>
+                            </ActionSheetView>
+                        </>
+                    }
+                >
+                </ActionSheetNormal>
+            </section>
+
+            <section>
+                <Grid
+                    className="k-grid-no-scrollbar"
+                    toolbar={
+                        <>
+                            <GridToolbar>
+                                <Button selected size="large" icon="filter" />
+                                <Button size="large" icon="arrows-swap" />
+                                <Button size="large" icon="group" />
+                            </GridToolbar>
+                        </>
+                    }
+                    pager={
+                        <>
+                            <GridPager type="input" size="large" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
+                        </>
+                    }
+                    children={
+                        <>
+                            <GridHeader>
+                                <div className="k-grid-header-wrap">
+                                    <GridHeaderTable>
+                                        <colgroup>
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                        </colgroup>
+                                        <TableThead>
+                                            <TableRow>
+                                                <GridHeaderCell columnTitle="Header Name 1"></GridHeaderCell>
+                                                <GridHeaderCell columnTitle="Header Name 2"></GridHeaderCell>
+                                                <GridHeaderCell columnTitle="Header Name 3"></GridHeaderCell>
+                                                <GridHeaderCell columnTitle="Header Name 4"></GridHeaderCell>
+                                            </TableRow>
+                                        </TableThead>
+                                    </GridHeaderTable>
+                                </div>
+                            </GridHeader>
+                            <GridContainer>
+                                <GridContent>
+                                    <GridTable>
+                                        <colgroup>
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                        </colgroup>
+                                        <TableTbody>
+                                            <TableRow className="k-master-row">
+                                                <TableTd>Value 1</TableTd>
+                                                <TableTd>Value 1</TableTd>
+                                                <TableTd>Value 1</TableTd>
+                                                <TableTd>Value 1</TableTd>
+                                            </TableRow>
+                                            <TableRow className="k-master-row" alt>
+                                                <TableTd>Value 2</TableTd>
+                                                <TableTd>Value 2</TableTd>
+                                                <TableTd>Value 2</TableTd>
+                                                <TableTd>Value 2</TableTd>
+                                            </TableRow>
+                                            <TableRow className="k-master-row">
+                                                <TableTd>Value 3</TableTd>
+                                                <TableTd>Value 3</TableTd>
+                                                <TableTd>Value 3</TableTd>
+                                                <TableTd>Value 3</TableTd>
+                                            </TableRow>
+                                        </TableTbody>
+                                    </GridTable>
+                                </GridContent>
+                            </GridContainer>
+                        </>
+                    }
+                ></Grid>
+                <ActionSheetNormal id="actionsheet-filter-2" style={{ "--kendo-actionsheet-view-current": "2" }}
+                    fullscreen
+                    template={
+                        <>
+                            <ActionSheetView animated
+                                header={
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button icon="filter-clear" size="large" disabled>Clear all filters</Button>
+                                    </ActionSheetFooter>
+                                }
+                            >
+                                <ColumnMenuNormal size="large">
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 1" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 2" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 3" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 4" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                </ColumnMenuNormal>
+                            </ActionSheetView>
+                            <ActionSheetView animated
+                                header={
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -237,12 +367,11 @@ export default () => (
                 ></Grid>
                 <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" }}
                     fullscreen
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -265,140 +394,9 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
-                                }
-                                footer={
-                                    <ActionSheetFooter>
-                                        <Button size="large" icon="filter-clear">Clear</Button>
-                                        <Button size="large" themeColor="primary" icon="filter">Filter</Button>
-                                    </ActionSheetFooter>
-                                }>
-                                <FilterMenu>
-                                    <DropdownList size="large" value="Contains" />
-                                    <NumericTextbox size="large" />
-                                    <ButtonGroup>
-                                        <Button size="large">And</Button>
-                                        <Button size="large">Or</Button>
-                                    </ButtonGroup>
-                                    <DropdownList size="large" value="Contains" />
-                                    <NumericTextbox size="large" />
-                                </FilterMenu>
-                            </ActionSheetView>
-                        </>
-                    }
-                >
-                </ActionSheetNormal>
-            </section>
-
-            <section>
-                <Grid
-                    className="k-grid-no-scrollbar"
-                    toolbar={
-                        <>
-                            <GridToolbar>
-                                <Button selected size="large" icon="filter" />
-                                <Button size="large" icon="arrows-swap" />
-                                <Button size="large" icon="group" />
-                            </GridToolbar>
-                        </>
-                    }
-                    pager={
-                        <>
-                            <GridPager type="input" size="large" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
-                        </>
-                    }
-                    children={
-                        <>
-                            <GridHeader>
-                                <div className="k-grid-header-wrap">
-                                    <GridHeaderTable>
-                                        <colgroup>
-                                            <col />
-                                            <col />
-                                            <col />
-                                            <col />
-                                        </colgroup>
-                                        <TableThead>
-                                            <TableRow>
-                                                <GridHeaderCell columnTitle="Header Name 1"></GridHeaderCell>
-                                                <GridHeaderCell columnTitle="Header Name 2"></GridHeaderCell>
-                                                <GridHeaderCell columnTitle="Header Name 3"></GridHeaderCell>
-                                                <GridHeaderCell columnTitle="Header Name 4"></GridHeaderCell>
-                                            </TableRow>
-                                        </TableThead>
-                                    </GridHeaderTable>
-                                </div>
-                            </GridHeader>
-                            <GridContainer>
-                                <GridContent>
-                                    <GridTable>
-                                        <colgroup>
-                                            <col />
-                                            <col />
-                                            <col />
-                                            <col />
-                                        </colgroup>
-                                        <TableTbody>
-                                            <TableRow className="k-master-row">
-                                                <TableTd>Value 1</TableTd>
-                                                <TableTd>Value 1</TableTd>
-                                                <TableTd>Value 1</TableTd>
-                                                <TableTd>Value 1</TableTd>
-                                            </TableRow>
-                                            <TableRow className="k-master-row" alt>
-                                                <TableTd>Value 2</TableTd>
-                                                <TableTd>Value 2</TableTd>
-                                                <TableTd>Value 2</TableTd>
-                                                <TableTd>Value 2</TableTd>
-                                            </TableRow>
-                                            <TableRow className="k-master-row">
-                                                <TableTd>Value 3</TableTd>
-                                                <TableTd>Value 3</TableTd>
-                                                <TableTd>Value 3</TableTd>
-                                                <TableTd>Value 3</TableTd>
-                                            </TableRow>
-                                        </TableTbody>
-                                    </GridTable>
-                                </GridContent>
-                            </GridContainer>
-                        </>
-                    }
-                ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" }}
-                    fullscreen
-                    adaptive
-                    template={
-                        <>
-                            <ActionSheetView animated adaptive
-                                header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
-                                }
-                                footer={
-                                    <ActionSheetFooter>
-                                        <Button icon="filter-clear" size="large" disabled>Clear all filters</Button>
-                                    </ActionSheetFooter>
-                                }
-                            >
-                                <ColumnMenuNormal size="large">
-                                    <ColumnMenuItemWrapper>
-                                        <ColumnMenuExpander itemText="Header Name 1" expanderIcon="chevron-right" />
-                                    </ColumnMenuItemWrapper>
-                                    <ColumnMenuItemWrapper>
-                                        <ColumnMenuExpander itemText="Header Name 2" expanderIcon="chevron-right" />
-                                    </ColumnMenuItemWrapper>
-                                    <ColumnMenuItemWrapper>
-                                        <ColumnMenuExpander itemText="Header Name 3" expanderIcon="chevron-right" />
-                                    </ColumnMenuItemWrapper>
-                                    <ColumnMenuItemWrapper>
-                                        <ColumnMenuExpander itemText="Header Name 4" expanderIcon="chevron-right" />
-                                    </ColumnMenuItemWrapper>
-                                </ColumnMenuNormal>
-                            </ActionSheetView>
-                            <ActionSheetView animated adaptive
-                                header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -420,6 +418,7 @@ export default () => (
                             </ActionSheetView>
                         </>
                     }
+                    id="actionsheet-filter-3"
                 >
                 </ActionSheetNormal>
             </section>
@@ -501,14 +500,13 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
+                <ActionSheetNormal id="actionsheet-filter-4" style={{ "--kendo-actionsheet-view-current": "1" }}
                     fullscreen
-                    adaptive
                     template={
                         <>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by" />
                                 }
                                 footer={
                                     <ActionSheetFooter>
@@ -531,9 +529,9 @@ export default () => (
                                     </ColumnMenuItemWrapper>
                                 </ColumnMenuNormal>
                             </ActionSheetView>
-                            <ActionSheetView animated adaptive
+                            <ActionSheetView animated
                                 header={
-                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="xsmall" fillMode="flat" />} actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 3" />
                                 }
                                 footer={
                                     <ActionSheetFooter>

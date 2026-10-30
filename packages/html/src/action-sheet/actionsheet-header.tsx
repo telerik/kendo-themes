@@ -13,7 +13,10 @@ export type KendoActionSheetHeaderProps = {
     input?: boolean;
     inputValue?: string;
     inputPlaceholder?: string;
+    /** @deprecated Legacy design. Renders large inputs. Kept for backwards compatibility. */
     adaptive?: boolean;
+    /** @deprecated Legacy design markup (centered title). Kept for backwards compatibility. */
+    legacy?: boolean;
     titleId?: string;
 }
 
@@ -37,6 +40,7 @@ export const ActionSheetHeader = (
         inputValue,
         inputPlaceholder,
         adaptive,
+        legacy,
         titleId,
         children,
         ...other
@@ -57,11 +61,11 @@ export const ActionSheetHeader = (
                 )}
                 {!children &&
                     <div className="k-actionsheet-title" id={titleId}>
-                        {title && <div className="k-text-center">{title}</div>}
-                        {subtitle && <div className="k-actionsheet-subtitle k-text-center">{subtitle}</div>}
+                        {title && <div className={legacy ? 'k-text-center' : undefined}>{title}</div>}
+                        {subtitle && <div className={classNames('k-actionsheet-subtitle', { 'k-text-center': legacy })}>{subtitle}</div>}
                     </div>
                 }
-                {children && <div className="k-actionsheet-title" id={titleId}>{children}</div>}
+                {children && <div className={classNames('k-actionsheet-title', { 'k-actionsheet-title-template': !legacy })} id={titleId}>{children}</div>}
                 {actionsEnd && (
                     <div className="k-actionsheet-actions">
                         {actionsEnd}
@@ -71,9 +75,9 @@ export const ActionSheetHeader = (
             {(input || filter) && (
                 <div className="k-actionsheet-titlebar-group k-actionsheet-filter">
                     {input ? (
-                        <Textbox value={inputValue} placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} aria-label={title || inputPlaceholder || "Input"} />
+                        <Textbox value={inputValue} placeholder={inputPlaceholder} size={adaptive ? "large" : legacy ? "medium" : "large"} aria-label={title || inputPlaceholder || "Input"} />
                     ) : (
-                        <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} aria-label="Filter options" />
+                        <Searchbox placeholder="Filter" size={adaptive ? "large" : legacy ? "medium" : "large"} aria-label="Filter options" />
                     )}
                 </div>
             )}

@@ -6,7 +6,8 @@
 @mixin kendo-action-sheet--layout() {
     @include kendo-action-sheet--layout-base();
 
-    .k-actionsheet .k-list-ul {
+    // Deprecated position and adaptive classes keep the previous list inset.
+    :is(.k-actionsheet-top, .k-actionsheet-bottom, .k-actionsheet-left, .k-actionsheet-right, .k-adaptive-actionsheet) .k-list-ul {
         padding-inline: $kendo-list-container-padding-inline;
         padding-block: $kendo-list-container-padding-block;
     }
