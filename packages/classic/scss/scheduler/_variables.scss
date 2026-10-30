@@ -189,7 +189,7 @@ $kendo-scheduler-timecolumn-width: 11em !default;
 
 /// The background color of the non-working hours in the Scheduler.
 /// @group scheduler
-$kendo-scheduler-nonwork-bg: k-color(base-subtle) !default;
+$kendo-scheduler-nonwork-bg: k-color(surface) !default;
 /// The text color of the non-working hours in the Scheduler.
 /// @group scheduler
 $kendo-scheduler-nonwork-text: null !default;
@@ -200,6 +200,13 @@ $kendo-scheduler-othermonth-bg: k-color(base-subtle) !default;
 /// The text color of the preceding/subsequent month cells in the Calendar.
 /// @group scheduler
 $kendo-scheduler-othermonth-text: null !default;
+
+/// The background color of the read-only cells in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-readonly-cell-bg: k-color(base-subtle) !default;
+/// The text color of the read-only cells in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-readonly-cell-text: null !default;
 
 /// The horizontal padding of the year view in the Scheduler.
 /// @group scheduler
@@ -363,6 +370,8 @@ $kendo-scheduler-recurrence-fields-row-gap: k-spacing(2) !default;
     $kendo-scheduler-nonwork-text: $kendo-scheduler-nonwork-text,
     $kendo-scheduler-othermonth-bg: $kendo-scheduler-othermonth-bg,
     $kendo-scheduler-othermonth-text: $kendo-scheduler-othermonth-text,
+    $kendo-scheduler-readonly-cell-bg: $kendo-scheduler-readonly-cell-bg,
+    $kendo-scheduler-readonly-cell-text: $kendo-scheduler-readonly-cell-text,
     $kendo-scheduler-yearview-padding-x: $kendo-scheduler-yearview-padding-x,
     $kendo-scheduler-yearview-padding-y: $kendo-scheduler-yearview-padding-y,
     $kendo-scheduler-yearview-calendar-gap: $kendo-scheduler-yearview-calendar-gap,

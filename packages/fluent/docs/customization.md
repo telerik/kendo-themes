@@ -30865,6 +30865,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-scheduler-readonly-cell-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-readonly-cell-bg, k-color(base-subtle) )</code></td>
+    <td><code>var(--kendo-scheduler-readonly-cell-bg, var(--kendo-color-base-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the read-only cells in the Scheduler.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-readonly-cell-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-readonly-cell-text, null )</code></td>
+    <td><code>var(--kendo-scheduler-readonly-cell-text, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the read-only cells in the Scheduler.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-scheduler-yearview-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-yearview-padding-x, k-spacing(3) )</code></td>

@@ -83,6 +83,17 @@ The Scheduler is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | `aria-live="polite"` | The new date of the Scheduler view will be announced upon navigation to a new time span or view type. |
 | `aria-label` | The `<select>` element visible on the toolbar on small screens must have its aria-label set. |
 
+### SchedulerCell
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `selected` | `k-selected` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-scheduler-cell` element.
+
 ### SchedulerContent
 
 #### ARIA Attributes
