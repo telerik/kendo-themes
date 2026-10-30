@@ -354,7 +354,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-fab-item-icon-border-width, 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FAB item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item icon border.</div></div>
     </td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-fab-sm-padding-y, var(--kendo-spacing-1\\.5))","gap":"var(--kendo-spacing-1)"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-spacing-4))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-spacing-4))","gap":"var(--kendo-spacing-1\\.5)"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, var(--kendo-spacing-6))","padding-y":"var(--kendo-fab-lg-padding-y, var(--kendo-spacing-6))","gap":"var(--kendo-spacing-1\\.5)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>
     </td>
 </tr>
 <tr>

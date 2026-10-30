@@ -28,13 +28,23 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-overlay-theme-colors</td>
+    <td>$kendo-overlay-bg</td>
     <td></td>
-    <td><code>("dark", "light", "inverse")</code></td>
+    <td><code>null</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Overlay.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Overlay.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-overlay-opacity</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Overlay.</div></div>
     </td>
 </tr>
 </tbody>

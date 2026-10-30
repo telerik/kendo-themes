@@ -28,6 +28,186 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-column-menu-default-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-item-sm-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColumnMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-item-sm-padding-y</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColumnMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-item-md-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColumnMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-item-md-padding-y</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColumnMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-item-lg-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColumnMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-item-lg-padding-y</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large ColumnMenu item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-item-wrapper-padding-y</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColumnMenu item wrapper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-font-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-sm-font-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-md-font-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-lg-font-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-line-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-sm-line-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-md-line-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-lg-line-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-menu-font-family</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-column-list-item-border-radius</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColumnMenu list item.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-column-menu-sizes</td>
     <td></td>
     <td><code>(
@@ -54,6 +234,46 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the ColumnMenu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-action-hover-bg</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered GroupMenu item action.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-action-selected-bg</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected GroupMenu item action.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-add-action-text</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the GroupMenu item add action.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-group-menu-item-border</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the GroupMenu item.</div></div>
     </td>
 </tr>
 </tbody>

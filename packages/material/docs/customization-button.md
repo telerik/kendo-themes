@@ -294,7 +294,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with the $kendo-font-size variable.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the.</div></div>
     </td>
 </tr>
 <tr>
@@ -504,7 +504,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-color-on-base)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -514,7 +514,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-color-base-active)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the selected Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -524,7 +524,7 @@ The following table lists the available variables for customization.
     <td><code>none</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the selected Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -564,7 +564,7 @@ The following table lists the available variables for customization.
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface) 12%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the disabled Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -784,7 +784,7 @@ The following table lists the available variables for customization.
     <td><code>0.16</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create a background for the flat Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -794,7 +794,7 @@ The following table lists the available variables for customization.
     <td><code>0.22</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create a background for the flat Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>

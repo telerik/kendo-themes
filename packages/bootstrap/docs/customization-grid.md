@@ -984,7 +984,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-spacing-0\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sorting index vertical spacing of the Grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -994,7 +994,7 @@ The following table lists the available variables for customization.
     <td><code>calc(var(--kendo-spacing-0\.5) * -1)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sorting index horizontal spacing of the Grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the Grid.</div></div>
     </td>
 </tr>
 <tr>

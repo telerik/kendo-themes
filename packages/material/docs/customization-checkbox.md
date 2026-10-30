@@ -153,7 +153,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-3)","ripple-size":"var(--kendo-spacing-8)","indicator-size":"var(--kendo-spacing-8)"</li><li>md: "size":"var(--kendo-spacing-4)","glyph-size":"var(--kendo-spacing-4)","ripple-size":"var(--kendo-spacing-10)","indicator-size":"var(--kendo-spacing-10)"</li><li>lg: "size":"var(--kendo-spacing-5)","glyph-size":"var(--kendo-spacing-5)","ripple-size":"var(--kendo-spacing-12)","indicator-size":"var(--kendo-spacing-12)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the CheckBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>

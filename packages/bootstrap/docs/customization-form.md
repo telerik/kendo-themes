@@ -334,7 +334,7 @@ The following table lists the available variables for customization.
     <td><code>(0 var(--kendo-spacing-6))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the inline Form field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the inline Form field.</div></div>
     </td>
 </tr>
 <tr>

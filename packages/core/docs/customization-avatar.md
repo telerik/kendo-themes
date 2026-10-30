@@ -28,6 +28,126 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-avatar-default-theme-color</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default theme color of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-default-fill-mode</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default fill mode of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-default-roundness</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default roundness of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-default-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-border-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-border-radius</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-font-family</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-font-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-line-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-sm-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small size of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-md-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium size of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-lg-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large size of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-avatar-sizes</td>
     <td></td>
     <td><code>(

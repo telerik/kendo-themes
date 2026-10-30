@@ -28,6 +28,56 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-datetime-default-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-sm-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-md-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-datetime-lg-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large DateTimePicker.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-datetime-sizes</td>
     <td></td>
     <td><code>(

@@ -3522,7 +3522,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the xsmall Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the xsmall Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3532,7 +3532,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the small Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3542,7 +3542,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the medium Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the medium Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3552,7 +3552,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size the of the large Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3852,7 +3852,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button gradient of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3862,7 +3862,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>true</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3872,7 +3872,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3882,7 +3882,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3892,7 +3892,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>0.3</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the solid Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3912,7 +3912,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>true</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3922,7 +3922,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3932,7 +3932,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3942,7 +3942,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>0.3</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the outline Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3952,7 +3952,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>true</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3962,7 +3962,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow blur of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3972,7 +3972,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow spread of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3982,7 +3982,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>0.3</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button shadow opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the link Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -3992,7 +3992,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>0.1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The button focus opacity of the Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the clear Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -14432,7 +14432,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-border-radius-xxl)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FileManager.</div></div>
     </td>
 </tr>
 <tr>
@@ -21765,7 +21765,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ListBox scroller element.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ListBox scroller.</div></div>
     </td>
 </tr>
 <tr>
@@ -21775,7 +21775,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ListBox scroller element.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ListBox scroller.</div></div>
     </td>
 </tr>
 <tr>
@@ -21785,7 +21785,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-border-radius-xl)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ListBox element.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ListBox.</div></div>
     </td>
 </tr>
 </tbody>
@@ -23615,7 +23615,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-color-border)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Menu separator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Menu separator.</div></div>
     </td>
 </tr>
 <tr>
@@ -24314,7 +24314,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button..</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button.</div></div>
     </td>
 </tr>
 </tbody>
@@ -31090,7 +31090,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the month inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the month inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31100,7 +31100,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the day inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the day inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31110,7 +31110,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>250px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The max height of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The max height of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31120,7 +31120,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31130,7 +31130,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>25px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31140,7 +31140,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31150,7 +31150,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31160,7 +31160,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-border-radius-md)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the events inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the events inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -31170,7 +31170,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-spacing-1\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events items inside the Scheduler Tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the events items inside the Scheduler Popover.</div></div>
     </td>
 </tr>
 <tr>
@@ -32238,7 +32238,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton wave animation.</div></div>
     </td>
 </tr>
 </tbody>
@@ -37914,7 +37914,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
     </td>
 </tr>
 <tr>
@@ -37924,7 +37924,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-color-primary-hover)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
     </td>
 </tr>
 <tr>
@@ -41546,7 +41546,7 @@ The following table lists the available variables for customizing the Meridian t
     <td><code>var(--kendo-color-on-app-surface)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the code tag.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the code tag.</div></div>
     </td>
 </tr>
 <tr>

@@ -28,6 +28,156 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-color-palette-default-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the ColorPalette.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-font-family</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the ColorPalette.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-font-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the ColorPalette.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-line-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ColorPalette.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-sm-tile-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-sm-tile-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-md-tile-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-md-tile-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-lg-tile-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-lg-tile-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-focus-shadow</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-hover-shadow</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-selected-shadow</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-palette-sizes</td>
     <td></td>
     <td><code>(

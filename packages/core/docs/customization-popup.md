@@ -1,0 +1,148 @@
+---
+title: Customizing Popup
+description: "Refer to the list of the Kendo UI Theme Core theme variables available for customization."
+slug: variables_kendothemecore_popup
+position: 9
+---
+
+# Customizing Popup
+
+## Variables
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-popup-border-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-border-radius</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-font-size</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-line-height</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-content-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the popup content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-content-padding-y</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the popup content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-bg</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-text</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-border</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-shadow</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-popup-spacing-y</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical spacing between the popup and the element it is anchored to.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+

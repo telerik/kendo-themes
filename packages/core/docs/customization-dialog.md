@@ -28,13 +28,83 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-dialog-theme-colors</td>
+    <td>$kendo-dialog-titlebar-bg</td>
     <td></td>
-    <td><code>("primary", "light", "dark")</code></td>
+    <td><code>null</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Dialog.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dialog-titlebar-text</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Dialog titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dialog-titlebar-border</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Dialog titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dialog-buttongroup-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Dialog action buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dialog-buttongroup-padding-y</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Dialog action buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dialog-buttongroup-border-width</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the top border of the Dialog action buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dialog-button-spacing</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Dialog action buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dialog-bg</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog.</div></div>
     </td>
 </tr>
 </tbody>
