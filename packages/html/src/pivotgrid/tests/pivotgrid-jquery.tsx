@@ -7,7 +7,7 @@ export default () =>(
     <>
         <div id="test-area">
 
-            <div className="hidden-on-narrow k-pivot" style={{ height: "580px" }}>
+            <div className="hidden-on-narrow k-pivot" style={{ height: "530px" }}>
                 <table className="k-pivot-layout">
                     <tbody>
                         <tr>
@@ -73,7 +73,7 @@ export default () =>(
                                     </Toolbar>
                                     <div className="k-grid">
                                         <div className="k-grid-header">
-                                            <div className="k-grid-header-wrap" style={{ height: "110px" }}>
+                                            <div className="k-grid-header-wrap" style={{ height: "94px" }}>
                                                 <table className="k-table k-grid-header-table" style={{ width: "199%" }}>
                                                     <colgroup>
                                                         <col />
@@ -101,7 +101,7 @@ export default () =>(
                                                             </th>
                                                         </tr>
                                                         <tr className="k-table-row">
-                                                            <th className="k-table-th k-header">
+                                                            <th className="k-table-th k-header" style={{ borderBottomWidth: 0 }}>
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
                                                                         <Icon icon="chevron-right" />
@@ -109,7 +109,7 @@ export default () =>(
                                                                     </span>
                                                                 </span>
                                                             </th>
-                                                            <th className="k-table-th k-header">
+                                                            <th className="k-table-th k-header" style={{ borderBottomWidth: 0 }}>
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
                                                                         <Icon icon="chevron-right" />
@@ -117,7 +117,7 @@ export default () =>(
                                                                     </span>
                                                                 </span>
                                                             </th>
-                                                            <th className="k-table-th k-header">
+                                                            <th className="k-table-th k-header" style={{ borderBottomWidth: 0 }}>
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
                                                                         <Icon icon="chevron-right" />
@@ -134,53 +134,11 @@ export default () =>(
                                                                 </span>
                                                             </th>
                                                         </tr>
-                                                        <tr className="k-table-row">
-                                                            <th className="k-table-th k-header">
-                                                                <span className="k-cell-inner">
-                                                                    <span className="k-link">
-                                                                        <Icon icon="chevron-right" />
-                                                                        <span className="k-column-title">All Products</span>
-                                                                    </span>
-                                                                </span>
-                                                            </th>
-                                                            <th className="k-table-th k-header">
-                                                                <span className="k-cell-inner">
-                                                                    <span className="k-link">
-                                                                        <Icon icon="chevron-right" />
-                                                                        <span className="k-column-title">All Products</span>
-                                                                    </span>
-                                                                </span>
-                                                            </th>
-                                                            <th className="k-table-th k-header">
-                                                                <span className="k-cell-inner">
-                                                                    <span className="k-link">
-                                                                        <Icon icon="chevron-right" />
-                                                                        <span className="k-column-title">All Products</span>
-                                                                    </span>
-                                                                </span>
-                                                            </th>
-                                                            <th className="k-table-th k-header">
-                                                                <span className="k-cell-inner">
-                                                                    <span className="k-link">
-                                                                        <Icon icon="chevron-right" />
-                                                                        <span className="k-column-title">All Products</span>
-                                                                    </span>
-                                                                </span>
-                                                            </th>
-                                                            <th className="k-table-th k-header">
-                                                                <span className="k-cell-inner">
-                                                                    <span className="k-link">
-                                                                        <Icon icon="chevron-right" />
-                                                                        <span className="k-column-title">All Products</span>
-                                                                    </span>
-                                                                </span>
-                                                            </th>
-                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
-                                        <div className="k-grid-content" style={{ height: "380px" }}>
+                                        <div className="k-grid-content" style={{ height: "363px" }}>
                                             <table className="k-table k-grid-table" style={{ width: "199%" }}>
                                                 <colgroup>
                                                     <col />
