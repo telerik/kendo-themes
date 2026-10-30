@@ -178,7 +178,7 @@ export const {ComponentName}: KendoComponent<Kendo{ComponentName}Props & Kendo{C
 export default {ComponentName};
 ```
 
-**Accessibility** — document ARIA with `@aria`/`@keyboard`/`@ux`/`@see` JSDoc annotations on the spec component. Use the `manage-html-a11y` skill for this step.
+**Accessibility** — document ARIA with `@aria`/`@keyboard`/`@ux`/`@see` JSDoc annotations on the spec component. See [a11y.md](a11y.md).
 
 ### Step 5: Create `index.ts`
 

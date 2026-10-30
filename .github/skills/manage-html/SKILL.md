@@ -1,14 +1,14 @@
 ---
 name: manage-html
-description: Create or update the HTML package portion of a Kendo UI component — the component spec (.spec.tsx with types, options, states, render function, constants, index exports), reusable templates (preset variants), and visual test scenarios for screenshot regression testing. Use this skill when the user wants to create or change an HTML spec, add states/options or change a component's HTML structure, add a template variant, or add/extend visual test coverage.
-argument-hint: "[component] [spec|templates|tests] e.g. chip tests, button icon template"
+description: Create or update the HTML package portion of a Kendo UI component — the component spec (.spec.tsx with types, options, states, render function, constants, index exports), reusable templates (preset variants), visual test scenarios for screenshot regression testing, and accessibility (@aria/@keyboard/@ux/@see JSDoc annotations, ARIA attributes, axe-core WCAG 2.2 AA validation). Use this skill when the user wants to create or change an HTML spec, add states/options or change a component's HTML structure, add a template variant, add/extend visual test coverage, add accessibility support, fix ARIA violations, or document keyboard shortcuts.
+argument-hint: "[component] [spec|templates|tests|a11y] e.g. chip tests, button a11y"
 metadata:
   internal: true
 ---
 
 # HTML Package
 
-Create or update a component's spec, templates, and visual tests in `packages/html/src/{component}/`.
+Create or update a component's spec, templates, visual tests, and accessibility in `packages/html/src/{component}/`.
 
 Read [../_shared/component-context.md](../_shared/component-context.md) for naming conventions and validation steps.
 
@@ -17,8 +17,9 @@ Read [../_shared/component-context.md](../_shared/component-context.md) for nami
 - **Spec** — new component spec, new states/options/props, HTML structure or class name changes
 - **Templates** — new or changed preset variants (e.g., "add an icon chip template")
 - **Tests** — new or extended visual test scenarios (e.g., "add size tests for badge")
+- **Accessibility** — ARIA attributes, `@aria`/`@keyboard`/`@ux`/`@see` annotations, WCAG validation (e.g., "add a11y to checkbox")
 
-Not for SCSS (use `manage-components`) or ARIA annotations (use `manage-html-a11y`).
+Not for SCSS (use `manage-components`).
 
 ## Component folder layout
 
@@ -35,13 +36,15 @@ packages/html/src/{component}/
 
 ## Procedure
 
-Pick the parts the request touches and follow the matching reference. For a new component, do all three in order — templates and tests depend on the spec.
+Pick the parts the request touches and follow the matching reference. For a new component, do all of them in order — templates, tests, and a11y depend on the spec.
 
 | Part | Reference |
 |------|-----------|
 | Spec, constants, index exports | [references/spec.md](references/spec.md) |
 | Templates | [references/templates.md](references/templates.md) |
 | Visual tests | [references/tests.md](references/tests.md) |
+| Accessibility workflow | [references/a11y.md](references/a11y.md) |
+| Annotation format and patterns | [references/a11y-annotations.md](references/a11y-annotations.md) |
 
 Use an existing component of similar complexity as a structural reference: `badge`/`avatar` (simple), `button`/`chip`/`card` (medium), `grid`/`toolbar`/`scheduler` (complex).
 
@@ -50,6 +53,7 @@ Use an existing component of similar complexity as a structural reference: `badg
 ```bash
 npm run typecheck --prefix packages/html 2>&1
 npm run build:tests --prefix packages/html 2>&1
+npm run test:a11y {component} 2>&1   # when markup or ARIA changed
 ```
 
 ## Gotchas

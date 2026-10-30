@@ -20,8 +20,7 @@ Other top-level folders: `scripts/` (build tooling), `units/` (Jest tests), `tes
 Use the skills in `.github/skills/` for multi-step work:
 
 - `manage-components` — component SCSS (variables, layout/theme mixins, wiring) and full component create/update
-- `manage-html` — HTML specs, templates, and visual tests
-- `manage-html-a11y` — ARIA annotations and WCAG validation
+- `manage-html` — HTML specs, templates, visual tests, and accessibility (ARIA + WCAG validation)
 - `manage-theme` — theme packages, swatches, and design system foundation tokens
 - `audit-design-tokens` — find hardcoded values that should use tokens
 - `component-pr-description` — PR descriptions for component changes
