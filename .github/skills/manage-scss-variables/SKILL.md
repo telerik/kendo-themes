@@ -1,6 +1,6 @@
 ---
 name: manage-scss-variables
-description: Create or update SCSS variables for a Kendo UI component — null declarations in core and concrete overrides in targeted theme packages. Handles SassDoc comments, @forward maps, and theme-specific conventions (Fluent CSS custom properties). Use this skill when the user wants to add, change, or remove a component variable.
+description: Create or update SCSS variables for a Kendo UI component — null declarations in core and concrete overrides in targeted theme packages. Handles theme SassDoc comments, @forward maps, and theme-specific conventions (Fluent CSS custom properties). Use this skill when the user wants to add, change, or remove a component variable.
 argument-hint: "[component] [variable-name] e.g. chip gap, button padding-x"
 metadata:
   internal: true
@@ -45,14 +45,12 @@ Not for layout/theme mixin changes or component registration (use `manage-scss-s
 For new or added variables, edit `packages/core/scss/components/{component}/_variables.scss`:
 
 ```scss
-/// The gap between items in the {ComponentName}.
-/// @group {component}
 $kendo-{component}-gap: null !default;
 ```
 
 **Rules:**
 - Every variable is `null !default` — never assign concrete values in core
-- Every variable has a `///` SassDoc comment and `@group {component}` annotation
+- No SassDoc in core — documentation lives in the themes. Exceptions: the `$kendo-{component}-sizes` and `$kendo-{component}-theme-colors` maps
 - Place near related variables (all padding vars together, all color vars together)
 - For a new component, use the core template from [../_shared/file-templates.md](../_shared/file-templates.md)
 
@@ -113,6 +111,8 @@ When **removing** a variable:
 - Remove from core, all theme files, all `@forward` maps, and layout/theme references
 
 ## SassDoc rules
+
+Apply to theme variables (and the core `sizes` / `theme-colors` map exceptions):
 
 - Description pattern: `/// The [property] of the [ComponentName][ sub-element].` — start with "The", PascalCase component name, end with a period
 - `@group` is lowercase, hyphenated, singular, and matches the component (e.g., `tile-layout`, not `TileLayouts`)

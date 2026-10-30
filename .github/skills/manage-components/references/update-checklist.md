@@ -15,7 +15,7 @@ When adding a new `$kendo-{component}-*` variable:
 ### Each targeted theme (`packages/{theme}/scss/{component}/_variables.scss`)
 
 - [ ] Add declaration with concrete value and `!default`
-- [ ] Add SassDoc `///` comment (can match core's description)
+- [ ] Add SassDoc `///` comment
 - [ ] Add `@group {component}` annotation
 - [ ] Add entry to the `@forward` map at the bottom of the file
 - [ ] **Fluent only:** Wrap value in `var( --kendo-{var-name}, #{value} )`
