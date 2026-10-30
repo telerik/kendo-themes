@@ -108,6 +108,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-avatar-xs-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-avatar-xs-font-size, var(--kendo-font-size-xxs) )</code></td>
+    <td><code>var(--kendo-avatar-xs-font-size, var(--kendo-font-size-xxs))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Avatar initials in the extra small size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-xl-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-avatar-xl-font-size, var(--kendo-font-size-xl) )</code></td>
+    <td><code>var(--kendo-avatar-xl-font-size, var(--kendo-font-size-xl))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Avatar initials in the extra large size.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-avatar-line-height</td>
     <td>String</td>
     <td><code>var( --kendo-avatar-line-height, var(--kendo-line-height) )</code></td>
@@ -118,10 +138,40 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-avatar-sm-size</td>
+    <td>$kendo-avatar-xs-icon-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-avatar-xs-icon-size, #{$ki-icon-size-sm} )</code></td>
+    <td><code>var(--kendo-avatar-xs-icon-size, var(--kendo-icon-size-sm, calc(var(--kendo-icon-size, 1rem) * 0.875)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon size of the extra small Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-xl-icon-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-avatar-xl-icon-size, #{$ki-icon-size-xxl} )</code></td>
+    <td><code>var(--kendo-avatar-xl-icon-size, var(--kendo-icon-size-xxl, calc(var(--kendo-icon-size, 1rem) * 2)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon size of the extra large Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-xs-size</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small size of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-sm-size</td>
+    <td>String</td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small size of the Avatar.</div></div>
@@ -140,22 +190,34 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-lg-size</td>
     <td>String</td>
-    <td><code>k-spacing(16)</code></td>
-    <td><code>var(--kendo-spacing-16)</code></td>
+    <td><code>k-spacing(12)</code></td>
+    <td><code>var(--kendo-spacing-12)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large size of the Avatar.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-avatar-xl-size</td>
+    <td>String</td>
+    <td><code>k-spacing(16)</code></td>
+    <td><code>var(--kendo-spacing-16)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large size of the Avatar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-avatar-sizes</td>
     <td>Map</td>
     <td><code>(
+    xs: $kendo-avatar-xs-size,
     sm: $kendo-avatar-sm-size,
     md: $kendo-avatar-md-size,
-    lg: $kendo-avatar-lg-size
+    lg: $kendo-avatar-lg-size,
+    xl: $kendo-avatar-xl-size
 )</code></td>
-    <td><ul><li>sm: var(--kendo-spacing-4)</li><li>md: var(--kendo-spacing-8)</li><li>lg: var(--kendo-spacing-16)</li></ul></td>
+    <td><ul><li>xs: var(--kendo-spacing-4)</li><li>sm: var(--kendo-spacing-6)</li><li>md: var(--kendo-spacing-8)</li><li>lg: var(--kendo-spacing-12)</li><li>xl: var(--kendo-spacing-16)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>
