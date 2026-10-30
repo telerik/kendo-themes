@@ -217,6 +217,51 @@ $kendo-actionsheet-item-disabled-gradient: null !default;
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-shadow: null !default;
 
+// Legacy Actionsheet (used by the deprecated position classes and the adaptive class)
+/// The width of the ActionSheet when positioned with a deprecated position class.
+/// @group action-sheet
+$kendo-actionsheet-legacy-width: 360px !default;
+/// The border radius of the ActionSheet when positioned with a deprecated position class.
+/// @group action-sheet
+$kendo-actionsheet-legacy-border-radius: 0px !default;
+/// The spacing between the items of an ActionSheet with a deprecated position class or the adaptive class.
+/// @group action-sheet
+$kendo-actionsheet-legacy-item-spacing: k-spacing(3) !default;
+/// The vertical padding of the ActionSheet item when positioned with a deprecated position class or the adaptive class.
+/// @group action-sheet
+$kendo-actionsheet-legacy-item-padding-y: null !default;
+/// The border radius of the ActionSheet item when positioned with a deprecated position class or the adaptive class.
+/// @group action-sheet
+$kendo-actionsheet-legacy-item-border-radius: null !default;
+
+// Adaptive Actionsheet (deprecated, kept for backwards compatibility)
+/// The font size of the adaptive ActionSheet.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-font-size: var(--kendo-font-size-lg) !default;
+/// The line height of the adaptive ActionSheet.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-line-height: var(--kendo-line-height) !default;
+/// The vertical padding of the adaptive ActionSheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-titlebar-padding-y: k-spacing(4) !default;
+/// The horizontal padding of the adaptive ActionSheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;
+
+/// The vertical padding of the adaptive ActionSheet content.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-content-padding-y: k-spacing(2) !default;
+/// The horizontal padding of the adaptive ActionSheet content.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-content-padding-x: k-spacing(4) !default;
+
+/// The vertical padding of the adaptive ActionSheet footer.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-footer-padding-y: k-spacing(2) !default;
+/// The horizontal padding of the adaptive ActionSheet footer.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
+
 // Actionsheet group item
 /// The horizontal padding of the ActionSheet group item.
 /// @group action-sheet
@@ -342,6 +387,19 @@ $kendo-actionsheet-content-max-width: 640px !default;
     $kendo-actionsheet-item-disabled-border: $kendo-actionsheet-item-disabled-border,
     $kendo-actionsheet-item-disabled-gradient: $kendo-actionsheet-item-disabled-gradient,
     $kendo-actionsheet-item-disabled-shadow: $kendo-actionsheet-item-disabled-shadow,
+    $kendo-adaptive-actionsheet-font-size: $kendo-adaptive-actionsheet-font-size,
+    $kendo-adaptive-actionsheet-line-height: $kendo-adaptive-actionsheet-line-height,
+    $kendo-adaptive-actionsheet-titlebar-padding-y: $kendo-adaptive-actionsheet-titlebar-padding-y,
+    $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-x,
+    $kendo-adaptive-actionsheet-content-padding-y: $kendo-adaptive-actionsheet-content-padding-y,
+    $kendo-adaptive-actionsheet-content-padding-x: $kendo-adaptive-actionsheet-content-padding-x,
+    $kendo-adaptive-actionsheet-footer-padding-y: $kendo-adaptive-actionsheet-footer-padding-y,
+    $kendo-adaptive-actionsheet-footer-padding-x: $kendo-adaptive-actionsheet-footer-padding-x,
+    $kendo-actionsheet-legacy-width: $kendo-actionsheet-legacy-width,
+    $kendo-actionsheet-legacy-border-radius: $kendo-actionsheet-legacy-border-radius,
+    $kendo-actionsheet-legacy-item-spacing: $kendo-actionsheet-legacy-item-spacing,
+    $kendo-actionsheet-legacy-item-padding-y: $kendo-actionsheet-legacy-item-padding-y,
+    $kendo-actionsheet-legacy-item-border-radius: $kendo-actionsheet-legacy-item-border-radius,
     $kendo-actionsheet-group-item-padding-x: $kendo-actionsheet-group-item-padding-x,
     $kendo-actionsheet-group-item-padding-y: $kendo-actionsheet-group-item-padding-y,
     $kendo-actionsheet-group-item-gap: $kendo-actionsheet-group-item-gap,

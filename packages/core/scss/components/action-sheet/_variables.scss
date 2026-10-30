@@ -90,6 +90,25 @@ $kendo-actionsheet-item-hover-background: null !default;
 $kendo-actionsheet-item-focus-background: null !default;
 $kendo-actionsheet-item-disabled-opacity: null !default;
 
+// Legacy Actionsheet (used by the deprecated position classes and the adaptive class)
+$kendo-actionsheet-legacy-width: null !default;
+$kendo-actionsheet-legacy-border-radius: null !default;
+$kendo-actionsheet-legacy-item-spacing: null !default;
+$kendo-actionsheet-legacy-item-padding-y: null !default;
+$kendo-actionsheet-legacy-item-border-radius: null !default;
+
+// Adaptive Actionsheet (deprecated, kept for backwards compatibility)
+$kendo-adaptive-actionsheet-font-size: null !default;
+$kendo-adaptive-actionsheet-line-height: null !default;
+$kendo-adaptive-actionsheet-titlebar-padding-y: null !default;
+$kendo-adaptive-actionsheet-titlebar-padding-x: null !default;
+
+$kendo-adaptive-actionsheet-content-padding-y: null !default;
+$kendo-adaptive-actionsheet-content-padding-x: null !default;
+
+$kendo-adaptive-actionsheet-footer-padding-y: null !default;
+$kendo-adaptive-actionsheet-footer-padding-x: null !default;
+
 // Actionsheet group item
 $kendo-actionsheet-group-item-padding-x: null !default;
 $kendo-actionsheet-group-item-padding-y: null !default;

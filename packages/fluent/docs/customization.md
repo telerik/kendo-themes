@@ -782,6 +782,136 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-actionsheet-legacy-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-actionsheet-legacy-width, 360px )</code></td>
+    <td><code>var(--kendo-actionsheet-legacy-width, 360px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ActionSheet when positioned with a deprecated position class.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-legacy-border-radius</td>
+    <td>String</td>
+    <td><code>var( --kendo-actionsheet-legacy-border-radius, 0px )</code></td>
+    <td><code>var(--kendo-actionsheet-legacy-border-radius, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ActionSheet when positioned with a deprecated position class.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-legacy-item-spacing</td>
+    <td>String</td>
+    <td><code>var( --kendo-actionsheet-legacy-item-spacing, #{k-spacing(1)} )</code></td>
+    <td><code>var(--kendo-actionsheet-legacy-item-spacing, var(--kendo-spacing-1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of an ActionSheet with a deprecated position class or the adaptive class.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-legacy-item-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ActionSheet item when positioned with a deprecated position class or the adaptive class.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-legacy-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ActionSheet item when positioned with a deprecated position class or the adaptive class.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-font-size, #{$kendo-font-size-lg} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-font-size, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the adaptive action sheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the adaptive action sheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-header-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-header-padding-y, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-header-padding-y, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-header-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-header-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-header-padding-x, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet titlebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-content-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-content-padding-y, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-content-padding-y, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-content-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-content-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-content-padding-x, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-footer-padding-y</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-footer-padding-y, #{k-spacing(2)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-footer-padding-y, var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the adaptive action sheet footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-adaptive-actionsheet-footer-padding-x</td>
+    <td>String</td>
+    <td><code>var( --kendo-adaptive-actionsheet-footer-padding-x, #{k-spacing(4)} )</code></td>
+    <td><code>var(--kendo-adaptive-actionsheet-footer-padding-x, var(--kendo-spacing-4))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet footer.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-actionsheet-group-item-padding-x</td>
     <td>String</td>
     <td><code>var( --kendo-actionsheet-group-item-padding-x, #{k-spacing(1.5)} )</code></td>
