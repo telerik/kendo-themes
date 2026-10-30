@@ -25,6 +25,37 @@ $kendo-floating-label-offset-x: calc( #{$kendo-input-md-padding-x} + #{$kendo-in
 /// @group floating-label
 $kendo-floating-label-offset-y: calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} ) !default;
 
+/// The font size of the small Floating Label.
+/// @group floating-label
+$kendo-floating-label-sm-font-size: $kendo-input-sm-font-size !default;
+/// The font size of the large Floating Label.
+/// @group floating-label
+$kendo-floating-label-lg-font-size: $kendo-input-lg-font-size !default;
+/// The line height of the small Floating Label.
+/// @group floating-label
+$kendo-floating-label-sm-line-height: $kendo-input-sm-line-height !default;
+/// The line height of the large Floating Label.
+/// @group floating-label
+$kendo-floating-label-lg-line-height: $kendo-input-lg-line-height !default;
+/// The height of the small Floating Label.
+/// @group floating-label
+$kendo-floating-label-sm-height: calc( #{$kendo-floating-label-sm-line-height} * #{$kendo-floating-label-sm-font-size} ) !default;
+/// The height of the large Floating Label.
+/// @group floating-label
+$kendo-floating-label-lg-height: calc( #{$kendo-floating-label-lg-line-height} * #{$kendo-floating-label-lg-font-size} ) !default;
+/// The horizontal offset of the small Floating Label.
+/// @group floating-label
+$kendo-floating-label-sm-offset-x: calc( #{$kendo-input-sm-padding-x} + #{$kendo-input-border-width} ) !default;
+/// The horizontal offset of the large Floating Label.
+/// @group floating-label
+$kendo-floating-label-lg-offset-x: calc( #{$kendo-input-lg-padding-x} + #{$kendo-input-border-width} ) !default;
+/// The vertical offset of the small Floating Label.
+/// @group floating-label
+$kendo-floating-label-sm-offset-y: calc( #{$kendo-floating-label-sm-height} + #{$kendo-input-border-width} + #{$kendo-input-sm-padding-y} ) !default;
+/// The vertical offset of the large Floating Label.
+/// @group floating-label
+$kendo-floating-label-lg-offset-y: calc( #{$kendo-floating-label-lg-height} + #{$kendo-input-border-width} + #{$kendo-input-lg-padding-y} ) !default;
+
 /// The transformation scale of the focused Floating Label.
 /// @group floating-label
 $kendo-floating-label-focus-scale: 1 !default;
@@ -62,6 +93,16 @@ $kendo-floating-label-focus-text: null !default;
     $kendo-floating-label-height: $kendo-floating-label-height,
     $kendo-floating-label-offset-x: $kendo-floating-label-offset-x,
     $kendo-floating-label-offset-y: $kendo-floating-label-offset-y,
+    $kendo-floating-label-sm-font-size: $kendo-floating-label-sm-font-size,
+    $kendo-floating-label-lg-font-size: $kendo-floating-label-lg-font-size,
+    $kendo-floating-label-sm-line-height: $kendo-floating-label-sm-line-height,
+    $kendo-floating-label-lg-line-height: $kendo-floating-label-lg-line-height,
+    $kendo-floating-label-sm-height: $kendo-floating-label-sm-height,
+    $kendo-floating-label-lg-height: $kendo-floating-label-lg-height,
+    $kendo-floating-label-sm-offset-x: $kendo-floating-label-sm-offset-x,
+    $kendo-floating-label-lg-offset-x: $kendo-floating-label-lg-offset-x,
+    $kendo-floating-label-sm-offset-y: $kendo-floating-label-sm-offset-y,
+    $kendo-floating-label-lg-offset-y: $kendo-floating-label-lg-offset-y,
     $kendo-floating-label-focus-scale: $kendo-floating-label-focus-scale,
     $kendo-floating-label-focus-offset-x: $kendo-floating-label-focus-offset-x,
     $kendo-floating-label-focus-offset-y: $kendo-floating-label-focus-offset-y,
