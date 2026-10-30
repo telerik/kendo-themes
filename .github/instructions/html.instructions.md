@@ -190,11 +190,10 @@ export default Autocomplete;
 
 - The `@aria` annotations are read by `npm run docs` to generate the **ARIA Attributes** section in `docs/[component].md`
 - WCAG validation: `npm run test:a11y [component]` (axe-core in JSDOM, target: 0 violations)
-- Full workflow: use the `/accessibility` prompt or the `manage-html-a11y` skill
+- Full workflow: use the `manage-html-a11y` skill
 
 ## Related Documentation
 
 - Root instructions: `../../.github/copilot-instructions.md`
 - Package README: `../README.md`
-- Accessibility prompt: `../../.github/prompts/accessibility.prompt.md`
 

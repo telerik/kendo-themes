@@ -112,6 +112,14 @@ When **removing** a variable:
   ```
 - Remove from core, all theme files, all `@forward` maps, and layout/theme references
 
+## SassDoc rules
+
+- Description pattern: `/// The [property] of the [ComponentName][ sub-element].` — start with "The", PascalCase component name, end with a period
+- `@group` is lowercase, hyphenated, singular, and matches the component (e.g., `tile-layout`, not `TileLayouts`)
+- Name the state or sub-element when the variable targets one (e.g., "The background color of the hovered Chip.")
+- Use standard terms (`padding`, `margin`, `width`, `radius`, `color`) and horizontal/vertical for `-x`/`-y` variables
+- Keep descriptions unique across a file
+
 ## Gotchas
 
 - **`@forward` map must stay complete** — missing exports cause silent compilation issues where the variable stays `null`.

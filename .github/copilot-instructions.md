@@ -1,194 +1,43 @@
 # Kendo Themes Monorepo
 
-This monorepo contains SCSS themes for all Kendo UI products, providing consistent visual styling and customization options for 80+ UI components.
+SCSS themes for all Kendo UI products (80+ components). Nx monorepo built with dart-sass. Check `package.json` files for tooling and versions.
 
-## Monorepo Overview
+## Packages
 
-**Architecture:** Multi-package monorepo with core design system, theme implementations, utilities, and testing infrastructure.
-
-### Package Ecosystem
-
-| Package | Purpose | Path-Specific Instructions |
-|---------|---------|---------------------------|
-| **core** | Design system foundation with null variables and component skeletons | `.github/instructions/core.instructions.md` |
+| Package | Purpose | Path instructions |
+|---------|---------|-------------------|
+| **core** | Design system foundation: null variables, mixins, functions, component skeletons | `.github/instructions/core.instructions.md` |
 | **default** | Default Kendo theme (maintenance mode) | `.github/instructions/themes.instructions.md` |
-| **bootstrap** | Bootstrap-styled theme | `.github/instructions/themes.instructions.md` |
-| **material** | Material Design theme | `.github/instructions/themes.instructions.md` |
-| **classic** | Classic Kendo theme | `.github/instructions/themes.instructions.md` |
-| **fluent** | Microsoft Fluent theme | `.github/instructions/themes.instructions.md` |
-| **meridian** | Meridian theme — the recommended default for Kendo and Telerik products | `.github/instructions/themes.instructions.md` |
-| **utils** | Utility-first CSS classes (standalone) | `.github/instructions/utils.instructions.md` |
-| **html** | React component specs for visual testing | `.github/instructions/html.instructions.md` |
+| **bootstrap**, **material**, **classic**, **fluent** | Theme implementations | `.github/instructions/themes.instructions.md` |
+| **meridian** | Recommended default theme for Kendo and Telerik products | `.github/instructions/themes.instructions.md` |
+| **utils** | Standalone utility-first CSS classes | `.github/instructions/utils.instructions.md` |
+| **html** | React/TSX component specs, templates, and visual tests | `.github/instructions/html.instructions.md` |
 
+Other top-level folders: `scripts/` (build tooling), `units/` (Jest tests), `tests/` (visual test output), `integrations/` (bundler tests).
 
-## Tech Stack
+## Workflows
 
-_For specific version numbers, refer to package.json files in the root and individual packages._
+Use the skills in `.github/skills/` for multi-step work: `manage-components`, `manage-scss-variables`, `manage-scss-styles`, `manage-scss-modules`, `manage-theme`, `manage-html-specs`, `manage-html-templates`, `manage-html-tests`, `manage-html-a11y`, `audit-design-tokens`, `component-pr-description`.
 
-### Core Technologies
-
-- **SCSS/Sass** - Theme compilation with dart-sass
-- **Node.js** - Required runtime
-- **Nx** - Monorepo management, task running, and release management
-- **PostCSS + Autoprefixer** - CSS post-processing for browser compatibility
-
-### Development & Build Tools
-
-- **ESBuild** - Fast JavaScript/TypeScript bundling
-- **HTTP Server** - Local development server
-- **Gulp** - SCSS build pipeline
-- **TypeScript** - Type checking and compilation
-
-### Quality Assurance
-
-- **ESLint** - JavaScript/TypeScript linting
-- **Stylelint** - SCSS linting and formatting
-- **Husky + lint-staged** - Git hook management
-
-### Documentation
-
-- **SassDoc** - SCSS documentation generation
-
-### Testing Infrastructure
-
-- **@progress/kendo-e2e** - Visual regression testing
-- **AxeCore** - Accessibility testing
-- **Jest** - Unit testing framework
-
-## Repo Structure
-
-```
-packages/
-├── core/              # Design system foundation (null variables, mixins, functions)
-├── default/           # Default theme implementation
-├── bootstrap/         # Bootstrap theme
-├── material/          # Material Design theme
-├── classic/           # Classic theme
-├── fluent/            # Fluent theme
-├── utils/             # Utility CSS classes (standalone)
-└── html/              # React component specs & tests
-scripts/               # Build utilities and automation
-tests/                 # Visual test outputs
-build/                 # CI/CD scripts
-units/                 # Jest unit tests
-integrations/          # Bundler integration tests
-```
-
-
-## Repo Commands and Scripts
-
-**Setup:**
-```bash
-npm ci                          # Install all dependencies
-```
-
-**Development Cycle:**
-```bash
-npm run sass                    # Compile all themes → packages/*/dist/all.css
-npm start                       # Start dev server on localhost:3000
-npm run docs                    # Generate SassDoc documentation
-npm run lint                    # Run all linters (scripts + styles)
-npm run lint:scripts            # ESLint for JS/TS files
-npm run lint:styles             # Stylelint for SCSS files
-```
-
-**Testing:**
-```bash
-npm run test:units              # Run Jest unit tests (requires docs first)
-npm run test:units:watch        # Run Jest in watch mode
-npm run test:integrations       # Test bundler compatibility
-npm run test:create-screenshots # Generate visual regression tests
-npm run test:contrast           # Run accessibility contrast tests
-```
-
-**Advanced Builds:**
-```bash
-npm run sass:dist               # Compile all swatches → {swatch}.css/scss
-npm run docs:check              # Verify documentation consistency
-npm run build                   # Build HTML components
-npm run build:tests             # Build HTML test components
-```
-
-**Cleanup:**
-```bash
-npm run clean:dist              # Remove all dist folders
-npm run clean:tests             # Clean test result files
-npm run clean                   # Full cleanup (includes node_modules)
-```
-
-### Command Dependencies
-- Unit tests require `npm run docs` to work with latest metadata
-- Git hooks automatically run linting on changed files
-
-## Coding Guidelines
-
-### Commit message rules (Conventional Commits)
-
-- Use the Conventional Commits spec: `type(scope): summary`
-- Allowed `type`: feat, fix, chore, docs, refactor, test, perf, ci, build, revert.
-- Use a meaningful `scope` (e.g., component, package or folder).
-- Subject in imperative mood, max ~80 chars.
-- Include `BREAKING CHANGE:` in body when applicable.
-
-#### Special rules for Copilot coding agent
-- For planning or scaffolding commits, use: `chore(plan): initial plan for #{issue-number}` (no “Initial Plan”).
-- For dependency updates triggered by the agent: `chore(deps): …`
-- For lint/format-only changes: `chore(format): …`
-- Regenerated docs (e.g. `packages/*/docs/*.md` produced by `npm run docs`) must be kept in their own commit, separate from the code change that triggered the regeneration, using the message `chore: regen docs`.
-
-### Variable Creation
-
-- Refer to ${variable-create.prompt.md} for SCSS variable creation guidelines
-
-### Variable Documentation
-
-- Refer to ${variable-docs.prompt.md} for SassDoc documentation standards
-
-### Accessibility
-
-- Use the `manage-html-a11y` skill or `/accessibility` prompt for applying ARIA to components
-- Refer to `.github/prompts/accessibility.prompt.md` for patterns and rules
-
-### PR Descriptions for New/Updated Components
-
-- Refer to ${component-pr-description.prompt.md} to generate a GitHub-ready PR description (idea, rendering, HTML snippets, a11y summary, visual test reference table) for one or more components
-
-### SCSS Standards
-
-- Use **dart-sass syntax** - avoid deprecated node-sass features
-- Follow **BEM-like naming** with `k-` prefix for component classes
-- Use **`!default`** for all customizable variables
-- Import component dependencies explicitly in `_index.scss` files
-- Use `@include import-once()` to prevent duplicate CSS output
-
-### HTML Package Standards
-
-- Use **TypeScript** for all component files with proper type definitions
-- Follow **React functional component** patterns with hooks
-- Use **TSX** syntax consistently
-- Export components and types from `index.ts` files
-- Organize files by component with clear separation of concerns
-
-### Testing Requirements
-
-- **Unit tests** - Required for variable customization validation
-- **HTML tests** - Add test cases for new component features in `packages/html/src/[component]/tests/`
-- **Visual tests** - Automatically generated from HTML tests
-- **Integration tests** - Validate SCSS compilation with major bundlers
-- **Linting** - Enforced on all commits via Husky + lint-staged
-- **Accessibility tests** - Run automatically on default-ocean-blue-a11y swatch
-
-### Accessibility Automation
-
-ARIA specifications are defined as `ariaSpec.rules` on TSX spec components (single source of truth).
-
-Use the `/accessibility` prompt for the full workflow and rules. Key commands:
+## Commands
 
 ```bash
-npm run test:a11y [component]           # Validate WCAG compliance (axe-core, no browser needed)
-npm run test:contrast                   # Validate color contrast ratios
+npm ci                      # Install
+npm run sass                # Compile all themes → packages/*/dist/all.css
+npm run sass:dist           # Compile all swatches
+npm run docs                # Generate SassDoc docs (run after changing SCSS variables)
+npm run lint                # ESLint + Stylelint
+npm run test:units          # Jest unit tests (run `npm run docs` first)
+npm run test:a11y [comp]    # axe-core WCAG validation
+npm run test:contrast       # Color contrast tests
+npm start                   # Dev server on localhost:3000
 ```
 
-## Common Issues
+## Conventions
 
-- **Unit tests failing**: Run `npm run docs` first to generate metadata
+- Conventional Commits: `type(scope): summary`, imperative mood, ~80 chars max, `BREAKING CHANGE:` in body when applicable.
+- Regenerated docs (`packages/*/docs/*.md` from `npm run docs`) go in a separate `chore: regen docs` commit.
+- Copilot coding agent: use `chore(plan): initial plan for #{issue-number}` for planning commits, `chore(deps): …` for dependency updates, `chore(format): …` for lint-only changes.
+- SCSS: dart-sass syntax only; `k-` prefixed BEM-like classes; `!default` on every customizable variable; explicit dependency imports in `_index.scss`; wrap output in `@include import-once()`.
+- Accessibility: ARIA is documented with `@aria`/`@keyboard`/`@ux`/`@see` JSDoc annotations in `.spec.tsx` files and validated on the `default-ocean-blue-a11y` swatch.
+- New component features need HTML tests in `packages/html/src/[component]/tests/`; variable customization needs unit tests in `units/`.
