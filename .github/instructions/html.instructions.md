@@ -2,198 +2,40 @@
 applyTo: "packages/html/**"
 ---
 
-# HTML Package
+# HTML package
 
-React component specifications and HTML templates for visual testing and documentation.
+React/TSX component specs that render the static HTML each Kendo component must produce. They drive visual regression tests, a11y validation, and generated docs.
 
-## Package Purpose
-
-- **Component Specs** - Define structure, variants, and states for 80+ UI components
-- **Templates** - Reusable React components for rendering
-- **Tests** - Entry points for visual regression testing
-- **Type Safety** - Full TypeScript support
-
-**Tech Stack:** TypeScript, React, TSX, ESBuild, Jest
-
-## Package Structure
+## Structure
 
 ```
-packages/html/
-├── src/
-│   ├── index.ts                        # Main entry point
-│   ├── utils/                          # Helper functions
-│   └── [component]/                    # Component files
-│       ├── [component].spec.tsx        # Component specification
-│       ├── index.ts                    # Component exports
-│       ├── templates/                  # Reusable templates
-│       │   └── [template].tsx          # Template implementations
-│       └── tests/                      # Visual test scenarios
-│           └── [test-case].tsx         # Individual tests
-├── dist/                               # Compiled output (ESM, CJS, types)
-├── scripts/                            # Build utilities
-└── assets/                             # Static assets
+packages/html/src/{component}/
+├── constants.ts               # {COMPONENT}_MODULE_NAME / _FOLDER_NAME
+├── {component}.spec.tsx       # Source of truth for markup, options, states, and ARIA
+├── index.ts                   # Exports spec + templates
+├── templates/*.tsx            # Thin presets over the spec
+├── tests/*.tsx                # Visual test pages (default export, wrapped in #test-area)
+└── demos/{component}.tsx      # Demo config for the preview page (src/_preview)
 ```
 
-## Component File Pattern
+Shared helpers live in `src/misc` (`classNames`, `optionClassNames`, `stateClassNames`, `Size`, `FillMode`, `ThemeColor`, `nextId`, …); component types in `src/_types/component.ts`.
 
-### 1. Specification (`.spec.tsx`)
+## Rules
 
-**Purpose**: Define all possible variants, states, and configurations for a component
+- Edit only `.tsx`/`.ts` sources. The `.html` files under the root `tests/` folder are build output.
+- Output is static: no hooks, event handlers, or side effects. States are boolean props that add `k-*` state classes.
+- Specs attach static metadata (`states`, `options`, `className`, `defaultOptions`, `moduleName`, `folderName`) — the build and tests rely on it.
+- Option values must exist in the SCSS (don't list a `themeColor` the theme doesn't style).
+- Accessibility is documented with `@aria`/`@ux` JSDoc before the component and `@keyboard`/`@see` before `export default`. Target: WCAG 2.2 AA, 0 axe violations (`npm run test:a11y {component}`).
 
-**Key Responsibilities**:
-- Define TypeScript interfaces for component props
-- List all component variants and their options
-- Specify default values and required properties
-- Document expected HTML structure and class names
-
-**Example Structure**:
-```typescript
-export interface ButtonProps {
-    type?: 'button' | 'submit' | 'reset';
-    themeColor?: 'base' | 'primary' | 'secondary';
-    fillMode?: 'solid' | 'outline' | 'flat';
-    size?: 'small' | 'medium' | 'large';
-    rounded?: 'small' | 'medium' | 'large' | 'full';
-    disabled?: boolean;
-    children?: React.ReactNode;
-}
-```
-
-### 2. Templates (`templates/` directory)
-
-**Purpose**: Reusable React components representing common UI patterns
-
-**Key Responsibilities**:
-- Implement actual component rendering logic
-- Accept props from specification interfaces
-- Generate correct HTML structure with proper class names
-- Follow BEM-like naming with `k-` prefix
-
-**Naming Convention**:
-- Use descriptive file names: `card-normal.tsx`, `card-horizontal.tsx`
-- Export from component's `index.ts`
-
-**Example**:
-```typescript
-import { Button } from "../button.spec";
-
-export const IconButton = (props) => <Button icon="folder" {...props} children={undefined} />;
-
-```
-
-### 3. Tests (`tests/` directory)
-
-**Purpose**: Visual test scenarios for component variations
-
-**Key Responsibilities**:
-- Create comprehensive test cases covering all component states
-- Include edge cases and different configurations
-- Generate HTML output for screenshot testing
-- Test theme compatibility
-
-**Naming Convention**: `[component]-[scenario].tsx`
-- Examples: `button-solid.tsx`, `button-with-icon.tsx`
-
-**Example**:
-```typescript
-import { Button } from '../../button.spec';
-
-export default () => (
-    <div id="test-area">
-        <Button themeColor="primary" fillMode="solid">Primary</Button>
-        <Button themeColor="primary" disabled>Disabled</Button>
-    </div>
-);
-```
-
-### 4. Index Files (`index.ts`)
-
-**Purpose**: Central export point for component files
-
-**Key Responsibilities**:
-- Export component specifications
-- Export all templates
-- Export test utilities
-- Maintain clean import paths
-
-## Important: Source Files Only
-
-**Only edit `.tsx` source files** in `packages/html/src/`. Never edit the compiled `.html` files in the root `tests/` folder — those are auto-generated build output from `npm run build:tests` and will be overwritten.
-
-## Coding Standards
-
-### TypeScript
-- Use explicit types, avoid `any`
-- Export all interfaces
-- Follow tsconfig strict mode
-
-### React
-- Functional components only
-- Destructure props
-- Use `{...other}` for HTML attributes
-
-### Naming
-- Components: PascalCase (`ButtonGroup`)
-- Tests: kebab-case (`button-solid.tsx`)
-- Specs: kebab-case (` button.spec.tsx`)
-- CSS classes: BEM with `k-` prefix (`k-button`, `k-button-solid`)
-
-## Build Commands
+## Commands
 
 ```bash
-npm run build           # Build library (ESM + CJS)
-npm run build:tests     # Build test HTML outputs
-npm run typegen         # Generate TypeScript declarations
-npm run typecheck       # Type check without emitting
-npm test                # Run Jest tests
-npm start               # Start dev server
+npm run typecheck --prefix packages/html
+npm run build:tests --prefix packages/html
+npm run test --prefix packages/html        # Vitest
 ```
 
-## Accessibility
+## Workflows
 
-All components must be WCAG 2.2 Level AA compliant. Accessibility is documented via structured JSDoc annotations in each `.spec.tsx` file.
-
-### Annotation conventions
-
-**Component JSDoc block** (before `export const X: KendoComponent`):
-```tsx
-/**
- * @aria {role="combobox"} Announces the input as a combobox widget.
- * @aria {aria-expanded="true"|"false"} Announces popup visibility state.
- * @aria {aria-label|aria-labelledby} Required accessible name.
- * @ux {Popup} Opens on focus or when the user types.
- */
-export const Autocomplete: KendoComponent<...>
-```
-
-**Bottom JSDoc block** (before `export default`):
-```tsx
-/**
- * @keyboard {Alt + ArrowDown} Opens the suggestion popup.
- * @keyboard {Escape} Closes the popup.
- *
- * @see https://www.w3.org/WAI/ARIA/apg/patterns/combobox/ WAI-ARIA Combobox Pattern
- * @see https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html WCAG 4.1.2 Name, Role, Value — combobox must have accessible name
- */
-
-export default Autocomplete;
-```
-
-### Tag summary
-
-| Tag | Location | Format |
-|-----|----------|--------|
-| `@aria` | Component block | `@aria {attribute="value"} Description` |
-| `@ux` | Component block | `@ux {Feature name} Description` |
-| `@keyboard` | Bottom block | `@keyboard {Trigger} Description` |
-| `@see` | Bottom block | `@see https://url Display text` |
-
-- The `@aria` annotations are read by `npm run docs` to generate the **ARIA Attributes** section in `docs/[component].md`
-- WCAG validation: `npm run test:a11y [component]` (axe-core in JSDOM, target: 0 violations)
-- Full workflow: follow `references/a11y.md` in the `manage-specs` skill
-
-## Related Documentation
-
-- Root instructions: `../../.github/copilot-instructions.md`
-- Package README: `../README.md`
-
+Use the `manage-specs` skill for specs, templates, tests, and accessibility.

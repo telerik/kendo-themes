@@ -2,30 +2,15 @@
 
 Create a new theme package or update an existing theme's tokens, swatches, and component overrides.
 
-## Related references
-
-| Reference | When to use |
-|-----------|-------------|
-| [foundation-modules.md](foundation-modules.md) | Design system foundation tokens in core (spacing, colors, elevation, typography, border-radii, motion, z-index) |
-| [variables.md](variables.md) / [styles.md](styles.md) | Component variables or layout/theme mixins |
-| [component.md](component.md) | Full component create/update across SCSS + HTML |
-
-## When to use
-
-- **New theme** — "create a new corporate theme", "scaffold a dark-mode theme"
-- **Token changes** — "change the spacing scale in material", "update the primary color in default"
-- **Swatch changes** — "add a high-contrast swatch to fluent", "change ocean-blue primary"
-- **Broad component updates** — "update padding across all form components in bootstrap"
-
-Not for single-component work (use [variables.md](variables.md), [styles.md](styles.md), or [component.md](component.md)). For core design system modules, use [foundation-modules.md](foundation-modules.md).
+For component-level or core token work, use [variables.md](variables.md), [styles.md](styles.md), [component.md](component.md), or [foundation-modules.md](foundation-modules.md). Shared SCSS rules are in [context.md](context.md).
 
 ## Inputs
 
 | Input | Required | Description |
 |-------|----------|-------------|
-| **Theme name** | Yes | kebab-case (e.g., `corporate`, `dark-mode`). For existing themes: `default`, `classic`, `material`, `fluent`, `bootstrap`. |
+| **Theme name** | Yes | kebab-case (e.g., `corporate`, `dark-mode`). Existing: `default`, `classic`, `material`, `fluent`, `bootstrap`, `meridian`. |
 | **Operation** | No | `create` or `update`. Inferred from whether the package exists. |
-| **Base theme** | For new | Which existing theme to fork from. Default: `default`. |
+| **Base theme** | For new | Which existing theme to fork from. Default: `meridian` (recommended; `default` is in maintenance mode). |
 | **Design tokens** | No | Spacing, color, typography, elevation, border-radius, or motion changes. |
 | **Swatch config** | No | New swatch name, colors, preview colors. |
 | **Component overrides** | No | Component-level variable or style changes. |
@@ -132,7 +117,17 @@ Update `.sassdocrc` `meta.name` and `meta.friendlyName`.
 
 Update swatch JSON files: rename files from `{base}-*.json` to `{theme}-*.json`, update `name` and `base` fields inside each, update `lib/swatches/index.js` exports.
 
-### Step 3: Apply design token customizations
+### Step 3: Register the theme in the repo
+
+A theme is referenced outside its package (CI workflows, `integrations/`, `units/{theme}/`, `packages/html/devkit`, `scripts/`, root `package.json`). Find every place with:
+
+```bash
+git grep -lw {base} -- ':!packages/{base}' ':!packages/*/docs' ':!tests' ':!**/CHANGELOG.md'
+```
+
+Add the new theme next to each `{base}` entry. Copy `units/{base}/` to `units/{theme}/` and set `process.env.THEME` in its `theme.env.js`.
+
+### Step 4: Apply design token customizations
 
 Customize the theme's visual identity. Use the appropriate reference for each change type:
 
@@ -150,7 +145,7 @@ Customize the theme's visual identity. Use the appropriate reference for each ch
 **Swatch colors**:
 - Edit `lib/swatches/{theme}-main.json` directly
 
-### Step 4: Validate
+### Step 5: Validate
 
 ```bash
 cd packages/{theme}
@@ -220,10 +215,7 @@ npm run test:units 2>&1
 
 ## Gotchas
 
-- **Theme `_variables.scss` vs component `_variables.scss`** — the theme-level file at `scss/_variables.scss` only has a few global variables (z-index, focus shadow). Component-specific values go in `scss/{component}/_variables.scss`.
-- **`@forward` maps must stay in sync** — when adding a variable override in a component's `_variables.scss`, always add it to the `@forward ... with ()` map at the bottom.
-- **Copy the base theme** — for new themes, start from an existing theme's files rather than writing from scratch. The `_index.scss` and `@forward`/`@use` wiring is complex and error-prone.
-- **Swatch `base` field** — the swatch JSON's `base` field must point to the npm package name of the theme.
-- **Component dependency order** — The `scss/index.scss` file lists components in a specific dependency order. Don't reorder arbitrarily.
-- **`!default` is mandatory** — every variable declaration must use `!default` to allow downstream customization.
-- **Broad changes are risky** — changing a design token (like spacing or primary color) affects many components. Validate visually, not just for compilation.
+- **Theme-level vs component variables** — `scss/_variables.scss` only holds a few globals (z-index, focus shadow); component values go in `scss/{component}/_variables.scss`.
+- **Copy, don't write from scratch** — the `_index.scss` and `@forward`/`@use` wiring is error-prone.
+- **Swatch `base`** must be the theme's npm package name.
+- **Token changes are broad** — a spacing or primary-color change affects many components; check visual tests, not just compilation.

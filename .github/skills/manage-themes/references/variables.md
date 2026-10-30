@@ -1,119 +1,47 @@
-# SCSS Variables
+# Component Variables
 
-Create or update SCSS variables for a component in core and targeted themes.
+Add, change, remove, or deprecate `$kendo-{component}-*` variables. Rules on core values, the `@forward` map, and Fluent wrapping are in [context.md](context.md).
 
-Read [context.md](context.md) for naming conventions, theme paths, and common gotchas.
+## Add a variable
 
-## When to use
-
-When the user asks to:
-- Add a new variable to a component (e.g., "add a gap variable to the chip")
-- Change a variable's value in specific themes (e.g., "change button padding to spacing(3) in default")
-- Create all variables for a new component (as part of `component`)
-- Remove or deprecate a variable
-
-Not for layout/theme mixin changes or component registration (see [styles.md](styles.md)) or design system foundation modules like spacing/colors (see [foundation-modules.md](foundation-modules.md)).
-
-## Inputs
-
-| Input | Required | Description |
-|-------|----------|-------------|
-| **Component name** | Yes | kebab-case (e.g., `chip`, `button`, `info-bar`) |
-| **Variables** | Yes | Variable names and values, or "all defaults" for new components |
-| **Target themes** | No | Which themes to update: `all`, or a list like `default, fluent`. Default: **ask the user** |
-| **Operation** | No | `add`, `change`, `remove`, `deprecate`. Inferred from context. |
-
-## Procedure
-
-### Step 1: Determine scope
-
-- **New component** — create full variable files in core + all targeted themes
-- **New variable** — add to core (null) + targeted themes (concrete) + `@forward` maps
-- **Value change** — update targeted themes only, leave core untouched
-- **Remove** — confirm breaking change with user, then remove from all files
-
-### Step 2: Apply to core
-
-For new or added variables, edit `packages/core/scss/components/{component}/_variables.scss`:
-
-```scss
-$kendo-{component}-gap: null !default;
-```
-
-**Rules:**
-- Every variable is `null !default` — never assign concrete values in core
-- No SassDoc in core — documentation lives in the themes. Exceptions: the `$kendo-{component}-sizes` and `$kendo-{component}-theme-colors` maps
-- Place near related variables (all padding vars together, all color vars together)
-- For a new component, use the core template from [file-templates.md](file-templates.md)
-
-### Step 3: Apply to targeted themes
-
-For each theme in the **target themes** list, edit `packages/{theme}/scss/{component}/_variables.scss`:
-
-1. **Add the declaration** with concrete value and `!default`:
+1. **Core** — `packages/core/scss/components/{component}/_variables.scss`, next to related variables:
    ```scss
-   /// The gap between items in the {ComponentName}.
+   $kendo-{component}-gap: null !default;
+   ```
+2. **Each targeted theme** — `packages/{theme}/scss/{component}/_variables.scss`:
+   ```scss
+   /// The gap between the items of the {ComponentName}.
    /// @group {component}
    $kendo-{component}-gap: k-spacing(1) !default;
    ```
+   Then add `$kendo-{component}-gap: $kendo-{component}-gap` to the `@forward … with ( … )` map at the bottom. Fluent: wrap the value in `var( --kendo-{component}-gap, … )`.
+3. **Use it** — reference the variable in core `_layout.scss` (structure: padding, gap, display, sizing) or `_theme.scss` (visuals: color, background, shadow). See [styles.md](styles.md).
 
-2. **Add to the `@forward` map** at the bottom of the file:
-   ```scss
-   @forward "@progress/kendo-theme-core/scss/components/{component}/_variables.scss" with (
-       // ... existing entries ...
-       $kendo-{component}-gap: $kendo-{component}-gap
-   );
-   ```
+For a brand-new component, start from the templates in [file-templates.md](file-templates.md).
 
-3. **Follow theme-specific conventions** from [context.md](context.md)
+## Change a value
 
-For a new component, use the theme variable template from [file-templates.md](file-templates.md).
+- Edit only the targeted themes; never the core `null` declaration.
+- Update the SassDoc description if it no longer fits.
+- Check derived variables that use this one (e.g. `$kendo-button-sm-calc-size`).
+- Fluent: change the fallback inside `var( … )`.
 
-### Step 4: Fluent special handling
+## Remove or deprecate
 
-Every variable in Fluent must wrap its value in a CSS custom property:
+Removal is breaking — confirm with the user first, or deprecate instead:
 
 ```scss
-$kendo-{component}-gap: var( --kendo-{component}-gap, #{k-spacing(1)} ) !default;
+// @deprecated Use $kendo-{component}-new-var instead.
+$kendo-{component}-old-var: $kendo-{component}-new-var !default;
 ```
 
-### Step 5: Validate
-
-```bash
-npm run lint:styles 2>&1
-npm run sass 2>&1
-```
-
-## Variable change checklist
-
-When **changing** an existing variable's value:
-- Update only the targeted themes — don't touch themes the user didn't request
-- Do NOT change the core `null` declaration
-- Update the SassDoc comment if the description no longer fits
-- Verify the `@forward` map still includes this variable
-- Check for derived/calc variables that depend on this one
-- Regenerate docs: `npm run docs`
-
-When **removing** a variable:
-- Confirm breaking change with user, or deprecate instead:
-  ```scss
-  // @deprecated Use $kendo-{component}-new-var instead.
-  $kendo-{component}-old-var: $kendo-{component}-new-var !default;
-  ```
-- Remove from core, all theme files, all `@forward` maps, and layout/theme references
+When removing: delete from core, every theme `_variables.scss`, every `@forward` map, and every `_layout.scss` / `_theme.scss` reference; update unit tests in `units/{theme}/` that list the variable.
 
 ## SassDoc rules
 
-Apply to theme variables (and the core `sizes` / `theme-colors` map exceptions):
-
-- Description pattern: `/// The [property] of the [ComponentName][ sub-element].` — start with "The", PascalCase component name, end with a period
-- `@group` is lowercase, hyphenated, singular, and matches the component (e.g., `tile-layout`, not `TileLayouts`)
-- Name the state or sub-element when the variable targets one (e.g., "The background color of the hovered Chip.")
-- Use standard terms (`padding`, `margin`, `width`, `radius`, `color`) and horizontal/vertical for `-x`/`-y` variables
-- Keep descriptions unique across a file
-
-## Gotchas
-
-- **`@forward` map must stay complete** — missing exports cause silent compilation issues where the variable stays `null`.
-- **Preserve existing variable order** — add new variables near related ones, don't append randomly at the end.
-- **Check for calc/derived variables** — some variables (e.g., `$kendo-button-sm-calc-size`) are computed from others.
+- Description: `/// The {property} of the {ComponentName}[ {sub-element}].` — starts with "The", PascalCase component name, ends with a period.
+- Name the state or sub-element when relevant: "The background color of the hovered Chip."
+- Use standard terms (`padding`, `margin`, `width`, `radius`, `color`); "horizontal"/"vertical" for `-x`/`-y`.
+- `@group` is the component folder name: lowercase, hyphenated, singular (`tile-layout`).
+- `$kendo-{component}-default-*` variables (default size, fill mode, theme color, roundness) also get `/// @role default`.
+- Descriptions are unique within a file.

@@ -2,10 +2,6 @@
 
 Create or update an HTML component specification in `packages/html/src/{component}/`.
 
-## When to use
-
-When the user asks to create a new component spec, add new states or options to a component, modify the HTML structure or class names of a component, or scaffold the HTML package portion of a new component. Not for visual tests ([tests.md](tests.md)) or templates ([templates.md](templates.md)).
-
 ## Inputs
 
 | Input | Required | Description |
@@ -22,28 +18,11 @@ If the user doesn't specify states/options, use reasonable defaults based on sim
 
 ## Procedure
 
-### Step 1: Derive naming constants
+### Step 1: Read a reference spec
 
-From the component name (e.g., `smart-badge`), derive:
+Derive the names and pick a reference component from [context.md](context.md); read its spec before writing.
 
-| Derived Name | Example |
-|-------------|---------|
-| CSS class | `k-smart-badge` |
-| Classname constant | `SMART_BADGE_CLASSNAME` |
-| Folder/module constant prefix | `SMART_BADGE` |
-| TypeScript component name | `SmartBadge` |
-| Module/folder name string | `"smart-badge"` |
-
-### Step 2: Research a reference component
-
-Find an existing component of similar complexity in `packages/html/src/` and use it as a structural reference:
-- **Simple** (no states, few options): `badge`, `avatar`
-- **Medium** (states + options): `button`, `chip`, `card`
-- **Complex** (sub-components, multiple specs): `grid`, `toolbar`, `scheduler`
-
-Read the reference spec to understand the patterns used.
-
-### Step 3: Create `constants.ts`
+### Step 2: Create `constants.ts`
 
 Create `packages/html/src/{component}/constants.ts`:
 
@@ -52,7 +31,7 @@ export const {COMPONENT_UPPER}_MODULE_NAME = '{component}';
 export const {COMPONENT_UPPER}_FOLDER_NAME = {COMPONENT_UPPER}_MODULE_NAME;
 ```
 
-### Step 4: Create `{component}.spec.tsx`
+### Step 3: Create `{component}.spec.tsx`
 
 Create `packages/html/src/{component}/{component}.spec.tsx` with the following structure:
 
@@ -180,7 +159,7 @@ export default {ComponentName};
 
 **Accessibility** — document ARIA with `@aria`/`@keyboard`/`@ux`/`@see` JSDoc annotations on the spec component. See [a11y.md](a11y.md).
 
-### Step 5: Create `index.ts`
+### Step 4: Create `index.ts`
 
 Create `packages/html/src/{component}/index.ts`:
 
@@ -188,19 +167,19 @@ Create `packages/html/src/{component}/index.ts`:
 export * from './{component}.spec';
 ```
 
-This file is extended with template exports (see [templates.md](templates.md)).
+Add template exports as templates are created ([templates.md](templates.md)), and `export * from './demos/{component}';` if the component has a demo.
 
-### Step 6: Register in main index (new components only)
+### Step 5: Register in main index (new components only)
 
 For new components, add the export to `packages/html/src/index.ts`:
 
 ```typescript
-export * from './{component}';
+export * from './{component}/index';
 ```
 
-Place it alphabetically among existing exports.
+Place it in the matching category group (the file is grouped by comments like `// Indicators`, `// Navigation`), not alphabetically.
 
-### Step 7: Validate
+### Step 6: Validate
 
 ```bash
 npm run typecheck --prefix packages/html 2>&1
@@ -223,15 +202,9 @@ When updating an existing spec (adding states, options, or props):
 
 ## Gotchas
 
-- **Only edit `.tsx` source files** in `packages/html/src/`. Never edit the compiled `.html` files in the root `tests/` folder — those are auto-generated build output.
-- Import helpers from `../misc` — this module exports `classNames`, `optionClassNames`, `stateClassNames`, `States`, `Size`, `Roundness`, `FillMode`, `ThemeColor`, and other enums.
-- Import `KendoComponent` and `KendoBaseProps` from `../_types/component`.
-- The `as` prop (via `KendoBaseProps`) allows changing the root element at usage time.
-- Use `{...other}` spread to forward HTML attributes to the root element.
-- States are boolean props (`hover`, `focus`, etc.) — they add CSS state classes, not pseudo-classes.
-- The `className` prop must be merged via `classNames()` — don't overwrite it.
-- Use `optionClassNames` for options (generates `k-{component}-{option}-{value}`) and `stateClassNames` for states (generates `k-{component}-{state}`).
-- Static properties (`states`, `options`, `className`, etc.) on the component function are required — they're used by the test and build systems.
-- The `moduleName` and `folderName` must match the folder name in `packages/html/src/`.
-- Only include option values that the SCSS theme actually supports — don't add `ThemeColor.inverse` if the component has no inverse styles.
-- The spec file is the **single source of truth** for the component's HTML output — templates and tests depend on it.
+Shared rules are in [context.md](context.md). Spec-specific:
+
+- Merge `className` via `classNames()` — never overwrite it. Forward remaining HTML attributes with `{...other}`.
+- `optionClassNames` produces `k-{component}-{option}-{value}`; `stateClassNames` produces the state classes.
+- Static properties (`states`, `options`, `className`, `defaultOptions`, `moduleName`, `folderName`) are required — the build, tests, and docs read them. `moduleName`/`folderName` must equal the folder name.
+- The `as` prop (from `KendoBaseProps`) lets callers change the root element.

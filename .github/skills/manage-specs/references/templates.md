@@ -2,10 +2,6 @@
 
 Create or update reusable template files in `packages/html/src/{component}/templates/`.
 
-## When to use
-
-When the user asks to add a new template variant for a component (e.g., "add an icon chip template", "create a horizontal card template"), or when scaffolding a new component that needs default templates. Not for visual tests ([tests.md](tests.md)) or spec changes ([spec.md](spec.md)).
-
 ## Inputs
 
 | Input | Required | Description |
@@ -143,11 +139,10 @@ The file naming uses either `{component}-{variant}.tsx` or `{variant}-{component
 
 ## Gotchas
 
-- **Only edit `.tsx` source files** in `packages/html/src/{component}/templates/`. Never edit the compiled `.html` files in the root `tests/` folder — those are auto-generated build output.
-- Templates import from the **spec file** (`../{component}.spec`), not from the component index — this avoids circular dependencies.
-- Some older templates import from `..` (the index). Both work, but prefer importing from the spec directly for new templates.
-- Templates must be **stateless** — no React hooks, no event handlers, no side effects. They render static HTML.
-- The `props: any` type is intentional — it allows passing any combination of the component's props without strict typing at the template level.
-- Don't add `key` props in templates — those are added by calling code when mapping.
-- Check if the component has required props (like `text` on Chip) — templates should always satisfy required props.
-- Keep templates focused on one variant — a "kitchen sink" template that shows everything is a test, not a template.
+Shared rules are in [context.md](context.md). Template-specific:
+
+- Import from the spec file (`../{component}.spec`), not the component index — avoids circular imports. Older templates import from `..`; don't copy that.
+- `props: any` is intentional — templates accept any combination of the component's props.
+- No `key` props; callers add them when mapping.
+- Satisfy required props (e.g. `text` on Chip).
+- One variant per template — a template showing everything is a test.

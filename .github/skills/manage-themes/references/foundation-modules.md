@@ -2,18 +2,7 @@
 
 Create or update design system foundation modules in core and theme packages.
 
-## When to use
-
-When the user asks to:
-- Add a new spacing token (e.g., "add a spacing step of 2.5rem")
-- Add or change a color constant or palette entry
-- Update typography tokens (font family, size, weight, line height)
-- Add or modify elevation levels (box-shadow scale)
-- Change border-radius scale values
-- Update motion/animation timing or easing
-- Add or change z-index layers
-
-Not for component-level SCSS (see [variables.md](variables.md) and [styles.md](styles.md)).
+Not for component-level SCSS (see [variables.md](variables.md) and [styles.md](styles.md)). Valid token keys and scales are listed in the `audit-design-tokens` skill's `references/token-reference.md`.
 
 ## Module inventory
 
@@ -56,7 +45,7 @@ Edit the appropriate file in `packages/core/scss/{module}/`.
 - Follow the existing naming and documentation patterns in the module
 - Add SassDoc `///` comments with `@group` annotations
 - Maintain the ordering convention (e.g., spacing values are ordered by size)
-- For `color-system`, respect the multi-file structure: constants in `_constants.scss`, palettes in `_palettes.scss`, functions in `_functions.scss`
+- For `color-system`, respect the multi-file structure: constants in `_constants.scss`, swatch colors in `_swatch.scss`, functions in `_functions.scss`
 
 ### Step 3: Apply theme overrides (if needed)
 

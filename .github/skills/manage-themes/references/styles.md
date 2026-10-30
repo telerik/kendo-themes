@@ -1,96 +1,60 @@
-# SCSS Styles (layout, theme, wiring, registration)
+# Component Styles
 
-Create or update layout, theme, module, and registration files for a component in core and targeted themes.
+Layout and theme mixins, the theme `_index.scss` wiring, and registration in a theme. Naming, paths, and shared rules are in [context.md](context.md).
 
-Read [context.md](context.md) for naming conventions, theme paths, and common gotchas.
+## Where a property goes
 
-## When to use
+| File | Holds |
+|------|-------|
+| `_layout.scss` | Structure: display, flex/grid, padding, margin, gap, position, overflow, sizing, font metrics |
+| `_theme.scss` | Visuals: color, background, border-color, box-shadow, opacity, outline |
+| `_index.scss` (theme only) | Dependencies, variable forwarding, the `--styles()` mixin |
+| `scss/index.scss` (theme) | Registration |
 
-When the user asks to:
-- Change a component's CSS layout (e.g., "change chip from inline-flex to flex")
-- Add visual styling for a new state (e.g., "add selected state styles to badge")
-- Create layout/theme skeletons for a new component (as part of `component`)
-- Wire up a new component's `_index.scss` and register it in a theme's entry point
-- Add or change a component's dependencies
-- Add box-shadow, border-radius, or other visual properties
+Every customizable value needs a variable — add it first via [variables.md](variables.md). For a new component, all four files are needed; start from [file-templates.md](file-templates.md).
 
-Not for variable declarations (see [variables.md](variables.md)) or design system foundation modules like spacing/color-system/typography (see [foundation-modules.md](foundation-modules.md)).
+## Core mixins
 
-## Inputs
+Edit `packages/core/scss/components/{component}/_layout.scss` / `_theme.scss`. Keep the mixin names `kendo-{component}--layout-base()` and `kendo-{component}--theme-base()`:
 
-| Input | Required | Description |
-|-------|----------|-------------|
-| **Component name** | Yes | kebab-case (e.g., `chip`, `button`, `info-bar`) |
-| **Changes** | Yes | Description of structural or visual changes, or "scaffold" for new components |
-| **Target themes** | No | Which themes to update: `all`, or a list like `default, fluent`. Default: **ask the user** |
-| **Scope** | No | `layout`, `theme`, `module`, `register`, or `all`. Default: inferred from changes. |
-| **Dependencies** | No | Other components this depends on (e.g., `icon`, `button`) |
-
-## Procedure
-
-### Step 1: Classify the changes
-
-- **Structural properties** → `_layout.scss`: display, flex, grid, padding, margin, gap, position, overflow, box-sizing, font metrics
-- **Visual properties** → `_theme.scss`: color, background, border-color, box-shadow, opacity, outline, text-decoration
-- **Wiring** → `_index.scss`: dependencies, variable forwarding, mixin exposure
-- **Registration** → theme `index.scss`: `@forward` + `@include` in entry point
-
-For new components, all four are needed.
-
-### Step 2: Apply layout and theme to core
-
-Edit `packages/core/scss/components/{component}/_layout.scss` and/or `_theme.scss`.
-
-**Layout mixin** (`kendo-{component}--layout-base`):
-```scss
-@mixin kendo-{component}--layout-base() {
-    .k-{component} {
-        // structural properties referencing $kendo-{component}-* variables
-    }
-}
-```
-
-**Theme mixin** (`kendo-{component}--theme-base`):
 ```scss
 @mixin kendo-{component}--theme-base() {
     .k-{component} {
-        // visual properties referencing $kendo-{component}-* variables
+        color: $kendo-{component}-text;
+        background-color: $kendo-{component}-bg;
+
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-{component}-hover-bg;
+        }
     }
 }
 ```
 
-**Rules:**
-- Never assign concrete values in core — only reference `$kendo-{component}-*` variables
-- Keep the mixin names unchanged (`--layout-base`, `--theme-base`)
-- New CSS properties that need customization require new variables (see [variables.md](variables.md) first)
-- State selectors: `.k-{component}.k-hover`, `.k-{component}.k-selected`, etc.
-- For new components, use templates from [file-templates.md](file-templates.md)
+Sub-elements are `.k-{component}-{element}`; modifiers `.k-{component}-{modifier}`.
 
-### Step 3: Apply layout and theme to targeted themes
+## Theme mixins
 
-Most themes delegate directly to core and don't need changes:
+Most themes only delegate; core changes then propagate automatically:
 
 ```scss
-// packages/{theme}/scss/{component}/_layout.scss
+@use "@progress/kendo-theme-core/scss/components/{component}/_layout.scss" as *;
+
 @mixin kendo-{component}--layout() {
     @include kendo-{component}--layout-base();
 }
 ```
 
-Only edit theme-specific layout/theme files when:
-- A theme needs to **override** core's structure (rare)
-- A theme adds **extra selectors** not in core
-- A theme has **theme-specific** visual tweaks beyond variables
+Add theme-specific selectors after the `-base` include only when the theme genuinely differs.
 
-For new components, use templates from [file-templates.md](file-templates.md).
+## Theme `_index.scss`
 
-### Step 4: Create or update `_index.scss`
-
-For each theme in the **target themes** list, create or edit `packages/{theme}/scss/{component}/_index.scss`:
+Dependencies are both `@use`d and `@include`d (their styles must be emitted before the component's):
 
 ```scss
 // Dependencies
 @use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -101,50 +65,21 @@ For each theme in the **target themes** list, create or edit `packages/{theme}/s
 @mixin kendo-{component}--styles() {
     @include import-once( "{component}" ) {
         @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-{component}--layout();
         @include kendo-{component}--theme();
     }
 }
 ```
 
-If the component has **dependencies** on other components, add them after core:
+## Register a new component
 
-```scss
-// Dependencies
-@use "../core/_index.scss" as *;
-@use "../icon/_index.scss" as *;
-@use "../button/_index.scss" as *;
-```
+In each targeted theme's `packages/{theme}/scss/index.scss`, add three lines, each in its section and after the component's dependencies:
 
-### Step 5: Register in theme entry point (new components only)
-
-Edit `packages/{theme}/scss/index.scss` for each targeted theme:
-
-1. **Add `@forward`** — in the existing `@forward` section, preserving the dependency-based order used in the file (do not reorder alphabetically):
-   ```scss
-   @forward "./{component}/_index.scss";
-   ```
-
-2. **Add `@include`** — inside `@mixin kendo-theme--styles()`, in the appropriate category group:
-   ```scss
-   @include kendo-{component}--styles();
-   ```
-
-### Step 6: Validate
-
-```bash
-npm run lint:styles 2>&1
-npm run sass 2>&1
-```
+1. `@forward "./{component}/_index.scss";` — forward section
+2. `@use "./{component}/_index.scss" as *;` — use section
+3. `@include kendo-{component}--styles();` — inside `@mixin kendo-theme--styles()`, in the matching category group
 
 ## Gotchas
 
-- **Core changes propagate automatically** — most themes call `@include kendo-{component}--layout-base()`, so changes to core affect all themes.
-- **New CSS properties need variables** — don't hardcode values in core. Add a variable via [variables.md](variables.md) first, then reference it here.
-- **State classes, not pseudo-classes** — use `.k-{component}.k-hover` (class applied by JS), not `.k-{component}:hover` (CSS pseudo).
-- **BEM naming** — sub-elements: `.k-{component}-{element}`, modifiers: `.k-{component}-{modifier}`.
-- **Component names in `@include import-once("...")` must be unique** across the entire theme.
-- **`@forward` must come before any `@use` of the same module** — SCSS module system requirement.
-- **Order matters in `index.scss`** — dependencies must be `@include`d before the components that use them.
-- Check `packages/{theme}/scss/index.scss` to verify the registration location — components should be added in dependency order within the appropriate category group.
 - **`backdrop-filter`/`filter` on a container traps `position: fixed` descendants** — per the Filter Effects spec, applying `backdrop-filter` (or `filter`) directly to an element creates a CSS containing block for that element's `position: fixed`/`absolute` descendants. If the element also has `overflow: hidden` (common on `k-` root containers), any inline-declared Popup/Dialog/Tooltip nested inside it (rather than portaled to `<body>`) gets visually clipped to the container's bounds instead of overlaying the viewport (see kendo-themes#5968, #6096). This is the root cause behind Meridian's translucency/glass effect on components like `.k-card`, `.k-appbar`, `.k-bottom-nav`, `.k-drawer`, `.k-expander`, `.k-pager`. **Fix pattern**: move `backdrop-filter` off the real element onto a content-less `::before` pseudo-element (`content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;`) — a pseudo-element has no descendants, so it can carry the filter without trapping anything. If the base selector has no default `position`, add `position: relative` (scoped with `:not()` around any modifier classes that already set `position: fixed`/`sticky`, e.g. `.k-appbar:not(.k-appbar-fixed):not(.k-appbar-sticky)`) so the pseudo sizes correctly. Do **not** use `isolation: isolate` as a shortcut — it can create unrelated stacking-context regressions for siblings. Before reusing an element's `::before`/`::after` for this, check it isn't already used for something else (e.g. `.k-toolbar`'s pseudo-elements are already used for spacer/scroll-fade effects — see kendo-themes#6121 — so that one needs a different approach).

@@ -2,13 +2,7 @@
 
 Create or update a Kendo UI component across the monorepo. This file drives the whole flow; the HTML steps hand off to the `manage-specs` skill.
 
-Read [context.md](context.md) for naming conventions, theme paths, and common gotchas.
-
-## When to use
-
-- **New component** — "add an InfoBar component", "create SCSS and HTML for a Rating"
-- **Update component** — "update the chip based on this design", "change button padding", "add a `warning` state to badge"
-- **Partial update** — "just update the chip variables in default and fluent"
+Naming, paths, and shared rules: [context.md](context.md).
 
 For a single-package task, skip this workflow: use [variables.md](variables.md) / [styles.md](styles.md) for SCSS only, or the [manage-specs skill](../../manage-specs/SKILL.md) for HTML only.
 
@@ -32,21 +26,15 @@ For a single-package task, skip this workflow: use [variables.md](variables.md) 
 
 ## Procedure — New Component
 
-### Step 1: Derive naming constants
+### Step 1: Pick a reference component
 
-Use the naming derivation table from [context.md](context.md).
+Derive names and pick a reference component of similar complexity ([context.md](context.md)). If the user doesn't specify variables/states/options, use the reference's as defaults.
 
-### Step 2: Research a reference component
-
-Find an existing component of similar complexity in `packages/core/scss/components/`. See reference component guidance in [context.md](context.md).
-
-If the user doesn't specify variables/states/options, use reasonable defaults based on the reference.
-
-### Step 3: Create SCSS variables
+### Step 2: Create SCSS variables
 
 Follow [variables.md](variables.md) to create variables in core (null `!default`) and all targeted themes (concrete values + `@forward` maps).
 
-### Step 4: Create SCSS styles, module, and register
+### Step 3: Create SCSS styles, module, and register
 
 Follow [styles.md](styles.md) to:
 
@@ -54,25 +42,21 @@ Follow [styles.md](styles.md) to:
 - Create `_index.scss` in each targeted theme
 - Register the component in each theme's `index.scss`
 
-### Step 5: Create HTML spec, templates, and visual tests
+### Step 4: Create HTML spec, templates, and visual tests
 
 Use the [manage-specs skill](../../manage-specs/SKILL.md) to create `constants.ts`, `{component}.spec.tsx`, `index.ts`, at least one default template, and test files covering default, states, sizes, and fill modes as applicable.
 
-### Step 6: Create unit test
+### Step 5: Create unit tests
 
-Create `units/default/{component}.test.ts` using the template from [file-templates.md](file-templates.md).
+Create `units/{theme}/{component}.test.ts` for each targeted theme using the template in [file-templates.md](file-templates.md). The files are identical across themes (`theme.env.js` selects the theme).
 
-### Step 7: Validate
+### Step 6: Validate
 
 Run the SCSS validation steps from [context.md](context.md) and the HTML ones from [manage-specs → context.md](../../manage-specs/references/context.md).
 
 ## Procedure — Update Component
 
-### Step 1: Derive naming constants
-
-Use the naming derivation table from [context.md](context.md).
-
-### Step 2: Audit the current state
+### Step 1: Audit the current state
 
 Read and catalog the component's current implementation across all targeted packages:
 
@@ -90,7 +74,7 @@ Read and catalog the component's current implementation across all targeted pack
 
 Extract: variable inventory, states, options, CSS classes, dependencies.
 
-### Step 3: Analyze design assets and produce change plan
+### Step 2: Analyze design assets and produce change plan
 
 Compare assets against current state. Categorize each change:
 
@@ -104,7 +88,7 @@ Compare assets against current state. Categorize each change:
 | **Visual change** | Add box-shadow on focus | Core `_theme.scss`, theme variables |
 | **HTML structure** | Add wrapper element | HTML spec, templates, tests |
 
-### Step 4: Present the change plan
+### Step 3: Present the change plan
 
 Present the plan and **wait for user confirmation** before editing:
 
@@ -118,23 +102,23 @@ Present the plan and **wait for user confirmation** before editing:
 ### Summary: Variables +N/~N/-N, Files modified N, Files created N
 ```
 
-### Step 5: Apply variable changes
+### Step 4: Apply variable changes
 
 Follow [variables.md](variables.md) and the checklist in [update-checklist.md](update-checklist.md).
 
-### Step 6: Apply style and module changes
+### Step 5: Apply style and module changes
 
 Follow [styles.md](styles.md) for layout, theme, and `_index.scss` changes.
 
-### Step 7: Apply HTML changes
+### Step 6: Apply HTML changes
 
 Use the [manage-specs skill](../../manage-specs/SKILL.md) for spec structure/state/option changes, template variants, and visual test coverage for every visible change.
 
-### Step 8: Validate
+### Step 7: Validate
 
 Run the SCSS validation steps from [context.md](context.md) and the HTML ones from [manage-specs → context.md](../../manage-specs/references/context.md).
 
-### Step 9: Report
+### Step 8: Report
 
 | Metric | Count |
 |--------|-------|
@@ -149,12 +133,8 @@ Run the SCSS validation steps from [context.md](context.md) and the HTML ones fr
 
 ## Gotchas
 
-See shared gotchas in [context.md](context.md). Additionally:
+Shared rules are in [context.md](context.md). Workflow-specific:
 
-- **New components:** register the component in `packages/{theme}/scss/index.scss`, preserving existing dependency/import order (do not alphabetize). `packages/{theme}/scss/all.scss` is just a wrapper. When target themes is not `all`, always create core and HTML files regardless.
-- **Updates — audit first:** never assume the current state. Read the files first; components vary in complexity.
-- **Don't touch themes the user didn't ask for** — if they said "update default and fluent", leave the rest alone.
-- **Preserve existing variable order** — add new variables near related ones.
-- **Check calc/derived variables** — some variables depend on others. Changing a base may require updating derived ones.
-- **HTML spec changes cascade** — changing the render function affects all templates and tests.
-- **Don't remove variables without deprecation** — confirm breaking change with user first.
+- **Audit before updating** — read the files first; never assume the current state.
+- **Partial theme scope still needs core and HTML** — when target themes isn't `all`, still create the core files and the HTML spec.
+- **Spec changes cascade** — changing the render function affects every template and test of the component.
