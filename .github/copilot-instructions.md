@@ -130,6 +130,11 @@ npm run clean                   # Full cleanup (includes node_modules)
 - Subject in imperative mood, max ~80 chars.
 - Include `BREAKING CHANGE:` in body when applicable.
 
+#### Scope rules for component changes
+- Changes **only** to `packages/html` specs/templates/tests (no SCSS changes) → use scope `html`, not the component name (e.g., `fix(html): correct grid toolbar spec`).
+- Changes that touch SCSS (`packages/core`, or any theme package) → use the **component name** as scope, regardless of whether HTML files also changed (e.g., `feat(grid): add toolbar variable`).
+- Changes touching **both** `packages/html` and SCSS → use the component name as scope (SCSS scoping wins), not `html`.
+
 #### Special rules for Copilot coding agent
 - For planning or scaffolding commits, use: `chore(plan): initial plan for #{issue-number}` (no “Initial Plan”).
 - For dependency updates triggered by the agent: `chore(deps): …`
