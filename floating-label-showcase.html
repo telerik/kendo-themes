@@ -142,7 +142,11 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
 [data-label-mode="border"] .fl label {
   left: calc(var(--pad-x) - 4px); padding: 0 4px; max-width: calc(100% - 2 * var(--pad-x) + 8px);
   transform-origin: left center;
-  /* cut the border with the card colour above the line, keep the field fill below it */
+}
+/* The notch is only drawn for a floated label on an outlined field; resting labels are text-only */
+[data-label-mode="border"] .fill-outlined .fl input:focus + label,
+[data-label-mode="border"] .fill-outlined .fl input:not(:placeholder-shown) + label,
+[data-label-mode="border"] .fill-outlined .fl.is-focus input + label {
   background: linear-gradient(to bottom, var(--card) 50%, var(--notch-bottom) 50%);
 }
 [data-label-mode="border"] .fl:has(input:read-only) { --notch-bottom: var(--readonly-bg); }
