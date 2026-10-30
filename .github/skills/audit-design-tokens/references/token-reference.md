@@ -6,26 +6,23 @@ Quick-reference for the kendo-themes design token system. All tokens are defined
 
 Source: `spacing/index.scss`
 
-| Step | Value | ~px (at 16px base) |
-|------|-------|---------------------|
-| 0 | 0px | 0 |
-| 1px | 1px | 1 |
-| 0.5 | 0.125rem | 2 |
-| 1 | 0.25rem | 4 |
-| 1.5 | 0.375rem | 6 |
-| 2 | 0.5rem | 8 |
-| 2.5 | 0.625rem | 10 |
-| 3 | 0.75rem | 12 |
-| 3.5 | 0.875rem | 14 |
-| 4 | 1rem | 16 |
-| 5 | 1.25rem | 20 |
-| 6 | 1.5rem | 24 |
-| 8 | 2rem | 32 |
-| 10 | 2.5rem | 40 |
-| 12 | 3rem | 48 |
-| 16 | 4rem | 64 |
-| 20 | 5rem | 80 |
-| 24 | 6rem | 96 |
+Step = multiple of `0.25rem` (4px at a 16px root). Valid steps:
+
+- `0`, `1px`
+- `0.5` – `7.5` in 0.5 increments (2px – 30px)
+- `8` – `24` in 1 increments (32px – 96px)
+
+| px | Step |
+|----|------|
+| 2 | 0.5 |
+| 4 | 1 |
+| 6 | 1.5 |
+| 8 | 2 |
+| 12 | 3 |
+| 16 | 4 |
+| 20 | 5 |
+| 24 | 6 |
+| 32 | 8 |
 
 Usage: `padding-x: k-spacing(2);` → 0.5rem (8px)
 
@@ -60,14 +57,19 @@ Usage: `$kendo-button-bg: k-color(base) !default;`
 
 Source: `border-radii/index.scss`
 
-| Key | Typical Value |
-|-----|---------------|
-| `none` | 0 |
-| `sm` | 0.125rem (2px) |
-| `md` | 0.25rem (4px) |
-| `lg` | 0.375rem (6px) |
-| `xl` | 0.5rem (8px) |
-| `full` | 9999px |
+Base `--kendo-border-radius-base` = 0.25rem (4px). Keys:
+
+| Key | Value | px |
+|-----|-------|----|
+| `none` | 0 | 0 |
+| `xs` | base × 0.25 | 1 |
+| `sm` | base × 0.5 | 2 |
+| `md` | base | 4 |
+| `lg` | base × 1.5 | 6 |
+| `xl` | base × 2 | 8 |
+| `xxl` | base × 3 | 12 |
+| `xxxl` | base × 4 | 16 |
+| `full` | base × 9999 | pill |
 
 Usage: `border-radius: k-border-radius(md);`
 
@@ -75,14 +77,13 @@ Usage: `border-radius: k-border-radius(md);`
 
 Source: `elevation/index.scss`
 
-Levels 1–9, producing `box-shadow` values with increasing depth.
+Levels 1–5 (core defaults; themes may override), increasing depth:
 
-| Level | Use Case |
-|-------|----------|
+| Level | Typical use |
+|-------|-------------|
 | 1 | Subtle (cards) |
-| 2–3 | Floating (dropdowns, tooltips) |
-| 4–5 | Elevated (popups, dialogs) |
-| 6–9 | High prominence (overlays) |
+| 2–3 | Floating (dropdowns, tooltips, popups) |
+| 4–5 | High prominence (dialogs, overlays) |
 
 Usage: `box-shadow: k-elevation(2);`
 
@@ -122,11 +123,13 @@ Source: `typography/index.scss`
 ### Font Family
 | Variable | Default |
 |----------|---------|
-| `$kendo-font-family` | System font stack |
+| `$kendo-font-family` | `inherit` (themes set the stack) |
+| `$kendo-font-family-sans-serif` | System UI font stack |
 | `$kendo-font-family-monospace` | Monospace font stack |
 
 ## Motion — `k-easing()`, `k-duration()`, `k-transition()`
 
 Source: `motion/index.scss`
 
-Token functions for animation easing curves, durations, and transition presets. Refer to the source file for available keys.
+- Easings: `linear`, `accelerate`, `decelerate`, `standard`, `sharp`, `bounce`, `elastic`, `stretchy`
+- Durations: `instant`, `immediate`, `brief`, `quick`, `rapid`, `swift`, `speedy`, `brisk`, `prompt`, `timely`, `moderate`, `measured`, `steady`, `leisurely`, `slow`

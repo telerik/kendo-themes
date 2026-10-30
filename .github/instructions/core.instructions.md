@@ -2,130 +2,44 @@
 applyTo: "packages/core/**"
 ---
 
-# Core Package
+# Core package
 
-The foundational package providing design system framework, component structure, functions, and mixins. Core defines skeleton patterns with null variables - themes provide actual values.
+Core is the design-system skeleton shared by every theme: token modules, functions, mixins, and per-component SCSS with **no concrete values**. Themes supply the values.
 
-## Package Purpose
-
-- **Design System Foundation** - Base design tokens (spacing, typography, colors, elevation, motion)
-- **Component Skeletons** - Structure definitions for 80+ UI components
-- **Functions & Mixins** - SCSS utilities and common patterns
-- **Null Variables** - Variables set to `null` (themes override with values)
-- **Template Patterns** - Layout and theme patterns without specific values
-
-**Philosophy:** Core is a template system, not a theme. Structure is defined, values come from themes.
-
-## Package Structure
+## Structure
 
 ```
-packages/core/
-├── scss/
-│   ├── all.scss                        # Main entry (generates CSS)
-│   ├── index.scss                      # Import-only entry
-│   ├── _variables.scss                 # Design system foundation
-│   ├── border-radii/                   # Border radius scale
-│   ├── color-system/                   # Color palette structure
-│   ├── elevation/                      # Shadow system
-│   ├── functions/                      # SCSS utility functions
-│   ├── mixins/                         # Reusable SCSS mixins
-│   ├── motion/                         # Animation timing/easing
-│   ├── spacing/                        # Spacing scale
-│   ├── typography/                     # Font system
-│   ├── z-index/                        # Stacking order
-│   └── components/[component]/         # Component definitions
-│       ├── _index.scss                 # Entry with mixin
-│       ├── _variables.scss             # Null variables
-│       ├── _layout.scss                # Structure skeleton
-│       └── _theme.scss                 # Visual template
-├── dist/                               # Compiled output
-└── docs/                               # Generated SassDoc
+packages/core/scss/
+├── index.scss                 # Import-only entry (@forward of all modules)
+├── all.scss                   # CSS-emitting entry
+├── {module}/                  # spacing, color-system, typography, elevation, border-radii, motion, z-index
+├── functions/  mixins/
+└── components/{component}/
+    ├── _variables.scss        # null declarations
+    ├── _layout.scss           # @mixin kendo-{component}--layout-base()
+    └── _theme.scss            # @mixin kendo-{component}--theme-base()
 ```
 
-## Design System Modules
+Core components have no `_index.scss` — each theme wires them up.
 
-| Module | Purpose |
-|--------|---------|
-| **color-system** | Color palette structure, semantic colors, state colors |
-| **typography** | Font families, sizes, weights, line heights |
-| **spacing** | Spacing scale (0-32+ levels) for margins, padding, gaps |
-| **border-radii** | Border radius scale (none, sm, md, lg, xl, full) |
-| **elevation** | Shadow system for depth (0-24+ levels) |
-| **motion** | Animation timing, easing functions, transitions |
-| **z-index** | Stacking order (base, overlay, modal, tooltip, notification) |
+## Rules
 
-## Component File Pattern
-
-Each component follows this 4-file structure:
-
-```
-[component]/
-├── _index.scss       # Entry point with mixin and dependencies
-├── _variables.scss   # Null variables (no SassDoc)
-├── _layout.scss      # Structural styles (no values)
-└── _theme.scss       # Visual patterns (no values)
-```
-
-### Variables (`_variables.scss`)
-
-Define customizable properties as null. Don't add SassDoc here — themes document variables. Exceptions: the `$kendo-component-sizes` and `$kendo-component-theme-colors` maps.
-
-```scss
-$kendo-component-bg: null !default;
-$kendo-component-padding: null !default;
-```
-
-### Layout (`_layout.scss`)
-
-Define structure without values:
-
-```scss
-@mixin kendo-component--layout() {
-    .k-component {
-        padding: $kendo-component-padding;      // Use variables
-        display: $kendo-component-display;
-    }
-}
-```
-
-### Theme (`_theme.scss`)
-
-Define visual patterns without values:
-
-```scss
-@mixin kendo-component--theme() {
-    .k-component {
-        color: $kendo-component-text;           // Use variables
-        background-color: $kendo-component-bg;
-    }
-}
-```
-
-## Build Commands
-
-```bash
-npm run sass              # Compile to dist/all.css
-npm run sass:watch        # Watch mode
-npm run docs              # Generate SassDoc
-npm run lint:styles       # Run Stylelint
-```
-
-## SCSS Function Documentation
-
-- For every public `k-*` SCSS function in `packages/core/**`, add SassDoc `@group functions` so function discovery remains centralized and unit static checks can read metadata from one place.
+- Component variables are `$kendo-{component}-*: null !default;`. Never assign concrete values in core.
+- No SassDoc on core component variables — themes document them. Exceptions: the `$kendo-{component}-sizes` and `$kendo-{component}-theme-colors` maps.
+- `_layout.scss` = structure (display, spacing, sizing, typography metrics). `_theme.scss` = visuals (color, background, border-color, shadow). Both reference only `$kendo-*` variables.
+- State selectors pair the pseudo-class with the state class: `&:hover, &.k-hover { … }`.
+- Every public `k-*` function gets SassDoc with `@group functions` (unit tests read this metadata):
 
 ```scss
 /// Returns a CSS variable reference for a spacing step.
 /// @param {Number | String} $step - The spacing step key from $kendo-spacing.
 /// @return {String} CSS variable reference for the given spacing step.
 /// @group functions
-@function k-spacing($step) {
-    @return var(--kendo-spacing-#{$step});
-}
+@function k-spacing($step) { … }
 ```
 
-## Related Documentation
+- Token functions (`k-spacing()`, `k-color()`, `k-elevation()`, `k-border-radius()`, …) are used across every theme — don't change their signatures.
 
-- Root instructions: `../../.github/copilot-instructions.md`
-- Themes: `.github/instructions/themes.instructions.md`
+## Workflows
 
+Use the `manage-themes` skill for variables, styles, foundation tokens, and new components.

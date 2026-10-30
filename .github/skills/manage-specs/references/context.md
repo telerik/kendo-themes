@@ -1,18 +1,18 @@
 # Component Context (HTML)
 
-Naming, paths, and validation for the HTML package.
+Canonical naming, paths, and rules for the HTML package. Other references link here instead of repeating these rules.
 
-## Naming Derivation
+## Naming
 
-From a component name (e.g., `smart-badge`), derive the names used in the HTML package:
+From a component name (e.g., `smart-badge`):
 
-| Derived Name | Example |
-|-------------|---------|
+| Item | Example |
+|------|---------|
+| Folder / module name | `smart-badge` |
 | CSS class | `k-smart-badge` |
-| Classname constant | `SMART_BADGE_CLASSNAME` |
-| TS constant prefix | `SMART_BADGE` |
-| TypeScript component name | `SmartBadge` |
-| Module/folder name string | `"smart-badge"` |
+| Constants | `SMART_BADGE_CLASSNAME`, `SMART_BADGE_MODULE_NAME`, `SMART_BADGE_FOLDER_NAME` |
+| Component | `SmartBadge` |
+| Types | `KendoSmartBadgeOptions`, `KendoSmartBadgeProps`, `KendoSmartBadgeState` |
 
 ## Paths
 
@@ -20,20 +20,31 @@ From a component name (e.g., `smart-badge`), derive the names used in the HTML p
 |------|------|
 | Spec | `packages/html/src/{component}/{component}.spec.tsx` |
 | Constants | `packages/html/src/{component}/constants.ts` |
+| Component index | `packages/html/src/{component}/index.ts` — exports spec, templates, and demo |
 | Templates | `packages/html/src/{component}/templates/*.tsx` |
-| Visual tests | `packages/html/src/{component}/tests/*.tsx` |
-| Package index | `packages/html/src/index.ts` |
+| Visual tests | `packages/html/src/{component}/tests/*.tsx` — picked up automatically (`src/**/tests/**/*.tsx`); no index file |
+| Demo | `packages/html/src/{component}/demos/{component}.tsx` — config for the preview page (`src/_preview`) |
+| Package index | `packages/html/src/index.ts` — grouped by category, `export * from './{component}/index';` |
+| Helpers | `src/misc` (`classNames`, `optionClassNames`, `stateClassNames`, `States`, `Size`, `Roundness`, `FillMode`, `ThemeColor`, `nextId`) and `src/_types/component.ts` (`KendoComponent`, `KendoBaseProps`) |
+| Build output | `tests/{component}/{file}.html` at the repo root — generated, never edit |
 
-## Validation Steps
+## Rules
+
+1. **Edit only sources** in `packages/html/src/`.
+2. **Static output** — specs, templates, and tests render static HTML: no hooks, event handlers, or side effects.
+3. **States are boolean props** that add `k-*` state classes (`hover` → `k-hover`); tests render the *appearance* of a state.
+4. **Option values must exist in the SCSS.** `FillMode` has `solid`, `tint`, `flat`, `outline`, `clear`, `link` — list only what the component's theme styles. Same for `ThemeColor`, `Size`, `Roundness`.
+5. **The spec is the source of truth.** Templates, tests, demos, and docs derive from it; changing its render function affects all of them.
+6. **Test files** have a single `export default` and wrap content in `<div id="test-area">` (the screenshot target).
+
+## Reference components
+
+Simple `badge`, `avatar`; medium `button`, `chip`, `card`; complex `grid`, `toolbar`, `scheduler`. For accessibility: `autocomplete`, `button`, `combobox`, `tabstrip`.
+
+## Validation
 
 ```bash
 npm run typecheck --prefix packages/html 2>&1
 npm run build:tests --prefix packages/html 2>&1
 npm run test:a11y {component} 2>&1   # when markup or ARIA changed
 ```
-
-## Common Gotchas
-
-- **Test files need default exports** — `export default` is mandatory; `export const` won't be picked up by the build system.
-- **Wrap test content in `<div id="test-area">`** — screenshot tools look for this ID.
-- **CSS classes must match the SCSS** — class names and option values in the spec must exist in the theme styles (`k-{component}`, `k-{component}-{element}`).

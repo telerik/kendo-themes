@@ -1,6 +1,6 @@
-# Update Checklist Reference
+# Update Checklists (HTML)
 
-HTML checklists for component updates. SCSS checklists live in the `manage-themes` skill.
+HTML checklists for adding states, options, or structure to an existing component. The SCSS half is in the `manage-themes` skill (`references/update-checklist.md`).
 
 ## State Addition Checklist
 
@@ -14,7 +14,6 @@ HTML checklists for component updates. SCSS checklists live in the `manage-theme
 ### Tests
 
 - [ ] Create or update `{component}-states.tsx` test file
-- [ ] Add export to `tests/index.ts`
 
 ## Option Addition Checklist
 
@@ -27,7 +26,6 @@ HTML checklists for component updates. SCSS checklists live in the `manage-theme
 ### Tests
 
 - [ ] Create or update the relevant test file (e.g., `{component}-sizes.tsx`)
-- [ ] Add export to `tests/index.ts`
 
 ## Layout/Structure Change Checklist
 

@@ -20,20 +20,9 @@ When the user asks to:
 - "Audit design tokens" or "enforce token usage"
 - Validate that a component or package consistently uses the token system
 
-Not for checking variable completeness across themes (use `/cross-theme-audit` instead).
+## Token reference
 
-## Design Token System Reference
-
-The repo provides these token accessor functions (defined in `packages/core/scss/`):
-
-| Category | Function / Pattern | Source |
-|----------|-------------------|--------|
-| **Spacing** | `k-spacing($step)` | `spacing/index.scss` — steps: 0, 1px, 0.5–30 |
-| **Color** | `k-color($key)` | `color-system/_functions.scss` — keys: primary, base, surface, border, etc. |
-| **Border radius** | `k-border-radius($key)` | `border-radii/index.scss` — keys: sm, md, lg, full, none |
-| **Elevation** | `k-elevation($level)` | `elevation/index.scss` — levels: 1–9 |
-| **Motion** | `k-easing($key)`, `k-duration($key)` | `motion/index.scss` |
-| **Typography** | `$kendo-font-size-*`, `$kendo-line-height-*`, `$kendo-font-weight-*`, `$kendo-font-family-*` | `typography/index.scss` |
+Token functions, scales, and px→token mappings are in [references/token-reference.md](references/token-reference.md). Read it before suggesting fixes.
 
 ## Inputs
 
@@ -123,7 +112,7 @@ Report violations grouped by category and severity:
 For each real violation, propose the correct token usage:
 
 - **Color**: Replace with `k-color(token-name)` or `color-mix()` with token inputs
-- **Spacing**: Replace with `k-spacing(step)` — map px to step using the spacing scale (4px→1, 8px→2, 12px→3, 16px→4, etc.)
+- **Spacing**: Replace with `k-spacing(step)` — step = px ÷ 4 (8px → `k-spacing(2)`)
 - **Typography**: Replace with `$kendo-font-size-*`, `$kendo-line-height-*`, `$kendo-font-weight-*`, or `$kendo-font-family`
 - **Elevation**: Replace with `k-elevation(level)` or define a `$kendo-*-shadow` variable
 - **Border radius**: Replace with `k-border-radius(key)` or `$kendo-*-border-radius` variable
@@ -132,9 +121,8 @@ Offer to apply the fixes.
 
 ## Gotchas
 
-- **Core `_variables.scss` files use `null !default`** — they define the token skeleton, not values. Scan theme overrides (default, classic, material, fluent, bootstrap) for actual hardcoded values.
-- **Theme `_variables.scss` paths differ**: `packages/{theme}/scss/{component}/` (no `components/` subdirectory), unlike core which uses `packages/core/scss/components/{component}/`.
+- **Core `_variables.scss` files use `null !default`** — they define the token skeleton, not values. Scan theme overrides (default, classic, material, fluent, bootstrap, meridian) for actual hardcoded values.
 - **Fluent theme wraps everything in `var()`** — so `var(--kendo-spacing-2, 0.5rem)` is correct even though it contains a rem literal.
-- **The spacing scale is non-linear**: 1→0.25rem(4px), 2→0.5rem(8px), 3→0.75rem(12px), 4→1rem(16px). Use `packages/core/scss/spacing/index.scss` as the canonical reference.
+- **Spacing steps are multiples of 4px** (`k-spacing(n)` = n × 0.25rem); see the reference table for valid steps.
 - **`color-mix()` syntax**: `color-mix(in srgb, k-color(key) N%, transparent)` is the modern approach — do NOT flag these as violations.
 - **Some components intentionally use hardcoded values** for pixel-perfect rendering (e.g., `1px` borders, `2px` focus ring offsets). These are design decisions, not violations.

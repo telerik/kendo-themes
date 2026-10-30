@@ -168,7 +168,7 @@ $kendo-{component}-bg: var(--kendo-{component}-bg, #{k-color(surface-alt)}) !def
 
 ### `packages/{theme}/scss/{component}/_index.scss`
 
-See Step 4 in [styles.md](styles.md).
+See "Theme `_index.scss`" in [styles.md](styles.md).
 
 ## HTML Package Templates
 
@@ -176,7 +176,9 @@ See [../../manage-specs/references/](../../manage-specs/references/) — `spec.m
 
 ## Unit Test Template
 
-### `units/default/{component}.test.ts`
+### `units/{theme}/{component}.test.ts`
+
+Create one per targeted theme; the content is identical.
 
 ```typescript
 import "./theme.env.js";

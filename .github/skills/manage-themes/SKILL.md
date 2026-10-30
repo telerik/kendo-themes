@@ -10,36 +10,24 @@ metadata:
 
 Create or update SCSS in `packages/core` and the theme packages (`default`, `bootstrap`, `material`, `classic`, `fluent`, `meridian`).
 
-Read [references/context.md](references/context.md) for naming conventions, theme paths, theme value conventions, and validation steps.
+**Always read [references/context.md](references/context.md) first** — naming, paths, value conventions, the core rules, and validation commands.
 
-## Procedure
+## Route the request
 
-Classify the request and follow the matching reference. Many changes touch more than one (a new state usually needs variables first, then styles).
-
-| Change | Reference |
-|--------|-----------|
+| Request | Reference |
+|---------|-----------|
 | Add/change/remove/deprecate a component variable | [references/variables.md](references/variables.md) |
-| Layout/theme mixins, `_index.scss` wiring, theme registration | [references/styles.md](references/styles.md) |
+| Layout/theme mixins, `_index.scss` wiring, registering a component | [references/styles.md](references/styles.md) |
+| New state, option value, or structure on an existing component | [references/update-checklist.md](references/update-checklist.md) |
 | Design system tokens in `packages/core/scss/{module}/` | [references/foundation-modules.md](references/foundation-modules.md) |
 | New theme, swatches, theme-wide overrides | [references/theme-package.md](references/theme-package.md) |
-| New component, or a component update spanning SCSS + HTML | [references/component.md](references/component.md) (+ [update-checklist.md](references/update-checklist.md), [file-templates.md](references/file-templates.md)) |
+| New component, or an update spanning SCSS + HTML | [references/component.md](references/component.md) |
 
-For HTML specs, templates, visual tests, or accessibility, use the `manage-specs` skill. The component workflow hands off to it for the HTML half.
+Many requests touch more than one (a new state usually needs variables, then styles). For a new component, [references/file-templates.md](references/file-templates.md) has the boilerplate.
 
-**Target themes:** if the user didn't name them, ask. Don't touch themes they didn't request.
+For HTML specs, templates, visual tests, or accessibility, use the `manage-specs` skill — the component workflow hands off to it.
 
-## Validate
+## Before finishing
 
-```bash
-npm run lint:styles 2>&1
-npm run sass 2>&1
-```
-
-After changing variables, regenerate docs with `npm run docs` and commit them separately as `chore: regen docs`.
-
-## Gotchas
-
-- **Core holds no values** — core variables are `null !default` and core mixins only reference `$kendo-*` variables. Concrete values live in themes.
-- **`@forward` maps must stay complete** — a missing entry silently leaves the variable `null`.
-- **Fluent wraps every value** in `var(--kendo-{var-name}, {fallback})`.
-- **Order matters** — preserve variable grouping and the dependency order in theme `index.scss`; never alphabetize.
+- Run the validation in [references/context.md](references/context.md#validation).
+- After variable changes, run `npm run docs` and commit the regenerated docs separately as `chore: regen docs`.

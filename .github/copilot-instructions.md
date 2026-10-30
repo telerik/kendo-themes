@@ -13,7 +13,7 @@ SCSS themes for all Kendo UI products (80+ components). Nx monorepo built with d
 | **utils** | Standalone utility-first CSS classes | `.github/instructions/utils.instructions.md` |
 | **html** | React/TSX component specs, templates, and visual tests | `.github/instructions/html.instructions.md` |
 
-Other top-level folders: `scripts/` (build tooling), `units/` (Jest tests), `tests/` (visual test output), `integrations/` (bundler tests).
+Other top-level folders: `scripts/` (build tooling), `units/` (Vitest unit tests, one folder per theme), `tests/` (visual test output), `integrations/` (bundler tests).
 
 ## Workflows
 
@@ -32,7 +32,7 @@ npm run sass                # Compile all themes → packages/*/dist/all.css
 npm run sass:dist           # Compile all swatches
 npm run docs                # Generate SassDoc docs (run after changing SCSS variables)
 npm run lint                # ESLint + Stylelint
-npm run test:units          # Jest unit tests (run `npm run docs` first)
+npm run test:units          # Vitest unit tests (run `npm run docs` first)
 npm run test:a11y [comp]    # axe-core WCAG validation
 npm run test:contrast       # Color contrast tests
 npm start                   # Dev server on localhost:3000

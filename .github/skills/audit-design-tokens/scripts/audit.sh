@@ -68,7 +68,7 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-THEMES=("default" "classic" "material" "fluent" "bootstrap")
+THEMES=("default" "classic" "material" "fluent" "bootstrap" "meridian")
 VIOLATIONS=0
 
 # --- Build search directories ---
