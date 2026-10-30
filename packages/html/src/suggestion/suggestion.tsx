@@ -43,6 +43,7 @@ export const Suggestion = (
         hover,
         focus,
         text,
+        children,
         ...other
     } = props;
 
@@ -63,9 +64,9 @@ export const Suggestion = (
             )}
             role="button"
             tabIndex={0}
-            aria-label={text}
+            aria-label={props['aria-label'] || text}
         >
-            {text}
+            {children || text}
         </span>
     );
 };
