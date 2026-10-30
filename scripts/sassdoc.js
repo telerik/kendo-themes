@@ -344,6 +344,11 @@ function _collectVariableDeclarations(srcDir) {
     );
 
 
+    // Core only provides metadata for the themes - its variables are documented through them.
+    if ( meta.name === 'core' ) {
+        return;
+    }
+
     // Create big article
     let customizationArticle = nunjucks.render('customization.md.njk', data);
     fs.writeFileSync( path.resolve( themeDir, 'docs', 'customization.md' ), customizationArticle );
