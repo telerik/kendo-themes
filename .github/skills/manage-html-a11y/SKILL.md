@@ -11,8 +11,6 @@ metadata:
 
 Document ARIA attributes as JSDoc annotations in component specs and validate WCAG 2.2 Level AA compliance.
 
-> **See also:** The [accessibility prompt](../../prompts/accessibility.prompt.md) contains the same workflow as a standalone prompt.
-
 ## When to use
 
 When the user asks to "add accessibility", "add ARIA", "fix a11y", "document keyboard navigation", "add @aria annotations", or ensure a component is WCAG 2.2 Level AA compliant.

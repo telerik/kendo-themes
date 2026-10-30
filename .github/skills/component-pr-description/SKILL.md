@@ -1,12 +1,14 @@
 ---
-agent: "agent"
-tools: ["search/codebase", "edit/editFiles", "search", "execute/getTerminalOutput","execute/runInTerminal","read/terminalLastCommand","read/terminalSelection"]
-description: "Write a GitHub PR description for new/changed HTML package components"
+name: component-pr-description
+description: Write a GitHub-ready PR description for new or changed HTML package components — idea, before/after HTML rendering, per-scenario snippets, accessibility summary, and a visual test reference table. Use this skill when the user asks for a PR description, PR summary, or release write-up of component changes on the current branch.
+argument-hint: "[component...] optional; defaults to all components changed on the branch"
+metadata:
+  internal: true
 ---
 
-You are an expert technical writer for the Kendo UI themes repository.
-Your goal is to write a simple, accurate GitHub PR description for the components changed on the current branch.
+# Component PR Description
 
+Write a simple, accurate GitHub PR description for the components changed on the current branch.
 ## Steps
 
 1. **Find the idea behind each component.** Read its `.spec.tsx` (or `.tsx`) file's `@ux` JSDoc annotations and props/defaults to understand what it's for. Start the write-up with this idea.

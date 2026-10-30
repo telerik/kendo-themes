@@ -186,14 +186,7 @@ export const {ComponentName}: KendoComponent<Kendo{ComponentName}Props & Kendo{C
 export default {ComponentName};
 ```
 
-**ARIA spec** — add an `ariaSpec` property. The `ariaSpec` object on the spec component is the single source of truth for ARIA testing:
-
-```tsx
-{ComponentName}.ariaSpec = {
-    selector: '.k-{component}',
-    rules: []
-};
-```
+**Accessibility** — document ARIA with `@aria`/`@keyboard`/`@ux`/`@see` JSDoc annotations on the spec component. Use the `manage-html-a11y` skill for this step.
 
 ### Step 5: Create `index.ts`
 
