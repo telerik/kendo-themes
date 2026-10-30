@@ -396,6 +396,16 @@
         padding-inline: $kendo-actionsheet-titlebar-padding-x;
     }
 
+    // Let a hosted no-data template fill the content area so it centers.
+    .k-actionsheet-content:has(> .k-no-data) {
+        display: flex;
+        flex-direction: column;
+
+        > .k-no-data {
+            flex: 1 1 auto;
+        }
+    }
+
     // Hosted component fixups
     .k-actionsheet {
         .k-actionsheet-filter {
