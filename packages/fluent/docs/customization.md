@@ -5216,7 +5216,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-card-header-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Тhe font family of the Card header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Card header.</div></div>
     </td>
 </tr>
 <tr>
@@ -9147,12 +9147,12 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>Color</td>
     <td>border</td>
-    <td colspan="2">Тhe border color of the application.</td>
+    <td colspan="2">The border color of the application.</td>
 </tr>
 <tr>
     <td>Color</td>
     <td>border-alt</td>
-    <td colspan="2">Тhe alternative border color of the application.</td>
+    <td colspan="2">The alternative border color of the application.</td>
 </tr>
 <tr>
     <td>Color</td>
@@ -13501,7 +13501,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-editor-border-width, 1px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Еditor.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Editor.</div></div>
     </td>
 </tr>
 <tr>
@@ -13521,7 +13521,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-editor-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Еditor.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Editor.</div></div>
     </td>
 </tr>
 <tr>
@@ -13531,7 +13531,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-editor-font-size, var(--kendo-font-size))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Еditor.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Editor.</div></div>
     </td>
 </tr>
 <tr>
@@ -13541,7 +13541,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-editor-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Еditor.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Editor.</div></div>
     </td>
 </tr>
 <tr>
@@ -13581,7 +13581,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-editor-placeholder-text, var(--kendo-input-placeholder-text, var(--kendo-color-subtle)))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Еditor's placeholder.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Editor's placeholder.</div></div>
     </td>
 </tr>
 <tr>
@@ -15607,7 +15607,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-fab-generating-opacity, 60%)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Тhe opacity of the generating FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the generating FAB.</div></div>
     </td>
 </tr>
 <tr>

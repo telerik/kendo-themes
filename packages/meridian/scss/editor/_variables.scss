@@ -4,23 +4,23 @@
 
 // Editor
 
-/// The width of the border around the Еditor.
+/// The width of the border around the Editor.
 /// @group editor
 $kendo-editor-border-width: 1px !default;
-/// The border radius of the Еditor.
+/// The border radius of the Editor.
 /// @group editor
 $kendo-editor-border-radius: k-border-radius(xxl) !default;
-/// The font family of the Еditor.
+/// The font family of the Editor.
 /// @group editor
 $kendo-editor-font-family: var( --kendo-font-family ) !default;
-/// The font size of the Еditor.
+/// The font size of the Editor.
 /// @group editor
 $kendo-editor-font-size: var( --kendo-font-size ) !default;
-/// The line height of the Еditor.
+/// The line height of the Editor.
 /// @group editor
 $kendo-editor-line-height: var( --kendo-line-height ) !default;
 
-/// The text color of the Еditor placeholder.
+/// The text color of the Editor placeholder.
 /// @group editor
 $kendo-editor-placeholder-text: $kendo-input-placeholder-text !default;
 /// The opacity of the Editor placeholder.
