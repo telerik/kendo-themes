@@ -25,10 +25,10 @@
 .theme-material {
   --font: Roboto, "Helvetica Neue", Arial, sans-serif;
   --fs: 16px; --h: 56px; --radius: 4px 4px 0 0; --pad-x: 16px;
-  --bg: #f0eef4; --fg: #1d1b20; --label: #49454f; --label-active: #6200ee;
-  --border: #49454f; --border-hover: #1d1b20; --focus: #6200ee; --focus-ring: none;
-  --error: #b3261e; --disabled-bg: #f1f1f1; --disabled-fg: #5c5c5c; --readonly-bg: #f5f3f8;
-  --helper: #49454f; --border-w: 1px; --card: #fff; --card-border: #e7e0ec;
+  --bg: #e6e0e9; --fg: #1d1b20; --label: #49454f; --label-active: #6750a4;
+  --border: #49454f; --border-hover: #1d1b20; --focus: #6750a4; --focus-ring: none;
+  --error: #b3261e; --disabled-bg: #f3f0f4; --disabled-fg: #1d1b2061; --readonly-bg: #e6e0e9;
+  --helper: #49454f; --border-w: 1px; --card: #fef7ff; --card-border: #e7e0ec;
 }
 .theme-bootstrap {
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -115,7 +115,8 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
 /* ---------- Theme-specific identity ---------- */
 /* Material: filled container, bottom indicator only */
 .theme-material .fl input { border-width: 0 0 1px; }
-.theme-material .fl input:hover:not(:disabled), .theme-material .fl.is-hover input { background: #e8e5ee; }
+.theme-material .fl { --float: translateY(calc(var(--h) * .14)) scale(.75); }
+.theme-material .fl input:hover:not(:disabled), .theme-material .fl.is-hover input { background: #ddd7e1; }
 .theme-material .fl input:focus, .theme-material .fl.is-focus input { border-bottom-width: 2px; padding-bottom: calc(var(--h) * .12 - 1px); }
 .theme-material .fl input:disabled { border-bottom: 1px dotted var(--disabled-fg); }
 .theme-material .fl input[aria-invalid="true"] { border-bottom-width: 2px; }
@@ -150,12 +151,12 @@ header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
 [data-label-mode="border"] .fl:has(input:read-only) { --notch-bottom: var(--readonly-bg); }
 [data-label-mode="border"] .fl:has(input:disabled) { --notch-bottom: var(--disabled-bg); }
 /* Material becomes the outlined variant; Fluent/Bootstrap keep their own focus treatment */
-[data-label-mode="border"] .theme-material .fl { --notch-bottom: transparent; }
+[data-label-mode="border"] .theme-material .fl { --notch-bottom: transparent; --border: #79747e; --float: translateY(-.6em) scale(.75); }
 [data-label-mode="border"] .theme-material .fl input { background: transparent; border: 1px solid var(--border); border-radius: 4px; padding: 0 var(--pad-x); }
 [data-label-mode="border"] .theme-material .fl input:hover:not(:disabled), [data-label-mode="border"] .theme-material .fl.is-hover input { background: transparent; border-color: var(--border-hover); }
 [data-label-mode="border"] .theme-material .fl input:focus, [data-label-mode="border"] .theme-material .fl.is-focus input { border-width: 1px; padding: 0 var(--pad-x); box-shadow: inset 0 0 0 1px var(--focus); }
 [data-label-mode="border"] .theme-material .fl input[aria-invalid="true"] { border-width: 1px; box-shadow: inset 0 0 0 1px var(--error); }
-[data-label-mode="border"] .theme-material .fl input:disabled { border: 1px solid var(--disabled-fg); background: transparent; }
+[data-label-mode="border"] .theme-material .fl input:disabled { border: 1px solid #1d1b201f; background: transparent; }
 [data-label-mode="border"] .theme-material .fl:has(input:read-only) input { background: transparent; }
 [data-label-mode="border"] .theme-fluent .fl input { border-bottom-color: var(--border); }
 
