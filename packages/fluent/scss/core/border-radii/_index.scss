@@ -1,35 +1,15 @@
 @use "sass:map";
 
-/// The base border radius used across the Components.
-/// @group radii
 $kendo-border-radius-base: .25rem !default;
 
-/// The none border radius used across the Components.
-/// @group radii
 $kendo-border-radius-none: 0px !default;
-/// The extra small border radius used across the Components.
-/// @group radii
 $kendo-border-radius-xs: calc(var(--kendo-border-radius-base) * .25) !default;
-/// The small border radius used across the Components.
-/// @group radii
 $kendo-border-radius-sm: calc(var(--kendo-border-radius-base) * .5) !default;
-/// The medium border radius used across the Components.
-/// @group radii
 $kendo-border-radius-md: var(--kendo-border-radius-base) !default;
-/// The large border radius used across the Components.
-/// @group radii
 $kendo-border-radius-lg: calc(var(--kendo-border-radius-base) * 1.5) !default;
-/// The extra large border radius used across the Components.
-/// @group radii
 $kendo-border-radius-xl: calc(var(--kendo-border-radius-base) * 2) !default;
-/// The third largest border radius used across the Components.
-/// @group radii
 $kendo-border-radius-xxl: calc(var(--kendo-border-radius-base) * 3) !default;
-/// The second largest border radius used across the Components.
-/// @group radii
 $kendo-border-radius-xxxl: calc(var(--kendo-border-radius-base) * 4) !default;
-/// The largest border radius used across the Components.
-/// @group radii
 $kendo-border-radius-full: calc(var(--kendo-border-radius-base) * 9999) !default;
 
 $_default-border-radii: (
@@ -44,6 +24,4 @@ $_default-border-radii: (
     full: $kendo-border-radius-full
 ) !default;
 
-/// The global radii Map.
-/// @group radii
 $kendo-border-radii: $_default-border-radii !default;

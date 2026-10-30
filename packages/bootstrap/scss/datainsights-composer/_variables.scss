@@ -1,34 +1,14 @@
 @use "../core/_index.scss" as *;
 
-/// The border width of the Data Insights Composer.
-/// @group datainsights-composer
 $kendo-datainsights-composer-border-width: 1px !default;
-/// The border color of the Data Insights Composer.
-/// @group datainsights-composer
 $kendo-datainsights-composer-border-color: k-color(border) !default;
-/// The background color of the Data Insights Composer.
-/// @group datainsights-composer
 $kendo-datainsights-composer-background: k-color(surface) !default;
-/// The preview background color of the Data Insights Composer.
-/// @group datainsights-composer
 $kendo-datainsights-composer-preview-background: k-color(surface-alt) !default;
-/// The border radius of the Data Insights Composer.
-/// @group datainsights-composer
 $kendo-datainsights-composer-border-radius: k-border-radius(xxl) !default;
-/// The bottom border radius of the Data Insights Composer fields.
-/// @group datainsights-composer
 $kendo-datainsights-composer-fields-border-radius: k-border-radius(xl) !default;
-/// The height of the Data Insights Composer loading state.
-/// @group datainsights-composer
 $kendo-datainsights-composer-loading-height: 400px !default;
-/// The minimum width of the Data Insights Composer popup.
-/// @group datainsights-composer
 $kendo-datainsights-composer-popup-min-width: 250px !default;
-/// The maximum width of the Data Insights Composer popup.
-/// @group datainsights-composer
 $kendo-datainsights-composer-popup-max-width: 320px !default;
-/// The maximum height of the Data Insights Composer popup.
-/// @group datainsights-composer
 $kendo-datainsights-composer-popup-max-height: 320px !default;
 
 @forward "@progress/kendo-theme-core/scss/components/datainsights-composer/_variables.scss" with (

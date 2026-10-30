@@ -48,27 +48,13 @@ $kendo-drag-clue-gradient: var( --kendo-drag-clue-gradient, null ) !default;
 /// @group draggable
 $kendo-drag-clue-shadow: var( --kendo-drag-clue-shadow, var( --kendo-elevation-2, none ) ) !default;
 
-/// Arrow size of the drop hint.
-/// @group draggable
 $kendo-drop-hint-arrow-size: var( --kendo-drop-hint-arrow-size, 6px ) !default;
-/// Arrow spacing of the drop hint.
-/// @group draggable
 $kendo-drop-hint-arrow-spacing: var( --kendo-drop-hint-arrow-spacing, calc( $kendo-drop-hint-arrow-size / 2 ) ) !default;
-/// Width of the horizontal drop hint line.
-/// @group draggable
 $kendo-drop-hint-line-h-width: var( --kendo-drop-hint-line-h-width, 20px ) !default;
-/// Height of the horizontal drop hint line.
-/// @group draggable
 $kendo-drop-hint-line-h-height: var( --kendo-drop-hint-line-h-height, 1px ) !default;
-/// Width of the vertical drop hint line.
-/// @group draggable
 $kendo-drop-hint-line-v-width: var( --kendo-drop-hint-line-v-width, $kendo-drop-hint-line-h-height ) !default;
-/// Height of the vertical drop hint line.
-/// @group draggable
 $kendo-drop-hint-line-v-height: var( --kendo-drop-hint-line-v-height, $kendo-drop-hint-line-h-width ) !default;
 
-/// Background-color of the drop hint.
-/// @group draggable
 $kendo-drop-hint-bg: var( --kendo-drop-hint-bg, k-color(primary) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/draggable/_variables.scss" with (

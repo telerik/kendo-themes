@@ -1,25 +1,15 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The font family of the Rating.
-/// @group rating
 $kendo-rating-font-family: var( --kendo-rating-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the Rating.
-/// @group rating
 $kendo-rating-font-size: var( --kendo-rating-font-size, var(--kendo-font-size-sm) ) !default;
-/// The line height of the Rating.
-/// @group rating
 $kendo-rating-line-height: var( --kendo-rating-line-height, var(--kendo-line-height) ) !default;
 
 /// The content spacing of the Rating.
 /// @group rating
 $kendo-rating-spacing: var( --kendo-rating-spacing, #{k-spacing(1)} ) !default;
 
-/// The horizontal padding of the Rating item.
-/// @group rating
 $kendo-rating-item-padding-x: var( --kendo-rating-item-padding-x, #{k-spacing(0.5)} ) !default;
-/// The vertical padding of the Rating item.
-/// @group rating
 $kendo-rating-item-padding-y: var( --kendo-rating-item-padding-y, #{k-spacing(2)} ) !default;
 /// The text color of the Rating item.
 /// @group rating

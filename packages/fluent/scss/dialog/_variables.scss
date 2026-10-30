@@ -1,31 +1,15 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The background color of the Dialog titlebar.
-/// @group dialog
 $kendo-dialog-titlebar-bg: var( --kendo-dialog-titlebar-bg, k-color(surface-alt) ) !default;
-/// The text color of the Dialog titlebar.
-/// @group dialog
 $kendo-dialog-titlebar-text: var( --kendo-dialog-titlebar-text, k-color(on-app-surface) ) !default;
-/// The border color of the Dialog titlebar.
-/// @group dialog
 $kendo-dialog-titlebar-border: transparent !default;
 
-/// The horizontal padding of the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-buttongroup-padding-x: var( --kendo-dialog-buttongroup-padding-x, k-spacing(6) ) !default; // $kendo-actions-padding-x
-/// The vertical padding of the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-buttongroup-padding-y: var( --kendo-dialog-buttongroup-padding-y, k-spacing(6) ) !default; // $kendo-actions-padding-y
-/// The width of the top border of the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-buttongroup-border-width: var( --kendo-dialog-buttongroup-border-width, 0 ) !default;
-/// The spacing between the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-button-spacing: var( --kendo-dialog-button-spacing, k-spacing(3) ) !default; // $kendo-actions-padding-y
 
-/// The background color of the Dialog.
-/// @group dialog
 $kendo-dialog-bg: var( --kendo-dialog-bg, k-color(surface-alt) ) !default;
 
 /// The box shadow around the Dialog.

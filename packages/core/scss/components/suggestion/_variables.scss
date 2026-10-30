@@ -1,23 +1,52 @@
 
+/// The vertical padding of the Suggestion wrapper.
+/// @group suggestion
 $kendo-suggestion-padding-y: null !default;
+/// The horizontal padding of the Suggestion wrapper.
+/// @group suggestion
 $kendo-suggestion-padding-x: null !default;
+/// The horizontal padding of the Suggestion wrapper.
+/// @group suggestion
 $kendo-suggestion-spacing: null !default;
+/// The border width of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-border-width: null !default;
+/// The border style of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-border-style: null !default;
 
+/// The font size of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-font-size: null !default;
+/// The line height of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-line-height: null !default;
+/// The font weight of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-font-weight: null !default;
+/// The border radius of the Suggestion.
+/// @group suggestion
 $kendo-suggestion-border-radius: null !default;
 
+/// The shadow blur of the focused Suggestion.
+/// @group suggestion
 $kendo-suggestion-focus-shadow-blur: null !default;
+/// The shadow spread of the focused Suggestion.
+/// @group suggestion
 $kendo-suggestion-focus-shadow-spread: null !default;
+/// The shadow color of the focused Suggestion.
+/// @group suggestion
 $kendo-suggestion-focus-shadow-color: null !default;
 
 /// The theme colors map of the Suggestion.
 /// @group suggestion
 $kendo-suggestion-theme-colors: ("base", "primary", "secondary", "tertiary") !default;
 
+/// The default theme color of the Suggestion.
+/// @group suggestion
+/// @role default
 $kendo-suggestion-default-theme-color: null !default;
 
+/// The gradient used for scroll indicators in the Suggestion group.
+/// @group suggestion
 $kendo-suggestion-scroll-gradient: null !default;

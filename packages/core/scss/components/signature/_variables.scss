@@ -1,27 +1,63 @@
+/// The width of the Signature.
+/// @group signature
 $kendo-signature-width: null !default;
+/// The height of the Signature.
+/// @group signature
 $kendo-signature-height: null !default;
 
+/// The minimum height of the large Signature.
+/// @group signature
 $kendo-signature-lg-min-height: null !default;
 
+/// The width of the maximized Signature.
+/// @group signature
 $kendo-signature-maximized-width: null !default;
+/// The height of the maximized Signature.
+/// @group signature
 $kendo-signature-maximized-height: null !default;
 
+/// The horizontal padding of the small Signature.
+/// @group signature
 $kendo-signature-sm-padding-x: null !default;
+/// The horizontal padding of the medium Signature.
+/// @group signature
 $kendo-signature-md-padding-x: null !default;
+/// The horizontal padding of the large Signature.
+/// @group signature
 $kendo-signature-lg-padding-x: null !default;
 
+/// The vertical padding of the small Signature.
+/// @group signature
 $kendo-signature-sm-padding-y: null !default;
+/// The vertical padding of the medium Signature.
+/// @group signature
 $kendo-signature-md-padding-y: null !default;
+/// The vertical padding of the large Signature.
+/// @group signature
 $kendo-signature-lg-padding-y: null !default;
 
+/// The width of the Signature line.
+/// @group signature
 $kendo-signature-line-width: null !default;
+/// The style of the Signature line.
+/// @group signature
 $kendo-signature-line-style: null !default;
+/// The color of the Signature line.
+/// @group signature
 $kendo-signature-line-color: null !default;
 
+/// The size of the small Signature line.
+/// @group signature
 $kendo-signature-sm-line-size: null !default;
+/// The size of the medium Signature line.
+/// @group signature
 $kendo-signature-md-line-size: null !default;
+/// The size of the large Signature line.
+/// @group signature
 $kendo-signature-lg-line-size: null !default;
 
+/// The bottom offset of the Signature line.
+/// @group signature
 $kendo-signature-line-bottom-offset: null !default;
 
 /// The sizes map of the Signature.
@@ -44,5 +80,9 @@ $kendo-signature-sizes: (
     )
 ) !default;
 
+/// The gap between the Signature actions.
+/// @group signature
 $kendo-signature-actions-gap: null !default;
+/// The line width of the maximized Signature.
+/// @group signature
 $kendo-signature-maximized-line-width: null !default;

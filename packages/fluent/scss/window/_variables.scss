@@ -1,104 +1,47 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 
-/// The default size of the Window.
-/// @group window
-/// @role default
 $kendo-window-default-size: "auto" !default;
 
-/// The width of the border around the Window.
-/// @group window
 $kendo-window-border-width: var(--kendo-window-border-width, 0) !default;
-/// The border radius of the Window.
-/// @group window
 $kendo-window-border-radius: var(--kendo-window-border-radius, k-border-radius(md)) !default;
-/// The font family of the Window.
-/// @group window
 $kendo-window-font-family: var( --kendo-window-font-family, var(--kendo-font-family) ) !default;
-/// The font size of the Window.
-/// @group window
 $kendo-window-font-size: var( --kendo-window-font-size, var(--kendo-font-size) ) !default;
-/// The line height of the Window.
-/// @group window
 $kendo-window-line-height: var( --kendo-window-line-height, var(--kendo-line-height) ) !default;
 
-/// The horizontal padding of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-padding-x: var( --kendo-window-titlebar-padding-x, k-spacing(6) ) !default;
-/// The vertical padding of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-padding-y: var( --kendo-window-titlebar-padding-y, k-spacing(6) k-spacing(4) ) !default;
-/// The width of the border of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-border-width: var( --kendo-window-titlebar-border-width, 0 ) !default;
-/// The style of the border of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-border-style: solid !default;
 
-/// The font size of the title of the Window.
-/// @group window
 $kendo-window-title-font-size: var( --kendo-window-title-font-size, var(--kendo-font-size-xl) ) !default;
-/// The line height of the title of the Window.
-/// @group window
 $kendo-window-title-line-height: var( --kendo-window-title-line-height, var(--kendo-line-height-xs) ) !default;
 /// The font weight of the title of the Window.
 /// @group window
 $kendo-window-title-font-weight: var( --kendo-window-title-font-weight, var(--kendo-font-weight-semibold) ) !default;
 
-/// The spacing between the buttons in the Window titlebar.
-/// @group window
 $kendo-window-actions-gap: var( --kendo-window-actions-gap, k-spacing(0) ) !default;
-/// The opacity of the buttons in the Window titlebar.
-/// @group window
 $kendo-window-action-opacity: var( --kendo-window-action-opacity, 1 ) !default;
-/// The opacity of the hovered buttons in the Window titlebar.
-/// @group window
 $kendo-window-action-hover-opacity: var( --kendo-window-action-hover-opacity, 1 ) !default;
 
-/// The horizontal padding of the content of the Window.
-/// @group window
 $kendo-window-inner-padding-x: var( --kendo-window-inner-padding-x, k-spacing(6) ) !default;
-/// The vertical padding of the content of the Window.
-/// @group window
 $kendo-window-inner-padding-y: var( --kendo-window-inner-padding-y, k-spacing(3) ) !default;
 
-/// The horizontal padding of the Window action buttons.
-/// @group window
 $kendo-window-buttongroup-padding-x: var( --kendo-window-buttongroup-padding-x, k-spacing(6) ) !default; // $kendo-actions-padding-x
-/// The vertical padding of the Window action buttons.
-/// @group window
 $kendo-window-buttongroup-padding-y: var( --kendo-window-buttongroup-padding-y, k-spacing(6) ) !default; // $kendo-actions-padding-y
-/// The width of the top border of the Window action buttons.
-/// @group window
 $kendo-window-buttongroup-border-width: var( --kendo-window-buttongroup-border-width, 0 ) !default;
 /// The spacing between the Window action buttons.
 /// @group window
 $kendo-window-buttongroup-spacing: var( --kendo-window-buttongroup-spacing, k-spacing(3) ) !default;
 
-/// The background color of the Window.
-/// @group window
 $kendo-window-bg: var( --kendo-window-bg, k-color(surface-alt) ) !default;
-/// The text color of the Window.
-/// @group window
 $kendo-window-text: var( --kendo-window-text, k-color(on-app-surface) ) !default;
-/// The border color of the Window.
-/// @group window
 $kendo-window-border: var( --kendo-window-border, k-color(surface-alt) ) !default;
-/// The box shadow of the Window.
-/// @group window
 $kendo-window-shadow: var( --kendo-window-shadow, var( --kendo-elevation-5, none ) ) !default;
-/// The box shadow of the focused Window.
-/// @group window
 $kendo-window-focus-shadow: $kendo-window-shadow !default;
 
-/// The background color of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-bg: var( --kendo-window-titlebar-bg, k-color(surface-alt) ) !default; // $kendo-component-header-bg
-/// The text color of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-text: var( --kendo-window-titlebar-text, k-color(on-app-surface) ) !default; // $kendo-component-header-text
-/// The border color of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-border: var( --kendo-window-titlebar-border, k-color(primary) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (

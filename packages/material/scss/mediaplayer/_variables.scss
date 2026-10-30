@@ -2,52 +2,22 @@
 
 // Media player
 
-/// The border width of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-border-width: 1px !default;
-/// The border radius of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-border-radius: null !default;
-/// The font family of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-font-family: var(--kendo-font-family) !default;
-/// The font size of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-font-size: var(--kendo-font-size) !default;
-/// The line height of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-line-height: var(--kendo-line-height) !default;
 
-/// The background color of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-bg: k-color(surface) !default;
-/// The text color of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-text: k-color(on-app-surface) !default;
-/// The border color of the MediaPlayer.
-/// @group mediaplayer
 $kendo-media-player-border: k-color(border) !default;
 
-/// The horizontal padding of the MediaPlayer title.
-/// @group mediaplayer
 $kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
-/// The vertical padding of the MediaPlayer title.
-/// @group mediaplayer
 $kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
-/// The font size of the MediaPlayer title.
-/// @group mediaplayer
 $kendo-media-player-titlebar-font-size: null !default;
-/// The font weight of the MediaPlayer title.
-/// @group mediaplayer
 $kendo-media-player-titlebar-font-weight: null !default;
-/// The line height of the MediaPlayer title.
-/// @group mediaplayer
 $kendo-media-player-titlebar-line-height: null !default;
-/// The text color of the MediaPlayer title.
-/// @group mediaplayer
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
-/// The gradient of the MediaPlayer title.
-/// @group mediaplayer
 $kendo-media-player-titlebar-gradient: ( color-mix(in srgb, k-color(on-app-surface) 70%, transparent), color-mix(in srgb, k-color(on-app-surface) 0%, transparent) ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/mediaplayer/_variables.scss" with (
