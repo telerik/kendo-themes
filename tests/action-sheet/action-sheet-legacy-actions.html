@@ -12,25 +12,35 @@
     <body id="app" class="k-body">
         <style>
             #test-area > section {
-            height: 230px;
+            height: 180px;
             outline: 1px dotted;
             overflow: hidden;
             position: relative;
             transform: translateZ(0);
             }
         </style>
-        <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <div id="test-area" class="k-d-grid k-grid-cols-3">
+            <span class="k-colspan-3">Header Actions - LTR</span>
             <section>
                 <div class="k-actionsheet-container">
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                                <div id="actionsheet-1" class="k-actionsheet-view">
+                            <div id="actionsheet-actions-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-actions-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                                <div class="k-actionsheet-view">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Action Buttons Start</div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Back">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="k-actionsheet-title" id="actionsheet-actions-1-title">
+                                                <div class="k-text-center">Start</div>
                                             </div>
                                         </div>
                                     </div>
@@ -58,14 +68,6 @@
                                                 </span>
                                             </span>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-start k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -78,12 +80,21 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                                <div id="actionsheet-1" class="k-actionsheet-view">
+                            <div id="actionsheet-actions-2" role="dialog" aria-modal="true" aria-labelledby="actionsheet-actions-2-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                                <div class="k-actionsheet-view">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Action Buttons End</div>
+                                            <div class="k-actionsheet-title" id="actionsheet-actions-2-title">
+                                                <div class="k-text-center">End</div>
+                                            </div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -111,14 +122,6 @@
                                                 </span>
                                             </span>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-end k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -131,12 +134,30 @@
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                                <div id="actionsheet-1" class="k-actionsheet-view">
+                            <div id="actionsheet-actions-3" role="dialog" aria-modal="true" aria-labelledby="actionsheet-actions-3-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                                <div class="k-actionsheet-view">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Action Buttons Center</div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Back">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="k-actionsheet-title" id="actionsheet-actions-3-title">
+                                                <div class="k-text-center">Start &amp; End</div>
+                                            </div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -164,14 +185,6 @@
                                                 </span>
                                             </span>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-center k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -179,17 +192,27 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <span class="k-colspan-3">Header Actions - RTL</span>
+            <section class="k-rtl">
                 <div class="k-actionsheet-container">
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                                <div id="actionsheet-1" class="k-actionsheet-view">
+                            <div id="actionsheet-actions-4" role="dialog" aria-modal="true" aria-labelledby="actionsheet-actions-4-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                                <div class="k-actionsheet-view">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Action Buttons Stretch</div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Back">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="k-actionsheet-title" id="actionsheet-actions-4-title">
+                                                <div class="k-text-center">Start</div>
                                             </div>
                                         </div>
                                     </div>
@@ -217,14 +240,6 @@
                                                 </span>
                                             </span>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -232,17 +247,26 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="k-rtl">
                 <div class="k-actionsheet-container">
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                                <div id="actionsheet-1" class="k-actionsheet-view">
+                            <div id="actionsheet-actions-5" role="dialog" aria-modal="true" aria-labelledby="actionsheet-actions-5-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                                <div class="k-actionsheet-view">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Action Buttons Justify</div>
+                                            <div class="k-actionsheet-title" id="actionsheet-actions-5-title">
+                                                <div class="k-text-center">End</div>
+                                            </div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -270,14 +294,6 @@
                                                 </span>
                                             </span>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-justify k-actions-horizontal k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -285,17 +301,35 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="k-rtl">
                 <div class="k-actionsheet-container">
                     <div class="k-overlay"></div>
                     <div class="k-animation-container k-animation-container-shown">
                         <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                            <div id="actionsheet-1" role="dialog" aria-modal="true" aria-labelledby="actionsheet-1-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                                <div id="actionsheet-1" class="k-actionsheet-view">
+                            <div id="actionsheet-actions-6" role="dialog" aria-modal="true" aria-labelledby="actionsheet-actions-6-title" class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                                <div class="k-actionsheet-view">
                                     <div class="k-actionsheet-titlebar">
                                         <div class="k-actionsheet-titlebar-group">
-                                            <div class="k-actionsheet-title" id="actionsheet-1-title">
-                                                <div class="k-text-center">Action Buttons Vertical</div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Back">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="k-actionsheet-title" id="actionsheet-actions-6-title">
+                                                <div class="k-text-center">Start &amp; End</div>
+                                            </div>
+                                            <div class="k-actionsheet-actions">
+                                                <button class="k-button k-button-lg k-button-flat k-icon-button" aria-label="Close">
+                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -323,14 +357,6 @@
                                                 </span>
                                             </span>
                                         </div>
-                                    </div>
-                                    <div class="k-actions k-actions-start k-actions-vertical k-actionsheet-footer">
-                                        <button class="k-button k-button-lg">
-                                            <span class="k-button-text">Cancel</span>
-                                        </button>
-                                        <button class="k-button k-button-lg k-button-primary">
-                                            <span class="k-button-text">Apply</span>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
