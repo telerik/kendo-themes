@@ -2,7 +2,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const { parse } = require('sassdoc');
+const { parse, sorter } = require('sassdoc');
+const ScssCommentParser = require( require.resolve( 'scss-comment-parser', { paths: [ path.dirname( require.resolve( 'sassdoc' ) ) ] } ) );
 const nunjucks = require('../sassdoc/nunjucks');
 const srcTheme = require('../sassdoc/sassdoc-theme.js');
 
@@ -29,6 +30,78 @@ const { src, dest, theme, groups, meta } = Object.assign( {}, defaults, config )
 
 function _kebabToPascalCase(string) {
     return string.replace(/(^|-)([a-z])/g, (_, _prefix, letter) => letter.toUpperCase());
+}
+
+// Collect the first top-level declaration of every variable in the given folder,
+// parsed the same way SassDoc parses documented ones. Also collect the variables
+// pinned in `@forward ... with ()` blocks without `!default` - they are not configurable.
+function _collectVariableDeclarations(srcDir) {
+    const declarations = new Map();
+    const pinned = new Set();
+    const contextParser = ScssCommentParser.prototype.contextParser;
+
+    const walk = (dir) => {
+        fs.readdirSync( dir, { withFileTypes: true } )
+            .sort( (a, b) => a.name.localeCompare( b.name ) )
+            .forEach( entry => {
+                const fullPath = path.join( dir, entry.name );
+
+                if ( entry.isDirectory() ) {
+                    walk( fullPath );
+                    return;
+                }
+
+                if ( !entry.name.endsWith( '.scss' ) ) {
+                    return;
+                }
+
+                const lines = fs.readFileSync( fullPath, 'utf8' ).split( '\n' );
+                let inForwardWith = false;
+
+                lines.forEach( (line, lineIndex) => {
+                    if ( /^@forward\b.*\bwith\s*\(/.test( line ) ) {
+                        inForwardWith = true;
+                    }
+
+                    if ( inForwardWith ) {
+                        const forwarded = line.match( /^\s+\$([\w-]+)\s*:/ );
+
+                        if ( forwarded !== null && !line.includes( '!default' ) ) {
+                            pinned.add( forwarded[1] );
+                        }
+
+                        inForwardWith = !/\)\s*;/.test( line );
+                        return;
+                    }
+
+                    const match = line.match( /^\$([\w-]+)\s*:/ );
+
+                    if ( match === null || declarations.has( match[1] ) ) {
+                        return;
+                    }
+
+                    const code = lines.slice( lineIndex ).join( '\n' );
+                    const lineNumberFor = (index) => lineIndex + ( code.slice( 0, index ).match( /\n/g ) || [] ).length;
+                    const context = contextParser( code, lineNumberFor );
+
+                    if ( context.type !== 'variable' ) {
+                        return;
+                    }
+
+                    declarations.set( match[1], {
+                        context,
+                        file: {
+                            path: path.relative( srcDir, fullPath ).replace( /\\/g, '/' ),
+                            name: entry.name
+                        }
+                    });
+                });
+            });
+    };
+
+    walk( srcDir );
+
+    return { declarations, pinned };
 }
 
 (async function() {
@@ -68,6 +141,32 @@ function _kebabToPascalCase(string) {
             }
         });
 
+        // Variables declared in the theme without own docs inherit the docs from core,
+        // but keep the theme's value and location.
+        const { declarations: themeDeclarations, pinned: themePinnedVarNames } = _collectVariableDeclarations( path.resolve( themeDir, src ) );
+        let inheritedDocs = false;
+
+        coreVarNames.forEach( (coreVarName, index) => {
+            if ( coreVarName === null || themeVarNames.includes( coreVarName ) || !themeDeclarations.has( coreVarName ) ) {
+                return;
+            }
+
+            const { context, file } = themeDeclarations.get( coreVarName );
+            const item = JSON.parse( JSON.stringify( coreRawData[index] ) );
+
+            delete item.commentRange;
+            item.context = context;
+            item.file = file;
+
+            rawData.push( item );
+            themeVarNames.push( coreVarName );
+            inheritedDocs = true;
+        });
+
+        if ( inheritedDocs ) {
+            sorter( rawData );
+        }
+
         coreVarNames.forEach( (coreVarName, index) => {
             if ( coreVarName === null ) {
                 return;
@@ -77,6 +176,12 @@ function _kebabToPascalCase(string) {
                 return;
             }
             let coreVar = coreRawData[index];
+
+            // Skip variables that are not part of the theme's API: pinned by the theme,
+            // or component variables the theme does not set at all (they stay `null`).
+            if ( themePinnedVarNames.has( coreVarName ) || ( coreVar.context.value === 'null' && coreVar.file.path.startsWith( 'components/' ) ) ) {
+                return;
+            }
             coreVar.file.path = `core/scss/${coreVar.file.path}`;
             rawData.push( coreVar );
         });
