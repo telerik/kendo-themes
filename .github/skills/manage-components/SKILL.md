@@ -1,6 +1,6 @@
 ---
 name: manage-components
-description: Create or update a Kendo UI component across kendo-themes packages. For new components, scaffolds core skeleton with null variables, theme overrides for targeted themes, HTML spec, templates, visual tests, and unit tests. For existing components, audits the current state, produces a change plan, and applies SCSS variable changes, layout/theme mixin updates, _index.scss wiring and theme registration, HTML spec modifications, and test additions. Use this skill when the user wants to add a new component, update a component's design, add/change/remove a component SCSS variable, change a component's layout or visual styles, wire up dependencies, add new states or options, or align a component with design assets.
+description: Create or update a Kendo UI component end to end across kendo-themes packages (SCSS + HTML + unit tests). For new components, scaffolds core skeleton, theme overrides, HTML spec, templates, visual tests, and unit tests. For existing components, audits the current state, produces a change plan, and coordinates SCSS and HTML changes. Use this skill when the user wants to add a new component, update a component's design across packages, add new states or options, or align a component with design assets.
 argument-hint: "[component-name] e.g. chip, button, info-bar"
 metadata:
   internal: true
@@ -18,13 +18,12 @@ Read [../_shared/component-context.md](../_shared/component-context.md) for nami
 - **Update component** — "update the chip based on this design", "change button padding", "add a `warning` state to badge"
 - **Partial update** — "just update the chip variables in default and fluent"
 
-For a single sub-task, skip the orchestration and follow only the matching reference:
+This skill coordinates; the details live in the package skills. For a single-package task, use that skill directly:
 
-| Sub-task | Reference |
-|----------|-----------|
-| Add/change/remove/deprecate a component variable | [references/scss-variables.md](references/scss-variables.md) |
-| Layout/theme mixins, `_index.scss` wiring, theme registration | [references/scss-styles.md](references/scss-styles.md) |
-| HTML spec, templates, visual tests, ARIA/accessibility | `manage-html` skill |
+| Sub-task | Skill |
+|----------|-------|
+| Component variables, layout/theme mixins, `_index.scss` wiring, theme registration | [manage-scss](../manage-scss/SKILL.md) |
+| HTML spec, templates, visual tests, ARIA/accessibility | [manage-html](../manage-html/SKILL.md) |
 
 ## Inputs
 
@@ -58,11 +57,11 @@ If the user doesn't specify variables/states/options, use reasonable defaults ba
 
 ### Step 3: Create SCSS variables
 
-Follow [references/scss-variables.md](references/scss-variables.md) to create variables in core (null `!default`) and all targeted themes (concrete values + `@forward` maps).
+Follow [manage-scss → variables](../manage-scss/references/variables.md) to create variables in core (null `!default`) and all targeted themes (concrete values + `@forward` maps).
 
 ### Step 4: Create SCSS styles, module, and register
 
-Follow [references/scss-styles.md](references/scss-styles.md) to:
+Follow [manage-scss → styles](../manage-scss/references/styles.md) to:
 
 - Create layout and theme mixins in core and targeted themes
 - Create `_index.scss` in each targeted theme
@@ -134,11 +133,11 @@ Present the plan and **wait for user confirmation** before editing:
 
 ### Step 5: Apply variable changes
 
-Follow [references/scss-variables.md](references/scss-variables.md) and the checklist in [references/update-checklist.md](references/update-checklist.md).
+Follow [manage-scss → variables](../manage-scss/references/variables.md) and the checklist in [references/update-checklist.md](references/update-checklist.md).
 
 ### Step 6: Apply style and module changes
 
-Follow [references/scss-styles.md](references/scss-styles.md) for layout, theme, and `_index.scss` changes.
+Follow [manage-scss → styles](../manage-scss/references/styles.md) for layout, theme, and `_index.scss` changes.
 
 ### Step 7: Apply HTML changes
 

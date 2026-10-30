@@ -1,6 +1,6 @@
 # Shared Component Context
 
-Common conventions, paths, and rules used by the `manage-components` and `manage-html` skills.
+Common conventions, paths, and rules used by the `manage-components`, `manage-scss`, and `manage-html` skills.
 
 ## Naming Derivation
 

@@ -13,7 +13,7 @@ When the user asks to:
 - Update motion/animation timing or easing
 - Add or change z-index layers
 
-Not for component-level SCSS (use the `manage-components` skill).
+Not for component-level SCSS (see [variables.md](variables.md) and [styles.md](styles.md)).
 
 ## Module inventory
 
