@@ -1,0 +1,2 @@
+export const SR_ANNOUNCER_MODULE_NAME = 'sr-announcer';
+export const SR_ANNOUNCER_FOLDER_NAME = SR_ANNOUNCER_MODULE_NAME;
