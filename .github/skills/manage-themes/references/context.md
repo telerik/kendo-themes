@@ -28,7 +28,7 @@ From a component name (e.g., `smart-badge`):
 | Theme | Example values |
 |-------|----------------|
 | default, classic, bootstrap, material, meridian | `k-spacing(2)`, `k-color(surface-alt)`, `k-border-radius(md)`, `1px`, `var( --kendo-font-family, inherit )` |
-| fluent | Every value wrapped: `var( --kendo-{variable-name}, {value} )`, e.g. `var( --kendo-button-padding-x, k-spacing(3) )`. Interpolation (`#{k-spacing(3)}`) is also used — match the surrounding file. |
+| fluent | Leaf values (sizes, spacing, colors, borders) wrapped: `var( --kendo-{variable-name}, {value} )`, e.g. `var( --kendo-button-padding-x, k-spacing(3) )`. Not wrapped: `default-*` options (`"md"`), aliases (`$kendo-button-md-gap: $kendo-button-gap`), derived `calc()` values. Interpolation (`#{k-spacing(3)}`) is also used — match the surrounding variables in the file. |
 
 ## Rules
 

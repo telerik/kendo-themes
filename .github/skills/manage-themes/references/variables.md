@@ -1,6 +1,6 @@
 # Component Variables
 
-Add, change, remove, or deprecate `$kendo-{component}-*` variables. Rules on core values, the `@forward` map, and Fluent wrapping are in [context.md](context.md).
+Add, change, remove, or deprecate `$kendo-{component}-*` variables. Rules on core values, the `@forward` map, and Fluent's value format are in [context.md](context.md).
 
 ## Add a variable
 
@@ -14,7 +14,7 @@ Add, change, remove, or deprecate `$kendo-{component}-*` variables. Rules on cor
    /// @group {component}
    $kendo-{component}-gap: k-spacing(1) !default;
    ```
-   Then add `$kendo-{component}-gap: $kendo-{component}-gap` to the `@forward … with ( … )` map at the bottom. Fluent: wrap the value in `var( --kendo-{component}-gap, … )`.
+   Then add `$kendo-{component}-gap: $kendo-{component}-gap` to the `@forward … with ( … )` map at the bottom. Fluent: wrap the value in `var( --kendo-{component}-gap, … )` (see [context.md](context.md#value-conventions)).
 3. **Use it** — reference the variable in core `_layout.scss` (structure: padding, gap, display, sizing) or `_theme.scss` (visuals: color, background, shadow). See [styles.md](styles.md).
 
 For a brand-new component, start from the templates in [file-templates.md](file-templates.md).
@@ -42,6 +42,6 @@ When removing: delete from core, every theme `_variables.scss`, every `@forward`
 - Description: `/// The {property} of the {ComponentName}[ {sub-element}].` — starts with "The", PascalCase component name, ends with a period.
 - Name the state or sub-element when relevant: "The background color of the hovered Chip."
 - Use standard terms (`padding`, `margin`, `width`, `radius`, `color`); "horizontal"/"vertical" for `-x`/`-y`.
-- `@group` is the component folder name: lowercase, hyphenated, singular (`tile-layout`).
+- `@group` equals the component folder name exactly: lowercase, hyphenated (`tile-layout`, `action-buttons`).
 - `$kendo-{component}-default-*` variables (default size, fill mode, theme color, roundness) also get `/// @role default`.
 - Descriptions are unique within a file.

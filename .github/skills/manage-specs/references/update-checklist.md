@@ -55,7 +55,7 @@ Use this to decide which test files need to be added or updated:
 | New size option | `{component}-sizes.tsx` — add or update |
 | New fillMode option | `{component}-fillmodes.tsx` — add or update |
 | New themeColor option | `{component}-themecolors.tsx` or `{component}-{fillMode}.tsx` — add or update |
-| Layout/structure change | `{component}-default.tsx` — update to reflect new structure |
-| New sub-element | Dedicated test file or update `{component}-default.tsx` |
+| Layout/structure change | `{component}.tsx` (the base test) — update to reflect new structure |
+| New sub-element | Dedicated test file or update `{component}.tsx` |
 | Color/visual-only change | No new test needed — existing tests will show the visual diff in screenshots |
 | New rounded option | `{component}-rounded.tsx` — add or update |
