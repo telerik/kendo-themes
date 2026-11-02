@@ -29,7 +29,7 @@ export default () => (
       <span>No Data</span>
 
       <section>
-        <Popover className="k-scheduler-popover" style={{ width: "220px" }} callout="left">
+        <Popover className="k-scheduler-popover" style={{ width: "220px" }}>
           <div className="k-popover-header">
             <div className="k-month">Jan</div>
             <div className="k-link k-day">02</div>
@@ -54,7 +54,7 @@ export default () => (
       </section>
 
       <section>
-        <Popover className="k-scheduler-popover" style={{ width: "220px" }} callout="left">
+        <Popover className="k-scheduler-popover" style={{ width: "220px" }}>
           <div className="k-popover-header">
             <div className="k-month">Jan</div>
             <div className="k-link k-day">02</div>
@@ -107,7 +107,7 @@ export default () => (
       </section>
 
       <section>
-        <Popover className="k-scheduler-popover" style={{ width: "220px" }} callout="left">
+        <Popover className="k-scheduler-popover" style={{ width: "220px" }}>
           <div className="k-popover-header">
             <div className="k-month">Jan</div>
             <div className="k-link k-day">29</div>
