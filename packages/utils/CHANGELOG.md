@@ -1,3 +1,19 @@
+## 14.8.0 (2026-11-02)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+- zhpenkov
+
 ## 14.7.1-dev.7 (2026-11-02)
 
 This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
