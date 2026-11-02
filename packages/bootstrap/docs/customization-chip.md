@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-shadow</td>
+    <td>$kendo-chip-solid-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</code></td>
     <td><code>(0 0 0 2px rgba(var(--kendo-color-base-subtle), 0.16))</code></td>
