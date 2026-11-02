@@ -97,7 +97,7 @@ $kendo-chip-solid-text: k-color(base-on-subtle) !default;
 $kendo-chip-solid-border: k-color(base-emphasis) !default;
 /// The base shadow of the solid Chip.
 /// @group chip
-$kendo-chip-solid-shadow: 0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent) !default;
+$kendo-chip-solid-focus-shadow: 0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent) !default;
 /// The base gradient of the solid Chip.
 /// @group chip
 $kendo-chip-solid-gradient: $kendo-button-gradient !default;
@@ -187,7 +187,7 @@ $kendo-chip-list-size-lg: k-spacing(1) !default;
     $kendo-chip-solid-bg: $kendo-chip-solid-bg,
     $kendo-chip-solid-text: $kendo-chip-solid-text,
     $kendo-chip-solid-border: $kendo-chip-solid-border,
-    $kendo-chip-solid-shadow: $kendo-chip-solid-shadow,
+    $kendo-chip-solid-focus-shadow: $kendo-chip-solid-focus-shadow,
     $kendo-chip-solid-gradient: $kendo-chip-solid-gradient,
     $kendo-chip-solid-focus-bg: $kendo-chip-solid-focus-bg,
     $kendo-chip-solid-hover-bg: $kendo-chip-solid-hover-bg,
