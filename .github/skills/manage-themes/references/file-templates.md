@@ -89,6 +89,26 @@ $kendo-{component}-border: null !default;
 
 // {ComponentName}
 
+/// The default theme color of the {ComponentName}.
+/// @group {component}
+/// @role default
+$kendo-{component}-default-theme-color: "base" !default;
+
+/// The default fill mode of the {ComponentName}.
+/// @group {component}
+/// @role default
+$kendo-{component}-default-fill-mode: "solid" !default;
+
+/// The default roundness of the {ComponentName}.
+/// @group {component}
+/// @role default
+$kendo-{component}-default-roundness: "md" !default;
+
+/// The default size of the {ComponentName}.
+/// @group {component}
+/// @role default
+$kendo-{component}-default-size: "md" !default;
+
 /// The width of the border around the {ComponentName}.
 /// @group {component}
 $kendo-{component}-border-width: 1px !default;
@@ -127,6 +147,10 @@ $kendo-{component}-border: k-color(border) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/{component}/_variables.scss" with (
+    $kendo-{component}-default-theme-color: $kendo-{component}-default-theme-color,
+    $kendo-{component}-default-fill-mode: $kendo-{component}-default-fill-mode,
+    $kendo-{component}-default-roundness: $kendo-{component}-default-roundness,
+    $kendo-{component}-default-size: $kendo-{component}-default-size,
     $kendo-{component}-border-width: $kendo-{component}-border-width,
     $kendo-{component}-padding-x: $kendo-{component}-padding-x,
     $kendo-{component}-padding-y: $kendo-{component}-padding-y,
@@ -139,7 +163,7 @@ $kendo-{component}-border: k-color(border) !default;
 );
 ```
 
-**Fluent theme variation** — wrap every value in a CSS custom property:
+**Fluent theme variation** — wrap leaf values (not `default-*` options, aliases, or derived values) in a CSS custom property:
 ```scss
 $kendo-{component}-bg: var(--kendo-{component}-bg, #{k-color(surface-alt)}) !default;
 ```

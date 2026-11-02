@@ -119,6 +119,8 @@ Source: `typography/index.scss`
 | `$kendo-font-weight-medium` | 500 |
 | `$kendo-font-weight-semibold` | 600 |
 | `$kendo-font-weight-bold` | 700 |
+| `$kendo-font-weight-extra-bold` | 800 |
+| `$kendo-font-weight-black` | 900 |
 
 ### Font Family
 | Variable | Default |
@@ -132,4 +134,4 @@ Source: `typography/index.scss`
 Source: `motion/index.scss`
 
 - Easings: `linear`, `accelerate`, `decelerate`, `standard`, `sharp`, `bounce`, `elastic`, `stretchy`
-- Durations: `instant`, `immediate`, `brief`, `quick`, `rapid`, `swift`, `speedy`, `brisk`, `prompt`, `timely`, `moderate`, `measured`, `steady`, `leisurely`, `slow`
+- Durations: `instant`, `immediate`, `brief`, `quick`, `rapid`, `swift`, `speedy`, `brisk`, `prompt`, `timely`, `moderate`, `measured`, `steady`, `leisurely`, `slow`, `languid`, `sluggish`

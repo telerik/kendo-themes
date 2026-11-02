@@ -133,7 +133,7 @@ Customize the theme's visual identity. Use the appropriate reference for each ch
 
 **Design system tokens** (spacing, colors, elevation, typography, border-radii):
 - Follow [foundation-modules.md](foundation-modules.md) if the change should be in core (affects all themes)
-- Edit `scss/core/_index.scss` if the change is a theme-specific override of a core module
+- Edit the theme's own `scss/core/{module}/` files for a theme-specific override of a core module (e.g. `packages/meridian/scss/core/spacing/index.scss`); `scss/core/_index.scss` only wires modules in
 
 **Component variables** (padding, font-size, border-width, colors per component):
 - Follow [variables.md](variables.md) for systematic variable changes
@@ -187,7 +187,7 @@ For non-trivial changes, present the plan and **wait for user confirmation**:
 
 Follow the references or edit directly based on the change plan:
 
-- **Token changes** → follow [foundation-modules.md](foundation-modules.md) for core changes, or edit `scss/core/_index.scss` for theme-only overrides
+- **Token changes** → follow [foundation-modules.md](foundation-modules.md) for core changes, or edit `scss/core/{module}/` for theme-only overrides
 - **Component variable changes** → follow [variables.md](variables.md)
 - **Component style changes** → follow [styles.md](styles.md)
 - **Multi-component changes** → delegate to [component.md](component.md)

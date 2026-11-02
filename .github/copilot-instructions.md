@@ -34,7 +34,7 @@ Use the skills in `.github/skills/` for multi-step work:
 **Themes** (`packages/{theme}/scss/{component}/` — no `components/` level)
 - Every variable has `!default`, SassDoc (`/// The {property} of the {Component}.` + `/// @group {component}`), and an entry in the `@forward … with ( … )` map at the bottom of the file — a missing entry silently leaves core's value `null`.
 - Use token functions for values: `k-spacing()`, `k-color()`, `k-border-radius()`, `k-elevation()`.
-- Fluent wraps every value: `var( --kendo-{variable-name}, {value} )`.
+- Fluent: leaf values (sizes, spacing, colors, borders) are wrapped as `var( --kendo-{variable-name}, {value} )`; `default-*` options, aliases, and derived values are not — match the surrounding variables.
 - `scss/index.scss` lists components in dependency order — never alphabetize.
 
 **Both:** state selectors pair pseudo-class and class (`&:hover, &.k-hover`); classes are `k-` prefixed BEM-like; wrap output in `@include import-once()`.

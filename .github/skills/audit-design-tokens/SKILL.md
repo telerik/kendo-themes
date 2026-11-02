@@ -9,7 +9,7 @@ metadata:
 
 # Design Token Audit
 
-Scan SCSS files for hardcoded values that should use the design token system.
+Scan component and theme SCSS (`_variables.scss`, `_layout.scss`, `_theme.scss` in `core` and the theme packages) for hardcoded values that should use the design token system. `packages/utils` is not scanned — its classes are generated from `$kendo-utils` maps.
 
 ## When to use
 
@@ -122,7 +122,7 @@ Offer to apply the fixes.
 ## Gotchas
 
 - **Core `_variables.scss` files use `null !default`** — they define the token skeleton, not values. Scan theme overrides (default, classic, material, fluent, bootstrap, meridian) for actual hardcoded values.
-- **Fluent theme wraps everything in `var()`** — so `var(--kendo-spacing-2, 0.5rem)` is correct even though it contains a rem literal.
+- **Fluent wraps most leaf values in `var()`** — `var(--kendo-spacing-2, 0.5rem)` is correct even though it contains a rem literal.
 - **Spacing steps are multiples of 4px** (`k-spacing(n)` = n × 0.25rem); see the reference table for valid steps.
 - **`color-mix()` syntax**: `color-mix(in srgb, k-color(key) N%, transparent)` is the modern approach — do NOT flag these as violations.
 - **Some components intentionally use hardcoded values** for pixel-perfect rendering (e.g., `1px` borders, `2px` focus ring offsets). These are design decisions, not violations.
