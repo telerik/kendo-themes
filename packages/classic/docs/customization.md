@@ -8473,7 +8473,7 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-shadow</td>
+    <td>$kendo-chip-solid-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px color-mix(in srgb, k-color(base-on-surface) 16%, transparent)</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-base-on-surface) 16%, transparent))</code></td>

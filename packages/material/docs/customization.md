@@ -8546,7 +8546,7 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-shadow</td>
+    <td>$kendo-chip-solid-focus-shadow</td>
     <td>Null</td>
     <td><code>null</code></td>
     <td><code>null</code></td>

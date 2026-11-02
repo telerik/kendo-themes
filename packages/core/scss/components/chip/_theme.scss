@@ -27,7 +27,7 @@
                         &:focus,
                         &.k-focus {
                             @include fill( $bg: $kendo-chip-solid-focus-bg );
-                            @include focus-indicator( $kendo-chip-solid-shadow );
+                            @include focus-indicator( $kendo-chip-solid-focus-shadow );
                         }
 
                         &:hover,

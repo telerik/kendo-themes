@@ -1,3 +1,25 @@
+## 14.8.0 (2026-11-02)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### 🩹 Fixes
+
+- **chip:** rename $kendo-chip-solid-shadow to $kendo-chip-solid-focus-shadow ([#3462](https://github.com/telerik/kendo-themes/issues/3462))
+- **fluent:** use small font size and line height in small-sized components ([d82288c78b](https://github.com/telerik/kendo-themes/commit/d82288c78b))
+- **grid:** fix border color on focus in Grid component ([ba0d6b83c9](https://github.com/telerik/kendo-themes/commit/ba0d6b83c9))
+- **html:** allow children to be rendered inside Suggestion ([f88a04227b](https://github.com/telerik/kendo-themes/commit/f88a04227b))
+- **message-box:** distinguish inverse emphasis in dark swatch ([6d3ed2531c](https://github.com/telerik/kendo-themes/commit/6d3ed2531c))
+- **message-box:** improve secondary emphasis contrast ([27fefe55e3](https://github.com/telerik/kendo-themes/commit/27fefe55e3))
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+## 14.7.1-dev.7 (2026-11-02)
+
+### 🩹 Fixes
+
+- **chip:** rename $kendo-chip-solid-shadow to $kendo-chip-solid-focus-shadow ([#3462](https://github.com/telerik/kendo-themes/issues/3462))
+
 ## 14.7.1-dev.6 (2026-10-30)
 
 ### 🩹 Fixes
