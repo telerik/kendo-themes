@@ -69,7 +69,9 @@ Base `--kendo-border-radius-base` = 0.25rem (4px). Keys:
 | `xl` | base × 2 | 8 |
 | `xxl` | base × 3 | 12 |
 | `xxxl` | base × 4 | 16 |
-| `full` | base × 9999 | pill |
+| `full` | base × 9999 | 39996 |
+
+`full` is intentionally huge so any element renders fully rounded.
 
 Usage: `border-radius: k-border-radius(md);`
 
