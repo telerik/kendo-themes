@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-shadow</td>
+    <td>$kendo-chip-solid-focus-shadow</td>
     <td>String</td>
     <td><code>none</code></td>
     <td><code>none</code></td>
