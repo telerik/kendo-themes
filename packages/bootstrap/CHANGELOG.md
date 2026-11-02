@@ -1,3 +1,14 @@
+## 14.7.1-dev.7 (2026-11-02)
+
+### 🩹 Fixes
+
+- **chip:** rename $kendo-chip-solid-shadow to $kendo-chip-solid-focus-shadow ([#3462](https://github.com/telerik/kendo-themes/issues/3462))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.7.1-dev.6 (2026-10-30)
 
 This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
