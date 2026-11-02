@@ -140,6 +140,7 @@
         gap: k-spacing(3);
         height: $kendo-datainsights-composer-loading-height;
         padding: k-spacing(6);
+        box-sizing: content-box;
     }
 
     .k-datainsights-composer-loading-message {
