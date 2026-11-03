@@ -34,7 +34,7 @@ Each theme re-exports core modules via `packages/{theme}/scss/core/`. Theme-spec
 
 Read the module's files in `packages/core/scss/{module}/` to understand the current structure and conventions. Pay attention to:
 - How tokens are defined (maps, variables, constants)
-- SassDoc documentation patterns
+- SassDoc documentation patterns (in core)
 - The function API (e.g., `k-spacing()`, `k-color()`, `k-elevation()`)
 
 ### Step 2: Apply changes to core
@@ -43,7 +43,7 @@ Edit the appropriate file in `packages/core/scss/{module}/`.
 
 **Rules:**
 - Follow the existing naming and documentation patterns in the module
-- Add SassDoc `///` comments with `@group` annotations
+- Add SassDoc `///` comments with `@group` annotations **in core only**; the `scss/core/` module files in themes carry no SassDoc, even when they redeclare the map (`$kendo-colors`, `$kendo-spacing`, …)
 - Maintain the ordering convention (e.g., spacing values are ordered by size)
 - For `color-system`, respect the multi-file structure: constants in `_constants.scss`, swatch colors in `_swatch.scss`, functions in `_functions.scss`
 
@@ -51,7 +51,7 @@ Edit the appropriate file in `packages/core/scss/{module}/`.
 
 Most design system changes are core-only — themes inherit via `packages/{theme}/scss/core/`. Only edit theme-specific files when:
 - A theme needs a **different token value** (e.g., Material uses different elevation shadows)
-- A theme adds **theme-specific tokens** not in core
+- A theme adds **theme-specific tokens** not in core (document these in the theme)
 - The swatch configuration (`lib/swatches/`) needs updating
 
 ### Step 4: Validate
