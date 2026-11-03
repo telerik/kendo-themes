@@ -474,7 +474,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-button-active-bg, var(--kendo-color-base-active))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the active Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the active Button.</div></div>
     </td>
 </tr>
 <tr>

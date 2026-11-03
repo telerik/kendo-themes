@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-listbox-width, 10em)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">WThe width of the ListBox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ListBox.</div></div>
     </td>
 </tr>
 <tr>

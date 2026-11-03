@@ -284,7 +284,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-orgchart-node-group-subtitle-text, var(--kendo-color-subtle))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -414,7 +414,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-orgchart-card-body-border-width, 2px 0 0)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top border width of the OrgChart Card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart Card body.</div></div>
     </td>
 </tr>
 <tr>
