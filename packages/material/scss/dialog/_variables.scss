@@ -4,31 +4,15 @@
 
 // Dialog
 
-/// The background color of the Dialog titlebar.
-/// @group dialog
 $kendo-dialog-titlebar-bg: unset !default;
-/// The text color of the Dialog titlebar.
-/// @group dialog
 $kendo-dialog-titlebar-text: unset !default;
-/// The border color of the Dialog titlebar.
-/// @group dialog
 $kendo-dialog-titlebar-border: unset !default;
 
-/// The horizontal padding of the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-buttongroup-padding-x: $kendo-actions-padding-x !default;
-/// The vertical padding of the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-buttongroup-padding-y: $kendo-actions-padding-y !default;
-/// The width of the top border of the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-buttongroup-border-width: 0 !default;
-/// The spacing between the Dialog action buttons.
-/// @group dialog
 $kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
 
-/// The background color of the Dialog.
-/// @group dialog
 $kendo-dialog-bg: k-color(surface) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (

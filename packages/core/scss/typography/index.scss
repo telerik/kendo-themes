@@ -162,27 +162,27 @@ $default-font-families: (
     monospace: $kendo-font-family-monospace
 ) !default;
 
-/// The font sizes map
+/// The font sizes map.
 /// @group typography
 $kendo-font-sizes: $default-font-sizes !default;
 $kendo-font-sizes: map.merge( $default-font-sizes, $kendo-font-sizes );
 
-/// The line heights map
+/// The line heights map.
 /// @group typography
 $kendo-line-heights: $default-line-heights !default;
 $kendo-line-heights: map.merge( $default-line-heights, $kendo-line-heights );
 
-/// The font weights map
+/// The font weights map.
 /// @group typography
 $kendo-font-weights: $default-font-weights !default;
 $kendo-font-weights: map.merge( $default-font-weights, $kendo-font-weights );
 
-/// The letter spacings map
+/// The letter spacings map.
 /// @group typography
 $kendo-letter-spacings: $default-letter-spacings !default;
 $kendo-letter-spacings: map.merge( $default-letter-spacings, $kendo-letter-spacings );
 
-/// The font families map
+/// The font families map.
 /// @group typography
 $kendo-font-families: $default-font-families !default;
 $kendo-font-families: map.merge( $default-font-families, $kendo-font-families );

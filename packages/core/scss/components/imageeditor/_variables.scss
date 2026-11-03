@@ -1,91 +1,229 @@
 // ImageEditor
+/// The vertical margin of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-margin-y: null !default;
+/// The horizontal margin of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-margin-x: null !default;
+/// The vertical padding of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-padding-y: null !default;
+/// The horizontal padding of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-padding-x: null !default;
 
+/// The width of the border around the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-border-width: null !default;
+/// The border radius of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-border-radius: null !default;
+/// The font size of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-font-size: null !default;
+/// The line height of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-line-height: null !default;
+/// The font family of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-font-family: null !default;
 
+/// The width of the border around the ImageEditor content.
+/// @group image-editor
 $kendo-image-editor-content-border-width: null !default;
 
+/// The vertical padding of the ImageEditor action pane.
+/// @group image-editor
 $kendo-image-editor-action-pane-padding-y: null !default;
+/// The horizontal padding of the ImageEditor action pane.
+/// @group image-editor
 $kendo-image-editor-action-pane-padding-x: null !default;
+/// The width of the ImageEditor action pane.
+/// @group image-editor
 $kendo-image-editor-action-pane-width: null !default;
 
+/// The vertical padding of the ImageEditor pane header.
+/// @group image-editor
 $kendo-image-editor-pane-header-padding-y: null !default;
+/// The horizontal padding of the ImageEditor pane header.
+/// @group image-editor
 $kendo-image-editor-pane-header-padding-x: null !default;
+/// The gap between the title and the actions of the ImageEditor pane header.
+/// @group image-editor
 $kendo-image-editor-pane-header-gap: null !default;
 
+/// The top padding of the ImageEditor pane content.
+/// @group image-editor
 $kendo-image-editor-pane-content-padding-top: null !default;
+/// The bottom padding of the ImageEditor pane content.
+/// @group image-editor
 $kendo-image-editor-pane-content-padding-bottom: null !default;
+/// The horizontal padding of the ImageEditor pane content.
+/// @group image-editor
 $kendo-image-editor-pane-content-padding-x: null !default;
+/// The gap between the fields of the ImageEditor pane content.
+/// @group image-editor
 $kendo-image-editor-pane-content-gap: null !default;
 
+/// The gap between the slider and the numeric input of an ImageEditor adjustment row.
+/// @group image-editor
 $kendo-image-editor-adjustment-row-gap: null !default;
 
+/// The vertical padding of the ImageEditor pane footer.
+/// @group image-editor
 $kendo-image-editor-pane-footer-padding-y: null !default;
+/// The horizontal padding of the ImageEditor pane footer.
+/// @group image-editor
 $kendo-image-editor-pane-footer-padding-x: null !default;
 
+/// The gap between the ImageEditor option list items.
+/// @group image-editor
 $kendo-image-editor-option-list-gap: null !default;
+/// The scroll-fade gradient stops of the ImageEditor option list.
+/// @group image-editor
 $kendo-image-editor-option-list-scroll-gradient: null !default;
+/// The vertical padding of an ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-padding-y: null !default;
+/// The horizontal padding of an ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-padding-x: null !default;
+/// The border radius of an ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-border-radius: null !default;
+/// The width of an ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-width: null !default;
+/// The font size of the ImageEditor option label.
+/// @group image-editor
 $kendo-image-editor-option-label-font-size: null !default;
 
+/// The width of the border around the ImageEditor overlay frame.
+/// @group image-editor
 $kendo-image-editor-frame-border-width: null !default;
+/// The style of the border around the ImageEditor overlay frame.
+/// @group image-editor
 $kendo-image-editor-frame-border-style: null !default;
 
+/// The horizontal margin of the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-margin-x: null !default;
+/// The vertical margin of the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-margin-y: null !default;
+/// The width of the border around the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-border-width: null !default;
+/// The size of the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-size: null !default;
+/// The thickness of the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-thickness: null !default;
+/// The border radius of the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-border-radius: null !default;
 
+/// The size of the ImageEditor scale handle.
+/// @group image-editor
 $kendo-image-editor-scale-handle-size: null !default;
 
+/// The distance between the bottom edge of the selection frame and the ImageEditor rotate handle.
+/// @group image-editor
 $kendo-image-editor-rotate-handle-offset: null !default;
+/// The padding of the ImageEditor rotate handle.
+/// @group image-editor
 $kendo-image-editor-rotate-handle-padding: null !default;
 
+/// The background color of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-bg: null !default;
+/// The text color of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-text: null !default;
+/// The border color of the ImageEditor.
+/// @group image-editor
 $kendo-image-editor-border: null !default;
 
+/// The background color of the ImageEditor content.
+/// @group image-editor
 $kendo-image-editor-content-bg: null !default;
+/// The text color of the ImageEditor content.
+/// @group image-editor
 $kendo-image-editor-content-text: null !default;
+/// The border color of the ImageEditor content.
+/// @group image-editor
 $kendo-image-editor-content-border: null !default;
 
+/// The background color of the ImageEditor action pane.
+/// @group image-editor
 $kendo-image-editor-action-pane-bg: null !default;
+/// The text color of the ImageEditor action pane.
+/// @group image-editor
 $kendo-image-editor-action-pane-text: null !default;
+/// The border color of the ImageEditor action pane.
+/// @group image-editor
 $kendo-image-editor-action-pane-border: null !default;
 
+/// The text color of the ImageEditor pane title.
+/// @group image-editor
 $kendo-image-editor-pane-title-text: null !default;
 
+/// The background color of an ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-bg: null !default;
+/// The text color of an ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-text: null !default;
+/// The border color of an ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-border: null !default;
+/// The background color of a hovered ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-hover-bg: null !default;
+/// The text color of a hovered ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-hover-text: null !default;
+/// The box shadow of a focused ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-focus-shadow: null !default;
+/// The box shadow of a selected ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-selected-shadow: null !default;
+/// The border color of a selected ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-selected-border: null !default;
+/// The text color of a selected ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-selected-text: null !default;
+/// The font weight of a selected ImageEditor option preview.
+/// @group image-editor
 $kendo-image-editor-option-preview-selected-font-weight: null !default;
 
+/// The background color of the ImageEditor overlay frame.
+/// @group image-editor
 $kendo-image-editor-frame-bg: null !default;
+/// The text color of the ImageEditor overlay frame.
+/// @group image-editor
 $kendo-image-editor-frame-text: null !default;
+/// The border color of the ImageEditor overlay frame.
+/// @group image-editor
 $kendo-image-editor-frame-border: null !default;
 
+/// The background color of the ImageEditor crop overlay.
+/// @group image-editor
 $kendo-image-editor-crop-overlay-bg: null !default;
+/// The accent-tinted overlay color of the ImageEditor crop overlay, layered above the background.
+/// @group image-editor
 $kendo-image-editor-crop-overlay-accent-bg: null !default;
 
+/// The color of the ImageEditor rule-of-thirds grid lines.
+/// @group image-editor
 $kendo-image-editor-grid-line-color: null !default;
 
+/// The background color of the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-bg: null !default;
+/// The border color of the ImageEditor handle.
+/// @group image-editor
 $kendo-image-editor-handle-border: null !default;

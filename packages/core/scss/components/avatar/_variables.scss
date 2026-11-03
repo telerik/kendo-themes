@@ -2,23 +2,51 @@
 
 // Avatar
 
+/// The default theme color of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-theme-color: null !default;
+/// The default fill mode of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-fill-mode: null !default;
+/// The default roundness of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-roundness: null !default;
+/// The default size of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-size: null !default;
 
 $kendo-avatar-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 
+/// The border width of the Avatar.
+/// @group avatar
 $kendo-avatar-border-width: null !default;
+/// The border radius of the Avatar.
+/// @group avatar
 $kendo-avatar-border-radius: null !default;
 
+/// The font family of the Avatar.
+/// @group avatar
 $kendo-avatar-font-family: null !default;
+/// The font size of the Avatar.
+/// @group avatar
 $kendo-avatar-font-size: null !default;
+/// The line height of the Avatar.
+/// @group avatar
 $kendo-avatar-line-height: null !default;
 
 
+/// The small size of the Avatar.
+/// @group avatar
 $kendo-avatar-sm-size: null !default;
+/// The medium size of the Avatar.
+/// @group avatar
 $kendo-avatar-md-size: null !default;
+/// The large size of the Avatar.
+/// @group avatar
 $kendo-avatar-lg-size: null !default;
 
 /// The sizes map of the Avatar.
