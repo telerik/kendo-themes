@@ -17,7 +17,7 @@ export function DevBar() {
     const [searchOpen, setSearchOpen] = useState(false);
     const wrapperRef = useRef<HTMLDivElement>(null);
 
-    const themes = useMemo(() => Object.keys(swatchMap).sort(), []);
+    const themes = useMemo(() => Object.keys(swatchMap).filter(t => t !== 'classic').sort(), []);
     const swatches = useMemo(() => {
         const list = (swatchMap[params.theme] || []).filter(s => s !== 'all').sort();
         return ['all', ...list];
