@@ -30,4 +30,5 @@ For HTML specs, templates, visual tests, or accessibility, use the `manage-specs
 ## Before finishing
 
 - Run the validation in [references/context.md](references/context.md#validation).
-- After variable changes, run `npm run docs` and commit the regenerated docs separately as `chore: regen docs`.
+- Variable docs (SassDoc) are written in core only. Theme variables that exist in core carry no `///` block; only theme-only variables are documented in the theme.
+- After variable changes, run `npm run docs` and commit the regenerated docs separately as `chore: regen docs`. Core generates no markdown docs — only the themes do.

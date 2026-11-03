@@ -2,64 +2,26 @@
 
 // Agent Response
 
-/// The gap between the icon and the content of the AgentStep head and content row.
-/// @group agent-response
 $kendo-agent-step-gap: k-spacing(1.5) !default;
-/// The vertical padding of the AgentStep head.
-/// @group agent-response
 $kendo-agent-step-padding-y: k-spacing(2) !default;
-/// The horizontal padding of the AgentStep head.
-/// @group agent-response
 $kendo-agent-step-padding-x: k-spacing(0.5) !default;
-/// The end padding of the AgentStep head.
-/// @group agent-response
 $kendo-agent-step-padding-end: k-spacing(2) !default;
-/// The border radius of the AgentStep head.
-/// @group agent-response
 $kendo-agent-step-border-radius: k-border-radius(md) !default;
-/// The top margin of the AgentStep icon.
-/// @group agent-response
 $kendo-agent-step-icon-margin-top: k-spacing(0.5) !default;
-/// The text color of the added lines count in the AgentStep diffstat.
-/// @group agent-response
 $kendo-agent-step-added-color: k-color(success-on-surface) !default;
-/// The text color of the removed lines count in the AgentStep diffstat.
-/// @group agent-response
 $kendo-agent-step-removed-color: k-color(error-on-surface) !default;
-/// The font size of the AgentStep label, secondary text, and diffstat.
-/// @group agent-response
 $kendo-agent-step-font-size: var(--kendo-font-size-sm) !default;
-/// The font size of the AgentStep body content.
-/// @group agent-response
 $kendo-agent-step-body-font-size: var(--kendo-font-size-sm) !default;
-/// The box shadow of the focused AgentStep head.
-/// @group agent-response
 $kendo-agent-step-focus-shadow: inset 0 0 2px 0 k-color(border) !default;
 
-/// The gap between the icon column and the content of the Thought.
-/// @group agent-response
 $kendo-thought-gap: k-spacing(1.5) !default;
-/// The gap in the icon column of the Thought.
-/// @group agent-response
 $kendo-thought-icon-col-gap: k-spacing(2) !default;
-/// The spacing between stacked Thought items.
-/// @group agent-response
 $kendo-thought-spacing: k-spacing(4) !default;
-/// The start padding of the Thought, aligning it with the AgentStep head.
-/// @group agent-response
 $kendo-thought-padding-x: k-spacing(0.5) !default;
-/// The color of the connector line between stacked Thought items.
-/// @group agent-response
 $kendo-thought-connector-color: k-color(border) !default;
 
-/// The start indent of the ToolCall body.
-/// @group agent-response
 $kendo-tool-call-indent: k-spacing(5) !default;
-/// The bottom padding of the ToolCall body.
-/// @group agent-response
 $kendo-tool-call-padding-y: k-spacing(2) !default;
-/// The border radius of the pre element in the ToolCall body.
-/// @group agent-response
 $kendo-tool-call-pre-border-radius: k-border-radius(lg) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/agent-response/_variables.scss" with (

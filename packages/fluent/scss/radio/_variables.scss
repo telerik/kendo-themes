@@ -10,12 +10,8 @@
 /// The border radius of the RadioButton.
 /// @group radio
 $kendo-radio-border-radius: var( --kendo-radio-border-radius, 50% ) !default;
-/// The border width of the RadioButton.
-/// @group radio
 $kendo-radio-border-width: var( --kendo-radio-border-width, 1px ) !default;
 
-/// The map with the different RadioButton sizes.
-/// @group radio
 $kendo-radio-sizes: (
     sm: (
         size: k-spacing(4),
@@ -37,34 +33,16 @@ $kendo-radio-sizes: (
     )
 ) !default;
 
-/// The background color of the RadioButton.
-/// @group radio
 $kendo-radio-bg: var( --kendo-radio-bg, #{k-color(surface-alt)} ) !default;
-/// The color of the RadioButton.
-/// @group radio
 $kendo-radio-text: var( --kendo-radio-text, transparent ) !default;
-/// The border color of the RadioButton.
-/// @group radio
 $kendo-radio-border: var( --kendo-radio-border, #{k-color(border-alt)} ) !default;
 
-/// The background color of the hovered RadioButton.
-/// @group radio
 $kendo-radio-hover-bg: var( --kendo-radio-hover-bg, #{$kendo-radio-bg} ) !default;
-/// The color of the hovered RadioButton.
-/// @group radio
 $kendo-radio-hover-text: var( --kendo-radio-hover-text, #{k-color(subtle)} ) !default;
-/// The border color of the hovered RadioButton.
-/// @group radio
 $kendo-radio-hover-border: var( --kendo-radio-hover-border, #{$kendo-radio-border} ) !default;
 
-/// The background color of the checked RadioButton.
-/// @group radio
 $kendo-radio-checked-bg: var( --kendo-radio-checked-bg, #{$kendo-radio-bg} ) !default;
-/// The color of the checked RadioButton.
-/// @group radio
 $kendo-radio-checked-text: var( --kendo-radio-checked-text, #{k-color(primary-on-surface)} ) !default;
-/// The border color of the checked RadioButton.
-/// @group radio
 $kendo-radio-checked-border: var( --kendo-radio-checked-border, #{k-color(primary)} ) !default;
 
 /// The background color of the checked and hovered RadioButton.
@@ -77,11 +55,7 @@ $kendo-radio-hover-checked-text: var( --kendo-radio-hover-checked-text, #{k-colo
 /// @group radio
 $kendo-radio-hover-checked-border: var( --kendo-radio-hover-checked-border, #{k-color(primary-hover)} ) !default;
 
-/// The border color of the focused RadioButton.
-/// @group radio
 $kendo-radio-focus-border: var( --kendo-radio-focus-border, #{$kendo-radio-border} ) !default;
-/// The box shadow of the focused RadioButton.
-/// @group radio
 $kendo-radio-focus-shadow: var( --kendo-radio-focus-shadow, null ) !default;
 /// The outline of the focused RadioButton.
 /// @group radio
@@ -90,56 +64,30 @@ $kendo-radio-focus-outline: var( --kendo-radio-focus-outline, 2px solid #{k-colo
 /// @group radio
 $kendo-radio-focus-outline-offset: var( --kendo-radio-focus-outline-offset, 4px ) !default;
 
-/// The background color of the disabled RadioButton.
-/// @group radio
 $kendo-radio-disabled-bg: var( --kendo-radio-disabled-bg, #{$kendo-radio-bg} ) !default;
-/// The color of the disabled RadioButton.
-/// @group radio
 $kendo-radio-disabled-text: var( --kendo-radio-disabled-text, #{color-mix(in srgb, k-color(on-app-surface) 30%, transparent)} ) !default;
-/// The border color of the disabled RadioButton.
-/// @group radio
 $kendo-radio-disabled-border: var( --kendo-radio-disabled-border, #{color-mix(in srgb, k-color(on-app-surface) 30%, transparent)} ) !default;
 
-/// The background color of the disabled and checked RadioButton.
-/// @group radio
 $kendo-radio-disabled-checked-bg: var( --kendo-radio-disabled-checked-bg, #{$kendo-radio-disabled-bg} ) !default;
-/// The color of the disabled and checked RadioButton.
-/// @group radio
 $kendo-radio-disabled-checked-text: var( --kendo-radio-disabled-checked-text, #{$kendo-radio-disabled-text} ) !default;
-/// The border color of the disabled and checked RadioButton.
-/// @group radio
 $kendo-radio-disabled-checked-border: var( --kendo-radio-disabled-checked-border, #{$kendo-radio-disabled-border} ) !default;
 
-/// The color of the invalid RadioButton.
-/// @group radio
 $kendo-radio-invalid-text: var( --kendo-radio-invalid-text, #{k-color(error-on-surface)} ) !default;
-/// The border color of the invalid RadioButton.
-/// @group radio
 $kendo-radio-invalid-border: var( --kendo-radio-invalid-border, #{k-color(error-on-surface)} ) !default;
 
 
 // Radio indicator
 
-/// The type of the RadioButton indicator.
-/// @group radio
 $kendo-radio-indicator-type: pseudo !default;
 
 /// The border radius of the RadioButton indicator.
 /// @group radio
 $kendo-radio-indicator-border-radius: var( --kendo-radio-indicator-border-radius, 50% ) !default;
 
-/// The glyph font family of the RadioButton indicator.
-/// @group radio
 $kendo-radio-glyph-font-family: var( --kendo-radio-glyph-font-family, "WebComponentsIcons", monospace ) !default;
-/// The glyph of the RadioButton indicator.
-/// @group radio
 $kendo-radio-checked-glyph: "\e308" !default;
 
-/// The image of the checked RadioButton indicator.
-/// @group radio
 $kendo-radio-checked-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#0078d4'/></svg>") ) !default;
-/// The image of the disabled and checked RadioButton indicator.
-/// @group radio
 $kendo-radio-disabled-checked-image: var( --kendo-radio-disabled-checked-image, null ) !default;
 
 
@@ -152,14 +100,8 @@ $kendo-radio-label-spacing: var( --kendo-radio-label-spacing, #{k-spacing(2)} ) 
 
 // Radio list
 
-/// The horizontal list item margin of the RadioButton.
-/// @group radio
 $kendo-radio-list-spacing: var( --kendo-radio-list-spacing, #{k-spacing(4)} ) !default;
-/// The horizontal list item padding of the RadioButton.
-/// @group radio
 $kendo-radio-list-item-padding-x: var( --kendo-radio-list-item-padding-x, #{k-spacing(0)} ) !default;
-/// The vertical list item padding of the RadioButton.
-/// @group radio
 $kendo-radio-list-item-padding-y: var( --kendo-radio-list-item-padding-y, #{$kendo-list-md-item-padding-y} ) !default;
 /// The gap between the list items of the RadioButton.
 /// @group radio
@@ -167,16 +109,9 @@ $kendo-radio-list-item-gap: var( --kendo-radio-list-item-gap, #{k-spacing(1)} ) 
 
 // Radio ripple
 
-/// The background color of the RadioButton ripple.
-/// @group radio
 $kendo-radio-ripple-bg: var( --kendo-radio-ripple-bg, #{k-color(primary)} ) !default;
-/// The opacity of the RadioButton ripple.
-/// @group radio
 $kendo-radio-ripple-opacity: var( --kendo-radio-ripple-opacity, .25 ) !default;
 
-/// The default size of the RadioButton.
-/// @group radio
-/// @role default
 $kendo-radio-default-size: "md" !default;
 
 @forward "@progress/kendo-theme-core/scss/components/radio/_variables.scss" with (

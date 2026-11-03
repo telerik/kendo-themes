@@ -1,9 +1,20 @@
 // DateTime
+/// The default size of the DateTimePicker.
+/// @group date-time-picker
+/// @role default
 $kendo-datetime-default-size: null !default;
 
+/// The width of the DateTimePicker.
+/// @group date-time-picker
 $kendo-datetime-width: null !default;
+/// The width of the small DateTimePicker.
+/// @group date-time-picker
 $kendo-datetime-sm-width: null !default;
+/// The width of the medium DateTimePicker.
+/// @group date-time-picker
 $kendo-datetime-md-width: null !default;
+/// The width of the large DateTimePicker.
+/// @group date-time-picker
 $kendo-datetime-lg-width: null !default;
 
 /// The sizes map of the DateTimePicker.

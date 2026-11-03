@@ -1,7 +1,5 @@
 @use "sass:map";
 
-/// The base spacing step used to generate the Spacing map.
-/// @group spacing
 $kendo-spacing-base: 0.25rem !default;
 
 $_default-spacing: (
@@ -41,7 +39,5 @@ $_default-spacing: (
     24: calc(24 * var(--kendo-spacing-base)),
 ) !default;
 
-/// The global default Spacing map.
-/// @group spacing
 $kendo-spacing: $_default-spacing !default;
 $kendo-spacing: map.merge($_default-spacing, $kendo-spacing);
