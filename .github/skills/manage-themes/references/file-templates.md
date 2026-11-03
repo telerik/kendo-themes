@@ -9,20 +9,52 @@ Detailed boilerplate templates for each file in the component scaffold. Used whe
 ```scss
 // {ComponentName}
 
+/// The default theme color of the {ComponentName}.
+/// @group {component}
+/// @role default
 $kendo-{component}-default-theme-color: null !default;
+/// The default fill mode of the {ComponentName}.
+/// @group {component}
+/// @role default
 $kendo-{component}-default-fill-mode: null !default;
+/// The default roundness of the {ComponentName}.
+/// @group {component}
+/// @role default
 $kendo-{component}-default-roundness: null !default;
+/// The default size of the {ComponentName}.
+/// @group {component}
+/// @role default
 $kendo-{component}-default-size: null !default;
 
+/// The width of the border around the {ComponentName}.
+/// @group {component}
 $kendo-{component}-border-width: null !default;
+/// The border radius of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-border-radius: null !default;
+/// The horizontal padding of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-padding-x: null !default;
+/// The vertical padding of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-padding-y: null !default;
+/// The font family of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-font-family: null !default;
+/// The font size of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-font-size: null !default;
+/// The line height of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-line-height: null !default;
+/// The background color of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-bg: null !default;
+/// The text color of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-text: null !default;
+/// The border color of the {ComponentName}.
+/// @group {component}
 $kendo-{component}-border: null !default;
 ```
 
@@ -88,61 +120,32 @@ $kendo-{component}-border: null !default;
 @use "../core/_index.scss" as *;
 
 // {ComponentName}
+// No SassDoc here: it is inherited from core. Document only variables that exist in this theme alone.
 
-/// The default theme color of the {ComponentName}.
-/// @group {component}
-/// @role default
 $kendo-{component}-default-theme-color: "base" !default;
 
-/// The default fill mode of the {ComponentName}.
-/// @group {component}
-/// @role default
 $kendo-{component}-default-fill-mode: "solid" !default;
 
-/// The default roundness of the {ComponentName}.
-/// @group {component}
-/// @role default
 $kendo-{component}-default-roundness: "md" !default;
 
-/// The default size of the {ComponentName}.
-/// @group {component}
-/// @role default
 $kendo-{component}-default-size: "md" !default;
 
-/// The width of the border around the {ComponentName}.
-/// @group {component}
 $kendo-{component}-border-width: 1px !default;
 
-/// The horizontal padding of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-padding-x: k-spacing(2) !default;
 
-/// The vertical padding of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-padding-y: k-spacing(1) !default;
 
-/// The font family of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-font-family: var( --kendo-font-family, inherit ) !default;
 
-/// The font size of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// The line height of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-line-height: var( --kendo-line-height, normal ) !default;
 
-/// The background color of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-bg: k-color(surface-alt) !default;
 
-/// The text color of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-text: k-color(on-app-surface) !default;
 
-/// The border color of the {ComponentName}.
-/// @group {component}
 $kendo-{component}-border: k-color(border) !default;
 
 

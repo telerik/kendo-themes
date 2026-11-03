@@ -27,12 +27,14 @@ Use the skills in `.github/skills/` for multi-step work:
 ## Package rules
 
 **core** (`packages/core/scss/`)
-- Component variables are `$kendo-{component}-*: null !default;` — never concrete values. No SassDoc on them, except the `-sizes` / `-theme-colors` maps.
+- Component variables are `$kendo-{component}-*: null !default;` — never concrete values. **Core is the single home of variable docs:** every variable gets SassDoc (`/// The {property} of the {Component}.` + `/// @group {component}`), including the `-sizes` / `-theme-colors` maps and the module maps in `scss/core/` of themes (`$kendo-colors`, `$kendo-spacing`, …).
 - Components live in `components/{component}/` with `_variables.scss`, `_layout.scss` (`kendo-{component}--layout-base()`), `_theme.scss` (`kendo-{component}--theme-base()`); no `_index.scss`.
 - Every public `k-*` function has SassDoc with `@group functions` (unit tests read it). Don't change token function signatures.
 
 **Themes** (`packages/{theme}/scss/{component}/` — no `components/` level)
-- Every variable has `!default`, SassDoc (`/// The {property} of the {Component}.` + `/// @group {component}`), and an entry in the `@forward … with ( … )` map at the bottom of the file — a missing entry silently leaves core's value `null`.
+- Every variable has `!default` and an entry in the `@forward … with ( … )` map at the bottom of the file — a missing entry silently leaves core's value `null`.
+- **No SassDoc on variables that exist in core** — `scripts/sassdoc.js` gives them core's description and group, and keeps the theme's value. Add SassDoc in a theme only for a variable that exists in that theme alone. If 2+ themes need it, declare it in core as `null` with SassDoc instead.
+- To reword a description, edit it in core — never copy it into themes.
 - Use token functions for values: `k-spacing()`, `k-color()`, `k-border-radius()`, `k-elevation()`.
 - Fluent: leaf values (sizes, spacing, colors, borders) are wrapped as `var( --kendo-{variable-name}, {value} )`; `default-*` options, aliases, and derived values are not — match the surrounding variables.
 - `scss/index.scss` lists components in dependency order — never alphabetize.
@@ -53,7 +55,7 @@ Use the skills in `.github/skills/` for multi-step work:
 npm ci                      # Install
 npm run sass                # Compile all themes → packages/*/dist/all.css
 npm run sass:dist           # Compile all swatches
-npm run docs                # Generate SassDoc docs (run after changing SCSS variables)
+npm run docs                # Generate the theme customization docs (core only produces metadata; run `npm run sass:dist` first on a fresh checkout)
 npm run lint                # ESLint + Stylelint
 npm run test:units          # Vitest unit tests (run `npm run docs` first)
 npm run test:a11y [comp]    # axe-core WCAG validation

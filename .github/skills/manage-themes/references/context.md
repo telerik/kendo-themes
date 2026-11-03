@@ -33,7 +33,7 @@ From a component name (e.g., `smart-badge`):
 ## Rules
 
 1. **Core holds no values.** Core variables are `$kendo-*: null !default;`; core mixins only reference `$kendo-*` variables.
-2. **Every theme variable has `!default` and SassDoc** (see [variables.md](variables.md#sassdoc-rules)). Core variables have no SassDoc, except the `sizes` / `theme-colors` maps.
+2. **SassDoc lives in core.** Every core variable has SassDoc (see [variables.md](variables.md#sassdoc-rules)). Theme variables have `!default` but **no SassDoc**, unless the variable exists in that theme only. Themes inherit the description and group from core when docs are generated.
 3. **The `@forward` map must be complete.** Each theme `_variables.scss` ends with:
    ```scss
    @forward "@progress/kendo-theme-core/scss/components/{component}/_variables.scss" with (
@@ -55,6 +55,6 @@ Copy patterns from a component of similar complexity: simple `badge`, `chip`, `a
 ```bash
 npm run lint:styles 2>&1
 npm run sass 2>&1
-npm run docs 2>&1          # after variable changes; commit separately as `chore: regen docs`
+npm run docs 2>&1          # after variable changes (needs `npm run sass:dist` first); commit separately as `chore: regen docs`. Core generates no markdown — only the theme docs.
 npm run test:units 2>&1    # after variable or structure changes (needs docs first)
 ```
