@@ -30307,8 +30307,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-bg, k-color(app-surface) )</code></td>
-    <td><code>var(--kendo-scheduler-bg, var(--kendo-color-app-surface))</code></td>
+    <td><code>var( --kendo-scheduler-bg, k-color(surface) )</code></td>
+    <td><code>var(--kendo-scheduler-bg, var(--kendo-color-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler.</div></div>
@@ -30857,8 +30857,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-nonwork-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-nonwork-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-scheduler-nonwork-bg, var(--kendo-color-surface))</code></td>
+    <td><code>var( --kendo-scheduler-nonwork-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-scheduler-nonwork-bg, var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the non-working hours in the Scheduler.</div></div>
@@ -30877,8 +30877,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-othermonth-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-scheduler-othermonth-bg, k-color(surface) )</code></td>
-    <td><code>var(--kendo-scheduler-othermonth-bg, var(--kendo-color-surface))</code></td>
+    <td><code>var( --kendo-scheduler-othermonth-bg, k-color(app-surface) )</code></td>
+    <td><code>var(--kendo-scheduler-othermonth-bg, var(--kendo-color-app-surface))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the preceding/subsequent month cells in the Calendar.</div></div>
@@ -30892,6 +30892,26 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the preceding/subsequent month cells in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-readonly-cell-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-readonly-cell-bg, k-color(base-subtle) )</code></td>
+    <td><code>var(--kendo-scheduler-readonly-cell-bg, var(--kendo-color-base-subtle))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the read-only cells in the Scheduler.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-readonly-cell-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-scheduler-readonly-cell-text, null )</code></td>
+    <td><code>var(--kendo-scheduler-readonly-cell-text, )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the read-only cells in the Scheduler.</div></div>
     </td>
 </tr>
 <tr>

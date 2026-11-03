@@ -590,8 +590,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-nonwork-bg</td>
     <td>String</td>
-    <td><code>k-color(base)</code></td>
-    <td><code>var(--kendo-color-base)</code></td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the non-working hours in the Scheduler.</div></div>
@@ -625,6 +625,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the preceding/subsequent month cells in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-readonly-cell-bg</td>
+    <td>String</td>
+    <td><code>k-color(base-subtle)</code></td>
+    <td><code>var(--kendo-color-base-subtle)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the read-only cells in the Scheduler.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-readonly-cell-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the read-only cells in the Scheduler.</div></div>
     </td>
 </tr>
 <tr>
