@@ -418,6 +418,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-slider-draghandle-transition-speed</td>
+    <td>String</td>
+    <td><code>$kendo-slider-thumb-transition-speed</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-speed, var(--kendo-duration-quick))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-slider-thumb-transition-function</td>
     <td>String</td>
     <td><code>var( --kendo-slider-thumb-transition-function, k-easing(decelerate) )</code></td>
@@ -425,6 +435,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider thumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-slider-draghandle-transition-function</td>
+    <td>String</td>
+    <td><code>$kendo-slider-thumb-transition-function</code></td>
+    <td><code>var(--kendo-slider-thumb-transition-function, var(--kendo-easing-decelerate))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider drag handle.</div></div>
     </td>
 </tr>
 <tr>

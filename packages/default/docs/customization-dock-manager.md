@@ -204,7 +204,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-spacing-2\.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabbed pane in the DockManager component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the tabbed pane in the DockManager component.</div></div>
     </td>
 </tr>
 <tr>

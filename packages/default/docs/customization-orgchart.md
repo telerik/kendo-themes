@@ -284,7 +284,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-color-subtle)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>

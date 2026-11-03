@@ -704,7 +704,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-pivotgrid-treeview-padding-x, calc(var(--kendo-pivotgrid-spacer, var(--kendo-spacing-3)) / 2))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid treeview.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -714,7 +714,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-pivotgrid-treeview-padding-y, var(--kendo-spacing-0))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid treeview.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid TreeView.</div></div>
     </td>
 </tr>
 <tr>

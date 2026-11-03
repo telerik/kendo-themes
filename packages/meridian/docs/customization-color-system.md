@@ -630,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>Color</td>
     <td>series</td>
-    <td colspan="2">The base series color variable. Series A equals this value.</td>
+    <td colspan="2">The base series color variable.</td>
 </tr>
 <tr>
     <td>Color</td>

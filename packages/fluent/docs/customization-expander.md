@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-expander-line-height, var(--kendo-line-height))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hine height of the ExpansionPanel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ExpansionPanel.</div></div>
     </td>
 </tr>
 <tr>
