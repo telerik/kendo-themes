@@ -139,37 +139,11 @@ $default-transitions: (
     ),
 ) !default;
 
-/// The global map of motion easing tokens.
-/// @group motion
 $kendo-easings: $default-easings !default;
 $kendo-easings: map.merge($default-easings, $kendo-easings);
 
-/// The global map of motion duration tokens.
-/// @group motion
 $kendo-durations: $default-durations !default;
 $kendo-durations: map.merge($default-durations, $kendo-durations);
 
-/// The global map of motion transition tokens.
-/// @group motion
-///
-/// @subgroup {fast}
-/// [instant, rapid, snappy, energetic]
-/// Speed and Responsiveness
-///
-/// @subgroup {expressive}
-/// [emphasis, bouncy, pulse, flip]
-/// Personality and Playfulness
-///
-/// @subgroup {calm}
-/// [subtle, gentle, settle, smooth, fluid, deliberate]
-/// Subtle & Natural
-///
-/// @subgroup {visibility}
-/// [slide-in, slide-out, fade-in, fade-out, enter, exit]
-/// Visibility & Movement Change
-///
-/// @subgroup {size}
-/// [scale-in, scale-out, grow, shrink, expand, collapse]
-/// Size & Scale Adjustments
 $kendo-transitions: $default-transitions !default;
 $kendo-transitions: map.merge($default-transitions, $kendo-transitions);

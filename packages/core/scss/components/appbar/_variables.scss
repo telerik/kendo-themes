@@ -1,22 +1,51 @@
 @use "../../color-system/_swatch.scss" as *;
 
 // AppBar
+/// The default theme color of the AppBar.
+/// @group appbar
+/// @role default
 $kendo-appbar-default-theme-color: null !default;
 
+/// The horizontal margin of the AppBar.
+/// @group appbar
 $kendo-appbar-margin-x: null !default;
+/// The vertical margin of the AppBar.
+/// @group appbar
 $kendo-appbar-margin-y: null !default;
+/// The horizontal padding of the AppBar.
+/// @group appbar
 $kendo-appbar-padding-x: null !default;
+/// The vertical padding of the AppBar.
+/// @group appbar
 $kendo-appbar-padding-y: null !default;
+/// The width of the border around the AppBar.
+/// @group appbar
 $kendo-appbar-border-width: null !default;
+/// The border radius of the AppBar.
+/// @group appbar
 $kendo-appbar-border-radius: null !default;
+/// The z-index of the AppBar.
+/// @group appbar
 $kendo-appbar-zindex: null !default;
+/// The font family of the AppBar.
+/// @group appbar
 $kendo-appbar-font-family: null !default;
+/// The font size of the AppBar.
+/// @group appbar
 $kendo-appbar-font-size: null !default;
+/// The line height of the AppBar.
+/// @group appbar
 $kendo-appbar-line-height: null !default;
 
+/// The spacing between the AppBar sections.
+/// @group appbar
 $kendo-appbar-gap: null !default;
 
+/// The box shadow of the AppBar.
+/// @group appbar
 $kendo-appbar-box-shadow: null !default;
+/// The box shadow of the AppBar with bottom position.
+/// @group appbar
 $kendo-appbar-bottom-box-shadow: null !default;
 
 /// The theme colors map of the AppBar.
