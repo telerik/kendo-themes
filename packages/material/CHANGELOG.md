@@ -1,3 +1,21 @@
+## 14.9.0-dev.1 (2026-11-04)
+
+This was a version bump only for @progress/kendo-theme-material to align it with other projects, there were no code changes.
+
+## 14.9.0-dev.0 (2026-11-03)
+
+### 🚀 Features
+
+- **scheduler:** add readonly cell state ([58ea4d90b2](https://github.com/telerik/kendo-themes/commit/58ea4d90b2))
+
+### 🩹 Fixes
+
+- **material:** use xxl border radius for popup ([6af6858ede](https://github.com/telerik/kendo-themes/commit/6af6858ede))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.8.0 (2026-11-02)
 
 ### 🚀 Features

@@ -12,6 +12,8 @@
 
     .k-datainsights-composer {
         container-type: inline-size;
+        width: 100%;
+        min-width: 0;
     }
 
     .k-datainsights-composer .k-prompt-box {
@@ -40,7 +42,6 @@
         border-radius: $kendo-datainsights-composer-border-radius;
         border: $kendo-datainsights-composer-border-width solid;
         padding: k-spacing(6);
-        height: 100%;
 
         // MessageBox ships with its own bottom margin (--kendo-spacing-4, 16px), which
         // Stacked on top of this card's 24px gap. The gap alone should control spacing.
