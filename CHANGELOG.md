@@ -1,3 +1,9 @@
+## 14.9.0-dev.2 (2026-11-04)
+
+### 🚀 Features
+
+- **html:** add menu and list item templates ([60e4a3bd69](https://github.com/telerik/kendo-themes/commit/60e4a3bd69))
+
 ## 14.9.0-dev.1 (2026-11-04)
 
 ### 🩹 Fixes
