@@ -1,3 +1,14 @@
+## 14.9.0-dev.1 (2026-11-04)
+
+### 🩹 Fixes
+
+- **datainsights-composer:** fix composer sizing in host layouts ([c25eee1195](https://github.com/telerik/kendo-themes/commit/c25eee1195))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.9.0-dev.0 (2026-11-03)
 
 ### 🚀 Features
