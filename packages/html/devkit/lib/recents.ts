@@ -6,6 +6,7 @@
 export interface RecentDemo {
     component: string;
     test: string;
+    kind?: 'test' | 'template';
 }
 
 const KEY = 'devkit:recents';
@@ -22,11 +23,11 @@ export function getRecents(): RecentDemo[] {
     }
 }
 
-export function pushRecent(component: string, test: string): void {
+export function pushRecent(component: string, test: string, kind: 'test' | 'template' = 'test'): void {
     try {
         const next = [
-            { component, test },
-            ...getRecents().filter(r => !(r.component === component && r.test === test)),
+            { component, test, kind },
+            ...getRecents().filter(r => !(r.component === component && r.test === test && (r.kind ?? 'test') === kind)),
         ].slice(0, LIMIT);
         localStorage.setItem(KEY, JSON.stringify(next));
     } catch {
