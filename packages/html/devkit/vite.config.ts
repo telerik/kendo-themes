@@ -101,32 +101,43 @@ function legacyRedirectPlugin(): Plugin {
 }
 
 /**
- * Generates the `virtual:test-routes` module — a static map of
- * `{ [component]: testName[] }` derived from `packages/html/src` at startup.
- * Also watches for new/deleted test files and invalidates the virtual module
- * so the dev server picks them up without a restart.
+ * Generates static maps of tests and templates derived from `packages/html/src`.
+ * Watches both directories and invalidates the virtual module when files change.
  */
 function testRoutesPlugin(): Plugin {
     const virtualId = 'virtual:test-routes';
     const resolvedId = `\0${virtualId}`;
 
     function buildRoutes(): string {
-        const files = globSync('packages/html/src/**/tests/*.tsx', {
+        const testFiles = globSync('packages/html/src/**/tests/*.tsx', {
+            cwd: repoRoot,
+            posix: true,
+        });
+        const templateFiles = globSync('packages/html/src/**/templates/*.tsx', {
             cwd: repoRoot,
             posix: true,
         });
 
         const routes: Record<string, string[]> = {};
-        for (const file of files) {
-            const m = file.match(/packages\/html\/src\/([^/]+)\/tests\/([^/]+)\.tsx$/);
-            if (m) {
-                const [, component, test] = m;
-                if (!routes[component]) routes[component] = [];
-                routes[component].push(test);
+        const templates: Record<string, string[]> = {};
+        for (const [files, target, folder] of [
+            [testFiles, routes, 'tests'],
+            [templateFiles, templates, 'templates'],
+        ] as const) {
+            for (const file of files) {
+                const m = file.match(new RegExp(`packages/html/src/([^/]+)/${folder}/([^/]+)\\.tsx$`));
+                if (!m) continue;
+
+                const [, component, name] = m;
+                (target[component] ??= []).push(name);
             }
         }
 
-        return `export const testRoutes = ${JSON.stringify(routes)};`;
+        for (const names of [...Object.values(routes), ...Object.values(templates)]) {
+            names.sort();
+        }
+
+        return `export const testRoutes = ${JSON.stringify(routes)}; export const templateRoutes = ${JSON.stringify(templates)};`;
     }
 
     return {
@@ -140,7 +151,8 @@ function testRoutesPlugin(): Plugin {
         },
         configureServer(server) {
             const testGlob = resolve(repoRoot, 'packages/html/src/**/tests/*.tsx');
-            server.watcher.add(testGlob);
+            const templateGlob = resolve(repoRoot, 'packages/html/src/**/templates/*.tsx');
+            server.watcher.add([testGlob, templateGlob]);
 
             const invalidate = () => {
                 const mod = server.moduleGraph.getModuleById(resolvedId);
@@ -150,9 +162,13 @@ function testRoutesPlugin(): Plugin {
 
             const isTestFile = (f: string) =>
                 f.replace(/\\/g, '/').match(/packages\/html\/src\/[^/]+\/tests\/[^/]+\.tsx$/) !== null;
+            const isTemplateFile = (f: string) =>
+                f.replace(/\\/g, '/').match(/packages\/html\/src\/[^/]+\/templates\/[^/]+\.tsx$/) !== null;
 
             server.watcher.on('add', (f) => { if (isTestFile(f)) invalidate(); });
             server.watcher.on('unlink', (f) => { if (isTestFile(f)) invalidate(); });
+            server.watcher.on('add', (f) => { if (isTemplateFile(f)) invalidate(); });
+            server.watcher.on('unlink', (f) => { if (isTemplateFile(f)) invalidate(); });
         },
     };
 }

@@ -1016,6 +1016,41 @@
     color: var(--dk-accent-text);
 }
 
+.devkit-preview-kind {
+    padding: 1px 6px;
+    border: 1px solid var(--dk-hairline);
+    border-radius: 99px;
+    color: var(--dk-text-muted);
+    font-size: 10px;
+    line-height: 1.4;
+    margin-inline-start: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.devkit-test-group {
+    display: flex;
+    align-items: center;
+    gap: var(--dk-space-2);
+    margin-top: var(--dk-space-2);
+    padding: 4px var(--dk-space-2);
+    color: var(--dk-text-muted);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.devkit-test-group:first-child {
+    margin-top: 0;
+}
+
+.devkit-test-group-count {
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.7;
+}
+
 .devkit-no-results {
     padding: 56px 0;
     color: var(--dk-text-dim);
