@@ -107,8 +107,8 @@
 .tp .k-draghandle::before {
     content: "";
     position: absolute;
-    inset-block-start: 50%;
-    inset-inline-start: 50%;
+    top: 50%;
+    left: 50%;
     width: var(--tp-hit);
     height: var(--tp-hit);
     translate: -50% -50%;
