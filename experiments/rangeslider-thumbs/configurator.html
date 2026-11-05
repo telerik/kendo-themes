@@ -96,6 +96,7 @@
             link.id = 'theme-css';
             // keep thumbs.css after the theme so overrides still win
             document.head.append(document.querySelector('link[href="thumbs.css"]'));
+            document.documentElement.dataset.theme = name;
             syncAccent();
             status.textContent = `Theme: ${themeSelect.selectedOptions[0].text}`;
             history.replaceState(null, '', `?theme=${name}`);
@@ -114,6 +115,7 @@
         themeSelect.value = initial;
         setTheme(initial);
     } else {
+        document.documentElement.dataset.theme = 'meridian';
         document.getElementById('theme-css').addEventListener('load', syncAccent);
         syncAccent();
     }

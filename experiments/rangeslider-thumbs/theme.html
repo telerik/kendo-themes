@@ -7,6 +7,7 @@
     <script>
         const params = new URLSearchParams(location.search);
         const theme = ['default', 'bootstrap', 'material', 'fluent'].includes(params.get('theme')) ? params.get('theme') : 'default';
+        document.documentElement.dataset.theme = theme;
         document.write(`<link rel="stylesheet" href="../../packages/${theme}/dist/all.css">`);
     </script>
     <link rel="stylesheet" href="thumbs.css">
