@@ -154,7 +154,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-color-secondary-subtle-hover)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Bubble.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Bubble.</div></div>
     </td>
 </tr>
 <tr>

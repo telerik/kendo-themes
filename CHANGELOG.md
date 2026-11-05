@@ -1,3 +1,54 @@
+## 14.9.0-dev.3 (2026-11-05)
+
+### 🚀 Features
+
+- **avatar:** add xs and xl sizes and align avatar size scale across themes ([7925d5eab1](https://github.com/telerik/kendo-themes/commit/7925d5eab1))
+
+## 14.9.0-dev.2 (2026-11-04)
+
+### 🚀 Features
+
+- **html:** add menu and list item templates ([60e4a3bd69](https://github.com/telerik/kendo-themes/commit/60e4a3bd69))
+
+## 14.9.0-dev.1 (2026-11-04)
+
+### 🩹 Fixes
+
+- **datainsights-composer:** fix composer sizing in host layouts ([c25eee1195](https://github.com/telerik/kendo-themes/commit/c25eee1195))
+
+## 14.9.0-dev.0 (2026-11-03)
+
+### 🚀 Features
+
+- **scheduler:** add readonly cell state ([58ea4d90b2](https://github.com/telerik/kendo-themes/commit/58ea4d90b2))
+
+### 🩹 Fixes
+
+- **grid:** inherit popup radius in tabbed column menu ([0160f8e7b1](https://github.com/telerik/kendo-themes/commit/0160f8e7b1))
+- **material:** use xxl border radius for popup ([6af6858ede](https://github.com/telerik/kendo-themes/commit/6af6858ede))
+
+## 14.8.0 (2026-11-02)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### 🩹 Fixes
+
+- **chip:** rename $kendo-chip-solid-shadow to $kendo-chip-solid-focus-shadow ([#3462](https://github.com/telerik/kendo-themes/issues/3462))
+- **fluent:** use small font size and line height in small-sized components ([d82288c78b](https://github.com/telerik/kendo-themes/commit/d82288c78b))
+- **grid:** fix border color on focus in Grid component ([ba0d6b83c9](https://github.com/telerik/kendo-themes/commit/ba0d6b83c9))
+- **html:** allow children to be rendered inside Suggestion ([f88a04227b](https://github.com/telerik/kendo-themes/commit/f88a04227b))
+- **message-box:** distinguish inverse emphasis in dark swatch ([6d3ed2531c](https://github.com/telerik/kendo-themes/commit/6d3ed2531c))
+- **message-box:** improve secondary emphasis contrast ([27fefe55e3](https://github.com/telerik/kendo-themes/commit/27fefe55e3))
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+## 14.7.1-dev.7 (2026-11-02)
+
+### 🩹 Fixes
+
+- **chip:** rename $kendo-chip-solid-shadow to $kendo-chip-solid-focus-shadow ([#3462](https://github.com/telerik/kendo-themes/issues/3462))
+
 ## 14.7.1-dev.6 (2026-10-30)
 
 ### 🩹 Fixes

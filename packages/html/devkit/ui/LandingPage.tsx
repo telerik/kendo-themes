@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useMemo, useState } from 'react';
-import { testRoutes } from 'virtual:test-routes';
+import { templateRoutes, testRoutes } from 'virtual:test-routes';
 import { DevKitProvider, useDevKit } from '../context';
 import { fuzzyMatch } from '../lib/fuzzy';
 import { themeQuery } from '../lib/theme';
@@ -9,15 +9,16 @@ import { Highlight } from './Highlight';
 import { ChevronIcon, KendoLogo, SearchIcon } from './icons';
 import '../devkit.css';
 
-interface MatchedTest {
+interface MatchedPreview {
     test: string;
+    kind: 'test' | 'template';
     matched: number[];
 }
 
 interface MatchedComponent {
     component: string;
     componentMatched: number[];
-    tests: MatchedTest[];
+    previews: MatchedPreview[];
 }
 
 const RETURN_COMPONENT_KEY = 'kendo-themes-dev:return-component';
@@ -64,31 +65,48 @@ function LandingPageContent() {
     const q = search.trim();
 
     const components = useMemo<MatchedComponent[]>(() => {
-        return Object.entries(testRoutes)
-            .map(([component, tests]) => {
+        const componentsWithPreviews = new Set([
+            ...Object.keys(testRoutes),
+            ...Object.keys(templateRoutes),
+        ]);
+        return [...componentsWithPreviews]
+            .map(component => {
+                const tests = testRoutes[component] ?? [];
+                const templates = templateRoutes[component] ?? [];
                 const compRes = q ? fuzzyMatch(q, component) : { score: 0, matched: [] };
-                const sorted = [...tests].sort();
+                const previews: MatchedPreview[] = [
+                    ...templates.map(test => ({ test, kind: 'template' as const, matched: [] })),
+                    ...tests.map(test => ({ test, kind: 'test' as const, matched: [] })),
+                ];
 
-                // A component-name match surfaces all its tests; otherwise filter per test.
-                const matchedTests: MatchedTest[] = compRes
-                    ? sorted.map(test => ({ test, matched: [] }))
-                    : sorted
-                          .map(test => ({ test, res: fuzzyMatch(q, test) }))
-                          .filter((x): x is { test: string; res: NonNullable<typeof x.res> } => x.res !== null)
-                          .map(x => ({ test: x.test, matched: x.res.matched }));
+                // A component-name match surfaces all its previews; otherwise filter by name.
+                const matchedPreviews = compRes
+                    ? previews
+                    : previews.flatMap(preview => {
+                          const result = fuzzyMatch(q, preview.test);
+                          return result ? [{ ...preview, matched: result.matched }] : [];
+                      });
 
                 return {
                     component,
                     componentMatched: compRes?.matched ?? [],
-                    tests: matchedTests,
+                    previews: matchedPreviews,
                 };
             })
-            .filter(c => c.tests.length > 0)
+            .filter(c => c.previews.length > 0)
             .sort((a, b) => a.component.localeCompare(b.component));
     }, [q]);
 
     const totalTests = useMemo(
         () => Object.values(testRoutes).reduce((sum, tests) => sum + tests.length, 0),
+        []
+    );
+    const totalTemplates = useMemo(
+        () => Object.values(templateRoutes).reduce((sum, templates) => sum + templates.length, 0),
+        []
+    );
+    const totalComponents = useMemo(
+        () => new Set([...Object.keys(testRoutes), ...Object.keys(templateRoutes)]).size,
         []
     );
 
@@ -126,8 +144,8 @@ function LandingPageContent() {
                 <KendoLogo className="devkit-landing-logo" />
                 <span className="devkit-landing-title">Kendo Themes Dev</span>
                 <span className="devkit-landing-stats">
-                    <strong>{Object.keys(testRoutes).length}</strong> components ·{' '}
-                    <strong>{totalTests}</strong> tests
+                    <strong>{totalComponents}</strong> components ·{' '}
+                    <strong>{totalTests + totalTemplates}</strong> previews
                 </span>
             </header>
 
@@ -137,7 +155,7 @@ function LandingPageContent() {
                     <input
                         className="devkit-landing-search-input"
                         type="search"
-                        placeholder="Filter components or tests…"
+                        placeholder="Filter components or previews…"
                         value={search}
                         onChange={e => setSearch(e.target.value)}
                         aria-label="Filter components"
@@ -153,7 +171,7 @@ function LandingPageContent() {
                     </div>
                 ) : (
                     <div className="devkit-acc-list">
-                        {components.map(({ component, componentMatched, tests }) => {
+                        {components.map(({ component, componentMatched, previews }) => {
                             const isOpen = q ? true : open.has(component);
                             const regionId = `devkit-region-${component}`;
                             return (
@@ -173,24 +191,36 @@ function LandingPageContent() {
                                         <span className="devkit-acc-name">
                                             <Highlight text={component} matched={componentMatched} />
                                         </span>
-                                        <span className="devkit-acc-badge">{tests.length}</span>
+                                        <span className="devkit-acc-badge">{previews.length}</span>
                                     </button>
                                     <div id={regionId} className="devkit-acc-region" role="region">
                                         <div className="devkit-acc-inner">
                                             <div className="devkit-test-list">
-                                                {tests.map(({ test, matched }) => (
-                                                    <a
-                                                        key={test}
-                                                        className="devkit-test-link"
-                                                        href={`/${component}/${test}${themeQs}`}
-                                                        onClick={() => {
-                                                            pushRecent(component, test);
-                                                            saveReturnComponent(component);
-                                                        }}
-                                                    >
-                                                        <Highlight text={test} matched={matched} />
-                                                    </a>
-                                                ))}
+                                                {(['template', 'test'] as const).map(kind => {
+                                                    const group = previews.filter(p => p.kind === kind);
+                                                    if (group.length === 0) return null;
+                                                    return (
+                                                        <React.Fragment key={kind}>
+                                                            <div className="devkit-test-group" data-kind={kind}>
+                                                                {kind === 'template' ? 'Templates' : 'Tests'}
+                                                                <span className="devkit-test-group-count">{group.length}</span>
+                                                            </div>
+                                                            {group.map(({ test, matched }) => (
+                                                                <a
+                                                                    key={`${kind}-${test}`}
+                                                                    className="devkit-test-link"
+                                                                    href={`/${component}/${test}${themeQs}&kind=${kind}`}
+                                                                    onClick={() => {
+                                                                        pushRecent(component, test, kind);
+                                                                        saveReturnComponent(component);
+                                                                    }}
+                                                                >
+                                                                    <Highlight text={test} matched={matched} />
+                                                                </a>
+                                                            ))}
+                                                        </React.Fragment>
+                                                    );
+                                                })}
                                             </div>
                                         </div>
                                     </div>

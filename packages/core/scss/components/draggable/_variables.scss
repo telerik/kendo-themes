@@ -1,27 +1,67 @@
 // Drag hint
+/// The horizontal padding of the drag hint.
+/// @group draggable
 $kendo-drag-hint-padding-x: null !default;
+/// The vertical padding of the drag hint.
+/// @group draggable
 $kendo-drag-hint-padding-y: null !default;
+/// The width of the border around the drag hint.
+/// @group draggable
 $kendo-drag-hint-border-width: null !default;
+/// The border radius of the drag hint.
+/// @group draggable
 $kendo-drag-hint-border-radius: null !default;
+/// The font size of the drag hint.
+/// @group draggable
 $kendo-drag-hint-font-size: null !default;
+/// The font family of the drag hint.
+/// @group draggable
 $kendo-drag-hint-font-family: null !default;
+/// The line height of the drag hint.
+/// @group draggable
 $kendo-drag-hint-line-height: null !default;
 
+/// The background color of the drag hint.
+/// @group draggable
 $kendo-drag-hint-bg: null !default;
+/// The text color of the drag hint.
+/// @group draggable
 $kendo-drag-hint-text: null !default;
+/// The border color of the drag hint.
+/// @group draggable
 $kendo-drag-hint-border: null !default;
+/// The background gradient of the drag hint.
+/// @group draggable
 $kendo-drag-hint-gradient: null !default;
+/// The shadow of the drag hint.
+/// @group draggable
 $kendo-drag-hint-shadow: null !default;
 
+/// The opacity of the drag hint.
+/// @group draggable
 $kendo-drag-hint-opacity: null !default;
 
 
 // Drop hint
+/// The size of the drop hint arrow.
+/// @group draggable
 $kendo-drop-hint-arrow-size: null !default;
+/// The spacing of the drop hint arrow.
+/// @group draggable
 $kendo-drop-hint-arrow-spacing: null !default;
+/// The width of the horizontal drop hint line.
+/// @group draggable
 $kendo-drop-hint-line-h-width: null !default;
+/// The height of the horizontal drop hint line.
+/// @group draggable
 $kendo-drop-hint-line-h-height: null !default;
+/// The width of the vertical drop hint line.
+/// @group draggable
 $kendo-drop-hint-line-v-width: null !default;
+/// The height of the vertical drop hint line.
+/// @group draggable
 $kendo-drop-hint-line-v-height: null !default;
 
+/// The background color of the drop hint.
+/// @group draggable
 $kendo-drop-hint-bg: null !default;

@@ -96,6 +96,13 @@
         );
     }
 
+    .k-scheduler .k-scheduler-cell.k-readonly {
+        @include fill(
+            $kendo-scheduler-readonly-cell-text,
+            $kendo-scheduler-readonly-cell-bg
+        );
+    }
+
     .k-scheduler-layout td.k-selected,
     .k-scheduler-layout .k-scheduler-cell.k-selected {
         background-color: color-mix(in srgb, k-color(primary) 25%, transparent);

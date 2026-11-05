@@ -28,7 +28,6 @@ export default () => (
         <span>Popover - Quick create</span>
         <div style={{ position: "relative" }}>
           <Popover
-            callout="left"
             title="New event"
             body={
               <Form className="k-scheduler-edit-form" orientation="horizontal">
@@ -55,7 +54,6 @@ export default () => (
         <span>Popover Quick edit</span>
         <div style={{ position: "relative" }}>
           <Popover
-            callout="left"
             title="Event Name"
             body={
               <Form className="k-scheduler-edit-form" orientation="horizontal">
@@ -76,7 +74,6 @@ export default () => (
         <span>Popover Quick edit (recurring with MenuButton)</span>
         <div style={{ position: "relative" }}>
           <Popover
-            callout="left"
             title="Event Name"
             body={
               <Form className="k-scheduler-edit-form" orientation="horizontal">
@@ -97,7 +94,6 @@ export default () => (
         <span>Popover Quick edit - with description</span>
         <div style={{ position: "relative" }}>
           <Popover
-            callout="left"
             title="Event Name"
             body={
               <Form className="k-scheduler-edit-form" orientation="horizontal">
@@ -120,7 +116,6 @@ export default () => (
         <span>Popover Quick Edit - readonly</span>
         <div style={{ position: "relative" }}>
           <Popover
-            callout="left"
             title="Event Name"
             body={
               <Form className="k-scheduler-edit-form" orientation="horizontal">

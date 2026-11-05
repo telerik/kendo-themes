@@ -564,7 +564,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-color-inverse)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>

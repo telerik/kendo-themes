@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-tile-layout-padding-y, var(--kendo-tile-layout-padding-x, var(--kendo-spacing-4)))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TileLayout</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TileLayout.</div></div>
     </td>
 </tr>
 <tr>

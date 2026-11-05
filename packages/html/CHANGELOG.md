@@ -1,3 +1,58 @@
+## 14.9.0-dev.3 (2026-11-05)
+
+### 🚀 Features
+
+- **avatar:** add xs and xl sizes and align avatar size scale across themes ([7925d5eab1](https://github.com/telerik/kendo-themes/commit/7925d5eab1))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.9.0-dev.2 (2026-11-04)
+
+### 🚀 Features
+
+- **html:** add menu and list item templates ([60e4a3bd69](https://github.com/telerik/kendo-themes/commit/60e4a3bd69))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.9.0-dev.1 (2026-11-04)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.9.0-dev.0 (2026-11-03)
+
+### 🚀 Features
+
+- **scheduler:** add readonly cell state ([58ea4d90b2](https://github.com/telerik/kendo-themes/commit/58ea4d90b2))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.8.0 (2026-11-02)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### 🩹 Fixes
+
+- **html:** allow children to be rendered inside Suggestion ([f88a04227b](https://github.com/telerik/kendo-themes/commit/f88a04227b))
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+- zhpenkov
+
+## 14.7.1-dev.7 (2026-11-02)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
 ## 14.7.1-dev.6 (2026-10-30)
 
 ### 🩹 Fixes

@@ -68,4 +68,8 @@ Appbar.className = APPBAR_CLASSNAME;
 Appbar.defaultOptions = defaultOptions;
 Appbar.moduleName = APPBAR_MODULE_NAME;
 Appbar.folderName = APPBAR_FOLDER_NAME;
+/**
+ * @keyboard {Tab} Moves focus through the inner elements; the AppBar itself has no keyboard navigation.
+ */
+
 export default Appbar;

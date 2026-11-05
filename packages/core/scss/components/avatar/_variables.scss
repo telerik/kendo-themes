@@ -2,31 +2,98 @@
 
 // Avatar
 
+/// The default theme color of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-theme-color: null !default;
+/// The default fill mode of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-fill-mode: null !default;
+/// The default roundness of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-roundness: null !default;
+/// The default size of the Avatar.
+/// @group avatar
+/// @role default
 $kendo-avatar-default-size: null !default;
 
 $kendo-avatar-roundness: ( "none", "sm", "md", "lg", "full" ) !default;
 
+/// The border width of the Avatar.
+/// @group avatar
 $kendo-avatar-border-width: null !default;
+/// The border radius of the Avatar.
+/// @group avatar
 $kendo-avatar-border-radius: null !default;
 
+/// The font family of the Avatar.
+/// @group avatar
 $kendo-avatar-font-family: null !default;
+/// The font size of the Avatar.
+/// @group avatar
 $kendo-avatar-font-size: null !default;
+/// The font size of the Avatar initials in the extra small size.
+/// @group avatar
+$kendo-avatar-xs-font-size: null !default;
+/// The font size of the Avatar initials in the small size.
+/// @group avatar
+$kendo-avatar-sm-font-size: null !default;
+/// The font size of the Avatar initials in the medium size.
+/// @group avatar
+$kendo-avatar-md-font-size: null !default;
+/// The font size of the Avatar initials in the large size.
+/// @group avatar
+$kendo-avatar-lg-font-size: null !default;
+/// The font size of the Avatar initials in the extra large size.
+/// @group avatar
+$kendo-avatar-xl-font-size: null !default;
+/// The line height of the Avatar.
+/// @group avatar
 $kendo-avatar-line-height: null !default;
 
+/// The icon size of the extra small Avatar.
+/// @group avatar
+$kendo-avatar-xs-icon-size: null !default;
+/// The icon size of the small Avatar.
+/// @group avatar
+$kendo-avatar-sm-icon-size: null !default;
+/// The icon size of the medium Avatar.
+/// @group avatar
+$kendo-avatar-md-icon-size: null !default;
+/// The icon size of the large Avatar.
+/// @group avatar
+$kendo-avatar-lg-icon-size: null !default;
+/// The icon size of the extra large Avatar.
+/// @group avatar
+$kendo-avatar-xl-icon-size: null !default;
 
+
+/// The extra small size of the Avatar.
+/// @group avatar
+$kendo-avatar-xs-size: null !default;
+/// The small size of the Avatar.
+/// @group avatar
 $kendo-avatar-sm-size: null !default;
+/// The medium size of the Avatar.
+/// @group avatar
 $kendo-avatar-md-size: null !default;
+/// The large size of the Avatar.
+/// @group avatar
 $kendo-avatar-lg-size: null !default;
+/// The extra large size of the Avatar.
+/// @group avatar
+$kendo-avatar-xl-size: null !default;
 
 /// The sizes map of the Avatar.
 /// @group avatar
 $kendo-avatar-sizes: (
-    sm: $kendo-avatar-sm-size,
-    md: $kendo-avatar-md-size,
-    lg: $kendo-avatar-lg-size
+    xs: ( size: $kendo-avatar-xs-size, font-size: $kendo-avatar-xs-font-size, icon-size: $kendo-avatar-xs-icon-size ),
+    sm: ( size: $kendo-avatar-sm-size, font-size: $kendo-avatar-sm-font-size, icon-size: $kendo-avatar-sm-icon-size ),
+    md: ( size: $kendo-avatar-md-size, font-size: $kendo-avatar-md-font-size, icon-size: $kendo-avatar-md-icon-size ),
+    lg: ( size: $kendo-avatar-lg-size, font-size: $kendo-avatar-lg-font-size, icon-size: $kendo-avatar-lg-icon-size ),
+    xl: ( size: $kendo-avatar-xl-size, font-size: $kendo-avatar-xl-font-size, icon-size: $kendo-avatar-xl-icon-size )
 ) !default;
 
 /// The theme colors map of the Avatar.
