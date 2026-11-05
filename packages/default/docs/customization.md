@@ -17051,8 +17051,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-grid-header-font-weight</td>
     <td>String</td>
-    <td><code>var(--kendo-font-weight-bold)</code></td>
-    <td><code>var(--kendo-font-weight-bold)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
+    <td><code>var(--kendo-font-weight-medium)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid header.</div></div>

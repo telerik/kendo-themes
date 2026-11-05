@@ -185,6 +185,9 @@ $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregat
 /// The font size of the Grid header.
 /// @group grid
 $kendo-grid-header-font-size: var(--kendo-font-size-md) !default;
+/// The font weight of the Grid header.
+/// @group grid
+$kendo-grid-header-font-weight: var(--kendo-font-weight-medium) !default;
 /// The border color of the Grid header.
 /// @group grid
 $kendo-grid-header-first-border: 1px !default;
@@ -596,6 +599,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-md-selection-aggregates-padding-x: $kendo-grid-md-selection-aggregates-padding-x,
     $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y,
     $kendo-grid-header-font-size: $kendo-grid-header-font-size,
+    $kendo-grid-header-font-weight: $kendo-grid-header-font-weight,
     $kendo-grid-header-first-border: $kendo-grid-header-first-border,
     $kendo-grid-header-menu-icon-spacing: $kendo-grid-header-menu-icon-spacing,
     $kendo-grid-column-menu-icon-spacing: $kendo-grid-column-menu-icon-spacing,

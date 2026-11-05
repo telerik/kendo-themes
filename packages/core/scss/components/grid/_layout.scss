@@ -1205,6 +1205,12 @@
                     .k-command-cell,
                     .k-grid-edit-row .k-table-td {
                         padding-block: $_edit-cell-padding-y;
+                        padding-inline: $_cell-padding-x;
+                    }
+
+                    // Only cells with inputs, dropdowns and pickers get the edit horizontal padding
+                    .k-edit-cell:has(.k-input, .k-picker),
+                    .k-grid-edit-row .k-table-td:has(.k-input, .k-picker) {
                         padding-inline: $_edit-cell-padding-x;
                     }
                 }

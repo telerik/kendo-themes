@@ -62,7 +62,7 @@
     .k-grid-header {
 
         .k-table-th {
-            font-weight: var(--kendo-font-weight-semibold);
+            font-weight: $kendo-grid-header-font-weight;
 
             .k-grid-filter {
                 font-weight: var(--kendo-font-weight-normal);
