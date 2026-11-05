@@ -68,7 +68,9 @@ npm run build:tests --prefix packages/html
 
 ## Conventions
 
-- Conventional Commits: `type(scope): summary`, imperative mood, ~80 chars max, `BREAKING CHANGE:` in body when applicable.
-- Regenerated docs (`packages/*/docs/*.md` from `npm run docs`) go in a separate `chore: regen docs` commit.
+- Conventional Commits: `type(scope): summary`, imperative mood, ~80 chars max. **Never** include `BREAKING CHANGE:` in a commit message.
+- Commit scope: SCSS changes (core and/or theme packages) use the component (and optionally theme) as scope — `fix/feat/chore(component,theme):` (e.g. `feat(grid,meridian): add toolbar variable`); HTML changes (`packages/html`) use scope `html` — `fix/feat/chore(html):`; test-only changes (`units/`, `packages/html/**/tests/`) use `chore(tests):`; CI/infra-only changes use `chore(infra):`. **Never mix SCSS and HTML changes in the same commit** — split into separate commits even on the same PR.
+- Commit type for SCSS/HTML changes: `fix` for a small change to something existing that has already shipped in a stable version; `chore` for fixing something that hasn't gone live yet; `feat` for additive, new functionality not yet uploaded. Ask the user for the commit message if hesitating between these.
+- After changing a SCSS variable, run `npm run docs` before pushing; commit the regenerated docs in their own `chore: regen docs` commit, then push all commits.
 - Copilot coding agent: use `chore(plan): initial plan for #{issue-number}` for planning commits, `chore(deps): …` for dependency updates, `chore(format): …` for lint-only changes.
 - New component features need HTML tests in `packages/html/src/{component}/tests/`; variable customization needs unit tests in `units/{theme}/`.
