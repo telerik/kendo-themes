@@ -48,22 +48,22 @@ export default () =>(
             <span>(custom) horizontal offset</span>
 
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "37px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "39px" }} label="Label">
                     <TextboxPrefix/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "33px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "43px" }} label="Label">
                     <TextboxPrefix size="small"/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "37px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "47px" }} label="Label">
                     <TextboxPrefix size="medium"/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "41px" }} label="Label">
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "51px" }} label="Label">
                     <TextboxPrefix size="large"/>
                 </FloatingLabelNormal>
             </div>
