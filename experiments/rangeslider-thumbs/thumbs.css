@@ -165,8 +165,8 @@
 
 /* visible focus (keyboard) */
 .tp .k-draghandle:focus-visible {
-    outline: 2px solid var(--tp-focus, var(--tp-accent));
-    outline-offset: 3px;
+    outline: calc(2px / var(--tp-sx, 1)) solid var(--tp-focus, var(--tp-accent));
+    outline-offset: calc(3px / var(--tp-sx, 1));
 }
 
 /* ---------- Variation 1: compressed thumb ---------- */
@@ -187,8 +187,8 @@
 }
 
 .tp-v1 .k-draghandle:is(.k-pressed, .k-active, :active) {
-    --tp-sx: .85;
-    --tp-sy: .75;
+    --tp-sx: .8;
+    --tp-sy: .8;
     --tp-shadow: 0 0 1px rgb(0 0 0 / .45);
     transition: transform .12s var(--tp-ease), box-shadow .12s;
 }
@@ -263,9 +263,9 @@
 
 /* Fluent 2 double focus ring: inner white, outer dark */
 .tp-v3 .k-draghandle:focus-visible {
-    outline: 2px solid #000;
-    outline-offset: 2px;
-    box-shadow: 0 0 0 2px #fff, var(--tp-shadow);
+    outline: calc(2px / var(--tp-sx, 1)) solid #000;
+    outline-offset: calc(2px / var(--tp-sx, 1));
+    box-shadow: 0 0 0 calc(2px / var(--tp-sx, 1)) #fff, var(--tp-shadow);
 }
 
 /* ---------- Variation 4: Material 3 inspired thumb ---------- */
@@ -357,3 +357,5 @@
 [data-theme="fluent"] .tp .k-slider .k-draghandle:is(:active, .k-active, .k-pressed) {
     background-image: radial-gradient(circle closest-side, var(--kendo-color-primary-active) 0 5.5px, transparent 6px);
 }
+
+[data-theme="fluent"] .tp { --tp-accent: var(--kendo-color-primary); }

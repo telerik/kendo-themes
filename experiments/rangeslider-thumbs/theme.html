@@ -31,11 +31,11 @@
     <script src="thumbs.js"></script>
     <script>
         document.getElementById('title').textContent = theme + ' theme';
-        const accents = { default: '#ff6358', bootstrap: '#0d6efd', material: '#3f51b5', fluent: '#0078d4' };
-        document.body.style.setProperty('--tp-accent', accents[theme]);
+        const accents = { default: '#ff6358', bootstrap: '#0d6efd', material: '#3f51b5' };
+        if (accents[theme]) { document.body.style.setProperty('--tp-accent', accents[theme]); }
 
         const variations = [
-            { n: 1, title: '1 · Compressed thumb', text: '20px · hover 1.15Ã— · pressed scale(.85,.75) · spring release with overshoot' },
+            { n: 1, title: '1 · Compressed thumb', text: '20px · hover 1.15Ã— · pressed scale(.8) circle · spring release with overshoot' },
             { n: 2, title: '2 · Adaptive elastic thumb', text: 'Stretches toward drag direction with velocity · elastic rebound on release' },
             { n: 3, title: '3 · Fluent-inspired thumb', text: 'Soft shadows · gentle .94/.9 compression · double focus ring · decelerate easing' },
             { n: 4, title: '4 · Material 3 inspired thumb', text: '1.25Ã— hover · .78Ã— pressed · state layer · emphasized easing' }

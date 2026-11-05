@@ -50,7 +50,7 @@
 <script src="thumbs.js"></script>
 <script>
     const variations = [
-        { n: 1, title: 'Variant 1: Compressed Thumb', text: 'Hover 1.15× · pressed scale(.85,.75) · spring release' },
+        { n: 1, title: 'Variant 1: Compressed Thumb', text: 'Hover 1.15× · pressed scale(.8) circle · spring release' },
         { n: 2, title: 'Variant 2: Adaptive Elastic Thumb', text: 'Stretches toward drag direction · elastic rebound' },
         { n: 3, title: 'Variant 3: Fluent-inspired Thumb', text: 'Soft shadows · gentle compression · double focus ring' },
         { n: 4, title: 'Variant 4: Material-inspired Thumb', text: 'State layer · 1.25× hover · pronounced press' }
@@ -81,6 +81,9 @@
     const status = document.getElementById('status');
 
     function syncAccent() {
+        document.body.style.removeProperty('--tp-accent');
+        // Fluent exposes its primary color through --kendo-color-primary (see thumbs.css); its thumb background is white
+        if (document.documentElement.dataset.theme === 'fluent') { return; }
         const h = document.querySelector('.k-draghandle');
         const bg = getComputedStyle(h).backgroundColor;
         if (bg && bg !== 'rgba(0, 0, 0, 0)') { document.body.style.setProperty('--tp-accent', bg); }
