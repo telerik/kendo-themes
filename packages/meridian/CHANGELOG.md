@@ -1,3 +1,13 @@
+## 14.9.0-dev.3 (2026-11-05)
+
+### 🚀 Features
+
+- **avatar:** add xs and xl sizes and align avatar size scale across themes ([7925d5eab1](https://github.com/telerik/kendo-themes/commit/7925d5eab1))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
 ## 14.9.0-dev.2 (2026-11-04)
 
 This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
