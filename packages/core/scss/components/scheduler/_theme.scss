@@ -159,6 +159,10 @@
             @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
         }
 
+        .k-resize-handle::before {
+            background-color: var(--kendo-scheduler-event-on-color, $kendo-scheduler-resize-handle-bg);
+        }
+
     }
 
     // Read-only events
