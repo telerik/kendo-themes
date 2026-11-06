@@ -1,3 +1,16 @@
+## 14.9.0 (2026-11-06)
+
+### 🚀 Features
+
+- **avatar:** add xs and xl sizes and align avatar size scale across themes ([7925d5eab1](https://github.com/telerik/kendo-themes/commit/7925d5eab1))
+- **html:** add menu and list item templates ([60e4a3bd69](https://github.com/telerik/kendo-themes/commit/60e4a3bd69))
+- **scheduler:** add readonly cell state ([58ea4d90b2](https://github.com/telerik/kendo-themes/commit/58ea4d90b2))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
 ## 14.9.0-dev.3 (2026-11-05)
 
 ### 🚀 Features
