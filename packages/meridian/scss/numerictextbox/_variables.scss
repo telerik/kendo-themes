@@ -1,1 +1,13 @@
+@use "../core/_index.scss" as *;
+
 // Numeric Textbox
+
+$kendo-numeric-textbox-hover-bg: color-mix(in srgb, k-color(base-emphasis) 6%, k-color(surface-alt)) !default;
+$kendo-numeric-textbox-spinner-hover-bg: color-mix(in srgb, k-color(base-emphasis) 10%, k-color(surface-alt)) !default;
+$kendo-numeric-textbox-spinner-active-bg: color-mix(in srgb, k-color(base-emphasis) 16%, k-color(surface-alt)) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/numerictextbox/_variables.scss" with (
+    $kendo-numeric-textbox-hover-bg: $kendo-numeric-textbox-hover-bg,
+    $kendo-numeric-textbox-spinner-hover-bg: $kendo-numeric-textbox-spinner-hover-bg,
+    $kendo-numeric-textbox-spinner-active-bg: $kendo-numeric-textbox-spinner-active-bg
+);

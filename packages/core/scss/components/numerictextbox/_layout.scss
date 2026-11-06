@@ -1,7 +1,62 @@
+@use "../input/_variables.scss" as *;
+
 @mixin kendo-numeric-textbox--layout-base() {
 
     // Numeric textbox
     .k-numeric-textbox {}
+
+    // Horizontal spin buttons
+    .k-numeric-textbox.k-numeric-textbox-horizontal {
+        .k-input-spinner {
+            width: auto;
+            flex-flow: row nowrap;
+
+            .k-spinner-increase,
+            .k-spinner-decrease {
+                width: if( $kendo-use-input-spinner-width, $kendo-input-spinner-width, auto );
+                flex: none;
+
+                .k-button-icon {
+                    margin-block: 0;
+                }
+            }
+        }
+    }
+
+
+    // Split spin buttons: decrease on the start, increase on the end
+    .k-numeric-textbox.k-numeric-textbox-split {
+        .k-input-inner {
+            text-align: center;
+        }
+
+        .k-spinner-increase,
+        .k-spinner-decrease {
+            width: if( $kendo-use-input-spinner-width, $kendo-input-spinner-width, auto );
+            flex: none;
+            border-width: 0;
+            border-radius: 0;
+            box-shadow: none;
+            align-self: stretch;
+        }
+
+        .k-spinner-decrease {
+            border-start-start-radius: inherit;
+            border-end-start-radius: inherit;
+        }
+
+        .k-spinner-increase {
+            border-start-end-radius: inherit;
+            border-end-end-radius: inherit;
+        }
+
+        .k-spinner-increase:focus-visible,
+        .k-spinner-decrease:focus-visible,
+        .k-spinner-increase.k-focus,
+        .k-spinner-decrease.k-focus {
+            outline-offset: -2px;
+        }
+    }
 
 
     // Alias
