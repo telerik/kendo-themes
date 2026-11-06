@@ -159,17 +159,24 @@
             @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
         }
 
+        .k-resize-handle::before {
+            background-color: var(--kendo-scheduler-event-on-color, $kendo-scheduler-resize-handle-bg);
+        }
+
     }
 
     // Read-only events
     .k-readonly-scheduler .k-event,
     .k-event.k-readonly {
         @include fill(
-            $kendo-scheduler-event-readonly-text,
-            $kendo-scheduler-event-readonly-bg,
+            var(--kendo-scheduler-event-on-color, $kendo-scheduler-event-readonly-text),
+            var(--kendo-scheduler-event-bg, $kendo-scheduler-event-readonly-bg),
             $kendo-scheduler-event-readonly-border
         );
         @include box-shadow( none );
+
+        // Mutes a custom event color by blending it with the surface; on-color is re-derived from the result.
+        --kendo-scheduler-event-bg: color-mix(in srgb, var(--kendo-scheduler-event-color) 20%, #{k-color(surface-alt)});
     }
 
 
