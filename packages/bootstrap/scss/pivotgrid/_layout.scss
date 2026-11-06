@@ -1,6 +1,12 @@
 @use "@progress/kendo-theme-core/scss/components/pivotgrid/_layout.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-pivotgrid--layout() {
     @include kendo-pivotgrid--layout-base();
+
+    .k-pivotgrid-values .k-pivotgrid-table tr:first-child .k-pivotgrid-cell {
+        border-block-start-style: solid;
+        border-block-start-width: $kendo-pivotgrid-cell-border-width;
+    }
 }

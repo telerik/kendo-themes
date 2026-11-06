@@ -121,6 +121,10 @@
         white-space: nowrap;
     }
 
+    .k-pivotgrid-row-headers .k-pivotgrid-table tr:last-child .k-pivotgrid-cell {
+        border-block-end-width: 0;
+    }
+
 
     // Values
     .k-pivotgrid-values {
@@ -137,6 +141,10 @@
         &:first-child {
             border-inline-start-width: 0;
         }
+    }
+
+    .k-pivotgrid-values .k-pivotgrid-table tr:last-child .k-pivotgrid-cell {
+        border-block-end-width: 0;
     }
 
     .k-pivotgrid-cell {
@@ -374,7 +382,8 @@
             }
         }
 
-        .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
+        .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel,
+        .k-pivotgrid-configurator-panel.k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push {
             border-inline-end-width: 0;
             border-inline-start-width: 0;
         }
@@ -439,13 +448,22 @@
     }
 
 
+    .k-flex-col .k-pivotgrid-configurator-panel.k-pivotgrid-configurator-horizontal {
+        border-block-end-width: 0;
+    }
+
+    .k-flex-col-reverse .k-pivotgrid-configurator-panel.k-pivotgrid-configurator-horizontal {
+        border-block-start-width: 0;
+    }
+
     .k-flex-col,
     .k-flex-col-reverse {
         .k-pivotgrid-configurator-button {
             text-align: center;
         }
 
-        .k-pivotgrid-configurator-horizontal.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
+        .k-pivotgrid-configurator-horizontal.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel,
+        .k-pivotgrid-configurator-panel.k-pivotgrid-configurator-horizontal.k-pivotgrid-configurator-push {
             border-block-start-width: 0;
             border-block-end-width: 0;
         }
