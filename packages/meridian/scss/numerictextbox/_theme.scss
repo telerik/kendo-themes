@@ -1,6 +1,30 @@
 @use "@progress/kendo-theme-core/scss/components/numerictextbox/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-numeric-textbox--theme() {
     @include kendo-numeric-textbox--theme-base();
+
+    .k-numeric-textbox.k-numeric-textbox-split {
+        .k-spinner-decrease {
+            border-inline-end: 1px solid k-color(border);
+        }
+
+        .k-spinner-increase {
+            border-inline-start: 1px solid k-color(border);
+        }
+
+        &.k-invalid {
+            .k-spinner-decrease,
+            .k-spinner-increase {
+                border-color: k-color(error);
+            }
+        }
+
+        &.k-disabled .k-spinner-decrease,
+        &.k-disabled .k-spinner-increase {
+            border-color: transparent;
+        }
+    }
 }
