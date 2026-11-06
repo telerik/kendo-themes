@@ -9,6 +9,7 @@ import {
     InputValidationIcon
 } from '../input';
 import { Popup } from '../popup';
+import { SrAnnouncer } from '../sr-announcer';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListContent, ListItem } from '../list';
 
@@ -56,6 +57,7 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     adaptiveFilter?: boolean;
     id?: string;
     activeDescendant?: string;
+    message?: string;
 };
 
 export type KendoDropdownListState = { [K in (typeof states)[number]]?: boolean };
@@ -79,6 +81,7 @@ const defaultOptions = {
  * @aria {role="option"} Each list item is an option.
  * @aria {id} Referenced by aria-controls and aria-activedescendant on the input.
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {aria-live="polite"} Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it.
  * @ux {Popup} Clicking the control opens a scrollable list of options.
  * @ux {Selection} Clicking an option selects it and closes the popup.
  * @ux {Filtering} The list can be filtered when the user types.
@@ -119,6 +122,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
         id,
         activeDescendant,
         'aria-label': ariaLabel,
+        message,
         ...other
     } = props;
 
@@ -184,6 +188,7 @@ export const DropdownList: KendoComponent<KendoDropdownListProps & KendoDropdown
                     tabIndex={-1}
                 />
             </Picker>
+            <SrAnnouncer message={message} />
             {opened && popup &&
                 <Popup
                     className="k-list-container k-dropdownlist-popup"
@@ -241,6 +246,7 @@ DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
  * @keyboard {Tab} Closes the actionsheet and focuses the next focusable element.
  *
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html WAI-ARIA Authoring Practices: Select-Only Combobox Example
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus
  */
 
 export default DropdownList;

@@ -10,6 +10,7 @@ import {
     InputSeparator
 } from '../input';
 import { Popup } from '../popup';
+import { SrAnnouncer } from '../sr-announcer';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListContent, ListCustomValue, ListItem } from '../list';
 import { Button } from '../button';
@@ -58,6 +59,7 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     id?: string;
     autocomplete?: 'list' | 'both' | 'inline' | 'none';
     activeDescendant?: string;
+    message?: string;
 };
 
 export type KendoAutocompleteState = { [K in (typeof states)[number]]?: boolean };
@@ -79,6 +81,7 @@ const defaultOptions = {
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-autocomplete} Indicates autocomplete type
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {aria-live="polite"} Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it.
  * @ux {Popup} Opens a suggestion list when the user starts typing.
  * @ux {Filtering} Narrows the suggestion list as the user types.
  * @ux {Selection} Choosing a suggestion fills the input and closes the popup.
@@ -119,6 +122,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
         autocomplete,
         activeDescendant,
         'aria-label': ariaLabel,
+        message,
         ...other
     } = props;
 
@@ -182,6 +186,7 @@ export const Autocomplete: KendoComponent<KendoAutocompleteProps & KendoAutocomp
                     </>
                 }
             </Input>
+            <SrAnnouncer message={message} />
             {opened && popup &&
                 <Popup
                     className="k-list-container k-autocomplete-popup"
@@ -235,6 +240,7 @@ Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
  *
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html WAI-ARIA Authoring Practices: Editable Combobox With Both List and Inline Autocomplete Example
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html WAI-ARIA Authoring Practices: Editable Combobox With List Autocomplete Example
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus
  */
 
 export default Autocomplete;

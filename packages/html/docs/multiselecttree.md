@@ -50,6 +50,7 @@ These CSS classes are applied to the `k-multiselecttree` element.
 | `aria-selected="true"` | Tags represent selected items and must have aria-selected=true. |
 | `id` | Referenced by aria-controls on the input. |
 | `aria-controls` | Points to treeview when popup is open |
+| `aria-live="polite"` | Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it. |
 
 #### Keyboard Navigation
 
@@ -91,6 +92,7 @@ The Multiselecttree has been tested with the following screen readers and browse
 
 - [ARIA practices: TreeView Example](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/)
 - [ARIA practices: Select-Only Combobox Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html)
+- [WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
 
 ### Rendered HTML Examples
 

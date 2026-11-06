@@ -10,6 +10,7 @@ import {
 import { Button } from '../button';
 import { ChipList } from '../chip';
 import { Popup } from '../popup';
+import { SrAnnouncer } from '../sr-announcer';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { TreeviewGroup, TreeviewItem, Treeview } from '../treeview';
 
@@ -58,6 +59,7 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     adaptiveFilter?: boolean;
     id?: string;
     treeviewId?: string;
+    message?: string;
 };
 
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -82,6 +84,7 @@ const defaultOptions = {
  * @aria {aria-selected="true"} Tags represent selected items and must have aria-selected=true.
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-controls} Points to treeview when popup is open
+ * @aria {aria-live="polite"} Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it.
  * @ux {Tree popup} A hierarchical tree opens in a popup.
  * @ux {Checkboxes} Items are selected or deselected via checkboxes on each node.
  * @ux {Tags} Selected items appear as removable chips in the input.
@@ -121,6 +124,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
         id,
         treeviewId,
         'aria-label': ariaLabel,
+        message,
         ...other
     } = props;
 
@@ -189,6 +193,7 @@ export const MultiSelectTree: KendoComponent<KendoMultiSelectTreeProps & KendoMu
                     />
                 )}
             </Input>
+            <SrAnnouncer message={message} />
             {opened && popup &&
                 <Popup
                     className="k-multiselecttree-popup"
@@ -258,6 +263,7 @@ MultiSelectTree.folderName = MULTISELECTTREE_FOLDER_NAME;
  *
  * @see https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/ ARIA practices: TreeView Example
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html ARIA practices: Select-Only Combobox Example
+ * @see https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus
  */
 
 export default MultiSelectTree;

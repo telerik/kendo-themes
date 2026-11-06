@@ -45,6 +45,7 @@ These CSS classes are applied to the `k-dropdowntree` element.
 | `tabindex="-1"` | The button must not be focusable. |
 | `id` | Referenced by aria-controls on the input. |
 | `aria-controls` | Points to treeview when popup is open |
+| `aria-live="polite"` | Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it. |
 
 #### Keyboard Navigation
 
@@ -85,6 +86,7 @@ The Dropdowntree has been tested with the following screen readers and browsers 
 
 - [WAI-ARIA Authoring Practices: TreeView Example](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/examples/treeview-navigation/)
 - [WAI-ARIA Authoring Practices: Select-Only Combobox Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html)
+- [WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
 
 ### Rendered HTML Examples
 

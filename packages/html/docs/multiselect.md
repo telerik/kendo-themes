@@ -52,6 +52,7 @@ These CSS classes are applied to the `k-multiselect` element.
 | `role="option"` | Each list item is an option. |
 | `id` | Referenced by aria-controls on the input. |
 | `aria-activedescendant` | Points to focused item when popup is open |
+| `aria-live="polite"` | Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it. |
 
 #### Keyboard Navigation
 
@@ -99,6 +100,7 @@ The Multiselect has been tested with the following screen readers and browsers c
 
 - [WAI-ARIA Authoring Practices: Select-Only Combobox Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-select-only.html)
 - [WAI-ARIA Authoring Practices: Scrollable Listbox Example](https://www.w3.org/WAI/ARIA/apg/example-index/listbox/listbox-scrollable.html)
+- [WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
 
 ### Rendered HTML Examples
 

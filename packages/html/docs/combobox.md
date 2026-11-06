@@ -49,10 +49,10 @@ These CSS classes are applied to the `k-combobox` element.
 | `aria-label|aria-labelledby` | Popup listbox must have an accessible name. Consuming code is responsible for associating with the component label via aria-labelledby. |
 | `role="option"` | Each list item is an option. |
 | `aria-selected` | Indicates the selected state. |
-| `aria-live="polite"` | Announces no-data state to screen readers. |
 | `id` | Referenced by aria-controls and aria-activedescendant on the input. |
 | `aria-autocomplete` | Indicates autocomplete behavior to assistive technologies |
 | `aria-activedescendant` | Points to focused item when popup is open |
+| `aria-live="polite"` | Persistent visually hidden live region next to the input; its text changes to "No data found." or "{n} found items" so screen readers announce it. |
 
 #### Keyboard Navigation
 
@@ -94,6 +94,7 @@ The Combobox has been tested with the following screen readers and browsers comb
 
 - [WAI-ARIA Authoring Practices: Editable Combobox With Both List and Inline Autocomplete Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html)
 - [WAI-ARIA Authoring Practices: Editable Combobox With List Autocomplete Example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html)
+- [WCAG 4.1.3 Status Messages — no-data and found-items messages are announced without moving focus](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
 
 ### Rendered HTML Examples
 
