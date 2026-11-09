@@ -121,7 +121,7 @@
         @include fill(
             var(--kendo-scheduler-event-on-color, $kendo-scheduler-event-text),
             var(--kendo-scheduler-event-bg, $kendo-scheduler-event-bg),
-            $kendo-scheduler-event-border,
+            null,
             $kendo-scheduler-event-gradient
         );
         @include box-shadow( $kendo-scheduler-event-shadow );
@@ -135,7 +135,7 @@
             @include fill(
                 var(--kendo-scheduler-event-on-color, $kendo-scheduler-event-hover-text),
                 var(--kendo-scheduler-event-bg, $kendo-scheduler-event-hover-bg),
-                $kendo-scheduler-event-hover-border,
+                null,
                 $kendo-scheduler-event-hover-gradient
             );
             @include box-shadow( $kendo-scheduler-event-hover-shadow );
@@ -145,7 +145,7 @@
             @include fill(
                 var(--kendo-scheduler-event-on-color, $kendo-scheduler-event-selected-text),
                 var(--kendo-scheduler-event-bg, $kendo-scheduler-event-selected-bg),
-                $kendo-scheduler-event-selected-border,
+                null,
                 $kendo-scheduler-event-selected-gradient
             );
             @include box-shadow( $kendo-scheduler-event-selected-shadow );
@@ -170,8 +170,7 @@
     .k-event.k-readonly {
         @include fill(
             var(--kendo-scheduler-event-on-color, $kendo-scheduler-event-readonly-text),
-            var(--kendo-scheduler-event-bg, $kendo-scheduler-event-readonly-bg),
-            $kendo-scheduler-event-readonly-border
+            var(--kendo-scheduler-event-bg, $kendo-scheduler-event-readonly-bg)
         );
         @include box-shadow( none );
 
