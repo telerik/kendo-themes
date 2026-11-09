@@ -79,7 +79,7 @@ const proposedCss = () => {
     ).join("\n");
 };
 
-const Demo = ({ proposed }: { proposed?: boolean }) => {
+const Demo = ({ proposed, reduced, selHover }: { proposed?: boolean; reduced?: boolean; selHover?: boolean }) => {
     const [expanded, setExpanded] = React.useState<string[]>(["r2", "r2c2"]);
     const [selected, setSelected] = React.useState<string | null>("r2");
     const [hovered, setHovered] = React.useState<string | null>(null);
@@ -144,8 +144,8 @@ const Demo = ({ proposed }: { proposed?: boolean }) => {
             text={node.text}
             icon={node.icon}
             disabled={node.disabled}
-            hover={hovered === node.id && !node.disabled && !(proposed && selected === node.id)}
-            focus={focused === node.id}
+            hover={hovered === node.id && !node.disabled && !(proposed && selected === node.id) && !(reduced && focused === node.id && selected !== node.id)}
+            focus={focused === node.id && !(reduced && selected === node.id && hovered === node.id)}
             selected={selected === node.id}
             expanded={expanded.includes(node.id)}
             tabIndex={node.disabled ? undefined : (focused === node.id || (!focused && node.id === "r1") ? 0 : -1)}
@@ -165,13 +165,37 @@ const Demo = ({ proposed }: { proposed?: boolean }) => {
     ));
 
     return (
-        <div className={proposed ? "k-proposed" : undefined} onMouseLeave={() => setHovered(null)}>
+        <div className={proposed ? "k-proposed" : reduced ? "k-reduced" : selHover ? "k-sel-hover" : undefined} onMouseLeave={() => setHovered(null)}>
             <PanelBarNormal>
                 {renderItems(tree, 0)}
             </PanelBarNormal>
         </div>
     );
 };
+
+const staticStates = [
+    { text: "Normal" },
+    { text: "Hover", hover: true },
+    { text: "Focus", focus: true },
+    { text: "Hover + Focus", hover: true, focus: true },
+    { text: "Selected", selected: true },
+    { text: "Selected + Hover", selected: true, hover: true },
+    { text: "Selected + Focus", selected: true, focus: true },
+    { text: "Selected + Hover + Focus", selected: true, hover: true, focus: true },
+    { text: "Disabled", disabled: true }
+];
+
+const reducedStates = ["Normal", "Hover", "Focus", "Selected", "Selected + Hover", "Selected + Focus", "Disabled"];
+
+const StaticStates = ({ reduced }: { reduced?: boolean }) => (
+    <div className={reduced ? "k-reduced" : undefined}>
+    <PanelBarNormal>
+        {staticStates.filter(s => !reduced || reducedStates.includes(s.text)).map(s => (
+            <PanelBarItem key={s.text} header level={0} {...s} />
+        ))}
+    </PanelBarNormal>
+    </div>
+);
 
 const titleStyle = { fontSize: "14px", lineHeight: "20px", whiteSpace: "nowrap" } as const;
 
@@ -182,10 +206,20 @@ export default () => {
         <>
             <style>{`
                 #test-area .k-panelbar-item { outline: none; }
+                #test-area .k-panelbar-item-icon,
+                #test-area .k-panelbar-toggle { width: 16px; height: 16px; font-size: 16px; }
+                #test-area .k-panelbar-item-icon svg,
+                #test-area .k-panelbar-toggle svg { width: 16px; height: 16px; }
                 #test-area .k-panelbar-item > .k-link { cursor: pointer; }
-                #test-area .k-proposed .k-panelbar-item > .k-link.k-selected { pointer-events: none; }
+                #test-area .k-proposed .k-panelbar-item > .k-link.k-selected:hover { background-color: var(--kendo-color-base-active); color: var(--kendo-color-on-base); }
                 #test-area .k-proposed .k-panelbar-item:has(> .k-link.k-selected) { cursor: pointer; }
+                #test-area .k-proposed .k-panelbar-item:not(:has(> .k-panelbar-group)) > .k-link.k-selected { pointer-events: none; }
+                #test-area .k-proposed .k-panelbar-item:not(:has(> .k-panelbar-group)):has(> .k-link.k-selected) { cursor: default; }
+                #test-area .k-reduced .k-panelbar-item:has(> .k-link.k-focus) { cursor: pointer; }
+                #test-area .k-reduced .k-panelbar-item > .k-link.k-focus:not(.k-selected) { pointer-events: none; }
+                #test-area .k-sel-hover .k-panelbar-item > .k-link.k-selected:hover, #test-area .k-sel-hover .k-panelbar-item > .k-link.k-selected.k-hover { background-color: var(--kendo-color-primary-subtle-active); color: var(--kendo-color-primary-on-subtle); }
                 #test-area .k-panelbar-item .k-disabled { cursor: default; }
+                #test-area .k-panelbar-item[aria-disabled="true"] { cursor: default; }
             `}</style>
             <style>{css}</style>
             <div id="test-area" className="k-d-grid k-grid-cols-4">
@@ -194,8 +228,31 @@ export default () => {
                     <Demo />
                 </section>
                 <section>
-                    <h2 className="k-h4" style={titleStyle}>PanelBar - Proposed changes</h2>
-                    <Demo proposed />
+                    <h2 className="k-h4" style={titleStyle}>PanelBar - Reduced states</h2>
+                    <Demo reduced />
+                </section>
+                <section>
+                    <h2 className="k-h4" style={titleStyle}>All States + Selected-hover</h2>
+                    <Demo selHover />
+                    <div style={{ fontSize: "12px", lineHeight: "16px", marginTop: "8px", whiteSpace: "nowrap" }}>
+                        <strong>Selected+hover semantic naming:</strong>
+                        <div><code>$kendo-panelbar-item-selected-hover-bg</code></div>
+                    </div>
+                </section>
+                <section style={{ gridRow: 2, gridColumn: 1 }}>
+                    <h2 className="k-h4" style={titleStyle}>Original states (static)</h2>
+                    <StaticStates />
+                </section>
+                <section style={{ gridRow: 2, gridColumn: 2 }}>
+                    <h2 className="k-h4" style={titleStyle}>Reduced states (static)</h2>
+                    <StaticStates reduced />
+                    <div style={{ fontSize: "12px", lineHeight: "16px", marginTop: "8px" }}>
+                        <strong>Omitted states (variables):</strong>
+                        <div><em>Hover + Focus</em></div>
+                        <code>$kendo-panelbar-{"{header|item}"}-hover-focus-{"{bg|text|border|gradient}"}</code>
+                        <div style={{ marginTop: "4px" }}><em>Selected + Hover + Focus</em></div>
+                        <code>$kendo-panelbar-{"{header|item}"}-selected-hover-focus-{"{bg|text|border|gradient}"}</code>
+                    </div>
                 </section>
             </div>
         </>
