@@ -5,6 +5,7 @@ export * from './pivotgrid-row';
 export * from './pivotgrid-cell';
 export * from './pivotgrid-configurator.spec';
 export * from './pivotgrid-configurator-button.spec';
+export * from './pivotgrid-container';
 export * from './calculated-field';
 export * from './templates/pivotgrid-normal';
 export * from './templates/pivotgrid-with-configurator';

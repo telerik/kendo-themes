@@ -138,7 +138,36 @@
     }
 
 
+    // Pivotgrid container
+    .k-pivotgrid-container {
+        @include fill( $border: $kendo-pivotgrid-border );
+
+        // Keeps the button size in sync with $kendo-pivotgrid-configurator-button-size; separators are drawn by the grid and the panel.
+        .k-pivotgrid-configurator-button {
+            border-color: transparent;
+        }
+    }
+
+
     // Overlay mode
+    .k-pivotgrid-container-right .k-pivotgrid-configurator-overlay {
+        @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
+    }
+
+    .k-pivotgrid-container-left .k-pivotgrid-configurator-overlay {
+        @include box-shadow( $kendo-pivotgrid-configurator-start-shadow );
+    }
+
+    .k-pivotgrid-container-bottom .k-pivotgrid-configurator-overlay {
+        @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
+    }
+
+    .k-pivotgrid-container-top .k-pivotgrid-configurator-overlay {
+        @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
+    }
+
+    // Deprecated: utility-class wrapper, use .k-pivotgrid-container instead
+    // TODO: remove
     .k-flex-row {
         .k-pivotgrid-configurator-overlay {
             @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
