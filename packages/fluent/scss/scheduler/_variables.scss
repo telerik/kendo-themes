@@ -53,23 +53,19 @@ $kendo-scheduler-event-min-height: var( --kendo-scheduler-event-min-height, 12px
 
 $kendo-scheduler-event-bg: var( --kendo-scheduler-event-bg, k-color(primary) ) !default;
 $kendo-scheduler-event-text: var( --kendo-scheduler-event-text, k-color(on-primary) ) !default;
-$kendo-scheduler-event-border: var( --kendo-scheduler-event-border, $kendo-scheduler-event-bg ) !default;
 $kendo-scheduler-event-gradient: var( --kendo-scheduler-event-gradient, null ) !default;
 $kendo-scheduler-event-shadow: var( --kendo-scheduler-event-shadow, null ) !default;
 
 $kendo-scheduler-event-readonly-bg: var( --kendo-scheduler-event-readonly-bg, k-color(primary-subtle) ) !default;
 $kendo-scheduler-event-readonly-text: var( --kendo-scheduler-event-readonly-text, k-color(primary-on-subtle) ) !default;
-$kendo-scheduler-event-readonly-border: var( --kendo-scheduler-event-readonly-border, k-color(primary-emphasis) ) !default;
 
 $kendo-scheduler-event-hover-bg: var( --kendo-scheduler-event-hover-bg, k-color(primary-hover) ) !default;
 $kendo-scheduler-event-hover-text: var( --kendo-scheduler-event-hover-text, k-color(on-primary) ) !default;
-$kendo-scheduler-event-hover-border: var( --kendo-scheduler-event-hover-border, color-mix(in srgb, k-color(border) 10%, transparent) ) !default;
 $kendo-scheduler-event-hover-gradient: var( --kendo-scheduler-event-hover-gradient, null ) !default;
 $kendo-scheduler-event-hover-shadow: var( --kendo-scheduler-event-hover-shadow, null ) !default;
 
 $kendo-scheduler-event-selected-bg: var( --kendo-scheduler-event-selected-bg, k-color(primary-active) ) !default;
 $kendo-scheduler-event-selected-text: var( --kendo-scheduler-event-selected-text, $kendo-scheduler-event-text ) !default;
-$kendo-scheduler-event-selected-border: var( --kendo-scheduler-event-selected-border, $kendo-scheduler-event-bg ) !default;
 $kendo-scheduler-event-selected-gradient: var( --kendo-scheduler-event-selected-gradient, null ) !default;
 $kendo-scheduler-event-selected-shadow: var( --kendo-scheduler-event-selected-shadow, none ) !default;
 
@@ -174,20 +170,16 @@ $kendo-scheduler-recurrence-fields-row-gap: k-spacing(3) !default;
     $kendo-scheduler-event-time-padding-bottom: $kendo-scheduler-event-time-padding-bottom,
     $kendo-scheduler-event-bg: $kendo-scheduler-event-bg,
     $kendo-scheduler-event-text: $kendo-scheduler-event-text,
-    $kendo-scheduler-event-border: $kendo-scheduler-event-border,
     $kendo-scheduler-event-gradient: $kendo-scheduler-event-gradient,
     $kendo-scheduler-event-shadow: $kendo-scheduler-event-shadow,
     $kendo-scheduler-event-readonly-bg: $kendo-scheduler-event-readonly-bg,
     $kendo-scheduler-event-readonly-text: $kendo-scheduler-event-readonly-text,
-    $kendo-scheduler-event-readonly-border: $kendo-scheduler-event-readonly-border,
     $kendo-scheduler-event-hover-bg: $kendo-scheduler-event-hover-bg,
     $kendo-scheduler-event-hover-text: $kendo-scheduler-event-hover-text,
-    $kendo-scheduler-event-hover-border: $kendo-scheduler-event-hover-border,
     $kendo-scheduler-event-hover-gradient: $kendo-scheduler-event-hover-gradient,
     $kendo-scheduler-event-hover-shadow: $kendo-scheduler-event-hover-shadow,
     $kendo-scheduler-event-selected-bg: $kendo-scheduler-event-selected-bg,
     $kendo-scheduler-event-selected-text: $kendo-scheduler-event-selected-text,
-    $kendo-scheduler-event-selected-border: $kendo-scheduler-event-selected-border,
     $kendo-scheduler-event-selected-gradient: $kendo-scheduler-event-selected-gradient,
     $kendo-scheduler-event-selected-shadow: $kendo-scheduler-event-selected-shadow,
     $kendo-scheduler-event-ongoing-shadow: $kendo-scheduler-event-ongoing-shadow,
