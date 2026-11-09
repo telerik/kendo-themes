@@ -15267,10 +15267,90 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-fab-sm-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-sm-line-height, var(--kendo-line-height-lg) )</code></td>
+    <td><code>var(--kendo-fab-sm-line-height, var(--kendo-line-height-lg))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-md-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-md-line-height, var(--kendo-line-height) )</code></td>
+    <td><code>var(--kendo-fab-md-line-height, var(--kendo-line-height))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-lg-line-height, var(--kendo-line-height-sm) )</code></td>
+    <td><code>var(--kendo-fab-lg-line-height, var(--kendo-line-height-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sm-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-sm-font-size, var(--kendo-font-size-sm) )</code></td>
+    <td><code>var(--kendo-fab-sm-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-lg-font-size, var(--kendo-font-size-lg) )</code></td>
+    <td><code>var(--kendo-fab-lg-font-size, var(--kendo-font-size-lg))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-icon-container-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-lg-icon-container-size, k-spacing(6) )</code></td>
+    <td><code>var(--kendo-fab-lg-icon-container-size, var(--kendo-spacing-6))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon container size of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-icon-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-lg-icon-size, k-spacing(5) )</code></td>
+    <td><code>var(--kendo-fab-lg-icon-size, var(--kendo-spacing-5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon size of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-icon-stroke-width</td>
+    <td>String</td>
+    <td><code>var( --kendo-fab-lg-icon-stroke-width, 2 )</code></td>
+    <td><code>var(--kendo-fab-lg-icon-stroke-width, 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon stroke width of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-x, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-x, var(--kendo-spacing-1\.5))</code></td>
+    <td><code>var( --kendo-fab-sm-padding-x, k-spacing(2.5) )</code></td>
+    <td><code>var(--kendo-fab-sm-padding-x, var(--kendo-spacing-2\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small FAB.</div></div>
@@ -15279,8 +15359,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-md-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-x, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-spacing-4))</code></td>
+    <td><code>var( --kendo-fab-md-padding-x, k-spacing(4.5) )</code></td>
+    <td><code>var(--kendo-fab-md-padding-x, var(--kendo-spacing-4\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium FAB.</div></div>
@@ -15299,8 +15379,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-sm-padding-y, k-spacing(1.5) )</code></td>
-    <td><code>var(--kendo-fab-sm-padding-y, var(--kendo-spacing-1\.5))</code></td>
+    <td><code>var( --kendo-fab-sm-padding-y, k-spacing(2.5) )</code></td>
+    <td><code>var(--kendo-fab-sm-padding-y, var(--kendo-spacing-2\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small FAB.</div></div>
@@ -15309,8 +15389,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-md-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-fab-md-padding-y, k-spacing(4) )</code></td>
-    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-spacing-4))</code></td>
+    <td><code>var( --kendo-fab-md-padding-y, k-spacing(4.5) )</code></td>
+    <td><code>var(--kendo-fab-md-padding-y, var(--kendo-spacing-4\.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium FAB.</div></div>
@@ -15543,20 +15623,31 @@ The following table lists the available variables for customizing the Fluent the
     sm: (
         padding-x: $kendo-fab-sm-padding-x,
         padding-y: $kendo-fab-sm-padding-y,
-        gap: k-spacing(1)
+        line-height: $kendo-fab-sm-line-height,
+        font-size: $kendo-fab-sm-font-size,
+        font-weight: var( --kendo-font-weight-normal ),
+        gap: k-spacing(0.5)
     ),
     md: (
         padding-x: $kendo-fab-md-padding-x,
         padding-y: $kendo-fab-md-padding-y,
-        gap: k-spacing(1.5)
+        line-height: $kendo-fab-md-line-height,
+        font-weight: var( --kendo-font-weight-semibold ),
+        gap: k-spacing(0.5)
     ),
     lg: (
         padding-x: $kendo-fab-lg-padding-x,
         padding-y: $kendo-fab-lg-padding-y,
-        gap: k-spacing(1.5)
+        line-height: $kendo-fab-lg-line-height,
+        font-size: $kendo-fab-lg-font-size,
+        font-weight: var( --kendo-font-weight-semibold ),
+        icon-container-size: $kendo-fab-lg-icon-container-size,
+        icon-size: $kendo-fab-lg-icon-size,
+        icon-stroke-width: $kendo-fab-lg-icon-stroke-width,
+        gap: k-spacing(0.5)
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, var(--kendo-spacing-1\\.5))","padding-y":"var(--kendo-fab-sm-padding-y, var(--kendo-spacing-1\\.5))","gap":"var(--kendo-spacing-1)"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-spacing-4))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-spacing-4))","gap":"var(--kendo-spacing-1\\.5)"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, var(--kendo-spacing-6))","padding-y":"var(--kendo-fab-lg-padding-y, var(--kendo-spacing-6))","gap":"var(--kendo-spacing-1\\.5)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-fab-sm-padding-x, var(--kendo-spacing-2\\.5))","padding-y":"var(--kendo-fab-sm-padding-y, var(--kendo-spacing-2\\.5))","line-height":"var(--kendo-fab-sm-line-height, var(--kendo-line-height-lg))","font-size":"var(--kendo-fab-sm-font-size, var(--kendo-font-size-sm))","font-weight":"var(--kendo-font-weight-normal)","gap":"var(--kendo-spacing-0\\.5)"</li><li>md: "padding-x":"var(--kendo-fab-md-padding-x, var(--kendo-spacing-4\\.5))","padding-y":"var(--kendo-fab-md-padding-y, var(--kendo-spacing-4\\.5))","line-height":"var(--kendo-fab-md-line-height, var(--kendo-line-height))","font-weight":"var(--kendo-font-weight-semibold)","gap":"var(--kendo-spacing-0\\.5)"</li><li>lg: "padding-x":"var(--kendo-fab-lg-padding-x, var(--kendo-spacing-6))","padding-y":"var(--kendo-fab-lg-padding-y, var(--kendo-spacing-6))","line-height":"var(--kendo-fab-lg-line-height, var(--kendo-line-height-sm))","font-size":"var(--kendo-fab-lg-font-size, var(--kendo-font-size-lg))","font-weight":"var(--kendo-font-weight-semibold)","icon-container-size":"var(--kendo-fab-lg-icon-container-size, var(--kendo-spacing-6))","icon-size":"var(--kendo-fab-lg-icon-size, var(--kendo-spacing-5))","icon-stroke-width":"var(--kendo-fab-lg-icon-stroke-width, 2)","gap":"var(--kendo-spacing-0\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>

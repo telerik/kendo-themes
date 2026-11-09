@@ -12,31 +12,15 @@ $kendo-fab-border-width: var( --kendo-fab-border-width, 1px ) !default;
 $kendo-fab-font-family: var( --kendo-fab-font-family, var(--kendo-font-family) ) !default;
 $kendo-fab-font-size: var( --kendo-fab-font-size, var(--kendo-font-size) ) !default;
 $kendo-fab-line-height: var( --kendo-fab-line-height, var(--kendo-line-height) ) !default;
-/// The line height of the small FAB.
-/// @group floating-action-button
 $kendo-fab-sm-line-height: var( --kendo-fab-sm-line-height, var(--kendo-line-height-lg) ) !default;
-/// The line height of the medium FAB.
-/// @group floating-action-button
 $kendo-fab-md-line-height: var( --kendo-fab-md-line-height, var(--kendo-line-height) ) !default;
-/// The line height of the large FAB.
-/// @group floating-action-button
 $kendo-fab-lg-line-height: var( --kendo-fab-lg-line-height, var(--kendo-line-height-sm) ) !default;
 
-/// The font size of the small FAB.
-/// @group floating-action-button
 $kendo-fab-sm-font-size: var( --kendo-fab-sm-font-size, var(--kendo-font-size-sm) ) !default;
-/// The font size of the large FAB.
-/// @group floating-action-button
 $kendo-fab-lg-font-size: var( --kendo-fab-lg-font-size, var(--kendo-font-size-lg) ) !default;
 
-/// The icon container size of the large FAB.
-/// @group floating-action-button
 $kendo-fab-lg-icon-container-size: var( --kendo-fab-lg-icon-container-size, k-spacing(6) ) !default;
-/// The icon size of the large FAB.
-/// @group floating-action-button
 $kendo-fab-lg-icon-size: var( --kendo-fab-lg-icon-size, k-spacing(5) ) !default;
-/// The icon stroke width of the large FAB.
-/// @group floating-action-button
 $kendo-fab-lg-icon-stroke-width: var( --kendo-fab-lg-icon-stroke-width, 2 ) !default;
 
 $kendo-fab-sm-padding-x: var( --kendo-fab-sm-padding-x, k-spacing(2.5) ) !default;
