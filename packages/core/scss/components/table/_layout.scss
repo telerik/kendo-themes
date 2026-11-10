@@ -27,6 +27,8 @@
 
         .k-table {
             table-layout: fixed;
+            font-size: inherit;
+            line-height: inherit;
         }
     }
 
@@ -62,6 +64,7 @@
     }
     .k-table-th {
         border-block-end-width: 1px;
+        font-weight: $kendo-table-header-font-weight;
     }
 
 
