@@ -20,10 +20,10 @@ $kendo-table-sm-cell-padding-y: k-spacing(2) !default;
 $kendo-table-md-cell-padding-x: k-spacing(2.5) !default;
 $kendo-table-md-cell-padding-y: calc( #{k-spacing(2.5)} + 1px ) !default;
 
-$kendo-table-lg-cell-padding-x: k-spacing(2) !default;
-$kendo-table-lg-cell-padding-y: k-spacing(2.5) !default;
+$kendo-table-lg-cell-padding-x: k-spacing(3) !default;
+$kendo-table-lg-cell-padding-y: calc( #{k-spacing(3)} + 1px ) !default;
 
-$kendo-table-sm-font-size: $kendo-table-font-size !default;
+$kendo-table-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-table-sm-line-height: var(--kendo-line-height-sm) !default;
 
 $kendo-table-md-font-size: $kendo-table-font-size !default;
@@ -38,6 +38,7 @@ $kendo-table-text: k-color(on-app-surface) !default;
 $kendo-table-border: k-color(border) !default;
 
 
+$kendo-table-header-font-weight: var( --kendo-font-weight-medium, 500 ) !default;
 $kendo-table-header-bg: k-color(surface) !default;
 $kendo-table-header-text: color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface)) !default;
 $kendo-table-header-border: k-color(border) !default;
@@ -102,6 +103,7 @@ $kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
     $kendo-table-bg: $kendo-table-bg,
     $kendo-table-text: $kendo-table-text,
     $kendo-table-border: $kendo-table-border,
+    $kendo-table-header-font-weight: $kendo-table-header-font-weight,
     $kendo-table-header-bg: $kendo-table-header-bg,
     $kendo-table-header-text: $kendo-table-header-text,
     $kendo-table-header-border: $kendo-table-header-border,
