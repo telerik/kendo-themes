@@ -30697,16 +30697,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-event-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-event-border, $kendo-scheduler-event-bg )</code></td>
-    <td><code>var(--kendo-scheduler-event-border, var(--kendo-scheduler-event-bg, var(--kendo-color-primary)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-event-gradient</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-gradient, null )</code></td>
@@ -30747,16 +30737,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-event-readonly-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-event-readonly-border, k-color(primary-emphasis) )</code></td>
-    <td><code>var(--kendo-scheduler-event-readonly-border, var(--kendo-color-primary-emphasis))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the read-only Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-event-hover-bg</td>
     <td>String</td>
     <td><code>var( --kendo-scheduler-event-hover-bg, k-color(primary-hover) )</code></td>
@@ -30774,16 +30754,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-event-hover-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-event-hover-border, color-mix(in srgb, k-color(border) 10%, transparent) )</code></td>
-    <td><code>var(--kendo-scheduler-event-hover-border, color-mix(in srgb, var(--kendo-color-border) 10%, transparent))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Scheduler event.</div></div>
     </td>
 </tr>
 <tr>
@@ -30824,16 +30794,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-event-selected-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-scheduler-event-selected-border, $kendo-scheduler-event-bg )</code></td>
-    <td><code>var(--kendo-scheduler-event-selected-border, var(--kendo-scheduler-event-bg, var(--kendo-color-primary)))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Scheduler event.</div></div>
     </td>
 </tr>
 <tr>

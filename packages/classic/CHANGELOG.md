@@ -1,3 +1,13 @@
+## 14.10.0-dev.0 (2026-11-10)
+
+### 🩹 Fixes
+
+- **scheduler:** remove event border styles and variables ([829a9ce432](https://github.com/telerik/kendo-themes/commit/829a9ce432))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.9.0 (2026-11-06)
 
 ### 🚀 Features

@@ -61,9 +61,6 @@
     // Read-only events
     .k-readonly-scheduler .k-event,
     .k-event.k-readonly {
-        border-width: 1px;
-        border-style: solid;
-
         .k-resize-handle {
             display: none;
         }
@@ -406,8 +403,6 @@
     .k-event {
         min-height: $kendo-scheduler-event-min-height;
         box-sizing: border-box;
-        border-width: 0;
-        border-style: solid;
         border-radius: $kendo-scheduler-event-border-radius;
         text-align: start;
         outline: 0;
@@ -532,7 +527,6 @@
             border-color: $kendo-scheduler-bg;
             border-width: $kendo-scheduler-resize-handle-border-width;
             border-radius: $kendo-scheduler-resize-handle-border-radius;
-            background-color: $kendo-scheduler-resize-handle-bg;
         }
 
         .k-resize-n::before,

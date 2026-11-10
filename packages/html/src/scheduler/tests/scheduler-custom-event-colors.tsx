@@ -97,6 +97,25 @@ export default () => (
         </>
       ))}
 
+      <span>Event Readonly</span>
+      <SchedulerEvent readonly style={{ position: "relative", height: "71px" }} title="Event Title" time="10:00 AM – 10:30 AM" />
+      {customEvents.map(({ color }) => (
+        <>
+          <SchedulerEvent
+            readonly
+            style={
+              {
+                position: "relative",
+                height: "71px",
+                "--kendo-scheduler-event-color": color,
+              } as React.CSSProperties
+            }
+            title="Readonly"
+            time="10:00 AM – 10:30 AM"
+          />
+        </>
+      ))}
+
       <span>Marquee</span>
       <div className="k-marquee k-scheduler-marquee k-first k-last" style={{ position: "relative", height: "71px" }}>
         <div className="k-marquee-color"></div>
