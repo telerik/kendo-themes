@@ -20,7 +20,7 @@ $kendo-pivotgrid-row-header-width: 300px !default;
 $kendo-pivotgrid-column-header-height: 75px !default;
 
 $kendo-pivotgrid-cell-padding-x: $kendo-table-md-cell-padding-x !default;
-$kendo-pivotgrid-cell-padding-y: $kendo-table-md-cell-padding-y !default;
+$kendo-pivotgrid-cell-padding-y: k-spacing(2) !default;
 $kendo-pivotgrid-cell-border-width: 1px !default;
 
 $kendo-pivotgrid-bg: k-color(surface-alt) !default;
