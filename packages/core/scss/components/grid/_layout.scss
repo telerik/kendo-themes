@@ -148,6 +148,7 @@
         .k-grid-header {
             border-block-end-width: 1px;
             font-size: $kendo-grid-header-font-size;
+            font-weight: $kendo-grid-header-font-weight;
 
             .k-table {
                 margin-block-end: -1px;
@@ -1097,6 +1098,7 @@
 
     // Grid Sizes
     @each $size, $size-props in $kendo-grid-sizes {
+        $_font-size: map.get( $size-props, font-size );
         $_header-padding-x: map.get( $size-props, header-padding-x );
         $_header-padding-y: map.get( $size-props, header-padding-y );
         $_grouping-header-padding-x: map.get( $size-props, grouping-header-padding-x );
@@ -1119,6 +1121,8 @@
 
             #{k-when-default($kendo-grid-default-size, $size)}
             &.k-grid-#{$size}{
+
+                font-size: $_font-size;
 
                 .k-table-th {
                     padding-block: $_header-padding-y;
@@ -1197,6 +1201,11 @@
                     .k-grid-edit-row .k-table-td {
                         padding-block: $_edit-cell-padding-y;
                         padding-inline: $_edit-cell-padding-x;
+                    }
+
+                    .k-edit-cell:has(> .k-input, > .k-picker),
+                    .k-grid-edit-row .k-table-td:has(> .k-input, > .k-picker) {
+                        padding-inline: $_edit-cell-padding-y;
                     }
                 }
 

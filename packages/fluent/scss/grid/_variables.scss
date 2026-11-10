@@ -49,7 +49,8 @@ $kendo-grid-group-drop-hint-height: var( --kendo-grid-group-drop-hint-height, ca
 $kendo-grid-group-drop-hint-top: var( --kendo-grid-group-drop-hint-top, 2px ) !default;
 
 
-$kendo-grid-sm-padding-x: k-spacing(3) !default;
+$kendo-grid-sm-font-size: var(--kendo-font-size-sm) !default;
+$kendo-grid-sm-padding-x: k-spacing(1) !default;
 $kendo-grid-sm-padding-y: k-spacing(1.5) !default;
 $kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-header-padding-y: $kendo-grid-sm-padding-y !default;
@@ -57,9 +58,9 @@ $kendo-grid-sm-grouping-header-padding-x: k-spacing(1.5) !default;
 $kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-x !default;
 $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
-$kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-padding-x !default;
+$kendo-grid-sm-filter-cell-padding-x: k-spacing(3) !default;
 $kendo-grid-sm-filter-cell-padding-y: k-spacing(2) !default;
-$kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-padding-x !default;
+$kendo-grid-sm-edit-cell-padding-x: k-spacing(0.5) !default;
 $kendo-grid-sm-edit-cell-padding-y: k-spacing(0.5) !default;
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
@@ -113,8 +114,6 @@ $kendo-grid-header-border-width-y: var( --kendo-grid-header-border-width-y, #{$k
 /// @group grid
 $kendo-grid-header-border-width-x: var( --kendo-grid-header-border-width-x, 0px ) !default;
 $kendo-grid-header-font-size: var( --kendo-grid-header-font-size, inherit ) !default;
-/// The font weight of the Grid header.
-/// @group grid
 $kendo-grid-header-font-weight: var( --kendo-grid-header-font-weight, var(--kendo-font-weight-normal) ) !default;
 /// The menu spacing of the Grid header.
 /// @group grid
@@ -351,6 +350,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-group-drop-hint-top: $kendo-grid-group-drop-hint-top,
     $kendo-grid-sm-padding-x: $kendo-grid-sm-padding-x,
     $kendo-grid-sm-padding-y: $kendo-grid-sm-padding-y,
+    $kendo-grid-sm-font-size: $kendo-grid-sm-font-size,
     $kendo-grid-sm-header-padding-x: $kendo-grid-sm-header-padding-x,
     $kendo-grid-sm-header-padding-y: $kendo-grid-sm-header-padding-y,
     $kendo-grid-sm-grouping-header-padding-x: $kendo-grid-sm-grouping-header-padding-x,
@@ -380,6 +380,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-md-selection-aggregates-padding-x: $kendo-grid-md-selection-aggregates-padding-x,
     $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y,
     $kendo-grid-header-font-size: $kendo-grid-header-font-size,
+    $kendo-grid-header-font-weight: $kendo-grid-header-font-weight,
     $kendo-grid-header-first-border: $kendo-grid-header-first-border-width,
     $kendo-grid-header-menu-icon-spacing: $kendo-grid-header-menu-spacing,
     $kendo-grid-column-menu-icon-spacing: $kendo-grid-column-menu-icon-spacing,
