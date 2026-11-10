@@ -121,12 +121,12 @@ export default () =>(
                                     <col style={{ width: "350px" }} />
                                 </colgroup>
                                 <TableThead>
-                                    <TableRow style={{ height: "38px" }}>
+                                    <TableRow style={{ height: "47px" }}>
                                         <GridHeaderCell rowspan={2} className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                         <GridHeaderCell rowspan={2} colspan={1} columnTitle="Product ID"></GridHeaderCell>
                                         <GridHeaderCell rowspan={2} colspan={1} columnTitle="Product Name"></GridHeaderCell>
                                     </TableRow>
-                                    <TableRow style={{ height: "38px" }}>
+                                    <TableRow style={{ height: "47px" }}>
                                         <GridHeaderCell className="k-group-cell" accessibleLabel="Group"></GridHeaderCell>
                                     </TableRow>
                                 </TableThead>
@@ -141,11 +141,11 @@ export default () =>(
                                     <col style={{ height: "120px" }} />
                                 </colgroup>
                                 <TableThead>
-                                    <TableRow style={{ height: "38px" }}>
+                                    <TableRow style={{ height: "47px" }}>
                                         <GridHeaderCell rowspan={1} colspan={3} columnTitle="Availability"></GridHeaderCell>
                                         <GridHeaderCell rowspan={2} colspan={1} columnTitle="Discontinued"></GridHeaderCell>
                                     </TableRow>
-                                    <TableRow style={{ height: "38px" }}>
+                                    <TableRow style={{ height: "47px" }}>
                                         <GridHeaderCell rowspan={1} colspan={1} columnTitle="Unit Price"></GridHeaderCell>
                                         <GridHeaderCell rowspan={1} colspan={1} columnTitle="Units On Order"></GridHeaderCell>
                                         <GridHeaderCell rowspan={1} colspan={1} columnTitle="Units In Stock"></GridHeaderCell>
