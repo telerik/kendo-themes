@@ -29934,16 +29934,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-event-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-event-gradient</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -29984,16 +29974,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-event-readonly-border</td>
-    <td>String</td>
-    <td><code>k-color(primary-emphasis)</code></td>
-    <td><code>var(--kendo-color-primary-emphasis)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the read-only Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-event-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-scheduler-event-bg</code></td>
@@ -30011,16 +29991,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-event-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Scheduler event.</div></div>
     </td>
 </tr>
 <tr>
@@ -30061,16 +30031,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Scheduler event.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scheduler-event-selected-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Scheduler event.</div></div>
     </td>
 </tr>
 <tr>
