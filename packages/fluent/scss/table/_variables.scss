@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
 
@@ -19,8 +20,8 @@ $kendo-table-font-size: var(--kendo-table-font-size, var(--kendo-font-size)) !de
 
 $kendo-table-line-height: null !default;
 
-$kendo-table-sm-font-size: var( --kendo-table-sm-font-size, #{$kendo-table-font-size} ) !default;
-$kendo-table-sm-line-height: var( --kendo-table-sm-line-height, var(--kendo-line-height) ) !default;
+$kendo-table-sm-font-size: var( --kendo-table-sm-font-size, var(--kendo-font-size-sm) ) !default;
+$kendo-table-sm-line-height: var( --kendo-table-sm-line-height, #{math.div( 20, 14 )} ) !default;
 
 $kendo-table-md-font-size: var( --kendo-table-md-font-size, #{$kendo-table-font-size} ) !default;
 $kendo-table-md-line-height: var( --kendo-table-md-line-height, var(--kendo-line-height) ) !default;

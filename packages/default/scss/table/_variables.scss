@@ -15,7 +15,7 @@ $kendo-table-font-size: var(--kendo-font-size) !default;
 $kendo-table-line-height: null !default;
 
 $kendo-table-sm-cell-padding-x: k-spacing(2) !default;
-$kendo-table-sm-cell-padding-y: k-spacing(1) !default;
+$kendo-table-sm-cell-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 
 $kendo-table-md-cell-padding-x: k-spacing(3) !default;
 $kendo-table-md-cell-padding-y: k-spacing(2) !default;
