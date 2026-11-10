@@ -110,7 +110,6 @@
 @forward "./scheduler/_index.scss";
 @forward "./file-box/_index.scss";
 @forward "./prompt-box/_index.scss";
-@forward "./datainsights-composer/_index.scss";
 @forward "./chat/_index.scss";
 @forward "./agent-response/_index.scss";
 @forward "./citation/_index.scss";
@@ -123,6 +122,7 @@
 @forward "./speech-to-text-button/_index.scss";
 @forward "./prompt/_index.scss";
 @forward "./dataviz/_index.scss";
+@forward "./datainsights-composer/_index.scss";
 @forward "./chart-wizard/_index.scss";
 @forward "./map/_index.scss";
 @forward "./orgchart/_index.scss";
@@ -302,7 +302,6 @@
 @use "./segmented-control/_index.scss" as *;
 @use "./smart-box/_index.scss" as *;
 @use "./prompt-box/_index.scss" as *;
-@use "./datainsights-composer/_index.scss" as *;
 
 
 // Dataviz
@@ -311,6 +310,10 @@
 @use "./map/_index.scss" as *;
 @use "./orgchart/_index.scss" as *;
 @use "./signature/_index.scss" as *;
+
+
+// Data insights
+@use "./datainsights-composer/_index.scss" as *;
 
 
 // Styles
