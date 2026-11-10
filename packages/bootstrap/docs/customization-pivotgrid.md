@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pivotgrid-cell-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-table-md-cell-padding-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2)</code></td>
 </tr>
 <tr>
