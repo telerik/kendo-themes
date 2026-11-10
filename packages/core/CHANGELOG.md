@@ -1,3 +1,18 @@
+## 14.10.0-dev.0 (2026-11-10)
+
+### 🚀 Features
+
+- **scheduler:** support custom event colors for read-only events ([43a84e485d](https://github.com/telerik/kendo-themes/commit/43a84e485d))
+
+### 🩹 Fixes
+
+- **scheduler:** remove event border styles and variables ([829a9ce432](https://github.com/telerik/kendo-themes/commit/829a9ce432))
+- **scheduler:** use on-color for resize handles of custom colored events ([c6221bc47f](https://github.com/telerik/kendo-themes/commit/c6221bc47f))
+
+### ❤️ Thank You
+
+- zhpenkov
+
 ## 14.9.0 (2026-11-06)
 
 ### 🚀 Features
