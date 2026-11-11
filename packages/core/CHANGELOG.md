@@ -1,3 +1,23 @@
+## 14.10.0 (2026-11-11)
+
+### 🚀 Features
+
+- **floating-label:** follow nested input/picker size for label text and offsets ([69a0582a51](https://github.com/telerik/kendo-themes/commit/69a0582a51))
+- **scheduler:** support custom event colors for read-only events ([43a84e485d](https://github.com/telerik/kendo-themes/commit/43a84e485d))
+
+### 🩹 Fixes
+
+- **fluent:** fix ImageEditor canvas, borders and placeholder styles ([210d826ee8](https://github.com/telerik/kendo-themes/commit/210d826ee8))
+- **scheduler:** remove event border styles and variables ([829a9ce432](https://github.com/telerik/kendo-themes/commit/829a9ce432))
+- **scheduler:** use on-color for resize handles of custom colored events ([c6221bc47f](https://github.com/telerik/kendo-themes/commit/c6221bc47f))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 ## 14.10.0-dev.3 (2026-11-11)
 
 ### 🚀 Features

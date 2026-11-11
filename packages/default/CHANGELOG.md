@@ -1,3 +1,23 @@
+## 14.10.0 (2026-11-11)
+
+### 🚀 Features
+
+- **floating-label:** follow nested input/picker size for label text and offsets ([69a0582a51](https://github.com/telerik/kendo-themes/commit/69a0582a51))
+
+### 🩹 Fixes
+
+- **fluent:** fix ImageEditor canvas, borders and placeholder styles ([210d826ee8](https://github.com/telerik/kendo-themes/commit/210d826ee8))
+- **datainsights-composer:** add grid as a dependency ([b4607f407f](https://github.com/telerik/kendo-themes/commit/b4607f407f))
+- **datainsights-composer:** load after dataviz in theme indexes ([6d7b5a82ff](https://github.com/telerik/kendo-themes/commit/6d7b5a82ff))
+- **scheduler:** remove event border styles and variables ([829a9ce432](https://github.com/telerik/kendo-themes/commit/829a9ce432))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 ## 14.10.0-dev.3 (2026-11-11)
 
 ### 🚀 Features
