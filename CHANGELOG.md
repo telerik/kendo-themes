@@ -1,3 +1,9 @@
+## 14.10.0-dev.3 (2026-11-11)
+
+### 🚀 Features
+
+- **floating-label:** follow nested input/picker size for label text and offsets ([69a0582a51](https://github.com/telerik/kendo-themes/commit/69a0582a51))
+
 ## 14.10.0-dev.2 (2026-11-11)
 
 ### 🩹 Fixes
