@@ -14,4 +14,4 @@ const dependencyClassNames = [
 const expected = [];
 const unexpected = [];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected], false);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

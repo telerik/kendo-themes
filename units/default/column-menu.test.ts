@@ -11,6 +11,10 @@ const dependencyClassNames = [];
 
 const expected = [];
 
-const unexpected = [];
+const unexpected = [
+    "kendo-column-menu-font-size", // Variable is not consumed by the theme styles.,
+    "kendo-column-menu-line-height", // Variable is not consumed by the theme styles.,
+    "kendo-column-menu-font-family" // Variable is not consumed by the theme styles.
+];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected], false);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

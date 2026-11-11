@@ -210,7 +210,7 @@ function testKendoComponent(
             .map(([key, value]) => `$${key}: ${value},`)
             .join("\n");
 
-        configuration = ` with (${customizations})`;
+        configuration = customizations ? ` with (${customizations})` : "";
     }
 
     const result = compileSassString(`
@@ -240,13 +240,13 @@ function testKendoComponent(
 
         testCustomizations &&
             it("should compile with all variable customizations", () => {
-                Object.entries(uniqueValues).forEach(([property, value]) => {
-                    try {
-                        expect(result).toContain(value);
-                    } catch {
-                        throw new Error(`Missing value for "$${property}" variable: expected "${value}" value in the result.`);
-                    }
-                });
+                const missing = Object.entries(uniqueValues)
+                    .filter(([, value]) => !result.includes(value))
+                    .map(([property]) => `$${property}`);
+
+                if (missing.length) {
+                    throw new Error(`Missing values for variables: ${missing.join(", ")}`);
+                }
             });
 
         dependencyClasses &&
