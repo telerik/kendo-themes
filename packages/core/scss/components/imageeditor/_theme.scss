@@ -28,6 +28,11 @@
         @include checkerboard-gradient();
     }
 
+    // Toolbar
+    .k-imageeditor-toolbar {
+        border-color: $kendo-image-editor-toolbar-border;
+    }
+
     // Action Pane
     .k-imageeditor-action-pane {
         @include fill(
@@ -159,6 +164,7 @@
             $bg: var(--kendo-color-surface-alt),
             $border: $kendo-toolbar-flat-border
         );
+        border-color: $kendo-image-editor-sidebar-border;
 
         &.k-imageeditor-sidebar-scrollable {
             &::before {
@@ -201,11 +207,11 @@
     }
 
     .k-imageeditor-placeholder {
-        border-color: k-color(border);
+        border-color: $kendo-image-editor-placeholder-border;
 
         .k-imageeditor-placeholder-icon {
-            color: k-color(secondary);
-            opacity: .5;
+            color: $kendo-image-editor-placeholder-icon-text;
+            opacity: $kendo-image-editor-placeholder-icon-opacity;
         }
 
         .k-imageeditor-placeholder-title {
