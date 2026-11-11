@@ -1,3 +1,14 @@
+## 14.10.0-dev.2 (2026-11-11)
+
+### 🩹 Fixes
+
+- **fluent:** fix ImageEditor canvas, borders and placeholder styles ([210d826ee8](https://github.com/telerik/kendo-themes/commit/210d826ee8))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+
 ## 14.10.0-dev.1 (2026-11-11)
 
 This was a version bump only for @progress/kendo-theme-core to align it with other projects, there were no code changes.
