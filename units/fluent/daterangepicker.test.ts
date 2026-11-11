@@ -16,7 +16,7 @@ const dependencyClassNames = [
 const expected = [];
 
 const unexpected = [
-    "kendo-daterange-picker-width" // Variable is not consumed by the theme styles.
+    "kendo-daterange-picker-width" // Variable customizations do not work.
 ];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

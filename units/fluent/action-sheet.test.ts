@@ -11,7 +11,7 @@ const dependencyClassNames = ["k-svg-icon", "k-listgroup", "k-popup"];
 const expected = [];
 
 const unexpected = [
-    "kendo-actionsheet-item-border-width" // Variable is not consumed by the theme styles.
+    "kendo-actionsheet-item-border-width" // Variable customizations do not work.
 ];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
