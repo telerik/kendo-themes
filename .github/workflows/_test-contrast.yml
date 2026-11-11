@@ -31,6 +31,9 @@ jobs:
 
   run-checks:
     runs-on: ubuntu-latest
+    # Playwright image ships Chromium and its system deps, so no apt/browser
+    # download happens at runtime. Keep the tag in sync with `playwright` in package.json.
+    container: mcr.microsoft.com/playwright:v1.62.1-noble
     needs: [ prepare ]
 
     strategy:
@@ -61,19 +64,6 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: |
           npm ci --no-audit --no-fund
-
-      - name: Get Playwright version
-        id: playwright-version
-        run: echo "version=$(node -p "require('playwright/package.json').version")" >> "$GITHUB_OUTPUT"
-
-      - name: Use cache for Playwright browsers
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
-
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
 
       - name: Download artifacts
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
