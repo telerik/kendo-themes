@@ -11,7 +11,7 @@ const dependencyClassNames = ["k-svg-icon", "k-listgroup", "k-popup"];
 const expected = [];
 
 const unexpected = [
-    "kendo-actionsheet-item-border-width", // Variable customizations do not work.,
+    "kendo-actionsheet-item-border-width", // Variable customizations do not work.
     "kendo-adaptive-actionsheet-titlebar-border" // Variable customizations do not work.
 ];
 

@@ -17,7 +17,7 @@ const dependencyClassNames = [
 const expected = [];
 
 const unexpected = [
-    "kendo-image-editor-resize-top-offset", // Variable customizations do not work.,
+    "kendo-image-editor-resize-top-offset", // Variable customizations do not work.
     "kendo-image-editor-resize-left-offset" // Variable customizations do not work.
 ];
 
