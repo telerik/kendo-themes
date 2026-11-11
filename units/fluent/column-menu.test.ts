@@ -12,7 +12,7 @@ const dependencyClassNames = [];
 const expected = [];
 
 const unexpected = [
-    "kendo-column-menu-font-family" // Variable is not consumed by the theme styles.
+    "kendo-column-menu-font-family" // Variable customizations do not work.
 ];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

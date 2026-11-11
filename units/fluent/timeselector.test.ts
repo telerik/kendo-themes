@@ -15,7 +15,7 @@ const dependencyClassNames = [
 const expected = [];
 
 const unexpected = [
-    "kendo-time-selector-header-border-width" // Variable is not consumed by the theme styles.
+    "kendo-time-selector-header-border-width" // Variable customizations do not work.
 ];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
