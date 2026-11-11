@@ -5,10 +5,6 @@
 @mixin kendo-image-editor--theme() {
     @include kendo-image-editor--theme-base();
 
-    .k-imageeditor-canvas-container {
-        background-color: k-color(base-subtle);
-    }
-
     .k-imageeditor-canvas {
         background: none;
         transform: none;
