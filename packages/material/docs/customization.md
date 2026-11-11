@@ -18779,6 +18779,36 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-placeholder-border</td>
+    <td>String</td>
+    <td><code>k-color(border)</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-icon-text</td>
+    <td>String</td>
+    <td><code>k-color(secondary)</code></td>
+    <td><code>var(--kendo-color-secondary)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon color of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-icon-opacity</td>
+    <td>Number</td>
+    <td><code>.5</code></td>
+    <td><code>0.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon opacity of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-pane-title-text</td>
     <td>String</td>
     <td><code>k-color(on-app-surface)</code></td>

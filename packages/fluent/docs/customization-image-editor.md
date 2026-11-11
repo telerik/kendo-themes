@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-content-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-content-bg, #{k-color(base-subtle)} )</code></td>
-    <td><code>var(--kendo-image-editor-content-bg, var(--kendo-color-base-subtle))</code></td>
+    <td><code>var( --kendo-image-editor-content-bg, #{k-color(surface-alt)} )</code></td>
+    <td><code>var(--kendo-image-editor-content-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ImageEditor content.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-content-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ImageEditor content.</div></div>
@@ -218,6 +218,56 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-toolbar-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-toolbar-border, #{$kendo-image-editor-border} )</code></td>
+    <td><code>var(--kendo-image-editor-toolbar-border, var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-sidebar-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-sidebar-border, #{$kendo-image-editor-border} )</code></td>
+    <td><code>var(--kendo-image-editor-sidebar-border, var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor sidebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-placeholder-border, #{$kendo-image-editor-border} )</code></td>
+    <td><code>var(--kendo-image-editor-placeholder-border, var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-icon-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-placeholder-icon-text, #{k-color(secondary-on-surface)} )</code></td>
+    <td><code>var(--kendo-image-editor-placeholder-icon-text, var(--kendo-color-secondary-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon color of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-icon-opacity</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-placeholder-icon-opacity, 1 )</code></td>
+    <td><code>var(--kendo-image-editor-placeholder-icon-opacity, 1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon opacity of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-action-pane-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-action-pane-padding-y, #{k-spacing(3)} )</code></td>
@@ -241,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-image-editor-action-pane-width</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-action-pane-width, calc( 320px + #{$kendo-image-editor-content-border-width}) )</code></td>
-    <td><code>var(--kendo-image-editor-action-pane-width, calc(320px + 0px))</code></td>
+    <td><code>var(--kendo-image-editor-action-pane-width, calc(320px + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ImageEditor action pane.</div></div>
