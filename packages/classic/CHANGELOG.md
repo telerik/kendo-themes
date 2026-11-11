@@ -1,3 +1,15 @@
+## 14.10.0-dev.1 (2026-11-11)
+
+### 🩹 Fixes
+
+- **datainsights-composer:** add grid as a dependency ([b4607f407f](https://github.com/telerik/kendo-themes/commit/b4607f407f))
+- **datainsights-composer:** load after dataviz in theme indexes ([6d7b5a82ff](https://github.com/telerik/kendo-themes/commit/6d7b5a82ff))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.10.0-dev.0 (2026-11-10)
 
 ### 🩹 Fixes

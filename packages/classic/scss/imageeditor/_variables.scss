@@ -66,6 +66,9 @@ $kendo-image-editor-content-border: null !default;
 $kendo-image-editor-action-pane-bg: k-color(surface-alt) !default;
 $kendo-image-editor-action-pane-text: null !default;
 $kendo-image-editor-action-pane-border: null !default;
+$kendo-image-editor-placeholder-border: k-color(border) !default;
+$kendo-image-editor-placeholder-icon-text: k-color(secondary) !default;
+$kendo-image-editor-placeholder-icon-opacity: .5 !default;
 
 $kendo-image-editor-pane-title-text: k-color(on-app-surface) !default;
 
@@ -144,6 +147,9 @@ $kendo-image-editor-handle-border: k-color(primary) !default;
     $kendo-image-editor-action-pane-bg: $kendo-image-editor-action-pane-bg,
     $kendo-image-editor-action-pane-text: $kendo-image-editor-action-pane-text,
     $kendo-image-editor-action-pane-border: $kendo-image-editor-action-pane-border,
+    $kendo-image-editor-placeholder-border: $kendo-image-editor-placeholder-border,
+    $kendo-image-editor-placeholder-icon-text: $kendo-image-editor-placeholder-icon-text,
+    $kendo-image-editor-placeholder-icon-opacity: $kendo-image-editor-placeholder-icon-opacity,
     $kendo-image-editor-pane-title-text: $kendo-image-editor-pane-title-text,
     $kendo-image-editor-option-preview-bg: $kendo-image-editor-option-preview-bg,
     $kendo-image-editor-option-preview-text: $kendo-image-editor-option-preview-text,
