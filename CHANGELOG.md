@@ -1,3 +1,9 @@
+## 14.10.0-dev.2 (2026-11-11)
+
+### 🩹 Fixes
+
+- **fluent:** fix ImageEditor canvas, borders and placeholder styles ([210d826ee8](https://github.com/telerik/kendo-themes/commit/210d826ee8))
+
 ## 14.10.0-dev.1 (2026-11-11)
 
 ### 🩹 Fixes
