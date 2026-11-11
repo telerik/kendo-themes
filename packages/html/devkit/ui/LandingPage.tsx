@@ -60,6 +60,8 @@ function LandingPageContent() {
     const { params } = useDevKit();
     const [search, setSearch] = useState('');
     const [open, setOpen] = useState<Set<string>>(new Set());
+    // Per-group overrides of the default (templates collapsed, tests expanded).
+    const [groupOverrides, setGroupOverrides] = useState<Record<string, boolean>>({});
 
     const themeQs = themeQuery(params.theme, params.swatch);
     const q = search.trim();
@@ -138,6 +140,9 @@ function LandingPageContent() {
             return next;
         });
 
+    const toggleGroup = (key: string, current: boolean) =>
+        setGroupOverrides(prev => ({ ...prev, [key]: !current }));
+
     return (
         <div className="devkit-landing">
             <header className="devkit-landing-header">
@@ -199,12 +204,26 @@ function LandingPageContent() {
                                                 {(['template', 'test'] as const).map(kind => {
                                                     const group = previews.filter(p => p.kind === kind);
                                                     if (group.length === 0) return null;
+                                                    const groupKey = `${component}:${kind}`;
+                                                    const groupOpen = q
+                                                        ? true
+                                                        : (groupOverrides[groupKey] ?? kind === 'test');
+                                                    const groupRegionId = `devkit-group-${component}-${kind}`;
                                                     return (
                                                         <React.Fragment key={kind}>
-                                                            <div className="devkit-test-group" data-kind={kind}>
+                                                            <button
+                                                                className="devkit-test-group"
+                                                                data-kind={kind}
+                                                                data-open={groupOpen}
+                                                                onClick={() => toggleGroup(groupKey, groupOpen)}
+                                                                aria-expanded={groupOpen}
+                                                                aria-controls={groupRegionId}
+                                                            >
+                                                                <ChevronIcon className="devkit-test-group-chevron" />
                                                                 {kind === 'template' ? 'Templates' : 'Tests'}
                                                                 <span className="devkit-test-group-count">{group.length}</span>
-                                                            </div>
+                                                            </button>
+                                                            <div id={groupRegionId} hidden={!groupOpen} className="devkit-test-group-items">
                                                             {group.map(({ test, matched }) => (
                                                                 <a
                                                                     key={`${kind}-${test}`}
@@ -218,6 +237,7 @@ function LandingPageContent() {
                                                                     <Highlight text={test} matched={matched} />
                                                                 </a>
                                                             ))}
+                                                            </div>
                                                         </React.Fragment>
                                                     );
                                                 })}
