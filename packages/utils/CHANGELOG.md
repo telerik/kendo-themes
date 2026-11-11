@@ -1,3 +1,7 @@
+## 14.10.0-dev.1 (2026-11-11)
+
+This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
+
 ## 14.10.0-dev.0 (2026-11-10)
 
 This was a version bump only for @progress/kendo-theme-utils to align it with other projects, there were no code changes.
