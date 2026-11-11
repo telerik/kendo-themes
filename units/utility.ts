@@ -262,7 +262,39 @@ function testKendoComponent(
     });
 }
 
+/**
+ * Configures the whole theme through its entry point with one variable per
+ * component group. Catches module load-order problems that make `with ()`
+ * configuration fail (e.g. a module being loaded before it is configured).
+ */
+function testKendoThemeConfiguration(): void {
+    const firstPerFile = new Map<string, Variable>();
+    data.variables
+        .filter((item: any) => item.file?.path && item.file.path.startsWith(`${theme}/scss/`) && !item.file.path.includes("/scss/core/") && item.resolvedValue && item.resolvedType !== "Map" && !item.role?.includes("default"))
+        .forEach((item: any) => {
+            if (!firstPerFile.has(item.file.path)) {
+                firstPerFile.set(item.file.path, item);
+            }
+        });
+
+    const variables = [...firstPerFile.values()] as any[];
+    // Re-applying a variable's own resolved value keeps derived values valid.
+    const configuration = variables.map((item) => `$${item.context.name}: ${item.resolvedValue},`).join("\n");
+
+    describe("theme configuration", () => {
+        it("should compile with one customized variable per component", () => {
+            expect(() =>
+                compileSassString(`
+                    @use 'index.scss' as * with (${configuration});
+                    @include core-styles();
+                `)
+            ).not.toThrow();
+        });
+    });
+}
+
 export {
+    testKendoThemeConfiguration,
     testKendoModule,
     testKendoComponent,
 };
