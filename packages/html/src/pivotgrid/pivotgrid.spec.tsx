@@ -1,6 +1,6 @@
 import { classNames, nextId } from '../misc';
 import PivotGridConfiguratorButton from './pivotgrid-configurator-button.spec';
-import PivotGridContainer from './pivotgrid-container';
+import PivotGridContainer, { PIVOTGRIDCONTAINER_VARIANTS } from './pivotgrid-container';
 import React from 'react';
 
 import { KendoComponent } from '../_types/component';
@@ -93,6 +93,8 @@ export const PivotGrid: KendoComponent<KendoPivotGridProps & React.HTMLAttribute
 PivotGrid.states = states;
 PivotGrid.options = options;
 PivotGrid.className = PIVOTGRID_CLASSNAME;
+// Rendered on the wrapping container when a configurator is shown.
+PivotGrid.variants = PIVOTGRIDCONTAINER_VARIANTS;
 PivotGrid.defaultOptions = defaultOptions;
 PivotGrid.moduleName = PIVOTGRID_MODULE_NAME;
 PivotGrid.folderName = PIVOTGRID_FOLDER_NAME;

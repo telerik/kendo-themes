@@ -1,6 +1,13 @@
-import { classNames } from '../misc';
+import { classNames, variantClassNames } from '../misc';
 
 export const PIVOTGRIDCONTAINER_CLASSNAME = `k-pivotgrid-container`;
+
+export const PIVOTGRIDCONTAINER_VARIANTS = [
+    "pivotgrid-container-left",
+    "pivotgrid-container-bottom",
+    "pivotgrid-container-right",
+    "pivotgrid-container-top"
+] as const;
 
 const states = [];
 
@@ -33,7 +40,7 @@ export const PivotGridContainer = (
             className={classNames(
                 props.className,
                 PIVOTGRIDCONTAINER_CLASSNAME,
-                `${PIVOTGRIDCONTAINER_CLASSNAME}-${position}`
+                variantClassNames(PIVOTGRIDCONTAINER_CLASSNAME, `pivotgrid-container-${position}`)
             )}>
             {props.children}
         </div>
@@ -43,6 +50,7 @@ export const PivotGridContainer = (
 PivotGridContainer.states = states;
 PivotGridContainer.options = options;
 PivotGridContainer.className = PIVOTGRIDCONTAINER_CLASSNAME;
+PivotGridContainer.variants = PIVOTGRIDCONTAINER_VARIANTS;
 PivotGridContainer.moduleName = null;
 PivotGridContainer.folderName = null;
 PivotGridContainer.defaultOptions = defaultOptions;
