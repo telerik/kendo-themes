@@ -271,15 +271,21 @@ function testKendoThemeConfiguration(): void {
     // Re-applying a variable's own resolved value keeps derived values valid.
     const configuration = variables.map((item) => `$${item.context.name}: ${item.resolvedValue},`).join("\n");
 
+    // Compiled at module level (like the other tests) so it is not bound by the per-test timeout.
+    let error: unknown;
+    try {
+        compileSassString(`
+            @use 'index.scss' as * with (${configuration});
+            @include kendo-theme--styles();
+        `);
+    } catch (e) {
+        error = e;
+    }
+
     describe("theme configuration", () => {
         it("should compile with one customized variable per component", () => {
-            expect(() =>
-                compileSassString(`
-                    @use 'index.scss' as * with (${configuration});
-                    @include kendo-theme--styles();
-                `)
-            ).not.toThrow();
-        }, 30000);
+            expect(error).toBeUndefined();
+        });
     });
 }
 
