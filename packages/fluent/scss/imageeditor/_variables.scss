@@ -16,14 +16,19 @@ $kendo-image-editor-font-size: var( --kendo-image-editor-font-size, var(--kendo-
 $kendo-image-editor-line-height: var( --kendo-image-editor-line-height, var(--kendo-line-height) ) !default;
 $kendo-image-editor-font-family: var( --kendo-image-editor-font-family, var(--kendo-font-family) ) !default;
 
-$kendo-image-editor-content-bg: var( --kendo-image-editor-content-bg, #{k-color(base-subtle)} ) !default;
+$kendo-image-editor-content-bg: var( --kendo-image-editor-content-bg, #{k-color(surface-alt)} ) !default;
 $kendo-image-editor-content-text: var( --kendo-image-editor-content-text, inherit ) !default;
 $kendo-image-editor-content-border: var( --kendo-image-editor-content-border, inherit ) !default;
-$kendo-image-editor-content-border-width: 0px !default;
+$kendo-image-editor-content-border-width: 1px !default;
 
 $kendo-image-editor-action-pane-bg: var( --kendo-image-editor-action-pane-bg, #{k-color(surface-alt)} ) !default;
 $kendo-image-editor-action-pane-text: var( --kendo-image-editor-action-pane-text, inherit ) !default;
 $kendo-image-editor-action-pane-border: var( --kendo-image-editor-action-pane-border, inherit ) !default;
+$kendo-image-editor-toolbar-border: var( --kendo-image-editor-toolbar-border, #{$kendo-image-editor-border} ) !default;
+$kendo-image-editor-sidebar-border: var( --kendo-image-editor-sidebar-border, #{$kendo-image-editor-border} ) !default;
+$kendo-image-editor-placeholder-border: var( --kendo-image-editor-placeholder-border, #{$kendo-image-editor-border} ) !default;
+$kendo-image-editor-placeholder-icon-text: var( --kendo-image-editor-placeholder-icon-text, #{k-color(secondary-on-surface)} ) !default;
+$kendo-image-editor-placeholder-icon-opacity: var( --kendo-image-editor-placeholder-icon-opacity, 1 ) !default;
 $kendo-image-editor-action-pane-padding-y: var( --kendo-image-editor-action-pane-padding-y, #{k-spacing(3)} ) !default;
 $kendo-image-editor-action-pane-padding-x: var( --kendo-image-editor-action-pane-padding-x, #{k-spacing(3)} ) !default;
 $kendo-image-editor-action-pane-width: var( --kendo-image-editor-action-pane-width, calc( 320px + #{$kendo-image-editor-content-border-width}) ) !default;
@@ -144,6 +149,11 @@ $kendo-image-editor-resize-left-offset: var( --kendo-image-editor-resize-left-of
     $kendo-image-editor-action-pane-bg: $kendo-image-editor-action-pane-bg,
     $kendo-image-editor-action-pane-text: $kendo-image-editor-action-pane-text,
     $kendo-image-editor-action-pane-border: $kendo-image-editor-action-pane-border,
+    $kendo-image-editor-toolbar-border: $kendo-image-editor-toolbar-border,
+    $kendo-image-editor-sidebar-border: $kendo-image-editor-sidebar-border,
+    $kendo-image-editor-placeholder-border: $kendo-image-editor-placeholder-border,
+    $kendo-image-editor-placeholder-icon-text: $kendo-image-editor-placeholder-icon-text,
+    $kendo-image-editor-placeholder-icon-opacity: $kendo-image-editor-placeholder-icon-opacity,
     $kendo-image-editor-pane-title-text: $kendo-image-editor-pane-title-text,
     $kendo-image-editor-option-preview-bg: $kendo-image-editor-option-preview-bg,
     $kendo-image-editor-option-preview-text: $kendo-image-editor-option-preview-text,

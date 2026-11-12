@@ -15833,6 +15833,106 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-label-sm-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-floating-label-sm-font-size, #{$kendo-input-sm-font-size})</code></td>
+    <td><code>var(--kendo-floating-label-sm-font-size, var(--kendo-font-size-sm))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-font-size</td>
+    <td>String</td>
+    <td><code>var(--kendo-floating-label-lg-font-size, #{$kendo-input-lg-font-size})</code></td>
+    <td><code>var(--kendo-floating-label-lg-font-size, var(--kendo-font-size-lg))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-floating-label-sm-line-height, #{$kendo-input-sm-line-height})</code></td>
+    <td><code>var(--kendo-floating-label-sm-line-height, var(--kendo-line-height-lg))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-line-height</td>
+    <td>String</td>
+    <td><code>var(--kendo-floating-label-lg-line-height, #{$kendo-input-lg-line-height})</code></td>
+    <td><code>var(--kendo-floating-label-lg-line-height, var(--kendo-line-height-lg))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-sm-line-height} * #{$kendo-floating-label-sm-font-size} )</code></td>
+    <td><code>calc(var(--kendo-floating-label-sm-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-sm-font-size, var(--kendo-font-size-sm)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-lg-line-height} * #{$kendo-floating-label-lg-font-size} )</code></td>
+    <td><code>calc(var(--kendo-floating-label-lg-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-lg-font-size, var(--kendo-font-size-lg)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-offset-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-input-sm-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc(var(--kendo-spacing-2) + 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-offset-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-input-lg-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc(var(--kendo-spacing-4\.5) + 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sm-offset-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-sm-height} + #{$kendo-input-border-width} + #{$kendo-input-sm-padding-y} )</code></td>
+    <td><code>calc(calc(var(--kendo-floating-label-sm-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-sm-font-size, var(--kendo-font-size-sm))) + 1px + calc(var(--kendo-spacing-0\.5) + 1px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the small Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-lg-offset-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-lg-height} + #{$kendo-input-border-width} + #{$kendo-input-lg-padding-y} )</code></td>
+    <td><code>calc(calc(var(--kendo-floating-label-lg-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-lg-font-size, var(--kendo-font-size-lg))) + 1px + var(--kendo-spacing-2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the large Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-floating-label-focus-scale</td>
     <td>String</td>
     <td><code>var(--kendo-floating-label-focus-scale, 1)</code></td>
@@ -15920,6 +16020,38 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-floating-label-sm-font-size,
+        line-height: $kendo-floating-label-sm-line-height,
+        height: $kendo-floating-label-sm-height,
+        offset-x: $kendo-floating-label-sm-offset-x,
+        offset-y: $kendo-floating-label-sm-offset-y
+    ),
+    md: (
+        font-size: $kendo-floating-label-font-size,
+        line-height: $kendo-floating-label-line-height,
+        height: $kendo-floating-label-height,
+        offset-x: $kendo-floating-label-offset-x,
+        offset-y: $kendo-floating-label-offset-y
+    ),
+    lg: (
+        font-size: $kendo-floating-label-lg-font-size,
+        line-height: $kendo-floating-label-lg-line-height,
+        height: $kendo-floating-label-lg-height,
+        offset-x: $kendo-floating-label-lg-offset-x,
+        offset-y: $kendo-floating-label-lg-offset-y
+    )
+)</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-floating-label-sm-font-size, var(--kendo-font-size-sm))","line-height":"var(--kendo-floating-label-sm-line-height, var(--kendo-line-height-lg))","height":"calc(var(--kendo-floating-label-sm-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-sm-font-size, var(--kendo-font-size-sm)))","offset-x":"calc(var(--kendo-spacing-2) + 1px)","offset-y":"calc(calc(var(--kendo-floating-label-sm-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-sm-font-size, var(--kendo-font-size-sm))) + 1px + calc(var(--kendo-spacing-0\\.5) + 1px))"</li><li>md: "font-size":"var(--kendo-floating-label-font-size, var(--kendo-font-size))","line-height":"var(--kendo-floating-label-line-height, var(--kendo-line-height))","height":"calc(var(--kendo-floating-label-line-height, var(--kendo-line-height)) * var(--kendo-floating-label-font-size, var(--kendo-font-size)))","offset-x":"calc(var(--kendo-input-padding-x, var(--kendo-spacing-2\\.5)) + 1px)","offset-y":"calc(calc(var(--kendo-floating-label-line-height, var(--kendo-line-height)) * var(--kendo-floating-label-font-size, var(--kendo-font-size))) + 1px + calc(var(--kendo-input-padding-y, var(--kendo-spacing-1)) + 1px))"</li><li>lg: "font-size":"var(--kendo-floating-label-lg-font-size, var(--kendo-font-size-lg))","line-height":"var(--kendo-floating-label-lg-line-height, var(--kendo-line-height-lg))","height":"calc(var(--kendo-floating-label-lg-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-lg-font-size, var(--kendo-font-size-lg)))","offset-x":"calc(var(--kendo-spacing-4\\.5) + 1px)","offset-y":"calc(calc(var(--kendo-floating-label-lg-line-height, var(--kendo-line-height-lg)) * var(--kendo-floating-label-lg-font-size, var(--kendo-font-size-lg))) + 1px + var(--kendo-spacing-2))"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Floating Label. Picked up automatically based on the size of the nested input/picker.</div></div>
     </td>
 </tr>
 </tbody>
@@ -19180,8 +19312,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-content-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-image-editor-content-bg, #{k-color(base-subtle)} )</code></td>
-    <td><code>var(--kendo-image-editor-content-bg, var(--kendo-color-base-subtle))</code></td>
+    <td><code>var( --kendo-image-editor-content-bg, #{k-color(surface-alt)} )</code></td>
+    <td><code>var(--kendo-image-editor-content-bg, var(--kendo-color-surface-alt))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ImageEditor content.</div></div>
@@ -19210,8 +19342,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-content-border-width</td>
     <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the ImageEditor content.</div></div>
@@ -19248,6 +19380,56 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-image-editor-toolbar-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-toolbar-border, #{$kendo-image-editor-border} )</code></td>
+    <td><code>var(--kendo-image-editor-toolbar-border, var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-sidebar-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-sidebar-border, #{$kendo-image-editor-border} )</code></td>
+    <td><code>var(--kendo-image-editor-sidebar-border, var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor sidebar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-placeholder-border, #{$kendo-image-editor-border} )</code></td>
+    <td><code>var(--kendo-image-editor-placeholder-border, var(--kendo-image-editor-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-icon-text</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-placeholder-icon-text, #{k-color(secondary-on-surface)} )</code></td>
+    <td><code>var(--kendo-image-editor-placeholder-icon-text, var(--kendo-color-secondary-on-surface))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon color of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-image-editor-placeholder-icon-opacity</td>
+    <td>String</td>
+    <td><code>var( --kendo-image-editor-placeholder-icon-opacity, 1 )</code></td>
+    <td><code>var(--kendo-image-editor-placeholder-icon-opacity, 1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon opacity of the ImageEditor placeholder.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-image-editor-action-pane-padding-y</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-action-pane-padding-y, #{k-spacing(3)} )</code></td>
@@ -19271,7 +19453,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-image-editor-action-pane-width</td>
     <td>String</td>
     <td><code>var( --kendo-image-editor-action-pane-width, calc( 320px + #{$kendo-image-editor-content-border-width}) )</code></td>
-    <td><code>var(--kendo-image-editor-action-pane-width, calc(320px + 0px))</code></td>
+    <td><code>var(--kendo-image-editor-action-pane-width, calc(320px + 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ImageEditor action pane.</div></div>
