@@ -12,13 +12,23 @@ $kendo-fab-border-width: var( --kendo-fab-border-width, 1px ) !default;
 $kendo-fab-font-family: var( --kendo-fab-font-family, var(--kendo-font-family) ) !default;
 $kendo-fab-font-size: var( --kendo-fab-font-size, var(--kendo-font-size) ) !default;
 $kendo-fab-line-height: var( --kendo-fab-line-height, var(--kendo-line-height) ) !default;
+$kendo-fab-sm-line-height: var( --kendo-fab-sm-line-height, var(--kendo-line-height-lg) ) !default;
+$kendo-fab-md-line-height: var( --kendo-fab-md-line-height, var(--kendo-line-height) ) !default;
+$kendo-fab-lg-line-height: var( --kendo-fab-lg-line-height, var(--kendo-line-height-sm) ) !default;
 
-$kendo-fab-sm-padding-x: var( --kendo-fab-sm-padding-x, k-spacing(1.5) ) !default;
-$kendo-fab-md-padding-x: var( --kendo-fab-md-padding-x, k-spacing(4) ) !default;
+$kendo-fab-sm-font-size: var( --kendo-fab-sm-font-size, var(--kendo-font-size-sm) ) !default;
+$kendo-fab-lg-font-size: var( --kendo-fab-lg-font-size, var(--kendo-font-size-lg) ) !default;
+
+$kendo-fab-lg-icon-container-size: var( --kendo-fab-lg-icon-container-size, k-spacing(6) ) !default;
+$kendo-fab-lg-icon-size: var( --kendo-fab-lg-icon-size, k-spacing(5) ) !default;
+$kendo-fab-lg-icon-stroke-width: var( --kendo-fab-lg-icon-stroke-width, 2 ) !default;
+
+$kendo-fab-sm-padding-x: var( --kendo-fab-sm-padding-x, k-spacing(2.5) ) !default;
+$kendo-fab-md-padding-x: var( --kendo-fab-md-padding-x, k-spacing(4.5) ) !default;
 $kendo-fab-lg-padding-x: var( --kendo-fab-lg-padding-x, k-spacing(6) ) !default;
 
-$kendo-fab-sm-padding-y: var( --kendo-fab-sm-padding-y, k-spacing(1.5) ) !default;
-$kendo-fab-md-padding-y: var( --kendo-fab-md-padding-y, k-spacing(4) ) !default;
+$kendo-fab-sm-padding-y: var( --kendo-fab-sm-padding-y, k-spacing(2.5) ) !default;
+$kendo-fab-md-padding-y: var( --kendo-fab-md-padding-y, k-spacing(4.5) ) !default;
 $kendo-fab-lg-padding-y: var( --kendo-fab-lg-padding-y, k-spacing(6) ) !default;
 
 /// The offset of the focused FAB.
@@ -64,17 +74,28 @@ $kendo-fab-sizes: (
     sm: (
         padding-x: $kendo-fab-sm-padding-x,
         padding-y: $kendo-fab-sm-padding-y,
-        gap: k-spacing(1)
+        line-height: $kendo-fab-sm-line-height,
+        font-size: $kendo-fab-sm-font-size,
+        font-weight: var( --kendo-font-weight-normal ),
+        gap: k-spacing(0.5)
     ),
     md: (
         padding-x: $kendo-fab-md-padding-x,
         padding-y: $kendo-fab-md-padding-y,
-        gap: k-spacing(1.5)
+        line-height: $kendo-fab-md-line-height,
+        font-weight: var( --kendo-font-weight-semibold ),
+        gap: k-spacing(0.5)
     ),
     lg: (
         padding-x: $kendo-fab-lg-padding-x,
         padding-y: $kendo-fab-lg-padding-y,
-        gap: k-spacing(1.5)
+        line-height: $kendo-fab-lg-line-height,
+        font-size: $kendo-fab-lg-font-size,
+        font-weight: var( --kendo-font-weight-semibold ),
+        icon-container-size: $kendo-fab-lg-icon-container-size,
+        icon-size: $kendo-fab-lg-icon-size,
+        icon-stroke-width: $kendo-fab-lg-icon-stroke-width,
+        gap: k-spacing(0.5)
     )
 ) !default;
 
@@ -132,6 +153,14 @@ $kendo-fab-generating-opacity: var( --kendo-fab-generating-opacity, 60% ) !defau
     $kendo-fab-font-family: $kendo-fab-font-family,
     $kendo-fab-font-size: $kendo-fab-font-size,
     $kendo-fab-line-height: $kendo-fab-line-height,
+    $kendo-fab-sm-line-height: $kendo-fab-sm-line-height,
+    $kendo-fab-md-line-height: $kendo-fab-md-line-height,
+    $kendo-fab-lg-line-height: $kendo-fab-lg-line-height,
+    $kendo-fab-sm-font-size: $kendo-fab-sm-font-size,
+    $kendo-fab-lg-font-size: $kendo-fab-lg-font-size,
+    $kendo-fab-lg-icon-container-size: $kendo-fab-lg-icon-container-size,
+    $kendo-fab-lg-icon-size: $kendo-fab-lg-icon-size,
+    $kendo-fab-lg-icon-stroke-width: $kendo-fab-lg-icon-stroke-width,
     $kendo-fab-sm-padding-x: $kendo-fab-sm-padding-x,
     $kendo-fab-md-padding-x: $kendo-fab-md-padding-x,
     $kendo-fab-lg-padding-x: $kendo-fab-lg-padding-x,
