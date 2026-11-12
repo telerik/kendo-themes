@@ -8,12 +8,13 @@ const className = List.className;
 
 const dependencyClassNames = [];
 
-const expected = [];
-
-const unexpected = [
-    "kendo-list-filter-padding-y", // This variable is used in the Core
+const expected = [
     "kendo-list-item-bg", // Variable customizations work, but is used by another variable.
     "kendo-list-item-text" // Variable customizations work, but is used by another variable.
+];
+
+const unexpected = [
+    "kendo-list-filter-padding-y" // This variable is used in the Core
 ];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

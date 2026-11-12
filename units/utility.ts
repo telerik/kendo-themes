@@ -103,39 +103,35 @@ function getAllValues(obj: Record<string, any>): string[] {
  * @param module - The module's name.
  * @param map - The module's map name.
  * @param cssVariablePrefix - The module's css variables prefix.
- * @param testCustomizations - Toggles the module's customizations test.
  */
 function testKendoModule(
     module: string,
     map: string,
-    cssVariablePrefix: string,
-    testCustomizations: boolean = true
+    cssVariablePrefix: string
 ): void {
     let uniqueValues: Record<string, any>;
     let configuration = "";
 
-    if (testCustomizations) {
-        const moduleVariable = data.variables.find((item) => item.context.name === map);
-        if (!moduleVariable) {
-            throw new Error(`Module variable with name "${map}" not found`);
-        }
-
-        const modulePrettyValue = moduleVariable.prettyValue;
-        if (!modulePrettyValue) {
-            throw new Error(`Module variable "${map}" has no prettyValue`);
-        }
-
-        // Generate nested test values
-        uniqueValues = generateTestValues(modulePrettyValue, module);
-
-        // Convert to SCSS map syntax
-        const customizations = `
-            $${map}: (
-                ${toScssMap(uniqueValues)}
-            )`;
-
-        configuration = ` with (${customizations})`;
+    const moduleVariable = data.variables.find((item) => item.context.name === map);
+    if (!moduleVariable) {
+        throw new Error(`Module variable with name "${map}" not found`);
     }
+
+    const modulePrettyValue = moduleVariable.prettyValue;
+    if (!modulePrettyValue) {
+        throw new Error(`Module variable "${map}" has no prettyValue`);
+    }
+
+    // Generate nested test values
+    uniqueValues = generateTestValues(modulePrettyValue, module);
+
+    // Convert to SCSS map syntax
+    const customizations = `
+        $${map}: (
+            ${toScssMap(uniqueValues)}
+        )`;
+
+    configuration = ` with (${customizations})`;
 
     const result = compileSassString(`
         @use 'index.scss' as *${configuration};
@@ -150,17 +146,16 @@ function testKendoModule(
             expect(result).toBeDefined();
         });
 
-        testCustomizations &&
-            it("should compile with map customizations", () => {
-                const allValues = getAllValues(uniqueValues);
-                allValues.forEach((value) => {
-                    try {
-                        expect(result).toContain(value);
-                    } catch {
-                        throw new Error(`Missing expected value "${value}" in the result.`);
-                    }
-                });
+        it("should compile with map customizations", () => {
+            const allValues = getAllValues(uniqueValues);
+            allValues.forEach((value) => {
+                try {
+                    expect(result).toContain(value);
+                } catch {
+                    throw new Error(`Missing expected value "${value}" in the result.`);
+                }
             });
+        });
 
         cssVariablePrefix &&
             it("should compile with css variables", () => {
@@ -180,15 +175,13 @@ function testKendoModule(
  * @param className - The component's className.
  * @param dependencyClasses - The component's dependencies classNames.
  * @param variableExceptions - The component's excluded from test variables.
- * @param testCustomizations - Toggles the component's variable customizations test.
  */
 function testKendoComponent(
     component: string | null,
     group: string | null,
     className: string | string[] | null,
     dependencyClasses: string[],
-    variableExceptions?: string[],
-    testCustomizations: boolean = true
+    variableExceptions?: string[]
 ): void {
     // Fail the test if component is null
     if (component === null || group === null) {
@@ -198,20 +191,18 @@ function testKendoComponent(
     let uniqueValues: Record<string, string> = {};
     let configuration = "";
 
-    if (testCustomizations) {
-        const componentVariables = data.variables
-            .filter((item) => item.group[0] === group && item.resolvedType !== "Map" && !item.role?.includes("default") && !item.context.name.endsWith("-theme-colors"))
-            .map((item) => item.context.name)
-            .filter((item) => !variableExceptions?.includes(item));
+    const componentVariables = data.variables
+        .filter((item) => item.group[0] === group && item.resolvedType !== "Map" && !item.role?.includes("default") && !item.context.name.endsWith("-theme-colors"))
+        .map((item) => item.context.name)
+        .filter((item) => !variableExceptions?.includes(item));
 
-        uniqueValues = Object.fromEntries(componentVariables.map((item) => [item, `test-${item}`]));
+    uniqueValues = Object.fromEntries(componentVariables.map((item) => [item, `test-${item}`]));
 
-        const customizations = Object.entries(uniqueValues)
-            .map(([key, value]) => `$${key}: ${value},`)
-            .join("\n");
+    const customizations = Object.entries(uniqueValues)
+        .map(([key, value]) => `$${key}: ${value},`)
+        .join("\n");
 
-        configuration = ` with (${customizations})`;
-    }
+    configuration = customizations ? ` with (${customizations})` : "";
 
     const result = compileSassString(`
         @use 'index.scss' as *${configuration};
@@ -238,16 +229,15 @@ function testKendoComponent(
                 });
             });
 
-        testCustomizations &&
-            it("should compile with all variable customizations", () => {
-                Object.entries(uniqueValues).forEach(([property, value]) => {
-                    try {
-                        expect(result).toContain(value);
-                    } catch {
-                        throw new Error(`Missing value for "$${property}" variable: expected "${value}" value in the result.`);
-                    }
-                });
-            });
+        it("should compile with all variable customizations", () => {
+            const missing = Object.entries(uniqueValues)
+                .filter(([, value]) => !result.includes(value))
+                .map(([property]) => `$${property}`);
+
+            if (missing.length) {
+                throw new Error(`Missing values for variables: ${missing.join(", ")}`);
+            }
+        });
 
         dependencyClasses &&
             it("should compile with component dependency selectors styles", () => {
@@ -262,7 +252,45 @@ function testKendoComponent(
     });
 }
 
+/**
+ * Configures the whole theme through its entry point with one variable per
+ * component group. Catches module load-order problems that make `with ()`
+ * configuration fail (e.g. a module being loaded before it is configured).
+ */
+function testKendoThemeConfiguration(): void {
+    const firstPerFile = new Map<string, Variable>();
+    data.variables
+        .filter((item: any) => item.file?.path && item.file.path.startsWith(`${theme}/scss/`) && !item.file.path.includes("/scss/core/") && item.resolvedValue && item.resolvedType !== "Map" && !item.role?.includes("default"))
+        .forEach((item: any) => {
+            if (!firstPerFile.has(item.file.path)) {
+                firstPerFile.set(item.file.path, item);
+            }
+        });
+
+    const variables = [...firstPerFile.values()] as any[];
+    // Re-applying a variable's own resolved value keeps derived values valid.
+    const configuration = variables.map((item) => `$${item.context.name}: ${item.resolvedValue},`).join("\n");
+
+    // Compiled at module level (like the other tests) so it is not bound by the per-test timeout.
+    let error: unknown;
+    try {
+        compileSassString(`
+            @use 'index.scss' as * with (${configuration});
+            @include kendo-theme--styles();
+        `);
+    } catch (e) {
+        error = e;
+    }
+
+    describe("theme configuration", () => {
+        it("should compile with one customized variable per component", () => {
+            expect(error).toBeUndefined();
+        });
+    });
+}
+
 export {
+    testKendoThemeConfiguration,
     testKendoModule,
     testKendoComponent,
 };
