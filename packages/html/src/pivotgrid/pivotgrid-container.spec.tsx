@@ -1,8 +1,10 @@
 import { classNames, variantClassNames } from '../misc';
+import { KendoComponent } from '../_types/component';
+import { PIVOTGRID_FOLDER_NAME, PIVOTGRID_MODULE_NAME } from './constants';
 
 export const PIVOTGRIDCONTAINER_CLASSNAME = `k-pivotgrid-container`;
 
-export const PIVOTGRIDCONTAINER_VARIANTS = [
+const PIVOTGRIDCONTAINER_VARIANTS = [
     "pivotgrid-container-left",
     "pivotgrid-container-bottom",
     "pivotgrid-container-right",
@@ -25,7 +27,7 @@ const defaultOptions = {
  * Groups the PivotGrid with its configurator panel and configurator button,
  * so they share a single outer border and border radius.
  */
-export const PivotGridContainer = (
+export const PivotGridContainer: KendoComponent<KendoPivotGridContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPivotGridContainerProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -51,8 +53,8 @@ PivotGridContainer.states = states;
 PivotGridContainer.options = options;
 PivotGridContainer.className = PIVOTGRIDCONTAINER_CLASSNAME;
 PivotGridContainer.variants = PIVOTGRIDCONTAINER_VARIANTS;
-PivotGridContainer.moduleName = null;
-PivotGridContainer.folderName = null;
+PivotGridContainer.moduleName = PIVOTGRID_MODULE_NAME;
+PivotGridContainer.folderName = PIVOTGRID_FOLDER_NAME;
 PivotGridContainer.defaultOptions = defaultOptions;
 
 export default PivotGridContainer;
