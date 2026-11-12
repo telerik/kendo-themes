@@ -1031,6 +1031,12 @@
 .devkit-test-group {
     display: flex;
     align-items: center;
+    width: 100%;
+    border: 0;
+    background: none;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
     gap: var(--dk-space-2);
     margin-top: var(--dk-space-2);
     padding: 4px var(--dk-space-2);
@@ -1039,6 +1045,31 @@
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.devkit-test-group:hover {
+    color: var(--dk-accent-text);
+}
+
+.devkit-test-group-chevron {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    transition: transform var(--dk-dur-base) var(--dk-ease-out);
+}
+
+.devkit-test-group[data-open="true"] .devkit-test-group-chevron {
+    transform: rotate(90deg);
+}
+
+.devkit-test-group-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.devkit-test-group-items[hidden] {
+    display: none;
 }
 
 .devkit-test-group:first-child {
