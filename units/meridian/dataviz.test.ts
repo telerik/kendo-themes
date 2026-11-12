@@ -7,9 +7,7 @@ const className = ["k-chart", "k-stockchart", "k-sparkline"];
 
 const dependencyClassNames = [];
 
-const expected = [];
-
-const unexpected = [
+const expected = [
     "kendo-series-a", // Variable customizations work, but is used by another variable.
     "kendo-series-a-dark", // Variable customizations work, but is used by another variable.
     "kendo-series-a-darker", // Variable customizations work, but is used by another variable.
@@ -41,5 +39,7 @@ const unexpected = [
     "kendo-series-f-light", // Variable customizations work, but is used by another variable.
     "kendo-series-f-lighter" // Variable customizations work, but is used by another variable.
 ];
+
+const unexpected = [];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
