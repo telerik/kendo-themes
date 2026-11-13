@@ -7,7 +7,7 @@ import { NumericTextbox } from '../../numerictextbox';
 import { SkeletonNormal } from '../../skeleton';
 import { Textbox } from '../../textbox';
 import { TooltipNormal } from '../../tooltip';
-import { GridNormal, GridHeader, GridGroupingHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager, GridToolbar } from '../../grid';
+import { GridNormal, GridSmall, GridWithEditRowSm, GridHeader, GridGroupingHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager, GridToolbar } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -209,9 +209,9 @@ export default () =>(
 
             <span>Editing</span>
             <section className="col-2">
-                <GridNormal size="small" className="k-grid-no-scrollbar" pager={false} groupingHeader={false} toolbar={(
-                    <GridToolbar>
-                        <Button icon="plus">Add new record</Button>
+                <GridWithEditRowSm className="k-grid-no-scrollbar" toolbar={(
+                    <GridToolbar size="small">
+                        <Button icon="plus" size="small" >Add new record</Button>
                     </GridToolbar>
                 )}>
                     <GridHeader>
@@ -233,17 +233,17 @@ export default () =>(
                     </GridHeader>
                     <GridContainer>
                         <GridContent>
-                            <GridTable size="small">
+                            <GridTable size="small" style={{ height: "auto" }}>
                                 <colgroup>
                                     <col /><col /><col /><col style={{ width: "300px" }} />
                                 </colgroup>
                                 <TableTbody>
                                     <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>
-                                            <Textbox value="Towel" required />
+                                            <Textbox value="Towel" required size="small" />
                                         </TableTd>
                                         <TableTd>
-                                            <NumericTextbox invalid />
+                                            <NumericTextbox invalid size="small" />
                                             <TooltipNormal className="k-validator-tooltip k-invalid-msg"
                                                 themeColor="error"
                                                 callout="top"
@@ -251,38 +251,41 @@ export default () =>(
                                                 content="Price"
                                             />
                                         </TableTd>
-                                        <TableTd><Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" /><label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label></TableTd>
+                                        <TableTd>
+                                            <Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" />
+                                            <label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label>
+                                        </TableTd>
                                         <TableTd className="k-command-cell">
-                                            <Button icon="check" themeColor="primary">Update</Button>
-                                            <Button icon="cancel">Cancel</Button>
+                                            <Button size="small" icon="check" themeColor="primary">Update</Button>
+                                            <Button size="small" icon="cancel">Cancel</Button>
                                         </TableTd>
                                     </TableRow>
                                     <TableRow alt className="k-master-row k-grid-edit-row">
                                         <TableTd className="k-dirty-cell">
                                             <span className="k-dirty"></span>
-                                            LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
+                                        LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
                                         </TableTd>
                                         <TableTd>18</TableTd>
                                         <TableTd>false</TableTd>
                                         <TableTd className="k-command-cell">
-                                            <Button icon="pencil">Edit</Button>
-                                            <Button icon="x">Delete</Button>
+                                            <Button size="small" icon="pencil">Edit</Button>
+                                            <Button size="small" icon="x">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-grid-edit-row">
+                                    <TableRow className="k-master-row">
                                         <TableTd>Chang</TableTd>
                                         <TableTd>19</TableTd>
                                         <TableTd>false</TableTd>
                                         <TableTd className="k-command-cell">
-                                            <Button icon="pencil">Edit</Button>
-                                            <Button icon="x">Delete</Button>
+                                            <Button size="small" icon="pencil">Edit</Button>
+                                            <Button size="small" icon="x">Delete</Button>
                                         </TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </GridNormal>
+                </GridWithEditRowSm>
             </section>
 
             <span>Grouping</span>
@@ -348,6 +351,11 @@ export default () =>(
                         </GridContent>
                     </GridContainer>
                 </GridNormal>
+            </section>
+
+            <span className="col-2">Toolbar</span>
+            <section className="col-2">
+                <GridSmall className="k-grid-no-scrollbar" />
             </section>
         </div>
     </>
