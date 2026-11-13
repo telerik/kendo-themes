@@ -79,11 +79,7 @@
         transform: translateX( -50% );
         display: flex;
 
-        // Leave only "flex-flow: row nowrap;" here after the suites adopt the "k-actionsheet-view" element.
-        flex-flow: column nowrap;
-        &:has(> .k-actionsheet-view) {
-            flex-flow: row nowrap;
-        }
+        flex-flow: row nowrap;
 
         .k-actionsheet-view {
             display: flex;
@@ -478,23 +474,6 @@
         }
     }
 
-
-    // Legacy action sheet
-    // TODO: remove when kendo-jquery migrate
-    .k-actionsheet-jq {
-        &.k-actionsheet {
-            height: auto;
-        }
-
-        .k-actionsheet-header {
-            @extend .k-actionsheet-titlebar !optional;
-            align-items: flex-start;
-        }
-
-        .k-actionsheet-action {
-            align-items: center;
-        }
-    }
 
     // RTL
     .k-rtl,
