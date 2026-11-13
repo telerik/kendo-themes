@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 import { AnimationContainer } from '../animation-container';
 import { ActionSheetFooter } from './actionsheet-footer';
-import { ActionSheetHeader } from './actionsheet-header';
+import { ActionSheetHeader, KendoActionSheetHeaderProps } from './actionsheet-header';
 import { ActionSheetView } from './actionsheet-view';
 
 import { KendoComponent } from '../_types/component';
@@ -34,7 +34,8 @@ const defaultOptions = {
  * @aria {aria-hidden="true"|\"false"} Announces the hidden state of the ActionSheet container.
  * @aria {aria-modal="true"} Announces that the action sheet is modal.
  * @aria {id} Used to associate the title with the action sheet wrapper element.
- * @aria {aria-labelledby} references ${id}-title
+ * @aria {aria-labelledby} references ${id}-title when the header renders its own title.
+ * @aria {aria-label} Provides the accessible name when the header has custom content or no id. Falls back to the header title, then to "Action sheet".
  * @ux {Overlay} Renders over the page content and prevents interaction with the rest of the UI.
  * @ux {Title and subtitle} Optionally renders a title and subtitle to describe the available actions.
  * @ux {Items} Each action item consists of a label and an optional icon.
@@ -58,6 +59,10 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
 
     const titleId = id && !template && header && !(header.props as React.HTMLAttributes<HTMLDivElement>)?.children ? `${id}-title` : undefined;
 
+    const headerTitle = (header?.props as KendoActionSheetHeaderProps | undefined)?.title;
+    const hasName = Boolean(titleId || other['aria-label'] || other['aria-labelledby']);
+    const ariaLabel = hasName ? other['aria-label'] : (headerTitle || 'Action sheet');
+
     return (
         <div className="k-actionsheet-container">
             {overlay && <Overlay />}
@@ -70,7 +75,8 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
                     id={id}
                     role="dialog"
                     aria-modal={overlay ? "true" : undefined}
-                    aria-labelledby={titleId}
+                    aria-labelledby={titleId ?? other['aria-labelledby']}
+                    aria-label={ariaLabel}
                     className={classNames(
                         props.className,
                         ACTIONSHEET_CLASSNAME,
