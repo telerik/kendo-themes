@@ -1,6 +1,24 @@
+@use "sass:map";
 @use "@progress/kendo-theme-core/scss/components/numerictextbox/_layout.scss" as *;
+@use "../core/functions/index.scss" as *;
+@use "../input/_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-numeric-textbox--layout() {
     @include kendo-numeric-textbox--layout-base();
+
+    .k-numeric-textbox.k-numeric-textbox-horizontal {
+        @each $size, $size-props in $kendo-input-sizes {
+            $_button-padding-y: map.get( $size-props, button-padding-y );
+
+            #{k-when-default($kendo-input-default-size, $size)}
+            &.k-input-#{$size} {
+                .k-input-spinner .k-spinner-increase,
+                .k-input-spinner .k-spinner-decrease {
+                    padding-block: $_button-padding-y;
+                }
+            }
+        }
+    }
 }

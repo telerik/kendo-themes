@@ -23,6 +23,8 @@ export type KendoSpinButtonProps = KendoSpinButtonOptions & {
   disabled?: boolean;
   increaseLabel?: string;
   decreaseLabel?: string;
+  increaseState?: { hover?: boolean; active?: boolean; focus?: boolean };
+  decreaseState?: { hover?: boolean; active?: boolean; focus?: boolean };
 };
 
 const defaultOptions = {
@@ -45,6 +47,8 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
         disabled,
         increaseLabel = defaultOptions.increaseLabel,
         decreaseLabel = defaultOptions.decreaseLabel,
+        increaseState,
+        decreaseState,
         ...other
     } = props;
 
@@ -61,6 +65,7 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
                 size={size}
                 fillMode={fillMode}
                 disabled={disabled}
+                {...increaseState}
                 aria-label={increaseLabel}>
             </Button>
             <Button
@@ -69,6 +74,7 @@ export const SpinButton: KendoComponent<KendoSpinButtonProps & React.HTMLAttribu
                 size={size}
                 fillMode={fillMode}
                 disabled={disabled}
+                {...decreaseState}
                 aria-label={decreaseLabel}>
             </Button>
         </span>
