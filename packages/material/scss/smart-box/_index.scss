@@ -4,6 +4,7 @@
 @use "../popup/_index.scss" as *;
 @use "../list/_index.scss" as *;
 @use "../segmented-control/_index.scss" as *;
+@use "../action-sheet/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -18,6 +19,7 @@
         @include kendo-popup--styles();
         @include kendo-list--styles();
         @include kendo-segmented-control--styles();
+        @include kendo-action-sheet--styles();
         @include kendo-smart-box--layout();
         @include kendo-smart-box--theme();
     }

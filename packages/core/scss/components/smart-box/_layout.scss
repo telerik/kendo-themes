@@ -68,9 +68,16 @@
         .k-list-item-text {
             white-space: nowrap;
         }
+    }
 
-        .k-smart-box-check-icon {
-            color: k-color(success);
+    // SmartBox hosted in the ActionSheet header: stack it above the SegmentedControl.
+    .k-actionsheet-titlebar-group:has(> .k-smart-box) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: k-spacing(3);
+
+        > * {
+            flex: none;
         }
     }
 

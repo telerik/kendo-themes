@@ -1,4 +1,10 @@
+@use "../../color-system/_functions.scss" as *;
+
 @mixin kendo-smart-box--theme-base() {
+    .k-smart-box-check-icon {
+        color: k-color(success-on-surface);
+    }
+
     .k-smart-box-no-data .k-icon {
         opacity: 0.3;
     }
