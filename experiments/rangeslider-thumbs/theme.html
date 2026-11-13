@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RangeSlider thumb - single theme panel</title>
+    <script>
+        const params = new URLSearchParams(location.search);
+        const theme = ['default', 'bootstrap', 'material', 'fluent'].includes(params.get('theme')) ? params.get('theme') : 'default';
+        document.documentElement.dataset.theme = theme;
+        document.write(`<link rel="stylesheet" href="../../packages/${theme}/dist/all.css">`);
+    </script>
+    <link rel="stylesheet" href="thumbs.css">
+    <style>
+        body { margin: 0; padding: 16px 24px 32px; font-family: system-ui, sans-serif; background: #fff; color: #222; }
+        h2 { margin: 0 0 12px; font-size: 18px; text-transform: capitalize; }
+        .card { border: 1px solid #ddd; border-radius: 8px; padding: 14px 20px 18px; margin-bottom: 14px; }
+        .card h3 { margin: 0 0 2px; font-size: 14px; }
+        .card p { margin: 0 0 10px; font-size: 12px; color: #666; }
+        .row { display: flex; gap: 40px; align-items: flex-end; flex-wrap: wrap; padding-top: 34px; }
+        .row .h { flex: 1 1 260px; min-width: 220px; padding-inline: 12px; }
+        .row .v { padding-top: 0; }
+        .static { display: flex; gap: 28px; align-items: center; font-size: 11px; color: #666; padding-top: 14px; }
+        .static > div { width: 110px; text-align: center; }
+        .static .k-slider { width: 100%; margin-top: 30px; margin-bottom: 4px; }
+    </style>
+</head>
+<body class="tp">
+    <h2 id="title"></h2>
+    <div id="cards"></div>
+    <script src="thumbs.js"></script>
+    <script>
+        document.getElementById('title').textContent = theme + ' theme';
+        const accents = { default: '#ff6358', bootstrap: '#0d6efd', material: '#3f51b5' };
+        if (accents[theme]) { document.body.style.setProperty('--tp-accent', accents[theme]); }
+
+        const variations = [
+            { n: 1, title: '1 · Compressed thumb', text: '20px · hover 1.15Ã— · pressed scale(.8) circle · spring release with overshoot' },
+            { n: 2, title: '2 · Adaptive elastic thumb', text: 'Stretches toward drag direction with velocity · elastic rebound on release' },
+            { n: 3, title: '3 · Fluent-inspired thumb', text: 'Soft shadows · gentle .94/.9 compression · double focus ring · decelerate easing' },
+            { n: 4, title: '4 · Material 3 inspired thumb', text: '1.25Ã— hover · .78Ã— pressed · state layer · emphasized easing' }
+        ];
+
+        const cards = document.getElementById('cards');
+        for (const v of variations) {
+            const card = document.createElement('section');
+            card.className = 'card';
+            card.innerHTML = `<h3>${v.title}</h3><p>${v.text}</p>`;
+            const row = document.createElement('div');
+            row.className = 'row';
+            const mk = (orientation, dir, start, end, label) => {
+                const slot = document.createElement('div');
+                slot.className = orientation === 'vertical' ? 'v' : 'h';
+                const s = TPThumbs.createSliderMarkup({ variant: v.n, orientation, dir, start, end, label });
+                slot.append(s);
+                row.append(slot);
+                TPThumbs.initSlider(s);
+            };
+            mk('horizontal', 'ltr', 20, 70, 'Price');
+            mk('vertical', 'ltr', 25, 65, 'Volume');
+            card.append(row);
+
+            // forced states for side-by-side comparison
+            const st = document.createElement('div');
+            st.className = 'static';
+            for (const [name, cls] of [['Default', ''], ['Hover', 'k-hover'], ['Pressed', 'k-pressed']]) {
+                const cell = document.createElement('div');
+                const s = TPThumbs.createSliderMarkup({ variant: v.n, orientation: 'horizontal', start: 10, end: 60, label: name });
+                s.style.width = '100%';
+                const h = s.querySelector('.k-draghandle-end');
+                if (cls) { h.classList.add(cls); }
+                s.style.pointerEvents = 'none';
+                cell.append(s, name);
+                requestAnimationFrame(() => TPThumbs.initSlider(s));
+                st.append(cell);
+            }
+            card.append(st);
+            cards.append(card);
+        }
+    </script>
+</body>
+</html>
