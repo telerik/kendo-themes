@@ -18,7 +18,7 @@ $kendo-actionsheet-line-height: var(--kendo-line-height) !default;
 $kendo-actionsheet-bg: k-color(surface-alt) !default;
 $kendo-actionsheet-text: k-color(on-app-surface) !default;
 $kendo-actionsheet-border: k-color(border) !default;
-$kendo-actionsheet-shadow: k-elevation(5) !default;
+$kendo-actionsheet-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.08) !default;
 
 
 // Actionsheet header
