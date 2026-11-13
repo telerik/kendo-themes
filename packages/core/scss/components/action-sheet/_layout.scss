@@ -1,5 +1,6 @@
 @use "../../mixins/index.scss" as *;
 @use "./variables.scss" as *;
+@use "../../spacing/index.scss" as *;
 @use "../../z-index/index.scss" as *;
 @use "../../motion/index.scss" as *;
 @use "../icons/_variables.scss" as *;
@@ -122,26 +123,32 @@
         gap: $kendo-actionsheet-titlebar-gap;
     }
     .k-actionsheet-titlebar-group {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
         align-items: center;
+        gap: k-spacing(2);
         width: 100%;
         // Match the content/footer cap so the titlebar aligns with them on wide viewports.
         max-width: $kendo-actionsheet-content-max-width;
 
-        // Reserve equal start/end slots so the title stays centered when only one action slot is present.
-        &:has(> .k-actionsheet-actions) {
-            grid-template-columns: 1fr auto 1fr;
+        // Custom header content fills the space between the action slots.
+        > :not(.k-actionsheet-actions) {
+            flex: 1 1 0;
+            min-width: 0;
+        }
 
-            > :not(.k-actionsheet-actions) {
-                grid-column: 2;
+        // Reserve equal start/end columns so the title stays centered when only one action slot is present.
+        &:has(> .k-actionsheet-title) {
+            display: grid;
+            grid-template-columns: 1fr minmax(0, auto) 1fr;
+
+            > .k-actionsheet-title {
+                grid-area: 1 / 2;
             }
-            > .k-actionsheet-actions:first-child {
-                grid-column: 1;
-                justify-self: start;
+            > .k-actionsheet-actions {
+                grid-area: 1 / 1;
             }
-            > .k-actionsheet-actions:last-child {
-                grid-column: 3;
+            > .k-actionsheet-title ~ .k-actionsheet-actions {
+                grid-area: 1 / 3;
                 justify-self: end;
             }
         }
