@@ -24,7 +24,7 @@ export default () =>(
                                             }
                                         />
                                     </Toolbar>
-                                    <Toolbar className="k-pivot-toolbar k-settings-rows k-pivot-setting" style={{ height: "94px" }}>
+                                    <Toolbar className="k-pivot-toolbar k-settings-rows k-pivot-setting" style={{ height: "142px" }}>
                                         <Chip
                                             text="[Geography].[City]"
                                             actions={
@@ -35,7 +35,7 @@ export default () =>(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid" style={{ height: "363px" }}>
+                                    <div className="k-grid" style={{ height: "366px" }}>
                                         <table className="k-table">
                                             <colgroup>
                                                 <col />
@@ -73,7 +73,7 @@ export default () =>(
                                     </Toolbar>
                                     <div className="k-grid">
                                         <div className="k-grid-header">
-                                            <div className="k-grid-header-wrap" style={{ height: "110px" }}>
+                                            <div className="k-grid-header-wrap" style={{ height: "141px" }}>
                                                 <table className="k-table k-grid-header-table" style={{ width: "199%" }}>
                                                     <colgroup>
                                                         <col />
@@ -180,7 +180,7 @@ export default () =>(
                                                 </table>
                                             </div>
                                         </div>
-                                        <div className="k-grid-content" style={{ height: "380px" }}>
+                                        <div className="k-grid-content" style={{ height: "366px" }}>
                                             <table className="k-table k-grid-table" style={{ width: "199%" }}>
                                                 <colgroup>
                                                     <col />

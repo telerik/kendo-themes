@@ -1,5 +1,4 @@
 import { PivotGrid, KendoPivotGridProps } from '../pivotgrid.spec';
-import { PivotGridConfiguratorButton } from '../pivotgrid-configurator-button.spec';
 import { PivotGridConfigurator } from '../pivotgrid-configurator.spec';
 import { PivotGridCell } from '../pivotgrid-cell';
 import { PivotGridRow } from '../pivotgrid-row';
@@ -193,32 +192,19 @@ export const PivotgridDemo = (
         </PivotGridConfigurator>
     </>;
 
-    let settingsPanel = <></>;
-
-    Object.keys(mods || {}).forEach((modifier) => {
-        switch (modifier) {
-            case 'open': {
-                settingsPanel = mods?.[modifier] ? settingsPanelOpened : <></>;
-                break;
-            }
-        }
-    });
-
-    const classMap: Record<string, string> = {
-        left: "k-d-flex k-flex-row-reverse k-pos-relative",
-        bottom: "k-d-flex k-flex-col k-pos-relative",
-        top: "k-d-flex k-flex-col-reverse k-pos-relative",
-        right: "k-d-flex k-flex-row k-pos-relative"
-    }
-
-    const className = classMap[variant] || classMap["right"]
+    const open = Boolean(mods?.open);
 
     return (
-        <div className={className}>
-            <PivotGridNormal rowHeaders={rowHeaders} columnHeaders={columnHeaders} children={values} style={{ gridTemplateRows: "111px 1fr", gridTemplateColumns: "236px 1fr" }} {...other} />
-            {settingsPanel}
-            <PivotGridConfiguratorButton />
-        </div>
+        <PivotGridNormal
+            rowHeaders={rowHeaders}
+            columnHeaders={columnHeaders}
+            children={values}
+            style={{ gridTemplateRows: "111px 1fr", gridTemplateColumns: "236px 1fr" }}
+            configurator={open ? settingsPanelOpened : undefined}
+            configuratorDisplay={open ? "opened" : "closed"}
+            configuratorPosition={variant as KendoPivotGridProps['configuratorPosition']}
+            {...other}
+        />
     );
 }
 

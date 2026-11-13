@@ -144,6 +144,7 @@ import { PdfExportShadow } from "../packages/html/src/pdf/pdf-export-shadow.spec
 import { PDFViewer } from "../packages/html/src/pdf-viewer/pdf-viewer.spec";
 import { Picker } from "../packages/html/src/input/picker.spec";
 import { PivotGrid } from "../packages/html/src/pivotgrid/pivotgrid.spec";
+import { PivotGridContainer } from "../packages/html/src/pivotgrid/pivotgrid-container.spec";
 import { Popover } from "../packages/html/src/popover/popover.spec";
 // import { Popup } from "../packages/html/src/popup/popup.spec";
 import { ProgressBar } from "../packages/html/src/progressbar/progressbar.spec";
@@ -159,16 +160,16 @@ import { Scheduler } from "../packages/html/src/scheduler/scheduler.spec";
 // import { SchedulerBody } from "../packages/html/src/scheduler/scheduler-body.spec";
 // import { SchedulerCell } from "../packages/html/src/scheduler/scheduler-cell.spec";
 // import { SchedulerContent } from "../packages/html/src/scheduler/scheduler-content.spec";
-import { SchedulerEvent } from "../packages/html/src/scheduler/scheduler-event.spec";
+// import { SchedulerEvent } from "../packages/html/src/scheduler/scheduler-event.spec";
 // import { SchedulerGroup } from "../packages/html/src/scheduler/scheduler-group.spec";
 // import { SchedulerHead } from "../packages/html/src/scheduler/scheduler-head.spec";
 // import { SchedulerHeader } from "../packages/html/src/scheduler/scheduler-header.spec";
 // import { SchedulerRow } from "../packages/html/src/scheduler/scheduler-row.spec";
 // import { SchedulerStickyCell } from "../packages/html/src/scheduler/scheduler-sticky-cell.spec";
 // import { SchedulerTable } from "../packages/html/src/scheduler/scheduler-table.spec";
-import { SchedulerTask } from "../packages/html/src/scheduler/scheduler-task.spec";
+// import { SchedulerTask } from "../packages/html/src/scheduler/scheduler-task.spec";
 // import { SchedulerTimes } from "../packages/html/src/scheduler/scheduler-times.spec";
-import { SchedulerToolbar } from "../packages/html/src/scheduler/scheduler-toolbar.spec";
+// import { SchedulerToolbar } from "../packages/html/src/scheduler/scheduler-toolbar.spec";
 import { SchedulerView } from "../packages/html/src/scheduler/scheduler-view.spec";
 // import { SearchBar } from "../packages/html/src/searchbar/searchbar.spec";
 import { Searchbox } from "../packages/html/src/searchbox/searchbox.spec";
@@ -404,6 +405,7 @@ export const allComponents: SpecComponent[] = [
   PDFViewer,
   Picker,
   PivotGrid,
+  PivotGridContainer,
   Popover,
   // Popup, - SKIPPED, specificity error
   ProgressBar,

@@ -12,7 +12,7 @@ $kendo-pivotgrid-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-pivotgrid-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-pivotgrid-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-pivotgrid-border-width: 1px !default;
-$kendo-pivotgrid-border-radius: null !default;
+$kendo-pivotgrid-border-radius: var(--kendo-border-radius-xxl, 16px) !default;
 $kendo-pivotgrid-icon-spacing: k-spacing(1) !default;
 
 $kendo-pivotgrid-row-header-width: 300px !default;
