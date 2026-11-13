@@ -19,7 +19,7 @@ $kendo-actionsheet-line-height: var(--kendo-line-height) !default;
 $kendo-actionsheet-bg: k-color(surface-alt) !default;
 $kendo-actionsheet-text: k-color(on-app-surface) !default;
 $kendo-actionsheet-border: k-color(border) !default;
-$kendo-actionsheet-shadow: k-elevation(5) !default;
+$kendo-actionsheet-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.08) !default;
 
 
 // Actionsheet header
@@ -86,10 +86,6 @@ $kendo-actionsheet-item-disabled-text: null !default;
 $kendo-actionsheet-item-disabled-border: null !default;
 $kendo-actionsheet-item-disabled-gradient: null !default;
 $kendo-actionsheet-item-disabled-shadow: null !default;
-
-$kendo-actionsheet-item-hover-background: null !default;
-$kendo-actionsheet-item-focus-background: null !default;
-$kendo-actionsheet-item-disabled-opacity: null !default;
 
 // Actionsheet group item
 $kendo-actionsheet-group-item-padding-x: k-spacing(4) !default;
@@ -181,9 +177,6 @@ $kendo-actionsheet-content-max-width: 640px !default;
     $kendo-actionsheet-item-disabled-border: $kendo-actionsheet-item-disabled-border,
     $kendo-actionsheet-item-disabled-gradient: $kendo-actionsheet-item-disabled-gradient,
     $kendo-actionsheet-item-disabled-shadow: $kendo-actionsheet-item-disabled-shadow,
-    $kendo-actionsheet-item-hover-background: $kendo-actionsheet-item-hover-background,
-    $kendo-actionsheet-item-focus-background: $kendo-actionsheet-item-focus-background,
-    $kendo-actionsheet-item-disabled-opacity: $kendo-actionsheet-item-disabled-opacity,
     $kendo-actionsheet-group-item-padding-x: $kendo-actionsheet-group-item-padding-x,
     $kendo-actionsheet-group-item-padding-y: $kendo-actionsheet-group-item-padding-y,
     $kendo-actionsheet-group-item-gap: $kendo-actionsheet-group-item-gap,
