@@ -27,6 +27,7 @@
 @forward "./button/_index.scss";
 @forward "./speech-to-text-button/_index.scss";
 @forward "./input/_index.scss";
+@forward "./label/_index.scss";
 @forward "./floating-label/_index.scss";
 @forward "./textbox/_index.scss";
 @forward "./textarea/_index.scss";
@@ -43,6 +44,7 @@
 @forward "./menu-button/_index.scss";
 @forward "./split-button/_index.scss";
 @forward "./toolbar/_index.scss";
+@forward "./floating-toolbar/_index.scss";
 @forward "./forms/_index.scss";
 @forward "./validator/_index.scss";
 @forward "./calendar/_index.scss";
@@ -94,6 +96,7 @@
 @forward "./splitter/_index.scss";
 @forward "./tilelayout/_index.scss";
 @forward "./dock-manager/_index.scss";
+@forward "./column-menu/_index.scss";
 @forward "./grid/_index.scss";
 @forward "./listview/_index.scss";
 @forward "./spreadsheet/_index.scss";
@@ -120,12 +123,12 @@
 @forward "./speech-to-text-button/_index.scss";
 @forward "./prompt/_index.scss";
 @forward "./dataviz/_index.scss";
+@forward "./datainsights-composer/_index.scss";
 @forward "./chart-wizard/_index.scss";
 @forward "./map/_index.scss";
 @forward "./orgchart/_index.scss";
 @forward "./signature/_index.scss";
 @forward "./otp/_index.scss";
-@forward "./column-menu/_index.scss";
 @forward "./marquee/_index.scss";
 
 
@@ -173,6 +176,7 @@
 @use "./forms/index.scss" as *;
 @use "./validator/index.scss" as *;
 @use "./floating-label/index.scss" as *;
+@use "./label/index.scss" as *;
 
 
 // Native forms
@@ -228,6 +232,7 @@
 @use "./fab/index.scss" as *;
 @use "./menu/index.scss" as *;
 @use "./toolbar/index.scss" as *;
+@use "./floating-toolbar/index.scss" as *;
 
 
 // Popups and modals
@@ -309,6 +314,10 @@
 @use "./signature/index.scss" as *;
 
 
+// Data insights
+@use "./datainsights-composer/index.scss" as *;
+
+
 // Output styles
 @mixin kendo-theme--styles() {
 
@@ -352,6 +361,7 @@
 
 
     // Form helpers
+    @include kendo-label--styles();
     @include kendo-form--styles();
     @include kendo-validator--styles();
     @include kendo-floating-label--styles();
@@ -410,6 +420,7 @@
     @include kendo-fab--styles();
     @include kendo-menu--styles();
     @include kendo-toolbar--styles();
+    @include kendo-floating-toolbar--styles();
 
 
     // Popups and modals
@@ -479,6 +490,7 @@
     @include kendo-prompt--styles();
     @include kendo-segmented-control--styles();
     @include kendo-smart-box--styles();
+    @include kendo-datainsights-composer--styles();
     @include kendo-prompt-box--styles();
 
 

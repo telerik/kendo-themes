@@ -1,39 +1,45 @@
-import { MenuButton, IconMenuButton, IconTextMenuButton } from '../../menu-button';
+import { MenuButton, IconMenuButton, IconTextMenuButton, TextMenuButton } from '../../menu-button';
 
-const style = `
+const styles = `
     #test-area {
         max-width: 1240px;
-        grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr;
+        gap: 24px;
     }
-    .wrapper {
+    .button-size-grid {
+        grid-template-columns: 120px 1fr;
+        gap: 8px;
+    }
+    small,
+    section {
+        white-space: nowrap;
+    }
+    section {
         display: flex;
         gap: 8px;
     }
 `;
 
-export default () =>(
+export default () => (
     <>
-        <style>{style}</style>
-        <div id="test-area" className="k-d-grid">
-            <span><small>rounded / size</small></span>
-            <span>undefined</span>
-            <span>x-small</span>
-            <span>small</span>
-            <span>medium</span>
-            <span>large</span>
-
-            { MenuButton.options.rounded.map((rounded) => (
-                <>
-                    <span>{ `${rounded}` }</span>
-                    { MenuButton.options.size.map((size) => (
+        <style>{styles}</style>
+        <div id="test-area" className="k-d-flex k-flex-col">
+            {MenuButton.options.size.map((size) => (
+                <div className="button-size-grid k-d-grid">
+                    <span><small>Rounded / Size</small></span>
+                    <span>{`${size}`}</span>
+                    {MenuButton.options.rounded.map((rounded) => (
                         <>
-                            <div className="wrapper">
+                            <span>{`${rounded}`}</span>
+                            <section>
+                                <TextMenuButton size={size} rounded={rounded}>text</TextMenuButton>
                                 <IconTextMenuButton size={size} rounded={rounded}>text</IconTextMenuButton>
+                                <TextMenuButton size={size} rounded={rounded} endIcon="folder">text</TextMenuButton>
+                                <IconTextMenuButton size={size} rounded={rounded} endIcon="folder">text</IconTextMenuButton>
                                 <IconMenuButton size={size} rounded={rounded} />
-                            </div>
+                            </section>
                         </>
                     ))}
-                </>
+                </div>
             ))}
         </div>
     </>

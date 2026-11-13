@@ -434,7 +434,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the Toolbar overflow container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Toolbar overflow container.</div></div>
     </td>
 </tr>
 <tr>
@@ -455,16 +455,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar overflow button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-floating-toolbar-border-radius</td>
-    <td>String</td>
-    <td><code>k-border-radius(xxl)</code></td>
-    <td><code>var(--kendo-border-radius-xxl)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -493,7 +483,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1)","padding-y":"var(--kendo-spacing-1)","spacing":"var(--kendo-spacing-1\\.5)","separator-height":"calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-0\\.5) * 2 + 1px * 2)"</li><li>md: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","spacing":"var(--kendo-spacing-2)","separator-height":"calc(var(--kendo-line-height) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5)","padding-y":"var(--kendo-spacing-2\\.5)","spacing":"var(--kendo-spacing-2\\.5)","separator-height":"calc(var(--kendo-line-height-lg) * 1em + var(--kendo-spacing-2) * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the ToolBar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Toolbar.</div></div>
     </td>
 </tr>
 </tbody>

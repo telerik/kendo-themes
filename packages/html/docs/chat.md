@@ -30,6 +30,19 @@ The Chat is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | Typing indicator | Shows an animated indicator while the other party is responding. |
 | Suggestions | Displays quick-reply suggestion chips above the input. |
 
+### ChatMessage
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `selected` | `k-selected` |
+| `active` | `k-active` |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-message` element.
+
 ### Testing
 
 The Chat has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.

@@ -1,7 +1,7 @@
 import { KendoToolbarProps, Toolbar, ToolbarItem, ToolbarSeparator } from '../toolbar';
 import { classNames } from '../misc';
 import { Button } from '../button';
-import { DropdownList } from '../dropdownlist';
+import { Autocomplete } from '../autocomplete';
 
 export const IMAGEEDITORTOOLBAR_CLASSNAME = `k-imageeditor-toolbar`;
 
@@ -11,27 +11,13 @@ const options = {};
 
 export type KendoImageEditorToolbarProps = {
     toolbarItems?: React.JSX.Element | React.JSX.Element[];
+    /** Omits the zoom-level combobox. */
+    adaptive?: boolean;
+    /** Disables the image-dependent actions (no image loaded). */
+    disabled?: boolean;
 };
 
-const defaultToolbarItems = [
-    <Button key="toolbar-button-1" icon="upload" aria-label="Upload"></Button>,
-    <Button key="toolbar-button-2" disabled icon="download" aria-label="Download"></Button>,
-    <ToolbarSeparator key="toolbar-separator-1"></ToolbarSeparator>,
-    <Button key="toolbar-button-3" disabled icon="undo" aria-label="Undo"></Button>,
-    <Button key="toolbar-button-4" disabled icon="redo" aria-label="Redo"></Button>,
-    <ToolbarSeparator key="toolbar-separator-2"></ToolbarSeparator>,
-    <Button key="toolbar-button-5" disabled icon="crop" aria-label="Crop"></Button>,
-    <Button key="toolbar-button-6" disabled icon="image-resize" aria-label="Resize"></Button>,
-    <Button key="toolbar-button-7" disabled icon="zoom-in" aria-label="Zoom in"></Button>,
-    <Button key="toolbar-button-8" disabled icon="zoom-out" aria-label="Zoom out"></Button>,
-    <ToolbarItem key="toolbar-item-1">
-        <DropdownList disabled value="Zoom options" aria-label="Zoom options" />
-    </ToolbarItem>
-];
-
-const defaultOptions = {
-    toolbarItems: defaultToolbarItems
-};
+const defaultOptions = {};
 
 export const ImageEditorToolbar = (
     props: KendoToolbarProps &
@@ -39,7 +25,9 @@ export const ImageEditorToolbar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultOptions.toolbarItems,
+        toolbarItems,
+        adaptive,
+        disabled,
         ...other
     } = props;
 
@@ -50,8 +38,26 @@ export const ImageEditorToolbar = (
                 props.className,
                 IMAGEEDITORTOOLBAR_CLASSNAME,
             )}
+            fillMode="flat"
         >
-            {toolbarItems}
+            {/* Toolbar only decorates direct array children; a Fragment would leave the buttons without k-toolbar-* classes */}
+            {toolbarItems ?? [
+                <Button key="image-add" fillMode="flat" icon="image-add" aria-label="Image Add"></Button>,
+                <ToolbarSeparator key="separator-1"></ToolbarSeparator>,
+                // A freshly-loaded image has no edit history, so undo and redo are always disabled
+                <Button key="undo" fillMode="flat" disabled icon="undo" aria-label="Undo"></Button>,
+                <Button key="redo" fillMode="flat" disabled icon="redo" aria-label="Redo"></Button>,
+                <ToolbarSeparator key="separator-2"></ToolbarSeparator>,
+                <Button key="download" fillMode="flat" disabled={disabled} icon="download" aria-label="Download"></Button>,
+                <div key="spacer" className="k-spacer"></div>,
+                <Button key="zoom-in" fillMode="flat" disabled={disabled} icon="zoom-in" aria-label="Zoom In"></Button>,
+                ...(adaptive ? [] : [
+                    <ToolbarItem key="zoom-options">
+                        <Autocomplete fillMode="flat" disabled={disabled} value="Fit" showClearButton={false} aria-label="Zoom options" />
+                    </ToolbarItem>
+                ]),
+                <Button key="zoom-out" fillMode="flat" disabled={disabled} icon="zoom-out" aria-label="Zoom Out"></Button>
+            ]}
         </Toolbar>
     );
 };

@@ -66,8 +66,8 @@ export default () => (
                     }
                     popup={
                         <MenuList>
-                            <MenuListItem first text="Tab 4" />
-                            <MenuListItem last text="Tab 5" />
+                            <MenuListItem text="Tab 4" />
+                            <MenuListItem text="Tab 5" />
                         </MenuList>
                     }
                 />

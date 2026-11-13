@@ -61,7 +61,7 @@ export default () => (
               }
             />
 
-            <FormField editor={<FormHint>Repeats every day.</FormHint>} />
+            <FormField editor={<FormHint className="k-scheduler-recurrence-summary">Repeats every day.</FormHint>} />
           </Form>
         </Dialog>
       </section>
@@ -105,7 +105,7 @@ export default () => (
                 </div>
               }
             />
-            <FormField editor={<FormHint>Repeats every 2 days, after 10 time(s).</FormHint>} />
+            <FormField editor={<FormHint className="k-scheduler-recurrence-summary">Repeats every 2 days, after 10 time(s).</FormHint>} />
           </Form>
         </Dialog>
       </section>
@@ -149,7 +149,7 @@ export default () => (
                 </div>
               }
             />
-            <FormField editor={<FormHint>Repeats every day until Jan 31, 2026.</FormHint>} />
+            <FormField editor={<FormHint className="k-scheduler-recurrence-summary">Repeats every day until Jan 31, 2026.</FormHint>} />
           </Form>
         </Dialog>
       </section>
@@ -221,7 +221,7 @@ export default () => (
                 </div>
               }
             />
-            <FormField editor={<FormHint>Repeats every week on Tuesday.</FormHint>} />
+            <FormField editor={<FormHint className="k-scheduler-recurrence-summary">Repeats every week on Tuesday.</FormHint>} />
           </Form>
         </Dialog>
       </section>
@@ -285,7 +285,7 @@ export default () => (
                 </div>
               }
             />
-            <FormField editor={<FormHint>Repeats every month on the second weekend day.</FormHint>} />
+            <FormField editor={<FormHint className="k-scheduler-recurrence-summary">Repeats every month on the second weekend day.</FormHint>} />
           </Form>
         </Dialog>
       </section>
@@ -354,7 +354,7 @@ export default () => (
                 </div>
               }
             />
-            <FormField editor={<FormHint>Repeats every year on October 1st.</FormHint>} />
+            <FormField editor={<FormHint className="k-scheduler-recurrence-summary">Repeats every year on October 1st.</FormHint>} />
           </Form>
         </Dialog>
       </section>
@@ -428,7 +428,7 @@ export default () => (
                 </div>
               }
             />
-            <FormField editor={<FormHint>Repeats every week on Tuesday, Wednesday and Thursday.</FormHint>} />
+            <FormField editor={<FormHint className="k-scheduler-recurrence-summary">Repeats every week on Tuesday, Wednesday and Thursday.</FormHint>} />
           </Form>
         </Dialog>
       </section>

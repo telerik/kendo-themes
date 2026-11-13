@@ -1,0 +1,5 @@
+@use "@progress/kendo-theme-core/scss/components/floating-toolbar/_theme.scss" as *;
+
+@mixin kendo-floating-toolbar--theme() {
+    @include kendo-floating-toolbar--theme-base();
+}

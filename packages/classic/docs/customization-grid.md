@@ -944,7 +944,7 @@ The following table lists the available variables for customization.
     <td><code>calc(calc(var(--kendo-spacing-1) / 2) * -1)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the Grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the Grid sorting index.</div></div>
     </td>
 </tr>
 <tr>
@@ -1014,7 +1014,7 @@ The following table lists the available variables for customization.
     <td><code>(inset 0 0 0 2px var(--kendo-color-border-alt))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -1434,7 +1434,7 @@ The following table lists the available variables for customization.
     <td><code>color-mix(in srgb, var(--kendo-color-on-base) 20%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid row resize indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Grid row resize indicator.</div></div>
     </td>
 </tr>
 <tr>

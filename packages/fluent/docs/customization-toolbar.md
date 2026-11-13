@@ -388,16 +388,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-floating-toolbar-border-radius</td>
-    <td>String</td>
-    <td><code>var( --kendo-floating-toolbar-border-radius, #{k-border-radius(md)} )</code></td>
-    <td><code>var(--kendo-floating-toolbar-border-radius, var(--kendo-border-radius-md))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the floating Toolbar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-toolbar-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -423,7 +413,7 @@ The following table lists the available variables for customization.
     <td><ul><li>sm: "padding-x":"calc(var(--kendo-toolbar-sm-padding-x, var(--kendo-spacing-2)) + 1px)","padding-y":"calc(var(--kendo-toolbar-sm-padding-y, var(--kendo-spacing-1\\.5)) + 1px)","spacing":"var(--kendo-toolbar-sm-spacing, var(--kendo-spacing-3))","separator-height":"var(--kendo-toolbar-sm-separator-height, calc(var(--kendo-line-height-lg) * 1em + calc(var(--kendo-button-sm-padding-y, var(--kendo-spacing-0\\.5)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>md: "padding-x":"calc(var(--kendo-toolbar-md-padding-x, var(--kendo-spacing-3)) + 1px)","padding-y":"calc(var(--kendo-toolbar-md-padding-y, var(--kendo-spacing-1\\.5)) + 1px)","spacing":"var(--kendo-toolbar-md-spacing, var(--kendo-spacing-3))","separator-height":"var(--kendo-toolbar-md-separator-height, calc(var(--kendo-line-height) * 1em + calc(var(--kendo-button-md-padding-y, var(--kendo-spacing-1)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li><li>lg: "padding-x":"calc(var(--kendo-toolbar-lg-padding-x, var(--kendo-spacing-4\\.5)) + 1px)","padding-y":"calc(var(--kendo-toolbar-lg-padding-y, var(--kendo-spacing-1\\.5)) + 1px)","spacing":"var(--kendo-toolbar-lg-spacing, var(--kendo-spacing-3))","separator-height":"var(--kendo-toolbar-lg-separator-height, calc(var(--kendo-line-height-sm) * 1em + calc(var(--kendo-button-lg-padding-y, var(--kendo-spacing-2)) + 1px) * 2 + var(--kendo-button-border-width, 1px) * 2))"</li></ul></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the ToolBar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Toolbar.</div></div>
     </td>
 </tr>
 </tbody>

@@ -99,7 +99,11 @@ export const Chip: KendoComponent<KendoChipProps & KendoChipState & React.HTMLAt
                 }),
             )}
             role={props.role || 'button'}
-            aria-pressed={props.role === 'option' ? undefined : (selected ? 'true' : 'false')}
+            aria-pressed={
+                (props.role === 'option' || props.role === 'listitem' || props.role === 'presentation' || props['aria-haspopup'])
+                    ? undefined
+                    : (selected ? 'true' : 'false')
+            }
             {...(props.role === 'option' && selected !== undefined && { 'aria-selected': selected ? 'true' : 'false' })}
             aria-disabled={disabled ? 'true' : undefined}
         >
@@ -132,8 +136,8 @@ Chip.moduleName = CHIP_MODULE_NAME;
 Chip.folderName = CHIP_FOLDER_NAME;
 
 /**
- * @keyboard {ArrowRight} Focuses the next chip in the chiplist.
- * @keyboard {ArrowLeft} Focuses the previous chip in the group.
+ * @keyboard {ArrowRight} Focuses the next chip in a horizontally oriented chiplist.
+ * @keyboard {ArrowLeft} Focuses the previous chip in a horizontally oriented group.
  * @keyboard {Enter or Space} Triggers a click action on the Chip.
  * @keyboard {Delete or Backspace} Removes the Chip when a delete action is configured.
  *

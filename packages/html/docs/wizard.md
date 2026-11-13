@@ -39,6 +39,14 @@ These CSS classes are applied to the `k-wizard` element.
 
 ### WizardStep
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-wizard-step` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |

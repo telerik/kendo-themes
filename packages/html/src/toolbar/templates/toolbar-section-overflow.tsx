@@ -20,7 +20,6 @@ export const ToolbarSectionOverflow = ({ fillMode, size, ...other }: any) => (
                 className="k-toolbar-overflow-button"
                 fillMode="flat"
                 size={size}
-                rounded="none"
                 id="overflow-section-btn"
                 aria-label="More options"
                 aria-expanded="true"

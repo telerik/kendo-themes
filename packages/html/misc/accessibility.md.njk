@@ -9,50 +9,50 @@ The {{ name }} is compliant with the [Web Content Accessibility Guidelines (WCAG
 {% for comp in components -%}
 ### {{ comp.name }}
 
-{% if comp.apiRows and comp.apiRows.length -%}
+{% if comp.options and comp.options.length -%}
 #### Component Style Options
 
 | Option | Values | Default |
 | --- | --- | --- |
-{% for row in comp.apiRows -%}
-| `{{ row.option }}` | {{ row.values if row.values else '—' }} | {{ row.default if row.default else '—' }} |
+{% for opt in comp.options -%}
+| `{{ opt.name }}` | {% for v in opt.values %}`{{ v }}`{{ ', ' if not loop.last }}{% endfor %} | {{ ('`' + opt.default + '`') if opt.default !== null else '—' }} |
 {% endfor %}
 {% endif -%}
-{% if comp.stateRows and comp.stateRows.length -%}
+{% if comp.states and comp.states.length -%}
 #### Component States
 
 | State | CSS Class |
 | --- | --- |
-{% for row in comp.stateRows -%}
-| `{{ row.state }}` | `{{ row.cssClass }}` |
+{% for state in comp.states -%}
+| `{{ state }}` | `k-{{ state }}` |
 {% endfor %}
 {% if comp.rootClass %}These CSS classes are applied to the `{{ comp.rootClass }}` element.
 {% endif %}
 {% endif -%}
-{% if comp.ariaAnnotations and comp.ariaAnnotations.length -%}
+{% if comp.aria and comp.aria.length -%}
 #### ARIA Attributes
 
 | Attribute | Description |
 | --- | --- |
-{% for ann in comp.ariaAnnotations -%}
+{% for ann in comp.aria -%}
 | `{{ ann.attribute }}` | {{ ann.description | mdtags }} |
 {% endfor %}
 {% endif -%}
-{% if comp.kbSpec and comp.kbSpec.length -%}
+{% if comp.keyboard and comp.keyboard.length -%}
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
-{% for rule in comp.kbSpec -%}
+{% for rule in comp.keyboard -%}
 | `{{ rule.trigger }}` | {{ rule.behavior }} |
 {% endfor %}
 {% endif -%}
-{% if comp.uxSpec and comp.uxSpec.length -%}
+{% if comp.ux and comp.ux.length -%}
 #### UX Behavior
 
 | Feature | Description |
 | --- | --- |
-{% for rule in comp.uxSpec -%}
+{% for rule in comp.ux -%}
 | {{ rule.trigger }} | {{ rule.behavior }} |
 {% endfor %}
 {% endif -%}

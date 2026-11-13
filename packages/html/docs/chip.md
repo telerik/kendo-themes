@@ -33,8 +33,8 @@ These CSS classes are applied to the `k-chip` element.
 
 | Trigger | Behavior |
 | --- | --- |
-| `ArrowRight` | Focuses the next chip in the chiplist. |
-| `ArrowLeft` | Focuses the previous chip in the group. |
+| `ArrowRight` | Focuses the next chip in a horizontally oriented chiplist. |
+| `ArrowLeft` | Focuses the previous chip in a horizontally oriented group. |
 | `Enter or Space` | Triggers a click action on the Chip. |
 | `Delete or Backspace` | Removes the Chip when a delete action is configured. |
 

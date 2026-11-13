@@ -52,6 +52,30 @@ These CSS classes are applied to the `k-otp` element.
 | Separator | Groups of inputs can be visually separated by divider characters. |
 | Masked | Characters can be hidden like a password field. |
 
+### OneTimePasswordInput
+
+#### Component Style Options
+
+| Option | Values | Default |
+| --- | --- | --- |
+| `size` | `small`, `medium`, `large` | — |
+| `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
+| `fillMode` | `solid`, `flat`, `outline` | — |
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `hover` | `k-hover` |
+| `focus` | `k-focus` |
+| `valid` | `k-valid` |
+| `invalid` | `k-invalid` |
+| `required` | `k-required` |
+| `disabled` | `k-disabled` |
+| `readonly` | `k-readonly` |
+
+These CSS classes are applied to the `k-otp-input` element.
+
 ### Testing
 
 The Otp has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.

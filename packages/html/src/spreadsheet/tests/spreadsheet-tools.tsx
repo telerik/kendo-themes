@@ -27,13 +27,13 @@ export default () => (
             <SpreadsheetNormal style={{ height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
-                        <MenuItem first text="File" active />,
+                        <MenuItem text="File" active />,
                         <MenuItem text="Home" />,
                         <MenuItem text="Insert" />,
                         <MenuItem text="Format" />,
                         <MenuItem text="Formulas" />,
                         <MenuItem text="Data" />,
-                        <MenuItem last text="View" />,
+                        <MenuItem text="View" />,
                     ]}
                     toolbarItems={[
                         <Button icon="file-add" fillMode="flat"></Button>,
@@ -50,13 +50,13 @@ export default () => (
             <Spreadsheet style={{ width: '100%', height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
-                        <MenuItem first text="File" />,
+                        <MenuItem text="File" />,
                         <MenuItem text="Home" active />,
                         <MenuItem text="Insert" />,
                         <MenuItem text="Format" />,
                         <MenuItem text="Formulas" />,
                         <MenuItem text="Data" />,
-                        <MenuItem last text="View" />,
+                        <MenuItem text="View" />,
                     ]}
                     toolbarItems={[
                         <Button icon="arrow-rotate-ccw" fillMode="flat"></Button>,
@@ -101,13 +101,13 @@ export default () => (
             <Spreadsheet style={{ width: '100%', height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
-                        <MenuItem first text="File" />,
+                        <MenuItem text="File" />,
                         <MenuItem text="Home" />,
                         <MenuItem text="Insert" active />,
                         <MenuItem text="Format" />,
                         <MenuItem text="Formulas" />,
                         <MenuItem text="Data" />,
-                        <MenuItem last text="View" />,
+                        <MenuItem text="View" />,
                     ]}
                     toolbarItems={[
                         <Button icon="comment" fillMode="flat"></Button>,
@@ -126,13 +126,13 @@ export default () => (
             <Spreadsheet style={{ width: '100%', height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
-                        <MenuItem first text="File" />,
+                        <MenuItem text="File" />,
                         <MenuItem text="Home" />,
                         <MenuItem text="Insert" />,
                         <MenuItem text="Format" active />,
                         <MenuItem text="Formulas" />,
                         <MenuItem text="Data" />,
-                        <MenuItem last text="View" />,
+                        <MenuItem text="View" />,
                     ]}
                     toolbarItems={[
                         <Button icon="custom-format" fillMode="flat"></Button>,
@@ -150,13 +150,13 @@ export default () => (
             <Spreadsheet style={{ width: '100%', height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
-                        <MenuItem first text="File" />,
+                        <MenuItem text="File" />,
                         <MenuItem text="Home" />,
                         <MenuItem text="Insert" />,
                         <MenuItem text="Format" />,
                         <MenuItem text="Formulas" active />,
                         <MenuItem text="Data" />,
-                        <MenuItem last text="View" />,
+                        <MenuItem text="View" />,
                     ]}
                     toolbarItems={
                         <Button icon="formula-fx" fillMode="flat">Insert Formula</Button>
@@ -168,13 +168,13 @@ export default () => (
             <Spreadsheet style={{ width: '100%', height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
-                        <MenuItem first text="File" />,
+                        <MenuItem text="File" />,
                         <MenuItem text="Home" />,
                         <MenuItem text="Insert" />,
                         <MenuItem text="Format" />,
                         <MenuItem text="Formulas" />,
                         <MenuItem text="Data" active />,
-                        <MenuItem last text="View" />,
+                        <MenuItem text="View" />,
                     ]}
                     toolbarItems={[
                         <Button icon="search" fillMode="flat"></Button>,
@@ -192,13 +192,13 @@ export default () => (
             <Spreadsheet style={{ width: '100%', height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
-                        <MenuItem first text="File" />,
+                        <MenuItem text="File" />,
                         <MenuItem text="Home" />,
                         <MenuItem text="Insert" />,
                         <MenuItem text="Format" />,
                         <MenuItem text="Formulas" />,
                         <MenuItem text="Data" />,
-                        <MenuItem last text="View" active />,
+                        <MenuItem text="View" active />,
                     ]}
                     toolbarItems={[
                         <MenuButton icon="pane-freeze" fillMode="flat" showArrow></MenuButton>,

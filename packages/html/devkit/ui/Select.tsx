@@ -6,6 +6,8 @@ interface SelectProps {
     value: string;
     options: string[];
     onChange: (value: string) => void;
+    /** Extra class name appended to the root wrapper (e.g. for bar-level spacing). */
+    className?: string;
 }
 
 /**
@@ -13,7 +15,7 @@ interface SelectProps {
  * `<select>` so the option list can be styled to match the glass UI and animate.
  * Opens upward (the bar lives at the bottom of the viewport).
  */
-export function Select({ label, value, options, onChange }: SelectProps) {
+export function Select({ label, value, options, onChange, className }: SelectProps) {
     const [open, setOpen] = useState(false);
     const [active, setActive] = useState(0);
     const rootRef = useRef<HTMLDivElement>(null);
@@ -104,60 +106,59 @@ export function Select({ label, value, options, onChange }: SelectProps) {
     };
 
     return (
-        <div className="devkit-select-group" ref={rootRef}>
-            <span className="devkit-select-label" id={`${baseId}-label`}>{label}</span>
-            <div className="devkit-select-wrap">
-                <button
-                    ref={buttonRef}
-                    type="button"
-                    className="devkit-select"
-                    aria-haspopup="listbox"
-                    aria-expanded={open}
-                    aria-labelledby={`${baseId}-label`}
-                    onClick={() => setOpen(o => !o)}
-                    onKeyDown={e => {
-                        if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            setOpen(true);
+        <div className={`devkit-select-wrap${className ? ` ${className}` : ''}`} ref={rootRef}>
+            <button
+                ref={buttonRef}
+                type="button"
+                className="devkit-select"
+                aria-haspopup="listbox"
+                aria-expanded={open}
+                aria-label={label}
+                onClick={() => setOpen(o => !o)}
+                onKeyDown={e => {
+                    if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setOpen(true);
+                    }
+                }}
+            >
+                <span className="devkit-select-value">{value}</span>
+                <ChevronIcon className="devkit-select-arrow" />
+            </button>
+
+            {open && (
+                <ul
+                    ref={listRef}
+                    role="listbox"
+                    tabIndex={-1}
+                    className="devkit-select-list"
+                    aria-label={label}
+                    aria-activedescendant={`${baseId}-opt-${active}`}
+                    onKeyDown={onListKeyDown}
+                    onBlur={e => {
+                        if (!rootRef.current?.contains(e.relatedTarget as Node)) {
+                            setOpen(false);
                         }
                     }}
                 >
-                    <span className="devkit-select-value">{value}</span>
-                    <ChevronIcon className="devkit-select-arrow" />
-                </button>
-
-                {open && (
-                    <ul
-                        ref={listRef}
-                        role="listbox"
-                        tabIndex={-1}
-                        className="devkit-select-list"
-                        aria-labelledby={`${baseId}-label`}
-                        aria-activedescendant={`${baseId}-opt-${active}`}
-                        onKeyDown={onListKeyDown}
-                        onBlur={e => {
-                            if (!rootRef.current?.contains(e.relatedTarget as Node)) {
-                                setOpen(false);
-                            }
-                        }}
-                    >
-                        {options.map((option, i) => (
-                            <li
-                                key={option}
-                                id={`${baseId}-opt-${i}`}
-                                role="option"
-                                aria-selected={option === value}
-                                data-active={i === active}
-                                className="devkit-select-option"
-                                onMouseEnter={() => setActive(i)}
-                                onClick={() => choose(option)}
-                            >
-                                {option}
-                            </li>
-                        ))}
-                    </ul>
-                )}
-            </div>
+                    <li className="devkit-select-hint" role="presentation" aria-hidden="true">{label}</li>
+                    {options.map((option, i) => (
+                        <li
+                            key={option}
+                            id={`${baseId}-opt-${i}`}
+                            role="option"
+                            aria-selected={option === value}
+                            data-active={i === active}
+                            className="devkit-select-option"
+                            onMouseEnter={() => setActive(i)}
+                            onClick={() => choose(option)}
+                        >
+                            <span>{option}</span>
+                            {option === value && <span className="devkit-option-check" aria-hidden="true" />}
+                        </li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 }

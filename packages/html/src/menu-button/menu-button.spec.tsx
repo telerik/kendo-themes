@@ -40,6 +40,7 @@ export type KendoMenuButtonOptions = {
 
 export type KendoMenuButtonProps = KendoMenuButtonOptions & {
   icon?: string;
+  endIcon?: string;
   text?: string;
   showArrow?: boolean;
   arrowIconName?: string;
@@ -82,6 +83,7 @@ export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonSt
         selected,
         disabled,
         icon,
+        endIcon,
         text,
         showArrow = defaultOptions.showArrow,
         arrowIconName = defaultOptions.arrowIconName,
@@ -108,6 +110,7 @@ export const MenuButton: KendoComponent<KendoMenuButtonProps & KendoMenuButtonSt
             disabled={disabled}
             ariaDisabled={disabled || undefined}
             icon={icon}
+            endIcon={endIcon}
             showArrow={showArrow}
             arrowIconName={arrowIconName}
             aria-expanded={expanded ? 'true' : 'false'}

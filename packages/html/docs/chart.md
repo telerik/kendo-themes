@@ -1,4 +1,4 @@
-# Chart Accessibility
+# Chart Specification
 
 ## Accessibility Support
 
@@ -8,34 +8,43 @@ The Chart is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2
 
 ### Chart
 
+#### ARIA Attributes
+
+| Attribute | Description |
+| --- | --- |
+| `role="graphics-document document"` | Identifies the chart surface as a graphics document for assistive technology. |
+| `aria-roledescription` | Provides a human-readable description of the chart type (e.g. "Sales by year"). |
+| `tabindex="0"` | Makes the chart surface keyboard focusable. |
+
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
-| `Tab` | Moves focus to the Legend items, focusing the first legend item. If legend is not available, moves focus to the next focusable element on the page. |
-| `Shift + Tab` | Moves focus to the previous focusable element on the page. |
-| `Arrow Keys` | Based on the chart type, the arrow keys move through points or series. |
-| `Enter` | Triggers the click action for the series point or legend item. |
-| `Escape` | Closes the series tooltip if it was open. A second press will move the focus to the root element of the chart. |
-| `ArrowUp or ArrowDown (categorical)` | Move through the different series. Stacked Bar/Column and Line/Area charts move focus to next/previous series item based on coordinates. Regular Bar charts move focus according to datasource order. |
-| `ArrowLeft or ArrowRight (categorical)` | Move through the points in the series. |
-| `ArrowUp (donut)` | Move to the outer series. |
-| `ArrowDown (donut)` | Move to inner series. |
-| `ArrowRight (donut/pie)` | Move through the points of the series in a clockwise direction. |
-| `ArrowLeft (donut/pie)` | Move through the points of the series in an anti-clockwise direction. |
-| `ArrowUp or ArrowDown (scatter/polar)` | Move through the series in datasource order. |
-| `ArrowLeft or ArrowRight (scatter/polar)` | Move through items in the current series. |
-| `ArrowUp or ArrowDown (funnel)` | Move through the items in the chart. |
-| `ArrowUp or ArrowDown (radar column)` | Move in a clockwise/anti-clockwise manner through series. |
-| `ArrowUp or ArrowDown (radar line/area)` | Move to next/previous series point based on value — Up moves away from center, Down moves towards center. |
-| `ArrowRight (radar)` | Move through the points of the series in a clockwise direction. |
-| `ArrowLeft (radar)` | Move through the points of the series in an anti-clockwise direction. |
-| `Tab (legend)` | Move focus to the next focusable element on the page. |
-| `Shift + Tab (legend)` | Move focus to the chart area, focusing the first point in the first series. |
-| `ArrowUp or ArrowLeft (legend)` | Move focus to the previous legend item. Cycles to the last item at the beginning. |
-| `ArrowDown or ArrowRight (legend)` | Move focus to the next legend item. Cycles to the first item at the end. |
-| `Enter (legend)` | Toggles the series visibility similar to the click action. |
-| `Escape (legend)` | Moves the focus to the root element of the chart. |
+| `Tab` | Moves focus to the Legend items, focusing the first legend item. If legend is not available, moves focus to the next focusable element. |
+| `Shift + Tab` | Moves focus to the previous focusable element. |
+| `ArrowUp or ArrowDown` | Navigates between series for categorical, scatter/polar charts; moves between items for funnel; moves clockwise/anti-clockwise for radar column; moves away/towards center for radar line/area. |
+| `ArrowLeft or ArrowRight` | Navigates between data points within a series for categorical, scatter/polar, and radar charts. |
+| `ArrowUp (donut)` | Moves focus to the outer series. |
+| `ArrowDown (donut)` | Moves focus to the inner series. |
+| `ArrowRight (donut/pie)` | Moves through points of the series in a clockwise direction. |
+| `ArrowLeft (donut/pie)` | Moves through points of the series in an anti-clockwise direction. |
+| `Enter` | Triggers the click action for the focused series point or legend item. |
+| `Escape` | Closes the series tooltip; second press returns focus to the chart root. |
+| `Tab (legend)` | Moves focus to the next focusable element on the page. |
+| `Shift + Tab (legend)` | Moves focus to the chart area, focusing the first point in the first series. |
+| `ArrowUp or ArrowLeft (legend)` | Moves focus to the previous legend item. Cycles to the last item at the beginning. |
+| `ArrowDown or ArrowRight (legend)` | Moves focus to the next legend item. Cycles to the first item at the end. |
+| `Enter (legend)` | Toggles the series visibility. |
+| `Escape (legend)` | Moves focus to the root element of the chart. |
+
+#### UX Behavior
+
+| Feature | Description |
+| --- | --- |
+| Tooltip | Shows data labels or values when hovering over data points or series. |
+| Legend | Identifies each series; clicking a legend item toggles its visibility. |
+| Zoom and pan | Supports mouse-wheel zoom and click-drag panning on large datasets. |
+| Export | Can export the chart as a PNG image or PDF document. |
 
 ### Testing
 
@@ -53,5 +62,10 @@ The Chart has been tested with the following screen readers and browsers combina
 
 ### Resources
 
-- [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0/)
+- [WAI-ARIA Graphics Module — graphics-document role](https://www.w3.org/TR/graphics-aria-1.0/#graphics-document)
 - [Accessibility Style Guide: SVGs](https://a11y-style-guide.com/style-guide/section-media.html#kssref-media-svgs)
+- [WCAG 2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+
+### Rendered HTML Examples
+
+Full rendered HTML snapshots are available at [`tests/chart/`](https://github.com/telerik/kendo-themes/tree/develop/tests/chart/).

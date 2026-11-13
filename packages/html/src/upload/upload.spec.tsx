@@ -20,6 +20,7 @@ export type KendoUploadProps = {
     actions?: boolean;
     actionsLayout?: 'start' | 'center' | 'end' | 'stretched';
     status?: 'upload' | 'uploading' | 'done' | 'failed';
+    buttonText?: string;
 };
 
 const defaultOptions = {
@@ -60,6 +61,7 @@ export const Upload: KendoComponent<KendoUploadProps & KendoUploadState & React.
         hover,
         status,
         disabled,
+        buttonText,
         ...other
     } = props;
 
@@ -85,6 +87,7 @@ export const Upload: KendoComponent<KendoUploadProps & KendoUploadState & React.
                 disabled={disabled}
                 hasFiles={hasFiles}
                 filesId={uploadFilesId}
+                buttonText={buttonText}
             />
             {hasFiles &&
                 <ul className="k-upload-files" role="list" id={uploadFilesId}>

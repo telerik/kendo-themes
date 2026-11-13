@@ -170,12 +170,12 @@ The following table lists the available variables for customization.
 <tr>
     <td>Color</td>
     <td>border</td>
-    <td colspan="2">Тhe border color of the application.</td>
+    <td colspan="2">The border color of the application.</td>
 </tr>
 <tr>
     <td>Color</td>
     <td>border-alt</td>
-    <td colspan="2">Тhe alternative border color of the application.</td>
+    <td colspan="2">The alternative border color of the application.</td>
 </tr>
 <tr>
     <td>Color</td>

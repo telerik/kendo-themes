@@ -76,7 +76,7 @@ import { FileManagerTreeview } from "../packages/html/src/filemanager/filemanage
 import { Filter } from "../packages/html/src/filter/filter.spec";
 import { FilterMenu } from "../packages/html/src/column-menu/filter-menu.spec";
 import { FloatingLabel } from "../packages/html/src/floating-label/floating-label.spec";
-import { FloatingToolbar } from "../packages/html/src/toolbar/floating-toolbar.spec";
+import { FloatingToolbar } from "../packages/html/src/floating-toolbar/floating-toolbar.spec";
 import { Form } from "../packages/html/src/form/form.spec";
 import { Gantt } from "../packages/html/src/gantt/gantt.spec";
 // import { GanttColumnsTable } from "../packages/html/src/gantt/gantt-columns-table.spec";

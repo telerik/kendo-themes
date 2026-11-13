@@ -15,9 +15,9 @@ const defaultTabStripItems = (
 
 const defaultPopup = (
   <MenuList>
-    <MenuListItem first text="Tab 7" />
+    <MenuListItem text="Tab 7" />
     <MenuListItem text="Tab 8" />
-    <MenuListItem last text="Tab 9" />
+    <MenuListItem text="Tab 9" />
   </MenuList>
 );
 

@@ -5,6 +5,7 @@
 import { capture } from './capture.mjs';
 import { watch } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { exportBaseline } from './visual-baseline.mjs';
 
 const [ component, ...themes ] = process.argv.slice(2);
 
@@ -19,9 +20,10 @@ async function captureAndDiff() {
     // Reuse the running dev server on port 3000 (npm start)
     await capture({ themes: THEMES, components: [component], serverPort: 3000 });
 
-    // Diff this component's output against the saved baseline → update report
+    // Diff this component's output against the last commit's → update report
     execFileSync('npx', ['reg-cli',
-        'tests/_output', '.reg/expected', '.reg/diff',
+        'tests/_output', exportBaseline(), '.reg/diff',
+        '--matchingThreshold', '0.05', '--enableAntialias',
         '--report', '.reg/report.html', '--json', '.reg/out.json'],
     { stdio: 'inherit', shell: true });
     console.log('Report: .reg/report.html  (refresh the tab)');

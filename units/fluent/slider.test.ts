@@ -14,6 +14,9 @@ const dependencyClassNames = [
 
 const expected = [];
 
-const unexpected = [];
+const unexpected = [
+    "kendo-slider-thumb-transition-speed", // Default value of $kendo-slider-draghandle-transition-speed.
+    "kendo-slider-thumb-transition-function" // Default value of $kendo-slider-draghandle-transition-function.
+];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

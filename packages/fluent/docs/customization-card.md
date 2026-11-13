@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-card-header-font-family, var(--kendo-font-family))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Тhe font family of the Card header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Card header.</div></div>
     </td>
 </tr>
 <tr>

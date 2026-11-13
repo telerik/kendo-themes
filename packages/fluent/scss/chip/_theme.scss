@@ -114,12 +114,13 @@
                         &:active,
                         &.k-active,
                         &.k-selected {
-                            background-color: color-mix(in srgb, k-color(on-base) 13%, transparent);
+                            background-color: k-color(base-active);
                             border-color: $kendo-chip-border;
                         }
 
                         &:hover,
                         &.k-hover {
+                            background-color: k-color(base-hover);
                             border-color: $kendo-chip-hover-border;
                         }
                     }

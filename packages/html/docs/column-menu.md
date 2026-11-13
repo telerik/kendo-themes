@@ -91,6 +91,18 @@ These CSS classes are applied to the `k-columnmenu-item` element.
 
 These CSS classes are applied to the `k-group-menu-item` element.
 
+### ColumnListItem
+
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+| `disabled` | `k-disabled` |
+| `hover` | `k-hover` |
+
+These CSS classes are applied to the `k-column-list-item` element.
+
 ### Testing
 
 The ColumnMenu has been extensively tested automatically with [axe-core](https://github.com/dequelabs/axe-core) and manually with the most popular screen readers.

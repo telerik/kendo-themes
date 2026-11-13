@@ -1,0 +1,22 @@
+@use "../core/_index.scss" as *;
+
+// Label
+
+$kendo-label-font-size: null !default;
+$kendo-label-font-weight: null !default;
+$kendo-label-line-height: null !default;
+
+$kendo-label-optional-margin-x: k-spacing(1.5) !default;
+$kendo-label-optional-font-size: var(--kendo-font-size-sm) !default;
+$kendo-label-optional-font-style: italic !default;
+$kendo-label-optional-font-weight: null !default;
+
+@forward "@progress/kendo-theme-core/scss/components/label/_variables.scss" with (
+    $kendo-label-font-size: $kendo-label-font-size,
+    $kendo-label-font-weight: $kendo-label-font-weight,
+    $kendo-label-line-height: $kendo-label-line-height,
+    $kendo-label-optional-margin-x: $kendo-label-optional-margin-x,
+    $kendo-label-optional-font-size: $kendo-label-optional-font-size,
+    $kendo-label-optional-font-style: $kendo-label-optional-font-style,
+    $kendo-label-optional-font-weight: $kendo-label-optional-font-weight
+);

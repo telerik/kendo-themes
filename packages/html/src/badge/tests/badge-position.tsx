@@ -1,13 +1,15 @@
 import { BadgeNormal, BadgePositioned } from '..';
 
+const positions = [ 'inside', 'edge', 'outside' ] as const;
+const aligns = [ 'top-start', 'top-end', 'bottom-start', 'bottom-end' ] as const;
 
 const styles = `
     .k-badge-container {
         padding: 5px;
         width: 80px;
         min-height: 30px;
+        border: 1px dashed black;
         box-sizing: border-box;
-        background-color: skyblue;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -17,155 +19,54 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-6">
+        <div id="test-area" className="k-d-grid k-grid-cols-7">
 
             <span></span>
-            <span>Rectangle</span>
-            <span>Rounded</span>
-            <span>Pill</span>
-            <span>Circle</span>
-            <span>Dot</span>
+            <span>Text</span>
+            <span>Text + Icon</span>
+            <span>Icon + Text</span>
+            <span>Icon</span>
+            <span>Number</span>
+            <span>Empty</span>
 
+            {[ false, true ].map((rtl) => (
+                <>
+                    <span>{rtl ? 'Inline RTL' : 'Inline'}</span>
+                    <div className={`k-badge-container${rtl ? ' k-rtl' : ''}`}><BadgeNormal>Text</BadgeNormal></div>
+                    <div className={`k-badge-container${rtl ? ' k-rtl' : ''}`}><BadgeNormal endIcon="plus-circle">Text</BadgeNormal></div>
+                    <div className={`k-badge-container${rtl ? ' k-rtl' : ''}`}><BadgeNormal icon="plus-circle">Text</BadgeNormal></div>
+                    <div className={`k-badge-container${rtl ? ' k-rtl' : ''}`}><BadgeNormal icon="plus-circle" /></div>
+                    <div className={`k-badge-container${rtl ? ' k-rtl' : ''}`}><BadgeNormal>1</BadgeNormal></div>
+                    <div className={`k-badge-container${rtl ? ' k-rtl' : ''}`}><BadgeNormal></BadgeNormal></div>
+                </>
+            ))}
 
-            <span>Inline</span>
-            <div className="k-badge-container">
-                <BadgeNormal rounded="none">Rect</BadgeNormal>
-            </div>
-            <div className="k-badge-container">
-                <BadgeNormal rounded="medium">Round</BadgeNormal>
-            </div>
-            <div className="k-badge-container">
-                <BadgeNormal rounded="full">Pill</BadgeNormal>
-            </div>
-            <div className="k-badge-container">
-                <BadgeNormal rounded="full">1</BadgeNormal>
-            </div>
-            <div className="k-badge-container">
-                <BadgeNormal rounded="full"></BadgeNormal>
-            </div>
-
-            <span>Inline RTL</span>
-            <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="none">Rect</BadgeNormal>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="medium">Round</BadgeNormal>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="full">Pill</BadgeNormal>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="full">1</BadgeNormal>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgeNormal rounded="full"></BadgeNormal>
-            </div>
-
-            <span className="col-6"></span>
+            <span className="k-col-span-full"></span>
 
             <span></span>
             <span>top start</span>
             <span>top end</span>
             <span>bottom start</span>
             <span>bottom end</span>
-            <span></span>
+            <span className="k-col-span-2"></span>
 
-            <span>Inside</span>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="inside" align="top-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="inside" align="top-end">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="inside" align="bottom-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="inside" align="bottom-end">Rect</BadgePositioned>
-            </div>
-            <span></span>
+            {[ false, true ].map((rtl) => (
+                <>
+                    {positions.map((position) => (
+                        <>
+                            <span>{`${position}${rtl ? ' RTL' : ''}`}</span>
+                            {aligns.map((align) => (
+                                <div className={`k-badge-container${rtl ? ' k-rtl' : ''}`} key={align}>
+                                    <BadgePositioned rounded="medium" position={position} align={align}>Rect</BadgePositioned>
+                                </div>
+                            ))}
+                            <span className="k-col-span-2"></span>
+                        </>
+                    ))}
 
-            <span>Edge</span>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="edge" align="top-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="edge" align="top-end">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="edge" align="bottom-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="edge" align="bottom-end">Rect</BadgePositioned>
-            </div>
-            <span></span>
-
-            <span className="col-6"></span>
-
-            <span>Outside</span>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="outside" align="top-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="outside" align="top-end">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="outside" align="bottom-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container">
-                <BadgePositioned rounded="medium" position="outside" align="bottom-end">Rect</BadgePositioned>
-            </div>
-            <span></span>
-
-            <span className="col-6"></span>
-
-            <span>Inside RTL</span>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="inside" align="top-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="inside" align="top-end">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="inside" align="bottom-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="inside" align="bottom-end">Rect</BadgePositioned>
-            </div>
-            <span></span>
-
-            <span>Edge RTL</span>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="edge" align="top-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="edge" align="top-end">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="edge" align="bottom-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="edge" align="bottom-end">Rect</BadgePositioned>
-            </div>
-            <span></span>
-
-            <span className="col-6"></span>
-
-            <span>Outside RTL</span>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="outside" align="top-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="outside" align="top-end">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="outside" align="bottom-start">Rect</BadgePositioned>
-            </div>
-            <div className="k-badge-container k-rtl">
-                <BadgePositioned rounded="medium" position="outside" align="bottom-end">Rect</BadgePositioned>
-            </div>
-            <span></span>
-
+                    <span className="k-col-span-full"></span>
+                </>
+            ))}
         </div>
     </>
 );

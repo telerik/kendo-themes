@@ -73,10 +73,10 @@ const defaultOptions = {
  * @ux {Format} The value is displayed using the configured number format.
  * @ux {Disabled state} When disabled, the input and spin buttons are non-interactive.
  */
-export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNumericTextboxState & React.HTMLAttributes<HTMLSpanElement>> = (
+export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNumericTextboxState & Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>> = (
     props: KendoNumericTextboxProps &
         KendoNumericTextboxState &
-        React.HTMLAttributes<HTMLSpanElement>
+        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
         size,

@@ -27,7 +27,7 @@ export default () =>(
                                 <Icon icon="filter" />
                             </span>
                             <span className="k-spreadsheet-filter" style={{ left: "433px", top: "129px" }}>
-                                <Icon icon="filter-sort-asc-small" />
+                                <Icon icon="filter-sort-asc" />
                             </span>
                         </>
                     }

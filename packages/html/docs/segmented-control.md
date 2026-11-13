@@ -13,6 +13,7 @@ The SegmentedControl is compliant with the [Web Content Accessibility Guidelines
 | Option | Values | Default |
 | --- | --- | --- |
 | `size` | `small`, `medium`, `large` | — |
+| `rounded` | `none`, `small`, `medium`, `large`, `full` | — |
 
 #### ARIA Attributes
 
@@ -59,7 +60,7 @@ These CSS classes are applied to the `k-segmented-control-button` element.
 | `role="button"` | Each button must have the appropriate button role. |
 | `aria-pressed="true"` | Only the selected button within the group will have this attribute set to true. |
 | `aria-disabled="true"` | Indicates that the button is disabled and cannot be interacted with. |
-| `tabindex` | Roving tabindex: the selected button has tabindex="0"; all others have tabindex="-1". |
+| `tabindex` | Roving tabindex: the focused button has tabindex="0"; all others have tabindex="-1". |
 
 #### UX Behavior
 

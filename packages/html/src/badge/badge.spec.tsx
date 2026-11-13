@@ -1,3 +1,5 @@
+import * as React from 'react';
+import { Icon } from '../icon';
 import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 import { KendoComponent } from '../_types/component';
@@ -10,7 +12,7 @@ const states = [];
 const options = {
     size: [ Size.undefined, Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.undefined, Roundness.none, Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.outline ],
+    fillMode: [ FillMode.undefined, FillMode.solid, FillMode.tint, FillMode.outline ],
     themeColor: [
         ThemeColor.undefined,
         ThemeColor.base,
@@ -32,6 +34,8 @@ export type KendoBadgeOptions = {
 };
 
 export type KendoBadgeProps = KendoBadgeOptions & {
+    icon?: string | React.ReactNode;
+    endIcon?: string | React.ReactNode;
     cutoutBorder?: boolean;
     position?: null | 'edge' | 'inside' | 'outside';
     align?: null | 'top-start' | 'top-end' | 'bottom-start' | 'bottom-end';
@@ -56,12 +60,18 @@ export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSp
         size,
         fillMode,
         themeColor,
+        icon,
+        endIcon,
         cutoutBorder = defaultOptions.cutoutBorder,
         rounded,
         position = defaultOptions.position,
         align = defaultOptions.align,
         ...other
     } = props;
+
+    const renderIcon = (value: KendoBadgeProps['icon']) => typeof value === 'string'
+        ? <Icon className="k-badge-icon" icon={value} />
+        : value;
 
     return (
         <span
@@ -82,7 +92,15 @@ export const Badge: KendoComponent<KendoBadgeProps & React.HTMLAttributes<HTMLSp
                 }
             )}
         >
-            {props.children}
+            {icon && renderIcon(icon)}
+
+            {React.Children.map(props.children, child =>
+                typeof child === 'string' || typeof child === 'number'
+                    ? <span className="k-badge-text">{child}</span>
+                    : child
+            )}
+
+            {endIcon && renderIcon(endIcon)}
         </span>
     );
 };

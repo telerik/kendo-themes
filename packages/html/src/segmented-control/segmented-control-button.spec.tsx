@@ -18,6 +18,7 @@ export type KendoSegmentedControlButtonOptions = {};
 
 export type KendoSegmentedControlButtonProps = KendoSegmentedControlButtonOptions & {
   icon?: string;
+  endIcon?: string;
   text?: string;
   iconClassName?: string;
   children?: string;
@@ -31,7 +32,7 @@ const defaultOptions = {};
  * @aria {role="button"} Each button must have the appropriate button role.
  * @aria {aria-pressed="true"} Only the selected button within the group will have this attribute set to true.
  * @aria {aria-disabled="true"} Indicates that the button is disabled and cannot be interacted with.
- * @aria {tabindex} Roving tabindex: the selected button has tabindex="0"; all others have tabindex="-1".
+ * @aria {tabindex} Roving tabindex: the focused button has tabindex="0"; all others have tabindex="-1".
  * @ux {Selection} Clicking this button selects it and automatically deselects the others.
  * @ux {Disabled state} When disabled, this segment cannot be activated.
  */
@@ -46,6 +47,7 @@ export const SegmentedControlButton: KendoComponent<KendoSegmentedControlButtonP
         selected,
         disabled,
         icon,
+        endIcon,
         text,
         iconClassName,
         ...other
@@ -77,6 +79,13 @@ export const SegmentedControlButton: KendoComponent<KendoSegmentedControlButtonP
 
             {(text || props.children) && (
                 <span className="k-segmented-control-button-text">{text || props.children}</span>
+            )}
+
+            {endIcon && (
+                <Icon
+                    className={classNames(iconClassName, 'k-segmented-control-button-icon')}
+                    icon={endIcon}
+                />
             )}
         </button>
     );

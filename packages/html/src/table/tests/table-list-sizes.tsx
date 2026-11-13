@@ -1,5 +1,4 @@
-import { DataTable, DataTableList } from '../../table';
-
+import { DataTable, DataTableList } from "../../table";
 
 const style = `
     #test-area {
@@ -13,18 +12,16 @@ const style = `
     }
 `;
 
-export default () =>(
-    <>
-        <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
-
-            <span>Table list small</span>
-            <span>Table list medium</span>
-            <span>Table list large</span>
-
-            { DataTable.options.size.map((size) => (
-                <DataTableList size={size} />
-            ))}
+export default () => (
+  <>
+    <style>{style}</style>
+    <div id="test-area" className="k-d-grid k-grid-cols-3">
+      {DataTable.options.size.map((size) => (
+        <div>
+          <span>Table list {size || "default"}</span>
+          <DataTableList size={size} />
         </div>
-    </>
+      ))}
+    </div>
+  </>
 );

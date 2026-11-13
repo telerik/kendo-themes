@@ -1,3 +1,431 @@
+## 14.10.1-dev.0 (2026-11-12)
+
+### 🩹 Fixes
+
+- **column-menu:** load before grid so its variables can be configured ([1f35de2f87](https://github.com/telerik/kendo-themes/commit/1f35de2f87))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+
+## 14.10.0 (2026-11-11)
+
+### 🚀 Features
+
+- **floating-label:** follow nested input/picker size for label text and offsets ([69a0582a51](https://github.com/telerik/kendo-themes/commit/69a0582a51))
+
+### 🩹 Fixes
+
+- **fluent:** fix ImageEditor canvas, borders and placeholder styles ([210d826ee8](https://github.com/telerik/kendo-themes/commit/210d826ee8))
+- **datainsights-composer:** add grid as a dependency ([b4607f407f](https://github.com/telerik/kendo-themes/commit/b4607f407f))
+- **datainsights-composer:** load after dataviz in theme indexes ([6d7b5a82ff](https://github.com/telerik/kendo-themes/commit/6d7b5a82ff))
+- **scheduler:** remove event border styles and variables ([829a9ce432](https://github.com/telerik/kendo-themes/commit/829a9ce432))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
+## 14.10.0-dev.3 (2026-11-11)
+
+### 🚀 Features
+
+- **floating-label:** follow nested input/picker size for label text and offsets ([69a0582a51](https://github.com/telerik/kendo-themes/commit/69a0582a51))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.10.0-dev.2 (2026-11-11)
+
+### 🩹 Fixes
+
+- **fluent:** fix ImageEditor canvas, borders and placeholder styles ([210d826ee8](https://github.com/telerik/kendo-themes/commit/210d826ee8))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+
+## 14.10.0-dev.1 (2026-11-11)
+
+### 🩹 Fixes
+
+- **datainsights-composer:** add grid as a dependency ([b4607f407f](https://github.com/telerik/kendo-themes/commit/b4607f407f))
+- **datainsights-composer:** load after dataviz in theme indexes ([6d7b5a82ff](https://github.com/telerik/kendo-themes/commit/6d7b5a82ff))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.10.0-dev.0 (2026-11-10)
+
+### 🩹 Fixes
+
+- **scheduler:** remove event border styles and variables ([829a9ce432](https://github.com/telerik/kendo-themes/commit/829a9ce432))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.9.0 (2026-11-06)
+
+### 🚀 Features
+
+- **avatar:** add xs and xl sizes and align avatar size scale across themes ([7925d5eab1](https://github.com/telerik/kendo-themes/commit/7925d5eab1))
+- **scheduler:** add readonly cell state ([58ea4d90b2](https://github.com/telerik/kendo-themes/commit/58ea4d90b2))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
+## 14.9.0-dev.3 (2026-11-05)
+
+### 🚀 Features
+
+- **avatar:** add xs and xl sizes and align avatar size scale across themes ([7925d5eab1](https://github.com/telerik/kendo-themes/commit/7925d5eab1))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.9.0-dev.2 (2026-11-04)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.9.0-dev.1 (2026-11-04)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.9.0-dev.0 (2026-11-03)
+
+### 🚀 Features
+
+- **scheduler:** add readonly cell state ([58ea4d90b2](https://github.com/telerik/kendo-themes/commit/58ea4d90b2))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.8.0 (2026-11-02)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### 🩹 Fixes
+
+- **chip:** rename $kendo-chip-solid-shadow to $kendo-chip-solid-focus-shadow ([#3462](https://github.com/telerik/kendo-themes/issues/3462))
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+- zhpenkov
+
+## 14.7.1-dev.7 (2026-11-02)
+
+### 🩹 Fixes
+
+- **chip:** rename $kendo-chip-solid-shadow to $kendo-chip-solid-focus-shadow ([#3462](https://github.com/telerik/kendo-themes/issues/3462))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.6 (2026-10-30)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.5 (2026-10-29)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.4 (2026-10-28)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.3 (2026-10-26)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.1-dev.2 (2026-10-23)
+
+### 🩹 Fixes
+
+- **scheduler:** align edit form labels with controls ([9ed0865ee3](https://github.com/telerik/kendo-themes/commit/9ed0865ee3))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.1-dev.1 (2026-10-22)
+
+### 🚀 Features
+
+- **datainsights-composer:** add DataInsights Composer component ([6c736bb0e7](https://github.com/telerik/kendo-themes/commit/6c736bb0e7))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
+## 14.7.1-dev.0 (2026-10-22)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0 (2026-10-21)
+
+### 🚀 Features
+
+- **badge:** update badge styles ([2fdd51af87](https://github.com/telerik/kendo-themes/commit/2fdd51af87))
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### 🩹 Fixes
+
+- **menu:** item description text color does not meet contrast requirements ([0887cb7ffe](https://github.com/telerik/kendo-themes/commit/0887cb7ffe))
+- **list:** item description text color does not meet contrast requirements ([51b8d4cc9f](https://github.com/telerik/kendo-themes/commit/51b8d4cc9f))
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Irina Masyukova
+- Teya Veselinova
+- Yanislav Petrov @yapetrov
+- zhpenkov
+
+## 14.7.0-dev.16 (2026-10-21)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.15 (2026-10-20)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.14 (2026-10-20)
+
+### 🩹 Fixes
+
+- **menu:** item description text color does not meet contrast requirements ([0887cb7ffe](https://github.com/telerik/kendo-themes/commit/0887cb7ffe))
+- **list:** item description text color does not meet contrast requirements ([51b8d4cc9f](https://github.com/telerik/kendo-themes/commit/51b8d4cc9f))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Irina Masyukova
+
+## 14.7.0-dev.13 (2026-10-19)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.12 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.11 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.10 (2026-10-16)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.9 (2026-10-16)
+
+### 🚀 Features
+
+- **badge:** update badge styles ([2fdd51af87](https://github.com/telerik/kendo-themes/commit/2fdd51af87))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.8 (2026-10-13)
+
+### 🚀 Features
+
+- **scheduler:** support custom event colors ([52a799612d](https://github.com/telerik/kendo-themes/commit/52a799612d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.7 (2026-10-13)
+
+### 🚀 Features
+
+- **list-box:** add start/end overlay to ListBox's toolbar and make it scrollable ([99098b264b](https://github.com/telerik/kendo-themes/commit/99098b264b))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.7.0-dev.6 (2026-10-13)
+
+### 🚀 Features
+
+- **button:** update button gap styles ([f0bf0fd96d](https://github.com/telerik/kendo-themes/commit/f0bf0fd96d))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.7.0-dev.5 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.4 (2026-10-09)
+
+### 🩹 Fixes
+
+- **chip:** use base-emphasis border color for outline base chips ([bfe722fff8](https://github.com/telerik/kendo-themes/commit/bfe722fff8))
+
+### ❤️ Thank You
+
+- Teya Veselinova
+
+## 14.7.0-dev.3 (2026-10-09)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.2 (2026-10-09)
+
+### 🚀 Features
+
+- **imageeditor:** add rotation handle support ([1216c92395](https://github.com/telerik/kendo-themes/commit/1216c92395))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.7.0-dev.1 (2026-10-08)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.7.0-dev.0 (2026-10-06)
+
+### 🚀 Features
+
+- **label:** export Label component as a standalone component; update related styles and tests ([c54b3c0bb2](https://github.com/telerik/kendo-themes/commit/c54b3c0bb2))
+
+### ❤️ Thank You
+
+- Yanislav Petrov @yapetrov
+
+## 14.6.1 (2026-10-06)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- Emil Petrov
+- zhpenkov
+
+## 14.6.1-dev.2 (2026-10-05)
+
+### 🩹 Fixes
+
+- **floating-toolbar:** respect consumer width in overflow menu mode ([d09866b64a](https://github.com/telerik/kendo-themes/commit/d09866b64a))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.6.1-dev.1 (2026-10-01)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.6.1-dev.0 (2026-10-01)
+
+### 🩹 Fixes
+
+- **table:** font size overrides not working ([83174b762b](https://github.com/telerik/kendo-themes/commit/83174b762b))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.6.0 (2026-09-29)
+
+### 🚀 Features
+
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+
+### 🩹 Fixes
+
+- **dock-manager:** content and tab panes have different heights ([af706e6821](https://github.com/telerik/kendo-themes/commit/af706e6821))
+- **ci:** reconcile visual reports with pull requests ([7a0355f067](https://github.com/telerik/kendo-themes/commit/7a0355f067))
+- **charts:** restore chart tooltip to color-white/color-black ([2c28b60f62](https://github.com/telerik/kendo-themes/commit/2c28b60f62))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Kiril Peyanski
+- Teya Veselinova
+- zhpenkov
+
+## 14.5.1-dev.8 (2026-09-29)
+
+### 🚀 Features
+
+- **imageeditor:** update theme variables and layout styles ([8dc116334d](https://github.com/telerik/kendo-themes/commit/8dc116334d))
+
+### ❤️ Thank You
+
+- Emil Petrov
+
+## 14.5.1-dev.7 (2026-09-28)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.6 (2026-09-25)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.5 (2026-09-24)
+
+This was a version bump only for @progress/kendo-theme-bootstrap to align it with other projects, there were no code changes.
+
+## 14.5.1-dev.4 (2026-09-21)
+
+### 🚀 Features
+
+- **menu:** enhance component styles ([7ae8b287f6](https://github.com/telerik/kendo-themes/commit/7ae8b287f6))
+- **scheduler:** enhance component styles ([b04c2e1b44](https://github.com/telerik/kendo-themes/commit/b04c2e1b44))
+- **segmented-control:** add roundness options ([22ae7eb2de](https://github.com/telerik/kendo-themes/commit/22ae7eb2de))
+
+### 🩹 Fixes
+
+- **dock-manager:** content and tab panes have different heights ([af706e6821](https://github.com/telerik/kendo-themes/commit/af706e6821))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+- Teya Veselinova
+- zhpenkov
+
 ## 14.5.1-dev.3 (2026-09-14)
 
 ### 🩹 Fixes

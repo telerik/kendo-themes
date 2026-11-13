@@ -42,6 +42,14 @@ These CSS classes are applied to the `k-editor` element.
 
 ### EditorContent
 
+#### Component States
+
+| State | CSS Class |
+| --- | --- |
+| `focus` | `k-focus` |
+
+These CSS classes are applied to the `k-editor-content` element.
+
 #### ARIA Attributes
 
 | Attribute | Description |

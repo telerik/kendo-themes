@@ -1,0 +1,25 @@
+@use "../core/_index.scss" as *;
+
+$kendo-datainsights-composer-border-width: 1px !default;
+$kendo-datainsights-composer-border-color: k-color(border) !default;
+$kendo-datainsights-composer-background: k-color(surface) !default;
+$kendo-datainsights-composer-preview-background: k-color(surface-alt) !default;
+$kendo-datainsights-composer-border-radius: k-border-radius(xxl) !default;
+$kendo-datainsights-composer-fields-border-radius: k-border-radius(xl) !default;
+$kendo-datainsights-composer-loading-height: 400px !default;
+$kendo-datainsights-composer-popup-min-width: 250px !default;
+$kendo-datainsights-composer-popup-max-width: 320px !default;
+$kendo-datainsights-composer-popup-max-height: 320px !default;
+
+@forward "@progress/kendo-theme-core/scss/components/datainsights-composer/_variables.scss" with (
+    $kendo-datainsights-composer-border-width: $kendo-datainsights-composer-border-width,
+    $kendo-datainsights-composer-border-color: $kendo-datainsights-composer-border-color,
+    $kendo-datainsights-composer-background: $kendo-datainsights-composer-background,
+    $kendo-datainsights-composer-preview-background: $kendo-datainsights-composer-preview-background,
+    $kendo-datainsights-composer-border-radius: $kendo-datainsights-composer-border-radius,
+    $kendo-datainsights-composer-fields-border-radius: $kendo-datainsights-composer-fields-border-radius,
+    $kendo-datainsights-composer-loading-height: $kendo-datainsights-composer-loading-height,
+    $kendo-datainsights-composer-popup-min-width: $kendo-datainsights-composer-popup-min-width,
+    $kendo-datainsights-composer-popup-max-width: $kendo-datainsights-composer-popup-max-width,
+    $kendo-datainsights-composer-popup-max-height: $kendo-datainsights-composer-popup-max-height
+);

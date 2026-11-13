@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            max-width: 1080px;
+            }
+        </style>
+        <div id="test-area" class="k-d-grid k-grid-cols-1">
+            <div class="k-scheduler" role="application">
+                <div class="k-scheduler-toolbar k-toolbar" aria-label="Toolbar" role="toolbar">
+                    <button class="k-toolbar-button  k-button k-button-primary" aria-label="Add new event">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">New Event</span>
+                    </button>
+                    <button class="k-toolbar-button  k-button k-button-flat">
+                        <span class="k-button-text">Today</span>
+                    </button>
+                    <div role="group" class="k-toolbar-button-group  k-button-group k-button-group-flat">
+                        <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to previous period">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-button k-button-flat k-icon-button" aria-label="Navigate to next period">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <button class="k-toolbar-button k-nav-current k-button k-button-flat" aria-live="polite">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-calendar" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12.75 14.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 2.25v3m-9-3v3m-3.75 3h16.5M4.5 3.75h15a.75.75 0 0 1 .75.75v15a.75.75 0 0 1-.75.75h-15a.75.75 0 0 1-.75-.75v-15a.75.75 0 0 1 .75-.75m8.25 10.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">June 21 - June 27</span>
+                    </button>
+                    <span class="k-spacer"></span>
+                    <div class="k-scheduler-views k-segmented-control" role="group">
+                        <div class="k-segmented-control-thumb" aria-hidden="true" style="width: 19%; left: 15%;"></div>
+                        <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                            <span class="k-segmented-control-button-text">Day</span>
+                        </button>
+                        <button class="k-segmented-control-button k-selected" aria-pressed="true" tabindex="0">
+                            <span class="k-segmented-control-button-text">Week</span>
+                        </button>
+                        <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                            <span class="k-segmented-control-button-text">Month</span>
+                        </button>
+                        <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                            <span class="k-segmented-control-button-text">Timeline</span>
+                        </button>
+                        <button class="k-segmented-control-button" aria-pressed="false" tabindex="-1">
+                            <span class="k-segmented-control-button-text">Agenda</span>
+                        </button>
+                    </div>
+                </div>
+                <table class="k-scheduler-layout k-scheduler-weekview" role="none">
+                    <tbody>
+                        <tr class="k-scheduler-head">
+                            <td>
+                                <div class="k-scheduler-times">
+                                    <table role="none" class="k-scheduler-table">
+                                        <tbody>
+                                            <tr style="height: 55px;">
+                                                <th role="presentation" class="k-scheduler-cell"></th>
+                                            </tr>
+                                            <tr style="height: 86px;">
+                                                <th class="k-scheduler-cell k-scheduler-times-all-day">all day</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="k-scheduler-header" style="padding-right: 16px;">
+                                    <div class="k-scheduler-header-wrap">
+                                        <table class="k-scheduler-table">
+                                            <tbody>
+                                                <tr class="k-scheduler-date-group">
+                                                    <th class="k-scheduler-cell">
+                                                        <span class="k-scheduler-date-day">Sun</span>
+                                                        <span class="k-link k-nav-day" aria-label="Sun 21">21</span>
+                                                    </th>
+                                                    <th class="k-scheduler-cell">
+                                                        <span class="k-scheduler-date-day">Mon</span>
+                                                        <span class="k-link k-nav-day" aria-label="Mon 22">22</span>
+                                                    </th>
+                                                    <th class="k-scheduler-cell">
+                                                        <span class="k-scheduler-date-day">Tue</span>
+                                                        <span class="k-link k-nav-day" aria-label="Tue 23">23</span>
+                                                    </th>
+                                                    <th class="k-scheduler-cell k-today">
+                                                        <span class="k-scheduler-date-day">Wed</span>
+                                                        <span class="k-link k-nav-day" aria-label="Wed 24">24</span>
+                                                    </th>
+                                                    <th class="k-scheduler-cell">
+                                                        <span class="k-scheduler-date-day">Thu</span>
+                                                        <span class="k-link k-nav-day" aria-label="Thu 25">25</span>
+                                                    </th>
+                                                    <th class="k-scheduler-cell">
+                                                        <span class="k-scheduler-date-day">Fri</span>
+                                                        <span class="k-link k-nav-day" aria-label="Fri 26">26</span>
+                                                    </th>
+                                                    <th class="k-scheduler-cell">
+                                                        <span class="k-scheduler-date-day">Sat</span>
+                                                        <span class="k-link k-nav-day" aria-label="Sat 27">27</span>
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div style="position: relative;">
+                                            <table class="k-scheduler-table k-scheduler-header-all-day">
+                                                <tbody>
+                                                    <tr style="height: 86px;">
+                                                        <td class="k-scheduler-cell"></td>
+                                                        <td class="k-scheduler-cell"></td>
+                                                        <td class="k-scheduler-cell"></td>
+                                                        <td class="k-scheduler-cell"></td>
+                                                        <td class="k-scheduler-cell"></td>
+                                                        <td class="k-scheduler-cell"></td>
+                                                        <td class="k-scheduler-cell"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="k-event k-event-all-day" role="button" aria-label="Event" style="top: 0px; left: 0%; width: 260px; height: 25px;">
+                                                <span class="k-event-continuation">
+                                                    <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <div>
+                                                    <div class="k-event-template k-event-title">From Last Week Event</div>
+                                                    <span class="k-event-all-day-time">9:00 AM</span>
+                                                </div>
+                                                <span class="k-resize-handle k-resize-w"></span>
+                                                <span class="k-resize-handle k-resize-e"></span>
+                                            </div>
+                                            <div class="k-event" role="button" aria-label="Event" style="top: 0px; left: 57.143%; width: 130px; height: 25px;">
+                                                <div>
+                                                    <div class="k-event-template k-event-title">All Day Event</div>
+                                                </div>
+                                                <span class="k-resize-handle k-resize-w"></span>
+                                                <span class="k-resize-handle k-resize-e"></span>
+                                            </div>
+                                            <div class="k-event k-event-all-day" role="button" aria-label="Event" style="top: 28px; left: 14.286%; width: 260px; height: 25px;">
+                                                <div>
+                                                    <span class="k-event-all-day-time">8:00 AM</span>
+                                                    <div class="k-event-template k-event-title">Multi Day Event Long Event</div>
+                                                    <span class="k-event-all-day-time">5:00 PM</span>
+                                                </div>
+                                                <span class="k-resize-handle k-resize-w"></span>
+                                                <span class="k-resize-handle k-resize-e"></span>
+                                            </div>
+                                            <div class="k-event k-event-all-day" role="button" aria-label="Event" style="top: 28px; left: 57%; width: 43%; height: 25px;">
+                                                <div>
+                                                    <span class="k-event-all-day-time">9:00 AM</span>
+                                                    <div class="k-event-template k-event-title">To Next Week Event</div>
+                                                </div>
+                                                <span class="k-event-continuation">
+                                                    <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-resize-handle k-resize-w"></span>
+                                                <span class="k-resize-handle k-resize-e"></span>
+                                            </div>
+                                            <div class="k-event" role="button" aria-label="Event" style="top: 56px; left: 0%; width: 100%; height: 25px;">
+                                                <span class="k-event-continuation">
+                                                    <span class="k-icon k-svg-icon k-svg-i-chevron-left" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.5 7.5 12 15 4.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <div>
+                                                    <div class="k-event-template k-event-title">Multi Week Event</div>
+                                                </div>
+                                                <span class="k-event-continuation">
+                                                    <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-resize-handle k-resize-w"></span>
+                                                <span class="k-resize-handle k-resize-e"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="k-scheduler-body">
+                            <td>
+                                <div class="k-scheduler-times" style="height: 195px;">
+                                    <table role="none" class="k-scheduler-table" style="height: 400px;">
+                                        <tbody>
+                                            <tr>
+                                                <th class="k-scheduler-cell">
+                                                    <span>7:00 AM</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th role="presentation" class="k-scheduler-cell k-slot-cell"></th>
+                                            </tr>
+                                            <tr>
+                                                <th class="k-scheduler-cell">
+                                                    <span>8:00 AM</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th role="presentation" class="k-scheduler-cell k-slot-cell"></th>
+                                            </tr>
+                                            <tr>
+                                                <th class="k-scheduler-cell">
+                                                    <span>9:00 AM</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th role="presentation" class="k-scheduler-cell k-slot-cell"></th>
+                                            </tr>
+                                            <tr>
+                                                <th class="k-scheduler-cell">
+                                                    <span>10:00 AM</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th role="presentation" class="k-scheduler-cell k-slot-cell"></th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div tabindex="0" class="k-scheduler-content" style="height: 195px;">
+                                    <table class="k-scheduler-table">
+                                        <tbody>
+                                            <tr class="k-middle-row">
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                            </tr>
+                                            <tr class="k-middle-row">
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                                <td class="k-scheduler-cell">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="k-scheduler-footer k-toolbar" aria-label="Toolbar" role="toolbar">
+                    <button class="k-toolbar-button k-scheduler-fullday k-button">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-clock" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75V12h5.25M21 12c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                        <span class="k-button-text">Show business hours</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

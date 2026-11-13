@@ -3,53 +3,23 @@
 
 // Smart box
 
-/// The default size of the SmartBox.
-/// @group smart-box
-/// @role default
 $kendo-smart-box-default-size: "md" !default;
-/// The default roundness of the SmartBox.
-/// @group smart-box
-/// @role default
 $kendo-smart-box-default-roundness: "full" !default;
 
-/// The spacing between elements in the suffix of the Smart box.
-/// @group smart-box
 $kendo-smart-box-suffix-spacing: k-spacing(1) !default;
 
-/// The horizontal padding of the small Smart box.
-/// @group smart-box
 $kendo-smart-box-sm-padding-x: 0 !default;
-/// The horizontal padding of the medium Smart box.
-/// @group smart-box
 $kendo-smart-box-md-padding-x: k-spacing(1) !default;
-/// The horizontal padding of the large Smart box.
-/// @group smart-box
 $kendo-smart-box-lg-padding-x: calc( #{k-spacing(2)} + 1px) !default;
 
-/// The horizontal margin of the prefix icon in the small Smart box.
-/// @group smart-box
 $kendo-smart-box-sm-prefix-margin-x: 0 !default;
-/// The horizontal margin of the prefix icon in the medium Smart box.
-/// @group smart-box
 $kendo-smart-box-md-prefix-margin-x: 0 !default;
-/// The horizontal margin of the prefix icon in the large Smart box.
-/// @group smart-box
 $kendo-smart-box-lg-prefix-margin-x: 0 !default;
 
-/// The inline padding of the popup of the Smart box.
-/// @group smart-box
 $kendo-smart-box-popup-padding-inline: k-spacing(2) !default;
-/// The block padding of the popup of the Smart box.
-/// @group smart-box
 $kendo-smart-box-popup-padding-block: k-spacing(2) !default;
-/// The border radius of the popup of the Smart box.
-/// @group smart-box
 $kendo-smart-box-popup-border-radius: k-border-radius(md) !default;
-/// The spacing of the popup of the Smart box.
-/// @group smart-box
 $kendo-smart-box-popup-spacing: k-spacing(2) !default;
-/// The margin of the segmented control in the popup of the Smart box.
-/// @group smart-box
 $kendo-smart-box-popup-segmented-control-margin: k-spacing(2) !default;
 
 

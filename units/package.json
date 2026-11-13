@@ -9,6 +9,7 @@
     "test:classic": "vitest run classic",
     "test:fluent": "vitest run fluent",
     "test:meridian": "vitest run meridian",
+    "test:coverage": "vitest run component-coverage",
     "test": "vitest run",
     "test:watch": "vitest"
   }

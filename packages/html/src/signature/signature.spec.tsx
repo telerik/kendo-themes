@@ -95,26 +95,13 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                 <Button
                     className={classNames(
                         'k-signature-action',
-                        'k-signature-maximize',
-                        maximized ? 'k-hidden' : ''
+                        maximized ? 'k-signature-minimize' : 'k-signature-maximize'
                     )}
-                    icon="hyperlink-open"
+                    icon={maximized ? 'x' : 'hyperlink-open'}
                     rounded={rounded}
                     size={size}
                     fillMode="flat"
-                    aria-label="Maximize"
-                />
-                <Button
-                    className={classNames(
-                        'k-signature-action',
-                        'k-signature-minimize',
-                        maximized ? '' : 'k-hidden'
-                    )}
-                    icon="hyperlink-open"
-                    rounded={rounded}
-                    size={size}
-                    fillMode="flat"
-                    aria-label="Minimize"
+                    aria-label={maximized ? 'Minimize' : 'Maximize'}
                 />
             </div>
             <div className="k-signature-line"></div>
@@ -128,7 +115,7 @@ export const Signature: KendoComponent<KendoSignatureProps & KendoSignatureState
                         'k-signature-action',
                         'k-signature-clear',
                     )}
-                    icon="x"
+                    icon="eraser"
                     rounded={props.rounded}
                     size={props.size}
                     fillMode="flat"

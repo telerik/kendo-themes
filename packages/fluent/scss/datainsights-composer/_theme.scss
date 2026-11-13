@@ -1,0 +1,13 @@
+@use "@progress/kendo-theme-core/scss/components/datainsights-composer/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../input/_variables.scss" as *;
+
+@mixin kendo-datainsights-composer--theme() {
+    @include kendo-datainsights-composer--theme-base();
+
+    .k-datainsights-composer {
+        .k-input {
+            border-bottom-color: $kendo-input-border;
+        }
+    }
+}

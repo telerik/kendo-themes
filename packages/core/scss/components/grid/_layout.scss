@@ -206,6 +206,7 @@
                 position: absolute;
                 inset-inline-end: $kendo-grid-header-menu-icon-spacing;
                 z-index: k-z-index("base", 1);
+                -webkit-user-drag: none;
 
                 &:hover {
                     cursor: pointer;
@@ -1603,7 +1604,11 @@
         }
     }
     .k-column-menu-tabbed {
-        border-radius: $kendo-tabstrip-item-border-radius $kendo-tabstrip-item-border-radius 0 0;
+        border-radius: inherit;
+
+        .k-tabstrip {
+            border-radius: inherit;
+        }
 
         .k-tabstrip-items {
             margin: (-$kendo-tabstrip-item-border-width) (-$kendo-tabstrip-item-border-width) 0;

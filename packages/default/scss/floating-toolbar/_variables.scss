@@ -1,0 +1,10 @@
+@use "../core/_index.scss" as *;
+
+$kendo-floating-toolbar-border-radius: k-border-radius(xxl) !default;
+
+$kendo-floating-toolbar-width: 360px !default;
+
+@forward "@progress/kendo-theme-core/scss/components/floating-toolbar/_variables.scss" with (
+    $kendo-floating-toolbar-border-radius: $kendo-floating-toolbar-border-radius,
+    $kendo-floating-toolbar-width: $kendo-floating-toolbar-width
+);

@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { testRoutes } from 'virtual:test-routes';
+import { templateRoutes, testRoutes } from 'virtual:test-routes';
 import { fuzzyMatch } from '../lib/fuzzy';
 import { getRecents, pushRecent } from '../lib/recents';
 import { themeQuery } from '../lib/theme';
@@ -15,6 +15,7 @@ interface Props {
 interface Item {
     component: string;
     test: string;
+    kind: 'test' | 'template';
     matched: number[]; // indices into `${component}/${test}`
     index: number; // position in the flat list (for active tracking)
 }
@@ -34,21 +35,22 @@ export function DevBarSearch({ theme, swatch, onClose }: Props) {
 
     const themeQs = themeQuery(theme, swatch);
 
-    // Flat, sorted catalogue of every demo (theme-independent).
+    // Flat, sorted catalogue of tests and templates (theme-independent).
     const catalogue = useMemo(
         () =>
-            Object.entries(testRoutes)
-                .sort((a, b) => a[0].localeCompare(b[0]))
-                .flatMap(([component, tests]) =>
-                    [...tests].sort().map(test => ({ component, test }))
-                ),
+            [...new Set([...Object.keys(testRoutes), ...Object.keys(templateRoutes)])]
+                .sort()
+                .flatMap(component => [
+                    ...(testRoutes[component] ?? []).map(test => ({ component, test, kind: 'test' as const })),
+                    ...(templateRoutes[component] ?? []).map(test => ({ component, test, kind: 'template' as const })),
+                ].sort((a, b) => a.test.localeCompare(b.test))),
         []
     );
 
     // Recents that still exist in the catalogue.
     const recents = useMemo(() => {
-        const exists = new Set(catalogue.map(c => label(c.component, c.test)));
-        return getRecents().filter(r => exists.has(label(r.component, r.test)));
+        const exists = new Set(catalogue.map(c => `${label(c.component, c.test)}/${c.kind}`));
+        return getRecents().filter(r => exists.has(`${label(r.component, r.test)}/${r.kind ?? 'test'}`));
     }, [catalogue]);
 
     const q = query.trim();
@@ -59,7 +61,12 @@ export function DevBarSearch({ theme, swatch, onClose }: Props) {
             const source = recents.length ? recents : catalogue.slice(0, EMPTY_LIMIT);
             return {
                 mode: recents.length ? 'recent' : 'all',
-                items: source.map((c, index) => ({ ...c, matched: [], index })),
+                items: source.map((c, index) => ({
+                    ...c,
+                    kind: c.kind ?? 'test',
+                    matched: [],
+                    index,
+                })),
             };
         }
         const scored = catalogue
@@ -73,8 +80,8 @@ export function DevBarSearch({ theme, swatch, onClose }: Props) {
     }, [q, catalogue, recents]);
 
     const navigate = (item: Item) => {
-        pushRecent(item.component, item.test);
-        window.location.href = `/${item.component}/${item.test}${themeQs}`;
+        pushRecent(item.component, item.test, item.kind);
+        window.location.href = `/${item.component}/${item.test}${themeQs}&kind=${item.kind}`;
     };
 
     useEffect(() => setActiveIndex(0), [q]);
@@ -169,11 +176,11 @@ export function DevBarSearch({ theme, swatch, onClose }: Props) {
                                 const text = label(item.component, item.test);
                                 return (
                                     <a
-                                        key={text}
+                                        key={`${text}/${item.kind}`}
                                         id={`devkit-opt-${item.index}`}
                                         ref={isActive ? activeRef : undefined}
                                         className={`devkit-search-item${isActive ? ' devkit-search-item-active' : ''}`}
-                                        href={`/${item.component}/${item.test}${themeQs}`}
+                                        href={`/${item.component}/${item.test}${themeQs}&kind=${item.kind}`}
                                         role="option"
                                         aria-selected={isActive}
                                         onMouseEnter={() => setActiveIndex(item.index)}
@@ -183,6 +190,7 @@ export function DevBarSearch({ theme, swatch, onClose }: Props) {
                                         <span className="devkit-search-item-test">
                                             <Highlight text={text} matched={item.matched} />
                                         </span>
+                                        <span className="devkit-preview-kind" data-kind={item.kind}>{item.kind}</span>
                                     </a>
                                 );
                             })}
@@ -194,7 +202,7 @@ export function DevBarSearch({ theme, swatch, onClose }: Props) {
                     <span className="devkit-search-hint"><kbd>↵</kbd> open</span>
                     <span className="devkit-search-hint"><kbd>↑↓</kbd> navigate</span>
                     <span className="devkit-search-hint"><kbd>esc</kbd> close</span>
-                    <span className="devkit-search-count">{catalogue.length} demos</span>
+                    <span className="devkit-search-count">{catalogue.length} previews</span>
                 </div>
             </div>
         </div>

@@ -1124,7 +1124,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line of the list item description.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the list item description.</div></div>
     </td>
 </tr>
 <tr>
@@ -1135,6 +1135,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-hover-description-text</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description on hover.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-selected-description-text</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+    <td><code>color-mix(in srgb, currentColor 85%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list item description when the item is selected.</div></div>
     </td>
 </tr>
 <tr>

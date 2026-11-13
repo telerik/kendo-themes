@@ -27,8 +27,6 @@ $default-elevation: (
     )
 ) !default;
 
-/// The global default Elevation map.
-/// @group elevation
 $kendo-elevation: $default-elevation !default;
 
 $kendo-elevation: map.merge($default-elevation, $kendo-elevation);
