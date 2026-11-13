@@ -1,3 +1,9 @@
+## 14.10.1-dev.1 (2026-11-13)
+
+### 🩹 Fixes
+
+- **fluent:** correct swapped sm/md icon-size values ([8273b13a63](https://github.com/telerik/kendo-themes/commit/8273b13a63))
+
 ## 14.10.1-dev.0 (2026-11-12)
 
 ### 🩹 Fixes
