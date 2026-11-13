@@ -10,6 +10,12 @@ const dependencyClassNames = ["k-svg-icon", "k-listgroup", "k-popup"];
 
 const expected = [];
 
-const unexpected = [];
+const unexpected = [
+    "kendo-actionsheet-item-border-width", // Variable customizations do not work.
+    "kendo-actionsheet-item-hover-background", // Variable customizations do not work.
+    "kendo-actionsheet-item-focus-background", // Variable customizations do not work.
+    "kendo-actionsheet-item-disabled-opacity", // Variable customizations do not work.
+    "kendo-adaptive-actionsheet-titlebar-border" // Variable customizations do not work.
+];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected], false);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

@@ -11,6 +11,10 @@ const dependencyClassNames = [];
 
 const expected = [];
 
-const unexpected = [];
+const unexpected = [
+    "kendo-column-menu-font-size", // Variable customizations do not work.
+    "kendo-column-menu-line-height", // Variable customizations do not work.
+    "kendo-column-menu-font-family" // Variable customizations do not work.
+];
 
-testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected], false);
+testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);
