@@ -21,13 +21,3 @@
         box-shadow: none;
     }
 }
-
-@mixin kendo-action-sheet--layout-jq() {
-
-    .k-actionsheet-jq {
-        &.k-actionsheet {
-            position: relative;
-        }
-    }
-
-}
