@@ -16,7 +16,8 @@ The ActionSheet is compliant with the [Web Content Accessibility Guidelines (WCA
 | `aria-hidden="true"|\"false"` | Announces the hidden state of the ActionSheet container. |
 | `aria-modal="true"` | Announces that the action sheet is modal. |
 | `id` | Used to associate the title with the action sheet wrapper element. |
-| `aria-labelledby` | references ${id}-title |
+| `aria-labelledby` | references ${id}-title when the header renders its own title. |
+| `aria-label` | Provides the accessible name when the header has custom content or no id. Falls back to the header title, then to "Action sheet". |
 
 #### Keyboard Navigation
 
@@ -26,13 +27,14 @@ The ActionSheet is compliant with the [Web Content Accessibility Guidelines (WCA
 | `Tab` | Moves focus to the next focusable item. |
 | `Shift + Tab` | Moves focus to the previous focusable item. |
 | `Enter` | Triggers the action associated with the currently focused item. |
+| `Page Up` | Expands a resizable ActionSheet to its maximum height. |
+| `Page Down` | Collapses a resizable ActionSheet at maximum height back to its initial height. |
 
 #### UX Behavior
 
 | Feature | Description |
 | --- | --- |
 | Overlay | Renders over the page content and prevents interaction with the rest of the UI. |
-| Side | Can be anchored to any edge of the screen: top, right, bottom, or left. |
 | Title and subtitle | Optionally renders a title and subtitle to describe the available actions. |
 | Items | Each action item consists of a label and an optional icon. |
 | Dismiss | Closes when the user taps the overlay backdrop or presses Escape. |
