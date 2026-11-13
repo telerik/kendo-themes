@@ -95,6 +95,9 @@ $kendo-actionsheet-titlebar-shadow: null !default;
 /// The font size of the ActionSheet subtitle.
 /// @group action-sheet
 $kendo-actionsheet-subtitle-font-size: null !default;
+/// The font weight of the ActionSheet subtitle.
+/// @group action-sheet
+$kendo-actionsheet-subtitle-font-weight: null !default;
 /// The line height of the ActionSheet subtitle.
 /// @group action-sheet
 $kendo-actionsheet-subtitle-line-height: null !default;
@@ -122,6 +125,14 @@ $kendo-actionsheet-footer-gradient: null !default;
 /// @group action-sheet
 $kendo-actionsheet-footer-shadow: null !default;
 
+
+// Actionsheet items (list container)
+/// The horizontal padding of the ActionSheet items list.
+/// @group action-sheet
+$kendo-actionsheet-list-padding-x: null !default;
+/// The vertical padding of the ActionSheet items list.
+/// @group action-sheet
+$kendo-actionsheet-list-padding-y: null !default;
 
 // Actionsheet item
 /// The minimum height of the ActionSheet item.
@@ -208,40 +219,64 @@ $kendo-actionsheet-item-disabled-gradient: null !default;
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-shadow: null !default;
 
-/// The hover background of the ActionSheet item.
+// Actionsheet group item
+/// The horizontal padding of the ActionSheet group item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-background: null !default;
-/// The focus background of the ActionSheet item.
+$kendo-actionsheet-group-item-padding-x: null !default;
+/// The vertical padding of the ActionSheet group item.
 /// @group action-sheet
-$kendo-actionsheet-item-focus-background: null !default;
-/// The opacity of the disabled ActionSheet item.
+$kendo-actionsheet-group-item-padding-y: null !default;
+/// The gap of the ActionSheet group item.
 /// @group action-sheet
-$kendo-actionsheet-item-disabled-opacity: null !default;
+$kendo-actionsheet-group-item-gap: null !default;
+/// The font size of the ActionSheet group item.
+/// @group action-sheet
+$kendo-actionsheet-group-item-font-size: null !default;
+/// The font weight of the ActionSheet group item.
+/// @group action-sheet
+$kendo-actionsheet-group-item-font-weight: null !default;
+/// The line height of the ActionSheet group item.
+/// @group action-sheet
+$kendo-actionsheet-group-item-line-height: null !default;
 
-// Adaptive Actionsheet
-/// The font size of the adaptive ActionSheet.
+/// The background color of the ActionSheet group item.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-font-size: null !default;
-/// The line height of the adaptive ActionSheet.
+$kendo-actionsheet-group-item-bg: null !default;
+/// The text color of the ActionSheet group item.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-line-height: null !default;
-/// The vertical padding of the adaptive ActionSheet titlebar.
+$kendo-actionsheet-group-item-text: null !default;
+/// The border color of the ActionSheet group item.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-titlebar-padding-y: null !default;
-/// The horizontal padding of the adaptive ActionSheet titlebar.
+$kendo-actionsheet-group-item-border: null !default;
+/// The box shadow separator of the ActionSheet group item.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-titlebar-padding-x: null !default;
+$kendo-actionsheet-group-item-shadow: null !default;
 
-/// The vertical padding of the adaptive ActionSheet content.
+// Actionsheet resize handle
+/// The width of the ActionSheet resize handle.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-content-padding-y: null !default;
-/// The horizontal padding of the adaptive ActionSheet content.
+$kendo-actionsheet-resize-handle-width: null !default;
+/// The height of the ActionSheet resize handle.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-content-padding-x: null !default;
+$kendo-actionsheet-resize-handle-height: null !default;
+/// The border radius of the ActionSheet resize handle.
+/// @group action-sheet
+$kendo-actionsheet-resize-handle-border-radius: null !default;
+/// The padding of the ActionSheet resize handle. Defines its hit area.
+/// @group action-sheet
+$kendo-actionsheet-resize-handle-padding: null !default;
 
-/// The vertical padding of the adaptive ActionSheet footer.
+/// The background color of the ActionSheet resize handle.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-footer-padding-y: null !default;
-/// The horizontal padding of the adaptive ActionSheet footer.
+$kendo-actionsheet-resize-handle-bg: null !default;
+/// The hover background color of the ActionSheet resize handle.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-footer-padding-x: null !default;
+$kendo-actionsheet-resize-handle-hover-bg: null !default;
+/// The active background color of the ActionSheet resize handle.
+/// @group action-sheet
+$kendo-actionsheet-resize-handle-active-bg: null !default;
+
+// Actionsheet content max width (content, footer, and filter constraint)
+/// The maximum width of the ActionSheet content, footer, and filter.
+/// @group action-sheet
+$kendo-actionsheet-content-max-width: null !default;

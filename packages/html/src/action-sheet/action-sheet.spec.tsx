@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 import { AnimationContainer } from '../animation-container';
 import { ActionSheetFooter } from './actionsheet-footer';
-import { ActionSheetHeader } from './actionsheet-header';
+import { ActionSheetHeader, KendoActionSheetHeaderProps } from './actionsheet-header';
 import { ActionSheetView } from './actionsheet-view';
 
 import { KendoComponent } from '../_types/component';
@@ -18,17 +18,14 @@ export type KendoActionSheetProps = {
     header?: React.ReactElement<typeof ActionSheetHeader>;
     footer?: React.ReactElement<typeof ActionSheetFooter>;
     fullscreen?: boolean;
-    adaptive?: boolean;
     overlay?: boolean;
     template?: React.JSX.Element | React.JSX.Element[];
-    side?: 'top' | 'right' | 'bottom' | 'left';
     id?: string;
+    resizable?: boolean;
 }
 
 const defaultOptions = {
-    side: 'bottom',
     fullscreen: false,
-    adaptive: false,
     overlay: true
 };
 
@@ -37,9 +34,9 @@ const defaultOptions = {
  * @aria {aria-hidden="true"|\"false"} Announces the hidden state of the ActionSheet container.
  * @aria {aria-modal="true"} Announces that the action sheet is modal.
  * @aria {id} Used to associate the title with the action sheet wrapper element.
- * @aria {aria-labelledby} references ${id}-title
+ * @aria {aria-labelledby} references ${id}-title when the header renders its own title.
+ * @aria {aria-label} Provides the accessible name when the header has custom content or no id. Falls back to the header title, then to "Action sheet".
  * @ux {Overlay} Renders over the page content and prevents interaction with the rest of the UI.
- * @ux {Side} Can be anchored to any edge of the screen: top, right, bottom, or left.
  * @ux {Title and subtitle} Optionally renders a title and subtitle to describe the available actions.
  * @ux {Items} Each action item consists of a label and an optional icon.
  * @ux {Dismiss} Closes when the user taps the overlay backdrop or presses Escape.
@@ -49,48 +46,46 @@ export const ActionSheet: KendoComponent<KendoActionSheetProps & React.HTMLAttri
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        side = defaultOptions.side,
         fullscreen = defaultOptions.fullscreen,
-        adaptive = defaultOptions.adaptive,
         overlay = defaultOptions.overlay,
         template,
         children,
         header,
         footer,
         id,
+        resizable,
         ...other
     } = props;
 
-    const titleId = id && !template && header ? `${id}-title` : undefined;
+    const titleId = id && !template && header && !(header.props as React.HTMLAttributes<HTMLDivElement>)?.children ? `${id}-title` : undefined;
+
+    const headerTitle = (header?.props as KendoActionSheetHeaderProps | undefined)?.title;
+    const hasName = Boolean(titleId || other['aria-label'] || other['aria-labelledby']);
+    const ariaLabel = hasName ? other['aria-label'] : (headerTitle || 'Action sheet');
 
     return (
         <div className="k-actionsheet-container">
             {overlay && <Overlay />}
             <AnimationContainer
-                animationStyle={{
-                    [`${fullscreen === true ? 'top' : side}`]: 0,
-                    [`${fullscreen === true ? 'width' : null}`]: '100%',
-                    [`${fullscreen === true ? 'height' : null}`]: '100%',
-                    [`${side === 'top' || side === 'bottom' ? 'width' : null}`]: '100%',
-                    [`${side === 'left' || side === 'right' ? 'height' : null}`]: '100%'
-                }}>
+                animationStyle={fullscreen === true
+                    ? { top: 0, width: '100%', height: '100%' }
+                    : { bottom: 0, width: '100%' }}>
                 <div
                     {...other}
                     id={id}
                     role="dialog"
                     aria-modal={overlay ? "true" : undefined}
-                    aria-labelledby={titleId}
+                    aria-labelledby={titleId ?? other['aria-labelledby']}
+                    aria-label={ariaLabel}
                     className={classNames(
                         props.className,
                         ACTIONSHEET_CLASSNAME,
                         {
-                            [`k-actionsheet-${side}`]: fullscreen === false,
-                            'k-actionsheet-fullscreen': fullscreen === true,
-                            'k-adaptive-actionsheet': adaptive
+                            'k-actionsheet-fullscreen': fullscreen === true
                         },
                     )}>
                     {template ? template :
-                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} titleId={titleId} {...props}>
+                        <ActionSheetView header={header} footer={footer} titleId={titleId} resizable={resizable}>
                             {children}
                         </ActionSheetView>
                     }
@@ -112,6 +107,8 @@ ActionSheet.folderName = ACTION_SHEET_FOLDER_NAME;
  * @keyboard {Tab} Moves focus to the next focusable item.
  * @keyboard {Shift + Tab} Moves focus to the previous focusable item.
  * @keyboard {Enter} Triggers the action associated with the currently focused item.
+ * @keyboard {Page Up} Expands a resizable ActionSheet to its maximum height.
+ * @keyboard {Page Down} Collapses a resizable ActionSheet at maximum height back to its initial height.
  *
  * @see https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/ ARIA practices Modal Dialog Example
  */
