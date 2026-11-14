@@ -1,5 +1,5 @@
 import { DropdownList, KendoDropdownListProps } from '../dropdownlist.spec';
-import { List, ListContent, ListItem } from '../../list';
+import { List, ListContent, ListItem, ListOptionLabel } from '../../list';
 import { Searchbox } from '../../searchbox/searchbox.spec';
 
 const states = DropdownList.states;
@@ -27,7 +27,7 @@ export const DropdownlistDemo = (props: KendoDropdownListProps & {
       <div className="k-list-filter">
         <Searchbox />
       </div>
-      <List style={{ width: 300 }} size={other.size}>
+      <List style={{ width: 300 }} size={other.size} optionLabel={<ListOptionLabel text="-Select item-" />}>
         <ListContent>
           <ListItem>List item</ListItem>
           <ListItem>List item</ListItem>
