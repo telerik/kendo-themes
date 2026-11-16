@@ -70,7 +70,7 @@ export default () =>(
                                                 <col className="k-sorted"/>
                                             </colgroup>
                                             <TableTbody>
-                                                <TableRow>
+                                                <TableRow className="k-grid-edit-row">
                                                     <TableTd>
                                                         <DropdownList placeholder="-Select task-"/>
                                                     </TableTd>
