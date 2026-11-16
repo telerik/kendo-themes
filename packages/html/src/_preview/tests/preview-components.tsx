@@ -1118,7 +1118,7 @@ export default () => (
                 <div>
                   <div className="preview-label">PivotGrid</div>
                   <PivotGrid
-                    style={{ height: "550px", gridTemplateColumns: "150px auto", gridTemplateRows: "242px auto" }}
+                    style={{ height: "550px", gridTemplateColumns: "150px auto", gridTemplateRows: "282px auto" }}
                     columnHeaders={
                       <PivotGridTable>
                         <colgroup>
