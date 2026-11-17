@@ -59,8 +59,8 @@ export default () => (
                         <MenuItem text="View" />,
                     ]}
                     toolbarItems={[
-                        <Button icon="arrow-rotate-ccw" fillMode="flat"></Button>,
-                        <Button icon="arrow-rotate-cw" fillMode="flat"></Button>,
+                        <Button icon="undo" fillMode="flat"></Button>,
+                        <Button icon="redo" fillMode="flat"></Button>,
                         <ToolbarSeparator></ToolbarSeparator>,
                         <Button icon="cut" fillMode="flat"></Button>,
                         <Button icon="copy" fillMode="flat"></Button>,

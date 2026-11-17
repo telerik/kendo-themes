@@ -1,3 +1,15 @@
+## 14.10.1-dev.1 (2026-11-13)
+
+### 🩹 Fixes
+
+- **fluent:** correct swapped sm/md icon-size values ([8273b13a63](https://github.com/telerik/kendo-themes/commit/8273b13a63))
+
+## 14.10.1-dev.0 (2026-11-12)
+
+### 🩹 Fixes
+
+- **column-menu:** load before grid so its variables can be configured ([1f35de2f87](https://github.com/telerik/kendo-themes/commit/1f35de2f87))
+
 ## 14.10.0 (2026-11-11)
 
 ### 🚀 Features

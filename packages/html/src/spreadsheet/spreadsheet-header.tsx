@@ -22,8 +22,8 @@ export type KendoSpreadsheetHeaderProps = {
 };
 
 const defaultToolbarItems = ([
-    <Button key="undo" icon="arrow-rotate-ccw" fillMode="flat" aria-label="Undo"></Button>,
-    <Button key="redo" icon="arrow-rotate-cw" fillMode="flat" aria-label="Redo"></Button>,
+    <Button key="undo" icon="undo" fillMode="flat" aria-label="Undo"></Button>,
+    <Button key="redo" icon="redo" fillMode="flat" aria-label="Redo"></Button>,
     <ToolbarSeparator key="sep1"></ToolbarSeparator>,
     <Button key="cut" icon="cut" fillMode="flat" aria-label="Cut"></Button>,
     <Button key="copy" icon="copy" fillMode="flat" aria-label="Copy"></Button>,
