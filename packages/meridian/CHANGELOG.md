@@ -1,3 +1,14 @@
+## 14.10.1 (2026-11-17)
+
+### 🩹 Fixes
+
+- **column-menu:** load before grid so its variables can be configured ([1f35de2f87](https://github.com/telerik/kendo-themes/commit/1f35de2f87))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Emil Petrov
+
 ## 14.10.1-dev.1 (2026-11-13)
 
 This was a version bump only for @progress/kendo-theme-meridian to align it with other projects, there were no code changes.
