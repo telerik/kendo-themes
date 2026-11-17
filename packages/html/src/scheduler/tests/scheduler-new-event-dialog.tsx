@@ -32,7 +32,7 @@ export default () => (
     <style>{style}</style>
     <div id="test-area" className="k-d-grid">
       <section>
-        <span>Dialog - More options</span>
+        <span>Dialog - More options - width: 650px</span>
         <Dialog
           modal={false}
           title="New event"
@@ -87,7 +87,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Dialog - More options, time zone</span>
+        <span>Dialog - More options, time zone - width: 650px</span>
         <Dialog
           modal={false}
           title="New event"
@@ -141,7 +141,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Dialog - More options, all day</span>
+        <span>Dialog - More options, all day - width: 650px</span>
         <Dialog
           modal={false}
           title="New event"
@@ -188,7 +188,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Dialog - More options, recurrence set, short summary</span>
+        <span>Dialog - More options, recurrence set, short summary - width: 650px</span>
         <Dialog
           modal={false}
           title="New event"
@@ -246,7 +246,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Dialog - More options, recurrence set, long summary</span>
+        <span>Dialog - More options, recurrence set, long summary - width: 650px</span>
         <Dialog
           modal={false}
           title="New event"
