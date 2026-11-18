@@ -21,7 +21,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
             <span>Editor with iFrame; responsive toolbar</span>
-            <span>Editor without iFrame; responsive toolbar</span>
+            <span>Editor with ProseMirror; responsive toolbar</span>
             <section>
                 <EditorResponsiveToolbar style={{ height: "300px" }}>
                     <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
@@ -66,7 +66,7 @@ export default () =>(
             </section>
 
             <span>Editor with iFrame; NO-responsive toolbar</span>
-            <span>Readonly Editor without iFrame; NO-responsive toolbar</span>
+            <span>Readonly Editor with ProseMirror; NO-responsive toolbar</span>
             <section>
                 <EditorNormal style={{ height: "350px" }}
                     toolbarItems={[
@@ -217,7 +217,7 @@ export default () =>(
             </section>
 
             <span>Editor with iFrame; resizable</span>
-            <span>Readonly Editor without iFrame; resizable</span>
+            <span>Readonly Editor with ProseMirror; resizable</span>
             <section>
                 <EditorResizable>
                     <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
@@ -227,6 +227,18 @@ export default () =>(
                 <EditorResizable>
                     <div className="ProseMirror"><p>The Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p></div>
                 </EditorResizable>
+            </section>
+            <span>Editor with iFrame; min-height only</span>
+            <span>Editor with ProseMirror; min-height only</span>
+            <section>
+                <EditorNormal style={{ minHeight: "300px" }}>
+                    <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
+                </EditorNormal>
+            </section>
+            <section>
+                <EditorNormal style={{ minHeight: "300px" }}>
+                    <div className="ProseMirror"><p>The Editor fills the available height.</p></div>
+                </EditorNormal>
             </section>
 
         </div>
