@@ -25,7 +25,7 @@ export default () => (
     <style>{style}</style>
     <div id="test-area" className="k-d-grid">
       <section>
-        <span>Popover - Quick create</span>
+        <span>Popover - Quick create - width: 380px</span>
         <div style={{ position: "relative" }}>
           <Popover
             title="New event"
@@ -36,7 +36,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 - 11:30</div>} />
               </Form>
             }
-            style={{ width: "360px" }}
+            style={{ width: "380px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="stretched">
               <Button fillMode="flat" themeColor="primary" icon="arrows-resizing">
@@ -51,7 +51,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Popover Quick edit</span>
+        <span>Popover Quick edit - width: 380px</span>
         <div style={{ position: "relative" }}>
           <Popover
             title="Event Name"
@@ -60,7 +60,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 – 11:30</div>} />
               </Form>
             }
-            style={{ width: "360px" }}
+            style={{ width: "380px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="end">
               <Button>Delete</Button>
@@ -71,7 +71,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Popover Quick edit (recurring with MenuButton)</span>
+        <span>Popover Quick edit (recurring with MenuButton) - width: 380px</span>
         <div style={{ position: "relative" }}>
           <Popover
             title="Event Name"
@@ -80,18 +80,18 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 – 11:30</div>} />
               </Form>
             }
-            style={{ width: "360px" }}
+            style={{ width: "380px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="end">
-              <MenuButton showArrow={false}>Delete</MenuButton>
-              <MenuButton showArrow={false} themeColor="primary">Edit</MenuButton>
+              <MenuButton aria-label="Delete this event or the series">Delete</MenuButton>
+              <MenuButton themeColor="primary" aria-label="Edit this event or the series">Edit</MenuButton>
             </ActionButtons>
           </Popover>
         </div>
       </section>
 
       <section>
-        <span>Popover Quick edit - with description</span>
+        <span>Popover Quick edit - with description - width: 380px</span>
         <div style={{ position: "relative" }}>
           <Popover
             title="Event Name"
@@ -102,7 +102,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="comment" />} editor={<div className="k-scheduler-edit-form-row">This is a description of the event saying what the event will be about and other stuff.</div>} />
               </Form>
             }
-            style={{ width: "360px" }}
+            style={{ width: "380px" }}
           >
             <ActionButtons className="k-popover-actions" alignment="end">
               <Button>Delete</Button>
@@ -113,7 +113,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Popover Quick Edit - readonly</span>
+        <span>Popover Quick Edit - readonly - width: 380px</span>
         <div style={{ position: "relative" }}>
           <Popover
             title="Event Name"
@@ -122,7 +122,7 @@ export default () => (
                 <FormField orientation="horizontal" label={<Icon size="xlarge" icon="clock" />} editor={<div className="k-scheduler-edit-form-row k-color-subtle">20 October, 11:00 – 11:30</div>} />
               </Form>
             }
-            style={{ width: "360px" }}
+            style={{ width: "380px" }}
           />
         </div>
       </section>

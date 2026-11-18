@@ -31,7 +31,7 @@ export default () => (
     <style>{style}</style>
     <div id="test-area" className="k-d-grid">
       <section>
-        <span>Dialog - Edit Event</span>
+        <span>Dialog - Edit Event - width: 650px</span>
         <Dialog
           modal={false}
           title="Edit event"
@@ -84,7 +84,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Dialog - Edit Series</span>
+        <span>Dialog - Edit Series - width: 650px</span>
         <Dialog
           modal={false}
           title="Edit event"
@@ -141,7 +141,7 @@ export default () => (
       </section>
 
       <section>
-        <span>Dialog - Edit Series Long</span>
+        <span>Dialog - Edit Series Long - width: 650px</span>
         <Dialog
           modal={false}
           title="Edit event"
