@@ -1,9 +1,6 @@
 import { DataTableVirtualization } from '../../table';
 
 const style = `
-    #test-area {
-        max-width: 1200px;
-    }
     .k-data-table {
         width: 372px;
     }
