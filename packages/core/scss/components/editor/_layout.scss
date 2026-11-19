@@ -172,10 +172,12 @@
     .k-editor-content {
         flex: 1 1 auto;
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
 
         > .k-iframe {
             width: 100%;
-            height: 100%;
+            flex: 1 1 auto;
             border-width: 0;
             display: block;
         }
@@ -183,7 +185,7 @@
         > .ProseMirror { // stylelint-disable-line
             padding: $kendo-editor-content-padding;
             width: 100%;
-            height: 100%;
+            flex: 1 1 auto;
             position: relative;
             box-sizing: border-box;
             outline: none;

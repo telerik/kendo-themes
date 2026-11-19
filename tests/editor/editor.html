@@ -21,7 +21,7 @@
         </style>
         <div id="test-area" class="k-d-grid k-grid-cols-2">
             <span>Editor with iFrame; responsive toolbar</span>
-            <span>Editor without iFrame; responsive toolbar</span>
+            <span>Editor with ProseMirror; responsive toolbar</span>
             <section>
                 <div class="k-editor" style="height: 300px;">
                     <div class="k-editor-toolbar k-toolbar k-toolbar-resizable" role="toolbar" aria-label="Toolbar">
@@ -317,7 +317,7 @@
                 </div>
             </section>
             <span>Editor with iFrame; NO-responsive toolbar</span>
-            <span>Readonly Editor without iFrame; NO-responsive toolbar</span>
+            <span>Readonly Editor with ProseMirror; NO-responsive toolbar</span>
             <section>
                 <div class="k-editor" style="height: 350px;">
                     <div class="k-editor-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
@@ -987,7 +987,7 @@
                 </div>
             </section>
             <span>Editor with iFrame; resizable</span>
-            <span>Readonly Editor without iFrame; resizable</span>
+            <span>Readonly Editor with ProseMirror; resizable</span>
             <section>
                 <div class="k-editor k-editor-resizable">
                     <div class="k-editor-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
@@ -1225,6 +1225,244 @@
                                 <strong>outputs identical HTML</strong>
                                 across all major browsers, follows accessibility standards, and provides API for content manipulation.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <span>Editor with iFrame; min-height only</span>
+            <span>Editor with ProseMirror; min-height only</span>
+            <section>
+                <div class="k-editor" style="min-height: 300px;">
+                    <div class="k-editor-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-disabled k-icon-button" aria-label="Undo" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-undo" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75 3 8.25l4.5 4.5M3 8.25h12.75a5.25 5.25 0 0 1 0 10.5H7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-disabled k-icon-button" aria-label="Redo" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-redo" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.5 3.75 4.5 4.5-4.5 4.5m4.5-4.5H8.25a5.25 5.25 0 1 0 0 10.5h8.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Bold">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-bold" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25H15m0 0c.9946 0 1.9484.3951 2.6517 1.0983a3.7503 3.7503 0 0 1 0 5.3034A3.75 3.75 0 0 1 15 18.75H7.5V4.5h6.375a3.3752 3.3752 0 0 1 2.3865 5.7615 3.375 3.375 0 0 1-2.3865.9885z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Italic">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-italic" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m14.25 5.25-4.5 13.5m4.5-13.5H10.5m3.75 0H18m-8.25 13.5H6m3.75 0h3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Underline">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-underline" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 21h12m-.75-15.75v7.5a5.2499 5.2499 0 0 1-8.9623 3.7123A5.25 5.25 0 0 1 6.75 12.75v-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-icon-button" aria-label="Strikethrough">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-strikethrough" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M7.156 9a2.41 2.41 0 0 1-.1144-.75C7.0416 6.179 9.104 4.5 12 4.5c2.1562 0 3.7725.9253 4.5 2.25m-9.75 9c0 2.0709 2.3503 3.75 5.25 3.75s5.25-1.6791 5.25-3.75c0-2.2284-2.0269-3.0938-4.275-3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Subscript">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-subscript" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M22.5 19.5004H18l4.0472-5.3963a2.25 2.25 0 0 0 .3998-1.8363 2.2495 2.2495 0 0 0-2.0584-1.7625 2.25 2.25 0 0 0-1.7528.6778 2.25 2.25 0 0 0-.5074.8173M3.75 5.25 13.5 16.5m0-11.25L3.75 16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-icon-button" aria-label="Superscript">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-superscript" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M22.5 13.5013H18l4.0472-5.3962a2.25 2.25 0 0 0 .3998-1.8363 2.25 2.25 0 0 0-1.1332-1.4992 2.2498 2.2498 0 0 0-3.1854 1.2317M3.75 7.501l4.875 5.625m0 0 4.875 5.625m-4.875-5.625L13.5 7.501m-4.875 5.625L3.75 18.751" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Indent">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-indent" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 12h9.75M10.5 6h9.75M3.75 18h16.5M3.75 5.25 7.5 9l-3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-disabled k-icon-button" aria-label="Outdent" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-outdent" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 12h9.75M10.5 6h9.75M3.75 18h16.5M6.75 5.25 3 9l3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Align left">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6H3.75m12 3.75h-12m16.5 3.75H3.75m12 3.75h-12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Align center">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6h16.5M6 9.75h12M3.75 13.5h16.5M6 17.25h12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Align right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6h16.5m-12 3.75h12M3.75 13.5h16.5m-12 3.75h12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-icon-button" aria-label="Justify">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-justify" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6h16.5M3.75 9.75h16.5M3.75 13.5h16.5m-16.5 3.75h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-editor-content" contenteditable="true" role="textbox" aria-label="Editor content">
+                        <iframe class="k-iframe" frameborder="0" src="editor-iFrameContent.html"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="k-editor" style="min-height: 300px;">
+                    <div class="k-editor-toolbar k-toolbar" role="toolbar" aria-label="Toolbar">
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-disabled k-icon-button" aria-label="Undo" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-undo" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75 3 8.25l4.5 4.5M3 8.25h12.75a5.25 5.25 0 0 1 0 10.5H7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-disabled k-icon-button" aria-label="Redo" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-redo" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.5 3.75 4.5 4.5-4.5 4.5m4.5-4.5H8.25a5.25 5.25 0 1 0 0 10.5h8.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Bold">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-bold" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 11.25H15m0 0c.9946 0 1.9484.3951 2.6517 1.0983a3.7503 3.7503 0 0 1 0 5.3034A3.75 3.75 0 0 1 15 18.75H7.5V4.5h6.375a3.3752 3.3752 0 0 1 2.3865 5.7615 3.375 3.375 0 0 1-2.3865.9885z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Italic">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-italic" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m14.25 5.25-4.5 13.5m4.5-13.5H10.5m3.75 0H18m-8.25 13.5H6m3.75 0h3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Underline">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-underline" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 21h12m-.75-15.75v7.5a5.2499 5.2499 0 0 1-8.9623 3.7123A5.25 5.25 0 0 1 6.75 12.75v-7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-icon-button" aria-label="Strikethrough">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-strikethrough" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M7.156 9a2.41 2.41 0 0 1-.1144-.75C7.0416 6.179 9.104 4.5 12 4.5c2.1562 0 3.7725.9253 4.5 2.25m-9.75 9c0 2.0709 2.3503 3.75 5.25 3.75s5.25-1.6791 5.25-3.75c0-2.2284-2.0269-3.0938-4.275-3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Subscript">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-subscript" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M22.5 19.5004H18l4.0472-5.3963a2.25 2.25 0 0 0 .3998-1.8363 2.2495 2.2495 0 0 0-2.0584-1.7625 2.25 2.25 0 0 0-1.7528.6778 2.25 2.25 0 0 0-.5074.8173M3.75 5.25 13.5 16.5m0-11.25L3.75 16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-icon-button" aria-label="Superscript">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-superscript" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M22.5 13.5013H18l4.0472-5.3962a2.25 2.25 0 0 0 .3998-1.8363 2.25 2.25 0 0 0-1.1332-1.4992 2.2498 2.2498 0 0 0-3.1854 1.2317M3.75 7.501l4.875 5.625m0 0 4.875 5.625m-4.875-5.625L13.5 7.501m-4.875 5.625L3.75 18.751" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Indent">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-indent" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 12h9.75M10.5 6h9.75M3.75 18h16.5M3.75 5.25 7.5 9l-3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-disabled k-icon-button" aria-label="Outdent" disabled="">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-outdent" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 12h9.75M10.5 6h9.75M3.75 18h16.5M6.75 5.25 3 9l3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="group" class="k-toolbar-button-group  k-button-group">
+                            <button class="k-group-start k-button k-icon-button" aria-label="Align left">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-left" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6H3.75m12 3.75h-12m16.5 3.75H3.75m12 3.75h-12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Align center">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-center" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6h16.5M6 9.75h12M3.75 13.5h16.5M6 17.25h12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-button k-icon-button" aria-label="Align right">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-right" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6h16.5m-12 3.75h12M3.75 13.5h16.5m-12 3.75h12" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="k-group-end k-button k-icon-button" aria-label="Justify">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-align-justify" aria-hidden="true">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6h16.5M3.75 9.75h16.5M3.75 13.5h16.5m-16.5 3.75h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-editor-content" contenteditable="true" role="textbox" aria-label="Editor content">
+                        <div class="ProseMirror">
+                            <p>The Editor fills the available height.</p>
                         </div>
                     </div>
                 </div>
