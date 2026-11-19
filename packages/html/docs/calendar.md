@@ -31,8 +31,27 @@ The Calendar is compliant with the [Web Content Accessibility Guidelines (WCAG) 
 
 | Trigger | Behavior |
 | --- | --- |
+| `ArrowDown` | Moves focus one row down, navigating the view when focus is in the last row. |
+| `ArrowUp` | Moves focus one row up, navigating the view when focus is in the first row. |
+| `ArrowLeft` | Moves focus to the previous date, month, year, or decade. |
+| `ArrowRight` | Moves focus to the next date, month, year, or decade. |
+| `Enter` | Selects the focused date. |
+| `Control/Cmd(Mac) + ArrowUp` | Navigates to the upper view. |
+| `Control/Cmd(Mac) + ArrowDown` | Navigates to the lower view. |
 | `Control/Cmd(Mac) + ArrowRight` | Navigates to the next period. |
 | `Control/Cmd(Mac) + ArrowLeft` | Navigates to the previous period. |
+| `Home` | Focuses the first day of the month. |
+| `End` | Focuses the last day of the month. |
+| `PageUp` | Focuses the same date in the previous month. |
+| `PageDown` | Focuses the same date in the next month. |
+| `t` | Navigates to today's month view and focuses today. |
+| `Control/Cmd(Mac) + Enter` | Adds or removes the focused date from the selection in multiple-selection mode. |
+| `Shift + ArrowLeft` | Adds the previous date to the selection in multiple-selection mode. |
+| `Shift + ArrowRight` | Adds the next date to the selection in multiple-selection mode. |
+| `Shift + ArrowUp` | Extends selection up one row in month view. |
+| `Shift + ArrowDown` | Extends selection down one row in month view. |
+| `Shift + Enter` | Selects the range between the last selected date and the focused date. |
+| `Shift + Space` | Selects the range between the last selected date and the focused date. |
 
 #### UX Behavior
 
