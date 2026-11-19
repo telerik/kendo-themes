@@ -56,6 +56,7 @@ From a component name (e.g., `smart-badge`):
    | None of the above | Stop and ask the user |
 
    "All themes" means all six theme packages: `default`, `classic`, `material`, `fluent`, `bootstrap`, `meridian`. Core is not a theme and is not scoped by this table: edit it whenever the change belongs there (rule 1 and 2 — a variable shared by 2+ themes is declared in core as `null` with SassDoc; layout and shared tokens live in core). A variable that exists in one theme only is declared in that theme alone. Never edit a theme that isn't listed for the change. State which themes you changed, and why, in the summary.
+7. **Mirror default to classic.** When a variable in `packages/default/scss/` is added or changed, set it in `packages/classic/scss/` to the same value (including the `@forward` entry), unless classic already has its own design-specific value.
 
 ## Reference components
 
