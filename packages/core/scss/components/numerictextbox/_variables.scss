@@ -1,1 +1,13 @@
 // Numeric Textbox
+
+/// The background color of the hovered Numeric Textbox.
+/// @group numerictextbox
+$kendo-numeric-textbox-hover-bg: null !default;
+
+/// The background color of the hovered Numeric Textbox spin buttons.
+/// @group numerictextbox
+$kendo-numeric-textbox-spinner-hover-bg: null !default;
+
+/// The background color of the active Numeric Textbox spin buttons.
+/// @group numerictextbox
+$kendo-numeric-textbox-spinner-active-bg: null !default;

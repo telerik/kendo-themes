@@ -9,11 +9,14 @@ import {
     InputPrefix,
     InputSeparator
 } from '../input';
-import { SpinButton } from '../spinbutton';
+import { Button } from '../button';
+import { SpinButton, KendoSpinButtonProps } from '../spinbutton';
 
 import { KendoComponent } from '../_types/component';
 import { NUMERICTEXTBOX_FOLDER_NAME, NUMERICTEXTBOX_MODULE_NAME } from './constants';
 export const NUMERICTEXTBOX_CLASSNAME = `k-numerictextbox`;
+const KENDO_DECREASE_LABEL = 'Decrease value';
+const KENDO_INCREASE_LABEL = 'Increase value';
 
 const states = [
     States.hover,
@@ -46,6 +49,10 @@ export type KendoNumericTextboxProps = KendoNumericTextboxOptions & {
     placeholder?: string;
     showSpinButton?: boolean;
     showClearButton?: boolean;
+    horizontal?: boolean;
+    split?: boolean;
+    increaseState?: KendoSpinButtonProps['increaseState'];
+    decreaseState?: KendoSpinButtonProps['decreaseState'];
 };
 
 export type KendoNumericTextboxState = { [K in (typeof states)[number]]?: boolean };
@@ -67,7 +74,7 @@ const defaultOptions = {
  * @aria {aria-disabled="true"} Rendered when the NumericTextBox is disabled.
  * @aria {role="button"} Describes the role of the spin buttons.
  * @aria {aria-label} The button element requires discernible text.
- * @ux {Spin buttons} Up and down arrow buttons increment and decrement the value.
+ * @ux {Spin buttons} Up and down arrow buttons increment and decrement the value. With `horizontal`, the buttons are arranged side by side.
  * @ux {Min / Max} Enforces a configurable minimum and maximum value.
  * @ux {Step} The increment step size is configurable.
  * @ux {Format} The value is displayed using the configured number format.
@@ -85,6 +92,10 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
         separators = defaultOptions.separators,
         showClearButton = defaultOptions.showClearButton,
         showSpinButton = defaultOptions.showSpinButton,
+        horizontal,
+        split,
+        increaseState,
+        decreaseState,
         prefix,
         suffix,
         value,
@@ -117,8 +128,18 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
             loading={loading}
             disabled={disabled}
             readonly={readonly}
-            className={classNames(props.className, NUMERICTEXTBOX_CLASSNAME)}
+            className={classNames(props.className, NUMERICTEXTBOX_CLASSNAME, { 'k-numeric-textbox-horizontal': horizontal, 'k-numeric-textbox-split': split })}
         >
+            {split && showSpinButton && (
+                <Button
+                    className="k-spinner-decrease"
+                    icon="minus"
+                    size={size}
+                    fillMode={fillMode}
+                    disabled={disabled}
+                    {...decreaseState}
+                    aria-label={KENDO_DECREASE_LABEL} />
+            )}
             {prefix &&
                 <>
                     <InputPrefix>{prefix}</InputPrefix>
@@ -134,7 +155,7 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
             <InputLoadingIcon
                 loading={loading}
                 disabled={disabled} />
-            {showClearButton && <InputClearValue
+            {showClearButton && !split && <InputClearValue
                 loading={loading}
                 disabled={disabled}
                 readonly={readonly}
@@ -145,12 +166,24 @@ export const NumericTextbox: KendoComponent<KendoNumericTextboxProps & KendoNume
                     <InputSuffix>{suffix}</InputSuffix>
                 </>
             }
-            {showSpinButton && (
+            {split && showSpinButton && (
+                <Button
+                    className="k-spinner-increase"
+                    icon="plus"
+                    size={size}
+                    fillMode={fillMode}
+                    disabled={disabled}
+                    {...increaseState}
+                    aria-label={KENDO_INCREASE_LABEL} />
+            )}
+            {!split && showSpinButton && (
                 <SpinButton
                     className="k-input-spinner"
                     size={size}
                     fillMode={fillMode}
                     disabled={disabled}
+                    increaseState={increaseState}
+                    decreaseState={decreaseState}
                 />
             )}
         </Input>

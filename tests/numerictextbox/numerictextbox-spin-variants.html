@@ -1,0 +1,1532 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <style>
+            #test-area {
+            max-width: 1000px;
+            gap: 8px 24px;
+            align-items: center;
+            }
+        </style>
+        <div id="test-area" class="k-d-grid         k-grid-cols-3">
+            <strong>Vertical spin buttons</strong>
+            <strong>Horizontal spin buttons</strong>
+            <strong>Split spin buttons</strong>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical normal" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal normal" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split normal" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid k-hover">
+                    <input role="spinbutton" aria-label="Vertical hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid k-hover">
+                    <input role="spinbutton" aria-label="Horizontal hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid k-hover">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid k-focus">
+                    <input role="spinbutton" aria-label="Vertical focus" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid k-focus">
+                    <input role="spinbutton" aria-label="Horizontal focus" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid k-focus">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split focus" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid k-invalid">
+                    <input role="spinbutton" aria-label="Vertical invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 16.5a.375.375 0 1 0 0-.75.375.375 0 0 0 0 .75"></path>
+                            <path stroke-linecap="round" d="M12 12.75V7.5m9 4.5c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Zm-8.625 4.125a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid k-invalid">
+                    <input role="spinbutton" aria-label="Horizontal invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 16.5a.375.375 0 1 0 0-.75.375.375 0 0 0 0 .75"></path>
+                            <path stroke-linecap="round" d="M12 12.75V7.5m9 4.5c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Zm-8.625 4.125a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid k-invalid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split invalid" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 16.5a.375.375 0 1 0 0-.75.375.375 0 0 0 0 .75"></path>
+                            <path stroke-linecap="round" d="M12 12.75V7.5m9 4.5c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Zm-8.625 4.125a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid k-loading">
+                    <input role="spinbutton" aria-label="Vertical loading" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-input-loading-icon k-icon k-i-loading"></span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid k-loading">
+                    <input role="spinbutton" aria-label="Horizontal loading" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-input-loading-icon k-icon k-i-loading"></span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid k-loading">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split loading" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-input-loading-icon k-icon k-i-loading"></span>
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid k-disabled">
+                    <input role="spinbutton" aria-label="Vertical disabled" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1,250.50">
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-disabled k-icon-button" aria-label="Increase value" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-disabled k-icon-button" aria-label="Decrease value" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid k-disabled">
+                    <input role="spinbutton" aria-label="Horizontal disabled" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1,250.50">
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-disabled k-icon-button" aria-label="Increase value" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-disabled k-icon-button" aria-label="Decrease value" disabled="">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid k-disabled">
+                    <button class="k-spinner-decrease k-button k-button-solid k-disabled k-icon-button" aria-label="Decrease value" disabled="">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split disabled" class="k-input-inner" placeholder="" autocomplete="off" disabled="" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-disabled k-icon-button" aria-label="Increase value" disabled="">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid k-readonly">
+                    <input role="spinbutton" aria-label="Vertical readonly" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid k-readonly">
+                    <input role="spinbutton" aria-label="Horizontal readonly" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid k-readonly">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split readonly" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid k-invalid k-focus">
+                    <input role="spinbutton" aria-label="Vertical invalid focus" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="42">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 16.5a.375.375 0 1 0 0-.75.375.375 0 0 0 0 .75"></path>
+                            <path stroke-linecap="round" d="M12 12.75V7.5m9 4.5c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Zm-8.625 4.125a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid k-invalid k-focus">
+                    <input role="spinbutton" aria-label="Horizontal invalid focus" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="42">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 16.5a.375.375 0 1 0 0-.75.375.375 0 0 0 0 .75"></path>
+                            <path stroke-linecap="round" d="M12 12.75V7.5m9 4.5c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Zm-8.625 4.125a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid k-invalid k-focus">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split invalid focus" aria-invalid="true" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="42">
+                    <span class="k-input-validation-icon k-icon k-svg-icon k-svg-i-warning-circle" aria-hidden="true">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 16.5a.375.375 0 1 0 0-.75.375.375 0 0 0 0 .75"></path>
+                            <path stroke-linecap="round" d="M12 12.75V7.5m9 4.5c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9Zm-8.625 4.125a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                        </svg>
+                    </span>
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <strong>Vertical: spin button states</strong>
+            <strong>Horizontal: spin button states</strong>
+            <strong>Split: spin button states</strong>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical increase hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-hover k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal increase hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-hover k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split increase hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-hover k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical decrease hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-hover k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal decrease hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-hover k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-hover k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split decrease hover" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical increase pressed" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-hover k-active k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal increase pressed" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-hover k-active k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split increase pressed" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-hover k-active k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical decrease pressed" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-hover k-active k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal decrease pressed" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-hover k-active k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-hover k-active k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split decrease pressed" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical increase focus" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-focus k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal increase focus" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-focus k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split increase focus" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="1,250.50">
+                    <button class="k-spinner-increase k-button k-button-solid k-focus k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <strong>Vertical: sizes</strong>
+            <strong>Horizontal: sizes</strong>
+            <strong>Split: sizes</strong>
+            <div>
+                <span class="k-numerictextbox k-input k-input-sm k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical small" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-sm k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-sm k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-sm k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal small" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-sm k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-sm k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-sm k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-sm k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split small" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <button class="k-spinner-increase k-button k-button-sm k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-md k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical medium" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-md k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal medium" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-md k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-md k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split medium" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <button class="k-spinner-increase k-button k-button-md k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-lg k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical large" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-lg k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-lg k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-lg k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal large" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-lg k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-lg k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-lg k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-lg k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split large" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <button class="k-spinner-increase k-button k-button-lg k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <strong>Vertical: sample values</strong>
+            <strong>Horizontal: sample values</strong>
+            <strong>Split: sample values</strong>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical 25" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="25">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal 25" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="25">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split 25" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="25">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical 100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal 100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split 100" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="100">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical 200" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="200">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal 200" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="200">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split 200" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="200">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Vertical 500" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="500">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-horizontal k-input k-input-solid">
+                    <input role="spinbutton" aria-label="Horizontal 500" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="500">
+                    <span class="k-clear-value">
+                        <span class="k-icon k-svg-icon k-svg-i-x" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <span class="k-spin-button k-input-spinner">
+                        <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="k-numerictextbox k-numeric-textbox-split k-input k-input-solid">
+                    <button class="k-spinner-decrease k-button k-button-solid k-icon-button" aria-label="Decrease value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-minus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <input role="spinbutton" aria-label="Split 500" class="k-input-inner" placeholder="" autocomplete="off" type="text" value="500">
+                    <button class="k-spinner-increase k-button k-button-solid k-icon-button" aria-label="Increase value">
+                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus" aria-hidden="true">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5M12 3.75v16.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,6 +1,32 @@
+@use "../../mixins/index.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-numeric-textbox--theme-base() {
 
     // Numeric textbox
-    .k-numeric-textbox {}
+    .k-numeric-textbox {
+        &:hover:not(.k-disabled, .k-readonly),
+        &.k-hover:not(.k-disabled, .k-readonly) {
+            @include fill( $bg: $kendo-numeric-textbox-hover-bg );
+
+            .k-spinner-increase,
+            .k-spinner-decrease {
+                @include fill( $bg: $kendo-numeric-textbox-hover-bg );
+            }
+        }
+
+        .k-spinner-increase,
+        .k-spinner-decrease {
+            &:hover:not(:disabled, .k-disabled),
+            &.k-hover {
+                @include fill( $bg: $kendo-numeric-textbox-spinner-hover-bg );
+            }
+
+            &:active:not(:disabled, .k-disabled),
+            &.k-active {
+                @include fill( $bg: $kendo-numeric-textbox-spinner-active-bg );
+            }
+        }
+    }
 
 }
