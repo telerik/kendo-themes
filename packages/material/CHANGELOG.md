@@ -1,3 +1,14 @@
+## 14.10.2-dev.1 (2026-11-19)
+
+### 🚀 Features
+
+- **pdfviewer:** add PDF.js 6 form field annotation styles ([595f80fcf2](https://github.com/telerik/kendo-themes/commit/595f80fcf2))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.10.2-dev.0 (2026-11-19)
 
 This was a version bump only for @progress/kendo-theme-material to align it with other projects, there were no code changes.
