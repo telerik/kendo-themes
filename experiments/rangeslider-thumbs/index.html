@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RangeSlider thumb interaction showcase</title>
+    <style>
+        body { margin: 0; font-family: system-ui, sans-serif; background: #f3f3f3; color: #222; }
+        header { padding: 16px 24px; background: #fff; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 2; }
+        h1 { margin: 0 0 4px; font-size: 20px; }
+        header p { margin: 0 0 10px; font-size: 13px; color: #555; max-width: 900px; }
+        .controls { display: flex; gap: 16px; align-items: center; font-size: 13px; flex-wrap: wrap; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); gap: 16px; padding: 16px 24px; }
+        iframe { width: 100%; height: 1180px; border: 1px solid #ccc; border-radius: 8px; background: #fff; }
+        ul { margin: 6px 0 0; padding-left: 18px; font-size: 12px; color: #555; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RangeSlider thumb interaction showcase</h1>
+        <p>Experimental restyle of the existing Kendo <code>k-slider</code> range markup (no new component, no markup/API changes) in four thumb concepts × four themes.
+        Drag a thumb, click the track, or focus a thumb and use Arrows / Home / End / PageUp / PageDown. Each variant shows a horizontal and a vertical slider.</p>
+        <div class="controls">
+            <label>Motion:
+                <select id="motion">
+                    <option value="system">Follow system (prefers-reduced-motion)</option>
+                    <option value="full">Force full motion</option>
+                    <option value="reduced">Force reduced motion</option>
+                </select>
+            </label>
+        </div>
+        <ul>
+            <li>Build themes first: <code>npm run sass</code> (generates <code>packages/*/dist/all.css</code>), then serve the repo root, e.g. <code>npx http-server . -p 8080</code> → <code>/experiments/rangeslider-thumbs/</code>.</li>
+        </ul>
+    </header>
+    <div class="grid" id="grid"></div>
+    <script>
+        const grid = document.getElementById('grid');
+        for (const t of ['default', 'bootstrap', 'material', 'fluent']) {
+            const f = document.createElement('iframe');
+            f.title = `${t} theme`;
+            f.src = `theme.html?theme=${t}`;
+            grid.append(f);
+        }
+        document.getElementById('motion').addEventListener('change', (e) => {
+            for (const f of grid.children) { f.contentWindow.postMessage({ type: 'tp-motion', value: e.target.value }, '*'); }
+        });
+    </script>
+</body>
+</html>

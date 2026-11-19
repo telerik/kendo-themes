@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RangeSlider thumb – Theme Configurator</title>
+    <link id="theme-css" rel="stylesheet" href="../../packages/meridian/dist/all.css">
+    <link rel="stylesheet" href="thumbs.css">
+    <style>
+        body { margin: 0; font-family: system-ui, sans-serif; background: #fff; color: #222; }
+        .page { max-width: 960px; margin: 0 auto; padding: 24px; }
+        h1 { font-size: 22px; margin: 0 0 12px; }
+        .configurator { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; background: #f7f7f7; position: sticky; top: 0; z-index: 5; }
+        .configurator label { font-size: 14px; font-weight: 600; }
+        .configurator select { font: inherit; padding: 4px 8px; }
+        .configurator .note { font-size: 12px; color: #666; }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0 8px; }
+        section { padding: 6px 0 22px; border-bottom: 1px solid #eee; }
+        section h2 { font-size: 15px; margin: 14px 0 2px; }
+        section p { margin: 0; font-size: 12px; color: #666; }
+        .slot { padding: 46px 16px 6px; }
+        .slot.v { display: inline-block; padding-inline-end: 80px; }
+        .extra { display: flex; gap: 48px; flex-wrap: wrap; align-items: flex-end; }
+        .extra > .slot:first-child { flex: 1 1 280px; }
+    </style>
+</head>
+<body class="tp">
+<div class="page">
+    <h1>Theme Configurator</h1>
+    <div class="configurator" role="group" aria-label="Theme configurator">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="meridian">Meridian</option>
+            <option value="fluent">Fluent</option>
+            <option value="default">Default</option>
+            <option value="bootstrap">Bootstrap</option>
+            <option value="material">Material</option>
+        </select>
+        <label for="motion">Motion:</label>
+        <select id="motion">
+            <option value="system">System</option>
+            <option value="full">Full</option>
+            <option value="reduced">Reduced</option>
+        </select>
+        <span class="note" id="status" aria-live="polite"></span>
+    </div>
+    <hr>
+    <div id="variants"></div>
+</div>
+<script src="thumbs.js"></script>
+<script>
+    const variations = [
+        { n: 1, title: 'Variant 1: Compressed Thumb', text: 'Hover 1.15× · pressed scale(.8) circle · spring release' },
+        { n: 2, title: 'Variant 2: Adaptive Elastic Thumb', text: 'Stretches toward drag direction · elastic rebound' },
+        { n: 3, title: 'Variant 3: Fluent-inspired Thumb', text: 'Soft shadows · gentle compression · double focus ring' },
+        { n: 4, title: 'Variant 4: Material-inspired Thumb', text: 'State layer · 1.25× hover · pronounced press' }
+    ];
+    const root = document.getElementById('variants');
+    for (const v of variations) {
+        const sec = document.createElement('section');
+        sec.innerHTML = `<h2>${v.title}</h2><p>${v.text}</p>`;
+        const add = (parent, orientation, dir, start, end, label, cls) => {
+            const slot = document.createElement('div');
+            slot.className = 'slot ' + cls;
+            const s = TPThumbs.createSliderMarkup({ variant: v.n, orientation, dir, start, end, label });
+            slot.append(s);
+            parent.append(slot);
+            TPThumbs.initSlider(s);
+        };
+        add(sec, 'horizontal', 'ltr', 20, 70, `Range variant ${v.n}`, 'h');
+        const extra = document.createElement('div');
+        extra.className = 'extra';
+        add(extra, 'vertical', 'ltr', 25, 65, `Vertical range variant ${v.n}`, 'v');
+        sec.append(extra);
+        root.append(sec);
+    }
+
+    // Swap the theme stylesheet in place: sliders stay in the DOM, so values, focus and pressed state persist.
+    const themeSelect = document.getElementById('theme');
+    const status = document.getElementById('status');
+
+    function syncAccent() {
+        document.body.style.removeProperty('--tp-accent');
+        // Fluent exposes its primary color through --kendo-color-primary (see thumbs.css); its thumb background is white
+        if (document.documentElement.dataset.theme === 'fluent') { return; }
+        const h = document.querySelector('.k-draghandle');
+        const bg = getComputedStyle(h).backgroundColor;
+        if (bg && bg !== 'rgba(0, 0, 0, 0)') { document.body.style.setProperty('--tp-accent', bg); }
+    }
+
+    function setTheme(name) {
+        const old = document.getElementById('theme-css');
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = `../../packages/${name}/dist/all.css`;
+        link.onload = () => {
+            old.remove();
+            link.id = 'theme-css';
+            // keep thumbs.css after the theme so overrides still win
+            document.head.append(document.querySelector('link[href="thumbs.css"]'));
+            document.documentElement.dataset.theme = name;
+            syncAccent();
+            status.textContent = `Theme: ${themeSelect.selectedOptions[0].text}`;
+            history.replaceState(null, '', `?theme=${name}`);
+        };
+        link.onerror = () => { status.textContent = `Could not load ${name}/dist/all.css – run npm run sass`; };
+        old.after(link);
+    }
+
+    themeSelect.addEventListener('change', () => setTheme(themeSelect.value));
+    document.getElementById('motion').addEventListener('change', (e) => {
+        window.postMessage({ type: 'tp-motion', value: e.target.value }, '*');
+    });
+
+    const initial = new URLSearchParams(location.search).get('theme');
+    if (initial && [...themeSelect.options].some(o => o.value === initial)) {
+        themeSelect.value = initial;
+        setTheme(initial);
+    } else {
+        document.documentElement.dataset.theme = 'meridian';
+        document.getElementById('theme-css').addEventListener('load', syncAccent);
+        syncAccent();
+    }
+</script>
+</body>
+</html>

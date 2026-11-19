@@ -1,0 +1,361 @@
+/*
+ * Experimental RangeSlider thumb interaction layer.
+ * Loaded AFTER a Kendo theme's all.css. It restyles the existing
+ * .k-slider / .k-draghandle / .k-slider-selection markup only - no new component,
+ * no markup or public API changes. Opt in with `.tp` on an ancestor and
+ * `tp-v1` … `tp-v4` on the .k-slider.
+ *
+ * Performance: thumb position uses the `translate` property, thumb squash uses
+ * `transform`, the filled track uses `transform: scale()`. Nothing animates layout.
+ */
+
+@property --tp-k {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
+.tp {
+    --tp-accent: #ff6358;
+    --tp-size: 20px;
+    --tp-hit: 32px;
+    --tp-spring: cubic-bezier(.34, 1.8, .5, 1);
+    --tp-ease: cubic-bezier(.2, 0, 0, 1);
+}
+
+@media (pointer: coarse) {
+    .tp { --tp-hit: 48px; }
+}
+
+/* ---------- shared mechanics ---------- */
+
+.tp .k-slider {
+    --tp-len: 400px;
+    --tp-d: 1;
+}
+
+.tp .k-slider[dir="rtl"] { --tp-d: -1; }
+
+.tp .k-slider .k-slider-track-wrap .k-draghandle {
+    width: var(--tp-size);
+    height: var(--tp-size);
+    border-radius: 50%;
+    cursor: grab;
+    touch-action: none;
+    will-change: transform, translate;
+    transform-origin: var(--tp-ox, 50%) var(--tp-oy, 50%);
+    transform: scale(var(--tp-sx, 1), var(--tp-sy, 1));
+    box-shadow: var(--tp-shadow);
+}
+
+/* neutralize the theme's focus/active transform so position and squash stay independent */
+.tp .k-slider .k-slider-track-wrap .k-draghandle:is(:focus, :active, .k-pressed, .k-active, :hover) {
+    transform: scale(var(--tp-sx, 1), var(--tp-sy, 1));
+}
+
+.tp .k-slider .k-slider-track-wrap .k-draghandle:is(.k-pressed, :active) { cursor: grabbing; }
+
+.tp .k-slider-horizontal .k-slider-track-wrap .k-draghandle {
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+    translate: calc((var(--tp-len) * var(--tp-p, 0) / 100 - var(--tp-size) / 2) * var(--tp-d)) -50%;
+}
+
+.tp .k-slider-vertical .k-slider-track-wrap .k-draghandle {
+    inset-block-end: 0;
+    inset-block-start: auto;
+    left: 50%;
+    translate: -50% calc((var(--tp-len) * var(--tp-p, 0) / -100) + var(--tp-size) / 2);
+}
+
+.tp .k-draghandle-start { --tp-p: var(--kendo-slider-start, 0); }
+.tp .k-draghandle-end { --tp-p: var(--kendo-slider-end, 100); }
+
+/* filled track: transform instead of width/height */
+.tp .k-slider-horizontal .k-slider-selection {
+    width: 100%;
+    inset-inline-start: 0;
+    border-radius: 0;
+    transform-origin: calc(50% - 50% * var(--tp-d)) 50%;
+    transform:
+        translateX(calc(var(--kendo-slider-start, 0) * 1% * var(--tp-d)))
+        scaleX(calc((var(--kendo-slider-end, 0) - var(--kendo-slider-start, 0)) / 100));
+}
+
+.tp .k-slider-vertical .k-slider-selection {
+    height: 100%;
+    inset-block-end: 0;
+    border-radius: 0;
+    transform-origin: 50% 100%;
+    transform:
+        translateY(calc(var(--kendo-slider-start, 0) * -1%))
+        scaleY(calc((var(--kendo-slider-end, 0) - var(--kendo-slider-start, 0)) / 100));
+}
+
+.tp .k-slider-selection { will-change: transform; transition: none; }
+
+/* smooth updates for keyboard / click changes (never while dragging) */
+.tp .k-slider.tp-smooth:not(.tp-dragging) .k-slider-selection {
+    transition: transform .22s var(--tp-ease);
+}
+
+.tp .k-slider.tp-smooth:not(.tp-dragging) .k-draghandle {
+    transition: translate .22s var(--tp-ease), transform var(--tp-tr), box-shadow .2s;
+}
+
+/* expanded hit area (32px desktop / 48px touch) + state layer host */
+.tp .k-draghandle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--tp-hit);
+    height: var(--tp-hit);
+    translate: -50% -50%;
+    border-radius: 50%;
+}
+
+/* value indicator: fade + scale, transform/opacity only; counter-scaled so it never squashes */
+.tp .k-slider .k-draghandle::after {
+    content: attr(data-value);
+    position: absolute;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    pointer-events: none;
+    padding: 2px 8px;
+    min-width: 28px;
+    border-radius: 4px;
+    background: var(--tp-bubble-bg, #1f1f1f);
+    color: var(--tp-bubble-text, #fff);
+    font: 600 12px/18px system-ui, sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    scale: calc(1 / var(--tp-sx, 1)) calc(1 / var(--tp-sy, 1));
+    transition: opacity .15s linear, transform .18s var(--tp-ease);
+    z-index: 3;
+}
+
+.tp .k-slider.k-slider-horizontal .k-draghandle::after {
+    left: 50%;
+    bottom: calc(100% + 10px);
+    transform-origin: 50% 100%;
+    transform: translateX(-50%) scale(.6);
+}
+
+.tp .k-slider.k-slider-vertical .k-draghandle::after {
+    left: calc(100% + 12px);
+    top: 50%;
+    transform-origin: 0 50%;
+    transform: translateY(-50%) scale(.6);
+}
+
+.tp .k-draghandle:is(.k-pressed, .k-active, :active, :focus-visible)::after { opacity: 1; }
+.tp .k-slider-horizontal .k-draghandle:is(.k-pressed, .k-active, :active, :focus-visible)::after {
+    transform: translateX(-50%) scale(1);
+}
+.tp .k-slider-vertical .k-draghandle:is(.k-pressed, .k-active, :active, :focus-visible)::after {
+    transform: translateY(-50%) scale(1);
+}
+
+/* visible focus (keyboard) */
+.tp .k-draghandle:focus-visible {
+    outline: calc(2px / var(--tp-sx, 1)) solid var(--tp-focus, var(--tp-accent));
+    outline-offset: calc(3px / var(--tp-sx, 1));
+}
+
+/* ---------- Variation 1: compressed thumb ---------- */
+
+.tp-v1 {
+    --tp-shadow: 0 1px 3px rgb(0 0 0 / .3);
+    --tp-tr: .5s var(--tp-spring);
+}
+
+.tp-v1 .k-draghandle {
+    transition: transform .5s var(--tp-spring), box-shadow .3s;
+}
+
+.tp-v1 .k-draghandle:is(:hover, .k-hover) {
+    --tp-sx: 1.15;
+    --tp-sy: 1.15;
+    --tp-shadow: 0 3px 8px rgb(0 0 0 / .32);
+}
+
+.tp-v1 .k-draghandle:is(.k-pressed, .k-active, :active) {
+    --tp-sx: .8;
+    --tp-sy: .8;
+    --tp-shadow: 0 0 1px rgb(0 0 0 / .45);
+    transition: transform .12s var(--tp-ease), box-shadow .12s;
+}
+
+/* ---------- Variation 2: adaptive elastic thumb ---------- */
+
+.tp-v2 {
+    --tp-shadow: 0 1px 4px rgb(0 0 0 / .28);
+    --tp-tr: .2s var(--tp-ease);
+}
+
+.tp-v2.k-slider-horizontal .k-draghandle {
+    --tp-sx: calc(1 + var(--tp-k) + var(--tp-h, 0));
+    --tp-sy: calc(1 - var(--tp-k) * .45 + var(--tp-h, 0));
+}
+
+.tp-v2.k-slider-vertical .k-draghandle {
+    --tp-sy: calc(1 + var(--tp-k) + var(--tp-h, 0));
+    --tp-sx: calc(1 - var(--tp-k) * .45 + var(--tp-h, 0));
+}
+
+.tp-v2 .k-draghandle { transition: transform .2s var(--tp-ease), box-shadow .2s; }
+
+.tp-v2 .k-draghandle:is(:hover, .k-hover) {
+    --tp-h: .1;
+    --tp-shadow: 0 2px 6px rgb(0 0 0 / .3);
+}
+
+.tp-v2 .k-draghandle:is(.k-pressed, .k-active, :active) {
+    --tp-shadow: 0 1px 2px rgb(0 0 0 / .4);
+    transition: box-shadow .12s;
+}
+
+.tp-v2 .k-draghandle.tp-release {
+    animation: tp-elastic .65s cubic-bezier(.25, .8, .35, 1) both;
+}
+
+@keyframes tp-elastic {
+    0% { --tp-k: .3; }
+    25% { --tp-k: -.17; }
+    50% { --tp-k: .09; }
+    75% { --tp-k: -.03; }
+    100% { --tp-k: 0; }
+}
+
+/* ---------- Variation 3: Fluent-inspired thumb ---------- */
+
+.tp-v3 {
+    --tp-shadow: 0 2px 4px rgb(0 0 0 / .14), 0 0 2px rgb(0 0 0 / .12);
+    --tp-fluent-ease: cubic-bezier(0, 0, 0, 1);
+    --tp-tr: .167s var(--tp-fluent-ease);
+    --tp-focus: #000;
+    --tp-bubble-bg: #292827;
+}
+
+.tp-v3 .k-draghandle {
+    border: 2px solid #fff;
+    transition: transform .167s var(--tp-fluent-ease), box-shadow .167s var(--tp-fluent-ease);
+}
+
+.tp-v3 .k-draghandle:is(:hover, .k-hover) {
+    --tp-sx: 1.08;
+    --tp-sy: 1.08;
+    --tp-shadow: 0 4px 8px rgb(0 0 0 / .14), 0 0 2px rgb(0 0 0 / .12);
+}
+
+.tp-v3 .k-draghandle:is(.k-pressed, .k-active, :active) {
+    --tp-sx: .94;
+    --tp-sy: .9;
+    --tp-shadow: 0 1px 2px rgb(0 0 0 / .18), 0 0 1px rgb(0 0 0 / .12);
+}
+
+/* Fluent 2 double focus ring: inner white, outer dark */
+.tp-v3 .k-draghandle:focus-visible {
+    outline: calc(2px / var(--tp-sx, 1)) solid #000;
+    outline-offset: calc(2px / var(--tp-sx, 1));
+    box-shadow: 0 0 0 calc(2px / var(--tp-sx, 1)) #fff, var(--tp-shadow);
+}
+
+/* ---------- Variation 4: Material 3 inspired thumb ---------- */
+
+.tp-v4 {
+    --tp-shadow: 0 1px 2px rgb(0 0 0 / .3), 0 1px 3px 1px rgb(0 0 0 / .15);
+    --tp-m3: cubic-bezier(.2, 0, 0, 1);
+    --tp-tr: .3s var(--tp-m3);
+    --tp-bubble-bg: var(--tp-accent);
+}
+
+.tp-v4 .k-draghandle {
+    --tp-layer: transparent;
+    transition: transform .3s var(--tp-m3), box-shadow .3s var(--tp-m3);
+}
+
+.tp-v4 .k-draghandle::before {
+    width: 48px;
+    height: 48px;
+    /* 40px state layer inside the 48px hit area */
+    background: radial-gradient(circle closest-side, var(--tp-layer) 0 83%, transparent 85%);
+    scale: .6;
+    opacity: 0;
+    transition: opacity .2s linear, scale .3s var(--tp-m3);
+}
+
+.tp-v4 .k-draghandle:is(:hover, .k-hover) {
+    --tp-sx: 1.25;
+    --tp-sy: 1.25;
+    --tp-layer: color-mix(in srgb, var(--tp-accent) 8%, transparent);
+}
+
+.tp-v4 .k-draghandle:is(.k-pressed, .k-active, :active) {
+    --tp-sx: .78;
+    --tp-sy: .78;
+    --tp-layer: color-mix(in srgb, var(--tp-accent) 14%, transparent);
+    --tp-shadow: 0 2px 6px 2px rgb(0 0 0 / .3);
+}
+
+.tp-v4 .k-draghandle:is(:hover, .k-hover, .k-pressed, .k-active, :active, :focus-visible)::before {
+    opacity: 1;
+    scale: 1;
+}
+
+.tp-v4 .k-draghandle:focus-visible {
+    --tp-layer: color-mix(in srgb, var(--tp-accent) 14%, transparent);
+    outline: 0;
+}
+
+.tp.tp .k-slider.tp-v4 .k-draghandle::after { border-radius: 14px; padding: 4px 10px; }
+
+/* ---------- reduced motion: no spring / elastic, simple opacity + scale ---------- */
+
+[data-motion="reduced"] .k-draghandle,
+[data-motion="reduced"] .k-draghandle::before,
+[data-motion="reduced"] .k-slider-selection {
+    transition-duration: .1s !important;
+    transition-timing-function: linear !important;
+    animation: none !important;
+}
+
+[data-motion="reduced"] .k-slider.tp-smooth:not(.tp-dragging) .k-draghandle,
+[data-motion="reduced"] .k-slider.tp-smooth:not(.tp-dragging) .k-slider-selection {
+    transition: none !important;
+}
+
+[data-motion="reduced"] .tp .k-slider .k-draghandle::after {
+    transition: opacity .1s linear;
+    transform: translateX(-50%) scale(1);
+}
+
+[data-motion="reduced"] .tp .k-slider.k-slider-vertical .k-draghandle::after { transform: translateY(-50%) scale(1); }
+
+[data-motion="reduced"] .k-slider .k-draghandle:is(.k-pressed, .k-active, :active) {
+    --tp-sx: .92;
+    --tp-sy: .92;
+}
+
+/* Fluent draws its thumb dot with ::after, which the value indicator now owns - redraw the dot as a background */
+[data-theme="fluent"] .tp .k-slider .k-draghandle {
+    background-image: radial-gradient(circle closest-side, var(--kendo-color-primary) 0 5.5px, transparent 6px);
+    background-origin: border-box;
+}
+
+[data-theme="fluent"] .tp .k-slider .k-draghandle:is(:hover, .k-hover) {
+    background-image: radial-gradient(circle closest-side, var(--kendo-color-primary-hover) 0 5.5px, transparent 6px);
+}
+
+[data-theme="fluent"] .tp .k-slider .k-draghandle:is(:active, .k-active, .k-pressed) {
+    background-image: radial-gradient(circle closest-side, var(--kendo-color-primary-active) 0 5.5px, transparent 6px);
+}
+
+[data-theme="fluent"] .tp { --tp-accent: var(--kendo-color-primary); }
