@@ -1,3 +1,9 @@
+## 14.10.2-dev.1 (2026-11-19)
+
+### 🚀 Features
+
+- **pdfviewer:** add PDF.js 6 form field annotation styles ([595f80fcf2](https://github.com/telerik/kendo-themes/commit/595f80fcf2))
+
 ## 14.10.2-dev.0 (2026-11-19)
 
 ### 🩹 Fixes
