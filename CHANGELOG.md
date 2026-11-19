@@ -1,3 +1,9 @@
+## 14.10.2-dev.0 (2026-11-19)
+
+### 🩹 Fixes
+
+- **editor:** fill available height with iframe and ProseMirror content ([d30ca825b9](https://github.com/telerik/kendo-themes/commit/d30ca825b9))
+
 ## 14.10.1 (2026-11-17)
 
 ### 🩹 Fixes

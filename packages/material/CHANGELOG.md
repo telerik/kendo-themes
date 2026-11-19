@@ -1,3 +1,7 @@
+## 14.10.2-dev.0 (2026-11-19)
+
+This was a version bump only for @progress/kendo-theme-material to align it with other projects, there were no code changes.
+
 ## 14.10.1 (2026-11-17)
 
 ### 🩹 Fixes
