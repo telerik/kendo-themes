@@ -44,7 +44,18 @@ From a component name (e.g., `smart-badge`):
    Both sides use the same name. A missing entry silently leaves core's value `null`.
 4. **State selectors pair pseudo-class and class:** `&:hover, &.k-hover { … }` (the class lets visual tests render the state).
 5. **Order matters.** Keep related variables grouped; keep theme `index.scss` in dependency order — never alphabetize.
-6. **Only touch the themes the user asked for.** If unspecified, ask (new components default to all themes).
+6. **Scope themes by the request.** Decide which theme packages to edit using this table, top to bottom. The first match wins.
+
+   | Situation | Themes to change |
+   |-----------|------------------|
+   | The request names themes | Only those themes; the other themes are left untouched |
+   | New component | All themes |
+   | Change to a shared design token (`scss/core/`) | All themes |
+   | Change to a core variable, layout or style (including adding a new variable) | Every theme that includes that component |
+   | Variable that exists in one theme only | That theme |
+   | None of the above | Stop and ask the user |
+
+   "All themes" means all six theme packages: `default`, `classic`, `material`, `fluent`, `bootstrap`, `meridian`. Core is not a theme and is not scoped by this table: edit it whenever the change belongs there (rule 1 and 2 — a variable shared by 2+ themes is declared in core as `null` with SassDoc; layout and shared tokens live in core). A variable that exists in one theme only is declared in that theme alone. Never edit a theme that isn't listed for the change. State which themes you changed, and why, in the summary.
 
 ## Reference components
 
