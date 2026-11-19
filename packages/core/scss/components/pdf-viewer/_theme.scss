@@ -48,6 +48,10 @@
                     background-color: $kendo-pdf-viewer-search-highlight-mark-bg;
                     box-shadow: 0 2px 10px $kendo-pdf-viewer-search-highlight-mark-bg;
                 }
+
+                :is(.k-checkbox-widget-annotation, .k-radio-button-widget-annotation) > input:focus-visible {
+                    outline-color: $kendo-pdf-viewer-form-field-focus-outline;
+                }
             }
         }
 
