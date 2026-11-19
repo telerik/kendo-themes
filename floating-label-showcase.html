@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floating label text input — theme comparison</title>
+<style>
+/* ---------- Theme tokens (approximating each Kendo theme) ---------- */
+.theme-meridian {
+  --font: "Inter", "Segoe UI", system-ui, sans-serif;
+  --fs: 14px; --h: 56px; --radius: 8px; --pad-x: 14px;
+  --bg: oklch(100% 0 0); --fg: #1f2937; --label: #5b6472; --label-active: #4338ca;
+  --border: #b8bfcc; --border-hover: #6b7280; --focus: #4338ca; --focus-ring: 0 0 0 3px rgb(67 56 202 / .22);
+  --error: #b3261e; --disabled-bg: #f1f3f6; --disabled-fg: #6b7280; --readonly-bg: #f7f8fa;
+  --helper: #5b6472; --border-w: 1px; --card: #fff; --card-border: #e3e6ec; --fill-bg: #eef0f6;
+}
+.theme-default {
+  --font: Arial, Helvetica, sans-serif;
+  --fs: 14px; --h: 52px; --radius: 4px; --pad-x: 10px;
+  --bg: #fff; --fg: #424242; --label: #595959; --label-active: #b8381f;
+  --border: rgb(0 0 0 / .35); --border-hover: rgb(0 0 0 / .6); --focus: #ff6358; --focus-ring: 0 0 0 2px rgb(255 99 88 / .35);
+  --error: #c4291c; --disabled-bg: #ebebeb; --disabled-fg: #6b6b6b; --readonly-bg: #f5f5f5;
+  --helper: #595959; --border-w: 1px; --card: #fff; --card-border: #ddd; --fill-bg: #f0f0f0;
+}
+.theme-material {
+  --font: Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs: 16px; --h: 56px; --radius: 4px; --pad-x: 16px;
+  --bg: #fef7ff; --fg: #1d1b20; --label: #49454f; --label-active: #6750a4;
+  --border: #79747e; --border-hover: #1d1b20; --focus: #6750a4; --focus-ring: none;
+  --error: #b3261e; --disabled-bg: #f3f0f4; --disabled-fg: #1d1b2061; --readonly-bg: #f3edf7;
+  --helper: #49454f; --border-w: 1px; --card: #fef7ff; --card-border: #e7e0ec; --fill-bg: #e6e0e9;
+}
+.theme-bootstrap {
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs: 16px; --h: 58px; --radius: 6px; --pad-x: 13px;
+  --bg: #fff; --fg: #212529; --label: #595f66; --label-active: #595f66;
+  --border: #ced4da; --border-hover: #ced4da; --focus: #86b7fe; --focus-ring: 0 0 0 .25rem rgb(13 110 253 / .25);
+  --error: #b02a37; --disabled-bg: #e9ecef; --disabled-fg: #595f66; --readonly-bg: #e9ecef;
+  --helper: #595f66; --border-w: 1px; --card: #fff; --card-border: #dee2e6; --fill-bg: #f1f3f5;
+}
+.theme-fluent {
+  --font: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  --fs: 14px; --h: 52px; --radius: 4px; --pad-x: 12px;
+  --bg: #fff; --fg: #242424; --label: #616161; --label-active: #115ea3;
+  --border: #8a8a8a; --border-hover: #616161; --focus: #0f6cbd; --focus-ring: none;
+  --error: #b10e1c; --disabled-bg: #f0f0f0; --disabled-fg: #707070; --readonly-bg: #fafafa;
+  --helper: #616161; --border-w: 1px; --card: #fff; --card-border: #e0e0e0; --fill-bg: #f3f3f3;
+}
+.theme-fluent.dark {
+  --bg: #292929; --fg: #fff; --label: #c7c7c7; --label-active: #479ef5;
+  --border: #adadad; --border-hover: #d6d6d6; --focus: #479ef5;
+  --error: #f1707b; --disabled-bg: #1f1f1f; --disabled-fg: #9a9a9a; --readonly-bg: #1f1f1f;
+  --helper: #c7c7c7; --card: #1c1c1c; --card-border: #3d3d3d; --fill-bg: #333;
+}
+
+/* ---------- Page layout ---------- */
+* { box-sizing: border-box; }
+body { margin: 0; font: 14px/1.4 system-ui, sans-serif; background: #eef0f4; color: #1f2937; }
+header.page { padding: 24px clamp(16px, 4vw, 40px) 8px; display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; }
+header.page h1 { margin: 0; font-size: 1.4rem; }
+header.page p { margin: 4px 0 0; color: #4b5563; max-width: 70ch; }
+.toggle { display: inline-flex; gap: 8px; align-items: center; font-size: .9rem; }
+.canvas {
+  display: grid; gap: 20px; padding: 16px clamp(16px, 4vw, 40px) 48px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  align-items: start;
+}
+.theme-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 12px; padding: 20px; font-family: var(--font); color: var(--fg); }
+.theme-card > h2 { margin: 0 0 16px; font-size: 1.15rem; font-weight: 600; }
+.state { margin-bottom: 22px; }
+.state:last-child { margin-bottom: 0; }
+.state-name { margin: 0 0 6px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--helper); font-weight: 600; }
+
+/* ---------- Floating label field ---------- */
+.fl { position: relative; font-family: var(--font); font-size: var(--fs); }
+.fl input {
+  display: block; width: 100%; height: var(--h); margin: 0;
+  padding: calc(var(--h) * .42) var(--pad-x) calc(var(--h) * .12); /* top space reserved for the floated label */
+  font: inherit; color: var(--fg); background: var(--bg);
+  border: var(--border-w) solid var(--border); border-radius: var(--radius);
+  outline: none; transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out, background-color .2s ease-in-out;
+  text-overflow: ellipsis;
+}
+.fl input::placeholder { color: transparent; }
+.fl label {
+  position: absolute; left: var(--pad-x); top: 0; max-width: calc(100% - 2 * var(--pad-x));
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none;
+  color: var(--label); line-height: 1.2; transform-origin: left top;
+  /* resting: vertically centred inline label */
+  transform: translateY(calc(var(--h) / 2 - .6em)) scale(1);
+  transition: transform .2s ease-in-out, color .2s ease-in-out;
+}
+/* floated: focus, has value, or forced demo state */
+.fl { --float: translateY(calc(var(--h) * .14)) scale(.8); }
+.fl input:focus + label,
+.fl input:not(:placeholder-shown) + label,
+.fl.is-focus input + label {
+  transform: var(--float);
+}
+.fl input:focus + label, .fl.is-focus input + label { color: var(--label-active); }
+
+/* states */
+.fl input:hover:not(:disabled), .fl.is-hover input { border-color: var(--border-hover); }
+.fl input:focus, .fl.is-focus input { border-color: var(--focus); box-shadow: var(--focus-ring); }
+.fl input:read-only:not(:disabled) { background: var(--readonly-bg); }
+.fl input:disabled { background: var(--disabled-bg); color: var(--disabled-fg); border-color: var(--disabled-bg); cursor: not-allowed; }
+.fl input:disabled + label { color: var(--disabled-fg); }
+.fl input[aria-invalid="true"] { border-color: var(--error); }
+.fl input[aria-invalid="true"] + label { color: var(--error); }
+.fl input[aria-invalid="true"]:focus, .fl.is-focus input[aria-invalid="true"] { box-shadow: 0 0 0 3px color-mix(in srgb, var(--error) 25%, transparent); }
+.helper { margin: 6px 2px 0; font-size: 12px; line-height: 1.4; color: var(--helper); overflow-wrap: anywhere; }
+.helper.error { color: var(--error); }
+.helper.disabled { color: var(--disabled-fg); }
+
+/* ---------- Theme-specific identity ---------- */
+/* Material */
+.theme-material .fl { --float: translateY(calc(var(--h) * .14)) scale(.75); }
+.theme-material .fl input:disabled { border-color: #1d1b201f; }
+.theme-material .fl input:focus, .theme-material .fl.is-focus input { box-shadow: inset 0 0 0 1px var(--focus); }
+.theme-material .fl input[aria-invalid="true"], .theme-material .fl input[aria-invalid="true"]:focus, .theme-material .fl.is-focus input[aria-invalid="true"] { box-shadow: inset 0 0 0 1px var(--error); }
+.theme-material .helper { margin-left: 16px; }
+
+/* Bootstrap: 3.5rem floating control, label keeps muted tone */
+.theme-bootstrap .fl input:focus + label, .theme-bootstrap .fl.is-focus input + label { color: var(--label); }
+.theme-bootstrap .fl input[aria-invalid="true"] { border-color: #dc3545; }
+.theme-bootstrap .fl input[aria-invalid="true"]:focus, .theme-bootstrap .fl.is-focus input[aria-invalid="true"] { box-shadow: 0 0 0 .25rem rgb(220 53 69 / .25); }
+.theme-bootstrap .fl { --float: translateY(.45rem) scale(.82); }
+
+/* Fluent: bottom accent stroke + 2px focus underline, subtle rounding */
+.theme-fluent .fl input { border-bottom-color: var(--border-hover); }
+.theme-fluent .fl input:focus, .theme-fluent .fl.is-focus input { box-shadow: inset 0 -2px 0 var(--focus), 0 0 0 1px var(--focus); }
+.theme-fluent .fl input[aria-invalid="true"]:focus, .theme-fluent .fl.is-focus input[aria-invalid="true"] { box-shadow: inset 0 -2px 0 var(--error), 0 0 0 1px var(--error); }
+.theme-fluent .fl { --fl-motion: .167s; }
+.theme-fluent .fl label, .theme-fluent .fl input { transition-duration: .167s; transition-timing-function: cubic-bezier(.33, 0, .67, 1); }
+
+/* Meridian: soft elevation on focus */
+.theme-meridian .fl input:focus, .theme-meridian .fl.is-focus input { box-shadow: var(--focus-ring), 0 1px 2px rgb(15 23 42 / .08); }
+
+/* ---------- Label mode: "border" (outlined, label sits on the top border) ---------- */
+[data-label-mode="border"] .fl { --float: translateY(-.6em) scale(.8); --notch-bottom: var(--bg); }
+[data-label-mode="border"] .fl input { padding: 0 var(--pad-x); }
+[data-label-mode="border"] .fl label {
+  left: calc(var(--pad-x) - 4px); padding: 0 4px; max-width: calc(100% - 2 * var(--pad-x) + 8px);
+  transform-origin: left center;
+}
+/* The notch is only drawn for a floated label on an outlined field; resting labels are text-only */
+[data-label-mode="border"] .fill-outlined .fl input:focus + label,
+[data-label-mode="border"] .fill-outlined .fl input:not(:placeholder-shown) + label,
+[data-label-mode="border"] .fill-outlined .fl.is-focus input + label {
+  background: linear-gradient(to bottom, var(--card) 50%, var(--notch-bottom) 50%);
+}
+[data-label-mode="border"] .fl:has(input:read-only) { --notch-bottom: var(--readonly-bg); }
+[data-label-mode="border"] .fl:has(input:disabled) { --notch-bottom: var(--disabled-bg); }
+/* Fill modes (set per card): outlined = base, filled = tinted container + bottom indicator, flat = bottom indicator only */
+.fill-filled .fl input, .fill-flat .fl input { border-width: 0 0 var(--border-w); box-shadow: none; }
+.fill-filled .fl input { background: var(--fill-bg); border-radius: var(--radius) var(--radius) 0 0; }
+.fill-flat .fl input { background: transparent; border-radius: 0; }
+.fill-filled .fl input:hover:not(:disabled), .fill-filled .fl.is-hover input { background: color-mix(in srgb, var(--fill-bg) 90%, #000); }
+.fill-flat .fl input:hover:not(:disabled), .fill-flat .fl.is-hover input { background: transparent; }
+.fill-filled .fl input:read-only:not(:disabled) { background: var(--fill-bg); }
+.fill-flat .fl input:read-only:not(:disabled) { background: transparent; }
+.fill-filled .fl input:disabled { background: var(--disabled-bg); }
+.fill-flat .fl input:disabled { background: transparent; }
+.fill-filled .fl input:disabled, .fill-flat .fl input:disabled { border-bottom: 1px dotted var(--disabled-fg); }
+.theme-card:is(.fill-filled, .fill-flat) .fl input:focus,
+.theme-card:is(.fill-filled, .fill-flat) .fl.is-focus input { border-bottom-width: 2px; box-shadow: none; }
+.theme-card:is(.fill-filled, .fill-flat) .fl input[aria-invalid="true"],
+.theme-card:is(.fill-filled, .fill-flat) .fl input[aria-invalid="true"]:focus,
+.theme-card:is(.fill-filled, .fill-flat) .fl.is-focus input[aria-invalid="true"] { border-bottom-width: 2px; box-shadow: none; }
+
+/* Border mode: label centred on the top edge. Outlined is notched; filled/flat overhang the container */
+[data-label-mode="border"] .theme-card:is(.fill-filled, .fill-flat) .fl,
+[data-label-mode="border"] .theme-card:is(.fill-filled, .fill-flat) .fl:has(input:read-only),
+[data-label-mode="border"] .theme-card:is(.fill-filled, .fill-flat) .fl:has(input:disabled) { --notch-bottom: transparent; }
+[data-label-mode="border"] .theme-material .fl { --float: translateY(-.6em) scale(.75); }
+[data-label-mode="border"] .theme-fluent .fl input { border-bottom-color: var(--border); }
+
+/* ---------- Configurator ---------- */
+.configurator { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 0; padding: 8px 12px; background: #fff; border: 1px solid #d5d9e0; border-radius: 10px; }
+.configurator legend { font-weight: 600; padding: 0 4px; }
+.configurator label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.configurator [hidden] { display: none; }
+
+/* ---------- Accessibility ---------- */
+.fl input:focus-visible { outline: 2px solid transparent; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .fl label, .fl input { transition-duration: .01ms !important; }
+}
+@media (forced-colors: active) {
+  .fl input { border: 1px solid ButtonText; forced-color-adjust: auto; }
+  .fl input:focus, .fl.is-focus input { outline: 2px solid Highlight; outline-offset: 2px; }
+  .fl input:disabled { border-color: GrayText; color: GrayText; }
+  .fl input[aria-invalid="true"] { border-width: 2px; }
+  .fl label { color: CanvasText; }
+}
+</style>
+</head>
+<body>
+<header class="page">
+  <div>
+    <h1>Floating label text input</h1>
+    <p>One theme at a time, in all three fill modes (filled, outlined, flat). Pick a theme and label position in the configurator. Every field is live: click, type, tab, or hover to try it. The “Focused” and “Hover” rows are pinned for review.</p>
+  </div>
+  <fieldset class="configurator">
+    <legend>Configurator</legend>
+    <label class="select">Theme
+      <select id="theme-select">
+        <option value="meridian">Meridian</option><option value="default">Default</option><option value="material">Material</option>
+        <option value="bootstrap">Bootstrap</option><option value="fluent">Fluent</option>
+      </select>
+    </label>
+    <label><input type="radio" name="label-mode" value="inside" checked> Label inside (floats within input)</label>
+    <label><input type="radio" name="label-mode" value="border"> Label on top border</label>
+    <label class="toggle" id="dark-toggle" hidden><input type="checkbox" id="fluent-dark"> Dark mode</label>
+  </fieldset>
+</header>
+
+<main class="canvas" id="canvas" aria-label="Theme comparison"></main>
+
+<script>
+const themes = {
+  meridian: 'Meridian', default: 'Default', material: 'Material', bootstrap: 'Bootstrap', fluent: 'Fluent'
+};
+const fills = { filled: 'Filled', outlined: 'Outlined', flat: 'Flat' };
+const states = [
+  { key: 'default',  name: 'Default',  helper: 'Enter a valid email address.' },
+  { key: 'hover',    name: 'Hover',    helper: 'Input is ready for interaction.', cls: 'is-hover' },
+  { key: 'focused',  name: 'Focused',  helper: 'Please provide your work email address.', cls: 'is-focus' },
+  { key: 'filled',   name: 'Filled',   helper: 'Email address has been entered.', value: 'maria.ivanova@contoso.com' },
+  { key: 'disabled', name: 'Disabled', helper: 'This field is currently unavailable.', attrs: 'disabled', helperCls: 'disabled' },
+  { key: 'readonly', name: 'Read-only', helper: 'This value cannot be edited.', value: 'support@contoso.com', attrs: 'readonly' },
+  { key: 'error',    name: 'Error / Validation', helper: 'Enter a valid email address in the format name@company.com.', value: 'maria.ivanova@contoso', attrs: 'aria-invalid="true"', helperCls: 'error' }
+];
+
+const canvas = document.getElementById('canvas');
+const themeSelect = document.getElementById('theme-select');
+const darkToggle = document.getElementById('fluent-dark');
+
+function render() {
+  const id = themeSelect.value;
+  const dark = id === 'fluent' && darkToggle.checked ? ' dark' : '';
+  document.getElementById('dark-toggle').hidden = id !== 'fluent';
+  canvas.setAttribute('aria-label', `${themes[id]} text input, filled, outlined and flat`);
+  canvas.innerHTML = Object.entries(fills).map(([fill, fillTitle]) => `
+  <section class="theme-card theme-${id} fill-${fill}${dark}" aria-labelledby="h-${fill}">
+    <h2 id="h-${fill}">${themes[id]} · ${fillTitle}</h2>
+    ${states.map(s => {
+      const base = `${id}-${fill}-${s.key}`;
+      return `
+      <div class="state">
+        <h3 class="state-name">${s.name}</h3>
+        <div class="fl ${s.cls || ''}">
+          <input type="email" id="in-${base}" name="${base}" placeholder=" " autocomplete="email"
+                 value="${s.value || ''}" ${s.attrs || ''} aria-describedby="help-${base}">
+          <label for="in-${base}">Email address</label>
+        </div>
+        <p class="helper ${s.helperCls || ''}" id="help-${base}">${s.helper}</p>
+      </div>`;
+    }).join('')}
+  </section>`).join('');
+
+  // Pinned demo states give way to real interaction once the user touches the field
+  canvas.querySelectorAll('.fl.is-focus input, .fl.is-hover input').forEach(input => {
+    const wrap = input.parentElement;
+    input.addEventListener('focus', () => wrap.classList.remove('is-focus', 'is-hover'), { once: true });
+    input.addEventListener('pointerenter', () => wrap.classList.remove('is-hover'), { once: true });
+  });
+}
+
+document.querySelectorAll('input[name="label-mode"]').forEach(r =>
+  r.addEventListener('change', () => { canvas.dataset.labelMode = r.value; }));
+themeSelect.addEventListener('change', render);
+darkToggle.addEventListener('change', render);
+render();
+</script>
+</body>
+</html>
