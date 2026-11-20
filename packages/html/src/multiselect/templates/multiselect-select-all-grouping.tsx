@@ -18,7 +18,7 @@ export const MultiSelectSelectAllGrouping = (props) => {
                     header="Group 1"
                     selectAll={<ListSelectAll {...props.selectAllProps} />}
                 >
-                    <ListContent grouping listboxId={listboxId} aria-label="Options">
+                    <ListContent multiselectable grouping listboxId={listboxId} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                             <ListItem id={nextId('ms-sag-item')} {...props.listItemProps}>Item 1</ListItem>

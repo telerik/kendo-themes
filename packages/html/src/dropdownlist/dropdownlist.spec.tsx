@@ -79,6 +79,14 @@ const defaultOptions = {
  * @aria {role="option"} Each list item is an option.
  * @aria {id} Referenced by aria-controls and aria-activedescendant on the input.
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {role="region"} Popup container landmark; required because the popup is appended to the document body.
+ * @aria {aria-label|aria-labelledby} Popup container must have an accessible name.
+ * @aria {aria-selected="true"} Set on the selected popup list option.
+ * @aria {aria-live="polite"} Popup list no-data message is announced at the next available opportunity.
+ * @aria {role="group"} Each ListUl of a grouped popup list; the listbox role moves to the list content element.
+ * @aria {aria-labelledby} Grouped ListUl references the id of its group header.
+ * @aria {role="presentation"} Group header items and the list item icon wrapper are decorative.
+ * @aria {aria-hidden="true"} Popup list item icons are decorative.
  * @ux {Popup} Clicking the control opens a scrollable list of options.
  * @ux {Selection} Clicking an option selects it and closes the popup.
  * @ux {Filtering} The list can be filtered when the user types.
@@ -233,6 +241,8 @@ DropdownList.folderName = DROPDOWNLIST_FOLDER_NAME;
  * @keyboard {ArrowUp} Selects the previous available item.
  * @keyboard {Home} Selects the first available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position.
  * @keyboard {End} Selects the last available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position.
+ * @keyboard {PageUp} Scrolls the popup list up.
+ * @keyboard {PageDown} Scrolls the popup list down.
  * @keyboard {Enter} Opens popup
  * @keyboard {Space} Opens popup
  * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens popup

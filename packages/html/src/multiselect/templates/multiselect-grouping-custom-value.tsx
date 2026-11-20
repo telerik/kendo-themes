@@ -15,7 +15,7 @@ export const MultiSelectGroupingCustomValue = ({ value="Custom value", ...other 
             opened
             popup={
                 <List header="Group 1" customValue={<ListCustomValue text={`Use "${value}"`}/>}>
-                    <ListContent grouping listboxId={listboxId} aria-label="Options">
+                    <ListContent multiselectable grouping listboxId={listboxId} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                             <ListItem id={nextId('ms-grpcv-item')}>List group 1 item 1</ListItem>

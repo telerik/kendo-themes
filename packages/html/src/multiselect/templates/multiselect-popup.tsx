@@ -18,7 +18,7 @@ export const MultiSelectPopup = (props) => {
             activeDescendant={item1Id}
             popup={(
                 <List>
-                    <ListContent listboxId={listboxId} aria-label="Options">
+                    <ListContent multiselectable listboxId={listboxId} aria-label="Options">
                         <ListItem id={item0Id} selected>Selected item</ListItem>
                         <ListItem id={item1Id} focus>Focused item</ListItem>
                         <ListItem id={item2Id}>List item</ListItem>

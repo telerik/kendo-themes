@@ -87,6 +87,12 @@ const defaultOptions = {
  * @aria {id} Referenced by aria-controls and aria-activedescendant on the input.
  * @aria {aria-autocomplete} Indicates autocomplete behavior to assistive technologies
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {role="region"} Popup container landmark; required because the popup is appended to the document body.
+ * @aria {aria-label|aria-labelledby} Popup container must have an accessible name.
+ * @aria {role="group"} Each ListUl of a grouped popup list; the listbox role moves to the list content element.
+ * @aria {aria-labelledby} Grouped ListUl references the id of its group header.
+ * @aria {role="presentation"} Group header items and the list item icon wrapper are decorative.
+ * @aria {aria-hidden="true"} Popup list item icons are decorative.
  * @ux {Editable input} The user can type to filter options or enter a custom value.
  * @ux {Popup} Opens a dropdown list when the toggle button is clicked or when the user types.
  * @ux {Selection} Choosing an option fills the input and closes the popup.
@@ -246,6 +252,9 @@ Combobox.folderName = COMBOBOX_FOLDER_NAME;
 
 /**
  * @keyboard {Typing in the input} Focuses the matched item.
+ * @keyboard {PageUp} Scrolls the popup list up.
+ * @keyboard {PageDown} Scrolls the popup list down.
+ * @keyboard {Tab} Closes the popup and moves focus to the next focusable element.
  * @keyboard {ArrowDown} Highlights the next available item.
  * @keyboard {ArrowUp} Highlights the previous available item.
  * @keyboard {Enter} Selects the focused item.
