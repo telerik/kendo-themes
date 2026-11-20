@@ -46,12 +46,25 @@ These CSS classes are applied to the `k-autocomplete` element.
 | `id` | Referenced by aria-controls on the input. |
 | `aria-autocomplete` | Indicates autocomplete type |
 | `aria-activedescendant` | Points to focused item when popup is open |
+| `role="region"` | Popup container landmark; required because the popup is appended to the document body. |
+| `aria-label|aria-labelledby` | Popup container must have an accessible name. |
+| `aria-selected="true"` | Set on the selected popup list option. |
+| `aria-live="polite"` | Popup list no-data message is announced at the next available opportunity. |
+| `role="group"` | Each ListUl of a grouped popup list; the listbox role moves to the list content element. |
+| `aria-labelledby` | Grouped ListUl references the id of its group header. |
+| `role="presentation"` | Group header items and the list item icon wrapper are decorative. |
+| `aria-hidden="true"` | Popup list item icons are decorative. |
 
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
 | `Typing in the input` | Focuses the matched item. |
+| `ArrowDown` | Moves the focus to the next popup list item. |
+| `ArrowUp` | Moves the focus to the previous popup list item. |
+| `PageUp` | Scrolls the popup list up. |
+| `PageDown` | Scrolls the popup list down. |
+| `Tab` | Closes the popup and moves focus to the next focusable element. |
 | `Alt/Opt(Mac) + ArrowDown` | Opens the popup. |
 | `Alt/Opt(Mac) + ArrowUp or Escape` | Closes the popup. |
 | `Escape` | Resets the value in the input when the popup is closed. |

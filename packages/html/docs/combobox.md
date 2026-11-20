@@ -53,12 +53,21 @@ These CSS classes are applied to the `k-combobox` element.
 | `id` | Referenced by aria-controls and aria-activedescendant on the input. |
 | `aria-autocomplete` | Indicates autocomplete behavior to assistive technologies |
 | `aria-activedescendant` | Points to focused item when popup is open |
+| `role="region"` | Popup container landmark; required because the popup is appended to the document body. |
+| `aria-label|aria-labelledby` | Popup container must have an accessible name. |
+| `role="group"` | Each ListUl of a grouped popup list; the listbox role moves to the list content element. |
+| `aria-labelledby` | Grouped ListUl references the id of its group header. |
+| `role="presentation"` | Group header items and the list item icon wrapper are decorative. |
+| `aria-hidden="true"` | Popup list item icons are decorative. |
 
 #### Keyboard Navigation
 
 | Trigger | Behavior |
 | --- | --- |
 | `Typing in the input` | Focuses the matched item. |
+| `PageUp` | Scrolls the popup list up. |
+| `PageDown` | Scrolls the popup list down. |
+| `Tab` | Closes the popup and moves focus to the next focusable element. |
 | `ArrowDown` | Highlights the next available item. |
 | `ArrowUp` | Highlights the previous available item. |
 | `Enter` | Selects the focused item. |
