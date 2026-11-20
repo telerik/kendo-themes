@@ -10,11 +10,12 @@ import { NumericTextbox } from "../../numerictextbox";
 const styles = `
     #test-area {
         max-width: 1060px;
-        --kendo-actionsheet-height: 400px;
-        --kendo-actionsheet-max-height: 400px;
     }
     #test-area > section {
-        height: 600px;
+        height: 720px;
+        --kendo-actionsheet-height: 60cqh;
+        --kendo-actionsheet-max-height: 60cqh;
+        container-type: size;
         outline: 1px dotted;
         overflow: hidden;
         position: relative;
@@ -161,9 +162,8 @@ export default () => (
                     }
                 ></Grid>
                 <ActionSheetNormal
-                    adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 1" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="xsmall" fillMode="flat" />} title="Filter by Header Name 1" />
                     }
                     footer={
                         <ActionSheetFooter>
