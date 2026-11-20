@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid k-grid-cols-2">
+            <span>Column menu items</span>
+            <span>Column list items</span>
+            <section>
+                <div class="k-column-menu">
+                    <div class="k-columnmenu-item-wrapper">
+                        <div class="k-columnmenu-item" role="button" tabindex="0">
+                            <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25V3.75m6.75 6.75L12 3.75 5.25 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                            Item
+                        </div>
+                        <div class="k-columnmenu-item k-focus" role="button" tabindex="0">
+                            <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25V3.75m6.75 6.75L12 3.75 5.25 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                            Focus
+                        </div>
+                        <div class="k-columnmenu-item k-selected" role="button" tabindex="0">
+                            <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25V3.75m6.75 6.75L12 3.75 5.25 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                            Selected
+                        </div>
+                        <div class="k-columnmenu-item k-focus k-selected" role="button" tabindex="0">
+                            <span class="k-icon k-svg-icon k-svg-i-sort-asc-small" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25V3.75m6.75 6.75L12 3.75 5.25 10.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                            Focus selected
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="k-column-menu">
+                    <div class="k-column-list-wrapper">
+                        <div class="k-column-list" role="listbox" aria-multiselectable="true">
+                            <span class="k-column-list-item" role="option" aria-checked="false">
+                                <span class="k-checkbox-wrap">
+                                    <input aria-label="Item" class="k-checkbox" type="checkbox">
+                                </span>
+                                <span class="k-checkbox-label">Item</span>
+                            </span>
+                            <span class="k-column-list-item k-hover" role="option" aria-checked="false">
+                                <span class="k-checkbox-wrap">
+                                    <input aria-label="Hover" class="k-checkbox" type="checkbox">
+                                </span>
+                                <span class="k-checkbox-label">Hover</span>
+                            </span>
+                            <span class="k-column-list-item k-focus" role="option" aria-checked="false">
+                                <span class="k-checkbox-wrap">
+                                    <input aria-label="Focus" class="k-checkbox" type="checkbox">
+                                </span>
+                                <span class="k-checkbox-label">Focus</span>
+                            </span>
+                            <span class="k-column-list-item k-disabled" role="option" aria-checked="false">
+                                <span class="k-checkbox-wrap">
+                                    <input aria-label="Disabled" disabled="" class="k-checkbox k-disabled" type="checkbox">
+                                </span>
+                                <span class="k-checkbox-label">Disabled</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
