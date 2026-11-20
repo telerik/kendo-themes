@@ -132,6 +132,18 @@
             vertical-align: middle;
         }
 
+        // Row-span cells draw their edges with box-shadow
+        @if $kendo-grid-cell-row-span-border {
+            .k-table-td.k-table-td-row-span {
+                border-width: 0;
+            }
+
+            // The cell after a row-span cell draws its start edge with box-shadow, so its text stays aligned with the first cell in other rows
+            .k-table-td-row-span + .k-table-td {
+                border-inline-start-width: 0;
+            }
+        }
+
         a {
             color: inherit;
             text-decoration: none;

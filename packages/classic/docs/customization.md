@@ -17333,6 +17333,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-cell-row-span-border</td>
+    <td>String</td>
+    <td><code>$kendo-grid-border</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the end edge drawn by Grid cells with a row span.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-header-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>

@@ -17825,6 +17825,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-cell-row-span-border</td>
+    <td>String</td>
+    <td><code>$kendo-grid-border</code></td>
+    <td><code>var(--kendo-grid-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the end edge drawn by Grid cells with a row span.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-row-span-end-border</td>
+    <td>String</td>
+    <td><code>$kendo-grid-border</code></td>
+    <td><code>var(--kendo-grid-border, var(--kendo-table-border, color-mix(in srgb, var(--kendo-color-border) 16%, transparent)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the end edge of the Grid cells with a row span. Set it only when the Grid cells have no visible vertical borders.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-focus-shadow</td>
     <td>String</td>
     <td><code>var( --kendo-grid-focus-shadow, #{$kendo-list-item-focus-shadow} )</code></td>

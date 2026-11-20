@@ -16,6 +16,69 @@
         color: $kendo-grid-text;
         border-color: $kendo-grid-border;
 
+        // Row-span cells draw their edges with box-shadow.
+        // Semi-transparent borders darken when painted twice, so every edge is drawn exactly once.
+        // A cell can't tell if it is in the first column, because a row-span from the row above may occupy it,
+        // so the first cell in a row draws its start edge outside. In the first column that edge is clipped by the content area;
+        // otherwise it lands on the last pixel of the preceding row-span.
+        @if $kendo-grid-cell-row-span-border {
+            // The top edge is drawn only when the cell above has no bottom border
+            $_top: if($kendo-grid-cell-horizontal-border-width != 0 and $kendo-grid-cell-horizontal-border-width != 0px, 0 0 0 0 transparent, 0 -1px 0 0 $kendo-grid-cell-row-span-border);
+            // --dir flips the horizontal offsets in RTL
+            $_start: inset calc(var(--dir, 1) * 1px) 0 0 0 $kendo-grid-cell-row-span-border;
+            $_end: inset calc(var(--dir, 1) * -1px) 0 0 0 $kendo-grid-cell-row-span-end-border;
+            $_outer-start: calc(var(--dir, 1) * -1px) 0 0 0 $kendo-grid-cell-row-span-border;
+            $_outer-end: calc(var(--dir, 1) * 1px) 0 0 0 $kendo-grid-cell-row-span-end-border;
+            $_bottom: inset 0 -1px 0 0 $kendo-grid-cell-row-span-border;
+
+            :is([dir="rtl"], .k-rtl) .k-table-td,
+            .k-table-td:is([dir="rtl"], .k-rtl) {
+                --dir: -1;
+            }
+
+            .k-table-td-row-span {
+                position: relative;
+                z-index: 1;
+            }
+
+            @if not $kendo-grid-cell-row-span-end-border {
+                // Cells have visible start borders, so a row-span draws no end edge.
+                // The cell after it draws its start edge, which is the row-span's end edge.
+                .k-table-td-row-span {
+                    box-shadow: $_start, $_bottom, $_top;
+                }
+
+                // Only tables that contain a row-span need the outer start edge
+                .k-table-tbody:has(.k-table-td-row-span) .k-table-td:first-child {
+                    position: relative;
+                    z-index: 1;
+                    box-shadow: $_outer-start;
+                }
+
+                .k-table-tbody:has(.k-table-td-row-span) .k-table-td-row-span:first-child {
+                    box-shadow: $_outer-start, $_bottom, $_top;
+                }
+
+                .k-table-td-row-span + .k-table-td:not(.k-table-td-row-span) {
+                    box-shadow: $_start;
+                }
+            } @else {
+                // Cells have no visible start borders, so a row-span draws all its edges.
+                // A later row-span covers the end edge of the previous one, so it draws no start edge after a first-child one.
+                .k-table-td-row-span {
+                    box-shadow: $_start, $_bottom, $_outer-end, $_top;
+                }
+
+                .k-table-td-row-span:first-child {
+                    box-shadow: $_outer-start, $_end, $_bottom, $_top;
+                }
+
+                .k-table-td-row-span:first-child + .k-table-td-row-span {
+                    box-shadow: $_bottom, $_outer-end, $_top;
+                }
+            }
+        }
+
         .k-table {
             background-color: inherit;
             color: inherit;

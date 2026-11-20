@@ -242,6 +242,12 @@ $kendo-grid-cell-horizontal-border-width: null !default;
 /// The width of the border around the Grid cell.
 /// @group grid
 $kendo-grid-cell-vertical-border-width: null !default;
+/// The color of the end edge drawn by Grid cells with a row span.
+/// @group grid
+$kendo-grid-cell-row-span-border: null !default;
+/// The border color of the end edge of the Grid cells with a row span. Set it only when the Grid cells have no visible vertical borders.
+/// @group grid
+$kendo-grid-cell-row-span-end-border: null !default;
 
 /// The background color of the Grid.
 /// @group grid
