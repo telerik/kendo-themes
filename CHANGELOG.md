@@ -1,3 +1,9 @@
+## 14.10.2-dev.2 (2026-11-20)
+
+### 🩹 Fixes
+
+- **meridian:** add focus state to column menu items ([040f205a73](https://github.com/telerik/kendo-themes/commit/040f205a73))
+
 ## 14.10.2-dev.1 (2026-11-19)
 
 ### 🚀 Features
