@@ -76,7 +76,123 @@ export default () =>(
                 </GridNormal>
             </section>
 
+            <span>Grid - first column cell rowspan</span>
 
+            <section>
+                <GridNormal groupingHeader={false}>
+                    <GridHeader>
+                        <div className="k-grid-header-wrap">
+                            <GridHeaderTable>
+                                <colgroup>
+                                    <col style={{ width: "100px" }} />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell columnTitle="Column 1" />
+                                        <GridHeaderCell columnTitle="Column 2" />
+                                        <GridHeaderCell columnTitle="Column 3" />
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
+                        </div>
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent>
+                            <GridTable>
+                                <colgroup>
+                                    <col style={{ width: "100px" }} />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <TableTbody>
+                                    <TableRow className="k-master-row">
+                                        <TableTd rowspan="3" className="k-table-td-row-span">Row span 3</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row" alt>
+                                        <TableTd>No-spanned cell</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row">
+                                        <TableTd>No-spanned cell</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row" alt>
+                                        <TableTd rowspan="2" className="k-table-td-row-span">Row span 2</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row">
+                                        <TableTd>No-spanned cell</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
+                        </GridContent>
+                    </GridContainer>
+                </GridNormal>
+            </section>
+
+            <span>Grid - adjacent and stacked cell rowspans</span>
+
+            <section>
+                <GridNormal groupingHeader={false}>
+                    <GridHeader>
+                        <div className="k-grid-header-wrap">
+                            <GridHeaderTable>
+                                <colgroup>
+                                    <col style={{ width: "100px" }} />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell columnTitle="Column 1" />
+                                        <GridHeaderCell columnTitle="Column 2" />
+                                        <GridHeaderCell columnTitle="Column 3" />
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
+                        </div>
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent>
+                            <GridTable>
+                                <colgroup>
+                                    <col style={{ width: "100px" }} />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <TableTbody>
+                                    <TableRow className="k-master-row">
+                                        <TableTd rowspan="2" className="k-table-td-row-span">Span 2</TableTd>
+                                        <TableTd rowspan="3" className="k-table-td-row-span">Span 3</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row" alt>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row">
+                                        <TableTd rowspan="2" className="k-table-td-row-span">Span 2</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row" alt>
+                                        <TableTd rowspan="2" className="k-table-td-row-span">Span 2</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-master-row">
+                                        <TableTd>No-spanned cell</TableTd>
+                                        <TableTd>No-spanned cell</TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
+                        </GridContent>
+                    </GridContainer>
+                </GridNormal>
+            </section>
 
         </div>
     </>
