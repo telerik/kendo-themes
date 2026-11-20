@@ -9,9 +9,6 @@
     .k-fab {
 
         .k-fab-icon {
-            min-width: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );
-            min-height: calc( #{$kendo-fab-font-size} * #{$kendo-fab-line-height} );
-
             > svg {
                 width: var(--kendo-icon-size-md, #{$ki-icon-size-md});
                 height: var(--kendo-icon-size-md, #{$ki-icon-size-md});
