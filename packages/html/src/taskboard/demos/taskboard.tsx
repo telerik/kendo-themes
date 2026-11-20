@@ -1,3 +1,4 @@
+import { Button } from '../../button';
 import { TaskBoard, KendoTaskBoardProps } from '../taskboard.spec';
 import { TaskBoardCard } from '../taskboard-card.spec';
 import { TaskBoardColumn } from '../taskboard-column.spec';
@@ -37,18 +38,24 @@ export const TaskboardDemo = (props: KendoTaskBoardProps & { variant?: (typeof v
         >
             <TaskBoardColumn style={{ width: "260px" }}>
                 <TaskBoardCard>
-                    <CardHeader className="k-hbox" details>
+                    <CardHeader className="k-hbox">
                         <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
+                        <span className="k-card-header-actions">
+                            <Button className="k-taskboard-card-menu-button" icon="more-vertical" fillMode="flat" aria-label="Card menu" title="Card menu" aria-haspopup="menu" aria-expanded="false" />
+                        </span>
                     </CardHeader>
                     <CardBody>
                         <p>Some quick example text to build on the card title and make up the bulk of the card content.</p>
                     </CardBody>
                 </TaskBoardCard>
                 <TaskBoardCard>
-                    <CardHeader className="k-hbox" details>
+                    <CardHeader className="k-hbox">
                         <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
+                        <span className="k-card-header-actions">
+                            <Button className="k-taskboard-card-menu-button" icon="more-vertical" fillMode="flat" aria-label="Card menu" title="Card menu" aria-haspopup="menu" aria-expanded="false" />
+                        </span>
                     </CardHeader>
                     <CardBody>
                         <p>Some quick example text to build on the card title and make up the bulk of the card content.</p>
@@ -57,18 +64,24 @@ export const TaskboardDemo = (props: KendoTaskBoardProps & { variant?: (typeof v
             </TaskBoardColumn>
             <TaskBoardColumn style={{ width: "260px" }}>
                 <TaskBoardCard>
-                    <CardHeader className="k-hbox" details>
+                    <CardHeader className="k-hbox">
                         <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
+                        <span className="k-card-header-actions">
+                            <Button className="k-taskboard-card-menu-button" icon="more-vertical" fillMode="flat" aria-label="Card menu" title="Card menu" aria-haspopup="menu" aria-expanded="false" />
+                        </span>
                     </CardHeader>
                     <CardBody>
                         <p>Some quick example text to build on the card title and make up the bulk of the card content.</p>
                     </CardBody>
                 </TaskBoardCard>
                 <TaskBoardCard>
-                    <CardHeader className="k-hbox" details>
+                    <CardHeader className="k-hbox">
                         <a className="k-card-title k-link">Template Title</a>
                         <span className="k-spacer"></span>
+                        <span className="k-card-header-actions">
+                            <Button className="k-taskboard-card-menu-button" icon="more-vertical" fillMode="flat" aria-label="Card menu" title="Card menu" aria-haspopup="menu" aria-expanded="false" />
+                        </span>
                     </CardHeader>
                     <CardBody>
                         <p>Some quick example text to build on the card title and make up the bulk of the card content.</p>

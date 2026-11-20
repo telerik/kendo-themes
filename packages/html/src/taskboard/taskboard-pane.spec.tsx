@@ -11,6 +11,8 @@ const options = {};
 export type KendoTaskBoardPaneProps = {
     header?: React.JSX.Element;
     paneHeaderId?: string;
+    title?: React.ReactNode;
+    actions?: React.JSX.Element;
 };
 
 const defaultHeader = undefined as React.JSX.Element | undefined;
@@ -27,6 +29,8 @@ export const TaskBoardPane = (
     const {
         header,
         paneHeaderId,
+        title = "Card X",
+        actions,
         ...other
     } = props;
 
@@ -36,13 +40,12 @@ export const TaskBoardPane = (
             className={classNames(
                 props.className,
                 TASKBOARDPANE_CLASSNAME,
-                "k-taskboard-edit-pane",
             )}
         >
             <div className="k-taskboard-pane-header">
                 {header || (
                     <>
-                        <div className="k-taskboard-pane-header-text" id={paneHeaderId}>Card X</div>
+                        <div className="k-taskboard-pane-header-text" id={paneHeaderId}>{title}</div>
                         <span className="k-spacer"></span>
                         <div className="k-taskboard-pane-header-actions">
                             <Button fillMode="flat" icon="x" aria-label="Close" title="Close"></Button>
@@ -56,8 +59,12 @@ export const TaskBoardPane = (
             </div>
 
             <ActionButtons alignment="end" className="k-taskboard-pane-actions">
-                <Button icon="trash">Delete</Button>
-                <Button themeColor="primary" icon="pencil">Edit</Button>
+                {actions || (
+                    <>
+                        <Button icon="trash">Delete</Button>
+                        <Button themeColor="primary" icon="pencil">Edit</Button>
+                    </>
+                )}
             </ActionButtons>
         </div>
     );
