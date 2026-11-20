@@ -88,6 +88,15 @@ const defaultOptions = {
  * @aria {role="option"} Each list item is an option.
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {role="region"} Popup container landmark; required because the popup is appended to the document body.
+ * @aria {aria-label|aria-labelledby} Popup container must have an accessible name.
+ * @aria {aria-selected="true"} Set on the selected popup list option.
+ * @aria {aria-live="polite"} Popup list no-data message is announced at the next available opportunity.
+ * @aria {role="group"} Each ListUl of a grouped popup list; the listbox role moves to the list content element.
+ * @aria {aria-labelledby} Grouped ListUl references the id of its group header.
+ * @aria {role="presentation"} Group header items and the list item icon wrapper are decorative.
+ * @aria {aria-hidden="true"} Popup list item icons are decorative.
+ * @aria {aria-multiselectable="true"} Set on the popup listbox because multiple items can be selected.
  * @ux {Tags} Selected values appear as removable tag chips inside the input.
  * @ux {Popup} Clicking the input or trigger opens a filterable dropdown list.
  * @ux {Filtering} The list narrows as the user types in the input.
@@ -236,7 +245,7 @@ export const MultiSelect: KendoComponent<KendoMultiSelectProps & KendoMultiSelec
                 >
                     <div className="k-list-container">
                         <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
-                            <ListContent aria-label="Options">
+                            <ListContent multiselectable aria-label="Options">
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
                                 <ListItem text="List item" />
@@ -258,6 +267,12 @@ MultiSelect.folderName = MULTISELECT_FOLDER_NAME;
 
 /**
  * @keyboard {Typing in the input} Focuses the matched item.
+ * @keyboard {ArrowDown} Moves the focus to the next popup list item.
+ * @keyboard {ArrowUp} Moves the focus to the previous popup list item.
+ * @keyboard {Enter} Selects the focused popup list item.
+ * @keyboard {PageUp} Scrolls the popup list up.
+ * @keyboard {PageDown} Scrolls the popup list down.
+ * @keyboard {Tab} Closes the popup and moves focus to the next focusable element.
  * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the popup.
  * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} Closes the popup.
  * @keyboard {ArrowLeft} Focuses the previous tag item in the selected list.

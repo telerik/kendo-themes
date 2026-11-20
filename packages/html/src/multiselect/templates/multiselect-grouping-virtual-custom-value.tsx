@@ -15,7 +15,7 @@ export const MultiSelectGroupingVirtualCustomValue = ({ value="Custom value", ..
             opened
             popup={
                 <List header="Group 1" virtualization customValue={<ListCustomValue text={`Use "${value}"`}/>}>
-                    <ListContent grouping virtualization listboxId={listboxId} aria-label="Options">
+                    <ListContent multiselectable grouping virtualization listboxId={listboxId} aria-label="Options">
                         <ListUl role="group" aria-labelledby={group1Id}>
                             <ListGroupItem id={group1Id}>Group 1</ListGroupItem>
                             <ListItem id={nextId('ms-grpvcv-item')}>List group 1 item 1</ListItem>
