@@ -2,12 +2,6 @@ import { DataTable, TableBody, TableFooter, TableGroupHeader, TableHeader, Table
 
 
 const style = `
-    #test-area {
-        max-width: 1200px;
-    }
-    .k-data-table {
-        width: 372px;
-    }
     .k-table-scroller {
         max-height: 200px;
     }
@@ -27,7 +21,7 @@ export default () =>(
                     <TableHeader>
                         <colgroup>
                             <col style={{ width: '50px' }} />
-                            <col style={{ width: '160px' }} />
+                            <col style={{ width: '120px' }} />
                             <col />
                         </colgroup>
                         <TableThead>
@@ -45,37 +39,37 @@ export default () =>(
                         <TableList>
                             <TableListRow>
                                 <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 1.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 1.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 2.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 2.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow className="k-first">
                                 <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 3.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 3.3"></TableListTd>
                                 <TableListTd className="k-table-group-td"><span>Group</span></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 4.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 4.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 4.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow>
                                 <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 5.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 5.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 5.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 6.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 6.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 6.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
@@ -92,7 +86,7 @@ export default () =>(
                     <TableHeader>
                         <colgroup>
                             <col style={{ width: '50px' }} />
-                            <col style={{ width: '160px' }} />
+                            <col style={{ width: '120px' }} />
                             <col />
                         </colgroup>
                         <TableThead>
@@ -110,37 +104,37 @@ export default () =>(
                         <TableList>
                             <TableListRow>
                                 <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 1.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 1.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 2.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 2.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow className="k-first">
                                 <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 3.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 3.3"></TableListTd>
                                 <TableListTd className="k-table-group-td"><span>Group</span></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 4.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 4.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 4.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow>
                                 <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 5.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 5.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 5.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 6.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 6.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 6.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
@@ -157,7 +151,7 @@ export default () =>(
                     <TableHeader>
                         <colgroup>
                             <col style={{ width: '50px' }} />
-                            <col style={{ width: '160px' }} />
+                            <col style={{ width: '120px' }} />
                             <col />
                         </colgroup>
                         <TableThead>
@@ -175,37 +169,37 @@ export default () =>(
                         <TableList>
                             <TableListRow>
                                 <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 1.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 1.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 2.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 2.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow className="k-first">
                                 <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 3.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 3.3"></TableListTd>
                                 <TableListTd className="k-table-group-td"><span>Group</span></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 4.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 4.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 4.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow>
                                 <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 5.2" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 5.2" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 5.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>
                             <TableListRow alt>
                                 <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
-                                <TableListTd text="Data 6.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                <TableListTd text="Data 6.2 (alt)" style={{ width: '120px' }}></TableListTd>
                                 <TableListTd text="Data 6.3"></TableListTd>
                                 <TableListTd className="k-table-spacer-td"></TableListTd>
                             </TableListRow>

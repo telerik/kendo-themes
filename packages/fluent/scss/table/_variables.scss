@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
 
@@ -19,8 +20,8 @@ $kendo-table-font-size: var(--kendo-table-font-size, var(--kendo-font-size)) !de
 
 $kendo-table-line-height: null !default;
 
-$kendo-table-sm-font-size: var( --kendo-table-sm-font-size, #{$kendo-table-font-size} ) !default;
-$kendo-table-sm-line-height: var( --kendo-table-sm-line-height, var(--kendo-line-height) ) !default;
+$kendo-table-sm-font-size: var( --kendo-table-sm-font-size, var(--kendo-font-size-sm) ) !default;
+$kendo-table-sm-line-height: var( --kendo-table-sm-line-height, #{math.div( 20, 14 )} ) !default;
 
 $kendo-table-md-font-size: var( --kendo-table-md-font-size, #{$kendo-table-font-size} ) !default;
 $kendo-table-md-line-height: var( --kendo-table-md-line-height, var(--kendo-line-height) ) !default;
@@ -28,8 +29,6 @@ $kendo-table-md-line-height: var( --kendo-table-md-line-height, var(--kendo-line
 $kendo-table-lg-font-size: var( --kendo-table-lg-font-size, #{$kendo-table-font-size} ) !default;
 $kendo-table-lg-line-height: var( --kendo-table-lg-line-height, var(--kendo-line-height) ) !default;
 
-/// Font weight of the table header cells.
-/// @group table
 $kendo-table-header-font-weight: var( --kendo-table-header-font-weight, var(--kendo-font-weight-normal) ) !default;
 
 $kendo-table-bg: var( --kendo-table-bg, #{k-color(surface-alt)} ) !default;
@@ -114,6 +113,7 @@ $kendo-table-cell-row-span-shadow: var( --kendo-table-cell-row-span-shadow, inse
     $kendo-table-bg: $kendo-table-bg,
     $kendo-table-text: $kendo-table-text,
     $kendo-table-border: $kendo-table-border,
+    $kendo-table-header-font-weight: $kendo-table-header-font-weight,
     $kendo-table-header-bg: $kendo-table-header-bg,
     $kendo-table-header-text: $kendo-table-header-text,
     $kendo-table-header-border: $kendo-table-header-border,

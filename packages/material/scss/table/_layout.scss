@@ -4,10 +4,4 @@
 
 @mixin kendo-table--layout() {
     @include kendo-table--layout-base();
-
-    .k-table {
-        .k-table-th {
-            font-weight: var(--kendo-font-weight-semibold);
-        }
-    }
 }

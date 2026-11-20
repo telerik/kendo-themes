@@ -1,15 +1,8 @@
 import { DataTable, TableNative } from '../../table';
 
-const styles = `
-#test-area {
-    max-width: 1200px;
-}
-`;
-
 export default () =>(
     <>
-        <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
+        <div id="test-area" className="k-d-grid k-grid-cols-4">
 
             { DataTable.options.size.map((size) => (
                 <section>

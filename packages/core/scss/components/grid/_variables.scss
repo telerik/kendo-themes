@@ -87,6 +87,10 @@ $kendo-grid-group-drop-hint-height: null !default;
 /// @group grid
 $kendo-grid-group-drop-hint-top: null !default;
 
+/// The font size of the small-sized Grid.
+/// @group grid
+$kendo-grid-sm-font-size: null !default;
+
 /// The horizontal padding of the Grid.
 /// @group grid
 $kendo-grid-sm-padding-x: null !default;
@@ -132,6 +136,10 @@ $kendo-grid-sm-selection-aggregates-padding-x: null !default;
 /// The vertical padding of the Grid.
 /// @group grid
 $kendo-grid-sm-selection-aggregates-padding-y: null !default;
+
+/// The font size of the medium-sized Grid.
+/// @group grid
+$kendo-grid-md-font-size: null !default;
 
 /// The horizontal padding of the Grid.
 /// @group grid
@@ -183,6 +191,7 @@ $kendo-grid-md-selection-aggregates-padding-y: null !default;
 /// @group grid
 $kendo-grid-sizes: (
     sm: (
+        font-size: $kendo-grid-sm-font-size,
         header-padding-x: $kendo-grid-sm-header-padding-x,
         header-padding-y: $kendo-grid-sm-header-padding-y,
         grouping-header-padding-x: $kendo-grid-sm-grouping-header-padding-x,
@@ -200,6 +209,7 @@ $kendo-grid-sizes: (
         selection-aggregates-padding-y: $kendo-grid-sm-selection-aggregates-padding-y
     ),
     md: (
+        font-size: $kendo-grid-md-font-size,
         header-padding-x: $kendo-grid-md-header-padding-x,
         header-padding-y: $kendo-grid-md-header-padding-y,
         grouping-header-padding-x: $kendo-grid-md-grouping-header-padding-x,
@@ -221,6 +231,9 @@ $kendo-grid-sizes: (
 /// The font size of the Grid header.
 /// @group grid
 $kendo-grid-header-font-size: null !default;
+/// The font weight of the Grid header.
+/// @group grid
+$kendo-grid-header-font-weight: null !default;
 /// The border color of the Grid header.
 /// @group grid
 $kendo-grid-header-first-border: null !default;
