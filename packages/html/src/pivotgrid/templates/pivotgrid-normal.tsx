@@ -26,7 +26,7 @@ export const PivotGridNormal = (props) => {
 
     return (
         <PivotGrid
-            style={{ gridTemplateRows: "111px 1fr", gridTemplateColumns: "369px 1fr" }}
+            style={{ gridTemplateRows: "141px 1fr", gridTemplateColumns: "367px 1fr" }}
             emptyCell={
                 <div className="k-pivotgrid-empty-cell" role="none">
                     <table role="none"><thead role="none"><tr role="none"><th
