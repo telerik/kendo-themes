@@ -18,7 +18,7 @@ const options = {};
 
 export type KendoTaskBoardProps = {
     toolbar?: React.JSX.Element;
-    pane?: boolean;
+    pane?: boolean | React.JSX.Element;
     panePosition?: "start" | "end";
 };
 
@@ -27,7 +27,7 @@ const defaultToolbar =
         <TaskBoardToolbar>
             <Button icon="plus">Add Column</Button>
             <span className="k-spacer"></span>
-            <Searchbox placeholder="Search..." />
+            <Searchbox placeholder="Search..." aria-label="Search" />
         </TaskBoardToolbar>
     </>;
 
@@ -41,6 +41,8 @@ export type KendoTaskBoardState = { [K in (typeof states)[number]]?: boolean };
 
 /**
  * @aria {role="application"} The TaskBoard has role=application as its inner navigation requires the use of arrows.
+ * @aria {aria-label="Task board"} The TaskBoard has an accessible name.
+ * @aria {aria-label="Search"} The toolbar search input has an accessible name.
  * @aria {role="form"} The edit Form needs the appropriate role.
  * @aria {aria-labelledby} The TaskBoard edit form must be labeled by the header text of the pane.
  * @ux {Columns} Tasks are grouped into columns that represent workflow stages.
@@ -71,6 +73,7 @@ export const TaskBoard: KendoComponent<KendoTaskBoardProps & KendoTaskBoardState
                 }),
             )}
             role="application"
+            aria-label={props["aria-label"] || "Task board"}
         >
             <div className="k-taskboard-header">
                 {toolbar}
@@ -86,7 +89,8 @@ export const TaskBoard: KendoComponent<KendoTaskBoardProps & KendoTaskBoardState
                 </div>
             </div>
 
-            {pane && (() => {
+            {pane && typeof pane !== "boolean" && pane}
+            {pane === true && (() => {
                 const paneHeaderId = nextId('taskboard-pane-header');
                 return (
                     <TaskBoardPane
