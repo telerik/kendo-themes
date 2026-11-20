@@ -91,12 +91,6 @@
         font-weight: var(--kendo-font-weight-medium, 500);
     }
 
-    // Row-span cells use an inset shadow for all borders,
-    // so zero out the td's own borders to avoid doubling.
-    .k-grid .k-table-td-row-span {
-        border-width: 0;
-    }
-
     // Pinned and sticky containers have their own borders,
     // so zero out the adjacent row td borders to avoid doubling.
     .k-grid-pinned-wrap,
