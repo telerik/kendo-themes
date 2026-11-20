@@ -48,6 +48,14 @@ These CSS classes are applied to the `k-dropdownlist` element.
 | `role="option"` | Each list item is an option. |
 | `id` | Referenced by aria-controls and aria-activedescendant on the input. |
 | `aria-activedescendant` | Points to focused item when popup is open |
+| `role="region"` | Popup container landmark; required because the popup is appended to the document body. |
+| `aria-label|aria-labelledby` | Popup container must have an accessible name. |
+| `aria-selected="true"` | Set on the selected popup list option. |
+| `aria-live="polite"` | Popup list no-data message is announced at the next available opportunity. |
+| `role="group"` | Each ListUl of a grouped popup list; the listbox role moves to the list content element. |
+| `aria-labelledby` | Grouped ListUl references the id of its group header. |
+| `role="presentation"` | Group header items and the list item icon wrapper are decorative. |
+| `aria-hidden="true"` | Popup list item icons are decorative. |
 
 #### Keyboard Navigation
 
@@ -57,6 +65,8 @@ These CSS classes are applied to the `k-dropdownlist` element.
 | `ArrowUp` | Selects the previous available item. |
 | `Home` | Selects the first available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position. |
 | `End` | Selects the last available item. Shortcut is not applicable when the current focused item is the filter textbox. Then focused is in a textbox, home and end keys control the cursor position. |
+| `PageUp` | Scrolls the popup list up. |
+| `PageDown` | Scrolls the popup list down. |
 | `Enter` | Opens popup |
 | `Space` | Opens popup |
 | `Alt/Opt(Mac) + ArrowDown` | Opens popup |

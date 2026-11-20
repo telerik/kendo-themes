@@ -17,7 +17,7 @@ export const MultiSelectSelectAllCustomValue = ({ value = "Custom Option", ...pr
                     selectAll={<ListSelectAll {...props.selectAllProps} />}
                     customValue={<ListCustomValue text={value} focus />}
                 >
-                    <ListContent listboxId={listboxId} aria-label="Options">
+                    <ListContent multiselectable listboxId={listboxId} aria-label="Options">
                         <ListItem id={nextId('ms-sav-item')} {...props.listItemProps}>Option 1</ListItem>
                         <ListItem id={nextId('ms-sav-item')} {...props.listItemProps}>Option 2</ListItem>
                         <ListItem id={nextId('ms-sav-item')} {...props.listItemProps}>Option 3</ListItem>

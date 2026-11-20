@@ -16,7 +16,7 @@ export const MultiSelectSelectAllVirtual = (props) => {
                     virtualization
                     selectAll={<ListSelectAll {...props.selectAllProps} />}
                 >
-                    <ListContent virtualization listboxId={listboxId} aria-label="Options">
+                    <ListContent multiselectable virtualization listboxId={listboxId} aria-label="Options">
                         <ListItem id={nextId('ms-sav-item')} {...props.listItemProps}>Option 1</ListItem>
                         <ListItem id={nextId('ms-sav-item')} {...props.listItemProps}>Option 2</ListItem>
                         <ListItem id={nextId('ms-sav-item')} {...props.listItemProps}>Option 3</ListItem>

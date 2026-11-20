@@ -79,6 +79,14 @@ const defaultOptions = {
  * @aria {id} Referenced by aria-controls on the input.
  * @aria {aria-autocomplete} Indicates autocomplete type
  * @aria {aria-activedescendant} Points to focused item when popup is open
+ * @aria {role="region"} Popup container landmark; required because the popup is appended to the document body.
+ * @aria {aria-label|aria-labelledby} Popup container must have an accessible name.
+ * @aria {aria-selected="true"} Set on the selected popup list option.
+ * @aria {aria-live="polite"} Popup list no-data message is announced at the next available opportunity.
+ * @aria {role="group"} Each ListUl of a grouped popup list; the listbox role moves to the list content element.
+ * @aria {aria-labelledby} Grouped ListUl references the id of its group header.
+ * @aria {role="presentation"} Group header items and the list item icon wrapper are decorative.
+ * @aria {aria-hidden="true"} Popup list item icons are decorative.
  * @ux {Popup} Opens a suggestion list when the user starts typing.
  * @ux {Filtering} Narrows the suggestion list as the user types.
  * @ux {Selection} Choosing a suggestion fills the input and closes the popup.
@@ -228,6 +236,11 @@ Autocomplete.folderName = AUTOCOMPLETE_FOLDER_NAME;
 
 /**
  * @keyboard {Typing in the input} Focuses the matched item.
+ * @keyboard {ArrowDown} Moves the focus to the next popup list item.
+ * @keyboard {ArrowUp} Moves the focus to the previous popup list item.
+ * @keyboard {PageUp} Scrolls the popup list up.
+ * @keyboard {PageDown} Scrolls the popup list down.
+ * @keyboard {Tab} Closes the popup and moves focus to the next focusable element.
  * @keyboard {Alt/Opt(Mac) + ArrowDown} Opens the popup.
  * @keyboard {Alt/Opt(Mac) + ArrowUp or Escape} Closes the popup.
  * @keyboard {Escape} Resets the value in the input when the popup is closed.

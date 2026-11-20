@@ -9,6 +9,7 @@ export type KendoListContentProps = {
     'aria-label'?: string;
     'aria-labelledby'?: string;
     listboxId?: string;
+    multiselectable?: boolean;
 };
 
 /**
@@ -16,6 +17,7 @@ export type KendoListContentProps = {
  * @aria {aria-label} Accessible name for the grouped listbox.
  * @aria {aria-labelledby} References an external label element.
  * @aria {id} Referenced by aria-controls on the associated combobox input.
+ * @aria {aria-multiselectable="true"} Set on the listbox when multiple items can be selected.
  */
 export const ListContent = (
     props: KendoListContentProps &
@@ -27,6 +29,7 @@ export const ListContent = (
         'aria-label': ariaLabel,
         'aria-labelledby': ariaLabelledby,
         listboxId,
+        multiselectable,
         ...other
     } = props;
 
@@ -38,8 +41,9 @@ export const ListContent = (
             id={grouping ? listboxId : undefined}
             aria-label={grouping ? ariaLabel : undefined}
             aria-labelledby={grouping ? ariaLabelledby : undefined}
+            aria-multiselectable={grouping && multiselectable ? 'true' : undefined}
         >
-            {grouping ? props.children : <ListUl role="listbox" id={listboxId} aria-label={ariaLabel} aria-labelledby={ariaLabelledby}>{props.children}</ListUl>}
+            {grouping ? props.children : <ListUl role="listbox" id={listboxId} aria-label={ariaLabel} aria-labelledby={ariaLabelledby} aria-multiselectable={multiselectable ? 'true' : undefined}>{props.children}</ListUl>}
             { virtualization && <div className="k-height-container"><div></div></div> }
         </div>
     );
