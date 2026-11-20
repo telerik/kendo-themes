@@ -14,6 +14,11 @@ const expected = [
 ];
 const unexpected = [
     "kendo-fab-border-width", // Variable customizations do not work.
+    "kendo-fab-outline-style", // Variable customizations do not work. Material FAB has no outline styles.
+    "kendo-fab-outline-width", // Variable customizations do not work. Material FAB has no outline styles.
+    "kendo-fab-item-outline-style", // Variable customizations do not work. Material FAB has no outline styles.
+    "kendo-fab-item-outline-width", // Variable customizations do not work. Material FAB has no outline styles.
+    "kendo-fab-item-outline-color", // Variable customizations do not work. Material FAB has no outline styles.
 ];
 
 testKendoComponent(component, group, className, dependencyClassNames, [...expected, ...unexpected]);

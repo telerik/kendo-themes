@@ -12,23 +12,42 @@ $kendo-fab-border-width: var( --kendo-fab-border-width, 1px ) !default;
 $kendo-fab-font-family: var( --kendo-fab-font-family, var(--kendo-font-family) ) !default;
 $kendo-fab-font-size: var( --kendo-fab-font-size, var(--kendo-font-size) ) !default;
 $kendo-fab-line-height: var( --kendo-fab-line-height, var(--kendo-line-height) ) !default;
+$kendo-fab-sm-line-height: var( --kendo-fab-sm-line-height, var(--kendo-line-height-lg) ) !default;
+$kendo-fab-md-line-height: var( --kendo-fab-md-line-height, var(--kendo-line-height) ) !default;
+$kendo-fab-lg-line-height: var( --kendo-fab-lg-line-height, var(--kendo-line-height-sm) ) !default;
 
-$kendo-fab-sm-padding-x: var( --kendo-fab-sm-padding-x, k-spacing(1.5) ) !default;
-$kendo-fab-md-padding-x: var( --kendo-fab-md-padding-x, k-spacing(4) ) !default;
+$kendo-fab-sm-font-size: var( --kendo-fab-sm-font-size, var(--kendo-font-size-sm) ) !default;
+$kendo-fab-md-font-size: null !default;
+$kendo-fab-lg-font-size: var( --kendo-fab-lg-font-size, var(--kendo-font-size-lg) ) !default;
+
+$kendo-fab-sm-font-weight: var( --kendo-fab-sm-font-weight, var(--kendo-font-weight-normal) ) !default;
+$kendo-fab-md-font-weight: var( --kendo-fab-md-font-weight, var(--kendo-font-weight-semibold) ) !default;
+$kendo-fab-lg-font-weight: var( --kendo-fab-lg-font-weight, var(--kendo-font-weight-semibold) ) !default;
+
+$kendo-fab-sm-letter-spacing: null !default;
+$kendo-fab-md-letter-spacing: null !default;
+$kendo-fab-lg-letter-spacing: null !default;
+
+$kendo-fab-sm-icon-container-size: null !default;
+$kendo-fab-md-icon-container-size: null !default;
+$kendo-fab-lg-icon-container-size: var( --kendo-fab-lg-icon-container-size, k-spacing(6) ) !default;
+$kendo-fab-sm-icon-size: null !default;
+$kendo-fab-md-icon-size: null !default;
+$kendo-fab-lg-icon-size: var( --kendo-fab-lg-icon-size, k-spacing(5) ) !default;
+$kendo-fab-sm-icon-stroke-width: null !default;
+$kendo-fab-md-icon-stroke-width: null !default;
+$kendo-fab-lg-icon-stroke-width: var( --kendo-fab-lg-icon-stroke-width, 2 ) !default;
+
+$kendo-fab-sm-padding-x: var( --kendo-fab-sm-padding-x, k-spacing(2.5) ) !default;
+$kendo-fab-md-padding-x: var( --kendo-fab-md-padding-x, k-spacing(4.5) ) !default;
 $kendo-fab-lg-padding-x: var( --kendo-fab-lg-padding-x, k-spacing(6) ) !default;
 
-$kendo-fab-sm-padding-y: var( --kendo-fab-sm-padding-y, k-spacing(1.5) ) !default;
-$kendo-fab-md-padding-y: var( --kendo-fab-md-padding-y, k-spacing(4) ) !default;
+$kendo-fab-sm-padding-y: var( --kendo-fab-sm-padding-y, k-spacing(2.5) ) !default;
+$kendo-fab-md-padding-y: var( --kendo-fab-md-padding-y, k-spacing(4.5) ) !default;
 $kendo-fab-lg-padding-y: var( --kendo-fab-lg-padding-y, k-spacing(6) ) !default;
 
-/// The offset of the focused FAB.
-/// @group floating-action-button
 $kendo-fab-focus-offset: var( --kendo-fab-focus-offset, 2px ) !default;
-/// The outline width of the focused FAB.
-/// @group floating-action-button
 $kendo-fab-focus-outline-width: var( --kendo-fab-focus-outline-width, 2px ) !default;
-/// The outline style of the focused FAB.
-/// @group floating-action-button
 $kendo-fab-focus-outline-style: var( --kendo-fab-focus-outline-style, #{$kendo-button-focus-outline-style} ) !default;
 
 $kendo-fab-icon-padding-x: var( --kendo-fab-icon-padding-x, k-spacing(0.5) ) !default;
@@ -41,22 +60,16 @@ $kendo-fab-items-padding-y: var( --kendo-fab-items-padding-y, k-spacing(4) ) !de
 $kendo-fab-item-text-padding-x: var( --kendo-fab-item-text-padding-x, k-spacing(1.5) ) !default;
 $kendo-fab-item-text-padding-y: var( --kendo-fab-item-text-padding-y, k-spacing(1) ) !default;
 $kendo-fab-item-text-border-width: var( --kendo-fab-item-text-border-width, 1px ) !default;
-/// The border style of the FAB item text.
-/// @group floating-action-button
 $kendo-fab-item-text-border-style: var( --kendo-fab-item-text-border-style, solid ) !default;
 $kendo-fab-item-text-border-radius: var( --kendo-fab-item-text-border-radius, #{k-border-radius(md)} ) !default;
 $kendo-fab-item-text-font-size: var( --kendo-fab-item-text-font-size, var(--kendo-font-size-xs) ) !default;
 $kendo-fab-item-text-line-height: var( --kendo-fab-item-text-line-height, var(--kendo-line-height-xs) ) !default;
 
-/// The outline color of the focused FAB item.
-/// @group floating-action-button
 $kendo-fab-item-focus-outline: var( --kendo-fab-item-focus-outline, #{$kendo-button-focus-outline} ) !default;
 
 $kendo-fab-item-icon-padding-x: var( --kendo-fab-item-icon-padding-x, k-spacing(2) ) !default;
 $kendo-fab-item-icon-padding-y: var( --kendo-fab-item-icon-padding-y, $kendo-fab-item-icon-padding-x ) !default;
 $kendo-fab-item-icon-border-width: var( --kendo-fab-item-icon-border-width, 1px ) !default;
-/// The border style of the FAB item icon.
-/// @group floating-action-button
 $kendo-fab-item-icon-border-style: var( --kendo-fab-item-icon-border-style, solid ) !default;
 $kendo-fab-item-icon-border-radius: var( --kendo-fab-item-icon-border-radius, 50% ) !default;
 
@@ -64,61 +77,71 @@ $kendo-fab-sizes: (
     sm: (
         padding-x: $kendo-fab-sm-padding-x,
         padding-y: $kendo-fab-sm-padding-y,
-        gap: k-spacing(1)
+        line-height: $kendo-fab-sm-line-height,
+        font-size: $kendo-fab-sm-font-size,
+        font-weight: $kendo-fab-sm-font-weight,
+        letter-spacing: $kendo-fab-sm-letter-spacing,
+        icon-container-size: $kendo-fab-sm-icon-container-size,
+        icon-size: $kendo-fab-sm-icon-size,
+        icon-stroke-width: $kendo-fab-sm-icon-stroke-width,
+        gap: k-spacing(0.5)
     ),
     md: (
         padding-x: $kendo-fab-md-padding-x,
         padding-y: $kendo-fab-md-padding-y,
-        gap: k-spacing(1.5)
+        line-height: $kendo-fab-md-line-height,
+        font-size: $kendo-fab-md-font-size,
+        font-weight: $kendo-fab-md-font-weight,
+        letter-spacing: $kendo-fab-md-letter-spacing,
+        icon-container-size: $kendo-fab-md-icon-container-size,
+        icon-size: $kendo-fab-md-icon-size,
+        icon-stroke-width: $kendo-fab-md-icon-stroke-width,
+        gap: k-spacing(0.5)
     ),
     lg: (
         padding-x: $kendo-fab-lg-padding-x,
         padding-y: $kendo-fab-lg-padding-y,
-        gap: k-spacing(1.5)
+        line-height: $kendo-fab-lg-line-height,
+        font-size: $kendo-fab-lg-font-size,
+        font-weight: $kendo-fab-lg-font-weight,
+        letter-spacing: $kendo-fab-lg-letter-spacing,
+        icon-container-size: $kendo-fab-lg-icon-container-size,
+        icon-size: $kendo-fab-lg-icon-size,
+        icon-stroke-width: $kendo-fab-lg-icon-stroke-width,
+        gap: k-spacing(0.5)
     )
 ) !default;
 
 $kendo-fab-shadow: k-elevation(2) !default;
+$kendo-fab-disabled-shadow: null !default;
+$kendo-fab-active-shadow: null !default;
+$kendo-fab-outline-style: null !default;
+$kendo-fab-outline-width: null !default;
 
 $kendo-fab-item-text: var( --kendo-fab-item-text, k-color(on-base) ) !default;
 $kendo-fab-item-bg: var( --kendo-fab-item-bg, k-color(base) ) !default;
 $kendo-fab-item-border: var( --kendo-fab-item-border, color-mix(in srgb, k-color(border) 26%, transparent) ) !default;
-/// The text color of the hovered FAB item.
-/// @group floating-action-button
+$kendo-fab-item-icon-text: null !default;
+$kendo-fab-item-icon-bg: null !default;
+$kendo-fab-item-icon-border: null !default;
+$kendo-fab-item-shadow: null !default;
+$kendo-fab-item-disabled-shadow: null !default;
+$kendo-fab-item-active-shadow: null !default;
+$kendo-fab-item-outline-style: null !default;
+$kendo-fab-item-outline-width: null !default;
+$kendo-fab-item-outline-color: null !default;
 $kendo-fab-item-hover-text: var( --kendo-fab-item-hover-text, k-color(on-base) ) !default;
-/// The background color of the hovered FAB item.
-/// @group floating-action-button
 $kendo-fab-item-hover-bg: var( --kendo-fab-item-hover-bg, k-color(base-hover) ) !default;
-/// The border color of the hovered FAB item.
-/// @group floating-action-button
 $kendo-fab-item-hover-border: var( --kendo-fab-item-hover-border, color-mix( in srgb, k-color(border) 34%, transparent ) ) !default;
-/// The text color of the focused FAB item.
-/// @group floating-action-button
 $kendo-fab-item-focus-text: var( --kendo-fab-item-focus-text, k-color(on-base) ) !default;
-/// The background color of the focused FAB item.
-/// @group floating-action-button
 $kendo-fab-item-focus-bg: var( --kendo-fab-item-focus-bg, k-color(base) ) !default;
-/// The border color of the focused FAB item.
-/// @group floating-action-button
 $kendo-fab-item-focus-border: var( --kendo-fab-item-focus-border, $kendo-fab-item-border ) !default;
-/// The text color of the active FAB item.
-/// @group floating-action-button
 $kendo-fab-item-active-text: var( --kendo-fab-item-active-text, k-color(on-base) ) !default;
-/// The background color of the active FAB item.
-/// @group floating-action-button
 $kendo-fab-item-active-bg: var( --kendo-fab-item-active-bg, k-color(base-active) ) !default;
-/// The border color of the active FAB item.
-/// @group floating-action-button
 $kendo-fab-item-active-border: var( --kendo-fab-item-active-border, $kendo-fab-item-border ) !default;
 
-/// The background of the disabled FAB.
-/// @group floating-action-button
 $kendo-fab-disabled-bg: var( --kendo-fab-disabled-bg, color-mix(in srgb, k-color(on-base) 7%, transparent) ) !default;
-/// The text color of the disabled FAB.
-/// @group floating-action-button
 $kendo-fab-disabled-text: var( --kendo-fab-disabled-text, color-mix(in srgb, k-color(on-base) 30%, transparent) ) !default;
-/// The border color of the disabled FAB.
-/// @group floating-action-button
 $kendo-fab-disabled-border: var( --kendo-fab-disabled-border, color-mix(in srgb, k-color(on-base) 14%, transparent) ) !default;
 
 $kendo-fab-generating-opacity: var( --kendo-fab-generating-opacity, 60% ) !default;
@@ -132,6 +155,27 @@ $kendo-fab-generating-opacity: var( --kendo-fab-generating-opacity, 60% ) !defau
     $kendo-fab-font-family: $kendo-fab-font-family,
     $kendo-fab-font-size: $kendo-fab-font-size,
     $kendo-fab-line-height: $kendo-fab-line-height,
+    $kendo-fab-sm-line-height: $kendo-fab-sm-line-height,
+    $kendo-fab-md-line-height: $kendo-fab-md-line-height,
+    $kendo-fab-lg-line-height: $kendo-fab-lg-line-height,
+    $kendo-fab-sm-font-size: $kendo-fab-sm-font-size,
+    $kendo-fab-md-font-size: $kendo-fab-md-font-size,
+    $kendo-fab-lg-font-size: $kendo-fab-lg-font-size,
+    $kendo-fab-sm-font-weight: $kendo-fab-sm-font-weight,
+    $kendo-fab-md-font-weight: $kendo-fab-md-font-weight,
+    $kendo-fab-lg-font-weight: $kendo-fab-lg-font-weight,
+    $kendo-fab-sm-letter-spacing: $kendo-fab-sm-letter-spacing,
+    $kendo-fab-md-letter-spacing: $kendo-fab-md-letter-spacing,
+    $kendo-fab-lg-letter-spacing: $kendo-fab-lg-letter-spacing,
+    $kendo-fab-sm-icon-container-size: $kendo-fab-sm-icon-container-size,
+    $kendo-fab-md-icon-container-size: $kendo-fab-md-icon-container-size,
+    $kendo-fab-lg-icon-container-size: $kendo-fab-lg-icon-container-size,
+    $kendo-fab-sm-icon-size: $kendo-fab-sm-icon-size,
+    $kendo-fab-md-icon-size: $kendo-fab-md-icon-size,
+    $kendo-fab-lg-icon-size: $kendo-fab-lg-icon-size,
+    $kendo-fab-sm-icon-stroke-width: $kendo-fab-sm-icon-stroke-width,
+    $kendo-fab-md-icon-stroke-width: $kendo-fab-md-icon-stroke-width,
+    $kendo-fab-lg-icon-stroke-width: $kendo-fab-lg-icon-stroke-width,
     $kendo-fab-sm-padding-x: $kendo-fab-sm-padding-x,
     $kendo-fab-md-padding-x: $kendo-fab-md-padding-x,
     $kendo-fab-lg-padding-x: $kendo-fab-lg-padding-x,
@@ -144,6 +188,10 @@ $kendo-fab-generating-opacity: var( --kendo-fab-generating-opacity, 60% ) !defau
     $kendo-fab-items-padding-x: $kendo-fab-items-padding-x,
     $kendo-fab-items-padding-y: $kendo-fab-items-padding-y,
     $kendo-fab-shadow: $kendo-fab-shadow,
+    $kendo-fab-disabled-shadow: $kendo-fab-disabled-shadow,
+    $kendo-fab-active-shadow: $kendo-fab-active-shadow,
+    $kendo-fab-outline-style: $kendo-fab-outline-style,
+    $kendo-fab-outline-width: $kendo-fab-outline-width,
     $kendo-fab-item-text-padding-x: $kendo-fab-item-text-padding-x,
     $kendo-fab-item-text-padding-y: $kendo-fab-item-text-padding-y,
     $kendo-fab-item-text-border-width: $kendo-fab-item-text-border-width,
@@ -158,5 +206,14 @@ $kendo-fab-generating-opacity: var( --kendo-fab-generating-opacity, 60% ) !defau
     $kendo-fab-item-text: $kendo-fab-item-text,
     $kendo-fab-item-bg: $kendo-fab-item-bg,
     $kendo-fab-item-border: $kendo-fab-item-border,
+    $kendo-fab-item-icon-text: $kendo-fab-item-icon-text,
+    $kendo-fab-item-icon-bg: $kendo-fab-item-icon-bg,
+    $kendo-fab-item-icon-border: $kendo-fab-item-icon-border,
+    $kendo-fab-item-shadow: $kendo-fab-item-shadow,
+    $kendo-fab-item-disabled-shadow: $kendo-fab-item-disabled-shadow,
+    $kendo-fab-item-active-shadow: $kendo-fab-item-active-shadow,
+    $kendo-fab-item-outline-style: $kendo-fab-item-outline-style,
+    $kendo-fab-item-outline-width: $kendo-fab-item-outline-width,
+    $kendo-fab-item-outline-color: $kendo-fab-item-outline-color,
     $kendo-fab-generating-opacity: $kendo-fab-generating-opacity
 );
