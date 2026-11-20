@@ -21,6 +21,8 @@ These CSS classes are applied to the `k-taskboard` element.
 | Attribute | Description |
 | --- | --- |
 | `role="application"` | The TaskBoard has role=application as its inner navigation requires the use of arrows. |
+| `aria-label="Task board"` | The TaskBoard has an accessible name. |
+| `aria-label="Search"` | The toolbar search input has an accessible name. |
 | `role="form"` | The edit Form needs the appropriate role. |
 | `aria-labelledby` | The TaskBoard edit form must be labeled by the header text of the pane. |
 
@@ -56,6 +58,17 @@ These CSS classes are applied to the `k-taskboard` element.
 | Drag and drop | Cards are dragged between columns to update their status. |
 | Add card | Each column has an add button to create a new task. |
 | Edit card | Clicking a card opens an edit form for the task details. |
+
+### TaskBoardCard
+
+#### ARIA Attributes
+
+| Attribute | Description |
+| --- | --- |
+| `aria-disabled="true"` | Rendered on a disabled card. |
+| `aria-label="Card menu"` | The icon-only card menu button is named "Card menu". |
+| `aria-haspopup="menu"` | The card menu button opens a menu. |
+| `aria-expanded="true"|"false"` | Reflects whether the card menu is open. |
 
 ### Testing
 
