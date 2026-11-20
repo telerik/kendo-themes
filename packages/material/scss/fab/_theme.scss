@@ -5,6 +5,7 @@
 
 
 @mixin kendo-fab--theme() {
+    @include kendo-fab--theme-base();
 
     .k-fab {
         // Fillmode: solid
@@ -17,7 +18,7 @@
                 // Normal state
                 #{k-when-default($kendo-fab-default-theme-color, $name)}
                 &.k-fab-#{$name} {
-                    @include box-shadow($kendo-fab-shadow);
+                    outline: none;
                     border-color: k-color(#{$name}-subtle);
                     color: k-color(#{$name}-on-subtle);
                     background-color: k-color(#{$name}-subtle);
@@ -33,6 +34,7 @@
                     // Focus state
                     &.k-focus,
                     &:focus {
+                        outline: none;
                         border-color: k-color(#{$name}-subtle-active);
                         background-color: k-color(#{$name}-subtle-active);
                     }
@@ -58,14 +60,6 @@
                 }
             }
 
-            // Generating state
-            #{k-when-default($kendo-fab-default-theme-color, "primary")}
-            &.k-fab-primary {
-                &.k-generating {
-                    animation: k-fab-generating 1.5s ease-in-out 0.5s infinite;
-                }
-            }
-
             @keyframes k-fab-generating {
                 0% {
                     color: k-color(primary-on-subtle);
@@ -86,22 +80,8 @@
         }
     }
 
-    // Items
-    .k-fab-item-text {
-        @include fill(
-            $kendo-fab-item-text,
-            $kendo-fab-item-bg,
-            $kendo-fab-item-border
-        );
-        @include box-shadow($kendo-fab-item-shadow);
-    }
     .k-fab-item-icon {
-        @include fill(
-            $kendo-fab-item-icon-text,
-            $kendo-fab-item-icon-bg,
-            $kendo-fab-item-icon-border
-        );
-        @include box-shadow($kendo-fab-item-shadow);
+        outline: none;
     }
 
     // Hover state
@@ -113,6 +93,13 @@
     }
 
     // Focus state
+    .k-fab-item:focus .k-fab-item-text,
+    .k-fab-item:focus .k-fab-item-icon,
+    .k-fab-item.k-focus .k-fab-item-text,
+    .k-fab-item.k-focus .k-fab-item-icon {
+        outline: none;
+    }
+
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
         border-color: k-color(base-active);
@@ -123,7 +110,6 @@
     // Active state
     .k-fab-item.k-active .k-fab-item-icon,
     .k-fab-item:active .k-fab-item-icon {
-        @include box-shadow($kendo-fab-item-active-shadow);
         border-color: k-color(base);
         background-color: k-color(base);
     }
@@ -140,10 +126,4 @@
             color: color-mix(in srgb, k-color(on-base) 60%, transparent);
         }
     }
-
-    // Popup
-    .k-fab-popup {
-        @include box-shadow( none );
-    }
-
 }
