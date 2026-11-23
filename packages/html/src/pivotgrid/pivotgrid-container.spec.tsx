@@ -1,4 +1,4 @@
-import { classNames, variantClassNames } from '../misc';
+import { classNames } from '../misc';
 import { KendoComponent } from '../_types/component';
 import { PIVOTGRID_FOLDER_NAME, PIVOTGRID_MODULE_NAME } from './constants';
 
@@ -9,23 +9,27 @@ const states = [];
 const options = {};
 
 export type KendoPivotGridContainerProps = {
-    position?: "left" | "bottom" | "right" | "top";
+    orientation?: "horizontal" | "vertical";
 };
 
 const defaultOptions = {
-    position: "right"
+    orientation: "vertical" as KendoPivotGridContainerProps["orientation"]
 };
 
 /**
  * Groups the PivotGrid with its configurator panel and configurator button,
  * so they share a single outer border and border radius.
+ *
+ * The flex axis follows the configurator orientation: `k-flex-row` for a vertical configurator
+ * and `k-flex-col` for a horizontal one. The configurator and the button are placed
+ * before the PivotGrid in the DOM to appear at the start, and after it to appear at the end.
  */
 export const PivotGridContainer: KendoComponent<KendoPivotGridContainerProps & React.HTMLAttributes<HTMLDivElement>> = (
     props: KendoPivotGridContainerProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        position = defaultOptions.position,
+        orientation = defaultOptions.orientation,
         ...other
     } = props;
 
@@ -35,7 +39,8 @@ export const PivotGridContainer: KendoComponent<KendoPivotGridContainerProps & R
             className={classNames(
                 props.className,
                 PIVOTGRIDCONTAINER_CLASSNAME,
-                variantClassNames(PIVOTGRIDCONTAINER_CLASSNAME, `pivotgrid-container-${position}`)
+                'k-d-flex',
+                orientation === "horizontal" ? 'k-flex-col' : 'k-flex-row'
             )}>
             {props.children}
         </div>
