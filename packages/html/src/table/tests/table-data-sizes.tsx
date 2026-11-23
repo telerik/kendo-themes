@@ -2,12 +2,6 @@ import { DataTable, DataTableNormal } from '../../table';
 
 
 const style = `
-    #test-area {
-        max-width: 1200px;
-    }
-    .k-data-table {
-        width: 280px;
-    }
     .k-table-scroller {
         max-height: 200px;
     }

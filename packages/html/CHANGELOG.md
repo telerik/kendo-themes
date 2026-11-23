@@ -1,3 +1,15 @@
+## 14.10.2-dev.3 (2026-11-23)
+
+### 🩹 Fixes
+
+- **html:** alternate row 4 and fix title in grid row pinning adaptive test ([9212845a2a](https://github.com/telerik/kendo-themes/commit/9212845a2a))
+- **html:** add edit-row class to gantt popup grid editor rows ([39b420bb66](https://github.com/telerik/kendo-themes/commit/39b420bb66))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.10.2-dev.2 (2026-11-20)
 
 This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.

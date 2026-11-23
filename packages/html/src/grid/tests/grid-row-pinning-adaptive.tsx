@@ -80,7 +80,7 @@ export default () => (
                     <TableTd>Canada</TableTd>
                     <TableTd>1/5</TableTd>
                   </TableRow>
-                  <TableRow className="k-master-row">
+                  <TableRow className="k-master-row" alt>
                     <TableTd>Annecorinne Morter</TableTd>
                     <TableTd>Professor</TableTd>
                     <TableTd>Australia</TableTd>
@@ -143,7 +143,7 @@ export default () => (
                     <TableTd>Canada</TableTd>
                     <TableTd>1/5</TableTd>
                   </TableRow>
-                  <TableRow className="k-master-row">
+                  <TableRow className="k-master-row" alt>
                     <TableTd>Annecorinne Morter</TableTd>
                     <TableTd>Professor</TableTd>
                     <TableTd>Australia</TableTd>
@@ -156,7 +156,7 @@ export default () => (
         </Grid>
         <ActionSheetNormal
           adaptive
-          header={<ActionSheetHeader actionsEnd={<Button icon="check" size="large" fillMode="flat" />} title="Row Content Menu" />}
+          header={<ActionSheetHeader actionsEnd={<Button icon="check" size="large" fillMode="flat" />} title="Row context menu" />}
           footer={
             <ActionSheetFooter>
               <Button icon="cancel" size="large">
@@ -231,7 +231,7 @@ export default () => (
                     <TableTd>Canada</TableTd>
                     <TableTd>1/5</TableTd>
                   </TableRow>
-                  <TableRow className="k-master-row">
+                  <TableRow className="k-master-row" alt>
                     <TableTd>Annecorinne Morter</TableTd>
                     <TableTd>Professor</TableTd>
                     <TableTd>Australia</TableTd>
@@ -336,7 +336,7 @@ export default () => (
                     <TableTd>Canada</TableTd>
                     <TableTd>1/5</TableTd>
                   </TableRow>
-                  <TableRow className="k-master-row">
+                  <TableRow className="k-master-row" alt>
                     <TableTd>Annecorinne Morter</TableTd>
                     <TableTd>Professor</TableTd>
                     <TableTd>Australia</TableTd>

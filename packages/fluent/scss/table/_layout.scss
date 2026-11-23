@@ -6,10 +6,6 @@
 @mixin kendo-table--layout() {
     @include kendo-table--layout-base();
 
-    .k-table-th {
-        font-weight: $kendo-table-header-font-weight;
-    }
-
     .k-table-list {
 
         .k-table-row:last-child .k-table-td {

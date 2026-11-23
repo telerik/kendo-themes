@@ -15,7 +15,7 @@ $kendo-table-font-size: var(--kendo-font-size) !default;
 $kendo-table-line-height: null !default;
 
 $kendo-table-sm-cell-padding-x: k-spacing(2) !default;
-$kendo-table-sm-cell-padding-y: k-spacing(1) !default;
+$kendo-table-sm-cell-padding-y: calc( #{k-spacing(1)} + 1px ) !default;
 
 $kendo-table-md-cell-padding-x: k-spacing(3) !default;
 $kendo-table-md-cell-padding-y: k-spacing(2) !default;
@@ -38,6 +38,7 @@ $kendo-table-text: k-color(on-app-surface) !default;
 $kendo-table-border: k-color(border) !default;
 
 
+$kendo-table-header-font-weight: var(--kendo-font-weight-medium) !default;
 $kendo-table-header-bg: k-color(surface) !default;
 $kendo-table-header-text: k-color(on-app-surface) !default;
 $kendo-table-header-border: k-color(border) !default;
@@ -102,6 +103,7 @@ $kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
     $kendo-table-bg: $kendo-table-bg,
     $kendo-table-text: $kendo-table-text,
     $kendo-table-border: $kendo-table-border,
+    $kendo-table-header-font-weight: $kendo-table-header-font-weight,
     $kendo-table-header-bg: $kendo-table-header-bg,
     $kendo-table-header-text: $kendo-table-header-text,
     $kendo-table-header-border: $kendo-table-header-border,
