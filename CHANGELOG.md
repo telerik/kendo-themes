@@ -1,3 +1,15 @@
+## 14.10.2-dev.3 (2026-11-23)
+
+### 🚀 Features
+
+- **grid:** update grid editing padding, header font weight and font size ([41f0a84531](https://github.com/telerik/kendo-themes/commit/41f0a84531))
+
+### 🩹 Fixes
+
+- **html:** add edit-row class to gantt popup grid editor rows ([39b420bb66](https://github.com/telerik/kendo-themes/commit/39b420bb66))
+- **html:** alternate row 4 and fix title in grid row pinning adaptive test ([9212845a2a](https://github.com/telerik/kendo-themes/commit/9212845a2a))
+- **table:** use a smaller font size for the small table size ([e7514b336a](https://github.com/telerik/kendo-themes/commit/e7514b336a))
+
 ## 14.10.2-dev.2 (2026-11-20)
 
 ### 🩹 Fixes

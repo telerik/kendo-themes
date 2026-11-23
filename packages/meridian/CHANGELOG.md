@@ -1,3 +1,18 @@
+## 14.10.2-dev.3 (2026-11-23)
+
+### 🚀 Features
+
+- **grid:** update grid editing padding, header font weight and font size ([41f0a84531](https://github.com/telerik/kendo-themes/commit/41f0a84531))
+
+### 🩹 Fixes
+
+- **table:** use a smaller font size for the small table size ([e7514b336a](https://github.com/telerik/kendo-themes/commit/e7514b336a))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.10.2-dev.2 (2026-11-20)
 
 ### 🩹 Fixes
