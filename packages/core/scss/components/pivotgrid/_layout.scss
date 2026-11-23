@@ -196,11 +196,6 @@
         box-sizing: border-box;
         cursor: pointer;
         user-select: none;
-
-        // Deprecated: utility-class wrapper, see .k-pivotgrid-container-left
-        .k-flex-row-reverse & > span {
-            transform: rotate(-180deg);
-        }
     }
 
 
@@ -352,37 +347,6 @@
         min-width: $kendo-pivotgrid-configurator-vertical-width;
     }
 
-    // Deprecated: utility-class wrapper (k-flex-row/k-flex-row-reverse), use .k-pivotgrid-container instead
-    // TODO: remove
-    .k-flex-row {
-        .k-pivotgrid-configurator-overlay {
-            inset-inline-end: $kendo-pivotgrid-configurator-button-size;
-        }
-
-        &-reverse .k-pivotgrid-configurator-overlay {
-            inset-inline-start: $kendo-pivotgrid-configurator-button-size;
-        }
-    }
-
-    .k-flex-row,
-    .k-flex-row-reverse {
-        .k-pivotgrid-configurator-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            writing-mode: vertical-rl;
-
-            .k-icon {
-                vertical-align: baseline;
-            }
-        }
-
-        .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-            border-inline-end-width: 0;
-            border-inline-start-width: 0;
-        }
-    }
-
     // Horizontal Layout
     .k-pivotgrid-configurator-horizontal {
         width: 100%;
@@ -434,39 +398,16 @@
         }
     }
 
-    // Deprecated: utility-class wrapper (k-flex-col/k-flex-col-reverse), use .k-pivotgrid-container instead
-    // TODO: remove
-    .k-flex-col {
-        .k-pivotgrid-configurator-overlay {
-            inset-block-end: $kendo-pivotgrid-configurator-button-size;
-        }
-
-        &-reverse .k-pivotgrid-configurator-overlay {
-            inset-block-start: $kendo-pivotgrid-configurator-button-size;
-        }
-    }
-
-
-    .k-flex-col,
-    .k-flex-col-reverse {
-        .k-pivotgrid-configurator-button {
-            text-align: center;
-        }
-
-        .k-pivotgrid-configurator-horizontal.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-            border-block-start-width: 0;
-            border-block-end-width: 0;
-        }
-    }
-
-
     // Pivotgrid container
+    // The flex axis comes from the utility class on the container:
+    // - .k-flex-row for a vertical configurator;
+    // - .k-flex-col for a horizontal configurator.
+    // The configurator and the button sit at the start by default and at the end when they follow the grid in the DOM.
     .k-pivotgrid-container {
         border-width: $kendo-pivotgrid-border-width;
         border-style: solid;
         border-radius: $kendo-pivotgrid-border-radius;
         box-sizing: border-box;
-        display: flex;
         position: relative;
         overflow: hidden;
 
@@ -477,8 +418,7 @@
         }
     }
 
-    .k-pivotgrid-container-right,
-    .k-pivotgrid-container-left {
+    .k-pivotgrid-container.k-flex-row {
         .k-pivotgrid-configurator-button {
             display: flex;
             align-items: center;
@@ -488,69 +428,57 @@
             .k-icon {
                 vertical-align: baseline;
             }
+
+            > span {
+                transform: rotate(-180deg);
+            }
         }
 
         .k-pivotgrid-configurator-overlay {
             inset-block: 0;
+            inset-inline-start: $kendo-pivotgrid-configurator-button-size;
         }
-    }
-
-    .k-pivotgrid-container-bottom,
-    .k-pivotgrid-container-top {
-        .k-pivotgrid-configurator-button {
-            text-align: center;
-        }
-    }
-
-    .k-pivotgrid-container-right {
-        flex-direction: row;
-
-        .k-pivotgrid-configurator-panel {
-            border-inline-start-width: $kendo-pivotgrid-configurator-border-width;
-        }
-
-        .k-pivotgrid-configurator-overlay {
-            inset-inline-end: $kendo-pivotgrid-configurator-button-size;
-        }
-    }
-
-    .k-pivotgrid-container-left {
-        flex-direction: row-reverse;
 
         .k-pivotgrid-configurator-panel {
             border-inline-end-width: $kendo-pivotgrid-configurator-border-width;
         }
 
-        .k-pivotgrid-configurator-overlay {
-            inset-inline-start: $kendo-pivotgrid-configurator-button-size;
+        > .k-pivotgrid ~ .k-pivotgrid-configurator-button > span {
+            transform: none;
         }
 
-        .k-pivotgrid-configurator-button > span {
-            transform: rotate(-180deg);
-        }
-    }
-
-    .k-pivotgrid-container-bottom {
-        flex-direction: column;
-
-        .k-pivotgrid-configurator-panel {
-            border-block-start-width: $kendo-pivotgrid-configurator-border-width;
+        > .k-pivotgrid ~ .k-pivotgrid-configurator .k-pivotgrid-configurator-overlay {
+            inset-inline-start: auto;
+            inset-inline-end: $kendo-pivotgrid-configurator-button-size;
         }
 
-        .k-pivotgrid-configurator-overlay {
-            inset-block-end: $kendo-pivotgrid-configurator-button-size;
+        > .k-pivotgrid ~ .k-pivotgrid-configurator .k-pivotgrid-configurator-panel {
+            border-inline-start-width: $kendo-pivotgrid-configurator-border-width;
+            border-inline-end-width: 0;
         }
     }
 
-    .k-pivotgrid-container-top {
-        flex-direction: column-reverse;
+    .k-pivotgrid-container.k-flex-col {
+        .k-pivotgrid-configurator-button {
+            text-align: center;
+        }
+
+        .k-pivotgrid-configurator-overlay {
+            inset-block-start: $kendo-pivotgrid-configurator-button-size;
+        }
 
         .k-pivotgrid-configurator-panel {
             border-block-end-width: $kendo-pivotgrid-configurator-border-width;
         }
 
-        .k-pivotgrid-configurator-overlay {
-            inset-block-start: $kendo-pivotgrid-configurator-button-size;
+        > .k-pivotgrid ~ .k-pivotgrid-configurator .k-pivotgrid-configurator-overlay {
+            inset-block-start: auto;
+            inset-block-end: $kendo-pivotgrid-configurator-button-size;
+        }
+
+        > .k-pivotgrid ~ .k-pivotgrid-configurator .k-pivotgrid-configurator-panel {
+            border-block-start-width: $kendo-pivotgrid-configurator-border-width;
+            border-block-end-width: 0;
         }
     }
 

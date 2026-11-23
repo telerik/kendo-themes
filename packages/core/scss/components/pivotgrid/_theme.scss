@@ -147,72 +147,57 @@
         }
     }
 
-    .k-pivotgrid-container-right .k-pivotgrid-configurator-button {
-        border-left-color: $kendo-pivotgrid-configurator-border;
-    }
+    // Container edges: the configurator and the button sit at the start by default and at the end when they follow the grid in the DOM
+    .k-pivotgrid-container.k-flex-row {
+        .k-pivotgrid-configurator-button {
+            border-right-color: $kendo-pivotgrid-configurator-border;
+        }
 
-    .k-pivotgrid-container-left .k-pivotgrid-configurator-button {
-        border-right-color: $kendo-pivotgrid-configurator-border;
+        .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-start-shadow );
+        }
+
+        > .k-pivotgrid ~ .k-pivotgrid-configurator-button {
+            border-right-color: transparent;
+            border-left-color: $kendo-pivotgrid-configurator-border;
+        }
+
+        > .k-pivotgrid ~ .k-pivotgrid-configurator .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
+        }
     }
 
     .k-rtl,
     [dir="rtl"] {
-        .k-pivotgrid-container-right .k-pivotgrid-configurator-button {
-            border-left-color: transparent;
-            border-right-color: $kendo-pivotgrid-configurator-border;
+        .k-pivotgrid-container.k-flex-row {
+            .k-pivotgrid-configurator-button {
+                border-right-color: transparent;
+                border-left-color: $kendo-pivotgrid-configurator-border;
+            }
+
+            > .k-pivotgrid ~ .k-pivotgrid-configurator-button {
+                border-left-color: transparent;
+                border-right-color: $kendo-pivotgrid-configurator-border;
+            }
+        }
+    }
+
+    .k-pivotgrid-container.k-flex-col {
+        .k-pivotgrid-configurator-button {
+            border-block-end-color: $kendo-pivotgrid-configurator-border;
         }
 
-        .k-pivotgrid-container-left .k-pivotgrid-configurator-button {
-            border-right-color: transparent;
-            border-left-color: $kendo-pivotgrid-configurator-border;
-        }
-    }
-
-    .k-pivotgrid-container-bottom .k-pivotgrid-configurator-button {
-        border-block-start-color: $kendo-pivotgrid-configurator-border;
-    }
-
-    .k-pivotgrid-container-top .k-pivotgrid-configurator-button {
-        border-block-end-color: $kendo-pivotgrid-configurator-border;
-    }
-
-
-    // Overlay mode
-    .k-pivotgrid-container-right .k-pivotgrid-configurator-overlay {
-        @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
-    }
-
-    .k-pivotgrid-container-left .k-pivotgrid-configurator-overlay {
-        @include box-shadow( $kendo-pivotgrid-configurator-start-shadow );
-    }
-
-    .k-pivotgrid-container-bottom .k-pivotgrid-configurator-overlay {
-        @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
-    }
-
-    .k-pivotgrid-container-top .k-pivotgrid-configurator-overlay {
-        @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
-    }
-
-    // Deprecated: utility-class wrapper, use .k-pivotgrid-container instead
-    // TODO: remove
-    .k-flex-row {
         .k-pivotgrid-configurator-overlay {
-            @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
-        }
-
-        &-reverse .k-pivotgrid-configurator-overlay {
-            @include box-shadow( $kendo-pivotgrid-configurator-start-shadow );
-        }
-    }
-
-    .k-flex-col {
-        .k-pivotgrid-configurator-overlay {
-            @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
-        }
-
-        &-reverse .k-pivotgrid-configurator-overlay {
             @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
+        }
+
+        > .k-pivotgrid ~ .k-pivotgrid-configurator-button {
+            border-block-end-color: transparent;
+            border-block-start-color: $kendo-pivotgrid-configurator-border;
+        }
+
+        > .k-pivotgrid ~ .k-pivotgrid-configurator .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
         }
     }
 
