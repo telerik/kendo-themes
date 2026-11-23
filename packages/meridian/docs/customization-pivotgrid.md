@@ -528,56 +528,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pivotgrid-configurator-shadow</td>
-    <td>String</td>
-    <td><code>k-elevation(3)</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PivotGrid configurator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pivotgrid-configurator-end-shadow</td>
-    <td>String</td>
-    <td><code>$kendo-pivotgrid-configurator-shadow</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end shadow of the PivotGrid configurator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pivotgrid-configurator-start-shadow</td>
-    <td>String</td>
-    <td><code>$kendo-pivotgrid-configurator-shadow</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start shadow of the PivotGrid configurator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pivotgrid-configurator-top-shadow</td>
-    <td>String</td>
-    <td><code>$kendo-pivotgrid-configurator-shadow</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top shadow of the PivotGrid configurator.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pivotgrid-configurator-bottom-shadow</td>
-    <td>String</td>
-    <td><code>$kendo-pivotgrid-configurator-shadow</code></td>
-    <td><code>var(--kendo-elevation-3)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom shadow of the PivotGrid configurator.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pivotgrid-configurator-button-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -605,16 +555,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid configurator button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pivotgrid-configurator-button-size</td>
-    <td>Calculation</td>
-    <td><code>calc( calc( #{$kendo-pivotgrid-line-height} * 1em ) + calc( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + calc( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) )</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1) * 2 + 1px * 2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the PivotGrid configurator button.</div></div>
     </td>
 </tr>
 <tr>

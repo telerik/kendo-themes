@@ -47,7 +47,7 @@ The Pivotgrid is compliant with the [Web Content Accessibility Guidelines (WCAG)
 | Feature | Description |
 | --- | --- |
 | Configurator | A settings panel maps data fields to rows, columns, and measures. |
-| Configurator layout | When a configurator is shown, the PivotGrid, the configurator panel, and the configurator button are grouped in a `k-pivotgrid-container` that carries the grid and the settings panel. |
+| Configurator layout | When a configurator is shown, the PivotGrid, the configurator panel, and the configurator button are grouped in a `k-pivotgrid-container` flex container (`k-d-flex` with `k-flex-row` for a vertical or `k-flex-col` for a horizontal configurator). The configurator and the button appear at the start when they precede the PivotGrid in the DOM and at the end when they follow it. Without a configurator, the PivotGrid is rendered on its own. |
 | Expand / Collapse | Row and column header groups can be collapsed to summarize data. |
 | Totals | Subtotals and grand totals are automatically calculated and displayed. |
 | Field reorder | Fields can be dragged between the rows, columns, and filter areas. |
