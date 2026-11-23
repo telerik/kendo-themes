@@ -1,0 +1,2043 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" data-role="kendo-theme" href="/packages/meridian/dist/all.css">
+        <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+        <link rel="stylesheet" href="/packages/html/assets/styles.css">
+        <script src="/packages/html/assets/scripts.js"></script>
+    </head>
+    <body id="app" class="k-body">
+        <div id="test-area" class="k-d-grid k-grid-cols-1">
+            <section>
+                <h3>PivotGrid without a container</h3>
+                <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                    <div class="k-pivotgrid-empty-cell" role="none">
+                        <table role="none">
+                            <thead role="none">
+                                <tr role="none">
+                                    <th id="k-pivotgrid-empty-2">
+                                        <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="k-pivotgrid-column-headers" role="none">
+                        <table role="none" class="k-pivotgrid-table">
+                            <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                            </colgroup>
+                            <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                <tr role="row" aria-owns="k-pivotgrid-empty-2 k-ch-1 k-ch-2" class="k-pivotgrid-row">
+                                    <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-1" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Categories</span>
+                                    </th>
+                                    <th colspan="1" rowspan="2" role="columnheader" id="k-ch-2" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                        <span class="k-pivotgrid-header-title">Categories</span>
+                                    </th>
+                                </tr>
+                                <tr role="row" class="k-pivotgrid-row">
+                                    <th colspan="1" role="columnheader" id="k-ch-3" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-header-title">Seafood</span>
+                                    </th>
+                                    <th colspan="1" role="columnheader" id="k-ch-4" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-header-title">Beverages</span>
+                                    </th>
+                                </tr>
+                                <tr role="row" class="k-pivotgrid-row">
+                                    <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-5" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Products</span>
+                                    </th>
+                                    <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-6" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Products</span>
+                                    </th>
+                                    <th colspan="1" role="columnheader" id="k-ch-7" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                        <span class="k-pivotgrid-header-title">Products</span>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="k-pivotgrid-row-headers" role="none">
+                        <table role="none" class="k-pivotgrid-table">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                <tr role="row" aria-owns="k-dc-1 k-dc-2 k-dc-3" class="k-pivotgrid-row">
+                                    <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Regions</span>
+                                    </th>
+                                    <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-header-title">South America</span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Countries</span>
+                                    </th>
+                                </tr>
+                                <tr role="row" aria-owns="k-dc-4 k-dc-5 k-dc-6" class="k-pivotgrid-row">
+                                    <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-header-title">North America</span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Countries</span>
+                                    </th>
+                                </tr>
+                                <tr role="row" aria-owns="k-dc-7 k-dc-8 k-dc-9" class="k-pivotgrid-row">
+                                    <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-header-title">Europe</span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Countries</span>
+                                    </th>
+                                </tr>
+                                <tr role="row" aria-owns="k-dc-10 k-dc-11 k-dc-12" class="k-pivotgrid-row">
+                                    <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-header-title">Asia</span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Countries</span>
+                                    </th>
+                                </tr>
+                                <tr role="row" aria-owns="k-dc-13 k-dc-14 k-dc-15" class="k-pivotgrid-row">
+                                    <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-header-title">Africa</span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                        <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="k-pivotgrid-header-title">Countries</span>
+                                    </th>
+                                </tr>
+                                <tr role="row" aria-owns="k-dc-16 k-dc-17 k-dc-18" class="k-pivotgrid-row">
+                                    <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                        <span class="k-pivotgrid-header-title">Regions</span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                        <span class="k-pivotgrid-header-title">Countries</span>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="k-pivotgrid-values" role="none">
+                        <table role="none" class="k-pivotgrid-table">
+                            <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                            </colgroup>
+                            <tbody role="none" class="k-pivotgrid-tbody">
+                                <tr role="none" class="k-pivotgrid-row">
+                                    <td role="gridcell" colspan="1" id="k-dc-1" aria-describedby="k-ch-3 k-ch-1 k-ch-5" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1847.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-2" aria-describedby="k-ch-4 k-ch-1 k-ch-6" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1488.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-3" aria-describedby="k-ch-2 k-ch-7" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">3335.00</span>
+                                    </td>
+                                </tr>
+                                <tr role="none" class="k-pivotgrid-row">
+                                    <td role="gridcell" colspan="1" id="k-dc-4" aria-describedby="k-ch-3 k-ch-1 k-ch-5" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1998.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-5" aria-describedby="k-ch-4 k-ch-1 k-ch-6" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1406.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-6" aria-describedby="k-ch-2 k-ch-7" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">3404.00</span>
+                                    </td>
+                                </tr>
+                                <tr role="none" class="k-pivotgrid-row">
+                                    <td role="gridcell" colspan="1" id="k-dc-7" aria-describedby="k-ch-3 k-ch-1 k-ch-5" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">2065.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-8" aria-describedby="k-ch-4 k-ch-1 k-ch-6" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1242.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-9" aria-describedby="k-ch-2 k-ch-7" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">3307.00</span>
+                                    </td>
+                                </tr>
+                                <tr role="none" class="k-pivotgrid-row">
+                                    <td role="gridcell" colspan="1" id="k-dc-10" aria-describedby="k-ch-3 k-ch-1 k-ch-5" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1830.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-11" aria-describedby="k-ch-4 k-ch-1 k-ch-6" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1579.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-12" aria-describedby="k-ch-2 k-ch-7" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">3409.00</span>
+                                    </td>
+                                </tr>
+                                <tr role="none" class="k-pivotgrid-row">
+                                    <td role="gridcell" colspan="1" id="k-dc-13" aria-describedby="k-ch-3 k-ch-1 k-ch-5" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">2005.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-14" aria-describedby="k-ch-4 k-ch-1 k-ch-6" class="k-pivotgrid-cell">
+                                        <span class="k-pivotgrid-content">1441.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-15" aria-describedby="k-ch-2 k-ch-7" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">3446.00</span>
+                                    </td>
+                                </tr>
+                                <tr role="none" class="k-pivotgrid-row">
+                                    <td role="gridcell" colspan="1" id="k-dc-16" aria-describedby="k-ch-3 k-ch-1 k-ch-5" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">9745.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-17" aria-describedby="k-ch-4 k-ch-1 k-ch-6" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">7156.00</span>
+                                    </td>
+                                    <td role="gridcell" colspan="1" id="k-dc-18" aria-describedby="k-ch-2 k-ch-7" class="k-pivotgrid-cell k-pivotgrid-total">
+                                        <span class="k-pivotgrid-content">16901.00</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Configurator and button after the PivotGrid (end)</h3>
+                <div class="k-pivotgrid-container k-d-flex k-flex-row">
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                        <div class="k-pivotgrid-empty-cell" role="none">
+                            <table role="none">
+                                <thead role="none">
+                                    <tr role="none">
+                                        <th id="k-pivotgrid-empty-3">
+                                            <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-column-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-pivotgrid-empty-3 k-ch-8 k-ch-9" class="k-pivotgrid-row">
+                                        <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-8" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                        <th colspan="1" rowspan="2" role="columnheader" id="k-ch-9" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" id="k-ch-10" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Seafood</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-11" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Beverages</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-12" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-13" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-14" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-row-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-dc-19 k-dc-20 k-dc-21" class="k-pivotgrid-row">
+                                        <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">South America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-22 k-dc-23 k-dc-24" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">North America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-25 k-dc-26 k-dc-27" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Europe</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-28 k-dc-29 k-dc-30" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Asia</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-31 k-dc-32 k-dc-33" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Africa</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-34 k-dc-35 k-dc-36" class="k-pivotgrid-row">
+                                        <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-values" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="none" class="k-pivotgrid-tbody">
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-19" aria-describedby="k-ch-10 k-ch-8 k-ch-12" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1847.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-20" aria-describedby="k-ch-11 k-ch-8 k-ch-13" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1488.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-21" aria-describedby="k-ch-9 k-ch-14" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3335.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-22" aria-describedby="k-ch-10 k-ch-8 k-ch-12" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1998.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-23" aria-describedby="k-ch-11 k-ch-8 k-ch-13" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1406.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-24" aria-describedby="k-ch-9 k-ch-14" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3404.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-25" aria-describedby="k-ch-10 k-ch-8 k-ch-12" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2065.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-26" aria-describedby="k-ch-11 k-ch-8 k-ch-13" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1242.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-27" aria-describedby="k-ch-9 k-ch-14" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3307.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-28" aria-describedby="k-ch-10 k-ch-8 k-ch-12" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1830.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-29" aria-describedby="k-ch-11 k-ch-8 k-ch-13" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1579.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-30" aria-describedby="k-ch-9 k-ch-14" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3409.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-31" aria-describedby="k-ch-10 k-ch-8 k-ch-12" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2005.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-32" aria-describedby="k-ch-11 k-ch-8 k-ch-13" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1441.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-33" aria-describedby="k-ch-9 k-ch-14" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3446.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-34" aria-describedby="k-ch-10 k-ch-8 k-ch-12" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">9745.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-35" aria-describedby="k-ch-11 k-ch-8 k-ch-13" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">7156.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-36" aria-describedby="k-ch-9 k-ch-14" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">16901.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-pivotgrid-configurator" role="dialog" aria-labelledby="k-pivotgrid-configurator-header-1">
+                        <div class="k-pivotgrid-configurator-panel k-pivotgrid-configurator-vertical k-pivotgrid-configurator-push">
+                            <div class="k-pivotgrid-configurator-header">
+                                <div class="k-pivotgrid-configurator-header-text" id="k-pivotgrid-configurator-header-1">Settings</div>
+                            </div>
+                            <div class="k-pivotgrid-configurator-content"></div>
+                            <div class="k-actions k-actions-end k-actions-horizontal k-pivotgrid-configurator-actions">
+                                <button class="k-button">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Configurator and button before the PivotGrid (start)</h3>
+                <div class="k-pivotgrid-container k-d-flex k-flex-row">
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-pivotgrid-configurator" role="dialog" aria-labelledby="k-pivotgrid-configurator-header-2">
+                        <div class="k-pivotgrid-configurator-panel k-pivotgrid-configurator-vertical k-pivotgrid-configurator-push">
+                            <div class="k-pivotgrid-configurator-header">
+                                <div class="k-pivotgrid-configurator-header-text" id="k-pivotgrid-configurator-header-2">Settings</div>
+                            </div>
+                            <div class="k-pivotgrid-configurator-content"></div>
+                            <div class="k-actions k-actions-end k-actions-horizontal k-pivotgrid-configurator-actions">
+                                <button class="k-button">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                        <div class="k-pivotgrid-empty-cell" role="none">
+                            <table role="none">
+                                <thead role="none">
+                                    <tr role="none">
+                                        <th id="k-pivotgrid-empty-4">
+                                            <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-column-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-pivotgrid-empty-4 k-ch-15 k-ch-16" class="k-pivotgrid-row">
+                                        <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-15" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                        <th colspan="1" rowspan="2" role="columnheader" id="k-ch-16" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" id="k-ch-17" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Seafood</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-18" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Beverages</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-19" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-20" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-21" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-row-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-dc-37 k-dc-38 k-dc-39" class="k-pivotgrid-row">
+                                        <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">South America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-40 k-dc-41 k-dc-42" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">North America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-43 k-dc-44 k-dc-45" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Europe</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-46 k-dc-47 k-dc-48" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Asia</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-49 k-dc-50 k-dc-51" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Africa</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-52 k-dc-53 k-dc-54" class="k-pivotgrid-row">
+                                        <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-values" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="none" class="k-pivotgrid-tbody">
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-37" aria-describedby="k-ch-17 k-ch-15 k-ch-19" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1847.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-38" aria-describedby="k-ch-18 k-ch-15 k-ch-20" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1488.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-39" aria-describedby="k-ch-16 k-ch-21" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3335.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-40" aria-describedby="k-ch-17 k-ch-15 k-ch-19" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1998.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-41" aria-describedby="k-ch-18 k-ch-15 k-ch-20" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1406.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-42" aria-describedby="k-ch-16 k-ch-21" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3404.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-43" aria-describedby="k-ch-17 k-ch-15 k-ch-19" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2065.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-44" aria-describedby="k-ch-18 k-ch-15 k-ch-20" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1242.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-45" aria-describedby="k-ch-16 k-ch-21" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3307.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-46" aria-describedby="k-ch-17 k-ch-15 k-ch-19" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1830.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-47" aria-describedby="k-ch-18 k-ch-15 k-ch-20" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1579.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-48" aria-describedby="k-ch-16 k-ch-21" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3409.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-49" aria-describedby="k-ch-17 k-ch-15 k-ch-19" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2005.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-50" aria-describedby="k-ch-18 k-ch-15 k-ch-20" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1441.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-51" aria-describedby="k-ch-16 k-ch-21" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3446.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-52" aria-describedby="k-ch-17 k-ch-15 k-ch-19" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">9745.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-53" aria-describedby="k-ch-18 k-ch-15 k-ch-20" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">7156.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-54" aria-describedby="k-ch-16 k-ch-21" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">16901.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Button only, after the PivotGrid</h3>
+                <div class="k-pivotgrid-container k-d-flex k-flex-row">
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                        <div class="k-pivotgrid-empty-cell" role="none">
+                            <table role="none">
+                                <thead role="none">
+                                    <tr role="none">
+                                        <th id="k-pivotgrid-empty-5">
+                                            <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-column-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-pivotgrid-empty-5 k-ch-22 k-ch-23" class="k-pivotgrid-row">
+                                        <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-22" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                        <th colspan="1" rowspan="2" role="columnheader" id="k-ch-23" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" id="k-ch-24" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Seafood</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-25" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Beverages</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-26" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-27" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-28" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-row-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-dc-55 k-dc-56 k-dc-57" class="k-pivotgrid-row">
+                                        <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">South America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-58 k-dc-59 k-dc-60" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">North America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-61 k-dc-62 k-dc-63" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Europe</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-64 k-dc-65 k-dc-66" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Asia</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-67 k-dc-68 k-dc-69" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Africa</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-70 k-dc-71 k-dc-72" class="k-pivotgrid-row">
+                                        <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-values" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="none" class="k-pivotgrid-tbody">
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-55" aria-describedby="k-ch-24 k-ch-22 k-ch-26" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1847.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-56" aria-describedby="k-ch-25 k-ch-22 k-ch-27" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1488.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-57" aria-describedby="k-ch-23 k-ch-28" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3335.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-58" aria-describedby="k-ch-24 k-ch-22 k-ch-26" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1998.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-59" aria-describedby="k-ch-25 k-ch-22 k-ch-27" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1406.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-60" aria-describedby="k-ch-23 k-ch-28" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3404.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-61" aria-describedby="k-ch-24 k-ch-22 k-ch-26" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2065.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-62" aria-describedby="k-ch-25 k-ch-22 k-ch-27" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1242.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-63" aria-describedby="k-ch-23 k-ch-28" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3307.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-64" aria-describedby="k-ch-24 k-ch-22 k-ch-26" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1830.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-65" aria-describedby="k-ch-25 k-ch-22 k-ch-27" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1579.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-66" aria-describedby="k-ch-23 k-ch-28" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3409.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-67" aria-describedby="k-ch-24 k-ch-22 k-ch-26" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2005.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-68" aria-describedby="k-ch-25 k-ch-22 k-ch-27" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1441.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-69" aria-describedby="k-ch-23 k-ch-28" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3446.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-70" aria-describedby="k-ch-24 k-ch-22 k-ch-26" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">9745.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-71" aria-describedby="k-ch-25 k-ch-22 k-ch-27" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">7156.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-72" aria-describedby="k-ch-23 k-ch-28" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">16901.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Button only, before the PivotGrid, horizontal</h3>
+                <div class="k-pivotgrid-container k-d-flex k-flex-col">
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                        <div class="k-pivotgrid-empty-cell" role="none">
+                            <table role="none">
+                                <thead role="none">
+                                    <tr role="none">
+                                        <th id="k-pivotgrid-empty-6">
+                                            <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-column-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-pivotgrid-empty-6 k-ch-29 k-ch-30" class="k-pivotgrid-row">
+                                        <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-29" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                        <th colspan="1" rowspan="2" role="columnheader" id="k-ch-30" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" id="k-ch-31" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Seafood</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-32" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Beverages</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-33" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-34" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-35" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-row-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-dc-73 k-dc-74 k-dc-75" class="k-pivotgrid-row">
+                                        <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">South America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-76 k-dc-77 k-dc-78" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">North America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-79 k-dc-80 k-dc-81" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Europe</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-82 k-dc-83 k-dc-84" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Asia</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-85 k-dc-86 k-dc-87" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Africa</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-88 k-dc-89 k-dc-90" class="k-pivotgrid-row">
+                                        <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-values" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="none" class="k-pivotgrid-tbody">
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-73" aria-describedby="k-ch-31 k-ch-29 k-ch-33" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1847.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-74" aria-describedby="k-ch-32 k-ch-29 k-ch-34" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1488.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-75" aria-describedby="k-ch-30 k-ch-35" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3335.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-76" aria-describedby="k-ch-31 k-ch-29 k-ch-33" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1998.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-77" aria-describedby="k-ch-32 k-ch-29 k-ch-34" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1406.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-78" aria-describedby="k-ch-30 k-ch-35" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3404.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-79" aria-describedby="k-ch-31 k-ch-29 k-ch-33" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2065.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-80" aria-describedby="k-ch-32 k-ch-29 k-ch-34" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1242.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-81" aria-describedby="k-ch-30 k-ch-35" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3307.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-82" aria-describedby="k-ch-31 k-ch-29 k-ch-33" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1830.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-83" aria-describedby="k-ch-32 k-ch-29 k-ch-34" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1579.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-84" aria-describedby="k-ch-30 k-ch-35" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3409.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-85" aria-describedby="k-ch-31 k-ch-29 k-ch-33" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2005.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-86" aria-describedby="k-ch-32 k-ch-29 k-ch-34" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1441.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-87" aria-describedby="k-ch-30 k-ch-35" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3446.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-88" aria-describedby="k-ch-31 k-ch-29 k-ch-33" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">9745.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-89" aria-describedby="k-ch-32 k-ch-29 k-ch-34" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">7156.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-90" aria-describedby="k-ch-30 k-ch-35" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">16901.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Button only, after the PivotGrid, horizontal</h3>
+                <div class="k-pivotgrid-container k-d-flex k-flex-col">
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                        <div class="k-pivotgrid-empty-cell" role="none">
+                            <table role="none">
+                                <thead role="none">
+                                    <tr role="none">
+                                        <th id="k-pivotgrid-empty-7">
+                                            <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-column-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-pivotgrid-empty-7 k-ch-36 k-ch-37" class="k-pivotgrid-row">
+                                        <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-36" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                        <th colspan="1" rowspan="2" role="columnheader" id="k-ch-37" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" id="k-ch-38" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Seafood</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-39" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Beverages</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-40" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-41" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-42" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-row-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-dc-91 k-dc-92 k-dc-93" class="k-pivotgrid-row">
+                                        <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">South America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-94 k-dc-95 k-dc-96" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">North America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-97 k-dc-98 k-dc-99" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Europe</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-100 k-dc-101 k-dc-102" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Asia</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-103 k-dc-104 k-dc-105" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Africa</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-106 k-dc-107 k-dc-108" class="k-pivotgrid-row">
+                                        <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-values" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="none" class="k-pivotgrid-tbody">
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-91" aria-describedby="k-ch-38 k-ch-36 k-ch-40" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1847.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-92" aria-describedby="k-ch-39 k-ch-36 k-ch-41" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1488.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-93" aria-describedby="k-ch-37 k-ch-42" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3335.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-94" aria-describedby="k-ch-38 k-ch-36 k-ch-40" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1998.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-95" aria-describedby="k-ch-39 k-ch-36 k-ch-41" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1406.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-96" aria-describedby="k-ch-37 k-ch-42" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3404.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-97" aria-describedby="k-ch-38 k-ch-36 k-ch-40" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2065.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-98" aria-describedby="k-ch-39 k-ch-36 k-ch-41" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1242.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-99" aria-describedby="k-ch-37 k-ch-42" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3307.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-100" aria-describedby="k-ch-38 k-ch-36 k-ch-40" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1830.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-101" aria-describedby="k-ch-39 k-ch-36 k-ch-41" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1579.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-102" aria-describedby="k-ch-37 k-ch-42" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3409.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-103" aria-describedby="k-ch-38 k-ch-36 k-ch-40" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2005.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-104" aria-describedby="k-ch-39 k-ch-36 k-ch-41" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1441.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-105" aria-describedby="k-ch-37 k-ch-42" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3446.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-106" aria-describedby="k-ch-38 k-ch-36 k-ch-40" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">9745.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-107" aria-describedby="k-ch-39 k-ch-36 k-ch-41" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">7156.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-108" aria-describedby="k-ch-37 k-ch-42" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">16901.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="k-rtl">
+                <h3>RTL: button after the PivotGrid</h3>
+                <div class="k-pivotgrid-container k-d-flex k-flex-row">
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                        <div class="k-pivotgrid-empty-cell" role="none">
+                            <table role="none">
+                                <thead role="none">
+                                    <tr role="none">
+                                        <th id="k-pivotgrid-empty-8">
+                                            <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-column-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-pivotgrid-empty-8 k-ch-43 k-ch-44" class="k-pivotgrid-row">
+                                        <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-43" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                        <th colspan="1" rowspan="2" role="columnheader" id="k-ch-44" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" id="k-ch-45" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Seafood</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-46" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Beverages</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-47" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-48" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-49" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-row-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-dc-109 k-dc-110 k-dc-111" class="k-pivotgrid-row">
+                                        <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">South America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-112 k-dc-113 k-dc-114" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">North America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-115 k-dc-116 k-dc-117" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Europe</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-118 k-dc-119 k-dc-120" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Asia</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-121 k-dc-122 k-dc-123" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Africa</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-124 k-dc-125 k-dc-126" class="k-pivotgrid-row">
+                                        <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-values" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="none" class="k-pivotgrid-tbody">
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-109" aria-describedby="k-ch-45 k-ch-43 k-ch-47" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1847.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-110" aria-describedby="k-ch-46 k-ch-43 k-ch-48" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1488.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-111" aria-describedby="k-ch-44 k-ch-49" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3335.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-112" aria-describedby="k-ch-45 k-ch-43 k-ch-47" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1998.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-113" aria-describedby="k-ch-46 k-ch-43 k-ch-48" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1406.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-114" aria-describedby="k-ch-44 k-ch-49" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3404.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-115" aria-describedby="k-ch-45 k-ch-43 k-ch-47" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2065.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-116" aria-describedby="k-ch-46 k-ch-43 k-ch-48" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1242.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-117" aria-describedby="k-ch-44 k-ch-49" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3307.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-118" aria-describedby="k-ch-45 k-ch-43 k-ch-47" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1830.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-119" aria-describedby="k-ch-46 k-ch-43 k-ch-48" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1579.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-120" aria-describedby="k-ch-44 k-ch-49" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3409.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-121" aria-describedby="k-ch-45 k-ch-43 k-ch-47" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2005.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-122" aria-describedby="k-ch-46 k-ch-43 k-ch-48" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1441.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-123" aria-describedby="k-ch-44 k-ch-49" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3446.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-124" aria-describedby="k-ch-45 k-ch-43 k-ch-47" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">9745.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-125" aria-describedby="k-ch-46 k-ch-43 k-ch-48" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">7156.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-126" aria-describedby="k-ch-44 k-ch-49" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">16901.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="k-rtl">
+                <h3>RTL: button before the PivotGrid</h3>
+                <div class="k-pivotgrid-container k-d-flex k-flex-row">
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
+                        <div class="k-pivotgrid-empty-cell" role="none">
+                            <table role="none">
+                                <thead role="none">
+                                    <tr role="none">
+                                        <th id="k-pivotgrid-empty-9">
+                                            <span class="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-column-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-pivotgrid-empty-9 k-ch-50 k-ch-51" class="k-pivotgrid-row">
+                                        <th colspan="2" role="columnheader" aria-expanded="true" id="k-ch-50" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                        <th colspan="1" rowspan="2" role="columnheader" id="k-ch-51" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Categories</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" id="k-ch-52" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Seafood</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-53" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Beverages</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" class="k-pivotgrid-row">
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-54" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" aria-expanded="false" id="k-ch-55" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                        <th colspan="1" role="columnheader" id="k-ch-56" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Products</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-row-headers" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="rowgroup" class="k-pivotgrid-tbody">
+                                    <tr role="row" aria-owns="k-dc-127 k-dc-128 k-dc-129" class="k-pivotgrid-row">
+                                        <th colspan="1" rowspan="5" role="rowheader" aria-expanded="true" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-up" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15 12 7.5l7.5 7.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">South America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-130 k-dc-131 k-dc-132" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">North America</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-133 k-dc-134 k-dc-135" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Europe</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-136 k-dc-137 k-dc-138" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Asia</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-139 k-dc-140 k-dc-141" class="k-pivotgrid-row">
+                                        <th colspan="1" role="rowheader" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-header-title">Africa</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" aria-expanded="false" class="k-pivotgrid-cell k-pivotgrid-header-root">
+                                            <span class="k-pivotgrid-toggle k-icon k-svg-icon k-svg-i-chevron-down" aria-hidden="true">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9 12 16.5 4.5 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                    <tr role="row" aria-owns="k-dc-142 k-dc-143 k-dc-144" class="k-pivotgrid-row">
+                                        <th colspan="2" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Regions</span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" role="rowheader" class="k-pivotgrid-cell k-pivotgrid-header-root k-pivotgrid-header-total">
+                                            <span class="k-pivotgrid-header-title">Countries</span>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-pivotgrid-values" role="none">
+                            <table role="none" class="k-pivotgrid-table">
+                                <colgroup>
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                </colgroup>
+                                <tbody role="none" class="k-pivotgrid-tbody">
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-127" aria-describedby="k-ch-52 k-ch-50 k-ch-54" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1847.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-128" aria-describedby="k-ch-53 k-ch-50 k-ch-55" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1488.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-129" aria-describedby="k-ch-51 k-ch-56" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3335.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-130" aria-describedby="k-ch-52 k-ch-50 k-ch-54" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1998.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-131" aria-describedby="k-ch-53 k-ch-50 k-ch-55" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1406.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-132" aria-describedby="k-ch-51 k-ch-56" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3404.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-133" aria-describedby="k-ch-52 k-ch-50 k-ch-54" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2065.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-134" aria-describedby="k-ch-53 k-ch-50 k-ch-55" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1242.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-135" aria-describedby="k-ch-51 k-ch-56" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3307.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-136" aria-describedby="k-ch-52 k-ch-50 k-ch-54" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1830.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-137" aria-describedby="k-ch-53 k-ch-50 k-ch-55" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1579.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-138" aria-describedby="k-ch-51 k-ch-56" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3409.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-139" aria-describedby="k-ch-52 k-ch-50 k-ch-54" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">2005.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-140" aria-describedby="k-ch-53 k-ch-50 k-ch-55" class="k-pivotgrid-cell">
+                                            <span class="k-pivotgrid-content">1441.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-141" aria-describedby="k-ch-51 k-ch-56" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">3446.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr role="none" class="k-pivotgrid-row">
+                                        <td role="gridcell" colspan="1" id="k-dc-142" aria-describedby="k-ch-52 k-ch-50 k-ch-54" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">9745.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-143" aria-describedby="k-ch-53 k-ch-50 k-ch-55" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">7156.00</span>
+                                        </td>
+                                        <td role="gridcell" colspan="1" id="k-dc-144" aria-describedby="k-ch-51 k-ch-56" class="k-pivotgrid-cell k-pivotgrid-total">
+                                            <span class="k-pivotgrid-content">16901.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

@@ -12,8 +12,223 @@
     <body id="app" class="k-body">
         <div id="test-area" class="k-d-grid k-grid-cols-1">
             <section>
-                <div class="k-d-flex k-flex-row-reverse k-pos-relative">
-                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 111px 1fr; grid-template-columns: 369px 1fr;">
+                <div class="k-pivotgrid-container k-d-flex k-flex-row">
+                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
+                        <span>
+                            Change settings
+                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-pivotgrid-configurator" role="dialog" aria-labelledby="k-pivotgrid-configurator-header-1">
+                        <div class="k-pivotgrid-configurator-panel k-pivotgrid-configurator-vertical k-pivotgrid-configurator-push">
+                            <div class="k-pivotgrid-configurator-header">
+                                <div class="k-pivotgrid-configurator-header-text" id="k-pivotgrid-configurator-header-1">Settings</div>
+                            </div>
+                            <div class="k-pivotgrid-configurator-content">
+                                <form class="k-form k-form-vertical">
+                                    <div class="k-form-field">
+                                        <label class="k-label" id="k-pivotgrid-label-1">Fields</label>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <div class="k-fields-list-wrapper">
+                                            <div aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-1" class="k-treeview">
+                                                <ul class="k-treeview-lines k-treeview-group" role="tree">
+                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
+                                                        <span class="k-treeview-item-content">
+                                                            <span class="k-checkbox-wrap">
+                                                                <input aria-label="Category" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Category</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
+                                                        <span class="k-treeview-item-content">
+                                                            <span class="k-checkbox-wrap">
+                                                                <input aria-label="Product" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Product</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
+                                                        <span class="k-treeview-item-content">
+                                                            <span class="k-checkbox-wrap">
+                                                                <input aria-label="Region" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Region</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
+                                                        <span class="k-treeview-item-content">
+                                                            <span class="k-checkbox-wrap">
+                                                                <input aria-label="Country" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Country</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 1;">
+                                                        <span class="k-treeview-item-content">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Measures</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-label" id="k-pivotgrid-label-2">Columns</label>
+                                    </div>
+                                    <div class="k-column-fields k-chip-list" aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-2" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                                        <div role="option" class="k-chip">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label">Category</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div role="option" class="k-chip">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label">Product</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-label" id="k-pivotgrid-label-3">Rows</label>
+                                    </div>
+                                    <div class="k-row-fields k-chip-list" aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-3" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                                        <div role="option" class="k-chip">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label">Region</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div role="option" class="k-chip">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label">Country</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field">
+                                        <label class="k-label" id="k-pivotgrid-label-4">Values</label>
+                                    </div>
+                                    <div class="k-filter-fields k-chip-list" aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-4" role="listbox" aria-label="chip list" aria-orientation="horizontal">
+                                        <div role="option" class="k-chip">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label">Total</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="k-actions k-actions-end k-actions-horizontal k-pivotgrid-configurator-actions">
+                                <button class="k-button">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-primary">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
                         <div class="k-pivotgrid-empty-cell" role="none">
                             <table role="none">
                                 <thead role="none">
@@ -248,226 +463,11 @@
                             </table>
                         </div>
                     </div>
-                    <div class="k-pivotgrid-configurator" role="dialog" aria-labelledby="k-pivotgrid-configurator-header-1">
-                        <div class="k-pivotgrid-configurator-panel k-pivotgrid-configurator-vertical k-pivotgrid-configurator-push">
-                            <div class="k-pivotgrid-configurator-header">
-                                <div class="k-pivotgrid-configurator-header-text" id="k-pivotgrid-configurator-header-1">Settings</div>
-                            </div>
-                            <div class="k-pivotgrid-configurator-content">
-                                <form class="k-form k-form-vertical">
-                                    <div class="k-form-field">
-                                        <label class="k-label" id="k-pivotgrid-label-1">Fields</label>
-                                    </div>
-                                    <div class="k-form-field">
-                                        <div class="k-fields-list-wrapper">
-                                            <div aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-1" class="k-treeview">
-                                                <ul class="k-treeview-lines k-treeview-group" role="tree">
-                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
-                                                        <span class="k-treeview-item-content">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Category" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">Category</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
-                                                        <span class="k-treeview-item-content">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Product" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">Product</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
-                                                        <span class="k-treeview-item-content">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Region" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">Region</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item" role="treeitem" aria-checked="true" style="--kendo-treeview-level: 1;">
-                                                        <span class="k-treeview-item-content">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input aria-label="Country" tabindex="-1" class="k-checkbox k-checked" type="checkbox" checked="">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">Country</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item" role="treeitem" aria-expanded="false" style="--kendo-treeview-level: 1;">
-                                                        <span class="k-treeview-item-content">
-                                                            <span class="k-treeview-toggle">
-                                                                <span class="k-icon k-svg-icon k-svg-i-chevron-right" aria-hidden="true">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 4.5 7.5 7.5L9 19.5" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                                    </svg>
-                                                                </span>
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">Measures</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="k-form-field">
-                                        <label class="k-label" id="k-pivotgrid-label-2">Columns</label>
-                                    </div>
-                                    <div class="k-column-fields k-chip-list" aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-2" role="listbox" aria-label="chip list" aria-orientation="horizontal">
-                                        <div role="option" class="k-chip">
-                                            <span class="k-chip-content">
-                                                <span class="k-chip-label">Category</span>
-                                            </span>
-                                            <span class="k-chip-actions">
-                                                <span class="k-chip-action k-chip-more-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-chip-action k-chip-remove-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                        <div role="option" class="k-chip">
-                                            <span class="k-chip-content">
-                                                <span class="k-chip-label">Product</span>
-                                            </span>
-                                            <span class="k-chip-actions">
-                                                <span class="k-chip-action k-chip-more-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-chip-action k-chip-remove-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="k-form-field">
-                                        <label class="k-label" id="k-pivotgrid-label-3">Rows</label>
-                                    </div>
-                                    <div class="k-row-fields k-chip-list" aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-3" role="listbox" aria-label="chip list" aria-orientation="horizontal">
-                                        <div role="option" class="k-chip">
-                                            <span class="k-chip-content">
-                                                <span class="k-chip-label">Region</span>
-                                            </span>
-                                            <span class="k-chip-actions">
-                                                <span class="k-chip-action k-chip-more-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-chip-action k-chip-remove-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                        <div role="option" class="k-chip">
-                                            <span class="k-chip-content">
-                                                <span class="k-chip-label">Country</span>
-                                            </span>
-                                            <span class="k-chip-actions">
-                                                <span class="k-chip-action k-chip-more-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-chip-action k-chip-remove-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="k-form-field">
-                                        <label class="k-label" id="k-pivotgrid-label-4">Values</label>
-                                    </div>
-                                    <div class="k-filter-fields k-chip-list" aria-labelledby="k-pivotgrid-configurator-header-1 k-pivotgrid-label-4" role="listbox" aria-label="chip list" aria-orientation="horizontal">
-                                        <div role="option" class="k-chip">
-                                            <span class="k-chip-content">
-                                                <span class="k-chip-label">Total</span>
-                                            </span>
-                                            <span class="k-chip-actions">
-                                                <span class="k-chip-action k-chip-more-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.25 5c0 .6904-.5596 1.25-1.25 1.25S10.75 5.6904 10.75 5s.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 12c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25M13.25 19c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25.5596-1.25 1.25-1.25 1.25.5596 1.25 1.25" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-chip-action k-chip-remove-action">
-                                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle" aria-hidden="true">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 9-6 6m0-6 6 6m6-3c0 4.9706-4.0294 9-9 9s-9-4.0294-9-9 4.0294-9 9-9 9 4.0294 9 9" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="k-actions k-actions-end k-actions-horizontal k-pivotgrid-configurator-actions">
-                                <button class="k-button">
-                                    <span class="k-button-text">Cancel</span>
-                                </button>
-                                <button class="k-button k-button-primary">
-                                    <span class="k-button-text">Apply</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-pivotgrid-configurator-button" aria-hidden="true">
-                        <span>
-                            Change settings
-                            <span class="k-icon k-svg-icon k-svg-i-gear" aria-hidden="true">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.9995 15.75c2.0711 0 3.75-1.6789 3.75-3.75s-1.6789-3.75-3.75-3.75-3.75 1.679-3.75 3.75c0 2.0711 1.679 3.75 3.75 3.75" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.8835 16.6954a9.3 9.3 0 0 1-.944-2.2772l1.573-1.9687a7.7 7.7 0 0 1 0-.9038L2.9405 9.577a9.32 9.32 0 0 1 .9422-2.2782l2.504-.2812c.2-.2253.4132-.4385.6385-.6385l.2812-2.503a9.3 9.3 0 0 1 2.2744-.9367l1.9688 1.5732a7.7 7.7 0 0 1 .9037 0l1.9688-1.5722a9.32 9.32 0 0 1 2.2781.9422l.2812 2.504c.2253.2.4385.4132.6385.6385l2.5031.2812a9.3 9.3 0 0 1 .9441 2.2772l-1.5732 1.9688c.0178.301.0178.6027 0 .9037l1.5722 1.9688a9.32 9.32 0 0 1-.9375 2.2781l-2.504.2812c-.2.2253-.4132.4385-.6385.6385l-.2812 2.5031a9.3 9.3 0 0 1-2.2772.9441l-1.9688-1.5732a7.6 7.6 0 0 1-.9037 0l-1.9688 1.5722a9.32 9.32 0 0 1-2.2781-.9375l-.2812-2.504a7.6 7.6 0 0 1-.6385-.6385z" fill="none" stroke-width="var(--kendo-icon-stroke-width, 1.5)"></path>
-                                </svg>
-                            </span>
-                        </span>
-                    </div>
                 </div>
             </section>
             <section>
-                <div class="k-d-flex k-flex-row k-pos-relative">
-                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 111px 1fr; grid-template-columns: 369px 1fr;">
+                <div class="k-pivotgrid-container k-d-flex k-flex-row">
+                    <div class="k-pivotgrid" role="grid" style="grid-template-rows: 141px 1fr; grid-template-columns: 367px 1fr;">
                         <div class="k-pivotgrid-empty-cell" role="none">
                             <table role="none">
                                 <thead role="none">
