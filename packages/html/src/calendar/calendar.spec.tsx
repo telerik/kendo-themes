@@ -119,8 +119,27 @@ Calendar.moduleName = CALENDAR_MODULE_NAME;
 Calendar.folderName = CALENDAR_FOLDER_NAME;
 
 /**
+ * @keyboard {ArrowDown} Moves focus one row down, navigating the view when focus is in the last row.
+ * @keyboard {ArrowUp} Moves focus one row up, navigating the view when focus is in the first row.
+ * @keyboard {ArrowLeft} Moves focus to the previous date, month, year, or decade.
+ * @keyboard {ArrowRight} Moves focus to the next date, month, year, or decade.
+ * @keyboard {Enter} Selects the focused date.
+ * @keyboard {Control/Cmd(Mac) + ArrowUp} Navigates to the upper view.
+ * @keyboard {Control/Cmd(Mac) + ArrowDown} Navigates to the lower view.
  * @keyboard {Control/Cmd(Mac) + ArrowRight} Navigates to the next period.
  * @keyboard {Control/Cmd(Mac) + ArrowLeft} Navigates to the previous period.
+ * @keyboard {Home} Focuses the first day of the month.
+ * @keyboard {End} Focuses the last day of the month.
+ * @keyboard {PageUp} Focuses the same date in the previous month.
+ * @keyboard {PageDown} Focuses the same date in the next month.
+ * @keyboard {t} Navigates to today's month view and focuses today.
+ * @keyboard {Control/Cmd(Mac) + Enter} Adds or removes the focused date from the selection in multiple-selection mode.
+ * @keyboard {Shift + ArrowLeft} Adds the previous date to the selection in multiple-selection mode.
+ * @keyboard {Shift + ArrowRight} Adds the next date to the selection in multiple-selection mode.
+ * @keyboard {Shift + ArrowUp} Extends selection up one row in month view.
+ * @keyboard {Shift + ArrowDown} Extends selection down one row in month view.
+ * @keyboard {Shift + Enter} Selects the range between the last selected date and the focused date.
+ * @keyboard {Shift + Space} Selects the range between the last selected date and the focused date.
  *
  * @see https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog.html ARIA practices Date Picker Dialog Example
  */

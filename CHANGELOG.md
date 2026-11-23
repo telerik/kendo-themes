@@ -1,3 +1,28 @@
+## 14.10.2-dev.2 (2026-11-20)
+
+### 🩹 Fixes
+
+- **meridian:** add focus state to column menu items ([040f205a73](https://github.com/telerik/kendo-themes/commit/040f205a73))
+
+## 14.10.2-dev.1 (2026-11-19)
+
+### 🚀 Features
+
+- **pdfviewer:** add PDF.js 6 form field annotation styles ([595f80fcf2](https://github.com/telerik/kendo-themes/commit/595f80fcf2))
+
+## 14.10.2-dev.0 (2026-11-19)
+
+### 🩹 Fixes
+
+- **editor:** fill available height with iframe and ProseMirror content ([d30ca825b9](https://github.com/telerik/kendo-themes/commit/d30ca825b9))
+
+## 14.10.1 (2026-11-17)
+
+### 🩹 Fixes
+
+- **column-menu:** load before grid so its variables can be configured ([1f35de2f87](https://github.com/telerik/kendo-themes/commit/1f35de2f87))
+- **fluent:** correct swapped sm/md icon-size values ([8273b13a63](https://github.com/telerik/kendo-themes/commit/8273b13a63))
+
 ## 14.10.1-dev.1 (2026-11-13)
 
 ### 🩹 Fixes

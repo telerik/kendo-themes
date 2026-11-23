@@ -20,7 +20,7 @@ export const MultiSelectSelectAllFiltering = (props) => {
                     <List
                         selectAll={<ListSelectAll {...props.selectAllProps} />}
                     >
-                        <ListContent listboxId={listboxId} aria-label="Options">
+                        <ListContent multiselectable listboxId={listboxId} aria-label="Options">
                             <ListItem id={nextId('ms-saf-item')} {...props.listItemProps}>Option 1</ListItem>
                             <ListItem id={nextId('ms-saf-item')} {...props.listItemProps}>Option 2</ListItem>
                             <ListItem id={nextId('ms-saf-item')} {...props.listItemProps}>Option 3</ListItem>

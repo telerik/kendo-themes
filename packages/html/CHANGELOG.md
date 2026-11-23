@@ -1,3 +1,25 @@
+## 14.10.2-dev.2 (2026-11-20)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.10.2-dev.1 (2026-11-19)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
+## 14.10.2-dev.0 (2026-11-19)
+
+### 🩹 Fixes
+
+- **editor:** fill available height with iframe and ProseMirror content ([d30ca825b9](https://github.com/telerik/kendo-themes/commit/d30ca825b9))
+
+### ❤️ Thank You
+
+- zhpenkov
+
+## 14.10.1 (2026-11-17)
+
+This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.
+
 ## 14.10.1-dev.1 (2026-11-13)
 
 This was a version bump only for @progress/kendo-themes-html to align it with other projects, there were no code changes.

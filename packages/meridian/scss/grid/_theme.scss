@@ -3,9 +3,18 @@
 @use "@progress/kendo-theme-core/scss/components/grid/_theme.scss" as *;
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../list/_variables.scss" as list;
 
 @mixin kendo-grid--theme() {
     @include kendo-grid--theme-base();
+
+    .k-column-list-item,
+    .k-columnmenu-item {
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( list.$kendo-list-item-focus-outline-color, $inset: true, $type: "outline", $outline-offset: list.$kendo-list-item-focus-outline-offset );
+        }
+    }
 
     .k-grid {
 

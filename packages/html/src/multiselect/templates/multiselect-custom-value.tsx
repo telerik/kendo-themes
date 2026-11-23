@@ -10,7 +10,7 @@ export const MultiSelectCustomValue = ({ value="Custom value", ...other }: any) 
         popup={(
             <>
                 <List customValue={<ListCustomValue text={`Use "${value}"`}/>} >
-                    <ListContent aria-label="Options">
+                    <ListContent multiselectable aria-label="Options">
                         <ListItem>List item</ListItem>
                         <ListItem>List item</ListItem>
                         <ListItem>List item</ListItem>

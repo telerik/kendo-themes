@@ -24,7 +24,7 @@ export default () => (
     <div id="test-area" className="k-d-flex k-flex-wrap">
       {/* ── Recurrence – Daily ─────────────────────────────────────────── */}
       <section>
-        <span>Recurrence – Daily</span>
+        <span>Recurrence – Daily - width: 540px</span>
         <Dialog
           title="Recurrence"
           actions={["x"]}
@@ -68,7 +68,7 @@ export default () => (
 
       {/* ── Recurrence – Daily – After N occurrences ──────────────────── */}
       <section>
-        <span>Recurrence – Daily – After occurrences</span>
+        <span>Recurrence – Daily – After occurrences - width: 540px</span>
         <Dialog
           title="Recurrence"
           actions={["x"]}
@@ -112,7 +112,7 @@ export default () => (
 
       {/* ── Recurrence – Daily – On date ──────────────────────────────── */}
       <section>
-        <span>Recurrence – Daily – On date</span>
+        <span>Recurrence – Daily – On date - width: 540px</span>
         <Dialog
           title="Recurrence"
           actions={["x"]}
@@ -156,7 +156,7 @@ export default () => (
 
       {/* ── Recurrence – Weekly ────────────────────────────────────────── */}
       <section>
-        <span>Recurrence – Weekly</span>
+        <span>Recurrence – Weekly - width: 540px</span>
         <Dialog
           title="Recurrence"
           actions={["x"]}
@@ -228,7 +228,7 @@ export default () => (
 
       {/* ── Recurrence – Monthly ───────────────────────────────────────── */}
       <section>
-        <span>Recurrence – Monthly</span>
+        <span>Recurrence – Monthly - width: 540px</span>
         <Dialog
           title="Recurrence"
           actions={["x"]}
@@ -292,7 +292,7 @@ export default () => (
 
       {/* ── Recurrence – Yearly ────────────────────────────────────────── */}
       <section>
-        <span>Recurrence – Yearly</span>
+        <span>Recurrence – Yearly - width: 540px</span>
         <Dialog
           title="Recurrence"
           actions={["x"]}
@@ -361,7 +361,7 @@ export default () => (
 
       {/* ── Recurrence – Weekly – Remove recurrence ────────────────────── */}
       <section>
-        <span>Recurrence – Weekly – Remove recurrence</span>
+        <span>Recurrence – Weekly – Remove recurrence - width: 540px</span>
         <Dialog
           title="Recurrence"
           actions={["x"]}

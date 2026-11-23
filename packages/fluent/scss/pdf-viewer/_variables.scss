@@ -50,6 +50,7 @@ $kendo-pdf-viewer-popup-padding-y: var( --kendo-pdf-viewer-popup-padding-y, #{$k
 $kendo-pdf-viewer-highlight-annotation-border: var( --kendo-pdf-viewer-highlight-annotation-border, #{k-color(primary)} ) !default;
 $kendo-pdf-viewer-highlight-annotation-hover-border: var( --kendo-pdf-viewer-highlight-annotation-hover-border, #{k-color(primary-hover)} ) !default;
 $kendo-pdf-viewer-free-text-annotation-border: var( --kendo-pdf-viewer-free-text-annotation-border, #{k-color(primary)} ) !default;
+$kendo-pdf-viewer-form-field-focus-outline: var( --kendo-pdf-viewer-form-field-focus-outline, #{k-color(primary)} ) !default;
 $kendo-pdf-viewer-free-text-annotation-placeholder-text: var( --kendo-pdf-viewer-free-text-annotation-placeholder-text, k-color(primary-on-subtle) ) !default;
 $kendo-pdf-viewer-free-text-annotation-text: var( --kendo-pdf-viewer-free-text-annotation-text, k-color(primary-on-subtle) ) !default;
 
@@ -89,6 +90,7 @@ $kendo-pdf-viewer-free-text-annotation-text: var( --kendo-pdf-viewer-free-text-a
     $kendo-pdf-viewer-highlight-annotation-border: $kendo-pdf-viewer-highlight-annotation-border,
     $kendo-pdf-viewer-highlight-annotation-hover-border: $kendo-pdf-viewer-highlight-annotation-hover-border,
     $kendo-pdf-viewer-free-text-annotation-border: $kendo-pdf-viewer-free-text-annotation-border,
+    $kendo-pdf-viewer-form-field-focus-outline: $kendo-pdf-viewer-form-field-focus-outline,
     $kendo-pdf-viewer-free-text-annotation-placeholder-text: $kendo-pdf-viewer-free-text-annotation-placeholder-text,
     $kendo-pdf-viewer-free-text-annotation-text: $kendo-pdf-viewer-free-text-annotation-text
 );
