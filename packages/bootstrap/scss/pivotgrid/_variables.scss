@@ -74,16 +74,9 @@ $kendo-pivotgrid-configurator-header-bg: null !default;
 $kendo-pivotgrid-configurator-header-text: k-color(on-app-surface) !default;
 $kendo-pivotgrid-configurator-header-border: null !default;
 
-$kendo-pivotgrid-configurator-shadow: k-elevation(3) !default;
-$kendo-pivotgrid-configurator-end-shadow: $kendo-pivotgrid-configurator-shadow !default;
-$kendo-pivotgrid-configurator-start-shadow: $kendo-pivotgrid-configurator-shadow !default;
-$kendo-pivotgrid-configurator-top-shadow: $kendo-pivotgrid-configurator-shadow !default;
-$kendo-pivotgrid-configurator-bottom-shadow: $kendo-pivotgrid-configurator-shadow !default;
-
 $kendo-pivotgrid-configurator-button-padding-x: k-spacing(1) !default;
 $kendo-pivotgrid-configurator-button-padding-y: k-spacing(1) !default;
 $kendo-pivotgrid-configurator-button-border-width: 1px !default;
-$kendo-pivotgrid-configurator-button-size: calc( calc( #{$kendo-pivotgrid-line-height} * 1em ) + calc( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + calc( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) ) !default;
 
 // Calculated fields
 $kendo-pivotgrid-calculated-field-padding-x: $kendo-pivotgrid-spacer !default;
@@ -163,15 +156,9 @@ $kendo-pivotgrid-row-headers-bg: k-color(base-subtle) !default;
     $kendo-pivotgrid-configurator-header-bg: $kendo-pivotgrid-configurator-header-bg,
     $kendo-pivotgrid-configurator-header-text: $kendo-pivotgrid-configurator-header-text,
     $kendo-pivotgrid-configurator-header-border: $kendo-pivotgrid-configurator-header-border,
-    $kendo-pivotgrid-configurator-shadow: $kendo-pivotgrid-configurator-shadow,
-    $kendo-pivotgrid-configurator-end-shadow: $kendo-pivotgrid-configurator-end-shadow,
-    $kendo-pivotgrid-configurator-start-shadow: $kendo-pivotgrid-configurator-start-shadow,
-    $kendo-pivotgrid-configurator-top-shadow: $kendo-pivotgrid-configurator-top-shadow,
-    $kendo-pivotgrid-configurator-bottom-shadow: $kendo-pivotgrid-configurator-bottom-shadow,
     $kendo-pivotgrid-configurator-button-padding-x: $kendo-pivotgrid-configurator-button-padding-x,
     $kendo-pivotgrid-configurator-button-padding-y: $kendo-pivotgrid-configurator-button-padding-y,
     $kendo-pivotgrid-configurator-button-border-width: $kendo-pivotgrid-configurator-button-border-width,
-    $kendo-pivotgrid-configurator-button-size: $kendo-pivotgrid-configurator-button-size,
     $kendo-pivotgrid-calculated-field-padding-x: $kendo-pivotgrid-calculated-field-padding-x,
     $kendo-pivotgrid-calculated-field-padding-y: $kendo-pivotgrid-calculated-field-padding-y,
     $kendo-pivotgrid-calculated-field-border-width: $kendo-pivotgrid-calculated-field-border-width,

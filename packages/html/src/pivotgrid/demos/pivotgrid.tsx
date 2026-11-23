@@ -138,7 +138,7 @@ export const PivotgridDemo = (
     </>
 
     const settingsPanelOpened: React.ReactElement = <>
-        <PivotGridConfigurator mode="overlay">
+        <PivotGridConfigurator>
             <Form className="k-form-horizontal">
                 <div className="k-form-field">
                     <label className="k-label">Fields</label>

@@ -14,9 +14,7 @@ const dependencyClassNames = [
     "k-list"
 ];
 
-const expected = [
-    "kendo-pivotgrid-configurator-shadow" // Variable customizations work, but is used by another variable.
-];
+const expected = [];
 
 const unexpected = [];
 
