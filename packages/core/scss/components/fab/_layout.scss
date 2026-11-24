@@ -21,6 +21,7 @@
         text-align: center;
         white-space: nowrap;
         display: inline-flex;
+        gap: $kendo-fab-icon-spacing;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
@@ -60,6 +61,7 @@
             $_icon-container-size: map.get( $size-props, icon-container-size );
             $_icon-size: map.get( $size-props, icon-size );
             $_icon-stroke-width: map.get( $size-props, icon-stroke-width );
+            $_icon-spacing: map.get( $size-props, icon-spacing );
 
             #{k-when-default($kendo-fab-default-size, $size)}
             &.k-fab-#{$size} {
@@ -67,6 +69,10 @@
                 font-size: $_font-size;
                 line-height: $_line-height;
                 letter-spacing: $_letter-spacing;
+
+                @if $_icon-spacing {
+                    gap: $_icon-spacing;
+                }
 
                 .k-fab-text {
                     font-weight: $_font-weight;
@@ -101,12 +107,6 @@
         padding-inline: $kendo-fab-icon-padding-x;
         padding-block: $kendo-fab-icon-padding-y;
         box-sizing: content-box;
-    }
-
-    .k-icon-wrapper-host:not(:only-child) .k-fab-icon,
-    .k-fab-icon:not(:only-child) {
-        margin-inline-end: $kendo-fab-icon-spacing;
-        margin-inline-start: calc( #{$kendo-fab-icon-spacing} * -1 );
     }
 
     // Items

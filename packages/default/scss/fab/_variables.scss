@@ -29,24 +29,27 @@ $kendo-fab-sm-letter-spacing: null !default;
 $kendo-fab-md-letter-spacing: null !default;
 $kendo-fab-lg-letter-spacing: null !default;
 
-$kendo-fab-sm-icon-container-size: null !default;
-$kendo-fab-md-icon-container-size: null !default;
+$kendo-fab-sm-icon-container-size: k-spacing(5) !default;
+$kendo-fab-md-icon-container-size: k-spacing(5) !default;
 $kendo-fab-lg-icon-container-size: k-spacing(6) !default;
-$kendo-fab-sm-icon-size: null !default;
-$kendo-fab-md-icon-size: null !default;
+$kendo-fab-sm-icon-size: k-spacing(4) !default;
+$kendo-fab-md-icon-size: k-spacing(4) !default;
 $kendo-fab-lg-icon-size: k-spacing(5) !default;
+$kendo-fab-sm-icon-spacing: k-spacing(0.5) !default;
+$kendo-fab-md-icon-spacing: k-spacing(0.5) !default;
+$kendo-fab-lg-icon-spacing: k-spacing(0.5) !default;
 $kendo-fab-sm-icon-stroke-width: null !default;
 $kendo-fab-md-icon-stroke-width: null !default;
 $kendo-fab-lg-icon-stroke-width: 2 !default;
 
-$kendo-fab-sm-padding-x: calc( #{k-spacing(4)} / 2 ) !default;
-$kendo-fab-md-padding-x: k-spacing(4) !default;
-$kendo-fab-lg-padding-x: calc( #{k-spacing(4)} * 1.5 ) !default;
+$kendo-fab-sm-padding-x: k-spacing(2) !default;
+$kendo-fab-md-padding-x: k-spacing(3) !default;
+$kendo-fab-lg-padding-x: k-spacing(4) !default;
 
 $kendo-fab-padding-y: k-spacing(4) !default;
-$kendo-fab-sm-padding-y: calc( #{k-spacing(4)} / 2 ) !default;
-$kendo-fab-md-padding-y: k-spacing(4) !default;
-$kendo-fab-lg-padding-y: calc( #{k-spacing(4)} * 1.5 ) !default;
+$kendo-fab-sm-padding-y: k-spacing(2) !default;
+$kendo-fab-md-padding-y: k-spacing(3) !default;
+$kendo-fab-lg-padding-y: k-spacing(4) !default;
 
 $kendo-fab-icon-padding-x: k-spacing(0.5) !default;
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;
@@ -130,6 +133,9 @@ $kendo-fab-generating-opacity: 40% !default;
     $kendo-fab-icon-padding-x: $kendo-fab-icon-padding-x,
     $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-y,
     $kendo-fab-icon-spacing: $kendo-fab-icon-spacing,
+    $kendo-fab-sm-icon-spacing: $kendo-fab-sm-icon-spacing,
+    $kendo-fab-md-icon-spacing: $kendo-fab-md-icon-spacing,
+    $kendo-fab-lg-icon-spacing: $kendo-fab-lg-icon-spacing,
     $kendo-fab-items-padding-x: $kendo-fab-items-padding-x,
     $kendo-fab-items-padding-y: $kendo-fab-items-padding-y,
     $kendo-fab-item-text-padding-x: $kendo-fab-item-text-padding-x,

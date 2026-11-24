@@ -1,4 +1,3 @@
-@use "sass:map";
 @use "./_variables.scss" as *;
 @use "../core/z-index/index.scss" as *;
 @use "../core/functions/index.scss" as *;
@@ -38,17 +37,6 @@
             &.k-focus::after {
                border-radius: inherit;
             }
-        }
-
-        // Sizes
-        @each $size, $size-props in $kendo-fab-sizes {
-            $_gap: map.get( $size-props, gap );
-
-            #{k-when-default($kendo-fab-default-size, $size)}
-            &.k-fab-#{$size} {
-                gap: $_gap;
-            }
-
         }
     }
 
