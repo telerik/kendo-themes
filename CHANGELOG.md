@@ -1,3 +1,9 @@
+## 14.10.2-dev.4 (2026-11-24)
+
+### 🩹 Fixes
+
+- **grid:** fix borders of row-spanning cells ([1860c23722](https://github.com/telerik/kendo-themes/commit/1860c23722))
+
 ## 14.10.2-dev.3 (2026-11-23)
 
 ### 🚀 Features
