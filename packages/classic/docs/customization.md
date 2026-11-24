@@ -15360,7 +15360,8 @@ The following table lists the available variables for customizing the Classic th
         letter-spacing: $kendo-fab-sm-letter-spacing,
         icon-container-size: $kendo-fab-sm-icon-container-size,
         icon-size: $kendo-fab-sm-icon-size,
-        icon-stroke-width: $kendo-fab-sm-icon-stroke-width
+        icon-stroke-width: $kendo-fab-sm-icon-stroke-width,
+        icon-spacing: $kendo-fab-sm-icon-spacing
     ),
     md: (
         padding-x: $kendo-fab-md-padding-x,
@@ -15371,7 +15372,8 @@ The following table lists the available variables for customizing the Classic th
         letter-spacing: $kendo-fab-md-letter-spacing,
         icon-container-size: $kendo-fab-md-icon-container-size,
         icon-size: $kendo-fab-md-icon-size,
-        icon-stroke-width: $kendo-fab-md-icon-stroke-width
+        icon-stroke-width: $kendo-fab-md-icon-stroke-width,
+        icon-spacing: $kendo-fab-md-icon-spacing
     ),
     lg: (
         padding-x: $kendo-fab-lg-padding-x,
@@ -15382,10 +15384,11 @@ The following table lists the available variables for customizing the Classic th
         letter-spacing: $kendo-fab-lg-letter-spacing,
         icon-container-size: $kendo-fab-lg-icon-container-size,
         icon-size: $kendo-fab-lg-icon-size,
-        icon-stroke-width: $kendo-fab-lg-icon-stroke-width
+        icon-stroke-width: $kendo-fab-lg-icon-stroke-width,
+        icon-spacing: $kendo-fab-lg-icon-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"calc(var(--kendo-spacing-4) / 2)","padding-y":"calc(var(--kendo-spacing-4) / 2)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":null,"icon-size":null,"icon-stroke-width":null</li><li>md: "padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":null,"icon-size":null,"icon-stroke-width":null</li><li>lg: "padding-x":"calc(var(--kendo-spacing-4) * 1.5)","padding-y":"calc(var(--kendo-spacing-4) * 1.5)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-6)","icon-size":"var(--kendo-spacing-5)","icon-stroke-width":2</li></ul></td>
+    <td><ul><li>sm: "padding-x":"calc(var(--kendo-spacing-4) / 2)","padding-y":"calc(var(--kendo-spacing-4) / 2)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":null,"icon-size":null,"icon-stroke-width":null,"icon-spacing":null</li><li>md: "padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":null,"icon-size":null,"icon-stroke-width":null,"icon-spacing":null</li><li>lg: "padding-x":"calc(var(--kendo-spacing-4) * 1.5)","padding-y":"calc(var(--kendo-spacing-4) * 1.5)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height-lg)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-6)","icon-size":"var(--kendo-spacing-5)","icon-stroke-width":2,"icon-spacing":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>

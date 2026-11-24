@@ -15440,8 +15440,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-fab-md-icon-container-size</td>
     <td>String</td>
-    <td><code>k-spacing(5)</code></td>
-    <td><code>var(--kendo-spacing-5)</code></td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon container size of the medium FAB.</div></div>
@@ -15450,8 +15450,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-fab-lg-icon-container-size</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
-    <td><code>var(--kendo-spacing-6)</code></td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon container size of the large FAB.</div></div>
@@ -15469,9 +15469,9 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-fab-md-icon-size</td>
-    <td>String</td>
-    <td><code>k-spacing(4)</code></td>
-    <td><code>var(--kendo-spacing-4)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-fab-md-icon-container-size} * 0.8 )</code></td>
+    <td><code>calc(var(--kendo-spacing-6) * 0.8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon size of the medium FAB.</div></div>
@@ -15479,12 +15479,42 @@ The following table lists the available variables for customizing the Meridian t
 </tr>
 <tr>
     <td>$kendo-fab-lg-icon-size</td>
-    <td>String</td>
-    <td><code>k-spacing(5)</code></td>
-    <td><code>var(--kendo-spacing-5)</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(8)} * 5 / 6 )</code></td>
+    <td><code>calc(var(--kendo-spacing-8) * 5 / 6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon size of the large FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sm-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the icon and the text of the small FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-md-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the icon and the text of the medium FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the icon and the text of the large FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -15540,8 +15570,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
-    <td><code>var(--kendo-spacing-6)</code></td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large FAB.</div></div>
@@ -15570,8 +15600,8 @@ The following table lists the available variables for customizing the Meridian t
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td>String</td>
-    <td><code>k-spacing(6)</code></td>
-    <td><code>var(--kendo-spacing-6)</code></td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large FAB.</div></div>
@@ -15930,7 +15960,8 @@ The following table lists the available variables for customizing the Meridian t
         letter-spacing: $kendo-fab-sm-letter-spacing,
         icon-container-size: $kendo-fab-sm-icon-container-size,
         icon-size: $kendo-fab-sm-icon-size,
-        icon-stroke-width: $kendo-fab-sm-icon-stroke-width
+        icon-stroke-width: $kendo-fab-sm-icon-stroke-width,
+        icon-spacing: $kendo-fab-sm-icon-spacing
     ),
     md: (
         padding-x: $kendo-fab-md-padding-x,
@@ -15941,7 +15972,8 @@ The following table lists the available variables for customizing the Meridian t
         letter-spacing: $kendo-fab-md-letter-spacing,
         icon-container-size: $kendo-fab-md-icon-container-size,
         icon-size: $kendo-fab-md-icon-size,
-        icon-stroke-width: $kendo-fab-md-icon-stroke-width
+        icon-stroke-width: $kendo-fab-md-icon-stroke-width,
+        icon-spacing: $kendo-fab-md-icon-spacing
     ),
     lg: (
         padding-x: $kendo-fab-lg-padding-x,
@@ -15952,10 +15984,11 @@ The following table lists the available variables for customizing the Meridian t
         letter-spacing: $kendo-fab-lg-letter-spacing,
         icon-container-size: $kendo-fab-lg-icon-container-size,
         icon-size: $kendo-fab-lg-icon-size,
-        icon-stroke-width: $kendo-fab-lg-icon-stroke-width
+        icon-stroke-width: $kendo-fab-lg-icon-stroke-width,
+        icon-spacing: $kendo-fab-lg-icon-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-5)","icon-size":"var(--kendo-spacing-4)","icon-stroke-width":null</li><li>md: "padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-5)","icon-size":"var(--kendo-spacing-4)","icon-stroke-width":null</li><li>lg: "padding-x":"var(--kendo-spacing-6)","padding-y":"var(--kendo-spacing-6)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-6)","icon-size":"var(--kendo-spacing-5)","icon-stroke-width":2</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":"var(--kendo-line-height-sm)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-5)","icon-size":"var(--kendo-spacing-4)","icon-stroke-width":null,"icon-spacing":"var(--kendo-spacing-0\\.5)"</li><li>md: "padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-6)","icon-size":"calc(var(--kendo-spacing-6) * 0.8)","icon-stroke-width":null,"icon-spacing":"var(--kendo-spacing-0\\.5)"</li><li>lg: "padding-x":"var(--kendo-spacing-5)","padding-y":"var(--kendo-spacing-5)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-8)","icon-size":"calc(var(--kendo-spacing-8) * 5 / 6)","icon-stroke-width":2,"icon-spacing":"var(--kendo-spacing-0\\.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>
