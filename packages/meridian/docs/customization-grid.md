@@ -678,6 +678,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-row-span-cell-border</td>
+    <td>String</td>
+    <td><code>$kendo-grid-border</code></td>
+    <td><code>var(--kendo-color-border)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the end edge of the Grid cells with a row span. Set it only when the Grid cells have no visible vertical borders.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-header-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
