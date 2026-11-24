@@ -1,3 +1,14 @@
+## 14.10.2-dev.5 (2026-11-24)
+
+### 🩹 Fixes
+
+- **window:** remove shadow when maximized and focused ([f5b993acc8](https://github.com/telerik/kendo-themes/commit/f5b993acc8))
+
+### ❤️ Thank You
+
+- Copilot App @Copilot
+- Teya Veselinova
+
 ## 14.10.2-dev.4 (2026-11-24)
 
 ### 🩹 Fixes
