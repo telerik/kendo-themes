@@ -92,6 +92,7 @@ $kendo-grid-cell-vertical-border-width: $kendo-table-cell-vertical-border-width 
 $kendo-grid-bg: $kendo-table-bg !default;
 $kendo-grid-text: $kendo-table-text !default;
 $kendo-grid-border: $kendo-table-border !default;
+$kendo-grid-row-span-cell-border: $kendo-grid-border !default;
 
 $kendo-grid-header-bg: $kendo-table-header-bg !default;
 $kendo-grid-header-text: color-mix(in srgb, k-color(subtle) 75%, k-color(on-app-surface)) !default;
@@ -309,6 +310,7 @@ $kendo-grid-pinned-source-font-weight: var( --kendo-font-weight-bold, 700 ) !def
     $kendo-grid-bg: $kendo-grid-bg,
     $kendo-grid-text: $kendo-grid-text,
     $kendo-grid-border: $kendo-grid-border,
+    $kendo-grid-row-span-cell-border: $kendo-grid-row-span-cell-border,
     $kendo-grid-header-bg: $kendo-grid-header-bg,
     $kendo-grid-header-text: $kendo-grid-header-text,
     $kendo-grid-header-border: $kendo-grid-header-border,

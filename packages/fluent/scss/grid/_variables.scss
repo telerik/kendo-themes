@@ -87,6 +87,7 @@ $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregat
 $kendo-grid-bg: var( --kendo-grid-bg, #{$kendo-table-bg} ) !default;
 $kendo-grid-text: var( --kendo-grid-text, #{$kendo-table-text} ) !default;
 $kendo-grid-border: var( --kendo-grid-border, #{$kendo-table-border} ) !default;
+$kendo-grid-row-span-cell-border: $kendo-grid-border !default;
 $kendo-grid-focus-shadow: var( --kendo-grid-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
 
 $kendo-grid-alt-bg: var( --kendo-grid-alt-bg, #{$kendo-table-alt-row-bg} ) !default;
@@ -390,6 +391,7 @@ $kendo-grid-pinned-source-font-weight: var(--kendo-font-weight-semibold) !defaul
     $kendo-grid-bg: $kendo-grid-bg,
     $kendo-grid-text: $kendo-grid-text,
     $kendo-grid-border: $kendo-grid-border,
+    $kendo-grid-row-span-cell-border: $kendo-grid-row-span-cell-border,
     $kendo-grid-header-bg: $kendo-grid-header-bg,
     $kendo-grid-header-text: $kendo-grid-header-text,
     $kendo-grid-header-border: $kendo-grid-header-border,
