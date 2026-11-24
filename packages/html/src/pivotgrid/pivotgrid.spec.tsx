@@ -1,5 +1,6 @@
 import { classNames, nextId } from '../misc';
 import PivotGridConfiguratorButton from './pivotgrid-configurator-button.spec';
+import PivotGridContainer from './pivotgrid-container.spec';
 import React from 'react';
 
 import { KendoComponent } from '../_types/component';
@@ -26,14 +27,15 @@ const defaultOptions = {
                     <span className="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
                 </th></tr></thead></table>
             </div>,
-    configuratorDisplay: "none",
-    configuratorPosition: "right"
+    configuratorDisplay: "none" as KendoPivotGridProps["configuratorDisplay"],
+    configuratorPosition: "right" as KendoPivotGridProps["configuratorPosition"]
 };
 
 /**
  * @aria {role="grid"} The role specifies the element is a Data Grid.
  * @aria {id} Sets a unique identifier for the cell to be referenced from the first column header row aria-owns attribute.
  * @ux {Configurator} A settings panel maps data fields to rows, columns, and measures.
+ * @ux {Configurator layout} When a configurator is shown, the PivotGrid, the configurator panel, and the configurator button are grouped in a `k-pivotgrid-container` flex container (`k-d-flex` with `k-flex-row` for a vertical or `k-flex-col` for a horizontal configurator). The configurator and the button appear at the start when they precede the PivotGrid in the DOM and at the end when they follow it. Without a configurator, the PivotGrid is rendered on its own.
  * @ux {Expand / Collapse} Row and column header groups can be collapsed to summarize data.
  * @ux {Totals} Subtotals and grand totals are automatically calculated and displayed.
  * @ux {Field reorder} Fields can be dragged between the rows, columns, and filter areas.
@@ -53,37 +55,49 @@ export const PivotGrid: KendoComponent<KendoPivotGridProps & React.HTMLAttribute
         ...other
     } = props;
 
-    const positionMap: Record<string, string> = {
-        left: "k-d-flex k-flex-row-reverse k-pos-relative",
-        bottom: "k-d-flex k-flex-col k-pos-relative",
-        top: "k-d-flex k-flex-col-reverse k-pos-relative",
-        right: "k-d-flex k-flex-row k-pos-relative"
+    const grid = (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                PIVOTGRID_CLASSNAME,
+            )}
+            role="grid">
+            {emptyCell}
+            <div className="k-pivotgrid-column-headers" role="none">
+                {columnHeaders}
+            </div>
+            <div className="k-pivotgrid-row-headers" role="none">
+                {rowHeaders}
+            </div>
+            <div className="k-pivotgrid-values" role="none">
+                {children}
+            </div>
+        </div>
+    );
+
+    if (configuratorDisplay === "none") {
+        return grid;
     }
 
-    return (
-        <div className={positionMap[configuratorPosition]}>
-            <div
-                {...other}
-                className={classNames(
-                    props.className,
-                    PIVOTGRID_CLASSNAME,
-                )}
-                role="grid">
-                {emptyCell}
-                <div className="k-pivotgrid-column-headers" role="none">
-                    {columnHeaders}
-                </div>
-                <div className="k-pivotgrid-row-headers" role="none">
-                    {rowHeaders}
-                </div>
-                <div className="k-pivotgrid-values" role="none">
-                    {children}
-                </div>
-            </div>
+    const configuratorFirst = configuratorPosition === "left" || configuratorPosition === "top";
+    const orientation = configuratorPosition === "left" || configuratorPosition === "right" ? "vertical" : "horizontal";
+
+    const configuratorPanel = (
+        <>
             {(configurator && configuratorDisplay === "opened") && configurator}
             {(configurator && configuratorDisplay === "closed") && React.cloneElement(configurator as React.ReactElement<React.HTMLAttributes<HTMLElement>>, { 'aria-hidden': 'true' })}
-            {(configuratorDisplay !== "none") && <PivotGridConfiguratorButton />}
-        </div>
+        </>
+    );
+
+    return (
+        <PivotGridContainer orientation={orientation}>
+            {configuratorFirst && <PivotGridConfiguratorButton />}
+            {configuratorFirst && configuratorPanel}
+            {grid}
+            {!configuratorFirst && configuratorPanel}
+            {!configuratorFirst && <PivotGridConfiguratorButton />}
+        </PivotGridContainer>
     );
 };
 

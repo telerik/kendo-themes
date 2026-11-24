@@ -11,7 +11,7 @@ const options = {};
 export type KendoPivotGridConfiguratorProps = {
     actionButtons?: React.JSX.Element;
     orientation?: "horizontal" | "vertical";
-    mode?: "overlay" | "push";
+    mode?: "push";
     header?: string;
     headerId?: string;
 };

@@ -168,22 +168,6 @@ $kendo-pivotgrid-configurator-header-text: null !default;
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-header-border: null !default;
 
-/// The shadow of the PivotGrid configurator.
-/// @group pivotgrid
-$kendo-pivotgrid-configurator-shadow: null !default;
-/// The end shadow of the PivotGrid configurator.
-/// @group pivotgrid
-$kendo-pivotgrid-configurator-end-shadow: null !default; // -3px 0px 6px rgba(0, 0, 0, .16)
-/// The start shadow of the PivotGrid configurator.
-/// @group pivotgrid
-$kendo-pivotgrid-configurator-start-shadow: null !default; // 3px 0px 6px rgba(0, 0, 0, .16)
-/// The top shadow of the PivotGrid configurator.
-/// @group pivotgrid
-$kendo-pivotgrid-configurator-top-shadow: null !default; // 0px -3px 6px rgba(0, 0, 0, .16)
-/// The bottom shadow of the PivotGrid configurator.
-/// @group pivotgrid
-$kendo-pivotgrid-configurator-bottom-shadow: null !default; // 0px 3px 6px rgba(0, 0, 0, .16)
-
 /// The horizontal padding of the PivotGrid configurator button.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-button-padding-x: null !default;
@@ -193,9 +177,6 @@ $kendo-pivotgrid-configurator-button-padding-y: null !default;
 /// The border width of the PivotGrid configurator button.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-button-border-width: null !default;
-/// The size of the PivotGrid configurator button.
-/// @group pivotgrid
-$kendo-pivotgrid-configurator-button-size: null !default;
 
 
 // Calculated fields

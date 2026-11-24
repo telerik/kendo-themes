@@ -28672,16 +28672,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-pivotgrid-configurator-button-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-pivotgrid-configurator-button-size, calc( calc( #{$kendo-pivotgrid-line-height} * 1em ) + calc( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + calc( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) ) )</code></td>
-    <td><code>var(--kendo-pivotgrid-configurator-button-size, calc(var(--kendo-pivotgrid-line-height, var(--kendo-line-height)) * 1em + var(--kendo-pivotgrid-configurator-button-padding-y, var(--kendo-spacing-1)) * 2 + var(--kendo-pivotgrid-configurator-button-border-width, 1px) * 2))</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the PivotGrid configurator button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pivotgrid-configurator-button-icon-spacing</td>
     <td>String</td>
     <td><code>var( --kendo-pivotgrid-configurator-button-icon-spacing, #{k-spacing(2)} )</code></td>

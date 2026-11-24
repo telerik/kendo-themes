@@ -138,24 +138,50 @@
     }
 
 
-    // Overlay mode
-    .k-flex-row {
-        .k-pivotgrid-configurator-overlay {
-            @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
-        }
+    // Pivotgrid container
+    .k-pivotgrid-container {
+        @include fill( $border: $kendo-pivotgrid-border );
 
-        &-reverse .k-pivotgrid-configurator-overlay {
-            @include box-shadow( $kendo-pivotgrid-configurator-start-shadow );
+        .k-pivotgrid-configurator-button {
+            border-color: transparent;
         }
     }
 
-    .k-flex-col {
-        .k-pivotgrid-configurator-overlay {
-            @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
+    // Container edges: the configurator and the button sit at the start by default and at the end when they follow the grid in the DOM
+    .k-pivotgrid-container.k-flex-row {
+        .k-pivotgrid-configurator-button {
+            border-right-color: $kendo-pivotgrid-configurator-border;
         }
 
-        &-reverse .k-pivotgrid-configurator-overlay {
-            @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
+        > .k-pivotgrid ~ .k-pivotgrid-configurator-button {
+            border-right-color: transparent;
+            border-left-color: $kendo-pivotgrid-configurator-border;
+        }
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-pivotgrid-container.k-flex-row {
+            .k-pivotgrid-configurator-button {
+                border-right-color: transparent;
+                border-left-color: $kendo-pivotgrid-configurator-border;
+            }
+
+            > .k-pivotgrid ~ .k-pivotgrid-configurator-button {
+                border-left-color: transparent;
+                border-right-color: $kendo-pivotgrid-configurator-border;
+            }
+        }
+    }
+
+    .k-pivotgrid-container.k-flex-col {
+        .k-pivotgrid-configurator-button {
+            border-block-end-color: $kendo-pivotgrid-configurator-border;
+        }
+
+        > .k-pivotgrid ~ .k-pivotgrid-configurator-button {
+            border-block-end-color: transparent;
+            border-block-start-color: $kendo-pivotgrid-configurator-border;
         }
     }
 

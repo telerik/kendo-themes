@@ -78,7 +78,6 @@ $kendo-pivotgrid-configurator-header-border: var( --kendo-pivotgrid-configurator
 $kendo-pivotgrid-configurator-button-padding-x: var( --kendo-pivotgrid-configurator-button-padding-x, #{k-spacing(1)} ) !default;
 $kendo-pivotgrid-configurator-button-padding-y: var( --kendo-pivotgrid-configurator-button-padding-y, #{k-spacing(1)} ) !default;
 $kendo-pivotgrid-configurator-button-border-width: var( --kendo-pivotgrid-configurator-button-border-width, 1px ) !default;
-$kendo-pivotgrid-configurator-button-size: var( --kendo-pivotgrid-configurator-button-size, calc( calc( #{$kendo-pivotgrid-line-height} * 1em ) + calc( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + calc( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) ) ) !default;
 /// The icon spacing of the PivotGrid configurator button.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-button-icon-spacing: var( --kendo-pivotgrid-configurator-button-icon-spacing, #{k-spacing(2)} ) !default;
@@ -160,7 +159,6 @@ $kendo-pivotgrid-row-headers-bg: var( --kendo-pivotgrid-row-headers-bg, #{k-colo
     $kendo-pivotgrid-configurator-button-padding-x: $kendo-pivotgrid-configurator-button-padding-x,
     $kendo-pivotgrid-configurator-button-padding-y: $kendo-pivotgrid-configurator-button-padding-y,
     $kendo-pivotgrid-configurator-button-border-width: $kendo-pivotgrid-configurator-button-border-width,
-    $kendo-pivotgrid-configurator-button-size: $kendo-pivotgrid-configurator-button-size,
     $kendo-pivotgrid-calculated-field-padding-x: $kendo-pivotgrid-calculated-field-padding-x,
     $kendo-pivotgrid-calculated-field-padding-y: $kendo-pivotgrid-calculated-field-padding-y,
     $kendo-pivotgrid-calculated-field-border-width: $kendo-pivotgrid-calculated-field-border-width,

@@ -18,16 +18,16 @@ export type KendoCalculatedFieldProps = {
 const defaultFieldActions = (
     <>
         <Icon icon="sum" />
-        <DropdownList value="SUM" />
+        <DropdownList value="SUM" aria-label="Function" />
         <span className="k-spacer"></span>
         <Icon icon="eye" />
-        <DropdownList value="Default" />
+        <DropdownList value="Default" aria-label="Display" />
     </>
 );
 
 const defaultOptions = {
     headerContent: <div className="k-calculated-field-header-text">Date.Calendar</div>,
-    headerActions: <Button fillMode="flat" icon="x"></Button>,
+    headerActions: <Button fillMode="flat" icon="x" aria-label="Remove"></Button>,
     fieldActions: defaultFieldActions
 };
 
