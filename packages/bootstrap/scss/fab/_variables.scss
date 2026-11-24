@@ -18,7 +18,7 @@ $kendo-fab-sm-font-size: var(--kendo-font-size-sm) !default;
 $kendo-fab-md-font-size: null !default;
 $kendo-fab-lg-font-size: var(--kendo-font-size-lg) !default;
 $kendo-fab-line-height: var(--kendo-line-height) !default;
-$kendo-fab-sm-line-height: calc( 20 / 14 ) !default;
+$kendo-fab-sm-line-height: var(--kendo-line-height) !default;
 $kendo-fab-md-line-height: var(--kendo-line-height) !default;
 $kendo-fab-lg-line-height: var(--kendo-line-height) !default;
 

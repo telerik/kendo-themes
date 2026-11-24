@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-sm-line-height</td>
-    <td>Number</td>
-    <td><code>calc( 20 / 14 )</code></td>
-    <td><code>1.4285714285714286</code></td>
+    <td>String</td>
+    <td><code>var(--kendo-line-height)</code></td>
+    <td><code>var(--kendo-line-height)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small FAB.</div></div>
@@ -788,7 +788,7 @@ The following table lists the available variables for customization.
         icon-spacing: $kendo-fab-lg-icon-spacing
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-sm)","line-height":1.4285714285714286,"font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-5)","icon-size":"var(--kendo-spacing-4)","icon-stroke-width":null,"icon-spacing":"var(--kendo-spacing-1)"</li><li>md: "padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-6)","icon-size":"var(--kendo-spacing-6)","icon-stroke-width":null,"icon-spacing":"var(--kendo-spacing-1\\.5)"</li><li>lg: "padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-8)","icon-size":"calc(var(--kendo-spacing-8) * 5 / 6)","icon-stroke-width":2,"icon-spacing":"var(--kendo-spacing-2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2)","padding-y":"var(--kendo-spacing-2)","font-size":"var(--kendo-font-size-sm)","line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-5)","icon-size":"var(--kendo-spacing-4)","icon-stroke-width":null,"icon-spacing":"var(--kendo-spacing-1)"</li><li>md: "padding-x":"var(--kendo-spacing-3)","padding-y":"var(--kendo-spacing-3)","font-size":null,"line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-6)","icon-size":"var(--kendo-spacing-6)","icon-stroke-width":null,"icon-spacing":"var(--kendo-spacing-1\\.5)"</li><li>lg: "padding-x":"var(--kendo-spacing-4)","padding-y":"var(--kendo-spacing-4)","font-size":"var(--kendo-font-size-lg)","line-height":"var(--kendo-line-height)","font-weight":null,"letter-spacing":null,"icon-container-size":"var(--kendo-spacing-8)","icon-size":"calc(var(--kendo-spacing-8) * 5 / 6)","icon-stroke-width":2,"icon-spacing":"var(--kendo-spacing-2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the FloatingActionButton.</div></div>
