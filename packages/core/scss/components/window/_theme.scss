@@ -21,6 +21,10 @@
         @include focus-indicator( $kendo-window-focus-shadow );
     }
 
+    .k-window.k-window-maximized {
+        box-shadow: none;
+    }
+
 
     // Titlebar
     .k-window-titlebar {
