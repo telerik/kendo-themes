@@ -21,6 +21,7 @@
         text-align: center;
         white-space: nowrap;
         display: inline-flex;
+        gap: $kendo-fab-icon-spacing;
         align-items: center;
         justify-content: center;
         vertical-align: middle;
@@ -53,25 +54,53 @@
             $_padding-x: map.get( $size-props, padding-x );
             $_padding-y: map.get( $size-props, padding-y );
 
+            $_font-size: map.get( $size-props, font-size );
+            $_font-weight: map.get( $size-props, font-weight );
+            $_letter-spacing: map.get( $size-props, letter-spacing );
+            $_line-height: map.get( $size-props, line-height );
+            $_icon-size: map.get( $size-props, icon-size );
+            $_icon-padding-x: map.get( $size-props, icon-padding-x );
+            $_icon-padding-y: map.get( $size-props, icon-padding-y );
+            $_icon-stroke-width: map.get( $size-props, icon-stroke-width );
+            $_icon-spacing: map.get( $size-props, icon-spacing );
+
             #{k-when-default($kendo-fab-default-size, $size)}
             &.k-fab-#{$size} {
                 padding: $_padding-y $_padding-x;
+                font-size: $_font-size;
+                line-height: $_line-height;
+                letter-spacing: $_letter-spacing;
+
+                @if $_icon-spacing {
+                    gap: $_icon-spacing;
+                }
+
+                .k-fab-text {
+                    font-weight: $_font-weight;
+                }
+
+                .k-fab-icon {
+                    @if $_icon-stroke-width {
+                        --kendo-icon-stroke-width: #{$_icon-stroke-width};
+                    }
+
+                    @if $_icon-size {
+                        box-sizing: border-box;
+                        width: $_icon-size;
+                        height: $_icon-size;
+                    }
+
+                    @if $_icon-padding-x {
+                        padding-inline: $_icon-padding-x;
+                    }
+
+                    @if $_icon-padding-y {
+                        padding-block: $_icon-padding-y;
+                    }
+                }
             }
 
         }
-    }
-
-    // FAB Icon
-    .k-fab-icon {
-        padding-inline: $kendo-fab-icon-padding-x;
-        padding-block: $kendo-fab-icon-padding-y;
-        box-sizing: content-box;
-    }
-
-    .k-icon-wrapper-host:not(:only-child) .k-fab-icon,
-    .k-fab-icon:not(:only-child) {
-        margin-inline-end: $kendo-fab-icon-spacing;
-        margin-inline-start: calc( #{$kendo-fab-icon-spacing} * -1 );
     }
 
     // Items
