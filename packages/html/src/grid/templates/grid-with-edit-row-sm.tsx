@@ -48,13 +48,13 @@ export const GridWithEditRowSm = (props) => {
                                 </colgroup>
                                 <TableTbody role="rowgroup">
                                     <TableRow className="k-master-row k-grid-add-row k-grid-edit-row" role="row">
-                                        <TableTd role="gridcell">
+                                        <TableTd className="k-grid-edit-cell" role="gridcell">
                                             <Textbox size="small" value="Towel" aria-label="Name" />
                                         </TableTd>
-                                        <TableTd role="gridcell">
+                                        <TableTd className="k-grid-edit-cell" role="gridcell">
                                             <NumericTextbox size="small" value="42" aria-label="Price" />
                                         </TableTd>
-                                        <TableTd role="gridcell"><Checkbox aria-label="Available" /></TableTd>
+                                        <TableTd className="k-grid-edit-cell" role="gridcell"><Checkbox aria-label="Available" /></TableTd>
                                         <TableTd className="k-command-cell" role="gridcell">
                                             <Button size="small">Add</Button>
                                             <Button size="small">Cancel</Button>

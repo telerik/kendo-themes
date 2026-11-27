@@ -54,6 +54,7 @@ const defaultOptions = {
  * @ux {Row selection} Rows can be selected by clicking; multi-select with Ctrl/Shift.
  * @ux {Column resize} Column widths are adjusted by dragging the column border.
  * @ux {Inline editing} Cells enter edit mode on click or keypress.
+ * @ux {Cell sizing} Data cell text stays on one line with ellipsis; stacked layout content wraps. Cells that host editors are marked with `k-grid-edit-cell` and keep the row as tall as a regular single-line row; other cells in the edit row keep their regular padding. Taller editors, such as text areas, still grow the row.
  * @ux {Grouping} Rows can be grouped by a column value using drag-and-drop to the group panel.
  */
 export const Grid: KendoComponent<KendoGridProps & React.HTMLAttributes<HTMLDivElement>> = (
