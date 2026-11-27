@@ -47,7 +47,7 @@ export default () =>(
                                         <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd colspan={1}>
+                                        <TableTd className="k-grid-edit-cell" colspan={1}>
                                             <Textbox />
                                         </TableTd>
                                         <TableTd className="k-command-cell" colspan={1}>
@@ -111,7 +111,7 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-master-row k-grid-add-row k-grid-edit-row" role="row">
                                         <TableTd colspan={1}></TableTd>
-                                        <TableTd colspan={1}>
+                                        <TableTd className="k-grid-edit-cell" colspan={1}>
                                             <Textbox />
                                         </TableTd>
                                         <TableTd className="k-command-cell" colspan={1}>

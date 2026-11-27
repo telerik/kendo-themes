@@ -128,7 +128,7 @@
 
         .k-table-td {
             border-block-end-width: $kendo-grid-cell-horizontal-border-width;
-            white-space: unset;
+            white-space: nowrap;
             vertical-align: middle;
         }
 
@@ -443,6 +443,7 @@
         .k-detail-row {
             .k-detail-cell {
                 border-inline-start-width: 0;
+                white-space: normal;
             }
         }
 
@@ -752,12 +753,14 @@
 
     // Edit row
     .k-grid .k-edit-cell,
+    .k-grid .k-grid-edit-cell,
     .k-grid .k-command-cell,
-    .k-grid .k-grid-edit-row .k-table-td {
+    .k-grid .k-grid-edit-row:not(:has(.k-edit-cell, .k-grid-edit-cell)) .k-table-td {
         text-overflow: clip;
     }
 
     .k-grid .k-edit-cell,
+    .k-grid .k-grid-edit-cell,
     .k-grid .k-grid-edit-row .k-table-td {
 
         > input:not([type="checkbox"]):not([type="radio"]),
@@ -1217,16 +1220,25 @@
                         }
                     }
 
-                    // Edit row
+                    // Edit cells. Rows without marked edit cells fall back to editing every cell.
                     .k-edit-cell,
+                    .k-grid-edit-cell,
                     .k-command-cell,
-                    .k-grid-edit-row .k-table-td {
+                    .k-grid-edit-row:not(:has(.k-edit-cell, .k-grid-edit-cell)) .k-table-td {
                         padding-block: $_edit-cell-padding-y;
                         padding-inline: $_edit-cell-padding-x;
                     }
 
+                    // Keep edited rows as tall as regular single-line rows.
+                    .k-edit-cell,
+                    .k-grid-edit-cell,
+                    .k-grid-edit-row:not(:has(.k-edit-cell, .k-grid-edit-cell)) .k-table-td {
+                        height: calc( 1lh + ( #{$_cell-padding-y} - #{$_edit-cell-padding-y} ) * 2 );
+                    }
+
                     .k-edit-cell:has(> .k-input, > .k-picker),
-                    .k-grid-edit-row .k-table-td:has(> .k-input, > .k-picker) {
+                    .k-grid-edit-cell:has(> .k-input, > .k-picker),
+                    .k-grid-edit-row:not(:has(.k-edit-cell, .k-grid-edit-cell)) .k-table-td:has(> .k-input, > .k-picker) {
                         padding-inline: $_edit-cell-padding-y;
                     }
                 }
@@ -1358,6 +1370,7 @@
     .k-grid-stack-row {
         display: grid;
         gap: $kendo-grid-stack-column-gap;
+        white-space: normal;
     }
 
     .k-grid-edit-row .k-grid-stack-row {

@@ -45,31 +45,31 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>LTR</TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <Autocomplete placeholder="Autocomplete..." />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <Combobox placeholder="Combobox..." />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DropdownList placeholder="DropdownList..." />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <MultiSelect placeholder="Multiselect..." />
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row k-grid-edit-row" alt>
                                         <TableTd>RTL</TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <Autocomplete placeholder="Autocomplete..." className="k-rtl" />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <Combobox placeholder="Combobox..." className="k-rtl" />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DropdownList placeholder="DropdownList..." className="k-rtl" />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <MultiSelect placeholder="Multiselect..." className="k-rtl" />
                                         </TableTd>
                                     </TableRow>
@@ -109,31 +109,31 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>LTR</TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DatePicker placeholder="DatePicker..." />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <TimePicker placeholder="TimePicker..." />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DateTimePicker placeholder="DateTimePicker..." />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DateInput placeholder="DateInput..." />
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row k-grid-edit-row" alt>
                                         <TableTd>RTL</TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DatePicker placeholder="DatePicker..." className="k-rtl"/>
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <TimePicker placeholder="TimePicker..." className="k-rtl"/>
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DateTimePicker placeholder="DateTimePicker..." className="k-rtl"/>
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <DateInput placeholder="DateInput..." className="k-rtl"/>
                                         </TableTd>
                                     </TableRow>
@@ -172,20 +172,20 @@ export default () =>(
                                 <TableTbody>
                                     <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>LTR</TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <NumericTextbox placeholder="Numeric..." />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <Switch checked/>
                                         </TableTd>
                                         <TableTd></TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row k-grid-edit-row" alt>
                                         <TableTd>RTL</TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <NumericTextbox placeholder="Numeric..." className="k-rtl" />
                                         </TableTd>
-                                        <TableTd>
+                                        <TableTd className="k-grid-edit-cell">
                                             <Switch checked className="k-rtl" />
                                         </TableTd>
                                         <TableTd></TableTd>

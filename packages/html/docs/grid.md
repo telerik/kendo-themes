@@ -127,6 +127,7 @@ The Grid is compliant with the [Web Content Accessibility Guidelines (WCAG) 2.2 
 | Row selection | Rows can be selected by clicking; multi-select with Ctrl/Shift. |
 | Column resize | Column widths are adjusted by dragging the column border. |
 | Inline editing | Cells enter edit mode on click or keypress. |
+| Cell sizing | Data cell text stays on one line with ellipsis; stacked layout content wraps. Cells that host editors are marked with `k-grid-edit-cell` and keep the row as tall as a regular single-line row; other cells in the edit row keep their regular padding. Taller editors, such as text areas, still grow the row. |
 | Grouping | Rows can be grouped by a column value using drag-and-drop to the group panel. |
 
 ### GridContainer
