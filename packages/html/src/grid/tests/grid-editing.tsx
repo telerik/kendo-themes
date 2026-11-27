@@ -43,10 +43,10 @@ export default () =>(
                             </colgroup>
                             <TableTbody>
                                 <TableRow className="k-master-row k-grid-edit-row">
-                                    <TableTd>
-                                        <Textbox value="Towel" required />
+                                    <TableTd className="k-grid-edit-cell">
+                                        <Textbox value="Chef Anton's Cajun Seasoning with a long product description" required />
                                     </TableTd>
-                                    <TableTd>
+                                    <TableTd className="k-grid-edit-cell">
                                         <NumericTextbox invalid />
                                         <TooltipNormal className="k-validator-tooltip k-invalid-msg"
                                             themeColor="error"
@@ -55,8 +55,10 @@ export default () =>(
                                             content="Price"
                                         />
                                     </TableTd>
-                                    <TableTd>
-                                        <Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" />
+                                    <TableTd className="k-grid-edit-cell">
+                                        <span className="k-checkbox-wrap">
+                                            <Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" />
+                                        </span>
                                         <label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label>
                                     </TableTd>
                                     <TableTd className="k-command-cell">
@@ -77,7 +79,7 @@ export default () =>(
                                     </TableTd>
                                 </TableRow>
                                 <TableRow className="k-master-row">
-                                    <TableTd>Chang</TableTd>
+                                    <TableTd>Chef Anton's Cajun Seasoning with a long product description</TableTd>
                                     <TableTd>19</TableTd>
                                     <TableTd>false</TableTd>
                                     <TableTd className="k-command-cell">

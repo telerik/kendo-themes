@@ -26,7 +26,7 @@ export default () => (
 
             <section>
                 <GridNormal pager={false} groupingHeader={false} className="k-grid-no-scrollbar">
-                    <GridTable>
+                    <GridTable style={{ tableLayout: 'fixed' }}>
                         <colgroup>
                             <col style={{ width: '50px' }} /><col /><col className="k-sorted" /><col /><col />
                         </colgroup>
